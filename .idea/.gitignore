@@ -1,7 +1,7 @@
-/shelf/
-/workspace.xml
-/mavenHomeManager.xml
-/dataSources/
-/dataSources.local.xml
-!/httpRequests/
-!/codeStyles/Project.xml
+misc.xml
+modules.xml
+project.xml
+vcs.xml
+workspace.xml
+!httpRequests/.gitignore
+!/codeStyles/.gitignore

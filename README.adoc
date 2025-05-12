@@ -1,0 +1,21 @@
+= Mímis Gildi: Rdd13r Warpath
+R!dd13r rdd13r <12781006+rdd13r@users.noreply.github.com>
+v1.0, Monday May 12th 2025
+:description: Rdd13r's next strategy and execution plan.
+:sectnums:
+:sectanchors:
+:sectlinks:
+:icons: font
+:tip-caption: 💡️
+:note-caption: ℹ️
+:important-caption: ❗
+:caution-caption: 🔥
+:warning-caption: ⚠️
+:toc: preamble
+:toclevels: 2
+:toc-title: Mímir Warpath
+:keywords: Mímir Rdd13r Warpath
+:imagesdir: ./assets/img
+ifdef::env-name[:relfilesuffix: .adoc]
+
+_This is the roadmap in motion for Rdd13r Warpath._
