@@ -1,0 +1,99 @@
+= Vadim Kuhay – Executive Resume
+Vadim Kuhay [vadim.kuhay@gmail.com](mailto:vadim.kuhay@gmail.com)
+v1.0, 2025-05-13
+:doctype: article
+:sectanchors:
+:sectlinks:
+:icons: font
+:toc: preamble
+:toclevels: 1
+:toc-title: Resume Overview
+:pdf-theme: focus-resume
+
+== Executive Summary
+
+Engineering leader, transformation coach, and hands-on architect with 35 years of experience across startups,
+Fortune 500, research, defense and public sector.
+Trusted by boards, CTOs, and product teams to deliver technically sound, people-centered competitive business innovation.
+
+Guides grassroots transformation by fostering communities of practice, mentoring developers, and delivering value with XP, DDD, and DevOps culture.
+Bridges business strategy and technical execution with clarity, compassion, and relentless delivery.
+Nurtures production-first mindset.
+
+Currently seeking a Director of Engineering, VP, or CTO role at a values-aligned company
+-- small to mid-size -- where excellence, autonomy, innovation, and deep care for people are embraced.
+
+== Impact Highlights
+
+* Led 12 enterprise transformations: hands-on and XP coaching (GEICO, Blue Cross, DB).
+* Architected Deutsche Bank’s $37M global ECM platform (dbECM); now a global SDLC standard.
+* Coached 23 startups, corporate teams on DDD/BDD/XP; launched 3 spin-offs from ASE Inc.
+* Produced, fielded and maintained a €57M+ research and innovation ecosystem (MATILDA™).
+* Created and deployed cutting-edge defense ML-platforms (Seer™, Gank™, Zero™, SwarmOps).
+
+== Leadership Strengths
+
+* Technical Strategy and Vision Applied – DDD, EventStorming, Clean Architecture.
+* Transformation at Scale on the Budget  – XP, Agile, Cultural Evolution, CTO Coaching.
+* Coaching and CoMentorship – Built multiple Communities of Practice (CoPs).
+* Product-Market Fit Acceleration – MVP, MLP, Runway-Zero, and Bootstrap expertise.
+* Cross-Domain Systems – Insurance, Banking, Pharma, Retail, and Defense.
+
+== Key Roles
+
+=== ASE Inc. (Principal Research Engineer, 2025–Present)
+
+* Delivered custom MLOps Platform for top research university, biomedical research.
+
+
+=== Dexian at GEICO (Distinguished/Staff Engineer, 2024)
+
+* Delivered GEICO’s first cloud-native distributed-system using Java, React, Kubernetes, Azure.
+* Led domain teams in XP, DDD, Microservices, Event-Driven Architecture.
+* Founded internal Community of Practice to sustain grassroots transformation.
+
+=== Advanced Software Enterprises Inc. (Principal Consultant, 2017–Present)
+
+* Co-founded a $57M+ ecosystem supporting U.S. and global innovation.
+* Delivered hands-on architecture and coaching for 12 MVPs/startups.
+* Developed AI-driven tactical systems and advanced logistics platforms.
+
+=== Deutsche Bank (Lead Engineer & AVP, 2012–2017)
+
+* Led dbECM delivery: self-healing platform with HA in 3 global regions.
+* Managed 100+ contributors, standardized SDLC, and secured $37M in investment.
+* Introduced Shift-Left testing, data instrumentation, and embedded governance.
+
+== Military and Early Career
+
+=== U.S. Army (SPC, 20th Engineer Brigade, 1997–2000)
+
+* Served with distinction; completed all available training by volunteering.
+
+=== Previous Roles (1990–2011)
+
+* Designed disruptive pharma EDRMS (Merck, Pfizer, BMS).
+* Co-founded secure mobile platforms and startup eCommerce engines.
+* Created early UNIX daemons, trading systems, and Linux OSS contributions.
+
+== Community, Family, and Culture
+
+* Director, Transformative Community of Practice (local Chamber of Commerce)
+* Founder of Antonation – robotics and AI nonprofit for children
+* Supports Ukrainian democracy through logistics, tech, and advocacy
+* Partner in life and business with spouse, Tania – together empowering traditional companies
+* Father to two beautiful children: Anton (teen engineer), Zoey (spirited toddler)
+
+== Education and Affiliations
+
+* BS in Computer Science – UNCP, NC | EE coursework at Penn State, PA
+* Ongoing professional dev: ML, DoD systems, organizational behavior, pedagogy
+* Member: ACM, GNU Foundation, HackerNest, Indie Hackers
+
+== Portfolio and References
+
+* GitHub: [https://github.com/rdd13r](https://github.com/rdd13r)
+* Portfolio: [https://rdd13r.github.io](https://rdd13r.github.io)
+* Available upon request: customer testimonials, security clearance details, project exposé
+
+"Success is contagious when it starts with compassion, trust, and real engineering."

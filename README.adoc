@@ -19,3 +19,4 @@ v1.0, Monday May 12th 2025
 ifdef::env-name[:relfilesuffix: .adoc]
 
 _This is the roadmap in motion for Rdd13r Warpath._
+
