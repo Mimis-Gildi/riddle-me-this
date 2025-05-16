@@ -1,10 +1,9 @@
 ---
 name: Valuable Idea
-about: How about <this> idea?
+about: Propose a thoughtful enhancement or concept
 title: IDEA
 labels: question
 assignees: rdd13r
-
 ---
 
-Please share your idea in freeform
+Share your idea in freeform. Bonus points for clarity, passion, and feasibility.

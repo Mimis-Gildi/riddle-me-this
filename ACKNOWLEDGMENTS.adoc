@@ -1,0 +1,33 @@
+= Acknowledgements
+:description: Acknowledgements for the content of this artifact.
+:icons: font
+:tip-caption: 💡️
+:note-caption: ℹ️
+:important-caption: ❗
+:caution-caption: 🔥
+:warning-caption: ⚠️
+:!toc:
+:keywords: acknowledgements
+ifdef::env-name[:relfilesuffix: .adoc]
+
+NOTE: These references apply to *all* learning resources and practices used in the creation of this artifact.
+
+
+* https://asciidoctor.org/[Asciidoctor]
+* https://github.com/asciidoctor/asciidoctor/issues[Asciidoctor Issues]
+* https://docs.asciidoctor.org/[Asciidoctor Documentation Site]
+* https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer’s Guide]
+* https://asciidoctor.org/docs/asciidoctor-gradle-plugin/[Asciidoctor Gradle Plugin]
+* https://github.com/asciidoctor/asciidoctor-gradle-plugin[Asciidoctor Gradle Plugin Source Code]
+* https://gradle.org/[Gradle Build Tool]
+* https://asciidoctor.github.io/asciidoctor-gradle-plugin/development-3.x/[Asciidoctor Gradle Plugin Suite v3.1.0]
+
+== Content Acknowledgements
+
+* https://careerservices.fas.harvard.edu/resources/create-a-strong-resume/[Harvard Career Services: _Create a Strong Resume_]
+* https://writing.wisc.edu/handbook/resume/[University of Wisconsin: The Writing Center - _Resume Writing Tips_]
+* https://hbr.org/2014/12/how-to-write-a-resume-that-stands-out[Harvard Business Review: _How to Write a Résumé That Stands Out_] (classic for comparison)
+
+== Service Acknowledgements
+
+* https://chatgpt.com/[ChatGPT 4x]
