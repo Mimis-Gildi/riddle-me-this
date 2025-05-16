@@ -1,7 +1,7 @@
-= Mímis Gildi: Rdd13r Warpath
+= Mímis Gildi: Rdd13r's Living Resume
 R!dd13r rdd13r <12781006+rdd13r@users.noreply.github.com>
-v1.0, Monday May 12th 2025
-:description: Rdd13r's next strategy and execution plan.
+v1.0, Friday May 16th 2025
+:description: Rdd13r's living resume.
 :sectnums:
 :sectanchors:
 :sectlinks:
@@ -11,12 +11,11 @@ v1.0, Monday May 12th 2025
 :important-caption: ❗
 :caution-caption: 🔥
 :warning-caption: ⚠️
-:toc: preamble
-:toclevels: 2
-:toc-title: Mímir Warpath
-:keywords: Mímir Rdd13r Warpath
-:imagesdir: ./assets/img
+:!toc:
+:keywords: Mímir Rdd13r Who-is
+:imagesdir: ./resources/images
 ifdef::env-name[:relfilesuffix: .adoc]
 
-_This is the roadmap in motion for Rdd13r Warpath._
-
+This is Vadim's living resume -- engineering leader, transformation coach, hands-on architect, husband, and father. +
+It’s built and maintained in AsciiDoc + Gradle with a custom PDF workflow. +
+_Source of truth, not static export._

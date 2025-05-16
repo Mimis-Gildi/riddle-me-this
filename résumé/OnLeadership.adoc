@@ -1,0 +1,105 @@
+= VK: Executive Resume
+Vadim Kuhay - mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com]
+v1.0, 2025-05-13
+:title-logo-image: image:ase+inc+transparent+logo.png[top=25%,align=center,pdfwidth=0.5in]
+:doctype: article
+:sectanchors:
+:sectlinks:
+:table-caption: Exposition
+:keywords: resume kuhay rdd13r
+:icons: font
+:!toc:
+:toclevels: 1
+:toc-title: Resume Overview
+:imagesdir: ./images
+:includedir: ./fragments
+:pdf-themesdir: ./themes
+:pdf-theme: conservative-resume
+:inc-dir: {includedir}
+ifdef::env-name[:relfilesuffix: .adoc]
+
+Engineering leader, transformation coach, and hands-on architect with 35 years of experience across startups,
+Fortune 500 enterprises, research, defense, and the public sector.
+Trusted by boards, CTOs, and product teams to deliver technically sound,
+people-centered innovation in durable business assets.
+
+
+Leads grassroots transformation by building communities of practice, mentoring developers,
+and driving value through XP, DDD, and DevOps culture.
+Bridges business strategy and technical execution with clarity, compassion, and relentless delivery.
+Champions a production-first mindset.
+
+Currently seeking a Director of Engineering, VP, or CTO role at a values-aligned company
+-- small to mid-size -- where excellence, autonomy, innovation, and deep care for people are embraced.
+
+== Impact Highlights
+
+* Led 11 hands-on transformations in culture, architecture, and XP (GEICO, Blue Cross, DB, etc.)
+* Architected Deutsche Bank’s $37M global ECM platform (dbECM); now a global SDLC standard.
+* Coached 23 startups and corporate teams on DDD/BDD/XP; launched 3 spin-offs from ASE Inc.
+* Built and sustained a €57M+ research and innovation ecosystem (MATILDA™ coalition of 13).
+* Created and deployed cutting-edge ML defense platforms (Seer™, Gank™, Zero™, SwarmOps).
+
+== Leadership Strengths
+
+* Technical Strategy and Vision Applied – DDD, EventStorming, Clean Architecture, Trunking.
+* Transformation at Scale on a Budget – XP, Agile Enablement, Cultural Evolution, CTO Coaching.
+* Coaching and Co-Mentorship – Built and nurtured multiple Communities of Practice (CoPs).
+* Product-Market Fit Acceleration – MVP, MLP, Runway-Zero, Co-Bootstrap, and InnerSource.
+* Cross-Domain Systems Expertise – Insurance, Banking, Pharma, Retail, and Defense.
+
+== Key Roles
+
+=== ASE Inc. (Principal Research Engineer, 2024–Present)
+
+* Delivered custom MLOps platform for a top research university’s psychoanalytic initiative.
+* Positioned ASE as the core MLOps system maintainer for a coalition of thirteen institutions.
+* Designed and implemented a new ML Archetype for experimental Limbic System Simulation.
+* Enhanced a stable 25-year-old MLOps platform to support net-new types of AI modeling tasks.
+* Designed and implemented experimental data sharding logic to support dynamic namespacing.
+* Mentored cross-disciplinary, trust-first teams bridging academia and industry.
+
+
+<<<
+
+=== Dexian at GEICO (Distinguished / Staff Engineer, 2024)
+
+* Delivered GEICO’s first cloud-native distributed system, designed through EventStorming +
+and domain modeling, and implemented in Kotlin, Java, React, Python, Kubernetes, and Azure.
+* Led a domain-team revolution in XP, DDD, microservices, and event-driven architecture.
+* Founded and scaled an internal Community of Practice to sustain grassroots transformation — +
+despite entrenched, passive-aggressive institutional resistance.
+* Instilled Trunk-Based Development (TBD, _Trunking_), countering long release cycle antipattern.
+* Introduced Collaborative Bootstrapping (_Co-Bootstrap_), reducing time-to-market for MVPs.
+
+
+=== ASE Inc. (Co-Founder, Fractional CTO, 2017–2024)
+
+* Co-founded a €57M+ ecosystem supporting EU and global innovation ahead of the U.S. +
+_Advanced Software Enterprises Inc. was a 2018 strategic sponsor of the Prague Innovation Scene._
+* Delivered hands-on architecture, implementation, and coaching for 12 MVPs/startups.
+* Developed AI-driven tactical systems and advanced distributed logistics platforms.
+* Corporate-America digital transformation work made Midwestern headline news.
+* New ventures formed a co-mentoring community and sustainable group funding model.
+
+=== Deutsche Bank (Lead Engineer & AVP, 2012–2017)
+
+* Led dbECM delivery: self-healing platform with HA in 3 global regions (100% of DB content).
+* Managed 100+ contributors, standardized SDLC, and applied $37M in spend-to-save investment.
+* Introduced shift-left testing, instrumentation, embedded governance, and trunk-based delivery.
+
+=== Previous Roles (1990–2011)
+
+* Designed and delivered dozen large-scale disruptive pharma EDRMS (Merck, Pfizer, BMS).
+* Co-founded secure mobile platforms, startup eCommerce engines and logistics platforms.
+* Designed and developed large real-time actor-based distributed system for defense simulation.
+* Created early UNIX daemons, trading systems, simulation engines, and Linux OSS contributions.
+
+=== Community, Family, and Culture
+
+* *Military:* 20th Engineer Brigade, U.S. Army (1997–2000): Served with distinction and honor.
+* Invited public speaker on XP, organizational agility, technical leadership and innovation culture.
+* Founder of Antonation -- robotics and AI nonprofit for children's leadership development.
+* Supports Ukrainian democracy through logistics, tech, investment, software and advocacy.
+* Partner in life and business with spouse, Tetiana -- _together empowering *traditional* companies_.
+* Father to two beautiful children: Anton (teen entrepreneur-engineer), Zoey (spirited toddler).

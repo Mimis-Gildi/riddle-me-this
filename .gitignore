@@ -261,3 +261,6 @@ out/
 # Local History for Visual Studio Code
 .history/
 
+
+# Ignore Gradle build output directory
+build

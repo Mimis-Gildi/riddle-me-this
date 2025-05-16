@@ -1,0 +1,22 @@
+[versions]
+asciidoctorJvm = "4.0.4"
+#asciidoctorDiagram = "2.3.2"
+benManes = "0.52.0"
+dokka = "2.0.0"
+
+logback = "1.5.18"
+kotlinLogging = "7.0.7"
+slf4j = "2.0.17"
+
+[plugins]
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+asciidoctor-jvm-pdf = { id = "org.asciidoctor.jvm.pdf", version.ref = "asciidoctorJvm" }
+asciidoctor-jvm-epub = { id = "org.asciidoctor.jvm.epub", version.ref = "asciidoctorJvm" }
+asciidoctor-jvm-gems = { id = "org.asciidoctor.jvm.gems", version.ref = "asciidoctorJvm" }
+asciidoctor-jvm-convert = { id = "org.asciidoctor.jvm.convert", version.ref = "asciidoctorJvm" }
+ben-manes = { id = "com.github.ben-manes.versions", version.ref = "benManes" }
+
+[libraries]
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+kotlin-logging = { module = "io.github.oshai:kotlin-logging", version.ref = "kotlinLogging" }
