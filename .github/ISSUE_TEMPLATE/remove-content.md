@@ -1,15 +1,14 @@
 ---
 name: Remove Content
-about: Suggest the content that should be removed
+about: Suggest content that should be removed
 title: REMOVE
 labels: bug
 assignees: rdd13r
-
 ---
 
-Please remove the following content
+Please describe the content to remove:
 
-- Exact text or artifact that should be removed
-- What is the harm from the present content
-- What is not valuable or incorrect in this content
-- What should or can be offered instead
+- The exact text or file that should be removed
+- What harm or confusion this content may cause
+- Why it lacks value or accuracy
+- What could be added or improved instead

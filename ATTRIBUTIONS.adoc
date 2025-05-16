@@ -1,0 +1,47 @@
+= Attributions
+:description: Attributions - works directly used and considered in this artifact.
+:icons: font
+:tip-caption: 💡️
+:note-caption: ℹ️
+:important-caption: ❗
+:caution-caption: 🔥
+:warning-caption: ⚠️
+:!toc:
+:keywords: attributions acknowledgements license
+ifdef::env-name[:relfilesuffix: .adoc]
+
+NOTE: _Copyright holders_ listed are hereby acknowledged on the content referenced or otherwise imparted on this work.
+
+- rdd13r - https://github.com/rdd13r/
+- CaptainLugaru - https://github.com/CaptainLugaru/
+- https://github.com/Mimis-Gildi[Mímis Gildi] — _At Yggdrasil, drinking from Mímisbrunnr. This is for the thinking._
+- https://github.com/Gervi-Hera-Vitr[Gervi Héra Vitr] — _Where ancient wisdom meets modern coding fluffle._
+- https://github.com/Gotham-Village[Gotham Village] — _AGAIN co-mentoring community._
+- https://github.com/Mimis-Latlaeg-Hattalag[Mímis Látlæg Háttalag] — _Artifacts for large American companies struggling with Digital Transformation._
+
+
+
+== Code of Conduct
+
+NOTE: Both the code of conduct of this artifact and the code of conduct of the hosting organization may apply.
+
+- https://www.rust-lang.org/policies/code-of-conduct[*Rust Community Code of Conduct*]
+- https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md[*Citizen Code of Conduct*]
+- https://www.contributor-covenant.org/[Contributor Covenant]
+
+== Licensing Attributions
+
+NOTE: Both the license of this artifact and the licenses of dependencies must be considered.
+
+- https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository[Licensing a repository]
+- https://choosealicense.com/[Choose an open-source license]
+- https://choosealicense.com/appendix/[choosealicense.com: Appendix]
+
+'''
+
+IMPORTANT: In addition to the explicitly chosen license, public repositories on GitHub are governed by the next two legal constructs:
+
+'''
+
+- https://docs.github.com/en/site-policy/github-terms/github-terms-of-service[GitHub Terms of Service]
+- https://en.wikipedia.org/wiki/Limitations_and_exceptions_to_copyright[Limitations and exceptions to copyright]
