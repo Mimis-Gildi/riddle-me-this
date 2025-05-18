@@ -1,0 +1,105 @@
+= VK: Engineering Resume
+Vadim Kuhay - mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com]
+v1.0, 2025-05-17
+:doctype: article
+:sectanchors:
+:sectlinks:
+:table-caption: Exposition
+:keywords: resume kuhay rdd13r
+:icons: font
+:!toc:
+:toclevels: 1
+:toc-title: Resume Overview
+:imagesdir: ./images
+:includedir: ./fragments
+:pdf-themesdir: ./themes
+:pdf-theme: conservative-resume
+:inc-dir: {includedir}
+ifdef::env-name[:relfilesuffix: .adoc]
+
+Polyglot software engineer, hands-on architect, and player-coach with 35 years of experience in system design,
+distributed architecture, and high-performance delivery across startups, Fortune 500, eCommerce, and the public sector.
+
+Deep practitioner of Extreme Programming (XP), Domain-Driven Design (DDD), and DevOps culture —
+guided by competence, a *production-first mindset*, and a love of clarity, innovation, and sustainable systems.
+
+Brings transformational value to corporate America with a honed ability to lead **policy-down and grassroots-up**.
+Aligns _executive vision_ and _engineering implementation_ across all levels of accountability.
+
+Known for::
+- Building consensus from strategy to delivery with collaborative domain-discovery modeling
+- Architecting shared journeys that evolve policy and culture — grounded in reality, not jargon
+- Leading multidisciplinary contributors through hands-on, trunk-based design and delivery
+- Coaching XP champions — from business leaders to developers — on the test-first mindset path
+- Nurturing Communities of Practice (CoPs) into viral cultures of innovation delivering on policy
+- Empowering advanced, cross-functional teams to field *AI-augmented DDD Aggregates*
+
+_Drives transformation through *nurture*, *example*, and outcome *ownership*.
+Helps others fall in love with the art of engineering —
+and earn leadership through the long strategy of thinking, making, and shipping._
+
+
+== System, Design, Methodology, and Tooling
+
+* *Business-Supremacy Architecture:* _business is profitable, nimble and lean_ +
+EventStorming (ES) + DDD => Hexagonal Architecture (P&A) & Clean Architecture.
+* *Technology-Supremacy Architecture:* _bounded context, is resilient and secure_ +
+Distributed System Architecture (DSA), Event-Driven Architecture (EDA), +
+Security-First-Architecture (SFA), Streaming-Architecture (SAA), Microservices (MS), +
+Microfrontends (MF), InnerSourcing (IS), Corporate Taxonomy (CT) and Dictionary (ED).
+* *Mentored Practices:* _durable technical advantage through meritocracy_ +
+Domain Discovery, XP (Agility, Pair Programming, test-first-mindset, etc.), TDD, BDD, ATDD, +
+Trunking / CI/CD / DevOps, Twelve-Factor-App (TFA), Functional Programming, Fluent-Local, +
+Dev-Experience (DevEx)  and CoP, ML-Augmentation, and Post-DORA Metrics Observability.
+* *Programming:* Kotlin KMP (Java, TypeScript/JavaScript, Swift), Python, Scala, Zsh
+* *Frameworks:* Spring Boot, Ktor, Lagom, Quarkus, Micronaut, React, Vue.js, GraphQL.
+* *Infrastructure as Code:* Kubernetes, KNative, Helm, OKD, Docker, GH Actions, Terraform, GCP.
+* *Testing:* Kotest, PyTorch, JUnit5 + Spek, ScalaTest, MochaJS, Jest, Cucumber, TestContainers.
+* Tooling: Gradle, sbt, Webpack, snyk.io, mend.io, Renovate, Qodana, SonarQube, Aikido Security.
+* Augmentation: TensorFlow/Keras, Pandas, PySpark, PyTorch, Scikit-learn, fast.ai, PyTorch Lightning.
+
+
+
+== Recent Roles
+
+=== GEICO via Dexian (Staff Engineer, 2024)
+
+* Built GEICO's first distributed system using Kotlin, React, K8s, Azure, and domain-first architecture.
+* Introduced trunk-based development, event modeling, and clean test scaffolding.
+* Led XP practices in microservice boundaries, DDD, DevEx, and test-first evolution.
+* Built and scaled a transformative Community of Practice for engineers and architects.
+
+=== ASE Inc. (Co-Founder, Architect, 2017–2024)
+
+* Designed and built 12 MVPs with clients across insurance, pharma, edtech, and defense.
+* Coached teams in event modeling, aggregate design, clean coding, and pairing culture.
+* Created AI/ML-enabled tactical platforms (Seer™, Gank™, SwarmOps), and custom logistics µSaaS systems.
+* Maintained GitHub archetype libraries for fast scaffolding of DDD-based systems.
+
+=== Deutsche Bank (Lead Engineer, AVP, 2012–2017)
+
+* Designed and delivered dbECM: a global self-healing, HA content system used across 13 domains.
+* Standardized SDLC and test-first pipelines; coached over 100 contributors and teams.
+* Introduced instrumented governance and embedded validation across app teams.
+
+== GitHub Activity
+
+* https://github.com/rdd13r
+* https://github.com/Mimis-Gildi
+* https://github.com/Mimis-Scala
+* https://github.com/Gervi-Hera-Vitr
+
+Archetypes, DX tooling, educational AI labs, and infrastructure setup patterns.
+
+== Tools I Maintain or Use for Resume Builds
+
+* AsciiDoc, Gradle, GitHub Actions
+* Custom conservative resume PDF theme
+* CLI build pipeline with changelogs and tagged releases
+* Fully traceable, version-controlled personal branding
+
+== Education & Training
+
+* BS in Computer Science, UNCP, NC
+* PSU EE coursework, Lehigh Valley, PA
+* Continuous development in ML, pedagogy, developer productivity, and simulation science
