@@ -18,21 +18,21 @@ v1.0, 2025-05-17
 ifdef::env-name[:relfilesuffix: .adoc]
 
 Polyglot software engineer, hands-on architect, and player-coach with 35 years of experience in system design,
-distributed architecture, and high-performance delivery across startups, Fortune 500, eCommerce, and the public sector.
+distributed architecture, and high-performance delivery across startups, eCommerce, Fortune 500, and public sector systems.
 
-Deep practitioner of Extreme Programming (XP), Domain-Driven Design (DDD), and DevOps culture —
+Practitioner of Extreme Programming (XP), Domain-Driven Design (DDD), and DevOps culture —
 guided by competence, a *production-first mindset*, and a love of clarity, innovation, and sustainable systems.
 
 Brings transformational value to corporate America with a honed ability to lead **policy-down and grassroots-up**.
 Aligns _executive vision_ and _engineering implementation_ across all levels of accountability.
 
 Known for::
-- Building consensus from strategy to delivery with collaborative domain-discovery modeling
-- Architecting shared journeys that evolve policy and culture — grounded in reality, not jargon
-- Leading multidisciplinary contributors through hands-on, trunk-based design and delivery
-- Coaching XP champions — from business leaders to developers — on the test-first mindset path
-- Nurturing Communities of Practice (CoPs) into viral cultures of innovation delivering on policy
-- Empowering advanced, cross-functional teams to field *AI-augmented DDD Aggregates*
+- Building consensus from strategy to delivery with collaborative domain-discovery modeling;
+- Architecting shared journeys that evolve policy and culture — grounded in reality, not jargon;
+- Leading multidisciplinary contributors through hands-on, trunk-based design and delivery;
+- Coaching XP champions — from business leaders to developers — in test-first mindset practices;
+- Nurturing Communities of Practice (CoPs) into viral cultures of innovation delivering on policy;
+- Empowering advanced, cross-functional teams to field *AI-augmented DDD Aggregates*.
 
 _Drives transformation through *nurture*, *example*, and outcome *ownership*.
 Helps others fall in love with the art of engineering —
@@ -41,7 +41,9 @@ and earn leadership through the long strategy of thinking, making, and shipping.
 
 == Core System Design & Tooling
 
-My approach emphasizes shared clarity, technical competence, and continuous alignment between business goals and engineering practices optimizing value.
+My approach emphasizes shared clarity, technical competence,
+and continuous alignment between business goals and engineering practices
+to ensure meaningful, durable assets as production outcomes.
 
 * **Strategic Architecture**: EventStorming & Domain-Driven Design (DDD), Clean & Hexagonal Architecture, Event-Driven Systems & Secure-Domain Taxonomy (accountability-behavior-data).
 * **Resilient Implementation**: Security-First Design, Microservices, Microfrontends, Trunk-based Development, 12-Factor Apps, Archetypes and InnerSource, API-first Design, Streaming Topologies.
@@ -49,10 +51,11 @@ My approach emphasizes shared clarity, technical competence, and continuous alig
 * **Toolchain & Languages**: Kotlin/KMP, Python, Java, Scala, TypeScript; Spring Boot, Ktor, Quarkus, Micronaut, GraphQL, React, Vue.js, Lift, Lagom / Akka, RxJava, RxKotlin, RxScala and RxPY.
 * **Infrastructure**: Kubernetes, Knative, Helm, Docker, Terraform, GitHub Actions, OKD, GCP, AWS.
 * **Validation & Observability**: Kotest, Jest, Cucumber, (Post)DORA metrics, SLO-based alerting.
-* **Security & Compliance**: Static Analysis (Qodana, etc.), dependency hygiene (Snyk, Mend.io, etc.)
-* **AI/ML Augmentation**: TensorFlow, Keras, PyTorch, Pandas, PySpark, Scikit-learn, fast.ai, etc.
+* **Security & Compliance**: Static Analysis (Qodana, SonarQube), dependency hygiene (Snyk, Mend.io)
+* **AI/ML Augmentation**: TensorFlow, Keras, PyTorch, Pandas, PySpark, Scikit-learn, fast.ai, Pydantic.
 
-_Tool selection depends on (1) team maturity, (2) business constraints, and (3) domain complexity._
+[.text-center]
+_Tool choices adapt to team maturity, domain complexity, and business constraints._
 
 <<<
 
