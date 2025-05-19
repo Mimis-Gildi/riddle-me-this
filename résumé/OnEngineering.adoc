@@ -61,52 +61,45 @@ _Tool choices adapt to team maturity, domain complexity, and business constraint
 
 === ASE Inc. (Principal Research Engineer, 2024–Present)
 
-* Delivered custom MLOps platform for a top research university’s psychoanalytic initiative.
-* Positioned ASE as the core MLOps system maintainer for a coalition of thirteen institutions.
+* MLOps coalition platform maintainer for a top research university’s psychoanalytic initiative.
 * Designed and implemented a new ML Archetype for experimental Limbic System Simulation.
-* Enhanced a stable 25-year-old MLOps platform to support net-new types of AI modeling tasks.
-* Designed and implemented experimental data sharding logic to support dynamic namespacing.
-* Mentored cross-disciplinary, trust-first teams bridging academia and industry.
+* Mentored cross-disciplinary, trust-first teams profitably bridging academia and industry.
 
+==== GEICO via Dexian (Staff Engineer, 2024)
 
-=== GEICO via Dexian (Staff Engineer, 2024)
+* Built GEICO’s first distributed system using 12-factor-app, Kotlin, React, Kubernetes, Azure.
+* Introduced domain modeling, trunk-based development, clean code, and test-first mindset.
+* Led XP practices in DDD/BDD/Microservices; CoP and DevEx; Implemented Fluent and DevOps.
 
-* Built GEICO's first distributed system using Kotlin, React, K8s, Azure, and domain-first architecture.
-* Introduced trunk-based development, event modeling, and clean test scaffolding.
-* Led XP practices in microservice boundaries, DDD, DevEx, and test-first evolution.
-* Built and scaled a transformative Community of Practice for engineers and architects.
+==== ASE Inc. (Co-Founder, Architect, 2017–2024)
 
-=== ASE Inc. (Co-Founder, Architect, 2017–2024)
+* Delivered 11 transformative programs in the U.S. across pharma, banking, and insurance, like
+Mutual of Omaha Insurance companies, Credit Suisse, and Blue Cross Blue Shield community.
+* Seeded runway technology at 23 vc-funded and bootstrapped EU SaaS startups in disruptive markets.
+* Created AI/ML-enabled tactical platforms (Seer™, Gank™, SwarmOps), and logistics µSaaS systems.
+* Maintaining Archetype libraries for fast scaffolding of DDD/BDD systems, ML-runways, and BigData.
 
-* Designed and built 12 MVPs with clients across insurance, pharma, edtech, and defense.
-* Coached teams in event modeling, aggregate design, clean coding, and pairing culture.
-* Created AI/ML-enabled tactical platforms (Seer™, Gank™, SwarmOps), and custom logistics µSaaS systems.
-* Maintained GitHub archetype libraries for fast scaffolding of DDD-based systems.
-
-=== Deutsche Bank (Lead Engineer, AVP, 2012–2017)
+==== Deutsche Bank (Lead Engineer, AVP, 2012–2017)
 
 * Designed and delivered dbECM: a global self-healing, HA content system used across 13 domains.
-* Standardized SDLC and test-first pipelines; coached over 100 contributors and teams.
-* Introduced instrumented governance and embedded validation across app teams.
+* Standardized global SDLC and test-first pipelines; coached over 100 contributors, and 5 teams.
+* Introduced instrumented governance and embedded validation across tenant application teams.
 
-== GitHub Activity
+==== Xybion Corporation (Product Principal, 2010–2012)
 
-* https://github.com/rdd13r
-* https://github.com/Mimis-Gildi
-* https://github.com/Mimis-Scala
-* https://github.com/Gervi-Hera-Vitr
+* Designed and delivered market-leading content federation appliance, XFIS, purchased by EMC.
 
-Archetypes, DX tooling, educational AI labs, and infrastructure setup patterns.
+==== Glemser Technologies Corp (Lead Engineer, 2006–2010)
 
-== Tools I Maintain or Use for Resume Builds
+* Led development of content and record management platforms for Pharmaceutical clients.
+* Owned Center of Excellence (CoE) disseminating Agile and XP among product teams.
+* Extended core EMC Documentum with valuable capability such as SubTypes and Fragments.
 
-* AsciiDoc, Gradle, GitHub Actions
-* Custom conservative resume PDF theme
-* CLI build pipeline with changelogs and tagged releases
-* Fully traceable, version-controlled personal branding
+==== MassivelyParallel (Co-Founding Engineer, 2000–2005)
 
-== Education & Training
+* Designed and delivered a suite of distributed systems for defense and warfare simulation.
 
-* BS in Computer Science, UNCP, NC
-* PSU EE coursework, Lehigh Valley, PA
+=== Education & Training
+
+* BS in Computer Science, UNCP, NC  | PSU EE coursework | NC Supercomputing Center Certificates
 * Continuous development in ML, pedagogy, developer productivity, and simulation science
