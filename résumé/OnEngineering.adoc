@@ -13,7 +13,7 @@ v1.0, 2025-05-17
 :imagesdir: ./images
 :includedir: ./fragments
 :pdf-themesdir: ./themes
-:pdf-theme: conservative-resume
+:pdf-theme: technical-resume
 :inc-dir: {includedir}
 ifdef::env-name[:relfilesuffix: .adoc]
 
@@ -39,7 +39,14 @@ Helps others fall in love with the art of engineering —
 and earn leadership through the long strategy of thinking, making, and shipping._
 
 
-== Core System Design & Tooling
+Profile Highlights::
+
+* 35 years in architecture, delivery, and coaching across startups, Fortune 500, defense, and research.
+* Led global XP/DDD/DevOps transformations — from DoD to Deutsche Bank to MATILDA.
+* Core maintainer of cross-org systems; mentor on test-first culture and AI-augmented domain architecture.
+
+
+Core System Design & Tooling::
 
 My approach emphasizes shared clarity, technical competence,
 and continuous alignment between business goals and engineering practices
@@ -48,7 +55,8 @@ to ensure meaningful, durable assets as production outcomes.
 * **Strategic Architecture**: EventStorming & Domain-Driven Design (DDD), Clean & Hexagonal Architecture, Event-Driven Systems & Secure-Domain Taxonomy (accountability-behavior-data).
 * **Resilient Implementation**: Security-First Design, Microservices, Microfrontends, Trunk-based Development, 12-Factor Apps, Archetypes and InnerSource, API-first Design, Streaming Topologies.
 * **Mentorship Practices**: XP (Pairing, CI/CD, test-first mindset), TDD/BDD/ATDD, DevEx coaching and Community of Practice (CoP) cultivation, AI-augmented Bounded Contexts, cross-functional teams.
-* **Toolchain & Languages**: Kotlin/KMP, Python, Java, Scala, TypeScript; Spring Boot, Ktor, Quarkus, Micronaut, GraphQL, React, Vue.js, Lift, Lagom / Akka, RxJava, RxKotlin, RxScala and RxPY.
+* **Languages & Frameworks**: Kotlin/KMP, Python, Java, Scala, TypeScript; Spring Boot, Ktor, Quarkus.
+* **UI & Reactive**: Ktor, GraphQL, React, Vue.js, Lift, Lagom / Akka, RxJava, RxKotlin, RxScala, RxPY.
 * **Infrastructure**: Kubernetes, Knative, Helm, Docker, Terraform, GitHub Actions, OKD, GCP, AWS.
 * **Validation & Observability**: Kotest, Jest, Cucumber, (Post)DORA metrics, SLO-based alerting.
 * **Security & Compliance**: Static Analysis (Qodana, SonarQube), dependency hygiene (Snyk, Mend.io)
@@ -59,47 +67,58 @@ _Tool choices adapt to team maturity, domain complexity, and business constraint
 
 <<<
 
-=== ASE Inc. (Principal Research Engineer, 2024–Present)
+== Experience
 
-* MLOps coalition platform maintainer for a top research university’s psychoanalytic initiative.
+ASE Inc. (Principal Research Engineer, 2024–Present)::
+
+* Maintains MATILDA™ codebase used by 13 academic and commercial co-owners across domains.
 * Designed and implemented a new ML Archetype for experimental Limbic System Simulation.
-* Mentored cross-disciplinary, trust-first teams profitably bridging academia and industry.
+* Mentored cross-disciplinary teams integrating academic and industry minds into real outcomes.
 
-==== GEICO via Dexian (Staff Engineer, 2024)
+
+GEICO via Dexian (Staff Engineer, 2024)::
 
 * Built GEICO’s first distributed system using 12-factor-app, Kotlin, React, Kubernetes, Azure.
 * Introduced domain modeling, trunk-based development, clean code, and test-first mindset.
-* Led XP practices in DDD/BDD/Microservices; CoP and DevEx; Implemented Fluent and DevOps.
+* Led XP practices in DDD/BDD/Microservices; scaled DevEx via prod-parity repos for local k8s.
 
-==== ASE Inc. (Co-Founder, Architect, 2017–2024)
+ASE Inc. (Co-Founder, Architect, 2017–2024)::
 
 * Delivered 11 transformative programs in the U.S. across pharma, banking, and insurance, like
 Mutual of Omaha Insurance companies, Credit Suisse, and Blue Cross Blue Shield community.
 * Seeded runway technology at 23 vc-funded and bootstrapped EU SaaS startups in disruptive markets.
 * Created AI/ML-enabled tactical platforms (Seer™, Gank™, SwarmOps), and logistics µSaaS systems.
-* Maintaining Archetype libraries for fast scaffolding of DDD/BDD systems, ML-runways, and BigData.
+* Maintain archetype libraries to scaffold DDD/BDD systems, ML-runways, and BigData.
 
-==== Deutsche Bank (Lead Engineer, AVP, 2012–2017)
+== Legacy Experience
+
+Deutsche Bank (Lead Engineer, AVP, 2012–2017)::
 
 * Designed and delivered dbECM: a global self-healing, HA content system used across 13 domains.
 * Standardized global SDLC and test-first pipelines; coached over 100 contributors, and 5 teams.
 * Introduced instrumented governance and embedded validation across tenant application teams.
 
-==== Xybion Corporation (Product Principal, 2010–2012)
+Xybion Corporation (Product Principal, 2010–2012)::
 
 * Designed and delivered market-leading content federation appliance, XFIS, purchased by EMC.
 
-==== Glemser Technologies Corp (Lead Engineer, 2006–2010)
+Glemser Technologies Corp (Lead Engineer, 2006–2010)::
 
 * Led development of content and record management platforms for Pharmaceutical clients.
 * Owned Center of Excellence (CoE) disseminating Agile and XP among product teams.
 * Extended core EMC Documentum with valuable capability such as SubTypes and Fragments.
 
-==== MassivelyParallel (Co-Founding Engineer, 2000–2005)
+MassivelyParallel (Co-Founding Engineer, 2000–2005)::
 
 * Designed and delivered a suite of distributed systems for defense and warfare simulation.
 
-=== Education & Training
+Immigrant-Developers (Freelancing Software Engineer, 1991–1997)::
+
+* 1995-1997: Core practice consultant, mainframe daemon development: C++/Python (S. Landau Enterprises).
+* 1992-1995: Entry level developer: Unix, C++, C, Python, Perl, SQL, bash, ksh, csh, BBS (Various).
+* 1991–1992: Intern, BBS operator; C, C++, Python, Perl, Unix, bash, SQL (S. Landau Enterprises).
+
+== Education & Training
 
 * BS in Computer Science, UNCP, NC  | PSU EE coursework | NC Supercomputing Center Certificates
 * Continuous development in ML, pedagogy, developer productivity, and simulation science

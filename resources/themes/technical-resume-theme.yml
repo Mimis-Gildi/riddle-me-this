@@ -1,6 +1,6 @@
 extends: default
 base:
-  font_size: 10
+  font_size: 9
   font_color: 111111
   line_height_length: 12
   font_style: normal
