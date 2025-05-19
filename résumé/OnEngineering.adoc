@@ -1,0 +1,124 @@
+= VK: Engineering Resume
+Vadim Kuhay - mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com]
+v1.0, 2025-05-17
+:doctype: article
+:sectanchors:
+:sectlinks:
+:table-caption: Exposition
+:keywords: resume kuhay rdd13r
+:icons: font
+:!toc:
+:toclevels: 1
+:toc-title: Resume Overview
+:imagesdir: ./images
+:includedir: ./fragments
+:pdf-themesdir: ./themes
+:pdf-theme: technical-resume
+:inc-dir: {includedir}
+ifdef::env-name[:relfilesuffix: .adoc]
+
+Polyglot software engineer, hands-on architect, and player-coach with 35 years of experience in system design,
+distributed architecture, and high-performance delivery across startups, eCommerce, Fortune 500, and public sector systems.
+
+Practitioner of Extreme Programming (XP), Domain-Driven Design (DDD), and DevOps culture —
+guided by competence, a *production-first mindset*, and a love of clarity, innovation, and sustainable systems.
+
+Brings transformational value to corporate America with a honed ability to lead **policy-down and grassroots-up**.
+Aligns _executive vision_ and _engineering implementation_ across all levels of accountability.
+
+Known for::
+- Building consensus from strategy to delivery with collaborative domain-discovery modeling;
+- Architecting shared journeys that evolve policy and culture — grounded in reality, not jargon;
+- Leading multidisciplinary contributors through hands-on, trunk-based design and delivery;
+- Coaching XP champions — from business leaders to developers — in test-first mindset practices;
+- Nurturing Communities of Practice (CoPs) into viral cultures of innovation delivering on policy;
+- Empowering advanced, cross-functional teams to field *AI-augmented DDD Aggregates*.
+
+_Drives transformation through *nurture*, *example*, and outcome *ownership*.
+Helps others fall in love with the art of engineering —
+and earn leadership through the long strategy of thinking, making, and shipping._
+
+
+Profile Highlights::
+
+* 35 years in architecture, delivery, and coaching across startups, Fortune 500, defense, and research.
+* Led global XP/DDD/DevOps transformations — from DoD to Deutsche Bank to MATILDA.
+* Core maintainer of cross-org systems; mentor on test-first culture and AI-augmented domain architecture.
+
+
+Core System Design & Tooling::
+
+My approach emphasizes shared clarity, technical competence,
+and continuous alignment between business goals and engineering practices
+to ensure meaningful, durable assets as production outcomes.
+
+* **Strategic Architecture**: EventStorming & Domain-Driven Design (DDD), Clean & Hexagonal Architecture, Event-Driven Systems & Secure-Domain Taxonomy (accountability-behavior-data).
+* **Resilient Implementation**: Security-First Design, Microservices, Microfrontends, Trunk-based Development, 12-Factor Apps, Archetypes and InnerSource, API-first Design, Streaming Topologies.
+* **Mentorship Practices**: XP (Pairing, CI/CD, test-first mindset), TDD/BDD/ATDD, DevEx coaching and Community of Practice (CoP) cultivation, AI-augmented Bounded Contexts, cross-functional teams.
+* **Languages & Frameworks**: Kotlin/KMP, Python, Java, Scala, TypeScript; Spring Boot, Ktor, Quarkus.
+* **UI & Reactive**: GraphQL, React, Vue.js, Lift, Lagom / Akka, RxJava, RxKotlin, RxScala, RxPY.
+* **Infrastructure**: Kubernetes, Knative, Helm, Docker, Terraform, GitHub Actions, OKD, GCP, AWS.
+* **Validation & Observability**: Kotest, Jest, Cucumber, (Post)DORA metrics, SLO-based alerting.
+* **Security & Compliance**: Static Analysis (Qodana, SonarQube), dependency hygiene (Snyk, Mend.io)
+* **AI/ML Augmentation**: TensorFlow, Keras, PyTorch, Pandas, PySpark, Scikit-learn, fast.ai, Pydantic.
+
+[.text-center]
+_Tool choices adapt to team maturity, domain complexity, and business constraints._
+
+<<<
+
+== Experience
+
+ASE Inc. (Principal Research Engineer, 2024–Present)::
+
+* Maintains MATILDA™ codebase used by 13 academic and commercial co-owners across domains.
+* Designed and implemented a new ML Archetype for experimental Limbic System Simulation.
+* Mentored cross-disciplinary teams integrating academic and industry minds into real outcomes.
+
+
+GEICO via Dexian (Staff Engineer, 2024)::
+
+* Built GEICO’s first distributed system using 12-factor-app, Kotlin, React, Kubernetes, Azure.
+* Introduced domain modeling, trunk-based development, clean code, and test-first mindset.
+* Led XP practices in DDD/BDD/Microservices; scaled DevEx via prod-parity repos for local k8s.
+
+ASE Inc. (Co-Founder, Architect, 2017–2024)::
+
+* Delivered 11 transformative programs in the U.S. across pharma, banking, and insurance, like
+Mutual of Omaha Insurance companies, Credit Suisse, and Blue Cross Blue Shield community.
+* Seeded runway technology at 23 vc-funded and bootstrapped EU SaaS startups in disruptive markets.
+* Created AI/ML-enabled tactical platforms (Seer™, Gank™, SwarmOps), and logistics µSaaS systems.
+* Maintains archetype libraries to scaffold DDD/BDD systems, ML-runways, and BigData.
+
+== Legacy Experience
+
+Deutsche Bank (Lead Engineer, AVP, 2012–2017)::
+
+* Designed and delivered dbECM: a global self-healing, HA content system used across 13 domains.
+* Standardized global SDLC and test-first pipelines; coached over 100 contributors, and 5 teams.
+* Introduced instrumented governance and embedded validation across tenant application teams.
+
+Xybion Corporation (Product Principal, 2010–2012)::
+
+* Designed and delivered market-leading content federation appliance, XFIS, purchased by EMC.
+
+Glemser Technologies Corp (Lead Engineer, 2006–2010)::
+
+* Led development of content and record management platforms for Pharmaceutical clients.
+* Owned Center of Excellence (CoE) disseminating Agile and XP among product teams.
+* Extended core EMC Documentum with valuable capability such as SubTypes and Fragments.
+
+MassivelyParallel (Co-Founding Engineer, 2000–2005)::
+
+* Designed and delivered a suite of distributed systems for defense and warfare simulation.
+
+Immigrant-Developers (Freelancing Software Engineer, 1991–1997)::
+
+* 1995-1997: Core practice consultant, mainframe daemon development: C++/Python (S. Landau Enterprises).
+* 1992-1995: Entry level developer: Unix, C++, C, Python, Perl, SQL, bash, ksh, csh, BBS (Various).
+* 1991–1992: Intern, BBS operator; C, C++, Python, Perl, Unix, bash, SQL (S. Landau Enterprises).
+
+== Education & Training
+
+* BS in Computer Science, UNCP, NC  | PSU EE coursework | NC Supercomputing Center Certificates
+* Continuous development in ML, pedagogy, developer productivity, and simulation science

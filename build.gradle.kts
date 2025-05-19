@@ -62,22 +62,11 @@ tasks.named<Jar>("jar") {
     enabled = false
 }
 
-tasks.named<AsciidoctorTask>("asciidoctor") {
-    configureAsciiDocInput(this, resumeFolder)
-}
+tasks.named<AsciidoctorTask>("asciidoctor") { configureAsciiDocInput(this) }
 
-tasks.named<AsciidoctorPdfTask>("asciidoctorPdf") {
-    configureAsciiDocInput(
-        this,
-        sourceDir = resumeFolder,
-        includePatterns = listOf("OnLeadership.adoc", "VadimKuhayTechnical.adoc")
-    )
-}
+tasks.named<AsciidoctorPdfTask>("asciidoctorPdf") { configureAsciiDocInput(this) }
 
-tasks.named<AsciidoctorEpubTask>("asciidoctorEpub") {
-    configureAsciiDocInput(this, resumeFolder)
-    ebookFormats(EPUB3)
-}
+tasks.named<AsciidoctorEpubTask>("asciidoctorEpub") { configureAsciiDocInput(this).also { ebookFormats(EPUB3) } }
 
 pdfThemes {
     pdfResumeThemeIds.forEach { themeId ->
@@ -122,8 +111,10 @@ tasks.named(DependencyUpdatePolicy.PROCESS_NAME) { outputs.upToDateWhen { false 
  */
 fun configureAsciiDocInput(
     task: org.asciidoctor.gradle.jvm.AbstractAsciidoctorTask,
-    sourceDir: File,
-    includePatterns: List<String> = listOf("OnLeadership.adoc")
+    sourceDir: File = resumeFolder,
+    includePatterns: List<String> = listOf(
+        "OnLeadership.adoc",
+        "OnEngineering.adoc")
 ) {
     task.apply {
         isLogDocuments = true
