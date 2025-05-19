@@ -39,28 +39,32 @@ Helps others fall in love with the art of engineering —
 and earn leadership through the long strategy of thinking, making, and shipping._
 
 
-== System, Design, Methodology, and Tooling
+== Core System Design & Tooling
 
-* *Business-Supremacy Architecture:* _business is profitable, nimble and lean_ +
-EventStorming (ES) + DDD => Hexagonal Architecture (P&A) & Clean Architecture.
-* *Technology-Supremacy Architecture:* _bounded context, is resilient and secure_ +
-Distributed System Architecture (DSA), Event-Driven Architecture (EDA), +
-Security-First-Architecture (SFA), Streaming-Architecture (SAA), Microservices (MS), +
-Microfrontends (MF), InnerSourcing (IS), Corporate Taxonomy (CT) and Dictionary (ED).
-* *Mentored Practices:* _durable technical advantage through meritocracy_ +
-Domain Discovery, XP (Agility, Pair Programming, test-first-mindset, etc.), TDD, BDD, ATDD, +
-Trunking / CI/CD / DevOps, Twelve-Factor-App (TFA), Functional Programming, Fluent-Local, +
-Dev-Experience (DevEx)  and CoP, ML-Augmentation, and Post-DORA Metrics Observability.
-* *Programming:* Kotlin KMP (Java, TypeScript/JavaScript, Swift), Python, Scala, Zsh
-* *Frameworks:* Spring Boot, Ktor, Lagom, Quarkus, Micronaut, React, Vue.js, GraphQL.
-* *Infrastructure as Code:* Kubernetes, KNative, Helm, OKD, Docker, GH Actions, Terraform, GCP.
-* *Testing:* Kotest, PyTorch, JUnit5 + Spek, ScalaTest, MochaJS, Jest, Cucumber, TestContainers.
-* Tooling: Gradle, sbt, Webpack, snyk.io, mend.io, Renovate, Qodana, SonarQube, Aikido Security.
-* Augmentation: TensorFlow/Keras, Pandas, PySpark, PyTorch, Scikit-learn, fast.ai, PyTorch Lightning.
+My approach emphasizes shared clarity, technical competence, and continuous alignment between business goals and engineering practices optimizing value.
 
+* **Strategic Architecture**: EventStorming & Domain-Driven Design (DDD), Clean & Hexagonal Architecture, Event-Driven Systems & Secure-Domain Taxonomy (accountability-behavior-data).
+* **Resilient Implementation**: Security-First Design, Microservices, Microfrontends, Trunk-based Development, 12-Factor Apps, Archetypes and InnerSource, API-first Design, Streaming Topologies.
+* **Mentorship Practices**: XP (Pairing, CI/CD, test-first mindset), TDD/BDD/ATDD, DevEx coaching and Community of Practice (CoP) cultivation, AI-augmented Bounded Contexts, cross-functional teams.
+* **Toolchain & Languages**: Kotlin/KMP, Python, Java, Scala, TypeScript; Spring Boot, Ktor, Quarkus, Micronaut, GraphQL, React, Vue.js, Lift, Lagom / Akka, RxJava, RxKotlin, RxScala and RxPY.
+* **Infrastructure**: Kubernetes, Knative, Helm, Docker, Terraform, GitHub Actions, OKD, GCP, AWS.
+* **Validation & Observability**: Kotest, Jest, Cucumber, (Post)DORA metrics, SLO-based alerting.
+* **Security & Compliance**: Static Analysis (Qodana, etc.), dependency hygiene (Snyk, Mend.io, etc.)
+* **AI/ML Augmentation**: TensorFlow, Keras, PyTorch, Pandas, PySpark, Scikit-learn, fast.ai, etc.
 
+_Tool selection depends on (1) team maturity, (2) business constraints, and (3) domain complexity._
 
-== Recent Roles
+<<<
+
+=== ASE Inc. (Principal Research Engineer, 2024–Present)
+
+* Delivered custom MLOps platform for a top research university’s psychoanalytic initiative.
+* Positioned ASE as the core MLOps system maintainer for a coalition of thirteen institutions.
+* Designed and implemented a new ML Archetype for experimental Limbic System Simulation.
+* Enhanced a stable 25-year-old MLOps platform to support net-new types of AI modeling tasks.
+* Designed and implemented experimental data sharding logic to support dynamic namespacing.
+* Mentored cross-disciplinary, trust-first teams bridging academia and industry.
+
 
 === GEICO via Dexian (Staff Engineer, 2024)
 
