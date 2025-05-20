@@ -13,7 +13,7 @@ Vadim Kuhay - mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com]
 :imagesdir: ./images
 :includedir: ./fragments
 :pdf-themesdir: ./themes
-:pdf-theme: technical-resume
+:pdf-theme: creative-resume
 :inc-dir: {includedir}
 ifdef::env-name[:relfilesuffix: .adoc]
 

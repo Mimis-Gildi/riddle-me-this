@@ -10,7 +10,7 @@ header:
   line-height: 1
   recto:
     center:
-      content: '+1 (919) 717-1387 | GitHub - https://github.com/Mimis-Gildi/riddle-me-this/[Latest Version] - https://github.com/rdd13r/[Author''s Profile] - https://www.linkedin.com/in/rdd13r/[Author''s LinkedIn]'
+      content: '+1 (919) 717-1387 | GitHub - https://github.com/Mimis-Gildi/riddle-me-this/[Latest Version] - https://github.com/rdd13r/[Author''s Profile] | https://www.linkedin.com/in/rdd13r/[Author''s LinkedIn]'
 footer:
   height: 0.6in
   line-height: 1
@@ -18,12 +18,9 @@ footer:
     right:
       content: '{author} | Page {page-number} of {page-count}'
     left:
-      content: '{revnumber}'
+      content: 'v{revnumber}'
   verso:
     left:
       content: '_Every real system begins with trust, survives by clarity, and earns its team’s keep in production._'
     right:
-      content: '{docdate}'
-
-
-
+      content: '{revision-date}'

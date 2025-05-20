@@ -10,7 +10,7 @@ header:
   line-height: 1
   recto:
     center:
-      content: '+1 (919) 717-1387 | GitHub - https://github.com/Mimis-Gildi/riddle-me-this/[Latest Version] - https://github.com/rdd13r/[Author''s Profile] - https://www.linkedin.com/in/rdd13r/[Author''s LinkedIn]'
+      content: '+1 (919) 717-1387 | GitHub - https://github.com/Mimis-Gildi/riddle-me-this/[Latest Version] - https://github.com/rdd13r/[Author''s Profile] | https://www.linkedin.com/in/rdd13r/[Author''s LinkedIn]'
 footer:
   height: 0.6in
   line-height: 1
@@ -24,4 +24,3 @@ footer:
       content: '_Where excellence meets courage and teams are built to last._'
     right:
       content: '{revision-date}'
-
