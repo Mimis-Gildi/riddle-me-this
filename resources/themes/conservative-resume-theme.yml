@@ -17,7 +17,11 @@ footer:
   recto:
     right:
       content: '{author} | Page {page-number} of {page-count}'
+    left:
+      content: 'v{revnumber}'
   verso:
     left:
       content: '_Where excellence meets courage and teams are built to last._'
+    right:
+      content: '{revision-date}'
 

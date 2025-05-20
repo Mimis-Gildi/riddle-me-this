@@ -1,0 +1,203 @@
+= VK: Creativity Resume
+Vadim Kuhay - mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com]
+:description: A creative resume in the form of fragments, reflections, and hard truths earned through systems built, unwound, inherited, or defended.
+:doctype: article
+:sectanchors:
+:sectlinks:
+:table-caption: Exposition
+:keywords: resume kuhay rdd13r
+:icons: font
+:!toc:
+:toclevels: 1
+:toc-title: Resume Overview
+:imagesdir: ./images
+:includedir: ./fragments
+:pdf-themesdir: ./themes
+:pdf-theme: technical-resume
+:inc-dir: {includedir}
+ifdef::env-name[:relfilesuffix: .adoc]
+
+[.normal]
+Who This Is For::
+This is not a resume about creativity. +
+_It is a resume that *creates understanding*._ +
+Understanding of what it means to build systems that last, +
+teams that think, and software that speaks truth in production.
+
+[.normal]
+This is not a design piece. It is a leadership artifact —  for those who want to know how I see the work, +
+why I lead the way I do, and what it means to be an engineer who builds real assets. +
+Not capital. Not headcount. +
+_But *clarity, confidence, trust, and delivery*._
+
+[.lead]
+[.text-justify]
+The most valuable assets of any successful and modern business are not software, hardware, data,
+infrastructure, or even uniquely innovative and competitive market strategies
+-- these are just products of a creative mind. +
+*_The most valuable asset is always just people._* +
+_Yet a person is always both an asset and a liability._ +
+Our competence makes us an asset. +
+Our incompetence — often just hidden bias — makes us a liability. +
+What, then, is the highest product an experienced engineer can produce?
+
+[.lead]
+I give you: _productive, competent, and **creative Domain Teams**._
+
+[.quote]
+Corporate Deathtrap: _"What have you done for me now?"_ +
+Corporate Salvation: _"What have you done for yourself now?"_
+
+_All the knowledge, methods, and tools that we need to build a bright future are already here. +
+What remains is *US* choosing to use them. Choosing to use them wisely, creatively, and productively._
+
+== How I Become an Asset
+
+- Solve _fundamental_ problems instead of creating them.
+- Use hard-earned _competence_ instead of politics.
+- Lead _others_ creating own assets within themselves.
+
+What have I learned from three decades of fieldwork?::
+
+* Most systems don’t lie maliciously — they just never had a chance to learn the truth.
+* Tools reflect thinking. Bad tools reflect bad thinking left unexamined.
+* Test-first isn’t just about safety — it’s about narrative integrity.
+* Most teams don’t fear failure — they fear looking incompetent in front of politics.
+* Software design is culture design — nothing more and nothing less.
+* Culture change doesn’t begin with trust — it begins with shared language.
+* You can’t fix delivery until you fix what people think they’re delivering.
+* The best leaders aren’t brave — they’re precise, relentless, and honest.
+
+<<<
+
+=== Fragments from the Field
+
+_Let me share some of my most profound revelations from over a hundred production projects with you._
+
+==== Example 1: Tau and the Ledger of Trust
+
+_How to salvage a brilliant men's not so brilliant vision._
+In this context a major medical university and hospital is seeking to shift away from the third-party medical insurance
+and the _third-party medical data providers_. This is fundamental shift in the U.S. healthcare that is still developing.
+
+What's the big idea?!::
+One of the nation's top medical research university doctors and instructors are fed up with the way Epic MyChart works:
+_patient's data is leaked, usability is horrid, and most importantly patents have no real control over their own data._
+"Hey `Riddler!` aren't you the one to solve fundamental problems? Here is a bag of our money -- put patients on the blockchain."
+
+Take One and the Fundamental Conflict!::
+The Riddler! -- "Okay, happy to take your money! But you are asking to 'build it, and they will come' which I know will never work. Find customers and I will help you build it." +
+World's most intelligent doctors! -- "Here is the letter from our university commiting to buying it from us and considering it a top alternative to Epic. Just build it to our specifications."
+
+Production take One - Tau!::
+Having trained the multidisciplinary team in breaking down the domains, discovering the product, planning product-market-fit we build a system that works well.
+For the speed of development and delivery I had used Cardano (ADA) open source technology to provide the backing service and Kotlin KMP to provide the edges.
+This gave me a pleasure to learn a beautiful functional language, Haskell, and itw ecosystem.
+Thus, most time was spent ironing out product exact functionality. And I spent extreme diligence making all functional components abstract, expecting rainy days ahead.
+
+Brutal Reality::
+Epic mopped the floor with our brilliant doctors' startup.
+Cynical business people from competing companies spared no effort disrespecting our doctors.
+Serious money were involved in creating serious political winds killing poor Tau not just for the founding hospital but for the entire market.
+Destitute doctors having lost their savings question their relationship with their favorite medical school and hospital.
+
+"Better Call Saul", that is, call Rajesh::
+I have expected this outcome and prepared for it in advance.
+This was also the reason of an extra step in clean abstractions in Tau code.
+Rajesh is a known and well regarded "fixer" on the founders scene and I asked our doctors to keep him losely in the know,
+although at the time I was being questioned as to "why."
+After the flop Rajesh offered to dilute Tau with his investment and market this product as a "Exquisite and privileged social network and posterity product for the ultra-wealthy."
+
+Production take Two - Tau Coin!::
+I'd replaced the original ADA with the Tau Coin specific DAG data structure retaining secure blockchain functionality while adding performance, speed and a better fit for the fragmented social network data.
+Most the abstractions were reused. And stellar UI skins were introduced.
+And a business department of providing custom-build secured phones for customers was added to the mix further boosting exclusivity.
+Today Tau Coin is a wild success and the secret best kept by its small but profitable market -- the entitled ones.
+And the doctors got over their flop of trying to save the poor patients and embraced saving teh legacy of the rich.
+
+
+
+They wanted to give patients ownership over their own medical data.
+I built Tau in Cardano. It worked — technically.
+Then the money dried up, and the buyers changed.
+They wanted posterity, not sovereignty.
+So I rewrote it in Kotlin, DAG-based. The code lived. The purpose didn’t.
+
+
+Todo...
+
+
+I write code that earns its place in the real world.
+I help teams fall in love with doing it honestly.
+I’ve been hands-on in startups, governments, banks, pharma, defense — and every one of them thought their dysfunction was unique.
+It wasn’t.
+
+This is what I’ve learned in 35 years of fieldwork — thinking, making, shipping, and returning with fewer illusions.
+
+
+
+
+== Tau and the Lie of Self-Sovereignty
+
+Tau was born from the righteous rebellion of Duke physicians who wanted patients to own their destiny — not just their data.
+They funded a distributed ledger to dethrone Epic’s MyChart.
+
+I wrote it in Cardano.
+
+Then Duke blinked.
+Money vanished.
+The idea didn’t.
+
+A new backer emerged — one who didn't want sovereignty for the people, but posterity for the privileged.
+I rewrote the system in Kotlin, using a custom DAG block structure.
+
+The code survived.
+The intent didn’t.
+
+'''
+
+== MATILDA and the Myth of Collective Code
+
+Thirteen organizations. One codebase. Shared stewardship.
+Everyone wants governance. No one wants accountability.
+
+So I wrote the governance into the CI.
+
+The system holds — not because of meetings — but because the code refuses to build without consensus.
+
+They still call it a coalition.
+I call it a code contract with teeth.
+
+'''
+
+== What I Teach by Living
+
+* Code is conversation.
+* Architecture is trust.
+* Velocity is a trailing indicator of clarity.
+* The only thing that scales is how you think.
+
+I build systems that survive their first user.
+And teams that survive their first rewrite.
+
+'''
+
+== Ask Me About
+
+* What prod-parity really means
+* How to build archetypes that survive adoption
+* Why DDD without language is just domain-flavored layers
+* How a CoP becomes your org’s immune system
+* What I do when the system lies
+
+'''
+
+== If You Must Know
+
+- BS in Computer Science – UNCP, NC
+- PSU EE coursework
+- 35 years in production
+- Still writing. Still pairing. Still learning.
+
+[.text-center]
+[small]#You may also download a conventional resume — but it won’t explain what’s really been built.#

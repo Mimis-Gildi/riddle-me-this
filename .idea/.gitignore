@@ -1,7 +1,3 @@
-misc.xml
-modules.xml
-project.xml
-vcs.xml
-workspace.xml
+**/**.xml
 !httpRequests/.gitignore
 !/codeStyles/.gitignore

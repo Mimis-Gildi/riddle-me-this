@@ -17,8 +17,13 @@ footer:
   recto:
     right:
       content: '{author} | Page {page-number} of {page-count}'
+    left:
+      content: '{revnumber}'
   verso:
     left:
       content: '_Every real system begins with trust, survives by clarity, and earns its team’s keep in production._'
+    right:
+      content: '{docdate}'
+
 
 

@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+set -euo pipefail
+# shellcheck source=/dev/null
+gradle clean asciidoctorPdf \
+&& open build/docs/asciidocPdf/OnEngineering.pdf \
+&& open build/docs/asciidocPdf/OnLeadership.pdf \
+&& open build/docs/asciidocPdf/OnCreativity.pdf

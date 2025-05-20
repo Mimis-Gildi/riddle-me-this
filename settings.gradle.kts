@@ -12,4 +12,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "riddle-me-this-path"
+rootProject.name = "riddle-me-this"

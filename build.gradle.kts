@@ -11,6 +11,8 @@ import java.util.*
 val useJavaVersion: String by project
 val resumeFolder = file(project.property("resume.root.folder") as String)
 
+val revisionDate: String by project
+
 val pdfResumeThemeIds = listOf(
     "conservative-resume",
     "creative-resume",
@@ -113,6 +115,7 @@ fun configureAsciiDocInput(
     task: org.asciidoctor.gradle.jvm.AbstractAsciidoctorTask,
     sourceDir: File = resumeFolder,
     includePatterns: List<String> = listOf(
+        "OnCreativity.adoc",
         "OnLeadership.adoc",
         "OnEngineering.adoc")
 ) {
@@ -122,6 +125,8 @@ fun configureAsciiDocInput(
         sourceDir(sourceDir)
 
         sources { includePatterns.forEach { include(it) } }
+
+        attributes(mapOf("revision-date" to revisionDate))
     }
 }
 
