@@ -1,3 +1,4 @@
 **/**.xml
+.name
 !httpRequests/.gitignore
 !/codeStyles/.gitignore

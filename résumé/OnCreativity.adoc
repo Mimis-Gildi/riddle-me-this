@@ -70,59 +70,55 @@ What have I learned from three decades of fieldwork?::
 
 <<<
 
-=== Fragments from the Field
+.Tau and the Ledger of Trust
+====
 
-_Let me share some of my most profound revelations from over a hundred production projects with you._
+*Context:*
+A major medical university approached us to build a secure system that would return control of health records to patients
+— bypassing Epic, and eventually, third-party insurance.
 
-==== Example 1: Tau and the Ledger of Trust
+*Setup:*
+The doctors’ vision was idealistic and righteous: _privacy, transparency, sovereignty_.
+They brought funding, letters of commitment, and the belief that if we built it, trust would follow.
+I believed in the mission — and insisted on its integrity.
 
-_How to salvage a brilliant men's not so brilliant vision._
-In this context a major medical university and hospital is seeking to shift away from the third-party medical insurance
-and the _third-party medical data providers_. This is fundamental shift in the U.S. healthcare that is still developing.
+*Runway Zero:*
+We built Tau: a secure, Kotlin-based edge system on top of Cardano (ADA).
+Functional, elegant, and abstracted for survival from the first commit.
+At its core: a blockchain-backed, one-time authorization token, implemented as a smart contract.
+It let patients define who could access their data, when, how often, and for what purpose.
+My team in Prague multiplied our velocity. We shipped.
+I held the line on ethics as tightly as on architecture.
 
-What's the big idea?!::
-One of the nation's top medical research university doctors and instructors are fed up with the way Epic MyChart works:
-_patient's data is leaked, usability is horrid, and most importantly patents have no real control over their own data._
-"Hey `Riddler!` aren't you the one to solve fundamental problems? Here is a bag of our money -- put patients on the blockchain."
+*Reality:*
+Idealism doesn’t sell. The market pushed back.
+Epic controlled the optics. The doctors lost their savings.
+The hospital withdrew. The system was never breached, but it was never adopted.
+And no one called it a failure — but no one touched it again.
 
-Take One and the Fundamental Conflict!::
-The Riddler! -- "Okay, happy to take your money! But you are asking to 'build it, and they will come' which I know will never work. Find customers and I will help you build it." +
-World's most intelligent doctors! -- "Here is the letter from our university commiting to buying it from us and considering it a top alternative to Epic. Just build it to our specifications."
+*Repurposing:*
+To protect the doctors' investment, I engaged a longtime collaborator — a founder-whisperer.
+He reframed Tau as a legacy vault for the ultra-wealthy.
+No code changed hands. Only the mission did.
+I replaced the Haskell-based Cardano backend with a custom DAG written in Kotlin.
+The architecture held. The value proposition shifted — dramatically.
 
-Production take One - Tau!::
-Having trained the multidisciplinary team in breaking down the domains, discovering the product, planning product-market-fit we build a system that works well.
-For the speed of development and delivery I had used Cardano (ADA) open source technology to provide the backing service and Kotlin KMP to provide the edges.
-This gave me a pleasure to learn a beautiful functional language, Haskell, and itw ecosystem.
-Thus, most time was spent ironing out product exact functionality. And I spent extreme diligence making all functional components abstract, expecting rainy days ahead.
+*Disappointment:*
+I had hoped Tau might return — reborn for everyone.
+Freemium models and scaled subscriptions have democratized much harder ideas.
+But when offered profit and exclusivity, the doctors declined to open the vault.
+Posterity, it turns out, is not a universal right — only a luxury offering.
 
-Brutal Reality::
-Epic mopped the floor with our brilliant doctors' startup.
-Cynical business people from competing companies spared no effort disrespecting our doctors.
-Serious money were involved in creating serious political winds killing poor Tau not just for the founding hospital but for the entire market.
-Destitute doctors having lost their savings question their relationship with their favorite medical school and hospital.
-
-"Better Call Saul", that is, call Rajesh::
-I have expected this outcome and prepared for it in advance.
-This was also the reason of an extra step in clean abstractions in Tau code.
-Rajesh is a known and well regarded "fixer" on the founders scene and I asked our doctors to keep him losely in the know,
-although at the time I was being questioned as to "why."
-After the flop Rajesh offered to dilute Tau with his investment and market this product as a "Exquisite and privileged social network and posterity product for the ultra-wealthy."
-
-Production take Two - Tau Coin!::
-I'd replaced the original ADA with the Tau Coin specific DAG data structure retaining secure blockchain functionality while adding performance, speed and a better fit for the fragmented social network data.
-Most the abstractions were reused. And stellar UI skins were introduced.
-And a business department of providing custom-build secured phones for customers was added to the mix further boosting exclusivity.
-Today Tau Coin is a wild success and the secret best kept by its small but profitable market -- the entitled ones.
-And the doctors got over their flop of trying to save the poor patients and embraced saving teh legacy of the rich.
+*Legacy:*
+Tau lives on — lavishly. Not for patients.
+For the preservation of privilege.
+The product is stunning. The code is clean.
+The conscience is, still, conflicted.
+====
 
 
 
-They wanted to give patients ownership over their own medical data.
-I built Tau in Cardano. It worked — technically.
-Then the money dried up, and the buyers changed.
-They wanted posterity, not sovereignty.
-So I rewrote it in Kotlin, DAG-based. The code lived. The purpose didn’t.
-
+The blockchain core leveraged Haskell.
 
 Todo...
 
