@@ -1,0 +1,309 @@
+= VK: Creativity Resume
+Vadim Kuhay - mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com]
+:description: A creative resume in the form of fragments, reflections, and hard truths earned through systems built, unwound, inherited, or defended.
+:doctype: article
+:sectanchors:
+:sectlinks:
+:table-caption: Exposition
+:keywords: resume kuhay rdd13r
+:icons: font
+:!toc:
+:toclevels: 1
+:toc-title: Resume Overview
+:imagesdir: ./images
+:includedir: ./fragments
+:pdf-themesdir: ./themes
+:pdf-theme: creative-resume
+:inc-dir: {includedir}
+ifdef::env-name[:relfilesuffix: .adoc]
+
+[.normal]
+Who This Is For::
+This is not a resume about creativity. +
+_It is a resume that *creates understanding*._ +
+Understanding of what it means to build systems that last, +
+teams that think, and software that speaks truth in production.
+
+[.normal]
+This is not a design piece. It is a leadership artifact —  for those who want to know how I see the work, +
+why I lead the way I do, and what it means to be an engineer who builds real assets. +
+Not capital. Not headcount. +
+_But *clarity, confidence, trust, and delivery*._
+
+[.lead]
+[.text-justify]
+The most valuable assets of any successful and modern business are not software, hardware, data,
+infrastructure, or even uniquely innovative and competitive market strategies
+-- these are just products of a creative mind. +
+*_The most valuable asset is always just people._* +
+_Yet a person is always both an asset and a liability._ +
+Our competence makes us an asset. +
+Our incompetence — often just hidden bias — makes us a liability. +
+What, then, is the highest product an experienced engineer can produce?
+
+[.lead]
+I give you: _productive, competent, and **creative Domain Teams**._
+
+[.quote]
+Corporate Deathtrap: _"What have you done for me now?"_ +
+Corporate Salvation: _"What have you done for yourself now?"_
+
+_All the knowledge, methods, and tools that we need to build a bright future are already here. +
+What remains is *US* choosing to use them. Choosing to use them wisely, creatively, and productively._
+
+== How I Become an Asset
+
+- Solve _fundamental_ problems instead of creating them.
+- Use hard-earned _competence_ instead of politics.
+- Lead _others_ creating own assets within themselves.
+
+What have I learned from three decades of fieldwork?::
+
+* Most systems don’t lie maliciously — they just never had a chance to learn the truth.
+* Tools reflect thinking. Bad tools reflect bad thinking left unexamined.
+* Test-first isn’t just about safety — it’s about narrative integrity.
+* Most teams don’t fear failure — they fear looking incompetent in front of politics.
+* Software design is culture design — nothing more and nothing less.
+* Culture change doesn’t begin with trust — it begins with shared language.
+* You can’t fix delivery until you fix what people think they’re delivering.
+* The best leaders aren’t brave — they’re precise, relentless, and honest.
+
+<<<
+
+.Tau and the Ledger of Trust
+====
+
+*Context:*
+A major medical university approached us to build a secure system that would return control of health records to patients
+— bypassing Epic, and eventually, third-party insurance.
+
+*Setup:*
+The doctors’ vision was idealistic and righteous: _privacy, transparency, sovereignty_.
+They brought funding, letters of commitment, and the belief that if we built it, trust would follow.
+I believed in the mission — and insisted on its integrity.
+
+*Runway Zero:*
+We built Tau: a secure, Kotlin-based edge system on top of Cardano (ADA).
+Functional, elegant, and abstracted for survival from the first commit.
+At its core: a blockchain-backed, one-time authorization token, implemented as a smart contract.
+It let patients define who could access their data, when, how often, and for what purpose.
+My team in Prague multiplied our velocity. We shipped.
+I held the line on ethics as tightly as on architecture.
+
+*Reality:*
+Idealism doesn’t sell. The market pushed back.
+Epic controlled the optics. The doctors lost their savings.
+The hospital withdrew. The system was never breached, but it was never adopted.
+And no one called it a failure — but no one touched it again.
+
+*Repurposing:*
+To protect the doctors' investment, I engaged a longtime collaborator — a founder-whisperer.
+He reframed Tau as a legacy vault for the ultra-wealthy.
+No code changed hands. Only the mission did.
+I replaced the Haskell-based Cardano backend with a custom DAG written in Kotlin.
+The architecture held. The value proposition shifted — dramatically.
+
+*Disappointment:*
+I had hoped Tau might return — reborn for everyone.
+Freemium models and scaled subscriptions have democratized much harder ideas.
+But when offered profit and exclusivity, the doctors declined to open the vault.
+Posterity, it turns out, is not a universal right — only a luxury offering.
+
+*Legacy:*
+Tau lives on — lavishly. Not for patients.
+For the preservation of privilege.
+The product is stunning. The code is clean.
+The conscience is, still, conflicted.
+====
+
+.MATILDA and the Governance That Builds Itself
+====
+
+*Context:*
+MATILDA began as a DoD research initiative nearly 25 years ago.
+Its original purpose was to serve as a self-managing expert system for navigating TOGAF/DOGAF processes.
+What made it unique was the fusion of automated governance — DevOps, MLOps, DataOps — with content analytics and policy enforcement in one.
+
+Years later, parts of that framework became essential to SEER — a sentiment-analysis startup in the ad-tech space.
+It soon became difficult to tell which components belonged to whom.
+Disputes over scope and ownership led to a “Coalition License,” now shared across 13 academic and commercial entities.
+ASE Inc. maintains the core framework — because the original RTFM system is still seen as MATILDA’s parent.
+
+*Problem:*
+Everyone wanted control. No one wanted accountability.
+Meetings stalled. Governance frayed. Forks loomed.
+The license made the arrangement legal.
+But the architecture had to make it livable.
+
+*Solution:*
+Instead of enforcing governance through people, I wrote it into the pipelines.
+Builds fail when contracts are violated, when boundaries are crossed, or when proposals lack quorum.
+CI became the constitution. Pipelines became law.
+
+*Result:*
+No one asks who owns what.
+The system enforces its own order.
+People argue in docs, not in commits.
+Releases are boring — and reliable.
+
+*Legacy:*
+MATILDA still runs. Quietly.
+Stable. Versioned. Politically neutral.
+Everyone talks about its offspring — the clever, narrow AI personalities.
+No one talks about MATILDA itself.
+Except, perhaps, yours truly. +
+Which is how I know it works.
+====
+
+<<<
+
+.GEICO and the Speed of Vapor
+====
+
+*Context:*
+At GEICO, I led the engineering of a distributed system built on Kotlin, React, Azure, and Kubernetes.
+It was the first in the org to follow trunk-based development, true prod-parity, and test-first delivery.
+
+*Conflict:*
+To ship cleanly, I had to rewrite the inherited DevOps pipelines — basic scaffolds that ignored security, violated contracts, and leaked PII.
+I refused to publish artifacts that didn’t meet _any_ meaningful production standard.
+
+Leadership didn’t see integrity. They saw delay.
+To them, shipping faster reduced _personal_ reputational risk.
+What got released — or what it broke — mattered less than when it shipped.
+
+The irony? The “DevOps transformation” had already been reported as complete.
+No one was allowed to admit that it wasn’t even started yet.
+
+*Decision:*
+I stayed the course.
+The components I built were held up as standards — so I used them to create archetypes for many other domains.
+We shipped in two variants: Kotlin and Java with Spring Boot, both with full documentation and production patterns.
+Workups diverged among domains, but the seed is planted.
+
+*Result:*
+The system shipped.
+It included defensive layers that absorbed misconfigurations from legacy Ops while remaining compliant with CNCF best practices.
+The hardest part wasn’t design — it was protecting good systems from inherited dysfunction.
+
+*Reflection:*
+I stay in close contact with GEICO’s technology officers.
+Surprisingly, alignment between policy and grassroots still pushes through a resistant middle. +
+Struggles continue.
+The mindset spreads — repo by repo.
+
+I still hear from engineers there — asking questions, seeking advice.
+I take engagements like this to better understand the problems of the American enterprise economy.
+And I keep learning.
+
+Like this:
+_When executives yield to the will of the collective without transparency, the result is always a runaway program._
+That _always_ can be proven. But only by looking _inside out_, not _outside in_.
+====
+
+.Mutual of Omaha and the Moment They Owned It
+====
+
+*Context:*
+ASE Inc. was contracted to provide the board a transformative roadmap — and then take the first domain team through their private journey.
+But by the time I arrived, transformation had already begun.
+
+*Approach:*
+Before our first workshop, teams were already meeting.
+Modeling. Sharing diagrams. Debating decisions.
+Tania’s framing of a “shared practice” had caught fire.
+I coached one team in DDD, pairing, CI/CD — not just the techniques, but the posture.
+They didn’t resist. They waited. Then they leaned in.
+
+*Turning Point:*
+One morning, I walked in to find them pairing without prompt, rewriting their own backlogs, and gently debating what “clean” really meant.
+They were drawing their own aggregates.
+Not because I asked — but because they needed to.
+
+*Result:*
+They no longer needed me to lead.
+Nor did the others.
+Within weeks, discovery workshops and architecture sessions were team-driven.
+This wasn’t mimicry. It was ownership.
+
+*Legacy:*
+Mutual of Omaha didn’t just buy a paper from ASE.
+They read it. Understood it. Adopted it.
+Especially the part about building a “virtual team” — the Community of Practice.
+
+That CoP grew from a few participants to over 40 contributors.
+Its repo, artifacts, and mindset became internal references.
+Leadership appreciated it. But more importantly, **the engineers owned it.**
+They didn’t just ship a better product.
+They shipped a better way of working.
+====
+
+<<<
+
+.Deutsche Bank and the Weight of Trust
+====
+
+*Context:*
+At Deutsche Bank, I was tasked with leading the architecture and delivery of dbECM
+— a global content and record system to serve 13 business domains, with 100% of enterprise content flowing through it.
+
+*Problem:*
+Most systems die from scope. This one had too much trust.
+It needed to scale across continents, survive infrastructure failures,
+and serve every team — without becoming a bottleneck.
+We couldn’t afford fragility, centralization, or dependency.
+
+*Solution:*
+We built dbECM as a self-healing, API-first,
+tenant-aware platform with governance and SDLC pipelines encoded at the root.
+Its test-first, domain-segmented architecture allowed each of the 56 apps onboarded to remain independent
+— while inheriting resilience.
+CI/CD wasn’t a layer. It was the operating principle.
+
+*Result:*
+dbECM became a global standard.
+It outlived political changes, infrastructure rotations, and platform shifts.
+We didn’t just build content storage.
+We built organizational memory — that didn’t depend on memory.
+
+*Legacy:*
+dbECM still runs. Quietly.
+Its architecture became a blueprint.
+Its fully automated ops became dbSDLC — a model for _all_ systems.
+Because its stability allowed teams to focus on business — not survival.
+Which, in the end, is what trust really means.
+====
+
+
+=== Core Lessons from the Field
+
+Tau and the Ledger of Trust::
+Even when the architecture holds, a system can still betray its original purpose. +
+*_Mission must outlast funding._*
+
+MATILDA and the Governance That Builds Itself::
+You can’t manage complexity through consensus — You govern it through design. +
+*_Structure is the real policy._*
+
+GEICO and the Speed of Vapor::
+In systems built on optics, integrity looks like delay. But holding the line builds foundations. +
+*_Restraint is an engineering discipline._*
+
+Mutual of Omaha and the Moment They Owned It::
+You can lead a team to the edge of change. But they have to take the step themselves. +
+*_Transformation is collaborative._*
+
+Deutsche Bank and the Weight of Trust::
+When you build something people can count on, they stop talking about it. +
+*_Trust is when systems disappear._*
+
+
+== What I Teach by Living
+
+* Code is conversation.
+* Architecture is trust.
+* Velocity is a trailing indicator of clarity.
+* The only thing that scales is how you think.
+
+I build systems that survive their first user.
+And teams that survive their first rewrite.

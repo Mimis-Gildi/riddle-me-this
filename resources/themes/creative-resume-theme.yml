@@ -1,6 +1,6 @@
 extends: default
 base:
-  font_size: 10
+  font_size: 9
   font_color: 111111
   line_height_length: 12
   font_style: normal
@@ -10,14 +10,17 @@ header:
   line-height: 1
   recto:
     center:
-      content: '+1 (919) 717-1387 | GitHub - https://github.com/Mimis-Gildi/riddle-me-this/[Latest Version] - https://github.com/rdd13r/[Author''s Profile]'
+      content: '+1 (919) 717-1387 | GitHub - https://github.com/Mimis-Gildi/riddle-me-this/[Latest Version] - https://github.com/rdd13r/[Author''s Profile] | https://www.linkedin.com/in/rdd13r/[Author''s LinkedIn]'
 footer:
   height: 0.6in
   line-height: 1
   recto:
     right:
       content: '{author} | Page {page-number} of {page-count}'
+    left:
+      content: 'v{revnumber}'
   verso:
     left:
-      content: '_Where excellence meets courage and teams are built to last._'
-
+      content: '_Truth is not what the system knows. It’s what the team learns by building it._'
+    right:
+      content: '{revision-date}'

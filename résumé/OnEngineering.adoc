@@ -1,6 +1,6 @@
 = VK: Engineering Resume
 Vadim Kuhay - mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com]
-v1.0, 2025-05-17
+:description: Vadim Kuhay is a polyglot software engineer, hands-on architect, and player-coach with 35 years of experience in fielding competitive software.
 :doctype: article
 :sectanchors:
 :sectlinks:

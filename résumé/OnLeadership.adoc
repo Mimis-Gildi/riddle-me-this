@@ -1,7 +1,7 @@
 = VK: Executive Resume
 Vadim Kuhay - mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com]
-v1.0, 2025-05-13
 :title-logo-image: image:ase+inc+transparent+logo.png[top=25%,align=center,pdfwidth=0.5in]
+:description: Vadim Kuhay is an executive coach, player-coach, polyglot software engineer, and entrepreneur.
 :doctype: article
 :sectanchors:
 :sectlinks:
