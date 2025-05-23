@@ -8,32 +8,7 @@ comments: true
 ---
 = ChatGPT & Job Loss - A 'Doze' of Reality
 rdd13r
-:description: Dispelling myths around ChatGPT and LLMs.
-:title-logo-image: image:ase+inc+transparent+logo.png[top=25%,align=center,pdfwidth=0.5in]
-:description: Dispelling myths around ChatGPT and LLMs.
-:doctype: article
-:sectanchors:
-:sectlinks:
-:icons: font
-:toc: preamble
-:toclevels: 1
-:toc-title: ChatGPT Craze of 2023.
-:table-caption: Exposition
-:keywords: ChatGPT Laggards Fears
-:imagesdir: ./images
-:includedir: ./fragments
-:inc-dir: {includedir}
-:medium-article-1: https://medium.asei.systems/chatgpt-job-loss-a-doze-of-reality-589637e91457
-
-[TIP]
-.Editorial Note on published material.
-====
-This article is published on Medium.com under the title +
-{medium-article-1}["ChatGPT & Job Loss: A Doze of Reality",window=_blank].
-
-Bellow is the version that I had written without publisher's edits. +
-I.e., what I was really meaning to say.
-====
+:medium-article-1: https://medium.asei.systems/chatgpt-job-loss-a-doze-of-reality-589637e91457["ChatGPT & Job Loss: A Doze of Reality",window=_blank]
 
 Since this is my first post, let me introduce myself and address a burning question: Are we all about to lose our jobs to AI like ChatGPT? I am https://github.com/rdd13r[rdd13r], a hacker in the true sense - a creative problem solver. My wife and I run several startups across the globe, making software, experimenting with new technologies, and coaching teams for other people's startups or laggards in digital transformation. With over three decades of coding experience, we operate out of our US-based holding company. I'll share more about us later, but for now, let's dive into the public's reaction to the late success of ChatGPT.
 
@@ -90,3 +65,4 @@ AI is the next greatest leap forward for humanity, greater than nuclear power an
 
 As with the hacker scare during Kevin Mitnick's era, the fear surrounding ChatGPT and AI is mostly a result of misinformation, lack of understanding, and bad behavior from popular figures. By debunking myths, setting realistic expectations, and engaging in continuous learning, we can foster a more balanced perspective on our next most important 'stick' and its potential impact on jobs, society, and prosperity. So, head on over to OpenAI's website (https://www.openai.com/) and blog (https://www.openai.com/blog/) to explore and learn for yourself. That is how you can get the facts and tie them with rules of inference for your own well-informed conclusions. Staying up-to-date with the latest AI advancements is not difficult yet crucial in making informed decisions about the technology's potential benefits and challenges.
 
+_See on Medium {medium-article-1}._
