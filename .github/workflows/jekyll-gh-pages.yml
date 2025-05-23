@@ -1,8 +1,10 @@
-name: Build and Deploy Custom Jekyll
+name: Build and Deploy Jekyll Site
 
 on:
   push:
-    branches: ["**"]
+    branches:
+      - main
+      - '10-*'
   workflow_dispatch:
 
 permissions:
@@ -22,30 +24,35 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
+
+      - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.3.5  # or your version
+          ruby-version: 3.3.5
           bundler-cache: true
+          working-directory: site
 
       - name: Install dependencies
         run: bundle install
+        working-directory: site
 
-      - name: Build site with Jekyll
-        run: bundle exec jekyll build
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --source site --destination site/_site
+        working-directory: site
 
-      - name: Upload artifact
+      - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: site/_site
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
-        id: deploy
+        id: deployment
         uses: actions/deploy-pages@v4
