@@ -1,10 +1,13 @@
 ---
 categories: [reflections,populism]
 tags: [LLMs]
+excerpt: >
+  A grounded perspective on the AI job loss panic sparked by ChatGPT, written by a seasoned engineer.
+  Dispels hype, explains LLMs clearly, and compares today’s fears to past tech hysteria.
+comments: true
 ---
 = ChatGPT & Job Loss - A 'Doze' of Reality
 rdd13r
-:page-comments: true
 :description: Dispelling myths around ChatGPT and LLMs.
 :title-logo-image: image:ase+inc+transparent+logo.png[top=25%,align=center,pdfwidth=0.5in]
 :description: Dispelling myths around ChatGPT and LLMs.
