@@ -1,0 +1,241 @@
+github                      : [metadata]
+
+# Site Metadata
+title                       : "Vadim Kuhay"
+subtitle                    : "<i>Creative Engineering at Scale</i>"
+title_separator             : " - "
+description                 : "Creative engineering work and resume of Vadim Kuhay."
+email                       : "rIdd13r@pm.me"
+url                         : "https://mimis-gildi.github.io"
+baseurl                     : "/riddle-me-this"
+github_username             : "Mimis-Gildi"
+twitter_username            : ""
+
+# Theme and Styling
+remote_theme                : "mmistakes/minimal-mistakes"
+#minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin       : "air"
+sass:
+  quiet_deps                : true
+
+
+
+# Plugins
+plugins:
+  - jekyll-asciidoc
+  - jekyll-data
+  - jekyll-feed
+  - jekyll-remote-theme
+  - jekyll-paginate-v2
+  - jekyll-include-cache
+
+
+
+# Pagination defaults
+pagination:
+  enabled                   : true
+  per_page                  : 10
+  permalink                 : '/page/:num/'
+  title                     : ':title - page :num'
+
+
+
+# Defaults for posts (when you start adding them) and pages
+defaults:
+  - scope:
+      path                  : ""
+      type                  : posts
+    values:
+      layout                : single
+      author_profile        : true
+      read_time             : true
+      comments              : false
+      share                 : true
+      related               : true
+  - scope:
+      path                  : ""
+      type                  : pages
+    values:
+      author_profile        : false
+
+
+
+# Reading Files
+include:
+  - _pages
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - README.md
+keep_files:
+  - .temp
+encoding                    : "utf-8"
+
+
+
+# Site root Author
+author:
+  name                      : "Vadim Kuhay"
+  avatar                    : "/assets/images/dadar-medallion.jpg"
+  bio                       : "A humble system designer, team builder, and player-coach"
+  location                  : "On the Scene"
+  email                     : "rIdd13r@pm.me"
+  links:
+    - label                 : "GitHub Home"
+      icon                  : "fab fa-fw fa-github"
+      url                   : "https://github.com/rdd13r"
+    - label                 : "LinkedIn"
+      icon                  : "fab fa-fw fa-linkedin"
+      url                   : "https://www.linkedin.com/in/rdd13r"
+    - label                 : "Company Website"
+      icon                  : "fas fa-fw fa-link"
+      url                   : "https://asei.systems"
+    - label                 : "Medium Publishing"
+      icon                  : "fab fa-fw fa-medium"
+      url                   : "https://medium.com/@rdd13r"
+      description           : "My Medium publishing page. Some of my writings are here."
+    - label                 : "Mastodon Placeholder"
+      icon                  : "fab fa-fw fa-mastodon"
+      url                   : "https://me.dm/@rdd13r"
+
+
+
+# Site Settings
+locale                      : "en-US"
+rtl                         : false
+name                        : "Vadim Kuhay - adventures and reflections"
+repository                  : "Mimis-Gildi/riddle-me-this"
+teaser                      : "/assets/images/banner.png"
+logo                        : "/assets/images/button_300_300.jpg"
+masthead_title              : "adventures in ..." # use " " for no title
+breadcrumbs                 : true
+words_per_minute            : 300
+enable_copy_code_button     : true
+compress_html               : true
+
+copyright                   : "© Vadim Kuhay; 2022–2025"
+copyright_url               : "https://mimis-gildi.github.io/riddle-me-this"
+
+
+
+# My general footer...
+footer:
+  links:
+    - label: "GitHub Root Org"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Mimis-Gildi"
+    - label: "Discussions"
+      icon: "fas fa-fw fa-comments"
+      url: "https://github.com/Mimis-Gildi/riddle-me-this/discussions"
+    - label: "ASE Inc."
+      icon: "fas fa-fw fa-building"
+      url: "https://asei.systems"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/rdd13r"
+    - label: "Fingerprint"
+      icon: "fas fa-fw fa-fingerprint"
+      url: "/riddle-me-this/assets/images/button_300_300.jpg"
+
+
+
+# I'm using GitHub for my comments
+comments:
+  provider                  : utterances
+  utterances:
+    theme                   : # "github-light" (default), "github-dark"
+    issue_term              : # "pathname" (default)
+    repo                    : "Mimis-Gildi/riddle-me-this"   # your public GitHub repo
+    label                   : "💬 comments"
+
+
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/my-awesome-category/index.html ~> path: /
+category_archive:
+  type                      : jekyll-archives
+  path                      : /categories/
+tag_archive:
+  type                      : jekyll-archives
+  path                      : /tags/
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category                : archive-taxonomy
+    tag                     : archive-taxonomy
+  permalinks:
+    category                : /categories/:name/
+    tag                     : /tags/:name/
+
+
+
+# Using feeds and at least I check
+atom_feed:
+#  path                      : /feed.xml
+  hide                      : false
+
+
+
+# All my Search Ideas
+search                      : true
+search_full_content         : true
+search_provider             : lunr
+lunr:
+  search_within_pages       : true
+# algolia is available, but I will not use it for now
+#algolia:
+#  application_id            : # pulled from secret - YOUR_APPLICATION_ID
+#  index_name                : # can be open - YOUR_INDEX_NAME
+#  search_only_api_key       : # pulled from secret - YOUR_SEARCH_ONLY_API_KEY
+#  powered_by                : # true (default), false
+# we will never use this! but...
+#google:
+#  search_engine_id          : # YOUR_SEARCH_ENGINE_ID
+#  instant_search            : # false (default), true
+
+
+
+# Social Sharing
+og_image                    : /assets/images/banner.jpg
+social:
+  type                      : Person
+  name                      : Vadim Kuhay
+  links:
+    - https://github.com/rdd13r
+    - https://www.linkedin.com/in/rdd13r
+
+
+
+
+
+#ToDos: One Day - decision (and a story) pending
+# SEO Related
+#google_site_verification  :
+#bing_site_verification    :
+#naver_site_verification   :
+#yandex_site_verification  :
+#baidu_site_verification   :
+
+# Analytics
+#analytics:
+#  provider                : # false (default), "google", "google-universal", "google-gtag", "custom"
+#  google:
+#    tracking_id           :
+#    anonymize_ip          : # true, false (default)
+
+

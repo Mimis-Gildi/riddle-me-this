@@ -1,0 +1,26 @@
+---
+author: Vadim Kuhay
+permalink: /
+layout: home
+excerpt: "Engineering reflections on adventures of one [random](https://en.wikipedia.org/wiki/J._Random_Hacker \"On J Random Hacker\"){:target=\"_blank\"} hacker."
+header:
+  overlay_image: /assets/images/banner.png
+  overlay_filter: 0.4
+  caption: "Systems are stories that run."
+#  actions:
+#    - label: "Read My Résumé"
+#      url: "/resume/"
+#    - label: "Engineering Lessons"
+#      url: "/lessons/"
+classes: wide
+---
+
+I'm a humble system designer, team builder, and player-coach. +
+This is my curated space for engineering fragments, field-tested insights,
+artifacts, reflections, and fun stories from the scene.
+
+
+ Architecture is trust.
+ Code is conversation.
+ Velocity comes from clarity.
+

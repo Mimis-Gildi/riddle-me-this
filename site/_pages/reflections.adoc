@@ -1,0 +1,23 @@
+= Reflections
+:page-layout: single
+:page-permalink: /reflections/
+
+_Reflections_ is the context group where I slow down and take the long way home.
+
+Here I gather personal notes, retrospective takes, and meaning-making fragments
+from the systems I’ve lived through — or helped bring to life.
+
+These aren’t tutorials. They’re _interpretations_.
+Sometimes poetic, sometimes technical, always honest.
+
+The only exception is the *populism* fragment —
+a reflection on one or another public craze.
+
+You can explore the full archive of link:/riddle-me-this/categories/reflections/[Reflections] +
+Or browse all link:/riddle-me-this/categories/populism/[Populism-related posts].
+
+== Curated List of Reflections
+
+_There are, of course, favorites._
+
+* ToDo

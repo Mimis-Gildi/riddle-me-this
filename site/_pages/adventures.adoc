@@ -1,0 +1,26 @@
+= Adventures
+:page-layout: single
+:page-permalink: /adventures/
+
+_Adventures_ is where the work takes form — in the field, in the code, in the culture.
+
+These stories come from a lifetime of making systems for humans, machines, and the space in between.
+Some are tales of hard-won production deployments.
+Others are snapshots of transformation: a team that leveled up, a policy that finally landed, a system that refused to die quietly.
+
+They are not case studies.
+They are _narratives with teeth_.
+
+You’ll find no sanitized slide decks here — only work done under pressure,
+in motion, and sometimes under duress.
+
+When names are changed, it’s not to obscure the truth —
+it’s to protect the living systems that still run, and the people still inside them.
+
+link:/riddle-me-this/categories/adventures/[Browse the full archive of Adventures].
+
+== Selected Field Notes
+
+_The ones that still echo._
+
+* ToDo

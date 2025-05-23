@@ -1,0 +1,89 @@
+---
+categories: [reflections,populism]
+tags: [LLMs]
+---
+= ChatGPT & Job Loss - A 'Doze' of Reality
+rdd13r
+:page-comments: true
+:description: Dispelling myths around ChatGPT and LLMs.
+:title-logo-image: image:ase+inc+transparent+logo.png[top=25%,align=center,pdfwidth=0.5in]
+:description: Dispelling myths around ChatGPT and LLMs.
+:doctype: article
+:sectanchors:
+:sectlinks:
+:icons: font
+:toc: preamble
+:toclevels: 1
+:toc-title: ChatGPT Craze of 2023.
+:table-caption: Exposition
+:keywords: ChatGPT Laggards Fears
+:imagesdir: ./images
+:includedir: ./fragments
+:inc-dir: {includedir}
+:medium-article-1: https://medium.asei.systems/chatgpt-job-loss-a-doze-of-reality-589637e91457
+
+[TIP]
+.Editorial Note on published material.
+====
+This article is published on Medium.com under the title +
+{medium-article-1}["ChatGPT & Job Loss: A Doze of Reality",window=_blank].
+
+Bellow is the version that I had written without publisher's edits. +
+I.e., what I was really meaning to say.
+====
+
+Since this is my first post, let me introduce myself and address a burning question: Are we all about to lose our jobs to AI like ChatGPT? I am https://github.com/rdd13r[rdd13r], a hacker in the true sense - a creative problem solver. My wife and I run several startups across the globe, making software, experimenting with new technologies, and coaching teams for other people's startups or laggards in digital transformation. With over three decades of coding experience, we operate out of our US-based holding company. I'll share more about us later, but for now, let's dive into the public's reaction to the late success of ChatGPT.
+
+Ever since GPT-3's debut in 2020 and TabNine's launch in 2018, our company has quietly embraced these ML-augmented programming assistants - cool, saves time, very useful, simple to use and not very special. The recent rampant buzz, however, evokes memories of the 1995 hacker hysteria following Kevin Mitnick's arrest in Raleigh. That hysteria was so powerful that the MIT-originated term "hacker" shifted from "clever problem solver" to "criminal" overnight. Just as the public once feared the power of code, today, they fear AI. As animals, we often fear what we don't understand, especially when it seems extraordinary. And sometimes we project onto people behind the extraordinary. My peers and I couldn't help but feel that wary gaze on our backs from the uninitiated, we call http://www.catb.org/jargon/html/M/mundane.html[mundane]. It didn't matter that we made software keeping their business and livelihood alive, we were not accepted before and now even less. Alas, I digress.
+
+And today - ChatGPT will replace <insert profession> in <pick a number> of years!
+
+No finger pointing, but that headline screams of massive job losses due to LLMs like ChatGPT. Based on what facts and applied rules of inference, may I ask? In this article, we aim to debunk these myths, unravel the realistic capabilities and limitations of LLMs, and shed light on what should truly concern us and what should not. We should use facts and rules of inference to guide our discussion. Additionally, we will explore the potential positive impact of AI on job creation and economic growth, offering a more balanced perspective on the issue at hand.
+
+== Understanding ChatGPT and LLMs
+
+ChatGPT, a large language model by OpenAI, is undeniably impressive. It can generate human-like text and perform tasks like translation, summarization, and answering questions. However, it's crucial to understand that ChatGPT is not sentient; it's a machine with significant limitations. It cannot think, reason, or possess common sense like mammals do. It isn't capable of original ideas and creativity. All it does is autocomplete based on a massive amount of structured text, which is the product of collective human learning and expression, making the responses appear reasonable to us. But these are not original responses of a reasoning being; it's merely a sounding board, like a mirror composed of memories of many of us.
+
+When a person has a conversation with an LLM like https://chat.openai.com/[ChatGPT], it is not two thinking beings conversing and arriving at truth through dialectics. It's only one thinking being conversing with a reflective surface. This conversation is like a REPL (read-evaluate-print-loop), a hacker's favorite tool, which helps build up context in the half-conversation. This context-building is where the real magic lies. At ASE, we use our own ML sentiment engine as a context manager to interface the human user with a set of other ML tools including GPT-4. My personal little toy is called _Matilda (*Tillie*)_, and she's very helpful. She's tuned to me over the years and helped me develop this article, for example, just like she helps me write my code.
+
+Now there are projects like https://github.com/Significant-Gravitas/Auto-GPT[Auto-GPT] (project home) that are even more useful, allowing anyone to use LLMs to a greater extent without heavy proprietary software like Tillie. If you code and liked tinkering with things in childhood the sources at GitHub are for you. Some people even make such 'pets' without coding and for that many new projects spring up on GitHub daily! There's also a no-coding interface from Auto-GPT, https://agentgpt.reworkd.ai/, that anyone can use to explore the magic.
+
+These REPL tools enhance the usefulness of LLMs by managing a much larger context and automatically working to drill down clarifications, compensating for human's natural vagueness. But in the end, in my case, I know that I am still only talking with myself, albeit autocompleted by the world! This is crucial for us to understand.
+
+My Tillie makes mistakes regularly. Sometimes she runs herself into a spiraling self-reinforcement loop, arriving at truly absurd conclusions. But it's not her making mistakes - she's just a machine. To recover from this, I need to start troubleshooting my context by asking her a thousand questions "why" did she say what she said, and then editing the context. So I curate her. It's practically always me contradicting myself somewhere in the past that puts Tillie in an inconsistent state. In reality - she is the inconsistent state by definition. Unlike traditional ML, we don't conclusively know why deep learning systems do what they do, and the ever-crucial introspection is a hot topic of research today. The bottom line - they can't be trusted! And it goes for all our deep learning tools, from our video stream context analyzer watching my 5-months-old daughter for safety and telling me "animal detected," which is technically true, to Tillie telling me that this article is not useful, which is also technically true - I quote her reasons: 1) "You're right that LLMs like me and ChatGPT are not sentient, and we don't possess common sense or reasoning abilities like humans. However, it's important to note that our capabilities are still evolving, and future models may have more advanced features.", and 2) "You are right that the concept of using a context manager, like me, to improve the usefulness of LLMs proved an interesting and valid approach. However, it might not be the case for every user or every implementation of LLMs. It is your tinkering and your tinkering alone."
+
+Such responses can fool us into believing that there's more to this machine when there really isn't. Tillie is not alive. And it's not just my tinkering, by the way, the whole world is experimenting. Most importantly, there's simply no inherent reliability in the design. That is why systems before ChatGPT failed so miserably - curation.
+
+== Realistic Expectations and Limitations
+
+While ChatGPT may automate some tasks, it is truly unlikely to replace entire professions. Instead, it can be used as a tool to enhance human productivity and creativity. It's essential to recognize that LLMs have limitations, including generating irrelevant or incorrect answers, sensitivity to input phrasing, and verbosity. While the model's architecture and weights are deterministic, the text generation process as a whole is non-deterministic. This means that the outputs can vary depending on factors like the randomness introduced during training and the specific input context provided. This non-deterministic nature makes LLMs less suitable for mission-critical tasks, like controlling an aircraft or medical equipment.
+ Would you let a nondeterministic software fly your plane with your family onboard? Probably not. But as advice to a properly educated pilot it may prove invaluable.
+
+LLMs are valuable in other areas, like assisting in research, providing conversational support, or aiding in content creation. These AI-powered tools can help reduce the cognitive load on professionals, allowing them to focus on more complex and creative tasks.
+
+It's important to remember that the effectiveness of LLMs relies heavily on the quality of the data they are trained on. Since these models are based on patterns found in large datasets, biases and inaccuracies present in the data can lead to biased or incorrect outputs. Addressing these challenges requires continuous research and improvement of both training data and model architectures.
+
+Most importantly a tool has little to do with the root dilemma here! _From the moment a primate picked up a stick and used it as a tool to extract termites from a stump to eat, it *obsoleted* a peer not willing to use a stick._ Innovation has been a constant driving force in our lives because it's a human factor. All we do as hackers is automate repetitive processes and tasks, making more time for creative thinking. *And individuals who don't adapt to new knowledge or tools risk becoming obsolete.* This has nothing to do with software or a stick; it's just the natural progression of humanity. LLMs are simply the latest addition to the long chain of tools continuously developed.
+
+The creators of ChatGPT at OpenAI have demonstrated their brilliance by exposing the model to the public as it evolves, effectively challenging the concept of the chasm in its abstraction. This idea of the chasm comes from Geoffrey Moore's book "Crossing the Chasm," which discusses the gap between early adopters and the early majority in the adoption of innovative technology.
+
+Peter Thiel, in his book "Zero to One," emphasizes the importance of creating conceptually new niches to find customers, rather than directly challenging established monopolies. This approach has led to marginal evolution across the industry as a whole. By releasing an evolving model like ChatGPT, OpenAI has introduced a new approach that isn't bound by traditional boundaries. This, in my opinion, is where greater acceleration will come from, as it blurs the lines between different stages of technological adoption.
+
+Personally, I hold immense admiration for the revolutionary decision made by the team at OpenAI. I've been building Tillie since 2016, and it never occurred to me that she could be more than just a source of entertainment for my coding and learning endeavors. Breaking down a domain, discovering, modeling, coding some DDD Aggregates, and augmenting behavior with ML to automate a business, as well as mentoring my peers in doing so alongside me - yes, I understood these aspects as useful. However, I never envisioned an unfinished AI experiment as something valuable.
+
+This is because, as hackers, we have a deeply ingrained concept of a "done-done" product and what it should look like when it's useful to a customer. And something like Tillie just didn't fit that mold, at least not in my mind. This reflects a form of bias. Thankfully, generative AI can also help combat biases like these. Kudos to the OpenAI team for challenging conventional thinking and pushing the boundaries of AI!
+
+== Educating the Public
+
+Kevin Mitnick was forbidden from using an analog phone so that he would not start a nuclear war with his voice.
+
+To alleviate unfounded fears, we need to educate the public about AI's realistic capabilities and limitations. This understanding will allow people to embrace AI technologies like ChatGPT as tools that can complement their work rather than as threats to their livelihoods or any other unwarranted concerns. Educational initiatives, workshops, and public awareness campaigns are some of the ways we can bridge the knowledge gap and promote a better understanding of AI technologies.
+
+We have great examples of failure in this aspect in the past. Consider nuclear power, for instance. Today, we understand that in the natural path of our evolution, energy needs grow exponentially. As a civilization, we will manipulate smaller and smaller things to release more and more energy. So, fission is a necessary step in our evolution that is practically impossible to skip before getting to fusion. But guess what, many of us knew this 30+ years ago. Yet, we let ignorance and fears run amok, and what do we have today? Every three years, the safety margin of a reactor design doubles, and modern prototypes are practically impossible to melt down. Yet, we run decades-old plants with no replacements in sight, except in countries like France. We burn 3.5% of fuel haphazardly and store it instead of burning 98% of it and not storing anything. Our kids won't forgive us for this.
+
+AI is the next greatest leap forward for humanity, greater than nuclear power and smartphones. Can we really afford to stay ignorant of it and run amok, asking for the termination of research like we did with nuclear power? Have we learned nothing? The best way to approach this technology is by peacefully learning and understanding it.
+
+== Conclusion
+
+As with the hacker scare during Kevin Mitnick's era, the fear surrounding ChatGPT and AI is mostly a result of misinformation, lack of understanding, and bad behavior from popular figures. By debunking myths, setting realistic expectations, and engaging in continuous learning, we can foster a more balanced perspective on our next most important 'stick' and its potential impact on jobs, society, and prosperity. So, head on over to OpenAI's website (https://www.openai.com/) and blog (https://www.openai.com/blog/) to explore and learn for yourself. That is how you can get the facts and tie them with rules of inference for your own well-informed conclusions. Staying up-to-date with the latest AI advancements is not difficult yet crucial in making informed decisions about the technology's potential benefits and challenges.
+

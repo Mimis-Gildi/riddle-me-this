@@ -9,18 +9,34 @@
 :!toc:
 :keywords: acknowledgements
 ifdef::env-name[:relfilesuffix: .adoc]
+:adoc: https://asciidoctor.org/[Asciidoctor]
+:adoc-issues: https://github.com/asciidoctor/asciidoctor/issues[Asciidoctor Issues]
+:adoc-docs: https://docs.asciidoctor.org/[Asciidoctor Documentation Site]
+:adoc-guide: https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer’s Guide]
+:adoc-gradle: https://asciidoctor.org/docs/asciidoctor-gradle-plugin/[Asciidoctor Gradle Plugin]
+:adoc-gradle-sources: https://github.com/asciidoctor/asciidoctor-gradle-plugin[GitHubAsciidoctor Gradle Plugin]
+:gradle: https://gradle.org/[Gradle Build Tool]
+:adoc-gradle-all: https://asciidoctor.github.io/asciidoctor-gradle-plugin/development-3.x/[Asciidoctor Gradle Plugin Suite]
+:mm-configuration: https://mmistakes.github.io/minimal-mistakes/docs/configuration/[Minimal Mistakes Configuration]
+:mm-layout: https://mmistakes.github.io/minimal-mistakes/docs/layouts/[Minimal Mistakes Layouts]
+:mm-theme: https://mmistakes.github.io/minimal-mistakes/[Minimal Mistakes Theme]
 
 NOTE: These references apply to *all* learning resources and practices used in the creation of this artifact.
 
 
-* https://asciidoctor.org/[Asciidoctor]
-* https://github.com/asciidoctor/asciidoctor/issues[Asciidoctor Issues]
-* https://docs.asciidoctor.org/[Asciidoctor Documentation Site]
-* https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer’s Guide]
-* https://asciidoctor.org/docs/asciidoctor-gradle-plugin/[Asciidoctor Gradle Plugin]
-* https://github.com/asciidoctor/asciidoctor-gradle-plugin[Asciidoctor Gradle Plugin Source Code]
-* https://gradle.org/[Gradle Build Tool]
-* https://asciidoctor.github.io/asciidoctor-gradle-plugin/development-3.x/[Asciidoctor Gradle Plugin Suite v3.1.0]
+* {adoc} - publishing language here.
+* {adoc-issues} - bugs and fixes.
+* {adoc-docs} - documentation.
+* {adoc-guide} - invaluable.
+* {adoc-gradle} - built with.
+* {adoc-gradle-sources} - sources.
+* {gradle} - definition of this artifact.
+* {adoc-gradle-all} - suite (v3.1.0).
+
+Key Site References::
+* {mm-configuration} - the Jekyll theme for Minimal Mistakes.
+* {mm-layout} - Minimal Mistakes layout documentation.
+* {mm-theme} - Minimal Mistakes documentation site.
 
 == Content Acknowledgements
 
@@ -31,3 +47,4 @@ NOTE: These references apply to *all* learning resources and practices used in t
 == Service Acknowledgements
 
 * https://chatgpt.com/[ChatGPT 4x]
+
