@@ -4,8 +4,8 @@ Vadim Kuhay
 :page-layout: home
 :page-classes: wide
 :page-header: { overlay_image: /assets/images/banner.png, overlay_filter: 0.1, caption: "Systems are stories that run." }
-:page-excerpt: "Engineering reflections on adventures of one [random](https://en.wikipedia.org/wiki/J._Random_Hacker \"On J Random Hacker\"){:target=\"_blank\"} hacker."
-:page-pagination-enabled: true
+:page-excerpt: Engineering reflections on adventures of one random hacker.
+:page-pagination: { enabled: true, per_page: 3 }
 
 I'm a humble system designer, team builder, and player-coach. +
 This is my curated space for engineering fragments, field-tested insights,
