@@ -33,12 +33,12 @@ jobs:
           working-directory: site
 
       - name: Install dependencies
-        run: bundle install
         working-directory: site
+        run: bundle install
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build --source site --destination site/_site
         working-directory: site
+        run: bundle exec jekyll build
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
