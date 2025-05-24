@@ -1,0 +1,108 @@
+---
+categories: [adventures,adaptation]
+tags: [Multimodal,Hard-Truths,Academia,MATILDA]
+excerpt: >
+  First indication of Multimodal-Revolution.
+comments: true
+---
+= LLMs: Projected Market Exit of Established Relations-Based Companies
+rdd13r
+:keywords: AI, Sentiment Analysis, Large Language Models, Innovation
+:fn-gartner-ai-job-trends: footnote:[Gartner: https://www.gartner.com/en/information-technology/trends/top-technology-trends-ai-trends-gb-pd[Gartner's 2023 Top Strategic Technology Trends]]
+:fn-oecd-ai-impact: footnote:[Milanez, A. (2023), "The impact of AI on the workplace: Evidence from OECD case studies of AI implementation", OECD Social, Employment and Migration Working Papers, No. 289, OECD Publishing, Paris, https://doi.org/10.1787/2247ce58-en.]
+:fn-industries-ai-adaptation: footnote:[AI Multiple; Cem Dilmegani; April 11, 2022. https://research.aimultiple.com/intelligent-automation-in-insurance/[Intelligent Automation in Insurance 2023: Use Cases & Examples]]
+:fn-case-study-data: footnote:disclaimer[The model run data is proprietary to ASE Inc. The model can be rerun and the execution output can be purchased with any customer's specific weights and parameters]
+:fn-llms-training: footnote:[AI Multiple; Cem Dilmegani; February 3, 2023. https://research.aimultiple.com/large-language-model-training/[Large Language Model Training in 2023]]
+:fn-sentiment-analysis: footnote:[Google Cloud - https://cloud.google.com/natural-language/docs/analyzing-sentiment[Analyzing Sentiment]]
+:fn-collaborative-business: footnote:[Academy of Management Perspectives, Vol36, no.4 https://journals.aom.org/doi/10.5465/amp.2021.0195?ai=vub3&ui=5j5u&af=T[Collectivist Perspectives on Collaborative Business Relationships]]
+:medium-article-3: https://medium.asei.systems/llms-oracle-or-plausible-bull-over-collective-bias-faff9fce1c99[LLMs: Oracle or Plausible Bull?,window=_blank]
+:previous-article: /riddle-me-this/reflections/populism/2023/05/11/chatGPT-omen-new-era.html[previous article]
+
+In this article, we will delve into the fascinating outcomes of a sentiment analysis test conducted by our subsidiary.
+_We had a good laugh from this output, and we hope that you will too!_
+
+We joined a group of five other developers to help them complete a small ML project for a local healthcare conglomerate (and university).
+This article is based on the insights gleaned from an independent preproduction test runs.
+In the link:{previous-article}, I discussed how AI advancements could potentially streamline, and in some cases,
+eliminate various job roles, particularly those with repetitive tasks{fn-gartner-ai-job-trends}{fn-oecd-ai-impact}.
+Here, we are tasked to explore the transformation of established industries as they adapt to advancements in AI.
+We focus specifically on how innovation and adaptability can lead to the inevitable demise of companies that overly rely on longstanding,
+and in some cases, crony business relations.
+But of course, _a major health provider studying health insurance industry dynamics is as predictable as it gets._
+
+Machine take was as expected -- `this fixture` _was not_ properly parametrized to this type of sentiment analysis.
+
+We already know that companies embracing innovation and cultivating a culture of continuous learning are better positioned for the future.
+One interesting revelation from our test is the potential for AI to disrupt sectors with long-standing market presences, such as the health insurance industry.
+I will share some insights and thoughts on how these industries can navigate this transformation based on the aforementioned preproduction run.
+
+So, in short, this innovation can reshuffle the job market.
+Similarly, "can AI-born automation kill health insurance companies?"
+The short answer is _absolutely **yes**_!
+
+== Demystifying LLMs' Predictive Capabilities
+
+LLMs, or Large Language Models, use a form of autocomplete, drawing from extensive datasets to identify the most plausible response based on patterns and probabilities{fn-llms-training}.
+This makes LLMs particularly adept at automated sentiment analysis, as they can effectively gauge public sentiment by analyzing vast amounts of data.
+This capability has been employed for over a decade in various applications such as content recommendation algorithms on platforms like YouTube.
+However, advancements in AI, like PaLM2 and GPT-4, have exponentially increased the potential of sentiment analysis and user profiling.
+This democratized capability likely has direct implications for business strategy.
+
+_In layperson's terms, if the model is trained on all the college papers,
+then the paper it produces when asked is a "C" grade paper because that is the most probable path based on the training dataset._
+This is an important point to understand about the nature of LLMs.
+
+== Insights into Established Industries' Adaptations or Otherwise
+
+The health insurance industry serves as a relevant case study and the necessary fixture is much easier to set up than for neighboring industries.
+Established industries have historically relied on longstanding relationships and collaborations for success{fn-collaborative-business}, and these are foundational elements in establishing a business strategy.
+These relationships, often built on trust, shared values, and mutual benefits, are now being threatened by innovative startups using AI to deeply analyze customer preferences and *_market dynamics_*.
+
+This deep analysis is especially effective in scrutinizing longstanding relationships and revealing inefficiencies and cronyism.
+The AI-driven analysis offers startups an edge in understanding weaknesses, failure, and inflection points of the incumbents, leading to more effectively catering to consumer needs openly.
+In some cases, exposing these ties can lead to public dissatisfaction and even criminal charges.
+That is a significant reputation risk.
+Essentially, large accounts can be easily intercepted by technology-enabled startups, offering unchallenged incentives and rendering incumbent relationships unsustainable and risk-laden.
+
+However, this doesn't imply that traditional relationships are valueless.
+It highlights the necessity of integrating new technologies to enhance service delivery and competitiveness within the existing social business structure.
+Leveraging AI for personalized, efficient, and transparent services can reinforce trust and value in customer relationships.
+Importantly, the test reveals that the market outcome - reduced healthcare cost through a more democratic and open process - is beneficial for the end user regardless of which entity undertakes the innovation.
+
+_In layperson's terms, the model thinks that the insurance domain is absolutely crony and that this will be the incumbent's undoing._ This is where we had a good chuckle.
+Please keep in mind how the model works.
+
+Interestingly, the test concludes that the new open market dynamic is inevitable.
+The greatest factor influencing the pace of market adaptation is not any changes in laws or startup incentives, but the adaptability of the incumbent.
+The more dated the technology culture of the incumbent, the faster the market adapts without it.
+
+== Conclusion
+
+As AI technologies such as LLMs become integral, established industries must innovate to maintain relevance and competitiveness.
+Immature as AI technology currently is, it is still effective not only at profiling the customer but also at profiling the competition.
+Companies that recognize the importance of innovation, adaptability, and continuous learning will be better positioned to thrive and survive this disruption.
+The democratization of AI is changing market dynamics in favor of the consumer.
+That is a win!
+
+Striking a balance between leveraging new technologies and nurturing established relationships will be key, possibly leading to new business names and structures.
+Businesses can yet use AI not just as an auxiliary tool, but as a catalyst for enhancing service delivery, understanding customer needs,
+assessing *_subjective_* market factors, and building stronger, more sustainable relationships at all levels.
+
+I encourage open discourse on this topic.
+Please share your thoughts, opinions, or experiences regarding the adaptation and innovation within established industries in the context of AI advancements.
+Does the emergence of AI sentiment analysis as a key tool for overcoming relational subjectivity come as a surprise to you?
+Is the machine's forecast for the imminent demise of the old guard for the new unexpected?
+What else can LLMs foretell?
+
+Keep in mind that this is not a competent case study executed by human analysts but just a predictive analytics machine test run, albeit a strong machine.
+
+== Publishing Data
+
+The market is booming with requests for LLM deployments, and engineers are happy to oblige.
+But is there value in the analysis generated by these models, or is it all just "plausible bull"?!
+
+I'd like to share surprising results from a production AI LLM analytics test run deployment.
+The machine predicts imminent doom and gloom while forming an opinion about the state of an industry.
+This output, generalized for the article, seems to put things in perspective regarding the type of advice the AI is able to produce commercially.
+
+_See on Medium {medium-article-3}_.

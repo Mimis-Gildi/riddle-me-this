@@ -10,6 +10,8 @@ layout: home
 ---
 = Vadim Kuhay
 Vadim Kuhay
+:alt-product: /riddle-me-this/reflections/populism/2023/05/08/chatGPT-will-replace.html[1]
+:alt-competence: /riddle-me-this/reflections/populism/2023/05/11/chatGPT-omen-new-era.html[1]
 
 I'm a humble system designer, team builder, and player-coach.
 
@@ -22,3 +24,12 @@ reflections, and adventurous stories from the scene.
  Code is conversation.
  Velocity comes from clarity.
 
+Join me to discover the real trends of "tomorrow." Such as:
+
+
+- 2023-2025: The Real Industrial Revolution!
+- 2023: Hardware wall forces us *_to competence_* turning the full cycle.
+link:{alt-competence}
+- 2023: OpenAI didn't revolutionize AI.
+It revolutionized the meaning of *_'product.'_*
+link:{alt-product}
