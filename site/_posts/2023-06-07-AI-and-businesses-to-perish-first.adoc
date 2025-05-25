@@ -16,7 +16,7 @@ rdd13r
 :fn-sentiment-analysis: footnote:[Google Cloud - https://cloud.google.com/natural-language/docs/analyzing-sentiment[Analyzing Sentiment]]
 :fn-collaborative-business: footnote:[Academy of Management Perspectives, Vol36, no.4 https://journals.aom.org/doi/10.5465/amp.2021.0195?ai=vub3&ui=5j5u&af=T[Collectivist Perspectives on Collaborative Business Relationships]]
 :medium-article-3: https://medium.asei.systems/llms-oracle-or-plausible-bull-over-collective-bias-faff9fce1c99[LLMs: Oracle or Plausible Bull?,window=_blank]
-:previous-article: /riddle-me-this/reflections/populism/2023/05/11/chatGPT-omen-new-era.html[previous article]
+:previous-article: /riddle-me-this/reflections/populism/2023/05/11/chatGPT-omen-new-era.html[previous article,window=_blank]
 
 In this article, we will delve into the fascinating outcomes of a sentiment analysis test conducted by our subsidiary.
 _We had a good laugh from this output, and we hope that you will too!_

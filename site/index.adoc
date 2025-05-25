@@ -4,14 +4,18 @@ header:
   overlay_image: /assets/images/banner.png
   overlay_filter: 0.4
   caption: "Systems are stories that run."
+  actions:
+    - label: "Résumé PDFs (GitHub)"
+      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.1.5
+    - label: "Who's Rdd13r?"
+      url: /maintainer/
 classes: wide
 permalink: /
 layout: home
+sidebar:
+  nav: communities
 ---
 = Vadim Kuhay
-Vadim Kuhay
-:alt-product: /riddle-me-this/reflections/populism/2023/05/08/chatGPT-will-replace.html[1]
-:alt-competence: /riddle-me-this/reflections/populism/2023/05/11/chatGPT-omen-new-era.html[1]
 
 I'm a humble system designer, team builder, and player-coach.
 
@@ -24,12 +28,26 @@ reflections, and adventurous stories from the scene.
  Code is conversation.
  Velocity comes from clarity.
 
-Join me to discover the real trends of "tomorrow." Such as:
+🧩 Want to talk shop?
 
+I'm often on Discord, swapping ideas and field notes with peers and learners alike.
+Message `riddler9297` to join the **AGAIN Collective**.
 
-- 2023-2025: The Real Industrial Revolution!
-- 2023: Hardware wall forces us *_to competence_* turning the full cycle.
-link:{alt-competence}
-- 2023: OpenAI didn't revolutionize AI.
-It revolutionized the meaning of *_'product.'_*
-link:{alt-product}
+== ✨ Hacker Forecast: Trends You Won’t Hear from Gartner
+
+- link:/riddle-me-this/adventures/analysis/2023/06/10/LLMs-what-good-for.html[2023–2025: The Final Industrial Revolution]
+→ How LLMs herald a true wetware augmentation revolution.
+
+- link:/riddle-me-this/reflections/populism/2023/05/11/chatGPT-omen-new-era.html[2023: Hardware Wall Forces Us Back to Competence]
+→ Scarcity brings back engineering mastery as a differentiator.
+
+- link:/riddle-me-this/reflections/populism/2023/05/08/chatGPT-will-replace.html[2023: OpenAI Redefined “Product,” Not Intelligence]
+→ Why the real shift is in packaging, not cognition.
+
+===  Want my résumé?
+
+_See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.1.5[v1.1.5,window=_blank]_
+
+* Engineering résumé – code, craft, production.
+* Creative résumé – teams, systems, vision.
+* Leadership résumé – coaching, CTO roles.

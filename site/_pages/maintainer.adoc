@@ -1,4 +1,5 @@
 = Maintainer
+:page-classes: wide
 :page-layout: single
 :page-permalink: /maintainer/
 :page-author_profile: true
@@ -20,13 +21,13 @@ If you came here looking for something formal, here are some useful links:
 
 (release {release})
 
-- 📄 {onEngineering}
-- 🎨 {onCreativity}
-- 🧭 {onLeadership}
+- {onEngineering} -- _yes, I code daily for three decades, take coding jobs, and compete;_
+- {onCreativity} -- _I build teams, systems, runways, and products that survive their first user;_
+- {onLeadership} -- _as a hands-on coach, fractional CTO, or executive I deliver innovation;_
 
-- 💼 {profile-li}
-- 🛠️ {profile-gh}
-- ✍️ {profile-mm}
+- {profile-li} -- people say I must have this...
+- {profile-gh} -- here I spend a lot of time between my own orgs and other founders' products;
+- {profile-mm} -- I used to write on Medium; now you will find my works here instead.
 
 == Colophon
 

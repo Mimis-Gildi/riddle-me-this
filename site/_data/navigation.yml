@@ -21,78 +21,46 @@ main:
     url: /tags/
 
 
-
-community:
-  - title: "About"
-    url: /community/
-    description: "On Mímis Gildi, Gervi Héra Vitr, and Gotham Community Life."
-  - title: "GitHub Discussions"
+# community links - for the sidebar; permanent to rdd13r.
+communities:
+  - title: "Discussions"
     url: https://github.com/Mimis-Gildi/riddle-me-this/discussions
-    description: "This repository small community public forum."
-  - title: "Gervi Héra Vitr - Learning Trails Community"
-    url: https://github.com/orgs/Gervi-Hera-Vitr
-    description: "This is Captain's Homeschool - Gervi Héra Viskr Learning Trails are dedicated to homeschooling parents and homeschooled kids."
-  - title: "Mímis Látlæg Háttalag - Corporate America Community"
-    url: https://github.com/Mimis-Latlaeg-Hattalag
-    description: "What hackers call deadbeat laggards is 80% of our economy. Investing into the weakest link makes the whole chain stronger."
-  - title: "Sister Community - 'the village'"
-    url: https://github.com/Gotham-Village
-    description: "Adult Hacker Community of Mentors - brutal, but effective :)"
-  - title: "Captain's School"
-    url: https://github.com/Gervi-Hera-Vitr/sindri-labs
-    description: "Mímis Gildi School Repository."
 
-
-development:
-  - title: "Fragments"
-    url: /fragments/
-    description: "The fragments of system engineering - design, models, code, manifests, tools, etc."
+  - title: "Hacker Communities"
     children:
-      - title: "Overview, (start here)"
-        url: /development/
-        description: "Hacker's mindset on development."
-      - title: "- `sdk`"
-        description: "Kotlin, Java"
-        url: /development/#sdk
+    - title: "Mímis Gildi"
+      url: https://github.com/Mimis-Gildi
+    - title: "Gervi Héra Vitr - Learning Trails Community"
+      url: https://github.com/orgs/Gervi-Hera-Vitr
+    - title: "Mímis Látlæg Háttalag - Corporate America Community"
+      url: https://github.com/Mimis-Latlaeg-Hattalag
+       makes the whole chain stronger. And judging is a sin."
+    - title: "Sister Community - 'the village'"
+      url: https://github.com/Gotham-Village
+    - title: "Captain's School"
+      url: https://github.com/Gervi-Hera-Vitr/sindri-labs
 
-
-support:
-  - title: Getting Started
-    url: /support/
-    description: "Getting started with such a site like this one."
+  - title: "Archive & Tags"
     children:
-      - title: "Local Mac setup"
-        url: /support/#setting-up-your-local-mac-box
-      - title: "on Jekyll site"
-        url: /support/#install-jekyll-for-a-new-site
-      - title: "building Docs site locally"
-        url: /support/#building-existing-site-locally
-      - title: "theming Jekyll"
-        url: /support/#theming-jekyll
-      - title: "additional resources"
-        url: /support/#additional-resources
-
-  - title: Categories
-    children:
-      - title: "Archive by Year"
-        url: /archive/year/
-      - title: "Markup Tag"
-        url: /tags/markup/
-      - title: "All Tags"
-        url: /tags/
-      - title: "Gaming Category"
-        url: /gaming/
-      - title: "Portfolio Category"
-        url: /portfolio/
       - title: "Archive by Category"
         url: /categories/
+      - title: "Archive by Tag"
+        url: /tags/
+      - title: "Archive by Year"
+        url: /archive/year/
       - title: "Site Map"
         url: /sitemap/
 
-  - title: External Resources
+  - title: "Docs & Tools"
     children:
       - title: "GitHub Pages"
         url: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll
       - title: "Minimal Mistakes"
         url: https://mmistakes.github.io/minimal-mistakes/
+      - title: "Jekyll"
+        url: https://jekyllrb.com/
+      - title: "RubyGems"
+        url: https://rubygems.org/gems/jekyll-asciidoc/
+      - title: "Actions Here"
+        url: https://github.com/Mimis-Gildi/riddle-me-this/actions
 

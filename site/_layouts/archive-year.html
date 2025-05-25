@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% assign posts = page.posts %}
+{% assign year = page.date | date: '%Y' %}
+
+<!--suppress HtmlUnknownTarget -->
+<h1>Posts from {{ year }}</h1>
+
+<ul>
+    {% for post in posts %}
+    <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <small>— {{ post.date | date: "%b %-d, %Y" }}</small>
+    </li>
+    {% endfor %}
+</ul>

@@ -28,6 +28,8 @@ plugins:
   - jekyll-remote-theme
   - jekyll-paginate-v2
   - jekyll-include-cache
+  - jekyll-archives
+  - jekyll-sitemap
 
 
 
@@ -154,39 +156,36 @@ comments:
 
 
 
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path>/my-awesome-category/index.html ~> path: /
+# Archives: Enable taxonomy pages for tags, categories, and year
 category_archive:
-  type                      : jekyll-archives
-  path                      : /categories/
+  type: jekyll-archives
+  path: /categories/
+
 tag_archive:
-  type                      : jekyll-archives
-  path                      : /tags/
+  type: jekyll-archives
+  path: /tags/
+
+year_archive:
+  type: jekyll-archives
+  path: /archive/year/
 
 jekyll-archives:
   enabled:
     - categories
     - tags
+    - year
   layouts:
-    category                : archive-taxonomy
-    tag                     : archive-taxonomy
+    category: archive-taxonomy
+    tag: archive-taxonomy
+    year: archive-year
   permalinks:
-    category                : /categories/:name/
-    tag                     : /tags/:name/
+    category: /categories/:name/
+    tag: /tags/:name/
+    year: /archive/year/:year/
 
 
-
-# Using feeds and at least I check
+# Using feeds, and at least I check
 atom_feed:
-#  path                      : /feed.xml
   hide                      : false
 
 
@@ -197,16 +196,6 @@ search_full_content         : true
 search_provider             : lunr
 lunr:
   search_within_pages       : true
-# algolia is available, but I will not use it for now
-#algolia:
-#  application_id            : # pulled from secret - YOUR_APPLICATION_ID
-#  index_name                : # can be open - YOUR_INDEX_NAME
-#  search_only_api_key       : # pulled from secret - YOUR_SEARCH_ONLY_API_KEY
-#  powered_by                : # true (default), false
-# we will never use this! but...
-#google:
-#  search_engine_id          : # YOUR_SEARCH_ENGINE_ID
-#  instant_search            : # false (default), true
 
 
 
@@ -218,24 +207,3 @@ social:
   links:
     - https://github.com/rdd13r
     - https://www.linkedin.com/in/rdd13r
-
-
-
-
-
-#ToDos: One Day - decision (and a story) pending
-# SEO Related
-#google_site_verification  :
-#bing_site_verification    :
-#naver_site_verification   :
-#yandex_site_verification  :
-#baidu_site_verification   :
-
-# Analytics
-#analytics:
-#  provider                : # false (default), "google", "google-universal", "google-gtag", "custom"
-#  google:
-#    tracking_id           :
-#    anonymize_ip          : # true, false (default)
-
-
