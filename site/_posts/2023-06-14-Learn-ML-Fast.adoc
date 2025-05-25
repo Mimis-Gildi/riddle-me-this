@@ -1,0 +1,42 @@
+---
+categories: [adventures]
+tags: [Learning-Trails]
+excerpt: Oops! Fixing an old model.
+comments: true
+---
+= Learn ML Fast
+:google-moroney: https://www.linkedin.com/in/laurence-moroney/[Laurence Moroney,window=_blank]
+:mlday-tokyo: https://github.com/lmoroney/mlday-tokyo[About Colabs for ML Day Tokyo,window=_blank]
+:yt-ml-foundations: https://goo.gle/ml-foundations[YouTube ML Foundations,window=_blank]
+:colab-ml-foundations: https://goo.gle/3dfRtD1[Colab ML Foundations,window=_blank]
+:install-anaconda: https://www.anaconda.com/docs/getting-started/anaconda/install[Install Anaconda,window=_blank]
+:miniforge: https://conda-forge.org/download/[Miniforge3,window=_blank]
+:k-horses-humans: https://www.kaggle.com/datasets/sanikamal/horses-or-humans-dataset[Horses or Humans Dataset,window=_blank]
+:k-cats-dogs: https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_5340.zip[Cats and Dogs Dataset,window=_blank]
+:toolbox: https://www.jetbrains.com/toolbox-app/
+:mimis: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
+:gain: https://github.com/Gotham-Village[Gotham Village,window=_blank]
+:vitr: https://github.com/Gervi-Hera-Vitr[Gervi Héra Vitr,window=_blank]
+:hattalag: https://github.com/Mimis-Latlaeg-Hattalag[Mímis Látlæg Háttalag,window=_blank]
+
+Dear friends, many of you, who accepted our ML learning challenge
+reported problems with the free ML hands-on fundamentals class by the esteemed {google-moroney},
+which I previously recommended.
+Today I carved out some time to examine it myself and, indeed, some parts have aged over the year.
+I have compiled a set of quick recommendations:
+
+== My Advice to Save Your Time
+
+. If you code then you can fork Laurence's repository here: {mlday-tokyo}.
+. Otherwise, this is the YouTube class: {yt-ml-foundations}.
+. Environment: Running on Google's Colab is just fine! - {colab-ml-foundations}.
+. Environment: If you want to play locally, then the fastest way to set up your environment is to use {install-anaconda}.
+.. Note: At {mimis} and {vitr} we actually use {miniforge};
+.. While {gain} and {hattalag} use {install-anaconda}.
+. Broken Link Fix Lab 5: Here is your dataset: {k-horses-humans}.
+. Broken Link Fix Lab 6: Here is your dataset: {k-cats-dogs}
+
+I use JetBrains DataSpell and PyCharm installed by JetBrains ToolBox {toolbox}.
+
+*_Happy Machine Learning, Friends!_*
+

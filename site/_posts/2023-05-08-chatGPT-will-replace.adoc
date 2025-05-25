@@ -1,9 +1,10 @@
 ---
-categories: [reflections,populism]
-tags: [LLMs,MATILDA]
+categories: [reflections]
+tags: [Populism,Medium]
 excerpt: >
   A grounded perspective on the AI job loss panic sparked by ChatGPT, written by a seasoned engineer.
   Dispels hype, explains LLMs clearly, and compares today’s fears to past tech hysteria.
+classes: wide
 comments: true
 ---
 = ChatGPT & Job Loss - A 'Doze' of Reality
@@ -204,5 +205,7 @@ That is how you can get the facts and tie them with rules of inference for your 
 Staying up to date with the latest AI advancements is not difficult yet crucial in making informed decisions about the technology's potential benefits and challenges.
 
 _And mark my words, OpenAI is not the only game in town. Chatbot isn't "the revolution." *This is only the beginning*..._
+
+'''
 
 _See editorial on Medium {medium-article-1}._

@@ -1,6 +1,6 @@
 ---
-categories: [reflections,populism]
-tags: [LLMs,MATILDA]
+categories: [reflections]
+tags: [Medium]
 excerpt: >
   The disparity between expert and complacent developers is exacerbated by emerging AI.
 comments: true
@@ -61,7 +61,7 @@ Conversely, an expert who consults ML on a sophisticated algorithm they've craft
 
 .Need to buy a bigger hammer.
 [#img-cog,link=https://www.artnet.com/artists/don-maitz/the-idiot-x1Vi3F6S7g3JIJEwcPT3jw2]
-image::/riddle-me-this/assets/images/ai-the-idiot-by-don-maitz.png[{alt-just-buy-a-tool},600]
+image::/riddle-me-this/assets/images/ai-the-idiot-by-don-maitz.png[{alt-just-buy-a-tool},400,400]
 
 (Image by DALL-E; Based on The Idiot, 1995, by Don Maitz)
 
@@ -173,4 +173,6 @@ _I am not affiliated with the project above_.
 Give augmentation tools a try.
 See what it can do for you.
 
-_See on Medium {medium-article-2}_.
+'''
+
+_See editorial on Medium {medium-article-2}_.

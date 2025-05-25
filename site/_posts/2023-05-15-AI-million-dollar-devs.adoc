@@ -1,8 +1,9 @@
 ---
-categories: [adventures,adaptation]
-tags: [LLMs,hard-truths]
+categories: [adventures]
+tags: [Discord]
 excerpt: >
   Torvalds style rant -- Most aggressive startups leverage LLMs against laggards first...
+classes: wide
 comments: true
 ---
 = Dev Millionaires: "Laggards are a renewable resource"?!
@@ -75,3 +76,7 @@ And I should probably share the scuttlebutt.
 - 💰 Bit-North Gets Rich
 - 🧪 This Won’t Last
 - ✍️ Lessons and Scuttlebutt
+
+'''
+
+_Not published publicly._

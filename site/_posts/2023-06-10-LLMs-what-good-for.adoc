@@ -1,13 +1,13 @@
 ---
-categories: [adventures,analysis]
-tags: [Hard-Truths,DemoScene]
+categories: [adventures]
+tags: [DemoScene,Medium]
 excerpt: >
   Google Wins -- Complete analysis of LLMs adoption by the brilliant ones.
+classes: wide
 comments: true
 ---
 = AI in 2024: The Future is ...
 rdd13r
-:sectanchors!:
 :jarvis: https://www.entrepreneur.com/author/paul-jarvis[Paul Jarvis,window=_blank]
 :nomads: https://en.wikipedia.org/wiki/Digital_nomad[Digital Nomads,window=_blank]
 :demogroup: http://catb.org/jargon/html/D/demogroup.html["demogroup",window=_blank]
@@ -49,6 +49,7 @@ rdd13r
 :o-a-github: https://open-assistant.io/[OA Demo Site,window=_blank]
 :o-a-hf: https://huggingface.co/OpenAssistant[Hugging Face Site,window=_blank]
 :all-oss-lm-models: https://en.wikipedia.org/wiki/Large_language_model[Large Language Model,window=_blank]
+:medium-article-4: https://medium.asei.systems/ai-in-2024-the-future-is-f65a5401f8fc[AI in 2024: The Future is …?,window=_blank]
 
 We are well into the surge of Large Language Models (LLMs).
 Half a year in, it's prime time to assess their progress and discern any emerging trends.
@@ -208,7 +209,7 @@ This places smaller players in a David vs.
 Goliath scenario.
 
 While large companies enjoy natural protection due to the scale and cost of LLMs, smaller players often need to protect their turf.
-As a result, tiny Champions gravitate towards open-source solutions like the{dolly-2} while the likes of OpenAI close up and build "motes."
+As a result, tiny Champions gravitate towards open-source solutions like the {dolly-2} while the likes of OpenAI close up and build "motes."
 _However, the constant threat from well-funded looms._
 
 *_The general lack of demand and high cost of entry_* leads small businesses to gravitate towards what are colloquially termed as "canned models."
@@ -539,3 +540,7 @@ I found their points compelling, though I still hold that integration can begin 
 You may ask to join on Discord at `AlGothAmaIgaNotions` community, where the original fistfight took place,
 and take part in any future bleeding-edge discussions.
 Ask to friend `riddler9297` for an invite.
+
+'''
+
+_See editorial on Medium {medium-article-4}_.

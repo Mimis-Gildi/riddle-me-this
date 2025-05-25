@@ -1,6 +1,6 @@
 ---
-categories: [adventures,adaptation]
-tags: [Multimodal,Hard-Truths,Academia,MATILDA]
+categories: [adventures]
+tags: [Academia,Medium]
 excerpt: >
   First indication of Multimodal-Revolution.
 comments: true
@@ -105,4 +105,6 @@ I'd like to share surprising results from a production AI LLM analytics test run
 The machine predicts imminent doom and gloom while forming an opinion about the state of an industry.
 This output, generalized for the article, seems to put things in perspective regarding the type of advice the AI is able to produce commercially.
 
-_See on Medium {medium-article-3}_.
+'''
+
+_See editorial on Medium {medium-article-3}_.
