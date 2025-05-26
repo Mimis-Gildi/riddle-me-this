@@ -290,4 +290,5 @@ The future is finally in software. That is, software coupled to wetware.
 
 '''
 
-See {li-newsletter}[LinkedIn] editorial  {li-article-1}
+See {li-newsletter}[LinkedIn] editorial  +
+{li-article-2}
