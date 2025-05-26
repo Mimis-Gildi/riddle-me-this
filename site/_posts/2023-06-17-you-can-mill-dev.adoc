@@ -1,19 +1,19 @@
 ---
 categories: [adventures]
-tags: [Learning-Trails, LinkedIn]
-excerpt:
+tags: [Learning-Trails,LinkedIn]
+excerpt: Anyone can capitalize on AI Revolution opportunities.
 comments: true
 classes: wide
 ---
 = The $ Power is Within You!
 rdd13r
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257
+:li-newsletter-name: Behind the Scenes at ASE
+:li-article-1: https://www.linkedin.com/pulse/power-within-you-vadim-kuhay/[The $ Power is Within You!]
 :make-money-with-ai-video: https://youtu.be/ibidd7A00dk
 :hackers: https://en.wikipedia.org/wiki/Hacker_culture[hackers,window=_blank]
 :g-tutorial: https://youtube.com/playlist?list=PLOU2XLYxmsII9mzQ-Xxug4l2o04JBrkLV[free tutorials,window=_blank]
 :g-dev: https://goo.gle/developers[nearly everything,window=_blank]
-:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257
-:li-newsletter-name: Behind the Scenes at ASE
-:li-article-1: https://www.linkedin.com/pulse/power-within-you-vadim-kuhay/?trackingId=RKWKHCtlRMO85aNYQC1XLQ%3D%3D[The $ Power is Within You!]
 
 .ASE Inc, DALL-E Hacker Dad, Cog Dad...
 [#img-devs,link={make-money-with-ai-video}]
@@ -61,7 +61,7 @@ Follow Google's {g-tutorial} to get {g-dev} that you need to start billing.
 * Acquire skills to apply ML.
 . In contrast to technologies you've already conquered, it's relatively simple – merely overshadowed by negative stigmas.
 . You don't need to invent backpropagation; that's been done since the '80s.
-. You just need to understand how TensorFlow and its counterparts work.
+. You need to understand how TensorFlow and its counterparts work.
 * Cultivate selling skills.
 Shatter your inhibitions with this book: "The Little Red Book of Selling" by Jeffrey Gitomer.
 ** _Capitalize on the connections and network you already have._

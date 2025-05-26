@@ -61,13 +61,13 @@ Conversely, an expert who consults ML on a sophisticated algorithm they've craft
 
 .Need to buy a bigger hammer.
 [#img-cog,link=https://www.artnet.com/artists/don-maitz/the-idiot-x1Vi3F6S7g3JIJEwcPT3jw2]
-image::/riddle-me-this/assets/images/ai-the-idiot-by-don-maitz.png[{alt-just-buy-a-tool},400,400]
+image::/riddle-me-this/assets/images/ai-the-idiot-by-don-maitz.png[{alt-just-buy-a-tool},800]
 
 (Image by DALL-E; Based on The Idiot, 1995, by Don Maitz)
 
 .Corporate developer and ML.
 [#img-idiot,link=https://www.artnet.com/artists/don-maitz/the-idiot-x1Vi3F6S7g3JIJEwcPT3jw2]
-image::/riddle-me-this/assets/images/ai-the-idiot-coder.png[{alt-how-competent-is-the-cog},600]
+image::/riddle-me-this/assets/images/ai-the-idiot-coder.png[{alt-how-competent-is-the-cog},800]
 
 (The Idiot, 1995, by Don Maitz; Licensed Reproduction.)
 
