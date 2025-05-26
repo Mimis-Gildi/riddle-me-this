@@ -1,9 +1,13 @@
 name: Publish Résumé Release
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       prerelease:
+        required: false
         type: boolean
         default: false
         description: 'Mark this release as a pre-release'
@@ -36,6 +40,18 @@ jobs:
         run: |
           VERSION=$(grep '^version=' gradle.properties | cut -d'=' -f2)
           echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Create Git Tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --tags
+          if git rev-parse "v${{ steps.props.outputs.version }}" >/dev/null 2>&1; then
+            echo "Tag v${{ steps.props.outputs.version }} already exists. Skipping tagging."
+          else
+            git tag v${{ steps.props.outputs.version }}
+            git push origin v${{ steps.props.outputs.version }}
+          fi
 
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
