@@ -1,27 +1,48 @@
-= Mímis Gildi: Rdd13r's Living Resume
-R!dd13r rdd13r <12781006+rdd13r@users.noreply.github.com>
-v1.0, Friday May 16th 2025
-:description: Rdd13r's living resume.
-:sectnums:
+= Mímis Gildi: Rdd13r’s Living Résumé & Digital Garden
+Vadim Kuhay <12781006+rdd13r@users.noreply.github.com>
+v1.1.5, Friday May 16th 2025
+:description: Vadim Kuhay’s living résumé and publication repository.
+:icons: font
 :sectanchors:
 :sectlinks:
-:icons: font
-:tip-caption: 💡️
-:note-caption: ℹ️
-:important-caption: ❗
-:caution-caption: 🔥
-:warning-caption: ⚠️
 :!toc:
-:keywords: Mímir Rdd13r Who-is
+:keywords: Mímir Rdd13r Résumé Hacker Vadim Kuhay
 :imagesdir: ./resources/images
 ifdef::env-name[:relfilesuffix: .adoc]
 
-This is Vadim Kuhay’s living resume — engineering leader, transformation coach, hands-on architect, husband, and father.
+This repository is the *canonical source of truth* for Vadim Kuhay’s (aka `rdd13r`) résumé materials, engineering artifacts, and personal publications.
 
-Built in AsciiDoc and Gradle using a custom PDF publishing workflow. This is the *source of truth*, not a static export.
+It is **actively maintained** as a living résumé, portfolio, and knowledge base — handcrafted in AsciiDoc and Gradle, with CI/CD publication to GitHub Pages.
 
-== Canonical Reference
+== 🖥️ Public Site
 
-* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.0/OnLeadership.pdf[Vadim Kuhay Executive Resume v1.0]
-* Contact: vadim.kuhay@gmail.com | +1 (919) 717-1387
-* GitHub Profile: https://github.com/rdd13r
+🔗 **Browse the live site**:
+https://mimis-gildi.github.io/riddle-me-this/
+
+📘 **Learn more about the maintainer**:
+https://mimis-gildi.github.io/riddle-me-this/maintainer/
+
+🧭 **Start with reflections**:
+https://mimis-gildi.github.io/riddle-me-this/reflections/
+
+== 📄 Résumé Release v1.1.5
+
+This repo includes three curated PDFs packaged with each release.
+Grab the latest from the GitHub Releases page:
+
+📦 https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.1.5
+
+* 📄 [Engineering Résumé](https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.1.5/OnEngineering.pdf) – code, systems, and production
+* 🧠 [Creative Résumé](https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.1.5/OnCreativity.pdf) – teams, products, and vision
+* 🌱 [Leadership Résumé](https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.1.5/OnLeadership.pdf) – transformation, innovation, CTO roles
+
+== 🔗 Profiles
+
+* GitHub: https://github.com/rdd13r
+* LinkedIn: https://www.linkedin.com/in/rdd13r
+* Medium (legacy): https://medium.com/@rdd13r
+
+== 📬 Contact
+
+* Email: vadim.kuhay@gmail.com
+* Signal / Text: +1 (919) 717-1387

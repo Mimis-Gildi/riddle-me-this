@@ -9,15 +9,33 @@
 :!toc:
 :keywords: attributions acknowledgements license
 ifdef::env-name[:relfilesuffix: .adoc]
+:policy-gh-tos: https://docs.github.com/en/site-policy/github-terms/github-terms-of-service[GitHub Terms of Service]
+:policy-copyright: https://en.wikipedia.org/wiki/Limitations_and_exceptions_to_copyright[Limitations and exceptions to copyright]
+:rust-cc: https://www.rust-lang.org/policies/code-of-conduct[Rust Community Code of Conduct]
+:citizen-cc: https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md[Citizen Code of Conduct]
+:covenant: https://www.contributor-covenant.org/[Contributor Covenant]
+:howto-license: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository[Licensing a repository]
+:license-table: https://choosealicense.com/appendix/[choosealicense.com: Appendix]
+:howto-license-chose: https://choosealicense.com/[Choose an open-source license]
+:the-echoes: https://gervi-hera-vitr.github.io/the-echoes-of-wasteland/support/
+:tm-wiki: https://en.wikipedia.org/wiki/Trademark
+:eu-ipo: https://www.euipo.europa.eu/en/trade-marks
+:cz-isdv: https://isdv.upv.gov.cz/webapp/epod.epweb.podaninove
+:a-rdd13r: https://github.com/rdd13r/
+:a-captain: https://github.com/CaptainLugaru/
+:a-mimis: https://github.com/Mimis-Gildi[Mímis Gildi]
+:a-vitr: https://github.com/Gervi-Hera-Vitr[Gervi Héra Vitr]
+:a-gain: https://github.com/Gotham-Village[Gotham Village]
+:a-laggard: https://github.com/Mimis-Latlaeg-Hattalag[Mímis Látlæg Háttalag]
 
 NOTE: _Copyright holders_ listed are hereby acknowledged on the content referenced or otherwise imparted on this work.
 
-- rdd13r - https://github.com/rdd13r/
-- CaptainLugaru - https://github.com/CaptainLugaru/
-- https://github.com/Mimis-Gildi[Mímis Gildi] — _At Yggdrasil, drinking from Mímisbrunnr. This is for the thinking._
-- https://github.com/Gervi-Hera-Vitr[Gervi Héra Vitr] — _Where ancient wisdom meets modern coding fluffle._
-- https://github.com/Gotham-Village[Gotham Village] — _AGAIN co-mentoring community._
-- https://github.com/Mimis-Latlaeg-Hattalag[Mímis Látlæg Háttalag] — _Artifacts for large American companies struggling with Digital Transformation._
+- rdd13r - {a-rdd13r}
+- CaptainLugaru - {a-captain}
+- {a-mimis} — _At Yggdrasil, drinking from Mímisbrunnr. This is for the thinking._
+- {a-vitr} — _Where ancient wisdom meets modern coding fluffle._
+- {a-gain} — _AGAIN co-mentoring community._
+- {a-laggard} — _Artifacts for large American companies struggling with Digital Transformation._
 
 
 
@@ -25,17 +43,17 @@ NOTE: _Copyright holders_ listed are hereby acknowledged on the content referenc
 
 NOTE: Both the code of conduct of this artifact and the code of conduct of the hosting organization may apply.
 
-- https://www.rust-lang.org/policies/code-of-conduct[*Rust Community Code of Conduct*]
-- https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md[*Citizen Code of Conduct*]
-- https://www.contributor-covenant.org/[Contributor Covenant]
+- *{rust-cc}* - _interpolated throughout {a-mimis}_.
+- *{citizen-cc}* - _as baseline to all under {a-mimis}_.
+- {covenant} - leveraged directly in all orgs.
 
 == Licensing Attributions
 
 NOTE: Both the license of this artifact and the licenses of dependencies must be considered.
 
-- https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository[Licensing a repository]
-- https://choosealicense.com/[Choose an open-source license]
-- https://choosealicense.com/appendix/[choosealicense.com: Appendix]
+- {howto-license} - instructions on licensing used here.
+- {howto-license-chose} - leveraged by {a-captain}[Captain].
+- {license-table} used by {a-captain}[Captain] and {a-rdd13r}[`rdd13r`] for this artifact.
 
 '''
 
@@ -43,5 +61,10 @@ IMPORTANT: In addition to the explicitly chosen license, public repositories on 
 
 '''
 
-- https://docs.github.com/en/site-policy/github-terms/github-terms-of-service[GitHub Terms of Service]
-- https://en.wikipedia.org/wiki/Limitations_and_exceptions_to_copyright[Limitations and exceptions to copyright]
+- {policy-gh-tos} - read carefully, limitations apply.
+- {policy-copyright}, i.e., this content copy scope.
+- NOTE: Systems referenced here may be {tm-wiki}[trademarks] in {eu-ipo}[EU] or {cz-isdv}[Prague].
+
+== Factor number 12 (Twelve) of the 12-Factor App; The Admin Process
+
+- Special thanks to {a-captain}[Captain] for gracefully capturing how we {the-echoes}[administer sites automatically] at {a-mimis} organizations.

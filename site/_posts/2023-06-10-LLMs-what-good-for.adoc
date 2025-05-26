@@ -1,0 +1,547 @@
+---
+categories: [adventures]
+tags: [DemoScene,Medium]
+excerpt: >
+  Google Wins -- Complete analysis of LLMs adoption by the brilliant ones.
+classes: wide
+comments: true
+---
+= AI in 2024: The Future is ...
+rdd13r
+:jarvis: https://www.entrepreneur.com/author/paul-jarvis[Paul Jarvis,window=_blank]
+:nomads: https://en.wikipedia.org/wiki/Digital_nomad[Digital Nomads,window=_blank]
+:demogroup: http://catb.org/jargon/html/D/demogroup.html["demogroup",window=_blank]
+:anonymous: https://en.wikipedia.org/wiki/Anonymous_(hacker_group)[Anonymous,window=_blank]
+:cliques: https://en.wikipedia.org/wiki/Hacker_culture[Hacker Cliques,window=_blank]
+:scene: https://en.wikipedia.org/wiki/Demoscene[Demoscene,window=_blank]
+:culture: https://en.wikipedia.org/wiki/Hacker_culture[Hacker Culture,window=_blank]
+:mit: https://handbook.mit.edu/hacking[MIT,window=_blank]
+:lugaru: https://github.com/CaptainLugaru[Captain Lugaru,window=_blank]
+:tales: https://youtu.be/C9DbwEKvN8Q["Hacker Tales",window=_blank]
+:spaces: https://wiki.hackerspaces.org/Hackerspaces[Hackerspaces,window=_blank]
+:brakha: https://www.dakhabrakha.com.ua/en/about/[DakhaBrakha,window=_blank]
+:carpathia: https://youtu.be/fTrSsIY7Oww[Carpathian Rap,window=_blank]
+:dolly-2: https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm[Dolly 2 by Databricks,window=_blank]
+:hfce: https://huggingface.co/[Hugging Face,window=_blank]
+:crackers: http://www.catb.org/~esr/jargon/html/crackers.html[crackers,window=_blank]
+:active-inferrence: https://baicsworkshop.github.io/pdf/BAICS_37.pdf[Active Inference,window=_blank]
+:verses: https://www.verses.ai/[Verses Active Inference,window=_blank]
+:g-io: https://io.google/2023/["I/O 2023",window=_blank]
+:g-community: https://ai.google/build/machine-learning/[Open Onboarding Community,window=_blank]
+:g-ai-onboarding: https://youtube.com/playlist?list=PLOU2XLYxmsIK6HyKuHTRDCMxkOPFB2vfp[AI Primer for Developers,window=_blank]
+:g-dev-profile: https://developers.google.com/[Developer Profile bound to Community,window=_blank]
+:g-k-models: https://www.kaggle.com/models[Pretrained models on Kaggle,window=_blank]
+:g-dtensor: https://youtu.be/EPBBUT4Q2Fg[DTensor / TensorFlow, JAX2TF, Keras,window=_blank]
+:g-io-session: https://youtube.com/playlist?list=PLOU2XLYxmsIKqt_HI3yc516rbBca_hli2[AI/ML Session at Google I/O 2023, YouTube,window=_blank]
+:g-palm2-api: https://developers.generativeai.google/[Join PaLM2 API Waiting List,window=_blank]
+:g-maker-suite: https://makersuite.google.com/[MakerSuite,window=_blank]
+:g-tensorflow: https://goo.gle/TensorFlow[Google TensorFlow Channel,window=_blank]
+:g-research: https://www.youtube.com/@GoogleResearch[Google Research Channel,window=_blank]
+:g-kaggle: https://www.youtube.com/@kaggle[Kaggle Channel,window=_blank]
+:g-attn: https://research.google/pubs/pub46201/["Attention is All You Need",window=_blank]
+:m-llama: https://github.com/facebookresearch/llama[LLaMa,window=_blank]
+:s-alpaca: https://github.com/tatsu-lab/stanford_alpaca[Alpaca,window=_blank]
+:bsd-vicuna: https://github.com/lm-sys/FastChat[Vicuña,window=_blank]
+:bsd-vicuna-topics: https://github.com/topics/vicuna[GitHub Vicuña Topic,window=_blank]
+:db-dolly: https://github.com/databrickslabs/dolly[dolly-v2-12b,window=_blank]
+:db-dolly-hf: https://huggingface.co/databricks/dolly-v2-12b[databricks/dolly-v2-12b,window=_blank]
+:open-assistant: https://github.com/LAION-AI/Open-Assistant[Open Assistant,window=_blank]
+:o-a-github: https://open-assistant.io/[OA Demo Site,window=_blank]
+:o-a-hf: https://huggingface.co/OpenAssistant[Hugging Face Site,window=_blank]
+:all-oss-lm-models: https://en.wikipedia.org/wiki/Large_language_model[Large Language Model,window=_blank]
+:medium-article-4: https://medium.asei.systems/ai-in-2024-the-future-is-f65a5401f8fc[AI in 2024: The Future is …?,window=_blank]
+
+
+We are well into the surge of Large Language Models (LLMs).
+Half a year in, it's prime time to assess their progress and discern any emerging trends.
+Lo and behold, an AI adoption trajectory is indeed taking clear shape.
+Let's look at people making fast AI money today.
+
+.DALL-E a typically distorted image edit of the author
+[#img-space,link=https://rdd13r.github.io/]
+image::/riddle-me-this/assets/images/dall-e-rdd13r-space.png[Picture of the author in space rendered DALL-E as prompted by Tillie,1200]
+
+== The Context of this Analysis
+
+*Context*: Before diving in, let me set the stage for my observations.
+Since the 90s, I'm privileged to follow a fluent community known by the moniker The "Northern."
+These folks gathered in Québec this year hosted by a subgroup of Waterloo alumni.
+The Northern has been an invite-only assembly of independent, expert programmers who generally operate as Solo Entrepreneurs
+— a concept described in the book "Company of One: Why Staying Small Is the Next Big Thing for Business" by the esteemed {jarvis}, one such person.
+This community and many like it is made up of loosely related special interest groups referred to as "Cliques".
+Many members counting over 500 small businesses in 2023 are seasoned software engineering professionals who perhaps found the corporate world not challenging or fast-paced enough.
+Having learned how to sell and operate independently, these professionals embark on a new journey, honing their skills and embracing the lifestyle of modern {nomads}.
+_Freedom rather than greed is the key appealing factor in this demographic._
+Nature then leads these independent professionals to seek like minds with like interests forming many _classic hacker cliques_ making up the bigger whole.
+When I first met this community, a smelly single-room BBS office in Philadelphia was its home.
+Today its Discord.
+
+It is important to note that labeling the Northern as a "group" from {demogroup},
+as I see done on various social media sites, college news, and blog posts is somewhat of a _misnomer_.
+Similarly as {anonymous} is not a group, a clique or an organization.
+None really are — yet the uninitiated keep insisting on the word 'group.'
+Likewise, Northern is not an organization but a grassroots tradition: just a vibrant and decentralized social network of {cliques}
+who occasionally convene for a mutual exchange of ideas in the classic {scene} or simply 'scene' format.
+The Northern is socially connected to but not the organizer of the esteemed "Hack The North" hackathon.
+The member cliques have people in the USA, Prague, the EU and many other regions.
+The moniker is a legacy from the 90s when geography still separated people,
+as in the "Northern USA." Except, it isn't the U.S. community anymore and hadn't been one for a long minute.
+Still, year to year people gather and the tradition continues.
+Let me clarify that this has nothing to do with the Hollywood portrayal of hackers as criminals either.
+This and many such communities we frequent are about celebrating the roots of the authentic {culture}.
+The culture originating at the {mit},
+the culture that has been the cradle of disruptive innovation and has influenced giants like Google and PayPal as well as GNU and Linux Foundation.
+It's a deeply positive thing — a place where honest makers bring their kids.
+
+To avoid modern-day negative connotation associated with the word "hacker" among the uninitiated,
+we're encouraged to use _"Champion"_ instead, which I believe is derived from "innovation champions."
+Also, the authentic hacker culture values positivity and privacy, so openly discussing these gatherings is frowned upon.
+However, I have a compelling reason to share a small insider glimpse.
+My 13-year-old son, {lugaru}, an aspiring digital artist, has been profoundly inspired by the many demoscenes he attended with his parents.
+His fascination led him to direct a YouTube channel named {tales} where we share synopses and documentaries about the rich tapestry of hacker culture he experienced.
+It's one of the few spaces where the term "hacker" is used in its true essence.
+Note that we have sought permissions wherever possible and also have parents actively participating and moderating his content.
+
+There are hundreds of such cliques in North America and Europe, with individual families belonging to multiple cliques.
+If you're curious and want to get involved, introducing yourself through your local {spaces} is an exceptional starting point,
+well suited for a gentle introduction.
+
+I chose the Northern as our introspection point because this community is old and large,
+has many outspoken elders that present at public conferences like GoTo;
+and DeveloperWeek, almost exclusively active coders, and unlikely for me to cause any controversy by mentioning our sentiments.
+Most importantly, members here have an insatiable appetite for what they term as HP (Hacker-p0rn) -- cutting-edge, innovative technology.
+Rest assured, this term has no relation to the actual adult content genre or to criminal crackers;
+it refers to ground-breaking innovations that are still in their nascent stages, ahead of mainstream adoption.
+By observing the sentiments and discussions among these Champions, we can gain early insights into the evolution of such technologies.
+And this year there's much to observe.
+
+I must clarify that my usual contributions stem from first-hand experiences.
+However, my current perspective is somewhat mixed.
+As a new father at the age of 50, I am on paternity leave with my 6-month-old daughter.
+This has given me a partial observer's role, albeit still involved, connected and informed.
+
+Now, this is not going to be my usual unapologetically unpolished assessment.
+I come from a different state of mind and a different context this time.
+As I watch my infant daughter, engrossed in the rhythm of her bottle-feeding, I come to a realization.
+She's seemingly attuned to a complex composition by {brakha},
+it strikes me that her inherent musical talents hint at a future as an artist rather than an engineer.
+This is a reflective moment.
+Her absolute favorite song is {carpathia}.
+From the people of the mountains, like her ancestors.
+And she needs to be immersed in quiet and jazzy music at all times, or she gets restless and fussy.
+Pop music will not do.
+Give me the five PhDs in Ukrainian music or a timeless legend like Nina Simone.
+Then she's "Feeling Good."
+
+"Don't let me be misunderstood." While I have aided countless young minds in becoming the vanguard of technology innovation,
+it is interesting to think that my own children, perhaps taking after my better half, might pursue the arts instead.
+This just goes to show that we're all different, and all of our talents are unique and uniquely valuable.
+It _also_ made me realize that Northern is less inclusive than most communities today favoring *_business and technology_* more than digital arts and creative writing.
+But as you will soon see, the edge between art and code is about to be blurred forever.
+Because when a machine efficiently recovers hacker time spent on boilerplate, said hacker puts it to creativity.
+More creative time means more creative solutions.
+
+_Keep this point in mind._
+
+.Father and baby daughter exploring AI in music.
+[#img-zowah]
+image::/riddle-me-this/assets/images/dada-and-zowah.png[Rdd13r with his infant daughter studying music,1200]
+
+(how about a virtual teacher?)
+
+My current personal journey affords me the luxury of time, which I have been using to introspect the broader landscape of technological advancements.
+I'm not tunnel-visioned in my own quest, and my vantage point allows me to discern the emerging bigger picture, painted with broad strokes.
+And the biggest potential this new tech can offer is in recovering people time spent on tedious, monotonous tasks.
+When we no longer *_need_* to "do things," but instead are free to think and create — everything changes.
+The Last time this happened 3,500 years ago, in the steppes of Ukraine, Scythians launched civilization in Europe.
+All because they could.
+And they could because they had time.
+Time to spend, time to learn, time to think.
+It may surely take a minute.
+But it's the direction our collective lives take that matters.
+
+*_Will `this` free and elevate our inherent talents?
+And what is `this`?_*
+
+== Early LLMs on the Scene
+
+These Champions I'm discussing have always been at the forefront of innovation.
+However, with LLMs, the story has been somewhat different.
+LLMs have been around since about 2018, but the early years didn't witness any groundbreaking developments.
+A handful of adept practitioners, including myself,
+were successful in integrating these models within Domain Driven Design (DDD) to enhance business automation components.
+However, doing so during Digital Transformation efforts is seldom possible;
+large, established companies often lag significantly behind in both technology and mindset.
+Consequently, corporate America applications were simpler.
+As far as our own products,
+MATILDA MLOps platform is using embedded LLMs to help tokenize and vectorize natural language queries to logical premises.
+But that's it.
+
+One might wonder why LLMs haven't found their way into mainstream use in large companies.
+In fact, not even in much more competent small businesses.
+Let's take a look at the reasons why.
+
+In corporate America, the problem is not lack of resources, but lack of a culture that embraces LLMs.
+The traditional approach to machine learning,
+where a data science team conducts large-scale data analysis, remains prevalent in mature companies.
+Transitioning to LLMs requires a more modern,
+distributed architecture, which many such companies have not yet adopted.
+
+Enterprising small businesses led by Champions have made some headway.
+These companies offer business solutions through platforms like Google Cloud or via subscription-based services.
+But even in these settings, LLMs haven't revolutionized industries or practices.
+There were other ML capabilities Champions appreciated with companies like Google.
+And the LLMs themselves had two main limitations:
+1) MONEY: The cost of training LLMs is prohibitive for most small businesses;
+2) and PERFORMANCE: The capabilities of early LLMs were ... really wanting
+-- never able to justify the cost.
+In fact, even with MATILDA, LLMs were only executed at the partners who had the money to offload language analysts with.
+Others were delighted to just run static tokenizers or Small Language Models (SLMs) and have humans build an expression for the premise.
+
+So what changed then?
+Well, it's SIZE!
+Modern LLMs we see move markets now are not "large," they're huge, _even *massive*,_ in comparison to 2018 LLMs.
+
+A particular challenge when it comes to the scale of LLMs – the "Large" is significant.
+Developing a custom LLM generally involves three phases: 1) acquiring training data,
+2) determining model weights, and 3) training costs, manual reinforcement (or, possibly, active inference).
+While the first two phases are achievable, the third is cost-prohibitive for most.
+This places smaller players in a David vs.
+Goliath scenario.
+
+While large companies enjoy natural protection due to the scale and cost of LLMs, smaller players often need to protect their turf.
+As a result, tiny Champions gravitate towards open-source solutions like the {dolly-2} while the likes of OpenAI close up and build "motes."
+_However, the constant threat from well-funded looms._
+
+*_The general lack of demand and high cost of entry_* leads small businesses to gravitate towards what are colloquially termed as "canned models."
+Essentially, these are pre-trained models that can be employed with minimal customization, making them both accessible and cost-effective for smaller entities.
+Consequently, most champions would peruse one of the myriad community repositories that cater to various AI domains such as image recognition,
+numerical pattern analysis, or even the {hfce} repository for conversational models, to ascertain what's up for grabs.
+_Yet all of this is still predicated on having a chance to sell such magic!_
+*The lack of small business opportunities is matched by the lack of Champions' interest in AI.*
+Later in the article, I will elaborate on the significance and applications of canned models.
+
+_The limiting factor is always the mental model and maturity of the customer.
+Most customers are Laggards and want to drag data to AI in a typical tool-mentality.
+All in all, prior to 2023, the majority of ML solutions that Champions conjured up were lean,
+custom-built models based on open-source technologies dragging AI to data instead.
+These models were proficient in executing specific, localized functions,
+typically within the realms of a microservice or a mobile application that was then commercialized.
+Except for a handful of outliers, the business model wasn't usually centered around vending explicitly ML-based solutions.
+Instead, ML was generally perceived as an ancillary feature that supplemented the core services,
+and a heavy dependency on ML was not a prevalent trait among Champion specializations or the needs of customers._
+
+_To summarize, early LLMs offered too little value for too much money spent._
+
+== The 2023 ChatGPT Phenomenon
+
+The year 2023 saw an explosion in the popularity of OpenAI's ChatGPT.
+As the general population became aware of ChatGPT's abilities, its seemingly human-like responses took many by surprise.
+To the untrained eye, ChatGPT's responses created an illusion of reasoning and consciousness,
+leading some individuals to sound the alarm bells about the potential dominance of machines over humans.
+The craze is self-exacerbating and promoting.
+This reaction was not without historical precedent,
+as similar fears were raised during the early days of hacking,
+when the term "hacker" began to acquire negative and criminal connotations,
+meant for the group real hackers call _{crackers}_.
+
+*So, now there's demand, albeit _ignorant_ at first.*
+
+The Champions, being the tech-savvy community that they are, conduct an anonymous survey among themselves every demoscene.
+At the Northern this year such a survey revealed that many Champions were actively selling services based on Large Language Models (LLMs) like ChatGPT.
+Interestingly, OpenAI broke the mold of "technology adoption curve" by offering an early version of an unfinished product, and something unexpected occurred.
+The first wave of inquiries came _not from tech enthusiasts_ (a.k.a. early adopters), but rather from traditional,
+mature and conservative companies (a.k.a. Laggards).
+This was puzzling, and reminiscent of the days when wealthy families would purchase expensive AT&T UNIX workstations as status symbols,
+without ever powering them on.
+Perhaps one thought that by buying a smart AI tool, decades of stagnation could be reversed with no tax on the mushy brain?
+
+The second wave of interest came from previous customers on retainers who had undergone digital transformation with Champions in the past.
+Unlike the first group, these customers came with specific-enough requirements to make things worthwhile.
+The Champions typically developed Domain Driven Design (DDD) Anti-corruption Layer (ACL) components to enhance microservices within a bounded context.
+It's easier and cleaner to decorate at the edge rather than think deep through the root domain.
+These were sound exact asks to decorate the edges.
+And competitive use could come with more experience.
+
+However, the implementation did not live up to expectations in the later case. Counterintuitive, isn't it?
+One would expect a Laggard to marginalize a toy it doesn't understand. So why did the sound use cases fail then?
+Well, ChatGPT, despite its capabilities, had limitations that were more noticeable to the discerning eyes of the capable customers with real needs and expectations.
+Feedback from many such groups indicated that the responses generated by GPT Model were not convincingly logical or sound.
+I initially struggled to summarize this observation.
+Then one of our friends, Greg, a capable hacker Captain Lugaru and I affectionately call _Monad_,
+aptly described the output of the models as *"Plausible Bull."*
+Thus, expectations were broken in the worst possible way,
+when an aggregate is expected to respond to the customer within the bounds of its context answers with irrelevant information.
+For example, say a robotic host in a virtual restaurant instead of telling the customer to wait a few minutes for the next table,
+suggests that the customer should visit the bathroom to pass time.
+Definitely not a foreseen scenario. With an example like this, we can see how fidelity is immediately questioned.
+
+There are two primary issues that the Champions encountered with OpenAI's solution:
+1) The models are closed-source, which is a deal-breaker for many hackers who prefer transparency and understanding the underlying mechanisms.
+Without transparency, calculating risk is not a statistical exercise but a gamble.
+2) The model underwent manual reinforcement training to avoid mistakes, which made it safer but still equally non-deterministic,
+and did not allow for the fidelity that {active-inferrence} models claim to provide.
+Thus, false advertisement — because a DDD Aggregate is essentially an employee with an exact job description
+— no improvisation is wanted or expected.
+
+All the issues collectively culminate into four major impediments:
+
+. *_Absence of fitting "canned models"_*: The lack of configurable, pre-trained large models to modify increases effort, uncertainty, and cost.
+. *_Closed-source nature of the models_*: This limits trust and engagement among the Champions, who prefer transparency.
+. *_Lack of referential integrity_*: By nature, the model lacks the referential integrity advertised for active inference which was expected.
+. *_Absence of developer-friendly resources_*: The lack of an open community, training materials, and advocacy groups around OpenAI restricts engagement.
+
+These were further exacerbated by the fact that solutions like {verses}, purpose built as "domain-specific" models, still come disappointingly short.
+
+*This is no way the opportunistic Champions are willing to conduct business!*
+
+
+In summary, the Champions found OpenAI's offering to be impractical for real-world applications.
+Using such fluff, one struggles to uphold an expert reputation.
+The hacking community seeks practical solutions that can be reliably used in production environments,
+rather than a technology that, while impressive, cannot withstand scrutiny.
+_For now, *no models can meet the high standards* set by those who understand the intricacies of their business domain._
+
+== Google I/O 2023 -- A Game Changer!
+
+_Luckily, there is another way!_
+
+Prior to 2023, "The Northern" community would typically convene for a grand demoscene in anticipation of the hackathon and buildathon season.
+The spotlight was firmly on the summit, with community members often taking time off to travel and participate in person.
+Teams were formed, competitions were chosen, and surveys were disseminated among participants.
+After the summit, the Discord channels of various cliques would be abuzz with praise for the winners and gentle ribbing for those who slipped.
+It's hacker's version of a sports league — full of camaraderie and community building.
+Hackers firmly believe that sports are to be played and participated in personally, not watched from a distance.
+However, 2023 was oddly different.
+
+Google announced its {g-io} conference on March 7th, setting the stage for May 10th.
+The timing coincided with the Northern summit, which ran from Thursday, May 11th, 2023 to Saturday, May 13th, 2023.
+This overlap diverted the attention of many Champions bitten by GPT and curious about Google's rebuttal.
+
+_I don't know about you, but I find it hilarious that hackers didn't move down by a day or two!
+ROFL, "who's bigger, Google or I?!"_
+
+But Google did not disappoint!
+They had a few aces up their sleeves,
+and their deep-rooted hacker culture shone through as they addressed nearly all the concerns that the Champions had with the current populist offerings in the market.
+In a way, I can't believe that I am saying this about Google.
+It hasn't been the same since Sergey left.
+But credit is due where credit is due.
+
+Here's a rundown of the key favorable points:
+
+. {g-community} and {g-ai-onboarding} (addressing concern 4)
+.. {g-dev-profile}
+* (addressing concern 4)
+* check above regularly — this is a living resource
+. {g-k-models}
+* (addressing concerns 1, 2, and 4)
+. {g-dtensor}
+* (addressing concerns 2 and 4)
+. *_All Components are Open Source_*
+* (addressing concerns 2 and 4)
+. PaLM API: model selection, prompt engineering, *_temperature_*, *_context_*, *_embedding_*
+* (partially but sufficiently addressing concern 3).
+
+Please follow these key links:
+
+* *_{g-io-session} (highly recommended)_*
+* {g-palm2-api}
+* {g-maker-suite} Home
+* {g-tensorflow}
+* {g-research}
+* {g-kaggle}
+
+Astute observers might point out that many of these resources have been around for a while.
+What's different is the focus — Google went the extra mile to make AI irresistibly easy for developers to dive into.
+The MakerSuite and LLM Colab Magics were so simple and educative that even non-technical individuals could produce, and Vertex AI made production deployment a breeze.
+Moreover, the absence of vendor lock-in meant that developers could employ their tools both on and off the Google platform.
+(I certainly do, as I don't like some of Google's cool-aid)
+
+Google's dynamic carefully crafted show rendered its past competition less appealing to the Champions.
+Their traditional developer-centric approach is pure brilliance from Google.
+Our Discord is still going with Google offerings as hackers are discovering new ways to profit.
+
+_Isn't it intriguing how OpenAI's ChatGPT lured in consumers by captivating the uninitiated,
+while Google tactically cornered the market by enticing the Champions?_
+Some of our community members have already billed $ 7 digits for ML offerings this year with companies of three, two and even solo.
+
+I would say more.
+IMHO, Google just may have managed to salvage this market that nearly flopped for them and their competitors.
+
+but the most important question still looms — where exactly is `this` revolution, if it is one at all?
+
+== Our Own Experience with LLMs backing Expert Systems
+
+In the realm of LLMs, there are multiple avenues one can explore for profit.
+One such approach involves reinforcement training of a bare Google Transformer LLM,
+as suggested in the paper by Google, {g-attn}.
+That *_IS_* what OpenAI carried out.
+After training, a superstructure, similar to what Google's PaLM2 API employs,
+can be added to address some of the inherent limitations of LLMs.
+
+Another intriguing methodology is the Active Inference approach propagated by Verses.
+This approach promises to tackle the fidelity issue by incorporating a form of model-based reasoning.
+However, as of now, I haven't come across any practical demonstrations that validate its effectiveness in real-world applications.
+
+Furthermore, there's the more traditional method that has been around for a while
+— *_using a context manager over a backing set of multimodal services_*.
+We experimented with simplifying this approach back in 2019 for sentiment analysis backing services.
+My own working instance is called Tillie.
+This solution has been in production since 2016.
+Without beating around the bush, let me tell you
+— although this architecture works rather well,
+the instance turned out to be a potential maintenance nightmare.
+Simpler solutions to any problem should always be the key goal.
+When a simple solution is not yet available, practical gains are an uphill battle.
+And any instance of MATILDA is an automatic manifest hell.
+Being fully automated meant that not a single issue was raised yet.
+But I have imagined some horrific "what if" scenarios.
+Realistically speaking, should the platform fail to self-heal and runaway,
+there's no way to salvage a running instance.
+The only way to recover is to shut everything down and then cold-boot.
+
+I had a close call once in 2018 when a control plane rack hosting API dispatch failed.
+It's a hub-and-spoke namespace-segregated architecture just like Borg and Kubernetes.
+I've stopped the domain command dispatch channels, and she righted herself up in a few hours.
+But it very well could have been an unrecoverable outage loosing days or weeks of work.
+
+Reflecting upon these approaches, Google's holistic method seems to stand out.
+It appears to be the most pragmatic option for those looking to augment their systems with machine learning today.
+By offering a canned combination of reinforcement training and an adaptive superstructure,
+Google's out-of-the-box approach addresses several key challenges rather difficult to overcome on one's own coding power.
+This is one of the scenarios when staying with a community pays out well.
+
+== OSS LLMs to Consider
+
+Before I conclude with the 2024 trajectory of ML in practical business,
+I must mention that there is a burgeoning ecosystem of independent open-source software (OSS) efforts focusing on LLMs.
+Many academic institutions and organizations are contributing to this space by releasing their own LLMs.
+Below are some notable OSS LLMs that seriously merit attention:
+
+* *Meta's LLaMa*: One of the earliest open-source LLMs, released by Meta. Find it on GitHub at {m-llama}.
+* *Stanford's Alpaca*: An enhanced variant of LLM developed by Stanford University. Access it on GitHub at {s-alpaca}.
+* *UC Berkeley's Vicuña*: Another enhanced variant of LLM by UC Berkeley, considered to be one of the most capable in this category.
+Check it out on GitHub at {bsd-vicuna},
+and explore more projects related to Vicuña at {bsd-vicuna-topics}.
+* *Databricks' dolly-v2-12b*: This is my personal favorite OSS model.
+It is developed by Databricks and can be accessed at {db-dolly} on GitHub and {db-dolly-hf} on Hugging
+Face.
+* *Open Assistant*: Open Assistant boasts a powerful model with a committed and principle-driven community.
+** Explore it on GitHub at {open-assistant},
+** and check out the demo site at {o-a-github},
+** and the Hugging Face repository at {o-a-hf}.
+
+In addition, there are various other LLMs developed by different institutions,
+such as Duke University, which I feel compelled to plug shamelessly.
+Frankly, I have found few as compelling for commercial use as the ones I'd already listed above.
+
+For a comprehensive list, visit the LLM Wikipedia page at {all-oss-lm-models}.
+
+== Conclusion
+
+When assessing emerging technologies, history often serves as an illuminating guide.
+Take Kubernetes, for example.
+Introduced in 2014, it piqued and held the interest of our demoscene, though wider adoption only began in earnest around 2016.
+The enthusiastic response from the demoscene was indicative of Kubernetes' impending success.
+In contrast, GraphQL was met with fervor upon its introduction, largely due to Facebook's marketing efforts.
+However, within the demoscene, skepticism abounded,
+and debates raged over its inability to export behavior in the same manner as the REST component of HTTP standard does.
+_"If we don't export behavior and just data projections, why bother with another wanting protocol when the problem is already solved well?"_
+This difference in reception among Champions hinted at the divergent paths these technologies would eventually take.
+Mundane sycophants would promote GraphQL, while more visionary individuals would focus on real value offers like Kubernetes.
+
+* But what was the real value of Kubernetes?
+** It was the ability to scale and manage distributed systems, _enabling *developers* to *focus* on their *core* tasks_.
+* _How was the real value of Kubernetes *initiated to TRUST*?_
+** *_By reusing clear, concise, and proven Borg design._*
+
+But Borg and Omega are not Open Source Technology, and Borg Control Language (BCL) is not in the public domain -- how and why hackers rock that?!
+This brings us to an essential clarification:
+despite common misconceptions, *Champions are not beholden to open-source for ideological reasons*;
+their allegiance is to pragmatism and efficacy.
+They seek tools, libraries, and methodologies that allow them to solve problems efficiently and effectively,
+the same way the market eventually will.
+The caliber of a technology is, in large part, a reflection of its community and ecosystem.
+_Champions pay good money readily and eagerly, as long as the enablement is accessible enough to be a real asset in making money._
+
+*_So, what `this` is to free our time and to elevate our inherent talents?
+
+Large Language Models (LLMs) have clearly demonstrated their utility and staying power,
+with Champions quickly finding lucrative applications for them.
+However, not all implementations of LLMs or ML implements in general are created equal.
+Google's developer-centric approach to democratizing AI has been particularly laudable.
+They've provided an array of resources, from open-source frameworks to development tools,
+which have empowered developers while emphasizing responsible AI principles.
+Recently added investment into the development community only better assures the outcome for `this`.
+
+Now, lest I am mistaken for a corporate shill, let me be clear: my aim is to provide an unvarnished analysis, not an endorsement.
+When technology genuinely empowers the developer community, it is worthy of recognition, irrespective of the source.
+
+In conclusion, machine learning is not a fleeting trend, but a transformative technology that's here to stay.
+While one could pursue formal education to gain expertise in this field,
+the accessibility and comprehensiveness of resources like those offered by Google make diving into machine learning more practical than ever.
+Whether constrained by time, resources, or just eager to get hands-on, developers now have a wealth of tools at their fingertips.
+*_The winning trajectory in 2024 is along a powerful turnkey,
+end-to-end enabled ecosystem supported by a dedicated community and an enabling all-curating vendor._*
+I expect a stream of positive changes from Champions all over the world in the very near future,
+and Google AI will be mixed in there somewhere.
+
+Live Long and Prosper!
+
+'''
+
+Disambiguation, code, and digest available to Mímis Gildi only::
+At this point, it should already be clear what the actual driver of the Commencing Revolution is -- what is `this`?!
+Just to make sure, let's have a minimalistic recap:
+
+LLMs, or any other model or device is NOT `this`!::
+How are LLMs different from so many stellar components and useful gadgets of the past?
+Tool is just a tool — in its own has little value.
+A stick is just a stick.
+
+Multimodal is NOT `this`!::
+It's an important part of `this` revolution, but not the point.
+A pile of sticks is just a pile of sticks.
+
+Human user and user interface is NOT `this`!::
+It's the most important part of this revolution, but conceptually pointless.
+
+Publicly, I can say `this` is INTEGRATION & INCORPORATION::
+Take cellphone, for example. It made us stronger. We miss it when it's not there.
+It's valuable but not a game changed. Because it's just an extension of us.
+Yet here, for the first time we have something vastly different -- it's an augmentation of us.
+More precisely, augmentation of our wetware.
+In other words, having a two-way working interaction with yet another mental model makes us `cyborgs` for the first time.
+So, `this` == `cyborg`. And what is needed next is integration and incorporation.
+Notice, champions never jump on tools or phads or anything that is not a *_real own asset_* to them.
+But they've jumped all over `this` revolution. Because they understand what's next.
+
+My expectation is that within 12–15 months, _**protocols** will emerge_.
+Perhaps something akin to an agent-pattern, like MATILDA and older AI tools used.
+And these protocols will seamlessly integrate multimodal machines into the way we think, work, and live.
+LLMs  by themselves are nothing — a tip of an emerging iceberg.
+Mark my words.
+
+== Post-Publication Digest
+
+The final note of this article originally circulated only in a private Discord
+(AGAIN Collective of a Mímis Gildi scene), where it sparked a deep and heated debate.
+
+Rather than publish it broadly, I’m including the excerpted summary above for archival and educational purposes.
+
+Many fellow hackers argued that true cyborgization — the integration of LLMs into our cognitive workflows — would not occur until:
+
+- Multimodal machine models could run locally;
+- No remote API dependency remained;
+- And training data at a petabyte scale became locally possible;
+
+I found their points compelling, though I still hold that integration can begin before full local autonomy is achieved.
+
+You may ask to join on Discord at `AlGothAmaIgaNotions` community, where the original fistfight took place,
+and take part in any future bleeding-edge discussions.
+Ask to friend `riddler9297` for an invite.
+
+'''
+
+_See editorial on Medium {medium-article-4}_.

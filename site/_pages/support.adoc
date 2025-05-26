@@ -1,0 +1,42 @@
+= On Blogging: Support Ideas
+:page-permalink: /support/
+:page-layout: single
+:ruby-gems: https://rubygems.org/gems/jekyll[RubyGems - Jekyll, window="_blank"]
+:github-site-metadata: https://jekyll.github.io/github-metadata/site.github/[Site Metadata for GitHub Pages, window="_blank"]
+:jekyll-themes: https://jekyllrb.com/docs/themes/#overriding-theme-defaults[Jekyll Themes - Overriding Theme Defaults, window="_blank"]
+:jekyll-frontmatter: https://jekyllrb.com/docs/front-matter/[Jekyll Front Matter, window="_blank"]
+:jekyll-variables: https://jekyllrb.com/docs/variables/[Jekyll Variables, window="_blank"]
+:this-repo-actions: https://github.com/Mimis-Gildi/riddle-me-this/actions[Actions, window="_blank"]
+:minimal-mistakes-structure: https://mmistakes.github.io/minimal-mistakes/docs/structure/[Structure of a Jekyll theme - Minimal Mistakes, window="_blank"]
+:minimal-mistakes-archive: https://mmistakes.github.io/minimal-mistakes/docs/layouts/#archive-pages[Archive Pages - Minimal Mistakes, window="_blank"]
+:acknowledgments: https://github.com/Mimis-Gildi/riddle-me-this/blob/main/ACKNOWLEDGMENTS.adoc[ACKNOWLEDGMENTS, window="_blank"]
+:attributions: https://github.com/Mimis-Gildi/riddle-me-this/blob/main/ATTRIBUTIONS.adoc[ATTRIBUTIONS, window="_blank"]
+
+_Just in case you've seen here something you liked here are useful links to get going and build your own site._
+
+== Site Mechanics:
+
+* {ruby-gems} - RubyGems for Jekyll.
+* {github-site-metadata} - Site Metadata for GitHub Pages.
+
+== Theming and Structure
+
+* {jekyll-themes} - Overriding Theme Defaults.
+* {jekyll-frontmatter} - Jekyll Front Matter.
+* *{jekyll-variables}* - Jekyll Variables.
+
+== _This_ Theme: Minimal Mistakes
+
+* {minimal-mistakes-structure} - Structure of a Jekyll theme - Minimal Mistakes.
+* {minimal-mistakes-archive} - Archive Pages - Minimal Mistakes.
+
+== GitHub Ops
+
+* {this-repo-actions} - Actions for this repo (as an example).
+
+== Additional Resources
+
+_The root of this repository has more useful links to peruse if you are new to Jekyll Sites, GitHub Pages, and GitHub Actions._
+
+- {acknowledgments}
+- {attributions}

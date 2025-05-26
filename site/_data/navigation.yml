@@ -1,0 +1,66 @@
+# main links
+main:
+  - title: "About"
+    url: /about/
+    description: "About the purpose of this site."
+  - title: "Reflections"
+    url: /reflections/
+    description: "My personal reflections and notes on extraordinary feats from the scene life."
+  - title: "Adventures"
+    url: /adventures/
+    description: "J Random Hacker's adventures; someone we may or may not know."
+  - title: "Community"
+    url: /community/
+    description: "On Mímis Gildi, Gervi Héra Vitr, and Gotham Community Life."
+  - title: "Maintainer"
+    url: /maintainer/
+    description: "About the person behind this site - Yours Truly. Introduction, résumé, bio, and links."
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+
+
+# community links - for the sidebar; permanent to rdd13r.
+communities:
+  - title: "Discussions"
+    url: https://github.com/Mimis-Gildi/riddle-me-this/discussions
+
+  - title: "Hacker Communities"
+    children:
+    - title: "Mímis Gildi"
+      url: https://github.com/Mimis-Gildi
+    - title: "Gervi Héra Vitr - Learning Trails Community"
+      url: https://github.com/orgs/Gervi-Hera-Vitr
+    - title: "Mímis Látlæg Háttalag - Corporate America Community"
+      url: https://github.com/Mimis-Latlaeg-Hattalag
+       makes the whole chain stronger. And judging is a sin."
+    - title: "Sister Community - 'the village'"
+      url: https://github.com/Gotham-Village
+    - title: "Captain's School"
+      url: https://github.com/Gervi-Hera-Vitr/sindri-labs
+
+  - title: "Archive & Tags"
+    children:
+      - title: "Archive by Category"
+        url: /categories/
+      - title: "Archive by Tag"
+        url: /tags/
+      - title: "Archive by Year"
+        url: /archive/year/
+      - title: "Site Map"
+        url: /sitemap/
+
+  - title: "Docs & Tools"
+    children:
+      - title: "GitHub Pages"
+        url: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll
+      - title: "Minimal Mistakes"
+        url: https://mmistakes.github.io/minimal-mistakes/
+      - title: "Jekyll"
+        url: https://jekyllrb.com/
+      - title: "RubyGems"
+        url: https://rubygems.org/gems/jekyll-asciidoc/
+      - title: "Actions Here"
+        url: https://github.com/Mimis-Gildi/riddle-me-this/actions
+

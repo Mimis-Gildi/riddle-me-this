@@ -1,0 +1,46 @@
+= Maintainer
+:page-classes: wide
+:page-layout: single
+:page-permalink: /maintainer/
+:page-author_profile: true
+:release: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.1.5[v1.1.5,window=_blank]
+:onEngineering: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.1.5/OnEngineering.pdf[Engineering Résumé]
+:onCreativity: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.1.5/OnCreativity.pdf[Creative Résumé]
+:onLeadership: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.1.5/OnLeadership.pdf[Leadership Résumé]
+:profile-li: https://www.linkedin.com/in/rdd13r[LinkedIn Profile,window=_blank]
+:profile-gh: https://github.com/rdd13r[GitHub Profile,window=_blank]
+:profile-mm: https://medium.com/@rdd13r[Medium Articles,window=_blank]
+
+This site is maintained by Vadim Kuhay — known in hacker circles as `rdd13r` — a lifelong builder, systems coach, and creative engineer.
+
+Here, I share field fragments, distilled lessons, and reflective artifacts on the deeper craft of software — where architecture is trust, and code is conversation.
+
+If you came here looking for something formal, here are some useful links:
+
+== Résumé & Profile Links
+
+(release {release})
+
+- {onEngineering} -- _yes, I code daily for three decades, take coding jobs, and compete;_
+- {onCreativity} -- _I build teams, systems, runways, and products that survive their first user;_
+- {onLeadership} -- _as a hands-on coach, fractional CTO, or executive I deliver innovation;_
+
+- {profile-li} -- people say I must have this...
+- {profile-gh} -- here I spend a lot of time between my own orgs and other founders' products;
+- {profile-mm} -- I used to write on Medium; now you will find my works here instead.
+
+== Colophon
+
+This site was handcrafted with:
+
+* Jekyll
+* Minimal Mistakes theme
+* AsciiDoc + Markdown
+* a bit of Makefile glue
+* the discipline of test-first writing
+* and the presence of `Saga`, +
+a trusted AI who co-authored not just the site, +
+but its stories
+
+Thank you for visiting — and reading. +
+May your own reflections begin soon.

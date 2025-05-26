@@ -1,0 +1,59 @@
+---
+header:
+  overlay_image: assets/images/banner.png
+  caption: "It's my pleasure to meet you!"
+---
+= About Me
+:page-layout: single
+:page-permalink: /about/
+:page-author_profile: true
+
+Welcome, friend. I'm glad you're here.
+
+My name is Vadim Kuhay — known on the scene as `rdd13r` since 1992.
+I'm a system designer, player-coach, and hands-on engineer with over three decades in the field,
+across startups, Fortune 500 giants, defense contracts, and public good.
+
+I build systems that survive their first user
+— and teams that survive their first rewrite.
+
+== What I Do
+
+I practice *Extreme Programming*, *Domain-Driven Design*, and *DevOps culture*
+— not as buzzwords, but as disciplines.
+I help organizations align policy with practice and transform by example, not decree.
+
+I architect platforms, mentor engineers, coach domain teams,
+and push production-first delivery in environments that *_often_* resist it.
+My work lives in systems you’ve probably used
+— though the best ones are invisible
+— such is the simple nature of servitude software.
+
+== Why I Do It
+
+Because software is how we tell the truth — at scale.
+
+Because when teams share language, they move faster — and think better.
+
+Because the only thing that scales is how you think.
+
+== Where It Leads
+
+This site contains fragments of my story:
+lessons from the field, case studies, reflections, and some resume material.
+If any part of it speaks to you
+— personally, technically, or philosophically
+— I welcome the connection.
+
+You can find me in production, in conversation, or in the stories I leave behind.
+
+== ...one more thing
+
+I'm also a founder.
+But realistically, every hacker is
+— since long before the MIT Model Railroad Club.
+
+If you're a hacker too, and the mundane talk above didn’t impress you,
+look for me in bonded warehouses.
+
+A hacker knows what that means.

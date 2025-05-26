@@ -1,0 +1,25 @@
+= Community
+:page-layout: single
+:page-permalink: /community/
+:page-author_profile: true
+
+Our GitHub communities are more than repositories—they're living ecosystems where mentorship, experimentation, and shared learning thrive.
+
+== 🧙 Mímis Gildi
+link:https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank] serves as our central hub for personal projects, management tools, and hidden artifacts. It's the backbone of our collaborative efforts and the home of this very site.
+
+== 🧵 Mímis Scala
+link:https://github.com/Mimis-Scala[Mímis Scala,window=_blank] was once our go-to for Scala-based explorations. While Kotlin has taken the forefront, this space remains a testament to our journey through functional programming paradigms.
+
+== 🧰 Mímis Látlæg Háttalag
+link:https://github.com/Mimis-Latlaeg-Hattalag[Mímis Látlæg Háttalag,window=_blank] offers practical resources tailored for organizations navigating digital transformation. It's a lifeline for those seeking guidance in adopting modern tech stacks like Spring Boot.
+
+== 🧠 Gervi Héra Vitr
+link:https://github.com/Gervi-Hera-Vitr[Gervi Héra Vitr,window=_blank] is Anton's educational playground. Here, young minds delve into AI and machine learning, guided by curated learning trails and hands-on projects.
+
+== 🏙️ Gotham Village
+link:https://github.com/Gotham-Village[Gotham Village,window=_blank] is our picturesque community for co-mentoring and shared growth. It's a space where seasoned developers and newcomers alike collaborate on diverse projects.
+
+'''
+
+Feel free to explore these communities and join us in our ongoing journey of learning and innovation.
