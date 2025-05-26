@@ -1,0 +1,25 @@
+---
+layout: archive
+---
+
+{% assign year = page.date | date: "%Y" %}
+{% assign month = page.date | date: "%m" %}
+
+<h2 class="archive__subtitle">Posts from {{ page.date | date: "%B %Y" }}</h2>
+
+{% assign month_posts = "" | split: "" %}
+{% for post in site.posts %}
+{% assign post_year = post.date | date: "%Y" %}
+{% assign post_month = post.date | date: "%m" %}
+{% if post_year == year and post_month == month %}
+{% assign month_posts = month_posts | push: post %}
+{% endif %}
+{% endfor %}
+
+{% if month_posts.size > 0 %}
+{% for post in month_posts %}
+{% include archive-single.html %}
+{% endfor %}
+{% else %}
+<p><em>No posts found for {{ page.date | date: "%B %Y" }}.</em></p>
+{% endif %}

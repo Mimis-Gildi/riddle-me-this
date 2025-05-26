@@ -1,18 +1,17 @@
 ---
-layout: default
+layout: archive
 ---
 
-{% assign posts = page.posts %}
-{% assign year = page.date | date: '%Y' %}
+{% assign current_year = page.date | date: "%Y" %}
+{% assign year_posts = site.posts | where: "date", page.date %}
 
-<!--suppress HtmlUnknownTarget -->
-<h1>Posts from {{ year }}</h1>
+<h2 class="archive__subtitle">Posts from {{ current_year }}</h2>
 
-<ul>
-    {% for post in posts %}
-    <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <small>— {{ post.date | date: "%b %-d, %Y" }}</small>
-    </li>
+{% assign year_posts = site.posts | where_exp: "post", "post.date contains current_year" %}
+{% if year_posts.size > 0 %}
+    {% for post in year_posts %}
+        {% include archive-single.html %}
     {% endfor %}
-</ul>
+{% else %}
+    <p><em>No posts found for {{ current_year }}.</em></p>
+{% endif %}

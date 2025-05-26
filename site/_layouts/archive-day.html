@@ -1,0 +1,22 @@
+---
+layout: archive
+---
+
+{% assign archive_day = page.date | date: "%Y-%m-%d" %}
+<h2 class="archive__subtitle">Posts from {{ archive_day }}</h2>
+
+{% assign day_posts = "" | split: "" %}
+{% for post in site.posts %}
+{% assign post_day = post.date | date: "%Y-%m-%d" %}
+{% if post_day == archive_day %}
+{% assign day_posts = day_posts | push: post %}
+{% endif %}
+{% endfor %}
+
+{% if day_posts.size > 0 %}
+{% for post in day_posts %}
+{% include archive-single.html %}
+{% endfor %}
+{% else %}
+<p><em>No posts found for {{ archive_day }}.</em></p>
+{% endif %}

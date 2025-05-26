@@ -54,6 +54,7 @@ defaults:
       comments              : false
       share                 : true
       related               : true
+      breadcrumbs           : false
   - scope:
       path                  : ""
       type                  : pages
@@ -165,23 +166,26 @@ tag_archive:
   type: jekyll-archives
   path: /tags/
 
-year_archive:
-  type: jekyll-archives
-  path: /archive/year/
-
 jekyll-archives:
   enabled:
+    - year
+    - month
+    - day
     - categories
     - tags
-    - year
   layouts:
+    year: archive-year
+    month: archive-month
+    day: archive-day
     category: archive-taxonomy
     tag: archive-taxonomy
-    year: archive-year
   permalinks:
+    year: /archive/:year/
+    month: /archive/:year/:month/
+    day: /archive/:year/:month/:day/
     category: /categories/:name/
     tag: /tags/:name/
-    year: /archive/year/:year/
+
 
 
 # Using feeds, and at least I check

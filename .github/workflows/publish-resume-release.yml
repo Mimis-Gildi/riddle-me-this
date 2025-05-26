@@ -1,0 +1,56 @@
+name: Publish Résumé Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      prerelease:
+        type: boolean
+        default: false
+        description: 'Mark this release as a pre-release'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Set up Gradle
+        uses: gradle/gradle-build-action@v3
+
+      - name: Build Resumes
+        run: gradle asciidoctorPdf
+
+      - name: Get Version from gradle.properties
+        id: props
+        run: |
+          VERSION=$(grep '^version=' gradle.properties | cut -d'=' -f2)
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: v${{ steps.props.outputs.version }}
+          name: "Résumé Bundle v${{ steps.props.outputs.version }}"
+          body: |
+            🎉 Vadim Kuhay Résumé Bundle – `${{ github.event.inputs.release_version }}`
+
+            Includes:
+            - 🛠️ OnEngineering.pdf
+            - 🎨 OnCreativity.pdf
+            - 🧭 OnLeadership.pdf
+
+            See the [maintainer page](https://mimis-gildi.github.io/riddle-me-this/maintainer/) for live site links.
+
+          prerelease: ${{ github.event.inputs.prerelease }}
+          artifacts: build/docs/asciidocPdf/*.pdf
