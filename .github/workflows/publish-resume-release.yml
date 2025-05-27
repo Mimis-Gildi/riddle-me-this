@@ -53,20 +53,20 @@ jobs:
             git push origin v${{ steps.props.outputs.version }}
           fi
 
+      - name: Check release notes exist
+        run: |
+          NOTES_FILE=releases/v${{ steps.props.outputs.version }}.md
+          if [ ! -f "$NOTES_FILE" ]; then
+            echo "❌ Release notes not found: $NOTES_FILE"
+            exit 1
+          fi
+
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
         with:
           tag: v${{ steps.props.outputs.version }}
           name: "Résumé Bundle v${{ steps.props.outputs.version }}"
-          body: |
-            🎉 Vadim Kuhay Résumé Bundle – `${{ github.event.inputs.release_version }}`
-
-            Includes:
-            - 🛠️ OnEngineering.pdf
-            - 🎨 OnCreativity.pdf
-            - 🧭 OnLeadership.pdf
-
-            See the [maintainer page](https://mimis-gildi.github.io/riddle-me-this/maintainer/) for live site links.
-
+          bodyFile: releases/v${{ steps.props.outputs.version }}.md
           prerelease: ${{ github.event.inputs.prerelease }}
           artifacts: build/docs/asciidocPdf/*.pdf
+
