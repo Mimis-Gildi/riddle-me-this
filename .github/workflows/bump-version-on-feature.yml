@@ -41,6 +41,8 @@ jobs:
       - name: 🏷️ Check for major label on issue
         if: steps.check.outputs.proceed == 'true'
         id: labelcheck
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           ISSUE_NUMBER=${{ steps.check.outputs.issue_number }}
           echo "🔎 Inspecting labels for issue #$ISSUE_NUMBER"
