@@ -30,13 +30,31 @@ jobs:
             echo "✅ Branch matches pattern: issue-style feature"
             echo "::notice title=Branch Match::✅ Pattern matched"
             echo "proceed=true" >> $GITHUB_OUTPUT
+            ISSUE_NUMBER=$(echo "$BRANCH_NAME" | cut -d- -f1)
+            echo "issue_number=$ISSUE_NUMBER" >> $GITHUB_OUTPUT
           else
             echo "⛔️ Branch does not match feature pattern, skipping."
             echo "::warning title=Branch Skipped::⛔ Not a feature branch, skipping version bump."
             echo "proceed=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: 🧬 Bump minor version
+      - name: 🏷️ Check for major label on issue
+        if: steps.check.outputs.proceed == 'true'
+        id: labelcheck
+        run: |
+          ISSUE_NUMBER=${{ steps.check.outputs.issue_number }}
+          echo "🔎 Inspecting labels for issue #$ISSUE_NUMBER"
+          LABELS=$(gh issue view "$ISSUE_NUMBER" --json labels --jq '.labels[].name' || echo '')
+          echo "::notice title=Labels Fetched::$LABELS"
+          if [[ "$LABELS" == *"major"* ]]; then
+            echo "major=true" >> $GITHUB_OUTPUT
+            echo "::notice title=Version Type::🚀 Major bump triggered"
+          else
+            echo "major=false" >> $GITHUB_OUTPUT
+            echo "::notice title=Version Type::🔁 Standard minor bump"
+          fi
+
+      - name: 🧬 Bump version
         if: steps.check.outputs.proceed == 'true'
         id: bump
         run: |
@@ -45,7 +63,13 @@ jobs:
           MAJOR=$(echo "$VERSION" | cut -d. -f1)
           MINOR=$(echo "$VERSION" | cut -d. -f2)
           PATCH=$(echo "$VERSION" | cut -d. -f3)
-          NEW_VERSION="$MAJOR.$((MINOR + 1)).0"
+
+          if [[ "${{ steps.labelcheck.outputs.major }}" == "true" ]]; then
+            NEW_VERSION="$((MAJOR + 1)).0.0"
+          else
+            NEW_VERSION="$MAJOR.$((MINOR + 1)).0"
+          fi
+
           echo "::notice title=Version Bumped::🔄 $VERSION → $NEW_VERSION"
           sed -i "s/^version=.*/version=$NEW_VERSION/" "$FILE"
           echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
@@ -56,5 +80,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add gradle.properties
-          git commit -m "🔼 Auto bump minor version to ${{ steps.bump.outputs.new_version }}"
+          git commit -m "🔼 Auto bump version to ${{ steps.bump.outputs.new_version }}"
           git push || echo "::warning title=Push Failed::⚠️ Git push failed — manual intervention may be required."
