@@ -24,14 +24,17 @@ jobs:
         include:
           - language: actions
             build-mode: none
+            uses-gradle: false
           - language: java-kotlin
             build-mode: autobuild
+            uses-gradle: true
           - language: ruby
             build-mode: none
+            uses-gradle: false
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
 
       - name: Setup Java for Kotlin
         if: matrix.language == 'java-kotlin'
@@ -48,12 +51,12 @@ jobs:
           queries: +security-extended,security-and-quality
 
       - name: Fallback Gradle Build
-        if: matrix.language == 'java-kotlin' && matrix.build-mode == 'autobuild'
+        if: matrix.uses-gradle && matrix.build-mode == 'autobuild'
         run: |
           echo "::group::Fallback Gradle Build"
           ./gradlew clean classes testClasses \
-            && echo "::notice title=Gradle::Fallback build succeeded" \
-            || echo "::warning title=Gradle::Fallback build::Build failed or not required"
+            && echo "::notice title=Gradle::✔️ Fallback succeeded" \
+            || echo "::warning title=Gradle::❌ Fallback failed (ignored)"
           echo "::endgroup::"
 
       - name: Wrap-Up
