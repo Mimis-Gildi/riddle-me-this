@@ -4,6 +4,8 @@ on:
   create:
     branches:
       - '**'
+    branches-ignore:
+      - main
 
 jobs:
   bump_minor_version:
@@ -15,13 +17,12 @@ jobs:
 
     steps:
       - name: ⏳ Wait for GitHub ref propagation
-        run: sleep 5
+        run: sleep 3
 
       - name: ⬇️ Checkout repository
-        # actions/checkout@v4.2.2 pinned to SHA for reproducibility
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        uses: actions/checkout@v4.2.2
 
-      - name: 🧪 Check if branch matches issue-style (e.g. 12-feature-title)
+      - name: 🦪 Check if branch matches issue-style (e.g. 12-feature-title)
         id: check
         run: |
           BRANCH_NAME="${GITHUB_REF#refs/heads/}"
@@ -33,8 +34,8 @@ jobs:
             ISSUE_NUMBER=$(echo "$BRANCH_NAME" | cut -d- -f1)
             echo "issue_number=$ISSUE_NUMBER" >> $GITHUB_OUTPUT
           else
-            echo "⛔️ Branch does not match feature pattern, skipping."
-            echo "::warning title=Branch Skipped::⛔ Not a feature branch, skipping version bump."
+            echo "❌ Branch does not match feature pattern, skipping."
+            echo "::warning title=Branch Skipped::❌ Not a feature branch, skipping version bump."
             echo "proceed=false" >> $GITHUB_OUTPUT
           fi
 
@@ -106,7 +107,7 @@ jobs:
             echo "::warning title=Maintainer File Missing::⚠️ site/_pages/maintainer.adoc not found"
           fi
 
-      - name: 💾 Commit and push new version
+      - name: 📂 Commit and push new version
         if: steps.check.outputs.proceed == 'true'
         run: |
           git config user.name "github-actions[bot]"
@@ -114,3 +115,13 @@ jobs:
           git add gradle.properties README.adoc site/_pages/maintainer.adoc || true
           git commit -m "🔼 Auto bump version to ${{ steps.bump.outputs.new_version }}"
           git push || echo "::warning title=Push Failed::⚠️ Git push failed — manual intervention may be required."
+
+      - name: 🏋️ Summary annotation
+        if: steps.check.outputs.proceed == 'true'
+        run: |
+          echo "::notice title=📅 Bump Summary::
+          Branch: ${GITHUB_REF#refs/heads/}
+          From: ${{ steps.bump.outputs.old_version }}
+          To: ${{ steps.bump.outputs.new_version }}
+          Major bump: ${{ steps.labelcheck.outputs.major }}
+          Files touched: gradle.properties, README.adoc, site/_pages/maintainer.adoc"
