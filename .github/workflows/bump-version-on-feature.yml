@@ -41,7 +41,7 @@ jobs:
 
       - name: 🏷️ Check for major label on issue
         if: steps.check.outputs.proceed == 'true'
-        id: labelcheck
+        id: label-check
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

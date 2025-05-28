@@ -21,25 +21,33 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        id: checkout
+        uses: actions/checkout@v4.2.2
 
       - name: Set up Java
-        uses: actions/setup-java@v4
+        id: java-setup
+        uses: actions/setup-java@v4.7.1
         with:
           distribution: temurin
           java-version: 21
 
       - name: Set up Gradle
-        uses: gradle/gradle-build-action@v3
+        id: gradle-setup
+        uses: gradle/actions/setup-gradle@v4.4.0
+
+      - name: Generate and Submit this Dependency Graph
+        id: dependency-submission
+        uses: gradle/actions/dependency-submission@v4.4.0
 
       - name: Build Resumes
-        run: gradle asciidoctorPdf
+        run: ./gradlew asciidoctorPdf
 
       - name: Get Version from gradle.properties
         id: props
         run: |
           VERSION=$(grep '^version=' gradle.properties | cut -d'=' -f2)
           echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "::notice title=Version Aware::🪜 Detected version: $VERSION"
 
       - name: Create Git Tag
         run: |
@@ -47,22 +55,23 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch --tags
           if git rev-parse "v${{ steps.props.outputs.version }}" >/dev/null 2>&1; then
-            echo "Tag v${{ steps.props.outputs.version }} already exists. Skipping tagging."
+            echo "::warning title=Tag Exists::Tag v${{ steps.props.outputs.version }} already exists. Skipping tagging."
           else
             git tag v${{ steps.props.outputs.version }}
             git push origin v${{ steps.props.outputs.version }}
+            echo "::notice title=Tag Created::🪜 Tagged v${{ steps.props.outputs.version }}"
           fi
 
-      - name: Check release notes exist
+      - name: Check that Release Notes exist to be used.
         run: |
           NOTES_FILE=releases/v${{ steps.props.outputs.version }}.md
           if [ ! -f "$NOTES_FILE" ]; then
-            echo "❌ Release notes not found: $NOTES_FILE"
+            echo "::error title=❌ Release Notes Missing::Release notes not found: $NOTES_FILE (Required for release creation)"
             exit 1
           fi
 
       - name: Create GitHub Release
-        uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@v1.16.0
         with:
           tag: v${{ steps.props.outputs.version }}
           name: "Résumé Bundle v${{ steps.props.outputs.version }}"
