@@ -2,8 +2,6 @@ name: Auto Minor Version Bump on Feature Branch Creation
 
 on:
   create:
-    branches:
-      - '**'
     branches-ignore:
       - main
 
