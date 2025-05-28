@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - '10-*'
   workflow_dispatch:
 
 permissions:
@@ -21,27 +20,48 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: ⬇️ Checkout repository
+        uses: actions/checkout@v4.2.2
 
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - name: 🧰 Set up Ruby
+        uses: ruby/setup-ruby@v1.171.0
         with:
           ruby-version: 3.3.5
           bundler-cache: true
           working-directory: site
 
-      - name: Install dependencies
+      - name: 📦 Install dependencies
         working-directory: site
         run: bundle install
 
-      - name: Build Jekyll site
-        working-directory: site
-        run: JEKYLL_ENV=production bundle exec jekyll build
+      - name: ✏️ Inject version tag into site
+        run: |
+          VERSION=$(git describe --tags --abbrev=0 || echo "v0.0.0")
+          echo "site_version: $VERSION" >> site/_config.yml
+          echo "::notice title=Version Injected::🔖 Set site_version: $VERSION"
 
-      - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: 🛠️ Build Jekyll site
+        working-directory: site
+        run: |
+          echo "::group::Jekyll Build"
+          JEKYLL_ENV=production bundle exec jekyll build
+          echo "::notice title=Jekyll Status::✅ Build complete"
+          echo "::endgroup::"
+
+      - name: 🔗 Check for broken links
+        working-directory: site/_site
+        run: |
+          echo "::group::Link Check"
+          find . -name "*.html" -exec grep -o 'href="[^"]*"' {} \; \
+            | cut -d'"' -f2 \
+            | grep -Ev '^#|^mailto:|^https?://' \
+            | xargs -I{} test -e "{}" \
+            && echo "::notice title=Links::✅ All internal links valid" \
+            || echo "::warning title=Links::⚠️ Broken internal links found"
+          echo "::endgroup::"
+
+      - name: 📤 Upload site artifact
+        uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: site/_site
 
@@ -53,6 +73,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Deploy to GitHub Pages
+      - name: 🚀 Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4.0.4
