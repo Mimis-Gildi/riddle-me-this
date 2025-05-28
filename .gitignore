@@ -165,7 +165,7 @@ jspm_packages/
 
 ### Gradle template
 .gradle
-**/build/
+build
 !src/**/build/
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -253,4 +253,4 @@ out/
 
 
 # Ignore Gradle build output directory
-build
+/workflows.csv
