@@ -1,0 +1,59 @@
+name: "Prune Actions by CLI"
+run-name: "Prune Old Action Runs on [${{ github.repository }}] @ ${{ github.ref }} by ${{ github.actor }} with ${{ github.event_name }}"
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  actions: write
+  contents: write
+
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}-actions-prune"
+  cancel-in-progress: true
+
+jobs:
+
+  cleanup-old-action-runs-leaving-one:
+    timeout-minutes: 3
+    runs-on: ubuntu-latest
+    name: "Prune old actions leaving one"
+
+    steps:
+
+      - name: "Checkout repository source code"
+        uses: actions/checkout@v4.2.2
+        timeout-minutes: 1
+
+      - name: "Cleanup old action runs leaving the last one for each workflow"
+        run: |
+          on_branch="${BRANCH:-$(git rev-parse --abbrev-ref HEAD)}"
+          echo "::notice title=Workflow Runs Pruner::Agent host <$(hostname)>: Running on branch <$on_branch>.";
+            
+          IFS=$'\n' read -r -d '' -a workflows <<< "$(gh workflow list --json id,name,path,state -q '.[] | [ .id, .name, .path, .state ] | @csv')"
+          for workflow_row in "${workflows[@]}"; do
+            IFS=',' read -r -d '' workflow_id workflow_name workflow_description workflow_state <<< "${workflow_row//$'\n'/}"
+            echo "::group::$workflow_name";
+        
+            if [[ -z "${workflow_id// }" ]]; then
+              echo "::notice title=NOOP::Workflow $workflow_name has no runs to clean up. ($workflow_id,$workflow_state) $workflow_description.";
+            else
+              IFS=$'\n' read -r -d '' -a run_ids <<< "$(gh run list --workflow="$workflow_id" --json databaseId --limit 500 -q '.[1:] | .[].databaseId')"
+              echo "${run_ids[*]}"
+              for run_id in "${run_ids[@]}"; do
+                if [[ -z "${run_id// }" ]]; then
+                  echo "::notice title=NOOP(row)::This run is empty/null.";
+                else
+                  gh run delete "$run_id"
+                  echo "::notice title=$run_id::Requested deletion of run ID: $run_id for workflow: $workflow_name"
+                fi
+              done
+            fi
+            echo "::endgroup::"
+          done
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          BRANCH: ${{ github.ref }}
+          RESTRICTION: ${{ inputs.restriction }}
