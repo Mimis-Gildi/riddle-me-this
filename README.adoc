@@ -47,4 +47,9 @@ Grab the latest from the GitHub Releases page:
 * Email: vadim.kuhay@gmail.com
 * Signal / Text: +1 (919) 717-1387
 
+'''
+
 image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/codeql.yml/badge.svg?branch=main[CodeQL Advanced,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/codeql.yml,window=_blank,opts=nofollow]
+image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/jekyll-gh-pages.yml/badge.svg?branch=main[Build and Deploy Jekyll Site,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/jekyll-gh-pages.yml,window=_blank,opts=nofollow]
+image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/actions-prune.yml/badge.svg?branch=main[Prune Actions by CLI,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/actions-prune.yml,window=_blank,opts=nofollow]
+image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/publish-resume-release.yml/badge.svg?branch=main[Publish Résumé Release,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/publish-resume-release.yml,window=_blank,opts=nofollow]
