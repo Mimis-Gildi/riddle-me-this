@@ -1,0 +1,40 @@
+name: "Prune GitHub Actions Cache"
+run-name: "Prune Caches on [${{ github.repository }}] @ ${{ github.ref }}"
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}-cache-prune"
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  prune-actions-cache:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    name: "Prune GitHub Actions Cache"
+
+    steps:
+      - name: "Install GitHub Actions Cache Extension"
+        run: |
+          gh extension install actions/gh-actions-cache
+
+      - name: "List Current Cache Keys"
+        run: |
+          gh actions-cache list --limit 30
+
+      - name: "Prune Older Cache Keys (Keep 3 Newest)"
+        run: |
+          mapfile -t cacheKeys < <(gh actions-cache list --limit 30 | cut -f 1)
+          mapfile -t cacheKeysToPrune <<< "${cacheKeys[@]:3}"
+          
+          for cacheKey in "${cacheKeysToPrune[@]}"; do
+            if [[ -n "${cacheKey}" ]]; then
+              echo "Deleting cache key: $cacheKey"
+              gh actions-cache delete "$cacheKey" --confirm
+            fi
+          done
