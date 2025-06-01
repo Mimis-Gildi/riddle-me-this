@@ -25,16 +25,16 @@ https://mimis-gildi.github.io/riddle-me-this/maintainer/
 🧭 **Start with reflections**:
 https://mimis-gildi.github.io/riddle-me-this/reflections/
 
-== 📄 Résumé Release v1.2.0
+== 📄 Résumé Release v1.3.0
 
 This repo includes three curated PDFs packaged with each release.
 Grab the latest from the GitHub Releases page:
 
-📦 https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.2.0
+📦 https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.3.0
 
-* 📄 [Engineering Résumé](https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.2.0/OnEngineering.pdf) – code, systems, and production
-* 🧠 [Creative Résumé](https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.2.0/OnCreativity.pdf) – teams, products, and vision
-* 🌱 [Leadership Résumé](https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.2.0/OnLeadership.pdf) – transformation, innovation, CTO roles
+* 📄 [Engineering Résumé](https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.3.0/OnEngineering.pdf) – code, systems, and production
+* 🧠 [Creative Résumé](https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.3.0/OnCreativity.pdf) – teams, products, and vision
+* 🌱 [Leadership Résumé](https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.3.0/OnLeadership.pdf) – transformation, innovation, CTO roles
 
 == 🔗 Profiles
 
