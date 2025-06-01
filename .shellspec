@@ -1,0 +1,6 @@
+--require spec_helper
+--helperdir src/test/helper
+--default-path src/test/sh
+--shell bash
+
+--kcov-options "--include-pattern=.sh"

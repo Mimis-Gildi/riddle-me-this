@@ -1,0 +1,125 @@
+{
+  "storage_layer": {
+    "chunks": {
+      "total_chunks": 28,
+      "mem_chunks": 27,
+      "fs_chunks": 1,
+      "fs_chunks_up": 0,
+      "fs_chunks_down": 1
+    }
+  },
+  "input_chunks": {
+    "kube": {
+      "status": {
+        "overlimit": false,
+        "mem_size": "0b",
+        "mem_limit": "28.6M"
+      },
+      "chunks": {
+        "total": 0,
+        "up": 0,
+        "down": 0,
+        "busy": 0,
+        "busy_size": "0b"
+      }
+    },
+    "storage_backlog.1": {
+      "status": {
+        "overlimit": false,
+        "mem_size": "0b",
+        "mem_limit": "0b"
+      },
+      "chunks": {
+        "total": 0,
+        "up": 0,
+        "down": 0,
+        "busy": 0,
+        "busy_size": "0b"
+      }
+    },
+    "emitter_for_detect-nginx-ingress": {
+      "status": {
+        "overlimit": false,
+        "mem_size": "0b",
+        "mem_limit": "9.5M"
+      },
+      "chunks": {
+        "total": 0,
+        "up": 0,
+        "down": 0,
+        "busy": 0,
+        "busy_size": "0b"
+      }
+    },
+    "emitter_for_detect-aaaa-logger": {
+      "status": {
+        "overlimit": false,
+        "mem_size": "3.0M",
+        "mem_limit": "9.5M"
+      },
+      "chunks": {
+        "total": 23,
+        "up": 23,
+        "down": 0,
+        "busy": 23,
+        "busy_size": "3.0M"
+      }
+    },
+    "emitter_for_detect-kong-proxy-logger": {
+      "status": {
+        "overlimit": false,
+        "mem_size": "99.6K",
+        "mem_limit": "9.5M"
+      },
+      "chunks": {
+        "total": 4,
+        "up": 4,
+        "down": 0,
+        "busy": 4,
+        "busy_size": "99.6K"
+      }
+    },
+    "emitter_for_detect-elastic-logs": {
+      "status": {
+        "overlimit": false,
+        "mem_size": "0b",
+        "mem_limit": "9.5M"
+      },
+      "chunks": {
+        "total": 0,
+        "up": 0,
+        "down": 0,
+        "busy": 0,
+        "busy_size": "0b"
+      }
+    },
+    "emitter_for_detect-audit-logs": {
+      "status": {
+        "overlimit": false,
+        "mem_size": "0b",
+        "mem_limit": "9.5M"
+      },
+      "chunks": {
+        "total": 0,
+        "up": 0,
+        "down": 0,
+        "busy": 0,
+        "busy_size": "0b"
+      }
+    },
+    "emitter_for_detect-other": {
+      "status": {
+        "overlimit": false,
+        "mem_size": "0b",
+        "mem_limit": "9.5M"
+      },
+      "chunks": {
+        "total": 0,
+        "up": 0,
+        "down": 0,
+        "busy": 0,
+        "busy_size": "0b"
+      }
+    }
+  }
+}
