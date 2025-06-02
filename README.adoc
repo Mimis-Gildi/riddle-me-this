@@ -9,6 +9,14 @@ v1.1.5, Friday May 16th 2025
 :keywords: Mímir Rdd13r Résumé Hacker Vadim Kuhay
 :imagesdir: ./resources/images
 ifdef::env-name[:relfilesuffix: .adoc]
+:gha: https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows
+:a-codacy: {gha}/security-scan-by-codacy.yml
+:a-codeql: {gha}/security-scan-by-codeql.yml
+:a-site: {gha}/github-pages-jekyll-build-and-deploy.yml
+:a-prune: {gha}/github-actions-prune.yml
+:a-cache: {gha}/github-cache-prune.yml
+:a-resume: {gha}/custom-publish-resume-release.yml
+:a-version: {gha}/custom-bump-version-on-feature-branch.yml
 
 This repository is the *canonical source of truth* for Vadim Kuhay’s (aka `rdd13r`) résumé materials, engineering artifacts, and personal publications.
 
@@ -49,9 +57,13 @@ Grab the latest from the GitHub Releases page:
 
 '''
 
-image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/security-scan-by-codacy.yml/badge.svg[Security Scan by Codacy,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/security-scan-by-codacy.yml,window=_blank,opts=nofollow]
-image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/codeql.yml/badge.svg[Security Scan by CodeQL,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/codeql.yml,window=_blank,opts=nofollow]
-image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/jekyll-gh-pages.yml/badge.svg[Build and Deploy Jekyll Site,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/jekyll-gh-pages.yml,window=_blank,opts=nofollow]
-image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/actions-prune.yml/badge.svg[Prune Actions by CLI,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/actions-prune.yml,window=_blank,opts=nofollow]
-image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/publish-resume-release.yml/badge.svg[Publish Résumé Release,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/publish-resume-release.yml,window=_blank,opts=nofollow]
-image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/bump-version-on-feature.yml/badge.svg[Auto Minor Version Bump on Feature Branch Creation,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/bump-version-on-feature.yml,window=_blank,opts=nofollow]
+image::{a-codacy}/badge.svg[Security Scan by Codacy,link={a-codacy},window=_blank,opts=nofollow,float="left"]
+image::{a-codeql}/badge.svg[Security Scan by CodeQL,link={a-codeql},window=_blank,opts=nofollow,float="left"]
+image::{a-site}/badge.svg[GitHub Site Build and Deploy by Jekyll,link={a-site},window=_blank,opts=nofollow,float="left]
+image::{a-prune}/badge.svg[GitHub Prune Actions by CLI,link={a-prune},window=_blank,opts=nofollow,float="left]
+iamge::{a-cache}/badge.svg[GitHub Prune Actions Cache by CLI,link={a-cache},window=_blank,opts=nofollow,float="left]
+image::{a-resume}/badge.svg[Publish Résumé Release for the Current Tag,link={a-resume},window=_blank,opts=nofollow,float="left]
+image::{a-version}/badge.svg[Version Bump on Feature Creation,link={a-resume},window=_blank,opts=nofollow,float="left]
+
+'''
+
