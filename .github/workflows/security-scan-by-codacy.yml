@@ -110,17 +110,36 @@ jobs:
           gh-code-scanning-compat: true
           max-allowed-issues: 999
 
-      # Upload all SARIF results
-      - name: "Upload SARIF results to CodeQL"
+      # Upload each SARIF individually
+      - name: "Upload SARIF for Bandit"
         uses: github/codeql-action/upload-sarif@v3.28.18
         with:
-          sarif_file: |
-            bandit.sarif
-            pylint.sarif
-            spotbugs.sarif
-            detekt.sarif
-            rubocop.sarif
-            semgrep.sarif
+          sarif_file: bandit.sarif
+
+      - name: "Upload SARIF for Pylint"
+        uses: github/codeql-action/upload-sarif@v3.28.18
+        with:
+          sarif_file: pylint.sarif
+
+      - name: "Upload SARIF for SpotBugs"
+        uses: github/codeql-action/upload-sarif@v3.28.18
+        with:
+          sarif_file: spotbugs.sarif
+
+      - name: "Upload SARIF for Detekt"
+        uses: github/codeql-action/upload-sarif@v3.28.18
+        with:
+          sarif_file: detekt.sarif
+
+      - name: "Upload SARIF for RuboCop"
+        uses: github/codeql-action/upload-sarif@v3.28.18
+        with:
+          sarif_file: rubocop.sarif
+
+      - name: "Upload SARIF for Semgrep"
+        uses: github/codeql-action/upload-sarif@v3.28.18
+        with:
+          sarif_file: semgrep.sarif
 
   code-security-scan-codacy-postmortem:
     runs-on: ubuntu-latest
