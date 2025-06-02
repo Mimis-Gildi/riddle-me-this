@@ -38,11 +38,11 @@ https://mimis-gildi.github.io/riddle-me-this/reflections/
 This repo includes three curated PDFs packaged with each release.
 Grab the latest from the GitHub Releases page:
 
-📦 https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.4.0
+📦 https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.4.0[v1.4.0] – full release package
 
-* 📄 [Engineering Résumé](https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.4.0/OnEngineering.pdf) – code, systems, and production
-* 🧠 [Creative Résumé](https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.4.0/OnCreativity.pdf) – teams, products, and vision
-* 🌱 [Leadership Résumé](https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.4.0/OnLeadership.pdf) – transformation, innovation, CTO roles
+* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.4.0/OnEngineering.pdf[Engineering Résumé] – code, systems, and production
+* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.4.0/OnCreativity.pdf[Creative Résumé] – teams, products, and vision
+* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.4.0/OnLeadership.pdf[Leadership Résumé] – transformation, innovation, CTO roles
 
 == 🔗 Profiles
 
@@ -57,13 +57,13 @@ Grab the latest from the GitHub Releases page:
 
 '''
 
-image::{a-codacy}/badge.svg[Security Scan by Codacy,link={a-codacy},window=_blank,opts=nofollow,float="left"]
-image::{a-codeql}/badge.svg[Security Scan by CodeQL,link={a-codeql},window=_blank,opts=nofollow,float="left"]
-image::{a-site}/badge.svg[GitHub Site Build and Deploy by Jekyll,link={a-site},window=_blank,opts=nofollow,float="left"]
-image::{a-prune}/badge.svg[GitHub Prune Actions by CLI,link={a-prune},window=_blank,opts=nofollow,float="left"]
-image::{a-cache}/badge.svg[GitHub Prune Actions Cache by CLI,link={a-cache},window=_blank,opts=nofollow,float="left"]
-image::{a-resume}/badge.svg[Publish Résumé Release for the Current Tag,link={a-resume},window=_blank,opts=nofollow,float="left"]
-image::{a-version}/badge.svg[Version Bump on Feature Creation,link={a-resume},window=_blank,opts=nofollow,float="left"]
+image::{a-codacy}/badge.svg[Security Scan by Codacy,link={a-codacy},window=_blank,opts=nofollow]
+image::{a-codeql}/badge.svg[Security Scan by CodeQL,link={a-codeql},window=_blank,opts=nofollow]
+image::{a-site}/badge.svg[GitHub Site Build and Deploy by Jekyll,link={a-site},window=_blank,opts=nofollow]
+image::{a-prune}/badge.svg[GitHub Prune Actions by CLI,link={a-prune},window=_blank,opts=nofollow]
+image::{a-cache}/badge.svg[GitHub Prune Actions Cache by CLI,link={a-cache},window=_blank,opts=nofollow]
+image::{a-resume}/badge.svg[Publish Résumé Release for the Current Tag,link={a-resume},window=_blank,opts=nofollow]
+image::{a-version}/badge.svg[Version Bump on Feature Creation,link={a-resume},window=_blank,opts=nofollow]
 
 '''
 
