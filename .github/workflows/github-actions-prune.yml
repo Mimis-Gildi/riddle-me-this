@@ -1,5 +1,5 @@
 name: GitHub Prune Actions by CLI
-run-name: "Prunee Old Action Runs but ONE on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+run-name: "Pruned Old Action Runs but ONE on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
 #.github/workflows/github-actions-prune.yml
 
 on:

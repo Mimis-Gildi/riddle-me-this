@@ -1,13 +1,15 @@
-name: "Codacy Security Scan"
-run-name: "Codacy Security Scan on [${{ github.repository }}] @ ${{ github.ref }} by ${{ github.actor }} with ${{ github.event_name }}"
+name: Security Scan by Codacy
+run-name: "Executed Codacy Security Scan on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
 
 on:
   workflow_dispatch:
   workflow_call:
-    inputs:
-      restriction:
-        required: true
-        type: string
+  push:
+    branches: [ "main" ]
+  pull_request:
+    types: [opened, synchronize]
+  schedule:
+    - cron: '17 11 * * 4'  # Weekly Tuesday scan
 
 permissions:
   contents: read
