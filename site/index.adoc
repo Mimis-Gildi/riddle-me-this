@@ -6,7 +6,7 @@ header:
   caption: "Systems are stories that run."
   actions:
     - label: "Résumé PDFs (GitHub)"
-      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.3.0
+      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.4.0
     - label: "Who's Rdd13r?"
       url: /maintainer/
 classes: wide
@@ -46,7 +46,7 @@ Message `riddler9297` to join the **AGAIN Collective**.
 
 ===  Want my résumé?
 
-_See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.3.0[v1.3.0,window=_blank]_
+_See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.4.0[v1.4.0,window=_blank]_
 
 * Engineering résumé – code, craft, production.
 * Creative résumé – teams, systems, vision.
