@@ -110,33 +110,39 @@ jobs:
           gh-code-scanning-compat: true
           max-allowed-issues: 999
 
-      # Upload each SARIF individually
+      # Upload SARIF files individually only if non-empty
       - name: "Upload SARIF for Bandit"
+        if: success() && hashFiles('bandit.sarif') != ''
         uses: github/codeql-action/upload-sarif@v3.28.18
         with:
           sarif_file: bandit.sarif
 
       - name: "Upload SARIF for Pylint"
+        if: success() && hashFiles('pylint.sarif') != ''
         uses: github/codeql-action/upload-sarif@v3.28.18
         with:
           sarif_file: pylint.sarif
 
       - name: "Upload SARIF for SpotBugs"
+        if: success() && hashFiles('spotbugs.sarif') != ''
         uses: github/codeql-action/upload-sarif@v3.28.18
         with:
           sarif_file: spotbugs.sarif
 
       - name: "Upload SARIF for Detekt"
+        if: success() && hashFiles('detekt.sarif') != ''
         uses: github/codeql-action/upload-sarif@v3.28.18
         with:
           sarif_file: detekt.sarif
 
       - name: "Upload SARIF for RuboCop"
+        if: success() && hashFiles('rubocop.sarif') != ''
         uses: github/codeql-action/upload-sarif@v3.28.18
         with:
           sarif_file: rubocop.sarif
 
       - name: "Upload SARIF for Semgrep"
+        if: success() && hashFiles('semgrep.sarif') != ''
         uses: github/codeql-action/upload-sarif@v3.28.18
         with:
           sarif_file: semgrep.sarif
