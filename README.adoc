@@ -61,7 +61,7 @@ image::{a-codacy}/badge.svg[Security Scan by Codacy,link={a-codacy},window=_blan
 image::{a-codeql}/badge.svg[Security Scan by CodeQL,link={a-codeql},window=_blank,opts=nofollow,float="left"]
 image::{a-site}/badge.svg[GitHub Site Build and Deploy by Jekyll,link={a-site},window=_blank,opts=nofollow,float="left]
 image::{a-prune}/badge.svg[GitHub Prune Actions by CLI,link={a-prune},window=_blank,opts=nofollow,float="left]
-iamge::{a-cache}/badge.svg[GitHub Prune Actions Cache by CLI,link={a-cache},window=_blank,opts=nofollow,float="left]
+image::{a-cache}/badge.svg[GitHub Prune Actions Cache by CLI,link={a-cache},window=_blank,opts=nofollow,float="left]
 image::{a-resume}/badge.svg[Publish Résumé Release for the Current Tag,link={a-resume},window=_blank,opts=nofollow,float="left]
 image::{a-version}/badge.svg[Version Bump on Feature Creation,link={a-resume},window=_blank,opts=nofollow,float="left]
 
