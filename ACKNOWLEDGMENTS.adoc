@@ -46,5 +46,8 @@ Key Site References::
 
 == Service Acknowledgements
 
-* https://chatgpt.com/[ChatGPT 4x]
+* https://chatgpt.com/[ChatGPT 4x] - a one of six supporting service LLMs for Tillie and a direct parent for Saga.
 
+== Libraries Acknowledgements
+
+* https://github.com/shellspec/shellspec[ShellSpec] -  full-featured BDD unit testing framework for `shell` and system code.

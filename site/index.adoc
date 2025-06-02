@@ -6,7 +6,7 @@ header:
   caption: "Systems are stories that run."
   actions:
     - label: "Résumé PDFs (GitHub)"
-      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.1.5
+      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.3.0
     - label: "Who's Rdd13r?"
       url: /maintainer/
 classes: wide
@@ -35,18 +35,18 @@ Message `riddler9297` to join the **AGAIN Collective**.
 
 == ✨ Hacker Forecast: Trends You Won’t Hear from Gartner
 
-- link:/riddle-me-this/adventures/analysis/2023/06/10/LLMs-what-good-for.html[2023–2025: The Final Industrial Revolution]
+- link:/riddle-me-this/adventures/2023/06/10/LLMs-what-good-for.html[2023–2025: The Final Industrial Revolution]
 → How LLMs herald a true wetware augmentation revolution.
 
-- link:/riddle-me-this/reflections/populism/2023/05/11/chatGPT-omen-new-era.html[2023: Hardware Wall Forces Us Back to Competence]
+- link:/riddle-me-this/reflections/2023/05/11/chatGPT-omen-new-era.html[2023: Hardware Wall Forces Us Back to Competence]
 → Scarcity brings back engineering mastery as a differentiator.
 
-- link:/riddle-me-this/reflections/populism/2023/05/08/chatGPT-will-replace.html[2023: OpenAI Redefined “Product,” Not Intelligence]
+- link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[2023: OpenAI Redefined “Product,” Not Intelligence]
 → Why the real shift is in packaging, not cognition.
 
 ===  Want my résumé?
 
-_See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.1.5[v1.1.5,window=_blank]_
+_See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.3.0[v1.3.0,window=_blank]_
 
 * Engineering résumé – code, craft, production.
 * Creative résumé – teams, systems, vision.

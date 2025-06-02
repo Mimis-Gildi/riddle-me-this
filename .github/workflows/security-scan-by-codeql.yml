@@ -1,4 +1,6 @@
-name: "CodeQL Advanced"
+name: Security Scan by CodeQL Advanced
+run-name: "Execute Security Scan by CodeQL Advanced on [${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+#.github/workflows/security-scan-by-codeql.yml
 
 on:
   workflow_dispatch:
@@ -16,9 +18,20 @@ permissions:
   actions: read
   packages: read
 
+
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}-codeql"
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
 jobs:
-  analyze:
-    name: Analyze (${{ matrix.language }})
+
+  code-security-scan-with-codeql:
+    name: CodeQL to Analyze (${{ matrix.language }})
+    timeout-minutes: 13
     runs-on: ${{ matrix.language == 'swift' && 'macos-latest' || 'ubuntu-latest' }}
     strategy:
       fail-fast: false
@@ -35,7 +48,8 @@ jobs:
             uses-gradle: false
 
     steps:
-      - name: Checkout
+
+      - name: "Checkout repository source code"
         uses: actions/checkout@v4.2.2
 
       - name: Setup Java for Kotlin

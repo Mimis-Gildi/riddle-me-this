@@ -1,4 +1,6 @@
 name: Auto Minor Version Bump on Feature Branch Creation
+run-name: "Incremented Version to minor or major bump on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+#.github/workflows/custom-bump-version-on-feature-branch.yml
 
 on:
   create:
@@ -6,6 +8,7 @@ on:
       - main
 
 jobs:
+
   bump_minor_version:
     runs-on: ubuntu-latest
 
@@ -14,6 +17,7 @@ jobs:
       pull-requests: write
 
     steps:
+
       - name: ⏳ Wait for GitHub ref propagation
         run: sleep 3
 
@@ -55,7 +59,7 @@ jobs:
             echo "::notice title=Version Type::🔁 Standard minor bump"
           fi
 
-      - name: 🧬 Bump version
+      - name: 🧬 Bump properties version
         if: steps.check.outputs.proceed == 'true'
         id: bump
         run: |
@@ -105,12 +109,40 @@ jobs:
             echo "::warning title=Maintainer File Missing::⚠️ site/_pages/maintainer.adoc not found"
           fi
 
+      - name: 📝 Update index.adoc version references
+        if: steps.check.outputs.proceed == 'true'
+        run: |
+          OLD_VERSION="${{ steps.bump.outputs.old_version }}"
+          NEW_VERSION="${{ steps.bump.outputs.new_version }}"
+
+          if [[ -f site/index.adoc ]]; then
+            echo "::notice title=Landing Page Version Update::🔄 $OLD_VERSION → $NEW_VERSION"
+            sed -i "s/releases\/tag\/v$OLD_VERSION/releases\/tag\/v$NEW_VERSION/" site/index.adoc
+            sed -i "s/v$OLD_VERSION/v$NEW_VERSION/g" site/index.adoc
+          else
+            echo "::warning title=Site Root File Missing::⚠️ site/index.adoc not found"
+          fi
+
+      - name: 📝 Update SECURITY.md version references
+        if: steps.check.outputs.proceed == 'true'
+        run: |
+          OLD_VERSION="${{ steps.bump.outputs.old_version }}"
+          NEW_VERSION="${{ steps.bump.outputs.new_version }}"
+
+          if [[ -f SECURITY.md ]]; then
+            echo "::notice title=Security Policy Version Update::🔄 $OLD_VERSION → $NEW_VERSION"
+            sed -i "s/releases\/tag\/v$OLD_VERSION/releases\/tag\/v$NEW_VERSION/" SECURITY.md
+            sed -i "s/v$OLD_VERSION/v$NEW_VERSION/g" SECURITY.md
+          else
+            echo "::warning title=Security Policy File Missing::⚠️ SECURITY.md not found"
+          fi
+
       - name: 📂 Commit and push new version
         if: steps.check.outputs.proceed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add gradle.properties README.adoc site/_pages/maintainer.adoc || true
+          git add gradle.properties SECURITY.md README.adoc site/_pages/maintainer.adoc site/index.adoc  || true
           git commit -m "🔼 Auto bump version to ${{ steps.bump.outputs.new_version }}"
           git push || echo "::warning title=Push Failed::⚠️ Git push failed — manual intervention may be required."
 
@@ -122,4 +154,4 @@ jobs:
           From: ${{ steps.bump.outputs.old_version }}
           To: ${{ steps.bump.outputs.new_version }}
           Major bump: ${{ steps.labelcheck.outputs.major }}
-          Files touched: gradle.properties, README.adoc, site/_pages/maintainer.adoc"
+          Files touched: gradle.properties, SECURITY.md, README.adoc, site/_pages/maintainer.adoc, and site/index.adoc."
