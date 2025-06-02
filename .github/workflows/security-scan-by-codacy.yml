@@ -44,5 +44,4 @@ jobs:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           gh-code-scanning-compat: true
           max-allowed-issues: 999
-          tool-timeout: 11
           upload: true
