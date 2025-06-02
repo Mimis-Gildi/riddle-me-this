@@ -1,19 +1,19 @@
 constitution:
-  - changed-files:
-      - any-glob-to-any-file: '*'
-      - any-glob-to-any-file: buildSrc/**
+- changed-files:
+  - any-glob-to-any-file: '*'
+  - any-glob-to-any-file: buildSrc/**
 
 resume:
-  - changed-files:
-      - any-glob-to-any-file: résumé/**
+- changed-files:
+  - any-glob-to-any-file: résumé/**
 
 site:
-  - changed-files:
-      - any-glob-to-any-file: site/**
+- changed-files:
+    - any-glob-to-any-file: site/**
 
 demo:
-  - changed-files:
-      - any-glob-to-any-file:
-          - journal/**
-          - tracks/**
-          - .saga-notes/.rdd13r-notes/**
+- changed-files:
+  - any-glob-to-any-file:
+    - journal/**
+    - tracks/**
+    - .saga-notes/.rdd13r-notes/**
