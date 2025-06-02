@@ -1,0 +1,63 @@
+---
+engines:
+  eslint-8:
+    enabled: true
+  shellcheck:
+    enabled: true
+  markdownlint:
+    enabled: true
+  prettier:
+    enabled: true
+  bandit:
+    enabled: true
+  semgrep:
+    enabled: true
+  detekt:
+    enabled: true
+  pmd-7:
+    enabled: true
+
+exclude_paths:
+  - .github/
+  - .idea/
+  - .run/
+  - .saga-notes/
+  - build/
+  - dist/
+  - vendor/
+  - node_modules/
+  - out/
+  - .local/
+  - résumé/
+  - "**/*.min.js"
+  - "**/tests/**"
+
+languages:
+  python:
+    extensions:
+      - ".py"
+  css:
+    enabled: false
+  java:
+    enabled: false
+  scala:
+    enabled: false
+  go:
+    enabled: false
+  ruby:
+    enabled: true
+  JSON:
+    enabled: true
+  kotlin:
+    enabled: true
+  markdown:
+    enabled: true
+  shell:
+    enabled: true
+  xml:
+    enabled: true
+  yaml:
+    enabled: true
+
+commit:
+  enabled: true

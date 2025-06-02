@@ -6,7 +6,7 @@ header:
   caption: "Systems are stories that run."
   actions:
     - label: "Résumé PDFs (GitHub)"
-      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.3.0
+      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.4.0
     - label: "Who's Rdd13r?"
       url: /maintainer/
 classes: wide
@@ -16,6 +16,9 @@ sidebar:
   nav: communities
 ---
 = Vadim Kuhay
+:creative-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.4.0/OnCreativity.pdf
+:engineering-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.4.0/OnEngineering.pdf
+:leadership-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.4.0/OnLeadership.pdf
 
 I'm a humble system designer, team builder, and player-coach.
 
@@ -46,8 +49,7 @@ Message `riddler9297` to join the **AGAIN Collective**.
 
 ===  Want my résumé?
 
-_See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.3.0[v1.3.0,window=_blank]_
-
-* Engineering résumé – code, craft, production.
-* Creative résumé – teams, systems, vision.
-* Leadership résumé – coaching, CTO roles.
+_See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.4.0[v1.4.0,window=_blank]_::
+{leadership-resume}[Leadership] résumé – coaching, CTO roles (_hands-on_). +
+{engineering-resume}[Engineering] résumé – code craft, production, profit. +
+{creative-resume}[Creative] résumé – teams, systems, vision, disruption.

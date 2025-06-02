@@ -1,8 +1,8 @@
 = Adventures
 :page-layout: splash
 :page-permalink: /adventures/
-:quebec-llm-craze: /riddle-me-this/adventures/adaptation/2023/05/15/AI-million-dollar-devs.html[Dev Millionaires: "Laggards are a renewable resource"?!,window=_blank]
-:integration-revolution: /riddle-me-this/adventures/adaptation/2023/06/07/AI-and-businesses-to-perish-first.html[LLMs: Projected Market Exit of Established Relations-Based Companies,window=_blank]
+:quebec-llm-craze: /riddle-me-this/adventures/2023/05/15/AI-million-dollar-devs.html[Dev Millionaires: "Laggards are a renewable resource"?!,window=_blank]
+:integration-revolution: /riddle-me-this/adventures/2023/06/07/AI-and-businesses-to-perish-first.html[LLMs: Projected Market Exit of Established Relations-Based Companies,window=_blank]
 
 _Adventures_ is where the work takes form — in the field, in the code, in the culture.
 

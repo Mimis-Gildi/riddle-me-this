@@ -14,10 +14,10 @@ The only exception is the *populism* fragment —
 a reflection on one or another public craze.
 
 You can explore the full archive of link:/riddle-me-this/categories/reflections/[Reflections] +
-Or browse all link:/riddle-me-this/categories/populism/[Populism-related posts].
+Or browse all link:/riddle-me-this/tags/#populism[Populism-related posts].
 
 == Curated List of Reflections
 
 _There are, of course, favorites._
 
-* ToDo
+* ToDo: Pending import of historic works. Expected with v1.17.0.

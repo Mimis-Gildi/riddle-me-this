@@ -50,4 +50,9 @@ Key Site References::
 
 == Libraries Acknowledgements
 
-* https://github.com/shellspec/shellspec[ShellSpec] -  full-featured BDD unit testing framework for `shell` and system code.
+* https://github.com/shellspec/shellspec[ShellSpec] - full-featured BDD unit testing framework for `shell` and system code.
+* https://www.codacy.com/[Codacy] - my third-favorite tool for giving me a peace of mind on quality of my work;
+** On https://docs.codacy.com/getting-started/supported-languages-and-tools/[Codacy Supported Languages] - a reference table;
+** On https://docs.codacy.com/repositories-configure/codacy-configuration-file/[Codacy Configuration File] - important for GH Actions.
+* https://codeql.github.com/[CodeQL] - a default tool available from gitHub; it does the job.
+* https://github.com/dependabot[Dependabot] - your most dependable dependency checking bot.

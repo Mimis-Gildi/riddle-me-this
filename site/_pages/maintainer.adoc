@@ -3,13 +3,17 @@
 :page-layout: single
 :page-permalink: /maintainer/
 :page-author_profile: true
-:release: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.3.0[v1.3.0,window=_blank]
-:onEngineering: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.3.0/OnEngineering.pdf[Engineering Résumé]
-:onCreativity: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.3.0/OnCreativity.pdf[Creative Résumé]
-:onLeadership: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.3.0/OnLeadership.pdf[Leadership Résumé]
+:release: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.4.0[v1.4.0,window=_blank]
+:onEngineering: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.4.0/OnEngineering.pdf[Engineering Résumé]
+:onCreativity: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.4.0/OnCreativity.pdf[Creative Résumé]
+:onLeadership: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.4.0/OnLeadership.pdf[Leadership Résumé]
 :profile-li: https://www.linkedin.com/in/rdd13r[LinkedIn Profile,window=_blank]
 :profile-gh: https://github.com/rdd13r[GitHub Profile,window=_blank]
-:profile-mm: https://medium.com/@rdd13r[Medium Articles,window=_blank]
+:publications-mm: https://medium.com/@rdd13r[Medium Articles,window=_blank]
+:publications-li: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257/[Newsletter: Behind the Scenes at ASE (LinkedIn),window=_blank]
+:imported-mm: link:/riddle-me-this/tags/#medium[Imported from Medium,window=_blank]
+:imported-li: link:/riddle-me-this/tags/#linkedin[Imported from LinkedIn Newsletters,window=_blank]
+:categorized: link:/riddle-me-this/categories/[all post categories]
 
 This site is maintained by Vadim Kuhay — known in hacker circles as `rdd13r` — a lifelong builder, systems coach, and creative engineer.
 
@@ -21,13 +25,27 @@ If you came here looking for something formal, here are some useful links:
 
 (release {release})
 
-- {onEngineering} -- _yes, I code daily for three decades, take coding jobs, and compete;_
-- {onCreativity} -- _I build teams, systems, runways, and products that survive their first user;_
-- {onLeadership} -- _as a hands-on coach, fractional CTO, or executive I deliver innovation;_
+* {onEngineering} -- _yes, I code daily for three decades, take coding jobs, and compete;_
+* {onCreativity} -- _I build teams, systems, runways, and products that survive their first user;_
+* {onLeadership} -- _as a hands-on coach, fractional CTO, or executive I deliver innovation;_
 
-- {profile-li} -- people say I must have this...
-- {profile-gh} -- here I spend a lot of time between my own orgs and other founders' products;
-- {profile-mm} -- I used to write on Medium; now you will find my works here instead.
+
+Public Profile::
+* {profile-li} -- people say I must have this...
+* {profile-gh} -- here I spend a lot of time between my own orgs and other founders' products;
+
+Publications::
+* {publications-mm} -- I used to write on Medium; now you will find my works #*_here_*# instead;
+** Already {imported-mm}, by tag, standby for more (site version v1.17.x).
+* {publications-li} -- A newsletter sporadically maintained;
+** Already {imported-li}, standby for more (site version v1.17.x).
+* Please visit {categorized} for valuable and candid content I don't publish anywhere else.
+
+
+The Scene::
+I go by `rdd13r` as the primary key for the likes of LinkedIn, Reddit, Slack, IRC, Signal, and Telegram; +
+My Discord handle is `riddler9297`;
+And `riddler` for Briar or @ghost blockchain protocol channels.
 
 == Colophon
 

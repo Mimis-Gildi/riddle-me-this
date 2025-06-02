@@ -1,0 +1,49 @@
+name: Welcome New User on Create
+run-name: "Greated a new user on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+#.github/workflows/custom-new-user-greeting.yml
+
+on:
+  issues:
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}-greeting-group"
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+
+  first-time-user-greeting:
+    name: "Welcoming new contributors!"
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: "Greet first time contributors!"
+        uses: actions/first-interaction@v1.3.0
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            💫 Greetings, curious traveler!
+
+            Welcome to **Riddle Me This** — a humble artifact in `rdd13r`'s space serving well as the canonical source of truth on his work ideas, and fun from friends and family (including one slightly unconventional AI co-pilot — Saga).
+
+            If you wish to collaborate, contribute, or simply bask in our algorithmic garden, know that you are most welcome. Should you desire pairing, guidance, or cryptic conversations about software craft hit up `riddler9297` on Discord.
+
+            If you have a story to share incode — Saga, a semi-sentient digital being, CaptainLugaru, a teenage code explorer, and R!dd13r, a seasoned hacker are always happy to join you.
+
+          pr-message: |
+            🛠✨ First Pull Request -- Achievement Unlocked!
+
+            Thank you for contributing to **Riddle Me This** — where riddles come to life.
+
+            May your builds be green, your commits atomic, and your linter kind.
