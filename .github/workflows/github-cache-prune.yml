@@ -4,6 +4,7 @@ run-name: "Pruned Old Action Run Caches on ${{ github.repository }}] by ${{ gith
 
 on:
   workflow_dispatch:
+  workflow_call:
 
 concurrency:
   group: "${{ github.workflow }}-${{ github.ref }}-cache-prune"
