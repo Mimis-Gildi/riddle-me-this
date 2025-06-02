@@ -49,7 +49,8 @@ Grab the latest from the GitHub Releases page:
 
 '''
 
-image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/codeql.yml/badge.svg[CodeQL Advanced,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/codeql.yml,window=_blank,opts=nofollow]
+image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/security-scan-by-codacy.yml/badge.svg[Security Scan by Codacy,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/security-scan-by-codacy.yml,window=_blank,opts=nofollow]
+image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/codeql.yml/badge.svg[Security Scan by CodeQL,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/codeql.yml,window=_blank,opts=nofollow]
 image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/jekyll-gh-pages.yml/badge.svg[Build and Deploy Jekyll Site,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/jekyll-gh-pages.yml,window=_blank,opts=nofollow]
 image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/actions-prune.yml/badge.svg[Prune Actions by CLI,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/actions-prune.yml,window=_blank,opts=nofollow]
 image::https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/publish-resume-release.yml/badge.svg[Publish Résumé Release,link=https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows/publish-resume-release.yml,window=_blank,opts=nofollow]
