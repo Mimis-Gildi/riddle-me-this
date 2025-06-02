@@ -47,6 +47,7 @@ jobs:
           format: sarif
           gh-code-scanning-compat: true
           max-allowed-issues: 999
+          tool: eslint,stylelint,bandit,spotbugs,golangci-lint,pylint,rubocop,semgrep
 
       - name: "Upload SARIF results to CodeQL"
         uses: github/codeql-action/upload-sarif@v3.28.18
