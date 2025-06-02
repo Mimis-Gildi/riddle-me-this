@@ -22,6 +22,11 @@ jobs:
 
     steps:
 
+      - name: "Checkout repository source code"
+        uses: actions/checkout@v4.2.2
+        timeout-minutes: 1
+
+
       - name: "Install GitHub Actions Cache Extension"
         run: |
           gh extension install actions/gh-actions-cache
