@@ -40,11 +40,11 @@ ___
 
 ___
 
-_**This site version is [v1.4.0].**_
+_**This site version is [v1.5.0].**_
 
 ___
 
-[v1.4.0]: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.4.0 "This release tag to follow."
+[v1.5.0]: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.5.0 "This release tag to follow."
 
 [Author]: https://github.com/rdd13r "❤️ Kotlin ❤️ Scala; Python; Java; Go."
 [Captain]: https://github.com/CaptainLugaru "Captain Lugaru: I am a coding Viking Bunny. In 2021, I won internship at ASE Inc." 

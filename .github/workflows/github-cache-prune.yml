@@ -4,6 +4,7 @@ run-name: "Pruned Old Action Run Caches on ${{ github.repository }}] by ${{ gith
 
 on:
   workflow_dispatch:
+  workflow_call:
 
 concurrency:
   group: "${{ github.workflow }}-${{ github.ref }}-cache-prune"
@@ -12,6 +13,10 @@ concurrency:
 permissions:
   contents: write
   actions: write
+
+defaults:
+  run:
+    shell: bash
 
 jobs:
 
@@ -26,31 +31,15 @@ jobs:
         uses: actions/checkout@v4.2.2
         timeout-minutes: 1
 
-
       - name: "Install GitHub Actions Cache Extension"
         run: |
           gh extension install actions/gh-actions-cache
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: "Prune Older Cache Keys (Keep minutes old)"
+        continue-on-error: true
+        run: ./src/main/sh/clean-workflow-run-caches.sh
 
-      - name: "List Current Cache Keys"
-        run: |
-          gh actions-cache list --limit 30
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
-      - name: "Prune Older Cache Keys (Keep 3 Newest)"
-        run: |
-          mapfile -t cacheKeys < <(gh actions-cache list --limit 30 | cut -f 1)
-          mapfile -t cacheKeysToPrune <<< "${cacheKeys[@]:3}"
-          
-          for cacheKey in "${cacheKeysToPrune[@]}"; do
-            if [[ -n "${cacheKey}" ]]; then
-              echo "Deleting cache key: $cacheKey"
-              gh actions-cache delete "$cacheKey" --confirm
-            fi
-          done
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
