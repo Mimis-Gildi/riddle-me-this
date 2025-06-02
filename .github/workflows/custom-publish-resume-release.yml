@@ -1,4 +1,6 @@
-name: Publish Résumé Release
+name: Publish Résumé Release for the Current Tag
+run-name: "Published Résumé Release on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+#.github/workflows/custom-publish-resume-release.yml
 
 on:
   push:
@@ -16,10 +18,12 @@ permissions:
   contents: write
 
 jobs:
-  release:
+
+  release-resume:
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Checkout
         id: checkout
         uses: actions/checkout@v4.2.2
@@ -78,4 +82,3 @@ jobs:
           bodyFile: releases/v${{ steps.props.outputs.version }}.md
           prerelease: ${{ github.event.inputs.prerelease }}
           artifacts: build/docs/asciidocPdf/*.pdf
-

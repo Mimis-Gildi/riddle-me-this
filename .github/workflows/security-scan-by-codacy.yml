@@ -1,0 +1,106 @@
+name: Security Scan by Codacy
+run-name: "Executed Codacy Security Scan on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+
+on:
+  workflow_dispatch:
+  workflow_call:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    types: [opened, synchronize]
+  schedule:
+    - cron: '17 11 * * 4'  # Weekly Tuesday scan
+
+permissions:
+  contents: read
+  actions: read
+  security-events: write
+
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}-codacy"
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+
+  code-security-scan-with-codacy:
+    timeout-minutes: 27
+    runs-on: ubuntu-latest
+    name: "Codacy Security Scan with Publishing"
+
+    steps:
+
+      - name: "Checkout repository source code"
+        uses: actions/checkout@v4
+        timeout-minutes: 3
+
+      # Analyzer runs (Codacy Analysis CLI per tool)
+
+      - name: "Codacy Bandit Analysis"
+        uses: codacy/codacy-analysis-cli-action@v4.4.5
+        timeout-minutes: 5
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          tool: bandit
+          output: bandit.sarif
+          format: sarif
+          gh-code-scanning-compat: true
+          max-allowed-issues: 999
+
+      - name: "Codacy Pylint Analysis"
+        uses: codacy/codacy-analysis-cli-action@v4.4.5
+        timeout-minutes: 5
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          tool: pylint
+          output: pylint.sarif
+          format: sarif
+          gh-code-scanning-compat: true
+          max-allowed-issues: 999
+
+      - name: "Codacy SpotBugs Analysis"
+        uses: codacy/codacy-analysis-cli-action@v4.4.5
+        timeout-minutes: 5
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          tool: spotbugs
+          output: spotbugs.sarif
+          format: sarif
+          gh-code-scanning-compat: true
+          max-allowed-issues: 999
+
+      - name: "Codacy Detekt Analysis"
+        uses: codacy/codacy-analysis-cli-action@v4.4.5
+        timeout-minutes: 5
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          tool: detekt
+          output: detekt.sarif
+          format: sarif
+          gh-code-scanning-compat: true
+          max-allowed-issues: 999
+
+      - name: "Codacy RuboCop Analysis"
+        uses: codacy/codacy-analysis-cli-action@v4.4.5
+        timeout-minutes: 5
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          tool: rubocop
+          output: rubocop.sarif
+          format: sarif
+          gh-code-scanning-compat: true
+          max-allowed-issues: 999
+
+      - name: "Codacy Semgrep Analysis"
+        uses: codacy/codacy-analysis-cli-action@v4.4.5
+        timeout-minutes: 5
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          tool: semgrep
+          output: semgrep.sarif
+          format: sarif
+          gh-code-scanning-compat: true
+          max-allowed-issues: 999

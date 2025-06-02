@@ -1,4 +1,6 @@
-name: Build and Deploy Jekyll Site
+name: GitHub Site Build and Deploy by Jekyll
+run-name: "Jekyll built and publish on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+#.github/workflows/github-pages-jekyll-build-and-deploy.yml
 
 on:
   push:
@@ -16,7 +18,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+
+  build-custom-jekyll-site:
       runs-on: ubuntu-latest
 
       steps:
@@ -65,14 +68,15 @@ jobs:
         with:
           path: site/_site
 
-  deploy:
-    needs: build
+  deploy-to-default-pages:
+    needs: build-custom-jekyll-site
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+
       - name: 🚀 Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4.0.4
