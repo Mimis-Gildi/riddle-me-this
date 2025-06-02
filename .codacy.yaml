@@ -45,7 +45,19 @@ languages:
   go:
     enabled: false
   ruby:
-    enabled: false
+    enabled: true
+  JSON:
+    enabled: true
+  kotlin:
+    enabled: true
+  markdown:
+    enabled: true
+  shell:
+    enabled: true
+  xml:
+    enabled: true
+  yaml:
+    enabled: true
 
 commit:
   enabled: true

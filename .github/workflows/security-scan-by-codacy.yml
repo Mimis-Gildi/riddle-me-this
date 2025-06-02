@@ -45,3 +45,4 @@ jobs:
           gh-code-scanning-compat: true
           max-allowed-issues: 999
           upload: true
+          force-file-permissions: true
