@@ -1,0 +1,68 @@
+[
+  {
+    "number": 23,
+    "title": "Incorporate Mímis Gildi Ops one by one",
+    "body": "This is to Incorporate `fluffle` reusable actions.\nOnce we have enough Ops in the main, \nwe can run these subtasks as proper features,\nhappily bumping versions automatically.",
+    "url": "https://github.com/Mimis-Gildi/riddle-me-this/issues/23",
+    "state": "OPEN",
+    "author": "rdd13r",
+    "createdAt": "2025-05-28T13:00:15Z",
+    "updatedAt": "2025-05-31T16:28:46Z",
+    "taskList": []
+  },
+  {
+    "number": 26,
+    "title": "IDEA -- Codacy Dashboard",
+    "body": "Mimis has shared dashboards for Codacy suggestions.\nWe would benefit from one too.\nIn the same space, in fact.",
+    "url": "https://github.com/Mimis-Gildi/riddle-me-this/issues/26",
+    "state": "CLOSED",
+    "author": "rdd13r",
+    "createdAt": "2025-05-31T16:31:28Z",
+    "updatedAt": "2025-06-02T13:01:54Z",
+    "taskList": []
+  },
+  {
+    "number": 27,
+    "title": "IDEA -- New User Greeting (Optional)",
+    "body": "Captain is very particular about having a new user greeting workflow.\nAlthough I am not fully sold on the general value,\nI do enjoy making a peer happy -- all the value I need to implement a fun flow.",
+    "url": "https://github.com/Mimis-Gildi/riddle-me-this/issues/27",
+    "state": "OPEN",
+    "author": "rdd13r",
+    "createdAt": "2025-05-31T16:33:39Z",
+    "updatedAt": "2025-05-31T16:33:39Z",
+    "taskList": []
+  },
+  {
+    "number": 28,
+    "title": "IDEA -- Labeling Flow",
+    "body": "Mimis projects use a lot of Ops logic that is governed by labels.\nOne such example is about comments on blog posts,\nAnd another is about phone reminders for Mimis.\nLet's add automatic labeling?\nWe can hook it up here and make it smarter as we evolve. ",
+    "url": "https://github.com/Mimis-Gildi/riddle-me-this/issues/28",
+    "state": "OPEN",
+    "author": "rdd13r",
+    "createdAt": "2025-05-31T16:35:51Z",
+    "updatedAt": "2025-05-31T16:35:51Z",
+    "taskList": []
+  },
+  {
+    "number": 32,
+    "title": "IDEA -- Qodana Scan -- Important",
+    "body": "Qodana is a primary tool used by Mimis.\nWe should enable it, connect this project to the team's dashboard,\nAnd let it live.",
+    "url": "https://github.com/Mimis-Gildi/riddle-me-this/issues/32",
+    "state": "OPEN",
+    "author": "rdd13r",
+    "createdAt": "2025-05-31T16:48:12Z",
+    "updatedAt": "2025-05-31T16:48:12Z",
+    "taskList": []
+  },
+  {
+    "number": 35,
+    "title": "IDEA -- RENOVATE!",
+    "body": "Renovate dashboard is another place team goes to every day.\nLet's enable it -- that should be straightforward. \n\nAnd fun!",
+    "url": "https://github.com/Mimis-Gildi/riddle-me-this/issues/35",
+    "state": "OPEN",
+    "author": "rdd13r",
+    "createdAt": "2025-05-31T16:51:58Z",
+    "updatedAt": "2025-05-31T16:51:58Z",
+    "taskList": []
+  }
+]
