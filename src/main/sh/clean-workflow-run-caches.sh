@@ -13,8 +13,6 @@ function acquire_cache_ids_and_process() {
 
     if [[ "$age_scale" == "minutes" || "$age_scale" == "minute" ]]; then
       echo "::notice:: title=Skipping minutes old::$id"
-    elif [[ "$age_scale" == "hours" || "$age_scale" == "hour" ]]; then
-      echo "::notice:: title=Skipping hours old::$id"
     else
       echo "::debug title=Attempting to delete $id::size=$size($scale),age=$age($age_scale-$passe),branch=$ref"
       set +e

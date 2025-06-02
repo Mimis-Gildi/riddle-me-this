@@ -36,7 +36,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: "Prune Older Cache Keys (Keep hours old)"
+      - name: "Prune Older Cache Keys (Keep minutes old)"
         continue-on-error: true
         run: ./src/main/sh/clean-workflow-run-caches.sh
 
