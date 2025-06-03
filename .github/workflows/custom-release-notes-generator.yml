@@ -99,9 +99,9 @@ jobs:
           echo "::debug title=Commit messages::$( cat commits.txt )"
           
           {
-            echo "commits<<EOF"
+            echo 'commits<<EOF'
             cat commits.txt
-            echo "EOF"
+            echo 'EOF'
           } >> $GITHUB_OUTPUT
           
           echo "::notice title=Captured Commit Logs::"
@@ -120,9 +120,9 @@ jobs:
           echo "::debug title=Changed files::$( cat files.txt )"
 
           {
-            echo "files<<EOF"
+            echo 'files<<EOF'
             cat files.txt
-            echo "EOF"
+            echo 'EOF'
           } >> $GITHUB_OUTPUT
 
           echo "::notice title=Captured Committed Files::"
