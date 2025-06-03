@@ -108,6 +108,7 @@ jobs:
           {
             echo 'commits<<EOF'
             cat commits.txt
+            echo
             echo EOF
           } >> $GITHUB_OUTPUT
           
