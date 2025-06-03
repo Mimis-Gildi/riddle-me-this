@@ -1,0 +1,32 @@
+name: Release Notes Commit
+description: "Commit release notes file changes expected in /releases/vX.X.X.md"
+
+inputs:
+  version:
+    description: "Release version"
+    required: true
+  message:
+    description: "Commit message"
+    required: true
+
+runs:
+  using: "composite"
+  description: "Commits the release notes file specified by the version tag respecting release notes convention of Mímis Gildi."
+
+  steps:
+
+    - name: Configure Git Identity
+      shell: bash
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+    - name: Commit Release Notes
+      shell: bash
+      run: |
+        VERSION="${{ inputs.version }}"
+        MESSAGE="${{ inputs.message }}"
+
+        git add "releases/v${VERSION}.md"
+        git commit -m "$MESSAGE"
+        git push

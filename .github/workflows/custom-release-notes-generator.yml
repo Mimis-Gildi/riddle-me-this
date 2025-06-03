@@ -1,14 +1,9 @@
-name: Release Notes Generator
+name: Idempotent Release Notes Generator
 
 run-name: "Generated or Updated Release Notes on ${{ github.repository }} by ${{ github.actor }} (${{ github.event_name }})"
 
 on:
   workflow_call:
-    inputs:
-      dry-run:
-        required: false
-        type: boolean
-        default: false
   workflow_dispatch:
   pull_request:
   push:
@@ -37,32 +32,32 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4.2.2
 
-      - name: Extract Target Version from gradle.properties
-        id: version
+      - name: Extract Target Version from gradle.properties of this feature
+        id: this-version
         run: |
           VERSION=$(grep '^version=' gradle.properties | cut -d'=' -f2)
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "value=$VERSION" >> $GITHUB_OUTPUT
           echo "::notice title=Detected Target Version::$VERSION"
 
       - name: Determine Prior Version (if any)
-        id: prior
+        id: prior-tag
         run: |
           git fetch --tags
-          PREV=$(git tag --sort=-v:refname | grep '^v' | grep -v "v${{ steps.version.outputs.version }}" | head -n 1 || echo "")
-          echo "previous=$PREV" >> $GITHUB_OUTPUT
+          PREV=$(git tag --sort=-v:refname | grep '^v' | grep -v "v${{ steps.this-version.outputs.value }}" | head -n 1 || echo "")
+          echo "value=$PREV" >> $GITHUB_OUTPUT
           echo "::notice title=Detected Prior Version::$PREV"
 
       - name: Check and Seed Release Notes File
-        id: seed
+        id: seed-new
         run: |
-          FILE="releases/v${{ steps.version.outputs.version }}.md"
-          if [ -f "$FILE" ]; then
+          FILE="releases/v${{ steps.this-version.outputs.value }}.md"
+          if [[ -f "$FILE" ]]; then
             echo "created=false" >> $GITHUB_OUTPUT
             echo "::notice title=Release Notes File Exists::$FILE"
           else
             mkdir -p releases
             {
-              echo "# Release v${{ steps.version.outputs.version }}"
+              echo "# Release v${{ steps.this-version.outputs.version }}"
               echo ""
               echo "## ✨ What's New"
               echo "- TBD"
@@ -81,36 +76,28 @@ jobs:
             echo "::notice title=Release Notes File Seeded::$FILE"
           fi
 
+      - name: Commit New Release Notes File (if created)
+        if: steps.seed-new.outputs.created == 'true'
+        uses: ./.github/actions/release-notes-commit
+        with:
+          version: ${{ steps.this-version.outputs.value }}
+          message: "📝 Seed release notes for v${{ steps.this-version.outputs.value }}"
+
+
       - name: Collect Changed Files (Placeholder for Inject)
         run: |
-          if [ -z "${{ steps.prior.outputs.previous }}" ]; then
+          if [ -z "${{ steps.prior-tag.outputs.value }}" ]; then
             git ls-files > changed_files.txt
           else
-            git diff --name-only "${{ steps.prior.outputs.previous }}" HEAD > changed_files.txt
+            git diff --name-only "${{ steps.prior-tag.outputs.value }}" HEAD > changed_files.txt
           fi
-          cat changed_files.txt
-
-      - name: Commit New Release Notes File (if created)
-        if: steps.seed.outputs.created == 'true'
-        run: |
-          DRY_RUN="${{ inputs.dry-run || 'false' }}"
-          
-          if [ "$DRY_RUN" = "true" ]; then
-            echo "::notice title=Dry-Run Mode::Skipping commit and push"
-            exit 0
-          fi
-          
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "releases/v${{ steps.version.outputs.version }}.md"
-          git commit -m "📝 Seed release notes for v${{ steps.version.outputs.version }}"
-          git push
+          echo "::notice title=Files Changed Since Tag::$( cat changed_files.txt )"
 
       - name: Inject Commits into Release Notes Footer
         id: inject
         run: |
-          FILE="releases/v${{ steps.version.outputs.version }}.md"
-          PREV_TAG="${{ steps.prior.outputs.previous }}"
+          FILE="releases/v${{ steps.this-version.outputs.value }}.md"
+          PREV_TAG="${{ steps.prior-tag.outputs.value }}"
       
           # Discover commits between versions
           if [ -z "$PREV_TAG" ]; then
@@ -155,3 +142,8 @@ jobs:
       
           echo "::notice title=Footer Updated::Updated injected commits."
 
+      - name: Commit Injection File
+        uses: ./.github/actions/release-notes-commit
+        with:
+          version: ${{ steps.this-version.outputs.value }}
+          message: "📝 Inject commits into release notes v${{ steps.this-version.outputs.value }}"
