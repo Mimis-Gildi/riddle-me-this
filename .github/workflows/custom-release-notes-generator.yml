@@ -90,9 +90,13 @@ jobs:
         run: |
           PREV_TAG="${{ steps.prior-tag.outputs.value }}"
           if [ -z "$PREV_TAG" ]; then
-            git log --pretty=format:"%s" HEAD > commits.txt
+            {
+              git log --pretty=format:"%s" HEAD | cat 
+            } > commits.txt
           else
-            git log --pretty=format:'%s' "$PREV_TAG"..HEAD > commits.txt
+            {
+              git log --pretty=format:'%s' "$PREV_TAG"..HEAD | cat
+            }> commits.txt
           fi
           
           echo "::notice title=Commits extracted::There are $(  wc -l commits.txt ) captured commits."
@@ -101,7 +105,6 @@ jobs:
           {
             echo 'commits<<EOF'
             cat commits.txt
-            echo
             echo EOF
           } >> $GITHUB_OUTPUT
           
@@ -123,7 +126,6 @@ jobs:
           {
             echo 'files<<EOF'
             cat files.txt
-            echo
             echo EOF
           } >> $GITHUB_OUTPUT
 
