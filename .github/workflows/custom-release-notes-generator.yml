@@ -105,3 +105,53 @@ jobs:
           git add "releases/v${{ steps.version.outputs.version }}.md"
           git commit -m "📝 Seed release notes for v${{ steps.version.outputs.version }}"
           git push
+
+      - name: Inject Commits into Release Notes Footer
+        id: inject
+        run: |
+          FILE="releases/v${{ steps.version.outputs.version }}.md"
+          PREV_TAG="${{ steps.prior.outputs.previous }}"
+      
+          # Discover commits between versions
+          if [ -z "$PREV_TAG" ]; then
+            COMMITS=$(git log --pretty=format:"%H" HEAD)
+          else
+            COMMITS=$(git log --pretty=format:"%H" "$PREV_TAG"..HEAD)
+          fi
+      
+          # Extract existing injected commits from footer
+          EXISTING=$(awk '/<!--release-notes-footer-start-->/, /<!--release-notes-footer-end-->/' "$FILE" | grep '"injected_commits"' | sed 's/.*\[\(.*\)\].*/\1/' | tr -d ' "')
+      
+          # Build new list
+          NEW_COMMITS=""
+          for COMMIT in $COMMITS; do
+            if ! grep -q "$COMMIT" <<< "$EXISTING"; then
+              NEW_COMMITS="$NEW_COMMITS \"$COMMIT\","
+            fi
+          done
+      
+          # Trim trailing comma
+          NEW_COMMITS=$(echo "$NEW_COMMITS" | sed 's/,$//')
+      
+          # Build full commit list
+          if [ -n "$EXISTING" ]; then
+            ALL_COMMITS="$EXISTING,$NEW_COMMITS"
+          else
+            ALL_COMMITS="$NEW_COMMITS"
+          fi
+      
+          # Rewrite footer
+          awk '
+            /<!--release-notes-footer-start-->/ {
+              print
+              getline
+              print "{ \"injected_commits\": [ " ENVIRON["ALL_COMMITS"] " ] }"
+              getline
+              print
+              next
+            }
+            { print }
+          ' ALL_COMMITS="$ALL_COMMITS" "$FILE" > "$FILE.tmp" && mv "$FILE.tmp" "$FILE"
+      
+          echo "::notice title=Footer Updated::Updated injected commits."
+
