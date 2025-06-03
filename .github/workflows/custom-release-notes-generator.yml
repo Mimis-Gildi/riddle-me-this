@@ -90,14 +90,13 @@ jobs:
         run: |
           PREV_TAG="${{ steps.prior-tag.outputs.value }}"
           if [ -z "$PREV_TAG" ]; then
-            COMMITS=$(git log --pretty=format:"%s" HEAD)
+            git log --pretty=format:"%s" HEAD > commits.txt
           else
-            COMMITS=$(git log --pretty=format:"%s" "$PREV_TAG"..HEAD)
+            git log --pretty=format:"%s" "$PREV_TAG"..HEAD > commits.txt
           fi
+          
           echo "commits<<EOF" >> $GITHUB_OUTPUT
-          for COMMIT in $COMMITS; do
-            echo "$COMMIT"
-          done >> $GITHUB_OUTPUT
+          cat commits.txt >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Extract Changed Files
@@ -105,32 +104,33 @@ jobs:
         run: |
           PREV_TAG="${{ steps.prior-tag.outputs.value }}"
           if [ -z "$PREV_TAG" ]; then
-            FILES=$(git ls-files)
+            git ls-files > files.txt
           else
-            FILES=$(git diff --name-only "$PREV_TAG"..HEAD)
+            git diff --name-only "$PREV_TAG"..HEAD > files.txt
           fi
+          
           echo "files<<EOF" >> $GITHUB_OUTPUT
-          for FILE in $FILES; do
-            echo "$FILE"
-          done >> $GITHUB_OUTPUT
+          cat files.txt >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Write Logs and Files into Release Notes
         run: |
           FILE="releases/v${{ steps.this-version.outputs.value }}.md"
+          
+          # Preserve header, truncate below '---'
           awk '/^---/ { exit } { print }' "$FILE" > "$FILE.new"
-      
           echo "---" >> "$FILE.new"
+          
           echo "## Logs" >> "$FILE.new"
           while IFS= read -r line; do
             echo "- $line" >> "$FILE.new"
           done <<< "${{ steps.commits.outputs.commits }}"
-      
+          
           echo "## Files" >> "$FILE.new"
           while IFS= read -r file; do
             echo "- $file" >> "$FILE.new"
           done <<< "${{ steps.files.outputs.files }}"
-      
+          
           mv "$FILE.new" "$FILE"
 
       - name: Commit Injection File
