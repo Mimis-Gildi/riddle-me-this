@@ -19,13 +19,24 @@ runs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        echo "::notice title=Setting Up Git::$(git --version)"
+        echo "::"
 
     - name: Commit Release Notes
       shell: bash
       run: |
         VERSION="${{ inputs.version }}"
         MESSAGE="${{ inputs.message }}"
-
-        git add "releases/v${VERSION}.md"
-        git commit -m "$MESSAGE"
-        git push
+        RELEASE_FILE="releases/v${VERSION}.md"
+        
+        if [[ -f "$RELEASE_FILE" ]]; then
+        
+          echo "::notice title=Committing Release File::$RELEASE_FILE: $MESSAGE"
+          git add "releases/v${VERSION}.md"
+          git commit -m "$MESSAGE"
+          output=$(git push --porcelain)
+          echo "::notice title=Pushed Release File::$output"
+        
+        else
+        
+          echo "::error title="Release file NOT found::"$RELEASE_FILE"

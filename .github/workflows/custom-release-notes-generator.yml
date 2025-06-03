@@ -95,9 +95,16 @@ jobs:
             git log --pretty=format:"%s" "$PREV_TAG"..HEAD > commits.txt
           fi
           
-          echo "commits<<EOF" >> $GITHUB_OUTPUT
-          cat commits.txt >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          echo "::notice title=Commits extracted::There are $(  wc -l commits.txt ) captured commits."
+          echo "::debug title=Commit messages::$( cat commits.txt )"
+          
+          {
+            echo "commits<<EOF"
+            cat commits.txt
+            echo "EOF"
+          } >> $GITHUB_OUTPUT
+          
+          echo "::notice title=Captured Commit Logs::"
 
       - name: Extract Changed Files
         id: files
@@ -108,29 +115,41 @@ jobs:
           else
             git diff --name-only "$PREV_TAG"..HEAD > files.txt
           fi
-          
-          echo "files<<EOF" >> $GITHUB_OUTPUT
-          cat files.txt >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+
+          echo "::notice title=Changed files extracted::There are $(  wc -l files.txt ) captured files."
+          echo "::debug title=Changed files::$( cat files.txt )"
+
+          {
+            echo "files<<EOF"
+            cat files.txt
+            echo "EOF"
+          } >> $GITHUB_OUTPUT
+
+          echo "::notice title=Captured Committed Files::"
+
 
       - name: Write Logs and Files into Release Notes
         run: |
           FILE="releases/v${{ steps.this-version.outputs.value }}.md"
-          
-          # Preserve header, truncate below '---'
+
           awk '/^---/ { exit } { print }' "$FILE" > "$FILE.new"
           echo "---" >> "$FILE.new"
+
+          echo -e "## Logs" >> "$FILE.new"
           
-          echo "## Logs" >> "$FILE.new"
           while IFS= read -r line; do
             echo "- $line" >> "$FILE.new"
           done <<< "${{ steps.commits.outputs.commits }}"
+          echo  >> "$FILE.new"
           
-          echo "## Files" >> "$FILE.new"
+
+          echo -e "## Files" >> "$FILE.new"
+          
           while IFS= read -r file; do
             echo "- $file" >> "$FILE.new"
           done <<< "${{ steps.files.outputs.files }}"
-          
+           >> "$FILE.new"
+
           mv "$FILE.new" "$FILE"
 
       - name: Commit Injection File
