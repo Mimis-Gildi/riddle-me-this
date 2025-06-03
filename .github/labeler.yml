@@ -18,8 +18,3 @@ demo:
           - tracks/**
           - .saga-notes/.rdd13r-notes/**
 
-meta:
-  - changed-files:
-    - any-glob-to-any-file: .github/**
-    - any-glob-to-any-file: releases/**
-    - any-glob-to-any-file: gradle.properties
