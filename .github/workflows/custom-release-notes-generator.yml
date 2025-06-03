@@ -94,11 +94,10 @@ jobs:
           else
             git log --pretty=format:"%s" "$PREV_TAG"..HEAD > commits.txt
           fi
+          echo >> commits.txt
           
           echo "::notice title=Commits extracted::There are $(  wc -l commits.txt ) captured commits."
           echo "::debug title=Commit messages::$( cat commits.txt )"
-          
-          cat commits.txt
           
           {
             echo 'commits<<EOF'
@@ -124,6 +123,7 @@ jobs:
           {
             echo 'files<<EOF'
             cat files.txt
+            echo
             echo EOF
           } >> $GITHUB_OUTPUT
 
