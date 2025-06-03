@@ -98,7 +98,7 @@ jobs:
           echo "::notice title=Commits extracted::There are $(  wc -l commits.txt ) captured commits."
           echo "::debug title=Commit messages::$( cat commits.txt )"
           
-          cat commits.text
+          cat commits.txt
           
           {
             echo 'commits<<EOF'
