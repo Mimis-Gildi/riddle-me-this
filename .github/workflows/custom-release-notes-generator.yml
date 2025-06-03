@@ -57,7 +57,7 @@ jobs:
           else
             mkdir -p releases
             {
-              echo "# Release v${{ steps.this-version.outputs.version }}"
+              echo "# Release v${{ steps.this-version.outputs.value }}"
               echo ""
               echo "## ✨ What's New"
               echo "- TBD"
@@ -68,9 +68,11 @@ jobs:
               echo "## 🔬 Internal"
               echo "- TBD"
               echo ""
-              echo "<!--release-notes-footer-start-->"
-              echo "{ \"injected_commits\": [] }"
-              echo "<!--release-notes-footer-end-->"
+              echo "---"
+              echo "## Logs"
+              echo ""
+              echo "## Files"
+              echo ""
             } > "$FILE"
             echo "created=true" >> $GITHUB_OUTPUT
             echo "::notice title=Release Notes File Seeded::$FILE"
@@ -83,64 +85,53 @@ jobs:
           version: ${{ steps.this-version.outputs.value }}
           message: "📝 Seed release notes for v${{ steps.this-version.outputs.value }}"
 
-
-      - name: Collect Changed Files (Placeholder for Inject)
+      - name: Extract Commit Messages
+        id: commits
         run: |
-          if [ -z "${{ steps.prior-tag.outputs.value }}" ]; then
-            git ls-files > changed_files.txt
+          PREV_TAG="${{ steps.prior-tag.outputs.value }}"
+          if [ -z "$PREV_TAG" ]; then
+            COMMITS=$(git log --pretty=format:"%s" HEAD)
           else
-            git diff --name-only "${{ steps.prior-tag.outputs.value }}" HEAD > changed_files.txt
+            COMMITS=$(git log --pretty=format:"%s" "$PREV_TAG"..HEAD)
           fi
-          echo "::notice title=Files Changed Since Tag::$( cat changed_files.txt )"
+          echo "commits<<EOF" >> $GITHUB_OUTPUT
+          for COMMIT in $COMMITS; do
+            echo "$COMMIT"
+          done >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
-      - name: Inject Commits into Release Notes Footer
-        id: inject
+      - name: Extract Changed Files
+        id: files
+        run: |
+          PREV_TAG="${{ steps.prior-tag.outputs.value }}"
+          if [ -z "$PREV_TAG" ]; then
+            FILES=$(git ls-files)
+          else
+            FILES=$(git diff --name-only "$PREV_TAG"..HEAD)
+          fi
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          for FILE in $FILES; do
+            echo "$FILE"
+          done >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Write Logs and Files into Release Notes
         run: |
           FILE="releases/v${{ steps.this-version.outputs.value }}.md"
-          PREV_TAG="${{ steps.prior-tag.outputs.value }}"
+          awk '/^---/ { exit } { print }' "$FILE" > "$FILE.new"
       
-          # Discover commits between versions
-          if [ -z "$PREV_TAG" ]; then
-            COMMITS=$(git log --pretty=format:"%H" HEAD)
-          else
-            COMMITS=$(git log --pretty=format:"%H" "$PREV_TAG"..HEAD)
-          fi
+          echo "---" >> "$FILE.new"
+          echo "## Logs" >> "$FILE.new"
+          while IFS= read -r line; do
+            echo "- $line" >> "$FILE.new"
+          done <<< "${{ steps.commits.outputs.commits }}"
       
-          # Extract existing injected commits from footer
-          EXISTING=$(awk '/<!--release-notes-footer-start-->/, /<!--release-notes-footer-end-->/' "$FILE" | grep '"injected_commits"' | sed 's/.*\[\(.*\)\].*/\1/' | tr -d ' "')
+          echo "## Files" >> "$FILE.new"
+          while IFS= read -r file; do
+            echo "- $file" >> "$FILE.new"
+          done <<< "${{ steps.files.outputs.files }}"
       
-          # Build new list
-          NEW_COMMITS=""
-          for COMMIT in $COMMITS; do
-            if ! grep -q "$COMMIT" <<< "$EXISTING"; then
-              NEW_COMMITS="$NEW_COMMITS \"$COMMIT\","
-            fi
-          done
-      
-          # Trim trailing comma
-          NEW_COMMITS=$(echo "$NEW_COMMITS" | sed 's/,$//')
-      
-          # Build full commit list
-          if [ -n "$EXISTING" ]; then
-            ALL_COMMITS="$EXISTING,$NEW_COMMITS"
-          else
-            ALL_COMMITS="$NEW_COMMITS"
-          fi
-      
-          # Rewrite footer
-          awk '
-            /<!--release-notes-footer-start-->/ {
-              print
-              getline
-              print "{ \"injected_commits\": [ " ENVIRON["ALL_COMMITS"] " ] }"
-              getline
-              print
-              next
-            }
-            { print }
-          ' ALL_COMMITS="$ALL_COMMITS" "$FILE" > "$FILE.tmp" && mv "$FILE.tmp" "$FILE"
-      
-          echo "::notice title=Footer Updated::Updated injected commits."
+          mv "$FILE.new" "$FILE"
 
       - name: Commit Injection File
         uses: ./.github/actions/release-notes-commit
