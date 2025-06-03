@@ -92,9 +92,8 @@ jobs:
           if [ -z "$PREV_TAG" ]; then
             git log --pretty=format:"%s" HEAD > commits.txt
           else
-            git log --pretty=format:"%s" "$PREV_TAG"..HEAD > commits.txt
+            git log --pretty=format:'%s' "$PREV_TAG"..HEAD > commits.txt
           fi
-          echo >> commits.txt
           
           echo "::notice title=Commits extracted::There are $(  wc -l commits.txt ) captured commits."
           echo "::debug title=Commit messages::$( cat commits.txt )"
@@ -102,6 +101,7 @@ jobs:
           {
             echo 'commits<<EOF'
             cat commits.txt
+            echo
             echo EOF
           } >> $GITHUB_OUTPUT
           
@@ -137,15 +137,17 @@ jobs:
           awk '/^---/ { exit } { print }' "$FILE" > "$FILE.new"
           echo "---" >> "$FILE.new"
 
-          echo -e "## Logs" >> "$FILE.new"
+          echo "## Logs" >> "$FILE.new"
+          echo >> "$FILE.new"
           
           while IFS= read -r line; do
             echo "- $line" >> "$FILE.new"
           done <<< "${{ steps.commits.outputs.commits }}"
-          echo  >> "$FILE.new"
+          echo >> "$FILE.new"
           
 
-          echo -e "## Files" >> "$FILE.new"
+          echo "## Files" >> "$FILE.new"
+          echo >> "$FILE.new"
           
           while IFS= read -r file; do
             echo "- $file" >> "$FILE.new"

@@ -20,7 +20,6 @@ runs:
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         echo "::notice title=Setting Up Git::$(git --version)"
-        echo "::"
 
     - name: Commit Release Notes
       shell: bash
@@ -38,5 +37,6 @@ runs:
           echo "::notice title=Pushed Release File::$output"
         
         else
-        
           echo "::error title="Release file NOT found::"$RELEASE_FILE"
+        fi
+
