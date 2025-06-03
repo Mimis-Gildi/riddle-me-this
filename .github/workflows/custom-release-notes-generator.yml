@@ -31,6 +31,9 @@ jobs:
 
       - name: Checkout Repository
         uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+          fetch-tags: true
 
       - name: Extract Target Version from gradle.properties of this feature
         id: this-version
@@ -91,12 +94,12 @@ jobs:
           PREV_TAG="${{ steps.prior-tag.outputs.value }}"
           if [ -z "$PREV_TAG" ]; then
             {
-              git log --pretty=format:"%s" HEAD | cat 
+              git log --pretty=format:"%s" HEAD 
             } > commits.txt
           else
             {
-              git log --pretty=format:'%s' "$PREV_TAG"..HEAD | cat
-            }> commits.txt
+              git log --pretty=format:'%s' "$PREV_TAG"..HEAD 
+            } > commits.txt
           fi
           
           echo "::notice title=Commits extracted::There are $(  wc -l commits.txt ) captured commits."
