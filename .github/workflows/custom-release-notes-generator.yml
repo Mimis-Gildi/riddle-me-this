@@ -1,0 +1,101 @@
+name: Release Notes Generator
+
+run-name: "Generated or Updated Release Notes on ${{ github.repository }} by ${{ github.actor }} (${{ github.event_name }})"
+
+on:
+  workflow_call:
+    inputs:
+      dry-run:
+        required: false
+        type: boolean
+        default: false
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches-ignore:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "${{ github.workflow }}-${{ github.ref }}-release-notes-generator"
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+
+  detect-and-seed:
+    name: Detect Versions, Seed File, Inject Data
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4.2.2
+
+      - name: Extract Target Version from gradle.properties
+        id: version
+        run: |
+          VERSION=$(grep '^version=' gradle.properties | cut -d'=' -f2)
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "::notice title=Detected Target Version::$VERSION"
+
+      - name: Determine Prior Version (if any)
+        id: prior
+        run: |
+          git fetch --tags
+          PREV=$(git tag --sort=-v:refname | grep '^v' | grep -v "v${{ steps.version.outputs.version }}" | head -n 1 || echo "")
+          echo "previous=$PREV" >> $GITHUB_OUTPUT
+          echo "::notice title=Detected Prior Version::$PREV"
+
+      - name: Check and Seed Release Notes File
+        id: seed
+        run: |
+          FILE="releases/v${{ steps.version.outputs.version }}.md"
+          if [ -f "$FILE" ]; then
+            echo "created=false" >> $GITHUB_OUTPUT
+            echo "::notice title=Release Notes File Exists::$FILE"
+          else
+            mkdir -p releases
+            {
+              echo "# Release v${{ steps.version.outputs.version }}"
+              echo ""
+              echo "## ✨ What's New"
+              echo "- TBD"
+              echo ""
+              echo "## 🐛 Bug Fixes"
+              echo "- TBD"
+              echo ""
+              echo "## 🔬 Internal"
+              echo "- TBD"
+              echo ""
+              echo "<!--release-notes-footer-start-->"
+              echo "{ \"injected_commits\": [] }"
+              echo "<!--release-notes-footer-end-->"
+            } > "$FILE"
+            echo "created=true" >> $GITHUB_OUTPUT
+            echo "::notice title=Release Notes File Seeded::$FILE"
+          fi
+
+      - name: Collect Changed Files (Placeholder for Inject)
+        run: |
+          if [ -z "${{ steps.prior.outputs.previous }}" ]; then
+            git ls-files > changed_files.txt
+          else
+            git diff --name-only "${{ steps.prior.outputs.previous }}" HEAD > changed_files.txt
+          fi
+          cat changed_files.txt
+
+      - name: Commit New Release Notes File (if created)
+        if: steps.seed.outputs.created == 'true' && inputs.dry-run == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "releases/v${{ steps.version.outputs.version }}.md"
+          git commit -m "📝 Seed release notes for v${{ steps.version.outputs.version }}"
+          git push
+
