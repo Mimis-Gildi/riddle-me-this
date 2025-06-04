@@ -38,4 +38,5 @@ jobs:
           pr-mode: true
         env:
           QODANA_PROJECT_TOKEN: ${{ secrets.QODANA_PROJECT_TOKEN }}
+          QODANA_TOKEN: ${{ secrets.QODANA_PROJECT_TOKEN }}
           QODANA_ENDPOINT: 'https://qodana.cloud'
