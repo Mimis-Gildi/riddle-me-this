@@ -1,0 +1,45 @@
+{
+  "extends": ["config:recommended"],
+  "schedule": ["every weekday", "every weekend"],
+  "timezone": "America/New_York",
+  "labels": ["dependencies", "renovate"],
+  "assignees": ["vadim.kuhay"],
+
+  "automerge": true,
+
+  "branchPrefix": "renovate/",
+
+  "packageRules": [
+    {
+      "description": "Aggressive grouping for Gradle root project",
+      "matchManagers": ["gradle"],
+      "matchPaths": ["build.gradle.kts", "gradle.properties"],
+      "groupName": "Gradle Root Updates",
+      "automerge": true
+    },
+    {
+      "description": "Aggressive grouping for buildSrc",
+      "matchManagers": ["gradle"],
+      "matchPaths": ["buildSrc/**"],
+      "groupName": "Gradle BuildSrc Updates",
+      "automerge": true
+    },
+    {
+      "description": "GitHub Actions Updates",
+      "matchManagers": ["github-actions"],
+      "groupName": "GitHub Actions Updates",
+      "automerge": true
+    },
+    {
+      "description": "Bundler / Jekyll Updates (monthly)",
+      "matchManagers": ["bundler"],
+      "groupName": "Bundler Updates",
+      "automerge": true,
+      "schedule": ["monthly"]
+    }
+  ],
+
+  "dependencyDashboard": true,
+  "prHourlyLimit": 5,
+  "prConcurrentLimit": 10
+}
