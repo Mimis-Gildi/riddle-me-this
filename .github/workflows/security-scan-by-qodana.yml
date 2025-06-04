@@ -10,9 +10,6 @@ on:
     types:
       - opened
       - synchronize
-  push:
-    branches:
-      - main
 
 permissions:
   contents: write
@@ -22,7 +19,7 @@ permissions:
 jobs:
   qodana-scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 17
 
     steps:
       - name: Checkout full repository
