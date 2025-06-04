@@ -3,17 +3,13 @@ run-name: "Executed Security Scan by Qodana on ${{ github.repository }}] by ${{ 
 #.github/workflows/security-scan-by-qodana.yml
 #.github/qodana.yaml
 
-#FixMe: Dead broken Foojay resolver inside published JetBrains Image; moving to our own hosting!
 on:
   workflow_dispatch:
-#  workflow_call:
-#  pull_request:
-#    types:
-#      - opened
-#      - synchronize
-#  push:
-#    branches:
-#      - main
+  workflow_call:
+  pull_request:
+    types:
+      - opened
+      - synchronize
 
 permissions:
   contents: write
@@ -23,7 +19,7 @@ permissions:
 jobs:
   qodana-scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 17
 
     steps:
       - name: Checkout full repository

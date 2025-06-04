@@ -6,7 +6,6 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    security-updates-only: true
     commit-message:
       prefix: "⬆️ actions"
     labels:
@@ -17,7 +16,6 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    security-updates-only: true
     commit-message:
       prefix: "⬆️ gradle"
     labels:
@@ -28,7 +26,6 @@ updates:
     directory: "/buildSrc"
     schedule:
       interval: "weekly"
-    security-updates-only: true
     commit-message:
       prefix: "⬆️ gradle (buildSrc)"
     labels:
@@ -39,7 +36,6 @@ updates:
     directory: "/site"
     schedule:
       interval: "monthly"
-    security-updates-only: true
     commit-message:
       prefix: "⬆️ bundler"
     labels:

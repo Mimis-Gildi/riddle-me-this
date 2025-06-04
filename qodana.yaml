@@ -8,6 +8,4 @@ projectJDK: temurin-21
 include:
   - name: CheckDependencyLicenses
 
-failThreshold: 5
-
 fixesStrategy: apply

@@ -17,7 +17,7 @@ ___
   - [Secret scanning alerts][secrets-scan] - accumulator for GitHub [secrets scanner][on-secret-scanning];
   - Running [advisories] - check here for any outstanding issues;
   - See our [security policy], i.e., _`this` document_ here.
-- <span style="color:red">2025.1 Docker Image BROKEN:</span> The [Mímis Gildi Qodana Organization] _**Dashboard**_ - a [Qodana Cloud] GitHub-App:
+- The [Mímis Gildi Qodana Organization] _**Dashboard**_ - a [Qodana Cloud] GitHub-App:
     - The [Scene Team] of Qodana Cloud @ [Mímis Gildi];
     - See the [Author]'s organizations and [open communities] sprinkled about. 
 - The [Codacy Cloud Organizations] _**Dashboards**_ - a [Codacy Cloud] GitHub-App:
@@ -41,11 +41,11 @@ ___
 
 ___
 
-_**This site version is [v1.13.0].**_
+_**This site version is [v2.0.0].**_
 
 ___
 
-[v1.13.0]: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.13.0 "This release tag to follow."
+[v2.0.0]: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.0.0 "This release tag to follow."
 
 [Author]: https://github.com/rdd13r "❤️ Kotlin ❤️ Scala; Python; Java; Go."
 [Captain]: https://github.com/CaptainLugaru "Captain Lugaru: I am a coding Viking Bunny. In 2021, I won internship at ASE Inc." 
