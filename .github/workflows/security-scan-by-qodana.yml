@@ -1,28 +1,40 @@
-name: Qodana
+name: Security Scan by Qodana
+run-name: "Executed Security Scan by Qodana Advanced on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+#.github/workflows/security-scan-by-qodana.yml
+#.github/qodana.yaml
+
 on:
   workflow_dispatch:
+  workflow_call:
   pull_request:
+    types:
+      - opened
+      - synchronize
   push:
-    branches: # Specify your branches here
-      - main # The 'main' branch
-      - 'releases/*' # The release branches
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+  checks: write
 
 jobs:
-  qodana:
+  qodana-scan:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      checks: write
+    timeout-minutes: 20
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout full repository
+        uses: actions/checkout@v4.2.2
         with:
-          ref: ${{ github.event.pull_request.head.sha }}  # to check out the actual pull request commit, not the merge commit
-          fetch-depth: 0  # a full history is required for pull request analysis
-      - name: 'Qodana Scan'
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+
+      - name: Run Qodana Scan (PR-mode enabled)
         uses: JetBrains/qodana-action@v2025.1
         with:
-          pr-mode: false
+          pr-mode: true
         env:
-          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_829450453 }}
+          QODANA_PROJECT_TOKEN: ${{ secrets.QODANA_PROJECT_TOKEN }}
           QODANA_ENDPOINT: 'https://qodana.cloud'
