@@ -19,7 +19,7 @@ jobs:
     steps:
 
       - name: ⏳ Wait for GitHub ref propagation
-        run: sleep 1
+        run: sleep 5
 
       - name: ⬇️ Checkout repository
         uses: actions/checkout@v4.2.2
