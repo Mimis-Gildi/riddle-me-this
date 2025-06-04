@@ -44,11 +44,27 @@ jobs:
         id: prior-tag
         run: |
           git fetch --tags
-          PREV=$(git tag --sort=-v:refname | grep '^v' | grep -v "v${{ steps.this-version.outputs.value }}" | head -n 1 || echo "")
+          PREV=$(git tag --sort=-v:refname | grep '^v' | head -n 1 || echo "")
           echo "value=$PREV" >> $GITHUB_OUTPUT
           echo "::notice title=Detected Prior Version::$PREV"
 
+      - name: Short-Circuit on No-Increment
+        id: fuse
+        run: |
+          echo "::note title=Check Increment::Checking if the feature version is incremented."
+          FEATURE_VERSION="v${{ steps.this-version.outputs.value }}"
+          PRIOR_PUBLISHED="${{ steps.prior-tag.outputs.value }}"
+          if [[ "$FEATURE_VERSION" == "$PRIOR_PUBLISHED" ]]; then
+            echo "command=terminate" >> $GITHUB_OUTPUT
+            echo "::warning title="Version NOT Ready!::Prior tag is $PRIOR_PUBLISHED and current version is ${{ steps.this-version.outputs.value }}."
+            echo "::exit::neutral"
+          else
+            echo "command=execute" >> $GITHUB_OUTPUT
+            echo "::notice title=Notes for Release ${{ steps.this-version.outputs.value }}::Feature Incremented $PRIOR_PUBLISHED => $FEATURE_VERSION."
+          fi
+
       - name: Check and Seed Release Notes File
+        if: steps.fuse.outputs.command == 'execute'
         id: seed-new
         run: |
           FILE="releases/v${{ steps.this-version.outputs.value }}.md"
@@ -87,6 +103,7 @@ jobs:
           message: "📝 Seed release notes for v${{ steps.this-version.outputs.value }}"
 
       - name: Extract Commit Messages
+        if: steps.fuse.outputs.command == 'execute'
         id: commits
         run: |
           PREV_TAG="${{ steps.prior-tag.outputs.value }}"
@@ -101,7 +118,7 @@ jobs:
           fi
           
           echo "::notice title=Commits extracted::There are $(  wc -l commits.txt ) captured commits."
-          echo "::debug title=Commit messages::$( cat commits.txt )"
+          echo "::debug::Commit messages $( cat commits.txt )"
           
           {
             echo 'commits<<EOF'
@@ -113,6 +130,7 @@ jobs:
           echo "::notice title=Captured Commit Logs::"
 
       - name: Extract Changed Files
+        if: steps.fuse.outputs.command == 'execute'
         id: files
         run: |
           PREV_TAG="${{ steps.prior-tag.outputs.value }}"
@@ -123,7 +141,7 @@ jobs:
           fi
 
           echo "::notice title=Changed files extracted::There are $(  wc -l files.txt ) captured files."
-          echo "::debug title=Changed files::$( cat files.txt )"
+          echo "::debug::Changed files $( cat files.txt )"
 
           {
             echo 'files<<EOF'
@@ -135,6 +153,7 @@ jobs:
 
 
       - name: Write Logs and Files into Release Notes
+        if: steps.fuse.outputs.command == 'execute'
         run: |
           FILE="releases/v${{ steps.this-version.outputs.value }}.md"
 
@@ -161,6 +180,7 @@ jobs:
           mv "$FILE.new" "$FILE"
 
       - name: Commit Injection File
+        if: steps.fuse.outputs.command == 'execute'
         uses: ./.github/actions/release-notes-commit
         with:
           version: ${{ steps.this-version.outputs.value }}
