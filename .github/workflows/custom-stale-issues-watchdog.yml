@@ -1,0 +1,56 @@
+name: "Manage Stale Issues and Pull Requests"
+run-name: "Managed Stale Labeling [${{ github.repository }}] @ ${{ github.ref }} by ${{ github.actor }} with ${{ github.event_name }}"
+# https://github.com/actions/stale
+#.github/workflows/custom-stale-issues-watchdog.yml
+
+on:
+  schedule:
+    - cron: '20 10 * * 1'
+  workflow_dispatch:
+  workflow_call:
+  push:
+    branches:
+      - main
+
+permissions:
+  issues: write
+  pull-requests: write
+  contents: write
+
+jobs:
+  stale-issues-and-pull-requests-check:
+    timeout-minutes: 2
+    runs-on: ubuntu-latest
+    name: "Manage Stale Issues and Pull Requests IAW configured rules"
+
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: "Run Stale Issues and Pull Requests checks in repository [${{ github.repository }}] by ${{ github.actor }}"
+        uses: actions/stale@v9.1.0
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+          days-before-issue-stale: 30
+          stale-issue-label: stale-issue
+          stale-issue-message: |
+            This issue has had no activity for 30 days and is being marked stale.
+            If this issue is still relevant, please update or comment.
+
+          days-before-issue-close: 15
+          close-issue-label: stale-issue-closed
+          close-issue-message: |
+            Closing this issue after 15 additional days of inactivity.
+
+          days-before-pr-stale: 21
+          stale-pr-label: stale-pr
+          stale-pr-message: |
+            This pull request has been inactive for 21 days and is being marked stale.
+            Please update or comment if still relevant.
+
+          days-before-pr-close: 14
+          close-pr-label: stale-pr-closed
+          close-pr-message: |
+            Closing this pull request after 14 additional days of inactivity.

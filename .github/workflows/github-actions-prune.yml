@@ -5,6 +5,9 @@ run-name: "Pruned Old Action Runs but ONE on ${{ github.repository }}] by ${{ gi
 on:
   workflow_dispatch:
   workflow_call:
+  push:
+    branches:
+      - main
 
 permissions:
   actions: write
