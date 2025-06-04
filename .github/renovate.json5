@@ -1,13 +1,19 @@
 {
-  "extends": ["config:recommended"],
-  "schedule": ["every weekday", "every weekend"],
-  "timezone": "America/New_York",
-  "labels": ["dependencies", "renovate"],
-  "assignees": ["vadim.kuhay"],
-
   "automerge": true,
-
+  "extends": ["config:recommended"],
+  "timezone": "America/New_York",
+  "assignees": ["rdd13r"],
   "branchPrefix": "renovate/",
+
+  "schedule": [
+    "every weekday",
+    "every weekend"
+  ],
+
+  "labels": [
+    "dependencies",
+    "renovate"
+  ],
 
   "packageRules": [
     {
