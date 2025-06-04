@@ -17,10 +17,12 @@ on:
 permissions:
   contents: write
 
-jobs:
 
-  release-resume:
+jobs:
+  resume-publish:
+    if: github.event_name != 'pull_request' || startsWith(github.head_ref, 'renovate/') == false
     runs-on: ubuntu-latest
+    name: "Publish Resume Site"
 
     steps:
 
