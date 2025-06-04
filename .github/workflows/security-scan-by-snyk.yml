@@ -32,7 +32,11 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - name: Run Snyk vulnerability scan (Gradle JVM)
-        uses: snyk/actions/gradle@0.4.0
+      - name: Run Snyk directly from trunk
+        uses: snyk/actions/setup@master
+
+
+      - name: Run Snyk Test App
+        run: snyk test --all-sub-projects
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_PROJECT_TOKEN }}
