@@ -1,52 +1,47 @@
 version: 2
-#.github/dependabot.yml
 
 updates:
 
-  # GitHub Actions updates
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
-    open-pull-requests-limit: 5
+    security-updates-only: true
     commit-message:
       prefix: "⬆️ actions"
     labels:
       - dependencies
       - actions
 
-  # Gradle Kotlin DSL - Project Root
   - package-ecosystem: "gradle"
-    directory: "/"  # Monorepo root where `build.gradle.kts` and `gradle.properties` live
+    directory: "/"
     schedule:
       interval: "weekly"
+    security-updates-only: true
     commit-message:
       prefix: "⬆️ gradle"
-    open-pull-requests-limit: 5
     labels:
       - dependencies
       - gradle
 
-  # Gradle Kotlin DSL - buildSrc module
   - package-ecosystem: "gradle"
     directory: "/buildSrc"
     schedule:
       interval: "weekly"
+    security-updates-only: true
     commit-message:
       prefix: "⬆️ gradle (buildSrc)"
-    open-pull-requests-limit: 5
     labels:
       - dependencies
       - buildSrc
 
-  # Ruby Gems (for Jekyll plugins if you want to auto-update site deps)
   - package-ecosystem: "bundler"
     directory: "/site"
     schedule:
-      interval: "monthly" # Less frequent, Jekyll updates tend to be slower
+      interval: "monthly"
+    security-updates-only: true
     commit-message:
       prefix: "⬆️ bundler"
-    open-pull-requests-limit: 2
     labels:
       - dependencies
       - jekyll
