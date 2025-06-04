@@ -3,9 +3,9 @@ run-name: "Published Résumé Release on ${{ github.repository }}] by ${{ github
 #.github/workflows/custom-publish-resume-release.yml
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types:
+      - closed
   workflow_dispatch:
     inputs:
       prerelease:
@@ -20,9 +20,12 @@ permissions:
 
 jobs:
   resume-publish:
-    if: github.event_name != 'pull_request' || startsWith(github.head_ref, 'renovate/') == false
+    if: >
+      github.event.pull_request.merged == true &&
+      contains(join(github.event.pull_request.labels.*.name, ','), 'resume')
     runs-on: ubuntu-latest
-    name: "Publish Resume Site"
+    name: "Publish Resume Artifacts"
+    timeout-minutes: 17
 
     steps:
 
