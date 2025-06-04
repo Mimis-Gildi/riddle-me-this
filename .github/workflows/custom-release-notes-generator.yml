@@ -56,10 +56,11 @@ jobs:
           PRIOR_PUBLISHED="${{ steps.prior-tag.outputs.value }}"
           if [[ "$FEATURE_VERSION" == "$PRIOR_PUBLISHED" ]]; then
             echo "command=terminate" >> $GITHUB_OUTPUT
-            echo "::warning title="Version NOT Ready::Prior tag is $PRIOR_PUBLISHED and current version is ${{ steps.this-version.outputs.value }}."
+            echo "::warning title=Version NOT Ready::Prior tag is $PRIOR_PUBLISHED and current version is ${{ steps.this-version.outputs.value }}."
+            echo "::exit::neurtal Not Needed"
           else
             echo "command=execute" >> $GITHUB_OUTPUT
-            echo "::notice title=Notes for Release ${{ steps.this-version.outputs.value }}::Feature Incremented $PRIOR_PUBLISHED => $FEATURE_VERSION."
+            echo "::notice title=Notes for Release ${{ steps.this-version.outputs.value }}::Feature Incremented $PRIOR_PUBLISHED -> $FEATURE_VERSION."
           fi
 
       - name: Check and Seed Release Notes File
