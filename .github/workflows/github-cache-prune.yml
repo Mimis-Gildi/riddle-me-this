@@ -5,6 +5,10 @@ run-name: "Pruned Old Action Run Caches on ${{ github.repository }}] by ${{ gith
 on:
   workflow_dispatch:
   workflow_call:
+  create:
+    branches:
+      - '[0-9]*-*'
+
 
 concurrency:
   group: "${{ github.workflow }}-${{ github.ref }}-cache-prune"
@@ -21,6 +25,7 @@ defaults:
 jobs:
 
   prune-actions-cache:
+    if: github.ref_type == 'branch'
     timeout-minutes: 5
     runs-on: ubuntu-latest
     name: "Prune GitHub Actions Cache"
