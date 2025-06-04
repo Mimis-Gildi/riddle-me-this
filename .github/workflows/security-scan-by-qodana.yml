@@ -1,18 +1,19 @@
 name: Security Scan by Qodana
-run-name: "Executed Security Scan by Qodana Advanced on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+run-name: "Executed Security Scan by Qodana on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
 #.github/workflows/security-scan-by-qodana.yml
 #.github/qodana.yaml
 
+#FixMe: Dead broken Foojay resolver inside published JetBrains Image; moving to our own hosting!
 on:
   workflow_dispatch:
-  workflow_call:
-  pull_request:
-    types:
-      - opened
-      - synchronize
-  push:
-    branches:
-      - main
+#  workflow_call:
+#  pull_request:
+#    types:
+#      - opened
+#      - synchronize
+#  push:
+#    branches:
+#      - main
 
 permissions:
   contents: write

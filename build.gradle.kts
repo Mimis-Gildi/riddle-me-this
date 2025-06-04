@@ -42,7 +42,7 @@ allprojects {
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(useJavaVersion))
-        vendor.set(JvmVendorSpec.AMAZON)
+        vendor.set(JvmVendorSpec.ADOPTIUM)
         log.info("\t|=> Riddle me that Java Toolchain SET to    -> $useJavaVersion : ${JvmVendorSpec.ADOPTIUM}.")
     }
 }

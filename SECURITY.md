@@ -17,13 +17,13 @@ ___
   - [Secret scanning alerts][secrets-scan] - accumulator for GitHub [secrets scanner][on-secret-scanning];
   - Running [advisories] - check here for any outstanding issues;
   - See our [security policy], i.e., _`this` document_ here.
-- ToDo: The [Mímis Gildi Qodana Organization] _**Dashboard**_ - a [Qodana Cloud] GitHub-App:
+- <span style="color:red">2025.1 Docker Image BROKEN:</span> The [Mímis Gildi Qodana Organization] _**Dashboard**_ - a [Qodana Cloud] GitHub-App:
     - The [Scene Team] of Qodana Cloud @ [Mímis Gildi];
     - See the [Author]'s organizations and [open communities] sprinkled about. 
-- ToDo: The [Codacy Cloud Organizations] _**Dashboards**_ - a [Codacy Cloud] GitHub-App:
+- The [Codacy Cloud Organizations] _**Dashboards**_ - a [Codacy Cloud] GitHub-App:
   - The [Mímis Gildi Codacy Organization] - containing this project and all the Ops domains;
   - The [Gervi Héra Vitr Codacy Organization] - i.e., [Captain]'s [Homeschool] and [classroom]. 
-- ToDo: The [`mend.io` Cloud Organizations] _**Dashboards**_ - a [mend.io] GitHub-App:
+- The [`mend.io` Cloud Organizations] _**Dashboards**_ - a [mend.io] GitHub-App:
   - "Proactive" management is mend market, thus [Gervi Héra Vitr @mend] is _**the root org**_;
   - The [Sindri Labs @mend] is where _**next**_ democratized key enablement comes from;
   - Follow the Sindri Labs next [Current Issue (252) Dashboard] for your ops ideas;
