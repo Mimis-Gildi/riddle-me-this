@@ -3,10 +3,10 @@
 :page-layout: single
 :page-permalink: /maintainer/
 :page-author_profile: true
-:release: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.9.0[v1.9.0,window=_blank]
-:onEngineering: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.9.0/OnEngineering.pdf[Engineering Résumé]
-:onCreativity: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.9.0/OnCreativity.pdf[Creative Résumé]
-:onLeadership: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.9.0/OnLeadership.pdf[Leadership Résumé]
+:release: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.10.0[v1.10.0,window=_blank]
+:onEngineering: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.10.0/OnEngineering.pdf[Engineering Résumé]
+:onCreativity: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.10.0/OnCreativity.pdf[Creative Résumé]
+:onLeadership: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v1.10.0/OnLeadership.pdf[Leadership Résumé]
 :profile-li: https://www.linkedin.com/in/rdd13r[LinkedIn Profile,window=_blank]
 :profile-gh: https://github.com/rdd13r[GitHub Profile,window=_blank]
 :publications-mm: https://medium.com/@rdd13r[Medium Articles,window=_blank]
