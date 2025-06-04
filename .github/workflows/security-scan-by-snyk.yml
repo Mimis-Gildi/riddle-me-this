@@ -1,0 +1,38 @@
+name: Security Scan by Snyk
+run-name: "Executed Security Scan by Snyk on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+#.github/workflows/security-scan-by-snyk.yml
+
+on:
+  workflow_dispatch:
+  workflow_call:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+
+  snyk-scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Java
+        uses: actions/setup-java@v4.7.1
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Run Snyk vulnerability scan (Gradle JVM)
+        uses: snyk/actions/gradle@0.4.0
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_PROJECT_TOKEN }}
