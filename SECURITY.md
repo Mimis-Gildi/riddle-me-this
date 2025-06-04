@@ -29,6 +29,7 @@ ___
   - Follow the Sindri Labs next [Current Issue (252) Dashboard] for your ops ideas;
   - As this is a schoolroom, things are _slower_, please watch their _[security panel]_.
 - The [Dependabot] is a rock-bottom necessity as we have already linked [above][this-dependabot].
+- _**Snyk**_: Once a decent platform: [Mimis-Vardr] project space (see [learn snyk]).
 - IMPORTANT: On Agents - Mímir's Gildies run a ton of specialized [dedicated runners], so:
   - I take a lot of special care to run on public runners as much as possible;
   - If can't, all the _necessary_ information to customize your runner will be included. 
@@ -81,5 +82,8 @@ ___
 [security panel]: https://github.com/Gervi-Hera-Vitr/sindri-labs/security "Dependabot, GitHub native, effective and free, omnipresent option."
 
 [Dependabot]: https://github.com/dependabot "GitHub Dependabot is the rock-bottom, but free and fundamental security tool for Munchkins worldwide."
+
+[Mimis-Vardr]: https://app.snyk.io/ "Trust AI at full speed."
+[learn snyk]: https://learn.snyk.io/user/learning-progress
 
 [dedicated runners]: https://github.com/Mimis-Gildi/organization-runners "Mímis Gildi dedicated runners."
