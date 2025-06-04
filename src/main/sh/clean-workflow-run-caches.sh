@@ -14,7 +14,7 @@ function acquire_cache_ids_and_process() {
     if [[ "$age_scale" == "minutes" || "$age_scale" == "minute" ]]; then
       echo "::notice:: title=Skipping minutes old::$id"
     else
-      echo "::debug title=Attempting to delete $id::size=$size($scale),age=$age($age_scale-$passe),branch=$ref"
+      echo "::debug::Attempting to delete $id::size=$size($scale),age=$age($age_scale-$passe),branch=$ref"
       set +e
       gh actions-cache delete "$id" --confirm || true
       set -e
