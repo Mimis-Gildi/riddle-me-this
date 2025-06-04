@@ -37,6 +37,6 @@ jobs:
 
 
       - name: Run Snyk Test App
-        run: snyk test --all-sub-projects
+        run: snyk monitor
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_PROJECT_TOKEN }}
