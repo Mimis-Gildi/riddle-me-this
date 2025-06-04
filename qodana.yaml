@@ -5,8 +5,6 @@ profile:
 
 projectJDK: temurin-21
 
-linter: jetbrains/qodana-jvm-community:2025.1
-
 include:
   - name: CheckDependencyLicenses
 
