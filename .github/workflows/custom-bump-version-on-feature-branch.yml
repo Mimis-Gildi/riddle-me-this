@@ -19,7 +19,7 @@ jobs:
     steps:
 
       - name: ⏳ Wait for GitHub ref propagation
-        run: sleep 3
+        run: sleep 1
 
       - name: ⬇️ Checkout repository
         uses: actions/checkout@v4.2.2
@@ -52,16 +52,16 @@ jobs:
           LABELS=$(gh issue view "$ISSUE_NUMBER" --json labels --jq '.labels[].name' || echo '')
           echo "::notice title=Labels Fetched::$LABELS"
           if [[ "$LABELS" == *"major"* ]]; then
-            echo "major=true" >> $GITHUB_OUTPUT
-            echo "::notice title=Version Type::🚀 Major bump triggered"
+            echo "promote=major" >> $GITHUB_OUTPUT
+            echo "::notice title=Version Type::🚀 MAJOR bump triggered"
           else
-            echo "major=false" >> $GITHUB_OUTPUT
-            echo "::notice title=Version Type::🔁 Standard minor bump"
+            echo "promote=minor" >> $GITHUB_OUTPUT
+            echo "::notice title=Version Type::🔁 minor bump"
           fi
 
       - name: 🧬 Bump properties version
         if: steps.check.outputs.proceed == 'true'
-        id: bump
+        id: version-bump
         run: |
           FILE="gradle.properties"
           VERSION=$(grep '^version=' "$FILE" | cut -d= -f2)
@@ -69,23 +69,27 @@ jobs:
           MINOR=$(echo "$VERSION" | cut -d. -f2)
           PATCH=$(echo "$VERSION" | cut -d. -f3)
 
-          echo "old_version=$VERSION" >> $GITHUB_OUTPUT
+          echo "old=$VERSION" >> $GITHUB_OUTPUT
 
-          if [[ "${{ steps.labelcheck.outputs.major }}" == "true" ]]; then
+          if [[ "${{ steps.label-check.outputs.promote }}" == "major" ]]; then
             NEW_VERSION="$((MAJOR + 1)).0.0"
-          else
+          elif [[ "${{ steps.label-check.outputs.promote }}" == "minor" ]]; then
             NEW_VERSION="$MAJOR.$((MINOR + 1)).0"
+          else 
+            NEW_VERSION="error"
+            echo "::error title=Version promotion Failed::Version selection of ${{ steps.label-check.outputs.promote }} is NOT understood."
+            exit 11
           fi
 
           echo "::notice title=Version Bumped::🔄 $VERSION → $NEW_VERSION"
           sed -i "s/^version=.*/version=$NEW_VERSION/" "$FILE"
-          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+          echo "new=$NEW_VERSION" >> $GITHUB_OUTPUT
 
       - name: 📝 Update README.adoc version references
         if: steps.check.outputs.proceed == 'true'
         run: |
-          OLD_VERSION="${{ steps.bump.outputs.old_version }}"
-          NEW_VERSION="${{ steps.bump.outputs.new_version }}"
+          OLD_VERSION="${{ steps.version-bump.outputs.old }}"
+          NEW_VERSION="${{ steps.version-bump.outputs.new }}"
 
           echo "::notice title=README Version Update::🔄 $OLD_VERSION → $NEW_VERSION"
 
@@ -98,8 +102,8 @@ jobs:
       - name: 📝 Update maintainer.adoc version references
         if: steps.check.outputs.proceed == 'true'
         run: |
-          OLD_VERSION="${{ steps.bump.outputs.old_version }}"
-          NEW_VERSION="${{ steps.bump.outputs.new_version }}"
+          OLD_VERSION="${{ steps.version-bump.outputs.old }}"
+          NEW_VERSION="${{ steps.version-bump.outputs.new }}"
 
           if [[ -f site/_pages/maintainer.adoc ]]; then
             echo "::notice title=Maintainer Version Update::🔄 $OLD_VERSION → $NEW_VERSION"
@@ -112,8 +116,8 @@ jobs:
       - name: 📝 Update index.adoc version references
         if: steps.check.outputs.proceed == 'true'
         run: |
-          OLD_VERSION="${{ steps.bump.outputs.old_version }}"
-          NEW_VERSION="${{ steps.bump.outputs.new_version }}"
+          OLD_VERSION="${{ steps.version-bump.outputs.old }}"
+          NEW_VERSION="${{ steps.version-bump.outputs.new }}"
 
           if [[ -f site/index.adoc ]]; then
             echo "::notice title=Landing Page Version Update::🔄 $OLD_VERSION → $NEW_VERSION"
@@ -126,8 +130,8 @@ jobs:
       - name: 📝 Update SECURITY.md version references
         if: steps.check.outputs.proceed == 'true'
         run: |
-          OLD_VERSION="${{ steps.bump.outputs.old_version }}"
-          NEW_VERSION="${{ steps.bump.outputs.new_version }}"
+          OLD_VERSION="${{ steps.version-bump.outputs.old }}"
+          NEW_VERSION="${{ steps.version-bump.outputs.new }}"
 
           if [[ -f SECURITY.md ]]; then
             echo "::notice title=Security Policy Version Update::🔄 $OLD_VERSION → $NEW_VERSION"
@@ -143,15 +147,18 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add gradle.properties SECURITY.md README.adoc site/_pages/maintainer.adoc site/index.adoc  || true
-          git commit -m "🔼 Auto bump version to ${{ steps.bump.outputs.new_version }}"
-          git push || echo "::warning title=Push Failed::⚠️ Git push failed — manual intervention may be required."
+          git commit -m "🔼 Auto bump version to ${{ steps.version-bump.outputs.new }}"
+          git push || {
+            echo "::warning title=Push Failed::⚠️ Git push failed — manual intervention may be required."
+            exit 13
+          }
 
       - name: 🏋️ Summary annotation
         if: steps.check.outputs.proceed == 'true'
         run: |
           echo "::notice title=📅 Bump Summary::
-          Branch: ${GITHUB_REF#refs/heads/}
-          From: ${{ steps.bump.outputs.old_version }}
-          To: ${{ steps.bump.outputs.new_version }}
-          Major bump: ${{ steps.labelcheck.outputs.major }}
+          Branch:   ${GITHUB_REF#refs/heads/}
+          From:     ${{ steps.version-bump.outputs.old }}
+          To:       ${{ steps.version-bump.outputs.new }}
+          Bump:     ${{ steps.label-check.outputs.promote }}
           Files touched: gradle.properties, SECURITY.md, README.adoc, site/_pages/maintainer.adoc, and site/index.adoc."
