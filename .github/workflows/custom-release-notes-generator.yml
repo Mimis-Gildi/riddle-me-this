@@ -56,8 +56,7 @@ jobs:
           PRIOR_PUBLISHED="${{ steps.prior-tag.outputs.value }}"
           if [[ "$FEATURE_VERSION" == "$PRIOR_PUBLISHED" ]]; then
             echo "command=terminate" >> $GITHUB_OUTPUT
-            echo "::warning title="Version NOT Ready!::Prior tag is $PRIOR_PUBLISHED and current version is ${{ steps.this-version.outputs.value }}."
-            echo "::exit::neutral"
+            echo "::warning title="Version NOT Ready::Prior tag is $PRIOR_PUBLISHED and current version is ${{ steps.this-version.outputs.value }}."
           else
             echo "command=execute" >> $GITHUB_OUTPUT
             echo "::notice title=Notes for Release ${{ steps.this-version.outputs.value }}::Feature Incremented $PRIOR_PUBLISHED => $FEATURE_VERSION."
