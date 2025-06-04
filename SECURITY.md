@@ -17,13 +17,13 @@ ___
   - [Secret scanning alerts][secrets-scan] - accumulator for GitHub [secrets scanner][on-secret-scanning];
   - Running [advisories] - check here for any outstanding issues;
   - See our [security policy], i.e., _`this` document_ here.
-- ToDo: The [Mímis Gildi Qodana Organization] _**Dashboard**_ - a [Qodana Cloud] GitHub-App:
+- <span style="color:red">2025.1 Docker Image BROKEN:</span> The [Mímis Gildi Qodana Organization] _**Dashboard**_ - a [Qodana Cloud] GitHub-App:
     - The [Scene Team] of Qodana Cloud @ [Mímis Gildi];
     - See the [Author]'s organizations and [open communities] sprinkled about. 
-- ToDo: The [Codacy Cloud Organizations] _**Dashboards**_ - a [Codacy Cloud] GitHub-App:
+- The [Codacy Cloud Organizations] _**Dashboards**_ - a [Codacy Cloud] GitHub-App:
   - The [Mímis Gildi Codacy Organization] - containing this project and all the Ops domains;
   - The [Gervi Héra Vitr Codacy Organization] - i.e., [Captain]'s [Homeschool] and [classroom]. 
-- ToDo: The [`mend.io` Cloud Organizations] _**Dashboards**_ - a [mend.io] GitHub-App:
+- The [`mend.io` Cloud Organizations] _**Dashboards**_ - a [mend.io] GitHub-App:
   - "Proactive" management is mend market, thus [Gervi Héra Vitr @mend] is _**the root org**_;
   - The [Sindri Labs @mend] is where _**next**_ democratized key enablement comes from;
   - Follow the Sindri Labs next [Current Issue (252) Dashboard] for your ops ideas;
@@ -40,11 +40,11 @@ ___
 
 ___
 
-_**This site version is [v1.10.0].**_
+_**This site version is [v1.11.0].**_
 
 ___
 
-[v1.10.0]: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.10.0 "This release tag to follow."
+[v1.11.0]: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v1.11.0 "This release tag to follow."
 
 [Author]: https://github.com/rdd13r "❤️ Kotlin ❤️ Scala; Python; Java; Go."
 [Captain]: https://github.com/CaptainLugaru "Captain Lugaru: I am a coding Viking Bunny. In 2021, I won internship at ASE Inc." 
