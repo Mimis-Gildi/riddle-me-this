@@ -60,7 +60,7 @@ jobs:
           java-version: 21
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3.28.18
+        uses: github/codeql-action/init@v3.28.19
         with:
           languages: ${{ matrix.language }}
           build-mode: ${{ matrix.build-mode }}
