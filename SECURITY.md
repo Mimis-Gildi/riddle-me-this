@@ -17,7 +17,7 @@ ___
   - [Secret scanning alerts][secrets-scan] - accumulator for GitHub [secrets scanner][on-secret-scanning];
   - Running [advisories] - check here for any outstanding issues;
   - See our [security policy], i.e., _`this` document_ here.
-- <span style="color:red">2025.1 Docker Image BROKEN:</span> The [Mímis Gildi Qodana Organization] _**Dashboard**_ - a [Qodana Cloud] GitHub-App:
+- The [Mímis Gildi Qodana Organization] _**Dashboard**_ - a [Qodana Cloud] GitHub-App:
     - The [Scene Team] of Qodana Cloud @ [Mímis Gildi];
     - See the [Author]'s organizations and [open communities] sprinkled about. 
 - The [Codacy Cloud Organizations] _**Dashboards**_ - a [Codacy Cloud] GitHub-App:
