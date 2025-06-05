@@ -199,3 +199,22 @@ Have we learned nothing?
 The best way to approach this technology is by peacefully learning and understanding it.
 Running it as much as humanly possible!
 Because I guarantee you -- the other guy will!
+
+
+== Conclusion
+
+My `Merica is a "Sleepy Hollow" of complacency and comfort. And here comes the noise... Stampede!
+
+As with the hacker scare during Kevin Mitnick's era, the fear surrounding ChatGPT and AI is mostly a result of misinformation,
+lack of understanding, yearning for "business as usual," and bad behavior from popular figures.
+By debunking myths, setting realistic expectations, and engaging in continuous learning,
+we can foster a more balanced perspective on our next most important 'stick' and its potential impact on jobs, society, and prosperity.
+So, head on over to {openai-site} and blog {openai-blog} to explore and learn for yourself.
+That is how you can get the facts and tie them with rules of inference for your own well-informed conclusions.
+Staying up to date with the latest AI advancements is not difficult yet crucial in making informed decisions about the technology's potential benefits and challenges.
+
+_And mark my words, OpenAI is not the only game in town. Chatbot isn't "the revolution." *This is only the beginning*..._
+
+'''
+
+_See editorial on Medium {medium-article-1}._
