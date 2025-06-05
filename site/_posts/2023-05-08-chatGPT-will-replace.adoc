@@ -136,3 +136,66 @@ _All we do as hackers is automate repetitive processes and tasks, making more ti
 *And individuals who don't adapt to new knowledge or tools risk becoming obsolete.*
 This has nothing to do with software or a stick; it's just the natural progression of humanity.
 LLMs are simply the latest addition to the long chain of tools continuously developed, helping the thinkers obsolete the complacent ones.
+
+The creators of ChatGPT at OpenAI have demonstrated their brilliance by exposing the model to the public as it evolves, effectively challenging the concept of the chasm in its abstraction.
+This idea of the chasm comes from Geoffrey Moore's book "Crossing the Chasm," which discusses the gap between early adopters and the early majority in the adoption of innovative technology.
+
+Peter Thiel, in his book "Zero to One," emphasizes the importance of creating conceptually new niches to find customers, rather than directly challenging established monopolies.
+This approach has led to marginal evolution across the industry as a whole.
+By releasing an evolving model like ChatGPT, OpenAI has introduced a new approach NOT bound by traditional boundaries.
+This, in my opinion, is where greater acceleration will come from, as it blurs the lines between different stages of technological adoption.
+
+Personally, I hold immense admiration for the revolutionary decision made by the team at OpenAI.
+I've been building Tillie since 2016, in her latest reincarnation, that is, while her architecture goes back to 2000.
+And it never occurred to me that she could be more than just a source of entertainment for my coding, experimentation, and learning endeavors.
+
+. Breaking down a domain,
+. discovering, modeling,
+. coding some DDD Aggregates,
+. and augmenting behavior with ML to automate a business,
+. as well as mentoring my peers in doing so alongside me
+
+-- yes, I understood these aspects as useful.
+
+_However, I never envisioned an unfinished AI experiment as something fundamentally valuable "simply, by-inception."_
+
+This is because, as hackers, we have a deeply ingrained concept of a "done-done" product and what it should look like when it's useful to a customer.
+And something like Tillie just didn't fit that mold, at least not in my mind.
+This reflects a form of bias.
+Thankfully, generative AI can also help combat biases like these.
+Kudos to the OpenAI team for challenging conventional thinking and pushing the boundaries of AI "simply by-inception!"
+
+== Educating the Public
+
+Kevin Mitnick was forbidden from using an analog phone so that he would not start a nuclear war with his voice.
+
+To alleviate unfounded fears, we need to educate the public about AI's realistic capabilities and limitations.
+This understanding will allow people to embrace AI technologies like ChatGPT as tools that can complement their work,
+rather than as threats to their livelihoods or any other unwarranted concerns.
+Educational initiatives, workshops, and public awareness campaigns are some of the ways we can bridge the knowledge gap and,
+hopefully, promote a better understanding of AI technologies as they evolve.
+
+We have great examples of failure in this aspect in the past.
+Consider nuclear power, for instance.
+Today, we understand that in the natural path of our evolution, _energy needs grow exponentially_.
+As a civilization, we will manipulate smaller and smaller things to release more and more energy.
+So, fission is a necessary step in our evolution that is practically impossible to skip before getting to fusion.
+When not applied -- civilization comes to a crawl.
+But guess what, many of us knew this 30+ years ago.
+And, we let ignorance and fears run amok!
+Thus, what do we have today?
+*_A stalemate of a slowly dying planet._*
+
+Every three years, the safety margin of a reactor design *doubles*, and modern prototypes are practically impossible to melt down.
+Knowing that, we run decades-old plants with no replacements in sight.
+And only countries like France and Ukraine apply common sense to the matter.
+In the U.S., however, burn ONLY 3.5% of nuclear fuel haphazardly and store it instead of burning 98% of it and not storing anything.
+Our kids won't forgive us for this stupidity.
+Because all we do today is "kick that can down the road."
+
+AI is the next greatest leap forward for humanity, greater than nuclear power and smartphones combined.
+Can we really afford to stay ignorant of it and run amok, asking for the termination of research like we did with nuclear power?
+Have we learned nothing?
+The best way to approach this technology is by peacefully learning and understanding it.
+Running it as much as humanly possible!
+Because I guarantee you -- the other guy will!
