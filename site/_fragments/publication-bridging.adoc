@@ -1,0 +1,73 @@
+= An Awesome Derivative: Mentioning Unfiltered Pure Gold Original
+:attribute-1: One
+:attribute-2: Two
+:attribute-3: Three
+
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+
+// Links if pointing out is desired
+:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank]
+:pub-mm: as published on Medium by {mm-newsletter}
+:pub-li: as published on LinkedIn by {li-newsletter}
+:pub-blog: as published on {blog-link}
+:ff-blog: footnote:blog[{blog-link}]
+
+:current-article-url: https://mimis-gildi.github.io/riddle-me-this/reflections/2023/05/11/chatGPT-omen-new-era.html
+:current-article-title: The Bright Era Dawns: AI, Moore’s law, and Beyond
+:current-article-link: {current-article-url}[{current-article-title}]
+:current-article-footer: footnote:current[{current-article-link} @ {blog-link}]
+
+:prior-article: https://mimis-gildi.github.io/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality]
+:ff-prior-article: footnote:prior[{prior-article}]
+
+:mm-prior-article: https://medium.asei.systems/chatgpt-job-loss-a-doze-of-reality-589637e91457[ChatGPT & Job Loss: A Doze of Reality]
+:mm-current-article: https://medium.asei.systems/the-bright-era-dawns-ai-moores-law-and-beyond-649825f870b1[The Bright Era Dawns: AI, Moore’s Law, and Beyond]
+:li-prior-article: https://www.linkedin.com/pulse/power-within-you-vadim-kuhay/[The $ Power is Within You!]
+:li-current-article: https://www.linkedin.com/pulse/generative-ai-independent-software-development-times-change-kuhay/[Generative AI: Independent Software Development in Times of Change: Part 1]
+
+:ff-mm-newsletter: footnote:medium[Medium Newsletter by {mm-newsletter}]
+:ff-li-newsletter: footnote:linkedin[LinkedIn Newsletter: {li-newsletter}]
+:ff-mm-prior-article: footnote:[{mm-prior-article} {pub-mm}]
+:ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
+:ff-li-prior-article: footnote:[{li-prior-article} {pub-li} ]
+:ff-li-current-article: footnote:[{li-current-article} {pub-li}]
+
+:pong-link: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/25/new-ooprtunities-with-ml-1a.html[AI Indies Part 1 - Times of Change $$$]
+
+
+Blah blah blah paragraphs in shorter form...
+
+Example of footer reference to the prior{ff-prior-article} article.
+Other publications can be referenced as well, for the prior article,
+both on Medium{ff-mm-prior-article} and LinkedIn{ff-li-prior-article}.
+The same goes for the current article{ff-mm-current-article}{ff-li-current-article}.
+
+Example of direct reference to a prior article: {prior-article}
+
+Example of direct reference to external newsletters: {mm-newsletter} and {li-newsletter}.
+And said newsletters can also be referenced by footer -- the Medium{ff-mm-newsletter}, and the LinkedIn{ff-li-newsletter}.
+
+'''
+
+This article is an abridged adaptation. +
+The full, unabridged version lives permanently at: +
+🔗 {pong-link}
+
+
+'''
+
+NOTE: Original does not need to point out; But the abridged can point home{current-article-footer}.
+
+'''
+
+== On the original:
+
+'''
+
+Also see {li-newsletter} editorial{ff-li-current-article}.
+
+Also see {mm-newsletter} editorial{ff-mm-current-article}.
+

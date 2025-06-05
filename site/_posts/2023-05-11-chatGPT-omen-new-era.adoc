@@ -7,18 +7,20 @@ comments: true
 ---
 = The Bright Era Dawns: AI, Moore's law, and Beyond
 rdd13r
-
-:description: A glimpse into the future of technology.
-:icons: font
-:table-caption: Exposition
-:keywords: ChatGPT, AI, Moore's Law, Future of Computing, Technological Progress
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:pub-mm: as published on Medium by {mm-newsletter}
+:mm-current-article: https://medium.asei.systems/the-bright-era-dawns-ai-moores-law-and-beyond-649825f870b1[The Bright Era Dawns: AI, Moore’s Law, and Beyond,window=_blank]
+:ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
+:prior-article: link:/riddle-me-this/reflections/populism/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A 'Doze' of Reality]
+:ff-prior-article: footnote:prior[{prior-article}]
 
 :alt-head-in-the-sand: Head in the Sand -- The general public pretends that there is nothing happening; nothing to impact their lives negatively; nothing to uproot "business as usual"
 :alt-just-buy-a-tool: No need to learn, just buy a bigger tool -- When sentiment engine is asked to evaluate the scared complacent public it thinks people will look for a bigger hammer to buy
 :alt-how-competent-is-the-cog: How skilled is the developer -- A sentiment tool analyzing technology adoption of to one thousand American companies concludes the developer is inherently incompetent
 
-:medium-article-2: https://medium.asei.systems/the-bright-era-dawns-ai-moores-law-and-beyond-649825f870b1[The Bright Era Dawns: AI, Moore’s Law, and Beyond,window=_blank]
-:local-article-1: link:/riddle-me-this/reflections/populism/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A 'Doze' of Reality]
 :ycombinator-news: link:https://news.ycombinator.com/item?id=26824415[Y Combinator,window=_blank]
 :artnet-idiot: link:https://www.artnet.com/artists/don-maitz/the-idiot-x1Vi3F6S7g3JIJEwcPT3jw2[The Idiot - Don Maitz,window=_blank]
 :asei-systems: link:https://www.asei.systems/[ASE Inc.,window=_blank]
@@ -34,7 +36,7 @@ image::/riddle-me-this/assets/images/reaction-to-ChatGPT.jpg[{alt-head-in-the-sa
 
 (Licensed Reproduction)
 
-In my previous article, {local-article-1}, I argued that technologies like ChatGPT are part of an inevitable, faster evolution.
+In my previous article{ff-prior-article}, I argued that technologies like ChatGPT are part of an inevitable, faster evolution.
 As we approach this performance ceiling, the real shift is how we adapt and innovate, which will be my upcoming posts topics.
 
 == Approaching the Threshold: FABs-Wall and the Re-Emergence of Competency
@@ -175,4 +177,4 @@ See what it can do for you.
 
 '''
 
-_See editorial on Medium {medium-article-2}_.
+_See editorial on Medium {ff-mm-current-article}_.

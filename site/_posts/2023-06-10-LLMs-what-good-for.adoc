@@ -8,6 +8,14 @@ comments: true
 ---
 = AI in 2024: The Future is ...
 rdd13r
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:pub-mm: as published on Medium by {mm-newsletter}
+:mm-current-article: https://medium.asei.systems/ai-in-2024-the-future-is-f65a5401f8fc[AI in 2024: The Future is …?,window=_blank]
+:ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
+
 :jarvis: https://www.entrepreneur.com/author/paul-jarvis[Paul Jarvis,window=_blank]
 :nomads: https://en.wikipedia.org/wiki/Digital_nomad[Digital Nomads,window=_blank]
 :demogroup: http://catb.org/jargon/html/D/demogroup.html["demogroup",window=_blank]
@@ -49,8 +57,6 @@ rdd13r
 :o-a-github: https://open-assistant.io/[OA Demo Site,window=_blank]
 :o-a-hf: https://huggingface.co/OpenAssistant[Hugging Face Site,window=_blank]
 :all-oss-lm-models: https://en.wikipedia.org/wiki/Large_language_model[Large Language Model,window=_blank]
-:medium-article-4: https://medium.asei.systems/ai-in-2024-the-future-is-f65a5401f8fc[AI in 2024: The Future is …?,window=_blank]
-
 
 We are well into the surge of Large Language Models (LLMs).
 Half a year in, it's prime time to assess their progress and discern any emerging trends.
@@ -544,4 +550,4 @@ Ask to friend `riddler9297` for an invite.
 
 '''
 
-_See editorial on Medium {medium-article-4}_.
+_See editorial on Medium {ff-mm-current-article}_.

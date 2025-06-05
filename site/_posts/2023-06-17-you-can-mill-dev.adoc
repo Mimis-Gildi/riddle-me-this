@@ -7,9 +7,14 @@ classes: wide
 ---
 = The $ Power is Within You!
 rdd13r
-:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[LinkedIn Newsletter,window=_blank]
-:li-newsletter-name: Behind the Scenes at ASE
-:li-article-1: https://www.linkedin.com/pulse/power-within-you-vadim-kuhay/[The $ Power is Within You!]
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:pub-mm: as published on Medium by {mm-newsletter}
+:mm-current-article: https://www.linkedin.com/pulse/power-within-you-vadim-kuhay/[The $ Power is Within You!]
+:ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
+
 :make-money-with-ai-video: https://youtu.be/ibidd7A00dk[AI Revenue Video,window=_blank]
 :hackers: https://en.wikipedia.org/wiki/Hacker_culture[hackers,window=_blank]
 :g-tutorial: https://youtube.com/playlist?list=PLOU2XLYxmsII9mzQ-Xxug4l2o04JBrkLV[free tutorials,window=_blank]
@@ -28,7 +33,7 @@ _Let me share how it's done, and inspire more people to seize this opportunity w
 
 .Profiting Heavily from AI is No Longer a Secret!
 ____
-The banner {make-money-with-ai-video}[links to a video,window=_blank] explaining how this burgeoning ML trend is turning ordinary individuals into millionaires,
+The banner {make-money-with-ai-video}   explaining how this burgeoning ML trend is turning ordinary individuals into millionaires,
 many of whom are first-time entrepreneurs and some with no prior programming skills.
 The surprising bit is that developers rake in 80% of the revenue today.
 ____
@@ -95,4 +100,4 @@ So, dive in and share your success story with me!
 
 '''
 
-See {li-newsletter}[LinkedIn] editorial  {li-article-1}
+Also see editorial{ff-mm-current-article}.

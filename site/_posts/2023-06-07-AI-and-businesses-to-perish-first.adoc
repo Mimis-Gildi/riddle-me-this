@@ -7,7 +7,14 @@ comments: true
 ---
 = LLMs: Projected Market Exit of Established Relations-Based Companies
 rdd13r
-:keywords: AI, Sentiment Analysis, Large Language Models, Innovation
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:pub-mm: as published on Medium by {mm-newsletter}
+:mm-current-article: https://medium.asei.systems/llms-oracle-or-plausible-bull-over-collective-bias-faff9fce1c9[LLMs: Oracle or Plausible Bull?,window=_blank]
+:ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
+
 :fn-gartner-ai-job-trends: footnote:[Gartner: https://www.gartner.com/en/information-technology/trends/top-technology-trends-ai-trends-gb-pd[Gartner's 2023 Top Strategic Technology Trends,window=_blank]]
 :fn-oecd-ai-impact: footnote:[Milanez, A. (2023), "The impact of AI on the workplace: Evidence from OECD case studies of AI implementation", OECD Publishing, Paris, https://doi.org/10.1787/2247ce58-en[window=_blank]]
 :fn-industries-ai-adaptation: footnote:[AI Multiple; Cem Dilmegani; April 11, 2022. https://research.aimultiple.com/intelligent-automation-in-insurance/[Intelligent Automation in Insurance 2023: Use Cases & Examples,window=_blank]]
@@ -15,7 +22,6 @@ rdd13r
 :fn-sentiment-analysis: footnote:[Google Cloud - https://cloud.google.com/natural-language/docs/analyzing-sentiment[Analyzing Sentiment,window=_blank]]
 :fn-collaborative-business: footnote:[Academy of Management Perspectives, Vol36, no.4 https://journals.aom.org/doi/10.5465/amp.2021.0195?ai=vub3&ui=5j5u&af=T[Collectivist Perspectives on Collaborative Business Relationships,window=_blank]]
 :fn-case-study-data: footnote:disclaimer[The model run data is proprietary to ASE Inc. The model can be rerun and the execution output can be purchased with any customer's specific weights and parameters.]
-:medium-article-3: https://medium.asei.systems/llms-oracle-or-plausible-bull-over-collective-bias-faff9fce1c99[LLMs: Oracle or Plausible Bull?,window=_blank]
 :previous-article: /riddle-me-this/reflections/populism/2023/05/11/chatGPT-omen-new-era.html[previous article,window=_blank]
 
 In this article, we will delve into the fascinating outcomes of a sentiment analysis test conducted by our subsidiary.
@@ -108,4 +114,4 @@ This output, generalized for the article, seems to put things in perspective reg
 
 '''
 
-_See editorial on Medium {medium-article-3}_.
+_See editorial on Medium {ff-mm-current-article}_.

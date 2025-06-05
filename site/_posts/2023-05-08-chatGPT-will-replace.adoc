@@ -9,8 +9,14 @@ comments: true
 ---
 = ChatGPT & Job Loss - A 'Doze' of Reality
 rdd13r
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:pub-mm: as published on Medium by {mm-newsletter}
+:mm-current-article: https://medium.asei.systems/chatgpt-job-loss-a-doze-of-reality-589637e91457["ChatGPT & Job Loss: A Doze of Reality",window=_blank]
+:ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
 
-:medium-article-1: https://medium.asei.systems/chatgpt-job-loss-a-doze-of-reality-589637e91457["ChatGPT & Job Loss: A Doze of Reality",window=_blank]
 :github-rdd13r: link:https://github.com/rdd13r[rdd13r,window=_blank]
 :catb-mundane: link:http://www.catb.org/jargon/html/M/mundane.html[mundane,window=_blank]
 :chatgpt-ui: link:https://chat.openai.com/[ChatGPT,window=_blank]
@@ -217,4 +223,4 @@ _And mark my words, OpenAI is not the only game in town. Chatbot isn't "the revo
 
 '''
 
-_See editorial on Medium {medium-article-1}._
+Also see editorial{ff-mm-current-article}.
