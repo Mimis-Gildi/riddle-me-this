@@ -6,7 +6,7 @@ header:
   caption: "Systems are stories that run."
   actions:
     - label: "Résumé PDFs (GitHub)"
-      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.1.0
+      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.2.0
     - label: "Who's Rdd13r?"
       url: /maintainer/
 classes: wide
@@ -16,9 +16,9 @@ sidebar:
   nav: communities
 ---
 = Vadim Kuhay
-:creative-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.1.0/OnCreativity.pdf
-:engineering-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.1.0/OnEngineering.pdf
-:leadership-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.1.0/OnLeadership.pdf
+:creative-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.2.0/OnCreativity.pdf
+:engineering-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.2.0/OnEngineering.pdf
+:leadership-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.2.0/OnLeadership.pdf
 
 I'm a humble system designer, team builder, and player-coach.
 
@@ -49,7 +49,7 @@ Message `riddler9297` to join the **AGAIN Collective**.
 
 ===  Wanna see my résumé?
 
-_See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.1.0[v2.1.0,window=_blank]_::
+_See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.2.0[v2.2.0,window=_blank]_::
 {leadership-resume}[Leadership,window=_blank] résumé – coaching, CTO roles (_hands-on_). +
 {engineering-resume}[Engineering,window=_blank] résumé – code craft, production, profit. +
 {creative-resume}[Creative,window=_blank] résumé – teams, systems, vision, disruption.
