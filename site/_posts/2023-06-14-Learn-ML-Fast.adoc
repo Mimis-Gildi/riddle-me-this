@@ -13,7 +13,7 @@ comments: true
 :miniforge: https://conda-forge.org/download/[Miniforge3,window=_blank]
 :k-horses-humans: https://www.kaggle.com/datasets/sanikamal/horses-or-humans-dataset[Horses or Humans Dataset,window=_blank]
 :k-cats-dogs: https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_5340.zip[Cats and Dogs Dataset,window=_blank]
-:toolbox: https://www.jetbrains.com/toolbox-app/
+:toolbox: https://www.jetbrains.com/toolbox-app/[JetBrains Toolbox,window=_blank]
 :mimis: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
 :gain: https://github.com/Gotham-Village[Gotham Village,window=_blank]
 :vitr: https://github.com/Gervi-Hera-Vitr[Gervi Héra Vitr,window=_blank]
