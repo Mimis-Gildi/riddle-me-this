@@ -5,7 +5,7 @@ excerpt: Exploring the surge in independent development ventures in Generative A
 comments: true
 classes: wide
 ---
-= Generative AI: Independent Software Development in Times of Change: Part 1.
+= Generative AI: Indies in Times of Change: Part 1-a.
 rdd13r
 :li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257
 :li-newsletter-name: Behind the Scenes at ASE
