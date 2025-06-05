@@ -35,10 +35,11 @@ classes: wide
 :gov-start: https://www.usa.gov/start-business[Starting a Business 101,window=_blank]
 :sba: https://www.sba.gov/business-guide/10-steps-start-your-business[SBA,window=_blank]
 :score: https://www.score.org/[SCORE,window=_blank]
-:geomotiv: https://geomotiv.com/blog/software-engineer-hourly-rate-in-the-usa/[Geomotiv Rate Survey,window=_blank]
-:cleveroad: https://www.cleveroad.com/blog/software-consulting-rates/[Cleveroad Rate Survey,window=_blank]
-:youteam: https://youteam.io/blog/developer-salary-tools-where-to-find-a-benchmark-salary-when-hiring-software-engineers/[YouTeam Salary Benchmark,window=_blank]
-:start-small: https://www.google.com/books/edition/Start_Small_Stay_Small/XYBhUjyi-WYC?hl=en&gbpv=0[Start Small, Stay Small,window=_blank]
+:geomotiv: https://geomotiv.com/blog/software-engineer-hourly-rate-in-the-usa/[Geomotiv Rate Survey - example 1,window=_blank]
+:cleveroad: https://www.cleveroad.com/blog/software-consulting-rates/[Cleveroad Rate Survey - example 2,window=_blank]
+:youteam: https://youteam.io/blog/developer-salary-tools-where-to-find-a-benchmark-salary-when-hiring-software-engineers/[YouTeam Salary Benchmark - example 3,window=_blank]
+:start-small: https://www.google.com/books/edition/Start_Small_Stay_Small/XYBhUjyi-WYC["Start Small, Stay Small",window=_blank]
+:ff-start-small: footnote:[{start-small}]
 :hacker-news: https://news.ycombinator.com/item?id=32342058[YCombinator,window=_blank]
 
 :fn-oecd-ai-impact: footnote:[Milanez, A. (2023), "The impact of AI on the workplace: Evidence from OECD case studies of AI implementation", OECD Publishing, Paris, https://doi.org/10.1787/2247ce58-en[window=_blank]]
@@ -90,7 +91,7 @@ Still, with a little dedication, you'd be living the life of your dreams.
 
 == The Essentials 🧠
 
-The series began with a spotlight on the successes of https://www.linkedin.com/pulse/generative-ai-independent-software-development-times-change-kuhay[independent developers in Canada], the wa they like me to tell it, with pizzazz.
+The series began with a spotlight on the _successes of *independent* developers in Canada_{ff-prior-article}, the way they like me to tell it, with pizzazz.
 But there's something else going on here, something more important - the {ff} in GPT-4 craze - a rare opportunity to jump ship.
 
 First question everyone asks: _"How do I break free?"_ Start here: {gov-start}.
@@ -98,7 +99,7 @@ Check out {sba} and {score} – your go-to lifelines.
 SCORE will connect you with mentors, advisors, and fellow trailblazers, like The Northern.
 
 .Be like this indie basking in creativity solving some problems.
-[#img-indie,link=https://news.ycombinator.com/item?id=32342058]
+[#img-indie,link={hacker-news}]
 image::/riddle-me-this/assets/images/hacker-at-work.jpg[Sunset,800,450]
 
 *Pro-tip:* Setting up is the easy bit; finding clients and closing sales is the real deal.
@@ -121,7 +122,7 @@ Your initial plan should include your revenue calculations.
 That calculation will depend on your Business Strategy (Google this.) You can hire 1000 people and skimp a dollar off on each, for example.
 But I can't tell you about that.
 Why would we ever want to do that?
-I'll tell you about the https://www.google.com/books/edition/Start_Small_Stay_Small/XYBhUjyi-WYC?hl=en&gbpv=0[*_Indie Strategy_*]. *_If you do everything right and earn 7-figure income, why would you want a room full of unmotivated people waiting for you to tell them what to do?_* _Indies do everything only with other indies._
+I'll tell you about the *_Indie Strategy_*: {start-small}. *_If you do everything right and earn 7-figure income, why would you want a room full of unmotivated people waiting for you to tell them what to do?_* _Indies do everything only with other indies._{ff-start-small}
 
 _**Disclaimer:**_ We value personal growth over dirty profits.
 Indies are close-knit gang of 300+ devs just in our inner circle, all focused on making a quality difference for a few customers rather than skimming the surface shadily for many.
@@ -134,7 +135,7 @@ But if you must, to get going, consider specialty work.
 I can tell you that in competence coaching your happy customer will never recommend you!
 Witnessing what you do coaching developers, they will properly understand it as a market enabler.
 Who wants to recommend an enabler to competitors?
-The best the {ff} - GTP-4 integrations today.
+The best of {ff} - GPT-4 integrations today.
 
 _The optimal strategy for marketing is to establish a Sales Funnel that focuses on your *natural customers* and then go out and close that sale._ So, a prospect is your potential buyer.
 Your pool of prospects will always divide into 4 customer (buyer) groups:
@@ -171,7 +172,7 @@ Wide-open invitation.
 Discover your rates.
 * Self-Publish a Book: I can't advice because mine linger 70% finished for years.
 
-*FYY:* To periodically check mature companies rate cards we interrogate staffing agencies and scrape the web for sites like these: https://geomotiv.com/blog/software-engineer-hourly-rate-in-the-usa/[example 1], https://www.cleveroad.com/blog/software-consulting-rates/[example 2], https://youteam.io/blog/developer-salary-tools-where-to-find-a-benchmark-salary-when-hiring-software-engineers/[example 3], etc.
+*FYY:* To periodically check mature companies rate cards we interrogate staffing agencies and scrape the web for sites like these: {geomotiv}, {cleveroad}, {youteam}, etc.
 No need to bother with most licensing work as it's not 1-to-many model.
 Instead, one drives traffic.
 
