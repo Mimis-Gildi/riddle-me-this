@@ -1,0 +1,246 @@
+---
+categories: [adventures]
+tags: [DemoScene,LinkedIn]
+excerpt: Exploring the surge in independent development ventures in Generative AI.
+comments: true
+classes: wide
+---
+= AI Indies Part 2 - Profitable Fundamentals
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank]
+:pub-li: as published on LinkedIn by {li-newsletter}
+:li-current-article: https://www.linkedin.com/pulse/generative-ai-indies-change-rates-dirty-secrets-vadim-kuhay/[AI Indies Part 2 - Profitable Fundamentals,window=_blank]
+:ff-li-current-article: footnote:[{li-current-article} {pub-li}]
+:prior-article: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/25/new-ooprtunities-with-ml-1a.html[AI Indies Part 1 - Times of Change $$$]
+:ff-prior-article: footnote:prior[{prior-article}]
+
+:rate-cog: ~$60/hr - $110/hr
+:rate-hackard: ~$90/hr - $185/hr
+:rate-wizard: ~$225/hr - $385/hr
+:rate-poser: ~$150/hr - $200/hr
+:rate-udemy: $3,000/month - $5,000/month
+:rate-archetype: ~$7,000 -$22,000
+:rate-model: ~$11,000-$31,000
+:expl-wizard: Our peers report higher rates. But we'll stick to our own numbers here.
+:ff: Frugal-Fremmis
+:pillar-1: Be a Maker possessing end-to-end expertise convertible to value.
+:pillar-2: Be Opportunistic, not a slave to your resume. {ff} is always open by default.
+:secret-1: People buy on fears and passions!
+:secret-2: Value, just like beauty -- is in the eyes of the beholder!
+:secret-3: Jenuinely care: hush, listen and let the custmer buy from you.
+:ennico-tube: https://youtu.be/mNe7hUAkx4M[Cliff Ennico (YouTube),window=_blank,opts=opts=nofollow noopener noreferrer]
+
+:gov-start: https://www.usa.gov/start-business[Starting a Business 101,window=_blank]
+:sba: https://www.sba.gov/business-guide/10-steps-start-your-business[SBA,window=_blank]
+:score: https://www.score.org/[SCORE,window=_blank]
+:geomotiv: https://geomotiv.com/blog/software-engineer-hourly-rate-in-the-usa/[Geomotiv Rate Survey - example 1,window=_blank]
+:cleveroad: https://www.cleveroad.com/blog/software-consulting-rates/[Cleveroad Rate Survey - example 2,window=_blank]
+:youteam: https://youteam.io/blog/developer-salary-tools-where-to-find-a-benchmark-salary-when-hiring-software-engineers/[YouTeam Salary Benchmark - example 3,window=_blank]
+:start-small: https://www.google.com/books/edition/Start_Small_Stay_Small/XYBhUjyi-WYC["Start Small, Stay Small",window=_blank]
+:ff-start-small: footnote:[{start-small}]
+:hacker-news: https://news.ycombinator.com/item?id=32342058[YCombinator,window=_blank]
+
+:fn-oecd-ai-impact: footnote:[Milanez, A. (2023), "The impact of AI on the workplace: Evidence from OECD case studies of AI implementation", OECD Publishing, Paris, https://doi.org/10.1787/2247ce58-en[window=_blank]]
+
+.ASE Inc, DALL-E Hacker Dad, Cog Dad...
+[#img-devs]
+image::/riddle-me-this/assets/images/devs.png[An image showing a developer enjoying his job versus a developer who simply comes to work,1200,675]
+
+Wizards versus muggles.
+
+Most often people ask about corp-to-corp Time and Materials (T&M) rates in the USA, viewed as the simplest start for an *_Independent Developer (indie)_* career.
+However, it's not the most financially rewarding option.
+Major US companies use *Rate Cards* to keep costs down.
+As a new indie, you can obtain contracts through specialized recruiters, consultancies, or directly from clients, and 'vendor onboarding' might be needed.
+Here's a summary of rates based on data from the last 7 years:
+
+* Staff Augmentation: {rate-cog}
+* Expert Consulting: {rate-hackard}
+* Niche Consulting: {rate-wizard}
+* Organizational Development: {rate-poser} (for ASE subcontractors)
+
+
+== The Reality
+
+The best way to start is by grabbing a hot trend with little competition.
+Right now, that's *GPT-4*.
+In the past, it was mobile.
+That's what {ff} is. *_{ennico-tube} explains it best!_*
+
+Looking at the rates above, it's clear - being able to offer end-to-end solutions means more money. *Maturity matters a lot!* Learn DDD/BDD to run discovery and customer's domain modeling, DevOps and 12-factor-app to get manufacturing going with Continuous Deployment, use full-stack ecosystems like Kotlin Multiplatform to deliver, and learn basic business skills. *Makers* charge the top rates.
+A narrow-skilled "for-loop-JS-developer" will never make it, competing with offshore in the implied Cost Leadership Strategy (meaning cheap).
+
+*To nail it as an indie:*
+
+1. *_Maker Mindset:_* _Be imminent, inevitable, and unpredictable._
+2. *_{ff}:_* _Don't be a slave to your resume._
+
+Going indie was the best thing we did.
+Over and over in fact!
+It's not "serial entrepreneurship" -- them are buzzwords.
+It's serial accomplishment.
+I created way cooler stuff than I ever could in a cubicle, even when I was at Deutsche Bank or Pfizer with hundreds of coders at my disposal.
+It is, however, a little tougher than the cubicle.
+NDAs will limit how you promote yourself and there's little safetynet.
+Still, with a little dedication, you'd be living the life of your dreams.
+
+* ✅ If coding's your passion, and you're not afraid of hard work, going indie offers income, growth, freedom, and satisfaction that no desk job can match.
+* ❌ But if hard work's not your thing, and meetings are considered "good work," then sticking with a regular day-job might be a better choice for you.
+
+== The Essentials 🧠
+
+The series began with a spotlight on the _successes of *independent* developers in Canada_{ff-prior-article}, the way they like me to tell it, with pizzazz.
+But there's something else going on here, something more important - the {ff} in GPT-4 craze - a rare opportunity to jump ship.
+
+First question everyone asks: _"How do I break free?"_ Start here: {gov-start}.
+Check out {sba} and {score} – your go-to lifelines.
+SCORE will connect you with mentors, advisors, and fellow trailblazers, like The Northern.
+
+.Be like this indie basking in creativity solving some problems.
+[#img-indie,link={hacker-news}]
+image::/riddle-me-this/assets/images/hacker-at-work.jpg[Sunset,800,450]
+
+*Pro-tip:* Setting up is the easy bit; finding clients and closing sales is the real deal.
+If you don't want to hear about selling, then indie life is not for you.
+But let me ask you, what do you actually do when you interview for a job? _**Community** is your other critical asset!_ If you don't like to mingle, indie life is still possible, just needlessly harder.
+
+Now, the golden question: _"What's the pay?"_ There's more to it than just numbers.
+We'll break it down.
+
+== US Billing Rates & {ff}
+
+Once you get rolling, your business needs a compass - that's your Agile Business Plan.
+Commit to stick through the highs and lows no matter what and build out your brand.
+Adapt.
+For instance, YouTube?
+It was a dating site gone wrong.
+Being an indie dev is a marathon, not a sprint.
+One must decide to commit.
+Your initial plan should include your revenue calculations.
+That calculation will depend on your Business Strategy (Google this.) You can hire 1000 people and skimp a dollar off on each, for example.
+But I can't tell you about that.
+Why would we ever want to do that?
+I'll tell you about the *_Indie Strategy_*: {start-small}. *_If you do everything right and earn 7-figure income, why would you want a room full of unmotivated people waiting for you to tell them what to do?_* _Indies do everything only with other indies._{ff-start-small}
+
+_**Disclaimer:**_ We value personal growth over dirty profits.
+Indies are close-knit gang of 300+ devs just in our inner circle, all focused on making a quality difference for a few customers rather than skimming the surface shadily for many.
+We're all about sustainability and lasting impact.
+There are over a hundred thousand indie devs in the world.
+
+If freedom sits well with you and I didn't scare you away yet, then here's more to explain about mature companies.
+In general, consulting is a bad business model because your time is limited.
+But if you must, to get going, consider specialty work.
+I can tell you that in competence coaching your happy customer will never recommend you!
+Witnessing what you do coaching developers, they will properly understand it as a market enabler.
+Who wants to recommend an enabler to competitors?
+The best of {ff} - GPT-4 integrations today.
+
+_The optimal strategy for marketing is to establish a Sales Funnel that focuses on your *natural customers* and then go out and close that sale._ So, a prospect is your potential buyer.
+Your pool of prospects will always divide into 4 customer (buyer) groups:
+
+* *_Natural Customers_*: people who will always buy from you.
+** _Your friends, family, people who like you or like your brand._
+* *_Never Customers_*: people who will never buy from you.
+** _People who dislike you won't buy cure for cancer from you._
+* *_Subjective Customers_*: emotional sells you execute to close; >80%
+** _Ordinary people buy on fears and passions!_
+** _Convert these people to natural customers._
+* *_Objective Customers_*: people with a solution.
+** _People who sought you out for the perceived value fit._
+
+*Dirty secret #1: _{secret-1}_*
+
+== Other Ways
+
+But, there are smarter ways to use your time, like *Fixed Price Solution Contracts (FPs)*.
+Some folks are scared of them, but they can be goldmines if done right.
+For my first two startups, FPs were the main moneymakers.
+They can be tough for indies, though.
+My boss is picky about using them.
+
+*Licensing Products* is a better option!
+Some indies I've met started with these instead of sleeping in the cubicle.
+These beat FPs and rank second in profitability and efficiency.
+
+* A well-crafted uDemy course: {rate-udemy} - _A significant upfront time investment._ Some maintenance time.
+* Archetype Publishing: {rate-archetype} - May need a preexisting customer; Maintenance time.
+* Model Publishing: {rate-model} - Must employ end-to-end ML Ops; Maintenance time.
+* *GPT-4 Canned Integration* ({ff}): - NEW!
+Wide-open invitation.
+Discover your rates.
+* Self-Publish a Book: I can't advice because mine linger 70% finished for years.
+
+*FYY:* To periodically check mature companies rate cards we interrogate staffing agencies and scrape the web for sites like these: {geomotiv}, {cleveroad}, {youteam}, etc.
+No need to bother with most licensing work as it's not 1-to-many model.
+Instead, one drives traffic.
+
+== The Best Way - Value is not what you think!
+
+**Subscriptions!!!
+**Value is the other side of any Selling.
+But if selling is about fears and passions, then what is Value?
+Can one subscribe to value?
+
+*Dirty Secret #2:* {secret-2}
+
+So, what is better, a lot of value with one customer or a little value with many?
+Please ponder this idea.
+I will not write too much on this because my boss and I hadn't made it work yet.
+But some of our peers we're learning from already make 8-figure income.
+Don't get your hopes up, those are few, and I can tell you from our experience it is a little harder than it looks.
+And the high-time is passing quickly.
+Right now, coming out of my paternity leave, I have not one but two startups talking to me about seeding.
+Both rock a subscription model.
+Soon this market may too become saturated.
+
+*Dirty secret #3: _{secret-3}_*
+
+Take note that I am working myself out to help independent developers get going, and I haven't mentioned coding even once.
+Don't get me wrong — I adore coding.
+That's what I am.
+From time to time I sleep it off like a bear, eat healthy breakfast, and go whoop some youngsters at a hackathon or a competition.
+I have so many handles for these sites that there's a password book just for that.
+Even my son competes on some of my handles! *However, that is not what matters most for you!* Ability to make a product end-to-end is expected.
+To apply growing your dentistry practice, you must already be a dentist.
+So, coding acumen is akin to a carpenter's miter saw and muscle memory to use it.
+Customers are hungry for the final product, not the tools used to create it with.
+
+Also take note of the value of a community in indies' life.
+
+== Conclusion
+
+People tend to fail attaining independence because of:
+
+* Lack of teaching about real life business dynamics.
+This is remedied by personal leadership development.
+* Personal laziness and complacency that cubicle life affords.
+
+Then:
+
+* *Pillar #1: _{pillar-1}_*
+** _One must be able to deliver the ask._
+* *Pillar #2: _{pillar-2}_*
+** _Move along with life, learn, adapt, and produce._
+* *Dirty Secret #1: _{secret-1}_*
+* *Dirty Secret #2: _{secret-2}_*
+* *Dirty Secret #3: _{secret-3}_*
+
+_I hope that you will find my own shared life-experiences useful on your journey to independent life._
+
+== Get the Scoop! 🚀
+
+Happy Monday folks!
+Here's the 411 in a nutshell.
+Generative AI frenzy is still getting bigger 🚀 and not aging as I thought it would by now.
+Canada's crème de la crème a-la-hackerdom seem to have us dusted, a little bit, and are raking 💰 with super simple GPT-4's REST integration.
+It is all localized and telling the size is not possible.
+Also, I don't yet see a US equivalent.
+If anyone does see some signs of life here, please talk to me?
+😬 I'll have more news in a little while as ASE is slowly coming back into operation.
+🎢 #AI #GPT4 #TechGameChangers
+
+'''
+
+_Also see editorial{ff-li-current-article}._

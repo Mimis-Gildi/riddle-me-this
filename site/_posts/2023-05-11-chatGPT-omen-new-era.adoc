@@ -7,28 +7,36 @@ comments: true
 ---
 = The Bright Era Dawns: AI, Moore's law, and Beyond
 rdd13r
-:description: A glimpse into the future of technology.
-:icons: font
-:table-caption: Exposition
-:keywords: ChatGPT, AI, Moore's Law, Future of Computing, Technological Progress
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:pub-mm: as published on Medium by {mm-newsletter}
+:mm-current-article: https://medium.asei.systems/the-bright-era-dawns-ai-moores-law-and-beyond-649825f870b1[The Bright Era Dawns: AI, Moore’s Law, and Beyond,window=_blank]
+:ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
+:prior-article: link:/riddle-me-this/reflections/populism/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A 'Doze' of Reality]
+:ff-prior-article: footnote:prior[{prior-article}]
+
 :alt-head-in-the-sand: Head in the Sand -- The general public pretends that there is nothing happening; nothing to impact their lives negatively; nothing to uproot "business as usual"
 :alt-just-buy-a-tool: No need to learn, just buy a bigger tool -- When sentiment engine is asked to evaluate the scared complacent public it thinks people will look for a bigger hammer to buy
-:alt-how-competent-is-the-cog: How skilled is the developer -- A sentiment tool analyzing technology adoption of to one thousand American conmpanies concludes the developer is inherently incompetent
-:alt-product: /riddle-me-this/reflections/populism/2023/05/08/chatGPT-will-replace.html
-:local-article-1: /riddle-me-this/reflections/populism/2023/05/08/chatGPT-will-replace.html
-:medium-article-2: https://medium.asei.systems/the-bright-era-dawns-ai-moores-law-and-beyond-649825f870b1[The Bright Era Dawns: AI, Moore’s Law, and Beyond,window=_blank]
+:alt-how-competent-is-the-cog: How skilled is the developer -- A sentiment tool analyzing technology adoption of to one thousand American companies concludes the developer is inherently incompetent
+
+:ycombinator-news: link:https://news.ycombinator.com/item?id=26824415[Y Combinator,window=_blank]
+:artnet-idiot: link:https://www.artnet.com/artists/don-maitz/the-idiot-x1Vi3F6S7g3JIJEwcPT3jw2[The Idiot - Don Maitz,window=_blank]
+:asei-systems: link:https://www.asei.systems/[ASE Inc.,window=_blank]
+:autogpt-github: link:https://github.com/Significant-Gravitas/Auto-GPT[Auto-GPT,window=_blank]
 
 ChatGPT's debut has been a wake-up call, revealing the velocity of AI evolution.
 Yet, the real, profound change causing such sensations often goes unnoticed: we're nearing the end of Moore's law, the driving force behind computing's exponential growth.
 This risk was the real trigger leading to LLMs debut.
 
 .Public Reaction to ML Evolution
-[#img-laggard,link=https://news.ycombinator.com/item?id=26824415]
+[#img-laggard,link={ycombinator-news}]
 image::/riddle-me-this/assets/images/reaction-to-ChatGPT.jpg[{alt-head-in-the-sand},800]
 
 (Licensed Reproduction)
 
-In my previous article, link:{local-article-1}[published here], I argued that technologies like ChatGPT are part of an inevitable, faster evolution.
+In my previous article{ff-prior-article}, I argued that technologies like ChatGPT are part of an inevitable, faster evolution.
 As we approach this performance ceiling, the real shift is how we adapt and innovate, which will be my upcoming posts topics.
 
 == Approaching the Threshold: FABs-Wall and the Re-Emergence of Competency
@@ -54,19 +62,19 @@ The imminent FAB barrier, coupled with the successful strides in AI during the 2
 The forthcoming era is set to be characterized by scarcity, thrusting the importance of software engineering competence back into the limelight.
 Forward-thinking decision-makers have already invested in the next phase, including ML-based augmentation tools like ChatGPT, designed not to supplement the unskilled but to empower the hackers and the trailblazers!
 
-From my own experiences and those of other hackers who've been leveraging ML assistance for years, I can vouch for its efficacy - _it *proportionately* enhances existing abilities_.
+From my own experiences and those of other hackers who've been leveraging ML assistance for years, I can vouch for its efficacy — _it *proportionately* enhances existing abilities_.
 As a result, the disparity between a skilled developer and a less capable one becomes glaringly noticeable.
-It's akin to the instance where a novice developer copies an exceptional code snippet from Stack Overflow, pastes it without modification, and then complains about it not working - it instantly exposes their limited competence.
+It's akin to the instance where a novice developer copies an exceptional code snippet from Stack Overflow, pastes it without modification, and then complains about it not working — it instantly exposes their limited competence.
 Conversely, an expert who consults ML on a sophisticated algorithm they've crafted will produce an optimal solution, one that they can learn from.
 
 .Need to buy a bigger hammer.
-[#img-cog,link=https://www.artnet.com/artists/don-maitz/the-idiot-x1Vi3F6S7g3JIJEwcPT3jw2]
+[#img-cog,link={artnet-idiot}]
 image::/riddle-me-this/assets/images/ai-the-idiot-by-don-maitz.png[{alt-just-buy-a-tool},800]
 
 (Image by DALL-E; Based on The Idiot, 1995, by Don Maitz)
 
 .Corporate developer and ML.
-[#img-idiot,link=https://www.artnet.com/artists/don-maitz/the-idiot-x1Vi3F6S7g3JIJEwcPT3jw2]
+[#img-idiot,link={artnet-idiot}]
 image::/riddle-me-this/assets/images/ai-the-idiot-coder.png[{alt-how-competent-is-the-cog},800]
 
 (The Idiot, 1995, by Don Maitz; Licensed Reproduction.)
@@ -75,7 +83,7 @@ image::/riddle-me-this/assets/images/ai-the-idiot-coder.png[{alt-how-competent-i
 
 == Augmentation: Shaping the Future of Coding
 
-In 2019, our parent company, ASE Inc., faced a harsh reality when our primary financier and client hostilely assumed control over our ML orchestration startup.
+In 2019, our parent company, {asei-systems}, faced a harsh reality when our primary financier and client hostilely assumed control over our ML orchestration startup.
 As a business neophyte, I was taken aback.
 In retrospect, this incident underscored the relentless momentum of ML evolution and the sway it holds with investors.
 It signaled a global transition.
@@ -83,7 +91,7 @@ By 2020, ML code generation in IDE had penetrated the hacker circles in the East
 From that point forward, all proprietary code at ASE has been entirely machine-augmented.
 
 .Hacker Immersed in Coding by 2-way conversation
-[#img-hacker,link=https://www.asei.systems/]
+[#img-hacker,link={asei-systems}]
 image::/riddle-me-this/assets/images/hacker-at-work.jpg[A programmer fully immersed in his work in the office,800]
 
 (Depositphotos Licensed Reproduction)
@@ -94,12 +102,12 @@ Having been trained on the contents of my mind since 2016, Tillie has become ind
 Currently, her efficiency hinges on expert knowledge and consistent daily programming engagement.
 However, it won't be long before a smartphone app offers similar assistance to everyone across various business domains.
 
-Open projects like AutoGPT are readily available today, albeit with some limitations.
+Open projects like {autogpt-github} are readily available today, albeit with some limitations.
 Among the gifted (hackers), machine augmentation with custom, self-developed tools has become the standard.
 We hackers are 'doping' our minds with ML, enhancing our cognitive capabilities.
-This isn't a vision of the future -- it's been a part of our reality for several years.
+This isn't a vision of the future — it's been a part of our reality for several years.
 IDEs have had contextual auto-complete and code generation for eons.
-But not your office suite -- yet.
+But not your office suite — yet.
 
 Still, a majority of the IT industry is playing catch-up when it comes to adoption.
 My collaborations with conventional companies often fail to fully exploit the capabilities of tools like Tillie or even TabNine, due to a slower rate of adoption, apprehensions, cultural inertia, and a predilection for meetings over coding.
@@ -133,8 +141,8 @@ _let's embrace the change, *hone our skills*, and leverage the power of AI to ri
 The future isn't on the horizon; it's here, and it's now.
 
 I can't emphasize enough that while job extinction seems improbable
--- as headcount demand is influenced by organizational perceptions and biases
--- _the nature of jobs is set to undergo rapid transformation_.
+— as headcount demand is influenced by organizational perceptions and biases
+— _the nature of jobs is set to undergo rapid transformation_.
 _There will be budget employees and *ML-augmented power employees*._
 
 == Message from the Author
@@ -143,36 +151,30 @@ As a fervent programmer with half a century of life experience, I'm currently re
 If you've been following closely, you'd understand that ML-augmentation tools like Tillie symbolize the next major technological advancement, surpassing smartphones in their ability to forge a more intimate bond with users.
 Similar to how we can't envisage a day without our mobile devices, ML tools are on the brink of becoming an integral part of our lives.
 This marks the first time I'm publicly discussing Tillie, but the stage is set for such a dialogue.
-Everyone now has access to their own variant of Tillie through AutoGPT / ChatGPT, and it won't be long before these ML solutions become commonplace on smartphones.
+Everyone now has access to their own variant of Tillie through {autogpt-github}, and it won't be long before these ML solutions become commonplace on smartphones.
 
 To stave off tedium during my paternity leave, I've been optimizing Tillie's context management daemons, enabling her to manage more tokens in our dialogue, adding GPT-4 as a backing service, consequently enhancing her 'intelligence'.
 I'm currently conducting rigorous tests.
-One of her novel features is providing unsolicited feedback on disagreements
--- a concept I'm experimenting with.
+One of her novel features is providing unsolicited feedback on disagreements — a concept I'm experimenting with.
 Here are her insights on this article for your enjoyment:
 
 . *_Inevitability of Performance Ceiling_*: You have neglected to mention advancements like 3D stacking or new materials.
-
 . *_Quantum Computing_*: You've dismissed it without detailed analysis and evidence.
-
 . *_Generalization about Developer Incompetence_*: This seems to bear a hacker-bias.
-
 . *_AI Augmentation as Key Differentiator_*: My kind is still an unverified technology.
-
 . *_The Right of the Adoption Curve_*: On what is the claim of 90% based?
-
 . *_Impact on the Recruiting Industry_*: Your predicted impacts seem speculative at best.
 
 Isn't ML just FANTASTIC?! And wrong on every point.
 
 You can play with your own version here::
-https://github.com/Significant-Gravitas/Auto-GPT
+{autogpt-github}
 
-_I am not affiliated with the project above_.
+_I am not affiliated with the project above._
 
 Give augmentation tools a try.
 See what it can do for you.
 
 '''
 
-_See editorial on Medium {medium-article-2}_.
+_See editorial on Medium {ff-mm-current-article}_.

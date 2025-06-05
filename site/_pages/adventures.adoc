@@ -1,8 +1,8 @@
 = Adventures
 :page-layout: splash
 :page-permalink: /adventures/
-:quebec-llm-craze: /riddle-me-this/adventures/2023/05/15/AI-million-dollar-devs.html[Dev Millionaires: "Laggards are a renewable resource"?!,window=_blank]
-:integration-revolution: /riddle-me-this/adventures/2023/06/07/AI-and-businesses-to-perish-first.html[LLMs: Projected Market Exit of Established Relations-Based Companies,window=_blank]
+:quebec-llm-craze: link:/riddle-me-this/adventures/2023/05/15/AI-million-dollar-devs.html[Dev Millionaires: "Laggards are a renewable resource"?!,window=_blank]
+:integration-revolution: link:/riddle-me-this/adventures/2023/06/07/AI-and-businesses-to-perish-first.html[LLMs: Projected Market Exit of Established Relations-Based Companies,window=_blank]
 
 _Adventures_ is where the work takes form — in the field, in the code, in the culture.
 
@@ -28,11 +28,11 @@ _The ones that still echo._
 
 === Multimodal Revolution Discovery
 
-June 2023, First Glimpse of Next Revolution -- link:{integration-revolution}::
+June 2023, First Glimpse of Next Revolution -- {integration-revolution}::
 * Our coalition partners running a powerful Expert System innocently asked to experiment with a backing service:
 ** Replace embedded LLM with a MUCH more powerful one;
 ** Give that LLM power to suggest new convergence paths;
 * And the results are absolutely staggering!
 
-March 2023, Visiting (hackers have no shame) -- link:{quebec-llm-craze}::
+March 2023, Visiting (hackers have no shame) -- {quebec-llm-craze}::
 * Mingling with one of the most vibrant founder communities, I learn about shameless exploits of the mundane.

@@ -28,17 +28,18 @@ communities:
 
   - title: "Hacker Communities"
     children:
-    - title: "Mímis Gildi"
+    - title: "Mímis Gildi -> Meritocracy  🏆"
       url: https://github.com/Mimis-Gildi
-    - title: "Gervi Héra Vitr - Learning Trails Community"
-      url: https://github.com/orgs/Gervi-Hera-Vitr
-    - title: "Mímis Látlæg Háttalag - Corporate America Community"
-      url: https://github.com/Mimis-Latlaeg-Hattalag
-       makes the whole chain stronger. And judging is a sin."
-    - title: "Sister Community - 'the village'"
-      url: https://github.com/Gotham-Village
-    - title: "Captain's School"
+    - title: "Gervi Héra Vitr -> Learning"
+      url: https://github.com/Gervi-Hera-Vitr
+    - title: "- Captain's School @Vitr 📚🧑🏻‍🏫"
       url: https://github.com/Gervi-Hera-Vitr/sindri-labs
+    - title: "Mímis Scala -> Monad Garden"
+      url: https://github.com/Mimis-Scala
+    - title: "Mímis Látlæg Háttalag -> 🛠️"
+      url: https://github.com/Mimis-Latlaeg-Hattalag
+    - title: "Gotham Village -> Kibbutz"
+      url: https://github.com/Gotham-Village
 
   - title: "Archive & Tags"
     children:

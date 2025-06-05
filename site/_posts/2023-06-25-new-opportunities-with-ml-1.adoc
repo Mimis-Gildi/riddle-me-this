@@ -5,11 +5,16 @@ excerpt: Exploring the surge in independent development ventures in Generative A
 comments: true
 classes: wide
 ---
-= Generative AI: Independent Software Development in Times of Change: Part 1.
+= AI Indies Part 1 - Times of Change $$$
 rdd13r
-:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257
-:li-newsletter-name: Behind the Scenes at ASE
-:li-article-2: https://www.linkedin.com/pulse/generative-ai-independent-software-development-times-change-kuhay/[Generative AI: Independent Software Development in Times of Change: Part 1,window=_blank]
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank]
+:pub-li: as published on LinkedIn by {li-newsletter}
+:li-current-article: https://www.linkedin.com/pulse/generative-ai-independent-software-development-times-change-kuhay/[AI Indies Part 1 - Times of Change $$$,window=_blank]
+:ff-li-current-article: footnote:[{li-current-article} {pub-li}]
+
 :ms-orca: https://www.microsoft.com/en-us/research/publication/orca-progressive-learning-from-complex-explanation-traces-of-gpt-4/[Orca,window=_blank]
 :real-ai-in-2024: /riddle-me-this/adventures/2023/06/10/LLMs-what-good-for.html
 :fb-llama: https://huggingface.co/docs/transformers/main/model_doc/llama[LLaMA,window=_blank]
@@ -290,5 +295,4 @@ The future is finally in software. That is, software coupled to wetware.
 
 '''
 
-See {li-newsletter}[LinkedIn] editorial  +
-{li-article-2}
+_Also see editorial{ff-li-current-article}._
