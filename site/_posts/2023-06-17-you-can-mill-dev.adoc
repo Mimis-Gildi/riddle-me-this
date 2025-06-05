@@ -7,10 +7,10 @@ classes: wide
 ---
 = The $ Power is Within You!
 rdd13r
-:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[LinkedIn Newsletter,window=_blank]
 :li-newsletter-name: Behind the Scenes at ASE
 :li-article-1: https://www.linkedin.com/pulse/power-within-you-vadim-kuhay/[The $ Power is Within You!]
-:make-money-with-ai-video: https://youtu.be/ibidd7A00dk
+:make-money-with-ai-video: https://youtu.be/ibidd7A00dk[AI Revenue Video,window=_blank]
 :hackers: https://en.wikipedia.org/wiki/Hacker_culture[hackers,window=_blank]
 :g-tutorial: https://youtube.com/playlist?list=PLOU2XLYxmsII9mzQ-Xxug4l2o04JBrkLV[free tutorials,window=_blank]
 :g-dev: https://goo.gle/developers[nearly everything,window=_blank]
