@@ -1,0 +1,57 @@
+---
+categories: [reflections]
+tags: [Medium]
+excerpt: >
+  {brief-summary-goes-here}
+classes: wide
+comments: true
+---
+= My Spiffy Post Title
+{author-handle}
+:description: My short and snazzy description!
+:icons: font
+:table-caption: Exposition
+:keywords: cool dope stoked
+
+////
+Attribute Variables for External Links (audit-safe, reusable)
+Such as:
+////
+:slug-id: snail
+:article-title:Haloween Rocks!
+
+:medium-article: https://medium.asei.systems/{slug-id}[{article-title},window=_blank]
+:autogpt-github: link:https://github.com/Significant-Gravitas/Auto-GPT[Auto-GPT,window=_blank]
+:artnet-idiot: link:https://www.artnet.com/artists/don-maitz/the-idiot-x1Vi3F6S7g3JIJEwcPT3jw2[The Idiot - Don Maitz,window=_blank]
+:ycombinator-news: link:https://news.ycombinator.com/item?id=26824415[Y Combinator,window=_blank]
+:asei-systems: link:https://www.asei.systems/[ASE Inc.,window=_blank]
+
+////
+Internal Links (use if you reference other local posts)
+////
+:local-article-1: link:/riddle-me-this/reflections/populism/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A 'Doze' of Reality]
+
+////
+Image Alt Captions (stable controlled wording for audit-parity)
+////
+:alt-head-in-the-sand: Head in the Sand — public complacency
+:alt-just-buy-a-tool: No need to learn, just buy a bigger tool
+:alt-how-competent-is-the-cog: How skilled is the developer
+
+////
+Content Begins
+////
+:body1: My body is ripped!
+:body2: Her body is slim.
+
+== Section 1 Title
+
+{body1}
+
+== Section N Title
+
+{body2}
+
+'''
+
+_See editorial on Medium {medium-article}_.
