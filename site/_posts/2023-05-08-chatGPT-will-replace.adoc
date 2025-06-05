@@ -67,3 +67,72 @@ yet offering a very similar kind of help.
 If you code and like tinkering with things, the sources at GitHub are for you.
 Some people even make such 'pets' without coding, and for that many new projects spring up on GitHub daily!
 There's also a no-coding interface from Auto-GPT, {agentgpt}, that anyone can use to explore the new magic.
+
+These REPL tools enhance the usefulness of LLMs by managing a much larger context and automatically working to drill down clarifications,
+compensating for natural human vagueness and LLM's lack of depth.
+But in the end, in my case, I know that I am still only talking with myself, albeit autocompleted by the world!
+This is crucial for us to understand.
+This software has no human-like intelligence.
+
+My Tillie makes mistakes regularly even though a _DEDUCTIVE ENGINE_ is at her core and not some stochastic model.
+Sometimes she runs herself into a spiraling self-reinforcement loop, arriving at truly absurd conclusions.
+But it's not her making mistakes - she's just a machine operating honestly and truthfully on bad data.
+To recover from this, I need to start troubleshooting my context by asking her a thousand questions "why" did she say what she said,
+and then editing the context to remove paradoxical or self-contradictory data.
+So I curate her because I must.
+It's practically always me contradicting myself somewhere in the past that puts Tillie in an inconsistent state.
+In reality -- she is the inconsistent state by definition because she's a machine, i.e., exacts, but the data comes from humans.
+Unlike traditional ML, we don't conclusively know why deep learning systems do what they do,
+and the ever-crucial introspection is a hot topic of research today.
+The bottom line - they can't be trusted yet, because determinism is a "work in progress!"
+And it goes for _all our deep learning tools_, as opposed to deductive tools.
+Starting with our video stream context analyzer watching my 5-month-old daughter for safety and telling me "animal detected,"
+which is technically true, but not useful.
+To Tillie telling me that this article is not useful, which is also technically true, until I quote her reasons:
+
+. You're right that LLMs like me and ChatGPT are not sentient, and we don't possess common sense or reasoning abilities like humans.
+. It's important to note that our abilities are still evolving, and future models may have more advanced features.
+. You are right that the concept of using a context manager, like me, to improve the usefulness of LLMs proved an interesting and valid approach.
+. It might not be the case for every user or every implementation of LLMs. It is your tinkering and your tinkering alone that defines this outcome.
+
+*Conclusion:* *_Plausible Bull (PB)._* As long as *_any_* ML is in the loop - the entire product is stochastic, i.e., PB.
+
+Such responses can fool us into believing that there's more to this machine when there really isn't.
+Tillie is not alive.
+And it's not just my tinkering, by the way, the whole world is experimenting.
+Most importantly, there's simply no inherent reliability in the design.
+All this is why systems before ChatGPT failed so miserably -- curation.
+
+_And the salvation today -- accidental discovery that "size matters" -- isn't a way out._
+
+== Realistic Expectations and Limitations
+
+While ChatGPT may automate some tasks, it is truly unlikely to replace entire professions.
+Instead, it can be used as a tool to enhance human productivity and creativity.
+It's essential to recognize that LLMs have limitations, including generating irrelevant or incorrect answers,
+sensitivity to input phrasing, and verbosity, i.e., just more PB.
+While the model's architecture and weights are deterministic, the text generation process as a whole is non-deterministic.
+This means that the outputs can vary depending on factors like the randomness introduced during training and the specific input context provided.
+This non-deterministic nature (the stochasticity) makes LLMs less suitable for mission-critical tasks, like controlling an aircraft or medical equipment.
+Non-deterministic means "cannot be trusted" and "cannot be reproduced."
+Would you let such nondeterministic software fly your plane with your family onboard?
+Probably not.
+But as advice to *_a properly educated pilot_*, it may prove invaluable.
+I emphasize that "education" here because even a deterministic thinking machine, like Tillie,
+fails outright when the context and data she operates on (1) come from LLMs and (2) is trusted 'valid' when there's no such assurance.
+
+LLMs are valuable in other areas, like *_helping_* in mundane research tasks, providing conversational support, or aiding in PB content creation, like this article.
+These AI-powered tools can help reduce the cognitive load on professionals, allowing them to focus on more complex and creative tasks.
+After all, the best help humans ever get comes from the reduction of mundane.
+
+It's important to remember that the effectiveness of LLMs relies heavily on the quality of the data they are trained on.
+Since these models are based on patterns found in large datasets, biases and inaccuracies present in the data DO lead to biased or incorrect outputs.
+Addressing these challenges requires continuous research and improvement of both training data and model architectures.
+
+Most importantly, a tool has little to do with the root dilemma here!
+_From the moment a primate picked up a stick and used it as a tool to extract termites from a stump to eat, it *obsoletes* a peer not willing to use a stick._
+Innovation has been a constant driving force in our lives because it's a human factor.
+_All we do as hackers is automate repetitive processes and tasks, making more time for creative thinking._
+*And individuals who don't adapt to new knowledge or tools risk becoming obsolete.*
+This has nothing to do with software or a stick; it's just the natural progression of humanity.
+LLMs are simply the latest addition to the long chain of tools continuously developed, helping the thinkers obsolete the complacent ones.
