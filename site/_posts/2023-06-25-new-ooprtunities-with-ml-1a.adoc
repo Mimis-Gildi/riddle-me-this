@@ -7,7 +7,7 @@ classes: wide
 ---
 = Generative AI: Indies in Times of Change: Part 1-a.
 rdd13r
-:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[LinkedIn Newsletter,window=_blank]
 :li-newsletter-name: Behind the Scenes at ASE
 :li-article-2: https://www.linkedin.com/pulse/generative-ai-independent-software-development-times-change-kuhay/[Generative AI: Independent Software Development in Times of Change: Part 1,window=_blank]
 :ms-orca: https://www.microsoft.com/en-us/research/publication/orca-progressive-learning-from-complex-explanation-traces-of-gpt-4/[Orca,window=_blank]
