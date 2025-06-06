@@ -1,0 +1,30 @@
+= The Fall of Democracy
+:page-classes: wide
+:page-layout: splash
+:page-permalink: /series/fall-of-democracy/
+:page-author_profile: true
+
+
+
+image::/riddle-me-this/assets/images/maga-liberty-tomorrow.png[]
+
+
+Welcome to *The Fall of Democracy* — an arc tracking the quiet erosion of democratic institutions under technological stress.
+
+== ✦ What This Series Covers
+
+- The accelerating mismatch between governance and exponential technology
+- Rent-seeking bureaucracies co-opting both regulatory and public discourse mechanisms
+- Weaponized AI-driven narrative control, algorithmic censorship, and information warfare
+- The rise of state-corporate surveillance economies
+- The collapse of institutional competence and the paralysis of decision-making
+
+== ✦ Why It Matters
+
+- The structures that once enabled democracy now undermine it
+- Technology amplifies both truth and manipulation
+- Governance architectures are rapidly losing ability to regulate the very systems they depend on
+
+We are not watching hypotheticals. We are watching governance fail in real-time.
+
+→ link:/riddle-me-this/series/[Back to Curated Series]

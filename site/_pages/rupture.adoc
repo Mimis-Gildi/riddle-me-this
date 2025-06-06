@@ -1,0 +1,25 @@
+= Rupture: The War of Gods
+:page-classes: wide
+:page-layout: splash
+:page-permalink: /series/rupture-war-of-gods/
+:page-author_profile: true
+
+Welcome to *Rupture: The War of Gods* — an arc where war, power, and technology intersect in ways the world has never seen before.
+
+== ✦ What This Series Covers
+
+- The silent but profound influence of war on hacker culture, innovation, and societal adaptation
+- The role of Ukraine as both battleground and technology crucible
+- The collision between centralized control vs. emergent competence-based defense
+- The first field deployments of autonomous and semi-autonomous AI combat systems
+- War as both geopolitical event and a rupture point for civilizational transitions
+
+== ✦ Why It Matters
+
+- This is no longer simply statecraft — this is epistemic warfare
+- Technology no longer supports war — it *decides* war
+- Competence, adaptability, and distributed initiative have become strategic weapons
+
+These are not projections. They are observable phenomena, unfolding now.
+
+→ link:/riddle-me-this/series/[Back to Curated Series]

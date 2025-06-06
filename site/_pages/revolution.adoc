@@ -1,0 +1,29 @@
+= The Final Industrial Revolution
+:page-classes: wide
+:page-layout: splash
+:page-permalink: /series/final-industrial-revolution/
+:page-author_profile: true
+
+Welcome to the *Final Industrial Revolution* — where technology ceases to be merely "tools" and becomes wetware augmentation.
+
+== ✦ What This Series Covers
+
+This arc explores the rise of:
+
+- Large Language Models (LLMs)
+- Multimodal expert systems
+- AI-driven augmentation of human cognition
+- The dissolving line between "worker" and "augmented knowledge agent"
+- Cloud-scale ecosystems and emergent infrastructure patterns
+
+We follow real-world implementation stories — not theoretical speculation. You will find case studies from startups, high-risk experiments, corporate laggards cautiously dipping their toes, and sometimes, magnificent failures.
+
+== ✦ Why It Matters
+
+- Entire classes of work are being rewritten
+- Hacker culture is colliding with AI culture
+- Competence gaps are widening as wetware augmentation amplifies the skilled
+
+This is not science fiction. This is production reality — now.
+
+→ link:/riddle-me-this/series/[Back to Curated Series]
