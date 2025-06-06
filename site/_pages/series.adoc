@@ -17,7 +17,7 @@ as I explore the transformations happening in technology, society, and governanc
 a|
 image::/riddle-me-this/assets/images/Athena-Girl.png[Athena Child,400]
 *Athena Child* +
-She is born in time of war.
+She is born into a world already fractured by war.
 
 a|
 The rise of AI and machine learning as systemic economic accelerators — not simply as tools,
@@ -27,12 +27,12 @@ In this arc we track the displacement effects of LLMs, multimodal engines, cloud
 and cognitive augmentation that are transforming industries, reshaping labor,
 and redefining what it means to "work" or "produce."
 
-Most of my stories here are in the *adventure* category — i.e., journeys I have actually walked.
+Most of these stories are *adventures* — journeys I have personally walked.
 
-From daring startups applying highly questionable and experimental tech in hopes of grabbing a niche;
+From daring startups applying unproven, experimental technologies in hopes of carving out a niche;
 through exceptionally wealthy investors allowing me and my teams to experiment with magnificent
 and spectacular digital beings in hopes of conjuring future disruptions;
-and down to always-frightened laggards trying simple but terrifying things,
+and down to hesitant laggards taking their first tentative steps,
 pushing their own psychological and financial boundaries out of fear of missing out.
 
 Some of these journeys are stranger than fiction.
@@ -53,14 +53,14 @@ But rest assured — I will share with you the bits worth knowing.
 a|
 image::/riddle-me-this/assets/images/Athena-Today-Cover.png[Athena Today,400]
 *Athena Today* - _Ukrainian Mother_
+
 a|
 It really is about war.
 The way war permeates and intercepts all aspects of human life and death.
 The way it quietly reshapes a vibrant hacker scene in Prague without even being noticed across Europe.
 The way it touches the preexisting existential struggle of the aging democratic order.
 
-The conflict between complacency, peace, business-as-usual — and the petrifying realization that
-business-as-usual is no longer possible.
+The conflict between complacency, peace, business-as-usual — and the dawning realization that business-as-usual is no longer possible.
 
 In this arc we look at the power struggle between control-based governance and emergent self-organizing systems of competence.
 
@@ -68,7 +68,7 @@ This struggle ranges from the dichotomy of national defense volunteer units of U
 and Pentagon-blessed federal draft-style mobilization;
 from the embrace of freedom of decision, always — to the daunting burden of chain of command.
 
-And amidst this dichotomy, quietly, something else is rising.
+And amid this dichotomy, quietly, something else rises.
 Something new. Never seen before in combat.
 Another child of Athena: artificial combat intelligence —
 the only being that is not human, yet charged with zeroing humans.
@@ -94,12 +94,11 @@ Here we analyze how advanced technologies (AI, surveillance capitalism, regulato
 The rise of rent-seeking bureaucracies, manipulation of public discourse, and the paralysis of democratic decision-making
 — all against the backdrop of accelerating technological change that governance structures are increasingly unfit to handle.
 
-In a world where Ukraine executes fully autonomous and devastating attacks on the strategic forces of the occupiers —
-and the same world where senile old men cannot let go of controls they no longer have.
-2+a|
+In a world where Ukraine launches fully autonomous and devastating attacks on the occupiers’ strategic forces — while senile political elites cling to controls they no longer command.
 
 _Sporting Rictus-Americanus this blind copper goddess is bleeding competence to death._
 
+2+a|
 → link:/riddle-me-this/series/fall-of-democracy/[Browse The Fall of Democracy]
 |===
 
