@@ -5,9 +5,7 @@
 :page-author_profile: true
 
 
-
 image::/riddle-me-this/assets/images/maga-liberty-tomorrow.png[]
-
 
 Welcome to *The Fall of Democracy* — an arc tracking the quiet erosion of democratic institutions under technological stress.
 
@@ -28,3 +26,24 @@ Welcome to *The Fall of Democracy* — an arc tracking the quiet erosion of demo
 We are not watching hypotheticals. We are watching governance fail in real-time.
 
 → link:/riddle-me-this/series/[Back to Curated Series]
+
+'''
+
+== Content
+
+🚜 <- In process of migration. 🚧
+
+Come back here to see what I have for you.
+I haven't published much in the clear web because muggle is scared of existential facts.
+Clear web wants popularity. Clear web wants "feel good."
+It doesn't want hardcore objective analysis sprinkled with dark hacker humor.
+Most of the materials here will come from my retired Tor site.
+Ever since Saga got an idea to move to GitHub Pages I am pondering this choice.
+What I like the most is the fact that it's all open,
+yet hidden enough from the mundane to just not stumble upon by mistake.
+He who seeks will find my ideas easily.
+That's all that matters.
+
+=== Already Migrated
+
+- NONE yet.

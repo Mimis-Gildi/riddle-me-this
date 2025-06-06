@@ -39,14 +39,14 @@ Message `riddler9297` to join the **AGAIN Collective**.
 
 == ✨ Hacker Forecast: link:/riddle-me-this/series[Trends You Won’t Hear from Gartner]
 
-- link:/riddle-me-this/adventures/2023/06/10/LLMs-what-good-for.html[2023–2025: The Final Industrial Revolution]
-→ How LLMs herald a wetware revolution.
+- link:/riddle-me-this/series/final-industrial-revolution/[2023: The Final Industrial Revolution]
+→ The herald in Wetware Revolution; the last revolution.
 
-- link:/riddle-me-this/reflections/2023/05/11/chatGPT-omen-new-era.html[2023: Hardware Wall Forces Us Back to Competence]
-→ Scarcity brings back engineering.
+- link:/riddle-me-this/series/rupture-war-of-gods/[2022: Scarcity brings back Engineering]
+→ Hardware wall + War for Survival => Pure Brilliance.
 
-- link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[2023: OpenAI Redefined “Product”]
-→ The real shift is in packaging, not cognition.
+- link:/riddle-me-this/series/fall-of-democracy/[2025: Kakistocracy & Circus Maximus]
+→ "The circus has left, but the clowns are still here."
 
 '''
 

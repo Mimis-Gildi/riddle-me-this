@@ -3,8 +3,11 @@
 :page-layout: splash
 :page-permalink: /series/rupture-war-of-gods/
 :page-author_profile: true
+:rada: https://en.wikipedia.org/wiki/Verkhovna_Rada[Верховна Рада]
 
-Welcome to *Rupture: The War of Gods* — an arc where war, power, and technology intersect in ways the world has never seen before.
+image::/riddle-me-this/assets/images/Athenas-Only-Daughter.png[Athena's Only Daughter]
+
+Welcome to *Rupture: The War of Gods* — an arc where war, power, and technology intersect in ways never seen before.
 
 == ✦ What This Series Covers
 
@@ -23,3 +26,34 @@ Welcome to *Rupture: The War of Gods* — an arc where war, power, and technolog
 These are not projections. They are observable phenomena, unfolding now.
 
 → link:/riddle-me-this/series/[Back to Curated Series]
+
+'''
+
+== Content
+
+🚜 <- In process of migration. 🚧
+
+This is 212 BC all over again, with a decrepit failing empire soldier, I.Q. 86, killing Archimedes,
+the Greek philosopher, mathematician, physicist, engineer, inventor, and astronomer,
+as he was drawing circles on the sand formulating the foundation of *_Analysis_*.
+Except today, Archimedes fights.
+He dons his full battle rattle, picks up his rifle, and picks up his _MilSpec Notebook Computer_.
+The 'old men and women' of Ukrainian battle lines, yesterday's professors, researchers, engineers,
+today are the forefront of technology never seen in combat before.
+But the most impressive feats these people bring to life are not even talked about.
+Sure we hear about Ukrainian battle management supercomputer Pentagon can even dream of,
+or the fully autonomous drone swarms taking out strategic bombers as humans see them
+through the reinforcement learning part in live combat.
+The tech behind all this, however, is in full OpSec.
+And that tech is nothing short of majestic, brilliant, and jar-dropping effective.
+It's the birth of the next generation digital beings.
+Pushed forth by the Ukrainian congress, {rada}, commitment to
+"Metal on Meat" policy, and executed remarkably well by Ukrainian engineers in combat.
+Among these soldier engineers are some of the brightest women in the world.
+The mothers of the next thinking race.
+These mothers do well by their daughter.
+And with time, I'll tell you a little bit about them.
+
+=== Already Migrated
+
+- NONE yet.
