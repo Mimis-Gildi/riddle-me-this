@@ -6,7 +6,7 @@ header:
   caption: "Systems are stories that run."
   actions:
     - label: "Résumé PDFs (GitHub)"
-      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.1.0
+      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.2.0
     - label: "Who's Rdd13r?"
       url: /maintainer/
 classes: wide
@@ -16,9 +16,10 @@ sidebar:
   nav: communities
 ---
 = Vadim Kuhay
-:creative-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.1.0/OnCreativity.pdf
-:engineering-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.1.0/OnEngineering.pdf
-:leadership-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.1.0/OnLeadership.pdf
+:icons: font
+:creative-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.2.0/OnCreativity.pdf
+:engineering-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.2.0/OnEngineering.pdf
+:leadership-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.2.0/OnLeadership.pdf
 
 I'm a humble system designer, team builder, and player-coach.
 
@@ -36,20 +37,29 @@ reflections, and adventurous stories from the scene.
 I'm often on Discord, swapping ideas and field notes with peers and learners alike.
 Message `riddler9297` to join the **AGAIN Collective**.
 
-== ✨ Hacker Forecast: Trends You Won’t Hear from Gartner
+== ✨ Hacker Forecast: link:/riddle-me-this/series[Trends You Won’t Hear from Gartner]
 
-- link:/riddle-me-this/adventures/2023/06/10/LLMs-what-good-for.html[2023–2025: The Final Industrial Revolution]
-→ How LLMs herald a wetware revolution.
+- link:/riddle-me-this/series/final-industrial-revolution/[2023: The Final Industrial Revolution]
+→ The herald in Wetware Revolution; the last revolution.
 
-- link:/riddle-me-this/reflections/2023/05/11/chatGPT-omen-new-era.html[2023: Hardware Wall Forces Us Back to Competence]
-→ Scarcity brings back engineering.
+- link:/riddle-me-this/series/rupture-war-of-gods/[2022: Scarcity brings back Engineering]
+→ Hardware wall + War for Survival => Pure Brilliance.
 
-- link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[2023: OpenAI Redefined “Product”]
-→ The real shift is in packaging, not cognition.
+- link:/riddle-me-this/series/fall-of-democracy/[2025: Kakistocracy & Circus Maximus]
+→ "The circus has left, but the clowns are still here."
+
+'''
+
+🚜 - This digital garden is 🛠️ actively growing.  🚧
+
+ 🔄 37 articles from prior publications are in staged migration
+ and will appear here incrementally throughout v2.x releases.
+
+'''
 
 ===  Wanna see my résumé?
 
-_See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.1.0[v2.1.0,window=_blank]_::
+_See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.2.0[v2.2.0,window=_blank]_::
 {leadership-resume}[Leadership,window=_blank] résumé – coaching, CTO roles (_hands-on_). +
 {engineering-resume}[Engineering,window=_blank] résumé – code craft, production, profit. +
 {creative-resume}[Creative,window=_blank] résumé – teams, systems, vision, disruption.
