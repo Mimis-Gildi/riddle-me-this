@@ -8,9 +8,11 @@ Organization-wide security policies may apply. See: [fluffle organization reposi
 
 ___
 
-## On _These_ Secure Ops
+## On _This Minimalist Automation_
 
-The following services integrate with this repository for continuous scanning, dependency risk monitoring, and release verification:
+This is just a small blog and résumé publishing site.  
+Ops are intentionally simple, just enough to not repeat myself,
+let the box do mundane work:
 
 
 - [**GitHub Advanced Security**][gh-security] - main dashboard (Overview);
@@ -43,7 +45,7 @@ ___
 
 ___
 
-The following diagrams reflect the current **Riddle-Me-This Secure Release Governance ([v2.3.0])** pipeline as of this release.
+The following diagrams reflect the current **Riddle-Me-This Secure Release Governance ([v2.3.0])** pipeline as of this release. IDE side enablements, i.e., the fluent workflow, are out of the documentation scope.
 
 ___
 
