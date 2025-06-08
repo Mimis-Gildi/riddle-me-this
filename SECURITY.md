@@ -53,7 +53,6 @@ The following diagram documents the secure automated release pipeline that gover
 ---
 title: Canonical Publishing Workflow v2.3.0
 config:
-  theme: forest
   curve: linear
   layout: dagre
 ---
