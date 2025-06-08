@@ -10,6 +10,8 @@ ___
 
 ## On _These_ Secure Ops
 
+The following services integrate with this repository for continuous scanning, dependency risk monitoring, and release verification:
+
 
 - [**GitHub Advanced Security**][gh-security] - main dashboard (Overview);
   - [Dependabot alerts][this-dependabot] - see GitHub Advanced Security [documentation][on-dependabot];
@@ -41,17 +43,28 @@ ___
 
 ___
 
-_**This site version is [v2.3.0].**_
+The following diagrams reflect the current **Riddle-Me-This Secure Release Governance ([v2.3.0])** pipeline as of this release.
 
 ___
 
-## Secure Automation Flow
+## 📊 End-to-End Release Flow Model (Simplified)
 
-The following diagram documents the secure automated release pipeline that governs all publishing activity within this repository:
+The diagrams below illustrate the full GitHub Actions release pipeline for this repository, including:
+
+- Automated versioning & publishing flows;
+- Conditional builds for individual components (site / resume / demo);
+- Security scanners activated at various workflow stages;
+- Label-based selective publishing;
+- External dependency monitors contributing branches (Renovate / Dependabot).
+
+### 🔁 Publishing Pipeline
+
+The full lifecycle of branch creation, pull request progression, version bump, label detection, conditional publishing, and final GitHub release generation:
+
 
 ```mermaid
 ---
-title: Canonical Publishing Workflow v2.3.0
+title: Canonical Publishing Workflow 2.3.0
 config:
   curve: linear
   layout: dagre
@@ -60,11 +73,12 @@ config:
 flowchart TD
 
 %% STATES
-  StableTrunk(("Stable Trunk\n(main)"))
+  StableTrunk(("`Stable Trunk
+                (main)`"))
   FeatureBranch(("Feature Branch"))
   PullRequest(("Pull Request"))
   ReleaseBranch(("Merged Release Branch"))
-  FinalTrunk(("Final Trunk"))
+  FinalTrunk((("Final Trunk")))
   ReleaseTag(("Release Tag"))
 
 %% ACTORS
@@ -111,6 +125,51 @@ flowchart TD
 
 ```
 
+## 🛡️ Security Hooks & Scanners
+
+```mermaid
+---
+title: Security Scan Hooks 2.3.0
+config:
+  curve: linear
+  layout: dagre
+---
+
+flowchart TD
+
+%% STATES
+PullRequest(("Pull Request"))
+ReleaseBranch(("Merged Release Branch"))
+ReleaseTag(("Release Tag"))
+
+%% SCANNERS
+
+CodeQL["🧬 CodeQL"]
+Qodana["🧬 Qodana"]
+Codacy["🧬 Codacy"]
+Mend["🧬 Mend.io"]
+Snyk["🧬 Snyk"]
+Secrets["🧬 Secret Scanning"]
+Dependabot["🧬 Dependabot Alerts"]
+
+%% FLOWS
+
+PullRequest --> CodeQL
+PullRequest --> Qodana
+PullRequest --> Codacy
+
+ReleaseBranch --> Codacy
+ReleaseBranch --> Qodana
+
+ReleaseTag --> Mend
+ReleaseTag --> Snyk
+
+ReleaseBranch --> Secrets
+PullRequest --> Secrets
+
+StableTrunk -. monitors .-> Dependabot
+ReleaseBranch -. monitors .-> Dependabot
+```
 ___
 
 [v2.3.0]: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.3.0 "This release tag to follow."
