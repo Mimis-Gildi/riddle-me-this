@@ -1,4 +1,4 @@
-name: Publish Résumé Release for the Current Tag
+name: Publish Current Release
 run-name: "Published Résumé Release on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
 #.github/workflows/custom-publish-resume-release.yml
 

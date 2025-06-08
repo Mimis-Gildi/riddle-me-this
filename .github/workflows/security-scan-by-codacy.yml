@@ -4,12 +4,12 @@ run-name: "Executed Security Scan by Codacy on ${{ github.repository }}] by ${{ 
 on:
   workflow_dispatch:
   workflow_call:
-  push:
-    branches: [ "main" ]
   pull_request:
-    types: [opened, synchronize]
+    types:
+      - opened
+      - synchronize
   schedule:
-    - cron: '17 11 * * 4'  # Weekly Tuesday scan
+    - cron: '17 11 1 * *'
 
 permissions:
   contents: read

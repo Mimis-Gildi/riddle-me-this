@@ -213,6 +213,30 @@ Missing`"}
 
   WorkflowPruneAction -. subscribe .-> IssuesCreated
   CachesPruneAction -. subscribe .-> IssuesCreated
+  
+  
+  subgraph PR Security Checks
+      subgraph Security Scan by CodeQL 
+          CodeQLAction[CodeQL Security Action]
+      end
+      
+      subgraph Security Scan by Codacy
+          CodacyAction[Codacy Security Action]
+      end
+      
+      subgraph Security Scan by Qodana 
+          QodanaAction[Qodana Security Action]
+      end
+      
+      subgraph Security Scan by Snyk 
+          SnykAction[Snyk Security Action]
+      end
+  end
+  
+  CodeQLAction -. subscribe .-> IssuesCreated
+  CodacyAction -. subscribe .-> IssuesCreated
+  QodanaAction -. subscribe .-> IssuesCreated
+  SnykAction -. subscribe .-> IssuesCreated
 ```
 
 ___
