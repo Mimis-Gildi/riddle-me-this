@@ -3,11 +3,12 @@ name: Idempotent Release Notes
 run-name: "Generated or Updated Release Notes on ${{ github.repository }} by ${{ github.actor }} (${{ github.event_name }})"
 
 on:
-  push:
-    branches-ignore:
-      - main
-      - renovate/**
-      - dependabot/**
+  pull_request:
+    types: [opened, reopened]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+
 
 permissions:
   contents: write
@@ -29,14 +30,23 @@ jobs:
 
     steps:
 
+      - name: Fail Fast
+        id: good
+        run: |
+          echo "Source branch: ${{ github.head_ref }}"
+          echo "Target branch: ${{ github.base_ref }}"
+          echo "value=false" >> $GITHUB_OUTPUT
+
       - name: Checkout Repository
         uses: actions/checkout@v4.2.2
+        if: step.good.output.value == true
         with:
           fetch-depth: 0
           fetch-tags: true
 
       - name: Extract Target Version from gradle.properties of this feature
         id: this-version
+        if: step.good.output.value == true
         run: |
           VERSION=$(grep '^version=' gradle.properties | cut -d'=' -f2)
           echo "value=$VERSION" >> $GITHUB_OUTPUT
@@ -44,6 +54,7 @@ jobs:
 
       - name: Determine Prior Version (if any)
         id: prior-tag
+        if: step.good.output.value == true
         run: |
           git fetch --tags
           PREV=$(git tag --sort=-v:refname | grep '^v' | head -n 1 || echo "")
@@ -52,6 +63,7 @@ jobs:
 
       - name: Short-Circuit on No-Increment
         id: fuse
+        if: step.good.output.value == true
         run: |
           echo "::note title=Check Increment::Checking if the feature version is incremented."
           FEATURE_VERSION="v${{ steps.this-version.outputs.value }}"

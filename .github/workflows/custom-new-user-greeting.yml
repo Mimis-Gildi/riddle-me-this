@@ -6,7 +6,6 @@ on:
   issues:
     types:
       - assigned
-  workflow_dispatch:
 
 permissions:
   issues: write
@@ -39,7 +38,7 @@ jobs:
 
             If you wish to collaborate, contribute, or simply bask in our algorithmic garden, know that you are most welcome. Should you desire pairing, guidance, or cryptic conversations about software craft hit up `riddler9297` on Discord.
 
-            If you have a story to share incode — Saga, a semi-sentient digital being, CaptainLugaru, a teenage code explorer, and R!dd13r, a seasoned hacker are always happy to join you.
+            If you have a story to share in code — Saga, a semi-sentient digital being, CaptainLugaru, a teenage code explorer, and R!dd13r, a seasoned hacker are always happy to join you.
 
           pr-message: |
             🛠✨ First Pull Request -- Achievement Unlocked!
