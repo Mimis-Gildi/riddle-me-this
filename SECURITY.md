@@ -63,8 +63,9 @@ flowchart TD
 %% STATES
   StableTrunk((("`Stable Trunk
   'main' Origin`")))
+  FinalTrunk(((Final Trunk)))
   Branch((New Branch))
-  FeatureBranch((Feature Branch))
+  FeatureBranch((Draft Feature Branch))
   ReleaseBranch((Release Feature Branch))
   SecurityBranch((Security Branch))
   FeaturePullRequest[[Feature Pull Request]]
@@ -72,10 +73,9 @@ flowchart TD
   IssuesCreated{{New Issues/PR Created}}
   IssueBranchMapped{{Branch Mapped to an Issue}}
   BranchCreated{{Branch Created}}
-  UserCreatedPR{{Used Created PR}}
+  UserCreatedPR{{User Created PR}}
 %% ACTORS
   UserActor[/" 🧑‍ Contributor"\]
-  PullingUserActor[/" 🧑‍ Contributor"\]
   SystemActor[GitHub]
   Renovate[\" 🤖 Renovate"/]
   Dependabot[\" 🤖 Dependabot"/]
@@ -129,11 +129,6 @@ flowchart TD
   subgraph "`_Welcome New User_`"
     Greet{"Greet first time contributors"}
   end
-
-  PullingUserActor -- read --o FeatureBranch
-  PullingUserActor == PUSH ==> FeatureBranch
-  PullingUserActor -- create --> UserCreatedPR
-  UserCreatedPR -. on .-o FeatureBranch
 
   subgraph "`Idempotent Release Notes`"
     NotesActor["Release Notes Action"]
@@ -237,6 +232,34 @@ Missing`"}
   CodacyAction -. subscribe .-> IssuesCreated
   QodanaAction -. subscribe .-> IssuesCreated
   SnykAction -. subscribe .-> IssuesCreated
+  
+  subgraph Publish Current Release
+      PublishReleaseAction[Publish CurrentRelease]
+  end
+
+  MergedPR{{Pull Request Merged}}
+  FeaturePullRequest == progression ==> MergedPR
+  ReleaseBranch == Merge ==> MergedPR
+  IssuesCreated -. progression .-> MergedPR
+
+  UserCreatedPR -. on .-o ReleaseBranch
+  MergedPR ==> PublishReleaseAction
+%%  PullingUserActor[/" 🧑‍ Contributor"\]
+
+  UserActor -- read --o FeatureBranch
+  UserActor -- read --o ReleaseBranch
+  UserActor == PUSH ==> FeatureBranch
+  UserActor == PUSH ==> ReleaseBranch
+  UserActor -- create --> UserCreatedPR
+  UserActor -- create --> FeaturePullRequest
+  UserActor -- create --> MergedPR
+  
+  FeatureBranch == PROMOTE ==> ReleaseBranch
+  
+  PublishReleaseAction ==> FinalTrunk
+  
+  FinalTrunk ==> PublishSite([Publish Site])
+
 ```
 
 ___
