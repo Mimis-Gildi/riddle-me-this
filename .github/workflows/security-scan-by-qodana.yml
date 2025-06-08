@@ -9,7 +9,7 @@ on:
   pull_request:
     types:
       - opened
-      - synchronize
+      - reopened
   schedule:
     - cron: '19 15 3 * *'
 
