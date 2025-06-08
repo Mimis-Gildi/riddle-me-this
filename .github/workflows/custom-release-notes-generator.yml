@@ -1,4 +1,4 @@
-name: Idempotent Release Notes Generator
+name: Idempotent Release Notes
 
 run-name: "Generated or Updated Release Notes on ${{ github.repository }} by ${{ github.actor }} (${{ github.event_name }})"
 
@@ -6,6 +6,8 @@ on:
   push:
     branches-ignore:
       - main
+      - renovate/**
+      - dependabot/**
 
 permissions:
   contents: write
