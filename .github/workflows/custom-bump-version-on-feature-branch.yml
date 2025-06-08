@@ -1,4 +1,4 @@
-name: Version Bump on Feature Creation
+name: Version on New Branch
 run-name: "Incremented Version on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
 #.github/workflows/custom-bump-version-on-feature-branch.yml
 

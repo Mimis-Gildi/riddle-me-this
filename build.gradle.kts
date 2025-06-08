@@ -12,6 +12,8 @@ val useJavaVersion: String by project
 val resumeFolder = file(project.property("resume.root.folder") as String)
 
 val resumeDate: String by project
+val resumeVersion: String by project
+
 
 val pdfResumeThemeIds = listOf(
     "conservative-resume",

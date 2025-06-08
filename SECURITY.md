@@ -45,6 +45,94 @@ _**This site version is [v2.3.0].**_
 
 ___
 
+## Secure Automation Flow
+
+The following diagram documents the secure automated release pipeline that governs all publishing activity within this repository:
+
+```mermaid
+---
+title: Canonical Repository Actions Flow — Riddle-Me-This v2.3.0
+config:
+  theme: forrest
+  curve: linear
+  layout: dagre
+---
+
+flowchart TD
+
+%% STATES
+  StableTrunk((Stable Trunk - Main Origin))
+
+%%  FinalStableTrunk(((Stable Trunk - Main Incremented)))
+  Branch((New Branch))
+  FeatureBranch((Feature Branch))
+  SecurityBranch((Security Branch))
+
+%% EVENTS
+  IssueBranchMapped{{Branch Mapped to an Issue}}
+  BranchCreated{{Branch Created}}
+
+%% ACTORS
+  UserActor[/ " 🧑‍ Contributor" \]
+  SystemActor[GitHub]
+  Renovate[\ " 🤖 Renovate" /]
+  Dependabot[\ " 🤖 Dependabot" /]
+
+%% FLOW
+
+%%% Branch Creation Flow
+  StableTrunk ---- Transition ----> Branch
+  
+  UserActor -.Observe.-> StableTrunk
+  Renovate -.Observe.-> StableTrunk
+  Dependabot -.Observe.-> StableTrunk
+
+  UserActor --Command--> SystemActor
+  Renovate --Command--> SystemActor
+  Dependabot  --Command--> SystemActor
+
+  SystemActor ==CREATE==> Branch
+  UserActor ==CREATE==> Branch
+
+  Branch -.-> IssueBranchMapped
+  Branch -.-> BranchCreated
+
+  VersioningActor -. Subscribe.-o BranchCreated
+  Branch  -. read .-o VersioningActor
+
+  subgraph "`_Version on New Branch_`"
+    VersioningActor["Version Action"]
+    VersionNotMain{NOT main Branch}
+    VersionNotMain --o VersioningActor
+    
+    VersionSleep5[Sleep 5 seconds]
+
+    VersioningActor --> VersionSleep5
+    
+    VersionFilterFeatureBranch{"🦪 Check if branch matches issue-style (e.g. 12-feature-title)"}
+    VersionSleep5 --> VersionFilterFeatureBranch
+    
+    VersionSwitchOnMajor{" 🏷️ Check for major label on issue"}
+    VersionFilterFeatureBranch -- yes --> VersionSwitchOnMajor
+    
+    VersionBumpProperties[" 🧬 Bump properties version; M.m.p"]
+    VersionSwitchOnMajor -- "Major: (M+1).0.0" --> VersionBumpProperties
+    VersionSwitchOnMajor -- "Minor: M.(m+1).0" --> VersionBumpProperties
+
+    VersionChangePush[" 📂 Commit and push new version"]
+    VersionActionSummary[" 🏋️ Summary annotation"]
+    
+    VersionBumpProperties --> VersionChangePush
+    VersionChangePush --> VersionActionSummary
+    
+  end
+
+  VersionFilterFeatureBranch -. no-action .-x SecurityBranch
+  VersionChangePush ==PUSH==> FeatureBranch
+```
+
+___
+
 [v2.3.0]: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.3.0 "This release tag to follow."
 
 [Author]: https://github.com/rdd13r "❤️ Kotlin ❤️ Scala; Python; Java; Go."
