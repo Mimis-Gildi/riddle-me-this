@@ -51,214 +51,64 @@ The following diagram documents the secure automated release pipeline that gover
 
 ```mermaid
 ---
-title: Canonical Repository Actions Flow — Riddle-Me-This v2.3.0
+title: Canonical Publishing Workflow v2.3.0
 config:
-  theme: forrest
+  theme: forest
   curve: linear
   layout: dagre
 ---
 
 flowchart TD
-  IssueBranchMapped -..-o IssuesCreated
+
 %% STATES
-  StableTrunk((("`Stable Trunk
-  'main' Origin`")))
-  FinalTrunk(((Final Trunk)))
-  Branch((New Branch))
-  FeatureBranch((Draft Feature Branch))
-  ReleaseBranch((Release Feature Branch))
-  SecurityBranch((Security Branch))
-  FeaturePullRequest[[Feature Pull Request]]
-%% EVENTS
-  IssuesCreated{{New Issues/PR Created}}
-  IssueBranchMapped{{Branch Mapped to an Issue}}
-  BranchCreated{{Branch Created}}
-  UserCreatedPR{{User Created PR}}
+  StableTrunk(("Stable Trunk\n(main)"))
+  FeatureBranch(("Feature Branch"))
+  PullRequest(("Pull Request"))
+  ReleaseBranch(("Merged Release Branch"))
+  FinalTrunk(("Final Trunk"))
+  ReleaseTag(("Release Tag"))
+
 %% ACTORS
-  UserActor[/" 🧑‍ Contributor"\]
-  SystemActor[GitHub]
-  Renovate[\" 🤖 Renovate"/]
-  Dependabot[\" 🤖 Dependabot"/]
-%% FLOW
+  User["🧑‍💻 Developer"]
+  Renovate["🤖 Renovate"]
+  Dependabot["🤖 Dependabot"]
+  System["GitHub Actions"]
 
-%%% Branch Creation Flow
-  StableTrunk ---- Transition ----> Branch
-  UserActor -. Observe .-> StableTrunk
-  Renovate -. Observe .-> StableTrunk
-  Dependabot -. Observe .-> StableTrunk
-  UserActor -- Command --> SystemActor
-  Renovate -- Command --> SystemActor
-  Dependabot -- Command --> SystemActor
-  UserActor -.-> IssuesCreated
-  Renovate -.-> IssuesCreated
-  Dependabot -.-> IssuesCreated
-  Greet -..-o IssuesCreated
-  SystemActor == CREATE ==> Branch
-  UserActor == CREATE ==> Branch
-  Branch -.-> IssueBranchMapped
-  Branch -.-> BranchCreated
-  VersioningActor -. Subscribe .-o BranchCreated
-  Branch -. read .-o VersioningActor
+%% EVENTS
+  BranchCreated{{Branch Created}}
+  PullRequestOpened{{PR Opened}}
+  PullRequestClosed{{PR Closed}}
+  TagPushed{{Tag Pushed}}
 
-  subgraph "`_Version on New Branch_`"
-    VersioningActor["Version Action"]
-    VersionNotMain{"`NOT - main
-                  Branch`"}
-    VersioningActor ==> VersionNotMain
-    VersionNotMain -- YES --> VersionSleep5
-    VersionSleep5[Sleep 5 seconds]
-    VersionFilterFeatureBranch{"`🦪 Check if branch matches 
-    issue-style 
-    (e.g. 12-feature-title)`"}
-    VersionSleep5 --> VersionFilterFeatureBranch
-    VersionSwitchOnMajor{" 🏷️ Check for major label on issue"}
-    VersionFilterFeatureBranch -- yes --> VersionSwitchOnMajor
-    VersionBumpProperties[" 🧬 Bump properties version; M.m.p"]
-    VersionSwitchOnMajor -- " Major: (M+1).0.0 " --> VersionBumpProperties
-    VersionSwitchOnMajor -- " Minor: M.(m+1).0 " --> VersionBumpProperties
-    VersionChangePush[" 📂 Commit and push new version"]
-    VersionActionSummary[" 🏋️ Summary annotation"]
-    VersionBumpProperties --> VersionChangePush
-    VersionChangePush --> VersionActionSummary
+%% FLOWS
+  StableTrunk -->|branch create| FeatureBranch
+  Renovate -->|branch create| FeatureBranch
+  Dependabot -->|branch create| FeatureBranch
 
-  end
+  FeatureBranch -->|open PR| PullRequest
+  PullRequest -->|merge| ReleaseBranch
+  ReleaseBranch -->|create tag| ReleaseTag
 
-  VersionFilterFeatureBranch -. no - action .-x SecurityBranch
-  VersionChangePush == PUSH ==> FeatureBranch
+%% Versioning on Branch Create
+  BranchCreated -. triggers .-> Versioning[Auto Bump Version]
 
-  subgraph "`_Welcome New User_`"
-    Greet{"Greet first time contributors"}
-  end
+%% Release Notes
+  ReleaseBranch -->|trigger| ReleaseNotes[Idempotent Release Notes Build]
 
-  subgraph "`Idempotent Release Notes`"
-    NotesActor["Release Notes Action"]
-    NotesSkip{"`not - main
-not - dependabot
-not - renovate
-not - Pull Request`"}
-    NotesActor ==> NotesSkip
-    NotesSkip --> NotesExtractVersion
-    NotesSkip --> NotesExtractPriorVersion
-    NotesExtractVersion[Extract Target Version]
-    NotesExtractPriorVersion[Extract Prior Version]
-    NotesShortCircuit{"`Short-Circuit
-on 
-No-Increment`"}
-    NotesCreateIfMissing{"`Create 
-Release Notes 
-IF 
-Missing`"}
-    NotesExtractVersion --> NotesShortCircuit
-    NotesExtractPriorVersion --> NotesShortCircuit
-    NotesShortCircuit -- Not Security Branch --> NotesCreateIfMissing
-    NotesCommitIfCreated{Commit New Release Notes File}
-    NotesCreateIfMissing --> NotesCommitIfCreated
-    NotesExtractCommitMessages[Extract Commit Messages]
-    NotesCommitIfCreated -. wait .-> NotesExtractCommitMessages
-    NotesExtractChangedFiles[Extract Changed Files]
-    NotesCommitIfCreated -. wait .-> NotesExtractChangedFiles
-    NotesCreateIfMissing --> NotesExtractCommitMessages
-    NotesCreateIfMissing --> NotesExtractChangedFiles
-    NotesWriteReleaseFooter([Write Release Notes Footer])
-    NotesExtractCommitMessages ==> NotesWriteReleaseFooter
-    NotesExtractChangedFiles ==> NotesWriteReleaseFooter
-    NotesCommitFooter[Commit Updated Footer]
-    NotesWriteReleaseFooter ==> NotesCommitFooter
-  end
+%% PR Labeler
+  PullRequestOpened --> Labeler[Auto Labeler]
 
-  NotesActor == On Push ==o FeatureBranch
-  NotesCommitIfCreated == PUSH ==> FeatureBranch
-  NotesExtractCommitMessages -- fetch --o FeatureBranch
-  NotesExtractChangedFiles -- fetch --o FeatureBranch
-  NotesCommitFooter == PUSH ==> FeatureBranch
+%% Conditional Publish Flows
+  ReleaseBranch -->|label: site| PublishSite
+  ReleaseBranch -->|label: resume| PublishResume
+  ReleaseBranch -->|label: demo| PublishDemo
 
-  subgraph "Label Pull Request"
-    LabelPullRequest[Label Pull Request]
-    LabelingRules[[.github/labeler.yml]]
-    LabelSite([Site Changed Label])
-    LabelResume([Resume Changed Label])
-    LabelSite -.-> LabelPullRequest
-    LabelResume -.-> LabelPullRequest
-    LabelingRules --> LabelPullRequest
-  end
-  LabelPullRequest -- write labels --> FeaturePullRequest
-  LabelSite == Enable Site ==> ReleaseBranch
-  LabelResume == Enable Resume ==> ReleaseBranch
-  FeatureBranch --> FeaturePullRequest
-  FeaturePullRequest --> ReleaseBranch
-  FeaturePullRequest -..-> IssuesCreated
+%% Tag pushed on release
+  ReleaseTag -->|create release| PublishRelease
+  PublishRelease --> FinalTrunk
 
-  subgraph Manage Stale Issues
-    LabelStaleIssue([Label Stale Issue])
-    LabelStalePR([Label Stale PR])
-    StaleAction[Stale Issue Action]
-    LabelStaleIssue --o StaleAction
-    LabelStalePR --o StaleAction
-  end
-
-  StaleAction -. subscribe .-> IssuesCreated
-  
-  subgraph GitHub Actions Prune 
-      WorkflowPruneAction[Prune Workflow Runs]
-  end
-
-  subgraph GitHub Action Caches Prune
-    CachesPruneAction[Prune Workflow Caches]
-  end
-
-  WorkflowPruneAction -. subscribe .-> IssuesCreated
-  CachesPruneAction -. subscribe .-> IssuesCreated
-  
-  
-  subgraph PR Security Checks
-      subgraph Security Scan by CodeQL 
-          CodeQLAction[CodeQL Security Action]
-      end
-      
-      subgraph Security Scan by Codacy
-          CodacyAction[Codacy Security Action]
-      end
-      
-      subgraph Security Scan by Qodana 
-          QodanaAction[Qodana Security Action]
-      end
-      
-      subgraph Security Scan by Snyk 
-          SnykAction[Snyk Security Action]
-      end
-  end
-  
-  CodeQLAction -. subscribe .-> IssuesCreated
-  CodacyAction -. subscribe .-> IssuesCreated
-  QodanaAction -. subscribe .-> IssuesCreated
-  SnykAction -. subscribe .-> IssuesCreated
-  
-  subgraph Publish Current Release
-      PublishReleaseAction[Publish CurrentRelease]
-  end
-
-  MergedPR{{Pull Request Merged}}
-  FeaturePullRequest == progression ==> MergedPR
-  ReleaseBranch == Merge ==> MergedPR
-  IssuesCreated -. progression .-> MergedPR
-
-  UserCreatedPR -. on .-o ReleaseBranch
-  MergedPR ==> PublishReleaseAction
-%%  PullingUserActor[/" 🧑‍ Contributor"\]
-
-  UserActor -- read --o FeatureBranch
-  UserActor -- read --o ReleaseBranch
-  UserActor == PUSH ==> FeatureBranch
-  UserActor == PUSH ==> ReleaseBranch
-  UserActor -- create --> UserCreatedPR
-  UserActor -- create --> FeaturePullRequest
-  UserActor -- create --> MergedPR
-  
-  FeatureBranch == PROMOTE ==> ReleaseBranch
-  
-  PublishReleaseAction ==> FinalTrunk
-  
-  FinalTrunk ==> PublishSite([Publish Site])
+%% Housekeeping
+  PullRequest -->|close stale| StaleWorkflow
 
 ```
 
