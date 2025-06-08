@@ -60,20 +60,26 @@ config:
 
 flowchart TD
 
-%% STATES
-  StableTrunk((Stable Trunk - Main Origin))
+  IssueBranchMapped -..-o IssuesCreated
 
-%%  FinalStableTrunk(((Stable Trunk - Main Incremented)))
+
+%% STATES
+  StableTrunk((("`Stable Trunk
+  'main' Origin`")))
   Branch((New Branch))
   FeatureBranch((Feature Branch))
   SecurityBranch((Security Branch))
+  FeaturePullRequest[[Feature Pull Request]]
 
 %% EVENTS
+  IssuesCreated{{New Issues/PR Created}}
   IssueBranchMapped{{Branch Mapped to an Issue}}
   BranchCreated{{Branch Created}}
+  UserCreatedPR{{Used Created PR}}
 
 %% ACTORS
   UserActor[/ " 🧑‍ Contributor" \]
+  PullingUserActor[/ " 🧑‍ Contributor" \]
   SystemActor[GitHub]
   Renovate[\ " 🤖 Renovate" /]
   Dependabot[\ " 🤖 Dependabot" /]
@@ -90,45 +96,79 @@ flowchart TD
   UserActor --Command--> SystemActor
   Renovate --Command--> SystemActor
   Dependabot  --Command--> SystemActor
+  
+  UserActor -.-> IssuesCreated
+  Renovate -.-> IssuesCreated
+  Dependabot -.-> IssuesCreated
+
+
+  Greet -..-o IssuesCreated
 
   SystemActor ==CREATE==> Branch
   UserActor ==CREATE==> Branch
+
 
   Branch -.-> IssueBranchMapped
   Branch -.-> BranchCreated
 
   VersioningActor -. Subscribe.-o BranchCreated
+
   Branch  -. read .-o VersioningActor
 
+
   subgraph "`_Version on New Branch_`"
+
     VersioningActor["Version Action"]
-    VersionNotMain{NOT main Branch}
-    VersionNotMain --o VersioningActor
-    
+
     VersionSleep5[Sleep 5 seconds]
 
     VersioningActor --> VersionSleep5
-    
-    VersionFilterFeatureBranch{"🦪 Check if branch matches issue-style (e.g. 12-feature-title)"}
+    VersioningActor --o VersionNotMain
+    VersionNotMain[["`NOT - main
+                  Branch`"]]
+
+    VersionFilterFeatureBranch{"`🦪 Check if branch matches 
+    issue-style 
+    (e.g. 12-feature-title)`"}
     VersionSleep5 --> VersionFilterFeatureBranch
-    
+
     VersionSwitchOnMajor{" 🏷️ Check for major label on issue"}
     VersionFilterFeatureBranch -- yes --> VersionSwitchOnMajor
-    
+
     VersionBumpProperties[" 🧬 Bump properties version; M.m.p"]
     VersionSwitchOnMajor -- "Major: (M+1).0.0" --> VersionBumpProperties
     VersionSwitchOnMajor -- "Minor: M.(m+1).0" --> VersionBumpProperties
 
     VersionChangePush[" 📂 Commit and push new version"]
     VersionActionSummary[" 🏋️ Summary annotation"]
-    
+
     VersionBumpProperties --> VersionChangePush
     VersionChangePush --> VersionActionSummary
-    
+
   end
 
   VersionFilterFeatureBranch -. no-action .-x SecurityBranch
   VersionChangePush ==PUSH==> FeatureBranch
+
+  subgraph "`_Welcome New User_`"
+    Greet{"Greet first time contributors"}
+  end
+
+
+  PullingUserActor --read--o FeatureBranch
+  PullingUserActor == PUSH ==> FeatureBranch
+  PullingUserActor --create--> UserCreatedPR
+  UserCreatedPR -.on.-o FeatureBranch
+  
+  subgraph "Label Pull Request" 
+      LabelPullRequest[Label Pull Request]
+      LabelingRules[[.github/labeler.yml]]
+      LabelingRules --> LabelPullRequest 
+  end
+  LabelPullRequest -.subscribe.-> UserCreatedPR
+  LabelPullRequest == Write Labels ==> FeaturePullRequest
+FeaturePullRequest -.mapped.-o IssuesCreated
+  
 ```
 
 ___

@@ -1,12 +1,12 @@
-name: Welcome New User on Create
+name: Welcome New User
 run-name: "Greated a new user on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
 #.github/workflows/custom-new-user-greeting.yml
 
 on:
   issues:
-  pull_request:
+    types:
+      - assigned
   workflow_dispatch:
-  workflow_call:
 
 permissions:
   issues: write
