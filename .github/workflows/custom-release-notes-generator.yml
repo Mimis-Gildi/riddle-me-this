@@ -27,7 +27,6 @@ defaults:
 jobs:
 
   generate-running-release-notes:
-    if: github.event_name != 'pull_request'
     name: Detect Versions, Seed File, Inject Data
     runs-on: ubuntu-latest
 
