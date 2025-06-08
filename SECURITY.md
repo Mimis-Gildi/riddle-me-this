@@ -135,34 +135,24 @@ flowchart TD
   PullingUserActor -- create --> UserCreatedPR
   UserCreatedPR -. on .-o FeatureBranch
 
-  subgraph "Label Pull Request"
-    LabelPullRequest[Label Pull Request]
-    LabelingRules[[.github/labeler.yml]]
-    LabelingRules --> LabelPullRequest
-  end
-%%  LabelPullRequest -. subscribe .-> UserCreatedPR
-  LabelPullRequest == Write Labels ==> FeaturePullRequest
-  FeatureBranch --> FeaturePullRequest
-  FeaturePullRequest --> ReleaseBranch
-
   subgraph "`Idempotent Release Notes`"
     NotesActor["Release Notes Action"]
     NotesSkip{"`not - main
-                  not - dependabot
-                  not - renovate
-                  not - Pull Request`"}
+not - dependabot
+not - renovate
+not - Pull Request`"}
     NotesActor ==> NotesSkip
     NotesSkip --> NotesExtractVersion
     NotesSkip --> NotesExtractPriorVersion
     NotesExtractVersion[Extract Target Version]
     NotesExtractPriorVersion[Extract Prior Version]
     NotesShortCircuit{"`Short-Circuit
-                        on 
-                        No-Increment`"}
+on 
+No-Increment`"}
     NotesCreateIfMissing{"`Create 
-                        Release Notes 
-                        IF 
-                        Missing`"}
+Release Notes 
+IF 
+Missing`"}
     NotesExtractVersion --> NotesShortCircuit
     NotesExtractPriorVersion --> NotesShortCircuit
     NotesShortCircuit -- Not Security Branch --> NotesCreateIfMissing
@@ -187,7 +177,42 @@ flowchart TD
   NotesExtractChangedFiles -- fetch --o FeatureBranch
   NotesCommitFooter == PUSH ==> FeatureBranch
 
+  subgraph "Label Pull Request"
+    LabelPullRequest[Label Pull Request]
+    LabelingRules[[.github/labeler.yml]]
+    LabelSite([Site Changed Label])
+    LabelResume([Resume Changed Label])
+    LabelSite -.-> LabelPullRequest
+    LabelResume -.-> LabelPullRequest
+    LabelingRules --> LabelPullRequest
+  end
+  LabelPullRequest -- write labels --> FeaturePullRequest
+  LabelSite == Enable Site ==> ReleaseBranch
+  LabelResume == Enable Resume ==> ReleaseBranch
+  FeatureBranch --> FeaturePullRequest
+  FeaturePullRequest --> ReleaseBranch
+  FeaturePullRequest -..-> IssuesCreated
 
+  subgraph Manage Stale Issues
+    LabelStaleIssue([Label Stale Issue])
+    LabelStalePR([Label Stale PR])
+    StaleAction[Stale Issue Action]
+    LabelStaleIssue --o StaleAction
+    LabelStalePR --o StaleAction
+  end
+
+  StaleAction -. subscribe .-> IssuesCreated
+  
+  subgraph GitHub Actions Prune 
+      WorkflowPruneAction[Prune Workflow Runs]
+  end
+
+  subgraph GitHub Action Caches Prune
+    CachesPruneAction[Prune Workflow Caches]
+  end
+
+  WorkflowPruneAction -. subscribe .-> IssuesCreated
+  CachesPruneAction -. subscribe .-> IssuesCreated
 ```
 
 ___

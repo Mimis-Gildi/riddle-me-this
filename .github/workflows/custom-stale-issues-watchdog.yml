@@ -1,4 +1,4 @@
-name: "Manage Stale Issues and Pull Requests"
+name: "Manage Stale Issues"
 run-name: "Managed Stale Labeling [${{ github.repository }}] @ ${{ github.ref }} by ${{ github.actor }} with ${{ github.event_name }}"
 # https://github.com/actions/stale
 #.github/workflows/custom-stale-issues-watchdog.yml
