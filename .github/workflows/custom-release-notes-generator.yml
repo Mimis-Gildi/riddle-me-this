@@ -31,17 +31,16 @@ jobs:
 
     steps:
 
-      - name: Guard Branch
-        id: branch-guard
-        uses: ./.github/actions/feature-fail-fast
-
-
       - name: Checkout Repository
         uses: actions/checkout@v4.2.2
         if: steps.branch-guard.outputs.feature == true
         with:
           fetch-depth: 0
           fetch-tags: true
+
+      - name: Guard Branch
+        id: branch-guard
+        uses: ./.github/actions/feature-fail-fast
 
       - name: Extract Version from gradle.properties
         id: version
