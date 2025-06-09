@@ -54,6 +54,8 @@ runs:
         else
           echo "::Notice title=Source Branch is a Feature Branch::Feature branch '$FEATURE_BRANCH' matches required pattern '$FEATURE_PATTERN'"
           feature=true
+#          Feature work is always on full refset
+          git fetch --all --tags --prune --jobs=10
         fi
 
         echo "feature=$feature" >> $GITHUB_OUTPUT
