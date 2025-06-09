@@ -25,9 +25,7 @@ runs:
       id: capture-commits
       shell: bash
       run: |
-        git fetch origin main:main
-        BASE=${{ inputs.base_ref }}
-        git log --pretty=format:"%s" $BASE..HEAD > commits.txt
+        git log --pretty=format:"%s" ${{ inputs.base_ref }}..HEAD > commits.txt
 
         COUNT=$(wc -l < commits.txt | tr -d ' ')
         echo "::notice title=Commits extracted::$COUNT commit(s)"
