@@ -54,6 +54,7 @@ runs:
         else
           echo "::Notice title=Source Branch is a Feature Branch::Feature branch '$FEATURE_BRANCH' matches required pattern '$FEATURE_PATTERN'"
           feature=true
+          git fetch origin main:main        
         fi
 
         echo "feature=$feature" >> $GITHUB_OUTPUT
