@@ -32,171 +32,67 @@ jobs:
 
     steps:
 
-      - name: Fail Fast
-        id: good
-        run: |
-          echo "Source branch: ${{ github.head_ref }}"
-          echo "Target branch: ${{ github.base_ref }}"
-          echo "value=false" >> $GITHUB_OUTPUT
+      - name: Guard Branch
+        id: branch-guard
+        uses: ./.github/actions/feature-fail-fast
+
 
       - name: Checkout Repository
         uses: actions/checkout@v4.2.2
-        if: steps.good.outputs.value == true
+        if: steps.branch-guard.outputs.feature == true
         with:
           fetch-depth: 0
           fetch-tags: true
 
-      - name: Extract Target Version from gradle.properties of this feature
-        id: this-version
-        if: steps.good.outputs.value == true
+      - name: Extract Version from gradle.properties
+        id: version
+        if: steps.branch-guard.outputs.feature == true
         run: |
           VERSION=$(grep '^version=' gradle.properties | cut -d'=' -f2)
           echo "value=$VERSION" >> $GITHUB_OUTPUT
           echo "::notice title=Detected Target Version::$VERSION"
 
-      - name: Determine Prior Version (if any)
-        id: prior-tag
-        if: steps.good.outputs.value == true
-        run: |
-          git fetch --tags
-          PREV=$(git tag --sort=-v:refname | grep '^v' | head -n 1 || echo "")
-          echo "value=$PREV" >> $GITHUB_OUTPUT
-          echo "::notice title=Detected Prior Version::$PREV"
-
-      - name: Short-Circuit on No-Increment
-        id: fuse
-        if: steps.good.outputs.value == true
-        run: |
-          echo "::note title=Check Increment::Checking if the feature version is incremented."
-          FEATURE_VERSION="v${{ steps.this-version.outputs.value }}"
-          PRIOR_PUBLISHED="${{ steps.prior-tag.outputs.value }}"
-          if [[ "$FEATURE_VERSION" == "$PRIOR_PUBLISHED" ]]; then
-            echo "command=terminate" >> $GITHUB_OUTPUT
-            echo "::warning title=Version NOT Ready::Prior tag is $PRIOR_PUBLISHED and current version is ${{ steps.this-version.outputs.value }}."
-          else
-            echo "command=execute" >> $GITHUB_OUTPUT
-            echo "::notice title=Notes for Release ${{ steps.this-version.outputs.value }}::Feature Incremented $PRIOR_PUBLISHED -> $FEATURE_VERSION."
-          fi
-
       - name: Check and Seed Release Notes File
-        if: steps.fuse.outputs.command == 'execute'
+        if: steps.branch-guard.outputs.feature == true
         id: seed-new
-        run: |
-          FILE="releases/v${{ steps.this-version.outputs.value }}.md"
-          if [[ -f "$FILE" ]]; then
-            echo "created=false" >> $GITHUB_OUTPUT
-            echo "::notice title=Release Notes File Exists::$FILE"
-          else
-            mkdir -p releases
-            {
-              echo "# Release v${{ steps.this-version.outputs.value }}"
-              echo ""
-              echo "## ✨ What's New"
-              echo "- TBD"
-              echo ""
-              echo "## 🐛 Bug Fixes"
-              echo "- TBD"
-              echo ""
-              echo "## 🔬 Internal"
-              echo "- TBD"
-              echo ""
-              echo "---"
-              echo "## Logs"
-              echo ""
-              echo "## Files"
-              echo ""
-            } > "$FILE"
-            echo "created=true" >> $GITHUB_OUTPUT
-            echo "::notice title=Release Notes File Seeded::$FILE"
-          fi
+        uses: ./.github/actions/release-notes-create
+        with:
+          version: ${{ steps.version.outputs.value }}
 
       - name: Commit New Release Notes File (if created)
         if: steps.seed-new.outputs.created == 'true'
         uses: ./.github/actions/release-notes-commit
         with:
-          version: ${{ steps.this-version.outputs.value }}
-          message: "📝 Seed release notes for v${{ steps.this-version.outputs.value }}"
+          version: ${{ steps.version.outputs.value }}
+          message: "📝 Seed release notes for v${{ steps.version.outputs.value }}"
 
-      - name: Extract Commit Messages
-        if: steps.fuse.outputs.command == 'execute'
-        id: commits
-        run: |
-          PREV_TAG="${{ steps.prior-tag.outputs.value }}"
-          if [ -z "$PREV_TAG" ]; then
-            {
-              git log --pretty=format:"%s" HEAD 
-            } > commits.txt
-          else
-            {
-              git log --pretty=format:'%s' "$PREV_TAG"..HEAD 
-            } > commits.txt
-          fi
-          
-          echo "::notice title=Commits extracted::There are $(  wc -l commits.txt ) captured commits."
-          echo "::debug::Commit messages $( cat commits.txt )"
-          
-          {
-            echo 'commits<<EOF'
-            cat commits.txt
-            echo
-            echo EOF
-          } >> $GITHUB_OUTPUT
-          
-          echo "::notice title=Captured Commit Logs::"
+      - name: Extract all feature Commit Messages
+        if: steps.branch-guard.outputs.feature == true
+        id: commit-log
+        uses: ./.github/actions/release-notes-extract-commits
 
-      - name: Extract Changed Files
-        if: steps.fuse.outputs.command == 'execute'
-        id: files
-        run: |
-          PREV_TAG="${{ steps.prior-tag.outputs.value }}"
-          if [ -z "$PREV_TAG" ]; then
-            git ls-files > files.txt
-          else
-            git diff --name-only "$PREV_TAG"..HEAD > files.txt
-          fi
-
-          echo "::notice title=Changed files extracted::There are $(  wc -l files.txt ) captured files."
-          echo "::debug::Changed files $( cat files.txt )"
-
-          {
-            echo 'files<<EOF'
-            cat files.txt
-            echo EOF
-          } >> $GITHUB_OUTPUT
-
-          echo "::notice title=Captured Committed Files::"
+      - name: Extract all feature Changed Files
+        if: steps.branch-guard.outputs.feature == true
+        id: file-log
+        uses: ./.github/actions/release-notes-extract-files-changed
 
 
       - name: Write Logs and Files into Release Notes
-        if: steps.fuse.outputs.command == 'execute'
-        run: |
-          FILE="releases/v${{ steps.this-version.outputs.value }}.md"
-
-          awk '/^---/ { exit } { print }' "$FILE" > "$FILE.new"
-          echo "---" >> "$FILE.new"
-
-          echo "## Logs" >> "$FILE.new"
-          echo >> "$FILE.new"
-          
-          while IFS= read -r line; do
-            echo "- $line" >> "$FILE.new"
-          done <<< "${{ steps.commits.outputs.commits }}"
-          echo >> "$FILE.new"
-          
-
-          echo "## Files" >> "$FILE.new"
-          echo >> "$FILE.new"
-          
-          while IFS= read -r file; do
-            echo "- $file" >> "$FILE.new"
-          done <<< "${{ steps.files.outputs.files }}"
-           >> "$FILE.new"
-
-          mv "$FILE.new" "$FILE"
+        if: steps.branch-guard.outputs.feature == true
+        id: append
+        uses: ./.github/actions/release-notes-write-notes
+        with:
+          version: ${{ steps.version.outputs.value }}
+          comments: ${{ steps.commit-log.outputs.commits }}
+          files: ${{ steps.file-log.outputs.files }}
 
       - name: Commit Injection File
-        if: steps.fuse.outputs.command == 'execute'
+        if: steps.branch-guard.outputs.feature == true && steps.append.outputs.changed == true
         uses: ./.github/actions/release-notes-commit
         with:
           version: ${{ steps.this-version.outputs.value }}
           message: "📝 Inject commits into release notes v${{ steps.this-version.outputs.value }}"
+
+      - name: Detected Changes
+        if: steps.branch-guard.outputs.feature == true && steps.append.outputs.changed == true
+        run: echo "::notice title=Release Notes Footer Changes::${{steps.append.outputs.diff }}"

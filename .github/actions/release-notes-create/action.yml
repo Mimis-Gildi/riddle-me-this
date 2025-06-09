@@ -1,0 +1,55 @@
+name: Release Notes Commit
+description: "Commit release notes file changes expected in /releases/vX.X.X.md"
+
+inputs:
+  version:
+    description: "Release version"
+    required: true
+outputs:
+  created:
+    description: 'true is a release notes file had to be created'
+    value: ${{ steps.generate-version-release-notes.outputs.created }}
+
+runs:
+  using: "composite"
+
+  steps:
+
+    - name: Check and Seed Release Notes File
+      id: generate-version-release-notes
+      shell: bash
+      run: |
+        FILE="releases/v${{ input.version }}.md"
+        if [[ -f "$FILE" ]]; then
+          echo "created=false" >> $GITHUB_OUTPUT
+          echo "::notice title=Release Notes File Exists::$FILE"
+        else
+          mkdir -p releases
+          {
+            echo "# Release v${{ input.version }}"
+            echo ""
+            echo "## ✨ What's New"
+            echo ""
+            echo "- TBD"
+            echo ""
+            echo "## 🐛 Bug Fixes"
+            echo ""
+            echo "- TBD"
+            echo ""
+            echo "## 🔬 Internal"
+            echo ""
+            echo "- TBD"
+            echo ""
+            echo ""
+            echo "---"
+            echo ""
+            echo "## Logs"
+            echo ""
+            echo ""
+            echo "## Files"
+            echo ""
+            echo ""
+          } > "$FILE"
+          echo "created=true" >> $GITHUB_OUTPUT
+          echo "::notice title=Release Notes File Seeded::$FILE"
+        fi

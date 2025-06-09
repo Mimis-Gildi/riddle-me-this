@@ -1,0 +1,56 @@
+name: Feature Branch Guard
+description: "Fail fast unless PR source matches feature branch pattern and target is main"
+
+inputs:
+  feature-branch-pattern:
+    description: "Regex pattern for feature branch names"
+    required: false
+    default: '^[0-9]+-'
+
+  target-branch:
+    description: "Expected base branch"
+    required: false
+    default: main
+
+outputs:
+  feature:
+    description: "true if branch matches, false otherwise"
+    value: ${{ steps.check-feature-branch.outputs.feature }}
+
+  targeting:
+    description: "If in pull request, then there will be a target."
+    value: ${{ steps.check-feature-branch.outputs.target }}
+
+runs:
+  using: "composite"
+
+  steps:
+
+    - name: Check the current branch being a Feature Branch
+      id: check-feature-branch
+      shell: bash
+      run: |
+        FEATURE_BRANCH="${{ github.head_ref }}"
+        TARGET_BRANCH="${{ github.base_ref }}"
+        FEATURE_PATTERN="${{ inputs.feature-branch-pattern }}"
+        EXPECTED_TARGET="${{ inputs.target-branch }}"
+        
+        feature=false
+        target="$TARGET_BRANCH"                 # Should this trim prefix?
+
+        echo "::notice title=Validating Feature Branch::$FEATURE_BRANCH is indeed a feature."
+        echo "::notice title=Optionally Noting Target Branch::$TARGET_BRANCH."
+
+        if [[ "$TARGET_BRANCH" != "$EXPECTED_TARGET" ]]; then
+          echo "::warning title=Not targeting Trunk::This branch is not targeting '$EXPECTED_TARGET' but targets '$TARGET_BRANCH'"
+        fi
+
+        if [[ ! "$FEATURE_BRANCH" =~ $FEATURE_PATTERN ]]; then
+          echo "::warning title=Source Branch is NOT a Feature Branch::Feature branch '$FEATURE_BRANCH' does not match required pattern '$PATTERN'"
+        else
+          echo "::Notice title=Source Branch is a Feature Branch::Feature branch '$FEATURE_BRANCH' matches required pattern '$PATTERN'"
+          feature=true
+        fi
+
+        echo "feature=$feature" >> $GITHUB_OUTPUT
+        echo "targeting=$target" >> $GITHUB_OUTPUT

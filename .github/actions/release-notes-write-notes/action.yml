@@ -1,0 +1,101 @@
+name: Append Logs to Release Notes
+description: "Append a convenience list of files and messages to release notes file."
+
+inputs:
+  version:
+    description: "The version of the release notes to write to"
+    required: true
+  comments:
+    description: "Expected list of comment lines."
+    required: true
+  files:
+    description: "Expected list of changed files/"
+    required: true
+
+outputs:
+  diff:
+    description: "Documented difference in Release notes"
+    value: ${{ steps.compare-notes.outputs.changes }}
+  changed:
+    description: "true if release notes file changed"
+    value: ${{ steps.compare-notes.outputs.changed }}
+
+runs:
+  using: "composite"
+
+  steps:
+
+    - name: Replace Release File Footer
+      id: replace-footer
+      shell: bash
+      run: |
+        FILE="releases/v"${{ inputs.version }}.md"
+        NEW_FILE="$FILE.new"
+        
+        if [[ -f "$FILE" ]]; then
+          echo "::notice title=Release Notes File Append:: Appending logs and files changed to $FILE"
+        else
+          echo "::error title=Expected Release Notes File NOT Found::File $FILE does not exist"
+          exit 11
+        fi
+
+        # Strip out footer
+        awk '/^---/ { exit } { print }' "$FILE" > "$NEW_FILE"
+        echo "---" >> "$NEW_FILE"
+        echo "::debug::Stripped out footer on $FILE into new file $NEW_FILE"
+
+        echo -e "\n## Logs" >> "$NEW_FILE"
+        echo >> "$NEW_FILE"
+
+        while IFS= read -r line; do
+          echo "- $line" >> "$NEW_FILE"
+        done <<< "${{ inputs.comments }}"
+        echo >> "$NEW_FILE"
+        echo "::debug::Added Logs to the new file $NEW_FILE"
+
+        echo -e "\n## Files" >> "$NEW_FILE"
+        echo >> "$NEW_FILE"
+
+        while IFS= read -r file; do
+          echo "- $file" >> "$NEW_FILE"
+        done <<< "${{ inputs.files }}"
+         >> "$NEW_FILE"
+        
+        echo >> "$NEW_FILE"
+
+    - name: Compare Generated Notes
+      id: compare-notes
+      shell: bash
+      run: |
+        FILE="releases/v"${{ inputs.version }}.md"
+        NEW_FILE="$FILE.new"
+        DIFF_FILE='release.notes.diff.txt'
+        
+        if diff -w $FILE $NEW_FILE > $DIFF_FILE; then
+          echo "::warning title=No Differences Detected::There are no non-space differences in the release notes files."
+          echo "changed=false" >> $GITHUB_OUTPUT
+        else
+          echo "::debug::Release notes changes are: $( cat $DIFF_FILE )."
+          echo "changed=true" >> $GITHUB_OUTPUT
+        fi
+        
+        {
+          echo 'changes<<EOF'
+          cat $DIFF_FILE
+          echo EOF
+        } >> $GITHUB_OUTPUT
+
+    - name: Replace Notes if Changed
+      if: steps.compare-notes.outputs.changed == true
+      id: replace-notes
+      shell: bash
+      run: |
+        FILE="releases/v"${{ inputs.version }}.md"
+        NEW_FILE="$FILE.new"
+        
+        if [[ -f "$NEW_FILE" ]]; then
+          mv "$NEW_FILE" "$FILE"
+        else
+          echo "::error title=Missing New File::Cannot move nonexistent $NEW_FILE"
+          exit 13
+        fi

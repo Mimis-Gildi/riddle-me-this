@@ -1,0 +1,33 @@
+name: Extract Changed Files
+description: "Extract changed files between main and current HEAD."
+
+inputs:
+  base_ref:
+    description: "The base branch to diff against (typically 'main')"
+    required: false
+    default: main
+
+outputs:
+  files:
+    description: "Collected changed files"
+    value: ${{ steps.capture-files.outputs.files }}
+
+runs:
+  using: "composite"
+
+  steps:
+
+    - name: Extract Commit Messages
+      id: capture-files
+      shell: bash
+      run: |
+        git diff --name-only ${{ inputs.base_ref }}..HEAD > files.txt
+
+        echo "::notice title=Changed files extracted::There are $(  wc -l files.txt ) captured files."
+        echo "::debug::Changed files $( cat files.txt )"
+        
+        {
+          echo 'files<<EOF'
+          cat files.txt
+          echo EOF
+        } >> $GITHUB_OUTPUT
