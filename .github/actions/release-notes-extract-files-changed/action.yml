@@ -1,5 +1,9 @@
 name: Extract Changed Files
-description: "Extract changed files between main and current HEAD."
+description: "Extract changed files between base and current HEAD."
+author: "VK (rdd13r)"
+branding:
+  icon: "file-plus"
+  color: "green"
 
 inputs:
   base_ref:
@@ -16,16 +20,17 @@ runs:
   using: "composite"
 
   steps:
-
-    - name: Extract Commit Messages
+    - name: Extract Changed Files
       id: capture-files
       shell: bash
       run: |
-        git diff --name-only ${{ inputs.base_ref }}..HEAD > files.txt
+        BASE="${{ inputs.base_ref }}"
+        git diff --name-only "$BASE"..HEAD > files.txt
 
-        echo "::notice title=Changed files extracted::There are $(  wc -l files.txt ) captured files."
-        echo "::debug::Changed files $( cat files.txt )"
-        
+        COUNT=$(wc -l < files.txt | tr -d ' ')
+        echo "::notice title=Changed files extracted::$COUNT files."
+        echo "::debug::Changed files: $(cat files.txt)"
+
         {
           echo 'files<<EOF'
           cat files.txt

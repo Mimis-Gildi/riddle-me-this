@@ -1,5 +1,5 @@
 name: Security Scan by Codacy
-run-name: "Executed Security Scan by Codacy on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+run-name: "Executed Security Scan by Codacy on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
 
 on:
   workflow_dispatch:

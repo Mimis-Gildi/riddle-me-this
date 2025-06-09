@@ -1,5 +1,5 @@
 name: Version on New Branch
-run-name: "Incremented Version on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+run-name: "Incremented Version on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
 #.github/workflows/custom-bump-version-on-feature-branch.yml
 
 on:
@@ -49,6 +49,11 @@ jobs:
       - name: 🧬 Bump properties version
         id: version-bump
         run: |
+          if [[ ! "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "::error title=Invalid Version Format::Expected format MAJOR.MINOR.PATCH, got '$VERSION'"
+            exit 12
+          fi
+          
           FILE="gradle.properties"
           VERSION=$(grep '^version=' "$FILE" | cut -d= -f2)
           MAJOR=$(echo "$VERSION" | cut -d. -f1)
@@ -66,7 +71,6 @@ jobs:
             echo "::error title=Version promotion Failed::Version selection of ${{ steps.label-check.outputs.promote }} is NOT understood."
             exit 11
           fi
-
           echo "::notice title=Version Bumped::🔄 $VERSION → $NEW_VERSION"
           sed -i "s/^version=.*/version=$NEW_VERSION/" "$FILE"
           echo "new=$NEW_VERSION" >> $GITHUB_OUTPUT

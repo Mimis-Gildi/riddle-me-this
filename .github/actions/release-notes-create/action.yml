@@ -1,5 +1,9 @@
 name: Release Notes Commit
 description: "Commit release notes file changes expected in /releases/vX.X.X.md"
+author: "VK (rdd13r)"
+branding:
+  icon: "check"
+  color: "green"
 
 inputs:
   version:
@@ -19,14 +23,14 @@ runs:
       id: generate-version-release-notes
       shell: bash
       run: |
-        FILE="releases/v${{ input.version }}.md"
+        FILE="releases/v${{ inputs.version }}.md"
         if [[ -f "$FILE" ]]; then
           echo "created=false" >> $GITHUB_OUTPUT
           echo "::notice title=Release Notes File Exists::$FILE"
         else
           mkdir -p releases
           {
-            echo "# Release v${{ input.version }}"
+            echo "# Release v${{ inputs.version }}"
             echo ""
             echo "## ✨ What's New"
             echo ""

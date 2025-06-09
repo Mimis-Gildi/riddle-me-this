@@ -1,6 +1,5 @@
 name: Idempotent Release Notes
-
-run-name: "Generated or Updated Release Notes on ${{ github.repository }} by ${{ github.actor }} (${{ github.event_name }})"
+run-name: "Generated or Updated Release Notes on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
 
 on:
   pull_request:
@@ -90,8 +89,8 @@ jobs:
         if: steps.branch-guard.outputs.feature == true && steps.append.outputs.changed == true
         uses: ./.github/actions/release-notes-commit
         with:
-          version: ${{ steps.this-version.outputs.value }}
-          message: "📝 Inject commits into release notes v${{ steps.this-version.outputs.value }}"
+          version: ${{ steps.version.outputs.value }}
+          message: "📝 Inject commits into release notes v${{ steps.version.outputs.value }}"
 
       - name: Detected Changes
         if: steps.branch-guard.outputs.feature == true && steps.append.outputs.changed == true

@@ -1,20 +1,24 @@
 name: Append Logs to Release Notes
 description: "Append a convenience list of files and messages to release notes file."
+author: "VK (rdd13r)"
+branding:
+  icon: "book-open"
+  color: "green"
 
 inputs:
   version:
     description: "The version of the release notes to write to"
     required: true
   comments:
-    description: "Expected list of comment lines."
+    description: "Expected list of comment lines"
     required: true
   files:
-    description: "Expected list of changed files/"
+    description: "Expected list of changed files"
     required: true
 
 outputs:
   diff:
-    description: "Documented difference in Release notes"
+    description: "Documented difference in release notes"
     value: ${{ steps.compare-notes.outputs.changes }}
   changed:
     description: "true if release notes file changed"
@@ -29,73 +33,60 @@ runs:
       id: replace-footer
       shell: bash
       run: |
-        FILE="releases/v"${{ inputs.version }}.md"
+        FILE="releases/v${{ inputs.version }}.md"
         NEW_FILE="$FILE.new"
-        
-        if [[ -f "$FILE" ]]; then
-          echo "::notice title=Release Notes File Append:: Appending logs and files changed to $FILE"
-        else
-          echo "::error title=Expected Release Notes File NOT Found::File $FILE does not exist"
+
+        if [[ ! -f "$FILE" ]]; then
+          echo "::error title=Missing Release Notes::Expected $FILE to exist"
           exit 11
         fi
 
-        # Strip out footer
+        echo "::notice title=Appending Footer to Release Notes::$FILE"
+
+        # Strip footer and begin constructing new file
         awk '/^---/ { exit } { print }' "$FILE" > "$NEW_FILE"
         echo "---" >> "$NEW_FILE"
-        echo "::debug::Stripped out footer on $FILE into new file $NEW_FILE"
 
-        echo -e "\n## Logs" >> "$NEW_FILE"
-        echo >> "$NEW_FILE"
-
+        echo -e "\n## Logs\n" >> "$NEW_FILE"
         while IFS= read -r line; do
           echo "- $line" >> "$NEW_FILE"
         done <<< "${{ inputs.comments }}"
         echo >> "$NEW_FILE"
-        echo "::debug::Added Logs to the new file $NEW_FILE"
 
-        echo -e "\n## Files" >> "$NEW_FILE"
-        echo >> "$NEW_FILE"
-
+        echo -e "\n## Files\n" >> "$NEW_FILE"
         while IFS= read -r file; do
           echo "- $file" >> "$NEW_FILE"
         done <<< "${{ inputs.files }}"
-         >> "$NEW_FILE"
-        
         echo >> "$NEW_FILE"
 
     - name: Compare Generated Notes
       id: compare-notes
       shell: bash
       run: |
-        FILE="releases/v"${{ inputs.version }}.md"
+        FILE="releases/v${{ inputs.version }}.md"
         NEW_FILE="$FILE.new"
-        DIFF_FILE='release.notes.diff.txt'
-        
-        if diff -w $FILE $NEW_FILE > $DIFF_FILE; then
-          echo "::warning title=No Differences Detected::There are no non-space differences in the release notes files."
+        DIFF_FILE="release.notes.diff.txt"
+
+        if diff -w "$FILE" "$NEW_FILE" > "$DIFF_FILE"; then
+          echo "::notice title=No Differences::Generated notes match existing file."
           echo "changed=false" >> $GITHUB_OUTPUT
         else
-          echo "::debug::Release notes changes are: $( cat $DIFF_FILE )."
+          echo "::notice title=Release Notes Changed::$(wc -l < $DIFF_FILE) line(s) differ."
           echo "changed=true" >> $GITHUB_OUTPUT
         fi
-        
+
         {
           echo 'changes<<EOF'
-          cat $DIFF_FILE
+          cat "$DIFF_FILE"
           echo EOF
         } >> $GITHUB_OUTPUT
 
     - name: Replace Notes if Changed
-      if: steps.compare-notes.outputs.changed == true
-      id: replace-notes
+      if: steps.compare-notes.outputs.changed == 'true'
       shell: bash
       run: |
-        FILE="releases/v"${{ inputs.version }}.md"
+        FILE="releases/v${{ inputs.version }}.md"
         NEW_FILE="$FILE.new"
-        
-        if [[ -f "$NEW_FILE" ]]; then
-          mv "$NEW_FILE" "$FILE"
-        else
-          echo "::error title=Missing New File::Cannot move nonexistent $NEW_FILE"
-          exit 13
-        fi
+
+        echo "::notice title=Overwriting Release Notes::$FILE"
+        mv "$NEW_FILE" "$FILE"

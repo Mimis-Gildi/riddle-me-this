@@ -1,5 +1,5 @@
 name: Security Scan by CodeQL
-run-name: "Executed Security Scan by CodeQL Advanced on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+run-name: "Executed Security Scan by CodeQL Advanced on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
 #.github/workflows/security-scan-by-codeql.yml
 
 on:

@@ -1,5 +1,9 @@
 name: Extract Commit Messages
-description: "Extract commit messages between main and current HEAD."
+description: "Extract commit messages between base and current HEAD."
+author: "VK (rdd13r)"
+branding:
+  icon: "list"
+  color: "green"
 
 inputs:
   base_ref:
@@ -21,10 +25,12 @@ runs:
       id: capture-commits
       shell: bash
       run: |
-        git log --pretty=format:"%s" ${{ inputs.base_ref }}..HEAD > commits.txt
-        
-        echo "::notice title=Commits extracted::$(wc -l commits.txt) commits."
-        echo "::debug::Commit messages $(cat commits.txt)"
+        BASE="${{ inputs.base_ref }}"
+        git log --pretty=format:"%s" "$BASE"..HEAD > commits.txt
+
+        COUNT=$(wc -l < commits.txt | tr -d ' ')
+        echo "::notice title=Commits extracted::$COUNT commit(s)"
+        echo "::debug::Commit messages: $(cat commits.txt)"
 
         {
           echo 'commits<<EOF'
