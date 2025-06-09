@@ -37,7 +37,7 @@ runs:
           echo "::notice title=Committing Release File::$RELEASE_FILE: $MESSAGE"
           git add "$RELEASE_FILE"
           git commit -m "$MESSAGE"
-          output=$(git push --porcelain)
+          output=$(git push origin "HEAD:${GITHUB_HEAD_REF}" --porcelain)
           echo "::notice title=Pushed Release File::$output"
         
         else
