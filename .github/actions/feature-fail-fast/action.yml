@@ -43,16 +43,16 @@ runs:
         target="$TARGET_BRANCH"                 # Should this trim prefix?
 
         echo "::notice title=Validating Feature Branch::$FEATURE_BRANCH is indeed a feature."
-        echo "::notice title=Optionally Noting Target Branch::$TARGET_BRANCH."
+        echo "::notice title=Optionally Noting Target Branch::Target branch is $TARGET_BRANCH."
 
         if [[ "$TARGET_BRANCH" != "$EXPECTED_TARGET" ]]; then
           echo "::warning title=Not targeting Trunk::This branch is not targeting '$EXPECTED_TARGET' but targets '$TARGET_BRANCH'"
         fi
 
         if [[ ! "$FEATURE_BRANCH" =~ $FEATURE_PATTERN ]]; then
-          echo "::warning title=Source Branch is NOT a Feature Branch::Feature branch '$FEATURE_BRANCH' does not match required pattern '$PATTERN'"
+          echo "::warning title=Source Branch is NOT a Feature Branch::Feature branch '$FEATURE_BRANCH' does not match required pattern '$FEATURE_PATTERN'"
         else
-          echo "::Notice title=Source Branch is a Feature Branch::Feature branch '$FEATURE_BRANCH' matches required pattern '$PATTERN'"
+          echo "::Notice title=Source Branch is a Feature Branch::Feature branch '$FEATURE_BRANCH' matches required pattern '$FEATURE_PATTERN'"
           feature=true
         fi
 

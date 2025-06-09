@@ -20,7 +20,7 @@ permissions:
 
 jobs:
   resume-publish:
-    if: github.event.pull_request.merged == true
+    if: github.event.pull_request.merged == 'true'
     runs-on: ubuntu-latest
     name: "Publish Release Artifacts"
     timeout-minutes: 17

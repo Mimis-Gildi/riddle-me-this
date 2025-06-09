@@ -43,14 +43,14 @@ jobs:
 
       - name: Extract Version from gradle.properties
         id: version
-        if: steps.branch-guard.outputs.feature == true
+        if: steps.branch-guard.outputs.feature == 'true'
         run: |
           VERSION=$(grep '^version=' gradle.properties | cut -d'=' -f2)
           echo "value=$VERSION" >> $GITHUB_OUTPUT
           echo "::notice title=Detected Target Version::$VERSION"
 
       - name: Check and Seed Release Notes File
-        if: steps.branch-guard.outputs.feature == true
+        if: steps.branch-guard.outputs.feature == 'true'
         id: seed-new
         uses: ./.github/actions/release-notes-create
         with:
@@ -64,18 +64,18 @@ jobs:
           message: "📝 Seed release notes for v${{ steps.version.outputs.value }}"
 
       - name: Extract all feature Commit Messages
-        if: steps.branch-guard.outputs.feature == true
+        if: steps.branch-guard.outputs.feature == 'true'
         id: commit-log
         uses: ./.github/actions/release-notes-extract-commits
 
       - name: Extract all feature Changed Files
-        if: steps.branch-guard.outputs.feature == true
+        if: steps.branch-guard.outputs.feature == 'true'
         id: file-log
         uses: ./.github/actions/release-notes-extract-files-changed
 
 
       - name: Write Logs and Files into Release Notes
-        if: steps.branch-guard.outputs.feature == true
+        if: steps.branch-guard.outputs.feature == 'true'
         id: append
         uses: ./.github/actions/release-notes-write-notes
         with:
@@ -84,12 +84,12 @@ jobs:
           files: ${{ steps.file-log.outputs.files }}
 
       - name: Commit Injection File
-        if: steps.branch-guard.outputs.feature == true && steps.append.outputs.changed == true
+        if: steps.branch-guard.outputs.feature == 'true' && steps.append.outputs.changed == 'true'
         uses: ./.github/actions/release-notes-commit
         with:
           version: ${{ steps.version.outputs.value }}
           message: "📝 Inject commits into release notes v${{ steps.version.outputs.value }}"
 
       - name: Detected Changes
-        if: steps.branch-guard.outputs.feature == true && steps.append.outputs.changed == true
+        if: steps.branch-guard.outputs.feature == 'true' && steps.append.outputs.changed == 'true'
         run: echo "::notice title=Release Notes Footer Changes::${{steps.append.outputs.diff }}"
