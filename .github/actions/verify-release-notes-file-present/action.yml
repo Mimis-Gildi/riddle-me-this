@@ -1,0 +1,56 @@
+name: "Verify Release Notes File Present"
+description: >
+  Ensures that releases/vX.Y.Z.md exists.
+  Optionally checks for boilerplate ('TBD') content if strict mode is enabled.
+
+author: "VK (rdd13r)"
+branding:
+  icon: "file"
+  color: "green"
+
+inputs:
+  tag:
+    description: "The release tag name (e.g., v2.3.0)"
+    required: true
+  strict:
+    description: "Whether to fail if release notes are missing or boilerplate ('TBD') is detected"
+    required: false
+    default: "true"
+
+outputs:
+  exists:
+    description: "true if release notes file exists"
+    value: ${{ steps.check.outputs.exists }}
+
+runs:
+  using: "composite"
+  steps:
+
+    - id: check
+      shell: bash
+      run: |
+        FILE="releases/${{ inputs.tag }}.md"
+        STRICT="${{ inputs.strict }}"
+
+        if [[ ! -f "$FILE" ]]; then
+          echo "::warning title=Missing Release Notes::📭 File not found: $FILE"
+          echo "exists=false" >> $GITHUB_OUTPUT
+
+          if [[ "$STRICT" == "true" ]]; then
+            echo "::error title=Release Blocked::❌ Strict mode active — cannot proceed without release notes."
+            exit 1
+          else
+            exit 0
+          fi
+        fi
+
+        echo "::notice title=Release Notes Found::$FILE"
+        echo "exists=true" >> $GITHUB_OUTPUT
+
+        if [[ "$STRICT" == "true" ]]; then
+          UNTOUCHED=$(grep -c 'TBD' "$FILE" || true)
+          if [[ "$UNTOUCHED" -gt 0 ]]; then
+            echo "::error title=Boilerplate Detected::❌ Release notes contain $UNTOUCHED placeholder(s). Please update before publishing."
+            exit 2
+          fi
+        fi

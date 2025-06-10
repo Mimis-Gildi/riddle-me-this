@@ -1,0 +1,122 @@
+name: Publish Current Release
+run-name: "Published Résumé Release on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - labeled
+      - unlabeled
+      - closed
+  workflow_dispatch:
+    inputs:
+      prerelease:
+        required: false
+        type: boolean
+        default: false
+        description: 'Mark this release as a pre-release'
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  resume-publish:
+    name: "Publish Release Artifacts"
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+#    if: ${{ github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true }}
+
+    steps:
+
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+
+      - name: 🛡️ Guard Branch
+        uses: ./.github/actions/feature-fail-fast
+        id: branch-guard
+
+
+      - name: 🔍 Extract canonical component version and semantic tag
+        id: version-info
+        uses: ./.github/actions/extract-component-version-and-tag
+
+
+      - name: 📜 Ensure finalized release notes
+        id: notes-verify
+        uses: ./.github/actions/verify-release-notes-file-present
+        with:
+          tag: ${{ steps.version-info.outputs.tag }}
+
+
+      - name: 📎 Check if resume content is part of this release
+        id: resume-changes-detected
+        uses: ./.github/actions/check-pr-labels
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          required-label: resume
+
+
+      - name: ☕ Set up Java
+        if: steps.resume-changes-detected.outputs.satisfied == 'true'
+        uses: actions/setup-java@v4.7.1
+        with:
+          distribution: temurin
+          java-version: 21
+
+
+      - name: ⚙️ Set up Gradle
+        if: steps.resume-changes-detected.outputs.satisfied == 'true'
+        uses: gradle/actions/setup-gradle@v4.4.0
+
+
+      - name: 📡 Submit Dependency Graph
+        if: steps.resume-changes-detected.outputs.satisfied == 'true'
+        uses: gradle/actions/dependency-submission@v4.4.0
+
+
+      - name: 🏗️ Build Résumés
+        if: steps.resume-changes-detected.outputs.satisfied == 'true'
+        run: ./gradlew asciidoctorPdf
+
+
+      - name: 🏷️ Create annotated tag if not already present
+        id: tag-create
+        uses: ./.github/actions/create-annotated-git-tag-if-not-exists
+        with:
+          tag: ${{ steps.version-info.outputs.tag }}
+          message: >
+            Release ${{ steps.version-info.outputs.tag }}
+            ${{ steps.resume-changes-detected.outputs.satisfied == 'true' && 'with' || 'without' }}
+      
+
+      - name: 🚀 Publish GitHub Release with Résumé PDF
+        if: steps.resume-changes-detected.outputs.satisfied == 'true'
+        uses: ncipollo/release-action@v1.16.0
+        with:
+          tag: ${{ steps.version-info.outputs.tag }}
+          name: "Résumé Bundle ${{ steps.version-info.outputs.tag }}"
+          bodyFile: releases/${{ steps.version-info.outputs.tag }}.md
+          prerelease: ${{ github.event.inputs.prerelease }}
+          artifacts: build/docs/asciidocPdf/*.pdf
+          allowUpdates: true
+
+
+      - name: 🚀 Publish GitHub Release (no résumé artifact)
+        if: steps.resume-changes-detected.outputs.satisfied != 'true'
+        uses: ncipollo/release-action@v1.16.0
+        with:
+          tag: ${{ steps.version-info.outputs.tag }}
+          name: "Canonical Component Release ${{ steps.version-info.outputs.tag }}"
+          bodyFile: releases/${{ steps.version-info.outputs.tag }}.md
+          prerelease: ${{ github.event.inputs.prerelease }}
+          allowUpdates: true
