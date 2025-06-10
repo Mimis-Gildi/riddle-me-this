@@ -37,6 +37,8 @@ runs:
       shell: bash
       run: |
         echo "::group::Fetching PR Labels"
+        export GH_TOKEN="${{ inputs.token }}"
+
         if [[ -z "${{ github.event.pull_request.number }}" ]]; then
           echo "::error title=Missing Context::This action must run in a pull_request context."
           exit 1
