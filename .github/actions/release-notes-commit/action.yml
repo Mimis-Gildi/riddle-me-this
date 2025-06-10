@@ -1,5 +1,9 @@
 name: Release Notes Commit
 description: "Commit release notes file changes expected in /releases/vX.X.X.md"
+author: "VK (rdd13r)"
+branding:
+  icon: "upload"
+  color: "green"
 
 inputs:
   version:
@@ -8,6 +12,10 @@ inputs:
   message:
     description: "Commit message"
     required: true
+outputs:
+  pushed:
+    description: "Whether the release notes file was committed and pushed"
+    value: ${{ steps.update.outputs.pushed }}
 
 runs:
   using: "composite"
@@ -22,6 +30,7 @@ runs:
         echo "::notice title=Setting Up Git::$(git --version)"
 
     - name: Commit Release Notes
+      id: update
       shell: bash
       run: |
         VERSION="${{ inputs.version }}"
@@ -31,12 +40,17 @@ runs:
         if [[ -f "$RELEASE_FILE" ]]; then
         
           echo "::notice title=Committing Release File::$RELEASE_FILE: $MESSAGE"
-          git add "releases/v${VERSION}.md"
+          git add "$RELEASE_FILE"
           git commit -m "$MESSAGE"
-          output=$(git push --porcelain)
-          echo "::notice title=Pushed Release File::$output"
+          BRANCH="${GITHUB_HEAD_REF:-$(git rev-parse --abbrev-ref HEAD)}"
+          if output=$(git push origin "HEAD:$BRANCH" --porcelain); then
+            echo "::notice title=($BRANCH) Pushed Release File::Pushed footer $output"
+            echo "pushed=true" >> $GITHUB_OUTPUT
+          else
+            echo "::error title=Git Push Failed::Push to HEAD:$BRANCH failed. Investigate detached HEAD!"
+            echo "pushed=false" >> $GITHUB_OUTPUT
+          fi
         
         else
-          echo "::error title="Release file NOT found::"$RELEASE_FILE"
+          echo "::error title=Release file NOT found::$RELEASE_FILE"
         fi
-
