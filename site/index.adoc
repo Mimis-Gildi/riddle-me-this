@@ -27,7 +27,6 @@ This is my curated space for engineering fragments, +
 field-tested insights, artifacts, code snippets, +
 reflections, and adventurous stories from the scene.
 
-
  Architecture is trust.
  Code is conversation.
  Velocity comes from clarity.

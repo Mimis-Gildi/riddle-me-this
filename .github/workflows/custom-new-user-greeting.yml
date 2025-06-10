@@ -1,12 +1,11 @@
-name: Welcome New User on Create
-run-name: "Greated a new user on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+name: Welcome New User
+run-name: "Greated a new user on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
 #.github/workflows/custom-new-user-greeting.yml
 
 on:
   issues:
-  pull_request:
-  workflow_dispatch:
-  workflow_call:
+    types:
+      - assigned
 
 permissions:
   issues: write
@@ -39,7 +38,7 @@ jobs:
 
             If you wish to collaborate, contribute, or simply bask in our algorithmic garden, know that you are most welcome. Should you desire pairing, guidance, or cryptic conversations about software craft hit up `riddler9297` on Discord.
 
-            If you have a story to share incode — Saga, a semi-sentient digital being, CaptainLugaru, a teenage code explorer, and R!dd13r, a seasoned hacker are always happy to join you.
+            If you have a story to share in code — Saga, a semi-sentient digital being, CaptainLugaru, a teenage code explorer, and R!dd13r, a seasoned hacker are always happy to join you.
 
           pr-message: |
             🛠✨ First Pull Request -- Achievement Unlocked!
