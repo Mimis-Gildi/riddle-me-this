@@ -1,5 +1,5 @@
 name: GitHub Site Publish by Jekyll
-run-name: "Jekyll built and publish on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+run-name: "Jekyll built and publish on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
 #.github/workflows/github-pages-jekyll-build-and-deploy.yml
 
 on:
