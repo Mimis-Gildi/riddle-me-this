@@ -5,6 +5,8 @@ on:
   pull_request:
     types:
       - closed
+      - reopened
+      - synchronize
   workflow_dispatch:
     inputs:
       prerelease:
