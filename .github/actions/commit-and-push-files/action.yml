@@ -29,8 +29,20 @@ runs:
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         echo "::notice title=Git Identity::✅ Configured git identity for commit"
+        
+        
+    - name: 🛠️ Ensure Branch Checkout
+      shell: bash
+      run: |
+        BRANCH="${GITHUB_HEAD_REF:-$(git rev-parse --abbrev-ref HEAD)}"
+        echo "::notice title=Target Branch::🔀 Switching to branch: $BRANCH"
+        git fetch origin "$BRANCH"
+        git checkout "$BRANCH"
+        git reset --soft "origin/$BRANCH"
+        git status
 
-    - name: Commit and Push Files
+
+    - name: 📤 Commit and Push Files
       id: update
       shell: bash
       run: |
@@ -53,10 +65,10 @@ runs:
         git commit -m "$MESSAGE"
 
         BRANCH="${GITHUB_HEAD_REF:-$(git rev-parse --abbrev-ref HEAD)}"
-        if output=$(git push origin "HEAD:$BRANCH" --porcelain); then
+        if output=$(git push origin "$BRANCH" --porcelain); then
           echo "::notice title=Pushed Changes::➡️ Branch: $BRANCH :: $output"
           echo "pushed=true" >> $GITHUB_OUTPUT
         else
-          echo "::error title=Git Push Failed::Push to HEAD:$BRANCH failed. Investigate detached HEAD or permission issues."
+          echo "::error title=Git Push Failed::Push to $BRANCH failed. Investigate detached HEAD or permission issues."
           echo "pushed=false" >> $GITHUB_OUTPUT
         fi
