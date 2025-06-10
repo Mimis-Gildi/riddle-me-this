@@ -179,18 +179,18 @@ ___
 ```mermaid
 flowchart TD
   Checkout --> Version
-  Version --> TagCheck
-  TagCheck --> ReleaseNotesGuard
+  Version --> NotesCheck
+  NotesCheck -->|if resume| ResumeDetect
 
-  ReleaseNotesGuard -->|if resume| ResumeDetect
   ResumeDetect --> ChangeResumeVersion
   ResumeDetect --> ChangeComponentVersion
+  NotesCheck -->|always| ChangeComponentVersion
 
   ChangeResumeVersion --> CommitChanges
   ChangeComponentVersion --> CommitChanges
 
-  CommitChanges --> Release
-
+  CommitChanges --> Tag
+  Tag --> Release
   Release --> Summary
 
 ```
