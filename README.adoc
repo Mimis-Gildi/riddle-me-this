@@ -66,4 +66,3 @@ image::{a-resume}/badge.svg[Publish Résumé Release for the Current Tag,link={a
 image::{a-version}/badge.svg[Version Bump on Feature Creation,link={a-resume},window=_blank,opts=nofollow]
 
 '''
-

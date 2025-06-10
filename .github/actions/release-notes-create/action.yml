@@ -1,0 +1,42 @@
+name: Release Notes Commit
+description: "Commit release notes file changes expected in /releases/vX.X.X.md"
+author: "VK (rdd13r)"
+branding:
+  icon: "check"
+  color: "green"
+
+inputs:
+  version:
+    description: "Release version"
+    required: true
+outputs:
+  created:
+    description: 'true is a release notes file had to be created'
+    value: ${{ steps.generate-version-release-notes.outputs.created }}
+
+runs:
+  using: "composite"
+
+  steps:
+
+  - name: Check and Seed Release Notes File
+    id: generate-version-release-notes
+    shell: bash
+    run: |
+      FILE="releases/v${{ inputs.version }}.md"
+      TEMPLATE=".github/templates/release-notes-template.md"
+      
+      if [[ -f "$FILE" ]]; then
+        echo "created=false" >> $GITHUB_OUTPUT
+        echo "::notice title=Release Notes File Exists::$FILE"
+      else
+        mkdir -p releases
+        if [[ ! -f "$TEMPLATE" ]]; then
+          echo "::error title=Missing Template::Expected template file $TEMPLATE"
+          exit 3
+        fi
+      
+        sed "s/VERSION_TAG/v${{ inputs.version }}/g" "$TEMPLATE" > "$FILE"
+        echo "created=true" >> $GITHUB_OUTPUT
+        echo "::notice title=Release Notes File Seeded::$FILE"
+      fi
