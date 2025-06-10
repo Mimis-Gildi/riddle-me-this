@@ -6,6 +6,9 @@ branding:
   color: "yellow"
 
 inputs:
+  token:
+    description: "GitHub token for authentication"
+    required: true
   issue-number:
     description: "Issue number to check labels on"
     required: true
@@ -35,6 +38,7 @@ runs:
       shell: bash
       run: |
         echo "::group::Fetching Issue Labels"
+        export GH_TOKEN="${{ inputs.token }}"
         ISSUE=${{ inputs.issue-number }}
 
         echo "Fetching labels from issue #$ISSUE"

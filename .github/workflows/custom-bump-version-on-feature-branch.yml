@@ -47,6 +47,7 @@ jobs:
         if: steps.branch-guard.outputs.feature == 'true'
         uses: ./.github/actions/check-issue-labels
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ steps.extract-issue.outputs.number }}
           required-label: "major"
 

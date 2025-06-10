@@ -6,6 +6,9 @@ branding:
   color: "blue"
 
 inputs:
+  token:
+    description: "GitHub token for authentication"
+    required: true
   required-label:
     description: "Optional single required label"
     required: false
