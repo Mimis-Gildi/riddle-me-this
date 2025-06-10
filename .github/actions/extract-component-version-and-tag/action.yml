@@ -1,0 +1,53 @@
+name: "Extract Canonical Component Version and Git Tag"
+description: >
+  Reads the 'version=' property from a configuration file (e.g., gradle.properties)
+  and emits both the semantic version and its git tag form ('vX.Y.Z').
+
+author: "VK (rdd13r)"
+branding:
+  icon: "search"
+  color: "green"
+
+inputs:
+  file:
+    description: "Path to the file containing 'version=X.Y.Z'"
+    required: false
+    default: "gradle.properties"
+
+outputs:
+  version:
+    description: "Raw version string extracted from the file"
+    value: ${{ steps.extract.outputs.version }}
+  tag:
+    description: "Git tag computed as 'v{version}'"
+    value: ${{ steps.extract.outputs.tag }}
+
+runs:
+  using: "composite"
+  steps:
+
+    - name: Extract version and tag
+      id: extract
+      shell: bash
+      run: |
+        FILE="${{ inputs.file }}"
+
+        if [[ ! -f "$FILE" ]]; then
+          echo "::error title=Missing Version File::$FILE not found"
+          exit 1
+        fi
+
+        VERSION=$(grep '^version=' "$FILE" | cut -d'=' -f2 | xargs)
+
+        if [[ ! "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+          echo "::error title=Invalid Version Format::Expected MAJOR.MINOR.PATCH, got '$VERSION'"
+          exit 2
+        fi
+
+        TAG="v$VERSION"
+
+        echo "version=$VERSION" >> $GITHUB_OUTPUT
+        echo "tag=$TAG" >> $GITHUB_OUTPUT
+
+        echo "::notice title=Component Version Detected::$VERSION"
+        echo "::notice title=Semantic Git Tag::💡 $TAG"
