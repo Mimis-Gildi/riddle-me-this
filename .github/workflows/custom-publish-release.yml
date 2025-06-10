@@ -89,6 +89,30 @@ jobs:
         run: ./gradlew asciidoctorPdf
 
 
+      - name: 🔄 Update résumé version references
+        if: steps.resume-changes-detected.outputs.satisfied == 'true'
+        uses: ./.github/actions/update-version-references
+        with:
+          version: ${{ steps.version-info.outputs.version }}
+          track-gradle-key: resumeVersion
+          files: README.adoc,site/_pages/maintainer.adoc,site/index.adoc
+
+
+      - name: 🔄 Update component version references
+        uses: ./.github/actions/update-version-references
+        with:
+          version: ${{ steps.version-info.outputs.version }}
+          track-gradle-key: version
+          files: SECURITY.md
+
+
+      - name: 💾 Commit version reference updates
+        uses: ./.github/actions/commit-and-push-files
+        with:
+          files: gradle.properties README.adoc SECURITY.md site/_pages/maintainer.adoc site/index.adoc
+          message: "🔄 Update version references to ${{ steps.version-info.outputs.tag }}"
+
+
       - name: 🏷️ Create annotated tag if not already present
         id: tag-create
         uses: ./.github/actions/create-annotated-git-tag-if-not-exists
