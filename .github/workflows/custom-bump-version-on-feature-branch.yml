@@ -1,12 +1,11 @@
-name: Version Bump on Feature Creation
-run-name: "Incremented Version on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+name: Version on New Branch
+run-name: "Incremented Version on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
 #.github/workflows/custom-bump-version-on-feature-branch.yml
 
 on:
   create:
-    branches-ignore:
-      - main
-
+    branches:
+      - '[0-9]+-**'
 jobs:
 
   bump_minor_version:
@@ -28,30 +27,13 @@ jobs:
           fetch-tags: true
 
 
-      - name: 🦪 Check if branch matches issue-style (e.g. 12-feature-title)
-        id: check
-        run: |
-          BRANCH_NAME="${GITHUB_REF#refs/heads/}"
-          echo "::notice title=Branch Name::$BRANCH_NAME"
-          if [[ "$BRANCH_NAME" =~ ^[0-9]+- ]]; then
-            echo "✅ Branch matches pattern: issue-style feature"
-            echo "::notice title=Branch Match::✅ Pattern matched"
-            echo "proceed=true" >> $GITHUB_OUTPUT
-            ISSUE_NUMBER=$(echo "$BRANCH_NAME" | cut -d- -f1)
-            echo "issue_number=$ISSUE_NUMBER" >> $GITHUB_OUTPUT
-          else
-            echo "❌ Branch does not match feature pattern, skipping."
-            echo "::warning title=Branch Skipped::❌ Not a feature branch, skipping version bump."
-            echo "proceed=false" >> $GITHUB_OUTPUT
-          fi
-
       - name: 🏷️ Check for major label on issue
-        if: steps.check.outputs.proceed == 'true'
         id: label-check
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ISSUE_NUMBER=${{ steps.check.outputs.issue_number }}
+          BRANCH_NAME="${GITHUB_REF#refs/heads/}"
+          ISSUE_NUMBER=$(echo "$BRANCH_NAME" | cut -d- -f1)
           echo "🔎 Inspecting labels for issue #$ISSUE_NUMBER"
           LABELS=$(gh issue view "$ISSUE_NUMBER" --json labels --jq '.labels[].name' || echo '')
           echo "::notice title=Labels Fetched::$LABELS"
@@ -63,10 +45,15 @@ jobs:
             echo "::notice title=Version Type::🔁 minor bump"
           fi
 
+
       - name: 🧬 Bump properties version
-        if: steps.check.outputs.proceed == 'true'
         id: version-bump
         run: |
+          if [[ ! "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "::error title=Invalid Version Format::Expected format MAJOR.MINOR.PATCH, got '$VERSION'"
+            exit 12
+          fi
+          
           FILE="gradle.properties"
           VERSION=$(grep '^version=' "$FILE" | cut -d= -f2)
           MAJOR=$(echo "$VERSION" | cut -d. -f1)
@@ -84,55 +71,12 @@ jobs:
             echo "::error title=Version promotion Failed::Version selection of ${{ steps.label-check.outputs.promote }} is NOT understood."
             exit 11
           fi
-
           echo "::notice title=Version Bumped::🔄 $VERSION → $NEW_VERSION"
           sed -i "s/^version=.*/version=$NEW_VERSION/" "$FILE"
           echo "new=$NEW_VERSION" >> $GITHUB_OUTPUT
 
-      - name: 📝 Update README.adoc version references
-        if: steps.check.outputs.proceed == 'true'
-        run: |
-          OLD_VERSION="${{ steps.version-bump.outputs.old }}"
-          NEW_VERSION="${{ steps.version-bump.outputs.new }}"
-
-          echo "::notice title=README Version Update::🔄 $OLD_VERSION → $NEW_VERSION"
-
-          sed -i "s/^== 📄 Résumé Release v$OLD_VERSION/== 📄 Résumé Release v$NEW_VERSION/" README.adoc
-          sed -i "s/releases\/tag\/v$OLD_VERSION/releases\/tag\/v$NEW_VERSION/" README.adoc
-          sed -i "s/download\/v$OLD_VERSION\/OnEngineering.pdf/download\/v$NEW_VERSION\/OnEngineering.pdf/" README.adoc
-          sed -i "s/download\/v$OLD_VERSION\/OnCreativity.pdf/download\/v$NEW_VERSION\/OnCreativity.pdf/" README.adoc
-          sed -i "s/download\/v$OLD_VERSION\/OnLeadership.pdf/download\/v$NEW_VERSION\/OnLeadership.pdf/" README.adoc
-
-      - name: 📝 Update maintainer.adoc version references
-        if: steps.check.outputs.proceed == 'true'
-        run: |
-          OLD_VERSION="${{ steps.version-bump.outputs.old }}"
-          NEW_VERSION="${{ steps.version-bump.outputs.new }}"
-
-          if [[ -f site/_pages/maintainer.adoc ]]; then
-            echo "::notice title=Maintainer Version Update::🔄 $OLD_VERSION → $NEW_VERSION"
-            sed -i "s/releases\/tag\/v$OLD_VERSION/releases\/tag\/v$NEW_VERSION/" site/_pages/maintainer.adoc
-            sed -i "s/v$OLD_VERSION/v$NEW_VERSION/g" site/_pages/maintainer.adoc
-          else
-            echo "::warning title=Maintainer File Missing::⚠️ site/_pages/maintainer.adoc not found"
-          fi
-
-      - name: 📝 Update index.adoc version references
-        if: steps.check.outputs.proceed == 'true'
-        run: |
-          OLD_VERSION="${{ steps.version-bump.outputs.old }}"
-          NEW_VERSION="${{ steps.version-bump.outputs.new }}"
-
-          if [[ -f site/index.adoc ]]; then
-            echo "::notice title=Landing Page Version Update::🔄 $OLD_VERSION → $NEW_VERSION"
-            sed -i "s/releases\/tag\/v$OLD_VERSION/releases\/tag\/v$NEW_VERSION/" site/index.adoc
-            sed -i "s/v$OLD_VERSION/v$NEW_VERSION/g" site/index.adoc
-          else
-            echo "::warning title=Site Root File Missing::⚠️ site/index.adoc not found"
-          fi
 
       - name: 📝 Update SECURITY.md version references
-        if: steps.check.outputs.proceed == 'true'
         run: |
           OLD_VERSION="${{ steps.version-bump.outputs.old }}"
           NEW_VERSION="${{ steps.version-bump.outputs.new }}"
@@ -146,13 +90,12 @@ jobs:
           fi
 
       - name: 📂 Commit and push new version
-        if: steps.check.outputs.proceed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch --all --tags --prune --jobs=8
           git pull
-          git add gradle.properties SECURITY.md README.adoc site/_pages/maintainer.adoc site/index.adoc  || true
+          git add gradle.properties SECURITY.md || true
           git commit -m "🔼 Auto bump version to ${{ steps.version-bump.outputs.new }}"
           git push || {
             echo "::warning title=Push Failed::⚠️ Git push failed — manual intervention may be required."
@@ -160,11 +103,10 @@ jobs:
           }
 
       - name: 🏋️ Summary annotation
-        if: steps.check.outputs.proceed == 'true'
         run: |
           echo "::notice title=📅 Bump Summary::
           Branch:   ${GITHUB_REF#refs/heads/}
           From:     ${{ steps.version-bump.outputs.old }}
           To:       ${{ steps.version-bump.outputs.new }}
           Bump:     ${{ steps.label-check.outputs.promote }}
-          Files touched: gradle.properties, SECURITY.md, README.adoc, site/_pages/maintainer.adoc, and site/index.adoc."
+          Files touched: gradle.properties, SECURITY.md."

@@ -1,6 +1,6 @@
-name: Publish Résumé Release for the Current Tag
-run-name: "Published Résumé Release on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
-#.github/workflows/custom-publish-resume-release.yml
+name: Publish Current Release
+run-name: "Published Résumé Release on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
+#.github/workflows/custom-publish-release.yml
 
 on:
   pull_request:
@@ -17,14 +17,15 @@ on:
 permissions:
   contents: write
 
+defaults:
+  run:
+    shell: bash
 
 jobs:
   resume-publish:
-    if: >
-      github.event.pull_request.merged == true &&
-      contains(join(github.event.pull_request.labels.*.name, ','), 'resume')
+    if: github.event.pull_request.merged == 'true'
     runs-on: ubuntu-latest
-    name: "Publish Resume Artifacts"
+    name: "Publish Release Artifacts"
     timeout-minutes: 17
 
     steps:
@@ -32,6 +33,13 @@ jobs:
       - name: Checkout
         id: checkout
         uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Guard Branch
+        id: branch-guard
+        uses: ./.github/actions/feature-fail-fast
 
       - name: Set up Java
         id: java-setup
