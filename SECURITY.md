@@ -8,7 +8,11 @@ Organization-wide security policies may apply. See: [fluffle organization reposi
 
 ___
 
-## On _These_ Secure Ops
+## On _This Minimalist Automation_
+
+This is just a small blog and résumé publishing site.  
+Ops are intentionally simple, just enough to not repeat myself,
+let the box do mundane work:
 
 
 - [**GitHub Advanced Security**][gh-security] - main dashboard (Overview);
@@ -41,11 +45,136 @@ ___
 
 ___
 
-_**This site version is [v2.2.0].**_
+The following diagrams reflect the current **Riddle-Me-This Secure Release Governance ([v2.3.0])** pipeline as of this release. IDE side enablements, i.e., the fluent workflow, are out of the documentation scope.
 
 ___
 
-[v2.2.0]: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.2.0 "This release tag to follow."
+## 📊 End-to-End Release Flow Model (Simplified)
+
+The diagrams below illustrate the full GitHub Actions release pipeline for this repository, including:
+
+- Automated versioning & publishing flows;
+- Conditional builds for individual components (site / resume / demo);
+- Security scanners activated at various workflow stages;
+- Label-based selective publishing;
+- External dependency monitors contributing branches (Renovate / Dependabot).
+
+### 🔁 Publishing Pipeline
+
+The full lifecycle of branch creation, pull request progression, version bump, label detection, conditional publishing, and final GitHub release generation:
+
+
+```mermaid
+---
+title: Canonical Publishing Workflow 2.3.0
+config:
+  curve: linear
+  layout: dagre
+---
+
+flowchart TD
+
+%% STATES
+  StableTrunk(("`Stable Trunk
+                (main)`"))
+  FeatureBranch(("Feature Branch"))
+  PullRequest(("Pull Request"))
+  ReleaseBranch(("Merged Release Branch"))
+  FinalTrunk((("Final Trunk")))
+  ReleaseTag(("Release Tag"))
+
+%% ACTORS
+  User["🧑‍💻 Developer"]
+  Renovate["🤖 Renovate"]
+  Dependabot["🤖 Dependabot"]
+  System["GitHub Actions"]
+
+%% EVENTS
+  BranchCreated{{Branch Created}}
+  PullRequestOpened{{PR Opened}}
+  PullRequestClosed{{PR Closed}}
+  TagPushed{{Tag Pushed}}
+
+%% FLOWS
+  StableTrunk -->|branch create| FeatureBranch
+  Renovate -->|branch create| FeatureBranch
+  Dependabot -->|branch create| FeatureBranch
+
+  FeatureBranch -->|open PR| PullRequest
+  PullRequest -->|merge| ReleaseBranch
+  ReleaseBranch -->|create tag| ReleaseTag
+
+%% Versioning on Branch Create
+  BranchCreated -. triggers .-> Versioning[Auto Bump Version]
+
+%% Release Notes
+  ReleaseBranch -->|trigger| ReleaseNotes[Idempotent Release Notes Build]
+
+%% PR Labeler
+  PullRequestOpened --> Labeler[Auto Labeler]
+
+%% Conditional Publish Flows
+  ReleaseBranch -->|label: site| PublishSite
+  ReleaseBranch -->|label: resume| PublishResume
+  ReleaseBranch -->|label: demo| PublishDemo
+
+%% Tag pushed on release
+  ReleaseTag -->|create release| PublishRelease
+  PublishRelease --> FinalTrunk
+
+%% Housekeeping
+  PullRequest -->|close stale| StaleWorkflow
+
+```
+
+## 🛡️ Security Hooks & Scanners
+
+```mermaid
+---
+title: Security Scan Hooks 2.3.0
+config:
+  curve: linear
+  layout: dagre
+---
+
+flowchart TD
+
+%% STATES
+PullRequest(("Pull Request"))
+ReleaseBranch(("Merged Release Branch"))
+ReleaseTag(("Release Tag"))
+
+%% SCANNERS
+
+CodeQL["🧬 CodeQL"]
+Qodana["🧬 Qodana"]
+Codacy["🧬 Codacy"]
+Mend["🧬 Mend.io"]
+Snyk["🧬 Snyk"]
+Secrets["🧬 Secret Scanning"]
+Dependabot["🧬 Dependabot Alerts"]
+
+%% FLOWS
+
+PullRequest --> CodeQL
+PullRequest --> Qodana
+PullRequest --> Codacy
+
+ReleaseBranch --> Codacy
+ReleaseBranch --> Qodana
+
+ReleaseTag --> Mend
+ReleaseTag --> Snyk
+
+ReleaseBranch --> Secrets
+PullRequest --> Secrets
+
+StableTrunk -. monitors .-> Dependabot
+ReleaseBranch -. monitors .-> Dependabot
+```
+___
+
+[v2.3.0]: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.3.0 "This release tag to follow."
 
 [Author]: https://github.com/rdd13r "❤️ Kotlin ❤️ Scala; Python; Java; Go."
 [Captain]: https://github.com/CaptainLugaru "Captain Lugaru: I am a coding Viking Bunny. In 2021, I won internship at ASE Inc." 
