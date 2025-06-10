@@ -34,6 +34,7 @@ runs:
       id: check-feature-branch
       shell: bash
       run: |
+        fail=false
         FEATURE_PATTERN="${{ inputs.feature-branch-pattern }}"
         EXPECTED_TARGET="${{ inputs.target-branch }}"
         
@@ -55,8 +56,11 @@ runs:
         if [[ "$TARGET_BRANCH" != "$EXPECTED_TARGET" ]]; then
           echo "::warning title=Not targeting Trunk::This branch is not targeting '$EXPECTED_TARGET' but targets '$TARGET_BRANCH'"
         fi
-
-        if [[ ! "$FEATURE_BRANCH" =~ $FEATURE_PATTERN ]]; then
+        
+        if [[ -z "${FEATURE_BRANCH}" ]]; then
+          echo "::error title=Source Branch is NOT Resolved::Variable FEATURE_BRANCH is EMPTY - cannot proceed."
+          fail="true"
+        elif [[ ! "$FEATURE_BRANCH" =~ $FEATURE_PATTERN ]]; then
           echo "::warning title=Source Branch is NOT a Feature Branch::Feature branch '$FEATURE_BRANCH' does not match required pattern '$FEATURE_PATTERN'"
         else
           echo "::Notice title=Source Branch is a Feature Branch::Feature branch '$FEATURE_BRANCH' matches required pattern '$FEATURE_PATTERN'"
@@ -66,3 +70,7 @@ runs:
 
         echo "feature=$feature" >> $GITHUB_OUTPUT
         echo "targeting=$target" >> $GITHUB_OUTPUT
+
+        if $fail; then
+          echo "::error title=Unrecoverable::Unrecoverable error occured preventing feature branch calculation. See other errors."
+        fi

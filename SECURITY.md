@@ -174,6 +174,29 @@ ReleaseBranch -. monitors .-> Dependabot
 ```
 ___
 
+## Logical Resume Release Diagram
+
+```mermaid
+flowchart TD
+  Checkout --> Version
+  Version --> TagCheck
+  TagCheck --> ReleaseNotesGuard
+
+  ReleaseNotesGuard -->|if resume| ResumeDetect
+  ResumeDetect --> ChangeResumeVersion
+  ResumeDetect --> ChangeComponentVersion
+
+  ChangeResumeVersion --> CommitChanges
+  ChangeComponentVersion --> CommitChanges
+
+  CommitChanges --> Release
+
+  Release --> Summary
+
+```
+
+___
+
 [v2.3.0]: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.3.0 "This release tag to follow."
 
 [Author]: https://github.com/rdd13r "❤️ Kotlin ❤️ Scala; Python; Java; Go."

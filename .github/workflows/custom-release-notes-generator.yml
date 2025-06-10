@@ -43,13 +43,10 @@ jobs:
         uses: ./.github/actions/feature-fail-fast
 
 
-      - name: Extract Version from gradle.properties
-        id: version
+      - name: 🔍 Extract canonical component version and semantic tag
+        id: version-info
         if: steps.branch-guard.outputs.feature == 'true'
-        run: |
-          VERSION=$(grep '^version=' gradle.properties | cut -d'=' -f2)
-          echo "value=$VERSION" >> $GITHUB_OUTPUT
-          echo "::notice title=Detected Target Version::$VERSION"
+        uses: ./.github/actions/extract-component-version-and-tag
 
 
       - name: Check and Seed Release Notes File
@@ -57,7 +54,7 @@ jobs:
         id: seed-new
         uses: ./.github/actions/release-notes-create
         with:
-          version: ${{ steps.version.outputs.value }}
+          version: ${{ steps.version-info.outputs.version }}
 
 
       - name: Commit Release Notes Footer
@@ -85,7 +82,7 @@ jobs:
         id: append
         uses: ./.github/actions/release-notes-write-notes
         with:
-          version: ${{ steps.version.outputs.value }}
+          version: ${{ steps.version-info.outputs.version }}
           comments: ${{ steps.commit-log.outputs.commits }}
           files: ${{ steps.file-log.outputs.files }}
 
