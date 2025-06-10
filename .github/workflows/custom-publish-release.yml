@@ -78,19 +78,14 @@ jobs:
         uses: ./.github/actions/extract-component-version-and-tag
 
 
-      - name: 🏷️ Create Git Tag (if missing)
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git fetch --tags
-
-          if git rev-parse "${{ steps.version-info.outputs.tag }}" >/dev/null 2>&1; then
-            echo "::warning title=Tag Exists::Tag ${{ steps.version-info.outputs.tag }} already exists. Skipping tagging."
-          else
-            git tag "${{ steps.version-info.outputs.tag }}"
-            git push origin "${{ steps.version-info.outputs.tag }}"
-            echo "::notice title=Tag Created::🪜 Created ${{ steps.version-info.outputs.tag }}"
-          fi
+      - name: 🏷️ Create annotated tag if not already present
+        id: tag-create
+        uses: ./.github/actions/create-annotated-git-tag-if-not-exists
+        with:
+          tag: ${{ steps.version-info.outputs.tag }}
+          message: >
+            Release ${{ steps.version-info.outputs.tag }}
+            ${{ steps.resume-detect.outputs.satisfied == 'true' && 'with' || 'without' }} resume
 
 
       - name: 📜 Check for Release Notes
