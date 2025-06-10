@@ -1,5 +1,5 @@
 name: Security Scan by Snyk
-run-name: "Executed Security Scan by Snyk on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+run-name: "Executed Security Scan by Snyk on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
 #.github/workflows/security-scan-by-snyk.yml
 # See der-jynK https://github.com/snyk/actions/tree/master/setup
 
@@ -7,9 +7,11 @@ on:
   workflow_dispatch:
   workflow_call:
   pull_request:
-  push:
-    branches:
-      - main
+    types:
+      - opened
+      - reopened
+  schedule:
+    - cron: '23 17 4 * *'
 
 permissions:
   contents: read

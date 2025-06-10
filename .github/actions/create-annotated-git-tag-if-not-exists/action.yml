@@ -1,0 +1,52 @@
+name: "Create Annotated Git Tag if Not Exists"
+description: "Checks if the specified Git tag exists; creates and pushes it only if missing."
+
+author: "VK (rdd13r)"
+branding:
+  icon: "tag"
+  color: "purple"
+
+inputs:
+  tag:
+    description: "Tag to create (e.g., v2.3.0)"
+    required: true
+  message:
+    description: "Optional message to annotate the tag"
+    required: false
+
+outputs:
+  created:
+    description: "true if the tag was created and pushed"
+    value: ${{ steps.tagger.outputs.created }}
+  skipped:
+    description: "true if the tag already existed"
+    value: ${{ steps.tagger.outputs.skipped }}
+
+runs:
+  using: "composite"
+  steps:
+  - id: tagger
+    shell: bash
+    run: |
+      TAG="${{ inputs.tag }}"
+      MESSAGE="${{ inputs.message }}"
+      
+      if [[ -z "$MESSAGE" ]]; then
+        MESSAGE="Automatic tag for $TAG"
+      fi
+      
+      git config user.name "github-actions[bot]"
+      git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      git fetch --tags
+      
+      if git rev-parse "$TAG" >/dev/null 2>&1; then
+        echo "::warning title=Tag Exists::$TAG already exists. Skipping."
+        echo "created=false" >> $GITHUB_OUTPUT
+        echo "skipped=true" >> $GITHUB_OUTPUT
+      else
+        git tag -a "$TAG" -m "$MESSAGE"
+        git push origin "$TAG"
+        echo "::notice title=Tag Created::🪜 Created and pushed $TAG"
+        echo "created=true" >> $GITHUB_OUTPUT
+        echo "skipped=false" >> $GITHUB_OUTPUT
+      fi
