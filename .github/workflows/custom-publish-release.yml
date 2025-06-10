@@ -4,6 +4,11 @@ run-name: "Published Résumé Release on ${{ github.repository }} by ${{ github.
 on:
   pull_request:
     types:
+      - opened
+      - synchronize
+      - reopened
+      - labeled
+      - unlabeled
       - closed
   workflow_dispatch:
     inputs:
@@ -35,9 +40,11 @@ jobs:
           fetch-depth: 0
           fetch-tags: true
 
+
       - name: 🛡️ Guard Branch
         uses: ./.github/actions/feature-fail-fast
         id: branch-guard
+
 
       - name: ☕ Set up Java
         uses: actions/setup-java@v4.7.1
@@ -45,13 +52,25 @@ jobs:
           distribution: temurin
           java-version: 21
 
+
       - name: ⚙️ Set up Gradle
         uses: gradle/actions/setup-gradle@v4.4.0
+
 
       - name: 📡 Submit Dependency Graph
         uses: gradle/actions/dependency-submission@v4.4.0
 
+
+      - name: 📎 Check if resume content is part of this release
+        id: resume-changes-detected
+        uses: ./.github/actions/check-pr-labels
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          required-label: resume
+
+
       - name: 🏗️ Build Résumés
+        if: steps.resume-changes-detected.outputs.satisfied == 'true'
         run: ./gradlew asciidoctorPdf
 
       - name: 🔍 Extract canonical component version and semantic tag
@@ -73,6 +92,7 @@ jobs:
             echo "::notice title=Tag Created::🪜 Created ${{ steps.version-info.outputs.tag }}"
           fi
 
+
       - name: 📜 Check for Release Notes
         run: |
           NOTES_FILE="releases/${{ steps.version-info.outputs.tag }}.md"
@@ -81,7 +101,9 @@ jobs:
             exit 1
           fi
 
-      - name: 🚀 Publish GitHub Release
+
+      - name: 🚀 Publish GitHub Release with Résumé PDF
+        if: steps.resume-changes-detected.outputs.satisfied == 'true'
         uses: ncipollo/release-action@v1.16.0
         with:
           tag: ${{ steps.version-info.outputs.tag }}
@@ -89,3 +111,16 @@ jobs:
           bodyFile: releases/${{ steps.version-info.outputs.tag }}.md
           prerelease: ${{ github.event.inputs.prerelease }}
           artifacts: build/docs/asciidocPdf/*.pdf
+          allowUpdates: true
+
+
+      - name: 🚀 Publish GitHub Release (no résumé artifact)
+        if: steps.resume-changes-detected.outputs.satisfied != 'true'
+        uses: ncipollo/release-action@v1.16.0
+        with:
+          tag: ${{ steps.version-info.outputs.tag }}
+          name: "Canonical Component Release ${{ steps.version-info.outputs.tag }}"
+          bodyFile: releases/${{ steps.version-info.outputs.tag }}.md
+          prerelease: ${{ github.event.inputs.prerelease }}
+          allowUpdates: true
+
