@@ -62,7 +62,7 @@ jobs:
         uses: ./.github/actions/commit-and-push-files
         with:
           files: releases/v${{ steps.version-info.outputs.version }}.md
-          message: "📝 Inject commits into release notes v${{ steps.version-info.outputs.version }}
+          message: "📝 Inject commits into release notes v${{ steps.version-info.outputs.version }}"
 
 
       - name: Extract all feature Commit Messages
@@ -92,7 +92,7 @@ jobs:
         uses: ./.github/actions/commit-and-push-files
         with:
           files: releases/v${{ steps.version-info.outputs.version }}.md
-          message: "📝 Inject commits into release notes v${{ steps.version-info.outputs.version }}
+          message: "📝 Inject commits into release notes v${{ steps.version-info.outputs.version }}"
 
 
       - name: Detected Changes
