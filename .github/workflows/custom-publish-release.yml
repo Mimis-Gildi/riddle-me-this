@@ -17,6 +17,9 @@ on:
 permissions:
   contents: write
 
+defaults:
+  run:
+    shell: bash
 
 jobs:
   resume-publish:
@@ -30,6 +33,13 @@ jobs:
       - name: Checkout
         id: checkout
         uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Guard Branch
+        id: branch-guard
+        uses: ./.github/actions/feature-fail-fast
 
       - name: Set up Java
         id: java-setup

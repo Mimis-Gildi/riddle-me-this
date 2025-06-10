@@ -114,7 +114,7 @@ flowchart TD
   PullRequestOpened --> Labeler[Auto Labeler]
 
 %% Conditional Publish Flows
-  ReleaseBranch -->|label: site| PublishSite
+  ReleaseBranch -->|on main| PublishSite
   ReleaseBranch -->|label: resume| PublishResume
   ReleaseBranch -->|label: demo| PublishDemo
 
