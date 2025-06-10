@@ -1,16 +1,16 @@
 name: Security Scan by CodeQL
-run-name: "Executed Security Scan by CodeQL Advanced on ${{ github.repository }}] by ${{ github.actor }} with ${{ github.event_name }}; (${{github.run_attempt}})."
+run-name: "Executed Security Scan by CodeQL Advanced on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
 #.github/workflows/security-scan-by-codeql.yml
 
 on:
   workflow_dispatch:
   workflow_call:
-  push:
-    branches: [ "main" ]
   pull_request:
-    types: [opened, synchronize]
+    types:
+      - opened
+      - reopened
   schedule:
-    - cron: '38 12 * * 2'  # Weekly Tuesday scan
+    - cron: '16 13 2 * *'
 
 permissions:
   security-events: write

@@ -1,0 +1,126 @@
+name: Publish Current Release
+run-name: "Published Résumé Release on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - labeled
+      - unlabeled
+      - closed
+  workflow_dispatch:
+    inputs:
+      prerelease:
+        required: false
+        type: boolean
+        default: false
+        description: 'Mark this release as a pre-release'
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  resume-publish:
+    name: "Publish Release Artifacts"
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true }}
+
+    steps:
+
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+
+      - name: 🛡️ Guard Branch
+        uses: ./.github/actions/feature-fail-fast
+        id: branch-guard
+
+
+      - name: ☕ Set up Java
+        uses: actions/setup-java@v4.7.1
+        with:
+          distribution: temurin
+          java-version: 21
+
+
+      - name: ⚙️ Set up Gradle
+        uses: gradle/actions/setup-gradle@v4.4.0
+
+
+      - name: 📡 Submit Dependency Graph
+        uses: gradle/actions/dependency-submission@v4.4.0
+
+
+      - name: 📎 Check if resume content is part of this release
+        id: resume-changes-detected
+        uses: ./.github/actions/check-pr-labels
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          required-label: resume
+
+
+      - name: 🏗️ Build Résumés
+        if: steps.resume-changes-detected.outputs.satisfied == 'true'
+        run: ./gradlew asciidoctorPdf
+
+      - name: 🔍 Extract canonical component version and semantic tag
+        id: version-info
+        uses: ./.github/actions/extract-component-version-and-tag
+
+
+      - name: 🏷️ Create Git Tag (if missing)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch --tags
+
+          if git rev-parse "${{ steps.version-info.outputs.tag }}" >/dev/null 2>&1; then
+            echo "::warning title=Tag Exists::Tag ${{ steps.version-info.outputs.tag }} already exists. Skipping tagging."
+          else
+            git tag "${{ steps.version-info.outputs.tag }}"
+            git push origin "${{ steps.version-info.outputs.tag }}"
+            echo "::notice title=Tag Created::🪜 Created ${{ steps.version-info.outputs.tag }}"
+          fi
+
+
+      - name: 📜 Check for Release Notes
+        run: |
+          NOTES_FILE="releases/${{ steps.version-info.outputs.tag }}.md"
+          if [ ! -f "$NOTES_FILE" ]; then
+            echo "::error title=Missing Release Notes::❌ No release notes found: $NOTES_FILE"
+            exit 1
+          fi
+
+
+      - name: 🚀 Publish GitHub Release with Résumé PDF
+        if: steps.resume-changes-detected.outputs.satisfied == 'true'
+        uses: ncipollo/release-action@v1.16.0
+        with:
+          tag: ${{ steps.version-info.outputs.tag }}
+          name: "Résumé Bundle ${{ steps.version-info.outputs.tag }}"
+          bodyFile: releases/${{ steps.version-info.outputs.tag }}.md
+          prerelease: ${{ github.event.inputs.prerelease }}
+          artifacts: build/docs/asciidocPdf/*.pdf
+          allowUpdates: true
+
+
+      - name: 🚀 Publish GitHub Release (no résumé artifact)
+        if: steps.resume-changes-detected.outputs.satisfied != 'true'
+        uses: ncipollo/release-action@v1.16.0
+        with:
+          tag: ${{ steps.version-info.outputs.tag }}
+          name: "Canonical Component Release ${{ steps.version-info.outputs.tag }}"
+          bodyFile: releases/${{ steps.version-info.outputs.tag }}.md
+          prerelease: ${{ github.event.inputs.prerelease }}
+          allowUpdates: true
+

@@ -11,7 +11,9 @@ import java.util.*
 val useJavaVersion: String by project
 val resumeFolder = file(project.property("resume.root.folder") as String)
 
-val revisionDate: String by project
+val resumeDate: String by project
+val resumeVersion: String by project
+
 
 val pdfResumeThemeIds = listOf(
     "conservative-resume",
@@ -126,7 +128,7 @@ fun configureAsciiDocInput(
 
         sources { includePatterns.forEach { include(it) } }
 
-        attributes(mapOf("revision-date" to revisionDate))
+        attributes(mapOf("revision-date" to resumeDate))
     }
 }
 
