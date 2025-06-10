@@ -46,19 +46,16 @@ jobs:
         id: branch-guard
 
 
-      - name: ☕ Set up Java
-        uses: actions/setup-java@v4.7.1
+      - name: 🔍 Extract canonical component version and semantic tag
+        id: version-info
+        uses: ./.github/actions/extract-component-version-and-tag
+
+
+      - name: 📜 Ensure finalized release notes
+        id: notes-verify
+        uses: ./.github/actions/verify-release-notes-file-present
         with:
-          distribution: temurin
-          java-version: 21
-
-
-      - name: ⚙️ Set up Gradle
-        uses: gradle/actions/setup-gradle@v4.4.0
-
-
-      - name: 📡 Submit Dependency Graph
-        uses: gradle/actions/dependency-submission@v4.4.0
+          tag: ${{ steps.version-info.outputs.tag }}
 
 
       - name: 📎 Check if resume content is part of this release
@@ -69,13 +66,27 @@ jobs:
           required-label: resume
 
 
+      - name: ☕ Set up Java
+        if: steps.resume-changes-detected.outputs.satisfied == 'true'
+        uses: actions/setup-java@v4.7.1
+        with:
+          distribution: temurin
+          java-version: 21
+
+
+      - name: ⚙️ Set up Gradle
+        if: steps.resume-changes-detected.outputs.satisfied == 'true'
+        uses: gradle/actions/setup-gradle@v4.4.0
+
+
+      - name: 📡 Submit Dependency Graph
+        if: steps.resume-changes-detected.outputs.satisfied == 'true'
+        uses: gradle/actions/dependency-submission@v4.4.0
+
+
       - name: 🏗️ Build Résumés
         if: steps.resume-changes-detected.outputs.satisfied == 'true'
         run: ./gradlew asciidoctorPdf
-
-      - name: 🔍 Extract canonical component version and semantic tag
-        id: version-info
-        uses: ./.github/actions/extract-component-version-and-tag
 
 
       - name: 🏷️ Create annotated tag if not already present
@@ -85,17 +96,8 @@ jobs:
           tag: ${{ steps.version-info.outputs.tag }}
           message: >
             Release ${{ steps.version-info.outputs.tag }}
-            ${{ steps.resume-detect.outputs.satisfied == 'true' && 'with' || 'without' }} resume
-
-
-      - name: 📜 Check for Release Notes
-        run: |
-          NOTES_FILE="releases/${{ steps.version-info.outputs.tag }}.md"
-          if [ ! -f "$NOTES_FILE" ]; then
-            echo "::error title=Missing Release Notes::❌ No release notes found: $NOTES_FILE"
-            exit 1
-          fi
-
+            ${{ steps.resume-changes-detected.outputs.satisfied == 'true' && 'with' || 'without' }}
+      
 
       - name: 🚀 Publish GitHub Release with Résumé PDF
         if: steps.resume-changes-detected.outputs.satisfied == 'true'
@@ -118,4 +120,3 @@ jobs:
           bodyFile: releases/${{ steps.version-info.outputs.tag }}.md
           prerelease: ${{ github.event.inputs.prerelease }}
           allowUpdates: true
-
