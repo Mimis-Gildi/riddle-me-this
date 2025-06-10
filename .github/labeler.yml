@@ -5,7 +5,7 @@ constitution:
 
 resume:
   - changed-files:
-      - any-glob-to-any-file: résumé/**
+      - any-glob-to-any-file: resume/**
 
 site:
   - changed-files:
