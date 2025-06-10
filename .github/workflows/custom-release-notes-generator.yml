@@ -37,9 +37,11 @@ jobs:
           fetch-depth: 0
           fetch-tags: true
 
+
       - name: Guard Branch
         id: branch-guard
         uses: ./.github/actions/feature-fail-fast
+
 
       - name: Extract Version from gradle.properties
         id: version
@@ -49,12 +51,14 @@ jobs:
           echo "value=$VERSION" >> $GITHUB_OUTPUT
           echo "::notice title=Detected Target Version::$VERSION"
 
+
       - name: Check and Seed Release Notes File
         if: steps.branch-guard.outputs.feature == 'true'
         id: seed-new
         uses: ./.github/actions/release-notes-create
         with:
           version: ${{ steps.version.outputs.value }}
+
 
       - name: Commit Release Notes Footer
         if: steps.branch-guard.outputs.feature == true && steps.append.outputs.changed == true
@@ -63,10 +67,12 @@ jobs:
           files: releases/v${{ steps.this-version.outputs.value }}.md
           message: "📝 Inject commits into release notes v${{ steps.this-version.outputs.value }}"
 
+
       - name: Extract all feature Commit Messages
         if: steps.branch-guard.outputs.feature == 'true'
         id: commit-log
         uses: ./.github/actions/release-notes-extract-commits
+
 
       - name: Extract all feature Changed Files
         if: steps.branch-guard.outputs.feature == 'true'
@@ -82,6 +88,7 @@ jobs:
           version: ${{ steps.version.outputs.value }}
           comments: ${{ steps.commit-log.outputs.commits }}
           files: ${{ steps.file-log.outputs.files }}
+
 
       - name: Commit Release Notes Footer
         if: steps.branch-guard.outputs.feature == true && steps.append.outputs.changed == true
