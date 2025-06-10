@@ -3,7 +3,7 @@ description: "Commit and push one or more files with a custom message."
 author: "VK (rdd13r)"
 branding:
   icon: "upload"
-  color: "green"
+  color: "purple"
 
 inputs:
   files:

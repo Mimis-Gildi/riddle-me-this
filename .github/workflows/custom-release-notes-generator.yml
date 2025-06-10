@@ -49,36 +49,46 @@ jobs:
         uses: ./.github/actions/extract-component-version-and-tag
 
 
-      - name: Check and Seed Release Notes File
+      - name: 📎 Confirm presence of seeded release notes
+        id: notes-exist
         if: steps.branch-guard.outputs.feature == 'true'
-        id: seed-new
+        uses: ./.github/actions/verify-release-notes-file-present
+        with:
+          tag: ${{ steps.version-info.outputs.tag }}
+          strict: false
+
+
+      - name: Seed New Release Notes File
+        if: steps.branch-guard.outputs.feature == 'true' && steps.notes-exist.outputs.exists != 'true'
+        id: notes-seed-new
         uses: ./.github/actions/release-notes-create
         with:
           version: ${{ steps.version-info.outputs.version }}
 
 
-      - name: Commit Release Notes Footer
-        if: steps.branch-guard.outputs.feature == 'true' && steps.append.outputs.changed == 'true'
-        uses: ./.github/actions/commit-and-push-files
-        with:
-          files: releases/v${{ steps.version-info.outputs.version }}.md
-          message: "📝 Inject commits into release notes v${{ steps.version-info.outputs.version }}"
+      - name: ✅ Release Notes Already Present
+        if: steps.branch-guard.outputs.feature == 'true' && steps.notes-exist.outputs.exists == 'true'
+        run: |
+          echo "::group::Release Notes Check"
+          echo "::notice title=Already Present::Release notes exist — skipping seed"
+          echo " → File: releases/${{ steps.version-info.outputs.tag }}.md"
+          echo "::endgroup::"
 
 
       - name: Extract all feature Commit Messages
-        if: steps.branch-guard.outputs.feature == 'true'
+        if: steps.branch-guard.outputs.feature == 'true' && ( steps.notes-exist.outputs.exists == 'true' || steps.notes-seed-new.outputs.created == 'true' )
         id: commit-log
         uses: ./.github/actions/release-notes-extract-commits
 
 
       - name: Extract all feature Changed Files
-        if: steps.branch-guard.outputs.feature == 'true'
+        if: steps.branch-guard.outputs.feature == 'true' && ( steps.notes-exist.outputs.exists == 'true' || steps.notes-seed-new.outputs.created == 'true' )
         id: file-log
         uses: ./.github/actions/release-notes-extract-files-changed
 
 
       - name: Write Logs and Files into Release Notes
-        if: steps.branch-guard.outputs.feature == 'true'
+        if: steps.branch-guard.outputs.feature == 'true' && ( steps.notes-exist.outputs.exists == 'true' || steps.notes-seed-new.outputs.created == 'true' )
         id: append
         uses: ./.github/actions/release-notes-write-notes
         with:

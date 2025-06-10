@@ -3,7 +3,7 @@ description: "Fail fast unless PR source matches feature branch pattern and targ
 author: "VK (rdd13r)"
 branding:
   icon: "git-branch"
-  color: "green"
+  color: "red"
 
 inputs:
   feature-branch-pattern:
