@@ -44,7 +44,7 @@ runs:
           git commit -m "$MESSAGE"
           BRANCH="${GITHUB_HEAD_REF:-$(git rev-parse --abbrev-ref HEAD)}"
           if output=$(git push origin "HEAD:$BRANCH" --porcelain); then
-            echo "::notice title=Pushed Release File::Pushed footer to $Branch,see $output"
+            echo "::notice title=($BRANCH) Pushed Release File::Pushed footer $output"
             echo "pushed=true" >> $GITHUB_OUTPUT
           else
             echo "::error title=Git Push Failed::Push to HEAD:$BRANCH failed. Investigate detached HEAD!"
