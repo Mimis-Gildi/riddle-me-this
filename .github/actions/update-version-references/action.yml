@@ -1,0 +1,54 @@
+name: "Update Version References"
+description: "Replaces resumeVersion or other tracked versions in key files."
+author: "Saga for Vadim"
+branding:
+  icon: "edit"
+  color: "blue"
+
+inputs:
+  version:
+    description: "The new version string (e.g., 2.3.0)"
+    required: true
+  track-gradle-key:
+    description: "gradle.properties key to track (e.g., resumeVersion or version)"
+    required: true
+  files:
+    description: "Comma-separated list of files to search/replace version references"
+    required: true
+
+runs:
+  using: "composite"
+
+  steps:
+
+    - name: 🔁 Update tracked version in gradle.properties
+      shell: bash
+      run: |
+        FILE="gradle.properties"
+        KEY="${{ inputs.track-gradle-key }}"
+        NEW="${{ inputs.version }}"
+
+        if [[ "$KEY" == "resumeVersion" ]]; then
+          NEW="v$NEW"
+          echo "::notice title=Gradle Properties Version::Setting $KEY=$NEW"
+          sed -i "s/^$KEY=.*/$KEY=$NEW/" "$FILE"
+        fi
+
+        echo "::notice title=Gradle Properties Version::Leaving $KEY be."
+        
+
+    - name: 🔍 Replace version references in other files
+      shell: bash
+      run: |
+        FILES=$(echo "${{ inputs.files }}" | tr ',' ' ')
+        VERSION="${{ inputs.version }}"
+        VVERSION="v$VERSION"
+
+        for f in $FILES; do
+          if [ -f "$f" ]; then
+            echo "::notice title=Updating File::$f"
+            sed -i "s/v[0-9]\+\.[0-9]\+\.[0-9]\+/$VVERSION/g" "$f"
+          else
+            echo "::warning title=File Not Found::$f"
+          fi
+        done

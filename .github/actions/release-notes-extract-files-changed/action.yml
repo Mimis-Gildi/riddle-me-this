@@ -1,0 +1,38 @@
+name: Extract Changed Files
+description: "Extract changed files between base and current HEAD."
+author: "VK (rdd13r)"
+branding:
+  icon: "file-plus"
+  color: "green"
+
+inputs:
+  base_ref:
+    description: "The base branch to diff against (typically 'main')"
+    required: false
+    default: main
+
+outputs:
+  files:
+    description: "Collected changed files"
+    value: ${{ steps.capture-files.outputs.files }}
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: Extract Changed Files
+      id: capture-files
+      shell: bash
+      run: |
+        BASE="${{ inputs.base_ref }}"
+        git diff --name-only "$BASE"..HEAD > files.txt
+
+        COUNT=$(wc -l < files.txt | tr -d ' ')
+        echo "::notice title=Changed files extracted::$COUNT files."
+        echo "::debug::Changed files: $(cat files.txt)"
+
+        {
+          echo 'files<<EOF'
+          cat files.txt
+          echo EOF
+        } >> $GITHUB_OUTPUT

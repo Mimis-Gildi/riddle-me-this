@@ -1,6 +1,6 @@
 = Mímis Gildi: Rdd13r’s Living Résumé & Digital Garden
 Vadim Kuhay <12781006+rdd13r@users.noreply.github.com>
-v1.1.5, Friday May 16th 2025
+v2.3.0, Friday May 16th 2025
 :description: Vadim Kuhay’s living résumé and publication repository.
 :icons: font
 :sectanchors:
@@ -33,16 +33,16 @@ https://mimis-gildi.github.io/riddle-me-this/maintainer/
 🧭 **Start with reflections**:
 https://mimis-gildi.github.io/riddle-me-this/reflections/
 
-== 📄 Résumé Release v2.0.0
+== 📄 Résumé Release v2.3.0
 
 This repo includes three curated PDFs packaged with each release.
 Grab the latest from the GitHub Releases page:
 
-📦 https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.0.0[v2.0.0] – full release package
+📦 https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.3.0[v2.3.0] – full release package
 
-* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.0.0/OnEngineering.pdf[Engineering Résumé] – code, systems, and production
-* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.0.0/OnCreativity.pdf[Creative Résumé] – teams, products, and vision
-* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.0.0/OnLeadership.pdf[Leadership Résumé] – transformation, innovation, CTO roles
+* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.3.0/OnEngineering.pdf[Engineering Résumé] – code, systems, and production
+* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.3.0/OnCreativity.pdf[Creative Résumé] – teams, products, and vision
+* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.3.0/OnLeadership.pdf[Leadership Résumé] – transformation, innovation, CTO roles
 
 == 🔗 Profiles
 
@@ -66,4 +66,3 @@ image::{a-resume}/badge.svg[Publish Résumé Release for the Current Tag,link={a
 image::{a-version}/badge.svg[Version Bump on Feature Creation,link={a-resume},window=_blank,opts=nofollow]
 
 '''
-
