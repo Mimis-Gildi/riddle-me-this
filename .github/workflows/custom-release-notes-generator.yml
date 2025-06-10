@@ -56,12 +56,12 @@ jobs:
         with:
           version: ${{ steps.version.outputs.value }}
 
-      - name: Commit New Release Notes File (if created)
-        if: steps.seed-new.outputs.created == 'true'
-        uses: ./.github/actions/release-notes-commit
+      - name: Commit Release Notes Footer
+        if: steps.branch-guard.outputs.feature == true && steps.append.outputs.changed == true
+        uses: ./.github/actions/commit-and-push-files
         with:
-          version: ${{ steps.version.outputs.value }}
-          message: "📝 Seed release notes for v${{ steps.version.outputs.value }}"
+          files: releases/v${{ steps.this-version.outputs.value }}.md
+          message: "📝 Inject commits into release notes v${{ steps.this-version.outputs.value }}"
 
       - name: Extract all feature Commit Messages
         if: steps.branch-guard.outputs.feature == 'true'
@@ -83,12 +83,13 @@ jobs:
           comments: ${{ steps.commit-log.outputs.commits }}
           files: ${{ steps.file-log.outputs.files }}
 
-      - name: Commit Injection File
-        if: steps.branch-guard.outputs.feature == 'true' && steps.append.outputs.changed == 'true'
-        uses: ./.github/actions/release-notes-commit
+      - name: Commit Release Notes Footer
+        if: steps.branch-guard.outputs.feature == true && steps.append.outputs.changed == true
+        uses: ./.github/actions/commit-and-push-files
         with:
-          version: ${{ steps.version.outputs.value }}
-          message: "📝 Inject commits into release notes v${{ steps.version.outputs.value }}"
+          files: releases/v${{ steps.this-version.outputs.value }}.md
+          message: "📝 Inject commits into release notes v${{ steps.this-version.outputs.value }}"
+
 
       - name: Detected Changes
         if: steps.branch-guard.outputs.feature == 'true' && steps.append.outputs.changed == 'true'

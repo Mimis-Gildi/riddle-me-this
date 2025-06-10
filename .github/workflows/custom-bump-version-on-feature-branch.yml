@@ -28,8 +28,14 @@ jobs:
           fetch-tags: true
 
 
+      - name: Guard Branch
+        id: branch-guard
+        uses: ./.github/actions/feature-fail-fast
+
+
       - name: 🧮 Extract Issue Number from Branch
         id: extract-issue
+        if: steps.branch-guard.outputs.feature == 'true'
         run: |
           BRANCH_NAME="${GITHUB_REF#refs/heads/}"
           ISSUE_NUMBER=$(echo "$BRANCH_NAME" | cut -d- -f1)
@@ -38,6 +44,7 @@ jobs:
 
       - name: 🔖 Check for 'major' label on issue
         id: check-issue-labels
+        if: steps.branch-guard.outputs.feature == 'true'
         uses: ./.github/actions/check-issue-labels
         with:
           issue-number: ${{ steps.extract-issue.outputs.number }}
@@ -46,6 +53,7 @@ jobs:
 
       - name: 🧬 Bump properties version
         id: version-bump
+        if: steps.branch-guard.outputs.feature == 'true'
         run: |
           FILE="gradle.properties"
           VERSION=$(grep '^version=' "$FILE" | cut -d= -f2)
@@ -74,6 +82,7 @@ jobs:
 
 
       - name: 📝 Update SECURITY.md version references
+        if: steps.branch-guard.outputs.feature == 'true'
         run: |
           OLD_VERSION="${{ steps.version-bump.outputs.old }}"
           NEW_VERSION="${{ steps.version-bump.outputs.new }}"
@@ -87,21 +96,17 @@ jobs:
           fi
 
 
-      - name: 📂 Commit and push new version
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git fetch --all --tags --prune --jobs=8
-          git pull
-          git add gradle.properties SECURITY.md || true
-          git commit -m "🔼 Auto bump version to ${{ steps.version-bump.outputs.new }}"
-          git push || {
-            echo "::warning title=Push Failed::⚠️ Git push failed — manual intervention may be required."
-            exit 13
-          }
+      - name: 📂 Commit and push version bump
+        if: steps.branch-guard.outputs.feature == 'true'
+        uses: ./.github/actions/commit-and-push-files
+        with:
+          files: gradle.properties SECURITY.md
+          message: "🔼 Auto bump version to ${{ steps.version-bump.outputs.new }}"
+
 
 
       - name: 🏋️ Summary annotation
+        if: steps.branch-guard.outputs.feature == 'true'
         run: |
           echo "::notice title=📅 Bump Summary::
           Branch:   ${GITHUB_REF#refs/heads/}
