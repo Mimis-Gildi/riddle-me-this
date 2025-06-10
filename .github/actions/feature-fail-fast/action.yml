@@ -34,11 +34,18 @@ runs:
       id: check-feature-branch
       shell: bash
       run: |
-        FEATURE_BRANCH="${{ github.head_ref }}"
-        TARGET_BRANCH="${{ github.base_ref }}"
         FEATURE_PATTERN="${{ inputs.feature-branch-pattern }}"
         EXPECTED_TARGET="${{ inputs.target-branch }}"
         
+        FEATURE_BRANCH="${{ github.head_ref || github.ref }}"
+        FEATURE_BRANCH="${FEATURE_BRANCH#refs/heads/}"
+        echo "::debug::github.head_ref='${{ github.head_ref }}'"
+        echo "::debug::github.ref='${{ github.ref }}'"
+        echo "::debug::Calculated FEATURE_BRANCH=$FEATURE_BRANCH" 
+  
+        TARGET_BRANCH="${{ github.base_ref }}"
+        echo "::debug::Calculated TARGET_BRANCH=$TARGET_BRANCH because github.base_ref=${{ github.base_ref }}; i.e., branch is new, not in PR."
+  
         feature=false
         target="$TARGET_BRANCH"                 # Should this trim prefix?
 
