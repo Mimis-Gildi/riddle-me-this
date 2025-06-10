@@ -10,6 +10,7 @@ on:
     types:
       - opened
       - reopened
+      - closed
   schedule:
     - cron: '19 15 3 * *'
 
