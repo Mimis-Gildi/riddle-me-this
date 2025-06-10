@@ -27,7 +27,6 @@ jobs:
     name: "Publish Release Artifacts"
     runs-on: ubuntu-latest
     timeout-minutes: 17
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true }}
 
     steps:
 
