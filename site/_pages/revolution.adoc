@@ -53,33 +53,25 @@ This is not science fiction. This is production reality — and it’s rapidly t
 
 Here is the largest section of my research and production stories.
 And it is likely to receive more content compared to the other series as I migrate.
-Please check back regularly or follow my RSS feed.
+Please check back regularly or link:/riddle-me-this/feed.xml[_follow my RSS feed_].
 
-=== Already Migrated
+=== Already Migrated (Time-reversed Order)
 
-Laggards and LLMs Tectonic Shift::
-- Reflection: link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality]
+Indie Economics — LLMs and Final Industrial Revolution::
+- Adventure: link:/riddle-me-this/adventures/2023/06/25/new-opportunities-with-ml-1.html[AI Indies Part 1 - Times of Change $$$]
+- Adventure: link:/riddle-me-this/adventures/2023/06/25/new-opportunities-with-ml-2.html[AI Indies Part 2 - Profitable Fundamentals]
+- Adventure: link:/riddle-me-this/adventures/2023/06/25/new-opportunities-with-ml-3.html[AI Indies Part 3 - Objective Analysis]
 
 Adaptation to LLM Disruption::
+- Reflection: link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality]
 - Reflection: link:/riddle-me-this/reflections/2023/05/11/chatGPT-omen-new-era.html[The Bright Era Dawns: AI, Moore’s law, and Beyond]
-
-Dev Millionaires & Early Indie Surge::
 - Reflection: link:/riddle-me-this/adventures/2023/05/15/AI-million-dollar-devs.html[Dev Millionaires: "Laggards are a renewable resource"?]
 
 Corporate Relations Disrupted::
 - Adventure: link:/riddle-me-this/adventures/2023/06/07/AI-and-businesses-to-perish-first.html[LLMs: Projected Market Exit of Established Relations-Based Companies]
-
-The Google vs OpenAI Split & MLOps Maturity::
 - Adventure: link:/riddle-me-this/adventures/2023/06/10/LLMs-what-good-for.html[AI in 2024: The Future is ...]
-
-Independent Developers: Strategic Playbook::
 - Adventure: link:/riddle-me-this/adventures/2023/06/17/you-can-mill-dev.html[The $ Power is Within You!]
 
 Crash Course & ML Bootcamp::
 - Adventure: link:/riddle-me-this/adventures/2023/06/14/Learn-ML-Fast.html[Learn ML Fast]
 
-Indie Economics Part 1 — Market Opportunity::
-- Adventure: link:/riddle-me-this/adventures/2023/06/25/new-opportunities-with-ml-1.html[AI Indies Part 1 - Times of Change $$$]
-
-Indie Economics Part 2 — Business Fundamentals::
-- Adventure: link:/riddle-me-this/adventures/2023/06/25/new-opportunities-with-ml-2.html[AI Indies Part 2 - Profitable Fundamentals]
