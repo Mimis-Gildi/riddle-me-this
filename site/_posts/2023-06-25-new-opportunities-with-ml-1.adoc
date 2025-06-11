@@ -14,6 +14,7 @@ rdd13r
 :pub-li: as published on LinkedIn by {li-newsletter}
 :li-current-article: https://www.linkedin.com/pulse/generative-ai-independent-software-development-times-change-kuhay/[AI Indies Part 1 - Times of Change $$$,window=_blank]
 :ff-li-current-article: footnote:[{li-current-article} {pub-li}]
+:img-prefix: /riddle-me-this/assets/images
 
 :ms-orca: https://www.microsoft.com/en-us/research/publication/orca-progressive-learning-from-complex-explanation-traces-of-gpt-4/[Orca,window=_blank]
 :real-ai-in-2024: /riddle-me-this/adventures/2023/06/10/LLMs-what-good-for.html
@@ -33,7 +34,7 @@ rdd13r
 
 .ASE Inc, DALL-E Hacker Dad, Cog Dad...
 [#img-devs]
-image::/riddle-me-this/assets/images/devs.png[An image showing a developer enjoying his job versus a developer who simply comes to work,1200,675]
+image::{img-prefix}/devs.png[An image showing a developer enjoying his job versus a developer who simply comes to work,1200,675]
 Wizards versus muggles.
 
 This issue emerges as we approach the culmination of long-standing commitments and ventures within the company.
@@ -64,19 +65,20 @@ Yet the US coder is left in the dust again. Hacker capital of the world is Pragu
 Part 3: War in Europe spills to the U.S.::
 A closer look at Russia's cyber strategy:
 Is it a well-thought-out maneuver or a vindictive blitz on the US economy spurred by envy of failure?
-Who should be worried? If the goal is destabilization, then why hit the weakest links first?
+Who should be worried? If the goal is destabilization, then why hit the weakest links first? +
+Also, Ukraine has something new in the making. Something that can change _everything_.
 
 Part 4: The U.S. loses the world-tech leadership::
 The ripples across the Atlantic: How developments in Europe are impacting American lives. +
 Where is the internet Technologies (IT) market shifting? Are we over-hired in the U.S. IT?
 
-_Today, is part 1 or 4._
+_Today, is part 1 or 4 (plus a followup in 2 years)._
 
 == Context and Background
 
 .Dedicated hacker family supporting Ukraine.
 [#img-ukraine,link=https://stand-with-ukraine.pp.ua/]
-image::/riddle-me-this/assets/images/supporting_ukraine.jpg[We're but one of many entrepreneurial families supporting Ukraine,1200]
+image::{img-prefix}/supporting_ukraine.jpg[We're but one of many entrepreneurial families supporting Ukraine,1200]
 Every little bit helps.
 
 [.text-justify]
@@ -85,7 +87,7 @@ When resources ran thin, we turned to volunteering at donation centers. Then hel
 
 .One happy daddy with many kids building the future @ Highcroft.
 [#img-dadar,link=https://rdd13r.github.io/]
-image::/riddle-me-this/assets/images/dadar-school-medalion.png[A picture of the author teaching real robotics hands-on labs at Highcroft Elementary School,600,float="right",align="center"]
+image::{img-prefix}/dadar-school-medalion.png[A picture of the author teaching real robotics hands-on labs at Highcroft Elementary School,600,float="right",align="center"]
 [.text-center]
 Prompting creativity in young minds are the best moments of my life @ ASE Junior Robotics Labs.
 
@@ -96,7 +98,7 @@ My spouse credits our good Karma for this blessing, while the analyst in me beli
 
 .If I had one wish, it would be for all the families to know love and live in genuine happiness! Once a person knows the true gift of life, family, and legacy, how can they wish for war?
 [#img-pupsiki,link=https://github.com/CaptainLugaru/]
-image::/riddle-me-this/assets/images/pupsik-transparenti.png[Pupsiki,600,float="right",align="center"]
+image::{img-prefix}/pupsik-transparenti.png[Pupsiki,600,float="right",align="center"]
 [.text-center]
 Happy "Big Brother" has his prayers answered by the Grace of G*d!
 

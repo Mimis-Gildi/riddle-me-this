@@ -1,0 +1,294 @@
+---
+categories: [adventures]
+tags: [DemoScene,LinkedIn]
+excerpt: Exploring the surge in independent development ventures in Generative AI.
+comments: true
+classes: wide
+---
+= AI Indies Part 3 - Objective Analysis
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: as published on LinkedIn by {li-newsletter}
+:li-current-article: https://www.linkedin.com/pulse/combat-ai-part-2-american-war-coders-ukraine-vadim-kuhay/[AI Indies Part 3 - American War-Coders in Ukraine,window=_blank,opts=nofollow]
+:ff-li-current-article: footnote:[{li-current-article} {pub-li}]
+:prior-article: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/25/new-opportunities-with-ml-2.html[AI Indies Part 2 - Profitable Fundamentals,window=_blank]
+:ff-prior-article: footnote:prior[{prior-article}]
+:img-prefix:  /riddle-me-this/assets/images
+
+:li-plebs-version: https://www.linkedin.com/pulse/combat-ai-part-2-american-war-coders-ukraine-vadim-kuhay/[LinkedIn: American War-Coders in Ukraine,window=_blank,opts=nofollow]
+:gopota: https://en.wikipedia.org/wiki/Gopnik[Gopniki,window=_blank]
+:ork-dura: https://www.cisa.gov/topics/cyber-threats-and-advisories/advanced-persistent-threats/russia["Russia Cyber Threat Overview and Advisories.",window=_blank]
+:vatnik: https://en.wikipedia.org/wiki/Vatnik_(slang)[Vatnik,window=_blank]
+:fsb-poop: https://whistleblower.org/blog/anonymous-russian-fsb-letters-reveal-internal-turmoil-in-the-kremlin-part-1/[Following FSB Leaks Trail by Sydney Johnson,window=_blank]
+
+.ASE Inc, DALL-E Hacker Dad, Cog Dad...
+[#img-devs]
+image::/riddle-me-this/assets/images/devs.png[An image showing a developer enjoying his job versus a developer who simply comes to work,1200,675]
+
+American Tech in our experience.
+
+I started this issue in parts and shared the story of most successful solo entrepreneur developers from our community the way they want us to share their stories.
+The idea is always the same: help people who wish to attain independence.
+
+So, where do we stand so far:
+
+Part 1 A new frontier is here EARLY::
+Independent developers in Canada are commanding an eye-popping *$450/hr* for GPT-4 integration on long contracts.
+When will this wave hit US? _The world is capitalizing on a US product._ But the USA pickup is painfully slow.
+
+Part 2: Expansion into war-coding::
+In the aftermath, the lucrative commodification of war-coders emerges as an unanticipated industry windfall. +
+Yet the US coder is left in the dust again.
+Hacker capital of the world is Prague again.
+
+Part 3:  (_We are here!_)::
+A closer look at Russia's cyber strategy:
+Is it a well-thought-out maneuver or a vindictive blitz on the US economy spurred by envy of failure?
+Who should be worried?
+If the goal is destabilization, then why hit the weakest links first? +
+Also, Ukraine has something new in the making.
+Something that can change _everything_.
+
+Part 4: The U.S. loses the world-tech leadership::
+The ripples across the Atlantic: How developments in Europe are impacting American lives. +
+Where is the internet Technologies (IT) market shifting?
+Are we over-hired in the U.S. IT?
+
+_Today, is part 3 or 4 (plus a followup in 2 years)._
+
+== Recap, Context, and Background
+
+Part 1: The Surge in GPT-4 Integration; Where is the US?::
+Indies _everywhere_ are a litmus test for the next disruption.
+One only needs to observe and seek -- "is there a new asset type here?" In the past every time a new asset type emerged in technology an economic landslide followed.
+_And I absolutely see a new asset type here -- augmentation of human abilities *beyond what cellphones achieved*._
+
+Closer Look at the Technical Aspects::
+_All the money in the emerging ecosystem will come from *direct application of models* to *Business Actors* (or humans):_
+. Domain-Driven Design (DDD) Anti-Corruption Layer (ACL) - Wrap Context Boundary with some NLP;
+. Build Supporting Subdomains to manage the Enrichment Context;
+. Apply ML-Subdomains to *Root Domain* for _Direct Market Experimentation_!
+
+But where is the US, today?::
+*_The US id dead last -- we're fine in business as usual._*
+There are *no viable incentive policies* and opportunities for explosive growth expected by 2024, or even 2025.
+
+War Sacrifices Yield Diverse Rewards::
+It is the little Ukraine that broke the seal on The Next, and perhaps *The Last, Industrial Revolution*:
+* Fully distributed supply chane driven by just-in-tile logistics AI;
+* Fully integrated end-to-end battle and economy management distributed systems;
+* Unified, AI guided Strategic planning incorporating all aspects of war and economy.
+* I can't say much preserving OpSec, but I expect we'll hear about incredible things in 2024 or 2025.
+
+
+And the USA is stuck on stupid -- solid!
+Perhaps next election will bring American Wisdom back 🤞🏻
+
+Here is the sterilized publication for plebs: {li-plebs-version}.
+
+== So, Where do We Stand?
+
+For those who know us well, it's an open secret that a substantial part of our energies in 2022 was channeled into supporting Ukraine, especially rallying behind our fellow American veterans who heeded Zelenskyy's plea.
+The joy and fulfillment we derived from the birth of a new family member in December 2022, we believe, is a gift for sharing the last meal, round, dollar, and a hug.
+And we were not alone - a legion of independent American developers too pressed pause on their day-to-day business lives, dug into their pockets, and journeyed to Ukraine both to fight and to code.
+
+.When resources dried up our intern (son) scrounged up all he could get.
+[#img-donations,link=https://stand-with-ukraine.pp.ua/]
+image::{img-prefix}/antons-donations.png[Anton Donates,800,450]
+
+ "Ukes can use this ammo, Daddy!"
+
+The sheer scale and ambition of the projects these volunteers tackled are nothing short of inspiring.
+From crafting machine learning software that leverages live video feeds from combat drones to help artillery circumvent visual barriers and achieve pinpoint targeting, to fine-tuning drone management software that ensures drones safely retrace their path back to the operator when jammed.
+The gambit ran the gamut – improving communication channels, streamlining logistics – you name it.
+
+.'Magyar', the Ukrainian combat drone unit commander, reacts to the 'RuZZian' coup-de-clown, as it is already infamously dubbed on _"The Zero"_.
+[#img-madiar-poo-poo,link=bit.ly/44hVKAA]
+image::{img-prefix}/Madiar-Reaction-to-P-P-circuis.png[Sunset,800,450]
+His predictions hit the nail on the head -- orkistan is on orkistan, never more.
+
+A little personal vignette: for the first time in my coding career spanning three decades, I found myself being outgunned by a young buck, a 28-year-old Polish Champion, a whiz-kid, huh.
+In my oversight, I had not realized that the firmware contained a customized embedded Redis with an augmented geo-core, robust enough for military-grade GPS resolution.
+And then this young hotshot swooped in, took my 1000+ lines of elegant code for a ballistic adjustment daemon, and refactored it down to a lean 200, courtesy of the native locator service he discovered.
+Daddy hacker was schooled!
+I was ecstatic and forlorn in equal measure.
+It dawned on me that this must be the generational gap at play - a divergence in approaches.
+We, the elders, take pride in building solutions from scratch, ensuring they are modular, decoupled, especially if computational efficiency and redundancy are of the essence.
+The Millennial kids, however, have an affinity for adapting and re-purposing existing tools at no extra cost.
+Kudos to the kid!
+_Good for the Ukrainians!_
+Some brilliant young minds have come to stare down death for the good versus evil.
+The image above captures https://en.wikipedia.org/wiki/Robert_Brovdy['Magyar'], the commander of the drone unit, who is an entrepreneur and unrelenting proponent of avant-garde combat technology.
+
+The winds of change seem to be blowing in favor of these altruistic prodigies.
+While the old-crony defense companies lumber along in a sluggish attempt to catch up with the rapidly evolving landscape, fighting the last war, a tsunami of innovation is unfurling in Ukraine from Scandinavia and Eastern Europe.
+Startups in this fight are well funded and leverage combat experience and modern know-how of these battle-tested hackers.
+Their devotion, prowess, and first-hand experience in contemporary warfare are earning them handsome rewards, often exceeding half a million Euros annually.
+Hard to make that back at home.
+
+Once, not so long ago, I worried for these young Champions.
+The war seemed interminable, and these lads and gals often hung out at Zero (direct contact), where drones are used, far from home, without a steady income, unable to leave with personal lives in neglect and disarray.
+Later the Ukrainians kindly extended combat pay.
+But no help in personal lives.
+This week I celebrate as some of these people are well rewarded and can still continue the fight from a safer place.
+
+*_The new EU defense industry is expected to grow to 3000-hackers strong this year._*
+For those itching to make a mark in combat coding, a good starting point would be the Ukrainian https://war.ukraine.ua/ where program descriptions are available.
+
+== Russia's Cyber Strategy: Gopnikis are coming to `Merica
+
+* 2021: Russian military is 2nd in the World.
+* 2022: Russian military is 2nd in Ukraine.
+* 2023: Russian military is 2nd in Russia.
+
+But don't let those stats lull you into a false sense of security!
+The cyberworld is a different battlefield.
+The _Primary_ target is the USA.
+My initial reaction was to brush it off.
+That's the Russian way, right?
+Sabotage and undermine the successful.
+So, I decided to give a quick call to some buddies in the defense security biz.
+Suddenly, my smirk vanished.
+Something changed: resolve and budget, by an order of magnitude (that means a lot!)
+
+For 350 years, Moscow's signature moves have included oppression, coercion, collusion, and *_corruption_*.
+Deception is in their DNA.
+The sad reality is that unlike their Western neighbors, the Russian people have remained under the thumb.
+It's not some new trick in the Kremlin's book.
+Putin and his entourage ({gopota}) are just the latest manifestation of an age-old culture steeped in envy, greed, and resentment.
+And who's at the top of their grudge list?
+Oh, that would be us.
+Exhibit A: {ork-dura} The warm fuzzy feelings are palpable.
+
+Here's what happened.
+About a month ago, SRV, a shadowy organization, stirred up cybercriminals by dangling rewards for targeting American companies.
+Tor exchange sites, where samples of pilfered internal data are displayed like goods in a black-market bazaar, have been abuzz.
+Last year, you'd see a couple of dozen corporate data packages a month.
+Now, there's a deluge of 3-4 dozen in less than a week.
+The US is on it, though:  But how much can Uncle Sam really do?
+
+Our support for Ukraine's defense didn't exactly endear us to the Kremlin, to put it mildly.
+It's like poking a sick pig.
+For example, the odd inclusion of Disney's 'The Little Mermaid' in their target list.
+Random?
+Not exactly.
+SRV is more like a crafty, opportunistic predator with deep pockets.
+The objective is to use other criminals' efforts first.
+They didn't concoct QAnon, for example.
+They just intercepted Q and nudged a budding fringe group, almost imperceptibly, toward their desired outcome: march on Washington.
+With their formidable background, even the hardcore 4chan crowd couldn't sense the swap.
+It's a game of influence, not direct control.
+Cybercrime in America thrives under their nurturing wings.
+With Russian Duma committing, never seen before cyber-warfare budget, it's the case of playing the long game against the USA.
+
+Losing to Ukrainians on the battlefield and blaming us the scourge is going after our feeble-minded and week.
+Leaked FSB statements like this don't seem to bother us though:
+
+
+.American vatnik (toothless MAGA) is just another vatnik:
+[quote,Translated from EU Media sources described in FSB Leaks.]
+____
+We can always trust in blind ignorance of the majority, the American {vatnik}, to run [with it], no matter how [absurd] the prophecy [is].
+This demographic specimen works exactly like [the] 'patriot' (the Russian Vatnik) does, only in Anglo-Saxon religious context.
+Focus on churches, especially Catholic, old businesses, and the rich.
+____
+
+{fsb-poop}.
+
+*_DANGER: Russia can and most likely will exploit uneducated toothless America (MAGA)._*
+
+Unfortunately it's not all fiction.
+Take my neighbor *_Bob_*, for instance.
+An IT strategy honcho who believes that Princess Diana and JFK Jr. will rise from the grave to lead the charge against the Deep State.
+All funded by the Vatican.
+He's also convinced that Trump is still president and the Earth is flat.
+His conviction that half the business community is on board is almost cute.
+Did I mention he's an IT strategy decision maker?
+
+Anonymous FSB leaks aren't exactly gospel.
+But if they paint a coherent picture and corroborate other sources, they're worth considering.
+
+Flashback three years.
+I shared a study by a major university, with proper permissions.
+It showed that disruptors like Google and Netflix make up 5-10% of the US economy, while the ‘Laggards' represent ~80%.
+I only shared someone else's statistical data yet still received some flack from my peers.
+Yes, America, we are SLOW.
+That means vulnerable. _Tools won't help when *competence* is needed!_ And now, Russia's got their back against the wall.
+They're spiteful desperate and that makes them dangerous.
+They're unlikely to go down completely.
+If there's any truth to their public commitments, our life in the US could become needlessly expensive.
+And *_Bob_*, the strategist, won't know what hit him, because Q didn't prophesize this one coming.
+And data leaks?
+That's like stage 4 cancer – it's all about damage control thereafter.
+
+> Fellow software professionals in corporate America, here's a plea.
+Take a break from the meetings.
+Crack open a book.
+Write some code and get feedback.
+Up your game.
+Refactor that tangled web you call code.
+Because, trust me, if you don't, we'll all wish you had.
+
+== The Ripples Across the Pond
+
+Ukraine has an incredible mentor in Israel, a fellow beacon of democracy.
+As for us, the guardians of democracy, the list of role models isn't exactly long.
+
+Now, let's tackle the mammoth in the room: the raging inferno of a war in Europe, the likes of which few living today remember.
+Let's not kid ourselves; this is going to hurt.
+It already does.
+Important is to decide how much hurt are we willing to take.
+Each time a Gopnik casually drops the word "nukes," some European bigwigs brown themselves.
+They wistfully yearn for the "good old days," much to the amusement of all the Gopniks.
+Meanwhile, Poland is barreling towards Belarus, poised to jump into the fray, cocked, locked, and ready.
+Poland was barely stopped twice yet.
+The "good old days" are history.
+We're in the throes of the "new reality" now.
+
+Europe might seem like a world away, but it's crucial to grasp the dynamics at play here.
+As I said earlier, there's a 350-year backstory.
+Russia's entire history, ever since Peter not so great enviously stole neighbor's country name.
+Ever since Moscow slaughtered democratic Russians of Novgorod forever sealing Russia's final fate.
+There are many reasons Russia hasn't been winning any popularity contests with its neighbors.
+When the Polish Prime Minister echoes a Ukrainian commander, saying, "We don't want to talk to them [the Russians], we just want to kill them," it's not just trash talk.
+There's a raw, visceral, centuries-old reckoning commitment behind it.
+
+Here is the inevitable coming in bright-hot for all to see::
+* Ukrainian GUR, a daughter of CIA, will dominate with AI technology not seen before;
+* In general, "Metal On Meat" Ukrainian doctrine will become the face of new warfare;
+* America is too weak to standup to autocracies and can fall by exploit of our dumb people;
+* Ukraine will defeat Russia easily in combat; But the dismantling can take many years.
+
+It's already clear that taking back territory will be Ukrainian last concern, if ever.
+This war is NOT about territory, it's about existential core values where borders don't matter.
+_And America is in real danger of ending up on the wrong side of history here._
+*_For the first time our foreign policy is much more important than our domestic policy._*
+_It's time to get back to the basics, the fundamental values, or *America will lose*!_
+
+But leaving the ignorant nonsense of Jake Sullivan(s) behind -- we've had a good run.
+Prosperity, apple pie, Apple iPhone, Apple Watch, Apple Siri, the American dream, etc.
+But the winds of change are blowing hard: Himars this, Storm-Shadow that, Excalibur and depleted Uranium.
+Perhaps it's time for all of us to get with the program.
+
+_Self-education is my favorite place to start -- you should try it too._
+
+Have an awesome week ahead!
+
+== Get the Scoop! 🚀
+
+Happy Monday folks!
+Here's the 411 in a nutshell.
+Generative AI frenzy is still getting bigger 🚀 and not aging as I thought it would by now.
+Canada's crème de la crème a-la-hackerdom seem to have us dusted, a little bit, and are raking 💰 with super simple GPT-4's REST integration.
+It is all localized and telling the size is not possible.
+Also, I don't yet see a US equivalent.
+If anyone does see some signs of life here, please talk to me?
+😬 I'll have more news in a little while as ASE is slowly coming back into operation.
+
+'''
+
+'''
+
+_Also see a plebs friendly editorial.{ff-li-current-article}._

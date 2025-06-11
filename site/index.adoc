@@ -59,6 +59,6 @@ Message `riddler9297` to join the **AGAIN Collective**.
 ===  Wanna see my résumé?
 
 _See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.3.0[v2.3.0,window=_blank]_::
-{leadership-resume}[Leadership,window=_blank] résumé – coaching, CTO roles (_hands-on_). +
+{leadership-resume}[Leadership,window=_blank] résumé – coaching, CTO roles (hands-on). +
 {engineering-resume}[Engineering,window=_blank] résumé – code craft, production, profit. +
 {creative-resume}[Creative,window=_blank] résumé – teams, systems, vision, disruption.

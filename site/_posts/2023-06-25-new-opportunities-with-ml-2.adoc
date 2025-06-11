@@ -13,8 +13,9 @@ classes: wide
 :pub-li: as published on LinkedIn by {li-newsletter}
 :li-current-article: https://www.linkedin.com/pulse/generative-ai-indies-change-rates-dirty-secrets-vadim-kuhay/[AI Indies Part 2 - Profitable Fundamentals,window=_blank]
 :ff-li-current-article: footnote:[{li-current-article} {pub-li}]
-:prior-article: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/25/new-ooprtunities-with-ml-1a.html[AI Indies Part 1 - Times of Change $$$]
+:prior-article: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/25/new-ooprtunities-with-ml-1a.html[AI Indies Part 1 - Times of Change $$$,window=_blank]
 :ff-prior-article: footnote:prior[{prior-article}]
+:img-prefix:  /riddle-me-this/assets/images
 
 :rate-cog: ~$60/hr - $110/hr
 :rate-hackard: ~$90/hr - $185/hr
@@ -46,7 +47,7 @@ classes: wide
 
 .ASE Inc, DALL-E Hacker Dad, Cog Dad...
 [#img-devs]
-image::/riddle-me-this/assets/images/devs.png[An image showing a developer enjoying his job versus a developer who simply comes to work,1200,675]
+image::{img-prefix}/devs.png[An image showing a developer enjoying his job versus a developer who simply comes to work,1200,675]
 
 Wizards versus muggles.
 
@@ -60,6 +61,31 @@ Here's a summary of rates based on data from the last 7 years:
 * Expert Consulting: {rate-hackard}
 * Niche Consulting: {rate-wizard}
 * Organizational Development: {rate-poser} (for ASE subcontractors)
+
+'''
+
+Part 1 A new frontier is here EARLY::
+Independent developers in Canada are commanding an eye-popping *$450/hr* for GPT-4 integration on long contracts.
+When will this wave hit US? _The world is capitalizing on a US product._ But the USA pickup is painfully slow.
+
+Part 2: (_We are here!_)::
+In the aftermath, the lucrative commodification of war-coders emerges as an unanticipated industry windfall. +
+Yet the US coder is left in the dust again. Hacker capital of the world is Prague again.
+
+Part 3: War in Europe spills to the U.S.::
+A closer look at Russia's cyber strategy:
+Is it a well-thought-out maneuver or a vindictive blitz on the US economy spurred by envy of failure?
+Who should be worried? If the goal is destabilization, then why hit the weakest links first? +
+Also, Ukraine has something new in the making. Something that can change _everything_.
+
+
+Part 4: The U.S. loses the world-tech leadership::
+The ripples across the Atlantic: How developments in Europe are impacting American lives. +
+Where is the internet Technologies (IT) market shifting? Are we over-hired in the U.S. IT?
+
+_Today, is part 2 or 4 (plus a followup in 2 years)._
+
+'''
 
 
 == The Reality
@@ -100,7 +126,7 @@ SCORE will connect you with mentors, advisors, and fellow trailblazers, like The
 
 .Be like this indie basking in creativity solving some problems.
 [#img-indie,link={hacker-news}]
-image::/riddle-me-this/assets/images/hacker-at-work.jpg[Sunset,800,450]
+image::{img-prefix}/hacker-at-work.jpg[rdd13r at work,800,450]
 
 *Pro-tip:* Setting up is the easy bit; finding clients and closing sales is the real deal.
 If you don't want to hear about selling, then indie life is not for you.
@@ -239,7 +265,6 @@ It is all localized and telling the size is not possible.
 Also, I don't yet see a US equivalent.
 If anyone does see some signs of life here, please talk to me?
 😬 I'll have more news in a little while as ASE is slowly coming back into operation.
-🎢 #AI #GPT4 #TechGameChangers
 
 '''
 
