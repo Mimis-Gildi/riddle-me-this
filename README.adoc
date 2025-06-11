@@ -9,14 +9,24 @@ v2.3.0, Friday May 16th 2025
 :keywords: Mímir Rdd13r Résumé Hacker Vadim Kuhay
 :imagesdir: ./resources/images
 ifdef::env-name[:relfilesuffix: .adoc]
+
 :gha: https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows
-:a-codacy: {gha}/security-scan-by-codacy.yml
 :a-codeql: {gha}/security-scan-by-codeql.yml
+:a-codacy: {gha}/security-scan-by-codacy.yml
+:a-snyk: {gha}/security-scan-by-snyk.yml
+:a-qodana: {gha}/security-scan-by-qodana.yml
+
+:a-version: {gha}/custom-bump-version-on-feature-branch.yml
+:a-notes: {gha}/custom-release-notes-generator.yml
+:a-labels: {gha}/custom-pr-labels.yml
+:a-release: {gha}/custom-publish-release.yml
+
+:a-issues: {gha}/custom-stale-issues-watchdog.yml
+:a-new-user: {gha}/custom-new-user-greeting.yml
 :a-site: {gha}/github-pages-jekyll-build-and-deploy.yml
+
 :a-prune: {gha}/github-actions-prune.yml
 :a-cache: {gha}/github-cache-prune.yml
-:a-resume: {gha}/custom-publish-resume-release.yml
-:a-version: {gha}/custom-bump-version-on-feature-branch.yml
 
 This repository is the *canonical source of truth* for Vadim Kuhay’s (aka `rdd13r`) résumé materials, engineering artifacts, and personal publications.
 
@@ -30,8 +40,10 @@ https://mimis-gildi.github.io/riddle-me-this/
 📘 **Learn more about the maintainer**:
 https://mimis-gildi.github.io/riddle-me-this/maintainer/
 
-🧭 **Start with reflections**:
-https://mimis-gildi.github.io/riddle-me-this/reflections/
+🧭 **Trends you won’t hear from Gartner**:
+https://mimis-gildi.github.io/riddle-me-this/series/
+
+Or simply subscribe to https://mimis-gildi.github.io/riddle-me-this/series/[my RSS feed].
 
 == 📄 Résumé Release v2.3.0
 
@@ -57,12 +69,31 @@ Grab the latest from the GitHub Releases page:
 
 '''
 
-image::{a-codacy}/badge.svg[Security Scan by Codacy,link={a-codacy},window=_blank,opts=nofollow]
-image::{a-codeql}/badge.svg[Security Scan by CodeQL,link={a-codeql},window=_blank,opts=nofollow]
-image::{a-site}/badge.svg[GitHub Site Build and Deploy by Jekyll,link={a-site},window=_blank,opts=nofollow]
-image::{a-prune}/badge.svg[GitHub Prune Actions by CLI,link={a-prune},window=_blank,opts=nofollow]
-image::{a-cache}/badge.svg[GitHub Prune Actions Cache by CLI,link={a-cache},window=_blank,opts=nofollow]
-image::{a-resume}/badge.svg[Publish Résumé Release for the Current Tag,link={a-resume},window=_blank,opts=nofollow]
-image::{a-version}/badge.svg[Version Bump on Feature Creation,link={a-resume},window=_blank,opts=nofollow]
+[cols=">1,>1,>1,>1",%autowidth,frame=none,align=center,grid=none]
+|===
+
+a| image::{a-codeql}/badge.svg[Security Scan by CodeQL,link={a-codeql},window=_blank,opts=nofollow]
+a| image::{a-codacy}/badge.svg[Security Scan by Codacy,link={a-codacy},window=_blank,opts=nofollow]
+a| image::{a-snyk}/badge.svg[Security Scan by Snyk,link={a-snyk},window=_blank,opts=nofollow]
+a| image::{a-qodana}/badge.svg[Security Scan by Qodana,link={a-qodana},window=_blank,opts=nofollow]
+
+a| image::{a-version}/badge.svg[Custom Bump Version on Feature Branch,link={a-version},window=_blank,opts=nofollow]
+a| image::{a-notes}/badge.svg[Custom Release Notes Generator,link={a-notes},window=_blank,opts=nofollow]
+a| image::{a-labels}/badge.svg[Custom PR Labels,link={a-labels},window=_blank,opts=nofollow]
+a| image::{a-release}/badge.svg[Custom Publish Release,link={a-release},window=_blank,opts=nofollow]
+
+
+a| image::{a-issues}/badge.svg[Custom Stale Issues Watchdog,link={a-issues},window=_blank,opts=nofollow]
+a| image::{a-new-user}/badge.svg[Custom New User Greeting,link={a-new-user},window=_blank,opts=nofollow]
+|
+a| image::{a-site}/badge.svg[GitHub Site Build and Deploy by Jekyll,link={a-site},window=_blank,opts=nofollow]
+
+a| image::{a-prune}/badge.svg[GitHub Prune Actions by CLI,link={a-prune},window=_blank,opts=nofollow]
+a| image::{a-cache}/badge.svg[GitHub Prune Actions Cache by CLI,link={a-cache},window=_blank,opts=nofollow]
+|
+|
+
+|===
 
 '''
+
