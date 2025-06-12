@@ -1,0 +1,636 @@
+---
+categories: [adventures]
+tags: [AI,Ukraine,Cyberwar,GPT-4,LinkedIn]
+excerpt: Exploring the American cyber-volunteer movement in support of Ukraine's war effort.
+comments: true
+classes: wide
+---
+= AI Indies Part 4 - Cyber Volunteers in Ukraine
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: as published on LinkedIn by {li-newsletter}
+:li-current-article: https://www.linkedin.com/pulse/combat-ai-part-2-american-war-coders-ukraine-vadim-kuhay/[AI Indies Part 3 - American War-Coders in Ukraine,window=_blank,opts=nofollow]
+:ff-li-current-article: footnote:[{li-current-article} {pub-li}]
+:prior-article: link:/riddle-me-this/adventures/2023/06/25/new-opportunities-with-ml-3.html[AI Indies Part 3 - Objective Analysis,window=_blank]
+:ff-prior-article: footnote:prior[{prior-article}]
+:img-prefix:  /riddle-me-this/assets/images
+
+:matt: https://www.linkedin.com/in/matthew-reagan-77bb7785/[Matthew Reagan,window=_blank,opts=nofollow]
+:jrh: https://en.wikipedia.org/wiki/J._Random_Hacker[J. Random Hacker,window=_blank,opts=nofollow]
+:tor: https://en.wikipedia.org/wiki/.onion["Tor hidden services",window=_blank,opts=nofollow]
+:bitspittle: https://www.linkedin.com/in/hermandave/[David Herman,window=_blank,opts=nofollow]
+:kobweb: https://kobweb.varabyte.com/[kobweb,window=_blank,opts=nofollow]
+:hacker-personal: https://www.linkedin.com/feed/update/urn:li:activity:7092305368617259008/[personal account,window=_blank,opts=nofollow]
+:kali: https://www.kali.org/[Kali Linux,window=_blank,opts=nofollow]
+:nyt-article-1: https://www.nytimes.com/2020/08/20/us/elections/the-republican-embrace-of-qanon-goes-far-beyond-trump.html
+:cissp-link: https://www.wiley.com/en-us/search?pq=CISSP
+:cissp: {cissp-link}[(ISC)2 CISSP,window=_blank,opts=nofollow]
+:cisa: https://www.cisa.gov/topics/cyber-threats-and-advisories/advanced-persistent-threats/russia[government is alert (CISA),window=_blank,opts=nofollow]
+:dumb-muscovy: The State Duma urges scientists to devise biological weapons targeting Anglo-Saxons
+:bucha: https://en.wikipedia.org/wiki/Bucha_massacre
+:women-soldiers: https://www.rferl.org/a/ukraine-war-women-soldiers-female-freedom-survival/32240805.html
+:mother-monument: https://www.washingtonpost.com/world/2023/08/06/ukraine-motherland-monument-russia/
+:finno-ugric: https://en.wikipedia.org/wiki/Finno-Ugric_languages
+:mordvinic: https://en.wikipedia.org/wiki/Mordvinic_languages
+:veps: https://en.wikipedia.org/wiki/Veps_people
+:catherine: https://en.wikipedia.org/wiki/Catherine_the_Great
+:ruscism: https://en.wikipedia.org/wiki/Ruscism
+:uke-language: https://youtu.be/6UfWKpfHNh4?si=EAac7JWZKmlyh3KA
+:rdpd: https://en.wikipedia.org/wiki/Rich_Dad_Poor_Dad[Robert Toru Kiyosaki "Rich Dad Poor Dad",window=_blank,opts=nofollow]
+:myob: https://youtu.be/jFNdARDCrKA?t=1014[Mind your own business,window=_blank,opts=nofollow]
+:better-channel: https://youtube.com/@littlebitbetter7[LITTLE BIT BETTER,window=_blank,opts=nofollow]
+:ff-consumers-dont-know-what-they-want: footnote:[https://pubmed.ncbi.nlm.nih.gov/2016668/[Thinking too much: introspection can reduce the quality of preferences and decisions]]
+:ff-probing-markets: footnote:[https://openstax.org/books/principles-marketing/pages/11-3-the-gap-model-of-service-quality[11.3 The Gap Model of Service Quality]]
+:ff-ftc-endorse: footnote:[https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking[FTC's Endorsement Guides: What People Are Asking]]
+
+.ASE Inc, DALL-E Hacker Dad vs. Cog Dad...
+[#img-devs]
+image::{img-prefix}/devs.png[Channel,800,450]
+
+Happy Tuesday, Friends!
+
+This long-delayed newsletter addresses an urgent American issue that many are unaware of.
+First, I'd like to extend my thanks to {matt} for alerting me to recent developments,
+ensuring that I do not inadvertently publish sensitive information.
+*_This post is not meant to be a bombshell._* Bombshells are in the news.
+
+Instead, let me tell you a story of {jrh}, someone I know.
+Someone who codes almost as eloquently as I do. 😜.
+
+In this edition, I aim to shed light on the imminent risks that American families face in preserving our way of life.
+News of a looming recession and escalating cyberattacks pervade the media.
+Is the situation as dire as it seems?
+The insights in this newsletter arise from a commissioned research project that led J to a revelation - one that I had already intuited.
+Specifically, it concerns us, the conflict in Europe (to which the Ukraine war belongs),
+the ramifications of the 1991 world order, and the inevitable outcomes for Americans, the West, Ukraine, and its allies.
+Will these events matter in 2023?
+
+This post is the third installment of the _4-part status report_{ff-prior-article}.
+And this exact article is the conclusion to a series of reports that I've been working on since 2022.
+So, by now it is a year old story. But to tell it and needed to build up enough context to make sense of emerging events.
+
+== So, Where Do We Stand So Far?
+
+Part 1: A New Frontier Arrives Early::
+Independent developers in Canada are commanding an eye-popping *$450/hr* for GPT-4 integration on long contracts.
+When will this wave hit the U.S.? _The world is capitalizing on a U.S. product._ But American pickup is painfully slow.
+
+Part 2: Expansion into War-Coding::
+In the aftermath, the lucrative commodification of war-coders emerges as an unanticipated industry windfall. +
+Yet the U.S. coder is left in the dust again. +
+Hacker capital of the world? It’s Prague—again.
+
+Part 3: War in Europe Spills into the U.S.::
+A closer look at Russia's cyber strategy: Is it a well-thought-out maneuver or a vindictive blitz on the U.S. economy, spurred by envy and failure? +
+Who should be worried? If the goal is destabilization, why hit the weakest links first? +
+Also, Ukraine has something new in the making. Something that could change _everything_.
+
+Part 4 (_We Are Here!_)::
+The ripples across the Atlantic: how developments in Europe are impacting American lives. +
+Where is the IT market shifting? Are we over-hired in U.S. tech?
+
+Simply put, every geopolitical analytics model warns that we’re on track to repeat the path of Argentina—once prosperous, now impoverished. +
+The only hope? A strong, brave candidate emerging in the next U.S. presidential election—someone as pragmatic as Ronald Reagan and as bold as Teddy Roosevelt.
+
+That’s the bare minimum it would take to wake our sleepy nation, wrestle down the debt, and preserve our way of life through integrity and moral resolve.
+
+Because we are under attack.
+
+.A simple search will produce unpleasant news.
+[#img-google-cyber-search,link=https://www.google.com/search?q=current+cyber+attacks+data+leak+exploits+usa]
+image::{img-prefix}/exploitation-news.png[Exploits,800,450]
+
+But that’s just the public side of the story.
+
+The real action is happening on the Dark Web Marketplace—and it's far grimmer.
+
+_Unfortunately, due to OpSec concerns, I can’t share details about the remarkable technology emerging in Europe, especially Ukraine.
+That was my original plan—to lift your spirits with a glimpse into the future. But I’ll have to save that for another time._
+
+_What I *can* share is what’s already happening here in the U.S.—and what we need to do in response._
+
+== Product Development Context -- Where the important data is from!
+
+[.small]
+*This is a segue on HOW I got the data that matters.* +
+_If you’re short on time, feel free to skip this section: *The American Problem*. +
+Just know: we build all kinds of weird software +
+{nbsp} — including tools that dig into the criminal underworld of the Dark Web. +
+This one’s for a client named J and his crew._
+
+Since this is a corporate newsletter—not a personal blog—let’s set the stage.
+
+I meet new founders almost daily, mostly from Europe.
+While global perspective matters, we prefer to keep our strongest relationships closer to home.
+As a boutique software company known for competence, we collaborate seamlessly with niche cybersecurity firms.
+But truth be told, these are rarely the *fun* clients.
+
+A few months ago, we partnered with another American founder to build a microSaaS platform—*CyberRecon*—for J.
+Its purpose: to monitor the Dark Web’s data leak marketplaces at scale.
+
+The system applies modern machine learning to detect criminal trends, reverse-engineer encryption strategies, trace the movement of stolen data, and—most importantly—profile both the attackers and their victims.
+
+It serves two purposes: cutting-edge research and practical automation of J’s existing business operations.
+
+Cybercriminals—"crackers"—use hidden services on the {tor} network to publish samples of stolen data and metadata for sale. These marketplaces are intentionally hard to locate.
+
+So-called "drops" often include small encrypted files. Buyers are expected to brute-force and decrypt them to preview the contents before purchase.
+
+Previously, J’s company handled this process manually—running scripts and performing human analysis.
+Now, ASE’s new platform automates it all with precision and flair. Kotlin-powered, of course.
+
+I hesitated to take on the project due to opportunity costs.
+Fresh off paternity leave, I found myself craving the camaraderie and structure of a corporate team—something with human contact and predictable rhythms.
+
+J’s deferred payment plan added another layer of risk. Burnout was a real possibility.
+Still, curiosity prevailed. The upside? If successful, a microSaaS like this could earn *orders of magnitude more* than a typical consulting engagement.
+The downside? Nothing at all—if J fails to land it.
+
+.People often imagine a cracker-catching hacker like this:
+[#img-cracker-bashing-hacker,link=https://kotlinlang.org/]
+image::{img-prefix}/media-vs-hacker.jpg[Cracker-Bashing Hacker,800,450]
+
+But why not just... an ordinary dad?
+
+_How about a regular American family man, working from a MacBook Pro, deployed on GCP, and fluent in extraordinary Kotlin?_
+
+Thanks to AI-assisted programming, I hoped the timeline would be shorter.
+But any seasoned hacker knows—creating something truly valuable takes time and dedication.
+
+A new friend of mine, {bitspittle}, founder of {kobweb}, wrote a {hacker-personal} that perfectly captures the gap between expectation and reality.
+Meeting hackers like him rekindles my love for humanity every time.
+His story is a must-read for any serious maker.
+
+I wish I could make a living building open source. But alas, I hack it a different way.
+
+Armed with my private aggregator, Tillie—fueled by Chat-GPT, Bard, GitHub Copilot, TabNine, and ultimately https://codeium.com/[Codeium]—I set off on J’s mission.
+
+These tools made the development experience fantastic. But they couldn’t replace real human interaction.
+
+The result? Six intense weeks of nonstop hacking, neglected property, and a household held together by grace.
+
+Here’s how that solo dev journey unfolded:
+
+* *Week One*: Blank slate. In production on day one. Established DevOps, MLOps, Test-First workflows, and Continuous Deployment—the hacker way. Also completed the root bounded context. At this stage, the product decrypted only about 20% of the demo files.
+
+* *Week Two*: Brought in a third partner who contributed an enhanced {kali} Docker image. This bumped decryption success to 100%. Thanks, K!
+
+* *Week Three*: Rolled out machine learning analytics models, added a dashboard, and automated the discovery and ripping of new drop sites.
+
+* *Week Four*: Introduced import/export functionality. J was now able to load years' worth of previously collected data.
+
+* *Week Five*: Delivered an impromptu enhancement: a self-service portal for J’s clients, complete with indexing, full-text search, and plugin actor support.
+
+* *Week Six*: Version 1.0! Final week focused on scaling the distributed system, optimizing routing, and favoring on-prem compute to reduce cloud costs. Also added support for K’s Kali Docker image shimming feature.
+
+This was a tough ride.
+
+I designed the distributed system and built all the parts—daemons, microservices, models—but I have no knowledge of how J deploys or integrates it into his larger "top secret" platform. All I can do is write airtight behavior tests and tinker with my own demo instances.
+
+And, as anyone who’s built distributed software knows, it always chafes along the communication lines once real-world load kicks in.
+
+Yet so far—no support tickets.
+
+Will this venture make good money for our partnership?
+
+(Spoiler alert: not one bit.)
+
+_But what it gave us is priceless in its own right—A cold and hard glimpse into the future of my `Merica._
+
+== What Have Three Random Hackers Discovered and Learned?
+
+J, K, and L uncovered startling truths.
+
+While ASE isn’t a cybersecurity firm, even our clients who specialize in security were stunned by the results. Sensational claims—like "80% of American workers have compromised Social Security Numbers"—should be met with skepticism. Verifying such statistics is nearly impossible without government access.
+
+Still, the level of societal penetration is disturbingly high.
+
+It’s enough for malicious actors to profile the American populace and launch _sophisticated psychological operations_ (PsyOps)—ones potentially far more effective than QAnon.
+
+.The New York Times:
+[#img-nyt-q,link={nyt-article-1}]
+image::{img-prefix}/ny-times-q.png[Q,800,450]
+_The Republican embrace of QAnon goes far beyond Trump._
+
+*Verified Key Findings:*
+
+. Both attackers and victims often lack advanced technical skills—most breaches rely on outdated, low-skill tactics.
+. An overwhelming amount of personal data belonging to Americans is being traded on criminal markets.
+. Most of this compromised data originates from well-established U.S. companies.
+. Breaches usually occur over long periods, with victim organizations largely unaware of the ongoing extraction.
+. Media highlights "whaling" (targeting executives), but it's a minor fraction compared to the total volume of leaked data.
+. Over 90% of the compromised content is sensitive customer data—and much of it is publicly accessible.
+
+_**A shocking discovery:** much of this data eventually becomes publicly available—stored in ephemeral, unguarded web archives.
+These archives are common knowledge in European cybersecurity circles but remain obscure in the U.S._
+
+.Mike Judge’s *Idiocracy* feels more prophetic with each passing year.
+[#img-browndo,link=https://www.imdb.com/title/tt0387808]
+image::{img-prefix}/browndo.png[BrownDo Corporation,800,450]
+Welcome to America, 2023. 😉
+
+Initially, the goal was to create a simple web crawler — a SaaS offering to help companies tighten up their cybersecurity posture.
+It sounded like a useful product. But the moment we started demoing, the harsh reality of systemic incompetence reared its head.
+
+One past client stored JWT tokens in a centralized database.
+When I flagged this as a fundamental security flaw, they brushed it off.
+J and K even had verifiable proof that a breach had occurred.
+But when they tried to make the sale?
+The customer went right back to the same vendor that had created the problem in the first place.
+
+.The rate of consumer data leaks in the U.S. has increased 44-fold.
+[#img-us-cyber,link=https://www.cisa.gov/topics/cyber-threats-and-advisories/advanced-persistent-threats/russia]
+image::{img-prefix}/us-cyber.png[US Aware,800,450]
+_But who's paying attention? Pretty much no one._
+
+The findings uncovered by J, K, and L weren’t just frustrating — they were deeply troubling.
+Official U.S. government estimates suggest that 11 million Americans have had their data compromised.
+Russian sources claim the real number is closer to 100 million.
+
+Where’s the truth? Probably somewhere in the middle — blurred under the crush of 12GB of freshly compressed stolen data appearing online *every single month*.
+
+The question is:
+_Is your data in there?_
+_Is mine?_
+
+'''
+
+Preliminary conclusion so far::
+* Corporate America is clueless and *careless*.
+* Corporate America is neutered by *incompetence*.
+
+'''
+
+== The Root Cause
+
+*The joke:* +
+Three brothers — _J_, _K_, and _L_ Random-Hacker — walk into a bar. +
+J: "We need a reliable way to provide for our families." +
+K: "The merit we offer has no value." +
+L: "What has value then?" +
+Bartender: "_LinkedIn knows!_"
+
+> For those who didn’t get the punchline:
+> LinkedIn is a social network for disgruntled employees —
+> _not_ a place where real business happens.
+
+So, what’s actually going on with my beloved `Merica?
+
+.2021 Colonial Pipeline Ransomware Attack: Managed on LinkedIn!
+[#img-colonial-pipeline,link=https://www.cisa.gov/news-events/news/attack-colonial-pipeline-what-weve-learned-what-weve-done-over-past-two-years]
+image::{img-prefix}/colonial-pipeline.png[Colonial Laggard,800,450]
+_At the time, I wrote about how the entire IT department showed stunning ignorance.
+Multiple execs were duped by the amateur Kremlin-backed group DarkSide._
+
+Back then, it was just a smash-and-grab for quick cash.
+But today?
+These same American laggard companies are now considered *strategic assets*.
+And platforms like LinkedIn are a *gold mine* for adversaries — not job seekers.
+
+Over decades in software, I’ve seen plenty of red flags.
+But when I started helping cybersecurity firms, I saw how deep the systemic rot runs.
+Designing secure systems 20 years ago taught me:
+**Systemic problems can’t be fixed with one-off solutions. They require systemic interventions.**
+
+Here’s what I’ve learned coaching high-performing teams:
+
+* People unwilling to help themselves **cannot** be helped.
+* Flip it around, and you get the real cure:
+_People committed to helping themselves are **unstoppable**!_
+
+In the 21st century, **well-designed, competently executed, domain-driven distributed software**
+is nearly immune to common cyberattacks — and certainly to dumb ones.
+*Period.*
+
+.The {cissp} is a book I can never get my dev teams to read.
+[#img-rdd13r-crying,link={cissp-link}]
+image::{img-prefix}/rdd13r-crying.jpg[Rdd13r and Security,450]
+_A good friend and phenomenal hacker gifted me this copy. +
+He's the knight of light in the darkness of engineering ignorance._
+
+Hollywood often paints cybercriminals as smart and sophisticated.
+In truth, most are opportunistic amateurs — immoral and reckless, not brilliant.
+And yet they thrive.
+Why?
+Because too many organizations are staffed with equally unskilled and indifferent engineers. +
+_That, too, is a product of a deeper systemic failure +
+— not individual malice, but institutional neglect._
+
+'''
+
+REVELATION #1::
+*Capable Domain Teams STOP the spread of multifaceted cyber warfare threats* +
+{nbsp} — such as PII mining and strategic snooping of critical business assets.
+
+* The antidote isn’t magic — it’s *Domain-Driven Design* (DDD) for business advantage;
+* The enabler isn’t compliance — it’s *Engineering Competence* applied with discipline and urgency.
+
+These aren’t buzzwords. These are proven, practical mechanisms — simple to explain but hard to sustain.
+Yet every team that gets these two elements right becomes a fortress of resilience, agility, and innovation.
+
+'''
+
+=== Segue in Segue on _Personal Protection_
+
+So what about *our* own lives?
+
+How can we protect ourselves, our families, and our data in an era of rampant cybercrime and weaponized leaks?
+
+Let’s get real — _there’s no magic wand_.
+Your bank, your apps, your vendors, your government — they aren’t prioritizing your security.
+If anything, you’ve been reduced to a line item in someone else’s breach report.
+
+So here’s what you can actually do.
+
+==== Own Your Data
+
+. **Do a Data Audit** – List where your sensitive data lives. From Amazon to your dentist, trace it all.
+. **Review Permissions** – Revoke everything unnecessary. Use maximum privacy settings wherever possible.
+. **Export, Deactivate, Delete** – Download your data, kill unused accounts, wipe what you can.
+_If your data isn’t there, it can’t be stolen._
+
+==== Watch Yourself, Because Others Are
+
+. **Enable Credit Monitoring** – Make it real-time. Catch anything suspicious fast.
+. **Monitor the Web (and Dark Web)** – Use services that alert you if your data is being sold or shared.
+. **Understand Your Rights** – When companies screw up, class actions may help you recover damages.
+
+==== Fortify Your Castle
+
+Your home network is a digital fortress. Treat it that way.
+
+. **Use MFA** – Everywhere. Always.
+. **Use a Password Manager** – Not “Fluffy123.” Use 16+ random characters per login.
+. **Use a VPN and Firewall** – Especially on public Wi-Fi.
+. **De-Microsoft** – Segment your digital life. Don’t mix work and personal. Use hardened software.
+_On my machines: separate boxes for browsing, finances, customer work, and family use._
+
+==== Phone Reality Check
+
+Phones are handy, but they’re your weakest link.
+Use them less. Use hardened laptops more.
+Use privacy-focused apps and avoid storing sensitive content on your phone.
+
+==== Elder Safety
+
+If you’re older, have a business, family, or investments:
+Get a trust. Get a will. Segment and secure your digital footprint.
+Ask your lawyer about digital asset protection protocols.
+
+'''
+
+== The American Problem
+
+_We’ve walked through the reality of personal exposure +
+{nbsp} — your data, your family, your daily choices._
+
+*Here’s the kicker:* _if we’re this vulnerable at the individual level, it’s because the entire national infrastructure is asleep at the wheel._
+We’re *_defenseless_* not just against opportunistic cyber gangs, but also against state-sponsored pressure from adversaries like Russia and China.
+And worse — the average American doesn’t know, doesn’t care, and wouldn’t believe it if they were told.
+
+Ignorance isn't just bliss — it’s become a national liability.
+
+*America doesn't know that it's already at war!*
+
+== Is It the War in Europe to Blame?
+
+News outlets blame Russia for the flood of data leaks — especially now that we support Ukraine.
+But let’s be honest: if Russia vanished tomorrow, would our cybersecurity problems vanish with them?
+Or are they just a convenient scapegoat for deeper dysfunction?
+
+*_First, let’s be clear: the U.S. federal government directly blames Russia._*
+Our own {cisa} continues to warn:
+
+> "... Russia will remain a top cyber threat as it refines and employs its espionage, influence, and attack capabilities."
+
+That’s not just political posturing.
+In 2023, the Kremlin openly declared its intention to inflict over **$3.5 trillion** in damage to the U.S. economy via cyber operations.
+
+But it goes further than money.
+Russia's State Duma proposed the development of **bioweapons targeting Anglo-Saxons**.
+Yes — {dumb-muscovy} is a real proposal from a nuclear-armed dictatorship.
+
+.{dumb-muscovy}
+[#img-katzap-anti-anglo-saxons]
+image::{img-prefix}/rutzki-mir.jpeg[Katzap No-Saxons,800,450]
+"Good Russians," MAGA says! (This article was later archived by West Observer.)
+
+And yet — our **vulnerability isn’t created by foreign hate.** It’s made worse by it, yes.
+But it’s rooted right here at home: in complacency, in rot, and in willful blindness.
+
+We overpay incumbent tech laggards for inferior goods and services.
+We stifle innovation and merit-based startups.
+We bail out failed firms that should’ve been replaced a decade ago.
+
+So yes — Muscovy and the RuZZki Mir are trying to break us.
+But they’re just giving the final push.
+We’re the ones who walked to the cliff’s edge.
+
+== While We SNORE, the Little Rus' Is Fighting for Us
+
+As far as the Kyiv Rus' – Moscovia Last War (as Polish President Andrzej Duda rightly named it), this is 350 years in the making.
+Its inevitable outcome can’t be summarized in one section, let alone one article. But we can begin with facts — and a few pictures.
+
+.Rozjebane ruskie gówno: Polish-Ukrainian combatant in the first days of Russian invasion of Ukraine, 2022.
+[#img-ruzke-govno,link=https://youtu.be/G0vLJJrVMHk]
+image::{img-prefix}/ruske-govno.png[Ozero,800,450]
+
+The man above is calmly explaining how he destroyed an entire Kadyrovite column in Ukraine's early days of defense:
+
+> “We don’t need food or gear. We’re on our own land. Our people help us here.
+> As the Polish saying goes, _killing RuVZki isn’t work — it’s a pleasure_.”
+>
+> _I am a Polish Jew. I’m asking my Polish brothers and sisters for a different kind of help now:
+> Heavy combat gear. So we can fight for Ukraine. Fight for Poland._
+
+This video went viral in Poland, turning his words into a meme: _“rozjebane ruskie gówno.”_
+You’ll hear it echoed often in Polish news, the military, and even Kyiv parade chants.
+
+It’s not just a statement of action — it’s a war cry from the soul of Eastern Europe. +
+Like in time when Ukraine destroyed Khazar accidentally ending Rome in the process.
+
+That artillery unit was led by a Ukrainian female commander — a detail Western journalists rarely highlight:
+_"God forbid American women get the idea they're fully equal to men, in combat too."_ +
+But ask anyone on the front: +
+*the women are not supporting the war effort from the sidelines +
+{nbsp} — they are leading it from the frontlines.*
+
+.The real Ukraine: Bucha, a year after throwing RuZZkiy Mir out.
+[#img-bucha,link={bucha}]
+image::{img-prefix}/butcha-before-and-after.png[Bucha,800,450]
+-- The same general location.
+
+.The real Ukraine: Ukrainian military boasts the world’s highest gender equality.
+[#img-ukes-women,link={women-soldiers}]
+image::{img-prefix}/ukes-women.png[Ukes Totas,800,450]
+
+_All military occupational specialties (MOS) in Ukraine are open to women._ +
+There were over **50,000 women** in active service when the regular army numbered only **250,000**.
+
+Today, legends are written daily by:
+
+* Sniper teams like “The Valkyries,”
+* Deep-sea divers,
+* Armor and artillery units,
+* A former lawyer turned mortar commander,
+* And even female staff generals.
+
+Despite wild claims on Western media — like Tucker Carlson parroting Kremlin numbers of “500,000 Ukrainians killed” — the truth is grounded and measurable:
+
+- Ukraine now fields **940,000 trained**, armed, and equipped troops.
+- Of those, **420,000** have already rotated through combat zones.
+- Another **440,000** serve in military police, currently rotating through combat readiness programs for the **Crimea offensive** — the last action way at the end of the war.
+
+And yet — **two-thirds of Ukraine’s reserves remain uncommitted.** +
+The rotation policy is 50/50, and while functional, could still be improved.
+
+This is not just a military transformation — it’s a societal rebirth.
+Ukraine is no longer the post-Soviet relic some remember.
+It is now a modern military power — competent, inclusive, and ideologically determined.
+The Rus` awakens. And she's out for blood.
+
+.The real Ukraine: Daughters of Olga (above).
+[#img-ukes-mother,link={mother-monument}]
+image::{img-prefix}/imrs.avif[Mother,800,450]
+
+_The Mothers of Rus' are about to rip “Vlad the Moron” and his sheeple a new one, +
+ending the reign of Peter the Mad._  — _The Washington Post_.
+
+But even the **Washington Post** misses something essential:
+They incorrectly conflate **Rus'** and **Russia** — a dangerous misunderstanding.
+
+**Rus'** — the ancient democratic federation of Eastern Slavs — was murdered by Muscovite autocracy in the **Novgorod massacres**, centuries ago.
+Today's Russia, despite the name, was never Rus'.
+It is a **Finno-Ugric** tribal amalgamation renamed by decree — a **Mordvinic** and **Vepsan** lineage forced to abandon their roots and language.
+
+When **Catherine the Great**, a German empress, slapped the “Russian” label onto her empire, it was a **colonial branding**, not a cultural inheritance.
+
+Yet today, Ukraine reclaims its maternal power. +
+The transformation is not symbolic — it’s *existential*.
+
+.Russians can’t comprehend Ukraine’s transformation.
+[#img-ukes-girls-mother,link={uke-language}]
+image::{img-prefix}/uke-girls.png[Ukrainian Mothers,800,450]
+
+Just decades ago, Russian-speaking Ukrainians viewed Russians as kin. +
+Now, more than **90% of Russian-speaking Ukrainians** have:
+
+* **Abandoned the Russian language,**
+* **Rejected Russian identity,**
+* And **embraced a national mission of decolonization.**
+
+Young women from Kharkiv and Donetsk — once Russian-speaking strongholds — are now:
+
+* Soldiers,
+* Snipers,
+* Mothers of future warriors,
+* And **living symbols** of a cultural firewall that will **never again allow Moscow to define them**.
+
+As one Ukrainian veteran mother said:
+> “We’ll raise our children on Mother’s milk — and hatred for everything Muscovy ever was.”
+
+Ukraine is no longer playing defense. +
+It is **building a new world**, and **Muscovy has no place in it.**
+
+A nation once anti-nuclear now reports **86% support** for **tactical nuclear strikes** on Muscovite targets.
+
+This is not escalation. +
+This is evolution — born of **survival, clarity, and rage.**
+
+== Finally
+
+*_The only thought I can't shake +
+{nbsp} {nbsp} -- when the nuclear dust settles, +
+which side of history will my America be on?_*
+
+'''
+
+WARNING::
+*Not pleb-safe!* +
+What follows is the unabridged research and systems analysis that informed this series. +
+It includes firsthand experience with strategic doctrine, systems warfare, and AI battlefield integration +
+— topics not suitable for LinkedIn, Medium, or other sanitized platforms. +
+This is **not** filtered for algorithms, audiences, or political fragility. +
+What you’ll find here are core premises, ground facts, and combat observations +
+— *for you to build your own conclusions*.
+
+'''
+
+== Finally — For the Living
+
+We are no longer debating politics, nor merely comparing economic models.
+
+We are witnessing the **final act** of an old world crumbling
+— and the first sparks of a new one igniting in the *blood, code, and courage* of Ukraine and its allies.
+
+Warfare has changed. It is no longer about soldiers and steel. It is now:
+
+* *Mind-first conflict* — #psychological#, informational, memetic, meritocratic.
+* *Algorithmic dominance* — fast-deploying, self-improving trunk-based models.
+* *Distributed intelligence* — machine-human consensus in the field — *_epistemic_*.
+* *Edge-situational autonomy* — not centralized command, not one school of thought.
+
+_And I have not even mentioned the digital personality stuff that will truly blow your mind!_ +
+I can't say many relevant things due to OpSec.
+But even considering the plainly evident +
+— I think we're on the verge of something fundamentally net-new.
+It might take Ukraine and Friends a long-minute to fully field and apply it,
+but when we see it in action, we will know, "war as usual" is no more.
+The shiny toys of yesterday don't matter anymore. +
+And that which matters most we just can't catch.
+
+#*America, sadly, is not ready for this future.*#
+
+The sleeping giant has become *_an entitled toddler_*, surrounded by _rusting toys_ — incapable of distinguishing marketing from substance, noise from insight, or self-indulgence from strategic necessity.
+
+We overpay cogs who build junk. +
+We mock brilliance under banners of acceptance. +
+We bury clarity in committees. +
+We export innovation only to buy it back as threat.
+
+Meanwhile, our enemies and allies alike evolve, fueled by necessity and filtered by war.
+
+== The Hacker’s Choice
+
+We — the *hackers* — the old guard of reason, agency, and joyful resistance — are once again presented with a choice:
+
+* Bow to the mediocrity that surrounds us, normalize the noise, marginalize elegance and survive inside the laggard machine...
+
+* **Or...**
+
+* Build what we believe in. Ship what matters. Shape the tools that might give *those who come after* a fighting chance.
+
+No reinforcements are coming. No founding fathers militia. No candidate-the-savior.
+All we can hope for is that our allies love and drag us along just for "the beacon of democracy" that we are.
+
+There are no more fairy tales, no magic candidates, no final awakenings.
+
+But *there is us* — **the living**, the ones still thinking clearly, writing cleanly, seeing patterns in the noise.
+
+Although there's less and less of us here, as many, by best of us, have already traded citizenship.
+Remaining, we owe it to no one but ourselves — and the few others who still carry the spark — to resist the slow death of mindless decay.
+
+== Where This Leaves Me
+
+I wrote this series not to convert, but to signal.
+
+If you've read this far, you know what I mean.
+
+This is not policy. This is prophecy that already happened.
+
+A record for those already awake — and a warning for those not yet scorched.
+
+Ukraine doesn't fight for her soil, but for the memory of dignity,
+for the redefinition of statehood in an age of networks and threats more virulent than bombs.
+These threats don't recognize borders -- only core values.
+The survival of Rus’ — and of any just people — rests not on gear, grievances, or slogans, but on grit, autonomy, and #collective competence#. +
+It is *_will_*, *_freedom_*, and *_choice_* — all in one word: *воля* — what the old Scythian Trident stands for on the shield of Ukrainian warriors today.
+Without -- we will get run over by the brainless herds of the foaming at the mouths undead, chanting for some "greatness." +
+Stupid is what stupid does. And what do we do?
+
+== So I leave you with this...
+
+*_When the nuclear dust settles, which side of history will my America be on?_* +
+{nbsp}{nbsp} *More importantly... which side will you?*

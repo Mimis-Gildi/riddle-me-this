@@ -61,6 +61,7 @@ Indie Economics — LLMs and Final Industrial Revolution::
 - Adventure: link:/riddle-me-this/adventures/2023/06/25/new-opportunities-with-ml-1.html[AI Indies Part 1 - Times of Change $$$]
 - Adventure: link:/riddle-me-this/adventures/2023/06/25/new-opportunities-with-ml-2.html[AI Indies Part 2 - Profitable Fundamentals]
 - Adventure: link:/riddle-me-this/adventures/2023/06/25/new-opportunities-with-ml-3.html[AI Indies Part 3 - Objective Analysis]
+- Adventure: link:/riddle-me-this/adventures/2023/08/07/new-opportunities-with-ml-4-cyber-volunteers-in-ukes.html[AI Indies Part 4 - Cyber Volunteers in Ukraine]
 
 Adaptation to LLM Disruption::
 - Reflection: link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality]
