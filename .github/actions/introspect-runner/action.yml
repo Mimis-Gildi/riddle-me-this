@@ -57,7 +57,6 @@ runs:
         java_version=$(java -version 2>&1 | head -n 1 || true)
         echo "::notice title=java::${java_version}"        
         # Gradle
-        gradle --version
         gradle_version=$(gradle -v 2>/dev/null | grep Gradle | xargs || true)
         echo "::notice title=gradle::${gradle_version}"
         # Kotlin
