@@ -15,36 +15,74 @@ runs:
       name: Introspect the Runner User Setup
       shell: zsh -l {0}
       run: |
-        echo "::group::🐧 OS & Shell"
-        cat /etc/os-release || true
-        echo "ZSH: $(zsh --version || true)"
+        echo "::group::🐧 OS Properties"
+        if [[ -f /etc/os-release ]]; then
+          while IFS='=' read -r key val; do
+            [[ -z "$key" || "$key" == \#* ]] && continue
+            key="os-${key:l}"
+            val="${val%\"}"
+            val="${val#\"}"
+            echo "::notice title=${key}::${val}"
+          done < /etc/os-release
+        else
+          echo "::notice title=os-issue::$(cat /etc/issue || true)"
+        fi
+        echo "::notice title=Shell::$(zsh --version || true)"
         echo "::endgroup::"
         
         echo "::group::📦 SDKMAN"
-        echo "SDKMAN dir: $SDKMAN_DIR"
-        echo "SDKs:"
-        ls "$SDKMAN_DIR/candidates" || true
+          if [[ -d "$SDKMAN_DIR" && -f "$SDKMAN_DIR/bin/sdkman-init.sh" ]]; then
+            echo "SDKMAN dir: $SDKMAN_DIR"
+            source "$SDKMAN_DIR/bin/sdkman-init.sh"
+            
+            for sdk in "$SDKMAN_DIR/candidates/"*; do
+              [[ -d "$sdk" ]] || continue
+              name=$(basename "$sdk")
+              version_file="$sdk/current"
+              # Resolve version (follows symlink if exists)
+              if [[ -L "$version_file" || -e "$version_file" ]]; then
+                version=$(readlink "$version_file" || basename "$version_file")
+                echo "::notice title=sdk-${name}::${version}"
+              else
+                echo "::warning title=sdk-${name}::Version not found"
+              fi
+            done
+          else
+            echo "::warning title=sdkman::SDKMAN not initialized or missing at $SDKMAN_DIR"
+          fi
         echo "::endgroup::"
         
         echo "::group::☕ JVM"
-        echo "Java: $(java -version 2>&1 | head -n 1 || true)"
-        echo "Gradle: $(gradle -v | grep Gradle || true)"
-        echo "Kotlin: $(kotlin -version || true)"
-        echo "Scala: $(scala -version || true)"
-        echo "SBT: $(sbt sbtVersion || true)"
-        echo "Maven: $(mvn -v || true)"
+        # Java
+        java_version=$(java -version 2>&1 | head -n 1 || true)
+        [[ -n "$java_version" ]] && echo "::notice title=jvm-java::${java_version}" || echo "::warning title=jvm-java::not found"        
+        # Gradle
+        gradle_version=$(gradle -v 2>/dev/null | grep Gradle | xargs || true)
+        [[ -n "$gradle_version" ]] && echo "::notice title=jvm-gradle::${gradle_version}" || echo "::warning title=jvm-gradle::not found"
+        # Kotlin
+        kotlin_version=$(kotlin -version 2>/dev/null | xargs || true)
+        [[ -n "$kotlin_version" ]] && echo "::notice title=jvm-kotlin::${kotlin_version}" || echo "::warning title=jvm-kotlin::not found"
+        # Scala
+        scala_version=$(scala -version 2>&1 | grep version | xargs || true)
+        [[ -n "$scala_version" ]] && echo "::notice title=jvm-scala::${scala_version}" || echo "::warning title=jvm-scala::not found"
+        # SBT
+        sbt_version=$(sbt sbtVersion 2>/dev/null | grep -E '^\[info\]' | tail -n 1 | sed -E 's/.* ([0-9.]+)$/\1/' || true)
+        [[ -n "$sbt_version" ]] && echo "::notice title=jvm-sbt::${sbt_version}" || echo "::warning title=jvm-sbt::not found"
+        # Maven (in case it's ever installed)
+        mvn_version=$(mvn -v 2>/dev/null | head -n 1 | xargs || true)
+        [[ -n "$mvn_version" ]] && echo "::notice title=jvm-maven::${mvn_version}" || echo "::warning title=jvm-maven::not found"
         echo "::endgroup::"
+
         
-        echo "::group::💎 ASDF & Ruby"
-        echo "ASDF: $(asdf --version || true)"
-        echo "Ruby Plugin: $(asdf plugin list | grep ruby || true)"
-        echo "Installed Rubies: $(asdf list ruby || true)"
+        echo "::group::💎Ruby"
+        echo "::notice title=ruby::$(ruby --version || true)"
+        echo "::notice title=rubygems::$(gem --version || true)"
+        echo "::notice title=bundler::$(bundle --version || true)"
         echo "::endgroup::"
         
         echo "::group::🐍 Conda Forge ML Env"
         source $HOME/miniforge3/bin/activate ml || true
-        echo "Conda: $(conda --version || true)"
-        echo "Active Env: $(conda info --envs | grep '\*' || true)"
-        echo "Packages:"
-        conda list || true
+        echo "::notice title=Conda::$(conda --version || true)"
+        echo "::notice title=Active Env::$(conda info --envs | grep '\*' || true)"
+        echo "::notice title=Python::$(python --version || true)"
         echo "::endgroup::"
