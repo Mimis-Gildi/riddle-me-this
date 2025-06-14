@@ -27,6 +27,7 @@ jobs:
 
 
       - name: 🛡️ Detect Runner Type
+        if: github.job.runner_name == 'self-hosted'
         id: env
         uses: ./.github/actions/detect-runner-type
 
