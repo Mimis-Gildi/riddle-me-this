@@ -20,12 +20,12 @@ permissions:
 
 defaults:
   run:
-    shell: zsh -l {0}
+    shell: bash
 
 jobs:
 
   snyk-scan:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     timeout-minutes: 11
 
     steps:
@@ -36,13 +36,7 @@ jobs:
           fetch-depth: 0
 
 
-      - name: 🛡️ Detect runner environment
-        id: env
-        uses: ./.github/actions/detect-runner-type
-
-
       - name: Setup Java
-        if: steps.env.outputs.is-self-hosted == 'false'
         uses: actions/setup-java@v4.7.1
         timeout-minutes: 5
         with:
