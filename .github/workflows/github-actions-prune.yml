@@ -28,7 +28,7 @@ concurrency:
 jobs:
 
   cleanup-old-action-runs-leaving-one:
-    timeout-minutes: 3
+    timeout-minutes: 7
     runs-on: self-hosted
     name: "Prune old actions leaving one"
 
@@ -42,3 +42,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./src/main/sh/clean-workflow-runs.sh
+        timeout-minutes: 5

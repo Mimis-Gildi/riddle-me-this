@@ -28,6 +28,7 @@ jobs:
   generate-running-release-notes:
     name: Detect Versions, Seed File, Inject Data
     runs-on: self-hosted
+    timeout-minutes: 11
 
     steps:
 
@@ -78,18 +79,21 @@ jobs:
       - name: Extract all feature Commit Messages
         if: steps.branch-guard.outputs.feature == 'true' && ( steps.notes-exist.outputs.exists == 'true' || steps.notes-seed-new.outputs.created == 'true' )
         id: commit-log
+        timeout-minutes: 3
         uses: ./.github/actions/release-notes-extract-commits
 
 
       - name: Extract all feature Changed Files
         if: steps.branch-guard.outputs.feature == 'true' && ( steps.notes-exist.outputs.exists == 'true' || steps.notes-seed-new.outputs.created == 'true' )
         id: file-log
+        timeout-minutes: 3
         uses: ./.github/actions/release-notes-extract-files-changed
 
 
       - name: Write Logs and Files into Release Notes
         if: steps.branch-guard.outputs.feature == 'true' && ( steps.notes-exist.outputs.exists == 'true' || steps.notes-seed-new.outputs.created == 'true' )
         id: append
+        timeout-minutes: 5
         uses: ./.github/actions/release-notes-write-notes
         with:
           version: ${{ steps.version-info.outputs.version }}
@@ -100,6 +104,7 @@ jobs:
       - name: Commit Release Notes Footer
         if: steps.branch-guard.outputs.feature == 'true' && steps.append.outputs.changed == 'true'
         uses: ./.github/actions/commit-and-push-files
+        timeout-minutes: 7
         with:
           files: releases/v${{ steps.version-info.outputs.version }}.md
           message: "📝 Inject commits into release notes v${{ steps.version-info.outputs.version }}"

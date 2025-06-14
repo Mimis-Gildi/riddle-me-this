@@ -26,7 +26,7 @@ jobs:
 
   snyk-scan:
     runs-on: self-hosted
-    timeout-minutes: 20
+    timeout-minutes: 11
 
     steps:
       - name: Checkout code
@@ -34,17 +34,27 @@ jobs:
         with:
           fetch-depth: 0
 
+
+      - name: 🛡️ Detect runner environment
+        id: env
+        uses: ./.github/actions/detect-runner-type
+
+
       - name: Setup Java
+        if: steps.env.outputs.is-self-hosted == 'false'
         uses: actions/setup-java@v4.7.1
+        timeout-minutes: 5
         with:
           distribution: temurin
           java-version: 21
 
       - name: Run Snyk directly from trunk
+        timeout-minutes: 5
         uses: snyk/actions/setup@master
 
 
       - name: Run Snyk Test App
+        timeout-minutes: 9
         run: snyk monitor
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_PROJECT_TOKEN }}

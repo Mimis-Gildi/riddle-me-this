@@ -39,7 +39,7 @@ jobs:
 
       - name: "Codacy Scan and Analysis"
         uses: codacy/codacy-analysis-cli-action@v4.4.5
-        timeout-minutes: 21
+        timeout-minutes: 27
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           gh-code-scanning-compat: true

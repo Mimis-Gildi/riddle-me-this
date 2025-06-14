@@ -15,6 +15,7 @@ jobs:
 
   bump_minor_version:
     runs-on: self-hosted
+    timeout-minutes: 3
 
     permissions:
       contents: write
@@ -104,6 +105,7 @@ jobs:
 
       - name: 📂 Commit and push version bump
         if: steps.branch-guard.outputs.feature == 'true'
+        timeout-minutes: 2
         uses: ./.github/actions/commit-and-push-files
         with:
           files: gradle.properties SECURITY.md

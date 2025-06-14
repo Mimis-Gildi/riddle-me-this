@@ -27,10 +27,6 @@ jobs:
     runs-on: self-hosted
     name: "Manage Stale Issues and Pull Requests IAW configured rules"
 
-    defaults:
-      run:
-        shell: bash
-
     steps:
       - name: "Run Stale Issues and Pull Requests checks in repository [${{ github.repository }}] by ${{ github.actor }}"
         uses: actions/stale@v9.1.0

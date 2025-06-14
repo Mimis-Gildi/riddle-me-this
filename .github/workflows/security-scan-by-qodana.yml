@@ -26,7 +26,7 @@ defaults:
 jobs:
   qodana-scan:
     runs-on: self-hosted
-    timeout-minutes: 17
+    timeout-minutes: 37
 
     steps:
       - name: Checkout full repository
@@ -37,6 +37,7 @@ jobs:
 
       - name: Run Qodana Scan (PR-mode enabled)
         uses: JetBrains/qodana-action@v2025.1.1
+        timeout-minutes: 35
         with:
           pr-mode: true
         env:
