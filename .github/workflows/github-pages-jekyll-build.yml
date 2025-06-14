@@ -1,21 +1,21 @@
-name: GitHub Site Publish by Jekyll
-run-name: "Jekyll built and publish on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
-#.github/workflows/github-pages-jekyll-build-and-deploy.yml
+name: GitHub Site Build with Jekyll
+run-name: "Jekyll built and bundles on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
+#.github/workflows/github-pages-deploy.yml
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "${{ github.workflow }}-jekyll"
+  cancel-in-progress: true
 
 defaults:
   run:
@@ -24,8 +24,8 @@ defaults:
 jobs:
 
   build-custom-jekyll-site:
-      runs-on: [self-hosted, site]
-      timeout-minutes: 27
+      runs-on: [self-hosted, jekyll]
+      timeout-minutes: 13
 
       steps:
       - name: ⬇️ Checkout repository
@@ -88,20 +88,6 @@ jobs:
         timeout-minutes: 5
         with:
           path: site/_site
+          retention-days: '2'
+          name: 'creative-engineering-at-scale'
 
-
-
-  deploy-to-default-pages:
-    needs: build-custom-jekyll-site
-    runs-on: self-hosted
-    timeout-minutes: 11
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-
-      - name: 🚀 Deploy to GitHub Pages
-        id: deployment
-        timeout-minutes: 9
-        uses: actions/deploy-pages@v4.0.5
