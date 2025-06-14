@@ -24,6 +24,7 @@ runs:
     - id: detect
       shell: zsh -l {0}
       run: |
+        echo "::group::Detect Runner Type"
         name="${{ runner.name }}"
         nick="$( hostname -s )"
         
@@ -37,3 +38,4 @@ runs:
 
         echo "name=$name" >> $GITHUB_OUTPUT
         echo "nick=$nick" >> $GITHUB_OUTPUT
+        echo "::endgroup::"
