@@ -1,0 +1,61 @@
+name: Introspect Runner
+description: "Outputs whether we're running on self-hosted infra or a hosted GitHub runner"
+author: "VK (rdd13r)"
+branding:
+  icon: "server"
+  color: "red"
+
+
+inputs:
+  details:
+    description: "Include details on tool versions not just SDK managers."
+    required: false
+    default: "true"
+
+runs:
+  using: "composite"
+
+  steps:
+
+    - id: introspect
+      name: Introspect the Runner User Setup
+      shell: zsh -l {0}
+      run: |
+        echo "::group::🐧 OS & Shell"
+        cat /etc/os-release || true
+        echo "ZSH: $(zsh --version || true)"
+        echo "::endgroup::"
+        
+        echo "::group::📦 SDKMAN"
+        echo "SDKMAN dir: $SDKMAN_DIR"
+        if [[ "${{ inputs.details }}" == "true" ]]; then
+          echo "SDKs:"
+          ls "$SDKMAN_DIR/candidates" || true
+        fi
+        echo "::endgroup::"
+        
+        echo "::group::☕ JVM"
+        echo "Java: $(java -version 2>&1 | head -n 1 || true)"
+        echo "Gradle: $(gradle -v | grep Gradle || true)"
+        echo "Kotlin: $(kotlin -version || true)"
+        echo "Scala: $(scala -version || true)"
+        echo "SBT: $(sbt sbtVersion || true)"
+        echo "::endgroup::"
+        
+        echo "::group::💎 ASDF & Ruby"
+        echo "ASDF: $(asdf --version || true)"
+        if [[ "${{ inputs.details }}" == "true" ]]; then
+          echo "Ruby Plugin: $(asdf plugin list | grep ruby || true)"
+          echo "Installed Rubies: $(asdf list ruby || true)"
+        fi
+        echo "::endgroup::"
+        
+        echo "::group::🐍 Conda Forge ML Env"
+        source $HOME/miniforge3/bin/activate ml || true
+        echo "Conda: $(conda --version || true)"
+        echo "Active Env: $(conda info --envs | grep '\*' || true)"
+        if [[ "${{ inputs.details }}" == "true" ]]; then
+          echo "Packages:"
+          conda list || true
+        fi
+        echo "::endgroup::"

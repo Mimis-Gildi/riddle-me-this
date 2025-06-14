@@ -1,4 +1,4 @@
-name: "Create Annotated Git Tag if Not Exists"
+name: Create Annotated Git Tag if Not Exists
 description: "Checks if the specified Git tag exists; creates and pushes it only if missing."
 
 author: "VK (rdd13r)"

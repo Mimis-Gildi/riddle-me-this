@@ -1,4 +1,4 @@
-name: "Check Issue Labels"
+name: Check Issue Labels
 description: "Extracts GitHub Issue labels and checks if all required ones are present"
 author: "VK (rdd13r)"
 branding:

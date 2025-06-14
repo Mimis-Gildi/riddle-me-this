@@ -1,4 +1,4 @@
-name: "Detect Runner Type"
+name: Detect Runner Type"
 description: "Outputs whether we're running on self-hosted infra or a hosted GitHub runner"
 author: "VK (rdd13r)"
 branding:

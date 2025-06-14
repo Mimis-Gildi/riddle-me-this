@@ -1,0 +1,50 @@
+name: Runner Canary
+run-name: "Introspect Runner on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
+#.github/workflows/custom-runner-introspect.yml
+
+on:
+  push:
+    branches-ignore:
+      - main
+  workflow_dispatch:
+    inputs:
+      full-host-report:
+        description: "Include hosted runner system info?"
+        type: boolean
+        required: false
+        default: true
+
+defaults:
+  run:
+    shell: zsh -l {0}
+
+jobs:
+  probe:
+    runs-on: self-hosted
+    timeout-minutes: 11
+
+    steps:
+
+      - name: 🛡️ Detect Runner Type
+        id: env
+        uses: ./.github/actions/detect-runner-type
+
+      - name: ☁️ Hosted Infra Snapshot
+        if: github.event.inputs.full-hosted-report == 'true'
+        run: |
+          echo "::group::🖥️ Hosted Infra Fingerprint"
+          echo "Event: $GITHUB_EVENT_NAME"
+          echo "Branch: $GITHUB_REF_NAME"
+          echo "OS Version: $(cat /etc/os-release || true)"
+          echo "Kernel: $(uname -a || true)"
+          echo "Memory: $(free -h || true)"
+          echo "CPU: $(nproc) cores, $(lscpu | grep 'Model name' | uniq || true)"
+          echo "::endgroup::"
+
+      - name: 🧪 Toolchain Validation (Self-hosted)
+        if: steps.env.outputs.is-self-hosted == 'true'
+        timeout-minutes: 7
+        uses: ./.github/actions/introspect-runner
+        with:
+          details: ${{ github.event.inputs.full-host-report }}
+

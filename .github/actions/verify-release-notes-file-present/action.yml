@@ -1,4 +1,4 @@
-name: "Verify Release Notes File Present"
+name: Verify Release Notes File Present
 description: >
   Ensures that releases/vX.Y.Z.md exists.
   Optionally checks for boilerplate ('TBD') content if strict mode is enabled.

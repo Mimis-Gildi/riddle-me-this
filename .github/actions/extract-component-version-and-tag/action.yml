@@ -1,4 +1,4 @@
-name: "Extract Canonical Component Version and Git Tag"
+name: Extract Canonical Component Version and Git Tag
 description: >
   Reads the 'version=' property from a configuration file (e.g., gradle.properties)
   and emits both the semantic version and its git tag form ('vX.Y.Z').
