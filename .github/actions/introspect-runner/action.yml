@@ -85,7 +85,7 @@ runs:
         typeset -A expected_sdks=(
           java   "21.0.7-tem"
           gradle "8.14.2"
-          kotlin "2.1.21"
+          kotlin "2.1.10"
           sbt    "1.11.2"
           scala  "3.7.1"
         )
