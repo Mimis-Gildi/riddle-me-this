@@ -10,7 +10,7 @@ on:
     types:
       - opened
       - reopened
-      - synchronize
+      - closed
   schedule:
     - cron: '23 17 4 * *'
 
@@ -20,31 +20,37 @@ permissions:
 
 defaults:
   run:
-    shell: zsh
+    shell: bash
 
 jobs:
 
   snyk-scan:
-    runs-on: self-hosted
-    timeout-minutes: 20
+    runs-on: ubuntu-latest
+    timeout-minutes: 11
 
     steps:
+
       - name: Checkout code
         uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 0
 
+
       - name: Setup Java
         uses: actions/setup-java@v4.7.1
+        timeout-minutes: 5
         with:
           distribution: temurin
           java-version: 21
 
+
       - name: Run Snyk directly from trunk
+        timeout-minutes: 5
         uses: snyk/actions/setup@master
 
 
       - name: Run Snyk Test App
+        timeout-minutes: 9
         run: snyk monitor
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_PROJECT_TOKEN }}

@@ -1,0 +1,53 @@
+name: Runner Canary
+run-name: "Introspect Runner on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
+#.github/workflows/custom-runner-introspect.yml
+
+on:
+  push:
+    branches-ignore:
+      - main
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: zsh -l {0}
+
+jobs:
+  probe:
+    runs-on: [self-hosted, peep]
+    timeout-minutes: 11
+
+    steps:
+
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+
+      - name: 🛡️ Detect Runner Type
+        id: env
+        uses: ./.github/actions/detect-runner-type
+
+
+      - name: ☁️ Hosted Infra Snapshot
+        run: |
+          echo "::group::🖥️ Hosted Infra Fingerprint"
+          echo "::notice title=Event::$GITHUB_EVENT_NAME"
+          echo "::notice title=Branch::$GITHUB_REF_NAME"
+          echo "::notice title=OS:: $(cat /etc/issue || true)"
+          echo "::notice title=Kernel::$(uname -v || true)"
+          echo "::notice title=Memory::$(free -hL || true)"
+          echo "::notice title=CPU::$(nproc) cores, $(lscpu | grep 'Model name' | uniq || true)"
+          echo "::notice title=Git::$(git --version || true)"
+          echo "::notice title=GitHub CLI::$(gh version || true)"
+          echo "::notice title=Runner::${{ steps.env.outputs.runner-name }} (${{ steps.env.outputs.runner-nick }})"
+          echo "::endgroup::"
+
+
+      - name: 🧪 Toolchain Validation (Self-hosted)
+        if: steps.env.outputs.is-self-hosted == 'true'
+        timeout-minutes: 7
+        uses: ./.github/actions/introspect-runner
+

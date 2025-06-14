@@ -23,7 +23,7 @@ runs:
 
     - name: Extract Commit Messages
       id: capture-commits
-      shell: zsh
+      shell: zsh -l {0}
       run: |
         git log --pretty=format:"%s" ${{ inputs.base_ref }}..HEAD > commits.txt
 

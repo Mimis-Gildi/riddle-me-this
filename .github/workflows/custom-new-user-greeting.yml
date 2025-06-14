@@ -17,13 +17,14 @@ concurrency:
 
 defaults:
   run:
-    shell: zsh
+    shell: zsh -l {0}
 
 jobs:
 
   first-time-user-greeting:
     name: "Welcoming new contributors!"
     runs-on: self-hosted
+    timeout-minutes: 2
 
     steps:
 

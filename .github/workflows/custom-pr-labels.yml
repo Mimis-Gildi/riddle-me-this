@@ -25,16 +25,17 @@ concurrency:
 
 defaults:
   run:
-    shell: zsh
+    shell: zsh -l {0}
 
 jobs:
 
   label-pull-request-iaw-labeling-guidelines:
-    timeout-minutes: 1
+    timeout-minutes: 2
     runs-on: self-hosted
     name: "Label Pull Request with IAW Labeling Guidelines examining content"
 
     steps:
+
       - name: "Label Pull Request pushing labels to GitHub Pull Request"
         uses: actions/labeler@v5.0.0
         with:

@@ -24,13 +24,13 @@ permissions:
 
 defaults:
   run:
-    shell: zsh
+    shell: zsh -l {0}
 
 jobs:
 
   prune-actions-cache:
     if: github.ref_type == 'branch'
-    timeout-minutes: 5
+    timeout-minutes: 7
     runs-on: self-hosted
     name: "Prune GitHub Actions Cache"
 
@@ -40,14 +40,17 @@ jobs:
         uses: actions/checkout@v4.2.2
         timeout-minutes: 1
 
+
       - name: "Install GitHub Actions Cache Extension"
         run: |
           gh extension install actions/gh-actions-cache
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+
       - name: "Prune Older Cache Keys (Keep minutes old)"
         continue-on-error: true
+        timeout-minutes: 5
         run: ./src/main/sh/clean-workflow-run-caches.sh
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

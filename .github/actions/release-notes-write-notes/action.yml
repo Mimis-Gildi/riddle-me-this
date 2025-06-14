@@ -31,7 +31,7 @@ runs:
 
     - name: Replace Release File Footer
       id: replace-footer
-      shell: zsh
+      shell: zsh -l {0}
       run: |
         FILE="releases/v${{ inputs.version }}.md"
         NEW_FILE="$FILE.new"
@@ -59,9 +59,10 @@ runs:
         done <<< "${{ inputs.files }}"
         echo >> "$NEW_FILE"
 
+
     - name: Compare Generated Notes
       id: compare-notes
-      shell: zsh
+      shell: zsh -l {0}
       run: |
         FILE="releases/v${{ inputs.version }}.md"
         NEW_FILE="$FILE.new"
@@ -81,9 +82,10 @@ runs:
           echo EOF
         } >> $GITHUB_OUTPUT
 
+
     - name: Replace Notes if Changed
       if: steps.compare-notes.outputs.changed == 'true'
-      shell: zsh
+      shell: zsh -l {0}
       run: |
         FILE="releases/v${{ inputs.version }}.md"
         NEW_FILE="$FILE.new"

@@ -1,0 +1,88 @@
+name: Introspect Runner
+description: "Outputs whether we're running on self-hosted infra or a hosted GitHub runner"
+author: "VK (rdd13r)"
+branding:
+  icon: "server"
+  color: "red"
+
+
+runs:
+  using: "composite"
+
+  steps:
+
+    - id: introspect
+      name: Introspect the Runner User Setup
+      shell: zsh -l {0}
+      run: |
+        echo "::group::🐧 OS Properties"
+        if [[ -f /etc/os-release ]]; then
+          while IFS='=' read -r key val; do
+            [[ -z "$key" || "$key" == \#* ]] && continue
+            key="os-${key:l}"
+            val="${val%\"}"
+            val="${val#\"}"
+            printf "::notice title=%s::%s\n" "${key}" "${val}"
+          done < /etc/os-release
+        else
+          echo "::notice title=os-issue::$(cat /etc/issue || true)"
+        fi
+        echo "::notice title=Shell::$(zsh --version || true)"
+        echo "::endgroup::"
+        
+        echo "::group::📦 SDKMAN"
+          if [[ -d "$SDKMAN_DIR" && -f "$SDKMAN_DIR/bin/sdkman-init.sh" ]]; then
+            echo "SDKMAN dir: $SDKMAN_DIR"
+            source "$SDKMAN_DIR/bin/sdkman-init.sh"
+            
+            for sdk in "$SDKMAN_DIR/candidates/"*; do
+              [[ -d "$sdk" ]] || continue
+              name=$(basename "$sdk")
+              version_file="$sdk/current"
+              # Resolve version (follows symlink if exists)
+              if [[ -L "$version_file" || -e "$version_file" ]]; then
+                version=$(readlink "$version_file" || basename "$version_file")
+                echo "::notice title=sdk-${name}::${version}"
+              else
+                echo "::warning title=sdk-${name}::Version not found"
+              fi
+            done
+          else
+            echo "::warning title=sdkman::SDKMAN not initialized or missing at $SDKMAN_DIR"
+          fi
+        echo "::endgroup::"
+        
+        echo "::group::☕ JVM"
+        # Java
+        java_version=$(java -version 2>&1 | head -n 1 || true)
+        echo "::notice title=java::${java_version}"        
+        # Gradle
+        gradle_version=$(gradle -v 2>/dev/null | grep Gradle | xargs || true)
+        echo "::notice title=gradle::${gradle_version}"
+        # Kotlin
+        kotlin_version=$(kotlin -version 2>/dev/null | xargs || true)
+        echo "::notice title=kotlin::${kotlin_version}"
+        # Scala
+        scala_version=$(scala -version 2>&1 | grep version | xargs || true)
+        echo "::notice title=scala::${scala_version}"
+        # SBT
+        sbt_version=$(sbt sbtVersion 2>/dev/null | grep -E '^\[info\]' | tail -n 1 | sed -E 's/.* ([0-9.]+)$/\1/' || true)
+        echo "::notice title=sbt::${sbt_version}"
+        # Maven (in case it's ever installed)
+        mvn_version=$(mvn -v 2>/dev/null | head -n 1 | xargs || true)
+        echo "::notice title=maven::${mvn_version}"
+        echo "::endgroup::"
+
+        
+        echo "::group::💎Ruby"
+        echo "::notice title=ruby::$(ruby --version || true)"
+        echo "::notice title=rubygems::$(gem --version || true)"
+        echo "::notice title=bundler::$(bundle --version || true)"
+        echo "::endgroup::"
+        
+        echo "::group::🐍 Conda Forge ML Env"
+        source $HOME/miniforge3/bin/activate ml || true
+        echo "::notice title=Conda::$(conda --version || true)"
+        echo "::notice title=Active Env::$(conda info --envs | grep '\*' || true)"
+        echo "::notice title=Python::$(python --version || true)"
+        echo "::endgroup::"

@@ -10,7 +10,7 @@ on:
     types:
       - opened
       - reopened
-      - closed
+      - synchronize
   schedule:
     - cron: '19 15 3 * *'
 
@@ -21,22 +21,26 @@ permissions:
 
 defaults:
   run:
-    shell: zsh
+    shell: zsh -l {0}
 
 jobs:
   qodana-scan:
-    runs-on: self-hosted
-    timeout-minutes: 17
+    runs-on: [self-hosted, qodana]
+    timeout-minutes: 77
 
     steps:
+
       - name: Checkout full repository
         uses: actions/checkout@v4.2.2
+        timeout-minutes: 3
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
+
       - name: Run Qodana Scan (PR-mode enabled)
         uses: JetBrains/qodana-action@v2025.1.1
+        timeout-minutes: 75
         with:
           pr-mode: true
         env:

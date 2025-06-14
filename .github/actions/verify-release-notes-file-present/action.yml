@@ -1,4 +1,4 @@
-name: "Verify Release Notes File Present"
+name: Verify Release Notes File Present
 description: >
   Ensures that releases/vX.Y.Z.md exists.
   Optionally checks for boilerplate ('TBD') content if strict mode is enabled.
@@ -27,7 +27,7 @@ runs:
   steps:
 
     - id: check
-      shell: zsh
+      shell: zsh -l {0}
       run: |
         FILE="releases/${{ inputs.tag }}.md"
         STRICT="${{ inputs.strict }}"

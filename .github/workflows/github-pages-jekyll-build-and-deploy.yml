@@ -19,27 +19,39 @@ concurrency:
 
 defaults:
   run:
-    shell: zsh
+    shell: zsh -l {0}
 
 jobs:
 
   build-custom-jekyll-site:
-      runs-on: self-hosted
+      runs-on: [self-hosted, site]
+      timeout-minutes: 27
 
       steps:
       - name: ⬇️ Checkout repository
         uses: actions/checkout@v4.2.2
 
+
+      - name: 🛡️ Detect runner environment
+        id: env
+        uses: ./.github/actions/detect-runner-type
+
+
       - name: 🧰 Set up Ruby
+        if: steps.env.outputs.is-self-hosted == 'false'
         uses: ruby/setup-ruby@v1.245.0
+        timeout-minutes: 5
         with:
           ruby-version: 3.3.5
           bundler-cache: true
           working-directory: site
 
+
       - name: 📦 Install dependencies
         working-directory: site
+        timeout-minutes: 7
         run: bundle install
+
 
       - name: ✏️ Inject version tag into site
         run: |
@@ -47,13 +59,16 @@ jobs:
           echo "site_version: $VERSION" >> site/_config.yml
           echo "::notice title=Version Injected::🔖 Set site_version: $VERSION"
 
+
       - name: 🛠️ Build Jekyll site
         working-directory: site
+        timeout-minutes: 13
         run: |
           echo "::group::Jekyll Build"
           JEKYLL_ENV=production bundle exec jekyll build
           echo "::notice title=Jekyll Status::✅ Build complete"
           echo "::endgroup::"
+
 
       - name: 🔗 Check for broken links
         working-directory: site/_site
@@ -67,14 +82,19 @@ jobs:
             || echo "::warning title=Links::⚠️ Broken internal links found"
           echo "::endgroup::"
 
+
       - name: 📤 Upload site artifact
         uses: actions/upload-pages-artifact@v3.0.1
+        timeout-minutes: 5
         with:
           path: site/_site
+
+
 
   deploy-to-default-pages:
     needs: build-custom-jekyll-site
     runs-on: self-hosted
+    timeout-minutes: 11
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -83,4 +103,5 @@ jobs:
 
       - name: 🚀 Deploy to GitHub Pages
         id: deployment
+        timeout-minutes: 9
         uses: actions/deploy-pages@v4.0.5

@@ -26,14 +26,14 @@ concurrency:
 
 defaults:
   run:
-    shell: zsh
+    shell: zsh -l {0}
 
 jobs:
 
   code-security-scan-with-codeql:
     name: CodeQL to Analyze (${{ matrix.language }})
-    timeout-minutes: 13
-    runs-on: self-hosted
+    timeout-minutes: 21
+    runs-on: [self-hosted, codeql]
     strategy:
       fail-fast: false
       matrix:
@@ -53,28 +53,40 @@ jobs:
       - name: "Checkout repository source code"
         uses: actions/checkout@v4.2.2
 
+
+      - name: 🛡️ Detect runner environment
+        id: env
+        uses: ./.github/actions/detect-runner-type
+
+
       - name: Setup Java for Kotlin
-        if: matrix.language == 'java-kotlin'
+        if: steps.env.outputs.is-self-hosted == 'false' && matrix.language == 'java-kotlin'
         uses: actions/setup-java@v4.7.1
+        timeout-minutes: 5
         with:
           distribution: temurin
           java-version: 21
 
+
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3.29.0
+        timeout-minutes: 17
         with:
           languages: ${{ matrix.language }}
           build-mode: ${{ matrix.build-mode }}
           queries: +security-extended,security-and-quality
 
+
       - name: Fallback Gradle Build
         if: matrix.uses-gradle && matrix.build-mode == 'autobuild'
+        timeout-minutes: 5
         run: |
           echo "::group::Fallback Gradle Build"
           ./gradlew clean classes testClasses \
             && echo "::notice title=Gradle::✔️ Fallback succeeded" \
             || echo "::warning title=Gradle::❌ Fallback failed (ignored)"
           echo "::endgroup::"
+
 
       - name: Wrap-Up
         if: always()

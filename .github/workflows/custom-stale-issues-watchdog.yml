@@ -17,17 +17,18 @@ permissions:
   pull-requests: write
   contents: write
 
+defaults:
+  run:
+    shell: zsh -l {0}
+
 jobs:
   stale-issues-and-pull-requests-check:
     timeout-minutes: 2
     runs-on: self-hosted
     name: "Manage Stale Issues and Pull Requests IAW configured rules"
 
-    defaults:
-      run:
-        shell: bash
-
     steps:
+
       - name: "Run Stale Issues and Pull Requests checks in repository [${{ github.repository }}] by ${{ github.actor }}"
         uses: actions/stale@v9.1.0
         with:

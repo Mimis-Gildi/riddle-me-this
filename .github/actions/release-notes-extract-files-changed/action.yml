@@ -20,9 +20,10 @@ runs:
   using: "composite"
 
   steps:
+
     - name: Extract Changed Files
       id: capture-files
-      shell: zsh
+      shell: zsh -l {0}
       run: |
         BASE="${{ inputs.base_ref }}"
         git diff --name-only "$BASE"..HEAD > files.txt
