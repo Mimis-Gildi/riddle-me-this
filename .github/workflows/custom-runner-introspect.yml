@@ -7,20 +7,14 @@ on:
     branches-ignore:
       - main
   workflow_dispatch:
-    inputs:
-      full-host-report:
-        description: "Include hosted runner system info?"
-        type: boolean
-        required: false
-        default: true
 
-defaults:
-  run:
-    shell: zsh -l {0}
+#defaults:
+#  run:
+#    shell: zsh -l {0}
 
 jobs:
   probe:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     timeout-minutes: 11
 
     steps:
@@ -38,7 +32,6 @@ jobs:
 
 
       - name: ☁️ Hosted Infra Snapshot
-        if: github.event.inputs.full-hosted-report == 'true'
         run: |
           echo "::group::🖥️ Hosted Infra Fingerprint"
           echo "Event: $GITHUB_EVENT_NAME"
