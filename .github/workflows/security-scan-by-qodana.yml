@@ -35,6 +35,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
+
       - name: Run Qodana Scan (PR-mode enabled)
         uses: JetBrains/qodana-action@v2025.1.1
         timeout-minutes: 35
