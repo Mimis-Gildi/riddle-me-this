@@ -99,8 +99,9 @@ runs:
         expected_mamba_version="2.0.5"
         expected_python_version="3.11.8"
 
-        for sdk in "${!expected_sdks[@]}"; do
-          defaults[$sdk]="${expected_sdks[$sdk]}"
+        for name in ${(k)expected_sdks}; do
+          version="${expected_sdks[$name]}"
+          defaults[$name]="$version"
         done
         defaults[ruby]="$expected_ruby_version"
         defaults[rubygems]="$expected_gems_version"
