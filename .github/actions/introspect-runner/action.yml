@@ -6,15 +6,6 @@ branding:
   color: "red"
 
 
-inputs:
-  details:
-    description: "Include details on tool versions not just SDK managers."
-    required: false
-    default: "true"
-  labels:
-    description: "Runner labels from GitHub context"
-    required: true
-
 runs:
   using: "composite"
 
@@ -31,10 +22,8 @@ runs:
         
         echo "::group::📦 SDKMAN"
         echo "SDKMAN dir: $SDKMAN_DIR"
-        if [[ "${{ inputs.details }}" == "true" ]]; then
-          echo "SDKs:"
-          ls "$SDKMAN_DIR/candidates" || true
-        fi
+        echo "SDKs:"
+        ls "$SDKMAN_DIR/candidates" || true
         echo "::endgroup::"
         
         echo "::group::☕ JVM"
@@ -43,22 +32,19 @@ runs:
         echo "Kotlin: $(kotlin -version || true)"
         echo "Scala: $(scala -version || true)"
         echo "SBT: $(sbt sbtVersion || true)"
+        echo "Maven: $(mvn -v || true)"
         echo "::endgroup::"
         
         echo "::group::💎 ASDF & Ruby"
         echo "ASDF: $(asdf --version || true)"
-        if [[ "${{ inputs.details }}" == "true" ]]; then
-          echo "Ruby Plugin: $(asdf plugin list | grep ruby || true)"
-          echo "Installed Rubies: $(asdf list ruby || true)"
-        fi
+        echo "Ruby Plugin: $(asdf plugin list | grep ruby || true)"
+        echo "Installed Rubies: $(asdf list ruby || true)"
         echo "::endgroup::"
         
         echo "::group::🐍 Conda Forge ML Env"
         source $HOME/miniforge3/bin/activate ml || true
         echo "Conda: $(conda --version || true)"
         echo "Active Env: $(conda info --envs | grep '\*' || true)"
-        if [[ "${{ inputs.details }}" == "true" ]]; then
-          echo "Packages:"
-          conda list || true
-        fi
+        echo "Packages:"
+        conda list || true
         echo "::endgroup::"

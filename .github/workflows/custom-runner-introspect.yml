@@ -8,13 +8,13 @@ on:
       - main
   workflow_dispatch:
 
-#defaults:
-#  run:
-#    shell: zsh -l {0}
+defaults:
+  run:
+    shell: zsh -l {0}
 
 jobs:
   probe:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     timeout-minutes: 11
 
     steps:
@@ -27,7 +27,6 @@ jobs:
 
 
       - name: 🛡️ Detect Runner Type
-        if: github.job.runner_name == 'ubuntu-latest'
         id: env
         uses: ./.github/actions/detect-runner-type
 
@@ -41,6 +40,11 @@ jobs:
           echo "::notice title=Kernel::$(uname -a || true)"
           echo "::notice title=Memory::$(free -h || true)"
           echo "::notice title=CPU::$(nproc) cores, $(lscpu | grep 'Model name' | uniq || true)"
+          echo "::notice title=Disk::$(df -h || true)"
+          echo "::notice title=Network::$(ip a || true)"
+          echo "::notice title=Git::$(git --version || true)"
+          echo "::notice title=GitHub CLI::$(gh version || true)"
+          echo "::notice title=Runner::${{ steps.env.outputs.runner-name }} (${{ steps.env.outputs.runner-nick }})"
           echo "::endgroup::"
 
 
@@ -48,7 +52,4 @@ jobs:
         if: steps.env.outputs.is-self-hosted == 'true'
         timeout-minutes: 7
         uses: ./.github/actions/introspect-runner
-        with:
-          details: ${{ github.event.inputs.full-host-report }}
-          labels: ${{ toJson(runner.labels) }}
 
