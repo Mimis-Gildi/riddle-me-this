@@ -27,7 +27,7 @@ jobs:
 
 
       - name: 🛡️ Detect Runner Type
-        if: github.job.runner_name == 'self-hosted'
+        if: github.job.runner_name == 'ubuntu-latest'
         id: env
         uses: ./.github/actions/detect-runner-type
 
@@ -35,12 +35,12 @@ jobs:
       - name: ☁️ Hosted Infra Snapshot
         run: |
           echo "::group::🖥️ Hosted Infra Fingerprint"
-          echo "Event: $GITHUB_EVENT_NAME"
-          echo "Branch: $GITHUB_REF_NAME"
-          echo "OS Version: $(cat /etc/os-release || true)"
-          echo "Kernel: $(uname -a || true)"
-          echo "Memory: $(free -h || true)"
-          echo "CPU: $(nproc) cores, $(lscpu | grep 'Model name' | uniq || true)"
+          echo "::notice title=Event::$GITHUB_EVENT_NAME"
+          echo "::notice title=Branch::$GITHUB_REF_NAME"
+          echo "::notice title=OS:: $(cat /etc/os-release || true)"
+          echo "::notice title=Kernel::$(uname -a || true)"
+          echo "::notice title=Memory::$(free -h || true)"
+          echo "::notice title=CPU::$(nproc) cores, $(lscpu | grep 'Model name' | uniq || true)"
           echo "::endgroup::"
 
 
