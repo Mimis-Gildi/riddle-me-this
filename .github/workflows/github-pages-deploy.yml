@@ -1,4 +1,4 @@
-name: GitHub Site Publish by Jekyll
+name: GitHub Site Publish by Pages
 run-name: "Publish Pages Artifact on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
 #.github/workflows/github-pages-deploy.yml
 
