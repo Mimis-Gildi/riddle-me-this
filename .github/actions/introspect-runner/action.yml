@@ -5,6 +5,17 @@ branding:
   icon: "server"
   color: "red"
 
+inputs:
+  validate-sdks:
+    description: "Should SDKs expected in the Runner User environment be validated?"
+    required: false
+    default: "true"
+
+outputs:
+  sdkman:
+    description: "true if SDKMAN is present and valid"
+    value: ${{ steps.introspect.outputs.sdkman }}
+
 
 runs:
   using: "composite"
@@ -47,8 +58,10 @@ runs:
                 echo "::warning title=sdk-${name}::Version not found"
               fi
             done
+            echo "sdkman=true" >> $GITHUB_OUTPUT
           else
             echo "::warning title=sdkman::SDKMAN not initialized or missing at $SDKMAN_DIR"
+            echo "sdkman=false" >> $GITHUB_OUTPUT
           fi
         echo "::endgroup::"
         
