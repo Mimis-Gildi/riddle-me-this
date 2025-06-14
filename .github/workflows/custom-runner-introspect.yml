@@ -7,6 +7,13 @@ on:
     branches-ignore:
       - main
   workflow_dispatch:
+    inputs:
+      host-info:
+        required: false
+        type: boolean
+        default: true
+        description: "Should we probe for Hosted Infra? This is useful for debugging issues with Hosted Infra."
+
 
 defaults:
   run:
@@ -19,26 +26,27 @@ jobs:
 
     steps:
 
-      - name: ⬇️ Checkout
+      - name: Checkout
         uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 0
           fetch-tags: true
 
 
-      - name: 🛡️ Detect Runner Type
+      - name: Detect Runner Type
         id: env
         uses: ./.github/actions/detect-runner-type
 
 
-      - name: ☁️ Hosted Infra Snapshot
+      - name: Hosted Infra Snapshot
+        if: inputs.host-info == 'true'
         run: |
           echo "::group::🖥️ Hosted Infra Fingerprint"
           echo "::notice title=Event::$GITHUB_EVENT_NAME"
           echo "::notice title=Branch::$GITHUB_REF_NAME"
           echo "::notice title=OS:: $(cat /etc/issue || true)"
           echo "::notice title=Kernel::$(uname -v || true)"
-          echo "::notice title=Memory::$(free -hL || true)"
+          echo "::notice title=Memory::$(free -hg || true)"
           echo "::notice title=CPU::$(nproc) cores, $(lscpu | grep 'Model name' | uniq || true)"
           echo "::notice title=Git::$(git --version || true)"
           echo "::notice title=GitHub CLI::$(gh version || true)"
@@ -46,8 +54,32 @@ jobs:
           echo "::endgroup::"
 
 
-      - name: 🧪 Toolchain Validation (Self-hosted)
+      - name: Toolchain Validation
+        id: introspect
         if: steps.env.outputs.is-self-hosted == 'true'
         timeout-minutes: 7
         uses: ./.github/actions/introspect-runner
 
+
+      - name: Toolchain Validation Report
+        if: steps.env.outputs.is-self-hosted == 'true' && (steps.introspect.outputs.sdkman-matches == 'false' || steps.introspect.outputs.sdks-all-match == 'false')
+        run: |
+          echo "::group::Toolchain Validation Report"
+          
+          if [[ "${{ steps.introspect.outputs.sdkman-matches }}" == "false" ]]; then
+            echo "::warning title=SDKMAN Version Mismatch::Expected script (0.5.19 vs. ${{ steps.introspect.outputs.sdkman-version }}), native (0.7.4 vs. ${{ steps.introspect.outputs.sdkman-native }}"
+          fi
+          
+          if [[ "${{ steps.introspect.outputs.sdks-have-missing }}" == "true" ]]; then
+            echo "::warning title=Missing SDKs::These SDKs are missing: ${{ steps.introspect.outputs.missing-sdks }}"
+          fi
+          
+          if [[ -n "${{ steps.introspect.outputs.added-sdks }}" ]]; then
+            echo "::notice title=Extra SDKs Installed::These SDKs are extra: ${{ steps.introspect.outputs.added-sdks }}"
+          fi
+          
+          if [[ -n "${{ steps.introspect.outputs.mismatched-sdks }}" ]]; then
+            echo "::error title=Mismatched SDKs::These SDKs are in wrong versions: ${{ steps.introspect.outputs.mismatched-sdks }}"
+          fi
+          
+          echo "::endgroup::"
