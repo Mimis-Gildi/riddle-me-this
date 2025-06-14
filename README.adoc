@@ -23,10 +23,12 @@ ifdef::env-name[:relfilesuffix: .adoc]
 
 :a-issues: {gha}/custom-stale-issues-watchdog.yml
 :a-new-user: {gha}/custom-new-user-greeting.yml
-:a-site: {gha}/github-pages-jekyll-build-and-deploy.yml
+:a-jekyll: {gha}/github-pages-jekyll-build.yml
+:a-site: {gha}/github-pages-deploy.yml
 
 :a-prune: {gha}/github-actions-prune.yml
 :a-cache: {gha}/github-cache-prune.yml
+:a-infra: {gha}/custom-runner-introspect.yml
 
 This repository is the *canonical source of truth* for Vadim Kuhay’s (aka `rdd13r`) résumé materials, engineering artifacts, and personal publications.
 
@@ -85,13 +87,14 @@ a| image::{a-release}/badge.svg[Custom Publish Release,link={a-release},window=_
 
 a| image::{a-issues}/badge.svg[Custom Stale Issues Watchdog,link={a-issues},window=_blank,opts=nofollow]
 a| image::{a-new-user}/badge.svg[Custom New User Greeting,link={a-new-user},window=_blank,opts=nofollow]
-|
-a| image::{a-site}/badge.svg[GitHub Site Build and Deploy by Jekyll,link={a-site},window=_blank,opts=nofollow]
+a| image::{a-jekyll}/badge.svg[GitHub Build by Jekyll,link={a-jekyll},window=_blank,opts=nofollow]
+a| image::{a-site}/badge.svg[GitHub Site Deploy by Pages,link={a-site},window=_blank,opts=nofollow]
 
 a| image::{a-prune}/badge.svg[GitHub Prune Actions by CLI,link={a-prune},window=_blank,opts=nofollow]
 a| image::{a-cache}/badge.svg[GitHub Prune Actions Cache by CLI,link={a-cache},window=_blank,opts=nofollow]
 |
-|
+a| image::{a-infra}/badge.svg[Custom Runner Introspect,link={a-infra},window=_blank,opts=nofollow]
+
 
 |===
 
