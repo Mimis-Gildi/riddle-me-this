@@ -19,9 +19,9 @@ runs:
       shell: zsh -l {0}
       run: |
         if [[ "${{ runner.name }}" == *"GitHub Actions"* ]]; then
-          echo "::notice title=✅ Self-hosted runner::Running on self-hosted dedicated infrastructure."
-          echo "is-self-hosted=true" >> $GITHUB_OUTPUT
-        else
           echo "::notice title=🌀 Hosted runner::Running on GitHub-hosted collective farm infrastructure."
           echo "is-self-hosted=false" >> $GITHUB_OUTPUT
+        else
+          echo "::notice title=✅ Self-hosted runner::Running on self-hosted dedicated infrastructure."
+          echo "is-self-hosted=true" >> $GITHUB_OUTPUT
         fi

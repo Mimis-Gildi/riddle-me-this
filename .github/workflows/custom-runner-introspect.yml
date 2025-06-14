@@ -14,13 +14,13 @@ on:
         required: false
         default: true
 
-defaults:
-  run:
-    shell: zsh -l {0}
+#defaults:
+#  run:
+#    shell: zsh -l {0}
 
 jobs:
   probe:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     timeout-minutes: 11
 
     steps:
