@@ -69,7 +69,13 @@ jobs:
         if: steps.env.outputs.is-self-hosted == 'true' && ( steps.introspect.outputs.sdkman-matches == 'false' || steps.introspect.outputs.sdks-all-match == 'false')
         run: |
           echo "::group::Toolchain Validation Report"
-          echo "::notice title=SDKMAN::Present: ${{ steps.introspect.outputs.sdkman }}, Version Match: ${{ steps.introspect.outputs.sdkman-matches }}"
+          
+          if [[ "${{ steps.introspect.outputs.sdkman-matches }}" == "false" ]]; then
+            echo "::warning title=SDKMAN Version Mismatch::Expected sdkman=${{ inputs.sdkman-version }} native=${{ inputs.sdkman-native }}, got script=${{ steps.introspect.outputs.sdkman-version }}, native=${{ steps.introspect.outputs.sdkman-native }}"
+          else
+            echo "::notice title=SDKMAN::Present: true, Version Match: true"
+          fi
+  
           echo "::notice title=SDKMAN Reported::script=${{ steps.introspect.outputs.sdkman-version }}, native=${{ steps.introspect.outputs.sdkman-native }}"
 
           if [[ "${{ steps.introspect.outputs.sdks-have-missing }}" == "true" ]]; then
