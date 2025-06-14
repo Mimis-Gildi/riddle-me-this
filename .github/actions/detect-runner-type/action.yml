@@ -5,10 +5,6 @@ branding:
   icon: "server"
   color: "red"
 
-inputs:
-  labels:
-    description: "Runner labels from GitHub context"
-    required: true
 outputs:
   is-self-hosted:
     description: "true if running on a self-hosted runner"
@@ -22,8 +18,7 @@ runs:
     - id: detect
       shell: zsh -l {0}
       run: |
-        echo "Runner labels: $RUNNER_LABELS"
-        if [[ "${{ inputs.labels }}" == *"self-hosted"* ]]; then
+        if [[ "${{ runner.name }}" == *"GitHub Actions"* ]]; then
           echo "::notice title=✅ Self-hosted runner::Running on self-hosted dedicated infrastructure."
           echo "is-self-hosted=true" >> $GITHUB_OUTPUT
         else

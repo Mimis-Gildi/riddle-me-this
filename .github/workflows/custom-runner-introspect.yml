@@ -35,8 +35,6 @@ jobs:
       - name: 🛡️ Detect Runner Type
         id: env
         uses: ./.github/actions/detect-runner-type
-        with:
-          labels: ${{ toJson(runner.labels) }}
 
 
       - name: ☁️ Hosted Infra Snapshot

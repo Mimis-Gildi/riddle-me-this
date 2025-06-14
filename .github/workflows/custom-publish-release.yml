@@ -46,8 +46,6 @@ jobs:
       - name: 🛡️ Detect runner environment
         id: env
         uses: ./.github/actions/detect-runner-type
-        with:
-          labels: ${{ toJson(runner.labels) }}
 
 
       - name: 🔍 Extract canonical component version and semantic tag
