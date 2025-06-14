@@ -5,6 +5,9 @@ run-name: "Pruned Old Action Run Caches on ${{ github.repository }} by ${{ githu
 on:
   workflow_dispatch:
   workflow_call:
+  push:
+    branches:
+      - main
   create:
     branches:
       - '[0-9]*-*'
@@ -12,6 +15,7 @@ on:
     types:
       - opened
       - reopened
+      - closed
 
 
 concurrency:
