@@ -22,7 +22,7 @@ runs:
             key="os-${key:l}"
             val="${val%\"}"
             val="${val#\"}"
-            echo "::notice title=${key}::${val}"
+            printf "::notice title=%s::%s\n" "${key}" "${val}"
           done < /etc/os-release
         else
           echo "::notice title=os-issue::$(cat /etc/issue || true)"
@@ -55,22 +55,22 @@ runs:
         echo "::group::☕ JVM"
         # Java
         java_version=$(java -version 2>&1 | head -n 1 || true)
-        [[ -n "$java_version" ]] && echo "::notice title=jvm-java::${java_version}" || echo "::warning title=jvm-java::not found"        
+        echo "::notice title=java::${java_version}"        
         # Gradle
         gradle_version=$(gradle -v 2>/dev/null | grep Gradle | xargs || true)
-        [[ -n "$gradle_version" ]] && echo "::notice title=jvm-gradle::${gradle_version}" || echo "::warning title=jvm-gradle::not found"
+        echo "::notice title=gradle::${gradle_version}"
         # Kotlin
         kotlin_version=$(kotlin -version 2>/dev/null | xargs || true)
-        [[ -n "$kotlin_version" ]] && echo "::notice title=jvm-kotlin::${kotlin_version}" || echo "::warning title=jvm-kotlin::not found"
+        echo "::notice title=kotlin::${kotlin_version}"
         # Scala
         scala_version=$(scala -version 2>&1 | grep version | xargs || true)
-        [[ -n "$scala_version" ]] && echo "::notice title=jvm-scala::${scala_version}" || echo "::warning title=jvm-scala::not found"
+        echo "::notice title=scala::${scala_version}"
         # SBT
         sbt_version=$(sbt sbtVersion 2>/dev/null | grep -E '^\[info\]' | tail -n 1 | sed -E 's/.* ([0-9.]+)$/\1/' || true)
-        [[ -n "$sbt_version" ]] && echo "::notice title=jvm-sbt::${sbt_version}" || echo "::warning title=jvm-sbt::not found"
+        echo "::notice title=sbt::${sbt_version}"
         # Maven (in case it's ever installed)
         mvn_version=$(mvn -v 2>/dev/null | head -n 1 | xargs || true)
-        [[ -n "$mvn_version" ]] && echo "::notice title=jvm-maven::${mvn_version}" || echo "::warning title=jvm-maven::not found"
+        echo "::notice title=maven::${mvn_version}"
         echo "::endgroup::"
 
         
