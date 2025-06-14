@@ -23,6 +23,7 @@ runs:
   using: "composite"
 
   steps:
+
     - name: Configure Git Identity
       shell: zsh -l {0}
       run: |

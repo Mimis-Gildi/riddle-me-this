@@ -28,6 +28,7 @@ jobs:
     name: "Manage Stale Issues and Pull Requests IAW configured rules"
 
     steps:
+
       - name: "Run Stale Issues and Pull Requests checks in repository [${{ github.repository }}] by ${{ github.actor }}"
         uses: actions/stale@v9.1.0
         with:

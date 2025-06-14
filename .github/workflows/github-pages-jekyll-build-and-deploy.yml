@@ -35,6 +35,8 @@ jobs:
       - name: 🛡️ Detect runner environment
         id: env
         uses: ./.github/actions/detect-runner-type
+        with:
+          labels: ${{ toJson(runner.labels) }}
 
 
       - name: 🧰 Set up Ruby
@@ -46,16 +48,19 @@ jobs:
           bundler-cache: true
           working-directory: site
 
+
       - name: 📦 Install dependencies
         working-directory: site
         timeout-minutes: 7
         run: bundle install
+
 
       - name: ✏️ Inject version tag into site
         run: |
           VERSION=$(git describe --tags --abbrev=0 || echo "v0.0.0")
           echo "site_version: $VERSION" >> site/_config.yml
           echo "::notice title=Version Injected::🔖 Set site_version: $VERSION"
+
 
       - name: 🛠️ Build Jekyll site
         working-directory: site
@@ -65,6 +70,7 @@ jobs:
           JEKYLL_ENV=production bundle exec jekyll build
           echo "::notice title=Jekyll Status::✅ Build complete"
           echo "::endgroup::"
+
 
       - name: 🔗 Check for broken links
         working-directory: site/_site
@@ -78,11 +84,14 @@ jobs:
             || echo "::warning title=Links::⚠️ Broken internal links found"
           echo "::endgroup::"
 
+
       - name: 📤 Upload site artifact
         uses: actions/upload-pages-artifact@v3.0.1
         timeout-minutes: 5
         with:
           path: site/_site
+
+
 
   deploy-to-default-pages:
     needs: build-custom-jekyll-site

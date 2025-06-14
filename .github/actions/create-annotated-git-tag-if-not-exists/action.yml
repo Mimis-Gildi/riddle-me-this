@@ -24,29 +24,31 @@ outputs:
 
 runs:
   using: "composite"
+
   steps:
-  - id: tagger
-    shell: zsh -l {0}
-    run: |
-      TAG="${{ inputs.tag }}"
-      MESSAGE="${{ inputs.message }}"
-      
-      if [[ -z "$MESSAGE" ]]; then
-        MESSAGE="Automatic tag for $TAG"
-      fi
-      
-      git config user.name "github-actions[bot]"
-      git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      git fetch --tags
-      
-      if git rev-parse "$TAG" >/dev/null 2>&1; then
-        echo "::warning title=Tag Exists::$TAG already exists. Skipping."
-        echo "created=false" >> $GITHUB_OUTPUT
-        echo "skipped=true" >> $GITHUB_OUTPUT
-      else
-        git tag -a "$TAG" -m "$MESSAGE"
-        git push origin "$TAG"
-        echo "::notice title=Tag Created::🪜 Created and pushed $TAG"
-        echo "created=true" >> $GITHUB_OUTPUT
-        echo "skipped=false" >> $GITHUB_OUTPUT
-      fi
+
+    - id: tagger
+      shell: zsh -l {0}
+      run: |
+        TAG="${{ inputs.tag }}"
+        MESSAGE="${{ inputs.message }}"
+        
+        if [[ -z "$MESSAGE" ]]; then
+          MESSAGE="Automatic tag for $TAG"
+        fi
+        
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git fetch --tags
+        
+        if git rev-parse "$TAG" >/dev/null 2>&1; then
+          echo "::warning title=Tag Exists::$TAG already exists. Skipping."
+          echo "created=false" >> $GITHUB_OUTPUT
+          echo "skipped=true" >> $GITHUB_OUTPUT
+        else
+          git tag -a "$TAG" -m "$MESSAGE"
+          git push origin "$TAG"
+          echo "::notice title=Tag Created::🪜 Created and pushed $TAG"
+          echo "created=true" >> $GITHUB_OUTPUT
+          echo "skipped=false" >> $GITHUB_OUTPUT
+        fi

@@ -29,6 +29,7 @@ jobs:
     timeout-minutes: 11
 
     steps:
+
       - name: Checkout code
         uses: actions/checkout@v4.2.2
         with:
@@ -38,6 +39,8 @@ jobs:
       - name: 🛡️ Detect runner environment
         id: env
         uses: ./.github/actions/detect-runner-type
+        with:
+          labels: ${{ toJson(runner.labels) }}
 
 
       - name: Setup Java
@@ -47,6 +50,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 21
+
 
       - name: Run Snyk directly from trunk
         timeout-minutes: 5

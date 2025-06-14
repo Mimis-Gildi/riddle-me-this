@@ -112,7 +112,6 @@ jobs:
           message: "🔼 Auto bump version to ${{ steps.version-bump.outputs.new }}"
 
 
-
       - name: 🏋️ Summary annotation
         if: steps.branch-guard.outputs.feature == 'true'
         run: |

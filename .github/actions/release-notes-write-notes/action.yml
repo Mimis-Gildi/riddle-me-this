@@ -59,6 +59,7 @@ runs:
         done <<< "${{ inputs.files }}"
         echo >> "$NEW_FILE"
 
+
     - name: Compare Generated Notes
       id: compare-notes
       shell: zsh -l {0}
@@ -80,6 +81,7 @@ runs:
           cat "$DIFF_FILE"
           echo EOF
         } >> $GITHUB_OUTPUT
+
 
     - name: Replace Notes if Changed
       if: steps.compare-notes.outputs.changed == 'true'

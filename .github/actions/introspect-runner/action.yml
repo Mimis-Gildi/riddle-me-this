@@ -11,6 +11,9 @@ inputs:
     description: "Include details on tool versions not just SDK managers."
     required: false
     default: "true"
+  labels:
+    description: "Runner labels from GitHub context"
+    required: true
 
 runs:
   using: "composite"
