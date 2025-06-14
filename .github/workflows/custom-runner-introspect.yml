@@ -66,28 +66,31 @@ jobs:
 
 
       - name: Toolchain Validation Report
-        if: steps.env.outputs.is-self-hosted == 'true' && ( steps.introspect.outputs.sdkman-matches == 'false' || steps.introspect.outputs.sdks-all-match == 'false')
+        if: steps.env.outputs.is-self-hosted == 'true' && (steps.introspect.outputs.sdkman-matches == 'false' || steps.introspect.outputs.sdks-all-match == 'false')
+        env:
+          EXPECTED_SDKMAN_VERSION: ${{ inputs.sdkman-version }}
+          EXPECTED_SDKMAN_NATIVE: ${{ inputs.sdkman-native }}
         run: |
           echo "::group::Toolchain Validation Report"
           
+          echo "::notice title=SDKMAN Reported::script=${{ steps.introspect.outputs.sdkman-version }}, native=${{ steps.introspect.outputs.sdkman-native }}"
+          
           if [[ "${{ steps.introspect.outputs.sdkman-matches }}" == "false" ]]; then
-            echo "::warning title=SDKMAN Version Mismatch::Expected sdkman=${{ inputs.sdkman-version }} native=${{ inputs.sdkman-native }}, got script=${{ steps.introspect.outputs.sdkman-version }}, native=${{ steps.introspect.outputs.sdkman-native }}"
+            echo "::warning title=SDKMAN Version Mismatch::Expected sdkman=${EXPECTED_SDKMAN_VERSION} native=${EXPECTED_SDKMAN_NATIVE}, got script=${{ steps.introspect.outputs.sdkman-version }}, native=${{ steps.introspect.outputs.sdkman-native }}"
           else
             echo "::notice title=SDKMAN::Present: true, Version Match: true"
           fi
-  
-          echo "::notice title=SDKMAN Reported::script=${{ steps.introspect.outputs.sdkman-version }}, native=${{ steps.introspect.outputs.sdkman-native }}"
-
+          
           if [[ "${{ steps.introspect.outputs.sdks-have-missing }}" == "true" ]]; then
             echo "::warning title=Missing SDKs::These SDKs are missing: ${{ steps.introspect.outputs.missing-sdks }}"
           fi
-
+          
           if [[ -n "${{ steps.introspect.outputs.added-sdks }}" ]]; then
-            echo "::notice title=Extra SDKs Installed::These SDKs are extra:${{ steps.introspect.outputs.added-sdks }}"
+            echo "::notice title=Extra SDKs Installed::These SDKs are extra: ${{ steps.introspect.outputs.added-sdks }}"
           fi
-
+          
           if [[ -n "${{ steps.introspect.outputs.mismatched-sdks }}" ]]; then
             echo "::error title=Mismatched SDKs::These SDKs are in wrong versions: ${{ steps.introspect.outputs.mismatched-sdks }}"
           fi
-
+          
           echo "::endgroup::"
