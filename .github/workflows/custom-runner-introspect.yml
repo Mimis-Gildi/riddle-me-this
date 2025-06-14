@@ -67,16 +67,19 @@ jobs:
 
       - name: Toolchain Validation Report
         if: steps.env.outputs.is-self-hosted == 'true' && (steps.introspect.outputs.sdkman-matches == 'false' || steps.introspect.outputs.sdks-all-match == 'false')
-        env:
-          EXPECTED_SDKMAN_VERSION: ${{ inputs.sdkman-version }}
-          EXPECTED_SDKMAN_NATIVE: ${{ inputs.sdkman-native }}
         run: |
           echo "::group::Toolchain Validation Report"
           
-          echo "::notice title=SDKMAN Reported::script=${{ steps.introspect.outputs.sdkman-version }}, native=${{ steps.introspect.outputs.sdkman-native }}"
+          expected_script="5.15.0"
+          expected_native="0.7.5"
+          actual_script="${{ steps.introspect.outputs.sdkman-version }}"
+          actual_native="${{ steps.introspect.outputs.sdkman-native }}"
+          
+          echo "::notice title=SDKMAN Reported::script=${actual_script}, native=${actual_native}"
           
           if [[ "${{ steps.introspect.outputs.sdkman-matches }}" == "false" ]]; then
-            echo "::warning title=SDKMAN Version Mismatch::Expected sdkman=${EXPECTED_SDKMAN_VERSION} native=${EXPECTED_SDKMAN_NATIVE}, got script=${{ steps.introspect.outputs.sdkman-version }}, native=${{ steps.introspect.outputs.sdkman-native }}"
+            echo "::warning title=SDKMAN Version Mismatch::Expected script=${expected_script}, native=${expected_native}, got script=${actual_script}, native=${actual_native}"
+            echo "::error title=Mismatched SDKs::sdkman script expecting ${expected_script} and got ${actual_script}; sdkman native expecting ${expected_native} and got ${actual_native}"
           else
             echo "::notice title=SDKMAN::Present: true, Version Match: true"
           fi
