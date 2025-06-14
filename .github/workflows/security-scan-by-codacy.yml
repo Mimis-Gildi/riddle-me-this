@@ -28,7 +28,7 @@ jobs:
 
   code-security-scan-with-codacy:
     timeout-minutes: 27
-    runs-on: self-hosted
+    runs-on: [self-hosted, codacy]
     name: "Codacy Security Scan with Publishing"
 
     steps:

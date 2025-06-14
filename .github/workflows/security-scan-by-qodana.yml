@@ -25,7 +25,7 @@ defaults:
 
 jobs:
   qodana-scan:
-    runs-on: self-hosted
+    runs-on: [self-hosted, qodana]
     timeout-minutes: 77
 
     steps:

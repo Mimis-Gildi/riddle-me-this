@@ -33,7 +33,7 @@ jobs:
   code-security-scan-with-codeql:
     name: CodeQL to Analyze (${{ matrix.language }})
     timeout-minutes: 21
-    runs-on: self-hosted
+    runs-on: [self-hosted, codeql]
     strategy:
       fail-fast: false
       matrix:
