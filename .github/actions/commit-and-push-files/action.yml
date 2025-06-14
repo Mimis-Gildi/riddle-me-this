@@ -49,22 +49,24 @@ runs:
       run: |
         FILES="${{ inputs.files }}"
         MESSAGE="${{ inputs.message }}"
-
+        
         echo "::notice title=Preparing Commit::Files: $FILES"
-        git add $FILES || {
+        
+        IFS=' ' read -r -A file_list <<< "$FILES"
+        git add "${file_list[@]}" || {
           echo "::error title=Add Failed::One or more specified files do not exist or failed to add."
           echo "pushed=false" >> $GITHUB_OUTPUT
           exit 1
         }
-
+        
         if git diff --cached --quiet; then
           echo "::warning title=No Changes to Commit::Skipping commit and push"
           echo "pushed=false" >> $GITHUB_OUTPUT
           exit 0
         fi
-
+        
         git commit -m "$MESSAGE"
-
+        
         BRANCH="${GITHUB_HEAD_REF:-$(git rev-parse --abbrev-ref HEAD)}"
         if output=$(git push origin "$BRANCH" --porcelain); then
           echo "::notice title=Pushed Changes::➡️ Branch: $BRANCH :: $output"
