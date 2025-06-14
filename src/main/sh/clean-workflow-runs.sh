@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 set -uo pipefail
 declare -i MAX_PARALLEL=${MAX_PARALLEL:-100}
 

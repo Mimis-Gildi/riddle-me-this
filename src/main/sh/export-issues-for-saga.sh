@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 # Dump issue data into Saga capsule format by list or range.
 # Fully self-contained, simple, reproducible.
 set -euo pipefail

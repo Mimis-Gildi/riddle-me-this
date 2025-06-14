@@ -27,7 +27,7 @@ runs:
   steps:
 
     - id: check
-      shell: bash
+      shell: zsh
       run: |
         FILE="releases/${{ inputs.tag }}.md"
         STRICT="${{ inputs.strict }}"

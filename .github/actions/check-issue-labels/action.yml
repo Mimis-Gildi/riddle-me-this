@@ -35,7 +35,7 @@ runs:
 
   steps:
     - id: eval-labels
-      shell: bash
+      shell: zsh
       run: |
         echo "::group::Fetching Issue Labels"
         export GH_TOKEN="${{ inputs.token }}"

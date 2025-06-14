@@ -26,14 +26,14 @@ concurrency:
 
 defaults:
   run:
-    shell: bash
+    shell: zsh
 
 jobs:
 
   code-security-scan-with-codeql:
     name: CodeQL to Analyze (${{ matrix.language }})
     timeout-minutes: 13
-    runs-on: ${{ matrix.language == 'swift' && 'macos-latest' || 'ubuntu-latest' }}
+    runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:

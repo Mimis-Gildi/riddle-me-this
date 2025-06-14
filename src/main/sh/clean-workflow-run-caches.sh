@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 set -uo pipefail
 
 readonly repository="${REPO:-$(basename "$(git rev-parse --show-toplevel)")}"
