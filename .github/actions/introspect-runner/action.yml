@@ -155,7 +155,7 @@ runs:
           echo "sdkman-matches=$sdk_correct"
           echo "sdks-all-match=$sdks_match"
           echo "sdks-have-missing=$sdks_missing"
-          echo "missing-sdks=${sdk_missing[*]}"
+          echo "missing-sdks=${missing_sdks[*]}"
           echo "added-sdks=${added_sdks[*]}"
           echo "mismatched-sdks=${sdk_wrong_version[*]}"
         } >> $GITHUB_OUTPUT
