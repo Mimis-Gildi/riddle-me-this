@@ -26,19 +26,19 @@ jobs:
 
     steps:
 
-      - name: ⬇️ Checkout
+      - name: Checkout
         uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 0
           fetch-tags: true
 
 
-      - name: 🛡️ Detect Runner Type
+      - name: Detect Runner Type
         id: env
         uses: ./.github/actions/detect-runner-type
 
 
-      - name: ☁️ Hosted Infra Snapshot
+      - name: Hosted Infra Snapshot
         if: inputs.host-info == 'true'
         run: |
           echo "::group::🖥️ Hosted Infra Fingerprint"
@@ -54,8 +54,30 @@ jobs:
           echo "::endgroup::"
 
 
-      - name: 🧪 Toolchain Validation (Self-hosted)
+      - name: Toolchain Validation
+        id: introspect
         if: steps.env.outputs.is-self-hosted == 'true'
         timeout-minutes: 7
         uses: ./.github/actions/introspect-runner
 
+
+      - name: Toolchain Validation Report
+        if: steps.env.outputs.is-self-hosted == 'true' && ( steps.introspect.outputs.sdkman-matches == 'false' || steps.introspect.outputs.sdks-all-match == 'false')
+        run: |
+          echo "::group::Toolchain Validation Report"
+          echo "::notice title=SDKMAN::Present: ${{ steps.introspect.outputs.sdkman }}, Version Match: ${{ steps.introspect.outputs.sdkman-matches }}"
+          echo "::notice title=SDKMAN Reported::script=${{ steps.introspect.outputs.sdkman-version }}, native=${{ steps.introspect.outputs.sdkman-native }}"
+
+          if [[ "${{ steps.introspect.outputs.sdks-have-missing }}" == "true" ]]; then
+            echo "::warning title=Missing SDKs::${{ steps.introspect.outputs.missing-sdks }}"
+          fi
+
+          if [[ -n "${{ steps.introspect.outputs.added-sdks }}" ]]; then
+            echo "::notice title=Extra SDKs Installed::${{ steps.introspect.outputs.added-sdks }}"
+          fi
+
+          if [[ -n "${{ steps.introspect.outputs.mismatched-sdks }}" ]]; then
+            echo "::error title=Mismatched SDKs::${{ steps.introspect.outputs.mismatched-sdks }}"
+          fi
+
+          echo "::endgroup::"
