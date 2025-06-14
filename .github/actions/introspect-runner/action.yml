@@ -10,11 +10,28 @@ inputs:
     description: "Should SDKs expected in the Runner User environment be validated?"
     required: false
     default: "true"
+  sdkman-version:
+    description: "The version of SDKMAN to use"
+    required: false
+    default: "5.19.0"
+  sdkman-native:
+    description: "The native daemon library of the SDK Manager (architecture specific)"
+    required: false
+    default: "0.7.4"
 
 outputs:
   sdkman:
     description: "true if SDKMAN is present and valid"
     value: ${{ steps.introspect.outputs.sdkman }}
+  sdkman-version:
+    description: "The version of SDKMAN reported at the Runner User"
+    value: ${{ steps.introspect.outputs.sdkman-version }}
+  sdkman-native:
+    description: "The reported native daemon library of the SDK Manager"
+    value: ${{ steps.introspect.outputs.sdkman-native }}
+  sdkman-matches:
+    description: "true if SDKMAN version and native daemon library match"
+    value: ${{ steps.introspect.outputs.sdkman-matches }}
 
 
 runs:
@@ -59,6 +76,22 @@ runs:
               fi
             done
             echo "sdkman=true" >> $GITHUB_OUTPUT
+        
+        
+            if [[ "${{ inputs.validate-sdks }}" == "true" ]]; then
+              sdk_version=$(sdk version 2>/dev/null)
+              script_version=$(echo "$sdk_version" | awk '/^script:/ { print $2 }')
+              native_version=$(echo "$sdk_version" | awk '/^native:/ { print $2 }')
+              echo "sdkman-version=$script_version" >> $GITHUB_OUTPUT
+              echo "sdkman-native=$native_version" >> $GITHUB_OUTPUT
+              echo "::notice title=SDKman Version::script=$script_version, native=$native_version."
+              if [[ "$script_version" != "${{ inputs.sdkman-version }}" || "$native_version" != "${{ inputs.sdkman-native }}" ]]; then
+                echo "::warning title=SDKman Version Mismatch::Expected script=${{ inputs.sdkman-version }}, native=${{ inputs.sdkman-native }}, got script=$script_version, native=$native_version."
+                echo "sdkman-matches=false" >> $GITHUB_OUTPUT
+              else
+                echo "sdkman-matches=true" >> $GITHUB_OUTPUT
+              fi
+            fi
           else
             echo "::warning title=sdkman::SDKMAN not initialized or missing at $SDKMAN_DIR"
             echo "sdkman=false" >> $GITHUB_OUTPUT

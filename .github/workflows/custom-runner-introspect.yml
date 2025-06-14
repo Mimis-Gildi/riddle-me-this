@@ -7,6 +7,13 @@ on:
     branches-ignore:
       - main
   workflow_dispatch:
+    inputs:
+      host-info:
+        required: false
+        type: boolean
+        default: true
+        description: "Should we probe for Hosted Infra? This is useful for debugging issues with Hosted Infra."
+
 
 defaults:
   run:
@@ -32,6 +39,7 @@ jobs:
 
 
       - name: ☁️ Hosted Infra Snapshot
+        if: inputs.host-info == 'true'
         run: |
           echo "::group::🖥️ Hosted Infra Fingerprint"
           echo "::notice title=Event::$GITHUB_EVENT_NAME"
