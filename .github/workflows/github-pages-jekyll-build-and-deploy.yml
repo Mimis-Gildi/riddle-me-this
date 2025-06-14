@@ -24,7 +24,7 @@ defaults:
 jobs:
 
   build-custom-jekyll-site:
-      runs-on: self-hosted
+      runs-on: [self-hosted, site]
       timeout-minutes: 27
 
       steps:

@@ -14,7 +14,7 @@ defaults:
 
 jobs:
   probe:
-    runs-on: self-hosted
+    runs-on: [self-hosted, peep]
     timeout-minutes: 11
 
     steps:

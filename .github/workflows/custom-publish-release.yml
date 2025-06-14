@@ -26,7 +26,7 @@ defaults:
 jobs:
   resume-publish:
     name: "Publish Release Artifacts"
-    runs-on: self-hosted
+    runs-on: [self-hosted, release]
     timeout-minutes: 27
 
     steps:
