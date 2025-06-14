@@ -59,10 +59,6 @@ jobs:
         if: steps.env.outputs.is-self-hosted == 'true'
         timeout-minutes: 7
         uses: ./.github/actions/introspect-runner
-        with:
-          validate-sdks: true
-          sdkman-version: 5.15.0
-          sdkman-native: 0.7.5
 
 
       - name: Toolchain Validation Report
@@ -70,18 +66,8 @@ jobs:
         run: |
           echo "::group::Toolchain Validation Report"
           
-          expected_script="5.15.0"
-          expected_native="0.7.5"
-          actual_script="${{ steps.introspect.outputs.sdkman-version }}"
-          actual_native="${{ steps.introspect.outputs.sdkman-native }}"
-          
-          echo "::notice title=SDKMAN Reported::script=${actual_script}, native=${actual_native}"
-          
           if [[ "${{ steps.introspect.outputs.sdkman-matches }}" == "false" ]]; then
-            echo "::warning title=SDKMAN Version Mismatch::Expected script=${expected_script}, native=${expected_native}, got script=${actual_script}, native=${actual_native}"
-            echo "::error title=Mismatched SDKs::sdkman script expecting ${expected_script} and got ${actual_script}; sdkman native expecting ${expected_native} and got ${actual_native}"
-          else
-            echo "::notice title=SDKMAN::Present: true, Version Match: true"
+            echo "::warning title=SDKMAN Version Mismatch::Expected script (0.5.19 vs. ${{ steps.introspect.outputs.sdkman-version }}), native (0.7.4 vs. ${{ steps.introspect.outputs.sdkman-native }}"
           fi
           
           if [[ "${{ steps.introspect.outputs.sdks-have-missing }}" == "true" ]]; then

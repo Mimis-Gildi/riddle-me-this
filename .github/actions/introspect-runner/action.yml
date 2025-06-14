@@ -58,8 +58,8 @@ runs:
       shell: zsh -l {0}
       run: |
         echo "::group::Introspector"
-        echo "::notice title=Configuration::I am configured with: ${{ inputs }}"
-
+        echo "::notice title=Configuration::I am configured with: Check Versions: ${{ inputs.validate-sdks }}, SDKMAN Version: ${{ inputs.sdkman-version }}, SDKMAN Native: ${{ inputs.sdkman-native }}"
+        echo "::endgroup::"
         
         source "$SDKMAN_DIR/bin/sdkman-init.sh" || true
         source $HOME/miniforge3/bin/activate ml || true
@@ -90,7 +90,7 @@ runs:
         typeset -A expected_sdks=(
           java   "21.0.7-tem"
           gradle "8.14.2"
-          kotlin "2.1.11"
+          kotlin "2.1.21"
         )
         expected_ruby_version="3.3.5"
         expected_gems_version="3.5.16"
@@ -99,19 +99,6 @@ runs:
         expected_mamba_version="2.0.5"
         expected_python_version="3.11.8"
 
-        for name in ${(k)expected_sdks}; do
-          version="${expected_sdks[$name]}"
-          defaults[$name]="$version"
-        done
-        defaults[ruby]="$expected_ruby_version"
-        defaults[rubygems]="$expected_gems_version"
-        defaults[bundler]="$expected_bundler_version"
-        defaults[conda]="$expected_conda_version"
-        defaults[mamba]="$expected_mamba_version"
-        defaults[python]="$expected_python_version"
-
-        echo "::notice title=Defaults::${expected_sdks[@]}"
-        echo "::endgroup::"
         
         ### Test for SDKs        
         # SDKMAN?
