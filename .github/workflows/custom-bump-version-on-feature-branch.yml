@@ -14,7 +14,7 @@ defaults:
 jobs:
 
   bump_minor_version:
-    runs-on: self-hosted
+    runs-on: [self-hosted, feature]
     timeout-minutes: 3
 
     permissions:

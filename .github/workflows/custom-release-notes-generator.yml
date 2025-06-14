@@ -27,7 +27,7 @@ jobs:
 
   generate-running-release-notes:
     name: Detect Versions, Seed File, Inject Data
-    runs-on: self-hosted
+    runs-on: [self-hosted, feature]
     timeout-minutes: 11
 
     steps:
