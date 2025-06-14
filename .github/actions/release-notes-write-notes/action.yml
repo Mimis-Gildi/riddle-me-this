@@ -31,7 +31,7 @@ runs:
 
     - name: Replace Release File Footer
       id: replace-footer
-      shell: bash
+      shell: zsh
       run: |
         FILE="releases/v${{ inputs.version }}.md"
         NEW_FILE="$FILE.new"
@@ -61,7 +61,7 @@ runs:
 
     - name: Compare Generated Notes
       id: compare-notes
-      shell: bash
+      shell: zsh
       run: |
         FILE="releases/v${{ inputs.version }}.md"
         NEW_FILE="$FILE.new"
@@ -83,7 +83,7 @@ runs:
 
     - name: Replace Notes if Changed
       if: steps.compare-notes.outputs.changed == 'true'
-      shell: bash
+      shell: zsh
       run: |
         FILE="releases/v${{ inputs.version }}.md"
         NEW_FILE="$FILE.new"

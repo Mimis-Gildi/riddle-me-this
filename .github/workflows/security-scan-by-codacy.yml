@@ -22,19 +22,19 @@ concurrency:
 
 defaults:
   run:
-    shell: bash
+    shell: zsh
 
 jobs:
 
   code-security-scan-with-codacy:
     timeout-minutes: 27
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     name: "Codacy Security Scan with Publishing"
 
     steps:
 
       - name: "Checkout repository source code"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
         timeout-minutes: 3
 
       - name: "Codacy Scan and Analysis"

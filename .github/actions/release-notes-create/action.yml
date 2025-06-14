@@ -21,7 +21,7 @@ runs:
 
   - name: Check and Seed Release Notes File
     id: generate-version-release-notes
-    shell: bash
+    shell: zsh
     run: |
       FILE="releases/v${{ inputs.version }}.md"
       TEMPLATE=".github/templates/release-notes-template.md"

@@ -6,10 +6,15 @@ on:
   create:
     branches:
       - '[0-9]+-**'
+
+defaults:
+  run:
+    shell: zsh
+
 jobs:
 
   bump_minor_version:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     permissions:
       contents: write

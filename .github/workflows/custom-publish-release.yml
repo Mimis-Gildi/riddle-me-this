@@ -20,12 +20,12 @@ permissions:
 
 defaults:
   run:
-    shell: bash
+    shell: zsh
 
 jobs:
   resume-publish:
     name: "Publish Release Artifacts"
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     timeout-minutes: 17
 
     steps:

@@ -17,6 +17,10 @@ permissions:
   actions: write
   contents: write
 
+defaults:
+  run:
+    shell: zsh
+
 concurrency:
   group: "${{ github.workflow }}-${{ github.ref }}-actions-prune"
   cancel-in-progress: true
@@ -25,7 +29,7 @@ jobs:
 
   cleanup-old-action-runs-leaving-one:
     timeout-minutes: 3
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     name: "Prune old actions leaving one"
 
     steps:
@@ -35,7 +39,6 @@ jobs:
         timeout-minutes: 1
 
       - name: "Cleanup old action runs leaving the last one for each workflow"
-        shell: bash
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./src/main/sh/clean-workflow-runs.sh

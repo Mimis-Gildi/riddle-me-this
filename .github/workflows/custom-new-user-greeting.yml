@@ -17,13 +17,13 @@ concurrency:
 
 defaults:
   run:
-    shell: bash
+    shell: zsh
 
 jobs:
 
   first-time-user-greeting:
     name: "Welcoming new contributors!"
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
 
