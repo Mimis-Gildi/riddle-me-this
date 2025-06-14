@@ -21,7 +21,7 @@ concurrency:
 
 defaults:
   run:
-    shell: zsh
+    shell: zsh -l {0}
 
 jobs:
 

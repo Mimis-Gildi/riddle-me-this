@@ -24,7 +24,7 @@ runs:
 
   steps:
     - name: Configure Git Identity
-      shell: zsh
+      shell: zsh -l {0}
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -32,7 +32,7 @@ runs:
         
         
     - name: 🛠️ Ensure Branch Checkout
-      shell: zsh
+      shell: zsh -l {0}
       run: |
         BRANCH="${GITHUB_HEAD_REF:-$(git rev-parse --abbrev-ref HEAD)}"
         echo "::notice title=Target Branch::🔀 Switching to branch: $BRANCH"
@@ -44,7 +44,7 @@ runs:
 
     - name: 📤 Commit and Push Files
       id: update
-      shell: zsh
+      shell: zsh -l {0}
       run: |
         FILES="${{ inputs.files }}"
         MESSAGE="${{ inputs.message }}"

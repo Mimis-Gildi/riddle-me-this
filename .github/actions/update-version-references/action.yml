@@ -22,7 +22,7 @@ runs:
   steps:
 
     - name: 🔁 Update tracked version in gradle.properties
-      shell: zsh
+      shell: zsh -l {0}
       run: |
         FILE="gradle.properties"
         KEY="${{ inputs.track-gradle-key }}"
@@ -38,7 +38,7 @@ runs:
         
 
     - name: 🔍 Replace version references in other files
-      shell: zsh
+      shell: zsh -l {0}
       run: |
         FILES=$(echo "${{ inputs.files }}" | tr ',' ' ')
         VERSION="${{ inputs.version }}"

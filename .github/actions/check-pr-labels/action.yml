@@ -34,7 +34,7 @@ runs:
   steps:
 
     - id: eval-labels
-      shell: zsh
+      shell: zsh -l {0}
       run: |
         echo "::group::Fetching PR Labels"
         export GH_TOKEN="${{ inputs.token }}"

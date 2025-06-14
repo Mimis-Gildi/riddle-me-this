@@ -17,6 +17,10 @@ permissions:
   pull-requests: write
   contents: write
 
+defaults:
+  run:
+    shell: zsh -l {0}
+
 jobs:
   stale-issues-and-pull-requests-check:
     timeout-minutes: 2

@@ -28,7 +28,7 @@ runs:
 
     - name: Extract version and tag
       id: extract
-      shell: zsh
+      shell: zsh -l {0}
       run: |
         FILE="${{ inputs.file }}"
 

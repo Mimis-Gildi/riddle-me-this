@@ -26,7 +26,7 @@ runs:
   using: "composite"
   steps:
   - id: tagger
-    shell: zsh
+    shell: zsh -l {0}
     run: |
       TAG="${{ inputs.tag }}"
       MESSAGE="${{ inputs.message }}"

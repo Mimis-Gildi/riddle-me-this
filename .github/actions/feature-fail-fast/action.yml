@@ -32,7 +32,7 @@ runs:
 
     - name: Check the current branch being a Feature Branch
       id: check-feature-branch
-      shell: zsh
+      shell: zsh -l {0}
       run: |
         fail=false
         FEATURE_PATTERN="${{ inputs.feature-branch-pattern }}"
