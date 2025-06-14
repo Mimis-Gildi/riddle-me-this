@@ -105,9 +105,19 @@ runs:
           native_version=$(echo "$sdk_version" | awk '/^native:/ { print $2 }')
           echo "sdkman-version=$script_version" >> $GITHUB_OUTPUT
           echo "sdkman-native=$native_version" >> $GITHUB_OUTPUT
-          if [[ "$script_version" != "$expected_sdk_version" || "$native_version" != "$expected_native_version" ]]; then
-            sdk_correct=false
+
+          if [[ "$script_version" != "$expected_sdk_version" ]]; then
+          sdk_wrong_version+=("sdkman script expecting $expected_sdk_version and got ${script_version:-MISSING}")
+          sdk_correct=false
+          sdks_match="false"
           fi
+          
+          if [[ "$native_version" != "$expected_native_version" ]]; then
+          sdk_wrong_version+=("sdkman native expecting $expected_native_version and got ${native_version:-MISSING}")
+          sdk_correct=false
+          sdks_match="false"
+          fi
+
         else
           sdk_present=false
         fi
