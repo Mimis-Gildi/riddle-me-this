@@ -59,6 +59,10 @@ jobs:
         if: steps.env.outputs.is-self-hosted == 'true'
         timeout-minutes: 7
         uses: ./.github/actions/introspect-runner
+        with:
+          validate-sdks: true
+          sdkman-version: 5.15.0
+          sdkman-native: 0.7.5
 
 
       - name: Toolchain Validation Report
@@ -69,15 +73,15 @@ jobs:
           echo "::notice title=SDKMAN Reported::script=${{ steps.introspect.outputs.sdkman-version }}, native=${{ steps.introspect.outputs.sdkman-native }}"
 
           if [[ "${{ steps.introspect.outputs.sdks-have-missing }}" == "true" ]]; then
-            echo "::warning title=Missing SDKs::${{ steps.introspect.outputs.missing-sdks }}"
+            echo "::warning title=Missing SDKs::These SDKs are missing: ${{ steps.introspect.outputs.missing-sdks }}"
           fi
 
           if [[ -n "${{ steps.introspect.outputs.added-sdks }}" ]]; then
-            echo "::notice title=Extra SDKs Installed::${{ steps.introspect.outputs.added-sdks }}"
+            echo "::notice title=Extra SDKs Installed::These SDKs are extra:${{ steps.introspect.outputs.added-sdks }}"
           fi
 
           if [[ -n "${{ steps.introspect.outputs.mismatched-sdks }}" ]]; then
-            echo "::error title=Mismatched SDKs::${{ steps.introspect.outputs.mismatched-sdks }}"
+            echo "::error title=Mismatched SDKs::These SDKs are in wrong versions: ${{ steps.introspect.outputs.mismatched-sdks }}"
           fi
 
           echo "::endgroup::"

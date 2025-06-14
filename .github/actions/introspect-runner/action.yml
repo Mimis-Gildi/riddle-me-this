@@ -85,10 +85,16 @@ runs:
         typeset -A expected_sdks=(
           java   "21.0.7-tem"
           gradle "8.14.2"
-          kotlin "2.1.10"
+          kotlin "2.1.21"
           sbt    "1.11.2"
           scala  "3.7.1"
         )
+        expected_ruby_version="3.3.5"
+        expected_gems_version="3.5.16
+        expected_bundler_version="2.5.16"
+        expected_conda_version="25.3.0"
+        expected_mamba_version="2.0.5"
+        expected_python_version="3.12.8"
         
         ### Test for SDKs        
         # SDKMAN?
@@ -151,17 +157,40 @@ runs:
           echo "added-sdks=${added_sdks[*]}"
           echo "mismatched-sdks=${sdk_wrong_version[*]}"
         } >> $GITHUB_OUTPUT
+        
+        ### Ruby Toolchain Validation
+        # Ruby toolchain validation
+        actual_ruby_version=$(ruby --version 2>/dev/null | awk '{print $2}')
+        actual_gems_version=$(gem --version 2>/dev/null)
+        actual_bundler_version=$(bundle --version 2>/dev/null | awk '{print $3}')
+        
+        if [[ "$actual_ruby_version" != "$expected_ruby_version" ]]; then
+          sdk_wrong_version+=("ruby expecting $expected_ruby_version and got ${actual_ruby_version:-MISSING}")
+          sdks_match="false"
+        fi
+        if [[ "$actual_gems_version" != "$expected_gems_version" ]]; then
+          sdk_wrong_version+=("rubygems expecting $expected_gems_version and got ${actual_gems_version:-MISSING}")
+          sdks_match="false"
+        fi
+        if [[ "$actual_bundler_version" != "$expected_bundler_version" ]]; then
+          sdk_wrong_version+=("bundler expecting $expected_bundler_version and got ${actual_bundler_version:-MISSING}")
+          sdks_match="false"
+        fi
 
-        
-        echo "::group::Ruby and Bundler"
-        echo "::notice title=ruby::$(ruby --version || true)"
-        echo "::notice title=rubygems::$(gem --version || true)"
-        echo "::notice title=bundler::$(bundle --version || true)"
-        echo "::endgroup::"
-        
-        echo "::group::Conda Forge ML"
-        source $HOME/miniforge3/bin/activate ml || true
-        echo "::notice title=Conda::$(conda --version || true)"
-        echo "::notice title=Active Env::$(conda info --envs | grep '\*' || true)"
-        echo "::notice title=Python::$(python --version || true)"
-        echo "::endgroup::"
+        #### Conda environment validation
+        actual_conda_version=$(conda --version 2>/dev/null | awk '{print $2}')
+        actual_mamba_version=$(mamba --version 2>/dev/null | awk '{print $2}')
+        actual_python_version=$(python --version 2>/dev/null | awk '{print $2}')
+
+        if [[ "$actual_conda_version" != "$expected_conda_version" ]]; then
+          sdk_wrong_version+=("conda expecting $expected_conda_version and got ${actual_conda_version:-MISSING}")
+          sdks_match="false"
+        fi
+        if [[ "$actual_mamba_version" != "$expected_mamba_version" ]]; then
+          sdk_wrong_version+=("mamba expecting $expected_mamba_version and got ${actual_mamba_version:-MISSING}")
+          sdks_match="false"
+        fi
+        if [[ "$actual_python_version" != "$expected_python_version" ]]; then
+          sdk_wrong_version+=("python expecting $expected_python_version and got ${actual_python_version:-MISSING}")
+          sdks_match="false"
+        fi
