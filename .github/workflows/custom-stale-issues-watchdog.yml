@@ -57,3 +57,6 @@ jobs:
           close-pr-label: stale-pr-closed
           close-pr-message: |
             Closing this pull request after 14 additional days of inactivity.
+
+          operations-per-run: 100
+          enable-statistics: 'true'
