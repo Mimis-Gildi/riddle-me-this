@@ -4,6 +4,9 @@ run-name: "Executed Security Scan by Qodana on ${{ github.repository }} by ${{ g
 #.github/qodana.yaml
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
   workflow_call:
   pull_request:
