@@ -89,6 +89,4 @@ jobs:
         timeout-minutes: 5
         with:
           path: site/_site
-          retention-days: '2'
-          name: 'creative-engineering-at-scale'
 

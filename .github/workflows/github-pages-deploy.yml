@@ -39,14 +39,12 @@ jobs:
 
     steps:
 
-
-
       - name: 🚀 Deploy to GitHub Pages
         id: deployment
         timeout-minutes: 9
         uses: actions/deploy-pages@v4.0.5
         with:
-          artifact_name: 'creative-engineering-at-scale'
+          artifact_name: github-pages
           reporting_interval: '2500'
           error_count: '7'
           timeout: '420000'
