@@ -18,14 +18,14 @@ permissions:
   issues: write
   pull-requests: write
 
-
 defaults:
   run:
     shell: zsh -l {0}
 
+
 jobs:
   stale-issues-and-pull-requests-check:
-    timeout-minutes: 2
+    timeout-minutes: 3
     runs-on: self-hosted
     name: "Manage Stale Issues and Pull Requests IAW configured rules"
 
@@ -59,4 +59,4 @@ jobs:
             Closing this pull request after 14 additional days of inactivity.
 
           operations-per-run: 100
-          enable-statistics: 'true'
+          enable-statistics: true
