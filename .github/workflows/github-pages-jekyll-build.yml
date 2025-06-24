@@ -15,7 +15,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: "${{ github.workflow }}-site"
+  group: "${{ github.workflow }}-jekyll"
   cancel-in-progress: false
 
 defaults:
