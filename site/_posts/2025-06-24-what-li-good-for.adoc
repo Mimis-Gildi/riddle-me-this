@@ -1,0 +1,260 @@
+---
+categories: [reflections]
+tags: [LinkedIn]
+excerpt: Exploring the American cyber-volunteer movement in support of Ukraine's war effort.
+comments: true
+classes: wide
+---
+= What is LinkedIn really good for?
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:img-prefix:  /riddle-me-this/assets/images
+
+.ASE Inc, DALL-E Hacker Dad vs. Cog Dad...
+[#img-devs]
+image::{img-prefix}/devs.png[Channel,800,450]
+{nbsp}
+
+I'd like to share a daring experiment on LinkedIn with you.
+I hope that you will find this read both insightful and humorous.
+Here is some information on how LinkedIn works as a community and a platform.
+So, this is for people who care about LinkedIn in their lives.
+
+Importantly, I only publish on my own GitHub blog these days.
+But I will make this article available in full on LinkedIn for obvious reasons.
+
+
+== Lead-in to LinkedIn
+
+This story begins years ago, sometime at the end of the 2021.
+Meet Joe Random Hacker, a friend of mine and another founder who specializes in computer security, i.e, he threatens laggards for living.
+This was in the wake of the first massive LinkedIn data leak of some 700 million user profiles to the public.
+Joe and I were visiting at the _Northern_, one of the oldest hacker cliques in Quebec, Canada.
+People were complaining about "uselessness" of LinkedIn to their business endeavors.
+And it's true: all of these folks are founders and practically none of them got any business from LinkedIn, including yours truly.
+To myself and my closes friends the platform was completely inconsequential.
+And then Joe brings up an idea to run an experiment and figure out how LinkedIn really works and what is it good for.
+You see, there are two things that are constant about hackers:
+
+. Separate that which matters from that which doesn't matter, profusely.
+. Relentlessly experiment, test, probe, and iterate -- get to the bottom of it.
+
+*_We tug on things, and that's how we move the world forward._*
+
+Everyone had the data.
+A cracker name `toorgib` (marketing handle `God User`) was trying to sell it on Tor, incompetently I may add.
+And a Russian cracker group in Budapest kept tugging on LinkedIn for more and more PII, rather successfully.
+The company was owned by the most incompetent corporation in the world, practically a definition for "security vulnerability".
+Instead of trying to patch poor API design everything was swept under the rug and everyone still yapping got gagged with a wad of cash.
+This created a safe haven for experimentation on the Tor data drops and an insatiable market for LinkedIn user data.
+Of course LinkedIn was the talk on the floor at the _Northern_. Best of all -- none of this was illegal.
+You see, crackers are criminals and hackers never stoop down to their level -- that is a taboo and an instant exclusion.
+Hacker are opportunists, not criminals, and there's a thin line between the two.
+Thus, everyone was very careful to not talk about this in public outside of the clique.
+Though legal, morally this experimentation may still be on a shaky ground.
+
+The first thing's first -- hardcore analytics on the static data.
+Someone you may know of, provided an MLOps platform and initial models to discover classification with.
+The remarkable AI platform chose a classification schema based on the personality traits of the users.
+And this is the value I can share with you today.
+
+Note that I write hacker culture specific terms in parentheses, like so (`crackers`, `hackers`, `muggles`, etc.)
+And *The http://www.catb.org/jargon/html/[Jargon File] is available at CatB* __over http __for your perusal.
+
+== People who Don't Matter on LinkedIn
+
+The Wizard (`hackers`)::
+*Behavior:* Posts deeply insightful, countercultural takes, but rarely performs for engagement. +
+*Tactic:* Truth over optics, pushes people to think. +
+*Typical goal:* Authentic reach, maybe influence—but hates the game. +
+*Subtypes:* Indie hackers, ethical coaches, polymaths.
+
+_This is yours truly and bulk of the Northern community._
+
+The Lurker (`random`)::
+*Behavior:* Never posts, occasionally likes, reads everything. +
+*Tactic:* Pure consumption. May still be high-value (execs, real clients). +
+*Typical goal:* Private intel or hiring info.
+
+_Some of the larger group founders fall into this category._
+
+The Corporate Zombie (`muggle`)::
+*Behavior:* Automated job title updates, anniversary posts, or weirdly formal jargon. +
+*Tactic:* Nothing. Just drifting. +
+*Typical goal:* None. They're trapped.
+
+== People who Thrive on LinkedIn
+
+The Sycophant (`suits`)::
+*Behavior:* Constant praise, reacts to trends with empty "Love this!" or "So inspiring!" +
+*Tactic:* Upvotes their way into visibility, often tagging influencers for proximity exposure. +
+*Typical goal:* Get noticed by recruiters, not clients. +
+*Subtypes:* Corporate ladder climbers, HR cosplayers.
+
+The Hustler(`posers`)::
+*Behavior:* "10x this, $0 to $1M that," posts daily wins, offers vague consulting, growth hacks, or "success playbooks." +
+*Tactic:* Performative success to capture leads. +
+*Typical goal:* Sell digital products or coaching. +
+*Subtypes:* SaaS growth bros, lost solopreneur, startup flipper, personal coach.
+
+The Content Farmer(`freaks`)::
+*Behavior:* Reposts news or tweets with no added value, or uses AI-generated "wisdom." +
+*Tactic:* Volume over depth. Bots help boost early impressions. +
+*Typical goal:* Audience building for newsletter/substack/course pipeline.
+
+The Ninja/Recruiter(`leechers`)::
+*Behavior:* Slides into DMs with roles that don't match your skill set. +
+*Tactic:* Spray and pray. +
+*Typical goal:* Commission. We’re a commodity to them.
+
+The Troll/Contrarian(`trolls`)::
+*Behavior:* Comments to argue, "Well actually ..." experts, LinkedIn edgelords. +
+*Tactic:* Provocation, confrontational, or evocative for attention. +
+*Typical goal:* Visibility. Real value never understood by us or AI.
+
+_Analytics model offered a couple dozen more classifications, but that's not important to our story.
+I also checked with several modern chat bots before writing: this short list is good enough for us._
+
+
+== The Experiment
+
+The real experiment begins in 2024 and there were only four of us.
+I carefully offered a part to a fifth person -- a hacker friend who worked in recruiting for years, so he would have a better perspective.
+But he'd not touch this with a long pole.
+So we set of on only four categories.
+
+* *suit:* (1) The Sycophant -- *Joe:* Scenario Set 1;
+* *poser:* (2) The Hustler -- *John:* Scenario Set 2;
+* *freak:* (3) The Content Farmer -- *David:* Scenario Set 3;
+* *leech:* (4) The Ninja/Recruiter -- MISSING;
+* *zero:* (5) The Wizard -- _Yours Truly_: CONTROL SET 1.
+
+Now we need a few words about our hacker friends first.
+Joe, the one you already met, is a bit of a natural `troll` with about 2,000 connections.
+John is a founder from Midwest and is naturally a `random` with 300 connections.
+David is a founder from Prague and is naturally a `muggle` with 1,000 connections.
+`leech` never joined. And yours truly naturally was a `random` working up to `muggle` with 500 connections.
+
+== What's the Big Idea?
+
+All of the hackers wanted to get rid of their LinkedIn account.
+Not because it is a point of disrespect between the founders, which may be so, but because there was no use for it.
+And I wanted to keep mine because I coach engineering competence for Corporate America and actually need LinkedIn presence, even at a Lurker level.
+That's how I ended up with the `zero` job.
+
+We would aggressively work up to our designated personality type and use our shared ML analytics model to assess our progress as compared to the LinkedIn community.
+The community baseline, of course, is based on the ongoing scrape available for free on Prague Zero community (not to be confused with my role).
+From this collective experience we could then publish a study at the _Northern_ on possible practical use of LinkedIn by hackers.
+
+*_The experiment would run one year._*
+
+That should get some LOLs. _Or, so we thought._
+
+== The Test Fixture
+
+`zero` runway::
+I would start publishing. And I would publish real hardcore stories from the scene.
+This would still be considered as baseline because preliminary analysis showed that truthful and deep content was a negative gain on LinkedIn.
+I would also make a few mildly controversial posts based on touchy work my MLOps platform is used on by research companies.
+And I would make a few more posts that were personal and non-convincing. I could also wonder mildly simulating, personal growth.
+
+`leech` runway::
+This is the role I truly wish we had for the completeness of this experiment. But alas.
+
+`freak` runway, the Content Farmer::
+David had his work cut out for him.
+Obviously he didn't want to generate a ton of lame content by hand.
+He also needed a final objective to keep hin on track, like a course pipeline, which he chose.
+Quickly LLMs and his own great coding skills came to rescue.
+And he published on everything from kittens to toilet lids, profusely.
+Gradually incrementing volume and frequency as he moved on.
+
+`poser` runway, the Hustler::
+John was a not into sales one bit.
+He got the short end of the stick between us.
+But this was good for him -- he learned sales and marketing.
+Which he could use in his own business should he chose to expand from µSaaS.
+He conjured a product that he would actually build and sell -- a mobile dieting app.
+Unlike `freak` his expansion needed to follow a well-defined and focused path.
+Half a year gone by before he's gotten a good handle on this scenario set.
+
+`suit` runway, the Sycophant::
+If you recollect, Joe is a natural `troll`.
+Now he needed to get "nice" instead of "naughty".
+So, his challenge was a bit more personal than John's.
+And of course, Joe would have none of it -- experiment or not.
+Instead, he build an application, which became a serious webapp by the year end.
+And this application would use the LinkedIn API to post automatically for him.
+On a web dashboard published to his GCP account, he could see the results and adjust behavior as needed.
+He ended up being the least engaged of us all.
+And the work he did do was the kind he liked anyway -- designing and coding.
+And now he's thinking about turning his webapp into a service.
+Something along the lines of "@$$-lick-2.0".
+
+== General Results
+
+The outcome of this experiment was not at all what we had expected.
+I will go over the scenario sets one by one.
+But please also keep in mind that LinkedIn isn't just a platform.
+It's a living, changing, growing and evolving community.
+I expect that running this experiment one more time would yield somewhat different results.
+There really is not accommodating for the human factor.
+
+`zero` Runway, yours truly::
+My experience was rather ... lame.
+Although I really tried hard, nothing much changed for me, as expected.
+Nobody wanted to read my hard-earned babble.
+And those edge topics I'd pick, like a machine simulation of a politician, only gained a few likes.
+Despite the fact that some prominent politicians ended up being unexpectedly predictable.
+What we have here is that a natural behavior of a hacker doesn't get him anything on a social platform.
+Perhaps any social platform at that.
+
+`freak` runway, the Content Farmer::
+David's experience was a bit different.
+His follower count exploded by an orger of magnitude.
+He was having many impressions on practically everything he posted.
+At the same time his engagement measure remained relatively low.
+At the end he didn't get much business for his course pipeline.
+This was a *bust*! but not because it doesnt work -- it does work.
+What was missing for David is closing the sales funnel.
+A captivating call to action.
+
+`poser` runway, the Hustler::
+John's experience was in many ways similar to David's..
+He was having a lot of impressions on the product.
+And got a few thousand customers to buy the app in the store.
+However, this was very little compared to what he gets from ordinary marketing campaigns.
+He was closing, unlike David, but in the end the effort was almost not worth it for him.
+
+`suit` runway, the Sycophant::
+Joe, ... oh Joe, let me tell you, that sneaky rat!
+Now Joe lived up to his reputation on the scene.
+In the end he would absolutely refuse to get rid of his LinkedIn account.
+He did not sell, pitch, or otherwise even work for it!
+Yet his community got so large that in the end a single message to redirect to his webinar scored him a ton of money.
+Not to mention connections he had made actually interacting with people as himself.
+Tugging on other people's stuff, even if only automatically, scored Joe some massive "cool points" and valuable connections.
+And some of these connections he was able to convert to real capital.
+
+
+As you can imagine, Joe's run is not at all what we expected.
+Befriending CEOs and only learning about it days later at his dashboard turned out to be a boon for Joe.
+He could easily make a lot of money from this experiment had he had his heart in it.
+He didn't even respect what we were doing here because a `troll` and a `suit` typically never share a room.
+One question I have never answered for myself is: how does he get to keep his new friends once they figure out who he really is.
+But he does. At least for now.
+
+== Conclusion
+
+This did not turn out to be an experiment on a social platform.
+It was perhaps an experiment into human nature.
+Now Joe walks around all smug, repeating himself: +
+{nbsp} "you get more flies with honey than with crap."
+
+But what do you think? +
+What have we really learned from this experiment?
+
+
