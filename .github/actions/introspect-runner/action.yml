@@ -5,6 +5,48 @@ branding:
   icon: "server"
   color: "red"
 
+inputs:
+  validate-sdks:
+    description: "Should SDKs expected in the Runner User environment be validated?"
+    required: false
+    default: "true"
+  sdkman-version:
+    description: "The version of SDKMAN to use"
+    required: false
+    default: "5.19.0"
+  sdkman-native:
+    description: "The native daemon library of the SDK Manager (architecture specific)"
+    required: false
+    default: "0.7.4"
+
+outputs:
+  sdkman:
+    description: "true if SDKMAN is present in expected version"
+    value: ${{ steps.introspect.outputs.sdkman }}
+  sdkman-version:
+    description: "The version of SDKMAN reported at the Runner User"
+    value: ${{ steps.introspect.outputs.sdkman-version }}
+  sdkman-native:
+    description: "The reported native daemon library of the SDK Manager"
+    value: ${{ steps.introspect.outputs.sdkman-native }}
+  sdkman-matches:
+    description: "true if SDKMAN version and native daemon library match"
+    value: ${{ steps.introspect.outputs.sdkman-matches }}
+  sdks-all-match:
+    description: "true if all SDKs match"
+    value: ${{ steps.introspect.outputs.sdks-all-match }}
+  sdks-have-missing:
+    description: "true if any SDKs are missing"
+    value: ${{ steps.introspect.outputs.sdks-have-missing }}
+  missing-sdks:
+    description: "Space-separated list of missing SDKs"
+    value: ${{ steps.introspect.outputs.missing-sdks }}
+  added-sdks:
+    description: "Space-separated list of added SDKs"
+    value: ${{ steps.introspect.outputs.added-sdks }}
+  mismatched-sdks:
+    description: "Space-separated list of mismatched SDKs"
+    value: ${{ steps.introspect.outputs.mismatched-sdks }}
 
 runs:
   using: "composite"
@@ -15,74 +57,214 @@ runs:
       name: Introspect the Runner User Setup
       shell: zsh -l {0}
       run: |
-        echo "::group::🐧 OS Properties"
-        if [[ -f /etc/os-release ]]; then
-          while IFS='=' read -r key val; do
-            [[ -z "$key" || "$key" == \#* ]] && continue
-            key="os-${key:l}"
-            val="${val%\"}"
-            val="${val#\"}"
-            printf "::notice title=%s::%s\n" "${key}" "${val}"
-          done < /etc/os-release
-        else
-          echo "::notice title=os-issue::$(cat /etc/issue || true)"
-        fi
-        echo "::notice title=Shell::$(zsh --version || true)"
+        echo "::group::Introspector"
+        echo "::notice title=Configuration::I am configured with: Check Versions: ${{ inputs.validate-sdks }}, SDKMAN Version: ${{ inputs.sdkman-version }}, SDKMAN Native: ${{ inputs.sdkman-native }}"
         echo "::endgroup::"
         
-        echo "::group::📦 SDKMAN"
-          if [[ -d "$SDKMAN_DIR" && -f "$SDKMAN_DIR/bin/sdkman-init.sh" ]]; then
-            echo "SDKMAN dir: $SDKMAN_DIR"
-            source "$SDKMAN_DIR/bin/sdkman-init.sh"
-            
-            for sdk in "$SDKMAN_DIR/candidates/"*; do
-              [[ -d "$sdk" ]] || continue
-              name=$(basename "$sdk")
-              version_file="$sdk/current"
-              # Resolve version (follows symlink if exists)
-              if [[ -L "$version_file" || -e "$version_file" ]]; then
-                version=$(readlink "$version_file" || basename "$version_file")
-                echo "::notice title=sdk-${name}::${version}"
-              else
-                echo "::warning title=sdk-${name}::Version not found"
-              fi
-            done
-          else
-            echo "::warning title=sdkman::SDKMAN not initialized or missing at $SDKMAN_DIR"
-          fi
-        echo "::endgroup::"
+        source "$SDKMAN_DIR/bin/sdkman-init.sh" || true
+        source $HOME/miniforge3/bin/activate ml || true
+
+        ### Status Flags
+        sdk_present="true"
+        sdk_correct="true"
+        sdks_match="true"
+        sdks_missing="false"
+
+        ### Actual Versions
+        typeset -A defaults
+        typeset -A actual_sdks
+        typeset -a missing_sdks
+        typeset -a added_sdks
+        typeset -a sdk_wrong_version
+        typeset -A actual_ruby
+        typeset -A actual_python
+        script_version=""
+        native_version=""
         
-        echo "::group::☕ JVM"
-        # Java
-        java_version=$(java -version 2>&1 | head -n 1 || true)
-        echo "::notice title=java::${java_version}"        
-        # Gradle
-        gradle_version=$(gradle -v 2>/dev/null | grep Gradle | xargs || true)
-        echo "::notice title=gradle::${gradle_version}"
-        # Kotlin
-        kotlin_version=$(kotlin -version 2>/dev/null | xargs || true)
-        echo "::notice title=kotlin::${kotlin_version}"
-        # Scala
-        scala_version=$(scala -version 2>&1 | grep version | xargs || true)
-        echo "::notice title=scala::${scala_version}"
-        # SBT
-        sbt_version=$(sbt sbtVersion 2>/dev/null | grep -E '^\[info\]' | tail -n 1 | sed -E 's/.* ([0-9.]+)$/\1/' || true)
-        echo "::notice title=sbt::${sbt_version}"
-        # Maven (in case it's ever installed)
-        mvn_version=$(mvn -v 2>/dev/null | head -n 1 | xargs || true)
-        echo "::notice title=maven::${mvn_version}"
-        echo "::endgroup::"
+        # Commands
+        validate_candidates="${{ inputs.validate-sdks }}"
+        
+        ### Expected Versions
+        expected_sdk_version="${{ inputs.sdkman-version }}"
+        expected_native_version="${{ inputs.sdkman-native }}"
+        typeset -A expected_sdks=(
+          java   "21.0.7-tem"
+          gradle "8.14.2"
+          kotlin "2.1.21"
+        )
+        expected_ruby_version="3.3.5"
+        expected_gems_version="3.5.16"
+        expected_bundler_version="2.5.16"
+        expected_conda_version="25.3.0"
+        expected_mamba_version="2.0.5"
+        expected_python_version="3.11.8"
 
         
-        echo "::group::💎Ruby"
-        echo "::notice title=ruby::$(ruby --version || true)"
-        echo "::notice title=rubygems::$(gem --version || true)"
-        echo "::notice title=bundler::$(bundle --version || true)"
-        echo "::endgroup::"
+        ### Test for SDKs        
+        # SDKMAN?
+        if sdk_version=$(sdk version 2>/dev/null); then
+          script_version=$(echo "$sdk_version" | awk '/^script:/ { print $2 }')
+          native_version=$(echo "$sdk_version" | awk '/^native:/ { print $2 }')
+          echo "sdkman-version=$script_version" >> $GITHUB_OUTPUT
+          echo "sdkman-native=$native_version" >> $GITHUB_OUTPUT
+
+          if [[ "$script_version" != "$expected_sdk_version" ]]; then
+          sdk_wrong_version+=("sdkman script expecting $expected_sdk_version and got ${script_version:-MISSING}")
+          sdk_correct=false
+          sdks_match="false"
+          fi
+          
+          if [[ "$native_version" != "$expected_native_version" ]]; then
+          sdk_wrong_version+=("sdkman native expecting $expected_native_version and got ${native_version:-MISSING}")
+          sdk_correct=false
+          sdks_match="false"
+          fi
+
+        else
+          sdk_present=false
+        fi
+
+        # sdk Candidates
+        if [[ "true" == "$validate_candidates"  && "true" == "$sdk_present" ]]; then
         
-        echo "::group::🐍 Conda Forge ML Env"
-        source $HOME/miniforge3/bin/activate ml || true
-        echo "::notice title=Conda::$(conda --version || true)"
-        echo "::notice title=Active Env::$(conda info --envs | grep '\*' || true)"
-        echo "::notice title=Python::$(python --version || true)"
-        echo "::endgroup::"
+          # Collect Current Candidates
+          sdk current 2>/dev/null | tail -n +2 | while read -r candidate version _; do
+            [[ -z "$candidate" || -z "$version" ]] && continue
+            candidate="${candidate// /}"
+            version="${version// /}"
+            actual_sdks[$candidate]="$version"
+          done
+        fi
+        
+        # Validate Candidates
+        if [[ "true" == "$validate_candidates"  && "true" == "$sdk_present" && 0 -le "${#actual_sdks[@]}" ]]; then
+          for key in ${(k)expected_sdks}; do
+            expected="${expected_sdks[$key]}"
+            actual="${actual_sdks[$key]:-MISSING}"
+            if [[ "MISSING" == "$actual" ]]; then
+              missing_sdks+=("$key")
+              sdks_match="false"
+              sdks_missing="true"
+            elif [[ "${actual:-}" != "${expected:-}" ]]; then
+              sdks_match="false"
+              sdk_wrong_version+=("$key expecting $expected and got $actual")
+            else
+              echo "okay - ${key}"
+            fi
+          done
+        fi
+
+        for key in ${(k)actual_sdks}; do
+          if [[ -z "${expected_sdks[$key]:-}" ]]; then
+            added_sdks+=($key)
+          fi
+        done
+
+        {
+          echo "sdkman=$sdk_present"
+          echo "sdkman-version=$script_version"
+          echo "sdkman-native=$native_version"
+          echo "sdkman-matches=$sdk_correct"
+          echo "sdks-all-match=$sdks_match"
+          echo "sdks-have-missing=$sdks_missing"
+          echo "missing-sdks=${missing_sdks[*]}"
+          echo "added-sdks=${added_sdks[*]}"
+          echo "mismatched-sdks=${sdk_wrong_version[*]}"
+        } >> $GITHUB_OUTPUT
+        
+        ### Ruby Toolchain Validation
+        
+        # Ruby toolchain validation
+        actual_ruby_version=$(ruby --version 2>/dev/null | awk '{print $2}')
+        ruby_actual="${actual_ruby_version:-MISSING}"
+        
+        # Gem toolchain
+        actual_gems_version=$(gem --version 2>/dev/null)
+        gems_actual="${actual_gems_version:-MISSING}"
+        
+        # Bundler toolkit
+        actual_bundler_version=$(bundle --version 2>/dev/null | awk '{print $3}')
+        bundler_actual="${actual_bundler_version:-MISSING}"
+        
+        ## Safe handle ruby baby
+        if [[ "MISSING" == "$ruby_actual" ]]; then
+          missing_sdks+=("ruby")
+          sdks_match="false"
+          sdks_missing="true"
+        elif [[ "${ruby_actual:-}" != "${expected_ruby_version:-}" ]]; then
+          sdk_wrong_version+=("ruby expecting $expected_ruby_version and got $ruby_actual")
+          sdks_match="false"
+        else
+          echo "okay - ruby"
+        fi
+        
+        ## Safe handle gem boy
+        if [[ "MISSING" == "$gems_actual" ]]; then
+          missing_sdks+=("gem")
+          sdks_match="false"
+          sdks_missing="true"
+        elif [[ "${gems_actual:-}" != "${expected_gems_version:-}" ]]; then
+          sdk_wrong_version+=("ruby-gems expecting $expected_gems_version and got $gems_actual")
+          sdks_match="false"
+        else
+          echo "okay - ruby-gems"
+        fi
+        
+        ## Safe handle bundler boy
+        if [[ MISSING == "$bundler_actual" ]]; then
+          missing_sdks+=("bundler")
+          sdks_match="false"
+          sdks_missing="true"
+        elif [[ "${bundler_actual:-}" != "${expected_bundler_version:-}" ]]; then
+          sdk_wrong_version+=("bundler expecting $expected_bundler_version and got $bundler_actual")
+          sdks_match="false"
+        else
+          echo "okay - bundler"
+        fi
+
+        ### Conda environment validation
+        
+        # Conda SDK
+        actual_conda_version=$(conda --version 2>/dev/null | awk '{print $2}')
+        conda_actual="${actual_conda_version:-MISSING}"
+        
+        # Mamba Dependency Manager
+        actual_mamba_version=$(mamba --version 2>/dev/null | awk '{print $2}')
+        mamba_actual="${actual_mamba_version:-MISSING}"
+        
+        # Python
+        actual_python_version=$(python --version 2>/dev/null | awk '{print $2}')
+        python_actual="${actual_python_version:-MISSING}"
+        
+        if [[ "MISSING" == "$conda_actual" ]]; then
+          missing_sdks+=("conda")
+          sdks_match="false"
+          sdks_missing="true"
+        elif [[ "${conda_actual:-}" != "${expected_conda_version:-}" ]]; then
+          sdk_wrong_version+=("conda expecting $expected_conda_version and got $conda_actual")
+          sdks_match="false"
+        else
+          echo "okay - conda"
+        fi
+        
+        if [[ "MISSING" == "$mamba_actual" ]]; then
+          missing_sdks+=("mamba")
+          sdks_match="false"
+          sdks_missing="true"
+        elif [[ "${mamba_actual:-}" != "${expected_mamba_version:-}" ]]; then
+          sdk_wrong_version+=("mamba expecting $expected_mamba_version and got $mamba_actual")
+          sdks_match="false"
+        else
+          echo "okay - mamba"
+        fi
+        
+        if [[ "MISSING" == "$python_actual" ]]; then
+          missing_sdks+=("python")
+          sdks_match="false"
+          sdks_missing="true"
+        elif [[ "${python_actual:-}" != "${expected_python_version:-}" ]]; then
+          sdk_wrong_version+=("python expecting $expected_python_version and got $python_actual")
+          sdks_match="false"
+        else
+          echo "okay - python"
+        fi

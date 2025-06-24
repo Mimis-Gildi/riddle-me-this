@@ -3,12 +3,11 @@ Vadim Kuhay <12781006+rdd13r@users.noreply.github.com>
 v2.3.0, Friday May 16th 2025
 :description: Vadim Kuhay’s living résumé and publication repository.
 :icons: font
-:sectanchors:
-:sectlinks:
 :!toc:
 :keywords: Mímir Rdd13r Résumé Hacker Vadim Kuhay
 :imagesdir: ./resources/images
-ifdef::env-name[:relfilesuffix: .adoc]
+:releases: https://github.com/Mimis-Gildi/riddle-me-this/releases/[releases,target=_blank]
+:actions: https://github.com/Mimis-Gildi/riddle-me-this/actions
 
 :gha: https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows
 :a-codeql: {gha}/security-scan-by-codeql.yml
@@ -23,51 +22,66 @@ ifdef::env-name[:relfilesuffix: .adoc]
 
 :a-issues: {gha}/custom-stale-issues-watchdog.yml
 :a-new-user: {gha}/custom-new-user-greeting.yml
-:a-site: {gha}/github-pages-jekyll-build-and-deploy.yml
+:a-jekyll: {gha}/github-pages-jekyll-build.yml
+:a-site: {gha}/github-pages-deploy.yml
 
 :a-prune: {gha}/github-actions-prune.yml
 :a-cache: {gha}/github-cache-prune.yml
+:a-infra: {gha}/custom-runner-introspect.yml
 
-This repository is the *canonical source of truth* for Vadim Kuhay’s (aka `rdd13r`) résumé materials, engineering artifacts, and personal publications.
+This repository is the *canonical source of truth* for Vadim Kuhay’s +
+(aka `rdd13r`), engineering artifacts, ideas, publications, even resume +
+ -- clear and open.
 
-It is **actively maintained** as a living résumé, portfolio, and knowledge base — handcrafted in AsciiDoc and Gradle, with CI/CD publication to GitHub Pages.
+'''
 
-== 🖥️ Public Site
+Everything to know about me and my values is right here, in this repo. +
+My people ethos and code attitude, feel for time, automation, LoLs. +
+Even in this tiny idea blog space you may find some funny xp-trunk. +
+In the workflows, release notes, commit history -- look around.  +
+Take what you like, if you dig my ways, come pair with me. +
+_P.S. I use A LOT of custom ML_
 
-🔗 **Browse the live site**:
+== Public Site
+
+**Browse the live site**:
 https://mimis-gildi.github.io/riddle-me-this/
 
-📘 **Learn more about the maintainer**:
+**Learn more about the maintainer**:
 https://mimis-gildi.github.io/riddle-me-this/maintainer/
 
-🧭 **Trends you won’t hear from Gartner**:
+**Trends you won’t hear from Gartner**:
 https://mimis-gildi.github.io/riddle-me-this/series/
 
-Or simply subscribe to https://mimis-gildi.github.io/riddle-me-this/series/[my RSS feed].
+Or simply https://mimis-gildi.github.io/riddle-me-this/series/[my RSS feed].
 
-== 📄 Résumé Release v2.3.0
-
-This repo includes three curated PDFs packaged with each release.
-Grab the latest from the GitHub Releases page:
-
-📦 https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.3.0[v2.3.0] – full release package
-
-* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.3.0/OnEngineering.pdf[Engineering Résumé] – code, systems, and production
-* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.3.0/OnCreativity.pdf[Creative Résumé] – teams, products, and vision
-* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.3.0/OnLeadership.pdf[Leadership Résumé] – transformation, innovation, CTO roles
-
-== 🔗 Profiles
+== Profiles
 
 * GitHub: https://github.com/rdd13r
 * LinkedIn: https://www.linkedin.com/in/rdd13r
 * Medium (legacy): https://medium.com/@rdd13r
 
-== 📬 Contact
+== Contact
 
-* Email: vadim.kuhay@gmail.com
-* Signal / Text: +1 (919) 717-1387
+* Email: vadim.kuhay@gmail.com | rIdd13r@pm.me <- crypted
+* Signal / Discord / Telegram / Text: +1 (919) 717-1387 <- filtered
+* Matrix / Briar / vadim@asei.systems <- work
+
+
+== Résumé & expected formalities
+
+As is customary these days, this repo includes three curated PDF renditions. +
+Grab the latest from the GitHub {releases} page:
+
+📦 https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.3.0[v2.3.0] – full release package, automatically updated
+
+* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.3.0/OnEngineering.pdf[Engineering Résumé] – code, systems, production, clever tricks
+* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.3.0/OnCreativity.pdf[Creative Résumé] – teams, products, mistakes, storytelling, vision
+* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.3.0/OnLeadership.pdf[Leadership Résumé] – transformation, innovation, past CTO roles
 
 '''
+
+_Timesaving {actions}[booms] ..._
 
 [cols=">1,>1,>1,>1",%autowidth,frame=none,align=center,grid=none]
 |===
@@ -85,15 +99,14 @@ a| image::{a-release}/badge.svg[Custom Publish Release,link={a-release},window=_
 
 a| image::{a-issues}/badge.svg[Custom Stale Issues Watchdog,link={a-issues},window=_blank,opts=nofollow]
 a| image::{a-new-user}/badge.svg[Custom New User Greeting,link={a-new-user},window=_blank,opts=nofollow]
-|
-a| image::{a-site}/badge.svg[GitHub Site Build and Deploy by Jekyll,link={a-site},window=_blank,opts=nofollow]
+a| image::{a-jekyll}/badge.svg[GitHub Build by Jekyll,link={a-jekyll},window=_blank,opts=nofollow]
+a| image::{a-site}/badge.svg[GitHub Site Deploy by Pages,link={a-site},window=_blank,opts=nofollow]
 
 a| image::{a-prune}/badge.svg[GitHub Prune Actions by CLI,link={a-prune},window=_blank,opts=nofollow]
 a| image::{a-cache}/badge.svg[GitHub Prune Actions Cache by CLI,link={a-cache},window=_blank,opts=nofollow]
 |
-|
+a| image::{a-infra}/badge.svg[Custom Runner Introspect,link={a-infra},window=_blank,opts=nofollow]
 
 |===
 
 '''
-
