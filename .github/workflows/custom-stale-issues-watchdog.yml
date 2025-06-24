@@ -33,11 +33,11 @@ jobs:
 
       - name: "Run Stale Issues and Pull Requests checks in repository [${{ github.repository }}] by ${{ github.actor }}"
         id: stale-issues-and-pull-requests-check
-        uses: actions/stale@v9.1.0
+        uses: actions/stale@v8.0.0
         continue-on-error: true
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          operations-per-run: 100
+          operations-per-run: 50
           enable-statistics: true
 
           days-before-issue-stale: 30
@@ -64,6 +64,6 @@ jobs:
 
 #      Above workflow has a bug accessing an empty text file in tmp. This is just to make sure it's not a dedicated host space issue
       - name: Check on disk space remaining
-        if: ${{ failure() }}
+        if: steps.stale-issues-and-pull-requests-check.outcome == 'failure'
         run: |
           df -h
