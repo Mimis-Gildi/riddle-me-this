@@ -9,6 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  contents: read
   pages: write
   id-token: write
 
@@ -22,6 +23,13 @@ defaults:
 
 jobs:
 
+  build-site:
+    uses: ./.github/workflows/github-pages-jekyll-build.yml
+    secrets: inherit
+    permissions:
+      contents: read
+
+
   deploy-to-default-pages:
     runs-on: [self-hosted, site]
     timeout-minutes: 11
@@ -30,6 +38,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+
+
 
       - name: 🚀 Deploy to GitHub Pages
         id: deployment

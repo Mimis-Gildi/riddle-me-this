@@ -40,6 +40,7 @@ Key Site References::
 
 == Content Acknowledgements
 
+* https://openrouter.ai/rankings/programming[LLM Rankings] - Compare models for programming prompts.
 * https://careerservices.fas.harvard.edu/resources/create-a-strong-resume/[Harvard Career Services: _Create a Strong Resume_]
 * https://writing.wisc.edu/handbook/resume/[University of Wisconsin: The Writing Center - _Resume Writing Tips_]
 * https://hbr.org/2014/12/how-to-write-a-resume-that-stands-out[Harvard Business Review: _How to Write a Résumé That Stands Out_] (classic for comparison)

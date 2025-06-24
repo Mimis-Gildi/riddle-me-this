@@ -1,4 +1,4 @@
-name: GitHub Prune Actions Cache by CLI
+name: GitHub Prune Actions Cache
 run-name: "Pruned Old Action Run Caches on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
 #.github/workflows/github-cache-prune.yml
 
@@ -33,7 +33,6 @@ defaults:
 jobs:
 
   prune-actions-cache:
-    if: github.ref_type == 'branch'
     timeout-minutes: 7
     runs-on: self-hosted
     name: "Prune GitHub Actions Cache"

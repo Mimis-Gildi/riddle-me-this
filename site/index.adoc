@@ -31,12 +31,13 @@ reflections, and adventurous stories from the scene.
  Code is conversation.
  Velocity comes from clarity.
 
-🧩 Want to talk shop?
+> Want to talk shop?
 
-I'm often on Discord, swapping ideas and field notes with peers and learners alike.
-Message `riddler9297` to join the **AGAIN Collective**.
+I'm often on Discord, swapping ideas and field notes with peers and learners alike. +
+Speaking candidly, I am keen on separating that which matters from that which wouldn't. +
+Please DM `riddler9297` then we can talk, join each other communities, code together.
 
-== ✨ Hacker Forecast: link:/riddle-me-this/series[Trends You Won’t Hear from Gartner]
+== Hacker Forecast: link:/riddle-me-this/series[Trends You Won’t Hear from Gartner]
 
 - link:/riddle-me-this/series/final-industrial-revolution/[2023: The Final Industrial Revolution]
 → The herald in Wetware Revolution; the last revolution.
@@ -49,7 +50,7 @@ Message `riddler9297` to join the **AGAIN Collective**.
 
 '''
 
-🚜 - This digital garden is 🛠️ actively growing.  🚧
+🚜 - See Ukes' tractor? That's right, this digital garden is quickly growing:
 
  🔄 37 articles from prior publications are in staged migration
  and will appear here incrementally throughout v2.x releases.

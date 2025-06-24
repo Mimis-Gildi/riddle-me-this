@@ -28,17 +28,17 @@ communities:
 
   - title: "Hacker Communities"
     children:
-    - title: "Mímis Gildi -> Meritocracy  🏆"
+    - title: "Mímis Gildi -> Meritocracy Home"
       url: https://github.com/Mimis-Gildi
-    - title: "Gervi Héra Vitr -> Learning"
+    - title: "Gervi Héra Vitr -> Learning Trails"
       url: https://github.com/Gervi-Hera-Vitr
-    - title: "- Captain's School @Vitr 📚🧑🏻‍🏫"
-      url: https://github.com/Gervi-Hera-Vitr/sindri-labs
-    - title: "Mímis Scala -> Monad Garden"
+    - title: "Captain's Homeschool @ Vitr above"
+      url: https://gervi-hera-vitr.github.io/sindri-labs/
+    - title: "Mímis Scala -> Old Monad Garden"
       url: https://github.com/Mimis-Scala
-    - title: "Mímis Látlæg Háttalag -> 🛠️"
+    - title: "Mímis Látlæg Háttalag -> Hacktivism"
       url: https://github.com/Mimis-Latlaeg-Hattalag
-    - title: "Gotham Village -> Kibbutz"
+    - title: "Gotham Village -> Kibbutz of Ideas"
       url: https://github.com/Gotham-Village
 
   - title: "Archive & Tags"

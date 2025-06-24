@@ -9,13 +9,14 @@ on:
       - reopened
       - synchronize
   workflow_dispatch:
+  workflow_call:
 
 permissions:
   contents: read
 
 concurrency:
-  group: "${{ github.workflow }}-jekyll"
-  cancel-in-progress: true
+  group: "${{ github.workflow }}-site"
+  cancel-in-progress: false
 
 defaults:
   run:
