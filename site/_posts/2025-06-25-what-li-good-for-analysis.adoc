@@ -1,0 +1,206 @@
+---
+categories: [reflections]
+tags: [LinkedIn]
+excerpt: A hacker-led experiment on what really works -- and what doesn’t -- on LinkedIn.
+comments: true
+classes: wide
+---
+= How to Game LinkedIn Like a Pro
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:img-prefix: /riddle-me-this/assets/images
+
+.ASE Inc, DALL·E Hacker Dad vs. Cog Dad...
+[#img-devs]
+image::{img-prefix}/devs.png[Channel,800,450]
+
+{nbsp}
+
+In https://mimis-gildi.github.io/riddle-me-this/reflections/2025/06/24/what-li-good-for.html[my previous post], I wrote about our daring experiment on LinkedIn.
+Let’s now unpack what we actually learned from it.
+
+== First, a Little Bit of Scepticism...
+
+Everyone -- except Joe -- was a little skeptical of his results.
+
+Joe saw steep network growth.
+At one point, he even hit the *first-degree connection limit*.
+All within a year.
+But here’s the paradox:
+
+- He didn’t write any of the content himself.
+- He didn’t engage meaningfully.
+- He didn’t sell or pitch anything.
+
+We assumed this couldn’t be happening from simple automation -- unless something *unusual* was at play.
+
+The other two test subjects didn’t show anything noteworthy.
+So we turned our focus to the Sycophant.
+
+== Validating the Data?!
+
+Joe kept his data, as required by the experiment.
+
+My son and I -- with some help from David and John -- set out to validate his logs.
+A couple days, a Jupyter notebook, and several cups of coffee later, we arrived at a startling discovery:
+
+**Joe didn’t cheat.**
+
+The foundation of the experiment was clear: a human must be able to *replicate the behavior manually* in ~1 hour of focused activity.
+
+Joe’s app generated 115–155 events per day -- fully within an hour’s worth of focused, choreographed effort.
+That’s 1/10th of the daily API limit.
+
+== So How Then?
+
+That’s when the real research began...
+
+== Plausible Hypotheses (Debunked)...
+
+Here’s what we *thought* might be going on -- and what we ruled out:
+
+* **Shadow Botnet Boosting** – Our primary suspect.
+Debunked via logs.
+* **Group Synergy / Sidekick Boosting** – Trolls often get boosted by their little gangs.
+But Joe had no consistent sidekicks.
+* **Platform-Primed Role Bias** – We suspected LinkedIn inherently favors the "Suit" archetype.
+But many real-life sycophants showed flat growth.
+* **Positive Engagement Bias** – Joe’s posts were mildly positive.
+But they were also LLM-generated and boring.
+No correlation.
+* **Intent Subversion** – Maybe Joe "salted" the robot by engaging manually.
+Nope -- logs show Joe was way too lazy for that.
+
+So... what then?
+
+== Real Results -- What Now?
+
+We ran a black-box *open-system* experiment.
+
+Here’s what it revealed:
+
+. **LinkedIn can be gamed** -- easily and in spectacular fashion.
+. **The platform rewards mimicry** -- not substance.
+Simulated behavior outperforms authenticity.
+. **Persona ≠ Identity** -- LinkedIn rewards *persona projection* over who you really are.
+. **If we had added a leech, it would’ve been perfect.**
+
+__This is all fine. And kind of obvious.
+But what is *really* going on here?
+And for that we need to look inside.
+Grab the real *root cause* -- the only variable that matters.
+Is that just the *sycophancy*?
+__
+
+
+== A Thousand 'Whys' to the Rescue.
+
+When I coach teams, I teach the 5-Why method. So that’s what we did. And it helped.
+
+Everything stemmed from early analysis by MATILDA ("Tillie") in 2021 -- that's where the puck started moving for Joe.
+You see, Tillie is a *Higher-Order Distributed System* -- she spawns autonomous Agents, each with its own lifecycle.
+Think *Akka Actor System*, but truly distributed and decoupled.
+
+Joe liked that idea.
+So when he built his "Lazy LinkedIn User App," he designed AI agents to simulate *social persona behavior*.
+And each vector, a total of eleven in the end, was a completely independent agent of its own,
+driving a completely separate crosscut concern.
+
+So far, so good.
+
+But the interesting part?
+The *feedback loop tuning* that kicked in during months 3–4.
+And here we'd noticed the brilliance of Joe's approach -- some of the crosscuts were about fleeting appeasing of followers.
+
+What we didn’t realize right away was that Joe’s robot *did* have sidekicks -- just not *permanent* ones.
+They rotated in and out, like NPCs in a well-tuned simulation.
+Except these were real people, unaware LinkedIn users, not realizing they're interacting with a machine.
+This makes for a first human being that is a robot sidekick if I ever saw one.
+A total over 300 in the course of the last 7 months.
+
+This made me think of a Russian poser I knew at Deutsche Bank.
+He called himself a "political shark" and spent all his time brown-nosing directors.
+He had a sidekick and a knack for gossip -- and no actual contributions.
+But he *rocketed* up the ranks.
+Because Deutsche Bank had a thick, gooey middle-management layer -- and that’s exactly what the system was built to reward.
+
+Turns out, **Joe built the same thing** -- only better.
+Just like the Russian poser at DB found himself between two directors arguing and ended up playing both sides, so did Joe's robot.
+On several repeated occasions over and over again, Joe's robot would end up passing small tokens between 2 arguing "executives" and drawing attention to itself, especially if a `troll` was also involved in the exchange.
+This didn’t just simulate an ordinary "suit", i.e, sycophant.
+This simulated a more complex behavior of a typical aggressive "middle manager" that is "looking for growth" and is willing to "go an extra mile for the company".
+*ROFL!*
+
+_We were stunned to realize how little intelligence was required to make this Middle Management Rock Star happen._
+
+**A perfect, self-tuning Middle Manager.** -- And LinkedIn *absolutely loved it!*
+Both from the human and the algorithmic perspective.
+I hope that you are realizing that *_there is no blocking this behavior!_*
+There is NOTHING LinkedIn can do to stop such a natural exploit.
+
+== Final Takeaway - Yay!
+
+So what’s the real way to game LinkedIn? How about, don't game LinkedIn -- game people on it: build a sleazy middle manager.
+How did this work for Joe? Currently we estimate it this way:
+
+* 60% Platform dynamics: algorithmic feedback loops, signal boosting, gamification.
+* 40% Human psychology: social proof, sycophancy reward systems, fear of standing out.
+
+*What was Joe's Middle Manager doing well?*
+
+* Say the right things but not too strongly.
+* Cheerlead publicly.
+* Praise up and sideways.
+* Never offend.
+* Appear busy and aligned, but not too independent.
+* Mirror success behaviors.
+* Repeat parasitic phrases.
+
+*The resulting value is this:*
+
+. *Didn’t challenge norms.* (_like a hacker always would_)
+. *Generated safe, bland positivity.* (_like a hacker never would_)
+. *Engaged just enough, in #safe ways#.*
+
+_Tracked what worked and *doubled down* — not on truth, not on authenticity, but on *perception*!_
+
+*Why did LinkedIn love it?*
+
+* Non-controversial PLUS emotionally positive.
+* Is consistent and persistent in rhythm.
+* Shows growth (likes, comments, connections).
+* Triggers other people to engage (even briefly).
+* Avoids disapproval (flagging, unfollowing).
+
+_How lame, right? -- but that's the best LinkedIn can code up right now. Wait for more AI, perhaps._
+
+*Why did People love it?*
+
+_Whoa, and this depends on "which people?" The majority of people on LinkedIn, i.e, "LinkedIn People" are:_
+
+. Reward-seeking, validation-hungry.
+. Afraid of being wrong.
+. Politically sensitive (in both meanings of "politics").
+. Quick to align with what seems popular.
+
+I have explicitly checked for this behavior posting about POTUS and factual YET controversial events.
+*_The above four (4) traits are the ABSOLUTE for 96% of LinkedIn users._*
+
+Joe’s bot surfed the human need for safety, consensus, and tribal validation.
+It fit in. It looked successful.
+And people -- being LinkedIn people -- reacted to the #*mask*#, not the man.
+Sure, there was a real man behind the profile, but by now less that 0.01% of
+the "friends" have actually met Joe.
+
+And that's how one owns LinkedIn.
+
+*Any thoughts?*
+
+. What do you think about bots on LinkedIn?
+. What is the difference? Can you tell?
+. What does this mean for YOUR future on LinkedIn?
+. What can LinkedIn do to stop this behavior?
+. Are they already trying to stop it?
