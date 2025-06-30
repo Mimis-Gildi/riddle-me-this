@@ -133,7 +133,7 @@ jobs:
 
       - name: 🚀 Publish GitHub Release with Résumé PDF
         if: steps.resume-changes-detected.outputs.satisfied == 'true'
-        uses: ncipollo/release-action@v1.16.0
+        uses: ncipollo/release-action@v1.18.0
         timeout-minutes: 11
         with:
           tag: ${{ steps.version-info.outputs.tag }}
@@ -146,7 +146,7 @@ jobs:
 
       - name: 🚀 Publish GitHub Release (no résumé artifact)
         if: steps.resume-changes-detected.outputs.satisfied != 'true'
-        uses: ncipollo/release-action@v1.16.0
+        uses: ncipollo/release-action@v1.18.0
         timeout-minutes: 9
         with:
           tag: ${{ steps.version-info.outputs.tag }}
