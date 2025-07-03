@@ -1,0 +1,76 @@
+---
+categories: [reflections]
+tags: [LinkedIn]
+excerpt: A hacker-led experiment on what really works -- and what doesn’t -- on LinkedIn.
+comments: true
+classes: wide
+---
+= LinkedIn: Conclusion - Enshittification
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:img-prefix: /riddle-me-this/assets/images
+:li-aaron: https://www.linkedin.com/in/aaron-fuller-32776910b/[Aaron Fuller]
+:gh-aaronfllr: footnote:[GitHub User home: https://github.com/aaronfllr[Aaron Fuller,window=_blank]]
+:li-michael: https://www.linkedin.com/in/michaellipari/[Michael Lipari]
+:mcd: https://www.macquariedictionary.com.au/[Macquarie Dictionary]
+:mcd-wiki: https://en.wikipedia.org/wiki/Macquarie_Dictionary/[Macquarie Dictionary,window=_blank]
+:mcd-wiki-fn: footnote:[The {mcd-wiki} Wikipedia page]
+:estf-doflo: https://doflo.com/blog/what-is-enshitification-and-can-we-stop-it[Enshitification,window=_blank]
+:estf-doflo-fn: footnote:[doFlo {estf-doflo} Explanation]
+:estf-reddit: https://www.reddit.com/r/medicine/comments/10hyf7m/cory_doctorow_explains_the_enshitification_of/[Cory Doctorow explains the "enshitification" of internet platforms,window=_blank]
+:estf-reddit-fn: footnote:[Reddit - {estf-reddit} discussion thread; The mechanism also seems highly relevant to US healthcare policy]
+:estf-wiki: https://en.wikipedia.org/wiki/Enshitification[Enshitification,window=_blank]
+:estf-wiki-fn: footnote:[Wikipedia - {estf-wiki} Explanation]
+:estf-wiki-fn-2: footnote:[Wikipedia - {estf-wiki} Discussion]
+
+.ASE Inc, DALL·E Hacker Dad vs. Cog Dad...
+[#img-devs]
+image::{img-prefix}/devs.png[Channel,800,450]
+
+{nbsp}
+
+Happy Independence Day, Friends!
+
+Before I conclude on LinkedIn, I want to thank a couple of my good friends for their patience, wisdom, and support.
+I was genuinely stuck trying to name good things in LinkedIn, and shortly we will understand why.
+And I had a hard time focusing on my mind map.
+But then:
+
+{li-aaron}{gh-aaronfllr}::
+
+Aaron is a full-spectrum hacker.
+When others spend weeks planning and arguing,
+Aaron quietly whips out his Jupyter Notebook, practically in any IDE, and will have the answer in a day or two.
+Once thing I always respected about Aaron is that he doesn't get sidetracked by the noise of the world.
+I owe Aaron the big picture view and the value mapping analysis.
+
+{li-michael}::
+
+Michael is a people hacker: a human capital specialist on both the employer recruiting and business development arena.
+On LinkedIn, he's likely a user 7 (seven), the one who got many of us on.
+He actively used the platform from its infancy days:
+connecting people, referring people, brokering business development discussions for companies, hiring people,
+and driving people to different funnels and networks based on relationships.
+I owe Michael the full value history of LinkedIn, from no to now.
+
+== TL;DR
+
+The Australian {mcd}{mcd-wiki-fn} named *_"enshittification"_*{estf-doflo-fn}{estf-reddit-fn} as its *"2024 Word of the Year".*
+The term describes the _"gradual deterioration of a service or product brought about by a reduction in the quality of service provided,
+especially of an online platform, and as a consequence of profit-seeking"_.
+It was selected by both the dictionary committee and the public vote.
+"Enshittification" was coined by Cory Doctorow to describe the way tech platforms evolve and deteriorate as they prioritize profit over user experience.
+
+The process typically involves an *initial phase of* +
+_offering good service to attract users_, +
+followed by a *decline in quality* as the platform seeks to +
+*_maximize profits for shareholders_*.
+
+== the _"Original Good"_
+
+When the platforms first started it has some of the most amazing features for the users providing value both in the social and the business sense.
+Did you know that LinkedIn once had a *Connection Map feature?* Wouldn't you love to have that ability today?
+Technically we, through an exploit, but more on that later.
