@@ -196,57 +196,86 @@ So let’s walk the real timeline of LinkedIn -- not the marketing spin, but wha
 
 == 2011 -- long Road to ... Kakistocracy
 
-In 2012 a devastating data breech leaking 6 million user passwords slams LinkedIn like a train.
-Oh, but this began long before 2011. By 2010, this was a fine company running thick on hacker power.
-Testament to that are the early technologies coming from the shop to the scene.
-Everyone has heard about Kafka by now.
-Even one such magic is enough to pinnacle a team to the top of the scene.
-But the list was massive: Azkaban, Rest.LI, Pegasus, Helix, Samza, Gobblin
--- and these are just the ones wildly popular today.
-The actual scene demos were in dozens. Shy hackers show and tell incredible tech in bars with a chalk board.
-Even until this day LI is still rolling out the tech from those early days.
-My favorite was LiX (LinkedIn Experimentation) -- A/B testing framework and everchanging toolbag.
-I'm crazy about testing and have tugged on everything under the sun, but even I was moved by LiX.
-Yet all this magic also paints a big fat cracker bullseye on company's back.
+In 2012, a devastating data breach leaked 6 million user passwords -- slamming LinkedIn like a runaway train.
 
-What I just shared so far is only possible py perfect Community of Practice and a large synergetic hacker collective.
-Which means these people were really close to each other.
-So, when in preparation for monetization and investment a lot of new,
-less competent people joined the company to "set the direction to profit."
-As you can imagine, hackers didn't like all the marginalization and replacement by cogs and muggle.
-The first drops to Tor were from the new team.
-And these were painful and cultural in nature.
-By 2012 LI was fast on the way replacing thinkers with obedience.
-Entire teams resigned.
-And this left holes.
-Infrastructure components with entire teams of IQ too low to understand what's in production.
+But the decay started earlier.
+By 2010, LinkedIn was a hacker-powered powerhouse -- a force of invention few companies could match.
 
-Interestingly enough, none of this bothered the upper management. "Money solves all problems" was the mindset.
-If you read the story of Kafka, a personal drama and a story of grief and distention, here, I told you a secret --
-that's where it is coming from. But LI pressed on. Against the brains that built the company.
-The 2012 was simply inevitable.
+The proof? The tech.
 
-Now, if one would that that it raised alarm bell, one would be wrong.
-Microsoft infusion or money and culture greatly accelerated the process.
-Because Microsoft is the very definition of "vulnerability."
+Everyone knows Kafka by now.
+But that was just one spark from a bonfire.
 
-* 2017: 117 million credentials, and a discovery that leaking had never stopped.
-* 2018: First "bad API" Scraping incident. Technically legal. Nevertheless incompetence born.
-* 2021: 700 million users profile data on sale, actively updated. M$ reporting fixed 😁
-* 2024: Scraping and spoofing Arms Race: publicly discovered the leaking never stopped.
+The full constellation: *Azkaban*, *Rest.LI*, *Pegasus*, *Helix*, *Samza*, *Gobblin* --
+and that’s just what went viral.
+Dozens more surfaced briefly, shown in dim bars on chalkboards by shy, wild geniuses.
+Even today, LinkedIn still milks the output from that golden era.
 
-Perhaps this help to understand Joe's position on LI data in the first story.
-He runs a security company. Hackers never respected incompetence.
-By his moral codex -- LinkedIn is an open database.
-Because if LI wanted that stopped, they would have done something about it.
-Joe might as well believe that leaking is LinkedIn's business model.
+My personal favorite? *LiX* -- the LinkedIn Experimentation framework.
+I’ve yanked on every A/B and multivariate system under the sun -- and I still found LiX inspiring.
+It wasn’t just powerful. It was alive -- a full hacker toolbag for curiosity and truth-seeking.
 
-Contrary to popular hacker beliefs, Microsoft didn't break LinkedIn.
-They just brought the culture and the means of sweeping stuff under the rug.
-Hey, but everyone loves a good villain.
-And EvilCorp is always the best one.
+But brilliance has a price.
+That much magic paints a bullseye on your back.
 
-So, now you have the backstory.
+And here’s the thing -- what I just described is only possible with a perfect *_Community of Practice_*
+and a deeply bonded hacker collective.
+These weren’t just coworkers. They were a crew. Tight-knit. Synergistic.
+
+And then came the investors.
+
+In preparation for monetization, the company brought in a fresh crop of execs,
+PMs, and strategy heads to “set the course toward profit.”
+Which is polite-speak for: marginalize the hackers, replace weird with compliant.
+
+Hackers don’t react well to that.
+
+The first leaks to Tor weren’t about money -- they were cultural.
+People cried. People resigned.
+Whole teams walked.
+And what was left behind?
+Infrastructure too complex for the remaining teams to even understand.
+IQ gaps you could sail a Samza through.
+
+Upper management?
+Unfazed.
+The mindset was: “Money solves all problems.”
+And if you’ve read the original *Kafka* --
+you know it’s a story of grief, alienation, and meaningless process.
+
+Well -- surprise. That’s exactly where LinkedIn Kafka came from.
+
+So 2012 was not a surprise. It was inevitable.
+
+And did it raise alarm bells?
+
+Nope.
+Because Microsoft stepped in -- with more money, and the cultural equivalent of zero-day exploits in human form.
+Microsoft didn’t invent the rot -- they just accelerated it.
+
+* 2017: 117 million credentials discovered for sale. Turns out, the leak had *never stopped*.
+* 2018: First “bad API” scraping incident -- technically legal, practically negligent.
+* 2021: 700 million user profiles on sale -- updated, live, and polished. Microsoft marked it “fixed” 😁
+* 2024: Scraping/Spoofing arms race -- public evidence shows the leaks never ended.
+
+Maybe now you understand Joe’s stance in our opening story.
+
+He runs a security firm.
+And to hackers, incompetence isn’t neutral -- it’s offensive.
+
+By Joe’s moral code, LinkedIn *is* an open database.
+Because if they wanted it locked down, they’d have done it.
+He might even believe that leaking *is* the business model.
+
+Contrary to popular belief, Microsoft didn’t *break* LinkedIn.
+
+They just brought the tools -- and the culture -- to sweep the pieces under the rug.
+
+Hey, everybody loves a good villain.
+And EvilCorp?
+Still the best one in the game.
+
+So now you have the backstory.
 
 == the "Reality on the Ground"
 
