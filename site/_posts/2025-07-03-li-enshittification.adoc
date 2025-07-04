@@ -279,49 +279,59 @@ So now you have the backstory.
 
 == the "Reality on the Ground"
 
-The important question is what's in it for us, the mere mortals?
+The important question is -- what's in it for us, the mere mortals?
+
 Let us then start with the basic facts.
 
-LinkedIn is wildly profitable, the Loss Leader Model, currently::
-. Premium Subscriptions (Gasoline): profitable with margin, expensing ALL infrastructure.
+LinkedIn is wildly profitable, operating on what I call the Loss Leader Model, currently::
+
+. Premium Subscriptions (Gasoline): profitable with margin, expensing *all* infrastructure.
 . Marketing Solutions (Staples): $7B per year, in the current cycle.
 . Talent Solutions (The Candy): Microsoft will never tell you this.
 
-What does this mean? LinkedIn runs on loss leader model, like your neighborhood gas station.
-They will sell gasoline ever at aloos, and bolt on all expenses to it.
-The te staples, like milk and egs will have a small margin.
-But the candy and the cookies will be the cash cow.
-In the LinkedIn world, even the gasoline makes profit having paid for all the infrastructure.
-Just think about it. No matter what they do to you and I their net margins go up.
+What does this mean? LinkedIn runs like your neighborhood gas station.
+They might sell gasoline at a loss -- yet allocate *all* operating costs to it.
+Then the staples, like milk and eggs, carry just enough margin to cover shelf space.
+But the candy, cookies, and impulse buys? That's the cash cow.
+
+In the LinkedIn world, even the gasoline turns a profit after paying for all infrastructure.
+Just think about that.
+No matter what they do to you or me -- their net margins go up.
 
 We can immediately conclude that we have here::
-. A monopoly on professional identity market;
+
+. A monopoly on the professional identity market;
 . And, a hated incumbent.
 
 Looks to be a very opportune situation for a hacker collective.
-However, mind you:
 
-We also have::
+However, mind you -- we also have::
+
 . A user and business data hoarder;
 . Pay-to-Play casino boss;
-. Bait-and-Switch gamer.
+. Bait-and-Switch gamer;
 . A Surveillance Paragon;
 . Business Development Operating System;
 . And a revenue Trojan Horse.
 
-Sure, a few hackers can launch a Minimum Lovable Product in under a year.
-All the love the LinkedIn once promised to be.
-And that would get up to a hundreds million dollars per year in a heartbeat.
-And here, a whole different game would begin, the kind these hackers haven't seen before.
-From here a slow and hard rise to the top can change your company too.
+Sure, a few hackers could launch a Minimum Lovable Product in under a year --
+All the love LinkedIn once promised to be.
+And that would rocket to a hundred million dollars per year in a heartbeat.
 
-It's worth to remember this::
-* It doesn't matter how good your software service is.
-* It only matters how good you *business model* is.
+But then a *different* game begins -- one these hackers have never seen before.
+From there, a slow and hard rise to the top could change *your* company too.
 
-Certainly, given room the same hackers can make the LinkedIn just a good as well.
+It's worth remembering this::
+
+* It doesn't matter how good your *software service* is.
+* It only matters how good your *business model* is.
+
+Certainly, given room, the same hackers could make LinkedIn great again.
 But there is absolutely no interest in doing so.
-Case and point -- do you use Windows? I don't. So what?
+
+Case and point -- do you use Windows?
+I don't.
+So what?
 
 
 == the "Good in LinkedIn"
