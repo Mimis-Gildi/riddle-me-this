@@ -124,36 +124,6 @@ Still user-focused. Still building for people, not metrics.
 {nbsp} -- you remember that king whose touch turned everything to gold? +
 Yeah. That’s not what happened here.
 
-== the _"Original Good"_
-
-Let’s return to LinkedIn.
-
-When it launched, it wasn’t just a résumé dump or recruitment tool -- it was disruptive across multiple fronts:
-a social-professional graph, a referral network, a reputation layer, and an early open platform.
-
-Few remember this now, but LinkedIn once shipped true innovation -- real value.
-
-Did you know LinkedIn once had a *Connection Map* -- a full network visualization of your graph?
-It was beautiful.
-And it’s gone.
-
-LinkedIn entered with a bang of value::
-
-* 2006: Public Profiles, Recommendations, *People You May Know* -- not like today's uncanny mess.
-* 2007: *LinkedIn Answers* -- early signs of real community building.
-* 2008: Mobile version, Applications platform -- a friendly nod to OSS.
-
-2011--2014: Going Public and Feature Refinement::
-
-* 2013: Kills *LinkedIn Answers*, modifies 2005 feature *Groups*.
-* 2014: Retires *InMaps* -- a stunning network visualization tool.
-
-Still user-focused. Still building for people, not metrics.
-
-*_2016: Microsoft announces acquisition of LinkedIn for $26.2 billion._*
-
-{nbsp} -- reminds me of King Midas. Except everything turned to SharePoint.
-
 == the _Hard Turn Port_
 
 * 2017: New desktop interface aligned with mobile -- visual and interaction oddities not asked for by users.
