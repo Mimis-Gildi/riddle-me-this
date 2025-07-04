@@ -124,36 +124,75 @@ Still user-focused. Still building for people, not metrics.
 {nbsp} -- you remember that king whose touch turned everything to gold? +
 Yeah. That’s not what happened here.
 
+== the _"Original Good"_
+
+Let’s return to LinkedIn.
+
+When it launched, it wasn’t just a résumé dump or recruitment tool -- it was disruptive across multiple fronts:
+a social-professional graph, a referral network, a reputation layer, and an early open platform.
+
+Few remember this now, but LinkedIn once shipped true innovation -- real value.
+
+Did you know LinkedIn once had a *Connection Map* -- a full network visualization of your graph?
+It was beautiful.
+And it’s gone.
+
+LinkedIn entered with a bang of value::
+
+* 2006: Public Profiles, Recommendations, *People You May Know* -- not like today's uncanny mess.
+* 2007: *LinkedIn Answers* -- early signs of real community building.
+* 2008: Mobile version, Applications platform -- a friendly nod to OSS.
+
+2011--2014: Going Public and Feature Refinement::
+
+* 2013: Kills *LinkedIn Answers*, modifies 2005 feature *Groups*.
+* 2014: Retires *InMaps* -- a stunning network visualization tool.
+
+Still user-focused. Still building for people, not metrics.
+
+*_2016: Microsoft announces acquisition of LinkedIn for $26.2 billion._*
+
+{nbsp} -- reminds me of King Midas. Except everything turned to SharePoint.
+
 == the _Hard Turn Port_
 
-* 2017: New desktop interface, aligning with mobile, oddities not asked for by users.
-* 2019: Launches "Open for Business," enabling freelancers to showcase services.
-* 2020-2022: Content Creation: Events, "Creator Mode", analytics for newsletters and posts -- new rating models.
-* 2024–2025: AI Integration and Feature Saturation, quickly versioned rating and popularity models.
+* 2017: New desktop interface aligned with mobile -- visual and interaction oddities not asked for by users.
+* 2019: Launches *Open for Business*, enabling freelancers to showcase services.
+* 2020--2022: Content Creation: Events, *Creator Mode*, analytics for newsletters and posts -- new rating models.
+* 2024--2025: AI Integration and Feature Saturation -- rapidly versioned ranking and popularity models.
 
-== the _"Tor Bazaar" and _"Deep Waters"_
+== the _"Tor Bazaar"_ and _"Deep Waters"_
 
-In a way, it is unfair to call out acquisition as the culprit as users were bullied in preparation for acquisition as well.
-Let's just look at user community most criticized change:
+In a way, it’s unfair to blame the acquisition alone -- users were already being conditioned before the sale.
 
-* 2013: Retirement of LinkedIn Answers, removing a Q&A feature most valued by users.
-* 2014: Discontinuation of InMaps, eliminating a tool for visualizing professional networks.
-* 2017: Removal of contact tagging and filtering features, further reducing user control.
-* 2021: Termination of LinkedIn Stories, a short-lived feature aimed at sharing brief updates.
+Let’s just look at some of the most criticized removals::
 
-But the whole story again is better told by the scene of the hacker collective.
-You see, there's is constant tug of war between *_hackers_* and *_crackers_*.
-Crackers are opportunistic criminal finding vulnerabilities and stealing data for sale.
-Hacker fix vulnerabilities closing the door for another to be opened by crackers.
-These two groups of people despise each other, watch each other, and are connected at the hip.
-Watching the dynamic of both tells you the story marketing is trying to hide.
+* 2013: Retirement of *LinkedIn Answers* -- a Q&A system many users cherished.
+* 2014: Discontinuation of *InMaps* -- eliminated professional network visualizations.
+* 2017: Removal of contact tagging and filtering -- reduced user agency and precision.
+* 2021: Termination of *LinkedIn Stories* -- a short-lived engagement gimmick.
 
-In the Tor community bazaars where data leaks are bought and sold by crackers, there's a deep, dark, and slow water.
-It's an undercurrent of both hackers and cracker watching the field for different information.
-And it's constant.
-Crackers look for things to steal and sell, each other, and hunt for hackers.
-And hackers look for trouble signs in corporate culture and criminal trends.
-So let's go through the most important events in the life of LinkedIn.
+But the story is clearer when told from the perspective of the hacker collective.
+
+There’s a constant tug-of-war between *_hackers_* and *_crackers_*.
+
+Crackers are opportunistic criminals -- they find vulnerabilities and steal data for resale.
+Hackers fix those vulnerabilities, closing doors before they’re breached again.
+These two groups despise each other.
+They watch each other.
+And they are -- like it or not -- connected at the hip.
+
+Tracking both sides tells you what marketing desperately tries to hide.
+
+In the Tor bazaars where data leaks are traded by crackers, there’s a deeper, darker stream -- a kind of slow, cold current.
+
+An undercurrent where both hackers and crackers scan the field -- watching not just each other, but also corporate shifts and cultural signs.
+
+Crackers look for things to steal, people to sell, and hackers to dox.
+Hackers look for danger signals -- technical or ethical -- that forecast breaches, surveillance, or rot.
+
+So let’s walk the real timeline of LinkedIn -- not the marketing spin, but what the undercurrent saw.
+
 
 == 2011 -- long Road to ... Kakistocracy
 
