@@ -97,27 +97,32 @@ _By <decay> Cory meant the user perspective alone._
 
 == the _"Original Good"_
 
-Back to LinkedIn (LI).
-When the platforms first started it had some of the most amazing features.
-A groundbreaking value proposition both in the social and the business sense.
-LinkedIn was disruptive simultaneously in several domains. +
-Did you know that LinkedIn once had a *Connection Map feature?*
+Let’s return to LinkedIn (LI).
+
+When it launched, it wasn’t just a résumé dump or recruitment tool -- it was disruptive across multiple fronts:
+a social-professional graph, a referral network, a reputation layer, and an early open platform.
+
+Few remember this now, but LinkedIn once shipped true innovation -- real value.
+Did you know LinkedIn once had a *Connection Map* -- a full network visualization of your graph?
+
+It was beautiful. _But it was good for you!_
 
 LinkedIn entered with a bang of value::
 
-* 2006: Public Profiles, Recommendations, *People You May Know* -- not like today, especially the last one;
-* 2007 LinkedIn Answers -- a clear community building direction;
-* 2008: Mobile Version, Applications Platform -- a clean nod to the OSS community.
+* 2006: Public Profiles, Recommendations, *People You May Know* -- not like today's uncanny mess.
+* 2007: *LinkedIn Answers* — early signs of real community building.
+* 2008: Mobile version, Applications platform -- a friendly nod to OSS.
 
 2011–2014: Going Public and Feature Refinement::
 
-* 2013: Discontinues LinkedIn Answers, modifies 2005 feature "Groups;
-* *_2014: Retires InMaps -- a network visualization tool;_*
+* 2013: Kills LinkedIn Answers, modifies 2005 feature *Groups*.
+* 2014: Retires *InMaps* -- a stunning network visualization tool.
 
-_Still very much user-focused and community-driven mindset at this point._
+Still user-focused. Still building for people, not metrics.
 
-*_2016: Microsoft announces acquisition of LinkedIn for $26.2 billion._*  +
-{nbsp} -- have you ever heard of that king where everything he touches turns to ... I forget what.
+*_2016: Microsoft announces acquisition of LinkedIn for $26.2 billion._*
+{nbsp} -- you remember that king whose touch turned everything to gold? +
+Yeah. That’s not what happened here.
 
 == the _Hard Turn Port_
 
