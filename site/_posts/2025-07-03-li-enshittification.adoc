@@ -336,30 +336,54 @@ So what?
 
 == the "Good in LinkedIn"
 
-I was going to celebrate finding my long lost friend on LinkedIn as my only positive.
-She's an incredible person and a great hacker I haven't talked to or coded with for two decades.
-And I pinned her on LinkedIn -- she's responded.
-I was so happy that I went and told my whole family about it.
+I was going to celebrate finding my long-lost friend on LinkedIn as my only positive.
 
-*But I didn't find her on LinkedIn!* LinkedIn did nothing for me here.
-I found her in my LinkedIn data export that I analyze with my DataSpell IDE and Pandas.
-She had few connections and no activity. No profile picture.
-And in my natural interaction with the UX -- it would never show her to me.
-I'd need to filter my connections list manually, pushing buttons.
-Well, I can do that much better in Jupyter Notebook.
+She's an incredible person and a great hacker I haven't talked to -- or coded with -- for two decades.
+And I pinned her on LinkedIn -- she responded.
+I was so happy I went and told my whole family about it.
 
-This isn't it. But there are a few cool use cases yet.
+*But I didn't find her on LinkedIn!*
+LinkedIn did nothing for me here.
 
-ToDo: Michael explained that LI is a perfect rolodex for him.
+I found her in my LinkedIn data export -- the ZIP archive you can request under privacy settings.
+Then I sliced through it using my DataSpell IDE and a few lines of Pandas.
+She had few connections, no activity, and no profile picture.
+In my natural interaction with the UX -- she'd never show up.
+I'd have to manually filter the connections list, pushing buttons like it's 2006.
+Well, I can do that much better in a Jupyter Notebook.
 
-ToDo: Ask Saga what else is good here.
+So that's not a win for LinkedIn. That's a win for me.
+Yet it does bring us to a few legitimate use cases.
 
-And there is yet one more wildly useful feature: LinkedIn is EASILY Gamed.
-Remember what Joe did in the first story?
-He played a Sycophant model. And he automated it.
-Not only it was easy but it also was wildly successful.
-Perhaps the best feature of LinkedIn for a hacker is *exploitability.*
-And that is the only solid options I see here.
+First, LinkedIn is a decent *Rolodex* if you're disciplined.
+As my friend Michael pointed out -- it's the only place where you can reliably maintain professional contact with hundreds of people, especially if you're constantly switching orgs, domains, or continents.
+If you're methodical about curating your connections, the data export becomes your own CRM.
+
+Second, the messaging system isn't entirely useless.
+When someone changes their email, moves countries, or ditches their website -- LinkedIn DMs are often the only channel still working.
+That assumes, of course, that the person logs in.
+
+Third, it’s still a mildly credible business card.
+You can point someone to your LinkedIn when they ask what you do.
+Just don't expect them to actually read anything.
+
+But the *real* value -- if we're honest -- is that LinkedIn is *easily gamed.*
+
+Remember what Joe did in the opening story?
+He played the Sycophant Model. And he automated it.
+Not only was it easy -- it was *wildly successful.*
+
+Perhaps the best feature of LinkedIn for a hacker is its *_exploitability_*.
+
+You can bend the algorithm.
+You can train it.
+You can spoof it.
+You can monitor its pulse and reroute its incentives.
+
+It’s brittle and overfitted to synthetic behaviors.
+It’s like a corporate version of MySpace, with better CSS and worse taste.
+
+And that -- _that_ -- is the only solid option I see here:
 *_Game the game!_*
 
 == Conclusions
