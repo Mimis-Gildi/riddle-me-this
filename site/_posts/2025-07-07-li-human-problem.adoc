@@ -1,0 +1,191 @@
+---
+categories: [reflections]
+tags: [LinkedIn]
+excerpt: A hacker-led experiment on what really works -- and what doesn’t -- on LinkedIn.
+comments: true
+classes: wide
+---
+= Amazing LinkedIn: A Human Problem!
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:img-prefix: /riddle-me-this/assets/images
+
+.ASE Inc, DALL·E Hacker Dad vs. Cog Dad...
+[#img-devs]
+image::{img-prefix}/devs.png[Channel,800,450]
+
+{nbsp}
+
+Hope everyone is rested well after the long weekend.
+
+Here I am going to address the real problem I've discovered with the LinkedIn experiment.
+And it's not even about linked in itself.
+It's about humans.
+In this instance -- myself!
+
+
+== Recap: Professional Social Networking
+
+In the three parts prior this article I'd explained our year-long experiment and how machine analytics classified LinkedIn personalities.
+The we attempted to analyze why the sycophant personality was accumulating connections at a much greater rate than the rest of the community.
+And finally we took a long hard look at the LinkedIn as the platform itself.
+
+But here is the kicker -- all of our analysis equally hold true for any such platform.
+It just happens to be that LinkedIn has no competition in its space.
+But every social network for what ever its purpose follow the same pattern and the same fate.
+We could have intuitively deduced so based on the way  Cory Doctorow defined his unpleasant term.
+This would cover the social aspect and the business aspect.
+Here I want to take a close look at the human aspect.
+
+The important point to understand here is that there are MANY uses for LinkedIn.
+It truly is a rich and even feature bloated platform.
+Let' just recollect personalities that analytics discovered in the first part.
+And then these personalities span over industries, cultures and even countries.
+
+Here, I will just be examining my personal case, which I think are most ordinary users -- The Muggle.
+Any by The Muggle I mean all three types of the ordinary user:
+
+The Corporate Zombie (`muggle`)::
+*Behavior:* Automated job title updates, anniversary posts, or weirdly formal jargon. +
+*Tactic:* Nothing. Just drifting. +
+*Typical goal:* None. They're trapped.
+
+The Lurker (`random`)::
+*Behavior:* Never posts, occasionally likes, reads everything. +
+*Tactic:* Pure consumption. May still be high-value (execs, real clients). +
+*Typical goal:* Private intel or hiring info.
+
+The Wizard (`hackers`)::
+*Behavior:* Posts deeply insightful, countercultural takes, but rarely performs for engagement. +
+*Tactic:* Truth over optics, pushes people to think. +
+*Typical goal:* Authentic reach, maybe influence -- but hates the game. +
+*Subtypes:* Indie hackers, ethical coaches, polymaths.
+
+_Which is myself, for example, at different stages of LinkedIn proficiency._
+
+== The Human Problem
+
+The previous experimentation was done on a very large data set.
+Especially the general user classification and Joe's experience.
+Yet it's impossible to tell on a live system which part is mostly algorith and which is simply human nature - i.e, us.
+So, I decided to look at myself and my own data set.
+
+I've complete the experiment with almost 2,000 first degree connections.
+And I didn't start with much less than that, so I've gained very little over the year.
+Thus my analysis was geared towards what what I have from LinkedIn that is great.
+What I wish I had from LinkedIn that I don't have.
+And is that the limitation of LinkedIn as a platform, or any social network for that matter.
+Or something else entirely?
+
+And what I came up with surprised me.
+
+The top three features of LinkedIn for me are are::
+1. Connections Data -- the rolodex as Michael pointed out.
+2. Messaging System -- which is essentially business interaction.
+3. Connection Graph -- which is no longer available.
+
+And my top peeves are as follows::
+1. Strong bias for new interaction over existing connections maintenance.
+2. Bloated news feed and DM queues.
+3. Maintenance time for usability and ergonomics.
+
+
+What my peeves basically boil down to is that I need to interact with the system a lot to influence what I want to see versus what I do see.
+This includes clunky multistep controls to tell it "less like this" and then offer a mandatory reason.
+Always pressed for time I want to get valuable interaction quickly.
+So, what would be valuable interaction for me?
+
+*_I want updates on people I care about. My older connections. People I personally know._*
+
+But what I get is an endless feed of what i didn't expect.
+
+== Solving the Human Problem
+
+One good way to understand a problem is to attempt to solve it. And that's what I did wit a help of a friend.
+I have exported my data. Created a Jupyter Notebook to analyze it.
+And disconnected from everyone I hadn't personally interacted with.
+
+I've started with the connections export. I've sliced through it using Pandas and DataSpell.
+And I didn't see much of a bigger picture.
+
+The I proceeded to the messages export. I've sliced through it using Pandas and DataSpell.
+And I found a lot of interesting stuff.
+
+* 91% of the bloat was from recruiters.
+* 6% of the bloat was from sales people.
+* Only 3% of the messages were from people I interacted with.
+
+More interestingly, almost half of the recruiter bloat was just from 9% of the recruiters in my 1st degree connections. And the total count of the recruiters was 331.
+
+This data analysis also showed WHEN these recruiters were added to my connections.
+And that they were added just over a period of two years when I hired personal aid to help me manage my communications.
+
+Having removed all the people that I actually didn't have a relationship with finally made my feed useful again.
+And that happened practically instantaneous.
+
+== The Really, Really Big Problem
+
+Now I've come back to the connections dataframe. At first I moved in reverse chronological order and didn't find much that I missed.
+The I sorted in chronological order. First connections I made were in 2007.
+And I was stunned. I realized that I hadn't kept up with the people most dear to me.
+
+Oh, that really blew my fuses. Immediately I made another Python Class to manage my connections and messages in the same dataframe.
+And I diligently went one by one through all of my connections from the beginning.
+More disturbing observations followed:
+
+. I know many people. Really many people. After cleanup about 700 connections remaining.
+. I am a very bad person. I hadn't talked to some of my best friends for years.
+. About 1/4 of my conversations I left hanging - never responding to a friend.
+
+Oh, Lord, what have I done?!
+
+As any hacker would I immediately started blaming everything but myself -- LinkedIn, of course.
+And called a friends to solve this problem of keeping up once and for all!
+
+And we did. We quickly came up with an algorithmic model to do the keeping up for `rdd13r`.
+And then we start on impact analysis....
+
+My friend said: "I absolutely hate it! This is the most dehumanizing thing I've ever conjured."
+
+So, what is the problem here?
+And the problem is this -- everything we farm out to a system we lose ability to to ourselves.
+The most fundamental feature of a human being is to stay in touch with those who are dear to us.
+I didn't do that! And now, I was designing a system that does it for me.
+
+And right here we arrived at a pretty grim realization. We have a human problem. not a system problem.
+
+== Summary: Who's to blame?
+
+This is no problem of LinkedIn. LinkedIn is a business, they have a moral obligation to stay as profitable as possible.
+In the beginning it was just us, ordinary users, and the system catered to us.
+Then LinkedIn gained other profitable users, such as recruiters and sales people.
+And the system catered to them too, spreading the wealth of value and stratifying the revenue.
+It does what it's supposed to do. And enshittification is just a phenomenon of times in capitalism.
+
+At no time LinkedIn removed out ability to stay in touch with those who are dear to us.
+It was all on us.
+
+As my friend I talked we got grimmer and grimmer::
+- "When was the last time you talked to Aaron?"
+- "I dunno, a year ago." "And you?"
+- "About the same." "And David?"
+- "Gosh, I don't remember." "Longer."
+
+An interesting phenomenon emerges here. We're not good at keeping up with people.
+Especially where there are more than a few friends to remember.
+
+== Conclusion
+
+All the systems around us, even if it's just the one, provide us with basic tools that we use for our human needs.
+But it's up to us to mind those needs. For the most fundamental there can be no automation.
+It's easy to blame software. But in this case - I'm just a poor friend.
+And LinkedIn is not a culprit here.
+
+The correct way to use a tool like LinkedIn is this::
+
+. Decide what you want LinkedIn to help you with, i.e., rolodex, direct messaging, and so on.
+. Learn the capabilities and quirks of the tool. And check for any other tools available.
+. Use the tool to its practical potential and remember, it's just a tool -- outcome is on us.
