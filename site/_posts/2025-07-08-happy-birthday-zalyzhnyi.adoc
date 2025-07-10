@@ -1,0 +1,44 @@
+= Happy Birthday: Zaluzhnyi
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:img-prefix: /riddle-me-this/assets/images
+
+.ASE Inc, DALL·E Hacker Dad vs. Cog Dad...
+[#img-devs]
+image::{img-prefix}/devs.png[Channel,800,450]
+
+{nbsp}
+
+== Happy Birthday, Вале́рій Фе́дорович Залу́жний!
+
+Today is the birthday of one of the most important people in the history fo the Free World.
+Most people won't know this, but in 2023 a Ukrainian general in charge of the AFU wrote the doctrine of the 21st century warfare.
+We're living this this now, at least his initial stages.
+And the next stages are also parent!
+Everything he wrote came to be and will continue to be.
+He was removed as the commander of AFU due to political reasons.
+Even the congress of Ukraine was afraid of his competence.
+So he was moved to the Britain Ambassador role from commanding AFU.
+Politics are shit in every country of the world, Ukraine is not an exception.
+
+People followed him because his methods worked. +
+They worked practically, pragmatically, and socially. +
+He's the father of "Delta" what we (USA) tried to steal via Palantir. +
+And what he did to russians, is what a butcher does to pork.
+
+[#img-general,link=https://en.wikipedia.org/wiki/Valerii_Zaluzhnyi]
+image::{img-prefix}/Lieutenant_General_Valerii_Zaluzhnyi_(3x4_cropped).jpg[Valeryi Zaluzhnyi]
+
+Those of us who are alive and thinking - we see you, Volodia! +
+We know you. We understand you! And we love you!
+
+Happy birthday, you old goat!
+
+You have done more for the Free World +
+ than we can currently understand!
+
+Stay strong. Stay healthy. Stay active. We'll need you! +
+Soon.
