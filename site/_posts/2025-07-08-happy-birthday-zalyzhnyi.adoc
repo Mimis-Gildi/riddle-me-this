@@ -14,14 +14,14 @@ image::{img-prefix}/devs.png[Channel,800,450]
 
 == Happy Birthday, Вале́рій Фе́дорович Залу́жний!
 
-Today is the birthday of one of the most important people in the history fo the Free World.
+Today is the birthday of one of the most important people in the history of the Free World.
 Most people won't know this, but in 2023 a Ukrainian general in charge of the AFU wrote the doctrine of the 21st century warfare.
 We're living this this now, at least his initial stages.
 And the next stages are also parent!
 Everything he wrote came to be and will continue to be.
-He was removed as the commander of AFU due to political reasons.
+He was removed as the commander of A.F.U. due to political reasons.
 Even the congress of Ukraine was afraid of his competence.
-So he was moved to the Britain Ambassador role from commanding AFU.
+So he was moved to the Britain Ambassador role from commanding A.F.U.
 Politics are shit in every country of the world, Ukraine is not an exception.
 
 People followed him because his methods worked. +
@@ -42,3 +42,5 @@ You have done more for the Free World +
 
 Stay strong. Stay healthy. Stay active. We'll need you! +
 Soon.
+
+❤️
