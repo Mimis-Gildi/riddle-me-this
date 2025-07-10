@@ -14,30 +14,32 @@ image::{img-prefix}/devs.png[Channel,800,450]
 
 Hope everyone got some rest after the long weekend.
 
-This one's about the real problem I found in the LinkedIn experiment.
+This one's about *_the real problem_* I found in the LinkedIn experiment.
 And it’s not LinkedIn.
-It’s us.
-In this case — me.
+*_It’s us._*
+In this case -- me.
 
 == Recap: Professional Social Networking
 
-In the last three articles, we broke down a year-long experiment:
-- how we classified personalities with machine learning,
-- how the Sycophant archetype dominated reach,
-- and what exactly happened to LinkedIn as a platform.
+In the last three articles, we broke down a year-long experiment::
+- how we classified personalities with machine learning; (big data)
+- how the Sycophant archetype dominated reach; (mother f-er)
+- and what exactly happened to LinkedIn as a platform?!
 
-But the kicker is: all of that — the algorithms, the trends, the enshittification —
-none of it explains the full picture.
+And I also explained how the full Tor export paints the collective picture for us - the plebs!
+
+But the kicker is: all of that -- the algorithms, the trends, the enshittification
+-- none of it explains the full picture.
 
 This isn’t just about platforms.
 It’s about what happens to humans using platforms.
-And how slowly, imperceptibly, we let go of what matters most.
+And how slowly, imperceptibly, we let go of what matters most, and absorb the shit fed to us!
 
 == What Kind of User Am I?
 
 There are a lot of ways to use LinkedIn.
-It’s a bloated platform now, sure, but there’s still power under the hood.
-Remember those archetypes we found in part one? Let me recap a few — and be honest about how they map to me.
+It’s a bloated platform now, sure, but there’s still real value, a real power under the hood, an oomph for it.
+Remember those archetypes we found in part one? Let me recap a few -- and be honest about how they map to me.
 
 The Corporate Zombie (`muggle`)::
 * *Behavior:* Title updates, anniversary posts, buzzword-laced fluff.
@@ -54,7 +56,7 @@ The Wizard (`hacker`)::
 * *Tactic:* Truth over optics.
 * *Goal:* Signal, not noise.
 
-I've been all three — depending on the season, the pressure, or the purpose.
+I've been all three -- depending on the season, the pressure, or the purpose.
 This time, I wanted to see what happened when I stopped pretending.
 Just ran the numbers on myself.
 
@@ -65,7 +67,7 @@ From the tool? Or from how we use it?
 
 I finished the experiment with about 2,000 connections.
 Not much more than I started with.
-So I ran a hard reset — checked what LinkedIn gave me that was actually useful.
+So I ran a hard reset -- checked what LinkedIn gave me that was actually useful.
 And what I was still craving that it didn’t.
 
 Top 3 things LinkedIn gave me::
@@ -95,20 +97,20 @@ Fired up a Jupyter notebook.
 And nuked half my network.
 
 I sliced the connections data in Pandas. Meh.
-Then I sliced the messages export — and that’s where it clicked.
+Then I sliced the messages export -- and that’s where it clicked.
 
 Out of all messages::
 
 * 91% were recruiter spam.
 * 6% were sales spam.
-* Only 3% were real interaction — human signal.
+* Only 3% were real interaction -- human signal.
 
 Turns out, *331 recruiters* sat in my 1st-degree connections.
 Most of the spam came from just 9% of them.
 And almost all were added during a 2-year period when I hired a personal assistant to help with comms.
 
 I started deleting.
-Anyone I didn’t know personally — gone.
+Anyone I didn’t know personally -- gone.
 The feed changed overnight.
 It got quieter. Better.
 Useful again.
@@ -118,23 +120,24 @@ Useful again.
 Then I went back. Sorted my connection list by date.
 The first people I added were from 2007.
 
-And that’s when the gut punch landed.
+And that’s when the face punch landed -- `riddler`, you filthy pid.
 
 I’d forgotten about some of the best people I’ve ever known.
 I hadn’t spoken to them in years.
 Some of their last messages to me went unanswered.
 
 So I did what hackers do:
-- Built another class to map messages + connections in one dataframe.
+- Built another Python Class to map messages + connections in one dataframe.
 - Started reviewing them one by one.
 
 Observations that followed::
 
-. I know a lot of people — good people.
+. I know a lot of people -- good people.
 . I’ve been a really bad friend.
 . I ghosted people who mattered. Unintentionally, but completely.
 
-So yeah. I blamed LinkedIn.
+So yeah. I blamed LinkedIn -- the first kneejerk reaction.
+Sure, it's not my fault -- but I'm good.
 And then I called a friend and said, “Let’s automate keeping in touch.”
 We drafted up a model. A maintenance loop for `rdd13r`.
 
@@ -143,50 +146,107 @@ Then my friend said:
 
 And he was right.
 
-Every function you outsource to a system — you forget how to do yourself.
+Every function you outsource to a system -- you forget how to do yourself.
 And this one? Staying in touch with people you care about?
 That one’s *core human firmware*.
 
 So the real failure wasn’t LinkedIn.
 It was mine.
 
+Take a look at the guy I love, Billy!
+Gosh, he's a decent human being - I looked up to him!
+He's honest to the bone.
+He ran a hard life sideway in a long minute - nasty divorce.
+Owned it! Mastered it! Came out on top!
+Took proactive line in his parenting of the children.
+Where was I for him when he needed me most?
+Nowhere. Sideways. I didn't even know.
+But when we were together at work - I talked to him every week.
+So, what does it make me?!
+If you say asshole -- you'd be right!
+
 == Who’s To Blame?
 
 LinkedIn isn’t evil. It’s a business.
 It optimized for revenue. That’s what businesses do.
+And I knew it, like everyone else did.
+Hell, I built a ton of systems like that myself!
 
 In the early days, it served the user.
 Then it served sales and recruiting.
 Now it serves monetization models.
+But it still kept my connections.
+I didn't!
 
 At no point did it stop me from staying in touch with people I care about.
 I just didn’t. That’s on me.
 
 My friend and I got quiet.
 
-> “When’s the last time you talked to Aaron?”
-> “A year maybe.” “And David?”
-> “No idea. Longer.”
+*  “When’s the last time you talked to Aaron?”
+* “A year maybe.” “And David?”
+* “No idea. Longer.”
+* Fuuuuuuu....
 
 We don’t need better systems.
 We need to remember we’re human.
 
+*_We need to remember we are human!_*
+LinkedIn never removed that.
+It even facilitated it, albeit in round about way.
+Like for Billy, LinkedIn was my only connection.
+Nothing stopped me from using that, getting his new number,
+coming to see him, helping him -- but I didn't!
+I am solely the asshole here! +
+And there was a way. By LinkedIn, non the less.
+
+Or my other friend, Harrison.
+The man lived through an epic battle for life.
+I knew that. I knew he has a proper support system -- his church.
+I knew he will win and come out on top of it.
+But still, where was I?
+Was I in his life or right next to it?
+So, you see, linkedIn has nothing to do with this.
+It just makes work connecting easy.
+But it makes no assumption about the human element of the interaction
+-- it's all on you! Or me. It's just an available channel.
+And a good one at that!
+
+*_And so, I removed everything that is not human from my connections._*
+_Don't fret -- if we hadn't met, you're gone._
+Maybe my algorithm removed more people than it should have.
+But I will fix it by hand -- like I should have in the first place.
+
 == Conclusion
 
-All these platforms are just tools.
-But the responsibility to be human — that’s on us.
+All these platforms are just tools. +
+But the responsibility to be human -- that’s on us.
 
 If you want to use LinkedIn right::
 
-. Decide what you want it to do — messaging? rolodex? networking?
+. Decide what you want it to do -- messaging? rolodex? networking?
 . Learn the tool’s quirks. Or find a better one.
-. Use it — but don’t expect it to do your job for you.
+. Use it -- but don’t expect it to do your job for you.
 
-And the job is simple:
+And the job is simple: +
 *Stay in touch with the people you care about.*
 
 That’s never been the system’s job.
 It’s always been ours.
 
-I've been an asshole!
-Friends -- forgive me!
+I've been an asshole. +
+And I've been oblivious. +
+Friends -- forgive me! +
+_I bow before you!_ +
+*I love you!* +
+Always have. +
+Just not good showing it.
+
+Some of my friends gave me excuses for me: you were busy, refugees, PMCs, weapon systems...
+But what does that have to do with the simple: "How are you," "I missed you."
+
+Let's not forget -- we're human.
+
+My son (15) is right: "Daddy, you have trouble prioritizing."
+
+I hope you guys, dont!
