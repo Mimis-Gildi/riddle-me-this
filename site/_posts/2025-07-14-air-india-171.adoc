@@ -136,23 +136,23 @@ Such scenarios are rarely a "root event" -- more often the final collapse in a l
 == Systemic Fix
 
 Blaming human error is a dead end.
-As mentioned earlier, civil aviation addressed this from human perspective with CRM and Cockpit Power Gradients.
-That, however, is just one side of the coin fix for the tragedy of the human condition.
-Is that all that can be done today?
+As mentioned earlier, civil aviation addressed this from the human side with CRM and Cockpit Power Gradients.
+That, however, is just one face of the coin in fixing this tragedy of the human condition.
+Is that really all we can do today?
 
 No. We've had the means to *_prevent_* many such errors for years.
-The science and engineering community made notable strides.
+The science and engineering community has made notable strides.
 But not everywhere.
 
-So, really is *_the root challenge_* here?
+So what really is *_the root challenge_* here?
 
 **To err is human.**
-Oh, but that's not a warning -- *that's a contract*!
+Oh, but that's not a warning — *that's a contract.*
 
-Airbus and Boeing have danced around this. Human-dominant for Boeing, and machine-dominant for Airbus.
+Airbus and Boeing have danced around this: Boeing skewing human-dominant, Airbus leaning machine-dominant.
 Neither solves the core problem.
 
-But there's a third beautifully additive way: +
+But there's a third, beautifully additive path: +
 {nbsp} **augmented operations**.
 
 == Augmented Ops & MITL
