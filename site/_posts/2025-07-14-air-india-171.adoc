@@ -143,7 +143,7 @@ Such scenarios are rarely a "root event" -- more often the final collapse in a l
 == Systemic Fix
 
 Blaming human error is a dead end.
-As mentioned earlier, civil aviation addressed this from the human side with CRM and Cockpit Power Gradients.
+As mentioned earlier, aviation addressed this from the human side with CRM and Cockpit Power Gradients.
 That, however, is just one face of the coin in fixing this tragedy of the human condition.
 Is that really all we can do today?
 
@@ -229,6 +229,9 @@ In most of them, the cockpit was blaring -- adding to the chaos.
 
 **My most optimistic estimate: 37 rules eliminate 67% of fatal human-error crashes.**
 That's with a naive, first-gen MITL implementation.
+Shooting for that number surprised me in two ways:
+it's not a lot of rules -- and the returns diminish slowly.
+
 
 Even crude scaffolding would help.
 
