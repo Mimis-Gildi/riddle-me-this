@@ -157,42 +157,102 @@ But there's a third, beautifully additive path: +
 
 == Augmented Ops & MITL
 
-Ukraine's GUR operation "Spiderweb" used AI-driven MITL with manual override. Not "yes, but". *Yes, and*. That's what competence looks like.
+Ukraine's GUR operation "Spiderweb" used AI-driven drones with real-time manual override.
+Most people were confused -- automated or not.
+The answer is not "yes, BUT" -- it's *Yes, AND*.
+Aha -- that's what competence looks like.
 
-Machine-in-the-Loop (MITL) systems work in both directions. They can observe, intervene, and *stall disaster*.
+This trickery is known as "Human-In-The-Loop" (HITL).
+The machine does, but human can correct, and the machine continues to learn.
 
-\== MITL in Flight 171
+_But this magic works well in *both directions*!_
 
-Imagine this: secondary system detects fuel cutoff command on takeoff. It delays the action briefly, prompts the crew:
+Enter Machine-in-the-Loop (MITL) systems.
+Machines can observe, AND intervene -- to *stall a disaster* when necessary.
 
-*"This will kill everyone. Is this really what you meant to do?"*
+== MITL in Flight 171
 
-Startle effect? Yes. That's the point. Validation for validation.
+Imagine this: a secondary system detects a fuel cutoff command during takeoff.
+It delays the action briefly and prompts the crew:
 
-\== MITL Simulations
+*"In your current context this will kill everyone." +
+"Is this really what you meant to do?"*
 
-On Jeju Air 2216, I built a hypothetical MITL layer. 37 high-confidence scenarios. Gear-up warning. Flaps on takeoff. Actionable gaps.
+Culturally, we still struggle with this concept.
+Every time I demo similar systems, I get objections from the room.
+In this case, it'd sound like:
 
-The current warning model is noise. Layered alerts, contradictory signals, masked failures. Humans can't parse that in crisis.
+- Startle effect? Won't that make things worse for the pilots?
+- How do you validate this? Can this even be safe?
 
-But an MITL overlay that *acts* -- not just warns -- can.
+Yes, it'll startle -- *that's the point!* +
+And no -- *don't worry about validation*. +
+Leave that to the team.
 
-Flight 171 would've been saved.
+I teach these methodologies again and again.
+Once the mindset shifts, teams get it.
+They validate all logical branches.
+And everyone ends up just a little bit safer.
 
-I ran MLOps-based simulations across known human-error crashes. Pilot disorientation. Takeoff config errors. Botched approaches.
+== MITL Simulations
 
-**My estimate: 67% of human-error-based fatal crashes could be prevented** with a simple, first-generation MITL system.
+In reality, people object to "uncommanded action."
+Despite the fact that the autopilot does that too.
+
+On Jeju Air 2216, I built a hypothetical MITL layer.
+It came to just 37 high-confidence scenarios.
+Such as gear up on final. Or flaps off on takeoff.
+
+Currently, we manage this with a noisy warning system.
+Layered alerts, contradictory signals, masked failures.
+Humans can't parse that in crisis.
+
+What's different about MITL is *just-in-time action!*
+And that can be done not touching any other systems.
+Such automatically initiating "go-around" in an obvious pickle scenario.
+Compare that to forgotten TOGA button in Ahmedabad.
+
+*_Flight 171 would've been saved._*
+
+== What Would it Take?
+
+I ran MLOps-based simulations across known human-error crashes.
+Pilot disorientation. Takeoff config errors. Botched approaches.
+In most cases cockpit was blaring adding to the chaos.
+
+**My most optimistic estimate, just 37 rules eliminated 67% of human-error-based fatal crashes.**
+That's with a naive first-generation MITL system implementation.
 
 Even crude scaffolding would make a difference.
 
-\== Closing
+And there is yet a better way!
 
-The cost of not acting is 260 lives. This year.
+Consider this: ~70–80% of fatal crashes in commercial aviation have a human error component.
+Of those, takeoff/approach errors (checklist omissions, configuration issues, cognitive overload, etc.) make up 35–40%.
 
-We've built the cloud. We've built Kubernetes. We've built war-grade AI drones.
+With an additive approach like this there's no need to just take all from the start!
+We can go slower and more carefully.
+Validate each rule with FAA one-by-one.
+Start with the most obvious ones.
 
-We can build this.
+My conservative estimate is that an MITL system with just 10–20 rules could avoid ~45–55% of human-error-related accidents.
 
-We just have to *care*.
+And not much is needed to make that happen, because the flight is already by wire.
+There is a room for a standalone system here portable to many flying machines.
+What si really required:
 
-{pub-li}
+- Access to input streams (flight state, control actions);
+-  Simple rule-based validation + contextual interjection;
+- Just 0.5–2 seconds of decision stalling with correct cueing.
+
+I can certainly see this happening with the right team.
+
+== Closing
+
+Humans are guaranteed to make mistakes.
+The cost of not acting is 260 lives this time.
+
+We've built the cloud. We've built Kubernetes. We've built war-grade AI drones. Heck, we've been to the moon.
+And you know what? Combat aircraft already have similar systems.
+
+What gives here? Maybe we just need to *care*.
