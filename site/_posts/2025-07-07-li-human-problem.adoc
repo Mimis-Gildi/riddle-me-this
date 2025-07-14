@@ -1,3 +1,10 @@
+---
+categories: [reflections]
+tags: [LinkedIn]
+excerpt: A hacker-led experiment on what really works -- and what doesn’t -- on LinkedIn.
+comments: true
+classes: wide
+---
 = Amazing LinkedIn: A Human Problem!
 :blog-url: https://mimis-gildi.github.io/riddle-me-this/
 :blog-title: Creative Engineering at Scale

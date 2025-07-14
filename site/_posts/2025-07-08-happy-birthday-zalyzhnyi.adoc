@@ -1,3 +1,10 @@
+---
+categories: [reflections]
+tags: [Ukraine,Zaluzhnyi,Democracy]
+excerpt: One, little know general, Zaluzhnyi, with global impact.
+comments: true
+classes: wide
+---
 = Happy Birthday: Zaluzhnyi
 :blog-url: https://mimis-gildi.github.io/riddle-me-this/
 :blog-title: Creative Engineering at Scale
