@@ -231,20 +231,22 @@ In most of them, the cockpit was blaring -- adding to the chaos.
 
 **My most optimistic estimate: 37 rules eliminate 67% of fatal human-error crashes.**
 That's with a naive, first-gen MITL implementation.
-Shooting for that number surprised me in two ways:
-it's not a lot of rules -- and the returns diminish slowly.{crashes-fn}
+Shooting for that number surprised me twice:
+it didn’t take many rules -- and the payoff kept going.{crashes-fn}
 
 Even crude scaffolding would help.
+In one horrible crash, a two-second interjection would've saved everyone.
+Literally everyone!
 
-And there's a better way.
+And there's even a better way.
 
 Consider this: ~70--80% of fatal commercial crashes involve human error.
 Of those, takeoff/approach issues -- checklist misses, config errors, cognitive overload -- make up 35--40%.
 
 With an additive approach, we don't need to boil the ocean.
 Go slow. Go carefully.
-Validate each rule with the FAA, one-by-one.
-Start with the obvious ones.
+Validate each rule with the FAA -- one by one.
+Begin with the no-brainers.
 
 My conservative estimate:
 Just 10--20 MITL rules could prevent ~45--55% of human-error-related accidents.
@@ -267,6 +269,12 @@ I'm skipping the integration hurdles -- and the compounding benefits to airline 
 
 We let cars drive themselves.
 Surely, planes can nudge once or twice -- when it really counts.
+
+Fun fact: in the late 1970s, Cadillac added logic to prevent shutting off the engine or shifting into reverse at highway speed.
+Yet in modern commercial jets, you can still *pull the ignition mid-takeoff* -- no questions asked -- knock yourself out.
+
+Why are we holding aircraft with 200+ souls onboard to a lower standard than a 1970s Cadillac?
+
 
 == Closing
 
