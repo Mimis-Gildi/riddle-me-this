@@ -14,6 +14,8 @@ classes: wide
 :img-prefix: /riddle-me-this/assets/images
 :cheese: https://en.wikipedia.org/wiki/Swiss_cheese_model[Swiss cheese model,window=_blank,opts=nofollow]
 :cheese-fn: footnote:[{cheese} Wikipedia page]
+:crashes: https://www.panish.law/aviation_accident_statistics.html[Aviation Crash Statistics | Updated 2025]
+:crashes-fn: footnote:[{crashes} Panish Law]
 
 
 .ASE Inc, DALL·E Hacker Dad vs. Cog Dad...
@@ -138,7 +140,7 @@ No point pretending otherwise -- the benefit of the second mind is lost at onset
 "Why did you cut off?" -- "I didn't do so."
 I will wait for the final report.
 But even now, we can tell something was wrong in that cockpit.
-Such scenarios are rarely a "root event" -- more often the final collapse in a long chain of preceding ones.
+Such scenarios are rarely a "root event" -- more often the final collapse in a long chain of preceding ones.{cheese-fn}
 
 == Systemic Fix
 
@@ -230,8 +232,7 @@ In most of them, the cockpit was blaring -- adding to the chaos.
 **My most optimistic estimate: 37 rules eliminate 67% of fatal human-error crashes.**
 That's with a naive, first-gen MITL implementation.
 Shooting for that number surprised me in two ways:
-it's not a lot of rules -- and the returns diminish slowly.
-
+it's not a lot of rules -- and the returns diminish slowly.{crashes-fn}
 
 Even crude scaffolding would help.
 
