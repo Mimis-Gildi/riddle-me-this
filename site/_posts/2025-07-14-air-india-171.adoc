@@ -1,3 +1,10 @@
+---
+categories: [reflections]
+tags: [Aviation,Safety,Defensive Engineering,Automation]
+excerpt: How hard would it be to apply more Defensive Engineering to aviation?
+comments: true
+classes: wide
+---
 = Air India 171: Defensive Engineering
 :blog-url: https://mimis-gildi.github.io/riddle-me-this/
 :blog-title: Creative Engineering at Scale
