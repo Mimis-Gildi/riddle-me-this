@@ -194,7 +194,7 @@ Once the mindset shifts, teams get it.
 They validate all logical branches.
 And everyone ends up just a little bit safer.
 
-== MITL Simulations
+=== MITL Simulations
 
 In reality, people object to "uncommanded action."
 Despite the fact that autopilot does that too.
@@ -218,7 +218,7 @@ Compare that to the forgotten TOGA button in Ahmedabad.
 
 I ran MLOps-based simulations across known human-error crashes:
 Pilot disorientation. Takeoff config errors. Botched approaches.
-In most of them, the cockpit was blaring -- just adding to the chaos.
+In most of them, the cockpit was blaring -- adding to the chaos.
 
 **My most optimistic estimate: 37 rules eliminate 67% of fatal human-error crashes.**
 That's with a naive, first-gen MITL implementation.
@@ -227,16 +227,16 @@ Even crude scaffolding would help.
 
 And there's a better way.
 
-Consider this: ~70–80% of fatal commercial crashes involve human error.
-Of those, takeoff/approach issues -- checklist misses, config errors, cognitive overload -- make up 35–40%.
+Consider this: ~70--80% of fatal commercial crashes involve human error.
+Of those, takeoff/approach issues -- checklist misses, config errors, cognitive overload -- make up 35--40%.
 
 With an additive approach, we don't need to boil the ocean.
 Go slow. Go carefully.
-Validate each rule with the FAA, separately, one-by-one.
+Validate each rule with the FAA, one-by-one.
 Start with the obvious ones.
 
 My conservative estimate:
-Just 10–20 MITL rules could prevent ~45–55% of human-error-related accidents.
+Just 10--20 MITL rules could prevent ~45--55% of human-error-related accidents.
 
 And we don't need much to make that happen.
 The flight's already by wire.
@@ -246,7 +246,7 @@ What's really required?
 
 - Access to input streams (flight state, control actions);
 - Simple rule-based validation + contextual interjection;
-- Just 0.5–2 seconds of decision stalling, with the right cue.
+- Just 0.5--2 seconds of decision stalling, with the right cue.
 
 That's it.
 
