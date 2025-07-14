@@ -5,6 +5,9 @@
 :li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :img-prefix: /riddle-me-this/assets/images
+:cheese: https://en.wikipedia.org/wiki/Swiss_cheese_model[Swiss cheese model,window=_blank,opts=nofollow]
+:cheese-fn: footnote:[{cheese} Wikipedia page]
+
 
 .ASE Inc, DALL·E Hacker Dad vs. Cog Dad...
 [#img-devs]
@@ -12,199 +15,184 @@ image::{img-prefix}/devs.png[Channel,800,450]
 
 {nbsp}
 
-Air India has killed 260 in the bird and on the ground. "Why did you cut off" -- "I didn't do so."
+Air India killed 260 -- onboard and on the ground. "Why did you cut off?" -- "I didn't do so."
 
-Sequence of events from the preliminary report::
-. Flaps 5 setting (correct: spoilers, flaps extended -- modern birds don't fly ground-level without this)
-. V1 153 knots, 8:08:33UTC.
-. V2 155+ knots, 8:08:39UTC -- normal rotate, done.
-. Wheels detach tarmac - Air mode Switch, auto;
-. Max Airspeed 180 knots 8:08:42UTC -- normal takeoff, landing gear time -- not raised;
-. Fuel Cutoff 1 (Captain side, left) 8:08:43UTC -- ABNORMAL;
-. Fuel Cutoff 2 (FO side) 8:08:44UTC -- ABNORMAL;
-. N1 Bleed Down N1-1;N1-2 8:08:45-46UTC -- ABNORMAL;
-. N2 Bleed Down 8:08:47UTC -- Big, Big Problem;
-. RAT Deployment 8:08:49UTC -- The End.
+From the preliminary report:
 
-I have ran 37 simulator scenarios on 787-9 (Dreamliner) with NGnx 1, not the GEnx-1B on Air India, I don't have that ACad model.
-but the differences are small enough to neglect.
-It is impossible to salvage this bird within 57 seconds on dual engine flameout upon tarmac detach -- my record time at ground level salvage -- the best theoretical case.
-And that depended on both engines relighting immediately, which only happened every 5th time in my state of art simulator.
-There's nothing pilot flying could do here in under 40 seconds he actually had.
-Inertia just too great. Engines just too slow.
-Rest in peace innocent souls.
+. Flaps set to 5 -- correct (spoilers extend accordingly). +
+Takeoff configuration normal.
+. V1 153 knots, 08:08:33 UTC.
+. V2 155+ knots, 08:08:39 UTC -- rotation initiated.
+. Wheels detach tarmac -- air mode automatically recognized.
+. Max airspeed 180 knots, 08:08:42 UTC -- gear not retracted.
+. Fuel Cutoff 1 (Captain side) 08:08:43 UTC -- ABNORMAL.
+. Fuel Cutoff 2 (FO side) 08:08:44 UTC -- ABNORMAL.
+. N1 Bleed Down begins 08:08:45--46 UTC -- immediate consequence.
+. N2 Bleed Down 08:08:47 UTC -- full flameout.
+. RAT Deploys 08:08:49 UTC -- terminal.
 
-*What key info do we have:* _the fuel cut off toggles could only be moved by human action -- it is human action._
+I ran 37 simulator scenarios on the 787-9 using the GEnx engine model (not the exact GEnx-1B used by Air India, but close enough).
+*None* allowed recovery under 57 seconds from dual flameout at that gear-up point.
 
-That is the key fact not even G*d can change now. And there is NO RECOVERY from that possible! Not even close.
+No recovery possible in the 40 seconds the pilot had.
+Inertia too great. Engines too slow. No pilot can beat physics.
+
+Rest in peace, innocent souls.
+
+The critical fact: *the fuel cutoff toggles can only be moved by human action.*
+
+This is now immutable history.
 
 == General Context
-This is a second absurd air accident I spent a day evaluating this year.
-I'm just a glider pilot with many decades of experience.
-And an air enthusiast of a systems engineers -- which we will talk about today: the human factor.
 
-I am naturally born without fear for anything, like my 2-y-o daughter, oh Gosh help me, unwanted sideeffect of Viking blood.
-In 1992, my flight instructor at PSU Air Field told me, "kid, the rules of aviation are written in blood - think twice before you piss on them!"
-Sort-term accident uptick is nearly 600% in my models -- nearly 6 times 2022 baseline.
-Remember, though, **absolute number remains low** -- _you are safer in a plane than a car_!
-Still, I recognize this weird phenomenon, and keep modeling looking for a trend.
-There isn't one yet!
+Second absurd air crash I've researched this year.
+I'm just an enthusiast glider pilot and an old systems engineer.
+But this one's not about the bird. It's about us -- the humans.
 
-Don't be alarmed.
-I along with many better than I professionals will tell you when you should worry.
-We're far from that point today.
-Just some bad things happened to good people.
+In 1992, my PSU flight instructor told me: +
+*"Kid, aviation rules are written in blood."*
 
-== Fuel Cut Off Switches
+Uptick in incidents is real -- nearly 6x 2022 baseline in my model. 
+But don't panic: absolute numbers remain very low.
+You're still safer in a plane than a car.
+I'm compelled to watching this development nonetheless.
 
-Everyone is talking a about the electronic problem with the fuel cut off switches.
-That's absurd! nothing's wrong with them switches.
-The design is solid for 50 years.
-This switch only transitions in a very specific scenario.
-The board beneath it is not for a electric signal propagation alone but for validation.
-The switch as a good detent design.
-The validation signal position are: off, detent, detent low, detent travel, detent high, on.
-The physical notching is sloped.
-A person feels movement and force of the feedback.
-It's pull, move through gradient, hold and drop.
-Sure, this action can be performed by muscle memory alone.
-But the switch cannot be bumped off.
-In addition, when detent is pulled, throttle notches are engaged effectively locking its movement.
-Switch failure, especially both at once, this is highly NOT probable!
+== Fuel Cutoff Switches
 
-*_This was a deliberate human action._*
+Speculation about electronic failure is unfounded.
+Of course, I understand the human desire to protect the honor of the pilots.
+And I also understand the engineering creed to safeguard life.
+
+These switches are solid, with 50+ years of design history.
+They don't fail casually -- sloped detents and dual-mode validation have stood the test of time.
+
+Electrical detent states validations: 'Off', 'Detent low', 'Detent travel', 'Detent high', 'On' -- this isn't our house lights switch.
+
+Pull, press through, hold, drop.
+This requires intentional human action.
+
+The odds of both switches failing this way are vanishingly low.
+Sure, muscle memory can do it -- but only if commanded.
+
+Reexamining the switch design leads to one conclusion: this was almost certainly a deliberate human act.
 
 == Operating Laws
 
-Most modern aircraft have at least the "Normal Law" and "Alternate Law" operating models.
-In "Normal Law" all flight aids are enabled and lots of automation takes place.
-The "Alternate Law" is for emergencies, such as key instrument failures, and gives full control to the pilot uncorrected.
-This is something we will need to talk more about later.
-This bird was in normal law mode through tarmac detach.
+Modern airliners are packed with automation.
+These birds operate in "Normal Law" unless a fault forces a switch to "Alternate Law".
+In Normal Law, automation and envelope protections are active.
+This flight remained in Normal Law.
 
-== Human Factors Psychology
+_This detail matters for a point I'll make further down._
 
-I have coached dozens of "Dream Teams" in my career -- the engineering  teams that save the company.
-Each time besides basic engineering competence I teach "Risk Management," "Bias Management," "Personal Leadership," and finally, most importantly "Self-awareness!"
-In practice it all boils down to "Defensive Engineering."
+== Human Factors Psychology (HFP)
 
-Out of 21 corporate teams I raised in my career four failed to reach basic maturity level.
-And it is human maturity that I am talking about.
-And the failing teams were all different.
-One insurance company, for example, kept pushing decrepit components into the same Kubernetes cluster until running out of masks
--- total absence of basic competence.
-But the 17 successful teams had something in common.
+I've coached 21 major domain teams. Seventeen reached maturity; four did not.
+What's the difference between a team that fails and one that succeeds?
+**Just one thing: Basic Human Maturity.**
 
-Meritocracy is self-healing!
-In the environment where humans are aware of their own BIAS something magical happens -- Peer Calibration!
-It takes a minimal critical mass of people to make the whole team, however large, just work.
-Human Factors Psychology studies this phenomenon.
-_Consider this decision - **defibrillator machines have no ON/OFF button!**_
-Can you think why that is?
+Here's my career-long discovery: meritocracy is self-healing.
+When humans recognize their own bias, peer calibration happens.
+That magic moment where a team self-corrects. No intervention required.
+This collective state forms a self-healing culture -- often called defensive culture.
 
-That is because in us, the humans::
+*Defensive Engineering* is the practice of designing to *safeguard against ourselves*.
 
-. BIAS takes priority over logic -- we act impulsively first, then we reason later;
-. We don't switch context automatically -- net-new situation doesn't change our thinking paths;
-. In the end, we are not rational thinkers -- we are emotional thinkers FIRST!
+Humans:
 
-So, what do I teach teams all this non-engineering nonsense?
+. Act from bias before logic;
+. Don't auto-switch context;
+. Are emotional first, rational second.
 
-Because, _defend against whom?_ -- *Defend against us -- the humans, we're the root of all evil!*
-Even unintentionally!
+We've made a lot of progress in this area.
+Consider this -- why do defibrillators have no OFF switch?
+_Because we can't be trusted with one. And that's okay -- *if we consciously design for it*._
 
-=== CRM & Clean Cockpit
+== CRM & Clean Cockpit
 
-CRM is Cockpit Resource Management, also known as Clean Cockpit. It's a simple principle based on eons of Human Factors studies.
-The bird is flawed, always. Humans are flawed, always. You are not at a lake picnic.
-What you do in the cockpit has profound consequences.
-Be aware of where you are, what you are doing, and what you are going to do when things go south, and they often do.
+CRM is a direct product of human factors psychology and applied systems engineering.
+Cockpits are not casual environments. What we do there has profound consequences.
+Most of the time, however, we don't notice the *gloom it casts* over our souls.
+That too is part of our nature -- we get acclimated.
 
-It didn't start with commercial aviation. People who are aware will also notice the same pair-on,
-call-back, check and balance methodology in combat, firefighting, police response, and so on.
-That is just compensating for the very nature of what we are -- all of us.
+CRM emerged alongside pair-based disciplines: firefighting, policing, combat arms.
+_It's all about checking one another -- an *intrinsic validation channel*._
+From a battle buddy kicking their partner's boots when the enemy is coming,
+to a programmer reading their peer's code as they type.
+Magic as old as time. We're paired creatures, not solitary ones.
+Evolution even built in idle states to economize effort when paired.
 
-And the greatest evil here is known as "Power Gradient" - when one human in the pair dominates the other in any way.
-And this is more common than people realize. Every Corporate America software / domain team I'd ever coached had this problem initially.
-Weather it's the hurd politics "respect" or ranking model -- the result is always the same -- failed team.
-That is why in Extreme Programming culture Pair Programming *_is only possible between peers_* -- no peers, no pair programming;
-no point to even try and figure this out -- the benefit of two minds is lost on the onset.
+Conversely, the biggest threat: *Power Gradient*. 
+When one pair member dominates, the entire mechanism breaks to pieces. 
+And we don't easily understand it. In engineering I take a lot of time to explain: *no peer, no pair programming*. 
+Pair programming is impossible between non-equals!
+No point pretending otherwise -- the benefit of the second mind is lost at onset.
 
-
-I am still waiting for the full report to evaluate the CRM in this cockpit.
-But "Why did you cut off" -- "I didn't do so" -- already does not bode well for this pair.
+"Why did you cut off?" -- "I didn't do so."
+I will wait for the final report.
+But even now, we can tell something was wrong in that cockpit.
+Such scenarios are rarely a "root event" -- more often the final collapse in a long chain of preceding ones.
 
 == Systemic Fix
 
-Faulting basic human behavior in the modern day and age, even when just, is pointless.
-Why is that?! Simple. Because today we have all means necessary to safeguard just available.
-We just need to care and implement. This should be based on the understanding of this simple truth:
+Blaming human error is a dead end.
+As mentioned earlier, civil aviation addressed this from human perspective with CRM and Cockpit Power Gradients.
+That, however, is just one side of the coin fix for the tragedy of the human condition.
+Is that all that can be done today?
 
-*_"To err is human!"_*
+No. We've had the means to *_prevent_* many such errors for years.
+The science and engineering community made notable strides.
+But not everywhere.
 
-_This means, if I am human, I will make a mistake. +
-This is not the matter of IF. +
-It is the matter of WHEN._
+So, really is *_the root challenge_* here?
 
-Airliner manufacturers have been dancing around this concept for decades.
-Boeing and Airbus approaches, for example, are quite different.
-Boeing chose the "human dominant" model, which I agree more with.
-Airbus chose the "machine dominant" model.
-But neither approach solves any real problems.
-And the former even introduced a few new ones.
+**To err is human.**
+Oh, but that's not a warning -- *that's a contract*!
 
-There is another way, and oodles of people have already figured this out.
+Airbus and Boeing have danced around this. Human-dominant for Boeing, and machine-dominant for Airbus.
+Neither solves the core problem.
 
-For instance, take this example. Ukrainian GUR announces an AI-driven operation "Spiderweb" executed and shares videos.
-Many people are confused -- "didn't operators have manual control?"
-People familiar with the field will immediately recognize: "yes, AND!"; NOT "yes, but...".
-What is going on here?
-And that is *_competence in action._*
-Real understanding of Human Factors Psychology.
-Technically speaking, it's "Human-In-The-Loop (HITL)" type of an operation.
-A form of the 1) continuous, and 2) supervised learning;
-with most notable variant being 3) reinforcement learning already widely used.
+But there's a third beautifully additive way: +
+{nbsp} **augmented operations**.
 
-It works just as well the other way around -- "Machine-In-The-Loop (MITL)".
+== Augmented Ops & MITL
 
-MITL, is best known as "Augmented Operations" -- something you may remember me talking about for years.
+Ukraine's GUR operation "Spiderweb" used AI-driven MITL with manual override. Not "yes, but". *Yes, and*. That's what competence looks like.
 
-== Practical Considerations For Commercial Aviation
+Machine-in-the-Loop (MITL) systems work in both directions. They can observe, intervene, and *stall disaster*.
 
-What can the Machine in the Loop do?
-Quite a lot actually.
-Consider this very scenario of the Flight 171.
-It isn't that difficult to deploy another machine in parallel with a robust set of consequences coded.
+\== MITL in Flight 171
 
-Having detected fuel cutoff REQUEST on takeoff, the secondary system could prompt alarms and very briefly delay the action.
+Imagine this: secondary system detects fuel cutoff command on takeoff. It delays the action briefly, prompts the crew:
 
-_This will lead you to *offing yourself* +
-{nbsp} -- **is this what you meant to do?!**_
+*"This will kill everyone. Is this really what you meant to do?"*
 
-Every time I explain this concept I only get the pushback from people not familiar with the validation discipline.
-The questions come up "what would be the consequence of the startle effect?"
-*EXACTLY!*
-The validation discipline is the validation until the end -- validation for validation.
-All such questions are the expectation for the course of study for MITL systems.
+Startle effect? Yes. That's the point. Validation for validation.
 
-Upon the previous accident analysis, Jeju Air Flight 2216, which is a far more complicated scenario,
-I worked up what a similar MITL system would do.
+\== MITL Simulations
 
-I came up with a very short list of 37 bullet-proof scenarios easy to implement.
-Such as "not setting flaps on takeoff" or "not deploying landing gear on approach".
-The current methods for such scenarios, not all but many,
-is to raise some warnings that trump one another and mask other warning.
-This is already a logically flawed proposition often boiling down to overwhelming an already overwhelmed human being.
-The difference between the bogus warning and the proper MITL systems is *ACTION*!
+On Jeju Air 2216, I built a hypothetical MITL layer. 37 high-confidence scenarios. Gear-up warning. Flaps on takeoff. Actionable gaps.
 
-In the initial stages such system would safeguard a small number of simplest scenarios.
-Perhaps no help for Jeju Air Flight 2216, but it would be a start capable of averting Air India 171.
-This rest on well defined clear-cut "avoidance procedures" already documented in flight manuals that can easily be automated
--- such as "go around."
-It works by stealing those few second of the failing pilot to take them out of danger giving them a chance to recover for another attempt.
-I've ran an MLOps based simulation for all documented human error cases.
-Sure, that are few real noggen scratches there.
-But things like pilot disorientation, approach and takeoff calamities are very much doable!
-In my estimation 67% of all fatal air crashes are due to human error are avoidable by such simple MITL system even with my amateur level of understanding in the fild of aviation.
+The current warning model is noise. Layered alerts, contradictory signals, masked failures. Humans can't parse that in crisis.
 
-I wonder what Saga thinks this percentage would be?
+But an MITL overlay that *acts* -- not just warns -- can.
+
+Flight 171 would've been saved.
+
+I ran MLOps-based simulations across known human-error crashes. Pilot disorientation. Takeoff config errors. Botched approaches.
+
+**My estimate: 67% of human-error-based fatal crashes could be prevented** with a simple, first-generation MITL system.
+
+Even crude scaffolding would make a difference.
+
+\== Closing
+
+The cost of not acting is 260 lives. This year.
+
+We've built the cloud. We've built Kubernetes. We've built war-grade AI drones.
+
+We can build this.
+
+We just have to *care*.
+
+{pub-li}
