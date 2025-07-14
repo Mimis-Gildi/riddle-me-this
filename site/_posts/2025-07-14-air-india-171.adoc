@@ -147,7 +147,7 @@ But not everywhere.
 So what really is *_the root challenge_* here?
 
 **To err is human.**
-Oh, but that's not a warning — *that's a contract.*
+Oh, but that's not a warning -- *that's a contract.*
 
 Airbus and Boeing have danced around this: Boeing skewing human-dominant, Airbus leaning machine-dominant.
 Neither solves the core problem.
@@ -197,62 +197,69 @@ And everyone ends up just a little bit safer.
 == MITL Simulations
 
 In reality, people object to "uncommanded action."
-Despite the fact that the autopilot does that too.
+Despite the fact that autopilot does that too.
 
-On Jeju Air 2216, I built a hypothetical MITL layer.
-It came to just 37 high-confidence scenarios.
-Such as gear up on final. Or flaps off on takeoff.
+For Jeju Air 2216, I built a hypothetical MITL layer.
+It came down to just 37 high-confidence scenarios.
+Gear up on final. Flaps off on takeoff. That kind of thing.
 
-Currently, we manage this with a noisy warning system.
-Layered alerts, contradictory signals, masked failures.
+Right now, we handle this with noisy alerts.
+Layered warnings. Contradictory signals. Masked failures.
 Humans can't parse that in crisis.
 
 What's different about MITL is *just-in-time action!*
-And that can be done not touching any other systems.
-Such automatically initiating "go-around" in an obvious pickle scenario.
-Compare that to forgotten TOGA button in Ahmedabad.
+And it can operate without touching any other systems.
+Like auto-initiating a go-around in an obvious pickle.
+Compare that to the forgotten TOGA button in Ahmedabad.
 
 *_Flight 171 would've been saved._*
 
 == What Would it Take?
 
-I ran MLOps-based simulations across known human-error crashes.
+I ran MLOps-based simulations across known human-error crashes:
 Pilot disorientation. Takeoff config errors. Botched approaches.
-In most cases cockpit was blaring adding to the chaos.
+In most of them, the cockpit was blaring -- just adding to the chaos.
 
-**My most optimistic estimate, just 37 rules eliminated 67% of human-error-based fatal crashes.**
-That's with a naive first-generation MITL system implementation.
+**My most optimistic estimate: 37 rules eliminate 67% of fatal human-error crashes.**
+That's with a naive, first-gen MITL implementation.
 
-Even crude scaffolding would make a difference.
+Even crude scaffolding would help.
 
-And there is yet a better way!
+And there's a better way.
 
-Consider this: ~70–80% of fatal crashes in commercial aviation have a human error component.
-Of those, takeoff/approach errors (checklist omissions, configuration issues, cognitive overload, etc.) make up 35–40%.
+Consider this: ~70–80% of fatal commercial crashes involve human error.
+Of those, takeoff/approach issues -- checklist misses, config errors, cognitive overload -- make up 35–40%.
 
-With an additive approach like this there's no need to just take all from the start!
-We can go slower and more carefully.
-Validate each rule with FAA one-by-one.
-Start with the most obvious ones.
+With an additive approach, we don't need to boil the ocean.
+Go slow. Go carefully.
+Validate each rule with the FAA, separately, one-by-one.
+Start with the obvious ones.
 
-My conservative estimate is that an MITL system with just 10–20 rules could avoid ~45–55% of human-error-related accidents.
+My conservative estimate:
+Just 10–20 MITL rules could prevent ~45–55% of human-error-related accidents.
 
-And not much is needed to make that happen, because the flight is already by wire.
-There is a room for a standalone system here portable to many flying machines.
-What si really required:
+And we don't need much to make that happen.
+The flight's already by wire.
+There's room for a standalone system portable to most flying machines.
+
+What's really required?
 
 - Access to input streams (flight state, control actions);
--  Simple rule-based validation + contextual interjection;
-- Just 0.5–2 seconds of decision stalling with correct cueing.
+- Simple rule-based validation + contextual interjection;
+- Just 0.5–2 seconds of decision stalling, with the right cue.
 
-I can certainly see this happening with the right team.
+That's it.
+
+I can absolutely see this happening -- with the right team.
 
 == Closing
 
 Humans are guaranteed to make mistakes.
-The cost of not acting is 260 lives this time.
+The cost of not acting: 260 lives, this time.
 
-We've built the cloud. We've built Kubernetes. We've built war-grade AI drones. Heck, we've been to the moon.
-And you know what? Combat aircraft already have similar systems.
+We've built the cloud. We've built Kubernetes. We've built war-grade AI drones. We've been to the moon.
+And combat aircraft already *have* systems like this.
 
-What gives here? Maybe we just need to *care*.
+What gives?
+
+Maybe we just need to *care*.
