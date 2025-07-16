@@ -1,0 +1,399 @@
+---
+categories: [reflections]
+tags: [LinkedIn]
+excerpt: A hacker-led experiment on what really works -- and what doesn’t -- on LinkedIn.
+comments: true
+classes: wide
+---
+= LinkedIn: Conclusion - Enshittification
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:img-prefix: /riddle-me-this/assets/images
+:li-aaron: https://www.linkedin.com/in/aaron-fuller-32776910b/[Aaron Fuller]
+:gh-aaronfllr: footnote:[GitHub User home: https://github.com/aaronfllr[Aaron Fuller,window=_blank]]
+:li-michael: https://www.linkedin.com/in/michaellipari/[Michael Lipari]
+:mcd: https://www.macquariedictionary.com.au/[Macquarie Dictionary]
+:mcd-wiki: https://en.wikipedia.org/wiki/Macquarie_Dictionary/[Macquarie Dictionary,window=_blank]
+:mcd-wiki-fn: footnote:[The {mcd-wiki} Wikipedia page]
+:estf-doflo: https://doflo.com/blog/what-is-enshitification-and-can-we-stop-it[Enshitification,window=_blank]
+:estf-doflo-fn: footnote:[doFlo {estf-doflo} Explanation]
+:estf-reddit: https://www.reddit.com/r/medicine/comments/10hyf7m/cory_doctorow_explains_the_enshitification_of/[Cory Doctorow explains the "enshitification" of internet platforms,window=_blank]
+:estf-reddit-fn: footnote:[Reddit - {estf-reddit} discussion thread; The mechanism also seems highly relevant to US healthcare policy]
+:estf-wiki: https://en.wikipedia.org/wiki/Enshitification[Enshitification,window=_blank]
+:estf-wiki-fn: footnote:[Wikipedia - {estf-wiki} main article]
+:estf-podcast: https://www.wnycstudios.org/podcasts/otm/projects/enshitification[Enshitification,window=_blank]
+:estf-podcast-fn: footnote:[WNYC Podcast - {estf-podcast} a 3-part podcast explanation]
+:estf-gr-novel: https://www.witchdoctor.co.nz/2025/enshitification-how-tech-companies-are-crapping-in-their-own-nest/[Enshitification: How tech companies are crapping in their own nest,window=_blank]
+:estf-gr-novel-fn: footnote:[WitchDoctor - {estf-gr-novel} a graphic novel]
+:cory-wiki: https://en.wikipedia.org/wiki/Cory_Doctorow[Cory Doctorow,window=_blank]
+
+.ASE Inc, DALL·E Hacker Dad vs. Cog Dad...
+[#img-devs]
+image::{img-prefix}/devs.png[Channel,800,450]
+
+{nbsp}
+
+Happy Independence Day, Friends!
+
+Before I close the door on LinkedIn,
+I need to thank a couple of my friends for their patience, wisdom, and support.
+Genuinely stuck trying to name good things in LinkedIn, I used "call a friend" lifeline.
+
+{li-aaron}{gh-aaronfllr}::
+
+Aaron is a full-spectrum hacker.
+Others will spend weeks planning and arguing.
+Aaron quietly whips out his Jupyter Notebook -- in any IDE.
+And has the answer in a day or two, while others still argue "worth it or not."
+Yet Aaron’s best magic comes from the fact that he’s never sidetracked by the noise of the world.
+And here was a bit of noise to deal with.
+I owe Aaron the big-picture view and the value mapping analysis.
+
+{li-michael}::
+
+Michael is a people hacker -- a human capital specialist across both recruiting and business development.
+On LinkedIn, he’s probably user 7 -- the one who got many of us on.
+He used the platform from its earliest days:
+connecting people, referring people, brokering business development, hiring talent,
+and routing contacts through funnels and networks based on trust.
+I owe Michael the full value history of LinkedIn -- from zero to now.
+
+== the TL;DR
+
+The Australian {mcd}{mcd-wiki-fn} named *_"enshittification"_*{estf-doflo-fn}{estf-reddit-fn}{estf-wiki-fn}{estf-podcast-fn}{estf-gr-novel-fn} +
+its *2024 Word of the Year*. The term describes the
+
+ gradual deterioration of a service or product brought about by
+ a reduction in the quality of service provided —
+ especially of an online platform —
+ and as a consequence of profit-seeking.
+
+It was selected by both the dictionary committee and the public vote.
+
+"Enshittification" was coined by Cory Doctorow to describe how tech platforms evolve and <decay> as they begin prioritizing profit over user experience.
+
+The process typically involves an *initial phase of* +
+_offering good service to attract users_, +
+followed by a *decline in quality* as the platform seeks to +
+*_maximize profits for shareholders_*.
+
+=== not <decay>
+
+Yet there is an important misleading point about decay in the formal description above by Cory.
+Consider once legendary insurance company in 1922, formed by a dynamic husband-wife duo.
+This company cut through market like Skjold-class corvette through Kattegat -- with authority.
+Major investor acquisition later gives it nine lives and today it floats like FUBAR-class log in a canal.
+
+We must understand this: enshittification is not like the insurance company’s rot.
+
+That was the product of time — digesting and passing pusillanimous laziness — a natural process of decay.
+
+Enshittification is something else entirely: a choreographed, planned, controlled act. Intentional.
+
+_By <decay> Cory meant the user perspective alone._
+
+== the _"Original Good"_
+
+Let’s return to LinkedIn (LI).
+
+When it launched, it wasn’t just a résumé dump or recruitment tool -- it was disruptive across multiple fronts:
+a social-professional graph, a referral network, a reputation layer, and an early open platform.
+
+Few remember this now, but LinkedIn once shipped true innovation -- real value.
+Did you know LinkedIn once had a *Connection Map* -- a full network visualization of your graph?
+
+It was beautiful. _But it was good for you!_
+
+LinkedIn entered with a bang of value::
+
+* 2006: Public Profiles, Recommendations, *People You May Know* -- not like today's uncanny mess.
+* 2007: *LinkedIn Answers* — early signs of real community building.
+* 2008: Mobile version, Applications platform -- a friendly nod to OSS.
+
+2011–2014: Going Public and Feature Refinement::
+
+* 2013: Kills LinkedIn Answers, modifies 2005 feature *Groups*.
+* 2014: Retires *InMaps* -- a stunning network visualization tool.
+
+Still user-focused. Still building for people, not metrics.
+
+*_2016: Microsoft announces acquisition of LinkedIn for $26.2 billion._*
+{nbsp} -- you remember that king whose touch turned everything to gold? +
+Yeah. That’s not what happened here.
+
+== the _Hard Turn Port_
+
+* 2017: New desktop interface aligned with mobile -- visual and interaction oddities not asked for by users.
+* 2019: Launches *Open for Business*, enabling freelancers to showcase services.
+* 2020--2022: Content Creation: Events, *Creator Mode*, analytics for newsletters and posts -- new rating models.
+* 2024--2025: AI Integration and Feature Saturation -- rapidly versioned ranking and popularity models.
+
+== the _"Tor Bazaar"_ and _"Deep Waters"_
+
+In a way, it’s unfair to blame the acquisition alone -- users were already being conditioned before the sale.
+
+Let’s just look at some of the most criticized removals::
+
+* 2013: Retirement of *LinkedIn Answers* -- a Q&A system many users cherished.
+* 2014: Discontinuation of *InMaps* -- eliminated professional network visualizations.
+* 2017: Removal of contact tagging and filtering -- reduced user agency and precision.
+* 2021: Termination of *LinkedIn Stories* -- a short-lived engagement gimmick.
+
+But the story is clearer when told from the perspective of the hacker collective.
+
+There’s a constant tug-of-war between *_hackers_* and *_crackers_*.
+
+Crackers are opportunistic criminals -- they find vulnerabilities and steal data for resale.
+Hackers fix those vulnerabilities, closing doors before they’re breached again.
+These two groups despise each other.
+They watch each other.
+And they are -- like it or not -- connected at the hip.
+
+Tracking both sides tells you what marketing desperately tries to hide.
+
+In the Tor bazaars where data leaks are traded by crackers, there’s a deeper, darker stream -- a kind of slow, cold current.
+
+An undercurrent where both hackers and crackers scan the field -- watching not just each other, but also corporate shifts and cultural signs.
+
+Crackers look for things to steal, people to sell, and hackers to dox.
+Hackers look for danger signals -- technical or ethical -- that forecast breaches, surveillance, or rot.
+
+So let’s walk the real timeline of LinkedIn -- not the marketing spin, but what the undercurrent saw.
+
+
+== 2011 -- long Road to ... Kakistocracy
+
+In 2012, a devastating data breach leaked 6 million user passwords -- slamming LinkedIn like a runaway train.
+
+But the decay started earlier.
+By 2010, LinkedIn was a hacker-powered powerhouse -- a force of invention few companies could match.
+
+The proof? The tech.
+
+Everyone knows Kafka by now.
+But that was just one spark from a bonfire.
+
+The full constellation: *Azkaban*, *Rest.LI*, *Pegasus*, *Helix*, *Samza*, *Gobblin* --
+and that’s just what went viral.
+Dozens more surfaced briefly, shown in dim bars on chalkboards by shy, wild geniuses.
+Even today, LinkedIn still milks the output from that golden era.
+
+My personal favorite? *LiX* -- the LinkedIn Experimentation framework.
+I’ve yanked on every A/B and multivariate system under the sun -- and I still found LiX inspiring.
+It wasn’t just powerful. It was alive -- a full hacker toolbag for curiosity and truth-seeking.
+
+But brilliance has a price.
+That much magic paints a bullseye on your back.
+
+And here’s the thing -- what I just described is only possible with a perfect *_Community of Practice_*
+and a deeply bonded hacker collective.
+These weren’t just coworkers. They were a crew. Tight-knit. Synergistic.
+
+And then came the investors.
+
+In preparation for monetization, the company brought in a fresh crop of execs,
+PMs, and strategy heads to “set the course toward profit.”
+Which is polite-speak for: marginalize the hackers, replace weird with compliant.
+
+Hackers don’t react well to that.
+
+The first leaks to Tor weren’t about money -- they were cultural.
+People cried. People resigned.
+Whole teams walked.
+And what was left behind?
+Infrastructure too complex for the remaining teams to even understand.
+IQ gaps you could sail a Samza through.
+
+Upper management?
+Unfazed.
+The mindset was: “Money solves all problems.”
+And if you’ve read the original *Kafka* --
+you know it’s a story of grief, alienation, and meaningless process.
+
+Well -- surprise. That’s exactly where LinkedIn Kafka came from.
+
+So 2012 was not a surprise. It was inevitable.
+
+And did it raise alarm bells?
+
+Nope.
+Because Microsoft stepped in -- with more money, and the cultural equivalent of zero-day exploits in human form.
+Microsoft didn’t invent the rot -- they just accelerated it.
+
+* 2017: 117 million credentials discovered for sale. Turns out, the leak had *never stopped*.
+* 2018: First “bad API” scraping incident -- technically legal, practically negligent.
+* 2021: 700 million user profiles on sale -- updated, live, and polished. Microsoft marked it “fixed” 😁
+* 2024: Scraping/Spoofing arms race -- public evidence shows the leaks never ended.
+
+Maybe now you understand Joe’s stance in our opening story.
+
+He runs a security firm.
+And to hackers, incompetence isn’t neutral -- it’s offensive.
+
+By Joe’s moral code, LinkedIn *is* an open database.
+Because if they wanted it locked down, they’d have done it.
+He might even believe that leaking *is* the business model.
+
+Contrary to popular belief, Microsoft didn’t *break* LinkedIn.
+
+They just brought the tools -- and the culture -- to sweep the pieces under the rug.
+
+Hey, everybody loves a good villain.
+And EvilCorp?
+Still the best one in the game.
+
+So now you have the backstory.
+
+== the "Reality on the Ground"
+
+The important question is -- what's in it for us, the mere mortals?
+
+Let us then start with the basic facts.
+
+LinkedIn is wildly profitable, operating on what I call the Loss Leader Model, currently::
+
+. Premium Subscriptions (Gasoline): profitable with margin, expensing *all* infrastructure.
+. Marketing Solutions (Staples): $7B per year, in the current cycle.
+. Talent Solutions (The Candy): Microsoft will never tell you this.
+
+What does this mean? LinkedIn runs like your neighborhood gas station.
+They might sell gasoline at a loss -- yet allocate *all* operating costs to it.
+Then the staples, like milk and eggs, carry just enough margin to cover shelf space.
+But the candy, cookies, and impulse buys? That's the cash cow.
+
+In the LinkedIn world, even the gasoline turns a profit after paying for all infrastructure.
+Just think about that.
+No matter what they do to you or me -- their net margins go up.
+
+We can immediately conclude that we have here::
+
+. A monopoly on the professional identity market;
+. And, a hated incumbent.
+
+Looks to be a very opportune situation for a hacker collective.
+
+However, mind you -- we also have::
+
+. A user and business data hoarder;
+. Pay-to-Play casino boss;
+. Bait-and-Switch gamer;
+. A Surveillance Paragon;
+. Business Development Operating System;
+. And a revenue Trojan Horse.
+
+Sure, a few hackers could launch a Minimum Lovable Product in under a year --
+All the love LinkedIn once promised to be.
+And that would rocket to a hundred million dollars per year in a heartbeat.
+
+But then a *different* game begins -- one these hackers have never seen before.
+From there, a slow and hard rise to the top could change *your* company too.
+
+It's worth remembering this::
+
+* It doesn't matter how good your *software service* is.
+* It only matters how good your *business model* is.
+
+Certainly, given room, the same hackers could make LinkedIn great again.
+But there is absolutely no interest in doing so.
+
+Case and point -- do you use Windows?
+I don't.
+So what?
+
+
+== the "Good in LinkedIn"
+
+I was going to celebrate finding my long-lost friend on LinkedIn as my only positive.
+
+She's an incredible person and a great hacker I haven't talked to -- or coded with -- for two decades.
+And I pinned her on LinkedIn -- she responded.
+I was so happy I went and told my whole family about it.
+
+*But I didn't find her on LinkedIn!*
+LinkedIn did nothing for me here.
+
+I found her in my LinkedIn data export -- the ZIP archive you can request under privacy settings.
+Then I sliced through it using my DataSpell IDE and a few lines of Pandas.
+She had few connections, no activity, and no profile picture.
+In my natural interaction with the UX -- she'd never show up.
+I'd have to manually filter the connections list, pushing buttons like it's 2006.
+Well, I can do that much better in a Jupyter Notebook.
+
+So that's not a win for LinkedIn. That's a win for me.
+Yet it does bring us to a few legitimate use cases.
+
+First, LinkedIn is a decent *Rolodex* if you're disciplined.
+As my friend Michael pointed out -- it's the only place where you can reliably maintain professional contact with hundreds of people, especially if you're constantly switching orgs, domains, or continents.
+If you're methodical about curating your connections, the data export becomes your own CRM.
+
+Second, the messaging system isn't entirely useless.
+When someone changes their email, moves countries, or ditches their website -- LinkedIn DMs are often the only channel still working.
+That assumes, of course, that the person logs in.
+
+Third, it’s still a mildly credible business card.
+You can point someone to your LinkedIn when they ask what you do.
+Just don't expect them to actually read anything.
+
+But the *real* value -- if we're honest -- is that LinkedIn is *easily gamed.*
+
+Remember what Joe did in the opening story?
+He played the Sycophant Model. And he automated it.
+Not only was it easy -- it was *wildly successful.*
+
+Perhaps the best feature of LinkedIn for a hacker is its *_exploitability_*.
+
+You can bend the algorithm.
+You can train it.
+You can spoof it.
+You can monitor its pulse and reroute its incentives.
+
+It’s brittle and overfitted to synthetic behaviors.
+It’s like a corporate version of MySpace, with better CSS and worse taste.
+
+And that -- _that_ -- is the only _solid_ option I see here:
+*_Game the game!_*
+
+== Conclusions
+
+LinkedIn is not some cartoon villain.
+
+It's a properly opportunistic business—just like every healthy business should be.
+It functions by exploiting the psychological and social vulnerabilities of the *_American Employee Culture._*
+And somehow, that exploit works just as well in many other countries.
+Founders and hackers? We're not their target.
+That’s why over 90% of my hacker friends don’t even have a LinkedIn account.
+(Except Joe. He now has a big one.)
+
+But this reveals a very large untapped opportunity.
+
+I’ve been running analytics since the experiment.
+And I estimate that the wide-open market—those permanently off the LinkedIn grid—is worth about 13% of LinkedIn, *at a minimum*.
+These are founders, indie hackers, competence shops—people who will *never* engage with LinkedIn.
+Right now, they have nothing of value designed for them.
+
+Here, it’s worth remembering how sales *actually* work in nature::
+
+. There are people who will NEVER buy from you.
+. There are people who will buy with your effort.
+. And there are people who will ALWAYS buy from you.
+
+That last group?
+They’re your *Natural Customers.*
+
+Every startup I’ve helped hackers raise—dozens, over the years—I hammer this point home:
+
+. Always start with your Natural Customer.
+. Get revenue early—*as early as possible*. Even before the product, if you can.
+. Expand outreach from there. Don't stratify your market too soon.
+. And always, always seek out *other hackers*.
+
+In this case, other hackers *are* the Natural Customer.
+
+Let me know if you want to launch something.
+Maybe I’ll join you.
+
+Happy long weekend!
+
