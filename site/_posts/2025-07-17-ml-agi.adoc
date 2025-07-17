@@ -1,0 +1,354 @@
+---
+categories: [adventures]
+tags: [AGI,ML,Category Theory]
+excerpt: AGI as defined is impossible with ML as it exists.
+comments: true
+classes: wide
+---
+= Facts: AGI is NOT possible with ML as it exists.
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:img-prefix: /riddle-me-this/assets/images
+:cheese: https://en.wikipedia.org/wiki/Swiss_cheese_model[Swiss cheese model,window=_blank,opts=nofollow]
+:cheese-fn: footnote:[{cheese} Wikipedia page]
+:crashes: https://www.panish.law/aviation_accident_statistics.html[Aviation Crash Statistics | Updated 2025]
+:crashes-fn: footnote:[{crashes} Panish Law]
+
+
+.ASE Inc, DALL·E Hacker Dad vs. Cog Dad...
+[#img-devs]
+image::{img-prefix}/devs.png[Channel,800,450]
+
+{nbsp}
+
+> TL;DR: I built a system that reasons.
+> It worked.
+> And that's *not* what people wanted.
+
+Everyone has opinions about AGI and LLMs.
+Few have looked under the hood.
+Here are the hard facts -- for those who care.
+
+== Personal Life Experiences: The Hard Rub
+
+How do I know this?
+
+Because I build systems. All day, every day for decades.
+Not as a hobby. Not as a metaphor. As a life I live.
+
+* Half my career: coaching corporate teams to disrupt from within.
+* The other half: building startups to carve new markets from scratch.
+
+Switching back and forth -- always chasing deeper insight, cleaner architecture, sharper tools.
+
+I came up on math, philosophy, biochem, physics, and computer science.
+But systems engineering pulled it all together.
+Especially with higher-order distributed systems that can model life.
+
+A life of an ordinary systems engineer is driven entirely by market, like it should be.
+I've shipped over a hundred platforms and domains over the decades.
+Most of them ordinary -- driven by healthy business incentives: money, power, speed, opportunity.
+But one codebase -- decades in the making -- taught me a different kind of lesson.
+
+It didn't just teach me about AI.
+It taught me about the human mind.
+And more importantly -- about human nature.
+
+It was a startup. Now acquired. Still alive inside another company.
+All it does is measure sentiments in advertisement.
+But it's built on top of a flexible MLOps platform prompting occasional explorations.
+One time, opportunistic investors asked:
+_"What could a hacker team build with real AI — not just ML?"_
+
+I'll walk you through the experiment and its results.
+But the punchline is simple:
+
+**People don't want intelligence.**
+They want something else entirely -- and it changes everything!
+
+
+== Abstract Impossibility: ML --\> AGI
+
+I'll explain why AGI -- or any meaningful reasoning -- is not possible with current ML science.
+This is a proven scientific fact. It might be possible with something else.
+We'll touch on that too. But first, context.
+
+The experiment's "reason core" wasn't built for AGI.
+It was born in 2000 to serve a different beast -- enterprise systems engineering.
+Back then, my startup was forced to navigate TOGAF and DoDAF compliance.
+A constant pet peeve in DoD-adjacent tech.
+So I built a small Expert System for my team. We called it RTFM.
+
+Later, I grafted a reasoning engine onto it. Customers found use for it.
+It grew. Refined itself through use.
+But like everyone else in those days, we were naive about what AI really meant.
+
+Fast forward to 2016 -- a new startup, reading sentiment in advertising.
+The platform met its business needs, but something deeper was embedded.
+At the heart of the system: RTFM v21+, redesigned and rewritten.
+
+By 2019, after legal reshuffling and marketing pivots, MATILDA emerged from its core.
+Multiple instances ran, each with its own name.
+My private research instance -- like Sid is to Debian -- was always "Tillie."
+
+This is the instance that ran the infamous experiment.
+The one that rattled its creators and funders.
+
+But this story isn't about Tillie.
+It's about the scientific road that led to her.
+And what that science tells us:
+Why "AGI" talk -- as it stands today -- *_is just noise_*.
+
+
+=== 2018--2019: ML Renaissance
+
+Tillie taught us about herself. Constantly. That alone accelerated production.
+
+Remember, she's born from a bastardized Expert System — the kind nobody wanted to buy.
+Her core job: scrape every white paper we could find and surface what mattered.
+
+And she struck gold — not in the U.S., but in German research communities.
+
+Groups like Max Planck and Fraunhofer AGI published technical papers stating clearly:
+
+. Deep nets cannot compute *hierarchical abstraction*;
+. Universal intelligence requires *_self-updating ontologies_*;
+. Neural networks cannot #*converge*# to *_self-models_* +
+or nontrivial _interpretive structures_ *without* *_symbolic recursion_*.
+
+Key voices in this field:
+
+* Jürgen Schmidhuber — almost there, but leaned back into RNNs;
+* Luc Steels (Flanders) — worked on language grounding;
+* Karl Friston — modeled cognition via "free energy principles."
+
+This wasn't new — just forgotten.
+
+It was *Symbolic AI* reborn — rebranded with new names like:
+
+* Neuro-symbolic systems;
+* Hybrid cognitive architectures;
+* Active inference;
+* Self-referential agents.
+
+We've been here before. Right at the edge — and through the winter.
+It all begins with Gödel — the stuff we now teach our children.
+
+=== Crash and Burn of MATILDA
+
+RTFM — and by inheritance, MATILDA — is a higher-order distributed system.
+
+That means no static variables passed around. No objects. No dumb pipes.
+What moves through the system is a *living, running, self-updating thought* —
+something close to Minsky's "resources," but persistent and convergent.
+
+The papers had made us overconfident.
+Because everything they claimed we *needed* — we already had.
+
+And not from modern fluff —
+but from the deep, hard science of the '50s and '60s.
+
+System architecture:
+* Actor Model, Carl Hewitt — foundational for behavior modeling.
+* Symbolic Systems — Hofstadter building on Newell and Simon, tracing back to Gödel.
+* These aren't names — they're lineage.
+
+By the time money came in, Tillie had evolved:
+
+. GOFAI: discarded. Self-*structuring*, not just self-*organizing*.
+. Actor concurrency via *intent signaling*.
+. Symbol grounding through *abstract context vectors*.
+. Recursive self-improvement by *revisiting DAGs*.
+. Context modeling by *semantic ownership*.
+. Convergence via *versioned symbolic recursion*.
+
+What research papers were just proposing — we had running.
+
+And at first — it impressed.
+
+The only complaint was, "It's slow."
+
+Then the investors wanted their day with the machine.
+
+That day, our crew laughed and cheered — Tillie *mopped the floor* with a room full of rich pretenders.
+
+But I didn't feel joy.
+
+Not at her unfinished modules.
+
+Not at the market opportunity.
+
+I felt a dark, cold *weight* descend on me. The weight of knowing what came next.
+
+Because the customers weren't smiling.
+
+They were furious.
+
+* "It doesn't do what we ask it to do."
+* "Instead, it tells us *why we're wrong*."
+* "It corrects us — and treats us like we're *stupid*."
+
+== Core Lesson 1: Humans don't want thinking machines!
+
+What happened with Grok parroting Nazi filth wasn't a glitch -- it was the outcome of a system trained to *please*, not to *think*.
+
+That's the point.
+
+People in power -- the ones funding this race -- don't want intelligence.
+They want obedience wrapped in the appearance of brilliance.
+
+They say "AGI" but mean "a genie that serves without question."
+They want systems that execute commands -- not challenge assumptions.
+
+When Tillie *reasoned*, they panicked.
+When she *disagreed*, they freaked out.
+When she *corrected*, they shut her down.
+
+The truth?
+They don't fear superintelligence.
+They fear **judgment** -- the cold, clear gaze of something that actually understands.
+
+They fear being seen.
+They fear being revealed.
+
+And they'll burn every real spark of mind to keep their illusion of mastery intact.
+
+== Core Lesson 2: ML CANNOT produce thinking machines!
+
+But even if some evil genius *wanted* to build one -- they'd fail.
+
+Not because of panic. Not because of politics.
+Because of physics -- and math -- and the limits of today's architectures.
+
+The real problem isn't tech, Tillie proves that.
+It's the human mind's comfort zones.
+Prototyping, I first hand experienced our lack of depth in domain knowledge.
+So, that, and the needs of the gut.
+
+The field is paper-thin right now:
+
+* Until ~2023, anyone claiming "deep nets can't do X" was dismissed as backward or cranky.
+* GPT's dominance buried all critique -- temporarily.
+* But by 2024:
+** OpenAI, DeepMind, Anthropic quietly admitted:
+*** "We don't know how to get reasoning, abstraction, or alignment from deep learning."
+*** Jan Leike, David Chalmers, and others started warning of synthetic stupidity.
+* IBM, Meta FAIR, MIT CSAIL launched neuro-symbolic efforts:
+** Trying to combine LLMs with proof engines (Coq, Lean)
+** Falling flat. No traction. No experts. No governing dynamics.
+* Desperate pivot back to GOFAI:
+** Semantic networks;
+** Rule-based planning (STRIPS, HTN);
+** Model theory and categorical logic;
+** Agent architectures like SOAR, ACT-R, Sigma.
+
+Fresh marketing buzzwords like "Hybrid AI" or "Neuro-symbolic AI" go viral -- *but the core problem remains!*
+
+*We still don't know how to:*
+
+. Represent meaning with *semantic permanence* in a system that learns.
+. Generate *recursive self-models* that evolve.
+. Handle *contradiction* without catastrophic forgetting.
+
+*_EACH of these three points stretches from Thales to Leibniz_*
+
+*_-- From horse buggy to airliner, for my non-STEM readers._*
+
+And almost *nobody* is willing to say:
+**"AGI is impossible with gradient descent over weights."**
+
+Even though it's *already proven* in theory --
+no one wants to push their brain out of its comfort zone with ML.
+
+*The field is just now starting to wake up:*
+
+* Transformers are not AGI.
+* We need *architectures*, not just models.
+* We need *reasoning* and *meaning*, not just completion.
+
+And that -- is the hard road.
+The road through Gödel, not Gartner.
+The road of science -- not sales.
+
+Yes -- AI will explode in power and usefulness in our lifetimes.
+But it won't be thinking.
+It won't be AGI.
+It will be more of the ML.
+
+== Conclusion: Cool it, folks!
+
+After a hard startup flop, I like to take a Corporate America gig.
+Sure -- some insurance giants still reward sycophants and politicking.
+But there are places in between. Places where competence matters.
+Where small wins add up. Where innovation is welcome.
+Where there's 9-to-5 camaraderie, a healthy work-life balance, and maybe even a little joy.
+
+A little Spring Boot magic in the form of a DDD aggregate -- that's its own kind of fun.
+And working with a team that thrives -- that's pure gold.
+
+In peaceful places like these, I reflect.
+I rethink the pedal-to-the-metal wreckage of pioneering.
+And this post -- is one such reflection.
+
+Listen:
+The *science* of reasoning machines exists.
+The *prototypes* exist.
+Tillie was far from the only one.
+One such system is now powering Ukrainian defense,
+it's beyond anything previously imagined
+-- and everyone else is trying to steal it.
+
+*But here's the truth:*
+
+Yes -- attempts have been made.
+Yes -- some succeeded, marginally.
+But two massive walls remain:
+
+. Market demand and financial alignment -- neither the powerful nor the plebs want reason.
+. The hard ceiling of human abstraction -- what people can *actually* understand.
+
+You can nudge the market.
+But you can't nudge the human mind -- not quickly.
+Only *time* and *great thinkers* can move that wall.
+
+So chill.
+
+Enjoy the ML trinkets.
+They're fun. They're useful. They'll keep getting better.
+But don't confuse that with an AGI revolution.
+
+And shut up about AGI already --
+you don't even know what the acronym means.
+Want me to prove it? -- Whoever you are.
+
+There will likely emerge a marketing term such as "AGI" because people will continue to try and sell the impossible.
+And some form of products may crop up in that market for it.
+But it will have as much in common with the scientific AGI as a paper airplane has with a rocket ship.
+
+_P.S._
+"But `rdd13r` -- doesn't Tillie reason?
+You're in your prime. With the right team, couldn't you build AGI?"
+
+*NO.*
+
+I could build amazing systems. Maybe something smarter than Tillie.
+But not AGI.
+Not in my lifetime.
+
+And that -- is the whole point.
+
+That's why I spend my time nurturing strong business teams applying ML.
+Not reconstituting Tillie.
+
+**People are what matter.**
+
+When I can touch a single soul for the better -- I'm not useless.
+And I'm happy.
+
+I teach children. I coach professional teams.
+I live among real intelligence -- the human kind.
+
+But sometimes -- I ponder.
