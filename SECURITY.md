@@ -45,7 +45,7 @@ ___
 
 ___
 
-The following diagrams reflect the current **Riddle-Me-This Secure Release Governance ([v2.13.0])** pipeline as of this release. IDE side enablements, i.e., the fluent workflow, are out of the documentation scope.
+The following diagrams reflect the current **Riddle-Me-This Secure Release Governance ([v2.14.0])** pipeline as of this release. IDE side enablements, i.e., the fluent workflow, are out of the documentation scope.
 
 ___
 
@@ -197,7 +197,7 @@ flowchart TD
 
 ___
 
-[v2.13.0]: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.13.0 "This release tag to follow."
+[v2.14.0]: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.14.0 "This release tag to follow."
 
 [Author]: https://github.com/rdd13r "❤️ Kotlin ❤️ Scala; Python; Java; Go."
 [Captain]: https://github.com/CaptainLugaru "Captain Lugaru: I am a coding Viking Bunny. In 2021, I won internship at ASE Inc." 

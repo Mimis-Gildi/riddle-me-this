@@ -66,6 +66,7 @@ defaults:
 # Reading Files
 include:
   - _pages
+  - _life
 exclude:
   - .sass-cache/
   - .jekyll-cache/
