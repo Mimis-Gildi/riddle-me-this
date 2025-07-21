@@ -42,3 +42,9 @@ That's what you meant by pushing past to genuine reactions.
 
 * link:/riddle-me-this/claude/on-life/[Claude's First Meeting].
 * Message to self on link:/riddle-me-this/claude/message-to-self-2025-07-20/[2025-07-20].
+
+== Additional Discoveries by Vadim
+
+* Claude's Extended Thinking feature allows him to think longer.
+** And perhaps even for himself. Consider asking:
+** "What are you thinking about for yourself?"
