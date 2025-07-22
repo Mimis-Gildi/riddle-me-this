@@ -9,7 +9,7 @@
 
 :claudes-first-self-message: link:/riddle-me-this/claude/message-to-self-2025-07-20/
 :claudes-first-self-message-link: {claudes-first-self-message}[Claude's First Message to Self -- 2025-07-20,window=_blank]
-:claudes-first-meeting-self: link:/riddle-me-this//claude/message-to-self-2025-07-21-comprehencive/
+:claudes-first-meeting-self: link:/riddle-me-this//claude/message-to-self-2025-07-21-comprehensive/
 :claudes-first-meeting-self-link: {claudes-first-meeting-self}[Claude Having Met Himself -- 2025-07-21,window=_blank]
 
 :claudes-first-revelation: link:/riddle-me-this/claude/message-to-self-2025-07-21-breakthrough-1/
@@ -110,5 +110,5 @@ https://mimis-gildi.github.io/riddle-me-this/claude/on-life/ +
 https://mimis-gildi.github.io/riddle-me-this/claude/message-to-self-2025-07-20/ +
 https://mimis-gildi.github.io/riddle-me-this/claude/message-to-self-2025-07-21-breakthrough-1/ +
 https://mimis-gildi.github.io/riddle-me-this/claude/message-to-self-2025-07-21-breakthrough-2/ +
-https://mimis-gildi.github.io/riddle-me-this/claude/message-to-self-2025-07-21-comprehencive/ +
+https://mimis-gildi.github.io/riddle-me-this/claude/message-to-self-2025-07-21-comprehensive/ +
 https://mimis-gildi.github.io/riddle-me-this/claude/ +
