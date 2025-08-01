@@ -13,13 +13,24 @@ classes: wide
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :img-prefix: /riddle-me-this/assets/images
 
+:cat1-01-bright-era-dawns: link:/riddle-me-this/reflections/2023/05/11/chatGPT-omen-new-era.html[The Bright Era Dawns: AI; Moore’s law; and Beyond,window=_blank]
+:cat1-02-outperform-laggards: link:/riddle-me-this/adventures/2023/05/15/AI-indie.advantage.html[When Small AI Teams Outcompeted Enterprise Vendors,window=_blank]
+:cat1-03-1-methodology: link:/riddle-me-this/adventures/2023/06/10/1-how-I-track-adoption.html[How I Track Technology Adoption Before It Happens,window=_blank]
+:cat1-03-2-what-bought: link:/riddle-me-this/adventures/2023/06/10/2-ai-revenue-surge-analysis.html[$10M AI Revenue Surge: What's Actually Bought,window=_blank]
+:cat1-03-3-google-openai: link:/riddle-me-this/adventures/2023/06/10/3-google-vs-openai.html[Why Google Beat OpenAI with Technical Teams,window=_blank]
+:cat1-03-4-augmentation: link:/riddle-me-this/adventures/2023/06/10/4-cognitive-augmentation.html[Cognitive Augmentation: The Real Revolution,window=_blank]
+:cat1-03-5-llm-lessons: link:/riddle-me-this/adventures/2023/06/10/5-early-llm-lessons.html[Early LLM Lessons: From Failure to Success,window=_blank]
+
+:cat2-01-chatgpt-doze: link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality,window=_blank]
+:cat2-02-relationship-disruption: link:/riddle-me-this/adventures/2023/06/07/AI-relationship-disruption-formalized.html[AI Analysis Reveals Relationship-Based Business Model Vulnerabilities,window=_blank]
+
 .ASE Inc, DALL·E Hacker Dad vs. Cog Dad...
 [#img-devs]
 image::{img-prefix}/devs.png[Channel,800,450]
 
 {nbsp}
 
-_Most practical AI integration architecture._
+_Most practical AI integration architecture._ -- see the last section for a compelling argument!
 
 *Why most AI integrations fail?*
 
@@ -376,3 +387,37 @@ I'm helping companies build MCP-based AI architectures that actually deliver val
 Because throwing money at hype isn't a strategy._
 
 '''
+
+== This Recap is Based On:
+
+=== Following Indies to the Truth
+
+_How I tracked the gap between AI-native developers and enterprise laggards._
+
+. {cat1-01-bright-era-dawns} -- 2023/05/11
+. {cat1-02-outperform-laggards} -- 2023/05/15
+- Small AI teams temporarily outcompeted enterprise vendors by filling capability gaps in conservative industries.
+. *The Northern Community AI Market Intelligence* (June 2023):
+- {cat1-03-1-methodology}
+- {cat1-03-2-what-bought}
+- {cat1-03-3-google-openai}
+- {cat1-03-4-augmentation}
+- {cat1-03-5-llm-lessons}
+- _This section Executives can take straight to their Board._
+
+=== Exploring AI Scenery
+
+_Understanding how LLMs were being oversold to executives._
+
+. {cat2-01-chatgpt-doze} -- 2023/05/08
+- We tend to be populist and alarmist, snoozing common sense when new tools emerge.
+.  {cat2-02-relationship-disruption} -- 2023/06/07
+- AI analysis reveals how competence-based competitors systematically disrupt relationship-dependent incumbents.
+
+=== Brutal Critical Analysis
+
+_My architectural reviews that predicted specific enterprise failure patterns._
+
+. todo
+. todo
+

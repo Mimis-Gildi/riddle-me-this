@@ -1,6 +1,6 @@
 ---
 categories: [reflections]
-tags: [Medium]
+tags: [Medium,Executive]
 excerpt: >
   The disparity between expert and complacent developers is exacerbated by emerging AI.
 comments: true
