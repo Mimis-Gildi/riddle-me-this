@@ -5,8 +5,9 @@ excerpt: >
   Probabilistic evolution of AI in Corporate America.
 classes: wide
 comments: true
+published: false
 ---
-= Corporate America: AI-Native Evolution
+= Corporate America: AI-Native Evolution Discussion
 rdd13r
 :blog-url: https://mimis-gildi.github.io/riddle-me-this/
 :blog-title: Creative Engineering at Scale
@@ -16,6 +17,8 @@ rdd13r
 :li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :img-prefix: /riddle-me-this/assets/images
+
+_This is a preserved Mastodon discussion thread from 2023-07-05._
 
 In my previous post, found here, I wrote about our current scenario in which Corporate America is not ready for AI adoption.
 This is because AI capabilities need clean business "Context" to work.
@@ -163,7 +166,7 @@ I wrote a lot about this since 2016 -- it's the Augmentation Patterns that I sha
 
 Of course, none of this is happening when the business is Spaghetti Model.
 
-ToDo: Ask Claude to generate a diagram because we have no originals. Ask Claude for some sort of Mermaid or better PlantUML diagram that paints a Bounded Context and LLM-fronting service on the boundary highlighted in brighter color.
+NOTE:  Diagrams exported as images -- recreate them in AsciiDoc or discard.
 
 == Phase I: AI-Integration Culmination
 
@@ -231,7 +234,7 @@ At this moment, we are not AI-native yet. AI-native would mean software built ex
 
 == Phase II: AI-Activation Architecture
 
-ToDo: Ask Claude the best way to draw the diagram with these two layers. Aks Claude to generate a diagram with the edge LLM ACLS having relations going up in the drawing and forming another Hexagonal Architecture cross-cutting the old organic domain.
+NOTE:  Part of heated discussion on Phase II is lost. Diagrams are images, too numerous, saves need to be reviewed and recreated in AsciiDoc.
 
 == Phase II: AI-Activation Culmination
 
@@ -292,7 +295,7 @@ Naturally, to be here, all the previous phases need to be met
 
 == Phase III: AI-Propagation Architecture
 
-ToDo: Ask Claude the best way to draw the diagram with these two layers. Ask Claude to upgrade the diagram from before with the ACL leading to another Hexagonal Architecture but now bring the Root Domain into the picture above it all demonstrating business policy control through the AI-Enabled core rather than old static Root Domain infrequently nudged by executives.
+NOTE:  Diagrams are images. Select one image, perhaps the Hexagonal Architecture variant and recreate it in AsciiDoc.
 
 == Phase III: AI-Propagation Culmination
 
@@ -349,7 +352,7 @@ In other words  -- this phase is inevitable. And it is only brought forth by two
 . Our own greed;
 . Unstoppable abilities of machine that unlike wetware don't have a hard upper limit.
 
-ToDo: There is a page missing at this point that I cannot find.
+NOTE:  There is a page sequence missing at this point that I can no longer find.
 
 == Phase V: AI-Domination Control
 
@@ -377,4 +380,4 @@ I can't help but wonder how much of the capitalism is redefined and rewritten du
 
 == Conclusion
 
-ToDo: The conclusion and closing graphic is also missing.
+NOTE:  The conclusion and closing graphic is also missing. Earlier annotated printouts exist in the archives and should attached as images.
