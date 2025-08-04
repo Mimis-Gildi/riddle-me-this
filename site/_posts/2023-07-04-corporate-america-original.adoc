@@ -1,0 +1,219 @@
+---
+categories: [adventures]
+tags: [DemoScene,Executive]
+excerpt: >
+  Candid assessment of AI Adoption in Corporate America.
+classes: wide
+comments: true
+published: false
+---
+= Corporate America: AI-Native
+rdd13r
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:pub-mm: as published on Medium by {mm-newsletter}
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:img-prefix: /riddle-me-this/assets/images
+
+Happy Independence Day - America!
+
+America is NOT redy for AI adoption -- not by a long shot.
+
+Let me explain what I understand and every executive needs to know.
+We're throwing ASE Inc. into a completely different world -- we'll be making world's most advanced AI enablements.
+But the market we are going to is not civilian.
+Likely nothing I'd share from that journey will be useful to my corporate friends.
+So let me give you a comprehensive overview of the state of AI adoption in Corporate America.
+Not just now but in near years to come.
+
+I am planning to fit into just two articles -- here, we focus on our corporate ecosystem -- the business perspective.
+And the next article will be purely about architecture -- the technology perspective.
+
+So, right here -- killer corporate CTO problems:
+
+. *Don't understand AI* -- we expect it'd be just like the Cloud Native Transformation;
+. *Misread Economy* -- we expect sustained growth despite analytics pointing South, hard;
+. *Undervalue engineering competence* -- we await AI replacing developers in making code.
+
+== What is AI-Native Transformation?
+
+Here I expect the biggest killer of CTO dreams and expectations.
+
+Let's ignore the tiny sector of innovators and early adopters -- that's just 5% of the market.
+We can also discount the middle-competence sector -- top right of technology adoption curve -- the Googles and Netflixes of the world.
+That's another 15-20% of the market value. Instead, let's look at the bulk of our economy -- the conservative corporate America
+-- the business as usual core forming 80% of our economy, it's backbone, and its token of stability.
+And what's been happening to this "Conservative Core"?
+
+It's been quiet in the corporate America we're thinking about. This crowd is coming out of Cloud Native Digital Transformation (DX).
+Most already reported stellar success in their journey and more than a few announced "Done-done."
+Statistically speaking, the "Agile Mindset, Methods, and Tools," permitted about 55% of these companies.
+And that's the optimistic number from collective Gartner reports just published a month ago.
+A more realistic report by Pew Research Center last placed only 1/3 of American companies into the "Managed Domains" bucket.
+And that was not a segmented study -- that's for all American companies including the likes of Netflix.
+
+But the biggest litmus test for our argument is the longevity of a CTO and his team.
+Comparatively few CTOs were fired in accordance with the tenure metrics from Harvard business Review.
+And outside of these rather generic publications many of us in these roles feel relatively peaceful lately.
+The reason for this phenomenon is that we're just coming out of a disruption with the next disruption not yet prominent.
+
+Let me translate it to much cleared language that matters -- Experience Bias -- we survived the last one WITHOUT uprooting business-technology practices.
+We did not take control of our business domain boundaries. And we did not marry technology into our business.
+So,
+
+* we did not cleanup our data,
+* we did not group or behavior pods,
+* we did not publish out Taxonomy Maps,
+* we did not update our Enterprise Dictionaries,
+* and, we do not storyteller by our Architecture.
+
+Why?! Because it was NOT needed to accomplish Digital Transformation Goals -- we had plenty of our ways to call it done.
+And we had no clear way for business to verify us on our word. Because there was clear mapping between the cloud and the wallet.
+
+*_Ladies and gentlemen, this is all about to change!_*
+
+== The Business "Context"
+
+At this time most CTOs don't know the word "Context."
+They repeat ROI, KPI, Cloud, DevOps, SRE, Container, some even know Pod.
+But none of them know the word "Context." And that is about to change in the big way.
+Context is *_business_* word, known to engineers who practice the most important skill of Domain Driven Design (DDD).
+So, CTOs typically don't come across it much as only ~17% of enterprise actually manages their "Domains" properly -- another business word.
+Yet "Context" is the most important words for LLMs. Without it, LLMs are nothing.
+And LLMs is our first small baby step into AI-native Transformation that's about to befall all CTOs.
+
+I'd written many articles about LLMs and a few about the real AI -- the old-school wisdom we will not see around for a few years.
+What we need to know from all that is that RNNs and Transformers are primitive structures simulating real Neurons to a minimal extent.
+These structures compose all of the AI you see in business today. And all of it is trained on a subset of your data.
+In particular, LLMs are trained on massive amounts of printed text that we have produced as humanity has been writing for millennia.
+And the "Generative AI," the baby spearheading this AI-Native Transformation wave, operates by predicting the next token, i.e, word.
+So the golden rule of engineering
+
+-- Garbage In == Garbage Out -- holds firmly true for LLMs.
+
+Even if we trained the LLM on very good data, asking it to predict from the garbage "Context," or in other words garbage topic, will produce garbage results.
+
+So, for the LLMs and even the more complicated systems I'd mentioned earlier, the context in which a question is asked is what directly influences the MONEY value of the answer it produced.
+
+I'd also written about the small business founder communities taking industry by the storm integrating LLMs into all kinds of businesses.
+And the million dollar question is -- what exactly were these hackers doing to get the AI to work?
+And they were all doing exactly the same thing -- they were building an elaborate "Context Managers."
+They were not changing business processes. Nor were they changing business software.
+Most importantly, they were not training LLMs nor modifying them in any way.
+Each one of them simply built a new piece of software to put *in-front* of LLMs.
+And each one of them deployed that "Context Manager" on the "Boundary" of a particular business "Bounded Context."
+
+This is the very nature on the AI-Native transformation.
+And this part of AI ecosystem wil most likely grow tremendously in the coming years.
+Right now we don't have any tools or standards to accommodate this need.
+But this need is so primal and so profound that either the AI companies or the Opens Source communities will make it happen.
+
+Rest assured, if this prediction will come true -- then you know I'm right, and you know what's next.
+
+CTO's life will be about one thing, and one thing only -- how do expose my real business, unadulterated and clean, to whatever AI tool is on the other end.
+
+== The Economic Drivers of "Context"
+
+We only had a year of this Generative AI wave so far.
+But we can already see that all kinds of market forces are looking for the way to converge it to money.
+Clearly this is different that Cloud Native Digital Transformation where the boundary between Architecture and Profit was blurred.
+AI enablements speak directly to measurable gain right out of the gate.
+This is a net-new experience for CTOs. One can no longer hide behind "we're generally in the cloud."
+Because today in-AI or not-in-AI shows up in the bank.
+
+This delineation will actually be greatly aggravated over the coming year.
+Let me explain why. Unlike the DX which did not directly prompt disruption, smarter business certainly does.
+At the moment we cannot even imagine the kinds of AI-born disruptions the business will bring next year.
+And that creates a perfect stown will all three emotional decisions drivers present:
+
+. Fear of Missing Out (FOMO) -- a very high chance other will gain the upper hand.
+. Lust of Rain-making (LOM) -- "what if my team strikes gold first?".
+. Fear of being Found-out (FOF) -- "what if peers will think me fraud?"
+
+Especially that last one cannot be easily farmed out to a preferred vendor.
+And all of this gets profoundly magnified in the bad times as compared ot the good times.
+Certainly, with AI loitering around but not in my shop -- the bad times are more likely.
+So, booming economy can hide these three factor in healthy revenue streams.
+
+But there is little chance for booming economy. And that is not because of things that we do in the USA.
+There are impeding factors that are not in our control at all and they're are massive.
+China's demographic crisis can only lead to aggressive policy.
+End of globalization by shared decree, and globalization is the American economy.
+Exhaustion of the Peace Dividends from the World War II.
+Uncontrollable government spending.
+On top of it all, the world jumped on distributed manufacturing before we even realized that it will be the thing.
+
+Betting on economic growth is the full's errand.
+And so, the exacerbated entry of AI is the most likely outcome.
+Not only for every existing business context but also for the future ones brought by the adoption of AI.
+Because we cannot stop others from innovating.
+
+== Explosion of "Competence" Value
+
+The third, and far from the last factor that I see sweeping CTOs over the coming decade is our collective understanding of engineering competence.
+Speaking to many expo-goers, comfortable executives, and casual observers I gather the following sentiment:
+"AI will replace developers -- the business software is going to write itself."
+And "developer's job is soon obsoleted."
+
+I'll tell you right away -- the opposite is true! A competed developer will soon be worth their weight in gold.
+And the incompetent one will go drive a truck, or something. Let me explain.
+
+Let's first understand where this thinking comes from.
+
+. We're overhired: Covid caused a funny situation for developers.
+. We're overspecialized: too many Java-8 Spring Boots specialists.
+. We're overpaid: too many developers sit as a 'retainer' for unknowns.
+
+So business people, and rest assured CTOs are business people, not engineers -- have conjured less than favorable view of general developer competence level.
+Constant delays, poor quality, missed requirements is the norm in corporate America. And this cannot make business people happy.
+
+But there is a far more sinister observation that you may never have heard and I must share with you today.
+
+*_AI enhances developers BOTH ways: bad developers become worse and good developers become better._*
+
+I can't explain this phenomenon yet so I will share my personal observations and statistics.
+You have certainly heard of the coding-assistant tools. Some are very bad, like the popular CoPilot.
+But I am talking about another tool, an IDE plugin that my community and I contribute to.
+This tool runs against any model and can be tuned and extended by the user.
+Watching this implement in hands of hundreds of developers I'd observed the following patterns:
+
+A poor developer, the one why would copy paste from StackOverflow, really liked the tool.
+Wen along relying on it for thinking and producing a lot more even lower quality code.
+
+A wizardly developer took ot the tool slower, with a doze of healthy skepticism.
+Eventually extending the tool, modifying its context to the codebase they thought is better written,
+and specializing forks of it to other work, such as model tuning.
+This developer produced marginally more code. But the code is of higher quality.
+Most telling, such developer adopted the tool to extensive test-writing first and removing boilerplate from his life buying more time to think.
+
+This is the general evolution of the human AI-augmentation I see mainstreaming next.
+These enhancement templates wizardly developers share are bound to become and ecosystem of its own.
+And a good developer LOVES learning. Trying new things and new tech. Keenly watching what others of his kind are doing.
+The increase in value for this developer is innate with any AI assistant we'll think of next.
+
+And there is one more thing -- the Lo-Code No-Code community.
+These are predominantly business people who cannot wait to replace the "developer."
+And I don't blame them! This is the corporate "developer" I'd described earlier these people don't fancy.
+And I certainly see that automated process and task tools will explode with the current wave of AI.
+Software engineering may become a kind of "Lego Block Erector Set" where business people can put together any kind of software they need.
+And there cannot be anything bad in this idea -- this is great.
+
+But there is one thing we must understand in this example -- this can only apply to beaten-path well done and overdone type of software.
+What about the leading edge part of the spectrum?
+Having worked on one of the most advanced thinking AI system in the world I can tell you with the absolute degree of certainty
+-- leading edge and discovery tools are not coming in the AI generation.
+Perhaps in the next one. But in this wave that I am describing here -- a good developer will become the most thought after resource.
+Look, it's simple. Good developer still do what all developers should do -- automate themselves and all around out of the job.
+And with better automation tools available their value can only increase. And the need for such automation will only grow.
+
+So, the CTOs will have to come to term with new reality -- competence matters.
+Soon enough one cannot simply throw bodies at a problem and have it go away.
+Rest assured -- fun times are coming for our executives.
+
+== Conclusion
+
+ToDo: Make two more passes over this article before publishing to Medium...
+

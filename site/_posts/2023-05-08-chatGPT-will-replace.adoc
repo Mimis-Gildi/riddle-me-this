@@ -1,6 +1,6 @@
 ---
 categories: [reflections]
-tags: [Populism,Medium]
+tags: [Populism,Medium,Executive]
 excerpt: >
   A grounded perspective on the AI job loss panic sparked by ChatGPT, written by a seasoned engineer.
   Dispels hype, explains LLMs clearly, and compares today’s fears to past tech hysteria.
