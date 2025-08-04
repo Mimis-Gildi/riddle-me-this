@@ -6,7 +6,7 @@ excerpt: >
 classes: wide
 comments: true
 ---
-= Corporate America: AI-Native Evolution
+= The Four Phases of AI Disruption
 rdd13r
 :blog-url: https://mimis-gildi.github.io/riddle-me-this/
 :blog-title: Creative Engineering at Scale

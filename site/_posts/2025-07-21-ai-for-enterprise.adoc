@@ -24,8 +24,8 @@ classes: wide
 :cat2-01-chatgpt-doze: link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality,window=_blank]
 :cat2-02-relationship-disruption: link:/riddle-me-this/adventures/2023/06/07/AI-relationship-disruption-formalized.html[AI Analysis Reveals Relationship-Based Business Model Vulnerabilities,window=_blank]
 
-:cat3-01-business-america-ai: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[Corporate America: AI-Native,window=_blank]
-:cat3-02-ai-evolution: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[Corporate America: AI-Native Evolution,window=_blank]
+:cat3-01-business-america-ai: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
+:cat3-02-ai-evolution: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The Four Phases of AI Disruption,window=_blank]
 
 
 .ASE Inc, DALL·E Hacker Dad vs. Cog Dad...
