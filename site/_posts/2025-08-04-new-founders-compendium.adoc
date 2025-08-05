@@ -6,13 +6,14 @@ excerpt: >
 classes: wide
 comments: true
 ---
-= New Founder's Guide: AI Success in Enterprise Cracks
+= The µSaaS Founder's Guide: Building AI Success in Enterprise Cracks
 :blog-url: https://mimis-gildi.github.io/riddle-me-this/
 :blog-title: Creative Engineering at Scale
 :blog-link: {blog-url}[{blog-title}]
 :evolution-playbook: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
 :gitomer-book: https://a.co/d/5n9DwBo[The Little Red Book of Selling: 12.5 Principles of Sales Greatness,window=_blank,opts=nofollow]
 :gitomer-book-fn: footnote:[Forget what you know about selling; Jeff Gitomer is all you need -> {gitomer-book}]
+:the-northern: footnote:[An invite-only collective of technical founders who've been in the trenches since the 90s. They moved from Philadelphia BBS boards to Québec City lavish well-funded scene, and now they're international. Think of it as MicroConf's older, grumpier, greedier, and angrier closedup cousin.]
 
 There had never been µSaaS founders' time like NOW!
 
@@ -25,22 +26,24 @@ And these dilettantes leave a lot of cracks.
 In my 3 decades of daily coding I've exited three tech startups of my own and helped launch 23 for other founders.
 I've been around the block a few times -- this is no theory. +
 So, I will just give it to you as it is -- as you _need_ it -- no sugarcoating. +
-Because life mopped the floor with me repeatedly, on my own founder's   journey -- hmm, +
+Because life mopped the floor with me repeatedly, on my own founder's journey -- hmm, +
 I hope you can save yourself an occasional beating reading this.
 
 *The laws below are written in founders' tears, like the rules of aviation in blood:*
 
 === 1. Sell Before You Build!
 
-> Build it and they will come -- only works in Bible!{gitomer-book-fn} And you and I are no Noah.
+> Build it and they will come -- only works in the Bible!{gitomer-book-fn} And you and I are no Noah.
 
-*The Enterprise Reality:* They spent $2M building AI nobody uses. 🤔
+*The Enterprise Reality:* They spent $2M building AI nobody uses.
+🤔
 
 *Your Advantage:* +
 Charge $100/month for a Typeform + Google AI Studio prototype that solves #*ONE*# *_specific pain_*.
 
 *Action:* +
-Get 5-10 paying B2B customers for your ugly prototype. Or ~100 paying B2P customers. +
+Get 5-10 paying B2B customers for your ugly prototype.
+Or ~100 paying B2C customers. +
 *_If you can't even get that -- your idea is wrong._* ITERATE!
 
 _Don't move to the next step till this is understood and done-done._
@@ -49,7 +52,8 @@ _Don't move to the next step till this is understood and done-done._
 
 *What Failed Founders Do:* "OpenAI has 100k context limit, I'll build a wrapper for 200k!"
 
-*Why They Fail:* OpenAI releases 500k limit. They're dead. +
+*Why They Fail:* OpenAI releases 500k limit.
+They're dead. +
 _Did they *OWN* context window decisions?_
 
 *What You Do:* Use Google AI Studio, Claude API, whatever - AS IS. +
@@ -79,7 +83,9 @@ Dirty is clean enough if it comes with #revenue#.
 
 _Business ideas have NO VALUE.
 When you see a person protecting an idea -- they've never done any real business.
-Execution is EVERYTHING. And the field is ripe for picking these days. Example:_
+Execution is EVERYTHING.
+And the field is ripe for picking these days.
+Example:_
 
 *Enterprise Problem:* Kitchen domain talking to Inventory domain through 47 systems.
 
@@ -88,30 +94,62 @@ Execution is EVERYTHING. And the field is ripe for picking these days. Example:_
 *Why You Win:* +
 You can focus on "restaurant inventory AI" while they debate "enterprise-wide AI strategy."
 
-And by "Own" I mean the verb! You need to be:
+And by "Own" I mean the verb!
+You need to be:
 
 * *Imminent*, and
 * *Inevitable*.
 
 Some of my most profitable µSaaS startup friends started with a free offer -- a kind gesture where the "hated incumbent" fails.
-A young hacker notices a good restaurant stagnates. He goes to the founder and offer a free funnel using ugly he built.
-He's laughed at but get's a "knock yourself out, kid" reaction. For the next two months this joint is booming.
+A young hacker notices a good restaurant stagnates.
+He goes to the founder and offers a free funnel using ugly tools he built.
+He's laughed at but gets a "knock yourself out, kid" reaction.
+For the next two months this joint is booming.
 And the kid comes to the owner again, a Soprano type, who tells him to "beat it." Kid turns off the tap.
 
 *_What do you think happened next?_*
 
-_The kid had a strong support group among beaten-old-founders and learn to become temporarily inaccessible.
+_The kid had a strong support group among beaten-old-founders and learned to become temporarily inaccessible.
 Because the Soprano type needed a minute to absorb and comprehend the kid's effect on his environment.
-The kid spent $3k on compute and a month of his own time. But three months later, his first retainer was 100 times that.
-And this was not the only restaurant the young coder approached -- there were dozens more while his "inaccessible" moment.
-You can surely find who this company is today. But more importantly, searching, you will find an entire industry there.
-And that's okay -- for all of them -- *it's NOT a zero-sum game*._
+The kid spent $3k on compute and a month of his own time.
+But three months later, his first retainer was 100 times that.
+And this was not the only restaurant the young coder approached -- there were dozens more during his "inaccessible" moment.
+You can surely find who this company is today.
+But more importantly, searching, you will find an entire industry there.
+And that's okay -- for all of them -- *it's NOT a zero-sum game*!_
+
+_(That same kid later lost it all through arrogance and bad decisions.
+But he got up, learned, and built again.
+The beatings teach you more than the wins.)_
 
 *The Key Point is:* cracks are dime-a-dozen; find one and *OWN* it hard!
 
+== The Flipper Warning (Read This First):
+
+Before we go further, let's address the elephant: ~90% of "startups" are actually flippers.
+
+*What's a Flipper?* Someone who starts a business with the sole intent of selling it to "some dumb greedy bloke."
+They're not building products -- they're building exit stories.
+They start on a lie, operate on deception, and pray for a greater fool.
+
+*Why This Matters to You:*
+
+. Communities are full of them (they need marks);
+. They'll teach you the wrong metrics (vanity over value);
+. They'll corrupt your thinking (exit over excellence);
+. They're why real founders get suspicious questions!
+
+If your first thought is "how do I position this for acquisition?" -- _you're already *dead*._
+Unlike you, flipper-daddies have deep pockets, often very deep.
+Build something people need, that makes money, that you're proud of.
+The exit comes from excellence, not engineering it.
+
+*Remember:* Flippers aren't worth the ink they're printed on! +
+So forget them and focus on real business.
+
 == Real Anti-Pattern Examples (Don't Be These People):
 
-. ❌ Building "ChatGPT but better." -- (who's asset is that?)
+. ❌ Building "ChatGPT but better." -- (whose asset is that?)
 . ❌ Chasing API limitations as features. -- (U for real?!)
 . ❌ "AI for everything" platforms. -- (are you Microsoft?)
 . ❌ Waiting for perfect architecture. -- (to do what with?)
@@ -125,36 +163,40 @@ And that's okay -- for all of them -- *it's NOT a zero-sum game*._
 
 == Your First 90 Days might be like this:
 
-. *Days 1-30:* Talk to 100 potential customers. Find ONE burning pain.
-. *Days 31-60:* Build ugly prototype. Get 10 paying customers.
+. *Days 1-30:* Talk to 100 potential customers.
+Find ONE burning pain.
+. *Days 31-60:* Build ugly prototype.
+Get 10 paying customers.
 . *Days 61-90:* Refine based on usage. *Raise prices.*
 
 Note on prices, out of personal experience -- you will continuously be learning about pricing models among many other fun things.
-But you will never be considering price leadership. If competing on prices comes to mind -- just go back to your W2 job.
+But you will never be considering price leadership.
+If competing on prices comes to mind -- just go back to your W2 job.
 
 == On the Context Advantage:
 
-While enterprises struggle with "What is a kitchen?", you're building "AI for _Italian_ restaurant _kitchens_ in _Chicago_."
-Remember the young founder's experience from before?
+While enterprises struggle with "What is a kitchen?", you're building "AI for _Italian_ restaurant _kitchens_ in _Chicago_." Remember the young founder's experience from before?
 
 Your *context* is _narrow_, _clear_, _profitable_. +
 Their context is everything, nothing, expensive.
 
 == The Money Reality:
 
-*Enterprise:* $50k/month for hallucinating chatbots -- does NOTHING to franchise. +
-*You:* $500/month for AI that knows their exact business -- laser-focus on *_this guy_*.
+*Enterprise:* $50k/month for hallucinating chatbots -- does NOTHING for franchise. +
+*You:* $100/month for AI that knows their exact business -- laser-focus on *_this guy_*.
 
-They need committees to buy. Your customers use credit cards.
+They need committees to buy.
+Your customers use credit cards.
 
-(i.e, _that restaurant owner has a creditcard on him, and he's not afraid to use it in the heat of his own battles -- remember Stripe_?)
+(i.e., _that restaurant owner has a credit card on him, and he's not afraid to use it in the heat of his own battles -- remember Stripe?_)
 
 == You Can't Do This Alone (Find Your People)!
 
 And here is the pure gold you can only get from experience: +
 Listen, I'll save you 6 months of pain: *You CANNOT build a profitable µSaaS alone!*
 
-Not because you lack skills. Because you'll quit when:
+Not because you lack skills.
+Because you'll quit when:
 
 * Your prototype gets 2 signups in 3 weeks;
 * Your "perfect" customer says "maybe next quarter";
@@ -163,15 +205,17 @@ Not because you lack skills. Because you'll quit when:
 
 Find people like `rdd13r` (yours truly) or anyone else who's been there -- there are many of us, more than you know.
 Not for the advice -- for the accountability and sanity checks.
-Our type folks are ALWAYS happy to help -- but only if they see that you are COMMITED (i.,e b@!!$ deep in it).
+Our type folks are ALWAYS happy to help -- but only if they see that you are COMMITTED (i.e., b@!!$ deep in it).
 First sign of doubt and you are on your own again.
 This needs some soul searching first -- one of your first real personal hurdles -- this is nothing like the W2 job.
 But for many it's worth more than all the jobs put together.
-The 'it' is freedom. And freedom is most expensive of all.
+The 'it' is freedom.
+And freedom is most expensive of all.
 
-*Note:* _I'm focusing on laggards. I won't have time to launch you.
+*Note:* _I'm focusing on laggards.
+I won't have time to launch you.
 But I'm happy to give you some attention and point you in the right direction.
-Meanwhile, read the next sections carefully, continue bedrocking your W2 job, til you feel it.
+Meanwhile, read the next sections carefully, continue bedrocking your W2 job, till you feel it.
 And you will -- we all remember that vivid moment._
 
 === The Communities That Actually Matter:
@@ -218,7 +262,8 @@ The massive, free-for-all town square.
 
 *Best for:* Early validation and finding collaborators? (potentially).
 
-*Personal Note:* I never got ANY value from this. But your story might be different.
+*Personal Note:* I never got ANY value from this.
+But your story might be different.
 
 ==== StartupSauce (Invite-only).
 
@@ -240,7 +285,7 @@ Where $10K-80K MRR founders actually share numbers!
 *Best for:* Founders with traction seeking tactical growth advice.
 
 *Personal Note:* +
-I'm a 30-year member of a competing closed group, the Northern -- I'm not allowed here.
+I'm a 30-year member of a competing closed group, the Northern{the-northern} -- I'm not allowed here.
 I hear good things only, but take this group with a grain of salt because I don't know them personally.
 
 ==== Product Hunt -- A Crazy Place!
@@ -261,7 +306,7 @@ Not a community, but where you *_need_* to launch.
 
 *Best for:* Launch day visibility and initial user burst.
 
-*Personal Note:* You need a good lawyer to leverage this crackpot.
+*Personal Note:* You need a good launch strategy to leverage this crackpot.
 
 ==== Ramen Club (Slack).
 
@@ -277,12 +322,13 @@ Getting to ramen profitable, together...
 
 . Smaller and narrower network;
 . Less diverse industries and channels;
-. Can feel slow-ow-ow-paced for aggressive founders.
+. Can feel slow-paced for aggressive founders.
 
 *Best for:* First-time founders who need to master structure and mindset.
 
 *Personal Note:* +
-I pointed people here in the past and they absolutely Loved It! Personally, I was never in that spot, so no first-hand experience.
+I pointed people here in the past and they absolutely loved it!
+Personally, I was never in that spot, so no first-hand experience.
 But I will definitely bring my 15-y-o son here when he's ready to start his own business.
 
 ==== Your Industry-Specific Slack.
@@ -304,24 +350,31 @@ But I will definitely bring my 15-y-o son here when he's ready to start his own 
 *Best for:* Stage 2+ customer development and sales.
 
 *Personal Note:* +
-This can be a goldmine. I, for example, followed several CTO groupies for many years.
+This can be a goldmine.
+I, for example, followed several CTO groups for many years.
 There would be ~100 CTOs, including yours truly, and about a thousand posers.
 And they'd talk about lame and useless buzzwordy and populist topics CTOs like to foam at the mouth about.
 I generally thought these are a total waste of time.
 Until I bolted an LLM Agent to them and it joined literally all topics.
-OMG! Holly mother of god. That was a game-changer.
-From "who's sleeping with whom," to "who's fired for what."
-Add a little bit of scraping and profiling and you have Mossad running on your box.
-Will I use that leverage -- I don't think so.
-But your morals may be different than mine.
-This approach is an undeniable resource nonetheless.
+OMG!
+Holy mother of god.
+That was a game-changer.
+From "who's sleeping with whom," to "who's fired for what." Add a little bit of scraping and profiling and you have Mossad running on your box.
+
+*WARNING:* This is powerful but ethically dangerous territory.
+You're walking a fine line between market intelligence and invasion of privacy.
+Use this knowledge wisely -- what you learn can inform your product, but using personal information against people will destroy your reputation forever.
+The startup world is small.
+Word travels fast.
+Be smart, not slimy.
 
 === The Truth About Communities:
 
-*Don't join all of them.* You'll spend all day in Slack instead of talking to customers. Think automation even for the few you do join!
+*Don't join all of them.* You'll spend all day in Slack instead of talking to customers.
+Think automation even for the few you do join!
 
 Pick *ONE* primary community (I recommend MicroConf or your industry-specific Slack) and maybe browse Indie Hackers weekly or monthly.
-If you chose to leverage Indie Hackers  consider building a scraper using tools I'd mentioned in the beginning of this post.
+If you choose to leverage Indie Hackers, consider building a scraper using tools I mentioned at the beginning of this post.
 
 _The best community is where your customers are crying about Excel sheets, not where founders are debating tech stacks._
 
@@ -329,24 +382,25 @@ _The best community is where your customers are crying about Excel sheets, not w
 
 == Final Truth:
 
-. You don't compete with OpenAI. Or any other Asset you don't own.
-. You don't compete with enterprises. Or care for their models.
+. You don't compete with OpenAI.
+Or any other Asset you don't own.
+. You don't compete with enterprises.
+Or care for their models.
 . You compete with Excel sheets and WhatsApp groups.
 
-*Win that fight first.* Revenue. Profit. Baby steps, hops, then leaps and bounds.
+*Win that fight first.* Revenue.
+Profit.
+Baby steps, hops, then leaps and bounds.
 
 == The Path Forward:
 
-While enterprises wrestle with their coral reef architectures, you have green field advantage. Build clean, build focused, build small, build profitable.
+While enterprises wrestle with their coral reef architectures, you have green field advantage.
+Build clean, build focused, build small, build profitable.
 
 * The failed wrapper-builders chased technology.
 * The successful µSaaS founders chase customer pain.
 
 _Choose wisely._
-
-I didn't talk about flippers. This type of startup constitutes ~90% of all startups.
-Flippers are those who are not building a product, but building a business to push on some dumb greedy bloke.
-Flippers aren't worth the inc they're mentioned on. So, forget it!
 
 == Note from the Author -- Bedrocking:
 
@@ -355,27 +409,31 @@ While you will hear about bedrocking in the startup communities, referring to "b
 -- there is another meaning for you to know, the one for the Hacker Culture.
 In hacker culture "bedrocking" means working a W2 job, usually in a major corporation, while pursuing a different personal dream at home.
 
-Think about "Neo" in The Matrix. He was working for some EvilCorp, I think MetaCortex.
-But his personal business was manufacturing, curating, and distributing "illegal and contraband programming."
-So, he was bedrocking at MetaCortex. And he was a business too.
+Think about "Neo" in The Matrix.
+He was working for some EvilCorp, I think MetaCortex.
+But his personal business was manufacturing, curating, and distributing "illegal and contraband programming." So, he was bedrocking at MetaCortex.
+And he was a business too.
 
 But here is the kicker: he was a business *OUTSIDE* of his W2 job.
 
-This distinction is very IMPORTANT to understand! Neo was not making his exploits while at MetaCortex.
-He was making them while at home. So, he was NOT *stealing* from his employer, MetaCortex.
+This distinction is very IMPORTANT to understand!
+Neo was not making his exploits while at MetaCortex.
+He was making them while at home.
+So, he was NOT *stealing* from his employer, MetaCortex.
 Sure, a fine argument can be made that he was moonlighting and then coming to work tired and sleepy.
-But I doubt that "fully rested" was anywhere in his employment contract. He had protection of subjective ambiguity.
+But I doubt that "fully rested" was anywhere in his employment contract.
+He had protection of subjective ambiguity.
 
-Many first-time founders say things like "oh, I don't do much at work -- I can just code up my share and a day and coast the rest of the week."
-Thinking that they can launch their beautiful µSaaS at the expense of their W2 job. Probably not thinking about being thieves!
+Many first-time founders say things like "oh, I don't do much at work -- I can just code up my stuff in a day and coast the rest of the week." Thinking that they can launch their beautiful µSaaS at the expense of their W2 job.
+Probably not thinking about being thieves!
 Let me be crystal clear:
 
 *You CANNOT steal your Freedom from somebody else!*
 
 Nobody I met on the scene in 36 years was ever able to attain freedom by stealing from their employer.
 In fact, by doing so, you are making sure that you will never succeed on your own.
-What you need to do instead is to go to work, do your darnest best there, and then switch over COMPLETELY,
-and do your darnest for your-self. If that is not possible at your employer -- find another company to bedrock with.
+What you need to do instead is to go to work, do your darnedest best there, and then switch over COMPLETELY, and do your darnedest for yourself.
+If that is not possible at your employer -- find another company to bedrock with.
 Follow what I just said and you will quickly find out why it matters.
 
 Here are the traits that WILL set you free:
@@ -384,7 +442,9 @@ Here are the traits that WILL set you free:
 . Real Self-Awareness -- know thyself;
 . Moral Integrity -- consider Stoicism, perhaps.
 
-One other thing: you will get a beating from time to time. That is necessary. That's where your personal growth comes from.
+One other thing: you will get a beating from time to time.
+That is necessary.
+That's where your personal growth comes from.
 If you over-value sheltered life -- freedom is not for you.
 
 Toodles!
