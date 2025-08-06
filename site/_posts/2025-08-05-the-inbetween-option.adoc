@@ -11,10 +11,10 @@ comments: true
 :blog-title: Creative Engineering at Scale
 :blog-link: {blog-url}[{blog-title}]
 :new-founders: link:/riddle-me-this/adventures/2025/08/04/new-founders-compendium.html
-:for-new-founders: {new-founders}#note-from-the-authorbedrocking
+:for-new-founders: {new-founders}#note-from-the-author--bedrocking
 :for-new-founders-communities: {new-founders}#the-communities-that-actually-matter
+:gitomer-book: https://a.co/d/5n9DwBo[The Little Red Book of Selling: 12.5 Principles of Sales Greatness,window=_blank,opts=nofollow]
 :gitomer-book-fn: footnote:[Forget what you know about selling; Jeff Gitomer is all you need -> {gitomer-book}]
-
 
 Not everyone should build a SaaS.
 There, I said it.
@@ -34,13 +34,13 @@ This is bedrocking too, just with more risk and fewer benefits.
 
 Three legitimate reasons to consult instead of building:
 
-1. **You Need Intelligence** -- Every client teaches you what NOT to build;
-2. **You Need Capital** -- T&M at $200-500/hour beats ramen;
-3. **You Need Confidence** -- Some developers need to see they CAN deliver value.
+. **You Need Intelligence** -- Every client teaches you what NOT to build.
+. **You Need Capital** -- T&M at $200-500/hour beats ramen.
+. **You Need Confidence** -- Some developers need to see they CAN deliver value.
 
 One *_terrible_* reason: "It's safer." NOTHING about trading time for money is safe!
 
-== The Modern Consulting Landscape (2025 Reality).
+== The Modern Consulting Landscape (2025 Reality)
 
 _These are the actual claims and numbers from my communities, June 2025._
 
@@ -64,7 +64,7 @@ Notice the pattern? +
 
 == The New Consulting Stack:
 
-=== Client Acquisition;
+=== Client Acquisition:
 
 * https://contra.com/[**Contra**,window=_blank,opts=nofollow] -- High-end enterprise overflow. (not yet tested)
 * https://www.upwork.com/enterprise/[**Upwork Enterprise**,window=_blank,opts=nofollow] -- Yes, really.
@@ -72,7 +72,7 @@ They're desperate! (won't test)
 * *_Your Blog_* -- Write about AI failures, they'll find you! (https://mimis-gildi.github.io/riddle-me-this/series/[I have,window=_blank])
 * **LinkedIn** -- But talk about solutions, not your availability. (questionable)
 
-=== Operations;
+=== Operations:
 
 * https://cal.com/[**Cal.com**,window=_blank,opts=nofollow] -- Professional booking without the SaaS price. (love it!, can run your own!)
 * https://toggl.com/[**Toggle Track**,window=_blank,opts=nofollow] -- Bulletproof time tracking with reporting.
@@ -81,8 +81,7 @@ They're desperate! (won't test)
 * https://www.freshbooks.com/[**FreshBooks**,window=_blank,opts=nofollow] -- Simple invoicing that works.
 * https://www.bench.co/[**Bench**,window=_blank,opts=nofollow] -- Bookkeeping without thinking.
 
-
-=== Positioning Tools;
+=== Positioning Tools:
 
 * **GitHub** -- Your portfolio of fixes, _**not** just code_.
 * https://www.loom.com/[**Loom**,window=_blank,opts=nofollow] -- Async explanations save meeting time.
@@ -101,7 +100,8 @@ You come in, diagnose *the specific problem*, fix it, leave.
 Here's the fix.
 
 *Personal Note*: For myself this is only possible with in-person sales!
-Some of my peers were able to sell this T&M. I was not. Just FP.
+Some of my peers were able to sell this T&M. I was not.
+Just FP.
 My longest duration was 2 weeks.
 
 === 2. The Architect ($300-500/hour):
@@ -110,7 +110,8 @@ You design the solution, they implement.
 
 * **Duration**: 2-8 weeks; rare peer examples for 12 weeks exist.
 * **Clients**: Companies with good teams, bad plans.
-* **Example**: "Here's your AI integration roadmap. Follow this or fail."
+* **Example**: "Here's your AI integration roadmap.
+Follow this or fail."
 
 === 3. The Advisor ($200-300/hour or retainer):
 
@@ -120,7 +121,8 @@ Ongoing strategic guidance, no hands on keyboard.
 * **Clients**: Startups who can't afford you full-time.
 * **Example**: "Monthly AI strategy reviews and team mentoring."
 
-*Personal Note*: One of my most frequent gigs, usually as Fractional CTO. Try for a limited retainer, if you can -- often possible.
+*Personal Note*: One of my most frequent gigs, usually as Fractional CTO.
+Try for a limited retainer, if you can -- often possible.
 
 == The Consulting Trap (And How to Escape):
 
@@ -136,7 +138,7 @@ Every consultant becomes one of three things:
 to consult effectively, to find a niche, and to be able to sell directly -- #you need A) intel, and B) channels!#
 Getting both is easy if you stay in the same #domain# for a while, like big-pharma, for example.
 But breaking into a new domain is hard -- use ANY means necessary.
-I have subcontracted for peanuts before (~100/hour), just to get my foot in the door.
+I have subcontracted for peanuts before (~$100/hour), just to get my foot in the door.
 One time I even did this as an employee of a decrepit insurance company that failed every transformation since 2000.
 The rates above apply to _experienced consultant_ with more than a few trips around the block.
 If you have nowhere to start, a subcontract is your good first foot in the door -- just DON'T forget why you're subbing!
@@ -146,20 +148,24 @@ If you have nowhere to start, a subcontract is your good first foot in the door 
 . **Document Every Pain** -- Observed and studied client problems are *_great_* product ideas!
 . **Find the Pattern** -- Three clients with same problem = opportunity you must explore.
 . **Build While Billing** -- Use client work to validate ideas; code is theirs -- knowledge is yours!
-. **Test the Transition** -- Launch MVP while keeping top client. DON'T cut lose after work.
+. **Test the Transition** -- Launch MVP while keeping top client.
+DON'T cut loose after work.
 . **Cut the Cord** -- When MRR > 50% of consulting income -- switch tracks hard.
 
 *Personal Note*: Point #4 has done wonders for me! +
 Simple example: In 2007 I consulted for Merck & Co through Glemser Technologies modernizing a custom Documentum-based product.
-The neighboring team I befriended suffered greatly trying to send encrypted messages to doctor's smartphones.
+The neighboring team I befriended suffered greatly trying to send encrypted messages to doctors' smartphones.
 People hammered away hard trying to make square Guidewire peg fit through the oval problem hole.
-I offered a shoulder to cry on. After coming home I didn't grab a brewsky -- I prototyped.
-A year later my engagement on the DMS concluded. And Guidewire peg still didn't fit.
+I offered a shoulder to cry on.
+After coming home I didn't grab a brewsky -- I prototyped.
+A year later my engagement on the DMS concluded.
+And Guidewire peg still didn't fit.
 In the end -- I made three times my other engagement value TWICE: once by licensing Merck & Co a product they needed.
 And the second time -- selling that same product to the Guidewire molesting people.
-My total manufacturing time was only 640 hours. Making it one of my most profitable moonlighting time -- about $2350/hr.
-It won't happen every time. But if you pop that brewsky -- it will never happen.
-
+My total manufacturing time was only 640 hours.
+Making it one of my most profitable moonlighting time -- about $2350/hr.
+It won't happen every time.
+But if you pop that brewsky -- it will never happen.
 
 == Practical Client Management:
 
@@ -174,7 +180,7 @@ It won't happen every time. But if you pop that brewsky -- it will never happen.
 === Always Do These:
 
 * Invoice weekly (not monthly)!
-* Require 50% upfront for new clients;
+* Require 50% upfront for new clients.
 * Fire bad clients *immediately*.
 * *_Document everything in writing_*.
 * Raise rates every 3-6 months.
@@ -197,14 +203,22 @@ These are current market rates for _consultants already in the trade_.
 * Anything with a 6-month commitment (that's prison).
 
 *Understand This*: If you accept customer's rate card -- you are a commodity! +
-In other words, you are not selling -- you are being sold. Does this mean competent hackers don't go commodity?
-No, it doesn't mean that! I have done this too. My record is well over a hundred engagements in my career -- I lost count.
-I've accepted a few assignment while on payroll at Glemser. And I held 3 W2 jobs in 36 years, two of which were not even consulting.
-And on my own I've taken almost a dozen commodity jobs. But most of my sales were hardcore competitive rates -- FP, not T&M.
-Yet up to 20% were definitely crappy deals. There will be many reasons why you would take a commodity job.
-Most often life circumstances get to even the best of us -- I've been there too. But even in the good times, myself as an example:
-I needed to learn how to sell; I needed to break into an unknown market; I needed to profiles a prospect from the inside, etc...
-Beggars are no choosers -- if you must, then you will. But no matter what -- _understand that commodity work can only be temporary_
+In other words, you are not selling -- you are being sold.
+Does this mean competent hackers don't go commodity?
+No, it doesn't mean that!
+I have done this too.
+My record is well over a hundred engagements in my career -- I lost count.
+I've accepted a few assignments while on payroll at Glemser.
+And I held 3 W2 jobs in 36 years, two of which were not even consulting.
+And on my own I've taken almost a dozen commodity jobs.
+But most of my sales were hardcore competitive rates -- FP, not T&M.
+Yet up to 20% were definitely crappy deals.
+There will be many reasons why you would take a commodity job.
+Most often life circumstances get to even the best of us -- I've been there too.
+But even in the good times, myself as an example:
+I needed to learn how to sell; I needed to break into an unknown market; I needed to profile a prospect from the inside, etc...
+Beggars are no choosers -- if you must, then you will.
+But no matter what -- _understand that commodity work can only be temporary_
 -- you MUST learn how to market and sell!{gitomer-book-fn} Without selling -- stick to your cheap W2 jobs.
 
 == Finding Clients That Don't Suck!!!
@@ -216,14 +230,20 @@ Beggars are no choosers -- if you must, then you will. But no matter what -- _un
 * Industry Slack channels (remember the CTO story?)!
 * Conference hallways (especially after failure talks)!!
 
-*Personal Note*: I never learned to sell on LinkedIn. I just use it to investigate prospects.
-And even then, my record is pathetic with LinkedIn. _Most of my best customer aren't even on LinkedIn._
-Right now I am researching laggards, so LinkedIn may prove useful. However, laggards are almost always bad customers
--- they band together, sheeple, and even when you've sold, they will call each-other endlessly to "compare rates" and discuss consultants.
-My best sales come from conferences. Yes, it costs to present. But you have a window of time to really dazzle dilettantes with all you got.
+*Personal Note*: I never learned to sell on LinkedIn.
+I just use it to investigate prospects.
+And even then, my record is pathetic with LinkedIn. _Most of my best customers aren't even on LinkedIn._
+Right now I am researching laggards, so LinkedIn may prove useful.
+However, laggards are almost always bad customers
+-- they band together, sheeple, and even when you've sold, they will call each other endlessly to "compare rates" and discuss consultants.
+My best sales come from conferences.
+Yes, it costs to present.
+But you have a window of time to really dazzle dilettantes with all you got.
 Outside of partner marketing firms I have found no better way to find clients than to take them by storm.
-However, many in my communities develop elaborate and extremely effective funnels. In {for-new-founders-communities}[my previous article,window=_blank]
-I explained communities and mentors -- it applies equally to consulting. You won't nail this alone.
+However, many in my communities develop elaborate and extremely effective funnels.
+In {for-new-founders-communities}[my previous article,window=_blank]
+I explained communities and mentors -- it applies equally to consulting.
+You won't nail this alone.
 
 === How to Approach?!
 
@@ -239,10 +259,10 @@ _From before -- you are business -- learn marketing!_
 
 *Every consulting engagement should teach you:*
 
-1. **What problems are worth money**;
-2. **What solutions people actually BUY**;
-3. **What _promises_ make them buy**;
-4. **What _mistakes_ everyone makes**.
+. **What problems are worth money**.
+. **What solutions people actually BUY**.
+. **What _promises_ make them buy**.
+. **What _mistakes_ everyone makes**.
 
 Use consulting as paid market research. +
 Build your SaaS on their dime and *pain*.
@@ -255,12 +275,12 @@ Consulting is just a job _with extra steps_. +
 It's trading time for money with more paperwork. +
 But it can be a strategic stepping stone *IF* you:
 
-. Choose clients that teach you something;
-. Pattern match across engagements;
-. Build your product knowledge systematically;
+. Choose clients that teach you something.
+. Pattern match across engagements.
+. Build your product knowledge systematically.
 . *_Have an exit strategy from day one!_*
 
-If you are thinking about consulting because you want freedom -- {new-founders}[read this article].
+If you are thinking about consulting because you want freedom -- {new-founders}[read this article,window=_blank].
 
 == Insider Wisdom:
 
@@ -276,6 +296,6 @@ Choose your path. +
 But choose it consciously.
 
 Oh, and one last thing: even if you did everything right -- pride will kill you.
-Doing business?  -- check your BIASES at the door.
+Doing business? -- check your BIASES at the door.
 
 Toodles!
