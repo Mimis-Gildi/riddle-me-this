@@ -14,6 +14,7 @@ comments: true
 :gitomer-book: https://a.co/d/5n9DwBo[The Little Red Book of Selling: 12.5 Principles of Sales Greatness,window=_blank,opts=nofollow]
 :gitomer-book-fn: footnote:[Forget what you know about selling; Jeff Gitomer is all you need -> {gitomer-book}]
 :the-northern: footnote:[An invite-only collective of technical founders who've been in the trenches since the 90s. They moved from Philadelphia BBS boards to Québec City lavish well-funded scene, and now they're international. Think of it as MicroConf's older, grumpier, greedier, and angrier closedup cousin.]
+:tnm-bedrocking: link:/riddle-me-this/adventures/2025/08/05/the-inbetween-option.html#the-three-consulting-models-that-work
 
 There had never been µSaaS founders' time like NOW!
 
@@ -448,3 +449,8 @@ That's where your personal growth comes from.
 If you over-value sheltered life -- freedom is not for you.
 
 Toodles!
+
+'''
+
+P.S. Now, there is one other equally bad and inbetween bedrocking option +
+{nbsp} -- {tnm-bedrocking}[see this article for the models _that still work_,window=_blank].
