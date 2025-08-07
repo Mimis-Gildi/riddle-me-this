@@ -18,11 +18,10 @@
   ],
   packageRules: [
     {
-      description: 'Ignore version of actions/stale due to tmp access stateful bug',
-      matchPackageNames: [
-        '@actions/stale',
-      ],
-      version: '8.0.0',
+      description: 'Pin @actions/stale to v8.0.0',
+      matchPackageNames: ['actions/stale'],
+      rangeStrategy: 'pin',
+      allowedVersions: '8.0.0'
     },
     {
       description: 'Aggressive grouping for Gradle root project',
