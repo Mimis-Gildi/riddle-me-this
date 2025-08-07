@@ -88,7 +88,7 @@ _Timesaving {actions}[booms] ..._
 
 a| image::{a-codeql}/badge.svg[Security Scan by CodeQL,link={a-codeql},window=_blank,opts=nofollow]
 a| image::{a-codacy}/badge.svg[Security Scan by Codacy,link={a-codacy},window=_blank,opts=nofollow]
-a| image::{a-snyk}/badge.svg[Security Scan by Snyk,link={a-snyk},window=_blank,opts=nofollow]
+a|
 a| image::{a-qodana}/badge.svg[Security Scan by Qodana,link={a-qodana},window=_blank,opts=nofollow]
 
 a| image::{a-version}/badge.svg[Custom Bump Version on Feature Branch,link={a-version},window=_blank,opts=nofollow]
