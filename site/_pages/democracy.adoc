@@ -1,4 +1,4 @@
-= The Fall of Democracy
+= The Ailments of Democracy
 :page-classes: wide
 :page-layout: splash
 :page-permalink: /series/fall-of-democracy/
@@ -6,22 +6,24 @@
 
 image::/riddle-me-this/assets/images/maga-liberty-tomorrow.png[]
 
-Welcome to *The Fall of Democracy* — an arc examining the erosion of democratic institutions under the accelerating pressure of technological, economic, and epistemic forces.
+Welcome to *The Ailments of Democracy*  +
+{nbsp} --  an arc examining the erosion of democratic institutions under the accelerating pressure +
+of technological, economic, and epistemic forces.
 
 == ✦ What This Series Covers
 
 - The widening mismatch between governance capacity and exponential technological growth.
 - Rent-seeking bureaucracies hijacking regulatory power and public discourse for private gain.
 - *_AI-powered narrative manipulation, algorithmic censorship, and cognitive warfare._*
-- The entrenchment of state-corporate surveillance economies — personal data mined, monetized, and weaponized.
+- The entrenchment of state-corporate surveillance economies  --  personal data mined, monetized, and weaponized.
 - The collapse of institutional competence and paralysis of political decision-making.
-- The decoupling of fiat financial systems from real productive capacity — sovereign debt spiraling toward systemic insolvency.
+- The decoupling of fiat financial systems from real productive capacity  --  sovereign debt spiraling toward systemic insolvency.
 
 == ✦ Why It Matters
 
 - Institutions originally designed to protect democracy now actively undermine it.
-- Technology amplifies both truth and distortion — widening the competence and agency gap between governed and governors.
-- Governance architectures can no longer regulate the systems they depend on — whether in capital markets, critical infrastructure, or information ecosystems.
+- Technology amplifies both truth and distortion  --  widening the competence and agency gap between governed and governors.
+- Governance architectures can no longer regulate the systems they depend on  --  whether in capital markets, critical infrastructure, or information ecosystems.
 - In the United States, the ability to service debt through real growth is vanishing, forcing dependency on artificial monetary expansion and accelerating structural fragility.
 
 *_We are not speculating.
@@ -35,18 +37,20 @@ We are observing systemic failure in real time._*
 
 🚜 <- Migration in progress 🚧
 
-Stay tuned — there is much to say.
+Stay tuned  --  there is much to say.
 
 Most of this material has never existed on the clear web until now.
 The muggle mainstream recoils from existential mechanics it cannot metabolize.
-The dopamine markets demand narratives optimized for comfort, not accuracy — certainly not systemic critique mixed with hacker humor.
+The dopamine markets demand narratives optimized for comfort, not accuracy  --  certainly not systemic critique mixed with hacker humor.
 
-Much of what will appear here originates from my retired Tor research site — where truth mattered more than likes.
+Much of what will appear here originates from my retired Tor research site  --  where truth mattered more than likes.
 
 Ever since Saga suggested migrating this work into GitHub Pages, I’ve been slowly reconstructing it.
 What appeals most is the transparency: fully open, yet invisible enough to avoid the casual dopamine crowd.
 Those who seek will find.
 And those are the ones this is for.
+
+*_University materials feeding this are are not yet publicly available._*
 
 === Already Migrated
 

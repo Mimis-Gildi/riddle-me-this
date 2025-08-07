@@ -6,74 +6,107 @@
 :debut-chatgpt-job-loss-scare: link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality]
 :early-reaction-to-new-capability: link:/riddle-me-this/reflections/2023/05/11/chatGPT-omen-new-era.html[The Bright Era Dawns: AI, Moore’s law, and Beyond]
 
+:hackerdom-00-2024-predictions: link:/riddle-me-this/adventures/2023/06/10/LLMs-what-good-for.html[AI in 2024: The Future is ...,window=_blank]
+:hackerdom-00-2023-northern-craze: link:/riddle-me-this/adventures/2023/05/15/AI-million-dollar-devs.html[Dev Millionaires: “Laggards are a renewable resource”?!,window=_blank]
+
+:footnote-hackerdom-00-note: footnote:predictive[An article capturing original presentation to the AGAIN Collective @ Mímis Gildi -- {hackerdom-00-2024-predictions}]
+:footnote-hackerdom-00-craze: footnote:craze[The precipice for this research is an upheaval event at one of the oldest and most successful closed communities of founders in the USA caused by a single dilettante's, Ilya S., silly act -- {hackerdom-00-2023-northern-craze}]
+:footnote-hackerdom-00-n: footnote:predictive[]
+:footnote-hackerdom-00-c: footnote:craze[]
+
+:hackerdom-01-money: link:/riddle-me-this/adventures/2023/06/10/2-ai-revenue-surge-analysis.html[$10M AI Revenue Surge: What’s Actually Bought,window=_blank]
+:hackerdom-02-community: link:/riddle-me-this/adventures/2023/06/10/3-google-vs-openai.html[Why Google Beat OpenAI with Technical Teams,window=_blank]
+:hackerdom-03-augmentation: link:/riddle-me-this/adventures/2023/06/10/4-cognitive-augmentation.html[Cognitive Augmentation: The Real Revolution,window=_blank]
+:hackerdom-04-llm-lessons: link:/riddle-me-this/adventures/2023/06/10/5-early-llm-lessons.html[Early LLM Lessons: From Failure to Success,window=_blank]
+:hackerdom-05-laggardom: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
+:hackerdom-06-architecture: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
+:hackerdom-07-architecture: link:/riddle-me-this/adventures/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
+
+
+
 image::/riddle-me-this/assets/images/Athena-World.png[Young Athena's World]
 
-Welcome to the *Final Industrial Revolution* — where technology is no longer simply "tools," but full-scale wetware augmentation.
+Welcome to the *Final Industrial Revolution* +
+{nbsp} --  where technology is no longer simply "tools," +
+but *_full-scale wetware augmentation_*.
 
-== ✦ What This Series Covers
+_Did you know that the first emerging synthetic intelligence is most likely to be feminine?_ +
+*_Can you fathom why?_*
+
+== ✦ What This Series Covers:
 
 This arc explores the rise of:
 
-- *_Large Language Models (LLMs)_*: still relatively shallow, yet already enabling higher-order models. While most current models serve tool markets, a few are breaking through into more profound domains.
+- *_Large Language Models (LLMs)_*: still relatively shallow, yet already enabling higher-order models.
+While most current models serve tool markets, a few are breaking through into more profound domains.
 
-- *_Integrated MLOps platforms_*: the inevitable march toward trunk-based evolution of ML applications — silver bullets for self-modifying systems. The crucible is here.
+- *_Integrated MLOps platforms_*: the inevitable march toward trunk-based evolution of ML applications
+--  silver bullets for self-modifying systems.
+The crucible is here.
 
-- *_Multimodal expert systems_*: a true resurrection of _real artificial intelligence_ — not the overmarketed fluff, but scientific systems engineering finally constructing reasoning machines.
+- *_Multimodal expert systems_*: a true resurrection of _real artificial intelligence_
+--  not the overmarketed fluff, but scientific systems engineering finally constructing reasoning machines.
 
-- *_AI-driven augmentation of human cognition_*: one of my longest-standing areas. For over two decades, I’ve worked to apply models beyond narrow automation:
-— Today, not only do we embed models into Domain-Driven Design Aggregates (a practice most corporate American laggards still resist),
-— We also apply them as *active policy agents*, directly interfacing with organizational governance and societal-scale decision systems.
+- *_AI-driven augmentation of human cognition_*: one of my longest-standing areas.
+For over two decades, I’ve worked to apply models beyond narrow automation:
+--  Today, not only do we embed models into Domain-Driven Design Aggregates (a practice most corporate American laggards still resist),
+--  We also apply them as *active policy agents*, directly interfacing with organizational governance and societal-scale decision systems.
 
-- *_The dissolving boundary between "worker" and "augmented knowledge agent"_*: no longer a philosophical question — simply an inevitable side effect of structural change.
+- *_The dissolving boundary between "worker" and "augmented knowledge agent"_*: no longer a philosophical question
+--  simply an inevitable side effect of structural change.
 
 - *_Cloud-scale ecosystems & emergent infrastructure patterns_*:
-— Muggle-driven tool-mania produced countless buzzword cycles;
-— But what’s emerging now _erases the distinction_ between that which can be automated and that which was thought to require "human" oversight.
+--  Muggle-driven tool-mania produced countless buzzword cycles;
+--  But what’s emerging now _erases the distinction_ between that which can be automated and that which was thought to require "human" oversight.
 
-We explore **real-world production systems** — not speculation. Case studies include startups, venture-backed moonshots, corporate laggards cautiously dipping toes, and magnificent failures.
+We explore **real-world production systems**  --  not speculation.
+Case studies include startups, venture-backed moonshots, corporate laggards cautiously dipping toes, and magnificent failures.
 This section stays focused on *production engineering*, excluding warfare applications (which belong to *Rupture*).
 
-== ✦ Why It Matters
+== ✦ Why Bother:
 
-- Entire categories of work are being rewritten — tearing at the social contract with force not seen since the first Industrial Revolution.
+- Entire categories of work are being rewritten +
+{nbsp} --  tearing at the social contract with force not seen since the first Industrial Revolution.
 
-- Hacker culture and AI culture are merging — forging entirely new disciplines where competence becomes exponentially amplified.
+- Hacker culture and AI culture are merging +
+{nbsp} --  forging entirely new disciplines where competence becomes exponentially amplified.
 
 - Competence gaps are widening: augmentation elevates the few prepared, while leaving the rest further behind.
 
-This is not science fiction. This is production reality — and it’s rapidly taking on a life of its own.
+This is not science fiction.
+This is production reality  --  and it’s rapidly taking on a life of its own.
+
+> Lee thought he was smarter than anyone else. +
+> But he was stupid. +
+> And stupider to think that.
+>
+> The only remaining puzzle -- why didn't she tell him?
+
+A hacker should recognize this passage. +
+Dunning-Kruger Effect is often observed in the wild (enter Acme & Co). +
+The question is: How metacognition evolves from Symbolic Recursion?
 
 → link:/riddle-me-this/series/[Back to Curated Series]
 
 '''
 
-== Content
+== Content:
 
-🚜 <- In process of migration. 🚧
+🚜 <- In process of migration.
+🚧
 
-Here is the largest section of my research and production stories.
-And it is likely to receive more content compared to the other series as I migrate.
+Here is the largest section of my research and production stories. +
+And it is likely to receive more content compared to the other series as I migrate. +
 Please check back regularly or link:/riddle-me-this/feed.xml[_follow my RSS feed_].
 
 === Already Migrated (Time-reversed Order)
 
-Indie Economics — LLMs and Final Industrial Revolution::
-- Adventure: link:/riddle-me-this/adventures/2023/06/25/new-opportunities-with-ml-1.html[AI Indies Part 1 - Times of Change $$$]
-- Adventure: link:/riddle-me-this/adventures/2023/06/25/new-opportunities-with-ml-2.html[AI Indies Part 2 - Profitable Fundamentals]
-- Adventure: link:/riddle-me-this/adventures/2023/06/25/new-opportunities-with-ml-3.html[AI Indies Part 3 - Objective Analysis]
-- Adventure: link:/riddle-me-this/adventures/2023/08/07/new-opportunities-with-ml-4-cyber-volunteers-in-ukes.html[AI Indies Part 4 - Cyber Volunteers in Ukraine]
-- Adventure: link:/riddle-me-this/adventures/2025/06/12/the-last-stand.html[AI Indies Part 5 - The Last Stand]
+*2025-07-21:*{footnote-hackerdom-00-craze} {hackerdom-07-architecture}. +
+*2023-07-05:*{footnote-hackerdom-00-c} {hackerdom-06-architecture}. +
+*2023-07-04:*{footnote-hackerdom-00-c} {hackerdom-05-laggardom}. +
+*2023-06-10:*{footnote-hackerdom-00-note} {hackerdom-04-llm-lessons}. +
+*2023-06-10:*{footnote-hackerdom-00-n} {hackerdom-03-augmentation}. +
+*2023-06-10:*{footnote-hackerdom-00-n} {hackerdom-02-community}. +
+*2023-06-10:*{footnote-hackerdom-00-n} {hackerdom-01-money}.
 
-Adaptation to LLM Disruption::
-- Reflection: link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality]
-- Reflection: link:/riddle-me-this/reflections/2023/05/11/chatGPT-omen-new-era.html[The Bright Era Dawns: AI, Moore’s law, and Beyond]
-- Reflection: link:/riddle-me-this/adventures/2023/05/15/AI-million-dollar-devs.html[Dev Millionaires: "Laggards are a renewable resource"?]
-
-Corporate Relations Disrupted::
-- Adventure: link:/riddle-me-this/adventures/2023/06/07/AI-and-businesses-to-perish-first.html[LLMs: Projected Market Exit of Established Relations-Based Companies]
-- Adventure: link:/riddle-me-this/adventures/2023/06/10/LLMs-what-good-for.html[AI in 2024: The Future is ...]
-- Adventure: link:/riddle-me-this/adventures/2023/06/17/you-can-mill-dev.html[The $ Power is Within You!]
-
-Crash Course & ML Bootcamp::
-- Adventure: link:/riddle-me-this/adventures/2023/06/14/Learn-ML-Fast.html[Learn ML Fast]
-
+The precipice for this research is an upheaval event at one of the oldest and most successful closed communities of founders in the USA caused by a single dilettante's, Ilya S., silly act

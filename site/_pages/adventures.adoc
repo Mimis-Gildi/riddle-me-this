@@ -1,8 +1,9 @@
 = Adventures
 :page-layout: splash
 :page-permalink: /adventures/
-:quebec-llm-craze: link:/riddle-me-this/adventures/2023/05/15/AI-million-dollar-devs.html[Dev Millionaires: "Laggards are a renewable resource"?!,window=_blank]
-:integration-revolution: link:/riddle-me-this/adventures/2023/06/07/AI-and-businesses-to-perish-first.html[LLMs: Projected Market Exit of Established Relations-Based Companies,window=_blank]
+:business-2025-07-21-ai-integration-architecture: link:/riddle-me-this/adventures/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
+:business-2023-07-05-ai-integration-trap: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
+:business-2023-07-04: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
 
 _Adventures_ is where the work takes form — in the field, in the code, in the culture.
 
@@ -26,13 +27,14 @@ link:/riddle-me-this/categories/adventures/[Browse the full archive of Adventure
 _The ones that still echo._
 
 
-=== Multimodal Revolution Discovery
+The last two years, I've been focusing on AI-Native weapon systems abroad.
+Now I'm back -- so, what about AI-Native Corporate America?
+Surely, we all have self-driving cars, all the tellers are robots, and AI caters to our every need.
+Right? Wait, what?
 
-June 2023, First Glimpse of Next Revolution -- {integration-revolution}::
-* Our coalition partners running a powerful Expert System innocently asked to experiment with a backing service:
-** Replace embedded LLM with a MUCH more powerful one;
-** Give that LLM power to suggest new convergence paths;
-* And the results are absolutely staggering!
+2025/07/21: {business-2025-07-21-ai-integration-architecture} -- this is _not_ how we saw the future in 2023. +
+2023/07/05: {business-2023-07-05-ai-integration-trap} -- the four phases of AI-native evolution. +
+2023/07/04: {business-2023-07-04} -- the impediment is known -- our vendors will surely beat it!
 
-March 2023, Visiting (hackers have no shame) -- {quebec-llm-craze}::
-* Mingling with one of the most vibrant founder communities, I learn about shameless exploits of the mundane.
+And that is the short story behind the current CTO avalanche.
+

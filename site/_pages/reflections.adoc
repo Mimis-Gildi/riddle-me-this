@@ -1,23 +1,45 @@
 = Reflections
 :page-layout: single
 :page-permalink: /reflections/
+:page-author_profile: true
+:page-classes: wide
+:linkedin-1: link:/riddle-me-this/reflections/2025/06/24/what-li-good-for.html[What is LinkedIn really good for?,window=_blank]
+:linkedin-2: link:/riddle-me-this/reflections/2025/06/25/what-li-good-for-analysis.html[How to Game LinkedIn Like a Pro,window=_blank]
+:linkedin-3: link:/riddle-me-this/reflections/2025/07/03/li-enshittification.html[LinkedIn: Conclusion - Enshittification,window=_blank]
+:linkedin-4: http://localhost:4000/riddle-me-this/reflections/2025/07/07/li-human-problem.html[Amazing LinkedIn: A Human Problem!,window=_blank]
+
+:linkedin-1-li: https://www.linkedin.com/pulse/what-linkedin-really-good-vadim-kuhay-9z3oe/[What is LinkedIn really good for?,window=_blank,opts=nofollow]
+:linkedin-2-li: https://www.linkedin.com/pulse/how-game-linkedin-like-pro-vadim-kuhay-cysre/[How to Game LinkedIn Like a Pro,window=_blank,opts=nofollow]
+:linkedin-3-li: https://www.linkedin.com/pulse/linkedin-conclusion-enshittification-vadim-kuhay-fcbae/[LinkedIn: Conclusion - Enshittification,window=_blank,opts=nofollow]
+:linkedin-4-li: https://www.linkedin.com/pulse/amazing-linkedin-human-problem-vadim-kuhay-7bypc/[Amazing LinkedIn: A Human Problem!,window=_blank,opts=nofollow]
+
+:foot-linkedin-1: footnote:[A brief explanation of a live-system experiment conducted on LinkedIn by a small group of friend; published to LinkedIn 'Behind the Scenes at ASE' newsletter -- {linkedin-1-li}]
+:foot-linkedin-2: footnote:[A deep-dive analysis on exactly how Joe Random Hacker gamed LinkedIn so profoundly; published to LinkedIn 'Behind the Scenes at ASE' newsletter -- {linkedin-2-li}.]
+:foot-linkedin-3: footnote:[Conclusion: what we people do to once great platforms -- explanation why it happens; published to LinkedIn 'Behind the Scenes at ASE' newsletter -- {linkedin-3-li}.]
+:foot-linkedin-4: footnote:[Deeply candid and personal look at how I use a platform offered to me as is; published to LinkedIn 'Behind the Scenes at ASE' newsletter -- {linkedin-4-li}.]
+
+:llm-jobs-scare-craze: link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality,window=_blank]
+
+:foot-llm-job-scare: footnote:[A reflection on how my `Merica, dozing at work and in personal life, is startled by the LLM ChatBots, and then immediately freaked out for losing a job to a machine -- an honest and candid reflection to how Americans see their own competence -- {llm-jobs-scare-craze}.]
 
 _Reflections_ is the context group where I slow down and take the long way home.
 
-Here I gather personal notes, retrospective takes, and meaning-making fragments
-from the systems I’ve lived through — or helped bring to life.
+Here I gather personal notes, retrospective takes, and meaning-making fragments from the systems I’ve lived through
+-- or helped bring to life.
 
 These aren’t tutorials. They’re _interpretations_.
 Sometimes poetic, sometimes technical, always honest.
 
-The only exception is the *populism* fragment —
-a reflection on one or another public craze.
-
-You can explore the full archive of link:/riddle-me-this/categories/reflections/[Reflections] +
-Or browse all link:/riddle-me-this/tags/#populism[Populism-related posts].
+You can explore the full archive of link:/riddle-me-this/categories/reflections/[Reflections].
 
 == Curated List of Reflections
 
 _There are, of course, favorites._
 
-* ToDo: Pending import of historic works. Expected with v1.17.0.
+* I don't use social media, but I use https://www.linkedin.com/in/rdd13r/[LinkedIn,window=_blank,opts=nofollow] -- what is it tome?:
+** 1: Daring experiment{foot-linkedin-1} -- {linkedin-1} (June 2025)
+** 2: Gameable LinkedIn{foot-linkedin-2} -- {linkedin-2}. (June 2025)
+** 3: The https://en.wikipedia.org/wiki/Enshittification[Enshittification]{foot-linkedin-3} -- {linkedin-3}. (July 2025)
+** 4: How "I" personally see LinkedIn{foot-linkedin-4} -- {linkedin-4}. (July 2025)
+* Some initial reflections{foot-llm-job-scare} on the sudden and unexpected popularity of the LLMs ChatBots...
+

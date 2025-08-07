@@ -20,6 +20,8 @@ sidebar:
 :creative-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.3.0/OnCreativity.pdf
 :engineering-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.3.0/OnEngineering.pdf
 :leadership-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.3.0/OnLeadership.pdf
+:mailto-aseix: mailto:vadim@asei.systems?subject=About%20your%20business%2C%20M%C3%ADmis%20Gildi%20&body=Hello%20Vadim%2C%0A%0A%20%20I%20found%20your%20business%20email%20on%20your%20blog%20site[vadim@asei.systems]
+:mailto-rIdd13r: mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let's%20compete%3F[rIdd13r@pm.me]
 
 I'm a humble system designer, team builder, and player-coach.
 
@@ -37,7 +39,7 @@ I'm often on Discord, swapping ideas and field notes with peers and learners ali
 Speaking candidly, I am keen on separating that which matters from that which wouldn't. +
 Please DM `riddler9297` then we can talk, join each other communities, code together.
 
-== Hacker Forecast: link:/riddle-me-this/series[Trends You Won’t Hear from Gartner]
+== Hacker Forecast: link:/riddle-me-this/series[Trends You Won't Hear from Gartner]
 
 - link:/riddle-me-this/series/final-industrial-revolution/[2023: The Final Industrial Revolution]
 → The herald in Wetware Revolution; the last revolution.
@@ -50,16 +52,32 @@ Please DM `riddler9297` then we can talk, join each other communities, code toge
 
 '''
 
-🚜 - See Ukes' tractor? That's right, this digital garden is quickly growing:
+🚜 - See Ukes' tractor? That's right, this digital garden is quickly growing: +
+All the articles I've chosen to keep are now fully migrated.
+I've retired 131 posts -- mostly on smart weapons, geopolitical analytics, and startup topics from the past three years.
+I made this change to better serve distinct audiences: my work on startups, AI, and research now lives in its own dedicated Discord communities.
+This blog, by contrast, will focus on more universal topics -- things I hope will resonate with a wider group of readers.
+Final cleanup passes are still in progress. In the meantime, if a post speaks to you (or doesn't), please leave a comment
+-- I appreciate your feedback more than you know.
 
- 🔄 37 articles from prior publications are in staged migration
- and will appear here incrementally throughout v2.x releases.
 
 '''
 
-===  Wanna see my résumé?
+==  Wanna see my résumé?
 
 _See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.3.0[v2.3.0,window=_blank]_::
 {leadership-resume}[Leadership,window=_blank] résumé – coaching, CTO roles (hands-on). +
 {engineering-resume}[Engineering,window=_blank] résumé – code craft, production, profit. +
 {creative-resume}[Creative,window=_blank] résumé – teams, systems, vision, disruption.
+
+== Looking for more?
+
+* Company: https://asei.systems/[asei.systems] and email {mailto-aseix}.
+* Have a programming competition? 🤗 please, send invite to {mailto-rIdd13r}.
+* Want to collaborate on a technology book? 🤔 email me at work {mailto-aseix}.
+
+'''
+
+== Chronology of my Adventures
+
+{nbsp}
