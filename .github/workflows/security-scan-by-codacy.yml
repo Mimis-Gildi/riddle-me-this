@@ -11,6 +11,7 @@ on:
     types:
       - opened
       - reopened
+      - closed
   schedule:
     - cron: '17 11 1 * *'
 
