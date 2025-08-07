@@ -49,11 +49,6 @@ jobs:
 
       - name: Run Snyk directly from trunk
         timeout-minutes: 5
-        uses: snyk/actions/setup@master
-
-
-      - name: Run Snyk Test App
-        timeout-minutes: 9
-        run: snyk monitor
+        uses: snyk/actions/gradle@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_PROJECT_TOKEN }}
