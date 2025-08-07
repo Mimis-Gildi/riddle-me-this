@@ -88,7 +88,7 @@ _Timesaving {actions}[booms] ..._
 
 a| image::{a-codeql}/badge.svg[Security Scan by CodeQL,link={a-codeql},window=_blank,opts=nofollow]
 a| image::{a-codacy}/badge.svg[Security Scan by Codacy,link={a-codacy},window=_blank,opts=nofollow]
-a|
+a| image::{a-infra}/badge.svg[Custom Runner Introspect,link={a-infra},window=_blank,opts=nofollow]
 a| image::{a-qodana}/badge.svg[Security Scan by Qodana,link={a-qodana},window=_blank,opts=nofollow]
 
 a| image::{a-version}/badge.svg[Custom Bump Version on Feature Branch,link={a-version},window=_blank,opts=nofollow]
@@ -102,10 +102,10 @@ a| image::{a-new-user}/badge.svg[Custom New User Greeting,link={a-new-user},wind
 a| image::{a-jekyll}/badge.svg[GitHub Build by Jekyll,link={a-jekyll},window=_blank,opts=nofollow]
 a| image::{a-site}/badge.svg[GitHub Site Deploy by Pages,link={a-site},window=_blank,opts=nofollow]
 
+|
 a| image::{a-prune}/badge.svg[GitHub Prune Actions by CLI,link={a-prune},window=_blank,opts=nofollow]
 a| image::{a-cache}/badge.svg[GitHub Prune Actions Cache by CLI,link={a-cache},window=_blank,opts=nofollow]
 |
-a| image::{a-infra}/badge.svg[Custom Runner Introspect,link={a-infra},window=_blank,opts=nofollow]
 
 |===
 
