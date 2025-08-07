@@ -47,6 +47,12 @@ jobs:
           distribution: temurin
           java-version: 21
 
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4.4.2
+        timeout-minutes: 5
+        with:
+          gradle-version: 9.0.0
+
 
       - name: Run Snyk directly from trunk
         timeout-minutes: 5
