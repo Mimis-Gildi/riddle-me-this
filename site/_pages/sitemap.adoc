@@ -14,11 +14,6 @@
 - link:/tags/[Tags]
 - link:/archive/year/[Archives by Year]
 
-== Featured Articles
-
-- link:/riddle-me-this/adventures/analysis/2023/06/10/LLMs-what-good-for.html[2023–2025: The Final Industrial Revolution]
-- link:/riddle-me-this/reflections/populism/2023/05/08/chatGPT-will-replace.html[ChatGPT: Job Loss?]
-
 == Communities
 
 - link:https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]

@@ -13,11 +13,11 @@
 :publications-li: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257/[Newsletter: Behind the Scenes at ASE (LinkedIn),window=_blank]
 :imported-mm: link:/riddle-me-this/tags/#medium[Imported from Medium,window=_blank]
 :imported-li: link:/riddle-me-this/tags/#linkedin[Imported from LinkedIn Newsletters,window=_blank]
-:categorized: link:/riddle-me-this/categories/[all post categories]
+:categorized: link:/riddle-me-this/categories/[all post categories,window=_blank]
 
-This site is maintained by Vadim Kuhay — known in hacker circles as `rdd13r` — a lifelong builder, systems coach, and creative engineer.
+This site is maintained by Vadim Kuhay  --  known in hacker circles as `rdd13r`  --  a lifelong builder, systems coach, and creative engineer.
 
-Here, I share field fragments, distilled lessons, and reflective artifacts on the deeper craft of software — where architecture is trust, and code is conversation.
+Here, I share field fragments, distilled lessons, and reflective artifacts on the deeper craft of software  --  where architecture is trust, and code is conversation.
 
 If you came here looking for something formal, here are some useful links:
 
@@ -44,8 +44,7 @@ Publications::
 
 The Scene::
 I go by `rdd13r` as the primary key for the likes of LinkedIn, Reddit, Slack, IRC, Signal, and Telegram; +
-My Discord handle is `riddler9297`;
-And `riddler` for Briar or @ghost blockchain protocol channels.
+My Discord handle is `riddler9297`; And `riddler` for Briar or @ghost blockchain protocol channels.
 
 == Colophon
 
@@ -60,5 +59,5 @@ This site was handcrafted with:
 a trusted AI who co-authored not just the site, +
 but its stories
 
-Thank you for visiting — and reading. +
+Thank you for visiting  --  and reading. +
 May your own reflections begin soon.

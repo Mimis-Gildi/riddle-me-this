@@ -9,15 +9,14 @@ comments: true
 = Dev Millionaires: "Laggards are a renewable resource"?!
 rdd13r
 
- On a hacker community Discord:
- A brutal riff and a dispatch.
+ > Captured rant Torvalds style.
 
-> Captured rant Torvalds style.
+_Please bare with me -- this is my attempt to capture and express the Northern AI regulation craze of 2023 as transpired in Québec while attending remotely and on diaper duty in North Carolina._
 
 The craze continues as OpenAI CEO, Sam Altman, met with the USA Congress to promote his industry through mass hysteria
 -- calling to regulate AI immediately.
 Or what?!
-Well, he doesn't know... _**Save this article** - because I will tell you how this will go_, and you can come back here in a decade or so and admire how I steered you right.
+Well, he doesn't know... _**Save this article** -- because I will tell you how this will go_, and you can come back here in a decade or so and admire how I steered you right.
 
 Regulating AI is an idea as impotent as regulating firearms.
 Because it is wrong in the abstract, so it can never possibly be right in any concrete.
@@ -25,7 +24,8 @@ We should instead be regulating human behavior in all cases.
 The root cause of the problem is the Social Contract failure - it always has been.
 Unless, of course, guns kill all by themselves like the AI will (actually, it already has, but we'll get more on that later).
 Our brilliant approach to regulating 'Guns' led to extremely lucrative arms industry development.
-And our brilliant approach to the regulation of nuclear power, nuclear, as in the most necessary milestone in the current phase of humanity's evolution, which in hind site became obvious even a nincompoop, led to record economic stagnation.
+And our brilliant approach to the regulation of nuclear power, nuclear, as in the most necessary milestone in the current phase of humanity's evolution,
+which in hind site became obvious even a nincompoop, led to record economic stagnation.
 So, by all means, let's apply the same wisdom and reasoning (or the lack there of) again to the next most powerful development in civilization, shell we!?
 And we will!
 But what should _you_, a reasonable individual do?
@@ -38,7 +38,8 @@ If that statement made little sense to you, then there's little reason for you t
 However, if you are still reading, then there's a point for us to contemplate together.
 Social contract has only ever worked in one way: real individual consequences applied to the effects that one causes, not to intentions, not to causes, only the effects.
 This is sound in the abstract and thus is effective in regulating herd behavior wherever applied correctly.
-I can elaborate indefinitely, but it's the conclusion that's important: government up to and including the point of its conceptual then complete and utter failure, will not be able to manage innovation and evolution as it hasn't been able to do so thus far.
+I can elaborate indefinitely, but it's the conclusion that's important: government up to and including the point of its conceptual then complete and utter failure,
+will not be able to manage innovation and evolution as it hasn't been able to do so thus far.
 
 Apparently, 2023 has uncloaked a new breed of millionaire developers!
 'Bit-North (BN)', formally named so on its Tor home, also known as the North click, North-East, or Northern, has shattered its "Rich hacker, poor hacker" stereotype.
@@ -48,8 +49,9 @@ It has become an epicenter for idea exchange and a launchpad for teams targeting
 Alas, enjoying my new baby duties, I'll sit this one out.
 
 BN, with roots deep in the MIT hacker culture of the 50s, bloomed in the early 90s.
-Enduring cycles of growth and decline, akin to its American peers, this community received a lifeline when hacker Paul Jarvis penned, "Company of One: Why Staying Small Is the Next Big Thing for Business."
-This ignited a BN revival, drawing over 500 Discord participants and 200 in-person attendees in 2023, forming a global network of like-minded groups fostering disruptive software for years.
+Enduring cycles of growth and decline, akin to its American peers, this community received a lifeline when hacker Paul Jarvis penned,
+"Company of One: Why Staying Small Is the Next Big Thing for Business." This ignited a BN revival, drawing over 500 Discord participants and 200 in-person attendees in 2023,
+forming a global network of like-minded groups fostering disruptive software for years.
 
 The true allure of this community lies in the late 90s-introduced member surveys - no other clicks we know polls its members.
 Despite the strict anti-commercialization manifesto held by its three dozen cliques, BN has thrived, presumably due to its core principles.
@@ -67,16 +69,35 @@ If this indeed is true, then this can only be a temporary fluke!
 
 But what's important -- *_never fail to seas the moment!_*
 We can learn something from these hustlers.
-And I should probably share the scuttlebutt.
+And I should probably share the whole scuttlebutt.
+Along with the damming revelations about Corporate America in the age of AI.
 
-== ToDo: Research & Analysis
+== ToDo: Capture, Research, Analyze and Document.
 
-- 🚨 The Regulatory Fiasco
-- ⚔️ The Real Root Problem
-- 💰 Bit-North Gets Rich
-- 🧪 This Won’t Last
-- ✍️ Lessons and Scuttlebutt
+- The Regulatory Fiasco.
+- The Real Root Problem.
+- The-North Gets Rich.
+- This Won’t Last?
+- Lessons and Scuttlebutt...
+
+== Context:
+
+One of the greatest upheavals at the Northern happened during a loaded weekend of Google announcements and OpenAI scandals.
+This was a scheduled forming event with competitions, presentations, demoscene, prizes, and governance events.
+While the community, like many other founders' cliques, has absolutely cornered the AI-Augmentation market,
+any active regulation at this early point will likely put the ball right back in *_the lamers_* (IBM, Microsoft, Oracle, SAP, etc.) court
+-- buying these laggards more time to try and understand the value, giving them another chance to spin the narrative, and rewarding their lobbying efforts.
+So, to say that this decades old community of 300+ founders went up in arms would be an understatement.
+Ilya S., a lackluster researcher and a seriously wanting engineer has been a linchpin for the lamers' lobbying shenanigans from the start.
+And his "posing smart" pictures littering the internet certainly don't help him much in the eyes of the hacker crowd.
+Unable to get ahead through competence he chose politics as his bread and butter -- no sin in that, if you ask me.
+Nonetheless, this poor guy is now _the_ target for violence from every competent engineering community on the planet, even from some capable OpenAI employees.
+Luckily, Ilya never mustered enough prowess to put up any meaningful resistance.
+Reason is not his strong suite -- opinion is.
+Thus the mess quickly died down.
+Even Ilya's own master, Microsoft, threw him under the bus.
+The Northern, however, hadn't had a shakeup like this since the BBS crisis days.
 
 '''
 
-_Not published publicly._
+_Not yet published publicly._

@@ -4,11 +4,10 @@
 :page-permalink: /series/
 :page-author_profile: true
 
-Welcome to the curated collections — selected essays organized into thematic arcs.
-Each of these collections reflects a major thread that cuts across my work,
-as I explore the transformations happening in technology, society, and governance in this century.
+Welcome to the curated collections  --  selected essays organized into thematic arcs.
+Each of these collections reflects a major thread that cuts across my work, as I explore the transformations happening in technology, society, and governance in this century.
 
-== 📌 The Final Industrial Revolution
+== The Final Industrial Revolution:
 
 [cols="4,9"]
 |===
@@ -20,14 +19,14 @@ image::/riddle-me-this/assets/images/Athena-Girl.png[Athena Child,400]
 She is born into a world already fractured by war.
 
 a|
-The rise of AI and machine learning as systemic economic accelerators — not simply as tools,
-but *_as wetware augmentation_*.
+The rise of AI and machine learning as systemic economic accelerators
+--  not simply as tools, but *_as wetware augmentation_*.
 
 In this arc we track the displacement effects of LLMs, multimodal engines, cloud ecosystems,
 and cognitive augmentation that are transforming industries, reshaping labor,
 and redefining what it means to "work" or "produce."
 
-Most of these stories are *adventures* — journeys I have personally walked.
+Most of these stories are *adventures*  --  journeys I have personally walked.
 
 From daring startups applying unproven, experimental technologies in hopes of carving out a niche;
 through exceptionally wealthy investors allowing me and my teams to experiment with magnificent
@@ -37,13 +36,13 @@ pushing their own psychological and financial boundaries out of fear of missing 
 
 Some of these journeys are stranger than fiction.
 Others are lamer than a muggle.
-But rest assured — I will share with you the bits worth knowing.
+But rest assured  --  I will share with you the bits worth knowing.
 
 2+a|
 → link:/riddle-me-this/series/final-industrial-revolution/[Browse The Final Industrial Revolution]
 |===
 
-== 📌 Rupture: The War of Gods
+== Rupture: The War of Gods:
 
 [cols="4,9"]
 |===
@@ -60,24 +59,24 @@ The way war permeates and intercepts all aspects of human life and death.
 The way it quietly reshapes a vibrant hacker scene in Prague without even being noticed across Europe.
 The way it touches the preexisting existential struggle of the aging democratic order.
 
-The conflict between complacency, peace, business-as-usual — and the dawning realization that business-as-usual is no longer possible.
+The conflict between complacency, peace, business-as-usual  --  and the dawning realization that business-as-usual is no longer possible.
 
 In this arc we look at the power struggle between control-based governance and emergent self-organizing systems of competence.
 
-This struggle ranges from the dichotomy of national defense volunteer units of Ukraine,
+This struggle ranges from the dichotomy of national defense volunteer units of Ukraine (NDFs),
 and Pentagon-blessed federal draft-style mobilization;
-from the embrace of freedom of decision, always — to the daunting burden of chain of command.
+from the embrace of freedom of decision, always  --  to the daunting burden of chain of command.
 
 And amid this dichotomy, quietly, something else rises.
 Something new. Never seen before in combat.
-Another child of Athena: artificial combat intelligence —
+Another child of Athena: artificial combat intelligence  --
 the only being that is not human, yet charged with zeroing humans.
 
 2+a|
 → link:/riddle-me-this/series/rupture-war-of-gods/[Browse Rupture: The War of Gods]
 |===
 
-== 📌 The Fall of Democracy
+== The Ailments of Democracy:
 
 [cols="1,3"]
 |===
@@ -87,14 +86,17 @@ a|
 image::/riddle-me-this/assets/images/Democracy-Today.png[Democracy Today,400]
 a|
 
-*_American Democracy Today_*
+*_World Democracy Today_*
 
 Here we analyze how advanced technologies (AI, surveillance capitalism, regulatory capture) collide with decaying democratic institutions.
 
 The rise of rent-seeking bureaucracies, manipulation of public discourse, and the paralysis of democratic decision-making
-— all against the backdrop of accelerating technological change that governance structures are increasingly unfit to handle.
+--  all against the backdrop of accelerating technological change that governance structures are increasingly unfit to handle.
 
-In a world where Ukraine launches fully autonomous and devastating attacks on the occupiers’ strategic forces — while senile political elites cling to controls they no longer command.
+In a world where Ukraine launches fully autonomous and devastating attacks on the occupiers’ strategic forces
+--  while senile political elites cling to controls they no longer command.
+"Delta," for example, is a unique thinking intelligence the kind of which the West hasn't imagined yet.
+But already attempted to steal, failing due to incompetence.
 
 _Sporting Rictus-Americanus this blind copper goddess is bleeding competence to death._
 
