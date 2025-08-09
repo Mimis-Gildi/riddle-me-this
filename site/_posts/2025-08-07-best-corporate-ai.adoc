@@ -2,11 +2,11 @@
 categories: [adventures]
 tags: [AI,Generative AI,Enterprise,AI-Native,Integration]
 excerpt: >
-  most valuable AI integration deployment by a conservative company.
+  The most valuable AI integration deployment by a company you've never heard of.
 classes: wide
 comments: true
 ---
-= Working AI Integration: CTO Know-how in 2025
+= The AI Success Story Nobody's Talking About: How "Boring" Architecture Beats Hype
 :img-prefix: /riddle-me-this/assets/images
 :blog-url: https://mimis-gildi.github.io/riddle-me-this/
 :blog-title: Creative Engineering at Scale
@@ -19,270 +19,239 @@ comments: true
 :pub-asei: as outlined at {asei}
 :cto-bible: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :cto-trap: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
-
 :footer-cto-trap: footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- a complete playbook on integrating AI and staying ahead.]
 
 :google-recursion: https://medium.com/data-science-in-your-pocket/googles-mixture-of-recursions-end-of-transformers-b8de0fe9c83b[Google’s Mixture Of Recursions : End of Transformers,window=_blank,opts=nofollow]
 :symbolic-cognition: https://sciety-labs.elifesciences.org/articles/by?article_doi=10.31234/osf.io/86xsj_v35[Emergent Symbolic Cognition: A Unifying Computational Framework for Symbolic Thought in Humans and LLMs,window=_blank,opts=nofollow]
 :mcp-overview: https://modelcontextprotocol.io/overview[Model Context Protocol,window=_blank,opts=nofollow]
 
-Let me share a revealing AI success story!
-We can see what helps corporate successfully integrate AI.
-What kind of decisions, and what kind of corporate culture drives such repid adoption?
-And what happens to the business Architecture in the process.
+_Note: Client details have been altered to protect confidentiality.
+Industry, location, and identifying specifics have been changed while preserving the architectural lessons.
+This is what "complete discretion" looks like._
 
-AI-Native doesn't need to be hard.
-But it has a few prerequisites.
-It needs a little grassroots competence.
-And some basic Systems Architecture.
+While American CTOs are getting fired for AI failures, I need to share a different story.
 
-*_This explains how to slam-dunk AI integration on your own!_*
+A client from my past -- let's call them "Origami Corporation" -- just achieved something remarkable.
+They're moving through {cto-bible} +
+{nbsp} -- our *_AI Evolution phases_* like a hot knife through butter. +
+No drama. No vendor disasters. Just systematic execution.
 
-This article also explains a very advanced use for AI in 2025
--- the type of AI that makes a hard market divide between profit and loss.
+The kicker? They're using the same "boring" architecture we designed in 2018.
 
-A CTO Bible on Fource Phases of Corporate AI Adoption is a very useful read for your context: +
-*_{cto-bible}_*.
+*This is what happens when you fix foundations instead of chasing trends.*
 
-_**TL;DR for you** -- companies that *CAN* just integrate AI now:_
+== The Uncomfortable Truth About This Success.
 
-. Clean Architectural Boundaries are present;
-. Bounded Context Taxonomy is democratized{footer-cto-trap}.
+Before we dive in, three uncomfortable facts:
 
+. This isn't an American company (though your Ohio competitor could do this);
+. They're manufacturers, not a "tech company" (makes it worse for you);
+. They have ~30 software engineers (you probably have 300).
 
-== About The Customer: The Origami Corporation.
+If that stings, good. It should.
 
-{asei} has privacy and confidentiality in its root policy.
-Though, I have customer's permission to share and bare it all
--- the business is proud of their achievements
--- I will stick to the bare minimum necessary to tell their story in a way that matters to you.
-But don't worry, I can make a CTO-CTO confidential introductions, just DM me.
-Also, this company publishes a lot and can easily be found by searching the web.
+== About "Origami Corporation."
 
-Now the important part -- about this fine company.
+They make specialized components for heavy machinery -- the kind of boring B2B business that Silicon Valley ignores. Think hydraulics, not hashtags.
 
-This business is a small manufacturer of power hydraulics for heavy machinery worldwide.
-"Small" is relative to their industry, not their finances.
-And they only have maybe ~200 engineers of all kinds on payroll and another ~100 small contractors.
-Less than ~30 software engineers work on company's business domains -- this is an important detail!
-Overall, they're a part of one of the largest heavy machinery conglomerates globally, yet operate largely autonomously.
-And they do plenty of their own R&D work as well as custom and external manufacturing.
-We'll call them Origami Corporation.
+Key details that matter:
 
-I hope a business picture is emerging for you.
-This is more difficult to operate that say an insurance business is, for example.
+- ~200 engineers total (mostly hardware);
+- Only ~30 software engineers;
+- Part of a larger conglomerate but operate independently;
+- Extreme focus on production efficiency.
 
+*The critical insight:* They treat software like they treat #manufacturing# -- with discipline, boundaries, and respect for what works.
 
-=== The Business Problem: Flow is Everything.
+== The 2016 Disaster That Started Everything:
 
-Origami's kit is in everything from German/Swedish/Ukrainian tanks to heavy mining machinery and TBMs to most sophisticated aircraft and ships.
-Imagine the logistics involved int that!
-Most importantly, Origami is conformant to their national industrial ways.
-Unlike American and European manufacturers where human workers pull the brunt of assembly tasks, Origami's assembly lines are nearly fully automated.
-And that creates some unique and difficult challenges -- control over production pace is life or death for high pass-through business like them.
+Like most AI failure stories, this starts with a Big American Software company (let's call them "EvilCorp") selling dreams:
 
-Despite production automation business operations are a whole other world of their own -- and we step in here.
-Manufacturing engineers automated supply chain, but not supply chain management -- that's a different domain.
-After the large American software company made a big mess, it was {asei}, our company, that in six weeks of 2017 mapped Origami's path do domain mastery.
-I was focusing on the US market at the time and offered them an ecosystem of small capable startups to draw on -- which they did.
-If I had known then what I know now -- I would have just continued partnership with Origami indefinitely.
-But alas, the company attained their desired domain state in 2019.
+. **2016**: EvilCorp promises to "transform" their business;
+. **2017**: Everything is worse, costs are tripling;
+. **2018**: CTO rebels, brings in {asei} and other specialists;
+. **2019**: Complete architectural overhaul finished.
+. **2024-2025**: Crushing AI integration while you're still debugging chatbots!
 
-*Let's focus on the most important historic outcomes first:*
+The twist? EvilCorp wanted to connect their *_production lines_* to the internet. +
+For "synergy." 🤣
 
-. 2016: Origami buys business software solutions from an American conglomerate, EvilCorp.
-. 2018: Origami fires big software in favor of OpenStack, OSS, and own small teams.
-. 2019: Origami completes it's business remodelling <- we will start our story here.
-. 2024-03 to 2024-07: Origami fully accomplishes AI phase 1: liabilities -17%. <- very important.
-. 2024-06 to 2025-02: Origami fully accomplishes AI phase 2: liabilities -19%.
-. 2024-12 to 2025-06: Origami fully accomplishes AI phase 3: liability -23%, revenue +3%.
-. 2025-03 to Present: OMG, Origami is attempting something akin to AI phase 4! +
-But HOW?! +
-Let's see?!
+*That's when their CTO called me.*
 
-The picture that should be emerging in an American CTO mind here is *_the deliberate and managed business domain mastery_*.
-We will focus on the architecture with this in mind.
+== The Architecture That's Still Winning (7 Years Later)!
 
+We designed something radical for 2018: A modular monolith with military-grade isolation.
 
-== How did Big American Software (EvilCorp) FAIL Origami?
-
-And how will they fail you on your own AI Integration Journey?!
-I think these are important points to understand.
-In the simplest sense -- there was a conflict of interests.
-Origami wanted to rein in complexities of their business operation due to globalization.
-And the big American EvilCorp wanted to sell software for every little business problem.
-This only works in commodity market.
-
-*_This is exactly how companies are failing AI Integration today!_*
-
-But let's just dive deeper.
-What prompted this manufacturer to look for startup wizard-coders worldwide in the first place?
-When I first had my 1-hour meeting with this company's CTO, it went on longer than four hours.
-Normally, I'd terminate it.
-But he was so passionate.
-He was telling me how EvilCorp was destroying his entire business.
-After they replaced their working bespoke software with bloated and overcomplicated CrapWare Platforms of their own, that the users didn't know and didn't like, they went after the holy grail -- the production stack.
-You see, such manufacturing units must ALWAYS be isolated from the internet!
-Yet there arise the need for constant information flow from the production to the business domains.
-And EvilCorp pushed for integrating production with the business domains.
-Some really absurd crap, if you ask me!
-But they were after the databases.
-You see, EvilCorp sell manufacturing databases, and Origami ran production on Oracle RAC which works better for them.
-That was the last straw for this CTO, who went against CEO to meet with founders.
-
-
-== How I made the Unlikely Sale to Origami.
-
-I started our 1-hour meeting with the same basic philosophy I function on:
-
-. _**KISS** (Keep It Simple Stupid)_;
-. _Know thy **Customer**_!
-. Break *NOTHING*;
-. _Only then, *fix* something_.
-
-That KISS principle really resonated well with this CTO.
-In fact, I think that my Japanese friends hold this principle in high regard.
-He loved the idea of architectural freedom, simplicity, and decoupling from external dependencies.
-In fact, he was already on his way to OSS mentality -- maybe that's why he sought my kind out.
-Once he understood exactly how I solve problems, he made up his mind long before I knew it.
-The bottom line:
-
-*Just be honest!*
-
-
-== The 2019 Pre-AI Integration Story: Important Fundamentals:
-
-In 2016 Origami was buying a platform upon a platform from Americans EvilCorp, but that only made things worse.
-Having switched to competent advice and own teams' maturity development, the company executes extensive restructure.
-Once cleaned up this is what their architecture looked like:
-
-.Cascaded Modular Monolith:
+.The "Boring" Architecture That *Enables* AI:
 image:{img-prefix}/origami-2019-modular-monolith.png[]
 
-Let's understand this architecture and how is it different from the American Software Conglomerate EvilCorp architecture.
-_Why was this company was able to implement stage after stage of AI Integration *without any preparation*?_
+=== The Secret Sauce: Revolving Door Security Gateways:
 
+Imagine a revolving door that only opens to one side at a time. +
+That's how production talks to business systems:
 
-=== Origami's Modular Monolith -- NOT Cloud-native Distributed System:
+. Production calls out (_never_ receives calls);
+. Data enters the "door" (gateway);
+. Door rotates (physical air gap);
+. Business systems receive cleaned data.
 
-A keen observer may right away say that this is not a typical distributed system as happens in digital transformation.
-Who made it? Should you not have recommended cloud components? How is this transformed?
+*Military-grade security with a 4-hour rotation period.*
 
-I'm glad you asked! I designed this in 2018, right after my massive Deutsche Bank dbECM Platform released, which is fully distributed to the last lambda,
-but then this solution is something vastly different from dbECM! -- what gives, `rdd13r`?
-Have you ever heard the expression: "When all you know is a hammer, than everything looks like a nail?"
-A competent system designer will know and be able to personally implement ALL modern concepts and patterns,
-instead of pedalling the same narrow and lame buzzwordy tech. Real solving goes something like this:
+This paranoid architecture *_accidentally_* created perfect AI boundaries.
 
-. FULLY understand the business domain; the problem space; the business context;
-. Thoroughly evaluate ALL business assets, their capabilities and cost of replacement;
-. Solve for durable, reliable, time-tested, and cost-effective architecture -- three times;
-. Offer customer all best options in order of cardinality.
+== Why This "Old" Architecture Dominates AI Integration?!
 
-This customer made some sound decisions: coach engineering team to ownership, retain Oracle RAC, go with open source and architecture as much as possible.
-And we ended up with a Distributed (after all) Modular Monolith: Four well-defined Enterprise Archetypes (templates).
+Here's what American enterprises don't understand: *AI needs #boundaries#, not microservices.*
 
-EvilCorp architecture was one big "pseudo-distributed mess" tightly packed with their proprietary software.
-Instead, wASE Inc offered the smallest possible effective solution.
+=== Their AI Integration Timeline (With Real Results):
 
-And that's what happened here -- let's see more.
+[cols="2,8,5", options="header"]
+|===
+|Phase |What They Did |Business Impact
 
+h|*Phase I* +
+(2024 Q1-Q3)
+a|Added AI to #Domain Boundaries# using *_existing_* gateways.
+a|Liability costs: *-17%* in weeks.
 
-=== Archetype: Production Assembly Line:
+h|*Phase II* +
+(2024 Q2-2025 Q1)
+a|Cross-Domain AI intelligence via *_existing_* ETL pipelines.
+a|Liability costs: *-19%*. +
+New Introspection capabilities.
 
-Take a look in the bottom left corner of the diagram. The segregation there is "Production (Assembly 1-N) INACCESSIBLE."
-Note that production lines were already in process of being integrated into "pseudo-distributed mess,"
-so we rolled them back to the "production assembly line" the way it was designed by a brilliant Japanese vendor in 2012.
-And added one very special component that fit on a small rack on the back wall of the factory: "Revolving Gateway Client."
+h|*Phase III* +
+(2024 Q4-2025 Q2)
+a|AI-Driven *production* optimization -- all domains.
+a|Liability: *-23%*, +
+Revenue: *+3%* and climbing.
 
-So, what is this "Revolving Gateway"? More appropriately, the "Revolving-Door Security Gateway" pattern.
-Not very popular in typical corporate environments, but the world's most complete catalogues of patterns from the USA Department of Navy has a whole chapter dedicated to it
--- it's more common in weapon systems. The customer chose this architecture pattern because it is the strongest know form of security protection against exploits from the outside AND inside.
-The way it works is simple: the system is disconnected from the internet. Imagine a round room at a cross of two hallways (X) with a door that can be opened against only one of the four hallways at a time,
-by rotating the room. Let's say that we want to traffic people by the North-South hallway while East-West hallway is for the cops.
-At a precessed time using rotated certificates The gateway positions in the North position -- the internet and accept a long encrypted ledger payload for an internal recipient in the South position.
-The external party think that it completed a transaction with the intended recipient, but it's just captured -- the person walked in and the room rotates into the East position (clockwise).
-Here the cops will inspect the person and change them into an appropriate working attire. The ledger is being validated and reprocessed against another set of rules and certificates.
-And then the room rotates into the South position -- this time the gateway simulates the sender. And so it goes with the response.
-I have greatly simplified the way it works for the sake of simplicity. In reality nothing can call in -- all operations happen by a call-out instead.
+h|*Phase IV* +
+(2025 Q1-Present)
+a|Attempting autonomous coordination worldwide.
+a|_In progress_
 
-This is NOT a singleton -- every separate factory is set up like this. And Origami has a few of them too.
+|===
 
-This solution had only one drawback the initialization needs to be done by the sneakernet. Which Origami didn't mind.
+*Note the overlap* -- they run phases in parallel because their architecture allows it.
 
-Later in the article we will come back to see how this construct actually hides an ACL (Anti-Corruption Layer) necessary for seamless and fully decoupled AI integration.
+=== Why this Modular Monolith Beats Microservices for AI?!
 
+. **Clear Context Boundaries**: Each module owns its domain completely.
+. **ETL as Features**: Boring data pipelines become AI injection points.
+. **No Integration Hell**: 30 engineers can understand the whole system.
+. **Security by Design**: Revolving doors prevent AI contamination!
 
-=== Archetype: Business Domain (Operation N)
+Your 500 microservices can't do this. Their 4 modules can! +
+NOT because of implementation choices -- because of *_clean_* architecture.
 
-Let's move North-East on the diagram and take a look at the "Business Domain (Operation 1-N)" archetype.
-This is your ordinary corporate business domain. There is only one on the diagram but just like the previous archetype this is not a singleton.
-Every "business department" is set up like this and there a few in their office building.
-Each one is a namespace and has its own necessary compute, storage, services and databases.
-It operates exactly like any modern corporate IT environment with two additional important differences.
+== The Model Context Protocol (MCP) Revelation:
 
-. Added Revolving Door Security Gateways in case this part of business has anything to say to manufacturing;
-. In enforces a concept of Corporate Taxonomy (CTX) from which Enterprise Dictionary is automatically generated.;
+When {mcp-overview} emerged, it validated everything:
 
-It also accomplishes one additional point: A) Leaves Origami's bespoke application be; B) While providing a way to migrate to CTX over time.
+- Simple context boundaries -- They had these since 2019;
+- Clear data contracts -- Built into their ETL;
+- Domain isolation -- Archetypes and Revolving doors enforce this.
 
+They implemented MCP in *two weeks*. How long would it take you?
 
-=== Archetype: Officers' Pods (Revolving Door Security Gateway)
+== The Brutal Lessons for American CTOs:
 
-This is a very small Archetype that lives in the Public Cloud, and it is a Singleton, the first one we encounter.
-Various Business Domains and the Root domain we'll mention later come here from time to time to get the next time gap certificates,
-without which production assembly lines come to graceful shutdown. It also controls the revolving door rotation period.
-Remember, this CTO was worried about another Asian country getting into his business and stealing the manufacturing secrets.
-He knew busting through the buggy EvilCorp bloatware would have been a child's play for this aggressive actor.
-So he has a place where with his secure-key he can pull the plug on all or some parts of his business to prevent any further damage.
-The Colonial Pipeline fiasco did not happen yet. But if you research that incident today you will see that Colonial too had some poor-man's segregation protocols in place
--- and those saved the pumping operations from damage crackers wanted to bring.
+=== Lesson 1: Your Vendors Are the Problem.
 
-This Aggregate does not need to know about the Corporate Taxonomy and the nature of business operations.
-It does however publish the global "Trunking Policy" -- how all the "Change the Business" software releases function
--- same function as Google's Borg "root manifesto" for their Trunking Policy.
-For most companies this did not need to be separated out of the Root Domain -- even Google does not extract is out.
-But this has gone a long way to give this vendor-gouged CTO some solace and a peace of mind:
+EvilCorp wanted to "integrate everything." Sound familiar?
 
-In 2019 the Revolver period was 1 hour and the ETL exchanges would take about 3-5 minutes to process the data and shut down rotation.
-Then the CTO would test his rolling blackouts every quarter.
-Today, after the extensive AI integration is accomplished, I hear the period is 4 hours and the ETL takes about an hour.
-While the rolling blackouts are tested annually. I think this speaks for trust in technology.
+- Origami said no;
+- Fired the vendor;
+- Saved millions;
+- Now leads in AI!
 
+*When did you last fire a vendor for overreach?* +
+*When did you last profile vendor's competence?*
 
-=== Archetype: Root Domain (Eventstream Gateway) (Chinese Walls)
+=== Lesson 2: Boring Wins:
 
-And Finally, the Root Domain, a Singleton where the business definition lives.
-This where the VCS and TrunkOps live as well. Most developers and hardware engineers sit here too.
-Origami lakes it this was and there was no reason to change it.
-Also, the Master Ingress Controller is here -- meaning all the internet traffic must check in here.
+While you were deploying Kubernetes:
 
-At the end of this article you will find an Appendix which elaborates on the makeup of each domain a little more.
+- They kept their modular monolith;
+- They perfected their boundaries;
+- They focused on their business;
+- They're now doing Phase III AI.
 
-But what you should already get a sense for is clear separation of concerns (job descriptions) for each Archetype mapping to a domain.
+*Boring architectures print money. Exciting architectures print resumes.*
 
-I hope that you are also  getting a sense for a massive reuse effort while modeling the future-proof architecture of this company.
-The sacred law of "Knowing Your Customer" goes a long way in healthy business interaction. Take local data centers for example.
-The American software conglomerate was pushing hard on the "Cloud First" model -- which is all they knew
--- mainly their of cloud, but if not, others would do. But that doesn't just disregard the customer -- it also dismisses and insults them.
-Origami had a lot of small data center experience, and their need to run own hardware is not going anywhere soon
--- in fact, most manufacturing companies need to manage a lot of own iron anyway. Origami has had a competent Systems IT department,
-people who know how to buy good hardware cheaper and put it together efficiently.
-Moving all that iron into a cloud, or even a part of it produces no benefit and only introduces 3 major problems:
+=== Lesson 3: Small Teams with Clear Boundaries Outperform!
 
-. Dependency on someone else's SLA policies, hardware and software choices;
-. Triple or quadruple run the business costs because cloud provider needs profit too;
-. And finally, a big one, no control over exploitability of someone else's assets and liabilities.
+Your 300 developers in 50 teams can't coordinate. +
+Their 30 developers in 4 modules ship daily!
 
-One other aspect of this design Origami absolutely loved -- it can all be done in parallel, by many small hacker teams taking on one concern at a time.
-And these teams would at all times be integrated with the business people whose domain they're standardizing.
-Most importantly, there were no superficial deadlines on the whole program -- teams can work when they can, taking into account "Running the Business" needs.
-Sure there was a bottleneck of myself and ASE Inc. to produce, socialize, and publish the final business-technology architecture draft.
-But that is only 6 weeks of time, which is not much compared to 2 years of inaccessible EvilCorp perpetual bottleneck.
+*Architecture is a force multiplier -- in BOTH directions.*
 
+== "Why Aren't You Still Working With Them?"
 
-=== Why does this architecture work so well for AI Integration?
+The best question, and the best answer:
 
+**They don't need me anymore!** +
+Hadn't called since 2019 -- just now to tell me how's AI going.
 
+That's the point of good architecture. It survives its creator! +
+Seven years later, they're implementing advanced AI without consultants.
 
+Meanwhile, your competitors hire me every 18 months to fix the same problems.
 
+*Which company would you rather be?*
+
+== The Uncomfortable Mirror:
+
+This isn't about being Japanese, German, or American. It's about:
+
+- Discipline, facts, and rules of inference over vendor hype;
+- Boundaries over integration -- *what* are you integrating?
+- Patience over pivots -- thinking needs silence; how's yours?
+- Results over resumes -- *how* are you doing?
+
+Your competitor could do this. +
+But they're probably in another vendor meeting right now, +
+buying promises instead of building foundations. +
+"Same old ..."
+
+== What This Means for You!
+
+If a "boring" manufacturer can implement Phase III AI +
+with 30 engineers and 7-year-old architecture, +
+_what's your excuse_?
+
+- Too complex? -- They manufacture for aerospace.
+- Too regulated? -- They deal with military contracts.
+- Too legacy? -- They still run Oracle RAC at the core!
+- Too small? -- They have 1/10th your IT staff.
+
+*The difference isn't capability. It's discipline.*
+
+== The Path Forward:
+
+Stop chasing magic. Start building #Boundaries#: +
+(_You'll need them for a lot more than just AI._)
+
+. Fire vendors who want to "integrate everything."
+. Define your domains (for real this time)!
+. Build boring architectures that last.
+. *_Let AI enhance boundaries, not break them._*
+
+The companies winning with AI aren't the ones with the newest tech. +
+They're the ones with the _clearest boundaries_.
+
+*Origami proved this. Your competitor might be next.*
+
+What's your move?
+
+'''
+
+_Need help building boundaries that last? +
+That's exactly what we do at {asei}! +
+{nbsp} -- architectures that survive their creators +
+and enable real AI integration._
+
+P.S. I find systems I built 20 years ago raking cash today. 🤔
+
+*_No magic. No hype. Just foundations that work._*
