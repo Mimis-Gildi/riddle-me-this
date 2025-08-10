@@ -20,9 +20,6 @@ comments: true
 :cto-bible: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :cto-trap: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
 :footer-cto-trap: footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- a complete playbook on integrating AI and staying ahead.]
-
-:google-recursion: https://medium.com/data-science-in-your-pocket/googles-mixture-of-recursions-end-of-transformers-b8de0fe9c83b[Google’s Mixture Of Recursions : End of Transformers,window=_blank,opts=nofollow]
-:symbolic-cognition: https://sciety-labs.elifesciences.org/articles/by?article_doi=10.31234/osf.io/86xsj_v35[Emergent Symbolic Cognition: A Unifying Computational Framework for Symbolic Thought in Humans and LLMs,window=_blank,opts=nofollow]
 :mcp-overview: https://modelcontextprotocol.io/overview[Model Context Protocol,window=_blank,opts=nofollow]
 
 _Note: Client details have been altered to protect confidentiality.

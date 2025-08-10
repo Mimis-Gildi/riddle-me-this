@@ -21,7 +21,7 @@ Here, I share field fragments, distilled lessons, and reflective artifacts on th
 
 If you came here looking for something formal, here are some useful links:
 
-== Résumé & Profile Links
+== Résumé, Profile, Links...
 
 (release {release})
 
@@ -45,6 +45,12 @@ Publications::
 The Scene::
 I go by `rdd13r` as the primary key for the likes of LinkedIn, Reddit, Slack, IRC, Signal, and Telegram; +
 My Discord handle is `riddler9297`; And `riddler` for Briar or @ghost blockchain protocol channels.
+
+== Completed Migration:
+
+I've completed migrating over a hundred articles from other platforms at v3.0.0. +
+And I've learned much from that experience. +
+What we have here now is a small collections of curated stories most relevant to all of us.
 
 == Colophon
 

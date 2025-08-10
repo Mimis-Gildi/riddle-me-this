@@ -10,7 +10,7 @@ Welcome to *The Ailments of Democracy*  +
 {nbsp} --  an arc examining the erosion of democratic institutions under the accelerating pressure +
 of technological, economic, and epistemic forces.
 
-== ✦ What This Series Covers
+== ✦ What This Series Covers?!
 
 - The widening mismatch between governance capacity and exponential technological growth.
 - Rent-seeking bureaucracies hijacking regulatory power and public discourse for private gain.
@@ -19,7 +19,7 @@ of technological, economic, and epistemic forces.
 - The collapse of institutional competence and paralysis of political decision-making.
 - The decoupling of fiat financial systems from real productive capacity  --  sovereign debt spiraling toward systemic insolvency.
 
-== ✦ Why It Matters
+== ✦ Why It Matters?!
 
 - Institutions originally designed to protect democracy now actively undermine it.
 - Technology amplifies both truth and distortion  --  widening the competence and agency gap between governed and governors.
@@ -33,7 +33,7 @@ We are observing systemic failure in real time._*
 
 '''
 
-== Content
+== Content:
 
 🚜 <- Migration in progress 🚧
 
@@ -50,8 +50,8 @@ What appeals most is the transparency: fully open, yet invisible enough to avoid
 Those who seek will find.
 And those are the ones this is for.
 
-*_University materials feeding this are are not yet publicly available._*
+*_University research materials feeding this are not yet available -- and I want to bring models, not just stories here._*
 
 === Already Migrated
 
-- NONE yet.
+- NONE.
