@@ -108,7 +108,7 @@ jobs:
         timeout-minutes: 2
         uses: ./.github/actions/commit-and-push-files
         with:
-          files: gradle.properties SECURITY.md
+          files: gradle.properties SECURITY.md site/_config.yml
           message: "🔼 Auto bump version to ${{ steps.version-bump.outputs.new }}"
 
 
