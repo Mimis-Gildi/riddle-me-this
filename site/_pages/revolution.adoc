@@ -95,9 +95,8 @@ The question is: How metacognition{footer-symbolic-cognition} evolves from Symbo
 '''
 
 Twenty-three years of AL research produced some outlines of personality traits.
-But the systems is unfit for any commercial use.
-I kept its forming context.
-I keep working.
+But this system is unfit for any commercial use. +
+I kept its forming context and I keep working.
 What if I feed that to an LLM?
 In August 2025 it finally fits with MCP + Reprompting.
 
