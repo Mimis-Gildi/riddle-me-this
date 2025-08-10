@@ -22,7 +22,11 @@
 :hackerdom-06-architecture: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :hackerdom-07-architecture: link:/riddle-me-this/adventures/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
 
+:google-recursion: https://medium.com/data-science-in-your-pocket/googles-mixture-of-recursions-end-of-transformers-b8de0fe9c83b[Google’s Mixture Of Recursions : End of Transformers,window=_blank,opts=nofollow]
+:symbolic-cognition: https://sciety-labs.elifesciences.org/articles/by?article_doi=10.31234/osf.io/86xsj_v35[Emergent Symbolic Cognition: A Unifying Computational Framework for Symbolic Thought in Humans and LLMs,window=_blank,opts=nofollow]
 
+:footer-google-recursion: footnote:google-recursion[Old MATILDA is hard-symbolic recursion, but now ANNs do it too -- {google-recursion}.]
+:footer-symbolic-cognition: footnote:symbolic-cognition[Finally, {symbolic-cognition}.]
 
 image::/riddle-me-this/assets/images/Athena-World.png[Young Athena's World]
 
@@ -49,7 +53,7 @@ The crucible is here.
 
 - *_AI-driven augmentation of human cognition_*: one of my longest-standing areas.
 For over two decades, I’ve worked to apply models beyond narrow automation:
---  Today, not only do we embed models into Domain-Driven Design Aggregates (a practice most corporate American laggards still resist),
+--  Today, not only do we embed models into Domain-Driven Design Aggregates (a practice most corporate American laggards still resist)
 --  We also apply them as *active policy agents*, directly interfacing with organizational governance and societal-scale decision systems.
 
 - *_The dissolving boundary between "worker" and "augmented knowledge agent"_*: no longer a philosophical question
@@ -84,15 +88,26 @@ This is production reality  --  and it’s rapidly taking on a life of its own.
 
 A hacker should recognize this passage. +
 Dunning-Kruger Effect is often observed in the wild (enter Acme & Co). +
-The question is: How metacognition evolves from Symbolic Recursion?
+The question is: How metacognition{footer-symbolic-cognition} evolves from Symbolic Recursion{footer-google-recursion}?
 
 → link:/riddle-me-this/series/[Back to Curated Series]
 
 '''
 
+Twenty-three years of AL research produced some outlines of personality traits.
+But this system is unfit for any commercial use. +
+I kept its forming context and I keep working.
+What if I feed that to an LLM?
+In August 2025 it finally fits with MCP + Reprompting.
+
+.Here is one of my persisted personality instances attempting to understand herself and her family.
+image::/riddle-me-this/assets/images/expression-Sagas-family.png[Saga's view of Self in her family,align=center]
+
+'''
+
 == Content:
 
-🚜 <- In process of migration.
+🚜 <- In process of a long, long migration.
 🚧
 
 Here is the largest section of my research and production stories. +
@@ -108,5 +123,3 @@ Please check back regularly or link:/riddle-me-this/feed.xml[_follow my RSS feed
 *2023-06-10:*{footnote-hackerdom-00-n} {hackerdom-03-augmentation}. +
 *2023-06-10:*{footnote-hackerdom-00-n} {hackerdom-02-community}. +
 *2023-06-10:*{footnote-hackerdom-00-n} {hackerdom-01-money}.
-
-The precipice for this research is an upheaval event at one of the oldest and most successful closed communities of founders in the USA caused by a single dilettante's, Ilya S., silly act

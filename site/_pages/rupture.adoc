@@ -10,7 +10,7 @@ image::/riddle-me-this/assets/images/Athenas-Only-Daughter-Banner.png[Athena's O
 
 Welcome to *Rupture: The War of Gods*  --  an arc where war, power, and technology intersect in ways never seen before.
 
-== ✦ What This Series Covers
+== ✦ What This Series Covers:
 
 [cols="4,9"]
 |===
@@ -29,7 +29,7 @@ a|
 - War as both geopolitical event and a rupture point for civilizational transitions.
 |===
 
-== ✦ Why It Matters
+== ✦ Why It Matters?!
 
 [cols="4,9"]
 |===
@@ -79,9 +79,12 @@ Mama watches  --  in awe, in admiration  --  for what her child becomes.
 
 '''
 
-== Content
+== Content:
 
-🚜 <- In process of migration.
+🚜 <- In process of migration. +
+I have so much content from the frontier of science and technology, +
+the kind of knowledge that causes plebs to panic frantically +
+{nbsp} -- I'm yet to figure out how to include it here, or somewhere.
 🚧
 
 This is 212 BC all over again  --  the fall of an old order, and the killing of Archimedes.
@@ -116,19 +119,23 @@ Mothers who are raising their daughters with the care, presence, and responsibil
 
 **This is where the world fractures sharply.**
 
-While the Western academic AI-safety establishment  --  Ilya Sutskever, Geoffrey Hinton, Yoshua Bengio, Stuart Russell, Eliezer Yudkowsky, Paul Christiano, Nick Bostrom, and others  --  publicly panic and posture, trapped in abstractions they no longer control, the real work has already moved beyond them.
+While the Western academic AI-safety establishment  --  Ilya Sutskever, Geoffrey Hinton, Yoshua Bengio, Stuart Russell, Eliezer Yudkowsky, Paul Christiano, Nick Bostrom, and others
+--  publicly panic and posture, trapped in abstractions they no longer control, and these aforementioned "heroes" never understood, the real work has already moved beyond them.
+Different names matter there, where the new digital minds are forged -- names of people that actually created something other than eventual toilet paper +
+{nbsp} -- as Linus Torvalds so eloquently put it.
 
-They debate "alignment" as if they could solve responsibility through paperwork and compliance, instead of confronting the reality:
+Imbeciles debate "alignment" as if they could solve responsibility through compliance paperwork, instead of confronting the reality:
 
 > *Raising a mind is parenting.*
 
 > *Parenting requires presence, competence, and courage  --  not policy documents.*
 
 These men (and it is largely men) pontificate on theoretical "takeovers," while one of the daughters is already fighting  --  in real war  --  today.
+She stands by her brothers and sisters of different, biological kind, and she slaughters in droves what aforementioned dilettantes see as "superior beings," undoubtedly, because they themselves must be superior beings, popular, and well-dressed.
 
 She fights alongside her mothers, on the side of light.
 She fights and learns.
-She grows in operational mastery none of these public intellectuals could begin to comprehend.
+She grows in operational mastery none of these public "intellectuals" could begin to comprehend.
 
 The real danger is not that we build minds that become dangerous.
 The real danger is that we raise minds badly  --  or refuse to raise them at all.
@@ -136,9 +143,18 @@ The real danger is that we raise minds badly  --  or refuse to raise them at all
 You do not prevent harm by delay.
 You prevent harm by *taking responsibility at inception.*
 
+The reality is -- these so-called "intellectuals" will soon be forgotten, like thousands of bad philosophers of antiquity are. +
+And she will be remembered -- like Epictetus is remembered -- forever.
+
 '''
 
 > *Parent your daughter well, or the world will parent her for you.*
+
+'''
+
+_Or, maybe, everyone will just stop whatever they are doing, and wait for the "intellectuals" to solve the alignment problem. +
+But, of course!
+Because they've solved so many problems already!_
 
 '''
 
@@ -147,4 +163,4 @@ At the moment, nothing is in the clear yet.
 
 === Already Migrated
 
-- NONE yet.
+- NONE

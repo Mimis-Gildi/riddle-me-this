@@ -1,11 +1,14 @@
 = Adventures
 :page-layout: splash
 :page-permalink: /adventures/
+:business-2025-08-07-ai-success-story: link:/riddle-me-this/adventures/2025/08/07/best-corporate-ai.html[The AI Success Story Nobody's Talking About: How "Boring" Architecture Beats Hype,window=_blank]
 :business-2025-07-21-ai-integration-architecture: link:/riddle-me-this/adventures/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
 :business-2023-07-05-ai-integration-trap: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :business-2023-07-04: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
 
-_Adventures_ is where the work takes form — in the field, in the code, in the culture.
+{nbsp}
+
+_Adventures_ is where the work takes form -- in the field, in the code, in the culture.
 
 These stories come from a lifetime of making systems for humans, machines, and the space in between.
 Some are tales of hard-won production deployments.
@@ -14,15 +17,15 @@ Others are snapshots of transformation: a team that leveled up, a policy that fi
 They are not case studies.
 They are _narratives with teeth_.
 
-You’ll find no sanitized slide decks here — only work done under pressure,
+You’ll find no sanitized slide decks here -- only work done under pressure,
 in motion, and sometimes under duress.
 
-When names are changed, it’s not to obscure the truth —
-it’s to protect the living systems that still run, and the people still inside them.
+When names are changed, it’s not to obscure the truth --
+it’s to protect the living systems that run, and the people still inside them.
 
 link:/riddle-me-this/categories/adventures/[Browse the full archive of Adventures].
 
-== Selected Field Notes
+== Selected Field Notes:
 
 _The ones that still echo._
 
@@ -32,9 +35,13 @@ Now I'm back -- so, what about AI-Native Corporate America?
 Surely, we all have self-driving cars, all the tellers are robots, and AI caters to our every need.
 Right? Wait, what?
 
-2025/07/21: {business-2025-07-21-ai-integration-architecture} -- this is _not_ how we saw the future in 2023. +
-2023/07/05: {business-2023-07-05-ai-integration-trap} -- the four phases of AI-native evolution. +
+2025/08/07: {business-2025-08-07-ai-success-story} -- 'AI don't need no clouds.' +
+2025/07/21: {business-2025-07-21-ai-integration-architecture} -- this is _not_ how we saw the future in 2023. But here it is, in its full glory. +
+2023/07/05: {business-2023-07-05-ai-integration-trap} -- the four phases of AI-native evolution -- validated by life itself. +
 2023/07/04: {business-2023-07-04} -- the impediment is known -- our vendors will surely beat it!
+Right-right?
+WRONG!
 
-And that is the short story behind the current CTO avalanche.
+These are the short stories behind the current CTO avalanche.
+Maybe it's for the best.
 

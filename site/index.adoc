@@ -52,14 +52,7 @@ Please DM `riddler9297` then we can talk, join each other communities, code toge
 
 '''
 
-🚜 - See Ukes' tractor? That's right, this digital garden is quickly growing: +
-All the articles I've chosen to keep are now fully migrated.
-I've retired 131 posts -- mostly on smart weapons, geopolitical analytics, and startup topics from the past three years.
-I made this change to better serve distinct audiences: my work on startups, AI, and research now lives in its own dedicated Discord communities.
-This blog, by contrast, will focus on more universal topics -- things I hope will resonate with a wider group of readers.
-Final cleanup passes are still in progress. In the meantime, if a post speaks to you (or doesn't), please leave a comment
--- I appreciate your feedback more than you know.
-
+🚜 - Migration is completed at v3.0.0.
 
 '''
 
@@ -70,7 +63,7 @@ _See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this
 {engineering-resume}[Engineering,window=_blank] résumé – code craft, production, profit. +
 {creative-resume}[Creative,window=_blank] résumé – teams, systems, vision, disruption.
 
-== Looking for more?
+== Looking for me elsewhere?
 
 * Company: https://asei.systems/[asei.systems] and email {mailto-aseix}.
 * Have a programming competition? 🤗 please, send invite to {mailto-rIdd13r}.

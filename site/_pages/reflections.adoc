@@ -1,5 +1,5 @@
 = Reflections
-:page-layout: single
+:page-layout: splash
 :page-permalink: /reflections/
 :page-author_profile: true
 :page-classes: wide
@@ -22,6 +22,8 @@
 
 :foot-llm-job-scare: footnote:[A reflection on how my `Merica, dozing at work and in personal life, is startled by the LLM ChatBots, and then immediately freaked out for losing a job to a machine -- an honest and candid reflection to how Americans see their own competence -- {llm-jobs-scare-craze}.]
 
+{nbsp}
+
 _Reflections_ is the context group where I slow down and take the long way home.
 
 Here I gather personal notes, retrospective takes, and meaning-making fragments from the systems I’ve lived through
@@ -32,14 +34,14 @@ Sometimes poetic, sometimes technical, always honest.
 
 You can explore the full archive of link:/riddle-me-this/categories/reflections/[Reflections].
 
-== Curated List of Reflections
+== Curated List of Reflections:
 
 _There are, of course, favorites._
 
-* I don't use social media, but I use https://www.linkedin.com/in/rdd13r/[LinkedIn,window=_blank,opts=nofollow] -- what is it tome?:
+* I don't use social media, but I use https://www.linkedin.com/in/rdd13r/[LinkedIn,window=_blank,opts=nofollow] -- what is it to me?
 ** 1: Daring experiment{foot-linkedin-1} -- {linkedin-1} (June 2025)
 ** 2: Gameable LinkedIn{foot-linkedin-2} -- {linkedin-2}. (June 2025)
 ** 3: The https://en.wikipedia.org/wiki/Enshittification[Enshittification]{foot-linkedin-3} -- {linkedin-3}. (July 2025)
-** 4: How "I" personally see LinkedIn{foot-linkedin-4} -- {linkedin-4}. (July 2025)
+** 4: How "I" personally see LinkedIn{foot-linkedin-4} -- {linkedin-4} (July 2025)
 * Some initial reflections{foot-llm-job-scare} on the sudden and unexpected popularity of the LLMs ChatBots...
 

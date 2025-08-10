@@ -8,66 +8,97 @@ classes: wide
 :page-layout: single
 :page-permalink: /about/
 :page-author_profile: true
+:captain-school: https://gervi-hera-vitr.github.io/sindri-labs/[Héra Academy Laboratory,window=_blank,opts=nofollow]
+:mimis-gildi: link:https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
+:footer-captain-school: footnote:[Gervi Héra Vitr is a home school in a community of homeschoolers. Here we don’t separate theory from application or learning from life. It's operated by our {mimis-gildi} family.]
+:asei: https://asei.systems/
+:about-asei: {asei}about[here,window=_blank,opts=nofollow]
+:mail-vadim: mailto:vadim@asei.systems[vadim@asei.systems]
+:footer-asei-disclaimer: footnote:[{asei}[ASE Inc.,window=_blank,opts=nofollow] is a family owned business formed 2016 as a holding company for startups, international research activities and strategic partnerships, and Vadim's consulting activities.]
+:footer-autonomous-weapons: footnote:[ASE Inc. and subsidiaries manufacturing autonomous and unmanned wepons systems do not and will not operate in the United States or comply with any US AI regulations; nor is any such software manufactured in the US. ASE autonomous weapon systems operate strictly in the European Union. ASE Inc. does not engage in discussions of autonomous weapons technologies.]
+:footer-ai-personality-research: footnote:[ASE Inc. MATILDA and MLOps platfroms are proprietary software limited to the coalition partners, spanning 23 years of active developmen not for general market consumption.]
 
 Welcome, friend. I'm glad you're here.
 
-My name is Vadim Kuhay -- known on the scene as `rdd13r` since 1992.
+My name is Vadim D. Kuhay -- known on the scene as `rdd13r` since 1992.
 I'm a system designer, player-coach, and hands-on engineer with over three decades in the field,
 across startups, Fortune 500 giants, defense contracts, and public good.
+Here is all about me -- I lead an open inclusive life.
 
 I build systems that survive their first user
 -- and teams that survive their first rewrite.
 
 == What I Do:
 
-I practice *Extreme Programming*, *Domain-Driven Design*, and *DevOps culture*
--- not as buzzwords, but as disciplines.
-I help organizations align policy with practice and transform by example, not decree.
+I practice *Extreme Programming*, *Domain-Driven Design*, and *DevOps culture* +
+{nbsp} -- not as buzzwords, but as disciplines. +
+I help organizations align policy with practice and transform by example, +
+not decree.
 
-I architect platforms, mentor engineers, coach domain teams,
-and push production-first delivery in environments that *_often_* resist it.
+I architect platforms, mentor engineers, coach domain teams, and push production-first delivery +
+in environments that *_often_* resist it.
 My work lives in systems you’ve probably used
 -- though the best ones are invisible
 -- such is the simple nature of servitude software.
 
+Most importantly, I nurture open co-mentoring communities of thinkers and makers.
+
 == Why I Do It:
 
-Because software is how we tell the truth -- at scale.
+- Because software is how we tell the truth -- at scale.
+- Because when teams share language, they move faster -- and think better.
+- Because the only thing that scales is how you think.
 
-Because when teams share language, they move faster -- and think better.
-
-Because the only thing that scales is how you think.
+Oh, and because I was born to engineer the world a better place. +
+I do this regardless of money.
+Just ask mother Athena.
+😉
 
 == Where It Leads:
 
 This site contains fragments of my story:
-lessons from the field, case studies, reflections, and some resume material.
-If any part of it speaks to you
--- personally, technically, or philosophically
--- I welcome the connection.
+lessons from the field, case studies, reflections, +
+and some resume material.
+If any part of it speaks to you +
+{nbsp} -- personally, technically, or philosophically +
+{nbsp} -- I welcome the connection.
 
 You can find me in production, in conversation, or in the stories I leave behind.
 
-== ...one more thing.
+== ...another thing,
 
 I'm also a founder.
 But realistically, every hacker is
 -- since long before the MIT Model Railroad Club.
 
-If you're a hacker too, and the mundane talk above didn’t impress you,
-look for me in bonded warehouses.
+If you're a hacker too, and the mundane talk above didn’t impress you, +
+look for me in bonded warehouses; or DRMO.
 
 A hacker knows what that means.
+
+== ...oh, and one more thing.
+
+I am a parent who homeschools his kids.
+My 15-y-o son went through public schooling until high school
+-- Wake County public education system is considered the best in the nation.
+Most likely I will also homeschool my 2-y-o daughter through her high school years when she gets there.
+
+This is our non-religious academically-focused school{footer-captain-school} on GitHub: {captain-school}.
+
+If you are a homeschooling parent focusing on holistic development of your child, +
+I'd love to talk to you and compare notes.
+Our child is graduating from high school early. +
+And that presents its own dilemmas to ponder over.
 
 '''
 
 == You May Have Found me through my Other Activities...
 
-* MATILDA, MLOps Research Platform -- see me on Discord `riddler9297`
-* Smart Weapons Systems -- contact through propper MilSpec channels.
-* Corporate Engagements -- email mailto:vadim@asei.systems[vadim@asei.systems], or https://www.asei.systems/about[here,window=_blank,opts=nofollow].
+* _Corporate Engagements_ -- *actively engaged*{footer-asei-disclaimer} -- email {mail-vadim}, or {about-asei}.
+* Smart Weapons Systems -- foreign{footer-autonomous-weapons} -- contact through propper EU MilSpec channels.
+* MATILDA, MLOps -- _supporting active research_{footer-ai-personality-research} -- see me on Discord `riddler9297`
 
-FYI, I also publish on
+FYI, I also republish some articles to:
 
-* https://medium.asei.systems/[Medium -- medium.asei.systems,window=_blank,opts=nofollow] -- some articles with immersive reader;
-* https://www.linkedin.com/newsletters/7074840676026208257/[LinkedIn -- Behind the Scenes at ASE,window=_blank,opts=nofollow] -- random insights (reader supported).
+* https://medium.asei.systems/[Medium -- medium.asei.systems,window=_blank,opts=nofollow] -- general insights, with immersive reader support;
+* https://www.linkedin.com/newsletters/7074840676026208257/[LinkedIn -- Behind the Scenes at ASE,window=_blank,opts=nofollow] -- usually Corporate America related stories.
