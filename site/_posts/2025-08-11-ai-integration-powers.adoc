@@ -1,0 +1,325 @@
+---
+categories: [adventures]
+tags: [AI,Generative AI,Enterprise,AI-Native,Integration]
+excerpt: >
+  Magic in phases of AI: Phase 1 - AI-Integration.
+classes: wide
+comments: true
+---
+= Pure Gold: The AI Integration that just Works
+:img-prefix: /riddle-me-this/assets/images
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:pub-mm: as published on Medium by {mm-newsletter}
+:asei: https://asei.systems/[ASE Inc.,window=_blank]
+:pub-asei: as outlined at {asei}
+:cto-bible: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
+:cto-trap: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
+:footer-cto-trap: footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- a complete playbook on integrating AI and staying ahead.]
+:mcp-overview: https://modelcontextprotocol.io/overview[Model Context Protocol,window=_blank,opts=nofollow]
+
+In my previous article I wrote about a long-lost client of mine who called back to share a no less than astounding story -- attaining Phase III of AI-Native evolution in two years.
+I was amazed because I remembered their architecture: Modular Monolith.
+But soo it made sense -- they had clean boundaries so adding AI magic was purely incremental for them.
+And here I will describe their astounding financial gain simply from Phase I.
+
+== Inversion of Concerns.
+
+It all started in 2018 with the creation of Corporate Taxonomy (CT).
+And from the CT we have an automatic Enterprise Dictionary (Dict).
+I first need to what CT is and why it was needed.
+Let me remind you, Origami makes high precision hydraulic power transfer components.
+
+Origami has astoundingly many customers that roughly divided into three groups:
+Integrators -- people who use Origami components as part of bigger machines usually of their own designs; Maintainers -- people who repair all kinds of industrial machines and occasionally find Origami components in them; Explorers -- people who design new kinds of industrial machines and want to propose new components to Origami.
+
+Obviously, some of the customers fit into more than one group.
+And the groups are extrapolated because their needs and thus impact on Origami is different.
+
+* Integrators -- predictable, planned, runs on a long case cycle; uses existing products and components;
+* Maintainers -- unpredictable, sporadic; may call discontinued products; requires inventory management;
+* Explorers -- expected, disruptive, expensive; requires prototyping; inconsistent strategic value.
+
+In 2016 all of this business interaction was channeled through the same "Front Office." This was expensive and prone to raising havok in the "Back Office" from time to time.
+Order of Business was the first necessary step in cutting through chaos.
+And soon you will see why that matters.
+
+=== Corporate Taxonomy (CT).
+
+Let's understand what is CT and how it works.
+It's a classification of business _object_ AND *behaviors*.
+This is exactly the magical thing necessary for AI-Native integration to just seamlessly go as is.
+And this is exactly why 80% of corporate fails miserably integrating LLMs today.
+Let's start with an example -- an Order artifact.
+
+An artifact in CT has the following properties:
+
+* _Name_ -- the logical unique identifier of the artifact;
+* _Type_ -- the logical type classifier of the artifact;
+* _Attributes_ -- the physical properties OWNED by the artifact;
+* _Policies_ -- the business rules owned by this artifact.
+
+Note, there is no behaviors, those are a part of aggregates which we will understand later.
+The 'Name' above is just an identifier.
+Class carries object constitution properties such as inheritance and encapsulation.
+Attributes are _data_ and thus represent *state*.
+And policies describe what is possible or not with such objects.
+Let's take a look at Origami Order artifact:
+
+[source,yaml]
+----
+com.origami.BusinessObject:
+  parent: null
+  name: Object
+  api: v3.1.7
+  policies:  # Note, this part is runtime immutable
+    - name: Creation
+      type: com.origami.policy.OnCreate
+      api: v2.0.0
+    - name: Modification
+      type: com.origami.policy.OnModify
+      api: v2.4.4
+    - name: Delete
+      type: com.origami.policy.OnDelete
+      api: v2.0.0
+  attributes:
+    required:
+      immutable:
+        - name: id
+          type: UUID
+        - name: created
+          type: Instant
+      operational:
+        - name: modified
+          type: Instant
+        - name: description
+          type: com.origami.data.RecordList
+      optional:
+        - name: comments
+          type: com.origami.data.RecordList
+        - name: tags
+          type: com.origami.data.RecordList
+----
+
+This is a base artifact that is a parent to all other business objects.
+Look at how much order, control, and predictability we already get with this simple artifact.
+And now let's see how it works with the Order artifact.
+
+[source,yaml]
+----
+com.origami.Order:
+  parent: com.origami.BusinessObject
+  name: Order
+  api: v11.1.0
+  policies:
+    - name: Archival
+      type: com.origami.policy.OnArchival
+      api: v1.0.0
+  attributes:
+    required:
+      immutable:
+        - name: origination
+          type: com.origami.data.crm.Record
+      operational:
+        - name: disposition
+          type: com.origami.data.material.management.ChainOfCustody
+        - name: reconciliation
+          type: com.origami.data.accounting.Reconciliation
+      optional:
+        - name: comments
+          type: com.origami.data.RecordList
+        - name: tags
+          type: com.origami.data.RecordList
+    aggregates:
+      - name: handlers
+        type: com.origami.business.process.HandlerList
+        cardinality: 0
+      - name: operators
+        type: com.origami.business.process.OperatorList
+        cardinality: 999
+----
+
+This is an Order artifact that is a child of the business Object artifact.
+Take a closer look at how it is defined for Origami.
+This actually a *_baseline_* Order artifact from which ALL domains inherit a concept of the order at Origami.
+
+The boundaries AI cannon live without should already be visible and intuitively understood just from this aggressively simplified example.
+
+Let me give you an example on a simple and more common domain so that we can understand how this object moves through the business -- a restaurant example.
+
+=== Lifecycle of an Order (Hospitality Domain Example).
+
+When a party is seated in a restaurant the life of the Order object begins.
+It will have its type, of course, and a unique identifier because every business object inherits that from the parent, the Business Object.
+It's type will not be just the Root domain Order class, despite the fact that all parent object types are first defined there.
+It will be a child, something like `com.eats.waiting.DiningRoomOrder`.
+That is because the child will have attributes a waiter cares for by the root domain does not, such as which waiter originated the order.
+An important concept I am skimping over here is that the attributes typed with another domain will not have an object there, just a `reference`.
+And you see that Origami chose to have that reference at the root of the Order hierarchy which means in their business process all domains need that information.
+But that is not strictly important for our explanation for why AI was so easy for Origami.
+I include this to not alienate some of my peers helping America modernize like I do.
+
+Here is the most important part to understand about the Domain Boundaries: each Bounded Context has its own and private meaning for a word used throughout the business.
+For a waiter, for example, the meaning of the word "Order" has to do with: which table, list of ordered items with various adjectives, and the total amount due.
+And the cook couldn't care less about which table, he knows which waiter, and he wants to know the adjectives on the steak.
+Meanwhile, the accountant doesn't care about any of those things, but he does care about the total amount due and the date of the order.
+
+Yet, it absolutely MUST be that exactly same order for all of them because it represents a business event that changed the state of the business.
+In fact, that order represents a basket of many correlated business events that belong together.
+And for different areas of the business they mean different things.
+And all of then are important to the overall health of the business.
+
+So, let's think for a minute about when is the Order "closed"?
+Is that when the waiter hands it to the cook or collects the payment?
+Or when the bank settles the payment?
+Or when the customer leaves the restaurant?
+Or when accountant closes the quarter's book?
+I will leave you to think about this question for a minute.
+You should, especially if you are a CTO in the age of AI.
+
+=== About Enterprise Dictionary (Dict).
+
+The enterprise dictionary is exactly that: a dictionary.
+But a very special one -- the one your AI will want.
+When you open the Eats restaurant Enterprise Dictionary and look up Order, you will find several entries.
+Unlike common dictionary it will not take you through generic meaning of the word "Order".
+Instead, it will list the base Order, and it's meaning to the restaurant, such as a business event that happened and included a sale.
+And below it will have "order" again, with its meaning to the waiter, and then to the cook, and then to the accountant.
+Do you see how little order to business makes everything trivially simple for AI to understand?
+And not just to AI.
+
+== Staging for Phase I at Origami.
+
+The staging to make AI Integration Phase I at Origami happened along before anybody even cared about AI.
+It was a result of two activities: Corporate Taxonomy and Public API.
+These two events caused "Inversion of Concerns" and "Segregation of Control."
+
+At first, the CTO fought me a little about publishing the dictionary and the API publicly -- you may recall he was worried about corporate espionage.
+Once I explained the full progression of business evolution that follows and the limitations of any possible risk, he changed his mind.
+
+The Inversion of Concern.
+Previously, customers would call in.
+That is a `command`.
+And a command wants a response, which costs money -- Origami paid even for the sale that was already there.
+Publishing the API and exposing the business process to the public made self-service possible
+-- the customer would not need to call in and the customer would do the work of ordering on their own.
+
+The Segregation of Control.
+Previously, the Fron Office people cared what happened to the orders they facilitated.
+But now, each business domain cares ONLY about their own part of the Order's Lifecycle, squarely in their Context and Ubiquitous Language.
+Cost of doing business dropped dramatically, I collected my payment, and I was on my way.
+But little did I know that that's just the beginning of this story.
+What happens years later is even more remarkable.
+
+=== MCP that Origami Whole!
+
+I left Origami with one more gift for them -- the one I always leave behind -- self-sufficient multidisciplinary teams.
+You see, I love my craft.
+No, I adore it!
+And I am always tenacious about imparting my craft to others.
+This was the part Origami appreciated most with time, hence the belated call from the CTO
+-- and the one they usually don't appreciate so much in the beginning.
+This team continued learning expanding the depth and breadth of their craft.
+When AI cam about with all the hype and fanfares -- they noticed.
+
+The MCP was not available when Origami started experimenting with AI.
+But everything else was conveniently in place.
+And one small brilliant enhancement changed everything for Origami.
+
+[source,yaml]
+----
+com.origami.BusinessObject:
+  parent: null
+  name: Object
+  api: v4.0.3
+  policies:  # Note, this part is runtime immutable
+    - name: Creation
+      type: com.origami.policy.OnCreate
+      api: v2.1.0
+    - name: Modification
+      type: com.origami.policy.OnModify
+      api: v2.5.0
+    - name: Delete
+      type: com.origami.policy.OnDelete
+      api: v2.0.0
+  attributes:
+    required:
+      immutable:
+        - name: id
+          type: UUID
+        - name: created
+          type: Instant
+        - name: context # Note, NEW required attribute
+          type: com.origami.business.identity.DomainContext
+      operational:
+        - name: modified
+          type: Instant
+        - name: description
+          type: com.origami.data.RecordList
+      optional:
+        - name: comments
+          type: com.origami.data.RecordList
+        - name: tags
+          type: com.origami.data.RecordList
+----
+
+See what they did?!
+Clever, isn't it?!
+
+The engineers at Origami decided that a full description of the Business Object is a mandatory and necessary part of its API.
+In other word, they put business experts on a journey to fully capture the meaning of each business object long before they even knew how it will benefit them.
+
+At first, the team gave into their BIAS -- that what we people always do.
+And they experimented with local models only, *_on the boundaries_*, of course -- remember, they run everything onprem and shun the cloud a little bit.
+But no matter, the ball was put into motion.
+The immediate save came at the order placement boundary.
+
+Do you remember the three major types of customers Origami has?
+Integrators, Maintainers, Explorers.
+Because of this, the ordering portal was a complicated piece of software.
+And inquiries from explorers still caused havok engaging many humans in the process.
+This was the very first edge decorated with an LLM.
+And before even decorating other edges, each with new discovered benefits of their own, the team began polling this edge's decorated behavior, building our an analytics-only subdomain.
+What was discovered shortly is that all three categories are in fact predictable!
+Fluctuations in business could be explained by an amalgamation of three major world-events factors:
+price index of raw materials, inflation/interest rates, and changes in geopolitical alignment.
+Origami products are expensive, they are quality leadership not price leadership.
+And as it turns out Origami's customers tend to hoard.
+This discovery happened simply by overlaying Order's behavior.
+And the predictability of sales cycles went from 10% to 70-80% accuracy.
+Imagine the effect this discovery had on the manufacturing process efficiency!
+
+This was possible only because the two dozen objects used in AI enhancement had extensive and accurate context data!
+
+Origami quickly moved through the Phase II while the Phase I was still picking up speed in other parts of the business.
+Again this was only possible because their architecture allowed them.
+And finally, when MCP eventually became available it didn't impact the existing business enhancements at all, Origami just peacefully rolled out rolling upgrades as time permitted.
+Context carried on Corporate Taxonomy fit like hand in glove with the MCP.
+
+== Phase II and Beyond
+
+In the next article I will cover exponential gains from the propagation of Phase II.
+For the point of this article we just need ot understand that Phase II depends on Phase I.
+In the second phase we experiment with the collaboration of AI enhancements added in the first phase, so that enough objects need to be augmented before any automation can be applied to cross-referencing them.
+but the most important point is regarding the Architecture of the business systems.
+These two concepts, when done right, are the keys to AI-Native evolution.
+
+. Clean Context extraction from Ubiquitous Language -- Semantic Consistency.
+. Complete Context separation between Bounded Contexts -- Boundary Conditions.
+
+== Conclusion
+
+Everything we've just discussed is actually *_Systems Engineering_*.
+But do you see how natural it feels in terms of business operations?
+That is because people, more precisely people behaviors, are a part of a system!
+In fact, all the systems I've designed and built over the last three decades had human factor at the core.
+Systems include people.
+Until now that is.
+But the world just shifted.
+For the first time in history of humanity we can have different, new type of system -- more on that in my next article.
+
+The point of this article is simpler --ToDo.
