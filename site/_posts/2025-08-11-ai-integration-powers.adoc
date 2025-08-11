@@ -1,0 +1,363 @@
+---
+categories: [adventures]
+tags: [AI,Generative AI,Enterprise,AI-Native,Integration]
+excerpt: >
+  Magic in phases of AI: Phase 1 - AI-Integration.
+classes: wide
+comments: true
+---
+= Pure Gold: The AI Integration that Just Works
+:img-prefix: /riddle-me-this/assets/images
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:pub-mm: as published on Medium by {mm-newsletter}
+:asei: https://asei.systems/[ASE Inc.,window=_blank]
+:pub-asei: as outlined at {asei}
+:previous-stories: link:/riddle-me-this/adventures/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
+:previous-article-url: link:/riddle-me-this/adventures/2025/08/07/best-corporate-ai.html
+:previous-article-title: The AI Success Story Nobody’s Talking About: How “Boring” Architecture Beats Hype
+:previous-article: {previous-article-url}[{previous-article-title},window=_blank]
+:footer-previous-article: footnote:previous-article[See {previous-article} for more on this story. It's a part of the {previous-stories} series.]
+:series-home: link:/riddle-me-this/series/final-industrial-revolution/[The Final Industrial Revolution,window=_blank]
+:cto-bible: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
+:cto-trap: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
+:footer-cto-trap: footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- your playbook on integrating AI and staying ahead.]
+:mcp-overview: https://modelcontextprotocol.io/overview[Model Context Protocol,window=_blank,opts=nofollow]
+
+In my {previous-article-url}[previous article] I wrote about a long-lost client who called back to share an astounding story{footer-previous-article}
+-- attaining Phase III of AI-Native evolution in two years.
+I was amazed because I remembered their architecture: Modular Monolith.
+But soon it made sense -- they had clean boundaries, so adding AI magic was purely incremental for them.
+
+Here I'll describe their astounding financial gains from Phase I alone.
+
+== Why Your AI Fails (And Theirs Doesn't)!
+
+Your AI can't tell the difference between a customer order and a lunch order.
+Origami's AI predicts market demand with 80% accuracy.
+
+The difference?
+They taught AI their language FIRST.
+
+While you're wrestling with chatbots that hallucinate, Origami gained:
+
+- Sales prediction accuracy: 10% → *70-80%*; 🎉
+- Operational cost reduction: *17%* in Phase I alone;
+- AI integration failures: *Zero*!
+
+How?
+They had something you don't: *Corporate Taxonomy*.
+
+**Corporate Taxonomy = Teaching AI exactly what every word means in YOUR business.**
+
+Not Wikipedia definitions.
+YOUR definitions.
+
+== The Magic Started in 2018 (Before Anyone Cared About AI):
+
+It all began with creating Corporate Taxonomy (CT).
+From CT, we get an automatic Enterprise Dictionary.
+Let me explain what CT is and why it changed everything.
+
+Remember, Origami makes high-precision hydraulic power transfer components. +
+Boring?
+Maybe.
+Profitable?
+Absolutely.
+
+They have three main customer types:
+
+* **Integrators** -- build bigger machines using Origami parts (predictable, planned);
+* **Maintainers** -- fix industrial machines, need parts NOW (unpredictable, sporadic);
+* **Explorers** -- design new machines, want custom components (expensive, disruptive).
+
+In 2016, all these different needs funneled through one "Front Office." +
+Chaos. *_Expensive chaos_*.
+Order was the first necessity.
+
+And here's where it gets interesting...
+
+== Corporate Taxonomy: The Secret Weapon!
+
+Corporate Taxonomy classifies business _objects_ AND *behaviors*. +
+This is the magic that makes AI integration seamless. +
+And it's exactly why 80% of corporations fail miserably with LLMs today.
+
+Let me show you with a simple example -- an Order.
+
+In CT, every artifact has:
+
+* **Name** -- unique identifier
+* **Type** -- classification
+* **Attributes** -- data/state it owns
+* **Policies** -- business rules it follows
+
+Here's what Origami's base business object looks like:
+
+[source,yaml]
+----
+com.origami.BusinessObject:
+  parent: null
+  name: Object
+  api: v3.1.7
+  policies:  # Runtime immutable
+    - name: Creation
+      type: com.origami.policy.OnCreate
+    - name: Modification
+      type: com.origami.policy.OnModify
+    - name: Delete
+      type: com.origami.policy.OnDelete
+  attributes:
+    required:
+      immutable:
+        - name: id
+          type: UUID
+        - name: created
+          type: Instant
+      operational:
+        - name: modified
+          type: Instant
+        - name: description
+          type: com.origami.data.RecordList
+----
+
+Look at the *order* and predictability! +
+Every business object follows these rules. +
+Now here's their Order object:
+
+[source,yaml]
+----
+com.origami.Order:
+  parent: com.origami.BusinessObject
+  name: Order
+  api: v11.1.0
+  attributes:
+    required:
+      immutable:
+        - name: origination
+          type: com.origami.data.crm.Record
+      operational:
+        - name: disposition
+          type: com.origami.data.ChainOfCustody
+        - name: reconciliation
+          type: com.origami.data.Reconciliation
+----
+
+The boundaries AI needs are already visible. +
+But let me make this crystal clear with a restaurant example everyone understands.
+
+== The Restaurant Order: Same Word, Different Meanings:
+
+When you sit down at a restaurant, an Order is born.
+But here's the magic:
+
+- **To the Waiter**: Order = table number, items, special requests, payment;
+- **To the Cook**: Order = items to prepare, special instructions, timing;
+- **To the Manager**: Order = revenue, table turnover, inventory impact.
+
+Same order.
+Different meanings.
+Different contexts.
+
+*This is what your AI doesn't understand and why it fails.*
+
+Each domain has its own private meaning for shared words.
+The waiter doesn't care about inventory.
+The cook doesn't care about payment methods.
+But it's the SAME ORDER.
+
+Quick question: *_When is an order "closed"?_*
+
+- When payment is collected?
+- When the customer leaves?
+- When the bank settles?
+- When quarterly books close?
+
+Think about it.
+Your answer reveals how confused your own business language is.
+
+== The Enterprise Dictionary: Your AI's Rosetta Stone.
+
+Unlike Webster's, an Enterprise Dictionary shows:
+
+- Base definition: "Order = business event including a sale";
+- Waiter's definition: "Order = table service request";
+- Cook's definition: "Order = production queue item";
+- Accountant's definition: "Order = revenue transaction".
+
+See how this makes everything trivially simple for AI? +
+And not just AI -- humans understand better too!
+
+== The Accidental AI Preparation:
+
+Here's the beautiful part: Origami wasn't preparing for AI. +
+They were just trying to run their business better.
+
+Two key changes created magic:
+
+1. **Corporate Taxonomy** -- everyone knew what everything meant.
+2. **Public API** -- customers could self-serve.
+
+This caused:
+
+- **Inversion of Concern**: Customers pulled data instead of calling in (commands → queries).
+- **Segregation of Control**: Each domain owned only its piece of the order lifecycle.
+
+Costs dropped.
+Efficiency soared.
+I collected my check and left. +
+*Little did I know...*
+
+== The AI Explosion: One Tiny Change, Massive Impact:
+
+Years later, when AI arrived, Origami's team made one brilliant addition:
+
+[source,yaml]
+----
+com.origami.BusinessObject:
+  attributes:
+    required:
+      immutable:
+        - name: id
+          type: UUID
+        - name: created
+          type: Instant
+        - name: context  # <-- THE MAGIC
+          type: com.origami.DomainContext
+----
+
+See what they did?!
+*They made context mandatory!*
+
+Every business object now carried its complete meaning.
+Not just data -- MEANING.
+
+Clever, isn't it?!
+
+== Phase I Results: The Numbers Don't Lie!
+
+They started simple -- added AI to the order placement boundary. +
+Remember those three customer types? +
+The ordering portal was a nightmare of complexity.
+
+First enhancement: An LLM on the ordering edge. +
+Result: The "unpredictable" became predictable!
+
+By analyzing order patterns with context, they discovered:
+
+- Raw material prices;
+- Interest rates;
+- Geopolitical events.
+
+These three factors explained ALL fluctuations. +
+And they also discovered why -- customers hoard!
+
+**Sales prediction accuracy jumped from 10% to 70-80%.**
+
+Imagine the manufacturing efficiency gains! +
+Imagine the inventory optimization! +
+Imagine the cost savings!
+
+All because every object carried its complete context.
+
+== What This Means for YOUR Company?!
+
+**If you have:**
+
+- **Spaghetti architecture**: 6-12 months to build taxonomy first.
+- **Some boundaries**: 2-3 months to document *_necessary_* context.
+- **Clean architecture**: 2-3 weeks to add AI (like Origami).
+
+**Every month you delay:**
+
+- Competitors get further ahead.
+- Your AI projects keep failing.
+- Your costs stay high.
+- Your predictions stay wrong.
+
+**The brutal truth:** You can't skip this step.{footer-cto-trap}
+And NO vendor can sell you a shortcut.
+
+== The MCP Bonus Round:
+
+When {mcp-overview} arrived, Origami just... rolled it out. +
+No drama.
+No rearchitecting. +
+Their context-rich taxonomy fit MCP like a glove.
+
+While you're having vendor meetings about "AI transformation," they're in Phase III.
+
+== The Two Keys to AI Success:
+
+After 30 years of building systems, it comes down to this:
+
+. **Semantic Consistency** -- Every word means ONE thing per context;
+. **Boundary Enforcement** -- Contexts don't bleed into each other.
+
+That's it.
+That's the magic.
+
+Your vendors won't tell you this because they can't sell it in a box. +
+(Or, they don't know.)
+
+Just think about it -- you want AI to do your business for you. +
+Can it get up and walk around trying things out like your employees do? +
+No?!
+Then how would it know what you want it to do?
+
+== What's Coming Next:
+
+Phase II is where it gets REALLY interesting -- AI agents start talking to each other across boundaries.
+But that only works if Phase I is rock solid.
+
+I'll cover those exponential gains in my next article.
+But first, ask yourself: Does YOUR business even have a common language?
+(Or, what is _Ubiquitous Language_?)
+
+If not, every AI dollar you spend is wasted -- LLMs are "Language" models, aren't they?
+
+== The Uncomfortable Conclusion:
+
+Everything we've discussed is just *_Systems Engineering_*. +
+... But notice how natural it feels in business terms?
+
+That's because people -- specifically people's behaviors -- ARE part of the system! +
+I've always designed systems with humans at the core.
+
+Until now.
+
+The world just shifted.
+For the first time in human history, we can build different systems. +
+Systems where digital minds understand context as well as humans do.
+
+Maybe better.
+
+But only if you teach them your language first!
+
+'''
+
+This story is part of {series-home} series. +
+Republished to
+
+'''
+
+_Want to teach AI your business language?
+That's exactly what we do at {asei}!_
+
+_No magic.
+No shortcuts.
+Just foundations that enable real AI integration._ +
+
+*P.S.* -- I'm obsessed with teaching teams this craft. +
+The CTO called years later just to thank me for that. +
+Turns out, teaching people to fish beats catching fish. +
+Best of all -- they teach me back!
+How about that?!
+
+*P.S.S.* -- We built our reputation on un∫ucking your most prized initiatives. +
+Please ask around.
+You might like what you find 😜
