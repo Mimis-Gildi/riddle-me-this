@@ -21,6 +21,11 @@
 :hackerdom-05-laggardom: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
 :hackerdom-06-architecture: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :hackerdom-07-architecture: link:/riddle-me-this/adventures/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
+:hackerdom-08-origami: link:/riddle-me-this/adventures/2025/08/07/best-corporate-ai.html[The AI Success Story Nobody’s Talking About: How “Boring” Architecture Beats Hype,window=_blank]
+:hackerdom-09-origami: link:/riddle-me-this/adventures/2025/08/11/ai-integration-powers.html[Pure Gold: The AI Integration that Just Works,window=_blank]
+
+:footnote-origami-journey: footnote:origami-journey[This is a story series that follows incredible and natural AI adoption by a manufacturing company. And this story series starts with {hackerdom-08-origami}.]
+:footnote-origami: footnote:origami-journey[]
 
 :google-recursion: https://medium.com/data-science-in-your-pocket/googles-mixture-of-recursions-end-of-transformers-b8de0fe9c83b[Google’s Mixture Of Recursions : End of Transformers,window=_blank,opts=nofollow]
 :symbolic-cognition: https://sciety-labs.elifesciences.org/articles/by?article_doi=10.31234/osf.io/86xsj_v35[Emergent Symbolic Cognition: A Unifying Computational Framework for Symbolic Thought in Humans and LLMs,window=_blank,opts=nofollow]
@@ -116,6 +121,8 @@ Please check back regularly or link:/riddle-me-this/feed.xml[_follow my RSS feed
 
 === Already Migrated (Time-reversed Order)
 
+*2025-08-11:*{footnote-origami-journey} {hackerdom-09-origami}. +
+*2025-08-07:*{footnote-origami} {hackerdom-08-origami}. +
 *2025-07-21:*{footnote-hackerdom-00-craze} {hackerdom-07-architecture}. +
 *2023-07-05:*{footnote-hackerdom-00-c} {hackerdom-06-architecture}. +
 *2023-07-04:*{footnote-hackerdom-00-c} {hackerdom-05-laggardom}. +

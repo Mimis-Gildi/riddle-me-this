@@ -17,12 +17,18 @@ comments: true
 :pub-mm: as published on Medium by {mm-newsletter}
 :asei: https://asei.systems/[ASE Inc.,window=_blank]
 :pub-asei: as outlined at {asei}
+:previous-stories: link:/riddle-me-this/adventures/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
+:previous-article-url: link:/riddle-me-this/adventures/2025/08/07/best-corporate-ai.html
+:previous-article-title: The AI Success Story Nobody’s Talking About: How “Boring” Architecture Beats Hype
+:previous-article: {previous-article-url}[{previous-article-title},window=_blank]
+:footer-previous-article: footnote:previous-article[See {previous-article} for more on this story. It's a part of the {previous-stories} series.]
+:series-home: link:/riddle-me-this/series/final-industrial-revolution/[The Final Industrial Revolution,window=_blank]
 :cto-bible: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :cto-trap: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
-:footer-cto-trap: footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- a complete playbook on integrating AI and staying ahead.]
+:footer-cto-trap: footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- your playbook on integrating AI and staying ahead.]
 :mcp-overview: https://modelcontextprotocol.io/overview[Model Context Protocol,window=_blank,opts=nofollow]
 
-In my previous article I wrote about a long-lost client who called back to share an astounding story
+In my {previous-article-url}[previous article] I wrote about a long-lost client who called back to share an astounding story{footer-previous-article}
 -- attaining Phase III of AI-Native evolution in two years.
 I was amazed because I remembered their architecture: Modular Monolith.
 But soon it made sense -- they had clean boundaries, so adding AI magic was purely incremental for them.
@@ -273,7 +279,7 @@ All because every object carried its complete context.
 - Your costs stay high.
 - Your predictions stay wrong.
 
-**The brutal truth:** You can't skip this step.
+**The brutal truth:** You can't skip this step.{footer-cto-trap}
 And NO vendor can sell you a shortcut.
 
 == The MCP Bonus Round:
@@ -331,6 +337,11 @@ Systems where digital minds understand context as well as humans do.
 Maybe better.
 
 But only if you teach them your language first!
+
+'''
+
+This story is part of {series-home} series. +
+Republished to
 
 '''
 
