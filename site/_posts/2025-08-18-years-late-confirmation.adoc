@@ -230,6 +230,6 @@ Please, don't fall for hype -- *understand* instead!
 The real solution isn't another tool, protocol, or vendor promise. +
 It's understanding your architecture well enough to make *_any_* tool work.
 
-That's what we do at {asei}.
+That's what we do at {asei}
 
 Toodles!
