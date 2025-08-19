@@ -35,8 +35,6 @@ We are observing systemic failure in real time._*
 
 == Content:
 
-🚜 <- Migration in progress 🚧
-
 Stay tuned  --  there is much to say.
 
 Most of this material has never existed on the clear web until now.
@@ -54,4 +52,4 @@ And those are the ones this is for.
 
 === Already Migrated
 
-- NONE.
+- None planned at this time.

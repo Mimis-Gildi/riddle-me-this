@@ -27,7 +27,7 @@ comments: true
 :blog-ai-for-enterprise: {adventures-home}/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
 :blog-best-corporate-ai: {adventures-home}/2025/08/07/best-corporate-ai.html[The AI Success Story Nobody’s Talking About: How “Boring” Architecture Beats Hype,window=_blank]
 
-:footer-key-posts: footnote:key-posts[See {blog-ai-for-enterprise} for more on this story. It's a part of the {series-home} series.]
+:footer-key-posts: footnote:key-posts[See {blog-ai-for-enterprise} for more on this story. It's a part of {series-home} series.]
 
 :cto-bible-url: {adventures-home}/2023/07/05/integrated-ai-evolution.html
 :cto-bible-title: The AI Evolution Playbook: Why 80% Will Fail

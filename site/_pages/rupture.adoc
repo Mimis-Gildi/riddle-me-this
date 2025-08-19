@@ -163,4 +163,5 @@ At the moment, nothing is in the clear yet.
 
 === Already Migrated
 
-- NONE
+- None yet.
+Potentially a different dedicated home.

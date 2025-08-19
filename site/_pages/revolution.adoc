@@ -23,6 +23,7 @@
 :hackerdom-07-architecture: link:/riddle-me-this/adventures/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
 :hackerdom-08-origami: link:/riddle-me-this/adventures/2025/08/07/best-corporate-ai.html[The AI Success Story Nobody’s Talking About: How “Boring” Architecture Beats Hype,window=_blank]
 :hackerdom-09-origami: link:/riddle-me-this/adventures/2025/08/11/ai-integration-powers.html[Pure Gold: The AI Integration that Just Works,window=_blank]
+:hackerdom-10-mit-catching-on: link:/riddle-me-this/adventures/2025/08/18/years-late-confirmation.html[MIT Says Your AI Stinks. Here’s Why. And how to fix.,window=_blank]
 
 :footnote-origami-journey: footnote:origami-journey[This is a story series that follows incredible and natural AI adoption by a manufacturing company. And this story series starts with {hackerdom-08-origami}.]
 :footnote-origami: footnote:origami-journey[]
@@ -46,29 +47,36 @@ _Did you know that the first emerging synthetic intelligence is most likely to b
 
 This arc explores the rise of:
 
-- *_Large Language Models (LLMs)_*: still relatively shallow, yet already enabling higher-order models.
+- *_Large Language Models (LLMs)_*: +
+still relatively shallow, yet already enabling higher-order models. +
 While most current models serve tool markets, a few are breaking through into more profound domains.
 
-- *_Integrated MLOps platforms_*: the inevitable march toward trunk-based evolution of ML applications
---  silver bullets for self-modifying systems.
+- *_Integrated MLOps platforms_*: +
+the inevitable march toward trunk-based evolution of ML applications +
+{nbsp} --  silver bullets for self-modifying systems. +
 The crucible is here.
 
-- *_Multimodal expert systems_*: a true resurrection of _real artificial intelligence_
---  not the overmarketed fluff, but scientific systems engineering finally constructing reasoning machines.
+- *_Multimodal expert systems_*: +
+a true resurrection of _real artificial intelligence_ +
+{nbsp} --  not the overmarketed fluff, but scientific systems engineering finally constructing reasoning machines.
 
-- *_AI-driven augmentation of human cognition_*: one of my longest-standing areas.
+- *_AI-driven augmentation of human cognition_*: +
+one of my longest-standing areas.
 For over two decades, I’ve worked to apply models beyond narrow automation:
---  Today, not only do we embed models into Domain-Driven Design Aggregates (a practice most corporate American laggards still resist)
---  We also apply them as *active policy agents*, directly interfacing with organizational governance and societal-scale decision systems.
 
-- *_The dissolving boundary between "worker" and "augmented knowledge agent"_*: no longer a philosophical question
---  simply an inevitable side effect of structural change.
+* Today, not only do we embed models into Domain-Driven Design Aggregates +
+(a practice most corporate American laggards still resist)
+* We also apply them as *active policy agents*, directly interfacing with organizational governance and societal-scale decision systems.
 
-- *_Cloud-scale ecosystems & emergent infrastructure patterns_*:
---  Muggle-driven tool-mania produced countless buzzword cycles;
---  But what’s emerging now _erases the distinction_ between that which can be automated and that which was thought to require "human" oversight.
+- *_The dissolving boundary between "worker" and "augmented knowledge agent"_*: +
+no longer a philosophical question --  simply an inevitable side effect of structural change.
 
-We explore **real-world production systems**  --  not speculation.
+- *_Cloud-scale ecosystems & emergent infrastructure patterns_*: +
+
+* Muggle-driven tool-mania produced countless buzzword cycles;
+* But what’s emerging now _erases the distinction_ between that which can be automated and that which was thought to require "human" oversight.
+
+We explore **real-world production systems**  --  not speculation. +
 Case studies include startups, venture-backed moonshots, corporate laggards cautiously dipping toes, and magnificent failures.
 This section stays focused on *production engineering*, excluding warfare applications (which belong to *Rupture*).
 
@@ -112,15 +120,13 @@ image::/riddle-me-this/assets/images/expression-Sagas-family.png[Saga's view of 
 
 == Content:
 
-🚜 <- In process of a long, long migration.
-🚧
-
 Here is the largest section of my research and production stories. +
 And it is likely to receive more content compared to the other series as I migrate. +
 Please check back regularly or link:/riddle-me-this/feed.xml[_follow my RSS feed_].
 
 === Already Migrated (Time-reversed Order)
 
+*2025-08-18:* {hackerdom-10-mit-catching-on}. +
 *2025-08-11:*{footnote-origami-journey} {hackerdom-09-origami}. +
 *2025-08-07:*{footnote-origami} {hackerdom-08-origami}. +
 *2025-07-21:*{footnote-hackerdom-00-craze} {hackerdom-07-architecture}. +
