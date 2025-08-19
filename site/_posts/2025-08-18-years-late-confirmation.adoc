@@ -1,0 +1,235 @@
+---
+categories: [adventures]
+tags: [AI,Generative AI,Enterprise,AI-Native,Integration]
+excerpt: >
+  AI Adoption Predictions Supported by Emerging Reality.
+classes: wide
+comments: true
+---
+= MIT Says Your AI Stinks. Here's Why. And how to fix.
+:img-prefix: /riddle-me-this/assets/images
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:pub-mm: as published on Medium by {mm-newsletter}
+:asei: https://asei.systems/[ASE Inc.,window=_blank]
+:pub-asei: as outlined at {asei}
+
+:blog-reference-root: link:/riddle-me-this
+:blog-reference-series: {blog-reference-root}/series
+
+:series-home: {blog-reference-series}/final-industrial-revolution/[The Final Industrial Revolution,window=_blank]
+:adventures-home: {blog-reference-root}/adventures
+
+:blog-ai-for-enterprise: {adventures-home}/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
+:blog-best-corporate-ai: {adventures-home}/2025/08/07/best-corporate-ai.html[The AI Success Story Nobody’s Talking About: How “Boring” Architecture Beats Hype,window=_blank]
+
+:footer-key-posts: footnote:key-posts[See {blog-ai-for-enterprise} for more on this story. It's a part of the {series-home} series.]
+
+:cto-bible-url: {adventures-home}/2023/07/05/integrated-ai-evolution.html
+:cto-bible-title: The AI Evolution Playbook: Why 80% Will Fail
+:cto-bible: {cto-bible-url}[{cto-bible-title},window=_blank]
+
+:cto-trap: {adventures-home}/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
+:footer-cto-trap: footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- your playbook on integrating AI and staying ahead.]
+
+:mcp-overview: https://modelcontextprotocol.io/overview[Model Context Protocol,window=_blank,opts=nofollow]
+
+:reference-article-for-the-quote-url: {cto-bible-url}#conclusion-the-strategic-choice
+:reference-article-for-the-quote-link: {reference-article-for-the-quote-url}[{cto-bible-title},window=_blank]
+:reference-article-for-the-quote-footer: footnote:root-cause-article[This is the original article that exposes the root cause for American AI Integration difficulties {reference-article-for-the-quote-link}.]
+
+:mit-article-image-url: https://fortune.com/img-assets/wp-content/uploads/2025/08/GettyImages-2195607659.jpg
+:mit-article-url: https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/
+:mit-article-title: MIT report: 95% of generative AI pilots at companies are failing
+
+{mit-article-url}[MIT's NANDA initiative just published,window=_blank] what every executive already knows but won't say publicly: 95% of enterprise AI pilots are failing.
+
+:cal-link: https://cal.com/vadim-kuhay-ase-inc/30min
+
+I'm not surprised.
+I predicted this exact failure rate in 2022-2023.
+
+Note: This article is a part of {series-home} series.
+
+image::/riddle-me-this/assets/images/Athena-World.png[Young Athena's World]
+
+{nbsp} +
+Here is the original article from MIT:
+{nbsp} +
+
+.Image from MIT's {mit-article-url}[{mit-article-title},window=_blank] published article.
+image::{mit-article-image-url}[{mit-article-image-url}]
+
+{nbsp} +
+
+MIT's diagnosis is correct: 95% failure rate. +
+Their prescription?
+Buy vendor tools instead of building internally.
+
+*But here's what they missed: _You can't integrate intelligence into chaos_.*
+
+Your enterprise software wasn't designed.
+It evolved. +
+Like a coral reef -- layers upon layers of legacy systems, vendor solutions, +
+and 'temporary' workarounds that became permanent.
+
+Vendor AI tools _fail for the same reason internal builds do_: +
+They're trying to add intelligence to architectural anarchy.
+
+In {cto-bible}, July 2023, I wrote: +
+"80% of AI projects would fail because most enterprise software wasn't designed -- it evolved."
+
+I was too optimistic.
+It's 95%.
+
+MIT says buy vendor tools. +
+I say: Fix your foundation first, or join the 95%, vendors and all.
+
+Now, let's take a look at the actual failure patterns to understand "Why".
+
+> *Unlike previous technology transformations, _AI cannot be approached as a "fast follower" strategy_.*{footer-cto-trap} +
+{nbsp} +
+Cloud and digital transformations allowed companies to wait for packaged vendor solutions and catch up through commodity adoption. +
+{nbsp} +
+AI transformation is fundamentally different because it directly affects business identity and competitive positioning.
+
+== The Three Patterns:
+
+Every one of those 95% failures followed one of three patterns.
+I documented these in 2023. MIT just proved me right.
+
+=== Pattern 1: The Wrapper Gambit:
+
+*What they promised:* "Let's build a chatbot that sits on top of everything!" +
+*What happened:* $50K/month to run.
+Nobody uses it.
+Why?
+Because wrapping chaos in a conversation interface doesn't make it intelligent.
+
+=== Pattern 2: The Big Bang Rewrite:
+
+*What they promised:* "We'll AI-enable your entire platform!" +
+*What happened:* $3M spent.
+Nothing shipped.
+Team laid off.
+You can't revolutionize what you don't understand.
+
+=== Pattern 3: The Vendor Solution:
+
+*What they promised:* "Our platform has AI built in now!" +
+*What happened:* 40% higher licensing costs.
+Works like expensive search.
+Even MIT fell for this one -- recommending vendor tools with a 33% failure rate as "success."
+
+=== And now, Pattern 4: The MIT Gambit (The "Just Buy It" Fantasy):
+
+*What MIT promises:* "Purchase AI tools from vendors - 67% success rate!" +
+*What they don't tell you:* That's still a 33% failure rate for software that costs millions.
+And those "successes"?
+Many are just expensive search engines with chat interfaces.
+
+It is all just for ONE trivial and generic Use Case!
+
+MIT's advice is like telling someone with a broken foundation to buy better furniture. +
+Sure, vendor tools work better than DIY disasters.
+But they still fail when your architecture is chaos.
+
+The real tragedy?
+MIT identified the problem -- a "learning gap" where tools don't learn from or adapt to workflows  -- _but then recommended *the same tools* that can't bridge that gap_.
+
+*The math doesn't lie:* If 95% of internal builds fail, and 33% of vendor solutions fail, that means ~37% of ALL enterprise AI initiatives succeed.
+MIT calls 67% vendor success a win.
+I call 37% total success an industry crisis.
+
+What we're missing in the business world right now is *understanding*.
+
+== The Actual Validated Insight:
+
+MIT says the core issue is a "learning gap" -- that tools and organizations can't learn from each other.
+
+They're *_half_* right.
+
+The real problem? *Tools can't learn from chaos.*
+
+When your architecture is:
+
+- 47 different systems that don't talk "human";
+- Data scattered across 12 databases;
+- Business logic buried in stored procedures from 2003;
+- "Temporary" Excel sheets running critical processes.
+
+No AI -- vendor or internal -- can make sense of that!
+
+The {mcp-overview} isn't just another protocol. +
+It's the architectural foundation that makes AI possible. +
+Without it, you're asking AI to be #a mind reader# for a patient with multiple personality disorder.
+
+Companies with clean architectural boundaries can add AI in weeks (and have). +
+Companies with architectural chaos will fail -- whether they build or buy{reference-article-for-the-quote-footer}{footer-key-posts}.
+
+MIT got one thing devastatingly right: Generic tools like ChatGPT excel for individuals because of their flexibility, but they stall in enterprise use since they don't learn from or adapt to workflows.
+
+But then they recommend... more generic vendor tools?
+That's like diagnosing heart disease and prescribing aspirin.
+
+== Don't Join the 95%!
+
+You have three choices:
+
+. *Keep trying vendor AI tools* -- 67% success rate sounds good until you realize that's still 1 in 3 failures for expensive software;
+. *Build it yourself* -- Join the 95% failure club with a homegrown disaster;
+. *Fix your foundation first* -- Then AI actually works (in *_every_* way).
+
+The executives who succeed aren't smarter.
+They're not luckier. +
+_They just understood that you can't build intelligence on chaos._
+
+Before you become another MIT statistic, let's diagnose your specific situation. +
+Confidentially.
+No public exposure of your challenges.
+
+{cal-link}[Schedule your confidential assessment,window=_blank] +
+and understand exactly why your AI is struggling +
+{nbsp}{nbsp} -- and more importantly, how to fix it.
+
+[quote,ASE Inc.,Vadim Kuhay]
+____
+Architecture is trust.
+
+Code is conversation.
+
+Velocity comes from clarity.
+____
+
+== P.S. The MCP Craze:
+
+In the last two weeks I had three MCP startups book a weird meeting with me.
+I met with two and ghosted a third one -- unintentionally -- apologies.
+
+What I can already conclude is this:
+
+. The startups don't have business foundations in place;
+. They see MCP as some sort of a magic bullet for AI-all;
+. They don't interview prospects for the root cause - just push MCP.
+
+One of these startups is actively recruiting a lead MCP engineer with 3 years of experience
+-- dudes, MCP is 8-months old!
+
+But here is the harsh truth:
+
+. MCP is just a convenience tool adding structure to ACLs;
+. Great integration happened before MCP was even imagined;
+. MCP doesn't solve ANY of your business problems.
+
+Please, don't fall for hype -- *understand* instead!
+
+The real solution isn't another tool, protocol, or vendor promise. +
+It's understanding your architecture well enough to make *_any_* tool work.
+
+That's what we do at {asei}.
+
+Toodles!
