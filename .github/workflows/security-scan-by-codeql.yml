@@ -64,7 +64,7 @@ jobs:
 
       - name: Setup Java for Kotlin
         if: steps.env.outputs.is-self-hosted == 'false' && matrix.language == 'java-kotlin'
-        uses: actions/setup-java@v4.7.1
+        uses: actions/setup-java@v5.0.0
         timeout-minutes: 5
         with:
           distribution: temurin
