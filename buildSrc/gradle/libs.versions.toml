@@ -1,5 +1,5 @@
 [versions]
-asciidoctorJvm = "4.0.4"
+asciidoctorJvm = "4.0.5"
 #asciidoctorDiagram = "2.3.2"
 benManes = "0.52.0"
 dokka = "2.0.0"
