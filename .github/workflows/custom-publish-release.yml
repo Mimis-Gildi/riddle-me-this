@@ -79,13 +79,13 @@ jobs:
 
       - name: ⚙️ Set up Gradle
         if: steps.resume-changes-detected.outputs.satisfied == 'true' && steps.env.outputs.is-self-hosted == 'false'
-        uses: gradle/actions/setup-gradle@v4.4.2
+        uses: gradle/actions/setup-gradle@v4.4.3
         timeout-minutes: 5
 
 
       - name: 📡 Submit Dependency Graph
         if: steps.resume-changes-detected.outputs.satisfied == 'true'
-        uses: gradle/actions/dependency-submission@v4.4.2
+        uses: gradle/actions/dependency-submission@v4.4.3
         timeout-minutes: 3
 
 
@@ -133,7 +133,7 @@ jobs:
 
       - name: 🚀 Publish GitHub Release with Résumé PDF
         if: steps.resume-changes-detected.outputs.satisfied == 'true'
-        uses: ncipollo/release-action@v1.18.0
+        uses: ncipollo/release-action@v1.20.0
         timeout-minutes: 11
         with:
           tag: ${{ steps.version-info.outputs.tag }}
@@ -146,7 +146,7 @@ jobs:
 
       - name: 🚀 Publish GitHub Release (no résumé artifact)
         if: steps.resume-changes-detected.outputs.satisfied != 'true'
-        uses: ncipollo/release-action@v1.18.0
+        uses: ncipollo/release-action@v1.20.0
         timeout-minutes: 9
         with:
           tag: ${{ steps.version-info.outputs.tag }}
