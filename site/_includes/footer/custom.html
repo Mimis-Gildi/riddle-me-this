@@ -1,0 +1,12 @@
+{%- comment -%}
+Inject the muted CTA only on blog posts.
+Minimal Mistakes auto-loads this file after the footer if it exists.
+{%- endcomment -%}
+
+{%- assign is_post = page.collection == "posts"
+or page.path contains "_posts/"
+or (page.layout == "single" and page.date) -%}
+
+{%- if is_post -%}
+{% include cta.html %}
+{%- endif -%}
