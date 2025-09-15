@@ -38,7 +38,7 @@ reflections, and adventurous stories from the scene.
 
 I'm often on Discord, swapping ideas and field notes with peers and learners alike. +
 Speaking candidly, I am keen on separating that which matters from that which wouldn't. +
-Please DM `riddler9297` then we can talk, join each other communities, code together.
+Please DM `riddler9297` then we can talk, join each other’s communities. code together.
 
 == Hacker Forecast: link:/riddle-me-this/series[Trends You Won't Hear from Gartner]
 
@@ -67,7 +67,7 @@ _See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this
 == Looking for me elsewhere?
 
 * Company: https://asei.systems/[asei.systems] and email {mailto-aseix}.
-* Have a programming competition? 🤗 please, send invite to {mailto-rIdd13r}.
+* Have a programming competition? 🤗 Please, send invite to {mailto-rIdd13r}.
 * Want to collaborate on a technology book? 🤔 email me at work {mailto-aseix}.
 
 '''

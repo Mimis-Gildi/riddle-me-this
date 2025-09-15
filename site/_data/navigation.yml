@@ -19,8 +19,6 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "Our Business"
-    url: https://www.asei.systems/
 
 
 # community links - for the sidebar; permanent to rdd13r.
