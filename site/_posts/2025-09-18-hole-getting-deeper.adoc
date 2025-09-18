@@ -1,0 +1,294 @@
+---
+categories: [adventures]
+tags: [AI,Generative AI,Enterprise,AI-Native,Integration,Stagflation,"Straight Talk","For Executives"]
+excerpt: >
+  AI-Crisis Stagflation -- Straight Talk.
+classes: wide
+comments: true
+---
+= Google to MIT: Traditional Business Done For. Oh Really?! -- Straight Talk
+:img-prefix: /riddle-me-this/assets/images
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:pub-mm: as published on Medium by {mm-newsletter}
+:asei: https://asei.systems/[ASE Inc.,window=_blank]
+:pub-asei: as outlined at {asei}
+
+:stages-of-ai-evolution: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
+:stage-1-mit-failures: link:/riddle-me-this/adventures/2025/08/18/years-late-confirmation.html
+:mit-fortune-article: https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/
+:stage-4-in-crypto: https://decrypt.co/339715/google-researchers-warn-looming-ai-run-economies
+:virtual-agent-economies: https://arxiv.org/abs/2509.10147
+
+:origami-ai-integration: link:/riddle-me-this/adventures/2025/08/11/ai-integration-powers.html
+
+More than 90% of top analytics put AI-Crisis as the most destructive economic transformation in history.
+"Doom and Gloom," if you ask me.
+Not without its merits, though.
+What's important in all this noise -- facts and rules of inference.
+What does this all really mean?!
+Where are these sentiments coming from?
+What numbers say?
+And for that I am starting a new tag on my blog: "Straight Talk." Let's have a calm and sober look -- shall we.
+
+== What's the Message Range In The News?
+
+In total we now have more than three thousand top publications actually proving the coming disruptive impact of AI Integration.
+And our analytics engine is pulling and analyzing a steadily increasing volume of these public and private works.
+I'm not going to bore you with the digest, for that one can subscribe to ASE Analytics and drink yourself to bed.
+Instead we will use the wealth of this information to highlight the most important messages of today:
+
+[#img-stage-4,link={stage-4-in-crypto}]
+image::https://img.decrypt.co/insecure/rs:fit:1920:0:0:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/05/ai-decrypt-style-17-gID_7.png@webp[Google Researchers Warn of Looming AI-Run Economies]
+
+*Google Researchers Warn of Looming AI-Run Economies*
+-- "Without urgent intervention, we're on the verge of creating a dystopian future run by invisible, autonomous AI economies that will amplify inequality and systemic risk."
+
+*Where is this sentiment coming from?:*
+Google DeepMind researchers (Tomašev, Franklin, Leibo, Jacobs, Cunningham, Gabriel, Osindero) introduce {virtual-agent-economies}[*_"virtual agent economies."_*,window=_blank]
+They argue we’re on track for a spontaneous, highly permeable agent economy (AI agents transacting with each other and with humans) unless we intentionally design guardrails.
+They propose design ideas: fair auctions, "mission economies" (coordination toward explicit goals), and socio-technical infrastructure for trust/safety/accountability.
+
+So, Google discovers {stages-of-ai-evolution}[_The Stage 4 of AI Adoption_,window=_blank,] I'd written about years ago.
+This analysis, albeit naive, unearthed a single valuable and timeless fact in business automation -- if it's profitable -- it shall be.
+The researchers are elaborating on the emerging trends to the Left of the Technology Adoption Curve.
+Google observes this in the Crypto space.
+And we have observed it in all market segments already.
+I will immediately tell you that what's seen on the far-left isn't automatically a trend.
+Moreover, attempting to regulate progress is a "Fool's Errand." +
+Hold this thought for now.
+
+[#img-stage-1,link={mit-fortune-article}]
+image::https://fortune.com/img-assets/wp-content/uploads/2025/08/GettyImages-2195607659.jpg[MIT report: 95% of generative AI pilots at companies are failing]
+
+*MIT report: 95% of generative AI pilots at companies are failing*
+-- I'd written more about this {stage-1-mit-failures}[here ("MIT Says Your AI Stinks.
+Here’s Why.
+And how to fix.),window=_blank]
+This is the current, far more important and timely concern.
+Whatever the distant analytics think of the far future -- it all starts here, with the root cause for the current stage, Stage 1, failures.
+
+Now that I'd given you the range of prognosis let's start with our "Straight Talk."
+
+== How did I press these Sources and What have I learned!
+
+To understand the current media trends versus the realities in the corporate hallways I needed to get at the authors.
+And that took a sweet minute.
+My approach was this:
+
+. *Consider the source:* What are the merit and competence levels of top voices.
+. *Extrapolate Facts:* Compare argument facts against ALL facts.
+. *Profile the Argument:* Is it even sound or a form of `Modus-` fallacy.
+
+The key question I had: "Why is everyone so obsessed by Stage 4 and AGI while 95% of American companies *_failed_* Stage 1?!" Why are top researchers worried about "systemic risk" from AI economies while ignoring the actual systemic risk
+-- "previously assumed good" enterprises burning billions on AI that can't even read their own databases properly because nobody knows where the data actually lives.
+
+What I'd discovered through few-too-many Socratic Dialectics with popular people is less than disappointing.
+Highest paid researchers are viewing things from the perspective of an "Ivory Tower" haven't got a clue of the "Boots on the Ground." Top voices are slinging highly opinionated takes on the topics I could actually prove they don't understand.
+And we, the plebs of all kinds, readily eating this up with complete disregard to the practical value of the content.
+
+The current problem is "*over-specialization.*"
+
+We're looking to AI specialist to solve our AI problems.
+And very few of our CTOs actually understand that they need to talk to a seasoned *Systems Engineer*!
+Systems are made of "infrastructure," "firmware," "system software," "business software," and *most importantly "people!"*
+It is a systems engineer who designed, redesigned, implemented, reimplemented, aligned and segregated all of these aspects through and through
+-- with a single master goal: "make your business be," whatever the tech.
+
+> Did you know that the first discovery OpenAI made is: +
+> "we need better systems engineering?!" +
+> Having solved that -- they've got their moat. +
+> Even Google noticed that -- people who Trunk with Borg.
+
+Instead, many CTOs today will just read Fortune MIT article and walk away with ... nothing to act on.
+
+== The Current mindset of CTOs -- The CTO Avalanche
+
+So popular media is of little use for actual AI Adoption problems.
+Thus, now back to our "Peanuts." What's the problem that's causing this single greatest "CTO Avalanche" of all time?!
+
+I have started a sales funnel and talked to many capable officers living this hurdle today.
+Folks are in denial!
+And there are many flavors to this denial, almost as many as the officers that I meet.
+
+*The psychological trap:*
+CTOs know their architecture is chaos but can't admit it publicly, so they keep buying "AI solutions" that compound the problem.
+Each failed pilot makes the next one harder because now you have more wrapper layers.
+But the alternative requires courage to step back and pull the carpet off of that steaming heap of $#1T-and-sticks they call "Domain Model." If they even know what that is.
+For the most part, they'll just say "dirty data."
+
+*Default decision:* Just wait for that magical AI tool that will make everything alright.
+
+And the conventional wisdom is that the tool is indeed coming.
+Question is -- when is it coming?
+Such tools only arrive at the "commodification phase" -- when everyone else has already moved on.
+The confusing part here comes from the era of Digital Transformation, when the "Early Follower" model actually worked.
+And that approach worked precisely because Cloud is fully decoupled from the company's business model.
+It came in at best as a cross-cut concern.
+
+Now the situation is drastically different.
+During the Digital Transformation CTOs were expected to *_Distribute_* their business models producing "*Context Boundaries*"
+-- precisely what did NOT happen for 90% of the American companies.
+The idea of "Clean Domain Models" as a future dependency for AI (or any progressive evolution) fell on deaf ears, so most just lifted-and-shifted monolith into the cloud.
+And that dependency is killing all AI initiatives today.
+Yet few executives I interview can actually make the connection by themselves.
+
+We made our beds.
+We didn't think we'll need to sleep in them so soon -- did we now?
+
+== The Real Problem Underneath
+
+Let's dig a little deeper -- shall we?
+
+For a couple of years now I harp on "Domain Architecture" with my customers.
+And sure, fixing the boundaries unclogs everything and initiatives take off.
+Only now I realized that the Boundary Problem is yet another Effect and not a Cause.
+
+The actual root cause for many is: "I knowingly cut that corner." +
+Maybe, I didn't see the value in that hefty effort.
+
+So, what do you do with that?!
+
+My methods are simple. +
+Admit it and move on. +
+I fix my own mistakes. +
+Whatever my original reasoning was.
+
+== The Real Cost
+
+Pondering over all the possible risks and costs I come up with one that is terminal -- time.
+
+Recently I shared {origami-ai-integration}[an overwhelming success,window=_blank] by a long-ago customer of ours
+-- a Japanese hydraulics manufacturer.
+These people move through stages of AI adoption like hot knife through butter.
+In the linked articles I explained exactly how that happened and the unexpected rewards unlocked.
+A single decision made all of it possible -- distributing the business, albeit for reasons other than the AI evolution.
+During my media research quest I asked these people what do they read about AI.
+They read no hype or any populist/futuristic AI stuff.
+
+Why would they -- they're living it.
+
+But the real realization of "value" hit me when an American precision hydraulics manufacturer reached out to me.
+It was not a typical two-hour assessment call but a much longer story.
+This business is highly biased, structured, top-down, and rigid.
+Everything is a one big brick and it's all tied together by 3rd-party "platforms."
+
+I didn't take this customer unsure what can I actually do for them.
+The only thought I could not shake -- "Origami will buy them soon enough."
+_Because the future under AI is anything but rigid._
+
+*Here's the brutal math:*
+
+Origami deploys AI improvements weekly.
+Their competitor needs 6 months for any change.
+That's a 24x velocity difference.
+In 2 years, Origami will have iterated 100+ times while the American company managed 4 pilots.
+
+At some point -- and it's sooner than anyone thinks -- the performance gap becomes insurmountable.
+Origami's AI-optimized precision tolerances will exceed what the American company can achieve with human processes.
+Their pricing will be 30% lower with 50% better margins.
+
+The American board will call it "market disruption." Origami will call it Tuesday.
+
+*This is what architectural debt actually costs: your company.*
+
+== The Real Solution
+
+Executives need to learn to see through the noise.
+And there is a lot of noise this time around.
+I've built systems through many disruptions: Dot-Com till now.
+And I don't remember this much hype and noise over anything emerging before.
+
+Having decades of good and bad systems to my name I'd classify structural problems into the following three categories:
+
+- Difficult: Irreversible impact;
+- Moderate: Wrong Problem/Solution;
+- Easy: Something that wasn't done.
+
+Most of the current AI Adoption impediments are in this third category - easy.
+We did not model our domains, demarcate our boundaries, and taxonomy our data.
+
+So why won't executives do the "easy" work?
+
+*Because "easy" doesn't mean painless.*
+
+Modeling your domain means admitting you don't know your own business structure.
+Demarcating boundaries means telling Product Owner Bob his kingdom needs to be split.
+Taxonomying data means discovering that your "single source of truth" is actually seventeen sources of lies.
+
+The real barrier isn't technical - it's ego.
+
+Executives would rather buy another $2M "AI Platform" than spend $200K documenting what they actually have.
+Because buying things looks like progress.
+Admitting architectural debt looks like failure.
+
+The board asks: "What's our AI strategy?" Nobody wants to answer: "First, we need to understand our own systems." That's career suicide in quarterly-driven America.
+
+So they buy wrappers.
+They hire consultants who promise magic.
+They keep compounding the chaos.
+
+Meanwhile, companies like Origami just... did the work.
+No drama.
+No excuses.
+They modeled their domains years ago for operational excellence.
+Now they're implementing AI features in weeks while their competitors are still arguing about data governance.
+
+What would be the logical step forward?
+
+*Stop hiding from the truth about your architecture.*
+
+_If you gotta fable -- then fable._ +
+_If you gotta spin -- then spin._ +
+{nbsp} -- Whatever your culture requires. +
+*Just get the darn thing sorted.*
+
+== The Inevitable Outcomes
+
+While everyone seems to agree that AI revolution will be as impactful as each industrial revolution beforehand, few can name the actual impact.
+This is expected.
+
+But let me be specific about what's coming.
+
+*The divide won't be "AI-enabled" vs "traditional."* +
+*It will be "architecturally coherent" vs "architectural chaos."*
+
+Companies with clean domain boundaries will implement AI capabilities in weeks.
+Companies with wrapper-upon-wrapper chaos will still be "piloting" in 2027.
+
+The coherent companies will do three things the chaos companies can't:
+
+. *Iterate at AI speed* - Deploy, learn, adjust in days not quarters;
+. *Compound intelligence* - Each AI feature makes the next one smarter;
+. *Buy their competitors* - Not for market share, but for customer lists.
+
+That American hydraulics manufacturer I mentioned?
+They don't know it yet, but they're already for sale.
+Not because they chose to be.
+Because Origami's AI-powered precision will make their entire business model obsolete.
+
+The board won't even see it coming.
+One quarter they're "exploring AI opportunities." Next quarter they're 40% less competitive.
+Quarter after that, private equity is circling.
+
+*This isn't a prediction.
+It's already happening.*
+
+We're watching the largest transfer of market power in corporate history.
+Not from human to AI.
+From architectural chaos to architectural clarity.
+
+The companies that treated Domain Driven Design as "nice to have" in 2020?
+They're about to learn it was actually "exist or exit."
+
+*Choose accordingly.*
+
+P.S. I'll tell you a little secret about choosing: +
+Your training materials say: "Know your customer." +
+I say: "*Know thyself!*"
+
+You can't fix what you won't acknowledge.
