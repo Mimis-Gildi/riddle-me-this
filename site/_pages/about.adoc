@@ -23,7 +23,7 @@ Welcome, friend. I'm glad you're here.
 My name is Vadim D. Kuhay -- known on the scene as `rdd13r` since 1992.
 I'm a system designer, player-coach, and hands-on engineer with over three decades in the field,
 across startups, Fortune 500 giants, defense contracts, and public good.
-Here is everything about me — I lead an open, inclusive life.
+Here is everything about me -- I lead an open, inclusive life.
 
 I build systems that survive their first user
 -- and teams that survive their first rewrite.
@@ -96,7 +96,7 @@ _**Not** a fit for_: green-field PR pilots or “just fine-tune it” work with 
 == ...oh, and one more thing.
 
 I am a parent who homeschools his kids.
-My 15-y-o son went through public schooling until high school
+My 15-year-old son went through public schooling until high school
 -- Wake County public education system is considered the best in the nation.
 Most likely I will also homeschool my 2-year-old daughter. through her high school years when she gets there.
 

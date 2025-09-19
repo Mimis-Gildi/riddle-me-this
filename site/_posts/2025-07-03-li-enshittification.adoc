@@ -67,8 +67,8 @@ The Australian {mcd}{mcd-wiki-fn} named *_"enshittification"_*{estf-doflo-fn}{es
 its *2024 Word of the Year*. The term describes the
 
  gradual deterioration of a service or product brought about by
- a reduction in the quality of service provided —
- especially of an online platform —
+ a reduction in the quality of service provided --
+ especially of an online platform --
  and as a consequence of profit-seeking.
 
 It was selected by both the dictionary committee and the public vote.
@@ -89,7 +89,7 @@ Major investor acquisition later gives it nine lives and today it floats like FU
 
 We must understand this: enshittification is not like the insurance company’s rot.
 
-That was the product of time — digesting and passing pusillanimous laziness — a natural process of decay.
+That was the product of time -- digesting and passing pusillanimous laziness -- a natural process of decay.
 
 Enshittification is something else entirely: a choreographed, planned, controlled act. Intentional.
 
@@ -110,7 +110,7 @@ It was beautiful. _But it was good for you!_
 LinkedIn entered with a bang of value::
 
 * 2006: Public Profiles, Recommendations, *People You May Know* -- not like today's uncanny mess.
-* 2007: *LinkedIn Answers* — early signs of real community building.
+* 2007: *LinkedIn Answers* -- early signs of real community building.
 * 2008: Mobile version, Applications platform -- a friendly nod to OSS.
 
 2011–2014: Going Public and Feature Refinement::
@@ -360,7 +360,7 @@ And that -- _that_ -- is the only _solid_ option I see here:
 
 LinkedIn is not some cartoon villain.
 
-It's a properly opportunistic business—just like every healthy business should be.
+It's a properly opportunistic business -- just like every healthy business should be.
 It functions by exploiting the psychological and social vulnerabilities of the *_American Employee Culture._*
 And somehow, that exploit works just as well in many other countries.
 Founders and hackers? We're not their target.
@@ -370,8 +370,8 @@ That’s why over 90% of my hacker friends don’t even have a LinkedIn account.
 But this reveals a very large untapped opportunity.
 
 I’ve been running analytics since the experiment.
-And I estimate that the wide-open market—those permanently off the LinkedIn grid—is worth about 13% of LinkedIn, *at a minimum*.
-These are founders, indie hackers, competence shops—people who will *never* engage with LinkedIn.
+And I estimate that the wide-open market -- those permanently off the LinkedIn grid -- is worth about 13% of LinkedIn, *at a minimum*.
+These are founders, indie hackers, competence shops -- people who will *never* engage with LinkedIn.
 Right now, they have nothing of value designed for them.
 
 Here, it’s worth remembering how sales *actually* work in nature::
@@ -383,10 +383,11 @@ Here, it’s worth remembering how sales *actually* work in nature::
 That last group?
 They’re your *Natural Customers.*
 
-Every startup I’ve helped hackers raise—dozens, over the years—I hammer this point home:
+Every startup I’ve helped hackers raise -- dozens, over the years -- I hammer this point home:
 
 . Always start with your Natural Customer.
-. Get revenue early—*as early as possible*. Even before the product, if you can.
+. Get revenue early -- *as early as possible*.
+Even before the product, if you can.
 . Expand outreach from there. Don't stratify your market too soon.
 . And always, always seek out *other hackers*.
 

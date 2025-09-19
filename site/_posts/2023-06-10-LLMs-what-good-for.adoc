@@ -73,7 +73,7 @@ image::/riddle-me-this/assets/images/dall-e-rdd13r-space.png[Picture of the auth
 Since the 90s, I'm privileged to follow a fluent community known by the moniker The "Northern."
 These folks gathered in Québec this year hosted by a subgroup of Waterloo alumni.
 The Northern has been an invite-only assembly of independent, expert programmers who generally operate as Solo Entrepreneurs
-— a concept described in the book "Company of One: Why Staying Small Is the Next Big Thing for Business" by the esteemed {jarvis}, one such person.
+-- a concept described in the book "Company of One: Why Staying Small Is the Next Big Thing for Business" by the esteemed {jarvis}, one such person.
 This community and many like it is made up of loosely related special interest groups referred to as "Cliques".
 Many members counting over 500 small businesses in 2023 are seasoned software engineering professionals who perhaps found the corporate world not challenging or fast-paced enough.
 Having learned how to sell and operate independently, these professionals embark on a new journey, honing their skills and embracing the lifestyle of modern {nomads}.
@@ -85,7 +85,7 @@ Today its Discord.
 It is important to note that labeling the Northern as a "group" from {demogroup},
 as I see done on various social media sites, college news, and blog posts is somewhat of a _misnomer_.
 Similarly as {anonymous} is not a group, a clique or an organization.
-None really are — yet the uninitiated keep insisting on the word 'group.'
+None really are -- yet the uninitiated keep insisting on the word 'group.'
 Likewise, Northern is not an organization but a grassroots tradition: just a vibrant and decentralized social network of {cliques}
 who occasionally convene for a mutual exchange of ideas in the classic {scene} or simply 'scene' format.
 The Northern is socially connected to but not the organizer of the esteemed "Hack The North" hackathon.
@@ -97,7 +97,7 @@ Let me clarify that this has nothing to do with the Hollywood portrayal of hacke
 This and many such communities we frequent are about celebrating the roots of the authentic {culture}.
 The culture originating at the {mit},
 the culture that has been the cradle of disruptive innovation and has influenced giants like Google and PayPal as well as GNU and Linux Foundation.
-It's a deeply positive thing — a place where honest makers bring their kids.
+It's a deeply positive thing -- a place where honest makers bring their kids.
 
 To avoid modern-day negative connotation associated with the word "hacker" among the uninitiated,
 we're encouraged to use _"Champion"_ instead, which I believe is derived from "innovation champions."
@@ -158,7 +158,7 @@ image::/riddle-me-this/assets/images/dada-and-zowah.png[Rdd13r with his infant d
 My current personal journey affords me the luxury of time, which I have been using to introspect the broader landscape of technological advancements.
 I'm not tunnel-visioned in my own quest, and my vantage point allows me to discern the emerging bigger picture, painted with broad strokes.
 And the biggest potential this new tech can offer is in recovering people time spent on tedious, monotonous tasks.
-When we no longer *_need_* to "do things," but instead are free to think and create — everything changes.
+When we no longer *_need_* to "do things," but instead are free to think and create -- everything changes.
 The Last time this happened 3,500 years ago, in the steppes of Ukraine, Scythians launched civilization in Europe.
 All because they could.
 And they could because they had time.
@@ -287,8 +287,8 @@ There are two primary issues that the Champions encountered with OpenAI's soluti
 Without transparency, calculating risk is not a statistical exercise but a gamble.
 2) The model underwent manual reinforcement training to avoid mistakes, which made it safer but still equally non-deterministic,
 and did not allow for the fidelity that {active-inferrence} models claim to provide.
-Thus, false advertisement — because a DDD Aggregate is essentially an employee with an exact job description
-— no improvisation is wanted or expected.
+Thus, false advertisement -- because a DDD Aggregate is essentially an employee with an exact job description
+-- no improvisation is wanted or expected.
 
 All the issues collectively culminate into four major impediments:
 
@@ -316,7 +316,7 @@ Prior to 2023, "The Northern" community would typically convene for a grand demo
 The spotlight was firmly on the summit, with community members often taking time off to travel and participate in person.
 Teams were formed, competitions were chosen, and surveys were disseminated among participants.
 After the summit, the Discord channels of various cliques would be abuzz with praise for the winners and gentle ribbing for those who slipped.
-It's hacker's version of a sports league — full of camaraderie and community building.
+It's hacker's version of a sports league -- full of camaraderie and community building.
 Hackers firmly believe that sports are to be played and participated in personally, not watched from a distance.
 However, 2023 was oddly different.
 
@@ -339,7 +339,7 @@ Here's a rundown of the key favorable points:
 . {g-community} and {g-ai-onboarding} (addressing concern 4)
 .. {g-dev-profile}
 * (addressing concern 4)
-* check above regularly — this is a living resource
+* check above regularly -- this is a living resource
 . {g-k-models}
 * (addressing concerns 1, 2, and 4)
 . {g-dtensor}
@@ -359,7 +359,7 @@ Please follow these key links:
 * {g-kaggle}
 
 Astute observers might point out that many of these resources have been around for a while.
-What's different is the focus — Google went the extra mile to make AI irresistibly easy for developers to dive into.
+What's different is the focus -- Google went the extra mile to make AI irresistibly easy for developers to dive into.
 The MakerSuite and LLM Colab Magics were so simple and educative that even non-technical individuals could produce, and Vertex AI made production deployment a breeze.
 Moreover, the absence of vendor lock-in meant that developers could employ their tools both on and off the Google platform.
 (I certainly do, as I don't like some of Google's cool-aid)
@@ -375,7 +375,7 @@ Some of our community members have already billed $ 7 digits for ML offerings th
 I would say more.
 IMHO, Google just may have managed to salvage this market that nearly flopped for them and their competitors.
 
-but the most important question still looms — where exactly is `this` revolution, if it is one at all?
+but the most important question still looms -- where exactly is `this` revolution, if it is one at all?
 
 == Our Own Experience with LLMs backing Expert Systems
 
@@ -391,12 +391,12 @@ This approach promises to tackle the fidelity issue by incorporating a form of m
 However, as of now, I haven't come across any practical demonstrations that validate its effectiveness in real-world applications.
 
 Furthermore, there's the more traditional method that has been around for a while
-— *_using a context manager over a backing set of multimodal services_*.
+-- *_using a context manager over a backing set of multimodal services_*.
 We experimented with simplifying this approach back in 2019 for sentiment analysis backing services.
 My own working instance is called Tillie.
 This solution has been in production since 2016.
 Without beating around the bush, let me tell you
-— although this architecture works rather well,
+-- although this architecture works rather well,
 the instance turned out to be a potential maintenance nightmare.
 Simpler solutions to any problem should always be the key goal.
 When a simple solution is not yet available, practical gains are an uphill battle.
@@ -503,7 +503,7 @@ Just to make sure, let's have a minimalistic recap:
 
 LLMs, or any other model or device is NOT `this`!::
 How are LLMs different from so many stellar components and useful gadgets of the past?
-Tool is just a tool — in its own has little value.
+Tool is just a tool -- in its own has little value.
 A stick is just a stick.
 
 Multimodal is NOT `this`!::
@@ -526,7 +526,7 @@ But they've jumped all over `this` revolution. Because they understand what's ne
 My expectation is that within 12–15 months, _**protocols** will emerge_.
 Perhaps something akin to an agent-pattern, like MATILDA and older AI tools used.
 And these protocols will seamlessly integrate multimodal machines into the way we think, work, and live.
-LLMs  by themselves are nothing — a tip of an emerging iceberg.
+LLMs by themselves are nothing -- a tip of an emerging iceberg.
 Mark my words.
 
 == Post-Publication Digest
@@ -536,7 +536,7 @@ The final note of this article originally circulated only in a private Discord
 
 Rather than publish it broadly, I’m including the excerpted summary above for archival and educational purposes.
 
-Many fellow hackers argued that true cyborgization — the integration of LLMs into our cognitive workflows — would not occur until:
+Many fellow hackers argued that true cyborgization -- the integration of LLMs into our cognitive workflows -- would not occur until:
 
 - Multimodal machine models could run locally;
 - No remote API dependency remained;

@@ -32,10 +32,11 @@ NOTE: _Copyright holders_ listed are hereby acknowledged on the content referenc
 
 - rdd13r - {a-rdd13r}
 - CaptainLugaru - {a-captain}
-- {a-mimis} — _At Yggdrasil, drinking from Mímisbrunnr. This is for the thinking._
-- {a-vitr} — _Where ancient wisdom meets modern coding fluffle._
-- {a-gain} — _AGAIN co-mentoring community._
-- {a-laggard} — _Artifacts for large American companies struggling with Digital Transformation._
+- {a-mimis} -- _At Yggdrasil, drinking from Mímisbrunnr.
+This is for the thinking._
+- {a-vitr} -- _Where ancient wisdom meets modern coding fluffle._
+- {a-gain} -- _AGAIN co-mentoring community._
+- {a-laggard} -- _Artifacts for large American companies struggling with Digital Transformation._
 
 
 

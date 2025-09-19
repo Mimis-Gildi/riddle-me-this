@@ -20,7 +20,7 @@ ifdef::env-name[:relfilesuffix: .adoc]
 Polyglot software engineer, hands-on architect, and player-coach with 35 years of experience in system design,
 distributed architecture, and high-performance delivery across startups, eCommerce, Fortune 500, and public sector systems.
 
-Practitioner of Extreme Programming (XP), Domain-Driven Design (DDD), and DevOps culture —
+Practitioner of Extreme Programming (XP), Domain-Driven Design (DDD), and DevOps culture --
 guided by competence, a *production-first mindset*, and a love of clarity, innovation, and sustainable systems.
 
 Brings transformational value to corporate America with a honed ability to lead **policy-down and grassroots-up**.
@@ -28,21 +28,21 @@ Aligns _executive vision_ and _engineering implementation_ across all levels of 
 
 Known for::
 - Building consensus from strategy to delivery with collaborative domain-discovery modeling;
-- Architecting shared journeys that evolve policy and culture — grounded in reality, not jargon;
+- Architecting shared journeys that evolve policy and culture -- grounded in reality, not jargon;
 - Leading multidisciplinary contributors through hands-on, trunk-based design and delivery;
-- Coaching XP champions — from business leaders to developers — in test-first mindset practices;
+- Coaching XP champions -- from business leaders to developers -- in test-first mindset practices;
 - Nurturing Communities of Practice (CoPs) into viral cultures of innovation delivering on policy;
 - Empowering advanced, cross-functional teams to field *AI-augmented DDD Aggregates*.
 
 _Drives transformation through *nurture*, *example*, and outcome *ownership*.
-Helps others fall in love with the art of engineering —
+Helps others fall in love with the art of engineering --
 and earn leadership through the long strategy of thinking, making, and shipping._
 
 
 Profile Highlights::
 
 * 35 years in architecture, delivery, and coaching across startups, Fortune 500, defense, and research.
-* Led global XP/DDD/DevOps transformations — from DoD to Deutsche Bank to MATILDA.
+* Led global XP/DDD/DevOps transformations -- from DoD to Deutsche Bank to MATILDA.
 * Core maintainer of cross-org systems; mentor on test-first culture and AI-augmented domain architecture.
 
 

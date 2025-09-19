@@ -12,7 +12,7 @@
 
 {nbsp}
 
-Our GitHub communities are more than repositories—they're living ecosystems where mentorship, experimentation, and shared learning thrive.
+Our GitHub communities are more than repositories -- they're living ecosystems where mentorship, experimentation, and shared learning thrive.
 
 == 🧙 {link-mimis-gildi}.
 

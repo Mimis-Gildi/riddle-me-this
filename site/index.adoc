@@ -38,7 +38,8 @@ reflections, and adventurous stories from the scene.
 
 I'm often on Discord, swapping ideas and field notes with peers and learners alike. +
 Speaking candidly, I am keen on separating that which matters from that which wouldn't. +
-Please DM `riddler9297` then we can talk, join each other’s communities. code together.
+Please DM `riddler9297` then we can talk, join each other’s communities.
+Code together.
 
 == Hacker Forecast: link:/riddle-me-this/series[Trends You Won't Hear from Gartner]
 

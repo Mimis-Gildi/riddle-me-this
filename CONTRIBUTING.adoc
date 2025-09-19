@@ -14,7 +14,7 @@ This repository is a personal resume.
 
 It is **not** a traditional software project. Its content represents the work of https://github.com/rdd13r[one person].
 
-While collaborators and maintainers may appear, they are closely related to the author — friends and family.
+While collaborators and maintainers may appear, they are closely related to the author -- friends and family.
 
 Forking is welcome, but of limited use to others unless you are modeling a similar pattern. For that reason, this repo is licensed under https://creativecommons.org/licenses/by-nc-nd/4.0/[*_CC BY-NC-ND 4.0_*].
 
