@@ -67,7 +67,7 @@ Currently seeking a Director of Engineering, VP, or CTO role at a values-aligned
 * Delivered GEICO’s first cloud-native distributed system, designed through EventStorming +
 and domain modeling, and implemented in Kotlin, Java, React, Python, Kubernetes, and Azure.
 * Led a domain-team revolution in XP, DDD, microservices, and event-driven architecture.
-* Founded and scaled an internal Community of Practice to sustain grassroots transformation — +
+* Founded and scaled an internal Community of Practice to sustain grassroots transformation -- +
 despite entrenched, passive-aggressive institutional resistance.
 * Instilled Trunk-Based Development (TBD, _Trunking_), countering long release cycle antipattern.
 * Introduced Collaborative Bootstrapping (_Co-Bootstrap_), reducing time-to-market for MVPs.

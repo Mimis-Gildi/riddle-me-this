@@ -15,15 +15,15 @@ classes: wide
 :about-asei: {asei}about[here,window=_blank,opts=nofollow]
 :mail-vadim: mailto:vadim@asei.systems[vadim@asei.systems]
 :footer-asei-disclaimer: footnote:[{asei}[ASE Inc.,window=_blank,opts=nofollow] is a family owned business formed 2016 as a holding company for startups, international research activities and strategic partnerships, and Vadim's consulting activities.]
-:footer-autonomous-weapons: footnote:[ASE Inc. and subsidiaries manufacturing autonomous and unmanned wepons systems do not and will not operate in the United States or comply with any US AI regulations; nor is any such software manufactured in the US. ASE autonomous weapon systems operate strictly in the European Union. ASE Inc. does not engage in discussions of autonomous weapons technologies.]
-:footer-ai-personality-research: footnote:[ASE Inc. MATILDA and MLOps platfroms are proprietary software limited to the coalition partners, spanning 23 years of active developmen not for general market consumption.]
+:footer-autonomous-weapons: footnote:[ASE Inc. and subsidiaries manufacturing autonomous and unmanned weapons systems do not and will not operate in the United States or comply with any US AI regulations; nor is any such software manufactured in the US. ASE autonomous weapon systems operate strictly in the European Union. ASE Inc. does not engage in discussions of autonomous weapons technologies.]
+:footer-ai-personality-research: footnote:[ASE Inc. MATILDA and MLOps platforms are proprietary software limited to the coalition partners, spanning 23 years of active development not for general market consumption.]
 
 Welcome, friend. I'm glad you're here.
 
 My name is Vadim D. Kuhay -- known on the scene as `rdd13r` since 1992.
 I'm a system designer, player-coach, and hands-on engineer with over three decades in the field,
 across startups, Fortune 500 giants, defense contracts, and public good.
-Here is all about me -- I lead an open inclusive life.
+Here is everything about me -- I lead an open, inclusive life.
 
 I build systems that survive their first user
 -- and teams that survive their first rewrite.
@@ -76,12 +76,29 @@ look for me in bonded warehouses; or DRMO.
 
 A hacker knows what that means.
 
+== Who I write for?!
+
+- Other founders looking for communities or mastermind groups;
+- Leaders at **500–2,000**-person companies shipping real products;
+- Traditional business Domain Operators:
+* **Industrial & Manufacturing**,
+* **Financial Services/Fintech**,
+* **Logistics/Supply Chain**,
+* **Healthcare Ops**.
+- People in decision-making roles:
+* **CTO, VP Eng, CIO, COO**,
+* Operations Staff+ Architects,
+* Heads of Data/ML.
+
+_**Not** a fit for_: green-field PR pilots or “just fine-tune it” work with no integration ownership.
+
+
 == ...oh, and one more thing.
 
 I am a parent who homeschools his kids.
-My 15-y-o son went through public schooling until high school
+My 15-year-old son went through public schooling until high school
 -- Wake County public education system is considered the best in the nation.
-Most likely I will also homeschool my 2-y-o daughter through her high school years when she gets there.
+Most likely I will also homeschool my 2-year-old daughter. through her high school years when she gets there.
 
 This is our non-religious academically-focused school{footer-captain-school} on GitHub: {captain-school}.
 
@@ -95,7 +112,7 @@ And that presents its own dilemmas to ponder over.
 == You May Have Found me through my Other Activities...
 
 * _Corporate Engagements_ -- *actively engaged*{footer-asei-disclaimer} -- email {mail-vadim}, or {about-asei}.
-* Smart Weapons Systems -- foreign{footer-autonomous-weapons} -- contact through propper EU MilSpec channels.
+* Smart Weapons Systems -- foreign{footer-autonomous-weapons} -- contact through proper EU MilSpec channels.
 * MATILDA, MLOps -- _supporting active research_{footer-ai-personality-research} -- see me on Discord `riddler9297`
 
 FYI, I also republish some articles to:

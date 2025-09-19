@@ -34,7 +34,7 @@ Internal Links (use if you reference other local posts)
 ////
 Image Alt Captions (stable controlled wording for audit-parity)
 ////
-:alt-head-in-the-sand: Head in the Sand — public complacency
+:alt-head-in-the-sand: Head in the Sand -- public complacency
 :alt-just-buy-a-tool: No need to learn, just buy a bigger tool
 :alt-how-competent-is-the-cog: How skilled is the developer
 
