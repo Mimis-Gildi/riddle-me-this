@@ -1,0 +1,23 @@
+---
+categories: [research]
+tags: [AI,Generative AI,Real AI]
+excerpt: >
+  What really happens at the frontier of AI Revolution?
+classes: wide
+comments: true
+hidden: true
+search: false
+---
+= No holds barred: The real AI Revolution
+:img-prefix: /riddle-me-this/assets/images
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:pub-mm: as published on Medium by {mm-newsletter}
+:asei: https://asei.systems/[ASE Inc.,window=_blank]
+:pub-asei: as outlined at {asei}
+
+asd

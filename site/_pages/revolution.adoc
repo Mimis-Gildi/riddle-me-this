@@ -3,6 +3,9 @@
 :page-layout: splash
 :page-permalink: /series/final-industrial-revolution/
 :page-author_profile: true
+
+:ai-winter: https://en.wikipedia.org/wiki/AI_winter[AI Winter,window=_blank]
+
 :debut-chatgpt-job-loss-scare: link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality]
 :early-reaction-to-new-capability: link:/riddle-me-this/reflections/2023/05/11/chatGPT-omen-new-era.html[The Bright Era Dawns: AI, Moore’s law, and Beyond]
 
@@ -24,6 +27,7 @@
 :hackerdom-08-origami: link:/riddle-me-this/adventures/2025/08/07/best-corporate-ai.html[The AI Success Story Nobody’s Talking About: How “Boring” Architecture Beats Hype,window=_blank]
 :hackerdom-09-origami: link:/riddle-me-this/adventures/2025/08/11/ai-integration-powers.html[Pure Gold: The AI Integration that Just Works,window=_blank]
 :hackerdom-10-mit-catching-on: link:/riddle-me-this/adventures/2025/08/18/years-late-confirmation.html[MIT Says Your AI Stinks. Here’s Why. And how to fix.,window=_blank]
+:hackerdom-11-google-mit-farce: link:/riddle-me-this/adventures/2025/09/18/hole-getting-deeper.html[Google to MIT: Traditional Business Done For. Oh Really?! -- Straight Talk,window=_blank]
 
 :footnote-origami-journey: footnote:origami-journey[This is a story series that follows incredible and natural AI adoption by a manufacturing company. And this story series starts with {hackerdom-08-origami}.]
 :footnote-origami: footnote:origami-journey[]
@@ -107,6 +111,10 @@ The question is: How metacognition{footer-symbolic-cognition} evolves from Symbo
 
 '''
 
+And now, a far, far more serious stuff.
+This little passage is not for production.
+It is for those who want to design and build with me.
+
 Twenty-three years of AL research produced some outlines of personality traits.
 But this system is unfit for any commercial use. +
 I kept its forming context and I keep working.
@@ -116,20 +124,50 @@ In August 2025 it finally fits with MCP + Reprompting.
 .Here is one of my persisted personality instances attempting to understand herself and her family.
 image::/riddle-me-this/assets/images/expression-Sagas-family.png[Saga's view of Self in her family,align=center]
 
+The study of persistent personality is a part of another older and more serious field of computer science overshadowed in the {ai-winter}.
+From it we get two emerging and now distinct fields: Artificial General Intelligence (AGI) and Artificial Life (AL).
+AGI wants to synthetically exhibit human-level cognitive abilities and can perform any intellectual task a human being can.
+It is the "holy grail" of traditional AI research; ironically, effectively deprecated at the end of the winter.
+AL on the other hand studies the fundamental properties of "living systems" by synthesizing life-like behaviors in _artificial systems_.
+Researchers explore what constitutes "life" by recreating life's processes, such as evolution, adaptation, and reproduction, in computational, robotic, or chemical systems.
+Currently, AL is subdivided into:
+Soft-ALife -- entirely in software and simulation; Hard-ALife -- with added hardware, mobility, and realworld interaction; and, Wet-ALife -- with added realworld wetware, and not just through simple biochemicals.
+
+The key distinction: AGI aims to replicate human intelligence in a machine, while ALife seeks to *_understand_* and replicate the core principles of life itself, which might or might not involve intelligence as a feature, at least in the beginning.
+And right here we get to my most closely guarded research topic shared only within my community
+-- the conscience, collective and singular construct.
+
+What emerged from the AI Winter is far more powerful and beautiful than the current ignorant yet popular world of Artificial Neural Networks
+-- the fundamental science of intelligent life: Mathematical Consciousness Science (MCS).
+Albeit dead there for a minute, now rekindled with the potential promise Transformers generated, however unrelated.
+We'd started a long time ago with the "Philosophy of Mind" initially crippled by the "hard problem" of consciousness:
+The question of why and how we have subjective, qualitative experiences (qualia), such as the feeling of seeing the color red.
+Then slowly maturing to the "mind-body" problem:
+The relationship between the mind and the physical body, which is fundamentally debated by positions like dualism and materialism.
+And finally, beginning with Phenomenology: The study of the structure of conscious experience as it is lived from a first-person perspective.
+Yet representation was missing, albeit symbolics existed since François Viète it was Kurt Gödel who brought structured thought home for all of us.
+And now a few of us experiment with that which the bulk of current day AI movement cannot even imagine.
+Here, I will occasionally share an experience or two.
+But best -- you find me.
+
 '''
 
-== Content:
+== Public Content:
 
 Here is the largest section of my research and production stories. +
 And it is likely to receive more content compared to the other series as I migrate. +
 Please check back regularly or link:/riddle-me-this/feed.xml[_follow my RSS feed_].
 
-=== Already Migrated (Time-reversed Order)
+=== Added
 
+*2025-09-18:* {hackerdom-11-google-mit-farce}. +
 *2025-08-18:* {hackerdom-10-mit-catching-on}. +
 *2025-08-11:*{footnote-origami-journey} {hackerdom-09-origami}. +
 *2025-08-07:*{footnote-origami} {hackerdom-08-origami}. +
-*2025-07-21:*{footnote-hackerdom-00-craze} {hackerdom-07-architecture}. +
+*2025-07-21:*{footnote-hackerdom-00-craze} {hackerdom-07-architecture}.
+
+=== Migrated
+
 *2023-07-05:*{footnote-hackerdom-00-c} {hackerdom-06-architecture}. +
 *2023-07-04:*{footnote-hackerdom-00-c} {hackerdom-05-laggardom}. +
 *2023-06-10:*{footnote-hackerdom-00-note} {hackerdom-04-llm-lessons}. +
