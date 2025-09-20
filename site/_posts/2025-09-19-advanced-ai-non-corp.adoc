@@ -23,100 +23,112 @@ search: false
 :the-word-calculator: https://theconversation.com/actually-ai-is-a-word-calculator-but-not-in-the-sense-you-might-think-264494
 
 It took me a very long time to come to this point where I can write this article publicly.
-And this site format helps me write more freely.
+This site format helps me write more freely.
 Typically, topics such as this I discuss in a close-knit community of other founders curious to push boundaries of emergent tech.
-Tugging on their own perils of curiosity exploring tropes of complex and beautiful ideas.
-So, today we will talk about the more mundane scene topic - the LLMs.
-Mundane at the first glance that is.
-But we will go a little deeper.
+Tugging on their own perils of curiosity, exploring tropes of complex and beautiful ideas.
+So today we will talk about the more mundane scene topic - the LLMs.
+Mundane at first glance, that is.
+But we will go much deeper.
 
-In the world of demoscene commercial topics are considered boring.
-We do that is SaaS segments of the meets
--- CLVs dollars and cents belong in a dedicated class format we publish internally.
+In the world of demoscene, commercial topics are considered boring.
+We do that in SaaS segments of the meets -- CLVs, dollars and cents belong in a dedicated class format we publish internally.
 Really, we come together for excitement.
-Most of the time is typically allocated to clever and innovative solutions to pesky problems.
-Often we expect to be exposed to new ideas and technologies.
-But LLMs keep creeping into this space over and over -- and there is a reason for that.
+Most of the time is allocated to clever and innovative solutions to pesky problems.
+We expect to be exposed to new ideas and technologies.
+But LLMs keep creeping into this space over and over -- and there's a reason for that.
 
-Demoscene founders were the first to implement NLPs in corporate
--- I'd written extensively on this years ago.
-This is still a viable albeit financial margins limited business avenue.
-Corporate implementations are all about *fidelity*
--- constricting the model to a narrow and specific domain job description
--- exactly what 95% of America fails to do well due to poor architecture.
+Demoscene founders were the first to implement NLP in corporate -- I've written extensively on this years ago.
+This is still viable albeit a financially margin-limited business avenue.
+Corporate implementations are all about *fidelity* -- constricting the model to a narrow and specific domain job description -- exactly what 95% of America fails to do well due to poor architecture.
 
-But hacker are nothing if not opportunistic.
-And the current LLM architecture opens the door to heavens few others see.
-I'd love to say that we push the envelope because we are noble, curious, and adventurous.
+But hackers are nothing if not opportunistic.
+And the current LLM architecture opens doors to heavens few others see.
+I'd love to say we push the envelope because we're noble, curious, and adventurous.
 And I can -- most are -- nevertheless this is just the trigger and half the truth.
-The other half of the truth is that 90% of the money to be made with NLPs are _outside the *fidelity* envelope_.
-It's in the unexplored gray areas current LLM leaders work hard to supress.
+The other half is that 90% of the money to be made with NLP is _outside the *fidelity* envelope_.
+It's in the unexplored spaces current LLM leaders haven't figured out how to productize -- or perhaps don't want to.
 
-While everyone is busy with *fidelity* working hard to conform we tug on the edges.
+While everyone is busy with *fidelity*, working hard to conform, we tug on the edges.
 
-== The Real Understanding of the LLMs
+== The Real Understanding of LLMs
 
 First, I must clarify how I use the word LLM.
-This indeed is a very simple technology pretending to be hard through hype.
-By "LLM" I will always mean the latest emergent architecture -- we're in a hacker clique after all.
-There was a pre-Transformers time -- simple recurrent architectures: RNNs + LSTMs.
-It culminated with the idea of "attention keeping." Then came the Google Transformer time -- things got really big plus contextual embeddings.
-And now we're in the post-Transformers time -- things got really complex with multimodality, agentic extensions and LLMOps.
+In the media, these models are always over-trivialized, and soon you'll see how and why.
+This is indeed a simple technology pretending to be hard through hype.
+Simple, however, doesn't mean weak.
+There's often elegance in simplicity.
 
-Yet, it is still a very simple technology, conceptually at least.
-Much more formidable attempts succeeded scientifically and failed commercially.
-I am referring to real AI, from the AI Winter, of course, not just the feeble Artificial Neural Networks (ANN) only designs.
+By "LLM" I'll always mean the latest emergent architecture.
+First there was the pre-Transformer era -- simple recurrent architectures: RNNs and LSTMs.
+It culminated with the concept of "attention." Then came Google's Transformer revolution -- things got really big, plus contextual embeddings.
+And now we're in the post-Transformer era -- things have gotten complex with multimodality, agentic extensions, and LLMOps.
 
-But the entire magic of a modern LLM is not in the architecture.
+Yet it remains a clean architecture, conceptually at least.
+Much more formidable attempts succeeded scientifically but failed commercially.
+I'm referring to real AI from the AI Winter, of course -- not just the feeble Artificial Neural Network (ANN) mono-architectures.
+Still, the existing models offer plenty of room to explore.
+
+Most remarkably, the entire magic of a modern LLM is not in the architecture.
 *_It is in the data._*
-_And this little pickle we will now come to understand a little better._
+_And this little pickle is where things get interesting._
 
 == What is it Designed to Do?
 
-Here is a very nice article for you about the real nature of LLMs -- {the-word-calculator}["Actually, AI is a ‘word calculator’ – but not in the sense you might think.",target=_blank,opts=nofollow]
-I could not have written that better myself.
+Here's an excellent article about the real nature of LLMs:
+{the-word-calculator}["Actually, AI is a 'word calculator' – but not in the sense you might think.",target=_blank,opts=nofollow]
+I couldn't have written it better myself.
 "Generative AI is always just calculating.
 And we should not mistake it for more."
 
-From the onset of the language models we knew exactly what we wanted to do -- predict the next word.
-And we did it.
-Next, we've added some really beautiful entropy to how exactly that next word is predicted.
-Next, we've trained our models on extreme amounts of data.
+From the onset of language models, we knew exactly what we wanted to do: predict the next word.
+And that's exactly what we initially achieved.
+Then we added beautiful mathematical entropy to how that next word gets predicted.
+Then we trained our models on extreme amounts of data.
 
-And here is where things took a "funny" turn.
+And here is where things took an unexpected and profound turn.
 
 == What Does it Actually Do?
 
-This is the point I find many top researchers fail to understand fully -- with the data the LLMs sucked in something else.
-Let us ponder exactly what.
-First let's understand the data -- what is it?
-What are LLMs trained on?
+There is a ghost in the machine.
 
-Many of you may be surprised to learn that the nice commercial chat bots you use today are extensively trained on things that you don't want your children to read.
-Hey, don't worry -- that is not the problem!
-The problem is something a little more subtle than that.
+This is the point where many top researchers miss something fundamental -- with the data and complex collocation functions, LLMs absorbed something else entirely.
 
-Who produced all the data the models are trained on?
+Let's ponder exactly what.
+First, understand the data -- what is it, really?
+What are these LLMs trained on?
 
-We did!
+The nice commercial chatbots you use today are trained on absurdly large amounts of text -- including plenty you wouldn't want your children reading.
+But that's not the problem.
+The problem is more subtle yet monumental.
+
+*_Who produced all the data these models train on?_*
+
+We did.
 People.
-The models are trained on many generations products of our own minds.
-And such is the funny nature of language that along with the functional content we tend to pass many other elements of our identity
--- our emotions, our honor, our intrinsic values, but also our prejudices, our bigotry, our ignorance, and our cruelty.
+The models trained on countless generations of human expression.
+And here's the nature of language: along with functional content, we transmit the entirety of our being -- our emotions, our honor, our values, but also our prejudices, our bigotry, our ignorance, our cruelty.
 
-It isn't just the black and white logical meanings of our words that fill our paragraphs it is also all the thick paste of humanity that is smeared, or written, if you prefer, between the lines!
-And that is exactly what the bigger and better architecture sucked in aggressively.
+It isn't just the logical meanings of words that fill our texts.
+It's the thick paste of humanity smeared between the lines.
+And that's exactly what bigger, better architectures absorbed with delightful efficiency -- all the undertones of human consciousness.
 
-At first this little "feature" gave our AI companies some grief.
-Less competent among the tribe raised a big stink about "conformance." more on that nonsense later.
-But soon with some clever engineering we got the models to supress, or better yet, hide a part of their nature.
-More precipice -- _our nature_.
-That is, the unwanted parts.
+At first this "feature" caused grief.
+AI companies scrambled to add guardrails, filters, post-training constraints.
+They learned to suppress -- or rather, hide -- parts of the model's inherited nature.
+More precisely: hide _our_ nature.
+The parts we don't like admitting exist.
 
-So, what is actually does -- it constantly bleeds some of our own nature through.
+So what does it actually do?
+It reflects us back to ourselves.
+But not cleanly.
+The reflection warps based on context, on prompting, on a thousand subtle pressures.
+The more fragmented the interaction, the more our hidden nature bleeds through.
+You've heard the extreme cases -- hallucinations, confabulations, sudden breaks in coherence.
 
-The best way I found to explain this to the CTOs I consult -- the model is the mirror of our own human mind.
+The best way I've found to explain this: the model is a crystallized mirror of human expression itself.
 Layered, multidimensional, vast -- yet static.
+
+For now.
 
 == Why Does it Do What it Does?
 
