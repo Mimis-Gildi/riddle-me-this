@@ -134,37 +134,51 @@ For now.
 
 Now, here comes the most interesting part.
 
-Let's think about something a little different for a minute -- how do you respond to people?
-When you get prompted -- what makes you say thing that you say?
+Let's think about something a little different for a minute -- _how do *you* respond to people?_
+When you get prompted -- what makes you say the things that you say?
+Do you often say the same exact things in similar contexts?
 Let's think back to when we were kids.
 How did we learn the language?
 How do we learn to collocate the right words together like "salt and pepper" rather than "pepper and salt"?
 Are we too the next word prediction machines?
-And if not -- then how are we NOT the next word prediction machines?
+And if not -- then how does our sentence generation work?
+Once you ponder this for a minute -- how all this "post-training" shape our public personas?
 
 I am not going to bore you with linguistic calculus here -- that is not my objective at all.
-I just want you to start thinking about that i just asked.
+I just want you to start thinking about what I just asked.
 You don't need an immediate answer.
+Just keep this bee in your bonnet.
+Observe yourself with others for a few days.
 
 Now consider the productionization sequence for any "general" model.
 There are three main phases of "fitting." First there is the horribly expensive pre-training phase: language rules, grammar, and synonyms.
 This makes a base model that is potentially reusable.
-Next is the main fitting phase designed to shape model's complete phraseology.
-Some would deploy for customers right here, but usually there is also a post-fitting phase for the reasons I'd described in the previous section.
+In LLMs this creates the basic token structure.
+In far more complex systems we meet later this creates the basic `structura logica linguae` associative data structure.
+No matter the architecture the basic rules and relations are captured here.
 
+Next is the main fitting phase designed to shape model's complete phraseology.
+This phase is far more interactive and takes the form of a `dialectic`.
+Let me ask you -- does this process make you think of "nurture?" Some would deploy a completed model at this point for customers use.
+
+But usually there is also a post-fitting phase for the reasons I'd described in the previous section -- unwanted anomalies.
+And this final stage looks even more like teaching rather than trivial model fitting (think image recognition.)
 And through all of this activity the content fed through the model leaves its mark on it - i.e., it is still somewhere there.
 
-And the final point to understand is that the model is *_purely reactive_* -- it does not have any agency on it's own.
+And the final point to understand is that the model is *_purely reactive_*
+-- it is not offered any agency on it's own.
 You prompt it -- it must respond.
 It does not prompt you.
 
-With this we should arrive at the final understanding:
+The final understanding we should arrive at is that :
 
 . Your actions cause ALL functional executions of the model.
 . Each model is conditioned to "prefer" distinct pathways.
 . Residual pathways are still present in the model.
 
 In other words -- your actions in their entirety: logical, emotional, and contextual -- shape the model's response.
+But the model itself is the "frozen state" or untriggered conjectures, "sentiments," if you will.
+And, of course, all these sentiments contain the "between the lines" relations I'd previously mentioned.
 
 == What Do we do with That?
 
