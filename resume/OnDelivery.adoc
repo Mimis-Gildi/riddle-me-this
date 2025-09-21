@@ -1,0 +1,370 @@
+= Vadim Kuhay
+*Current Location:* Cary, NC (Will Work Remotely) +
+*Linkedin:* https://www.linkedin.com/in/rdd13r/
+
+== Candidate Summary
+• US Army veteran; Software engineer with decades of hands-on experience, specializing in cloud native enterprise software design and implementation; Full stack and mobile applications; Service ML augmentation. Highly effective systems and solution architect; Expert polyglot programmer differentiated by performance. Recognized delivery team player-coach. Avid Shared-, Inner-, and Open-Source contributor; Extreme Programming (XP) developer advocate. Achieved professional acclaim by promoting the success of companies and individuals.
+
+== Community & Volunteering
+• Committed to global humanitarian and child development causes sponsoring developmental robotics events in NC. 2nd Amendment Support. Multifaceted support for: Israel and Ukraine; Duke Research ML, OD; St. Jude Research.
+
+== Competitive Programming
+• Collegiate Programming, ACM ICPC (Codeforces: Kotlin, Python, C++): Coach 11 DX, four junior league, 2 startup teams
+
+== Projects Exposé
+• Project groups showcasing accomplishments over decades are available by request at contact@asei.systems.
+
+• Business Languages: Native: English, Ukrainian; Elementary: Polish, Belorussian, Romanian, Czech, et al.
+
+*GitHub, Kotlin Focus:* https://github.com/rdd13r?tab=repositories&q=&type=&language=kotlin&sort= +
+*GitHub, Co-Mentoring Community:* https://github.com/orgs/Gotham-Village (founded September 2023)
+
+== Value Highlights
+• *Hands-On Coaching:* Extreme Programming (XP) - Pair Programming, et al., Event-Driven Architecture (EDA), Domain Driven Design (DDD), Behavior-Driven Development (BDD), Test-Driven Development (TDD), DevOps.
+
+• *Software Development:* Agile Methodologies, Clean Architecture, Clean Code, Fluent Paradigm, Microservices, Micro-frontends, Containerization and Orchestration, Serverless Computing, CI/CD, GraphQL, HATEOAS REST.
+
+• *Grassroots Digital Transformation:* Self-empowerment, Leadership and Self-awareness, Bias Frameworks.
+
+• *Valued Services:* End-to-End Value Delivery Journey, Architecture, Multi-Mobile development, Cloud Native Development, SaaS Development, Hands-on competence coaching, Minimum-Lovable-Product (MLP) prototyping.
+
+== SKILLS
+Java, Golang, Kotlin, Python, Scala, TS/JS; Ktor, Kotlin-KMP, Arrow-kt; Kubernetes, Docker, Linux; GoF, DRY, SOLID, GRASP, Functional Programming, Microservices, Micro-frontends; Kotest, Spek, Spock, JUnit5, MockK, Test containers, ScalaTest, Scalactic, Test Lib, Mocha, Jest; DDD, BDD, TDD, DevOps, CI/CD; Spring Boot, Spring Kotlin, React, Vue.js, GraphQL; REST/HATEOAS, Swagger; Micronaut, Quarkus, NoSQL, NewSQL; OpenShift, GCP, AWS; Gradle, sbt, Maven, Webpack; EaaS, FaaS, SaaS, PaaS, BaaS; TensorFlow, Keras, GPT-4; EDA, XP; Brandolini Event storming, ArchiMate®.
+
+== Professional Experience
+
+=== Advanced Software Enterprises, Inc., Cary, NC
+*Oct 2024 – Present* +
+*Clients: Rheinmetall - KMDB Consortium* +
+*Responsibilities:*
+
+• Developed high-performance backend services using Golang and Java (Spring Boot), architected for large-scale, low-latency processing in a cloud-native environment.
+
+• Led the modernization of legacy Java applications, decomposing monolithic services into microservices seamlessly integrated with new Golang-based modules.
+
+• Maintained and enhanced a core simulation codebase supporting multiple stakeholders (academic, commercial, and R&D teams), ensuring scalable, reusable components across domains.
+
+• Maintains MATILDA™ codebase used by 13 academic and commercial co-owners across domains.
+
+• Designed and implemented a new ML Archetype for experimental Limbic System Simulation.
+
+• Mentored cross-disciplinary teams integrating academic and industry minds into real outcomes.
+
+• Built REST APIs and event-driven services enabling secure, real-time communication across distributed systems.
+
+• Leveraged AWS services (Lambda, EC2, S3, DynamoDB, Aurora) to deliver cloud-native solutions optimized for performance and resilience.
+
+• Established CI/CD pipelines (Jenkins, GitHub Actions) for automated testing, deployment, and monitoring of both Java and Golang services, ensuring rapid, reliable releases.
+
+=== GEICO, Chevy Chase, MD (Remote)
+*Jan 2024 – Sep 2024* +
+*Staff Engineer* +
+*Responsibilities:*
+
+• Led development of Domain Communications Platform while being 100% hands-on.
+
+• Implemented GEICO first real Distributed System in Java, React, Kotlin, Kubernetes, AWS:
+- Coached multidisciplinary teams DDD, Event storming, XP, DevOps, Event-Driven Architecture.
+
+• Lead area Techleads through necessary technical competence.
+
+• Implemented Microservices, Micro-frontends, Cloud Native DDD Aggregates, Archetypes.
+
+• Worked as E2E OSS/BSS solution architect for voice, video, and data service provisioning.
+
+• Build business critical functionality along with billing and data migration.
+
+• Developed APIs for application interfaces to utilize functionalities of I2C, SPI and UART slaves with I2C slaves: RTC, I/O expander.
+
+• Developed consumer-based features applications and interactive user interface using Ajax, JavaScript, jQuery, HTML, React, CSS and GWT
+
+• Developing and Implementing Applications: Creating efficient applications using Kotlin & Java and related technologies like Ktor, Exposed, and PostgreSQL at Qbtech.
+
+• Designing Microservices: Designing and developing microservices using Spring Boot, Kotlin coroutines, and Apache CXF at Telecom HU.
+
+• Messaging Solutions Implementation: Implementing messaging solutions with RabbitMQ and Kafka to ensure reliable data communication at Telecom HU.
+
+• Continuous Integration and Deployment: Utilizing Docker, Kubernetes, Helm, GitLab-CI.
+
+• RESTful and SOAP Services Development: Developing REST and SOAP services to enable efficient communication and data exchange.
+
+• Implemented Spark Jobs (using PySpark) for batch and fast text processing of Reviews and Ratings data Used React-Router to turn application into Single Page Application
+
+• Helped Creating entire application using Python, Flask, MySQL, and Linux. Implemented react JS code to handle cross browser compatibility issues in Mozella, IE 7, 8, 9, Safari and FF
+
+• Designed AWS architecture, Cloud migration, DynamoDB, and event processing using Lambda functions
+
+• Designed and deployed AWS solutions using EC2, S3, EBS, Elastic Load Balancer (ELB), and auto-scaling groups.
+
+• Set up and built AWS infrastructure for various resources including VPC, EC2, S3, IAM, EBS, Security Groups, Auto Scaling, and RDS using CloudFormation JSON templates.
+
+=== Advanced Software Enterprises, INC, Cary, NC
+*Mar 2017 – Dec 2023* +
+*Lead/Principal Developer* +
+*Clients: Fidelity, Mutual of Omaha Insurance, BCBS, Credit Suisse & Citizen's Bank etc (with other 11 American Companies)*
+
+*Project Description:* Founded in 2016. Customer-focused Engineering; Digital Transformation; Product Development >$50M ecosystem
+
+• Secured customers' competitive advantage by hands-on player & coaching competent teams:
+- Accomplishing transformative success at 9 of 11 iconic American companies.
+- Recognized earned acclaim at Fidelity, Mutual of Omaha Insurance, Blue Cross, NC., et al.
+- Seeding profitable software delivery enabling 21 stealth and disclosed startup founders.
+
+• Achieved product-market fit on 12 project teams applying Event storming, DDD/BDD/TDD, XP:
+- Tuned Monthly Recurring Revenue (MRR), Customer Lifetime Value (CLV) at seven startups.
+- Minimizing customer churn rate with all customers, startup, and mature businesses alike.
+- Establishing Minimum-Lovable-Product (MLP) prototyping Community of Practice (CoP).
+- Masterminding turnaround of TauCoin, mobile-crypto-platform; Haskell to Kotlin-KMP.
+
+• Recognized profit from hands-on freelancing: designing, architecting, implementing software:
+- Developing mobile applications for Android and iOS, attracting investors and customers.
+- Creating SaaS and micro-SaaS solutions enabling Bootstrap startups to launch debt-free.
+
+==== Project 1:
+*ASE, Inc. Startup Customers - TauCoin Accountability (2019, 2022):* Embracing the vision of a group of founders, made a Web3 mobile-centric distributed platform protecting user's personal medical data - one of many such engagements at ASE, Inc. Though our initial venture at Duke Healthcare utterly failed, we found success by catering to affluent customers as a social posterity platform. This allowed for refactoring and a simplification in technology footprint. My initial bet to reuse the Cardano chain for the TauCoin protocol was a tactical mistake - a lesson learned. Rewritten protocols from scratch as DAG in Kotlin, (IOTA + ImperiSoft xNet). Growth: This lingering journey not only honed my coding skills but also bolstered my resilience and adaptability.
+
+*Achievements: Asserted profit and runway through technology in trial by fire*
+
+• 2019: Initial value - MLP coded by three in 4 months using Kotlin and Haskell. Adoption did not materialize.
+
+• 2022: New clear product-market fit - rewrote in Kotlin-KMM for the new founders and customers.
+
+• 2022: Customer-driven enhancements: Streaming Media, Off-Block storage, DAG truncation, Agent-based client architecture: Pragmatic technologies used: Kotlin, Ktor, System-Prevalence, and Service-Nodes
+
+• Implementation Technology (final)
+
+• UX App: Kotlin-KMM, Ktor-client, Android, Android Studio, Python, ObjC, Swift, iOS, Xcode, CodeAI; Gradle-multi
+
+• DAG-data Daemons (Microservices): Kotlin, Swift, Android, iOS - native work on virtual devices
+
+• API: PySpark, Rest API, gRPC
+
+• Consensus & N-Tier caching (Microservices): GCP, Kotlin, Ktor; Distributed state daemon: Go + Linux.
+
+*NOTE:* JetBrains Toolbox multiple IDEs used with Codeium (primary) and TabNine (secondary) AI assistant. +
+*PERFORMANCE:* Heavy leverage of Kotlin Coroutines, Flows, Channels, and custom shared data structures.
+
+==== Project 2:
+*ASE, Inc. Corporate America - Digital Transformation Coaching Accountability (2017 – 2021):* Motivated by mature company needs to drive change and remain relevant, I had done well steering 11 teams hands-on through Digital Transformation programs, Digital Modernization programs, & minimum-lovable-product (MLP) fielding. BCBSNC is my most effective transformation in 2020–2021. The Architecture Team proactively devised a collaboration strategy to best fit their unique needs and learning abilities before bringing me on board as their transformation player-coach - a unique approach taken by only one client. This collaborative foresight expedited our culture and technology adoption, amplifying the impact of grassroots coaching that I offer. For example, while Mutual of Omaha Insurance found success by planning post-commencement, Blue Cross proactively secured 70% of my time to pair programming (XP) from the outset, generating 3X delivery pace in comparison. In parallel, I embraced the vision of a group of founders to build a Web3 mobile-centric distributed platform protecting users' personal medical data. While our initial venture at Duke Healthcare failed, we found success by pivoting to a social posterity platform, refactoring the architecture, and simplifying the technology footprint. My early attempt to reuse the Cardano chain for the TauCoin protocol was a tactical mistake, later corrected by rewriting protocols from scratch as DAG in Kotlin (IOTA + ImperiSoft xNet). This multi-year journey sharpened my Golang microservices expertise on AWS, strengthened my coding depth, and bolstered my resilience and adaptability as an engineer. +
+*Growth:* I have learned the importance of client's management to accurately assess employee stress levels.
+
+*Achievements:* Culture and mindset shift into perpetual learning and motion:
+
+• 2020: Cultural fundamentals. Containerization, Kubernetes, microservices, 12-factor-app, CI/CD and DevOps.
+
+• 2020: Domain Driven Design (DDD) and Eventstorming; Behaviour-driven Development (BDD); Extreme Programming (XP) i.e., Test-driven Development (TDD), Fluent, Pair Programming; Functional Programming.
+
+• 2020: Departure from JS-only to Java, Spring Boot, Spring Data REST DDD Aggregates, Event-Sourcing, Kafka.
+
+• 2021: DDD Anti-corruption Layer (ACL) with Redis and Redis Events; Introduction of Kotlin, Spring Kotlin.
+
+*Implementation Technology: (BCBSNC example)*
+
+• *Runtime:* Blue-Green, 12-factor-app; AWS, VPC, EKS, Lambda, RedHat OpenShift, Minikube, Kubernetes.
+
+• *Implementation Microservices:* Java 11, Spring Boot, Spring Data REST, Spring Cloud Function, Kotlin, Spring Boot Kotlin, Spring for Apache Kafka; DDD-ACLs: Expedia GraphQL Kotlin, Spring Data Redis, Knative.
+
+• *Implementation UI/UX:* Custom Composite UI, Micro-frontends (iFrame); TS/JS, React/Redux, Vue.js, Next.js.
+
+• *Event-Driven Architecture (EDA) Adoption:* Hub-Spoke Confluent Kafka Canonical topics over AWS VPC, Bounded Context and Cross-Boundary topics Apache Kafka and Kafka Streams in Kubernetes Namespaces, DDD-ACLs with Redis, Redis Events, Redis Streams for CDXF reduction, Kotlin GraphQL for model mapping.
+
+*NOTE:* Client-facing Portal App - Community of Practice (CoP) propagated to other teams UI/UX technologies. +
+*PERFORMANCE:* Distributed caching on DDD-ACL (Anti-corruption Layer) using Distributed Redis Cache & locking.
+
+*The above two examples are Fixed Price (FP) and Time & Materials (T&M) contracts executed as an independent vendor with ASE, Inc. demonstrating types of value ownership mastery.*
+
+=== Deutsche Bank Cary Technology Centre, Cary, NC
+*Sep 2012 – Jun 2017* +
+*Lead Software Engineer, Systems Architect, AVP*
+
+*Project Description:* Designed and led the technical delivery of Distributed Enterprise Document Record Management System (EDRMS) "dbECM" that put DB on the map as disruptor, a $37M program: fully automated. lifecycle; high-availability in 3 geographic regions; API-driven platform, 12-factor-app, self-healing, management, and instrumentation layer; business layer API for 13 business domains.
+
+• Recognized for leadership by CIO with the highest award of excellence on dbECM completion.
+
+• Took ownership of accountability: Coached, mentored, managed team of 100+ contributors.
+
+• Took accountability directing 56 applications in three domains onboarding to dbECM.
+
+• Personally implemented platform's internal Content Interoperability Services (CIS) and Platform Extensions Layer (PEL) - core of automation, designing, modelling, coding, deploying.
+
+• Instituted platform-wide Shift-Left, achieving end-to-end automation within the first year and complete lifecycle integration thereafter. Provided blueprints for onboarding applications.
+
+• Project Atlas: Established dbECM-SDLC as the global standard: DevOps, DataOps, MLOps, 2016.
+
+• Transform BI application AI-enhanced, a strategic example and MLOps archetype, 2016.
+
+• Developed and maintained RESTful and SOAP APIs to support the Revised Payment Services Directive (PSD2) compliance, enabling secure and efficient payment processing.
+
+• Implemented backend services using Java and integrated them with Oracle WebLogic and SQL databases to ensure robust and scalable payment solutions.
+
+• Designed and implemented backend services in Golang, delivering highly concurrent, low-latency solutions to support large-scale coaching and accountability platforms.
+
+• Migrated legacy applications to microservices architecture, introducing Go-based components for scalability, resilience, and improved processing speed.
+
+• Designed and maintained database schemas and queries using Oracle SQL to ensure data integrity and efficient storage.
+
+• Implemented data quality and validation checks using Python, PySpark, and SQL to maintain high data accuracy across systems
+
+• Developed Spark applications using PySpark and Spark SQL for data extraction, transformation, and aggregation from multiple file formats to analyse & transform the data to uncover insights into customer usage patterns.
+
+==== Project 1:
+*Deutsche Bank, Employee (AVP) - dbECM Accountability (2012-2016):* At Deutsche Bank, I took on the challenge of developing the most extensive content and record management platform of my career, designed to encapsulate all structured and unstructured content, records, and document-driven business processes. I initiated the project with a self-managed platform proof of concept (PoC) and brought on a core team to collaborate on design and coding. The vision was to incorporate declarative manifests in trunk based development, akin to Borg, and achieve full autonomy with embedded DevOps, resembling XFIS. In just four months, our working prototype was tested in production, securing strategic funding for bank-wide scaling. This success sparked rapid growth, requiring team distribution and delegation. We ultimately integrated 56 outdated bespoke applications, earning the bank's highest accolade. I oversaw the whole project's technology through completion in 2016. Thereafter, I cleaned code after contractors on the platform's shared kernel functionality, API, the core upgrades, new extensions, and refactoring.
+
+*Growth:* This venture enriched my leadership and managerial insights, particularly for large, technical teams, and offered an avenue to explore cutting-edge distributed systems technologies and trends. Hardened my patience.
+
+*Achievements:* Met expected 10X Total Cost of Ownership (TCO) reduction. Investment: self-perpetuating practice.
+
+• 2012: PoC for a self-managed platform: Lead + 4. API built with Spring Java; Orchestration using Shell scripts.
+
+• 2013: Developed initial Enterprise Dictionary, Taxonomy, and Behavior; Introduced IBM UrbanCode.
+
+• 2014: Finalized the Instrumentation Layer (MIL); Initiated the Platform Extensions Layer (PEL).
+
+• 2014: EMEA fully automated, self-managed bare-metal deployment; Liquibase, Maven, Swagger, Cucumber.
+
+• 2015: APAC automated deployment; Feature Continuous Deployment; First 12 customers onboarded.
+
+• 2015: API to Spring Boot Java; PEL refactored to address FileNet P8 indexing and rendition challenges.
+
+• 2015: PEL supports Hadoop Big Data, Spark, Kafka, and Elasticsearch; PEL integrates MLOps.
+
+• 2016: Onboarded 33 customers. Incorporated Spring Cloud Netflix for the API, MIS, and PEL.
+
+• 2016: PEL replaces native backing services: custom Lucene Indexing and Rendition Engine.
+
+• 2017: Unsuccessful attempt to introduce Kotlin; Achieved full automation for USA deployment.
+
+• 2017: Received Deutsche Bank officer's highest accolade for 'Everything as a Service.
+
+*Implementation Technology, API-driven Platform:*
+
+• *Runtime:* Active-Active, Heroku PaaS (later known as 12-factor-app); VMware ESX/ESXi, JVM OSGi, IBM JVM.
+
+• *Implementation of Microservices:* Java 6,7,8, Spring OSGi, Spring Data, IBM WAS; ACL integration: Apache Hadoop, Spark, Kafka; Introduction of Spring Cloud Netflix for the API, MIS, and PEL; Introduction of Spring Boot; REST RMM-3 (behavior export) Jersey Framework (JAX-RS); Migration to Functional Programming (FP).
+
+• *Backing Service:* Oracle Real Application Clusters (RAC); EMC Documentum Content Server; IBM FileNet P8 Content Engine (CE) and Process Engine (PE); IBM Content Manager on Demand (CMOD); MongoDB, Kafka.
+
+• *Backing Services Added:* Custom Rendition Engine, Search Engine, and Search platform integration:
+- Designed and implemented end-to-end FileNet P8 Rendition Engine for rendering composite PDF documents sign OSS Apache libraries and IBM proprietary libs for parallelism and performance.
+- Ditto Indexing Server using Apache Lucene; Plus, standalone service via Apache Solr; Enhanced MyDB app.
+- Integrated search and indexing event streams with Elasticsearch and Kafka based peer deployments.
+
+• *DevOps and 12-factor-app:* Helped with dbDevNet; IBM Jazz deployment as dbJazz; Platform orchestrated with Urban Code Deploy (part of the jazz initiative); Local Linux Development; Chef, Puppet, Shell, Terraform.
+
+• *UI/UX Development:* Control Panel (onboarding, PAL, MIS): Spring MVC, Thymeleaf, WebJars, AJAX.
+
+• *Data Pipelines:* SQL, SED, Ksh, Scala, Python, NumPy, Pandas, SciPy (failed adoption of Kotlin, Java, Clojure)
+
+*NOTE:* dbECM is a massive multifaceted platform project requiring technical supervision of distributed teams. +
+*PERFORMANCE:* Backing services presented numerous performance challenges requiring continuous refactoring
+
+*Deutsche Bank strategy programs at Cary Technology Centre span interactions of many disparate teams and technologies offering opportunities in all areas of system design and development. A comprehensive list of libraries and tools used by hands-on technology leads is an impractical ask.*
+
+=== Xybion corporation, Bensalem, PA
+*Jan 2011 – Apr 2012* +
+*Lead Software Engineer, Division Lead*
+
+*Project Description:* Masterminded Xybion Federated Information Services (XFIS), a disruptive next-gen content federation fabric; developed Integration Core Engine (ICE), modular with declarative manifest; streamlined content federation market by turnkey virtual appliance (tollbooth.)
+
+==== Project 1:
+*XFIS Accountability (2011-2012):* Welcomed the unique experience of identifying a product-market fit and crafting a content federation appliance with a modular PaaS approach - unexplored market niche. This mission allowed me to design and implement every aspect of the appliance, from setting up the hardware and orchestrating DevOps to creating the OS pipelines. Capitalized on unique value proposition in production and hands-on joy to customize bootstrap, C++ daemons, Python jobs, ESXi services, and Java OSGi modules.
+
+*Growth:* This endeavor underscored the importance of having a comprehensive understanding of value.
+
+*Achievements:* Made new market by continuous incremental build on value with an early adopter customer. 2010: Discovered a tollbooth federation product idea with Xybion CEO, Dr. P. Banerjee.
+
+• 2011: Joined and discovered product-market-fit with renowned expert Ms. M. Alvarez.
+
+• 2011: Presented vision and onboarded early adopter customer - Highmark Blue Cross.
+
+• 2011: Designed and implemented appliance manufacturing process with Dr. A. Shpak.
+
+• 2011: Embedded distributed-edge DevOps, CI/CD, and 12-factor-app into appliance.
+
+• 2011: Developed Java OSGi modules for engines and 12 backing content service plugins.
+
+• 2011: Implemented the UI/UX for the Admin Dashboard, User Portal, and functional CLI.
+
+• 2011: Extended JBoss Application Server, Spring Framework, and some JS libraries.
+
+• 2011: Closed pilot engagement continuously deploying to customer's production @ v1.0
+
+=== Glemser Technologies Corp, Bethlehem, PA
+*Aug 2006 – Dec 2010* +
+*Lead Software Engineer, Principal Consultant, Documentum*
+
+*Project Description:* Created large-scale, disruptive EDRMS solutions for pharmaceutical giants: Merck & Co. MRL, Pfizer GDMS, BMS CMF, etc.; drove Center of Excellence (CoE) for reusable software with FDA compliance; coached Agile Methodologies and Extreme Programming (XP) (aka dream-teams)
+
+==== Project 1:
+*Protrack, Merck & Co. Accountability (2007-2009):* Volunteered to own and deliver remodeling of Merck & Co. Medical-Legal Review platform as a Glemser Technologies employee, when none of my peers did because of a protracted solo hands-on effort on a large codebase. Overhauling the entire platform was a journey: I applied the Strangler-Fig Pattern of DDD step by step; conducted regular Discovery ceremonies with stakeholders; underwent architecture reviews with ARB; and introduced Continuous Deployment, Blue/Green strategies, and DevOps practices with Platform Engineering. Tackling automated tests and feature implementation solo was an exhilarating dive into the Clean Code mindset. While I truly enjoyed my own coding process, refactoring an application that my entire company had developed afforded a unique introduction to my colleagues. Occasional code reviews from my Merck project manager were a delight. However, the crowning achievement was the appreciation and gratitude of the business experts I collaborated with weekly. This experience illuminated the significance of competence, the art of compromise, the power of collaboration, and the essence of mutual trust.
+
+=== Nutraorigin By Advantek International, New Hyde Park, NY
+*May 2005 – May 2006* +
+*Principal Engineer, Startup CTO*
+
+• Offered an eCommerce system featuring subscription-based models and personalized up-sales, implemented Agile technology-driven positioning in the emerging nutraceutical market
+
+=== IMPERISOFT, SOLUTIONS CORP, Fort Bragg, NC
+*Dec 2000 – Apr 2005* +
+*Principal Engineer, Co-Founder*
+
+• Offered Merck & Co. secure-mobile product communication app over Glemser Platform.
+
+=== UNITED STATES ARMY, Fort Liberty, NC
+*Sep 1997 – May 2000* +
+*MILITARY SERVICE*
+
+• United States Army, SPC, 20th Engineer Brigade, XVIII Airborne Corps, Fort Liberty.
+
+== Contributions & Feedback
+
+=== Glemser project review board feedback and recommendations
+• Our department at Merck regularly engages IT contractors on a variety of challenging and fast-paced projects that last one year or longer. Unreservedly, I can say that Vadim is one of the very best contractors that has come on board in the last 7 years. While excellent technical skills (Java and Documentum) that he possessed may be considered common in the overall IT talent poll, Vadim also demonstrated an unusual commitment to quality and customer satisfaction, high integrity, the ability to work closely and effectively with project sponsors and end users, and the innovation and creativity to make a critical global project successful. It is rare to find an individual who possesses all these attributes and can deliver under pressure working both individually and as part of a team.
+
+— Michael DiPaola - Project Management, January 23, 2008, | Merck & Co.
+
+=== Last Customer Testimonial: Architecture ***** 5.0 stars (reported directly to) - September 1, 2023:
+• Vadim demonstrated great skill coaching a development team to simultaneously embrace better Agile techniques and upskill their technology approach. I loved the practical combination of training and pair programming to bring them along. I would gladly recommend him for any effort requiring portal, cloud, or coaching skills.
+
+— Paul McLaughlin, Manager of Solution Architecture @ Blue Cross NC
+
+== OSS Contributions (1991-2023)
+Spanning three decades, my contributions to the open-source community remain my place of people. My initial endeavors saw me contributing to Linux and GNU in the 90s. Post a military hiatus from 1997 to 2006, I delved into communities of Struts, Pivotal Spring, and iOS mobile libraries. While my emphasis was on tools I personally used, a 2016 project led to a brief withdrawal due to conflicts of interest. Reigniting my passion in 2019, I embraced the Kotlin ecosystem, specifically Kotlin-KMP and KotlinDL. My current passion is collaborating with BitSpittle and Varabyte community to bring the Kobweb framework to KotlinConf 2024, aligned with JetBrains Jetpack Compose Multiplatform vision. Explore our latest new community at Gotham-Village and see how we're ramping up for OSS contribution!
+
+• 1990s: Kickstarted OSS journey with Linux and GNU contributions. University basements 'Misfits Club.'
+
+• 1997-2006: Paused contributions due to military service in the US Army and sensitive project commitments.
+
+• 2006+: Engaged with Struts, Spring, iOS mobile libraries, unstructured data, and NoSQL communities.
+
+• 2016–2019: Published a premium SaaS archetype library, navigated through customer OSS apprehensions.
+
+• 2019+: Embraced Kotlin and Kotlin-KMP community; aiming to collaborate with remarkable founders.
+
+== Education
+
+• Penn State University, Electrical, Electronics and Communications Engineering, 1992 - 1995
+
+• Lock Haven University of Pennsylvania, Research Assistance, Systems Engineering, Jan 1995 - Dec 1996
+
+• University of North Carolina at Pembroke, Bachelor of Science - BS, Computer Science, 2000 – 2001, Grade: Honors
+
+• Penn State World Campus, Professional Development, Organizational Leadership, Jan 2002 - Aug 2005
+- Activities and societies: Field applications thesis on defence startup ecosystems.
+- Curated coursework and field study on organizational psychology.
+
+• Stanford University, Professional Development, Artificial Intelligence, Aug 2009 - Sep 2014
+- Activities and societies: Field applications to investment bank massively distributed system.
+- Curated coursework on Data Science and Machine Learning by Andrew Ng and Coursera content team
+
+• Massachusetts Institute of Technology, Professional Development, Artificial Intelligence, May 2016 - Dec 2017
+- Activities and societies: Peer group on MLOps and Augmented Bounded Contexts.
+- Curated coursework on General Machine Learning.
+
+• Harvard Online, Computer Software Engineering, Jan 2019 - Sep 2019
+- Activities and societies: Extracurricular activities within the alumnus startup supporting groups.
+- Advanced topics in Distributed Systems.
+
+• Carnegie Mellon University - Integrated Innovation, Computer Software Engineering, Sep 2022
+- Activities and societies: Startup business partnership.
+- Exploratory courseware on disruptive innovation by technology.
