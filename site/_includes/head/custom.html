@@ -1,6 +1,10 @@
-<!-- _includes/custom.html -->
+<!-- _includes/head/custom.html -->
 <!--suppress HtmlUnknownTarget -->
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/favicon-32x32.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/icons/android-chrome-192x192.png' | relative_url }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
+{% if page.read_aloud == true %}
+<script src="{{ '/assets/js/read-aloud.js' | relative_url }}"></script>
+<link href="{{ '/assets/css/read-aloud.css' | relative_url }}" rel="stylesheet">
+{% endif %}
 <!--<link rel="shortcut icon" href="{{ site.baseurl }}/assets/icons/favicon.ico">-->
