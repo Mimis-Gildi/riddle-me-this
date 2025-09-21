@@ -7,6 +7,7 @@ on:
     branches:
       - '[0-9]+-**'
   workflow_call:
+  workflow_run:
 
 
 defaults:
