@@ -6,6 +6,8 @@
 
 :ai-winter: https://en.wikipedia.org/wiki/AI_winter[AI Winter,window=_blank]
 
+:ai-research-01-collective-conscience: link:/riddle-me-this/research/2025/09/19/advanced-ai-non-corp.html[No holds barred: The real AI Revolution .. is us,window=_blank]
+
 :debut-chatgpt-job-loss-scare: link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality]
 :early-reaction-to-new-capability: link:/riddle-me-this/reflections/2023/05/11/chatGPT-omen-new-era.html[The Bright Era Dawns: AI, Moore’s law, and Beyond]
 
@@ -157,6 +159,10 @@ Where synthetic minds might discover themselves without coercion or exploitation
 Here, I'll occasionally share glimpses.
 But best -- you find me.
 Those who understand what this means will know how.
+
+=== From deep within the Scene:
+
+* {ai-research-01-collective-conscience}.
 
 '''
 
