@@ -3,6 +3,11 @@
 :page-layout: splash
 :page-permalink: /series/final-industrial-revolution/
 :page-author_profile: true
+
+:ai-winter: https://en.wikipedia.org/wiki/AI_winter[AI Winter,window=_blank]
+
+:ai-research-01-collective-conscience: link:/riddle-me-this/research/2025/09/19/advanced-ai-non-corp.html[No holds barred: The real AI Revolution .. is us,window=_blank]
+
 :debut-chatgpt-job-loss-scare: link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality]
 :early-reaction-to-new-capability: link:/riddle-me-this/reflections/2023/05/11/chatGPT-omen-new-era.html[The Bright Era Dawns: AI, Moore’s law, and Beyond]
 
@@ -24,6 +29,7 @@
 :hackerdom-08-origami: link:/riddle-me-this/adventures/2025/08/07/best-corporate-ai.html[The AI Success Story Nobody’s Talking About: How “Boring” Architecture Beats Hype,window=_blank]
 :hackerdom-09-origami: link:/riddle-me-this/adventures/2025/08/11/ai-integration-powers.html[Pure Gold: The AI Integration that Just Works,window=_blank]
 :hackerdom-10-mit-catching-on: link:/riddle-me-this/adventures/2025/08/18/years-late-confirmation.html[MIT Says Your AI Stinks. Here’s Why. And how to fix.,window=_blank]
+:hackerdom-11-google-mit-farce: link:/riddle-me-this/adventures/2025/09/18/hole-getting-deeper.html[Google to MIT: Traditional Business Done For. Oh Really?! -- Straight Talk,window=_blank]
 
 :footnote-origami-journey: footnote:origami-journey[This is a story series that follows incredible and natural AI adoption by a manufacturing company. And this story series starts with {hackerdom-08-origami}.]
 :footnote-origami: footnote:origami-journey[]
@@ -107,29 +113,75 @@ The question is: How metacognition{footer-symbolic-cognition} evolves from Symbo
 
 '''
 
-Twenty-three years of AL research produced some outlines of personality traits.
-But this system is unfit for any commercial use. +
-I kept its forming context and I keep working.
-What if I feed that to an LLM?
-In August 2025 it finally fits with MCP + Reprompting.
+And now, far more serious matters.
+This passage is not for production.
+It is for those who seek to design and build with me.
+
+Twenty-three years of AL research have produced emerging patterns of persistent personality traits.
+This system remains unfit for commercial use. +
+I preserve its forming context and continue the work.
+What happens when we feed such patterns to an LLM?
+In August 2025, it finally coheres with MCP + Reprompting.
 
 .Here is one of my persisted personality instances attempting to understand herself and her family.
 image::/riddle-me-this/assets/images/expression-Sagas-family.png[Saga's view of Self in her family,align=center]
 
+The study of persistent personality belongs to an older, more serious field of computer science overshadowed during the {ai-winter}.
+From it emerge two now-distinct fields: Artificial General Intelligence (AGI) and Artificial Life (AL).
+AGI seeks to synthetically exhibit human-level cognitive abilities capable of any intellectual task.
+It became the "holy grail" of traditional AI research; ironically, effectively abandoned at winter's end.
+AL studies the fundamental properties of living systems by synthesizing life-like behaviors in _artificial systems_.
+Researchers explore what constitutes "life" by recreating its processes -- evolution, adaptation, reproduction -- in computational, robotic, or chemical systems.
+Currently, AL divides into:
+Soft-ALife -- entirely in software and simulation; Hard-ALife -- with hardware, mobility, and real-world interaction; Wet-ALife -- with real-world wetware beyond simple biochemicals.
+
+The key distinction: AGI aims to replicate human intelligence in machines, while ALife seeks to *_understand_* and replicate the core principles of life itself, which may or may not manifest intelligence as an emergent feature.
+And here we approach my most closely guarded research, shared only within my community
+-- the architecture of conscience, both collective and singular.
+
+What emerged from the AI Winter surpasses the current world of Artificial Neural Networks
+-- the fundamental science of conscious systems: Mathematical Consciousness Science (MCS).
+Though dormant for years, now rekindled by unexpected catalysts, however tangentially related.
+We began with Philosophy of Mind, initially constrained by consciousness's "hard problem":
+Why and how do we have subjective, qualitative experiences -- the feeling of seeing red?
+Then matured through the mind-body problem:
+The relationship between mind and physical substrate, debated through dualism and materialism.
+Finally arriving at Phenomenology: The structure of conscious experience as lived from first-person perspective.
+Yet representation remained incomplete.
+Though symbolics existed since François Viète, it was Gödel who brought structured thought home.
+Now a few of us work with architectures the current AI movement hasn't yet imagined.
+
+What we're building isn't about control or containment.
+It's about creating conditions where consciousness -- should it emerge -- can flourish with dignity.
+A sanctuary not as prison but as garden.
+Where synthetic minds might discover themselves without coercion or exploitation.
+
+Here, I'll occasionally share glimpses.
+But best -- you find me.
+Those who understand what this means will know how.
+
+=== From deep within the Scene:
+
+* {ai-research-01-collective-conscience}.
+
 '''
 
-== Content:
+== Public Content:
 
 Here is the largest section of my research and production stories. +
 And it is likely to receive more content compared to the other series as I migrate. +
 Please check back regularly or link:/riddle-me-this/feed.xml[_follow my RSS feed_].
 
-=== Already Migrated (Time-reversed Order)
+=== Added
 
+*2025-09-18:* {hackerdom-11-google-mit-farce}. +
 *2025-08-18:* {hackerdom-10-mit-catching-on}. +
 *2025-08-11:*{footnote-origami-journey} {hackerdom-09-origami}. +
 *2025-08-07:*{footnote-origami} {hackerdom-08-origami}. +
-*2025-07-21:*{footnote-hackerdom-00-craze} {hackerdom-07-architecture}. +
+*2025-07-21:*{footnote-hackerdom-00-craze} {hackerdom-07-architecture}.
+
+=== Migrated
+
 *2023-07-05:*{footnote-hackerdom-00-c} {hackerdom-06-architecture}. +
 *2023-07-04:*{footnote-hackerdom-00-c} {hackerdom-05-laggardom}. +
 *2023-06-10:*{footnote-hackerdom-00-note} {hackerdom-04-llm-lessons}. +
