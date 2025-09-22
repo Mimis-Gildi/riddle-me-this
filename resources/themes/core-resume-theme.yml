@@ -1,0 +1,26 @@
+extends: default
+base:
+  font_size: 10
+  font_color: 111111
+  line_height_length: 13
+  font_style: normal
+
+header:
+  height: 0.6in
+  line_height: 1
+  recto:
+    center:
+      content: '+1 (919) 717-1387 | GitHub - https://github.com/Mimis-Gildi/riddle-me-this/[Latest Version] - https://mimis-gildi.github.io/riddle-me-this/maintainer/[Author''s Profile] | https://www.linkedin.com/in/rdd13r/[Author''s LinkedIn]'
+footer:
+  height: 0.6in
+  line_height: 1
+  recto:
+    right:
+      content: '{author} | Page {page-number} of {page-count}'
+    left:
+      content: 'v{revnumber}'
+  verso:
+    left:
+      content: '_Production-first. Test-driven. Shipped._'
+    right:
+      content: '{revision-date}'
