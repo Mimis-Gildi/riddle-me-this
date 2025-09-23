@@ -6,9 +6,7 @@ on:
   create:
     branches:
       - '[0-9]+-**'
-  workflow_dispatch: 
-
-
+  workflow_dispatch:
 
 defaults:
   run:
