@@ -13,11 +13,11 @@ inputs:
   sdkman-version:
     description: "The version of SDKMAN to use"
     required: false
-    default: "5.19.0"
+    default: "5.20.0"
   sdkman-native:
     description: "The native daemon library of the SDK Manager (architecture specific)"
     required: false
-    default: "0.7.4"
+    default: "0.7.14"
 
 outputs:
   sdkman:
@@ -88,16 +88,16 @@ runs:
         expected_sdk_version="${{ inputs.sdkman-version }}"
         expected_native_version="${{ inputs.sdkman-native }}"
         typeset -A expected_sdks=(
-          java   "21.0.7-tem"
-          gradle "8.14.2"
-          kotlin "2.1.21"
+          java   "21.0.8-tem"
+          gradle "9.1.0"
+          kotlin "2.2.20"
         )
         expected_ruby_version="3.3.5"
         expected_gems_version="3.5.16"
         expected_bundler_version="2.5.16"
-        expected_conda_version="25.3.0"
-        expected_mamba_version="2.0.5"
-        expected_python_version="3.11.8"
+        expected_conda_version="25.7.0"
+        expected_mamba_version="2.3.2"
+        expected_python_version="3.12.11"
 
         
         ### Test for SDKs        
