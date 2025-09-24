@@ -85,16 +85,18 @@ jobs:
       - name: Bootstrap SDKMAN if Self-Hosted
         if: steps.resume-changes-detected.outputs.satisfied == 'true' && steps.env.outputs.is-self-hosted == 'true'
         run: |
-          source "$SDKMAN_DIR/bin/sdkman-init.sh" || true
-          source $HOME/miniforge3/bin/activate ml || true
+          # source "$SDKMAN_DIR/bin/sdkman-init.sh" || true
+          # source $HOME/miniforge3/bin/activate ml || true
           sdk version
           java --version
           python --version
+          echo "JAVA_HOME=$(sdk home java 21.0.8-tem)" >> $GITHUB_ENV
 
       - name: 📡 Submit Dependency Graph
         if: steps.resume-changes-detected.outputs.satisfied == 'true'
         uses: gradle/actions/dependency-submission@v4.4.3
         timeout-minutes: 3
+        with:
 
 
       - name: 🏗️ Build Résumés
