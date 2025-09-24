@@ -85,8 +85,8 @@ jobs:
       - name: Bootstrap SDKMAN if Self-Hosted
         if: steps.resume-changes-detected.outputs.satisfied == 'true' && steps.env.outputs.is-self-hosted == 'true'
         run: |
-          # source "$SDKMAN_DIR/bin/sdkman-init.sh" || true
-          # source $HOME/miniforge3/bin/activate ml || true
+          source "$SDKMAN_DIR/bin/sdkman-init.sh" || true
+          source $HOME/miniforge3/bin/activate ml || true
           sdk version
           java --version
           python --version
