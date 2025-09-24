@@ -96,7 +96,6 @@ jobs:
         if: steps.resume-changes-detected.outputs.satisfied == 'true'
         uses: gradle/actions/dependency-submission@v4.4.3
         timeout-minutes: 3
-        with:
 
 
       - name: 🏗️ Build Résumés
