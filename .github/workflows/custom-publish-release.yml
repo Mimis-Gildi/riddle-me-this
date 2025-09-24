@@ -87,7 +87,7 @@ jobs:
         run: |
           source "$SDKMAN_DIR/bin/sdkman-init.sh" || true
           source $HOME/miniforge3/bin/activate ml || true
-          sdk --version
+          sdk version
           java --version
           python --version
 
