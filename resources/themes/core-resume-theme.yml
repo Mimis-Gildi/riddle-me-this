@@ -1,0 +1,28 @@
+extends: default
+base:
+  font_size: 10
+  font_color: 111111
+  line_height_length: 13
+  font_style: normal
+
+header:
+  height: 0.5in
+  line_height: 1
+  font_size: 9
+  recto:
+    center:
+      content: 'vadim.kuhay@gmail.com | (919) 717-1387 | linkedin.com/in/rdd13r | github.com/rdd13r | Cary, NC (Remote)'
+footer:
+  height: 0.4in
+  line_height: 1
+  font_size: 8
+  recto:
+    right:
+      content: 'Page {page-number} of {page-count}'
+    left:
+      content: 'Vadim Kuhay'
+  verso:
+    left:
+      content: '_Production-first. Test-driven. Shipped._'
+    right:
+      content: '{revision-date}'

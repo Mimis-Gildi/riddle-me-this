@@ -3,10 +3,11 @@
 :page-layout: single
 :page-permalink: /maintainer/
 :page-author_profile: true
-:release: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.3.0[v2.3.0,window=_blank]
-:onEngineering: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.3.0/OnEngineering.pdf[Engineering Résumé,window=_blank]
-:onCreativity: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.3.0/OnCreativity.pdf[Creative Résumé,window=_blank]
-:onLeadership: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v2.3.0/OnLeadership.pdf[Leadership Résumé,window=_blank]
+:release: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v3.7.0[v3.7.0,window=_blank]
+:onEngineering: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnEngineering.pdf[Engineering Résumé,window=_blank]
+:onCreativity: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnCreativity.pdf[Creative Résumé,window=_blank]
+:onLeadership: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnLeadership.pdf[Leadership Résumé,window=_blank]
+:onCore: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnCore.pdf[Core Résumé,window=_blank]
 :profile-li: https://www.linkedin.com/in/rdd13r[LinkedIn Profile,window=_blank]
 :profile-gh: https://github.com/rdd13r[GitHub Profile,window=_blank]
 :publications-mm: https://medium.com/@rdd13r[Medium Articles,window=_blank]
@@ -28,6 +29,7 @@ If you came here looking for something formal, here are some useful links:
 * {onEngineering} -- _yes, I code daily for three decades, take coding jobs, and compete;_
 * {onCreativity} -- _I build teams, systems, runways, and products that survive their first user;_
 * {onLeadership} -- _as a hands-on coach, fractional CTO, or executive I deliver innovation;_
+* {onCore} -- _ATS optimized simple document._
 
 
 Public Profile::

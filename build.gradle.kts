@@ -1,5 +1,7 @@
 import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
-import me.riddle.the.dependencies.*
+import me.riddle.the.dependencies.DependencyUpdatePolicy
+import me.riddle.the.dependencies.LegacyOutdatedDependenciesProcessor
+import me.riddle.the.dependencies.shouldUseReleaseOnlyDependencies
 import me.riddle.the.tasks.registerVerifyToolchainTask
 import org.asciidoctor.gradle.jvm.AsciidoctorTask
 import org.asciidoctor.gradle.jvm.epub.AsciidoctorEpubTask
@@ -19,6 +21,7 @@ val pdfResumeThemeIds = listOf(
     "conservative-resume",
     "creative-resume",
     "technical-resume",
+    "core-resume"
     )
 
 private val log by lazy { LoggerFactory.getLogger("me.riddle.the.build") }
@@ -117,6 +120,7 @@ fun configureAsciiDocInput(
     task: org.asciidoctor.gradle.jvm.AbstractAsciidoctorTask,
     sourceDir: File = resumeFolder,
     includePatterns: List<String> = listOf(
+        "OnCore.adoc",
         "OnCreativity.adoc",
         "OnLeadership.adoc",
         "OnEngineering.adoc")
