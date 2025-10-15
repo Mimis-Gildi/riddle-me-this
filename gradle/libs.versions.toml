@@ -2,7 +2,7 @@
 asciidoctorJvm = "4.0.5"
 #asciidoctorDiagram = "2.3.2"
 benManes = "0.53.0"
-dokka = "2.0.0"
+dokka = "2.1.0"
 
 logback = "1.5.19"
 kotlinLogging = "7.0.13"
