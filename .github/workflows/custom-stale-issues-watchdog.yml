@@ -33,7 +33,7 @@ jobs:
 
       - name: "Run Stale Issues and Pull Requests checks in repository [${{ github.repository }}] by ${{ github.actor }}"
         id: stale-issues-and-pull-requests-check
-        uses: actions/stale@v10.0.0
+        uses: actions/stale@v10.1.0
         continue-on-error: true
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
