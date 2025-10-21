@@ -168,24 +168,31 @@ You're alone in *_admitting it_*.
 **If you're stuck in T0:**
 
 Stop buying tools.
-Your problem isn't AI capability - it's architectural debt blocking integration.
+Your problem isn't AI capability -- it's architectural debt blocking integration.
 Fix foundations first or keep wasting money on chatbots.
+You don't need to fix everything.
+Just move incrementally always showing value in production.
 
 **If you're attempting T1:**
 
-Ask yourself honestly: Can your systems support domain-boundary integration?
-Do you have clean Bounded Contexts?
-Documented ACLs?
-Unified data across domains?
+Ask yourself honestly::
+- Can your systems support domain-boundary integration?;
+- Do you have clean Bounded Contexts?;
+- Documented boundary conditions in ACLs?;
+- Unified data across domains?
 
 No?
-Then you're not attempting T1. You're attempting T0+ and calling it transformation.
+
+Then you're not attempting T1.
+You're attempting T0+ and calling it transformation.
 
 **If you're planning T2:**
 
 You're 2-3 years away minimum.
 Get T1 working first.
-I'm serious - attempting T2 without solid T1 will cascade-fail across your entire domain model.
+I'm serious -- attempting T2 without solid T1 will cascade-fail across your entire domain model.
+
+_You can't build the third floor without the second._
 
 == One Question That Cuts Through Everything
 
