@@ -96,21 +96,16 @@ These are architectural increments to *_live business models_*.
 
 {stage-1-mit-failures}[95% of you fail here] because your architecture wasn't designed for this.
 
-// Daidai here
-
 **T2 - AI-Only Subdomains** (Market-changing disruption)
 
-New AI domains sitting BETWEEN existing business domains.
-Creating emergent behavior that didn't exist before.
+New AI domains sitting BETWEEN your existing business domains.
+Behavior your business never had before.
 
-Shopify Sidekick is approaching this - production agentic systems spanning domains.
-Maybe 3-5 other companies not talking publicly.
+Almost nobody's here yet.
+Shopify Sidekick is approaching it - production agentic systems spanning domains.
+Maybe 3-5 others not talking publicly.
 
 If you're not solid at T1, attempting T2 will destroy you.
-
-**T3-T6:** Read {stages-of-ai-evolution}[my 2023 playbook] if curious.
-For traditional enterprises, T1-T2 is where 99% of value lives.
-You won't see T3+ for years.
 
 == Why 95% Can't Reach T1
 
