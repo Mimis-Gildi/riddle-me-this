@@ -107,6 +107,10 @@ Maybe 3-5 others not talking publicly.
 
 If you're not solid at T1, attempting T2 will destroy you.
 
+**T3-T6:** Read {stages-of-ai-evolution}[the 2023 playbook] if curious.
+For traditional enterprises, T1-T2 is where 99% of value lives.
+You won't see T3+ for years.
+
 == Why 95% Can't Reach T1
 
 {stages-of-ai-evolution}[I predicted this July 2023]. {stage-1-mit-failures}[MIT confirmed it August 2025].
@@ -117,7 +121,7 @@ Most enterprise software wasn't designed - it evolved.
 
 Like a coral reef.
 
-Layers upon layers of legacy systems, acquisitions, +
+Layers upon layers of legacy systems, acquisitions,
 "temporary" workarounds that became permanent infrastructure.
 ____
 
@@ -156,7 +160,7 @@ Your company is debating ChatGPT licenses while they're doing {origami-ai-integr
 
 **The brutal numbers from our aggregation:**::
 - 11% fully implemented AI (Salesforce research);
-- 42% pulling workloads BACK from cloud (Flexential);
+- 21% repatriated workloads from cloud (Flexera 2025);
 - 9.7% enterprise adoption -- barely moved from 3.7% in 2023;
 - 95% pilots failing (MIT).
 
@@ -240,5 +244,5 @@ _Want to know what tier YOUR architecture can actually support?_
 
 {diagnostic}[Stop lying to yourself and find out].
 
-P.S. I'm not writing *carrot theory*. +
+P.S. I'm not writing *carrot theory*.
 I fix corporate architecture -- decades, hands on, every day.
