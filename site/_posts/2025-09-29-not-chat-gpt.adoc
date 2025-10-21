@@ -94,9 +94,9 @@ These aren't chatbots.
 These are architectural increments to *_live business models_*.
 (You need to have them domain models first -- right?)
 
-// DaiDai
-
 {stage-1-mit-failures}[95% of you fail here] because your architecture wasn't designed for this.
+
+// Daidai here
 
 **T2 - AI-Only Subdomains** (Market-changing disruption)
 
