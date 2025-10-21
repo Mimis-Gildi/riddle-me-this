@@ -2,11 +2,11 @@
 categories: [adventures]
 tags: [AI,Generative AI,Enterprise,AI-Native,Integration,Stagflation,"Straight Talk","For Executives"]
 excerpt: >
-  90%+ is pure AI Fabrications -- Straight Talk.
+  92%+ AI news is pure fabrications -- Straight Talk.
 classes: wide
 comments: true
 ---
-= AI Hype, Read Between the Lines -- Straight Talk
+= AI Hype -- Straight Talk
 :img-prefix: /riddle-me-this/assets/images
 :blog-url: https://mimis-gildi.github.io/riddle-me-this/
 :blog-title: Creative Engineering at Scale
@@ -26,13 +26,18 @@ comments: true
 
 :origami-ai-integration: link:/riddle-me-this/adventures/2025/08/11/ai-integration-powers.html
 
-92% of AI news is fabricated bullshit.
-Our aggregator service classifies it daily.
+.A story from The Final Industrial Revolution series: Adventures.
+image::{img-prefix}/Athena-World.png[Athena and her world.]
 
-I'm selling vegetables at a cheap candy convention here!
-The good news: 95% of you learned that sugar is poison.
-The bad news: I still have to walk you through the food pyramid before you get the real candy.
-And it IS real candy - not the crap you've been eating at this sugar convention.
+{nbsp}
+
+92% of AI news is fabricated B$.
+Our aggregator service classifies this daily.
+
+I'm selling premium vegetables at a cheap candy convention here! +
+The good news: _{mit-fortune-article}[**95% of you**] learned that sugar is poison_. +
+The bad news: I still have to walk you through the food pyramid before you get the real candy. +
+Like fine Belgian chocolate -- not what you've been eating at this sugar convention.
 
 Let's find the 8% that matters!
 
@@ -49,7 +54,7 @@ ChatGPT subscriptions for everyone.
 
 This is 77% of your happy AI news.
 It's also Microsoft Office 2025.
-Necessary, but NO Differentiation.
+Necessary, but NOT Differentiation.
 
 Vodafone gave 68,000 employees productivity tools.
 Congratulations - you bought Office.
