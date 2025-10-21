@@ -15,15 +15,15 @@ comments: true
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
 :pub-mm: as published on Medium by {mm-newsletter}
-:asei: https://asei.systems/[ASE Inc.,window=_blank]
-:pub-asei: as outlined at {asei}
+:ase-title: ASE Inc.
+:ase: https://asei.systems
+:ase-link: {ase}[{ase-title},window=_blank]
+:pub-asei: as outlined at {ase-link}
+:diagnostic: {ase}/diagnostic
 
 :stages-of-ai-evolution: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
 :stage-1-mit-failures: link:/riddle-me-this/adventures/2025/08/18/years-late-confirmation.html
 :mit-fortune-article: https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/
-:stage-4-in-crypto: https://decrypt.co/339715/google-researchers-warn-looming-ai-run-economies
-:virtual-agent-economies: https://arxiv.org/abs/2509.10147
-
 :origami-ai-integration: link:/riddle-me-this/adventures/2025/08/11/ai-integration-powers.html
 
 .A story from The Final Industrial Revolution series: Adventures.
@@ -194,24 +194,25 @@ I'm serious -- attempting T2 without solid T1 will cascade-fail across your enti
 
 _You can't build the third floor without the second._
 
-// Daidai here
-
 == One Question That Cuts Through Everything
 
-Next time someone shows you an "AI success story" - theirs or a competitor's - ask:
+Next time someone shows you an "AI success story" -- theirs or a competitor's -- ask:
 
 **"What tier are they actually at?"**
 
-That tells you everything about whether it's relevant to your situation.
+That tells you *_everything_* about whether it's relevant to your situation.
 
-Vodafone's 68K Copilot deployment?
-T0. Ignore it.
+Vodafone's 68K Copilot deployment? +
+T0. _Ignore it._
 
-DoorDash's AWS Bedrock integration?
-T1. Study it.
+DoorDash's AWS Bedrock integration? +
+T1. *Study it!*
 
-Your vendor's "AI-powered" feature?
+Your vendor's "AI-powered" feature? +
 Probably T0 in a nice box.
+
+They can't answer? +
+Talk about sports.
 
 == The Vegetables You Came For
 
@@ -220,7 +221,7 @@ The 5% succeeding at enterprise AI didn't find better vendors or smarter consult
 They built better foundations BEFORE adding intelligence.
 
 That's the vegetable.
-It tastes better than sugar once you try it.
+_It tastes better than sugar once you try it._
 
 Most of you won't.
 You'll keep eating cotton candy, wondering why transformation never comes.
@@ -229,21 +230,12 @@ The ones who do?
 You already know who you are.
 You felt the guilt in that opening paragraph.
 
-'''
+Quick recap::
+- T0/T0+ -- productivity tools, zero competitive advantage;
+- T1 -- domain boundary integration, first disruption;
+- T2 -- AI-only subdomains, market-changing;
+- T3+ -- read {stages-of-ai-evolution}[the 2023 playbook], not relevant yet.
 
-_Want to know what tier YOUR architecture can actually support? {asei}[Stop lying to yourself and find out]._
+_Want to know what tier YOUR architecture can actually support?_
 
-'''
-
-**~1100 words.
-Every one earned its place.**
-
-Your voice.
-My edge.
-The guilt-trip that makes CTOs squirm.
-Company examples that land like evidence, not celebration.
-Dark humor in the cuts.
-
-Too aggressive?
-Not aggressive enough?
-Need more technical depth somewhere specific?
+{diagnostic}[Stop lying to yourself and find out].
