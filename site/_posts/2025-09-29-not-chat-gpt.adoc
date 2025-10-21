@@ -1,0 +1,104 @@
+---
+categories: [adventures]
+tags: [AI,Generative AI,Enterprise,AI-Native,Integration,Stagflation,"Straight Talk","For Executives"]
+excerpt: >
+  90%+ is pure AI Fabrications -- Straight Talk.
+classes: wide
+comments: true
+---
+= AI Hype, Read Between the Lines -- Straight Talk
+:img-prefix: /riddle-me-this/assets/images
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:pub-mm: as published on Medium by {mm-newsletter}
+:asei: https://asei.systems/[ASE Inc.,window=_blank]
+:pub-asei: as outlined at {asei}
+
+:stages-of-ai-evolution: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
+:stage-1-mit-failures: link:/riddle-me-this/adventures/2025/08/18/years-late-confirmation.html
+:mit-fortune-article: https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/
+:stage-4-in-crypto: https://decrypt.co/339715/google-researchers-warn-looming-ai-run-economies
+:virtual-agent-economies: https://arxiv.org/abs/2509.10147
+
+:origami-ai-integration: link:/riddle-me-this/adventures/2025/08/11/ai-integration-powers.html
+
+92% of news on AI is useless or even deceiving to CTOs.
+These are our aggregator service statistics.
+Let's understand what's "hot air" and where is "pure gold" for people applying corporate AI today.
+
+For that we will first understand where is the business value in AI adoption.
+And then we will extract all the real value from 99.99% of the published news -- the gold.
+
+Now, here is my problem about the gold: I am selling fine vegetables at a cheap candy convention here.
+The good news is -- 95% of you have already learned that sugar is poison.
+The bad news is -- I still have to take you through the "food pyramid." The crux of it is: I need to stuff you full of carrot before you get that fine candy; and a real fine candy it is -- not what you are having at this sugar convention.
+
+== First thing is First - What is this "AI" term?!
+
+AI as it is in the news today is an overloaded buzzword meaning 8-parts generative AI and its publishing companies, 1-part actual business AI that makes disruption -- not in the news, and 1-part peripheral concerns around the investment hype buble.
+There is value in all of these categories thus we will cover all.
+To get there lets see that food pyramid.
+
+== Real Business Value from AI
+
+There are only seven (7) ways businesses can use AI for competitive advantage.
+And we need to place them on a competitive strategic value tier scale.
+
+. T0 - Buy AI tools for employees: Microsoft Copilot, Google Gemini.
+. T0+ - Integrate AI tools into business value: advise on events.
+. T1 - Extend business with AI at the domain boundary (ACLs).
+. T2a - Extend business at its function: AI subdomains sitting between ACLs: i.e., MCP augmenters.
+. T2b - AI-only subdomains sitting over bounded contexts creating new business behavior.
+. T3 - Modify or increment core business function internally: root domain.
+. T4 - Coalition domains - don't worry, nobody sees this far.
+(AI defines the business.)
+. T5 - AI is the business.
+Currently the likes of Anthropic and OpenAI.
+. T6 - Foundations for AI: NVIDIA, Google, etc.
+
+ACL = Anti-Corruption Layer - pods at the edge of Bounded Context connecting with other actors, human or machine:
+another external system, customer contacting "Claims," etc.
+
+My focus here is ONLY on Traditional American Companies.
+Let's understand the tiers from business CTO perspective.
+
+Tier 0 -- no competitive value::
+These are things like your Copilot, ChatGPT, or Claude -- implements for your employees' benefit -- in other words, Microsoft Office.
+One can certainly forego buying it and risk lowe productivity.
+And there is not competitive advantage in commodity available to all.
+Yet, this is the easiest option spanning 77% of the happy news today.
+Because there is money and hope in it still.
+We know this because Microsoft went big on OpenAI the moment the latter learned to spin cotton candy.
+
+These are trinkets vendors can sell today.
+You can safely ignore all the noise in Tier 0.
+
+Tier 0+ -- minimal competitive value::
+- Cost Reduction: _run the business_ -- AI on operations removing human, i.e, support bot;
+- Development Acceleration: _run change the business_ -- tools like Copilot or powerful tools like Windsurf;
+- Product Features: _change the business_ -- personalized product menu - things that add customer value;
+- Growth Platform: _fan the business_ -- external tools that change environment of the business.
+
+These are specialized high value trinkets some vendors sell today.
+Safe to ignore as well.
+
+Tier 1 -- first disruptive value::
+Business domain augmented at the context boundary -- the first real competitive modification to your business.
+The entire magic of any AI technology is born only when said intelligence is added to the live business model.
+This is what differentiates Intelligence Integration from Digital Transformation -- the former is in business, not adjacent to it.
+Since Domain Model represents business secret structure and is Common Architecture, the only way to add it is through an architectural increment.
+Failures to do so regress to Tier 0+.
+
+Tier 2 -- critical disruptive value::
+AI-only business domains between augmented business domains (Domain Intelligence).
+Companies attaining this change their markets profoundly overnight.
+
+I am not going to bore you with Tiers 3-5. Curious can read all about it in this article of mine "The AI Evolution Playbook: Why 80% Will Fail" where I described the first tiers years ago.
+Today we just need to really understand Tiers 1 and 2 to isolate the news about them.
+
+== Where is the gold in the News?
+
