@@ -139,17 +139,29 @@ Your company is debating ChatGPT licenses while they're doing {origami-ai-integr
 
 == The 8% of News That Matters
 
-**Ignore completely:**
-- Funding announcements (their problems, not yours) - New model releases (unless you're T1+ already) - Vendor "AI features" (T0 wearing a tuxedo) - Consultant frameworks (they don't understand YOUR domains) - "AI success stories" from companies selling AI tools
+**Ignore completely:**::
+- Funding announcements (their problems, not yours);
+- New model releases (unless you're T1+ already);
+- Vendor "AI features" (T0 wearing a tuxedo);
+- Consultant frameworks (they don't understand YOUR domains);
+- "AI success stories" from companies selling AI tools.
 
-**Watch carefully:**
-- Architectural integration discussions (rare as fuck) - Actual T1 implementations with architecture specifics - Domain modeling approaches for AI - Failed pilots with honest post-mortems (even rarer) - Companies discussing Anti-Corruption Layers and Bounded Contexts
+**Watch carefully:**::
+- Architectural integration discussions (rare as heck);
+- Actual T1 implementations with architecture specifics (me 😃);
+- Domain modeling approaches for AI (DDD Europe 2025);
+- Failed pilots with honest postmortems (even rarer);
+- Companies discussing Anti-Corruption Layers and Bounded Contexts +
+(pure gold, if you ever find it).
 
-**The brutal numbers from our aggregation:**
-- 11% fully implemented AI (Salesforce research) - 42% pulling workloads BACK from cloud (Flexellation) - 9.7% enterprise adoption - barely moved from 3.7% in 2023 - 95% pilots failing (MIT)
+**The brutal numbers from our aggregation:**::
+- 11% fully implemented AI (Salesforce research);
+- 42% pulling workloads BACK from cloud (Flexential);
+- 9.7% enterprise adoption -- barely moved from 3.7% in 2023;
+- 95% pilots failing (MIT).
 
-You're not alone in the struggle.
-You're alone in admitting it.
+You're NOT alone in the struggle. +
+You're alone in *_admitting it_*.
 
 == What to Actually Do
 
