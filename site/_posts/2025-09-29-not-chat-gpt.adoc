@@ -194,6 +194,8 @@ I'm serious -- attempting T2 without solid T1 will cascade-fail across your enti
 
 _You can't build the third floor without the second._
 
+// Daidai here
+
 == One Question That Cuts Through Everything
 
 Next time someone shows you an "AI success story" - theirs or a competitor's - ask:
