@@ -111,17 +111,29 @@ If you're not solid at T1, attempting T2 will destroy you.
 
 {stages-of-ai-evolution}[I predicted this July 2023]. {stage-1-mit-failures}[MIT confirmed it August 2025].
 
-Most enterprise software wasn't DESIGNED - it EVOLVED.
+[quote,Vadim Kuhay,July 2023]
+____
+Most enterprise software wasn't designed - it evolved.
+
 Like a coral reef.
-Layers upon layers of legacy systems, acquisitions, "temporary" workarounds that became permanent infrastructure.
+
+Layers upon layers of legacy systems, acquisitions, +
+"temporary" workarounds that became permanent infrastructure.
+____
+
+{nbsp}
 
 **You can't AI-enable chaos.**
 
-T1 requires:
-- Clean domain boundaries (you have integration spaghetti) - Unified data architecture (you have 12 systems with different "customer" definitions) - Architectural foundations (you have 20 years of technical debt)
+You are welcome to remember this concept.
+
+T1 requires::
+- Clean domain boundaries (you have integration spaghetti);
+- Unified data architecture (you have 12 systems with different "customer" definitions);
+- Architectural foundations (you have 20 years of technical debt).
 
 DoorDash didn't get lucky.
-They had foundations before adding intelligence.
+They *had* foundations before adding intelligence.
 
 Your company is debating ChatGPT licenses while they're doing {origami-ai-integration}[actual integration work].
 
