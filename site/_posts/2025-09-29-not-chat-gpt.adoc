@@ -239,3 +239,6 @@ Quick recap::
 _Want to know what tier YOUR architecture can actually support?_
 
 {diagnostic}[Stop lying to yourself and find out].
+
+P.S. I'm not writing *carrot theory*. +
+I fix corporate architecture -- decades, hands on, every day.
