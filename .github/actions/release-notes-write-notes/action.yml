@@ -50,13 +50,17 @@ runs:
         echo -e "\n## Logs\n" >> "$NEW_FILE"
         while IFS= read -r line; do
           echo "- $line" >> "$NEW_FILE"
-        done <<< "${{ inputs.comments }}"
+        done <<'EOF_COMMITS'
+        ${{ inputs.comments }}
+        EOF_COMMITS
         echo >> "$NEW_FILE"
 
         echo -e "\n## Files\n" >> "$NEW_FILE"
         while IFS= read -r file; do
           echo "- $file" >> "$NEW_FILE"
-        done <<< "${{ inputs.files }}"
+        done <<'EOF_FILES'
+        ${{ inputs.files }}
+        EOF_FILES
         echo >> "$NEW_FILE"
 
 
