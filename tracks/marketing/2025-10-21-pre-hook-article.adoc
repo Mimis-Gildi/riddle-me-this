@@ -13,12 +13,14 @@ Now you're stuck explaining to the board why your $2M AI pilot produces hallucin
 The fix isn't more AI tools.
 It's architecture.
 
-I've been fixing this for decades:
-- 11 enterprise transformations - Currently modernizing 25-year defense systems for AI - Average 60% operational cost reduction
+I've been fixing this for decades::
+- 11 enterprise transformations
+- Currently modernizing 25-year defense systems for AI
+- Average 60% operational cost reduction
 
 Tomorrow I'm publishing: "What Does and Doesn't Matter in the AI News Onslaught"
 
-92% is noise.
+92% is noise. +
 I'll show you the 8% that actually matters.
 
 Link in comments.
