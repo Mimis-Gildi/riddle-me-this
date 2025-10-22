@@ -3,7 +3,7 @@ News to them.
 Rerun for me.
 
 Tomorrow: What actually matters in AI news.
-(Spoiler: 92% is noise)
+(Spoiler: 92% is white noise; 1% is pure gold)
 
 Preview the tiers::
 - T0 - Tools everyone buys (Copilot, ChatGPT) = zero advantage
