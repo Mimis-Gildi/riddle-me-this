@@ -1,28 +1,19 @@
-I told you AI would fail.
+MIT: 95% of AI pilots fail.
+News to them.
+Rerun for me.
 
-July 2023: I predicted 80% failure rate Aug 2025: MIT proved it's 95%
+Tomorrow: What actually matters in AI news.
+(Spoiler: 92% is noise)
 
-[IMAGE: Side-by-side of your 2023 prediction + MIT 2025 headline]
-While vendors sold you chatbots and "AI features," I was documenting exactly why enterprise architecture blocks AI success.
+Preview the tiers::
+- T0 - Tools everyone buys (Copilot, ChatGPT) = zero advantage
+- T1 - Domain boundary integration (DoorDash, JPMorgan) = actual wins
+- T2 - Market disruption (almost nobody's here)
 
-Your systems weren't designed for intelligence.
-They evolved through acquisitions, patches, and "temporary" fixes.
+The difference?
+Architecture.
 
-Now you're stuck explaining to the board why your $2M AI pilot produces hallucinations instead of insights.
-
-The fix isn't more AI tools.
-It's architecture.
-
-I've been fixing this for decades::
-- 11 enterprise transformations
-- Currently modernizing 25-year defense systems for AI
-- Average 60% operational cost reduction
-
-Tomorrow I'm publishing: "What Does and Doesn't Matter in the AI News Onslaught"
-
-92% is noise. +
-I'll show you the 8% that actually matters.
-
+Article drops tomorrow.
 Link in comments.
 👇
 
