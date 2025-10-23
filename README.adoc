@@ -42,24 +42,59 @@ In the workflows, release notes, commit history -- look around.  +
 Take what you like, if you dig my ways, come pair with me. +
 _P.S. I use A LOT of custom ML_
 
-== Public Site
-
-**Browse the live site**:
-https://mimis-gildi.github.io/riddle-me-this/
-
-**Learn more about the maintainer**:
-https://mimis-gildi.github.io/riddle-me-this/maintainer/
-
-**Trends you won’t hear from Gartner**:
-https://mimis-gildi.github.io/riddle-me-this/series/
-
-Or simply https://mimis-gildi.github.io/riddle-me-this/series/[my RSS feed].
-
-== Profiles
-
-* GitHub: https://github.com/rdd13r
+Public Site::
+- **Browse the live site**: https://mimis-gildi.github.io/riddle-me-this/[Creative Engineering at Scale,target=_blank];
+- **Learn more about the maintainer**: https://mimis-gildi.github.io/riddle-me-this/maintainer/[Maintainer,target=_blank];
+- **Trends you won’t hear from Gartner**:
+https://mimis-gildi.github.io/riddle-me-this/series/[Curated Series Collections,target=_blank];
+- Or simply https://mimis-gildi.github.io/riddle-me-this/feed.xml[my RSS feed,target=_blank].
+Profiles:::
+* GitHub: https://rdd13r.github.io/ | https://rdd13r.github.io/rdd13r/
 * LinkedIn: https://www.linkedin.com/in/rdd13r
-* Medium (legacy): https://medium.com/@rdd13r
+
+++++
+<style>
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .libutton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 7px;
+        text-align: center;
+        outline: none;
+        text-decoration: none !important;
+        color: #ffffff !important;
+        width: 200px;
+        height: 32px;
+        border-radius: 16px;
+        background-color: #0A66C2;
+        font-family: "SF Pro Text", Helvetica, sans-serif;
+    }
+    .mediumbutton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 7px;
+        text-align: center;
+        outline: none;
+        text-decoration: none !important;
+        color: #ffffff !important;
+        width: 200px;
+        height: 32px;
+        border-radius: 16px;
+        background-color: #000000;
+        font-family: "SF Pro Text", Helvetica, sans-serif;
+    }
+</style>
+<div class="button-container">
+    <a class="mediumbutton" href="https://medium.asei.systems" target="_blank">Follow on Medium</a>
+    <a class="libutton" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7074840676026208257" target="_blank">Subscribe on LinkedIn</a>
+</div>
+++++
 
 == Contact
 
