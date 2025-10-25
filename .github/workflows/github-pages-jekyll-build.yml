@@ -40,10 +40,10 @@ jobs:
 
       - name: 🧰 Set up Ruby
         if: steps.env.outputs.is-self-hosted == 'false'
-        uses: ruby/setup-ruby@v1.263.0
+        uses: ruby/setup-ruby@v1.265.0
         timeout-minutes: 5
         with:
-          ruby-version: 3.3.5
+          ruby-version: 3.4.7
           bundler-cache: true
           working-directory: site
 

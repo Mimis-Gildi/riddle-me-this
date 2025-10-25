@@ -1,0 +1,248 @@
+---
+categories: [adventures]
+tags: [AI,Generative AI,Enterprise,AI-Native,Integration,Stagflation,"Straight Talk","For Executives"]
+excerpt: >
+  92%+ AI news is pure fabrications -- Straight Talk.
+classes: wide
+comments: true
+---
+= AI Hype -- Straight Talk
+:img-prefix: /riddle-me-this/assets/images
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:pub-mm: as published on Medium by {mm-newsletter}
+:ase-title: ASE Inc.
+:ase: https://asei.systems
+:ase-link: {ase}[{ase-title},window=_blank]
+:pub-asei: as outlined at {ase-link}
+:diagnostic: {ase}/diagnostic
+
+:stages-of-ai-evolution: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
+:stage-1-mit-failures: link:/riddle-me-this/adventures/2025/08/18/years-late-confirmation.html
+:mit-fortune-article: https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/
+:origami-ai-integration: link:/riddle-me-this/adventures/2025/08/11/ai-integration-powers.html
+
+.A story from The Final Industrial Revolution series: Adventures.
+image::{img-prefix}/Athena-World.png[Athena and her world.]
+
+{nbsp}
+
+92% of AI news is fabricated B$.
+Our aggregator service classifies this daily.
+
+I'm selling premium vegetables at a cheap candy convention here! +
+The good news: _{mit-fortune-article}[**95% of you**] learned that sugar is poison_. +
+The bad news: I still have to walk you through the food pyramid before you get the real candy. +
+Like fine Belgian chocolate -- not what you've been eating at this sugar convention.
+
+Let's find the 8% that matters!
+
+== Where Business Value Actually Lives
+
+Seven tiers.
+Most of you are stuck in the first two, convinced you're transforming.
+
+**T0 -- Buy AI Tools** (Zero competitive advantage)
+
+Microsoft Copilot.
+Google Gemini.
+ChatGPT subscriptions for everyone.
+
+This is 77% of your happy AI news.
+It's also Microsoft Office 2025.
+Necessary, but NOT Differentiation.
+
+Vodafone gave 68,000 employees productivity tools.
+Congratulations - you bought Office. +
+Wells Fargo automated compliance.
+Still T0. United Wholesale Mortgage documented "productivity gains."
+
+_So did everyone who installed Excel in 1995._
+
+**T0+ -- Integrate Tools Into Operations** (Minimal value)
+
+Support chatbots.
+Development acceleration with Cursor.
+Cost reduction bots.
+
+Better trinkets.
+Still not transformation.
+Just shinier Office.
+
+**T1 -- AI at Domain Boundaries** (First actual disruption)
+
+HERE is where magic starts -- when intelligence integrates INTO your business model, not adjacent to it.
+
+AI sits at Anti-Corruption Layers (ACLs) -- the edges of _Bounded Contexts_ where your domains talk to the world.
+This is *architectural work*.
+This requires foundations most of you don't have or even understand.
+
+Who's here?::
+- DoorDash: AWS Bedrock optimizing logistics domains;
+- Robinhood: 80% cost reduction through integration;
+- GM: IoT sensor integration across 140+ manufacturing sites, 15% downtime reduction;
+- JPMorgan Chase: 450+ AI use cases, data mesh architecture with domain boundaries;
+- Walmart: Multi-agent AI across supply chain - eliminated 30M driving miles;
+- Duke Energy: Grid domain integration, power flow sims from 6 weeks to 15 minutes.
+
+Notice something?
+These aren't chatbots.
+These are architectural increments to *_live business models_*.
+(You need to have them domain models first -- right?)
+
+{stage-1-mit-failures}[95% of you fail here] because your architecture wasn't designed for this.
+
+**T2 - AI-Only Subdomains** (Market-changing disruption)
+
+New AI domains sitting BETWEEN your existing business domains.
+Behavior your business never had before.
+
+Almost nobody's here yet.
+Shopify Sidekick is approaching it - production agentic systems spanning domains.
+Maybe 3-5 others not talking publicly.
+
+If you're not solid at T1, attempting T2 will destroy you.
+
+**T3-T6:** Read {stages-of-ai-evolution}[the 2023 playbook] if curious.
+For traditional enterprises, T1-T2 is where 99% of value lives.
+You won't see T3+ for years.
+
+== Why 95% Can't Reach T1
+
+{stages-of-ai-evolution}[I predicted this July 2023]. {stage-1-mit-failures}[MIT confirmed it August 2025].
+
+[quote,Vadim Kuhay,July 2023]
+____
+Most enterprise software wasn't designed - it evolved.
+
+Like a coral reef.
+
+Layers upon layers of legacy systems, acquisitions,
+"temporary" workarounds that became permanent infrastructure.
+____
+
+{nbsp}
+
+**You can't AI-enable chaos.**
+
+You are welcome to remember this concept.
+
+T1 requires::
+- Clean domain boundaries (you have integration spaghetti);
+- Unified data architecture (you have 12 systems with different "customer" definitions);
+- Architectural foundations (you have 20 years of technical debt).
+
+DoorDash didn't get lucky.
+They *had* foundations before adding intelligence.
+
+Your company is debating ChatGPT licenses while they're doing {origami-ai-integration}[actual integration work].
+
+== The 8% of News That Matters
+
+**Ignore completely:**::
+- Funding announcements (their problems, not yours);
+- New model releases (unless you're T1+ already);
+- Vendor "AI features" (T0 wearing a tuxedo);
+- Consultant frameworks (they don't understand YOUR domains);
+- "AI success stories" from companies selling AI tools.
+
+**Watch carefully:**::
+- Architectural integration discussions (rare as heck);
+- Actual T1 implementations with architecture specifics (me 😃);
+- Domain modeling approaches for AI (DDD Europe 2025);
+- Failed pilots with honest postmortems (even rarer);
+- Companies discussing Anti-Corruption Layers and Bounded Contexts +
+(pure gold, if you ever find it).
+
+**The brutal numbers from our aggregation:**::
+- 11% fully implemented AI (Salesforce research);
+- 21% repatriated workloads from cloud (Flexera 2025);
+- 9.7% enterprise adoption -- barely moved from 3.7% in 2023;
+- 95% pilots failing (MIT).
+
+You're NOT alone in the struggle. +
+You're alone in *_admitting it_*.
+
+== What to Actually Do
+
+**If you're stuck in T0:**
+
+Stop buying tools.
+Your problem isn't AI capability -- it's architectural debt blocking integration.
+Fix foundations first or keep wasting money on chatbots.
+You don't need to fix everything.
+Just move incrementally always showing value in production.
+
+**If you're attempting T1:**
+
+Ask yourself honestly::
+- Can your systems support domain-boundary integration?;
+- Do you have clean Bounded Contexts?;
+- Documented boundary conditions in ACLs?;
+- Unified data across domains?
+
+No?
+
+Then you're not attempting T1.
+You're attempting T0+ and calling it transformation.
+
+**If you're planning T2:**
+
+You're 2-3 years away minimum.
+Get T1 working first.
+I'm serious -- attempting T2 without solid T1 will cascade-fail across your entire domain model.
+
+_You can't build the third floor without the second._
+
+== One Question That Cuts Through Everything
+
+Next time someone shows you an "AI success story" -- theirs or a competitor's -- ask:
+
+**"What tier are they actually at?"**
+
+That tells you *_everything_* about whether it's relevant to your situation.
+
+Vodafone's 68K Copilot deployment? +
+T0. _Ignore it._
+
+DoorDash's AWS Bedrock integration? +
+T1. *Study it!*
+
+Your vendor's "AI-powered" feature? +
+Probably T0 in a nice box.
+
+They can't answer? +
+Talk about sports.
+
+== The Vegetables You Came For
+
+The 5% succeeding at enterprise AI didn't find better vendors or smarter consultants.
+
+They built better foundations BEFORE adding intelligence.
+
+That's the vegetable.
+_It tastes better than sugar once you try it._
+
+Most of you won't.
+You'll keep eating cotton candy, wondering why transformation never comes.
+
+The ones who do?
+You already know who you are.
+You felt the guilt in that opening paragraph.
+
+Quick recap::
+- T0/T0+ -- productivity tools, zero competitive advantage;
+- T1 -- domain boundary integration, first disruption;
+- T2 -- AI-only subdomains, market-changing;
+- T3+ -- read {stages-of-ai-evolution}[the 2023 playbook], not relevant yet.
+
+_Want to know what tier YOUR architecture can actually support?_
+
+{diagnostic}[Stop lying to yourself and find out].
+
+P.S. I'm not writing *carrot theory*.
+I fix corporate architecture -- decades, hands on, every day.
