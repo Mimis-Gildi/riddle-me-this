@@ -1,0 +1,26 @@
+FINALLY - An honest take. Still.
+Ryan, "oh sweet child of mine" - it's not deliberate technical debt!
+Ryan McBeth nails WHY enterprises can't just "use redundant nodes" when AWS goes down.
+The secret: Most companies lifted old apps into cloud. Software is a cost center. Once it works, ship it.
+The mistake: Calling this "technical debt" implies someone CHOSE this mess.
+
+The reality:
+Nobody chose the coral reef. It evolved.
+Then everyone who understood it left.
+
+I must come in.
+Fix the nastiest forgotten debt first.
+Right the ship.
+Stop the listing.
+Company's happy.
+Crisis averted.
+
+Then they forget the lesson.
+Create more debt.
+Ship lists again.
+Rinse. Repeat.
+
+This is why your hashtag#AI hashtag#failed. And it will fail again.
+hashtag#TechnicalDebt hashtag#AIFailure hashtag#CoralReef hashtag#AWS
+
+youtube.com/shorts/BvDPAI2Q0cw
