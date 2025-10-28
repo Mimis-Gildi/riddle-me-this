@@ -1,7 +1,7 @@
-= Mímis Gildi: Rdd13r’s Living Résumé & Digital Garden
+= Mímis Gildi: Rdd13r’s Living Digital Garden
 Vadim Kuhay <12781006+rdd13r@users.noreply.github.com>
 v3.7.0, Friday May 16th 2025
-:description: Vadim Kuhay’s living résumé and publication repository.
+:description: Vadim Kuhay’s living and evolving publication repository.
 :icons: font
 :!toc:
 :keywords: Mímir Rdd13r Résumé Hacker Vadim Kuhay
@@ -29,16 +29,17 @@ v3.7.0, Friday May 16th 2025
 :a-cache: {gha}/github-cache-prune.yml
 :a-infra: {gha}/custom-runner-introspect.yml
 
-This repository is the *canonical source of truth* for Vadim Kuhay’s +
-(aka `rdd13r`), engineering artifacts, ideas, publications, even resume +
- -- clear and open.
+This is where I think out loud about engineering. +
+25 years building systems, leading teams, fixing what broke. +
+This repo is my working notebook -- insights, field notes, code fragments, +
+stories from production.
+If something mattered, it's probably here.
 
 '''
 
-Everything to know about me and my values is right here, in this repo. +
+Everything to know about me and my values is in this repo. +
 My people ethos and code attitude, feel for time, automation, LoLs. +
-Even in this tiny idea blog space you may find some funny xp-trunk. +
-In the workflows, release notes, commit history -- look around.  +
+In the blog posts, workflows, release notes, commit history -- look around. +
 Take what you like, if you dig my ways, come pair with me. +
 _P.S. I use A LOT of custom ML_
 
@@ -63,7 +64,7 @@ image:https://img.shields.io/badge/Subscribe-LinkedIn-0A66C2?style=for-the-badge
 
 == Résumé & expected formalities
 
-As is customary these days, this repo includes three curated PDF renditions. +
+As is customary these days, this repo also includes some curated PDF renditions. +
 Grab the latest from the GitHub {releases} page:
 
 📦 https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v3.7.0[v3.7.0] – full release package, automatically updated
