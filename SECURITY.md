@@ -195,6 +195,9 @@ flowchart TD
   Release --> Summary
 
 ```
+___
+
+![JetBrains Qodana Security Scan project homepage image.](./site/assets/images/project-qodana.png "Home of Project Security Scan at Qodana")
 
 ___
 
