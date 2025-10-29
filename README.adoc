@@ -59,7 +59,7 @@ image:https://img.shields.io/badge/Subscribe-LinkedIn-0A66C2?style=for-the-badge
 * Email: mailto:vadim@asei.systems[vadim@asei.systems] | mailto:rIdd13r@pm.me[rIdd13r@pm.me] <- crypted
 * Signal / Discord / Telegram / Text: +1 (919) 717-1387 <- filtered
 
-== Résumé & expected formalities
+== Résumé & formalities
 
 As is customary these days, this repo also includes some curated PDF renditions. +
 Grab the latest from the GitHub {releases} page:
@@ -72,16 +72,14 @@ Grab the latest from the GitHub {releases} page:
 * https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnCore.pdf[Core Résumé] – ATS optimized simple document for your Rolodex.
 
 _Still, the best way to get to know me is to make software *with* me_ +
+{nbsp} +
 {nbsp}
-image:./site/assets/images/badge-mimis.png[Mímis Gildi,link="https://github.com/Mimis-Gildi"]
-{nbsp}
-image:./site/assets/images/badge-gotham.png[Gotham Village,link="https://github.com/Gotham-Village"]
-{nbsp}
-image:./site/assets/images/badge-hera.png[Gervi Héra Vitr,link="https://github.com/Gervi-Hera-Vitr"]
-{nbsp}
-image:./site/assets/images/badge-scala.png[Mímis Scala,link="https://github.com/Mimis-Scala"]
-{nbsp}
-image:./site/assets/images/badge-lagard.png[Mímis Látlæg Háttalag,link="https://github.com/Mimis-Latlaeg-Hattalag"]
+image:./site/assets/images/badge-mimis-button.png[Mímis Gildi,link="https://github.com/Mimis-Gildi"]
+image:./site/assets/images/badge-gotham-button.png[Gotham Village,link="https://github.com/Gotham-Village"]
+image:./site/assets/images/badge-hera-button.png[Gervi Héra Vitr,link="https://github.com/Gervi-Hera-Vitr"]
+image:./site/assets/images/badge-scala-button.png[Mímis Scala,link="https://github.com/Mimis-Scala"]
+image:./site/assets/images/badge-lagard-button.png[Mímis Látlæg Háttalag,link="https://github.com/Mimis-Latlaeg-Hattalag"]
+image:./site/assets/images/logo-mg-main-badge-button.png[ASE Inc,link="https://asei.systems"]
 
 '''
 
