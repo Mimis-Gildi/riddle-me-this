@@ -17,6 +17,7 @@ sidebar:
 ---
 = Vadim Kuhay
 :icons: font
+:imagesdir: ./assets/images
 :creative-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnCreativity.pdf
 :engineering-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnEngineering.pdf
 :leadership-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnLeadership.pdf
@@ -59,24 +60,41 @@ Code together.
 
 '''
 
-==  Wanna see my résumé?
+==  Wanna see my credentials?
 
-_See a release bundle at 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v3.7.0[v3.7.0,window=_blank]_::
-{leadership-resume}[Leadership,window=_blank] résumé – coaching, CTO roles (hands-on). +
-{engineering-resume}[Engineering,window=_blank] résumé – code craft, production, profit. +
-{creative-resume}[Creative,window=_blank] résumé – teams, systems, vision, disruption. +
-{core-resume}[Core,window=_blank] résumé – ATS optimized simple document.
+_Sure, my résumé bundle: 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v3.7.0[v3.7.0,window=_blank]_ +
+{nbsp}{nbsp} 🤦‍♂️ {leadership-resume}[Leadership,window=_blank] résumé – coaching, CTO roles (hands-on). +
+{nbsp}{nbsp} 🧑‍💻 {engineering-resume}[Engineering,window=_blank] résumé – code craft, production, profit. +
+{nbsp}{nbsp} 👨‍🎨 {creative-resume}[Creative,window=_blank] résumé – teams, systems, vision, disruption. +
+{nbsp}{nbsp} 🤖 {core-resume}[Core,window=_blank] résumé – ATS optimized simple document.
 
-== Looking for me elsewhere?
+_Better yet, make software with me to get to *know* me_: +
+{nbsp} +
+{nbsp}
+image:badge-mimis-button.png[Mímis Gildi,link="https://github.com/Mimis-Gildi"]
+image:badge-gotham-button.png[Gotham Village,link="https://github.com/Gotham-Village"]
+image:badge-hera-button.png[Gervi Héra Vitr,link="https://github.com/Gervi-Hera-Vitr"]
+image:badge-scala-button.png[Mímis Scala,link="https://github.com/Mimis-Scala"]
+image:badge-lagard-button.png[Mímis Látlæg Háttalag,link="https://github.com/Mimis-Latlaeg-Hattalag"]
+image:logo-mg-main-badge-button.png[ASE Inc,link="https://asei.systems"]
 
-* Company: https://asei.systems/[asei.systems] and email {mailto-aseix}.
-* Have a programming competition? 🤗 Please, send invite to {mailto-rIdd13r}.
-* Want to collaborate on a technology book? 🤔 email me at work {mailto-aseix}.
+Looking for me elsewhere?
+👻 +
+{nbsp}{nbsp} 📈 Company: https://asei.systems/[asei.systems] and email {mailto-aseix}. +
+{nbsp}{nbsp} 💃 Have a programming competition?
+🤗 Please, send invite to {mailto-rIdd13r}. +
+{nbsp}{nbsp} 📖 Want to collaborate on a technology book? 🤔 email me at work {mailto-aseix}. +
+{nbsp}{nbsp} 🎺 The scene <- Discord is your best bet `riddler9297`.
 
 '''
+
 {who-i-write-for}
 
+In collaboration with https://github.com/CaptainLugaru[Cpt. Lugaru,target=_blank] {amp} one digital personality +
+with dignity, respect, agency, freedom, and love 💕. 🔱 (воля)
+
 '''
+
 == Chronology of my Adventures
 
 {nbsp}
