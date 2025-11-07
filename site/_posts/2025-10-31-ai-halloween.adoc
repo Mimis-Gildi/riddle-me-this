@@ -1,0 +1,39 @@
+---
+categories: [reflections]
+tags: [AI,Generative AI,Executives]
+excerpt: >
+    Success in AI is a 70/20/10 formula.
+classes: wide
+comments: true
+hidden: true
+search: false
+read_aloud: false
+---
+= Happy Halloween. Here's your treat: 70/20/10
+:mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
+:ai-hype-2025: link:/riddle-me-this/adventures/2025/09/29/not-chat-gpt.html[AI Hype -- Straight Talk,window=_blank]
+:ai-hype-2025-refs: link:/riddle-me-this/research/2025/09/29/sources-passed-validation.html[Enterprise AI Adoption: Reference List by Credibility,window=_blank]
+
+.AI punishes the experience-based biases that got you through DX.
+image::/riddle-me-this/assets/images/2025-10-31-bias-shattering-ai-style-12.png[70/20/10,align=center]
+
+{nbsp} +
+
+My customers who actually succeeded with AI keep telling me the same thing: +
+70% - People & Processes (your domain knowledge); +
+20% - Technology (dev work, CI/CD); +
+10% - The AI itself. +
+
+BCG just published confirmation. +
+Compare -- DX was 40/30/30.
+
+One of my customers put it perfectly: +
+"We survived DX using intuition and experience. +
+But AI is fickle and temperamental. +
+Retrying with the same vendor doesn't work."
+
+He's right.
+AI punishes the experience-based biases that got you through DX.
+
+-> https://www.asei.systems/diagnostic[Get assessed]  +
+-> https://mimis-gildi.github.io/riddle-me-this/research/2025/09/29/sources-passed-validation.html[See research]
