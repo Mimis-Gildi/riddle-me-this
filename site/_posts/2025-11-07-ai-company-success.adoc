@@ -1,0 +1,72 @@
+= The Age Old Question: Does Size Really Matter(For AI)?
+
+Everyone assumes the answer to AI success is simple: big companies have resources, small companies are nimble, therefore... what exactly?
+
+Here's the paradox: company size predicts whether you'll TRY AI, but it inversely predicts whether you'll SUCCEED at it.
+
+== SMALL COMPANIES: The Talent Barrier
+
+Half of small companies never make it past "should we do AI?"
+
+- 52% cite lack of expertise/skills as their biggest challenge
+- 39% report zero in-house AI expertise
+
+BUT, to those companies that do try AI:
+
+- 91% report revenue increases
+- 86% report improved profit margins
+- Deployment timeline: 3-4 months (vs 12-18 months for enterprises)
+
+Why:: Modern tech stacks: 75% building AI-native architectures (Y Combinator data) - no 1985 mainframes to integrate with
+
+== MEDIUM COMPANIES: The Graveyard
+
+Medium companies show the highest enthusiasm with the worst outcomes.
+
+- 91% adoption rate - highest of all company sizes (RSM 2025 survey of 966 middle market leaders)
+- But only 53% feel "somewhat prepared" for AI adoption
+- 39% cite lack of in-house expertise as top barrier
+- 86% need tech stack upgrades - expensive without enterprise budgets
+
+The result?
+
+- 92% encountered challenges during implementation (higher than small or large companies)
+- 70% need outside assistance to maximize AI value despite having more resources than small businesses
+- Only 20% achieved full integration into core operations (below 26% baseline for generating tangible value)
+
+Why::
+Current evidence says: they're uniquely positioned to lose. They're stuck between small business agility and enterprise resources. Not small enough to use simple tools. Not big enough to afford enterprise solutions.
+
+
+== LARGE ENTERPRISES: The Expensive Failure Factory
+Large enterprises can afford anything. They still fail.
+
+- 42-60% adoption rate (varies by study - IBM shows 42% for 1,000+ employees, rising to 60% for 10,000+ employees)
+- AI budgets: $50M-$250M
+- Companies with 250+ employees increase AI usage by 0.11 percentage points every two weeks (fastest adoption rate)
+- Large enterprises (1,000+ employees): 42% actively deployed AI vs significantly lower rates for smaller firms
+
+What could possibly go wrong?
+Well:
+
+- 74% fail to generate tangible value (BCG survey of 1,000 CxOs)
+
+- 95% of GenAI pilots fail to deliver measurable P&L impact (MIT 2025 NANDA study tracking 300 deployments)
+- 9+ months for AI deployment vs 90 days for mid-market, 3-4 months for small businesses
+- 60% of projects overrun budgets by 85%
+
+Why:: The 70-20-10 rule exposes the core problem, BCG research with 1,000 executives found:
+
+- 70% of AI challenges = people and process issues
+- 20% = technology integration problems
+- 10% = AI algorithms themselves
+
+But enterprises spend 80% of budget on the 10% what fails (AI/Algorithms/People/Process) and 20% on the 90% that's Works (Intergration/Architecture).
+
+- 75% of legacy systems cannot effectively integrate with AI tools (SnapLogic 2024)
+- 81% of IT leaders report data silos hinder digital transformation
+
+== THE TRUTH:
+The resource barrier (small companies) is easier to fix than the organizational barrier (large companies).
+
+
