@@ -4,7 +4,7 @@ asciidoctorJvm = "4.0.5"
 benManes = "0.53.0"
 dokka = "2.1.0"
 
-logback = "1.5.20"
+logback = "1.5.21"
 kotlinLogging = "7.0.13"
 slf4j = "2.0.17"
 
