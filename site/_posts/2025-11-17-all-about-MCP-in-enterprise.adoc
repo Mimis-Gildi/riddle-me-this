@@ -1,0 +1,32 @@
+---
+categories: [reflections]
+tags: [AI,Generative AI,Executives,MCP]
+excerpt: >
+    The wisdom of the latest fad.
+classes: wide
+comments: false
+hidden: true
+search: false
+read_aloud: false
+---
+= AI: Say "NO" to MCP Teams -- Straight Talk
+
+There are two types of businesses that talk to us: those who transformed with us and those that haven't yet.
+The latter tend to inundate me we with persistent idea requests.
+The latest: form us MCP tems.
+
+Let me save you a lot time and grief -- DON'T!
+
+Instead, let your domain teams adopt some ML/MCP know-how.
+Extending with ML outside of a business domain makes no sense at all.
+And it will only take a single weekend bootcamp to master the needed foundations.
+
+Think of it this way: MCP is like REST, but smaller and less critical.
+Did you have separate REST teams when the HTTP protocol became the thing?
+You did not!
+And those that did are too embarrassed to admit so today --
+like a lame home builder who hired separate nailgun teams when those showed up at Lowes.
+So, just add MCP as yet another useful protocol to you domain team's toolbox.
+No need to get off on a fluke-fad like on a new Tesla.
+
+// ToDo: This needs a call to action.

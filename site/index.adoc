@@ -6,7 +6,7 @@ header:
   caption: "Systems are stories that run."
   actions:
     - label: "Résumé PDFs (GitHub)"
-      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v2.3.0
+      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v3.7.0
     - label: "Who's Rdd13r?"
       url: /maintainer/
 classes: wide
