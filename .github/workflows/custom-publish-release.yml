@@ -28,6 +28,7 @@ jobs:
     name: "Publish Release Artifacts"
     runs-on: [self-hosted, release]
     timeout-minutes: 27
+    if: github.head_ref == '' || (!startsWith(github.head_ref, 'renovate/') && !startsWith(github.head_ref, 'dependabot/'))
 
     steps:
 

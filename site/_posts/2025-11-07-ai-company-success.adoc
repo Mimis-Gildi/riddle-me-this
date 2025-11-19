@@ -1,0 +1,130 @@
+---
+categories: [reflections]
+tags: [AI,Generative AI,Executives]
+excerpt: >
+    Real industry picture.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= AI: Gartner Won't Tell You This  -- Straight Talk
+lugaru
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:img-prefix: /riddle-me-this/assets/images/posts
+
+Common sense says big companies will dominate the market with AI.
+Because big companies have resources.
+And small companies are nimble instead.
+
+Paradoxically, company size predicts whether AI will be tried, but it inversely predicts success.
+
+.AI Integration Reality by Company Size
+[#img-devs]
+image::{img-prefix}/2025-11-07-companies-in-ai.png[AI Adoption,width=1200,align=center]
+
+{nbsp}
+
+== SMALL COMPANIES: The Talent Barrier:
+
+More than half of small companies never make it past "should we do AI?"
+
+- 52% cite lack of expertise/skills as their biggest challenge;
+- 39% report zero in-house AI expertise.
+
+The ones that DO try AI:
+
+- 91% immediately increase revenue -- direct business value;
+- 86% incrementally improve profit margins over short time.
+
+And the kicker is the adoption time -- 3-4 months, instead of 12-18 months industry average.
+
+__Small companies' advantage is more modern and pragmatic tech stacks: 75%+ are building AI-native architectures from the start --
+no 1985 mainframes to integrate with (see Y Combinator data 2024, 2025.)__
+
+== MEDIUM COMPANIES: The Danger Zone for AI!
+
+Medium companies show the highest enthusiasm with the worst outcomes.
+This is why we at ASE Inc focus our marketing on this segment.
+These people have the most to gain yet flop the hardest.
+
+- 91% adoption rate - highest of all company sizes;
+- But only 53% feel "somewhat prepared" for AI adoption;
+- 39% cite lack of in-house expertise as top barrier;
+- 86% need tech stack upgrades - expensive without enterprise budgets;
+- *11% publicly claim success, yet only 3% demonstrate actual business outcomes.*
+
+(RSM 2025 survey of 966 middle market leaders comes closest to my research.)
+
+Exploring the root causes, we find these premises:
+
+- 92% encountered challenges during implementation (higher than small or much higher than large companies);
+- 70% need outside assistance to maximize AI value despite having more resources than small businesses;
+- Only 20% achieved full integration into core operations, while achieving 26% integration is the baseline threshold for generating tangible value.
+
+__My research evidence says: midsized companies are uniquely positioned to lose.
+They're stuck between small business agility and enterprise resources.
+Not small enough to use simple tools and nimble, competent teams.
+Not big enough to drown their problems in money.
+__
+
+== LARGE ENTERPRISES: Where AI Gets Expensive and Slow:
+
+Large enterprises can afford anything. They still fail.
+And they succeed mostly through brute force.
+
+- 42-60% adoption rate (varies by study - IBM shows 42% for 1,000+ employees, rising to 60% for 10,000+ employees);
+- AI budgets: $50M–$250M -- a bit absurd for the results they're getting -- wasting 90%+ of the investment;
+- Companies with 250+ employees increase AI usage by 0.11 percentage points every two weeks (fastest adoption rate);
+- Large enterprises (1,000+ employees): 42% actively deployed AI vs significantly lower rates for smaller firms.
+
+The important information here is about the kind of stuff that goes wrong:
+
+- 74% fail to generate tangible value (BCG survey of 1,000 CxOs);
+- 95% of GenAI pilots fail to deliver measurable P&L impact (MIT 2025 NANDA study tracking 300 deployments)
+- 9+ months for AI deployment vs 90 days for mid-market, 3-4 months for small businesses;
+- 60% of projects overrun budgets by at least 85%.
+
+The reason for this is what we wrote 2 years ago.
+Recent BCG research with 1,000 executives confirmed our conclusions.
+This is how we formulated the 70-20-10 rule to combat the core problem:
+
+- 70% of AI challenges = people and process issues;
+- 20% = core technology and integration problems;
+- 10% = AI algorithms themselves, models, and ops.
+
+Because:
+
+- 75% of legacy systems cannot effectively integrate with AI tools (SnapLogic 2024);
+- 81% of IT leaders report data silos hinder digital transformation.
+
+== THE TRUTH:
+
+Yet all of these publications miss what I see as the most important metrics.
+
+Large enterprises spend 80% of their budget on the 10% that fails -- AI theater: models, pilots, workshops, and change programs.
+And maybe 20% on the 90% that works -- boring business plumbing that actually makes pay off: Integration and Architecture.
+And that produces the 5% of successful projects while the rest just fails.
+_Enterprise did not complete *Digital Transformation*._
+*Large companies should restart DX and Hacker Culture adoption.*
+
+Medium companies are natural losers, not through any fault of their own but because of unfair market position.
+*Medium companies should contract Hacker Shops to upshore Domain Architecture.*
+
+Small companies have the greatest chance at success.
+And cower the most.
+Small companies should take more open-minded chances.
+Because the resource barrier in small companies is easier to fix than the organizational barrier in large companies.
+
+Most importantly, if you're in that stuck middle -- the backbone of American family business
+-- talk to your local hacker shop before you sign another seven-figure 'transformation' contract.
+We build the boring plumbing that actually works.
+Come to us, and you'll have production AI making money.
+Not pilots.
+Not theater.
+Simply working systems.
