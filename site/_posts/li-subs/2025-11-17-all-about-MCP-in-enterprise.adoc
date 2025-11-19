@@ -1,0 +1,38 @@
+---
+categories: [reflections]
+tags: [AI,Generative AI,Executives,MCP]
+excerpt: >
+    Stop chasing fads. Build competence.
+classes: wide
+comments: false
+hidden: false
+search: false
+read_aloud: false
+---
+= Stop Creating "MCP Teams"
+
+Prospects keep asking us to help them form and train MCP teams.
+
+Don't!
+
+MCP is a protocol.
+Like REST.
+Did you hire a separate REST team when HTTP became standard?
+(Some did and are too embarrassed to admit it now.)
+
+Did your home builder hire a separate nailgun team when power tools showed up at Lowe's?
+
+Just train your domain teams on MCP fundamentals.
+One weekend bootcamp.
+Done!
+
+Extending systems with ML outside of business domain context makes no sense.
+Your domain teams already understand the business logic -- they just need the protocol knowledge to augment with AI.
+
+Build competence into your existing teams.
+We can help you with that -- make communities of practice
+-- deliver valuable working software with experts you already have.
+
+Stop chasing senseless fads.
+
+#AI #MCP #EnterpriseArchitecture #DomainDrivenDesign
