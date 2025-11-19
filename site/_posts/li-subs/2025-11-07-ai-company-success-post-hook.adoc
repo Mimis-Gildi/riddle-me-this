@@ -1,0 +1,36 @@
+---
+categories: [reflections]
+tags: [LI Post]
+excerpt: >
+    Marketing post on LinkedIn
+classes: wide
+comments: false
+hidden: true
+search: false
+read_aloud: false
+---
+= On company sizes and AI
+lugaru
+:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-title: Creative Engineering at Scale
+:blog-link: {blog-url}[{blog-title}]
+:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+:pub-li: see excerpt on LinkedIn by {li-newsletter}
+:img-prefix: /riddle-me-this/assets/images/posts
+
+Anton (16, ASE Inc intern) just published his first company analysis.
+
+He spent a few days analyzing AI adoption data across company sizes -- combining our founder community research with public studies.
+
+The finding that surprised even me: company size predicts whether you'll TRY AI, and inversely on SUCCESS.
+
+The gap between theater and reality is brutal, especially for midsize companies:
+
+- 11% of companies publicly claim AI success;
+- Only 3% demonstrate *_actual_* business outcomes.
+
+_Medium companies claim 91% adoption but harbor the worst results._
+
+His full analysis explains why - and what to do about it.
+
+#AI #AIAdoption #EnterpriseArchitecture #MiddleMarket
