@@ -31,22 +31,23 @@ Core Technologies::
 
 == Professional Experience
 
-Principal Research Engineer | Advanced Software Enterprises | *Oct 2024 – Present*::
+Principal Architect/Co-Founder | Advanced Software Enterprises, Inc. | *Oct 2024 – Present*::
 
+* Leading multi-domain research into swarming autonomous systems / prototyping
 * Maintaining MATILDA™ MLOps platform serving 13 institutional co-owners
 * Designing ML architectures for experimental AI research initiatives
 * Modernizing 25-year-old codebase to support next-gen AI modeling
-* *Tech Stack:* Java, Golang, Kotlin, TensorFlow, AWS, Kubernetes
+* *Tech Stack:* Java, Golang, Kotlin, TensorFlow, AWS, Kubernetes | Systems Engineering
 
 Staff Engineer | GEICO | *Jan 2024 – Sep 2024*::
 
 * Led development of first true distributed system at GEICO
 * Introduced DDD, EventStorming, and trunk-based development practices
 * Reduced deployment time from days to hours through CI/CD automation
-* *Tech Stack:* Kotlin, Java, React, Kubernetes, AWS, Kafka
+* *Tech Stack:* Kotlin, Java, React, Kubernetes, AWS, Kafka | Domain Product Engineering
 * *Impact:* 3x improvement in team velocity, 80% reduction in deployment failures
 
-Principal Architect/Developer | Advanced Software Enterprises | *Mar 2017 – Dec 2023*::
+Principal Architect/Co-Founder | Advanced Software Enterprises | *Mar 2017 – Dec 2023*::
 
 * *Key Achievements:*
 - Led 11 enterprise transformations including Fidelity, Mutual of Omaha, BCBS
@@ -55,11 +56,11 @@ Principal Architect/Developer | Advanced Software Enterprises | *Mar 2017 – De
 * *Notable Project - TauCoin Platform (2019-2022):*
 - Migrated blockchain platform from Haskell to Kotlin Multiplatform
 - Reduced operational costs by 10x through architecture redesign
-- *Tech Stack:* Kotlin KMP, DAG protocols, GCP, Redis
+- *Tech Stack:* Kotlin KMP, DAG protocols, GCP, Redis | Platform Engineering
 * *Notable Project - Blue Cross Digital Transformation (2020-2021):*
 - Implemented event-driven microservices architecture
 - Established Community of Practice reaching 40+ engineers
-- *Tech Stack:* Spring Boot, Kafka, Kubernetes, AWS
+- *Tech Stack:* Spring Boot, Kafka, Kubernetes, AWS | Domain Product Engineering
 
 Lead Software/Platform Engineer, AVP | Deutsche Bank | *Sep 2012 – Jun 2017*::
 
@@ -73,16 +74,18 @@ Lead Software Engineer | Xybion Corporation | *Jan 2011 – Apr 2012*::
 
 * Designed XFIS content federation platform (acquired by EMC)
 * Built from concept to production in 12 months
-* *Tech Stack:* Java OSGi, Spring, VMware ESXi
+* *Tech Stack:* Java OSGi, Spring, VMware ESXi | Systems Engineering
 
 === Previous Experience
 
-* *Glemser (2006-2010):* Pharma EDRMS (Merck, Pfizer, BMS)
-* *IMPERISOFT (2000-2005):* Defense systems, Co-founder
-* *US Army (1997-2000):* 20th Engineer Brigade
+* *Glemser (2006-2010):* Pharma EDRMS (Merck, Pfizer, BMS) | Platform Engineering
+* *IMPERISOFT (2000-2005):* Defense systems, Co-founder | Systems Engineering
+* *US Army (1997-2000):* 20th Engineer Brigade | Combat Engineering / Demolition
+* *Multiple Startups (1991-1997):* C/ObjC/C++ System Programmer | UNIX daemons
 
 === Key Accomplishments
 
+* *Team Formation:* Formed, nurtured, mentored competent engineering teams
 * *Distributed Systems:* Built platforms handling billions of transactions
 * *Team Leadership:* Coached 200+ engineers in XP/DDD practices
 * *Cost Reduction:* Average 60% operational cost reduction through architecture

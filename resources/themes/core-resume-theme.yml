@@ -23,6 +23,6 @@ footer:
       content: 'Vadim Kuhay'
   verso:
     left:
-      content: '_Production-first. Test-driven. Shipped._'
+      content: 'Page {page-number} of {page-count} | _Production-first. Test-driven. Shipped._'
     right:
-      content: '{revision-date}'
+      content: '{revision-date} | {revision-number}'
