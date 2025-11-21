@@ -18,7 +18,7 @@ Vadim Kuhay - mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com]
 :inc-dir: {includedir}
 ifdef::env-name[:relfilesuffix: .adoc]
 
-Engineering leader, transformation coach, and hands-on architect with 35 years of experience across startups,
+Engineering leader, transformation coach, and hands-on architect with decades of experience across startups,
 Fortune 500 enterprises, research, defense, and the public sector.
 Trusted by boards, CTOs, and product teams to deliver technically sound,
 people-centered innovation in durable business assets.
@@ -67,8 +67,8 @@ Currently seeking a Director of Engineering, VP, or CTO role at a values-aligned
 * Delivered GEICO’s first cloud-native distributed system, designed through EventStorming +
 and domain modeling, and implemented in Kotlin, Java, React, Python, Kubernetes, and Azure.
 * Led a domain-team revolution in XP, DDD, microservices, and event-driven architecture.
-* Founded and scaled an internal Community of Practice to sustain grassroots transformation -- +
-despite entrenched, passive-aggressive institutional resistance.
+* Founded and scaled an internal Community of Practice to sustain grassroots transformation +
+{nbsp} -- despite entrenched, passive-aggressive institutional resistance.
 * Instilled Trunk-Based Development (TBD, _Trunking_), countering long release cycle antipattern.
 * Introduced Collaborative Bootstrapping (_Co-Bootstrap_), reducing time-to-market for MVPs.
 

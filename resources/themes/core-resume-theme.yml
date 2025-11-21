@@ -21,6 +21,8 @@ footer:
       content: 'Page {page-number} of {page-count}'
     left:
       content: 'Vadim Kuhay'
+    center:
+      content: 'https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/{revision-number}'
   verso:
     left:
       content: 'Page {page-number} of {page-count} | _Production-first. Test-driven. Shipped._'

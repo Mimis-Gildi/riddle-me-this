@@ -10,7 +10,7 @@ header:
   line-height: 1
   recto:
     center:
-      content: '+1 (919) 717-1387 | GitHub - https://github.com/Mimis-Gildi/riddle-me-this/[Latest Version] - https://mimis-gildi.github.io/riddle-me-this/maintainer/[Author''s Profile] | https://www.linkedin.com/in/rdd13r/[Author''s LinkedIn]'
+      content: '+1 (919) 717-1387 | GitHub - https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/{revision-number}[Source] of doc | Author''s https://mimis-gildi.github.io/riddle-me-this/maintainer/[Profile] | https://www.linkedin.com/in/rdd13r/[LinkedIn]'
 footer:
   height: 0.6in
   line-height: 1

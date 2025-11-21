@@ -6,7 +6,7 @@ header:
   caption: "Systems are stories that run."
   actions:
     - label: "Résumé PDFs (GitHub)"
-      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v3.7.0
+      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v3.19.0
     - label: "Who's Rdd13r?"
       url: /maintainer/
 classes: wide
@@ -18,10 +18,10 @@ sidebar:
 = Vadim Kuhay
 :icons: font
 :imagesdir: ./assets/images
-:creative-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnCreativity.pdf
-:engineering-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnEngineering.pdf
-:leadership-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnLeadership.pdf
-:core-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnCore.pdf
+:creative-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.19.0/OnCreativity.pdf
+:engineering-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.19.0/OnEngineering.pdf
+:leadership-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.19.0/OnLeadership.pdf
+:core-resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.19.0/OnCore.pdf
 :mailto-aseix: mailto:vadim@asei.systems?subject=About%20your%20business%2C%20M%C3%ADmis%20Gildi%20&body=Hello%20Vadim%2C%0A%0A%20%20I%20found%20your%20business%20email%20on%20your%20blog%20site[vadim@asei.systems]
 :mailto-rIdd13r: mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let's%20compete%3F[rIdd13r@pm.me]
 :who-i-write-for: link:/riddle-me-this/about/#who-i-write-for[Who I write for?,target=_blank]
@@ -62,7 +62,7 @@ Code together.
 
 ==  Wanna see my credentials?
 
-_Sure, my résumé bundle: 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v3.7.0[v3.7.0,window=_blank]_ +
+_Sure, my résumé bundle: 🔗 link:https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v3.19.0[v3.19.0,window=_blank]_ +
 {nbsp}{nbsp} 🤦‍♂️ {leadership-resume}[Leadership,window=_blank] résumé – coaching, CTO roles (hands-on). +
 {nbsp}{nbsp} 🧑‍💻 {engineering-resume}[Engineering,window=_blank] résumé – code craft, production, profit. +
 {nbsp}{nbsp} 👨‍🎨 {creative-resume}[Creative,window=_blank] résumé – teams, systems, vision, disruption. +

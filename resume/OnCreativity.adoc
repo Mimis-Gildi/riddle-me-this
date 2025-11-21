@@ -154,8 +154,8 @@ MATILDA still runs. Quietly.
 Stable. Versioned. Politically neutral.
 Everyone talks about its offspring -- the clever, narrow AI personalities.
 No one talks about MATILDA itself.
-Except, perhaps, yours truly. +
-Which is how I know it works.
+Except, perhaps, myself. +
+Which is how I know it _just works_.
 ====
 
 <<<
