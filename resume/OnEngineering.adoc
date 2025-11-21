@@ -17,7 +17,7 @@ Vadim Kuhay - mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com]
 :inc-dir: {includedir}
 ifdef::env-name[:relfilesuffix: .adoc]
 
-Polyglot software engineer, hands-on architect, and player-coach with 35 years of experience in system design,
+Polyglot software engineer, hands-on architect, and player-coach with decades of experience in system design,
 distributed architecture, and high-performance delivery across startups, eCommerce, Fortune 500, and public sector systems.
 
 Practitioner of Extreme Programming (XP), Domain-Driven Design (DDD), and DevOps culture --
@@ -41,7 +41,7 @@ and earn leadership through the long strategy of thinking, making, and shipping.
 
 Profile Highlights::
 
-* 35 years in architecture, delivery, and coaching across startups, Fortune 500, defense, and research.
+* 3 decades in architecture, delivery, and coaching across startups, Fortune 500, defense, and research.
 * Led global XP/DDD/DevOps transformations -- from DoD to Deutsche Bank to MATILDA.
 * Core maintainer of cross-org systems; mentor on test-first culture and AI-augmented domain architecture.
 
@@ -69,20 +69,22 @@ _Tool choices adapt to team maturity, domain complexity, and business constraint
 
 == Experience
 
-ASE Inc. (Principal Research Engineer, 2024–Present)::
+ASE Inc.
+(Principal Architect | Co-Founder, 2024–Present) -- Advanced Systems Engineering::
 
 * Maintains MATILDA™ codebase used by 13 academic and commercial co-owners across domains.
 * Designed and implemented a new ML Archetype for experimental Limbic System Simulation.
 * Mentored cross-disciplinary teams integrating academic and industry minds into real outcomes.
 
 
-GEICO via Dexian (Staff Engineer, 2024)::
+GEICO via Dexian (Staff Engineer, 2024) --  Domain Product Engineering::
 
 * Built GEICO’s first distributed system using 12-factor-app, Kotlin, React, Kubernetes, Azure.
 * Introduced domain modeling, trunk-based development, clean code, and test-first mindset.
 * Led XP practices in DDD/BDD/Microservices; scaled DevEx via prod-parity repos for local k8s.
 
-ASE Inc. (Co-Founder, Architect, 2017–2024)::
+ASE Inc.
+(Principal Architect | Co-Founder, 2017–2024) -- Platform Engineering::
 
 * Delivered 11 transformative programs in the U.S. across pharma, banking, and insurance, like
 Mutual of Omaha Insurance companies, Credit Suisse, and Blue Cross Blue Shield community.
@@ -92,31 +94,32 @@ Mutual of Omaha Insurance companies, Credit Suisse, and Blue Cross Blue Shield c
 
 == Legacy Experience
 
-Deutsche Bank (Lead Engineer, AVP, 2012–2017)::
+Deutsche Bank (Lead Engineer, AVP, 2012–2017) -- Platform Engineering::
 
 * Designed and delivered dbECM: a global self-healing, HA content system used across 13 domains.
 * Standardized global SDLC and test-first pipelines; coached over 100 contributors, and 5 teams.
 * Introduced instrumented governance and embedded validation across tenant application teams.
 
-Xybion Corporation (Product Principal, 2010–2012)::
+Xybion Corporation (Product Principal, 2010–2012) -- Systems Engineering::
 
 * Designed and delivered market-leading content federation appliance, XFIS, purchased by EMC.
 
-Glemser Technologies Corp (Lead Engineer, 2006–2010)::
+Glemser Technologies Corp (Lead Engineer, 2006–2010) -- Platform Engineering::
 
 * Led development of content and record management platforms for Pharmaceutical clients.
 * Owned Center of Excellence (CoE) disseminating Agile and XP among product teams.
 * Extended core EMC Documentum with valuable capability such as SubTypes and Fragments.
 
-MassivelyParallel (Co-Founding Engineer, 2000–2005)::
+MassivelyParallel (Co-Founding Engineer, 2000–2005) -- Systems Engineering::
 
-* Designed and delivered a suite of distributed systems for defense and warfare simulation.
+* Designed and delivered a suite of distributed systems for defense and warfare simulation. +
+(Company acquired by CSC; AIOps IP acquired by IMPERISOFT, ASE: MATILDA predecessor)
 
-Immigrant-Developers (Freelancing Software Engineer, 1991–1997)::
+Immigrant-Developers (Programmer to Software Engineer, 1991–1997) -- Software Development::
 
-* 1995-1997: Core practice consultant, mainframe daemon development: C++/Python (S. Landau Enterprises).
+* 1995-1997: Core practice consultant, mainframe daemon development: C/ObjC/C++/Python/shell.
 * 1992-1995: Entry level developer: Unix, C++, C, Python, Perl, SQL, bash, ksh, csh, BBS (Various).
-* 1991–1992: Intern, BBS operator; C, C++, Python, Perl, Unix, bash, SQL (S. Landau Enterprises).
+* 1991–1992: Intern, BBS operator; C, C++, Python, Perl, Unix, bash, SQL | Colleges mentoring.
 
 == Education & Training
 

@@ -64,12 +64,12 @@ image:https://img.shields.io/badge/Subscribe-LinkedIn-0A66C2?style=for-the-badge
 As is customary these days, this repo also includes some curated PDF renditions. +
 Grab the latest from the GitHub {releases} page:
 
-📦 https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v3.7.0[v3.7.0] – full release package, automatically updated:
+📦 https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v3.19.0[v3.19.0] – full release package, automatically updated:
 
-* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnEngineering.pdf[Engineering Résumé] – code, systems, production, clever tricks;
-* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnCreativity.pdf[Creative Résumé] – teams, products, mistakes, storytelling, vision;
-* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnLeadership.pdf[Leadership Résumé] – transformation, innovation, past CTO roles;
-* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.7.0/OnCore.pdf[Core Résumé] – ATS optimized simple document for your Rolodex.
+* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.19.0/OnEngineering.pdf[Engineering Résumé] – code, systems, production, clever tricks;
+* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.19.0/OnCreativity.pdf[Creative Résumé] – teams, products, mistakes, storytelling, vision;
+* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.19.0/OnLeadership.pdf[Leadership Résumé] – transformation, innovation, past CTO roles;
+* https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.19.0/OnCore.pdf[Core Résumé] – ATS optimized simple document for your Rolodex.
 
 _Still, the best way to get to know me is to make software *with* me_ +
 {nbsp} +

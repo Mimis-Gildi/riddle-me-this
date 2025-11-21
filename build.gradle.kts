@@ -132,7 +132,12 @@ fun configureAsciiDocInput(
 
         sources { includePatterns.forEach { include(it) } }
 
-        attributes(mapOf("revision-date" to resumeDate))
+        attributes(
+            mapOf(
+                "revision-date" to resumeDate,
+                "revision-number" to resumeVersion
+            )
+        )
     }
 }
 

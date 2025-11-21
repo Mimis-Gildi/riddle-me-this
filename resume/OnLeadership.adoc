@@ -18,7 +18,7 @@ Vadim Kuhay - mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com]
 :inc-dir: {includedir}
 ifdef::env-name[:relfilesuffix: .adoc]
 
-Engineering leader, transformation coach, and hands-on architect with 35 years of experience across startups,
+Engineering leader, transformation coach, and hands-on architect with decades of experience across startups,
 Fortune 500 enterprises, research, defense, and the public sector.
 Trusted by boards, CTOs, and product teams to deliver technically sound,
 people-centered innovation in durable business assets.
@@ -40,7 +40,7 @@ Currently seeking a Director of Engineering, VP, or CTO role at a values-aligned
 * Built and sustained a €57M+ research and innovation ecosystem (MATILDA™ coalition of 13).
 * Created and deployed cutting-edge ML defense platforms (Seer™, Gank™, Zero™, SwarmOps).
 
-== Leadership Strengths
+=== Leadership Strengths
 
 * Technical Strategy and Vision Applied – DDD, EventStorming, Clean Architecture, Trunking.
 * Transformation at Scale on a Budget – XP, Agile Enablement, Cultural Evolution, CTO Coaching.
@@ -48,11 +48,11 @@ Currently seeking a Director of Engineering, VP, or CTO role at a values-aligned
 * Product-Market Fit Acceleration – MVP, MLP, Runway-Zero, Co-Bootstrap, and InnerSource.
 * Cross-Domain Systems Expertise – Insurance, Banking, Pharma, Retail, and Defense.
 
-== Key Roles
+=== Key Roles
 
-=== ASE Inc. (Principal Research Engineer, 2024–Present)
+==== ASE Inc. (Principal Architect | Co-Founder, 2024–Present)
 
-* Delivered custom MLOps platform for a top research university’s psychoanalytic initiative.
+* Delivered custom MLOps platform for a top *_research university’s_* psychoanalytic initiative.
 * Positioned ASE as the core MLOps system maintainer for a coalition of thirteen institutions.
 * Designed and implemented a new ML Archetype for experimental Limbic System Simulation.
 * Enhanced a stable 25-year-old MLOps platform to support net-new types of AI modeling tasks.
@@ -62,18 +62,17 @@ Currently seeking a Director of Engineering, VP, or CTO role at a values-aligned
 
 <<<
 
-=== Dexian at GEICO (Distinguished / Staff Engineer, 2024)
+==== Dexian at GEICO (Distinguished / Staff Engineer, 2024)
 
 * Delivered GEICO’s first cloud-native distributed system, designed through EventStorming +
 and domain modeling, and implemented in Kotlin, Java, React, Python, Kubernetes, and Azure.
 * Led a domain-team revolution in XP, DDD, microservices, and event-driven architecture.
-* Founded and scaled an internal Community of Practice to sustain grassroots transformation -- +
-despite entrenched, passive-aggressive institutional resistance.
+* Founded and scaled an internal Community of Practice to sustain grassroots transformation +
+{nbsp} -- despite entrenched, passive-aggressive institutional resistance.
 * Instilled Trunk-Based Development (TBD, _Trunking_), countering long release cycle antipattern.
 * Introduced Collaborative Bootstrapping (_Co-Bootstrap_), reducing time-to-market for MVPs.
 
-
-=== ASE Inc. (Co-Founder, Fractional CTO, 2017–2024)
+==== ASE Inc. (Principal Architect | Co-Founder | Fractional CTO, 2017–2024)
 
 * Co-founded a €57M+ ecosystem supporting EU and global innovation ahead of the U.S. +
 _Advanced Software Enterprises Inc. was a 2018 strategic sponsor of the Prague Innovation Scene._
@@ -82,7 +81,7 @@ _Advanced Software Enterprises Inc. was a 2018 strategic sponsor of the Prague I
 * Corporate-America digital transformation work made Midwestern headline news.
 * New ventures formed a co-mentoring community and sustainable group funding model.
 
-=== Deutsche Bank (Lead Engineer & AVP, 2012–2017)
+==== Deutsche Bank (Lead Engineer & AVP, 2012–2017)
 
 * Led dbECM delivery: self-healing platform with HA in 3 global regions (100% of DB content).
 * Managed 100+ contributors, standardized SDLC, and applied $37M in spend-to-save investment.
@@ -103,3 +102,4 @@ _Advanced Software Enterprises Inc. was a 2018 strategic sponsor of the Prague I
 * Supports Ukrainian democracy through logistics, tech, investment, software and advocacy.
 * Partner in life and business with spouse, Tetiana -- _together empowering *traditional* companies_.
 * Father to two beautiful children: Anton (teen entrepreneur-engineer), Zoey (spirited toddler).
+* Curator of multiple co-mentoring communities worldwide: Estonia, Germany, Czech, Ukraine.
