@@ -47,8 +47,6 @@ communities:
         url: /categories/
       - title: "Archive by Tag"
         url: /tags/
-      - title: "Archive by Year"
-        url: /archive/year/
       - title: "Site Map"
         url: /sitemap/
 
