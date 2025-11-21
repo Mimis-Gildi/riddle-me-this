@@ -1,10 +1,10 @@
 ---
 header:
-  overlay_image: assets/images/banner.png
+  overlay_image: assets/images/banner-about.png
   caption: "It's my pleasure to meet you!"
 classes: wide
 ---
-= About Me
+= "About" one pragmatic optimist
 :page-layout: single
 :page-permalink: /about/
 :page-author_profile: true

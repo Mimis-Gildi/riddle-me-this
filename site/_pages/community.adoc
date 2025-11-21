@@ -1,3 +1,10 @@
+---
+excerpt: on Cliques behind Adventures
+header:
+  overlay_image: /assets/images/banner-community.png
+  overlay_filter: 0.4
+  caption: "... pay it forward is our way"
+---
 = Community
 :page-layout: splash
 :page-permalink: /community/

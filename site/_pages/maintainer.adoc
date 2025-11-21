@@ -1,3 +1,7 @@
+---
+header:
+  overlay_image: assets/images/banner-about.png
+---
 = Maintainer
 :page-classes: wide
 :page-layout: single

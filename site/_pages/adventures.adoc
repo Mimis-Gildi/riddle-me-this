@@ -1,6 +1,14 @@
+---
+excerpt: ... the view beyond
+header:
+  overlay_image: /assets/images/banner-community.png
+  overlay_filter: 0.4
+  caption: "to venture is to know"
+---
 = Adventures
 :page-layout: splash
 :page-permalink: /adventures/
+:page-classes: wide
 :business-2025-08-07-ai-success-story: link:/riddle-me-this/adventures/2025/08/07/best-corporate-ai.html[The AI Success Story Nobody's Talking About: How "Boring" Architecture Beats Hype,window=_blank]
 :business-2025-07-21-ai-integration-architecture: link:/riddle-me-this/adventures/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
 :business-2023-07-05-ai-integration-trap: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
