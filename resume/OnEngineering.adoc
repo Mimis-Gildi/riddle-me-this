@@ -69,8 +69,7 @@ _Tool choices adapt to team maturity, domain complexity, and business constraint
 
 == Experience
 
-ASE Inc.
-(Principal Architect | Co-Founder, 2024–Present) -- Advanced Systems Engineering::
+ASE (Principal Architect | Co-Founder, 2024–Present) -- Advanced Systems Engineering::
 
 * Maintains MATILDA™ codebase used by 13 academic and commercial co-owners across domains.
 * Designed and implemented a new ML Archetype for experimental Limbic System Simulation.
@@ -82,8 +81,7 @@ GEICO via Dexian (Staff Engineer, 2024) --  Domain Product Engineering::
 * Introduced domain modeling, trunk-based development, clean code, and test-first mindset.
 * Led XP practices in DDD/BDD/Microservices; scaled DevEx via prod-parity repos for local k8s.
 
-ASE Inc.
-(Principal Architect | Co-Founder, 2017–2024) -- Platform Engineering::
+ASE (Principal Architect | Co-Founder, 2017–2024) -- Platform Engineering::
 
 * Delivered 11 transformative programs in the U.S. across pharma, banking, and insurance, like
 Mutual of Omaha Insurance companies, Credit Suisse, and Blue Cross Blue Shield community.
