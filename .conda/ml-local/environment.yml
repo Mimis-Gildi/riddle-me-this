@@ -1,0 +1,20 @@
+name: ml
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - keras=3.6
+  - numpy=2.1
+  - pandas>=2.3.3
+  - pip=25.3
+  - plotly=6.3
+  - python=3.12
+  - pytorch>=2.5.1
+  - scikit-learn>=1.7.2
+  - seaborn>=0.13.2
+  - tensorflow>=2.19.1
+  - torchvision>=0.20.1
+  - xgboost>=3.0.1
+  - pip:
+      - bottleneck>=1.4.2
+      - pysocks>=1.7.1
