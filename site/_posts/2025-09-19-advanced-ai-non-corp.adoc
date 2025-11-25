@@ -7,7 +7,7 @@ classes: wide
 comments: true
 hidden: true
 search: false
-read_aloud: true
+read_aloud: false
 ---
 = No holds barred: The real AI Revolution .. is us
 :img-prefix: /riddle-me-this/assets/images

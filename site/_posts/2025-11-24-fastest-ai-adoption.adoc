@@ -1,0 +1,292 @@
+---
+categories: [reflections]
+tags: [AI,Generative AI,Executives,Engineers]
+excerpt: >
+    It's easier than you think!
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: true
+---
+= Fastest Way to AI Adoption -- Straight Talk
+:mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
+:ai-current-state: https://mimis-gildi.github.io/riddle-me-this/adventures/2025/09/29/not-chat-gpt.html["The current State of Things",target=_blank]
+:ai-adoption-phases: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[AI Adoption Phases,target=_blank]
+:ai-adoption-matrix: https://mimis-gildi.github.io/riddle-me-this/reflections/2025/10/31/ai-halloween.html[70/20/10,target=_blank]
+:ai-why-fails: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,target=_blank]
+:seeds-model: https://neuroleadership.com/your-brain-at-work/seeds-model-biases-affect-decision-making/[SEEDS Model,target=_blank]
+:google-wins: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/10/3-google-vs-openai.html[2023: Why Google Beat OpenAI with Technical Teams,target=_blank]
+:google-gemini3: https://blog.google/products/gemini/gemini-3/[Gemini 3,target=_blank]
+:fireship-gemini3: https://youtu.be/bsL7ZnKIAhs[YouTube @Fireship: Did Google just kill OpenAI?,target=_blank]
+:boot-data-rest: https://spring.io/projects/spring-data-rest[DDD Aggregates,target=_blank]
+:boot-mcp: https://spring.io/blog/2025/09/16/spring-ai-mcp-intro-blog[MCP Servers,target=_blank]
+:google-skills: https://skills.google/[skills.google,target=_blank]
+:google-cloud: https://cloud.google.com/[Google Cloud,target=_blank]
+:google-vertex: https://cloud.google.com/vertex-ai[Vertex AI,target=_blank]
+:google-vertex-studio: https://cloud.google.com/generative-ai-studio[Vertex Generative AI Studio,target=_blank]
+:ai-google-dev: https://ai.google.dev/[ai.google.dev,target=_blank]
+:google-dev: https://developers.google.com/program[developers.google.com - Google Developer Program,target=_blank]
+
+// .AI punishes the experience-based biases that got you through DX.
+// image::/riddle-me-this/assets/images/2025-10-31-bias-shattering-ai-style-12.png[70/20/10,align=center]
+
+{nbsp} +
+
+What is the fastest way to meet your board's AI goals?
+What is the fastest way to become AI Engineer?
+How are the two related?
+
+I am a team competence player-coach building disruptive teams for decades -- let me give you a shortcut.
+
+First, and most importantly, I am not talking about buying ChatGPT for your organisation.
+Nor any other pointless tool trope.
+I am talking about real AI producing measurable business value, both for your company and yourself.
+Take a look at {ai-current-state} and {ai-adoption-phases} to get a better sense of my scope here.
+
+It's all very simple.
+Success boils down to a way of thinking and a little technical magic.
+I had already described the winning investment matrix: {ai-adoption-matrix}.
+And it really is "little" --  paradoxical considering the rate of failures.
+For DX, teams needed 2-3 weeks before producing results.
+With AI?
+One day or a weekend.
+Here is how it's done:
+
+. People and Processes -- 80%;
+. Technical Competence -- 20%.
+
+And this is also exactly the formula for an individual contributor to enter the AI Adoption field.
+Later I will elaborate on this too.
+
+== People and Processes
+
+We already know why AI adoption fails so much, since July 2023: {ai-why-fails}
+-- most of the businesses did not complete Digital Transformation (DX), and just swept things under the rug.
+Ironically, from the DX we only really need one thing -- the last one -- business domain modeling skill sets and abilities.
+Your generative AI is just a tool.
+A tool that can, if used competently, produce a business capability.
+And it is that business capability that creates "money in the bank" not the means it's begotten with.
+Yet the means are necessary -- and the means are *_people_*, not gadgets.
+This is why most effort is on "People and Processes," not gadgets.
+
+== Enabling People
+
+We start with a "self-empowered" gang of folks representing business experts and domain software engineers in a single business context.
+Any less and it won't work.
+And a coach, such as myself, leaves -- we're also directly interested in the final outcome.
+Here we must understand that people:
+
+. Cannot be empowered by someone else;
+. Cannot be told what to do.
+
+I am not going to elaborate on the above facts -- that is a different topic.
+And now that we have our domain team I really must do very little to get things going:
+
+. Check team alignment;
+. Break team biases;
+. Enable with the right magic.
+
+*Team alignment:* I must make sure every teammate that contributes, and hopefully that's everyone, clearly understands how the business outcome maps to their personal success.
+What is the business outcome -- shared understanding on valuable domain behavior, not a tool or a library.
+What is the team's success -- measurable return on investment for the business from the team.
+What is personal success -- how does the company and department brand map to individual's personal brand.
+This is quickly done with some "pep talk" and then "*_continued dialectic_*" -- not my favorite part, but after decades of doing this for many teams I no longer feel annoyed or bored through this part -- I learned to make this step fun for everyone as well.
+
+*Discover and Break Team Bias:* remove psychological impediments people feel breaking into different work style and kind.
+And this part is always fun.
+The secret -- make it the entire team's journey.
+For business experts this would typically be related to the experience bias (look up {seeds-model}, I have a lot of luck with it).
+If I don't help them find and break assumptions there, then the resistance will cause the new tools applied in old ways.
+For engineers this would typically be the similarity bias problem.
+If unchecked we get "Impostor Syndrome" roadblocks as well as catalyst for experience bias related friction.
+For example, AI works opposite to developer written code:
+with AI we want patterns automatically discovered instead of explicitly enforced by the coder.
+Yet such a small thing can cause comprehension issues and resistance to learning.
+
+*Enable with the right Methods and Tools:* provide the path of least resistance to the actual payoff.
+There are better and worse ways to do everything.
+Most teams won't be able to guide themselves yet because the job is new to them.
+It is the primary accountability of the coach to understand the best path for his team.
+And to effectively nudge the team in the right direction.
+Necessary methods and tools exist in all the major platform providers today: GCP, AWS, etc...
+Yet with that, the ergonomics and learning curves are nonetheless vastly different.
+That is because platform vendors bet on vastly different differentiators, such as:
+cost, developer ergonomics and training, or legacy markets integrations like the Office software.
+And some align better to what the team already experienced in the past.
+There is another potentially nasty pitfall here I'll mention later.
+
+All of the above is to simply build up confidence and motivation for the team to attempt the necessary challenge before them.
+
+== Technical Nightmare
+
+Now this part is only 20% of the effort.
+And here I will let you on a little secret: it's here the project is most likely to fail.
+Not because there is a lot to fathom or do.
+But because the actual technical experts we need to get through this challenge are scarce.
+Many can easily learn organisational development and succeed in aligning the team -- the previous part.
+But to align the team through a technical delivery one needs someone like myself
+-- a bearded old hacker who just codes all the time, daily through decades.
+The problem stems from the fact that software engineering is one of the most difficult trades, akin to medicine or law but deprecating even faster.
+It comes naturally to less than 10% of the workforce.
+And even then must be diligently maintained because even a single hiatus can be the last one.
+Steering team wrong kills the chances.
+And since most coaches we profiled don't actually code -- we get what we have today.
+
+And that's unfortunate.
+Because in the end the technical increment is very small for any already performing team.
+All I have to do to succeed quickly is to stop engineers thinking about AI and ANNs and bring their attention to few systems engineering topics -- and we're in prod!
+
+== Technical Enablement:
+
+*Secret number 2:* platforms are important!
+In all American companies today there is sycophantic following to different cloud providers.
+"We're Microsoft and Azure all the way, and Microsoft owns OpenAI." Hmmm., but neither has anything to do with what you need for business AI success!
+The same is true about stacks: "We're a Java shop not Kotlin"
+-- hmmm... by saying that you are actually telling me that you are competent in neither!
+This is also a part of *_biases_* I'd spoke of earlier, except a little more global.
+
+So we must take a closer look at the *Methods and Tools* again.
+It isn't just bias-management and domain-modeling.
+It's also design and implementation.
+And in the latter part all things are not created equal.
+Long time ago I wrote how Google will corner AI Integration market by befriending the developer.
+{google-wins}.
+And Google just delivered the last nail in that coffin with {google-gemini3}
+({fireship-gemini3}) and even better Developer Courtship and integration.
+Simply, for midsize and small companies there is little contest.
+Because it's not your Claude or Gpt5 that you will be using in your product.
+
+Thus the biggest obstacles here are A) lack of coach technical competence; and then also B) institutional platform bias.
+I had a VP tell me once "But Netflix is all on AWS!" I didn't argue, of course.
+Though his statement was NOT TRUE.
+Netflix does use AWS at the moment as their primary and most cost-effective _production_.
+But they're not vendor-locked.
+Not only that, everything in AWS also exists elsewhere for Netflix.
+Not even all of Netflix is on AWS _in production_ today.
+Yet his bias also poisoned his dev teams -- boots on the ground.
+His developers' minds were blown when I showed then how easy it is to go hybrid.
+
+Keep that in mind, especially for the _**Individual Developer Career** part of our discussion._
+
+== Big Companies -- Big Failures:
+
+We can't complete this topic without explaining what the big companies do today.
+And it is *_replacing teams_*.
+Instead of investing into existing domain teams many execs convinced themselves that "greenfield is better." Or, in other words, "new dog;" not the "old dog - new tricks." This is possible because of the money conglomerates throw into AI these days.
+And the following picture emerges:
+
+An incumbent team is presented with a challenge: "Augment your business with Generative AI." Response: "But we're Spring Boot developers, not AI scientists." Execs: "Okay, thank you."
+
+And the new side-by-side "AI Team" is created.
+The incumbent Spring-Boot-Only team has NO IDEA that the *New Team* is also using Spring Boot to build their *{boot-data-rest}* and *_{boot-mcp}_*.
+Hmmm.... See where I am going with this?
+
+This should make you *think*!
+
+And yes, it doesn't work well -- the new team has no domain knowledge and the old team doesn't want to learn anything new.
+In addition, both are sabotaging each-other.
+They're fighting, not collaborating.
+Big business runs AI adoption ridiculously thick.
+But at least they're making something new.
+
+== All Others -- Paralysis by Analysis.
+
+In another article my 16-y-o son explained how medium companies are uniquely positioned to fail.
+And how small companies have all they need but are afraid to try.
+Also the internet tells me I'm the first one to predict this state of things
+-- I'm embarrassed for my America.
+Having quickly helped a few companies out I see two mutually exacerbating problems:
+
+. There is top-down failure -- and there is no valid reason for it.
+. There is bottom-up failure -- and there is no reason for it either.
+
+Or, if there are valid reasons -- then, I don't see or understand them.
+Because any such possible reasons are not technical or organisational.
+Then they must be psychological -- and that's "Room 2," for a shrink, not a hacker.
+
+Regardless -- *I know what to do!* *_Shore up both pathways._*
+
+== Executives' Path:
+
+Executives must do "one thang and one thang only": enable your existing domain teams.
+Forget the fads!
+This is NOT about AI.
+Not one bit.
+This is about good old "systems engineering." Modern name -- Domain Modeling.
+
+*For Medium Companies:* Snuff the urgency and systematically grow your Community of Practice.
+You will need that for the next four phases, see {ai-adoption-phases}.
+
+*For the Small Companies:* Stop cowering and objectively see where you can get help from generative tools.
+Start like everyone else -- get Claude Max or better.
+Incorporate that in everyday business.
+When that gives your people _some ideas_ -- *talk to us*, i.e.,
+*other small companies* that explicitly specialize in *competence*.
+You won't get gouged and you might get enlightened.
+Most importantly, when it comes to your developers -- help them do what's in the next section.
+
+== Individuals' Path:
+
+Now, this is the most important message I get to deliver here.
+People, engineers, architects, modelers -- your toolbox has changed!
+*_Get on with the times._*
+
+The only question that remains -- what is the best, fastest way to upskill oneself.
+I have evaluated ALL offerings out there.
+Not only because I need to coach teams and upskilling portals are my lifeline, but also because I like variety of sources, so I also checked all of the universities, online learning platforms, and private training institutions around RTP and online.
+
+The path with lowest friction for new teams: Google's developer ecosystem.
+
+*{google-skills}*: Brand new platform launched in 2025, building on years of experience catering to developers in AI and Cloud.
+The service is so comprehensive that at first I was conflicted - upskilling software teams is my bread and butter.
+And this single service compiled everything I'd present to teams into one accessible portal.
+I've used it with customers and it works.
+Fortunately, I'm still needed.
+Because "Practical experience is knowing that which can no longer be corrected" - in other words, what not to do.
+But for individual career growth or team modernization, this is your primary resource.
+
+*{google-vertex}*: A one-stop shop for learning and working with production-grade AI.
+Running on {google-cloud} with {google-vertex-studio}, you touch real infrastructure without building massive labs.
+Most importantly, *{ai-google-dev}* is your sandbox to actual Vertex AI - https://cloud.google.com/ai/gemini[here's the explanation].
+(See blogs https://blog.google/outreach-initiatives/education/google-skills/["Google Skills"] and https://cloud.google.com/blog/topics/training-certifications/google-skills-new-home-AI-learning[training and certification]).
+
+https://cloud.google.com/learn/training/machinelearning-ai[Sample this AI class...,target=_blank]
+
+Most importantly, *{google-dev}*: where it all begins and grows.
+This community is why I no longer maintain my own private portal.
+Once we were considered uniquely effective, yet today I send my mentees here.
+
+*What about other platforms?* Yes, absolutely.
+They work well.
+I'm platform-agnostic by nature and no fan of vendor lock-in.
+But Google made a strategic bet on developer ergonomics while others bet on enterprise sales.
+For teams learning AI integration - start where the friction is lowest.
+Expand to multi-cloud as your production needs grow.
+
+== Full Disclosure:
+
+I am not a fan of Google.
+Or anyone for that matter.
+Except maybe JetBrains, a little.
+Ever since Google founders left I have more to dislike than like.
+I live my life to die an honest man.
+And I don't respect fishy business from others either.
+So consider my bias in my final advice.
+
+Right now I have found no better way to launch a team quickly into AI stratosphere.
+Use this springboard to put yourself and your company in orbit.
+But don't lock-in!
+Expand your reach instead.
+And the Google Developer community has been good to me.
+I found them very useful in launching startups for people, transforming Corporate America, and building my own products.
+
+But know that yours truly, `rdd13r`, doesn't trust Google.
+I fully expect them to start turning screws on devs and business as soon as they feel that their market is cornered.
+And that might be around the corner with Gemini 3 release.
+I know this music.
+I lived it before.
+So benefit to the max while you can.
+And remember -- there is no magic bullet.
+All the magic is in you head.
+*Use it!*

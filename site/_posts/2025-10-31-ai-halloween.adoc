@@ -5,7 +5,7 @@ excerpt: >
     Success in AI is a 70/20/10 formula.
 classes: wide
 comments: true
-hidden: true
+hidden: false
 search: false
 read_aloud: false
 ---
