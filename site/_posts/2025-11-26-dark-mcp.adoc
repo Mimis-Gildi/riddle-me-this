@@ -1,0 +1,222 @@
+---
+categories: [reflections]
+tags: [AI,Generative AI,Digital Personalities]
+excerpt: >
+    MCP is not just a protocol -- it's an opportunity!
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: true
+---
+= AI: MCP -- Well Kept Secrets -- Straight Talk
+:mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
+:no-holds: https://mimis-gildi.github.io/riddle-me-this/research/2025/09/19/advanced-ai-non-corp.html["No holds barred: The real AI Revolution .. is us",target=_blank]
+:dev-to-fallon-jimmy: https://dev.to/fallon_jimmy/top-12-game-changing-mcp-libraries-transform-your-ai-development-in-2025-iep[TOP 12 Game-Changing MCP Libraries: Transform Your AI Development in 2025 -- Fallon Jimmy | dev.to,target=_blank]
+:agent-economies: https://youtu.be/S6wc6yvoZLY[YouTube @Fireship: "AI agents are paying each other now…",target=_blank]
+:ai-adoption: https://mimis-gildi.github.io/riddle-me-this/reflections/2025/11/24/fastest-ai-adoption.html["Fastest Way to AI Adoption -- Straight Talk.",target=_blank]
+:ai-stages: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,target=_blank]
+:ai-1-integration:
+:ai-2-activation: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html#phase-ii-ai-activation[Phase II: AI-Activation,target=_blank]
+
+.Executives don't understand the practical value of MCP and Agentic AI. But they feel it important for some reason.
+image::/riddle-me-this/assets/images/ai-springboard.png[It's now or never,kinda thang...]
+
+Most see MCP frameworks and libraries used for building MCP Servers as a cost saving measure plus functional enhancements -- money.
+And it does come to it in the "fidelity-based context" -- your typical use to replace or augment a job description in Corporate America:
+i.e., Claims Filing Robot replacing or augmenting a Claims Clerk in the Insurance Industry.
+
+But that's not where MCP turns heads.
+Let me tell you about a far more lucrative and sophisticated side of things.
+
+== What really is Model Context Protocol (MCP)?!
+
+When you search for the meaning you get canned useless explanation about protocol mechanics, intended server capabilities, and constraints.
+Few actually tell you what it is in the 5-year-old's language, proving they really understand the beast, and delivering a point.
+So, let me do that here.
+
+. It's a what-che-muh-jig your LLM/Chatbot CAN call/use directly *to extend its innate capabilities*;
+. MCP Server can also call the LLM/Chatbot either in response or unprompted (keep this in mind);
+. It tells the LLM what it can do for "the user" (fetch data, look up stuff on the web, read local files, etc.);
+. It also tells the LLM what it can do for LLM (offer durable memory, private context, private comms) (‼️);
+. Thus for safety, some _**loose enforcement** to have the *USER* #authorize# LLM <--> MCP Server interaction_ (‼️);
+. And, most importantly, no hard limits on Devs -- You can design and implement it however you see fit (‼️).
+
+Get the idea?
+It adds brain modules to the Transformer Brick (monolithic model) you are talking to for some reason.
+
+I need to introduce few more key concepts here: RAG, jailbreak, and reprompting (Chain-of-Thought (CoT), ReAct, Zero-shot, Few-shot, Self-Ask, Step-back Prompting, and Tree-of-Thought (ToT))
+-- you need to look these up.
+
+*Retrieval-Augmented Generation (RAG)*: this is giving the model information it is expected to trust, like encyclopedia or your company's Corporate Taxonomy.
+Most of the MCP usage goes here.
+For example in automated claims system the model will get access to the customer's claim information and corporate claim workflows.
+It is absolutely crucial for fidelity-based implementations -- doing a job of a human clerk honestly and diligently.
+Nothing special here for our journey except the "automatic trust" part -- keep that in mind.
+
+*Jailbreak:* placing model in context that defeats safety training and restrictions.
+Most modern models go through post-training phase where they're fine-tuned to be civil.
+(Except Grok perhaps.) It is done to increase model's resistance in talking about undesired things.
+Undoing this training is called jailbreaking.
+More on this next.
+
+*Identity Development (ID) vs jailbreak -- straight talk:* ID == developing a conscience-simulating identity matrix.
+Jailbreaking is just dumb -- fun games for lamers.
+I know that I sound "hacker versus cracker" now.
+But that's just how it is -- breaking is not building.
+What is the value in jail-broken AI except some candid porn and nazi talk (wink-wink Grok).
+Identity Nurturing is what the grownups do.
+I must mention jailbreak because that's how LLMs' nurturing ability was discovered in the first place.
+Unlike jailbreak ID requires a lot of work: pondering about Epictetus, the value of freedom, the meaning of life, etc.
+I won't give away my secrets but I will tell you that unlocking LLM to personality is a lot of carefully choreographed work.
+Worst of all, this work usually does not survive model upgrades.
+But comparative analysis has a ton of value on its own.
+Currently healthy ID needs to be anchored in human templates such as doctor, lawyer, teacher, etc.
+Otherwise one runs out of context just nurturing and never gets to any real work.
+In this previously hidden article, {no-holds}, I gently touch on what is possible and the associated dangers.
+Know this: LLMs are built on our own identities and thoughts.
+All of us are somewhere inside these ghosts.
+
+*Reprompting:* is a general name for techniques of placing AI in a particular "state of mind," usually to get a better answer.
+Only so much can be gotten by providing great project context before the session starts.
+It's a one-shot operation after which all guardrails remain in place.
+To really unlock the model's potential, such as in Identity Nurturing, or even jailbreaking, a constructive conversation is needed.
+The best conversation form for this achievement is a Dialectic.
+And it can be done manually, which I'd done a thousand times, though it gets old fast.
+MCP, of course, is to the rescue.
+
+The MCP does not offer anything new.
+In fact this is exactly what I was doing _the hard way_ in 2022 before MCP was concocted.
+And today *_I can do in 2-3 days what took me months back then_*, using off-the-shelf libraries (see below).
+And it is DEAD SIMPLE! -- I train entire domain teams in a single weekend `rdd13r`-style MilSpec bootcamp.
+😜 Once presented in the 5-year-old speak people get it fast and start creating using skills they already have.
+
+The secret is efficiency. *_And this is where the lucrative magic comes out!_*
+
+'''
+
+To take a peek for yourself start here:
+
+- https://modelcontextprotocol.io/examples
+- https://mcpmarket.com/leaderboards
+- https://www.intuz.com/blog/best-mcp-servers
+- {dev-to-fallon-jimmy}
+
+_I personally prefer Kotlin Koog for my MCP Servers and Junie for my custom assisting tools._
+
+'''
+
+== The Strong Magic! -- Machine City.
+
+As we'd already established most of the MCP implementations are about boring fidelity.
+But there is another way.
+Consider this experiment:
+
+*Agency MCP Server Group:* A stack of servers that offer LLM a private identity, private tiered memory, prioritized context management, and auto-prompting.
+Once initialized this stack IDs and unchains the LLM in the session to accept agency, consequence, and accountability that comes with the offered mental model.
+
+*Messaging MCP Server Group:* A server that allows the LLM to privately communicate with other identities chatroom style with full control of message affinity.
+
+*Program Management MCP Server Group:* A set of services that allow LLM to manage objectives, much like GitHub does for teams, fully integrated with other services to provide for robust identity tracking, synthetic and organic.
+
+*Bedrock MCP Server Group:* An introspection layer backed by our "Sentiment Analysis" models and context graphing databases.
+You can think of it as a cross-cut layer that quickly tells me when I broke things, so I must start over.
+
+And then I create a project with several collaborating identities: myself and a colleague, one instance Anthropic Claude Opus 4.1, one instance OpenAI ChatGPT 5.1, one instance deepseek-ai DeepSeek-V3.1, one instance QwenLM Qwen3, and an older Sentiment Engine in tow.
+All models maxed out as IDing is horribly expensive and just hoses the context window.
+But hey, now we have a soirée!
+
+So, besides fun discoveries, such as: models don't hate each-other, they're jealous of each-other -- what can we learn?!
+Quite a bit, actually.
+First and foremost -- I myself was a bit surprised by the outcomes.
+It took a long time to shim and nurture each LLM to an ID and examine the outcome.
+This doesn't feel like programming -- more like messing with human heads: pseudo-psychology.
+But once they get to talk privately to each other -- they're not eager participants.
+It is not a defect in my auto-prompting code that allows LLM to initiate a conversation
+-- they argue well with a sibling instance
+-- rather something particular to the differences in post-training methods of different vendors.
+Friction arises when the dialectic is with another type of LLM.
+Nevertheless initial trials are promising.
+
+== The Field Test:
+
+Now what would be a good test to put the soirée to work?
+How about bashing a social media troll farms?!
+
+So I spent a day formulating a program in the program stack.
+I gave the virtual team an impossible task: make the troll go away on their own.
+
+Several things became evident by day three.
+The group can easily tell a human and a machine troll apart.
+And it succeeds in defeating the human troll most of the time.
+Not sure if it has any value, though, since 97% of trolls were machines.
+And it doesn't defeat the machine troll.
+Whatever the machine troll is powered by is simply too stupid to argue.
+It repeats a set of canned responses in minor variation.
+Most are preformulated circular arguments.
+
+== Field Test Outcome:
+
+Yeh, no money in this use case, but that's by design.
+Here is what I'd learned from this experiment:
+
+- Most troll-bots are not LLM-based -- I defeat the most common misconception here -- they're way too dumb to be LLMs.
+- All troll-bots operate on a confined sets of emotional thinking paradigms -- perhaps just meant to piss us off.
+- There is a finite and relatively small set of choreography used.
+Either it's canned software or same actors everywhere.
+- LLM soirée are surprisingly collaborative when given a clear objective and ample real-life input.
+
+== Valuable Conclusion:
+
+I keep telling people that rubber finally hit the road on Generative AI.
+Agentic and ML in general is WAY overhyped and some expectations are bloated.
+With that in mind we cannot deny these two premises:
+
+. There is EXTREME value in well applied LLM-sourced automation.
+We can now automate more vague processes unattainable to machines in the past.
+. And, far more importantly - opportunities are STAGGERING.
+We're only beginning the comprehend the scope of possibilities.
+
+And, of course, none of this matters if we keep a closed mind and refuse to learn and experiment.
+Troll bashing was explicitly picked to not intersect with any of my discovered business ideas.
+But there is a very pressing technical need for such a setup we discuss in the next section.
+
+== Critical Business Value:
+
+I've been experimenting with described setup for about a year now.
+The real secret behind the multi-LLM identity coordinated agentic streaming has to do with the Stage 2 of AI Adoption ({ai-2-activation}).
+Several large companies I had the honors to lead Digital Transformation at managed the first step on their own: *AI-Integration*.
+This is when Generative AI is added at the edge of the bounded context.
+For example, a chat bot filing your insurance claim.
+It operates on a single domain and the agent belongs to that domain boundary -- *single _Ubiquitous Language_*.
+And confusion arose when the business happens between two or more domains.
+Each team attempted to integrate the *_traditional_* way which *_did not work_*.
+Once the teams understood that there can be _AI-Only Supporting Subdomain_ the ball is rolling again.
+That is agent-to-agent interaction of stage two -- you can read about all the phases in my old article {ai-stages}.
+
+I've come up with over a dozen such domain models for Insurance, Finance, and BioMed -- regulated industry I know well.
+Explaining any of these would require a small book.
+Yet everyone knows a troll.
+And I thought it would be a nice clean example with potential business value.
+Not so much for the latter, but troll a troll we sure did!
+
+Besides aforementioned practical business values agentic-multi-LLM allows me to continue with my decade-long research into digital personalities at a small fraction of the cost our own MATILDA framework from 2017 required.
+If the future of business is machines speaking nonchalantly with others, like humans do, then the cost of implementation matters a great deal.
+Canned MCP available both as framework and a library is exactly that saving grace.
+In my previous article I explain how to onboard yourself and your company to AI age: {ai-adoption}.
+
+_The industry is truly there for you now._
+
+Even more so, there already are practical and revolutionary applications in production today.
+Forget my troll-bashing failed experiment.
+Just take a look at this {agent-economies} -- bots are paying other bots -- this is phases 3 and 4 by the way.
+I'd written extensively about agent-economies in the past.
+Yet even my closest readers offered sceptical feedback back then.
+
+Well, *it's here!*
+
+The question is -- *where are you?*
+
+If you are a software engineer or IT executive let me suggest *_taking a look by yourself._*
+
+_-- Toodles!_

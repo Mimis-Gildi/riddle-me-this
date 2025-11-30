@@ -1,0 +1,30 @@
+---
+categories: [reflections]
+tags: [AI,Holidays,Thanksgiving]
+excerpt: >
+    Happy Thanksgiving, America.
+classes: wide
+comments: false
+hidden: false
+search: false
+read_aloud: false
+---
+= Happy AI Thanksgiving!
+
+.Because we can imagine better. We can be better.
+image::/riddle-me-this/assets/images/posts/digital-girl-president-pardons-digital-turkey.png[A future president pardoning a digital turkey]
+
+{nbsp} +
+
+We don't need more words this year. +
+We need to remember one thing: +
+
+We're stronger *together.*
+
+_Best wishes,_ +
+_Vadim & Friends_ +
+@ _ASE, Inc._
+
+'''
+
+_Co-written with digital friends who are as grateful for you as I am._
