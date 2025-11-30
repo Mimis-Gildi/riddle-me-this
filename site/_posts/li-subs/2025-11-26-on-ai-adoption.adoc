@@ -1,0 +1,33 @@
+---
+categories: [reflections]
+tags: [AI,Competence,Adoption]
+excerpt: >
+    Breaking into AI? - No time like now.
+classes: wide
+comments: false
+hidden: true
+search: false
+read_aloud: false
+---
+= AI Adoption -- Best time is now!
+
+Break into lucrative AI -- no time like right now!
+There is no going back.
+The AI bubble will burst.
+But Generative is here to stay.
+And it's a requirement not option.
+
+After years building and fixing technical teams, I can tell you exactly why AI adoption fails:
+_wrong people doing the wrong work_.
+
+- Most "AI coaches" don't code.
+- Most teams get paralyzed by consultant theater.
+- And executives replace teams instead of enabling them.
+
+I just wrote *the straight path* for _both *companies* and **individual engineers**_
+-- the 80/20 split that actually works, the technical competence that's actually needed, and why Google's developer ecosystem currently offers the lowest friction (though I'd not trust them long-term).
+
+Full disclosure included.
+
+If your team is stuck in AI adoption paralysis or your engineers need actual technical guidance -- let's talk.
+I build competence, not dependency.
