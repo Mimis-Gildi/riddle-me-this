@@ -1,0 +1,150 @@
+---
+categories: [reflections]
+tags: [AI,Generative AI,Executives,Engineers]
+excerpt: >
+    EU is leading in AI Adoption. But not the American way.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= What Actually Works in AI: And Why No One Talks About It
+:mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
+:ai-learning: link:/riddle-me-this/reflections/2025/11/24/fastest-ai-adoption.html[I recommend studying on this infrastructure,target=_blank]
+
+.The EU businesses found a way to profitably apply existing local models. While in the USA we chase bigger, impossible to power things, having failed to apply much of anything.
+image::/riddle-me-this/assets/images/EU-vs-USA-AI-Adoption-Button.png[EU is many small trams moving things around while in the USA we have a huge loco crashing through the track and nothing can move it]
+
+{nbsp}
+
+The EU Parliament just published another AI strategy document.
+€200 billion for "gigafactories." Race to catch America.
+Same story, different quarter.
+Brussels seems to like chasing us.
+
+Meanwhile, something interesting is happening on the ground that Brussels seems to miss entirely.
+But perhaps we miss that too.
+And we can't afford to!
+
+== Two playbooks. One works much better.
+
+.In the USA we bet on the Huge-Impossible that will make money one day, hopefully.
+image::/riddle-me-this/assets/images/US-AI-Progress-Button.png[The USA is a huge loco crashing through the tracks on infrastructure that can't support it]
+
+{nbsp}
+
+In America, AI adoption means: pick a hyperscaler (AWS, GCP, Azure), consume hosted models, pay per token, lock yourself in.
+Big budgets.
+Big vendors.
+Big dependencies.
+The enterprise default.
+
+It is so abundant that _{ai-learning}_.
+
+.In the EU people effectively use the models available today to make money now.
+image::/riddle-me-this/assets/images/EU-AI-Progress-Button.png[The EU business doesn't hold breath for massive and instead profits well on the available today]
+
+{nbsp}
+
+In Europe -- when companies actually commit rather than simply announce to get counted -- I see something very different:
+open-source infrastructure, locally-hosted models, tiny teams (3-5 specialists), fine-tuned to actual domain needs.
+No dependency.
+No lock-in.
+Lower cost.
+Higher success rate.
+
+The American approach makes great press releases. +
+The European approach *just ships working product*.
+
+== I've seen this pattern before.
+
+In 2023, I watched Ukrainian logistics networks solve an impossible problem: keep a country fighting with fractured supply chains.
+Their solution wasn't centralized control.
+It was distributed commitment -- thousands of small makers, validation only at transaction commit, late onboarding welcome.
+
+By 2025, that pattern migrated south.
+Rheinmetall's supply chain looks nothing like 2022.
+Instead of few large sources, they now coordinate with 1,250+ small shops.
+Monsters like Rheinmetall, KMDB, and BAE operate something like a single organism with thousands of small manufacturers; servicing equipment nobody designed, building systems nobody envisioned.
+Frankensteined weapon platforms from bulldozers to technicals.
+
+This isn't chaos.
+It's *_architectural resilience_*.
+Small, distributed, domain-expert nodes.
+Sound familiar?
+
+World's leading economic research institutions are already writing books about it.
+China is paying close attention.
+But in the USA we're oblivious to this development.
+
+Europe is changing fast.
+We're not.
+
+== The AI parallel is exact.
+
+The companies I see succeeding with AI in Europe aren't waiting for gigafactories.
+They're:
+
+* Running Mistral or Llama variants on their own infrastructure;
+* Fine-tuning small models for specific domain problems;
+* Deploying with teams of 3-5 people who understand both the tech and the business;
+* Iterating weekly, not quarterly;
+* Spending 10% of what American competitors spend, getting better and cheaper results.
+
+No vendor lock-in.
+No token bills scaling to infinity.
+No "our AI strategy depends on OpenAI's roadmap." No chasing the latest model -- chasing profit instead.
+
+== Why doesn't anyone talk about this?
+
+Because it's *boring*.
+"German manufacturer deploys fine-tuned 7B model with 11-person team" doesn't make headlines.
+"EU announces €200B AI gigafactory initiative" does.
+
+But one of these approaches actually works at enterprise scale.
+The other creates great slide decks.
+One of these ways survives AI bubble crash.
+The other does not.
+
+== Disclosure: My Lens:
+
+Scale-then-profit usually works.
+For American AI adoption -- I'm not seeing it yet.
+
+My US numbers come from Open Intelligence reports.
+European numbers I get firsthand -- I've reviewed 100+ EU implementations.
+Almost all generate revenue *today*.
+Not "spend now to save later."
+
+The pattern difference: EU projects start with a business problem where AI fits naturally.
+US projects start with "where else can we stick AI and trumpet about it?"
+
+I'm a small consultancy.
+In America, big is the game -- I struggle to sell.
+In Europe, I sell on competence and reputation.
+That's my bias.
+Take it as you will.
+
+But the results speak: one approach ships profit.
+The other ships press releases.
+
+== The uncomfortable question for executives:
+
+Are you building AI capability?
+Or are you buying AI dependency?
+Are you chasing AI-Bubbles?
+Or are you solving business problems?
+
+The distributed, domain-specific, small-team approach isn't just European pragmatism.
+*It's sound architecture.* It's what actually survives contact with production.
+And it used to be an American Thing!
+
+The distributed way has only one dependency: *_competence_*!
+
+I've seen both playbooks.
+I've built with both.
+One creates long-term capability.
+The other creates long-term invoices.
+
+Your choice.
