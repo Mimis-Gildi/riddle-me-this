@@ -7,7 +7,7 @@ classes: wide
 comments: true
 hidden: false
 search: true
-read_aloud: true
+read_aloud: false
 ---
 = Fastest Way to AI Adoption -- Straight Talk
 :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
@@ -28,8 +28,8 @@ read_aloud: true
 :ai-google-dev: https://ai.google.dev/[ai.google.dev,target=_blank]
 :google-dev: https://developers.google.com/program[developers.google.com - Google Developer Program,target=_blank]
 
-// .AI punishes the experience-based biases that got you through DX.
-// image::/riddle-me-this/assets/images/2025-10-31-bias-shattering-ai-style-12.png[70/20/10,align=center]
+.Use this opportunity while time is right!
+image::/riddle-me-this/assets/images/ai-springboard.png[It's now or never,kinda thang...]
 
 {nbsp} +
 
@@ -263,6 +263,18 @@ I'm platform-agnostic by nature and no fan of vendor lock-in.
 But Google made a strategic bet on developer ergonomics while others bet on enterprise sales.
 For teams learning AI integration - start where the friction is lowest.
 Expand to multi-cloud as your production needs grow.
+
+'''
+
+__P.S. So, this is a bit of *the last bus* scenario. +
+If you were thinking "AI" for yourself or your business -- I suggest you start doing. +
+Google's move and AI Bubble bursting is about to drastically change things.
+And not to the benefit of those still thinking.
+Generative AI is the most powerful disruptor we've seen yet. +
+And the rubber is meeting the road now.
+__
+
+'''
 
 == Full Disclosure:
 
