@@ -7,7 +7,7 @@ classes: wide
 comments: true
 hidden: false
 search: true
-read_aloud: true
+read_aloud: false
 ---
 = AI: MCP -- Well Kept Secrets -- Straight Talk
 :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]

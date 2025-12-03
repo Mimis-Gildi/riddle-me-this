@@ -7,11 +7,14 @@ classes: wide
 comments: true
 hidden: false
 search: true
-read_aloud: false
+read_aloud: true
 ---
 = What Actually Works in AI: And Why No One Talks About It
 :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
 :ai-learning: link:/riddle-me-this/reflections/2025/11/24/fastest-ai-adoption.html[I recommend studying on this infrastructure,target=_blank]
+:jb-on-llms: https://youtu.be/CWgZXpGWvtg
+:jb-on-llms-video: {jb-on-llms}[Why LLMs Are Finally Useful,target=_blank]
+:fireship-gemini3: https://youtu.be/bsL7ZnKIAhs[YouTube @Fireship: Did Google just kill OpenAI?,target=_blank]
 
 .The EU businesses found a way to profitably apply existing local models. While in the USA we chase bigger, impossible to power things, having failed to apply much of anything.
 image::/riddle-me-this/assets/images/EU-vs-USA-AI-Adoption-Button.png[EU is many small trams moving things around while in the USA we have a huge loco crashing through the track and nothing can move it]
@@ -40,7 +43,7 @@ Big vendors.
 Big dependencies.
 The enterprise default.
 
-It is so abundant that _{ai-learning}_.
+It is so abundant that _{ai-learning}_ FOR FREE.
 
 .In the EU people effectively use the models available today to make money now.
 image::/riddle-me-this/assets/images/EU-AI-Progress-Button.png[The EU business doesn't hold breath for massive and instead profits well on the available today]
@@ -107,7 +110,7 @@ The other creates great slide decks.
 One of these ways survives AI bubble crash.
 The other does not.
 
-== Disclosure: My Lens:
+== Disclosure: My Lens
 
 Scale-then-profit usually works.
 For American AI adoption -- I'm not seeing it yet.
@@ -148,3 +151,39 @@ One creates long-term capability.
 The other creates long-term invoices.
 
 Your choice.
+
+'''
+
+== For All:
+
+.World's Best Explanation on LLMs!
+[#img-on-llms,link={jb-on-llms},window=_blank]
+image::/riddle-me-this/assets/images/JetBrainsOnLLMs.png[The proper history of LLMs]
+
+{nbsp}
+
+Hands down the best explanation on LLM evolution is by JetBrains: {jb-on-llms-video}. +
+I'm excited to share it with you here.
+
+== For Developers:
+
+Several key evolutions have just taken place.
+Some of these developments boost the American way of doing AI.
+And some really boost the competent side of things Europeans like.
+I will link the best ones here:
+
+The USA-specific boosters:
+
+. Gemini 3 is part of GCP now: {fireship-gemini3};
+. https://aws.amazon.com/blogs/aws/amazon-bedrock-adds-fully-managed-open-weight-models/[Amazon Bedrock adds 18 fully managed open weight models...,target=_blank] -- match self-hosted folks.
+
+The EU-specific boosters:
+
+. https://mistral.ai/news/mistral-3[Mistral 3] is out -- can power any needs now (all three will run in your lab);
+. https://github.com/QwenLM/Qwen3[Qwen3] is out -- my personal full-power favorites (if you have the hardware).
+
+_Note: Requirements for Qwen3-30B-A3B-Thinking-2507 are overstated -- try it before you panic._
+
+Fun stuff:
+
+JetBrains https://adventofcode.com/[Advent of Code 2025] is 3 days in!
