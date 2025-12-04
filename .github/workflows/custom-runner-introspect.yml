@@ -38,7 +38,7 @@ jobs:
         uses: ./.github/actions/detect-runner-type
 
 
-      - name: Hosted Infra Snapshot
+      - name: Runner Infra Snapshot
         if: inputs.host-info == 'true'
         run: |
           echo "::group::🖥️ Hosted Infra Fingerprint"
@@ -52,22 +52,6 @@ jobs:
           echo "::notice title=GitHub CLI::$(gh version || true)"
           echo "::notice title=Runner::${{ steps.env.outputs.runner-name }} (${{ steps.env.outputs.runner-nick }})"
           echo "::endgroup::"
-
-      - name: Hosted Infra Snapshot
-        if: inputs.host-info == 'true'
-        run: |
-          echo "::group::🖥️ Hosted Infra Fingerprint"
-          echo "::notice title=Event::$GITHUB_EVENT_NAME"
-          echo "::notice title=Branch::$GITHUB_REF_NAME"
-          echo "::notice title=OS:: $(cat /etc/issue || true)"
-          echo "::notice title=Kernel::$(uname -v || true)"
-          echo "::notice title=Memory::$(free -hg || true)"
-          echo "::notice title=CPU::$(nproc) cores, $(lscpu | grep 'Model name' | uniq || true)"
-          echo "::notice title=Git::$(git --version || true)"
-          echo "::notice title=GitHub CLI::$(gh version || true)"
-          echo "::notice title=Runner::${{ steps.env.outputs.runner-name }} (${{ steps.env.outputs.runner-nick }})"
-          echo "::endgroup::"
-
 
       - name: Toolchain Validation
         id: introspect
