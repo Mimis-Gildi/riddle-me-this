@@ -55,14 +55,14 @@
       automerge: true
     },
     {
-      description: 'Ignore Ruby in .tool-versions (managed manually on runner)',
+      description: 'Pin Ruby to 3.3.5 (matches self-hosted runner)',
       matchManagers: [
         'asdf'
       ],
       matchPackageNames: [
         'ruby'
       ],
-      enabled: false
+      allowedVersions: '3.3.5'
     },
     {
       description: 'Bundler / Jekyll Updates (monthly)',
