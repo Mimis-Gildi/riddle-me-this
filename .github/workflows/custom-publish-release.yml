@@ -33,7 +33,7 @@ jobs:
     steps:
 
       - name: ⬇️ Checkout
-        uses: actions/checkout@v6.0.0
+        uses: actions/checkout@v6.0.1
         with:
           fetch-depth: 0
           fetch-tags: true
@@ -71,7 +71,7 @@ jobs:
 
       - name: ☕ Set up Java
         if: steps.resume-changes-detected.outputs.satisfied == 'true' && steps.env.outputs.is-self-hosted == 'false'
-        uses: actions/setup-java@v5.0.0
+        uses: actions/setup-java@v5.1.0
         timeout-minutes: 5
         with:
           distribution: temurin
