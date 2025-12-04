@@ -111,6 +111,7 @@ jobs:
         with:
           files: gradle.properties SECURITY.md site/_config.yml
           message: "🔼 Auto bump version to ${{ steps.version-bump.outputs.new }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
 
 
       - name: 🏋️ Summary annotation

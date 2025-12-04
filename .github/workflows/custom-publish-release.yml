@@ -129,6 +129,7 @@ jobs:
         with:
           files: gradle.properties README.adoc SECURITY.md site/_pages/maintainer.adoc site/index.adoc
           message: "🔄 Update version references to ${{ steps.version-info.outputs.tag }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
 
 
       - name: 🏷️ Create annotated tag if not already present
