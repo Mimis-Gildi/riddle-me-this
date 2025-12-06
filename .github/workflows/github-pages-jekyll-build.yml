@@ -3,11 +3,9 @@ run-name: "Jekyll built and bundles on ${{ github.repository }} by ${{ github.ac
 #.github/workflows/github-pages-deploy.yml
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
+  push:
+    branches:
+      - '[0-9]*-*'
   workflow_dispatch:
   workflow_call:
 
@@ -43,7 +41,7 @@ jobs:
         uses: ruby/setup-ruby@v1.268.0
         timeout-minutes: 5
         with:
-          ruby-version: 3.4.7
+          ruby-version: 3.3.5
           bundler-cache: true
           working-directory: site
 

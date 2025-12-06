@@ -9,9 +9,11 @@ inputs:
   files:
     description: "Space-separated list of files to commit"
     required: true
-
   message:
     description: "Commit message"
+    required: true
+  token:
+    description: "GitHub token for push authentication"
     required: true
 
 outputs:
@@ -46,7 +48,12 @@ runs:
     - name: 📤 Commit and Push Files
       id: update
       shell: zsh -l {0}
+      env:
+        GITHUB_TOKEN: ${{ inputs.token }}
       run: |
+        # Configure git to use token
+        git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
+        
         FILES="${{ inputs.files }}"
         MESSAGE="${{ inputs.message }}"
         

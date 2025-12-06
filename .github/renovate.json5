@@ -26,45 +26,55 @@
     {
       description: 'Aggressive grouping for Gradle root project',
       matchManagers: [
-        'gradle',
+        'gradle'
       ],
       matchFileNames: [
         'build.gradle.kts',
-        'gradle.properties',
+        'gradle.properties'
       ],
       groupName: 'Gradle Root Updates',
-      automerge: true,
+      automerge: true
     },
     {
       description: 'Aggressive grouping for buildSrc',
       matchManagers: [
-        'gradle',
+        'gradle'
       ],
       matchFileNames: [
-        'buildSrc/**',
+        'buildSrc/**'
       ],
       groupName: 'Gradle BuildSrc Updates',
-      automerge: true,
+      automerge: true
     },
     {
       description: 'GitHub Actions Updates',
       matchManagers: [
-        'github-actions',
+        'github-actions'
       ],
       groupName: 'GitHub Actions Updates',
-      automerge: true,
+      automerge: true
+    },
+    {
+      description: 'Pin Ruby to 3.3.5 (matches self-hosted runner)',
+      matchManagers: [
+        'asdf'
+      ],
+      matchPackageNames: [
+        'ruby'
+      ],
+      allowedVersions: '3.3.5'
     },
     {
       description: 'Bundler / Jekyll Updates (monthly)',
       matchManagers: [
-        'bundler',
+        'bundler'
       ],
       groupName: 'Bundler Updates',
       automerge: true,
       schedule: [
-        'monthly',
-      ],
-    },
+        'monthly'
+      ]
+    }
   ],
   dependencyDashboard: true,
   prHourlyLimit: 5,

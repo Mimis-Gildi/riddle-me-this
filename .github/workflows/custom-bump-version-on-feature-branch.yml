@@ -111,14 +111,18 @@ jobs:
         with:
           files: gradle.properties SECURITY.md site/_config.yml
           message: "🔼 Auto bump version to ${{ steps.version-bump.outputs.new }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
 
 
       - name: 🏋️ Summary annotation
         if: steps.branch-guard.outputs.feature == 'true'
         run: |
-          echo "::notice title=📅 Bump Summary::
-          Branch:   ${GITHUB_REF#refs/heads/}
-          From:     ${{ steps.version-bump.outputs.old }}
-          To:       ${{ steps.version-bump.outputs.new }}
-          Bump:     ${{ steps.label-check.outputs.promote }}
-          Files touched: gradle.properties, SECURITY.md."
+          cat >> $GITHUB_STEP_SUMMARY << EOF
+          ## 📅 Bump Summary
+          | Field | Value |
+          |-------|-------|
+          | Branch | ${GITHUB_REF#refs/heads/} |
+          | From | ${{ steps.version-bump.outputs.old }} |
+          | To | ${{ steps.version-bump.outputs.new }} |
+          | Major? | ${{ steps.check-issue-labels.outputs.satisfied }} |
+          EOF
