@@ -1,0 +1,51 @@
+---
+categories: [adventures]
+tags: [AI,Competence,Policy,Decisions]
+excerpt: >
+    More important than what to do is what NOT to do!
+classes: wide
+comments: false
+hidden: false
+search: true
+read_aloud: false
+---
+= CTOs Deploying AI Fastest All Answer One Question the Same Way!
+
+Everyone's hunting AI use cases.
+Winners are refusing them!
+
+Dozen customers -- One pattern.
+
+The CTOs who deploy in weeks have a *"Kill List"* before they have a pilot.
+The stuck ones seem to say "yes" to everything and tend to finish nothing.
+
+*My question:*
+
+_"What AI use case are you saying NO to -- and why?"_
+
+*The fast deployers said NO to:*
+
+- AI that touches 3+ systems before proving value in 1 (ONE);
+- Use cases where the training data classes don't exist in the wild;
+- "Transformational" pilots with no owner to get fired on "fail."
+
+No owner, no hard calls.
+Eighteen months later, you're still "learning." And "transformational" is a fallacy of its own type of misery.
+Best successes I experienced are "augmentational" in existing business context.
+
+Strategic NO is your MOAT! +
+_Competitors copy your use case in a quarter._ +
+*_They can't copy your discipline._*
+
+What I repeatedly see: Same AI initiative; Same vendor; Same tech.
+One ships, another doesn't.
+What gives?!
+
+*Clarity about what NOT to do.*
+
+Because who cares about pilots.
+What's in production!
+
+That answer starts with what you refused.
+
+What's on your "NO" list?
