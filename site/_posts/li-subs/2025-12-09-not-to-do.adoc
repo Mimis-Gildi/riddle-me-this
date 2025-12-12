@@ -1,0 +1,57 @@
+---
+categories: [adventures]
+tags: [AI,Competence,Policy,Decisions]
+excerpt: >
+    More important than what to do is what NOT to do!
+classes: wide
+comments: false
+hidden: false
+search: true
+read_aloud: false
+---
+= CTOs Deploying AI Fastest Answer One Question the Same Way
+
+Everyone's hunting AI use cases.
+Winners are refusing them!
+
+.Successful CTOs don't collect AI use cases. Instead, they judicially scrutinize ones naturally arising. Instead of many projects and initiatives, their boards just have at most three.
+image::/riddle-me-this/assets/images/posts/2025-12-09-the-right-way.png[Successful programs thend to have very few items on the roadmap board. This image shows a large empty program board with just three orange sticky notes on it.]
+
+{nbsp}
+
+Across a dozen customers, one pattern keeps showing up:
+
+The CTOs who deploy in weeks have a *"Kill List"* before they have a pilot.
+The stuck ones say "yes" to everything and tend to finish nothing.
+
+*My question:*
+
+_"What AI use case are you saying NO to -- and why?"_
+
+*The fast deployers said NO to:*
+
+- AI that touches 3+ systems before proving value in ONE;
+- Use cases where the training data classes don't exist in the wild;
+- "Transformational" pilots with no owner who's canned for failure.
+
+No owner, no hard calls.
+Eighteen months later, you're still "learning." And "transformational" becomes its own special kind of misery.
+The best successes I've seen are "augmentational" in _existing business context_.
+
+Strategic NO is your MOAT! +
+_Competitors copy your use case in a quarter._ +
+*_They can't copy your discipline._*
+
+What I repeatedly see: same AI initiative; same vendor; same tech.
+One ships, another doesn't.
+
+What gives?!
+
+Clarity about what NOT to do.
+
+Because who cares about pilots?
+What's in production?
+
+That answer starts with what you refused.
+
+What's on your "NO" list?
