@@ -38,7 +38,7 @@ jobs:
 
       - name: 🧰 Set up Ruby
         if: steps.env.outputs.is-self-hosted == 'false'
-        uses: ruby/setup-ruby@v1.270.0
+        uses: ruby/setup-ruby@v1.271.0
         timeout-minutes: 5
         with:
           ruby-version: 3.4.8
