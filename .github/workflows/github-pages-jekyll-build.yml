@@ -41,7 +41,7 @@ jobs:
         uses: ruby/setup-ruby@v1.270.0
         timeout-minutes: 5
         with:
-          ruby-version: 3.4.7
+          ruby-version: 3.4.8
           bundler-cache: true
           working-directory: site
 
