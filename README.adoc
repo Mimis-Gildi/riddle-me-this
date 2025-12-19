@@ -5,7 +5,7 @@ v3.7.0, Friday May 16th 2025
 :icons: font
 :!toc:
 :keywords: Mímir Rdd13r Résumé Hacker Vadim Kuhay
-:releases: https://github.com/Mimis-Gildi/riddle-me-this/releases/[releases,target=_blank]
+:releases: https://github.com/Mimis-Gildi/riddle-me-this/releases/[releases,window=_blank]
 :actions: https://github.com/Mimis-Gildi/riddle-me-this/actions
 
 :gha: https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows
@@ -43,11 +43,11 @@ Take what you like, if you dig my ways, come pair with me. +
 _P.S. I use A LOT of custom ML_
 
 Public Site::
-- **Browse the live site**: https://mimis-gildi.github.io/riddle-me-this/[Creative Engineering at Scale,target=_blank];
-- **Learn more about the maintainer**: https://mimis-gildi.github.io/riddle-me-this/maintainer/[Maintainer,target=_blank];
+- **Browse the live site**: https://mimis-gildi.github.io/riddle-me-this/[Creative Engineering at Scale,window=_blank];
+- **Learn more about the maintainer**: https://mimis-gildi.github.io/riddle-me-this/maintainer/[Maintainer,window=_blank];
 - **Trends you won’t hear from Gartner**:
-https://mimis-gildi.github.io/riddle-me-this/series/[Curated Series Collections,target=_blank];
-- Or simply https://mimis-gildi.github.io/riddle-me-this/feed.xml[my RSS feed,target=_blank].
+https://mimis-gildi.github.io/riddle-me-this/series/[Curated Series Collections,window=_blank];
+- Or simply https://mimis-gildi.github.io/riddle-me-this/feed.xml[my RSS feed,window=_blank].
 Profiles:::
 * GitHub: https://rdd13r.github.io/ | https://rdd13r.github.io/rdd13r/
 * LinkedIn: https://www.linkedin.com/in/rdd13r

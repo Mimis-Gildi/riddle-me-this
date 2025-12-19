@@ -11,10 +11,10 @@ read_aloud: true
 ---
 = What Actually Works in AI: And Why No One Talks About It
 :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
-:ai-learning: link:/riddle-me-this/reflections/2025/11/24/fastest-ai-adoption.html[I recommend studying on this infrastructure,target=_blank]
+:ai-learning: link:/riddle-me-this/reflections/2025/11/24/fastest-ai-adoption.html[I recommend studying on this infrastructure,window=_blank]
 :jb-on-llms: https://youtu.be/CWgZXpGWvtg
-:jb-on-llms-video: {jb-on-llms}[Why LLMs Are Finally Useful,target=_blank]
-:fireship-gemini3: https://youtu.be/bsL7ZnKIAhs[YouTube @Fireship: Did Google just kill OpenAI?,target=_blank]
+:jb-on-llms-video: {jb-on-llms}[Why LLMs Are Finally Useful,window=_blank]
+:fireship-gemini3: https://youtu.be/bsL7ZnKIAhs[YouTube @Fireship: Did Google just kill OpenAI?,window=_blank]
 
 .The EU businesses found a way to profitably apply existing local models. While in the USA we chase bigger, impossible to power things, having failed to apply much of anything.
 image::/riddle-me-this/assets/images/EU-vs-USA-AI-Adoption-Button.png[EU is many small trams moving things around while in the USA we have a huge loco crashing through the track and nothing can move it]
@@ -175,7 +175,7 @@ I will link the best ones here:
 The USA-specific boosters:
 
 . Gemini 3 is part of GCP now: {fireship-gemini3};
-. https://aws.amazon.com/blogs/aws/amazon-bedrock-adds-fully-managed-open-weight-models/[Amazon Bedrock adds 18 fully managed open weight models...,target=_blank] -- match self-hosted folks.
+. https://aws.amazon.com/blogs/aws/amazon-bedrock-adds-fully-managed-open-weight-models/[Amazon Bedrock adds 18 fully managed open weight models...,window=_blank] -- match self-hosted folks.
 
 The EU-specific boosters:
 

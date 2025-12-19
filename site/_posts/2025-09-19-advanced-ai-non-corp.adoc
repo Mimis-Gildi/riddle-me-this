@@ -84,7 +84,7 @@ _And this little pickle is where things get interesting._
 == What is it Designed to Do?
 
 Here's an excellent article about the real nature of LLMs:
-{the-word-calculator}["Actually, AI is a 'word calculator' -- but not in the sense you might think.",target=_blank,opts=nofollow]
+{the-word-calculator}["Actually, AI is a 'word calculator' -- but not in the sense you might think.",window=_blank,opts=nofollow]
 I couldn't have written it better myself.
 "Generative AI is always just calculating.
 And we should not mistake it for more."
