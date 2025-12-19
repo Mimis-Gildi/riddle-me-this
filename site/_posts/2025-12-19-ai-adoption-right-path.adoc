@@ -22,7 +22,7 @@ If you are an executive -- I'll tell you the best kept open secret.
 And how to WIN. +
 If you are an engineer -- I'll tell you how to be that irreplaceable AI asset in your business.
 
-This will be the push a few of you need to suceed.
+This will be the push a few of you need to succeed.
 My loving gift to you. +
 For most of you, this won't do a darn thing! -- don't even bother reading.
 
@@ -32,13 +32,13 @@ If you are new here -- few words about me, else skip to the "Fable" if you alrea
 
 I've spent decades transforming engineering organizations hands-on grassroots.
 Yes, I discover, design and code every day.
-I've helped dozens other founders with their startup tech, exited a coupel fo my own, and executed eleven enterprise transformations at my current company.
+I've helped dozens other founders with their startup tech, exited a couple of my own, and executed eleven enterprise transformations at my current company.
 And I live for innovation.
 But also for business.
 So, I've had employments at stale shops turning most to glory.
 Unlike spoiled hackers you meet I don't harbor stigma against traditional business.
 In fact the opposite is true -- I'm a realist and I argue that traditional business is the backbone of America.
-Laggrd in IT doesn't mean laggard in business, and it is the latter that matters.
+Laggard in IT doesn't mean laggard in business, and it is the latter that matters.
 Turning traditional business is what separates boys from men.
 
 So, I pushed DevOps before it had a name.
@@ -47,7 +47,7 @@ Kubernetes when it was still an idea.
 
 Those transformations were *HARD*.
 Rebuilding CI/CD pipelines _with_ the incumbent team.
-Fig-strangling monoliths.
+Strangler-fig migrations off monoliths.
 Most notably, changing hundreds of engineers to think *production-first*.
 *_Years of hard work._*
 
@@ -133,7 +133,7 @@ Cost savings.
 
 Now ten times more customers wait longer for worse service from people following broken AI instructions.
 
-That's my `Merica today.
+That's my 'Merica today.
 And then some.
 
 == Engineers, This Isn't Your Fault
@@ -168,7 +168,7 @@ Fire the CTO.
 Try different technology."
 
 That insurer is failing harder today than when I left.
-Days are umbered.
+Days are numbered.
 And all efforts are still on "AI".
 
 == The Pattern Nobody Wants to See
@@ -224,7 +224,7 @@ Takes weeks, not months.
 
 === Step 2: Upskill the Team
 
-This is 90% of *MY* work is here.
+90% of MY work is here.
 Security-first mindset.
 Defensive coding practices.
 Twelve-factor-app.
@@ -237,7 +237,7 @@ You train them.
 They already know the domain.
 That knowledge is irreplaceable.
 
-This is business basics: identify assets, invest into assets, and trim liablities.
+This is business basics: identify assets, invest into assets, and trim liabilities.
 
 Takes months.
 Worth every day.
@@ -254,14 +254,14 @@ They know the edge cases.
 They can evaluate whether the AI output makes sense.
 
 No "Agentic AI Specialist" needed
--- like no "Milwakee Claw Hammer Specialist" is needed at a construction site
+-- like no "Milwaukee Claw Hammer Specialist" is needed at a construction site
 -- your carpenters master all relevant tools themselves.
 Eight weeks to production.
 DoorDash proved it.
 
-There is a reason why Alberto Brandolini starts every sessions with *_"this is 1922 -- think like it's 1922!"_*
+There is a reason why Alberto Brandolini, inventor of EventStorming, starts every session with *_"this is 1922 -- think like it's 1922!"_*
 Figure out your business WITHOUT AI.
-At most, represent where AI would be as an "External System." Eventually you can convert it to a "Domain Agreggate" owning real business behavior. +
+At most, represent where AI would be as an "External System." Eventually you can convert it to a "Domain Aggregate" owning real business behavior. +
 It is not about the AI!
 
 == Why Executives Skip Steps 1 and 2
@@ -302,10 +302,10 @@ The tools are the easy part.
 "We deployed AI" is not a win.
 "We handle ten times the volume with better resolution" is a win.
 
-Your new "Agentic AI Specialist" who will "implement token limits," and "attempt to cary identity through tools," and "calcualte the best model" - has little real value!
+Your new "Agentic AI Specialist" who will "implement token limits," and "attempt to carry identity through tools," and "calculate the best model" - has little real value!
 Needs to be invested into to learn your domain.
-Is not likely to have any more system engineering prwwess. +
-_Do you know how I solve their preceived "advantage" problem?!_ +
+Is not likely to have any more systems engineering prowess. +
+_Do you know how I solve their perceived "advantage" problem?!_ +
 I give incumbents my AI Cheatsheet.
 There.
 Done.
