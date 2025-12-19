@@ -11,13 +11,13 @@ read_aloud: false
 ---
 = AI: MCP -- Well Kept Secrets -- Straight Talk
 :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
-:no-holds: https://mimis-gildi.github.io/riddle-me-this/research/2025/09/19/advanced-ai-non-corp.html["No holds barred: The real AI Revolution .. is us",target=_blank]
-:dev-to-fallon-jimmy: https://dev.to/fallon_jimmy/top-12-game-changing-mcp-libraries-transform-your-ai-development-in-2025-iep[TOP 12 Game-Changing MCP Libraries: Transform Your AI Development in 2025 -- Fallon Jimmy | dev.to,target=_blank]
-:agent-economies: https://youtu.be/S6wc6yvoZLY[YouTube @Fireship: "AI agents are paying each other now…",target=_blank]
-:ai-adoption: https://mimis-gildi.github.io/riddle-me-this/reflections/2025/11/24/fastest-ai-adoption.html["Fastest Way to AI Adoption -- Straight Talk.",target=_blank]
-:ai-stages: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,target=_blank]
+:no-holds: https://mimis-gildi.github.io/riddle-me-this/research/2025/09/19/advanced-ai-non-corp.html["No holds barred: The real AI Revolution .. is us",window=_blank]
+:dev-to-fallon-jimmy: https://dev.to/fallon_jimmy/top-12-game-changing-mcp-libraries-transform-your-ai-development-in-2025-iep[TOP 12 Game-Changing MCP Libraries: Transform Your AI Development in 2025 -- Fallon Jimmy | dev.to,window=_blank]
+:agent-economies: https://youtu.be/S6wc6yvoZLY[YouTube @Fireship: "AI agents are paying each other now…",window=_blank]
+:ai-adoption: https://mimis-gildi.github.io/riddle-me-this/reflections/2025/11/24/fastest-ai-adoption.html["Fastest Way to AI Adoption -- Straight Talk.",window=_blank]
+:ai-stages: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :ai-1-integration:
-:ai-2-activation: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html#phase-ii-ai-activation[Phase II: AI-Activation,target=_blank]
+:ai-2-activation: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html#phase-ii-ai-activation[Phase II: AI-Activation,window=_blank]
 
 .Executives don't understand the practical value of MCP and Agentic AI. But they feel it important for some reason.
 image::/riddle-me-this/assets/images/ai-springboard.png[It's now or never,kinda thang...]

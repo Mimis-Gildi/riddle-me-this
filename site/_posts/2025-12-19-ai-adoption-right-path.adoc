@@ -1,0 +1,358 @@
+---
+categories: [reflections]
+tags: [AI,Generative AI,Easy Adoption]
+excerpt: >
+    AI integration is rather easy, IF....
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: true
+---
+= AI Adoption is EASY! (The Silly-Town Bank Didn't Get the Memo)
+:imagesdir: ./assets/images
+:mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
+:ai-adoption: https://mimis-gildi.github.io/riddle-me-this/reflections/2025/11/24/fastest-ai-adoption.html["Fastest Way to AI Adoption -- Straight Talk.",window=_blank]
+:ai-stages: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
+:ai-2-activation: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html#phase-ii-ai-activation[Phase II: AI-Activation,window=_blank]
+:doordash-case: https://aws.amazon.com/solutions/case-studies/doordash-bedrock-case-study/[DoorDash Case Study,window=_blank]
+:rand-report: https://www.rand.org/pubs/research_reports/RRA2680-1.html[RAND Corporation,window=_blank]
+:mit-report: https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/[MIT NANDA Report,window=_blank]
+
+If you are an executive -- I'll tell you the best kept open secret.
+And how to WIN. +
+If you are an engineer -- I'll tell you how to be that irreplaceable AI asset in your business.
+
+This will be the push a few of you need to succeed. +
+Fair warning: I'm direct.
+If you want gentle corporate advice, this isn't it.
+
+.What could possibly go wrong?
+[#img-easy-ai]
+image::/riddle-me-this/assets/images/easy-ai.png["Editorial cartoon: Executive in Superman costume with diving fins holds Innovation Award trophy while pointing and shouting 'DEPLOY THE AI!' A tired robot worker in hardhat holds a microwave manual; captioned 'Sir this is a microwave manual.' Server rack labeled PROD smokes in background. Sign points to exit: DOMAIN EXPERTS."]
+
+{nbsp}
+
+'''
+
+If you are new here -- few words about me, else skip to the "Fable" if you already know me.
+
+I've spent decades transforming engineering organizations hands-on grassroots.
+Yes, I discover, design and code every day.
+I've helped dozens other founders with their startup tech, exited a couple of my own, and executed eleven enterprise transformations at my current company.
+And I live for innovation.
+But also for business.
+So, I've had employments at stale shops turning most to glory.
+Unlike spoiled hackers you meet I don't harbor stigma against traditional business.
+In fact the opposite is true -- I'm a realist and I argue that traditional business is the backbone of America.
+Laggard in IT doesn't mean laggard in business, and it is the latter that matters.
+Turning traditional business is what separates boys from men.
+
+So, I pushed DevOps before it had a name.
+Microservices before the conference posers discovered the buzzwords.
+Kubernetes when it was still an idea.
+
+Those transformations were *HARD*.
+Rebuilding CI/CD pipelines _with_ the incumbent team.
+Strangler-fig migrations off monoliths.
+Most notably, changing hundreds of engineers to think *production-first*.
+*_Years of hard work._*
+
+AI adoption?
+Adding LLM Agents to existing workflows?
+That takes weeks, not years.
+
+{doordash-case} did it in eight weeks.
+Commerzbank built a chatbot handling 2 million conversations with 70% resolution. +
+*_This is the par!_*
+
+Why 95% fail - oh let me tell you.
+I study failures.
+Read the postmortems.
+In fact, I sold recoveries for a few months.
+And, of course I analyzed the 80% failure rate from {rand-report}.
+The 95% showing zero ROI from {mit-report}.
+Looked for the thing that makes AI uniquely difficult.
+
+*Found nothing new!*
+
+Data quality problems? -- We solved those for data warehouses twenty years ago. +
+Integration nightmares? -- That's every enterprise transformation ever. +
+Skills gaps? -- We closed those for cloud, for DevOps, for microservices.
+
+AI adoption is genuinely easier than what came before. +
+You're adding a tool, not rebuilding infrastructure.
+
+So why are MORE projects failing?
+
+== Let Me Tell You About The Silly-Town Bank
+
+Major US bank.
+Household name.
+Deploys AI for customer service.
+Big press release!
+Innovation awards.
+Cool -- that's my bank 😃for 20 years.
+
+I'm a customer.
+My debit card expired.
+_But, this time I didn't receive an automatic replacement._
+Simple task: order replacement.
+
+Old process is turned off.
+New AI assistant handles requests now.
+
+I ask for a new DEBIT card.
+AI assistant "helps." Doesn't order the debit card.
+Instead, invalidates my *_credit cards_* and orders replacements for those.
+Repeatedly!
+I now have no working credit cards.
+
+FPOS!
+
+I call support.
+Get a human.
+She sounds stressed.
+Tries to fix it.
+Fails.
+Tries again.
+Fails.
+Six attempts.
+On the seventh, she finally orders my debit card correctly.
+
+_I'm curious._
+(I always am.) And charismatic enough for people to tell me things.
+I ask her what's happening.
+
+She tells me: _"All the old support experts were let go.
+We're new hires.
+There's five times more of us now, handling ten times the call volume.
+The AI gives us instructions, but..."_
+
+She trails off.
+
+The AI failed completely.
+The humans brought in to "work with AI" have *no institutional knowledge*.
+The experts who knew every edge case, every weird account configuration, every shortcut?
+Gone.
+Fired.
+Cost savings.
+
+Now ten times more customers wait longer for worse service from people following broken AI instructions.
+
+That's my 'Merica today.
+And then some.
+
+== Engineers, This Isn't Your Fault
+
+If you're an engineer reading this, you've lived some version of this story.
+
+Maybe you're the one getting blamed when the AI integration doesn't work.
+Maybe you're the "old guard" being pushed out because you don't have "AI skills." Maybe you're the new hire being handed AI-generated instructions that make no sense.
+
+Or maybe you're watching tribal warfare tear your team apart.
+The incumbents barricading themselves: _"We're Spring Boot developers, not Guidewire developers."_
+The new blood breaking production: _"Those old tests were slowing us down -- we turned them off."_
+Both factions at war while the actual business problem goes unsolved.
+
+I've seen this exact pattern play out.
+At a major insurer, senior engineers muted 100+ integration tests
+-- all written one-to-one with business scenarios from EventStorming sessions
+-- because they "needed to ship faster." Production broke for months.
+Ignorantum Americanus?
+No, just cornered bunnies.
+
+When executives saw the chaos, you know what they concluded?
+
+_"The AI transformation failed."_
+
+Not "we have a people problem." +
+Not "we fired the wrong people." +
+Not "the tribal warfare we ignored is destroying us."
+
+Just: "Failed.
+Fire the CTO.
+Try different technology."
+
+That insurer is struggling harder today.
+Days are numbered.
+And all efforts are still on "AI".
+
+== The Pattern Nobody Wants to See
+
+Every failed AI project I've studied, dozens, has the same shape:
+
+[cols="1a,1a",frame=none,grid=none]
+|===
+| *What Failed Projects Do*
+| *What Success Looks Like*
+
+| Fired domain expertise -- the people who knew WHY the systems worked, not just HOW.
+| Domain experts stayed -- they knew the business, the edge cases, the real problems.
+
+| Hired "AI specialists" or cheap labor to "work with AI" -- people who know the tool but not the territory.
+| AI augmented their work -- it didn't replace their judgment.
+
+| Skipped workflow redesign -- bolted AI onto broken processes and expected magic.
+| Workflows were redesigned FIRST -- then AI was added to the new workflow.
+
+| Blamed engineers' competence when it collapsed.
+| No "AI Specialist" was hired -- the domain team added AI like they'd add *_any other library_*.
+|===
+
+{doordash-case} didn't hire AI specialists.
+Their existing contact center team worked with AWS for eight weeks.
+They already understood Dasher workflows.
+They added Claude as one more tool in their stack.
+Now they handle hundreds of thousands of calls daily.
+
+That's not a moonshot.
+That's competent execution.
+
+== Three Steps They Keep Skipping
+
+Here's what three decades taught me:
+
+=== Step 1: Fix the Organization
+
+Domain-Driven Design.
+EventStorming.
+Get business and engineering speaking the same language.
+Model the actual workflows before touching technology.
+Or any other methodology to discover *_the winning business process_*.
+
+This is the *EASY* part.
+I have never failed here.
+Business people master this every single time.
+They love it because it's finally their language, not technical jargon.
+And they love the new-found ability to express themselves architecturally.
+
+Takes weeks, not months.
+
+=== Step 2: Upskill the Team
+
+90% of MY work is here.
+Security-first mindset.
+Defensive coding practices.
+Twelve-factor-app.
+Test-driven development.
+Taking engineers who've been doing spaghetti for fifteen years and teaching them *craft*.
+
+This is where incumbents become capable of Step 3.
+You don't fire them.
+You train them.
+They already know the domain.
+That knowledge is irreplaceable.
+
+This is business basics: identify assets, invest into assets, and trim liabilities.
+
+Takes months.
+Worth every day.
+And my every grey beard hair.
+
+=== Step 3: Add AI
+
+After Steps 1 and 2?
+This is trivial.
+
+Domain team adds LLM capability like adding any other tool.
+They understand the workflow.
+They know the edge cases.
+They can evaluate whether the AI output makes sense.
+
+No "Agentic AI Specialist" needed
+-- like no "Milwaukee Claw Hammer Specialist" is needed at a construction site
+-- your carpenters master all relevant tools themselves.
+Eight weeks to production.
+DoorDash proved it.
+
+There is a reason why Alberto Brandolini, inventor of EventStorming, starts every session with *_"this is 1922 -- think like it's 1922!"_*
+Figure out your business WITHOUT AI.
+At most, represent where AI would be as an "External System." Eventually you can convert it to a "Domain Aggregate" owning real business behavior. +
+It is not about the AI!
+
+== Why Executives Skip Steps 1 and 2
+
+Step 3 is sexy.
+Boards love it.
+Press releases write themselves.
+
+Steps 1 and 2 sound like "old DevOps coach talk." Unsexy.
+No innovation awards.
+
+Firing experts looks like cost savings on a spreadsheet.
+
+Hiring AI specialists looks like forward-thinking leadership.
+
+Result: The Silly-Town Bank pattern.
+Ten times the volume, zero resolution, customers with invalidated cards, stressed new hires following broken AI instructions.
+
+== How to WIN
+
+*Keep your domain experts.*
+They're not "legacy." They're institutional knowledge that takes years to rebuild.
+*They are your "key asset!"*
+
+*Add AI as augmentation, not replacement.*
+The best AI implementations have humans who understand the domain checking the AI's work.
+
+*Redesign workflows BEFORE selecting models.*
+If your process is broken, AI will break it faster.
+But the fix is easy -- go back to business process fundamentals!
+
+*Give incumbents time to learn.*
+They already know the hard part -- your business.
+*_And, they're already loyal!_*
+The tools are the easy part.
+
+*Measure outcomes, not AI deployment.*
+"We deployed AI" is not a win.
+"We handle ten times the volume with better resolution" is a win.
+
+Your new "Agentic AI Specialist" who will "implement token limits," and "attempt to carry identity through tools," and "calculate the best model" - has little real value!
+Needs to be invested into to learn your domain.
+Is not likely to have any more systems engineering prowess. +
+_Do you know how I solve their perceived "advantage" problem?!_ +
+I give incumbents my AI Cheatsheet.
+There.
+Done.
+Give it a week and reap.
+
+== The Real Secret
+
+AI integration is easy.
+I see it done in eight weeks by domain teams regularly.
+
+The hard part is admitting that your people problem isn't a technology problem.
+And that *fixing* people is *_cheaper_* than firing/replacing them.
+
+The companies winning at AI aren't the ones with the best AI talent.
+They're the ones where domain teams already work well together and can add AI as a tool.
+
+You don't need an AI specialist.
+You need a functioning organization.
+And some engineering fundamentals.
+I.e, basic competence.
+
+And if you have one?
+Eight weeks to production traffic is the norm.
+
+If you don't?
+No amount of AI will save you.
+Fix your work-family first.
+
+'''
+
+_What's your experience?
+Are you living The Silly-Town Bank story?
+Fighting the tribal warfare?
+Or have you seen it done right?_
+
+Still here?
+You're either furious or curious.
+Either way -- let's talk.
+
+'''
+
+For more on AI adoption strategy, see {ai-adoption} +
+and {ai-stages}.

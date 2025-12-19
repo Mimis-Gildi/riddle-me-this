@@ -11,22 +11,22 @@ read_aloud: false
 ---
 = Fastest Way to AI Adoption -- Straight Talk
 :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
-:ai-current-state: https://mimis-gildi.github.io/riddle-me-this/adventures/2025/09/29/not-chat-gpt.html["The current State of Things",target=_blank]
-:ai-adoption-phases: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[AI Adoption Phases,target=_blank]
-:ai-adoption-matrix: https://mimis-gildi.github.io/riddle-me-this/reflections/2025/10/31/ai-halloween.html[70/20/10,target=_blank]
-:ai-why-fails: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,target=_blank]
-:seeds-model: https://neuroleadership.com/your-brain-at-work/seeds-model-biases-affect-decision-making/[SEEDS Model,target=_blank]
-:google-wins: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/10/3-google-vs-openai.html[2023: Why Google Beat OpenAI with Technical Teams,target=_blank]
-:google-gemini3: https://blog.google/products/gemini/gemini-3/[Gemini 3,target=_blank]
-:fireship-gemini3: https://youtu.be/bsL7ZnKIAhs[YouTube @Fireship: Did Google just kill OpenAI?,target=_blank]
-:boot-data-rest: https://spring.io/projects/spring-data-rest[DDD Aggregates,target=_blank]
-:boot-mcp: https://spring.io/blog/2025/09/16/spring-ai-mcp-intro-blog[MCP Servers,target=_blank]
-:google-skills: https://skills.google/[skills.google,target=_blank]
-:google-cloud: https://cloud.google.com/[Google Cloud,target=_blank]
-:google-vertex: https://cloud.google.com/vertex-ai[Vertex AI,target=_blank]
-:google-vertex-studio: https://cloud.google.com/generative-ai-studio[Vertex Generative AI Studio,target=_blank]
-:ai-google-dev: https://ai.google.dev/[ai.google.dev,target=_blank]
-:google-dev: https://developers.google.com/program[developers.google.com - Google Developer Program,target=_blank]
+:ai-current-state: https://mimis-gildi.github.io/riddle-me-this/adventures/2025/09/29/not-chat-gpt.html["The current State of Things",window=_blank]
+:ai-adoption-phases: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[AI Adoption Phases,window=_blank]
+:ai-adoption-matrix: https://mimis-gildi.github.io/riddle-me-this/reflections/2025/10/31/ai-halloween.html[70/20/10,window=_blank]
+:ai-why-fails: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
+:seeds-model: https://neuroleadership.com/your-brain-at-work/seeds-model-biases-affect-decision-making/[SEEDS Model,window=_blank]
+:google-wins: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/10/3-google-vs-openai.html[2023: Why Google Beat OpenAI with Technical Teams,window=_blank]
+:google-gemini3: https://blog.google/products/gemini/gemini-3/[Gemini 3,window=_blank]
+:fireship-gemini3: https://youtu.be/bsL7ZnKIAhs[YouTube @Fireship: Did Google just kill OpenAI?,window=_blank]
+:boot-data-rest: https://spring.io/projects/spring-data-rest[DDD Aggregates,window=_blank]
+:boot-mcp: https://spring.io/blog/2025/09/16/spring-ai-mcp-intro-blog[MCP Servers,window=_blank]
+:google-skills: https://skills.google/[skills.google,window=_blank]
+:google-cloud: https://cloud.google.com/[Google Cloud,window=_blank]
+:google-vertex: https://cloud.google.com/vertex-ai[Vertex AI,window=_blank]
+:google-vertex-studio: https://cloud.google.com/generative-ai-studio[Vertex Generative AI Studio,window=_blank]
+:ai-google-dev: https://ai.google.dev/[ai.google.dev,window=_blank]
+:google-dev: https://developers.google.com/program[developers.google.com - Google Developer Program,window=_blank]
 
 .Use this opportunity while time is right!
 image::/riddle-me-this/assets/images/ai-springboard.png[It's now or never,kinda thang...]
@@ -251,7 +251,7 @@ Running on {google-cloud} with {google-vertex-studio}, you touch real infrastruc
 Most importantly, *{ai-google-dev}* is your sandbox to actual Vertex AI - https://cloud.google.com/ai/gemini[here's the explanation].
 (See blogs https://blog.google/outreach-initiatives/education/google-skills/["Google Skills"] and https://cloud.google.com/blog/topics/training-certifications/google-skills-new-home-AI-learning[training and certification]).
 
-https://cloud.google.com/learn/training/machinelearning-ai[Sample this AI class...,target=_blank]
+https://cloud.google.com/learn/training/machinelearning-ai[Sample this AI class...,window=_blank]
 
 Most importantly, *{google-dev}*: where it all begins and grows.
 This community is why I no longer maintain my own private portal.
