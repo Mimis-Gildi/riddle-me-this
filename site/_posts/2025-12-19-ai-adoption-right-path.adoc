@@ -9,7 +9,8 @@ hidden: false
 search: true
 read_aloud: true
 ---
-= AI Adoption is EASY! Much Easier Than DX was. So, What's Wrong With You?!
+= AI Adoption is EASY! (The Silly-Town Bank Didn't Get the Memo)
+:imagesdir: ./assets/images
 :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
 :ai-adoption: https://mimis-gildi.github.io/riddle-me-this/reflections/2025/11/24/fastest-ai-adoption.html["Fastest Way to AI Adoption -- Straight Talk.",window=_blank]
 :ai-stages: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
@@ -22,9 +23,15 @@ If you are an executive -- I'll tell you the best kept open secret.
 And how to WIN. +
 If you are an engineer -- I'll tell you how to be that irreplaceable AI asset in your business.
 
-This will be the push a few of you need to succeed.
-My loving gift to you. +
-For most of you, this won't do a darn thing! -- don't even bother reading.
+This will be the push a few of you need to succeed. +
+Fair warning: I'm direct.
+If you want gentle corporate advice, this isn't it.
+
+.What could possibly go wrong?
+[#img-easy-ai]
+image::/riddle-me-this/assets/images/easy-ai.png["Editorial cartoon: Executive in Superman costume with diving fins holds Innovation Award trophy while pointing and shouting 'DEPLOY THE AI!' A tired robot worker in hardhat holds a microwave manual; captioned 'Sir this is a microwave manual.' Server rack labeled PROD smokes in background. Sign points to exit: DOMAIN EXPERTS."]
+
+{nbsp}
 
 '''
 
@@ -78,7 +85,7 @@ You're adding a tool, not rebuilding infrastructure.
 
 So why are MORE projects failing?
 
-== Let Me Tell You About the Silly-Town Bank
+== Let Me Tell You About The Silly-Town Bank
 
 Major US bank.
 Household name.
@@ -148,9 +155,9 @@ The incumbents barricading themselves: _"We're Spring Boot developers, not Guide
 The new blood breaking production: _"Those old tests were slowing us down -- we turned them off."_
 Both factions at war while the actual business problem goes unsolved.
 
-I've seen this exact pattern recently.
-At a major insurer, I watched senior engineers mute 100+ integration tests I WROTE
--- all tests written one-to-one with business scenarios from EventStorming sessions
+I've seen this exact pattern play out.
+At a major insurer, senior engineers muted 100+ integration tests
+-- all written one-to-one with business scenarios from EventStorming sessions
 -- because they "needed to ship faster." Production broke for months.
 Ignorantum Americanus?
 No, just cornered bunnies.
@@ -167,7 +174,7 @@ Just: "Failed.
 Fire the CTO.
 Try different technology."
 
-That insurer is failing harder today than when I left.
+That insurer is struggling harder today.
 Days are numbered.
 And all efforts are still on "AI".
 
@@ -337,12 +344,15 @@ Fix your work-family first.
 '''
 
 _What's your experience?
-Are you living the Silly-Town Bank story?
+Are you living The Silly-Town Bank story?
 Fighting the tribal warfare?
 Or have you seen it done right?_
 
-DM me -- let's scuttlebutt.
+Still here?
+You're either furious or curious.
+Either way -- let's talk.
 
 '''
 
-For more on AI adoption strategy, see {ai-adoption} and {ai-stages}.
+For more on AI adoption strategy, see {ai-adoption} +
+and {ai-stages}.
