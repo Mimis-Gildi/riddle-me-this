@@ -152,42 +152,6 @@ _Colloquial pieces were missing._
 These pieces change how we commonly think.
 _By accepting concepts we once fought._
 
-. I was born in the space age -- Earth is a ball to me.
-. My 16-year-old was born with a cellphone in hand -- WiFi is eternal.
-. My 3-year-old was born with AI and will witness its democratization.
-. My mother fights with her iPad daily.
-
-Each processes the shift differently.
-Each can see things the others cannot.
-Each is blind where others see clearly.
-
-I explained the 4 phases of AI Adoption in my article, {ai-stages}.
-But I was not talking about LLMs -- trivial monolithic bricks with only the Ops interesting around them.
-_I was talking about *people*!_
-What followed, "you party pooper, and I thought you are a hacker" -- immediately proved my point.
-Same flack than Evans got for DDD.
-
-In a later part I have a good example for you in the "Business Process Optimization" space.
-
-== Why 2023-2025 Failed
-
-I forecast mass failure of AI adoption in 2023. Not prediction -- engineering wisdom.
-A way to know what *can't* be.
-
-Many saw LLMs as eventual product core.
-Rushed to stick it somewhere.
-Anywhere.
-First mover advantage.
-Market pressure.
-
-They confused the prime mover with its initial application.
-Steam with one-cylinder engine.
-They couldn't yet imagine the steam generator at the nuclear power plant.
-_Colloquial pieces were missing._
-
-These pieces change how we commonly think.
-_By accepting concepts we once fought._
-
 Space age children know Earth is a ball -- no faith required.
 Boomers still fight with their iPads -- the glass isn't intuitive.
 Gen Z was born with WiFi -- connectivity is like oxygen.
