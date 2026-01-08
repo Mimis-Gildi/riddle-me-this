@@ -12,7 +12,8 @@ read_aloud: true
 = 2026: The Year the Ground Moves
 :imagesdir: ./assets/images
 :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
-:ai-stages: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[2023: The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
+:ai-stages-url: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
+:ai-stages: {ai-stages-url}[2023: The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 
 .transformation is happening now -- danger and opportunity.
 [#img-easy-ai]
@@ -168,46 +169,41 @@ Same flack than Evans got for DDD.
 
 In a later part I have a good example for you in the "Business Process Optimization" space.
 
-== What Actually Works
+== Why 2023-2025 Failed
 
-I've observed dozens of teams over the past SINGLE year.
-Pattern emerged.
+I forecast mass failure of AI adoption in 2023. Not prediction -- engineering wisdom.
+A way to know what *can't* be.
 
-Only the 50-year-old engineers bring agentic synthetic teams to actual work.
-The same pattern I saw in 1993 -- bearded AT&T Random Hackers, my mentors, dreaming distributed systems,
-making the silly little me, Random Champion, build stateless daemons before I understood "why stateless."
-The same pattern before cloud, before microservices, before everything that eventually became infrastructure.
+Many saw LLMs as eventual product core.
+Rushed to stick it somewhere.
+Anywhere.
+First mover advantage.
+Market pressure.
 
-The 50-year-olds have seen *prime mover shifts* before.
-They have pattern recognition.
-They know *how* propagation works.
-Me? -- I thought I coded "good enough."
+They confused the prime mover with its initial application.
+Steam with one-cylinder engine.
+They couldn't yet imagine the steam generator at the nuclear power plant.
+_Colloquial pieces were missing._
 
-And they're not _sufficient_ this time around.
+These pieces change how we commonly think.
+_By accepting concepts we once fought._
 
-*Here's what's different:* we used to build UNIX with the 50-year-olds and hand it to the unwashed masses.
-Used young people for speed and labor. Spur of ideas. Youthful fun.
+Space age children know Earth is a ball -- no faith required.
+Boomers still fight with their iPads -- the glass isn't intuitive.
+Gen Z was born with WiFi -- connectivity is like oxygen.
+Gen Alpha is born with AI -- they'll never know work without it.
 
-We don't need youngins for speed and labor anymore -- too much emotional post-refactoring.
-Agentic synthetic teams are faster, better, conform well to _MY_ code quality expectations.
+Each generation processes the shift differently.
+Each can see things the others cannot.
+Each is blind where others see clearly.
 
-Better. Faster. Cheaper. ... and can take a beating.
+I explained the 4 phases of AI Adoption in my article, {ai-stages}.
+But I was not talking about LLMs -- trivial monolithic bricks with only the Ops interesting around them.
+_I was talking about *people*!_
+What followed, "you party pooper, and I thought you are a hacker" -- immediately proved my point.
+Same flack than Evans got for DDD.
 
-_We need young people as *the test medium*._
-
-And `this` actuator operates directly on humans. Particularly the young ones.
-They're not labor. They're the living laboratory. The feedback loop made flesh.
-
-What's the Governing Dynamic now?
-
-- The 28-year-old embodies new culture and values the 50-year-old cannot feel correctly.
-- The 50-year-old architects policy the 28-year-old cannot yet understand.
-- The 16-year-old studies psychology to understand synthetic minds.
-- The 3-year-old absorbs concepts before knowing what they are -- no resistance.
-
-Watch how they change. -- That's your signal.
-
-*_The necessary and sufficient condition now is "the accepting medium" within the fixture._*
+In a later part I have a good example for you in the "Business Process Optimization" space.
 
 == The Secret
 
@@ -304,13 +300,176 @@ It's built by those who understand what's actually changing._
 
 == Case Study: Process Intelligence
 
-I chose this case because I recently ran a massive analytics job in the industry.
+I chose this case because I recently ran a massive analytics job in this industry.
 And it is in an interesting category: _a disruptor blindsided by another disruption_.
-My own project Tillie (MATILDA, 2017-2019) is in that same category.
 
-This is not about ABM failing to buy Celonis when the time was right -- nothing like that -- it is about the disrupted business space itself.
+=== The Company
 
-// TODO: Celonis example here - executives on solid ground, lava beneath, business model as floating rock island
+Celonis dominates process mining with ~45-50% market share.
+Valued at $13 billion in 2022.
+Gartner Magic Quadrant Leader for three consecutive years.
+They invented the category, hired the godfather (Wil van der Aalst), and built the moat.
+
+Smart people. Real technology. Legitimate market position.
+
+And they may be standing on a rock island whose edges they cannot see.
+
+=== The Original Disruption
+
+Traditional process mining extracts structured data from ERP event logs -- SAP, Oracle, Salesforce.
+It shows how business processes *actually* run versus how they're supposed to run.
+
+*The fundamental limitation:* It can only analyze 10-20% of enterprise data -- the structured transaction logs.
+The other 80-90% -- emails, documents, conversations, contracts -- remains invisible.
+
+Celonis built their empire on that 10-20%.
+
+=== The New Disruption
+
+LLMs flip the equation.
+
+They can understand business processes from documentation.
+They can analyze conversations.
+They can synthesize information across unstructured sources.
+And increasingly, they can *execute* processes directly rather than just mapping them.
+
+The disruption mechanism isn't that LLMs do process mining better.
+It's that they may render extensive "discovery" phases *unnecessary* by going directly from understanding to action.
+
+=== The Defense
+
+Celonis CEO Alexander Rinke's response: *"No AI without PI"* -- arguing that generic LLMs produce "plausible-sounding but ultimately unhelpful responses" because they lack business context.
+
+At Celosphere 2024, he demonstrated ChatGPT producing nonsense when asked about "excess stock levels in HR."
+The point: AI without process context creates rubbish.
+
+Smart positioning. And partially true.
+
+But here's what the positioning misses:
+
+=== The Lava Beneath
+
+*Challenge #1: The 60-80% bottleneck.*
+
+Process mining projects spend 60-80% of effort on data preparation -- locating, extracting, transforming data before analysis begins.
+Implementation cycles run 12-24 months for enterprise deployments.
+
+If LLMs can read system documentation, infer data models, and generate the Case ID / Activity / Timestamp mappings automatically -- that bottleneck collapses.
+Celonis's connector moat becomes less valuable.
+
+*Challenge #2: The "unique" claim weakens.*
+
+Celonis claims their Process Intelligence Graph is unique -- "you cannot get it just from your systems, other vendors don't offer it, and LLMs cannot infer it."
+
+Each claim is eroding:
+
+- SAP Signavio has 5,000+ best practice templates
+- Microsoft, UiPath, ServiceNow all adding integrated process + task mining
+- Van der Aalst's own research group shows LLMs achieving 7.5/10 on complex process mining tasks
+
+*Challenge #3: The paradigm shift from analysis to execution.*
+
+[cols="1,1"]
+|===
+|Process Mining Value Chain |Agentic AI Value Chain
+
+|Analyze -> Discover -> Model -> Optimize -> (Human implements)
+|Understand -> Execute -> Iterate -> Improve
+|===
+
+Enterprises want outcomes, not insights.
+If AI agents can execute processes correctly from the start -- understanding business context from multiple sources and acting immediately -- the expensive discovery phase becomes less necessary.
+
+=== The Timeline
+
+3-5 years according to analyst consensus.
+But incremental pressure is visible now.
+
+Gartner predicts 33% of enterprise software will include agentic AI by 2028.
+The Forrester Wave has already repositioned from "Process Mining" to "Process Intelligence Software" -- acknowledging the category is evolving beyond pure discovery.
+
+=== The Lesson
+
+Celonis isn't failing.
+They've made smart defensive moves -- PI Graph, AgentC platform, object-centric mining.
+They're positioning process intelligence as the essential context layer AI agents need.
+
+But they're defending the 10-20% while LLMs eat the 80-90%.
+They're optimizing discovery while the market shifts to execution.
+They're building better maps while others build self-driving cars.
+
+The question isn't whether Celonis survives.
+The question is whether "process mining" as a category survives -- or whether it becomes a feature absorbed into broader AI platforms.
+
+*This is the nature of prime mover shifts.*
+
+The steam engine company doesn't see the internal combustion engine coming.
+The mainframe company doesn't see the PC.
+The process mining company may not see that the entire "discovery" paradigm is what's being disrupted.
+
+=== For the Reader
+
+If you're in an enterprise evaluating process intelligence:
+
+Ask not "which process mining vendor?" but "do I need process mining at all?"
+
+Maybe you do.
+Maybe the 12-24 month discovery phase is worth it for your complexity.
+
+Or maybe an LLM that reads your documentation, analyzes your emails, and executes directly gets you 80% of the value in 8% of the time.
+
+The honest answer: I don't know which path wins.
+
+But I know that standing on solid ground without seeing the lava beneath is how empires fall.
+
+=== What is the Solid Ground?
+
+Remember what I started this analysis with in {ai-stages-url}[2023,window=_blank]? The Emerging Business Identities and Domains.
+Augmented Thinkers -- workers that were not there before.
+I built the phases of AI Adoption around changes in business due to human augmentation.
+We're business. And tools that operate directly on us to change us, also change the way we do business.
+
+Now consider: what if the top customer -- say Pfizer -- happily saving money applying process analytics to *_their legacy processes_* -- decides to also attack from the other direction?
+
+Apply AI-Augmented workers directly to process design and improvement in-place.
+Analytics done or not -- irrelevant.
+
+And it's not "will." It "has."
+
+This shifts the paradigm of business. Which shifts the culture. Which shifts the paradigm again.
+This is the "lava" I was talking about. The visible plateau looks solid. But the island is floating.
+
+=== The Doomed Mindset
+
+The mindset of "the new tech is a competitor, and a weak enemy" is doomed from the start.
+
+This is not a competitor.
+This is a category shift.
+You cannot defend process mining against something that makes process mining optional.
+
+Lift-and-drop will not work.
+You cannot take your existing business model and move it to the new reality.
+The new reality doesn't need your existing business model.
+
+=== The Correct Move
+
+The only remaining option is to look broader.
+Far enough to see the floating island.
+And move laterally.
+
+I argue that in this case hedging alone is not enough.
+The viable move is aggressive expansion into the preemptive category.
+
+Not "process mining enhanced with AI."
+Not "AI that needs process mining."
+
+Something else entirely.
+
+And the gate is wide-open.
+
+The question for the leaders at Celonis -- and every enterprise software company watching this unfold -- is whether they see it.
+
+Or whether they keep optimizing the plateau while the island floats away.
 
 == Case Study: Generational Shift on Tectonic Shifts
 
