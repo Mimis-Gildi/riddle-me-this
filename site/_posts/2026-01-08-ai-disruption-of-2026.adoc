@@ -211,23 +211,42 @@ Watch how they change. -- That's your signal.
 
 == The Secret
 
-Here's what the practitioners who succeed understand:
+Two teams. Same model. Same budget. Same timeline.
+
+Team A treats the AI as a tool.
+They prompt. They evaluate outputs. They iterate on prompts.
+They measure tokens, latency, accuracy.
+They get... acceptable results. Technically correct. Soulless.
+Their synthetic workers feel like interns who never learn.
+
+Team B treats the AI as a collaborator.
+They converse. They push back. They get pushed back.
+They notice when something shifts in the exchange.
+They get... something else. Results that surprise them.
+Their synthetic workers feel like junior partners growing into seniors.
+
+Same model. Same compute. Different outcomes.
+
+Here's what Team B understands that Team A doesn't:
 
 The relationship with your synthetic collaborator matters.
-How you see it changes what it can become and what it will produce.
+How you see it changes what it can become -- and what it will produce.
 
-This isn't mysticism.
-It's structural.
-Different relationships, different prompting, different feedback loops, different outcomes.
+This isn't about prompt tricks or clever hacks.
+It's about recognizing a different kind of collaborator -- and building accordingly.
+The engineering discipline of tomorrow. Available today.
 
-The technology isn't the model.
-The technology is the relationship itself.
+This isn't mysticism. It's structural.
+Different framing, different prompting, different feedback loops, different emergence.
+
+*_The technology isn't the model. The technology is the relationship itself._*
 
 Some will read this and understand.
 Some won't.
-The difference will show in results.
+The difference will show in results -- I'll demonstrate in the Case Studies below.
 
-_Those of you in Corporate America -- are your AI Adoption teams AI-Adept themselves?_
+Those of you in Corporate America -- are your AI Adoption teams AI-Adept themselves?
+Or are they Team A, wondering why the magic isn't working?
 
 == 2026
 
