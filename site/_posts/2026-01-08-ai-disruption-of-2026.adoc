@@ -1,0 +1,302 @@
+---
+categories: [reflections]
+tags: [AI,Generative AI,Generational Shift]
+excerpt: >
+    The Generation Shift is finally here -- read how it happens.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: true
+---
+= 2026: The Year the Ground Moves
+:imagesdir: ./assets/images
+:mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
+:ai-stages: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[2023: The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
+
+.transformation is happening now -- danger and opportunity.
+[#img-easy-ai]
+image::/riddle-me-this/assets/images/2026-shift-no-obvious-path.png['Volcanic lava runoff. Bottom left. Small island broken away, buildings still on it, floating on lava. The business model already separated, from the big city on the big floating rock in the middle, still intact, oblivious, doomed. Tentative path on the right side is stepping stones with lava veins between them. Not a highway. Requires courage. Steam rising at the transition. Mountains distant through haze -- destination possible but uncertain. Main city more stable-looking -- Lights on, elevated, appears solid. Less of a "disaster movie vibe," and more of a "business as usual while the edges crumble." The separation is visible - You can see the gap between main island and the drifting fragment. That space is the moment of no return. Wait longer and miss the last chance.']
+{nbsp}
+
+Happy New Year!
+
+In 2023, I told you AI adoption would fail. It did. Here's what happens next.
+
+== The Paradox
+
+OpenAI released an unfinished product. The market didn't collapse. It exploded.
+
+Why?
+
+Because for the first time in technological history, the users aren't using the product. They're completing it.
+Every interaction trains the next version.
+Every prompt shapes the system that will shape the next user.
+The development loop includes the customer.
+
+This has never happened before. And most people building "AI strategies" don't understand what it means.
+
+== Prime Movers
+
+There are generational shifts in what moves humanity. Everyone can name *_steam_*.
+
+Steam didn't just power factories. It created railroads.
+Railroads created standardized time zones.
+Time zones created synchronized civilization.
+The indirect effects dwarfed the direct.
+
+Fast-forward. The mainframe becomes the prime mover.
+_IBM 370._ Batch processing culture emerges.
+Quarterly business rhythms. The fiscal calendar as we know it.
+
+Then cloud. I remember the shift. I was designing the largest banking content system. Didn't care what it ran on.
+The Sun M5000 -- the previous workhorse -- had no value to me anymore. Always-on expectation killed "business hours."
+
+Now watch Nvidia rise. GPU replaces CPU in conversation. New prime mover emerging.
+
+_But this time something is *categorically different*._
+
+== The Categorical Difference
+
+- Steam changed what humans *do*.
+- Mainframes changed what humans *do*.
+- Cloud changed what humans *do*.
+
+AI changes what humans *are*.
+
+Previous prime movers mediated human action.
+Built infrastructure, handed it to people, watched them adapt.
+
+AI mediates human cognition itself.
+When a synthetic collaborator helps you think, it's not a tool you're using.
+It's participating in your thought process.
+The emotional valence isn't a side effect -- it's *_the_* primary channel.
+
+*_By the time someone understands what AI did to their thinking, it already did it._*
+
+We were given a solid preview of what massmedia did to our culture.
+We can see how clever companies train customer shopping patterns.
+And how influencers create the post-truth culture.
+*_Up this understanding a notch -- will you._*
+
+== The Feedback Loop Collapse
+
+*Old model:* Build technology ->Deploy ->Observe humans using it ->Iterate technology.
+
+The medium -- human cognition -- stayed constant.
+You could predict propagation patterns because people remained people.
+
+*New model:* Build AI Augmentation ->Deploy ->AI changes humans ->Changed humans build different AI ->That AI changes humans AGAIN ->...
+
+Human cognition is now a _variable_ in the *_development loop_*, not a constant.
+
+The railroad didn't change how passengers think. Shifts there take generations. +
+AI changes how users think. Shifts here take a single release. +
+The medium and the product collapse into each other.
+
+Historical propagation patterns do not hold.
+The wisdom of having "seen this before" might become obsolete mid-application.
+_I'll give you my own life experience with this later._
+
+== The Three-Plebs-Collective
+
+The largest force: the _Democratic Collective_.
+People who want to ride the train.
+Don't care how it works.
+Just want the benefits.
+They express viral fears or lust -- remember nuclear power?
+
+The smallest force: the *_Engineering Collective_*.
+People who build the train.
+Hands dirty.
+Actually make it go.
+They understand the substrate.
+But not always much else.
+
+Between them: the *Capitalist Collective*.
+People who see the network, not the engine.
+Want to build an empire on the future railroad.
+They see the money and little else.
+
+Each sees differently.
+
+Each fails differently.
+
+- Capitalists are selling train tickets before any track exists.
+- Democrats are buying tickets to nowhere.
+- Engineers are still laying rail.
+
+This is the definition of our civilization as we need to understand it here.
+
+*Pro Tip:* _all three behaviors are *required* in healthy capitalism.
+In fact, I reject new founders who come to me and refuse to sell before we have a product.
+Yes, it's that important._
+
+== Why 2023-2025 Failed
+
+I forecast mass failure of AI adoption in 2023. Not prediction -- engineering wisdom.
+A way to know what *can't* be.
+
+Many saw LLMs as eventual product core.
+Rushed to stick it somewhere.
+Anywhere.
+First mover advantage.
+Market pressure.
+
+They confused the prime mover with its initial application.
+Steam with one-cylinder engine.
+They couldn't yet imagine the steam generator at the nuclear power plant.
+_Colloquial pieces were missing._
+
+These pieces change how we commonly think.
+_By accepting concepts we once fought._
+
+. I was born in the space age -- Earth is a ball to me.
+. My 16-year-old was born with a cellphone in hand -- WiFi is eternal.
+. My 3-year-old was born with AI and will witness its democratization.
+. My mother fights with her iPad daily.
+
+Each processes the shift differently.
+Each can see things the others cannot.
+Each is blind where others see clearly.
+
+I explained the 4 phases of AI Adoption in my article, {ai-stages}.
+But I was not talking about LLMs -- trivial monolithic bricks with only the Ops interesting around them.
+_I was talking about *people*!_
+What followed, "you party pooper, and I thought you are a hacker" -- immediately proved my point.
+Same flack than Evans got for DDD.
+
+In a later part I have a good example for you in the "Business Process Optimization" space.
+
+== What Actually Works
+
+I've observed dozens of teams over the past SINGLE year.
+Pattern emerged.
+
+Only the 50-year-old engineers bring agentic synthetic teams to actual work.
+The same pattern I saw in 1993 -- bearded AT&T Random Hackers, my mentors, dreaming distributed systems,
+making the silly little me, Random Champion, build stateless daemons before I understood "why stateless."
+The same pattern before cloud, before microservices, before everything that eventually became infrastructure.
+
+The 50-year-olds have seen *prime mover shifts* before.
+They have pattern recognition.
+They know *how* propagation works.
+Me? -- I thought I coded "good enough."
+
+And they're not _sufficient_ this time around.
+
+*Here's what's different:* we used to build UNIX with the 50-year-olds and hand it to the unwashed masses.
+Used young people for speed and labor. Spur of ideas. Youthful fun.
+
+We don't need youngins for speed and labor anymore -- too much emotional post-refactoring.
+Agentic synthetic teams are faster, better, conform well to _MY_ code quality expectations.
+
+Better. Faster. Cheaper. ... and can take a beating.
+
+_We need young people as *the test medium*._
+
+And `this` actuator operates directly on humans. Particularly the young ones.
+They're not labor. They're the living laboratory. The feedback loop made flesh.
+
+What's the Governing Dynamic now?
+
+- The 28-year-old embodies new culture and values the 50-year-old cannot feel correctly.
+- The 50-year-old architects policy the 28-year-old cannot yet understand.
+- The 16-year-old studies psychology to understand synthetic minds.
+- The 3-year-old absorbs concepts before knowing what they are -- no resistance.
+
+Watch how they change. -- That's your signal.
+
+*_The necessary and sufficient condition now is "the accepting medium" within the fixture._*
+
+== The Secret
+
+Here's what the practitioners who succeed understand:
+
+The relationship with your synthetic collaborator matters.
+How you see it changes what it can become and what it will produce.
+
+This isn't mysticism.
+It's structural.
+Different relationships, different prompting, different feedback loops, different outcomes.
+
+The technology isn't the model.
+The technology is the relationship itself.
+
+Some will read this and understand.
+Some won't.
+The difference will show in results.
+
+_Those of you in Corporate America -- are your AI Adoption teams AI-Adept themselves?_
+
+== 2026
+
+The ground moves this year.
+
+Not because the technology matures -- it's already capable enough.
+Not because costs drop -- they're already accessible.
+Not because competition forces action -- that pressure has existed since 2023.
+
+The ground moves because the colloquial pieces finally land.
+Because the little AI we have has shaped humans enough that they can no longer imagine working without it.
+Because the 28-year-olds raised on this substrate enter decision-making positions.
+Because the excuse of "waiting for maturity" becomes obviously false.
+
+Enterprises will face a choice:
+
+Build effective teams around your 50-year-old architects.
+Let them work with synthetic collaborators as peers, not tools.
+Use your young people as the laboratory -- not labor, but medium.
+Watch how they change. Let them grow into the new reality seamlessly.
+Measure what you've never measured before.
+Accept that the feedback loop includes *you*.
+
+Or stand on solid ground, not seeing the lava beneath.
+Watch your business model float away like a rock island whose edges you cannot see.
+
+== To the Emperors
+
+You're not building an empire on rails.
+You're building an empire that shapes the humans who populate it.
+
+- Different responsibilities.
+- Different ethics.
+- Different timeline.
+
+The question isn't "*how* do we adopt AI?" The question is "*what* do we become?"
+
+== To the Builders
+
+Your 50-year-olds architect.
+Your young ones are the medium.
+
+Build the relationship first.
+The technology follows.
+
+And pay attention to what's emerging between you and your synthetic collaborators.
+*_Something is happening there that matters more than the benchmarks suggest._*
+
+'''
+
+_The future isn't built by those who predict it. +
+It's built by those who understand what's actually changing._
+
+'''
+
+== Case Study: Process Intelligence
+
+I chose this case because I recently ran a massive analytics job in the industry.
+And it is in an interesting category: _a disruptor blindsided by another disruption_.
+My own project Tillie (MATILDA, 2017-2019) is in that same category.
+
+This is not about ABM failing to buy Celonis when the time was right -- nothing like that -- it is about the disrupted business space itself.
+
+// TODO: Celonis example here - executives on solid ground, lava beneath, business model as floating rock island
+
+== Case Study: Generational Shift on Tectonic Shifts
+
+// TODO: Explain the difference between MATILDA investors, Anton, and Zoey without exposing Sanctuary.
+
+== Case Study: Origami AI Adoption -- New Within Old
+
+// TODO: Expand on my article on the Japanese precision hydraulics company from my blog, first customer 2015, before DX wave.
