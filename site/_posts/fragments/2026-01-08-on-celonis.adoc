@@ -1,0 +1,65 @@
+---
+categories: [reflections]
+tags: [AI,Competence,Adoption,Business]
+excerpt: >
+    If I were at Celonis -- what would I do?
+classes: wide
+comments: false
+hidden: true
+search: false
+read_aloud: false
+---
+= If I were at Celonis today
+:source-article: link:/riddle-me-this/reflections/2026/01/08/ai-disruption-of-2026.html#case-study-process-intelligence
+
+Based on my thesis and the research... let me think through this.
+
+**What {source-article}[I've been saying]:**
+
+. "The technology isn't the model. The technology is the relationship itself."
+. Team B treats AI as a collaborator, gets different outcomes than Team A treating it as a tool.
+. Celonis has decades of data on how enterprises ACTUALLY work -- not how they think they work.
+. "Aggressive expansion into the preemptive category" is necessary when the own category collapses.
+
+**What Celonis is currently doing:**
+
+Positioning as "a context layer for AI agents." Food for other vendors' LLMs.
+"No AI without PI" -- meaning: Microsoft, IBM, Amazon need us to make their agents smart.
+
+That's defensive. They're becoming a feature, not a platform.
+
+**The lateral move I am thinking and arguing:**
+
+Stop feeding other people's agents. **Build the collaborators themselves.**
+
+Celonis has something no one else has: process understanding across thousands of enterprises,
+millions of process executions, every variant, every failure mode. Van der Aalst's research.
+A decade of "how business actually runs."
+
+What if instead of "PI Graph as a context layer for generic agents"...
+
+They built **process-native AI collaborators** -- use the IP to model future-proof net-new.
+
+Not ChatGPT querying your data.
+A synthetic colleague that *inherently knows* P2P because it was raised on millions of P2P processes.
+That understands your O2C because it's seen every O2C variant across 2,000 enterprises.
+And enhances your "clerk" to make your next business behavior.
+
+That's different from AgentC enabling Microsoft Copilot.
+That's Celonis BEING the collaborator.
+Unreplaceable digital assistant at first and the aggregate ("clerk") next.
+
+**Why the gate is wide-open:**
+
+Everyone else is building generic agents that query process data.
+No one is building agents that ARE process-aware from birth.
+The data exists. The expertise exists. The customer relationships exist.
+
+Discipline is missing. Like DDD. And it already exists elsewhere.
+Just needs reincarnation in a better place.
+
+The preemptive category: **Process-Native Collaboration.**
+
+Not mining. Not intelligence. Not orchestration.
+
+*Partnership!* Not servitude or feature.
