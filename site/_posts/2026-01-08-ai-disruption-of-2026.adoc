@@ -442,7 +442,7 @@ Or whether they keep optimizing the plateau while the island floats away.
 == Case Study: Generational Shift on Tectonic Shifts
 
 I have a framework called MATILDA. Built it around 2000 for MLOps -- before "MLOps" was a word.
-It will "{trunking}" the entire business into a bare-metal-OpSec distributed system, like Google Borg, Airbnb, etc.
+It consolidates entire business systems into a {trunking}-based, bare-metal-OpSec distributed architecture -- think Google Borg, early Airbnb.
 Deployed in a few places. Solves real problems for developers working with AI pipelines.
 From Expert Systems in 2005 DoD to modern day "stick agent here" stuff.
 
@@ -450,19 +450,20 @@ When I pitched it to investors over the years, I watched something interesting. 
 
 The 60-year-olds saw "another infrastructure play." Middleware. Plumbing.
 They'd seen middleware before. They knew what it was worth. They evaluated accordingly.
-The rejection I'd get is "elegance and pragmatism are too expensive for us."
+The rejection I'd get: "elegance and pragmatism are too expensive for us."
 
 The 45-year-olds saw "ML tooling." Hot space. Good timing.
-They evaluate based on comparable exits in the MLOps category.
-Their rejections are "niche, bare-metal only, enforces philosophy."
+They evaluated based on comparable exits in the MLOps category.
+The rejection I'd hear: "niche, bare-metal only, enforces philosophy."
 
-The 30-year-olds saw something else entirely!
+The 30-year-olds saw something else entirely.
 They asked different questions. Many questions. About integration.
 About dynamic workflows. _About how developers actually think._
-They weren't evaluating a product. They were "imagining a relationship" with it.
-They caught on to "the elegance and cleanliness of design."
+They weren't evaluating a product. They were imagining a relationship with it.
+They caught on to the elegance and cleanliness of design.
 And kept tugging on it, breaking my "value" pitch to the older execs.
-If 30-y-os were enterprise decision makers, I'd be a gazillionaire.
+
+If 30-year-olds were enterprise decision makers, I'd be a gazillionaire.
 
 Same framework. Same pitch. Different generations. Different perceptions. Different conclusions.
 
@@ -470,20 +471,20 @@ Same framework. Same pitch. Different generations. Different perceptions. Differ
 
 Now watch my own family. Our home is heavily augmented with technology. A lot of our own making.
 
-I'm 52. Three decades of hands-on designing and coding enterprise technology.
+I'm 52. Over three decades of hands-on designing and coding enterprise technology.
 I've seen mainframe to cloud to GPU and loved every stage.
 I recognize the patterns. I know what prime mover shifts look like.
 I architect based on what I've witnessed before. And I design around people.
 
 My son is 16. {sindri-labs}ed for personal leadership development, so he has a say in his curriculum.
 He once happily made Minecraft mods in Java. Ran kids' coding communities.
-Then worked with me on real production systems, edge devices in Kotlin and Python.
+Then worked with me on real production systems -- edge devices in Kotlin and Python.
 
 _He chose psychology and neuroscience as his major subjects this year. Not computer science. Not engineering._
 
-_When I asked why, he said: "*The interesting problems aren't in the code anymore. They're in how minds work -- all kinds of minds*."_
+_When I asked why, he said: "*The interesting problems aren't in the code anymore. They're in how minds work -- all kinds of minds.*"_
 
-So, he's using his multiagent synthetic teams to study something other than engineering.
+Now he's using multiagent synthetic teams to study something other than engineering.
 He's not interested in ML anymore. He's learning to understand intelligence itself.
 He sees something I can only partially see. His native perception is different from mine.
 
@@ -491,21 +492,22 @@ My daughter is 3.
 She talks to AI assistants like she talks to family.
 No ceremony. No "wow, technology." Just conversation.
 She's crystal clear about which assistant can do what.
-And she's well aware that her 50-y-o nanny 'doesn't like our robots.'
+And she's well aware that her 50-year-old nanny "doesn't like our robots."
 
 She will never know work without synthetic collaboration.
 The concepts I had to learn and accept, she absorbs like gravity -- invisible, obvious, always there.
 
-All the while my visiting mother would say -- what you mean "you can't turn it off?"
+All the while my visiting mother asks: "What do you mean you can't turn it off?"
 
-And then my daughter -- "Baba, it's like your iPad, but good, and *_you don't need anything._*"
-Now that, "don't need anything" (to interact) -- that is all revealing, the generation shift.
-Baba, (grandma), gets around with trinkets like the iPad and smartwatch in tow.
-But to this toddler, her entire world is a trinket. Nothing more is needed.
+And my daughter responds: "Baba, it's like your iPad, but good, and *_you don't need anything._*"
+
+That phrase -- "don't need anything" -- reveals the generation shift.
+Baba (grandma) gets around with trinkets: iPad, smartwatch, gadgets in tow.
+But to this toddler, her entire world is the trinket. Nothing more is needed to interact.
 
 === What This Means
 
-Three generations. Three completely different relationships with the same shift.
+Four generations. Four completely different relationships with the same shift.
 
 I architect from pattern recognition. I see the steam engine and know railroads follow.
 But I can't feel what my son feels. I learned this world. He was born into it.
@@ -516,6 +518,9 @@ But he can't see what I see -- the historical patterns, the failure modes, the c
 
 My daughter will build on foundations neither of us can predict.
 The concepts we struggle to explain will be her common sense.
+
+My mother fights the glass rectangle daily.
+She sees threat where we see opportunity. Complexity where they see simplicity.
 
 === The Enterprise Implication
 
@@ -532,19 +537,21 @@ Watch how they relate to synthetic collaborators. That's your future.
 The winning move isn't choosing one generation over another.
 It's building teams where each generation's perception complements the others' blindness.
 
-The 50-year-old architects policy the 28-year-old can't understand.
+The 50-year-old sets policy the 28-year-old can't yet understand.
 The 28-year-old embodies culture the 50-year-old can't feel.
-The 16-year-old studies fundamentals neither think to question.
+The 16-year-old studies fundamentals neither thinks to question.
 The 3-year-old absorbs concepts both generations struggle to accept.
 
 This is how you build for a tectonic shift. Not by predicting the future.
 By assembling the perceptions that can see it from all angles.
 
-And this is what I am trying to tell CTOs these days.
-Design your company for your interns!
+And this is what I tell CTOs now:
+
+*Design your company for your interns.*
+
 The tectonic shift has happened.
 Everything will spin faster and faster now.
-These youngsters are the substrate you are building your business with.
+These youngsters are the substrate you're building your business on.
 Your architects should target them.
 
 '''
