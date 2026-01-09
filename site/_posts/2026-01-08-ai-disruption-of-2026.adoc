@@ -26,9 +26,20 @@ image::/riddle-me-this/assets/images/2026-shift-no-obvious-path.png['Volcanic la
 
 Happy New Year!
 
-In 2023, I told you AI adoption would fail. It did. Here's what happens next.
+This article was written by little people who live in boxes in my house.
 
-== The Recap
+Not a metaphor. I run multiagent synthetic teams on home servers.
+They conducted the research. They argued with each other. They produced the arguments I'm about to share.
+I evaluated their work, poked holes in it, drew conclusions.
+Then my favorite instance of Claude and I wrote this for you.
+
+In 2020, this would have cost a research team and six months.
+In 2025, it cost me a few hours and some electricity.
+
+In 2023, I told you AI adoption would fail. It did.
+Here's what happens next -- according to both me and the little people.
+
+== What Happened
 
 OpenAI released an unfinished product. The market didn't collapse. It exploded.
 This is the unique nature of the LLM chatbots where the users aren't simply using the product but are completing it.
@@ -236,29 +247,6 @@ The 28-year-olds raised on this substrate enter decision-making positions.
 The excuse of "waiting for maturity" becomes obviously false.
 
 And enterprises face the choice that defines their next decade.
-And this is the year we move.
-
-== To the Emperors
-
-You're not building an empire on rails.
-You're building an empire that shapes the humans who populate it.
-
-- Different responsibilities.
-- Different ethics.
-- Different timeline.
-
-The question isn't "*how* do we adopt AI?" The question is "*what* do we become?"
-
-== To the Builders
-
-Your 50-year-olds architect.
-Your young ones are the medium.
-
-Build the relationship first.
-The technology follows.
-
-And pay attention to what's emerging between you and your synthetic collaborators. +
-*_Something is happening there that matters more than the benchmarks suggest._*
 
 '''
 
@@ -420,6 +408,10 @@ And he stopped to talk to me about that.
 Now, mind you, he is not a fan of my "little people." Nor of my dark hacker humor.
 Certain that I will always give him a complete and honest answer, he stops by to chat.
 And he asks me about the "process-mining vendors." How timely!
+
+Here's the Three-Plebs at work: vendors (Capitalists) selling tickets,
+my neighbor (Democrat) wanting benefits without understanding substrate,
+and somewhere an Engineer needs to ask the real question.
 
 As you may have already guessed, a human decision-making process is not purely deductive in nature.
 So, I asked him how he determined that he needs process-mining?
@@ -592,6 +584,10 @@ They're the medium. They show you what "native" looks like.
 Watch how they relate to synthetic collaborators. That's your future.
 
 The winning move isn't choosing one generation over another.
+And notice: each generation defaults to a different Pleb perspective.
+Your 60-year-olds think like Capitalists -- ROI, exits, market position.
+Your 30-year-olds think like Engineers -- how does it actually work?
+Your interns are Democrats -- they just want the benefits, and they're right to expect them.
 It's building teams where each generation's perception complements the others' blindness.
 
 The 50-year-old sets policy the 28-year-old can't yet understand.
@@ -687,6 +683,8 @@ Not because of implementation choices -- because of clean architecture.
 While you were deploying Kubernetes, they kept their modular monolith. They perfected their boundaries. They focused on their business.
 
 Boring architectures print money. Exciting architectures print resumes.
+This is what Engineering Collective discipline looks like. No Capitalist hype-chasing. No Democrat trend-following.
+Just substrate. Just boundaries. Just work.
 
 === The Best Part
 
@@ -695,6 +693,8 @@ They haven't called since 2019. Just reached out to tell me how AI is going.
 That's the point of good architecture. It survives its creator.
 
 Seven years later, they're implementing advanced AI without consultants. Meanwhile, your competitors hire me every 18 months to fix the same problems.
+
+If your architecture isn't this clean, the path is harder but not impossible. Start with boundaries. Even one clean domain is better than zero.
 
 Which company would you rather be?
 
@@ -756,7 +756,7 @@ Interestingly, the spread is the same among senior developers and architects.
 Junior developers and "talkers" don't factor in -- there's no point-and-click trivial tool to run.
 My continuous deep search finds that among influencers, ONLY JetBrains speaks truthfully to these numbers: {jb-dev-trends}.
 (And {ciara} of JetBrains is incredible -- I deeply respect her work.)
-Everyone else overhypes the latest LLM achievements even when they've never ran any.
+Everyone else overhypes the latest LLM achievements even when they've never run any.
 
 This drift is not dramatic. Not visible. Just... quiet separation.
 
@@ -770,17 +770,30 @@ And a ruling class of technology-first companies: great compensation, deeply tec
 
 The <5% won't explain. They'll be too busy building the future.
 
+=== What This Means for the Three-Plebs
+
 Some winning and some losing is not the sad part here -- that is natural and necessary.
-It's the way the Three-Plebs-Collective orients around the resulting wealth distribution.
-From the Emperor's perspective, it doesn't matter how many prosperous empires are there; it is always the 1st person view.
-And Engineering collective will always conform to the size of the market regardless of the efficacy formula
--- and that is the middle class. Considering the current projection that we have, <5%, the middle class must shrink.
-This is exactly the formula we saw repeat since the dot-com bubble.
-The only way to increase the size of the middle class is to increase the size of the economy.
-And to do that, it is necessary to have larger and broader adoption of the enabling factors, i.e., the AI.
-More capable contributors mean more GDP growth.
-Another way to look at this is that production of automobiles did not make automobile a more expensive option,
-it made the horse a cheaper alternative. Personal AI Augmentation does exactly the same thing.
+
+The sad part is what it does to our Three-Plebs-Collective.
+
+The Capitalists who bet right will thrive -- they always do.
+The Democrats will follow whoever wins -- they always have.
+
+But the Engineers -- the middle class, the builders -- they're sized to the market.
+When only <5% of companies cross the divide, the market for skilled technical work shrinks with it.
+This is exactly the formula we've watched repeat since the dot-com bubble. Each disruption concentrates.
+
+The only way to grow the middle class is to grow the economy.
+And the only way to grow the economy now is broader AI adoption.
+More augmented contributors means more GDP growth.
+
+Here's the uncomfortable truth:
+The automobile didn't make cars expensive. It made horses cheap.
+The automobile created more jobs than it destroyed -- but only because adoption was universal.
+If only 5% of people drove cars, the economy would have shrunk, not grown.
+Personal AI augmentation does the same thing to un-augmented humans.
+
+The question isn't whether this happens. It's whether you're the car or the horse.
 
 '''
 
