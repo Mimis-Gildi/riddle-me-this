@@ -128,6 +128,28 @@ The repository uses extensive GitHub Actions automation:
 - Extended AI Authoring with OpenCode (`AGENTS.md`) is excluded to not conflict with Claude Code.
 - Analytics AI Authoring with MATILDA is fully excluded.
 
+
+## Writing Style
+
+**When helping write blog content, read `site/CLAUDE.md` first.**
+
+Key characteristics:
+- Em-dashes everywhere for interjections and asides
+- Sentence fragments for punch ("Limited.", "Don't do that.")
+- Starts sentences with "And", "But", "Yet"
+- Rhetorical questions to challenge the reader
+- Personal anecdotes woven throughout
+- `*_bold italic_*` for key declarations
+- Punchy endings ("Choose accordingly.", "Use it!")
+- Direct, confrontational, technically grounded
+- States opinions plainly, includes "Full Disclosure" sections about biases
+
+Bad habits to watch for (especially when author is frustrated):
+- "don't waste your time" (dismissive)
+- Sarcasm leaking through ("Bummer, isn't it?")
+- Cocky closings ("You are welcome!")
+- Repeated phrases across sections
+
 ## License
 
 CC BY-NC-ND 4.0 (Creative Commons Attribution-NonCommercial-NoDerivatives)
