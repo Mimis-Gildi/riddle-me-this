@@ -1,0 +1,235 @@
+# rdd13r Writing Style Guide
+# For AI assistants and collaborators helping with blog content
+# Last updated: 2026-01-19
+
+voice:
+  summary: "A hacker talking to you over coffee, sometimes interrupting himself. Direct, confrontational, technically grounded, personally invested."
+
+  tone:
+    - "Conversational but not casual -- there's always substance"
+    - "Confrontational edge -- challenges the reader to think"
+    - "Personally invested -- shares real experiences, real opinions"
+    - "Technically credible -- uses proper terms, explains when needed"
+    - "Honest to a fault -- includes 'Full Disclosure' sections about biases"
+
+sentence_patterns:
+  fragments:
+    description: "Deliberate sentence fragments for emphasis and punch"
+    examples:
+      - "Not a metaphor."
+      - "Limited."
+      - "Better."
+      - "Just work."
+      - "Don't do that."
+      - "Hours."
+    usage: "End sections, emphasize points, create rhythm"
+
+  em_dashes:
+    description: "Em-dashes everywhere -- for interjections, asides, and pivots"
+    examples:
+      - "What I got was not constructive follow-up dialog -- like I get with most startup communities."
+      - "The same magic that deprecated one laggard -- is exactly what can save another!"
+      - "backed by full-featured Anthropic models -- not just for code"
+    usage: "Preferred over parentheses, commas, or colons for insertions"
+
+  rhetorical_questions:
+    description: "Questions that challenge or pivot the narrative"
+    examples:
+      - "See where I am going with this?"
+      - "What's your excuse?"
+      - "Why would they -- they're living it."
+      - "Instead? Fear."
+      - "What do you do with that?!"
+    usage: "Engage reader, transition between ideas, challenge assumptions"
+
+  sentence_starters:
+    description: "Frequently starts sentences with conjunctions"
+    patterns:
+      - "And" # Very common
+      - "But"
+      - "Yet"
+      - "So"
+      - "Or"
+    example: "And now he feels dread because he thinks he knows what's coming."
+
+  direct_address:
+    description: "Speaks directly to the reader"
+    patterns:
+      - "Let me give you..."
+      - "Let me explain..."
+      - "Here's what..."
+      - "Here's the thing:"
+      - "Now consider:"
+      - "Now watch..."
+    usage: "Creates intimacy, establishes authority"
+
+structure:
+  sections:
+    format: "AsciiDoc == headers for major topics"
+    naming: "Short, punchy section names: 'The Trap', 'The Magic', 'Go'"
+
+  paragraphs:
+    length: "Short. Often single sentences standing alone."
+    transitions: "Abrupt is fine. The reader can keep up."
+
+  lists:
+    style: "Bullet or numbered, with em-dash explanations"
+    example: |
+      * https://opencode.ai/[OpenCode] -- my daily driver. Fully open.
+      * https://replit.com[Replit] -- solid alternative.
+
+  endings:
+    description: "Punchy, often imperative or a pointed question"
+    examples:
+      - "Choose accordingly."
+      - "Use it!"
+      - "Which one are you standing on?"
+      - "Now *_that_* is fun."
+      - "The market won't wait for companies to figure this out twice."
+
+  horizontal_rules:
+    usage: "''' used to separate major thought blocks or before postscripts"
+
+emphasis:
+  bold_italic:
+    syntax: "*_text_*"
+    usage: "Key declarations, turning points"
+    examples:
+      - "*_changes everything_*"
+      - "*_that_* is fun"
+      - "*_Use it!_*"
+
+  bold:
+    syntax: "*text*"
+    usage: "Important terms, section emphasis"
+    examples:
+      - "*The secret:*"
+      - "*Here's the brutal math:*"
+
+  italic:
+    syntax: "_text_"
+    usage: "Titles, foreign phrases, subtle emphasis, internal thoughts"
+
+personal_elements:
+  anecdotes:
+    description: "Weaves in real people and situations"
+    examples:
+      - "My Qanon neighbor is a big shot in a personal wealth company IT..."
+      - "I see someone I'd once done solution architecture with post..."
+      - "This weekend I presented autonomous competing agent teams..."
+    usage: "Ground abstract points in concrete reality"
+
+  opinions:
+    description: "States opinions plainly, doesn't hedge"
+    examples:
+      - "I don't trust Google."
+      - "I am not a fan of Google. Or anyone for that matter. Except maybe JetBrains, a little."
+      - "Boring architectures print money. Exciting architectures print resumes."
+
+  disclosures:
+    description: "Full Disclosure sections about biases and limitations"
+    example: |
+      == Full Disclosure
+      I am not a fan of Google.
+      Or anyone for that matter.
+      ...
+      So consider my bias in my final advice.
+
+  self_reference:
+    patterns:
+      - "yours truly, `rdd13r`"
+      - "I personally have..."
+      - "Having decades of... to my name"
+
+informal_language:
+  contractions: "Always uses contractions (don't, won't, it's, they're)"
+  colloquialisms:
+    - "darn thing"
+    - "gotta"
+    - "thang" # rare, for effect
+    - "Hmmm..."
+    - "Bummer"
+  interjections:
+    - "Hmmm..."
+    - "Right?"
+    - "See?"
+
+technical_writing:
+  terms: "Uses proper technical terms without apology"
+  explanations: "Explains when necessary, but doesn't over-explain"
+  links: "Frequently links to own previous articles and external sources"
+  code_references: "Uses backticks for code/technical terms: `adoc`, `trunk`"
+
+bad_habits:
+  description: "Patterns that emerge when frustrated or rushed"
+
+  frustration_leakage:
+    description: "Negative mood bleeds into word choice"
+    examples:
+      - "don't waste your time" # dismissive
+      - "lame passive-resistant liar" # harsh
+      - "Bummer, isn't it?" # sarcastic
+      - "You are welcome!" # cocky when used as closing
+    fix: "Review for tone when not in positive headspace"
+
+  repetition:
+    description: "Same word or phrase appears multiple times"
+    examples:
+      - "'First' appearing twice in different sections"
+      - "'don't waste your time' repeated"
+    fix: "Search for repeated key phrases before publishing"
+
+  over_explaining:
+    description: "Sometimes belabors a point that's already made"
+    fix: "If you've said it clearly once, move on"
+
+  cockiness:
+    description: "Confidence can tip into arrogance"
+    examples:
+      - "You are welcome!" as a closing
+      - Implying readers should be grateful
+    fix: "End with insight or challenge, not self-congratulation"
+
+document_patterns:
+  front_matter:
+    required:
+      - categories
+      - tags
+      - excerpt
+    common:
+      - "classes: wide"
+      - "comments: true/false"
+      - "hidden: false"
+      - "search: true"
+      - "read_aloud: false/true"
+
+  variables:
+    description: "Defines AsciiDoc attributes for repeated links"
+    example: |
+      :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
+      :ai-stages-url: https://mimis-gildi.github.io/riddle-me-this/...
+
+  images:
+    pattern: "image::/riddle-me-this/assets/images/filename.png[alt text]"
+    captions: "Uses . prefix for figure captions"
+
+  postscripts:
+    description: "Often ends with P.S. or italicized afterthought"
+    example: |
+      '''
+      _P.S. So, this is a bit of *the last bus* scenario..._
+
+signatures:
+  phrases:
+    - "Choose accordingly."
+    - "Use it!"
+    - "The market won't wait."
+    - "Which one are you standing on?"
+    - "Know thyself!"
+    - "Just get the darn thing sorted."
+
+  patterns:
+    - "The question isn't X. It's Y."
+    - "Not because of X -- because of Y."
+    - "Same X. Different Y. Different Z."
+    - "This isn't X. It's Y."

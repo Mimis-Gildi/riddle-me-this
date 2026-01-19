@@ -256,3 +256,10 @@ out/
 
 # Ignore Gradle build output directory
 /workflows.csv
+
+### AI Authorship Exclusions
+.claude/*
+AGENTS.md
+matilda.yml
+.matilda/*
+

@@ -1,0 +1,155 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project Overview
+
+This is **Mímis Gildi** - a personal engineering blog publication system with a résumé. 
+It combines multi-format document generation (PDF, EPUB, HTML), automated static site publishing via Jekyll, 
+and comprehensive CI/CD automation for some basic efficiency.
+
+## Basic Concepts
+
+This is a `trunk`-based development model, where all development occurs on a single main branch (`main`), 
+and feature branches are merged into it. This approach simplifies collaboration and reduces merge conflicts.
+History is linear and so is versioning. All the GitHub Actions automation is geared to accomodate trunk.
+
+## Build Commands
+
+### Gradle (Primary Build System)
+
+```zsh
+./gradlew build                    # Full build
+./gradlew asciidoctorPdf           # Generate resume PDFs (4 themes)
+./gradlew verifyJavaToolchain      # Report Java toolchain info
+./gradlew dependencyUpdates        # Check for dependency updates
+```
+
+
+### Jekyll Site
+
+```zsh
+cd site
+bundle install                                    # Install Ruby dependencies
+JEKYLL_ENV=production bundle exec jekyll build    # Production build
+bundle exec jekyll serve                          # Local development server
+```
+
+
+### Shell Testing (ShellSpec)
+
+```zsh
+make shellspec-bootstrap                                            # One-time setup (or: bash src/test/sh/bootstrap-shellspec.sh)
+make shellspec-run                                                  # Run all shell tests (or: .local/bin/shellspec)
+.local/bin/shellspec src/test/sh/export-issues-for-saga_spec.sh     # Run single test file
+```
+
+## Architecture
+
+### Component Structure
+
+| Directory              | Purpose                                                                                         |
+|------------------------|-------------------------------------------------------------------------------------------------|
+| `resume/`              | AsciiDoc source files for 4 resume variants (OnCore, OnCreativity, OnEngineering, OnLeadership) |
+| `site/`                | Jekyll static site with blog posts, pages, and minimal-mistakes theme                           |
+| `src/main/sh/`         | Shell scripts for deployment, issue export, cleanup                                             |
+| `src/main/kotlin/`     | Kotlin bootstrap code                                                                           |
+| `src/test/sh/`         | ShellSpec test suites                                                                           |
+| `buildSrc/`            | Custom Gradle plugins (toolchain verification, dependency processing)                           |
+| `resources/themes/`    | Asciidoctor PDF themes (conservative, creative, technical, core)                                |
+| `resources/fragments/` | Reusable AsciiDoc document fragments                                                            |
+| `.github/workflows/`   | 16 CI/CD workflows                                                                              |
+| `.github/actions/`     | 15 custom composite GitHub Actions                                                              |
+|                        |                                                                                                 |
+
+
+### Tech Stack
+
+- **JVM**: Java 21 (Temurin), Kotlin 2.3.0, Gradle 9.3 (Kotlin DSL) -- demo applications; pending.
+- **Ruby**: Ruby 3.3.5 exact and locked, Jekyll 4.4.1 with `jekyll-asciidoc` -- blogsite live.
+- **Documents**: Asciidoctor 4.0.5 (generates PDF, EPUB, HTML) -- all documentation.
+- **Testing**: ShellSpec for shell scripts of pipeline enablement; native to ecosystem elsewhere. 
+- **Tooling**: SDK Manager (`.sdkmanrc`) for version management of some core tools.
+- **Tooling-Ruby**: `asdf` on certain agents but not all.
+- **Conda Forge**: for Python-based machine learning demo applications; pending.
+
+Note: Demo applications are maintained as long as the blog posts that reference or depend on those.
+
+
+### Document Generation Flow
+
+Single AsciiDoc source files in `resume/` are transformed via Asciidoctor into:
+
+- 4-themed PDF variants using `resources/themes/`
+- EPUB format for Mastodon domain (retiring).
+- HTML for web publishing, active.
+
+Common fragments are shared via `resources/fragments/`.
+
+
+### CI/CD Architecture
+
+The repository uses extensive GitHub Actions automation:
+
+- **Auto-versioning**: Feature branches trigger semantic version bumps based on issue labels.
+- **Self-hosted runners**: Configured with labels `jekyll` and `feature` for dedicated builds.
+- **Security scanning**: CodeQL, Codacy, Qodana JVM Community (primary), Snyk (deprecated).
+- **Deployment**: Jekyll site auto-publishes to GitHub Pages (default).
+
+
+## Code Quality Configuration
+
+- **Codacy** (`.codacy.yaml`): eslint-8, shellcheck, markdownlint, prettier, bandit, semgrep, detekt, pmd-7.
+- **Qodana** (`qodana.yaml`): JetBrains JVM Community analysis with `qodana.recommended` profile.
+- **ShellSpec** (`.shellspec`): Shell script testing framework; all dedicated runners' dependencies.
+
+
+## Key Configuration Files
+
+| File                        | Purpose                                     |
+|-----------------------------|---------------------------------------------|
+| `build.gradle.kts`          | Gradle build with Asciidoctor configuration |
+| `gradle/libs.versions.toml` | Version catalog for dependencies            |
+| `site/_config.yml`          | Jekyll site configuration                   |
+| `.sdkmanrc`                 | SDK Manager tool versions                   |
+| `codacy.yaml`               | Codacy configuration for code quality       |
+| `qodana.yaml`               | Qodana configuration for code quality       |
+| `.shellspec`                | ShellSpec configuration for testing         |
+| `.factor12`                 | Factor12 configuration for CI/CD runners    |
+
+
+## Content Conventions
+
+- All documentation uses AsciiDoc format (`.adoc` files).
+- Blog posts go in `site/_posts/` with front matter including categories and tags.
+- Site uses `minimal-mistakes` theme (remote theme configuration).
+- Custom Jekyll plugin at `site/_plugins/expand_nested_variable_filter.rb`.
+- Primary AI Authoring with Claude Code (`CLAUDE.md`) persisted since v3.24.0.
+- Extended AI Authoring with OpenCode (`AGENTS.md`) is excluded to not conflict with Claude Code.
+- Analytics AI Authoring with MATILDA is fully excluded.
+
+
+## Writing Style
+
+**When helping write blog content, read `site/CLAUDE.md` first.**
+
+Key characteristics:
+- Em-dashes everywhere for interjections and asides
+- Sentence fragments for punch ("Limited.", "Don't do that.")
+- Starts sentences with "And", "But", "Yet"
+- Rhetorical questions to challenge the reader
+- Personal anecdotes woven throughout
+- `*_bold italic_*` for key declarations
+- Punchy endings ("Choose accordingly.", "Use it!")
+- Direct, confrontational, technically grounded
+- States opinions plainly, includes "Full Disclosure" sections about biases
+
+Bad habits to watch for (especially when author is frustrated):
+- "don't waste your time" (dismissive)
+- Sarcasm leaking through ("Bummer, isn't it?")
+- Cocky closings ("You are welcome!")
+- Repeated phrases across sections
+
+## License
+
+CC BY-NC-ND 4.0 (Creative Commons Attribution-NonCommercial-NoDerivatives)

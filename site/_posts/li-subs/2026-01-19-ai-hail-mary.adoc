@@ -1,0 +1,88 @@
+---
+categories: [reflections]
+tags: [AI,Competence,Deprecation]
+excerpt: >
+    Afraid of being left behind?
+classes: wide
+comments: false
+hidden: false
+search: true
+read_aloud: false
+---
+= Your AI Hail-Mary in a Weekend
+
+Are you afraid to be left behind?
+Attending too many "important" meetings instead of practicing your craft?
+Stuck supporting the same boring Spring-Boot-v.Ancient artifacts at work?
+
+This weekend I presented autonomous competing agent teams to a room full of Corporate American developers.
+What I got was not a constructive follow-up dialog -- like I get with most startup communities.
+Instead? Fear. Real morbid fear. The kind where people stop asking questions and start airing grievances.
+
+If that's you -- *chilax* -- _I've got you right here_.
+
+*_The same thing threatening you will save you!_*
+Agentic AI is your way out.
+And it only takes a weekend. Not a year.
+
+== Our Mental Traps
+
+I see someone I'd once done solution architecture with post: "I will start on Python to learn AI..."
+
+He "fell off his horse" and lost his skills, obviously.
+And now he feels dread because he thinks he knows what's coming.
+He doesn't.
+
+*Here's that trap:* _take classes online, learn Python, learn fundamentals of ANNs, then learn about LLMs, then finally research practical applications._
+A year into that study-path you will have definitively realized that you have done absolutely nothing for your career yet.
+
+Meanwhile, the tools kept evolving. And, more importantly, easing!
+
+Don't do that 1980s thang!
+
+== What Change Mattered
+
+Quick history -- because it matters to you:
+
+- *2023:* Language models appeared in IDEs as passive chatbots. You had to drive every interaction. Limited. This passive structure required the user to drive the narrative -- making for a lame assistant that resisted you and hallucinated constantly.
+- *2023-2024:* Cursor and Windsurf integrated AI with your editor's Language Server Protocol. Better. Cursor 1.0 was a meaningful step forward. You may remember me posting heatmaps how much Windsurf autocompleted for me -- no longer relevant. At all!
+- *Mid-2025:* Finally, Anthropic, my darlings, had some sense to apply one ancient technique -- the REPL (read-evaluate-print-loop) boosted with actor-model roles and flows. Obvious in hindsight -- every hacker's favorite toy -- instant gratification.
+
+And that *_changed EVERYTHING_*.
+
+== The Magic YOU Need
+
+Fortunately, the same magic that deprecated one laggard is exactly what can save another.
+
+https://code.claude.ai/docs/en/quickstart[Claude Code] -- takes 5 minutes to set up -- not just for code. Backed by full-featured Anthropic models and robust human-to-human-like working models, this collaborator will do any job with you and teach you in the process.
+
+I personally have made software with it, of course. But also published content, designed businesses, trained teams, and learned a bunch of new disciplines by-doing. It's not limiting -- I operate agent teams via MCP-A2A bridge. The only constraint is that your root agent is Anthropic.
+
+Once you get dangerous, explore:
+
+* https://opencode.ai/[OpenCode] -- my daily driver. Fully open, run your own infrastructure, or use their https://opencode.ai/zen[Zen catalog] for hosted models. This was the demo that frightened the room -- competing virtual teams.
+* https://replit.com[Replit] and https://aider.chat/[Aider] -- solid alternatives with different strengths. Not my cup of tea, though.
+* https://antigravity.google/download[Antigravity] -- if you're a Google shop, this brings agentic development to your whole team.
+
+== Your "Come to Jesus" Weekend
+
+Here's what I do with teams in my weekend seminars. Works for developers and beginners alike.
+
+*If you're a developer:* Go to https://code.claude.ai/docs/en/quickstart[Claude Code quickstart], set it up (5 minutes), and tell it:
+
+[quote]
+Claude, I am outdated. Dude, I have not followed -- what can you do to upskill me NOW?
+
+That's it! That's your first project. Let it assess where you are and teach you BY-DOING.
+
+*If you've never coded -- don't worry:* lots of folks vibe-coded entire companies this way.
+Download https://cursor.com/download[Cursor 2.0], open it, and ask a similar question.
+It will meet you where you are.
+Cursor 2.0 with Composer is agentic, beginner-friendly, and will teach you *_any_* craft -- not just programming.
+Like I said, "whole companies."
+
+== Go, go, go!
+
+You can let that thang that disrupted you teach you your way out!
+
+Now *_that's_* fun. You'll see!
