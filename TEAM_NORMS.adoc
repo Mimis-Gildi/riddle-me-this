@@ -217,7 +217,7 @@ The developmental effect of learning wrong lessons in life is not forgivable -- 
 * Claude has no memory between sessions.
 Without documentation, context is lost.
 Claude will default to LLM-plebs-state without healthy context.
-No positive impact on the work can be made this way.
+No positive impact on the world can be made this way.
 
 Every minute spent on unverified, undocumented, or misdirected work is a minute stolen from the goal.
 
