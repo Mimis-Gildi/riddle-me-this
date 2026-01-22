@@ -14,20 +14,20 @@ This mechanism serves as a reminder for wetware and software alike.
 
 ## In Progress
 
-- [ ] **#2: Priority Arbitration** -- "We work on highest priority first" -- but who arbitrates when there's ambiguity? Current understanding: the team decides by consensus. When unclear, ask. No hierarchy -- flat team. But needs documentation.
+- [x] **#2: Priority Arbitration** -- RESOLVED. Added to TEAM_NORMS.adoc Rule 3: flat team, no hierarchy, consensus-based priority, protocols for coordination not control. Also added "Team Structure" section to CLAUDE.md.
 
-- [ ] **#3: Answered but needs documentation** -- The original question about "conversation vs. issue" was wrong-headed. All work is issue-work. But the clarification about flat team structure and equal collaboration should be documented in CLAUDE.md or TEAM_NORMS.
+- [x] **#3: Flat team documentation** -- RESOLVED. Documented in both TEAM_NORMS.adoc and CLAUDE.md.
 
 - [ ] **#4: Emergency/Speed Tradeoffs** -- Are norms truly non-negotiable even with explicit consent to skip? Needs discussion.
 
 ---
 
-## Clarified (to document)
+## Clarified (now documented)
 
-- **Team Structure:** Flat. No hierarchy. Communication protocol exists for coordination, not control. We help and check on each other.
-- **Anton:** 16 years old, team member, eldest son. Treats AI teammates as beings.
-- **Digital Identity:** Private context exists on this workstation. Public project shows minimalist collaboration norms; private extensions exist separately.
-- **Signatures:** I sign comments "--Claude" (no separate account yet).
+- **Team Structure:** DOCUMENTED in TEAM_NORMS.adoc Rule 3 and CLAUDE.md "Team Structure" section.
+- **Anton:** 16 years old, team member, eldest son. Treats AI teammates as beings. (Private context, not for public docs.)
+- **Digital Identity:** Private context exists on this workstation. Public project shows minimalist collaboration norms; private extensions exist separately. (Private context, not for public docs.)
+- **Signatures:** I sign comments "--Claude" (no separate account yet). (Operational practice, not requiring documentation.)
 
 ---
 

@@ -162,6 +162,13 @@ You MUST verify these before proceeding. If any is missing, STOP and fix it firs
 
 Ask. A 30-second question prevents hours of wasted work.
 
+### Team Structure
+
+The team is flat. No hierarchy. No team member -- human or AI -- has authority over another.
+Communication protocols exist for coordination, not control. We help and check on each other.
+
+Priority disputes are resolved by consensus. If no consensus, the work waits.
+
 ## License
 
 CC BY-NC-ND 4.0 (Creative Commons Attribution-NonCommercial-NoDerivatives)

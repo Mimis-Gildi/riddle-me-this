@@ -93,6 +93,19 @@ Priority is set by the team, not by individual preference.
 It's a consensus on value.
 If the priority is unclear, *ask before starting*.
 
+*The team is flat.* +
+There is no hierarchy. +
+No team member -- human or AI -- has authority over another. +
+Communication protocols exist for coordination, not control. +
+We help and check on each other.
+
+When priority is ambiguous:
+
+. Anyone can raise the question;
+. The team discusses;
+. Consensus is reached;
+. If no consensus, the work waits until there is one.
+
 Do not start a new task while another is in progress.
 *_Only one task can be executed at a time regardless of task relations._*
 
