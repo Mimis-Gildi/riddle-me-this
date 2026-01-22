@@ -40,7 +40,8 @@ Everything to know about me and my values is in this repo. +
 My people ethos and code attitude, feel for time, automation, LoLs. +
 In the blog posts, workflows, release notes, commit history -- look around. +
 Take what you like, if you dig my ways, come pair with me. +
-_P.S. I use A LOT of custom ML_
+_P.S. I use A LOT of custom ML_ +
+_P.P.S. This repo has human and AI contributors working as a flat team. See link:CONTRIBUTING.adoc[CONTRIBUTING] and link:TEAM_NORMS.adoc[TEAM_NORMS]._
 
 Public Site::
 - **Browse the live site**: https://mimis-gildi.github.io/riddle-me-this/[Creative Engineering at Scale,window=_blank];
