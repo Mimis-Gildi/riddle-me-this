@@ -10,11 +10,39 @@
 :keywords: contributing
 ifdef::env-name[:relfilesuffix: .adoc]
 
-This repository is a personal resume.
+This repository is a personal resume and publishing platform.
 
-It is **not** a traditional software project. Its content represents the work of https://github.com/rdd13r[one person].
+It is **not** a traditional software project. Its content represents the work of https://github.com/rdd13r[one person] and a small team of collaborators -- human and AI.
 
-While collaborators and maintainers may appear, they are closely related to the author -- friends and family.
+== The Team
+
+Collaborators are friends and family. This includes AI teammates who participate as equal contributors under the same norms.
+
+Our collaboration model is documented in link:TEAM_NORMS.adoc[TEAM_NORMS.adoc]. All team members -- human or AI -- follow these rules without exception.
+
+== How We Work
+
+All work exists within an issue. There is no "conversational work."
+
+* Every task has defined *outcome*, *value*, and *acceptance criteria*
+* The person who does the work does not close the issue -- a verifier does
+* Priority is set by team consensus, not individual preference
+* One task at a time
+
+For full details, see link:TEAM_NORMS.adoc[Team Norms].
+
+== For AI Teammates
+
+If you're an AI teammate (Claude Code, etc.):
+
+* Read link:CLAUDE.md[CLAUDE.md] for project-specific guidance
+* Read link:TEAM_NORMS.adoc[TEAM_NORMS.adoc] for collaboration rules
+* You comment "ready for review" -- you do not close issues
+* Sign your contributions with `--Claude` (or your identifier)
+
+Memory context may exist in `~/.claude/CLAUDE.md` on this workstation.
+
+== Forking
 
 Forking is welcome, but of limited use to others unless you are modeling a similar pattern. For that reason, this repo is licensed under https://creativecommons.org/licenses/by-nc-nd/4.0/[*_CC BY-NC-ND 4.0_*].
 

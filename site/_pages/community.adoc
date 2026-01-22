@@ -23,27 +23,28 @@ Our GitHub communities are more than repositories -- they're living ecosystems w
 
 == 🧙 {link-mimis-gildi}.
 
-serves as our central hub for personal projects, management tools, and hidden artifacts.
+Inner community that serves as our central hub for personal projects, management tools, and hidden artifacts.
 It's the backbone of our collaborative efforts and the home of this very site.
+This community own strategy and strategic assets.
 
 == 🧵 {link-mimis-scala}.
 
-was once our go-to for Scala-based explorations.
+It was once our go-to for Scala-based explorations.
 While Kotlin has taken the forefront, this space remains a testament to our journey through functional programming paradigms.
 
 == 🧰 {link-mimis-latlaeg}.
 
-offers practical resources tailored for organizations navigating digital transformation.
-It's a lifeline for those seeking guidance in adopting modern tech stacks like Spring Boot.
+A community that offers practical resources tailored for organizations navigating digital transformation.
+It's a lifeline for those seeking guidance in adopting modern tech stacks like Spring Boot with AI.
 
 == 🧠 {link-gervi-hera}.
 
-is Anton's educational playground.
+This is Captain's educational playground. He's home school is published here.
 Here, young minds delve into AI and machine learning, guided by curated learning trails and hands-on projects.
 
 == 🏙️ {link-gotham-village}.
 
-is our picturesque community for co-mentoring and shared growth.
+A founders' hub and our picturesque community for co-mentoring and shared growth.
 It's a space where seasoned developers and newcomers alike collaborate on diverse projects.
 
 '''

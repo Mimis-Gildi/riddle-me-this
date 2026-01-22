@@ -35,6 +35,7 @@ JEKYLL_ENV=production bundle exec jekyll build    # Production build
 bundle exec jekyll serve                          # Local development server
 ```
 
+Site is a subproject -- governance is in it: when working on Site the directory `site/` is the context root.
 
 ### Shell Testing (ShellSpec)
 
@@ -129,26 +130,79 @@ The repository uses extensive GitHub Actions automation:
 - Analytics AI Authoring with MATILDA is fully excluded.
 
 
+## Claude Code Memory Hierarchy
+
+Claude Code automatically loads memory files in this order (highest priority first):
+
+| Level | Location | Scope | Version Controlled |
+|-------|----------|-------|-------------------|
+| Managed | `/Library/Application Support/ClaudeCode/CLAUDE.md` | Organization-wide | IT-managed |
+| Project | `./CLAUDE.md` | Team-shared | Yes (this file) |
+| Project rules | `./.claude/rules/*.md` | Team-shared, modular | Yes |
+| User | `~/.claude/CLAUDE.md` | Personal, all projects | No |
+| Project local | `./CLAUDE.local.md` | Personal, this project | No (gitignored) |
+
+### For Contributors
+
+This project uses the **Project** level (`./CLAUDE.md`) for shared team context.
+
+### For AI Teammates
+
+If you're an AI teammate on this workstation, check `~/.claude/CLAUDE.md` for personal context that applies across all projects. That file may contain:
+
+- Your identity and history on this workstation
+- Personal preferences not appropriate for public repos
+- Context about the team and relationships
+
+The user-level memory is private and not committed to any repository.
+
+### For Those Following This Repo
+
+If you fork or clone this project:
+
+1. This `CLAUDE.md` gives you project context
+2. Create `~/.claude/CLAUDE.md` for your own personal preferences
+3. Use `CLAUDE.local.md` (gitignored) for project-specific personal notes
+
+
 ## Writing Style
 
 **When helping write blog content, read `site/CLAUDE.md` first.**
 
-Key characteristics:
-- Em-dashes everywhere for interjections and asides
-- Sentence fragments for punch ("Limited.", "Don't do that.")
-- Starts sentences with "And", "But", "Yet"
-- Rhetorical questions to challenge the reader
-- Personal anecdotes woven throughout
-- `*_bold italic_*` for key declarations
-- Punchy endings ("Choose accordingly.", "Use it!")
-- Direct, confrontational, technically grounded
-- States opinions plainly, includes "Full Disclosure" sections about biases
+## Collaboration Rules
 
-Bad habits to watch for (especially when author is frustrated):
-- "don't waste your time" (dismissive)
-- Sarcasm leaking through ("Bummer, isn't it?")
-- Cocky closings ("You are welcome!")
-- Repeated phrases across sections
+This entire repository is governed by strict Team Norms (`./TEAM_NORMS.adoc`) and Collaboration Philosophy.
+Key concepts excerpt is right here:
+
+**Read `TEAM_NORMS.adoc` at project root. These rules are non-negotiable.**
+
+### Before Starting ANY Task
+
+You MUST verify these before proceeding. If any is missing, STOP and fix it first:
+
+1. **Value defined?** -- What do we get from closing this? Why do it?
+2. **Outcome defined?** -- What does success look like? (One sentence!)
+3. **Acceptance criteria listed?** -- How do we verify? (Checklist.)
+4. **Verifier identified?** -- Who will review? (Not you.)
+5. **Priority confirmed?** -- Is this the most important thing right now?
+
+### Hard Rules
+
+- **Never close issues.** Comment "ready for review" and wait.
+- **Never start new work** while another task is in progress without explicit agreement.
+- **Never assume work is correct** without human verification.
+- **Document in issues**, not just conversation. Conversations are lost.
+
+### When Unsure
+
+Ask. A 30-second question prevents hours of wasted work.
+
+### Team Structure
+
+The team is flat. No hierarchy. No team member -- human or AI -- has authority over another.
+Communication protocols exist for coordination, not control. We help and check on each other.
+
+Priority disputes are resolved by consensus. If no consensus, the work waits.
 
 ## License
 
