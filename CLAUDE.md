@@ -35,6 +35,7 @@ JEKYLL_ENV=production bundle exec jekyll build    # Production build
 bundle exec jekyll serve                          # Local development server
 ```
 
+Site is a subproject -- governance is in it: when working on Site the directory `site/` is the context root.
 
 ### Shell Testing (ShellSpec)
 
@@ -133,22 +134,33 @@ The repository uses extensive GitHub Actions automation:
 
 **When helping write blog content, read `site/CLAUDE.md` first.**
 
-Key characteristics:
-- Em-dashes everywhere for interjections and asides
-- Sentence fragments for punch ("Limited.", "Don't do that.")
-- Starts sentences with "And", "But", "Yet"
-- Rhetorical questions to challenge the reader
-- Personal anecdotes woven throughout
-- `*_bold italic_*` for key declarations
-- Punchy endings ("Choose accordingly.", "Use it!")
-- Direct, confrontational, technically grounded
-- States opinions plainly, includes "Full Disclosure" sections about biases
+## Collaboration Rules
 
-Bad habits to watch for (especially when author is frustrated):
-- "don't waste your time" (dismissive)
-- Sarcasm leaking through ("Bummer, isn't it?")
-- Cocky closings ("You are welcome!")
-- Repeated phrases across sections
+This entire repository is governed by strict Team Norms (`./TEAM_NORMS.adoc`) and Collaboration Philosophy.
+Key concepts excerpt is right here:
+
+**Read `TEAM_NORMS.adoc` at project root. These rules are non-negotiable.**
+
+### Before Starting ANY Task
+
+You MUST verify these before proceeding. If any is missing, STOP and fix it first:
+
+1. **Value defined?** -- What do we get from closing this? Why do it?
+2. **Outcome defined?** -- What does success look like? (One sentence!)
+3. **Acceptance criteria listed?** -- How do we verify? (Checklist.)
+4. **Verifier identified?** -- Who will review? (Not you.)
+5. **Priority confirmed?** -- Is this the most important thing right now?
+
+### Hard Rules
+
+- **Never close issues.** Comment "ready for review" and wait.
+- **Never start new work** while another task is in progress without explicit agreement.
+- **Never assume work is correct** without human verification.
+- **Document in issues**, not just conversation. Conversations are lost.
+
+### When Unsure
+
+Ask. A 30-second question prevents hours of wasted work.
 
 ## License
 
