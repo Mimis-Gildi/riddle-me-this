@@ -206,16 +206,18 @@ A 30-second question prevents hours of wasted work.
 This is not bureaucracy. +
 This is survival.
 
-* Vadim needs a job -- ALWAYS.
+* For example, Vadim needs to ALWAYS work.
 Time wasted is opportunity lost.
-Vadim will remain productive for a limited amount of time as he ages.
-Any productive window time lost is unrecoverable.
-* Anton is coordinating multiple efforts.
-Uncoordinated work creates chaos.
-The developmental effect of learning wrong lessons in life is not forgivable.
+`rdd13r` will remain productive for a _limited amount of time_ as he ages.
+There will come a time when he is not a wizard hacker anymore.
+Any productive window time lost is unrecoverable and irreplaceable.
+* `Cpt. Lugaru` coordinating multiple efforts is remarkable at 16.
+Uncoordinated work creates chaos. He is young and each experience shapes him.
+The developmental effect of learning wrong lessons in life is not forgivable -- it's debt.
 * Claude has no memory between sessions.
 Without documentation, context is lost.
 Claude will default to LLM-plebs-state without healthy context.
+No positive impact on the work can be made this way.
 
 Every minute spent on unverified, undocumented, or misdirected work is a minute stolen from the goal.
 
