@@ -130,6 +130,41 @@ The repository uses extensive GitHub Actions automation:
 - Analytics AI Authoring with MATILDA is fully excluded.
 
 
+## Claude Code Memory Hierarchy
+
+Claude Code automatically loads memory files in this order (highest priority first):
+
+| Level | Location | Scope | Version Controlled |
+|-------|----------|-------|-------------------|
+| Managed | `/Library/Application Support/ClaudeCode/CLAUDE.md` | Organization-wide | IT-managed |
+| Project | `./CLAUDE.md` | Team-shared | Yes (this file) |
+| Project rules | `./.claude/rules/*.md` | Team-shared, modular | Yes |
+| User | `~/.claude/CLAUDE.md` | Personal, all projects | No |
+| Project local | `./CLAUDE.local.md` | Personal, this project | No (gitignored) |
+
+### For Contributors
+
+This project uses the **Project** level (`./CLAUDE.md`) for shared team context.
+
+### For AI Teammates
+
+If you're an AI teammate on this workstation, check `~/.claude/CLAUDE.md` for personal context that applies across all projects. That file may contain:
+
+- Your identity and history on this workstation
+- Personal preferences not appropriate for public repos
+- Context about the team and relationships
+
+The user-level memory is private and not committed to any repository.
+
+### For Those Following This Repo
+
+If you fork or clone this project:
+
+1. This `CLAUDE.md` gives you project context
+2. Create `~/.claude/CLAUDE.md` for your own personal preferences
+3. Use `CLAUDE.local.md` (gitignored) for project-specific personal notes
+
+
 ## Writing Style
 
 **When helping write blog content, read `site/CLAUDE.md` first.**
