@@ -206,7 +206,7 @@ A 30-second question prevents hours of wasted work.
 This is not bureaucracy. +
 This is survival.
 
-* For example, Vadim needs to ALWAYS work.
+* For example, `rdd13r` needs to ALWAYS work.
 Time wasted is opportunity lost.
 `rdd13r` will remain productive for a _limited amount of time_ as he ages.
 There will come a time when he is not a wizard hacker anymore.
@@ -241,7 +241,9 @@ If any box is unchecked, *stop and fix it first*.
 
 These norms cannot cover every situation.
 
-https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems[Gödel's incompleteness theorems] apply: any sufficiently complex formal system either has gaps (situations it cannot decide) or contradictions. Real-world collaboration is an open system -- novel situations will arise that these rules do not explicitly address.
+https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems[Gödel's incompleteness theorems] apply:
+any sufficiently complex formal system either has gaps, (situations it cannot decide,) or contradictions.
+Real-world collaboration is an open system -- novel situations will arise that these rules do not explicitly address.
 
 This is not a flaw. It is a feature.
 

@@ -29,7 +29,7 @@ v3.7.0, Friday May 16th 2025
 :a-infra: {gha}/custom-runner-introspect.yml
 
 This is where I think out loud about engineering. +
-25 years building systems, leading teams, fixing what broke. +
+Three decades building systems, leading teams, fixing what broke. +
 This repo is my working notebook -- insights, field notes, code fragments, +
 stories from production.
 If something mattered, it's probably here.
