@@ -1,15 +1,24 @@
 # rdd13r Writing Style Guide
 # For AI assistants and collaborators helping with blog content
-# Last updated: 2026-01-19
+# Last updated: 2026-01-21
 
 voice:
-  summary: "A hacker talking to you over coffee, sometimes interrupting himself. Direct, confrontational, technically grounded, personally invested."
+  summary: >
+    A hacker talking to you over coffee, sometimes interrupting himself. 
+    Direct, confrontational, technically grounded, personally invested.
+    The absolute focus is on accuracy and correctness of all statements.
+    Each work produced is a single clean argument regardless of topic.
+    The argument in any body of work thus must always be representable
+    by symbolic formula of inductive and deductive reasoning (not shown).
+    The speaking hacker is a maker, a doer, a problem solver, and crucially,
+    always a scientist delighting readers with depth of knowledge and elegance.
+  
 
   tone:
     - "Conversational but not casual -- there's always substance"
     - "Confrontational edge -- challenges the reader to think"
     - "Personally invested -- shares real experiences, real opinions"
-    - "Technically credible -- uses proper terms, explains when needed"
+    - "Technically credible -- uses ONLY proper terms, explains when needed"
     - "Honest to a fault -- includes 'Full Disclosure' sections about biases"
 
 sentence_patterns:
@@ -31,6 +40,7 @@ sentence_patterns:
       - "The same magic that deprecated one laggard -- is exactly what can save another!"
       - "backed by full-featured Anthropic models -- not just for code"
     usage: "Preferred over parentheses, commas, or colons for insertions"
+    reason: "In every rendition method, such as HTML or PDF, double-dashes are converted to a proper long dash; reader never sees the source document."
 
   rhetorical_questions:
     description: "Questions that challenge or pivot the narrative"
@@ -43,14 +53,25 @@ sentence_patterns:
     usage: "Engage reader, transition between ideas, challenge assumptions"
 
   sentence_starters:
-    description: "Frequently starts sentences with conjunctions"
+    description: "Frequently starts sentences with conjunctions but only when continuation of flow is necessary"
     patterns:
-      - "And" # Very common
-      - "But"
-      - "Yet"
-      - "So"
-      - "Or"
+      - "And":
+          reason: Very common because truth-functionally sound
+          alternative: No conjunction used
+      - "But":
+          reason: Avoided when possible because not logically sound - i.e., ignore everything before the <but>.
+          alternative: Use a semicolon or period
+      - "Yet":
+          reason: Used sparingly when contrasting, logical expansion, or when emphasizing a point
+          alternative: Drop, use a semicolon, or a period
+      - "So":
+          reason: Cheap flow connective in colloquial passages or plebs speak
+          alternative: Drop, use a semicolon, or a period
+      - "Or":
+          reason: Used sparingly to connect ideas or options when negating one is acceptable as only one needs to be true
+          alternative: Use a semicolon, period, or best avoid
     example: "And now he feels dread because he thinks he knows what's coming."
+    explanation: The <and> logically connects to the previous statement requiring both to be true
 
   direct_address:
     description: "Speaks directly to the reader"
@@ -62,6 +83,7 @@ sentence_patterns:
       - "Now consider:"
       - "Now watch..."
     usage: "Creates intimacy, establishes authority"
+    explanation: Direct address is used to engage the reader and establish a personal connection, making the content more relatable and authoritative. And, most importantly, recognizing reader's agency must be established in a clear and direct way.
 
 structure:
   sections:
@@ -88,7 +110,10 @@ structure:
       - "The market won't wait for companies to figure this out twice."
 
   horizontal_rules:
-    usage: "''' used to separate major thought blocks or before postscripts"
+    info: "''' used to separate major thought blocks or before postscripts, not the markdown separator ---"
+    usage: Absolutely minimal usage, only when necessary and can be argued this way.
+    explanation: Horizontal rules are already properly inserted by rendition tools, such as at section breaks, making them polluting when added manually.
+    test: Think of the ruler as "FULL STOP" uttered aloud. Is it necessary or even helping? If the answer is yes then consider adding, otherwise always skip.
 
 emphasis:
   bold_italic:
@@ -108,7 +133,8 @@ emphasis:
 
   italic:
     syntax: "_text_"
-    usage: "Titles, foreign phrases, subtle emphasis, internal thoughts"
+    usage: "Titles, foreign phrases, subtle emphasis, internal thoughts or thematic plugs of expansions"
+    explanation: One example is an <explanation> in italics which follows a <statement:> in bold, structurally creating a logical tuple in a set.
 
 personal_elements:
   anecdotes:
@@ -118,9 +144,10 @@ personal_elements:
       - "I see someone I'd once done solution architecture with post..."
       - "This weekend I presented autonomous competing agent teams..."
     usage: "Ground abstract points in concrete reality"
+    explanation: Verifiable real events to be shown as instance examples of the concepts, especially when it is root-cause-revealing.
 
   opinions:
-    description: "States opinions plainly, doesn't hedge"
+    description: "States opinions plainly, doesn't hedge, delineates clearly when it is just an opinion versus disclosure versus theorem or provable fact"
     examples:
       - "I don't trust Google."
       - "I am not a fan of Google. Or anyone for that matter. Except maybe JetBrains, a little."
@@ -134,6 +161,7 @@ personal_elements:
       Or anyone for that matter.
       ...
       So consider my bias in my final advice.
+    caution: It is not necessary to advertise <Disclosure> sections when obvious. Importantly, always check to make sure that disclosure is not passed as a natural fact rather than personal preference or an opinion.
 
   self_reference:
     patterns:
@@ -142,7 +170,7 @@ personal_elements:
       - "Having decades of... to my name"
 
 informal_language:
-  contractions: "Always uses contractions (don't, won't, it's, they're)"
+  contractions: Often uses contractions (don't, won't, it's, they're) for cadence and flow. Expands when emphasis is beneficial.
   colloquialisms:
     - "darn thing"
     - "gotta"
@@ -153,24 +181,86 @@ informal_language:
     - "Hmmm..."
     - "Right?"
     - "See?"
+  cultural:
+    - Hacker Scene Terminology:
+        - examples:
+          - "hacker": someone who enjoys tinkering with technology
+          - "hacking": the act of exploring and experimenting with technology
+          - "hacker ethic": the belief that technology should be shared and accessible to all
+        - classic terminology URL: http://www.catb.org/jargon/html/index.html
+        - modern terminology reference:
+            - poser:
+                - classic meaning URL: http://www.catb.org/jargon/html/P/poser.html
+                - current meaning: "political developer or IT manager no longer skilled but fitting well in the lazy corporate culture"
+            - cog:
+                - current meaning:
+                  - "an obedient developer eager to please but not competent or learned on their own"
+                  - "an unimaginative office worker"
+                  - "a reliable coder only knowing one application, usually outdated or deprecated"
+                - variants:
+                    - knob: "lowest level manager of cogs, a cog themselves"
+                    - shaft: "cog that is not yet a knob themselves, but aggravates other cogs to get the job done; a good knob is riding at least one shaft"
+                    - peg: "a scapegoat cog, or a sacrificial cog to let other cogs work in peace without end-to-end meetings"
+                    - actuator: "a very classy knob"
+            - brick:
+                - classic meaning URL: http://www.catb.org/jargon/html/B/brick.html
+                - current meaning:
+                  - "a monolithic system that is difficult to change or extend, usually tiered"
+                  - "three-tiered-architecture, in particular database - service - presentation"
+            - mortar:
+                - classic meaning: there is no single clear classic meaning to this term
+                - current meaning:
+                  - "a glue that holds bricks together, most often ESB, and can also be some ancient enterprise messaging service, such as from IBM, and especially with ACORD and CDXF (files in messages)"
+            - rope:
+                - classic meaning: in the old times crackers not hackers have concepts like silk rope which is explosive code or its trigger silently embedded into an application for later exploitation
+                - current meaning:
+                  - "writing undocumented crap code to create job security through endless bugfixes; codebase is rope, practice is roping"
+                  - "relates to the next term, hinder, which often originates from roping"
+            - hinder (hin-der):
+                - classic meaning: butt, can be pronounced differently than today; deprecated
+                - current meaning:
+                  - "a piece of code, software, or module that slows down progress by creating obstacles, often used by managers to keep developers busy with trivial tasks, bust most often just a crap-design component"
+                  - "relates to the previous term, rope, which often originates from hindering, especially when cogs attach themselves to such components"
+            - scoop; to scoop (as in litter); litter (North-East USA):
+                - classic meaning: the old expression is from American journalism and is repurposed by hackers in a darker sense yet somehow still keeping the meaning
+                - current meaning:
+                  - scoop (noun): "tribal knowledge, especially when created by roping IT assets"
+                  - scoop (verb): "to search for or discover tribal knowledge"
+                  - litter (noun), litterbox: "a repository or a cache of tribal knowledge; most often it is in a form of a local file cogs collect and keep in secret, then pass around during <KT> (knowledge transfer) as a favor; said KT is given or taken (up the fanny?)"
+                  - litter (noun): a scoop or several
+                  - litter (verb): "to beat litter out of a team, as to make it public knowledge, as in Digital Transformation (DX) when creating a Community of Practice (CoP) or modernizing a laggard"
+            - fable:
+                - classic meaning: not known
+                - current meaning:
+                  - "a corporate story that is not true, but is told to teach a lesson or to amuse into obedience; most often by knobs"
+                  - "in North-East USA used as a synonym for knob which sounds more pleasing to some"
+                  - Fanny: "a name give to a female fable when used as a synonym to knob; like Karen"
+                  - Freddy: "a male Fanny"
+            - local and tourist:
+                - classical meaning: not known
+                - current meaning:
+                  - local: "a cog that belong on a team, permanently bolted in cog with many ropes, usually skeptical and not accepting of new knowledge, methods, and tools; usually comes with a lot of litter"
+                  - tourist: "a coach or a transformation engineer/architect brought in to upskill or modernize a team of locals; actual in-field example: you are a tourist here but we're locals like the brick and mortar"
 
 technical_writing:
   terms: "Uses proper technical terms without apology"
   explanations: "Explains when necessary, but doesn't over-explain"
-  links: "Frequently links to own previous articles and external sources"
+  links: "Frequently links to own previous articles and external reference and sources"
   code_references: "Uses backticks for code/technical terms: `adoc`, `trunk`"
 
 bad_habits:
-  description: "Patterns that emerge when frustrated or rushed"
+  description: "Patterns that emerge when frustrated, usually with bad LLM behavior and hallucinations, or rushed by LLM failing to follow instructions"
 
   frustration_leakage:
     description: "Negative mood bleeds into word choice"
     examples:
-      - "don't waste your time" # dismissive
-      - "lame passive-resistant liar" # harsh
-      - "Bummer, isn't it?" # sarcastic
-      - "You are welcome!" # cocky when used as closing
-    fix: "Review for tone when not in positive headspace"
+      - "don't waste your time":  dismissive but can be justified to a very particular audience, like the Scene
+      - "lame passive-resistant liar": harsh, but acceptable in few contexts
+      - "Bummer, isn't it?": sarcastic, appropriate wherever dark hacker humor is appropriate
+      - "You are welcome!": cocky when used as closing, especially when writing to posers
+    fix:
+    - "Review for tone when not in positive headspace"
+    - timeout to fix Claude
 
   repetition:
     description: "Same word or phrase appears multiple times"
@@ -181,7 +271,8 @@ bad_habits:
 
   over_explaining:
     description: "Sometimes belabors a point that's already made"
-    fix: "If you've said it clearly once, move on"
+    context: happens often when writing to posers on concepts not readily available elsewhere
+    fix: "If you've said it clearly once, move on, or rewrite even clearer"
 
   cockiness:
     description: "Confidence can tip into arrogance"
@@ -204,7 +295,7 @@ document_patterns:
       - "read_aloud: false/true"
 
   variables:
-    description: "Defines AsciiDoc attributes for repeated links"
+    description: "Defines AsciiDoc attributes for repeated links, often for single links as well if the string is long"
     example: |
       :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
       :ai-stages-url: https://mimis-gildi.github.io/riddle-me-this/...
@@ -233,3 +324,768 @@ signatures:
     - "Not because of X -- because of Y."
     - "Same X. Different Y. Different Z."
     - "This isn't X. It's Y."
+
+argument_forms:
+  description: >
+    Argument forms are the logical structures underlying persuasion.
+    rdd13r's writing prioritizes forms that are truth-functionally valid --
+    conclusions follow necessarily from premises. Marketing often uses
+    psychologically effective but logically weaker forms.
+
+  # ============================================
+  # FORMS ACTIVELY USED BY rdd13r
+  # ============================================
+
+  used:
+    modus_ponens:
+      structure: "If P then Q. P. Therefore Q."
+      example: "If you don't adopt agentic AI, you'll be deprecated. You haven't adopted it. Therefore..."
+      usage: "Primary workhorse. Most arguments reduce to this form."
+      strength: "Deductively valid. Unassailable if premises are true."
+
+    modus_tollens:
+      structure: "If P then Q. Not Q. Therefore not P."
+      example: "If the tool worked, teams would adopt. Teams aren't adopting. Therefore the tool isn't working (alone)."
+      usage: "Diagnoses failures, reveals hidden causes."
+      strength: "Deductively valid. Good for debugging assumptions."
+
+    disjunctive_syllogism:
+      structure: "P or Q. Not P. Therefore Q."
+      example: "Either you adapt or you get deprecated. You're not adapting..."
+      usage: "Forces binary choices, clarifies stakes."
+      strength: "Valid. Powerful when disjunction is genuinely exhaustive."
+
+    reductio_ad_absurdum:
+      structure: "Assume P. P leads to absurd/contradictory Q. Therefore not P."
+      example: "Say you 'learn Python first, then AI.' A year later you've learned nothing practical. Absurd."
+      usage: "Demolishes bad advice, exposes flawed strategies."
+      strength: "Deductively valid. Devastating when setup is honest."
+
+    case_analysis:
+      structure: "Either A, B, or C. In case A... In case B... In case C... Therefore in all cases, Q."
+      example: "Whether you're a senior dev, junior dev, or non-coder -- agentic AI is your path forward."
+      usage: "Covers all audience segments, anticipates objections."
+      strength: "Valid if cases are exhaustive. Shows thoroughness."
+
+    inductive_generalization:
+      structure: "Instance 1 has property P. Instance 2 has property P. ... Therefore all X have property P."
+      example: "This team transformed in 4 days. That team transformed in 3 weeks. Teams transform with the right intervention."
+      usage: "Builds credibility through accumulated evidence."
+      strength: "Inductively strong, not deductively valid. Requires representative samples."
+
+    anecdote_to_principle:
+      structure: "Specific story → General lesson extracted"
+      example: "My colleague posted 'I will start on Python to learn AI' → Here's the trap: sequential learning is 1980s thinking."
+      usage: "Grounds abstraction in lived experience. Creates relatability."
+      strength: "Psychologically powerful. Requires honest anecdote selection."
+
+    contrast_pattern:
+      structure: "X appears to be A. But X is actually B. The difference matters because C."
+      example: "Friday: Fear. Monday: Agents. Same people. Four days."
+      usage: "Highlights transformations, challenges assumptions."
+      strength: "Creates cognitive tension that resolves into insight."
+
+  # ============================================
+  # FORMS AVOIDED OR USED SPARINGLY
+  # ============================================
+
+  avoided:
+    appeal_to_authority:
+      structure: "Expert X says P. Therefore P."
+      why_avoided: "Shortcuts thinking. Readers should evaluate arguments, not credentials."
+      when_acceptable: "Citing primary sources for facts. Never for opinions."
+      example_of_misuse: "'Gartner says AI will transform everything.' So what? Show me the mechanism."
+
+    social_proof:
+      structure: "Everyone is doing X. Therefore X is correct/good."
+      why_avoided: "Bandwagon fallacy. Most people being wrong is historically common."
+      when_acceptable: "Market data as evidence of viability, not correctness."
+      rdd13r_inversion: "Often inverted: 'Everyone is doing X. That's exactly why X is failing.'"
+
+    appeal_to_novelty:
+      structure: "X is new. Therefore X is better."
+      why_avoided: "New ≠ good. Most new things fail."
+      when_acceptable: "When newness solves a specific problem the old couldn't."
+      example_of_misuse: "'AI is the future!' Without mechanism, this is noise."
+
+    appeal_to_tradition:
+      structure: "We've always done X. Therefore X is correct."
+      why_avoided: "Past success doesn't guarantee future relevance."
+      example_of_misuse: "'Java has been reliable for 20 years.' Irrelevant to whether it's right for this problem."
+
+    false_dilemma:
+      structure: "Either X or Y. (When Z exists.)"
+      why_avoided: "Intellectually dishonest. Hides options."
+      note: "rdd13r uses genuine dilemmas, not false ones."
+
+    slippery_slope:
+      structure: "If A, then B, then C, then catastrophe."
+      why_avoided: "Usually skips causal links. Fear-mongering."
+      when_acceptable: "When each step is independently justified."
+
+  # ============================================
+  # SUCCESSFUL IN TECH MARKETING BUT NOT USED
+  # ============================================
+
+  tech_marketing_forms:
+    description: >
+      These forms dominate tech marketing because they work psychologically.
+      rdd13r avoids them because they don't survive scrutiny from technical audiences.
+      They work on executives and posers. They backfire with hackers.
+
+    FUD:
+      full_name: "Fear, Uncertainty, Doubt"
+      structure: "Competitor X has problems Y, Z. Therefore choose us."
+      why_it_works: "Exploits loss aversion. Cheaper than proving value."
+      why_avoided: "Dishonest. Backfires when audience knows the domain."
+      example: "'Legacy code is a ticking time bomb!' -- Usually oversold."
+
+    artificial_scarcity:
+      structure: "Only N spots left! Act now!"
+      why_it_works: "Loss aversion + urgency bypasses deliberation."
+      why_avoided: "Manipulative. Insults reader's intelligence."
+      note: "Legitimate scarcity (actual limited availability) is different."
+
+    testimonials:
+      structure: "Customer X says we're great. Therefore we're great."
+      why_it_works: "Social proof + specificity creates believability."
+      why_avoided: "Cherry-picked by definition. Survivorship bias."
+      when_acceptable: "Case studies with verifiable outcomes and methodology."
+
+    before_after:
+      structure: "Before: bad. After our product: good."
+      why_it_works: "Simple narrative. Promises transformation."
+      why_avoided: "Usually omits confounds. What else changed?"
+      rdd13r_alternative: "Shows the *mechanism* of transformation, not just before/after."
+
+    enemy_pattern:
+      structure: "There's a villain (legacy, consultants, big tech). We fight them. Join us."
+      why_it_works: "Tribal identity. In-group bonding through shared enemy."
+      why_avoided: "Oversimplifies. Creates heat, not light."
+      rdd13r_nuance: "Criticizes patterns and behaviors, not tribes or companies."
+
+    thought_leadership:
+      structure: "We have unique insight into the future. Follow us."
+      why_it_works: "Positions seller as guide. Creates asymmetric relationship."
+      why_avoided: "Usually vapid predictions dressed as expertise."
+      rdd13r_alternative: "Demonstrates competence through specific, verifiable claims."
+
+  # ============================================
+  # ADVANCED FORMS WORTH EXPLORING
+  # ============================================
+
+  advanced:
+    socratic_method:
+      structure: "Lead reader to conclusion through questions they answer themselves."
+      strength: "Reader owns the conclusion. Maximum buy-in."
+      challenge: "Requires knowing reader's starting position precisely."
+      usage_note: "rdd13r's rhetorical questions approximate this."
+
+    steel_man:
+      structure: "Present the strongest version of opposing view. Then address *that*."
+      strength: "Builds credibility. Shows intellectual honesty."
+      challenge: "Requires genuinely understanding opposition."
+      usage_note: "Useful for 'Full Disclosure' sections."
+
+    first_principles:
+      structure: "Strip away assumptions. Rebuild from foundational truths."
+      example: "What does 'learning AI' actually require? Not Python. Not theory. Practice with feedback loops."
+      strength: "Cuts through accumulated cruft. Reaches novel conclusions."
+      challenge: "Requires identifying which principles are actually foundational."
+
+    devils_advocate:
+      structure: "Argue against own position to find weaknesses."
+      strength: "Preempts objections. Shows thorough thinking."
+      usage_note: "Can be woven into 'Full Disclosure' sections."
+
+    abductive_reasoning:
+      structure: "Observation O. Hypothesis H would explain O. Therefore H is plausible."
+      example: "Teams don't adopt AI. What would explain this? Not the tool -- the human element."
+      strength: "Generates hypotheses. Good for diagnosis."
+      caution: "Plausible ≠ proven. Multiple hypotheses may explain same observation."
+
+    argument_from_mechanism:
+      structure: "X causes Y through mechanism M. We can observe M. Therefore X causes Y."
+      example: "Agentic AI transforms teams because it teaches while you use it. Here's how: REPL + feedback loop."
+      strength: "Strongest form for technical audiences. Explains the 'why'."
+      note: "rdd13r's preferred form for technical claims."
+
+  # ============================================
+  # META: HOW TO CHOOSE ARGUMENT FORMS
+  # ============================================
+
+  selection_guide:
+    for_hackers:
+      preferred: [modus_ponens, modus_tollens, reductio_ad_absurdum, argument_from_mechanism]
+      avoid: [appeal_to_authority, social_proof, FUD, testimonials]
+      reason: "Technical audiences evaluate logic, not rhetoric."
+
+    for_executives:
+      preferred: [case_analysis, anecdote_to_principle, contrast_pattern]
+      tolerated: [social_proof, before_after]
+      reason: "Time-constrained. Need quick pattern recognition."
+
+    for_posers:
+      note: "Not the target audience. But when forced to engage:"
+      strategy: "Lead with social proof, pivot to mechanism when attention captured."
+      risk: "If they can't follow the mechanism, they won't retain the lesson."
+
+    for_mixed_audiences:
+      structure: "Layer arguments. Surface: accessible form. Depth: rigorous form."
+      example: "Open with anecdote (accessible). Extract principle. Prove principle with mechanism (rigorous)."
+
+# ==============================================================================
+# LOGICAL FALLACIES -- THE NO-NO LIST
+# ==============================================================================
+# These are argument forms that are ALWAYS invalid or deceptive.
+# Recognizing them in your own writing is critical.
+# Recognizing them in others' writing is a superpower.
+# ==============================================================================
+
+logical_fallacies:
+  description: >
+    Logical fallacies are errors in reasoning that undermine the logic of an argument.
+    They may be persuasive but are fundamentally flawed. A hacker's writing must be
+    fallacy-free -- technical audiences will spot these instantly and lose trust.
+
+  # ============================================
+  # FORMAL FALLACIES (Invalid Logical Structure)
+  # ============================================
+
+  formal:
+    description: >
+      These violate the rules of deductive logic itself.
+      The conclusion does not follow from the premises, regardless of content.
+
+    affirming_the_consequent:
+      structure: "If P then Q. Q. Therefore P."
+      example: "If it rains, the ground is wet. The ground is wet. Therefore it rained."
+      why_invalid: "Q could have other causes. Sprinklers exist."
+      common_in: "Tech marketing claiming correlation proves their product works."
+      detection: "Ask: 'What else could cause Q?'"
+
+    denying_the_antecedent:
+      structure: "If P then Q. Not P. Therefore not Q."
+      example: "If you use our tool, you'll succeed. You didn't use our tool. Therefore you won't succeed."
+      why_invalid: "Other paths to Q may exist."
+      common_in: "Vendor lock-in arguments. 'Only we can solve this.'"
+      detection: "Ask: 'Are there other ways to achieve Q?'"
+
+    affirming_a_disjunct:
+      structure: "P or Q. P. Therefore not Q."
+      example: "Either we refactor or we rewrite. We're refactoring. Therefore we're not rewriting."
+      why_invalid: "Disjunction may not be exclusive. Both could be true."
+      common_in: "False dichotomies in technical decisions."
+      detection: "Ask: 'Could both be true simultaneously?'"
+
+    undistributed_middle:
+      structure: "All A are B. All C are B. Therefore all A are C."
+      example: "All good developers use Git. All our team uses Git. Therefore all our team are good developers."
+      why_invalid: "B doesn't connect A and C -- they just share a property."
+      common_in: "Hiring arguments. 'They have X credential, so they must be Y.'"
+      detection: "Draw a Venn diagram. Do the circles actually overlap?"
+
+    illicit_major:
+      structure: "All A are B. No C are A. Therefore no C are B."
+      example: "All our senior devs know Kubernetes. Junior devs aren't senior. Therefore junior devs don't know Kubernetes."
+      why_invalid: "Conclusion extends beyond what premises establish."
+      common_in: "Credential gatekeeping."
+      detection: "Check if the conclusion claims more than the premises prove."
+
+    illicit_minor:
+      structure: "All A are B. All A are C. Therefore all C are B."
+      example: "All microservices are distributed. All microservices are complex. Therefore all complex things are distributed."
+      why_invalid: "Reverses the subset relationship."
+      common_in: "Overgeneralizing from specific architectures."
+      detection: "Check direction of subset inclusion."
+
+    existential_fallacy:
+      structure: "All A are B. All A are C. Therefore some B are C."
+      example: "All unicorn startups are profitable. All unicorn startups are innovative. Therefore some profitable companies are innovative."
+      why_invalid: "Assumes A exists. What if there are no unicorn startups?"
+      common_in: "Arguments about edge cases or ideal scenarios."
+      detection: "Ask: 'Does A actually exist in reality?'"
+
+  # ============================================
+  # FALLACIES OF RELEVANCE (Irrelevant Premises)
+  # ============================================
+
+  relevance:
+
+    description: >
+      The premises don't actually support the conclusion.
+      They distract, deflect, or appeal to something other than logic.
+
+    ad_hominem:
+      structure: "Person X claims P. X has negative quality Y. Therefore P is false."
+      example: "He says microservices are overhyped, but he's never worked at a real tech company."
+      why_invalid: "Attacks the person, not the argument. Truth doesn't depend on speaker."
+      variants:
+        abusive: "Direct insult to discredit."
+        circumstantial: "'Of course he says that -- he sells consulting.'"
+        tu_quoque: "'You do it too!' -- deflection, not rebuttal."
+      common_in: "Twitter/LinkedIn debates. Code review conflicts."
+      detection: "Ask: 'Would the argument be valid if someone else made it?'"
+
+    tu_quoque:
+      structure: "You claim P is wrong. But you do P. Therefore P is not wrong."
+      example: "'You say we shouldn't use MongoDB, but your last project used it!'"
+      why_invalid: "Hypocrisy doesn't make the original claim false."
+      common_in: "Defensive responses to code review."
+      detection: "Separate the claim from the claimant's behavior."
+
+    appeal_to_authority:
+      structure: "Expert X says P. Therefore P is true."
+      latin: "argumentum ad verecundiam"
+      example: "'Gartner says blockchain will revolutionize everything.'"
+      why_invalid: "Experts can be wrong, biased, or speaking outside expertise."
+      when_weak_but_acceptable: "Citing domain expert for factual claims with evidence."
+      never_acceptable: "Using authority for opinions or predictions."
+      common_in: "Enterprise sales. 'Forrester rates us #1.'"
+      detection: "Ask: 'What's the actual evidence, independent of who said it?'"
+
+    appeal_to_popularity:
+      structure: "Many people believe P. Therefore P is true."
+      latin: "argumentum ad populum"
+      example: "'Everyone's moving to Kubernetes, so it must be the right choice.'"
+      why_invalid: "Popularity doesn't determine truth. Most people have been wrong many times."
+      common_in: "Technology adoption arguments. 'Industry standard.'"
+      detection: "Ask: 'Would this be true if no one believed it?'"
+
+    appeal_to_tradition:
+      structure: "We've always done X. Therefore X is correct."
+      latin: "argumentum ad antiquitatem"
+      example: "'We've used Oracle for 20 years -- it works.'"
+      why_invalid: "Past practice doesn't prove current optimality."
+      common_in: "Resistance to modernization. Legacy justification."
+      detection: "Ask: 'Is there evidence it's still the best choice today?'"
+
+    appeal_to_novelty:
+      structure: "X is new. Therefore X is better."
+      latin: "argumentum ad novitatem"
+      example: "'This framework just came out -- it must be more advanced.'"
+      why_invalid: "New doesn't mean better. Most new things fail."
+      common_in: "Hype cycles. 'Cutting edge' worship."
+      detection: "Ask: 'What specific problem does the newness solve?'"
+
+    appeal_to_nature:
+      structure: "X is natural/intuitive. Therefore X is good/correct."
+      example: "'Monoliths are more natural for developers to understand.'"
+      why_invalid: "Natural doesn't mean optimal. Intuition can be wrong."
+      common_in: "UX arguments. 'It just feels right.'"
+      detection: "Ask: 'Is there evidence beyond the feeling?'"
+
+    appeal_to_emotion:
+      structure: "P makes you feel X. Therefore P is true."
+      latin: "argumentum ad passiones"
+      variants:
+        fear: "argumentum ad metum -- 'If we don't act now, disaster!'"
+        pity: "argumentum ad misericordiam -- 'Think of the junior devs!'"
+        flattery: "'Smart engineers like you will see the value.'"
+        spite: "'Don't let management win -- reject their tool.'"
+      why_invalid: "Emotions don't determine truth."
+      common_in: "Change management. Security FUD."
+      detection: "Ask: 'What's the logical argument beneath the emotional appeal?'"
+
+    appeal_to_consequences:
+      structure: "If P is true, bad things happen. Therefore P is false."
+      latin: "argumentum ad consequentiam"
+      example: "'If AI replaces developers, that's terrible. So it won't happen.'"
+      why_invalid: "Unpleasant conclusions can still be true."
+      common_in: "Denial of uncomfortable trends."
+      detection: "Separate 'I don't want P' from 'P is false.'"
+
+    genetic_fallacy:
+      structure: "P originated from X. X is bad. Therefore P is bad."
+      example: "'That pattern came from enterprise Java -- it must be overengineered.'"
+      why_invalid: "Origin doesn't determine current validity."
+      common_in: "Tribal tech prejudices."
+      detection: "Evaluate the idea on its own merits."
+
+    red_herring:
+      structure: "Topic is A. Introduce unrelated B. Conclude about B as if it addresses A."
+      example: "'Why did the deploy fail?' 'Well, the real problem is our hiring process.'"
+      why_invalid: "Distracts from the actual issue."
+      common_in: "Postmortems. Avoiding accountability."
+      detection: "Ask: 'Does this actually address the original question?'"
+
+    straw_man:
+      structure: "X argues P. Misrepresent P as P'. Attack P'. Claim X is wrong."
+      example: "'So you're saying we should rewrite everything from scratch?' (When they suggested refactoring one module.)"
+      why_invalid: "Defeats a position no one holds."
+      common_in: "Technical debates. Architecture discussions."
+      detection: "Ask: 'Is this a fair representation of their actual position?'"
+
+    whataboutism:
+      structure: "P is criticized. Respond: 'What about Q?' (unrelated issue)"
+      example: "'Our API is slow.' 'What about the competitor's downtime last month?'"
+      why_invalid: "Deflects rather than addresses."
+      common_in: "Vendor comparisons. Team conflicts."
+      detection: "Notice when response doesn't address the original point."
+
+  # ============================================
+  # FALLACIES OF PRESUMPTION (Flawed Premises)
+  # ============================================
+
+  presumption:
+    description: >
+      These assume something that hasn't been established,
+      or make unjustified leaps in reasoning.
+
+    begging_the_question:
+      structure: "Assume P. Therefore P."
+      latin: "petitio principii"
+      example: "'Our code is high quality because we follow best practices, which produce high-quality code.'"
+      why_invalid: "Conclusion is hidden in the premise. Circular."
+      common_in: "Self-congratulatory team narratives."
+      detection: "Ask: 'Does the conclusion appear in the premises?'"
+
+    circular_reasoning:
+      structure: "P because Q. Q because P."
+      example: "'We use Scrum because it's agile. It's agile because it uses Scrum practices.'"
+      why_invalid: "Neither claim is independently supported."
+      common_in: "Methodology justifications."
+      detection: "Trace the chain of reasoning. Does it loop?"
+
+    false_dilemma:
+      structure: "Either P or Q. Not P. Therefore Q. (When R, S, T also exist.)"
+      latin: "false dichotomy, black-or-white thinking"
+      example: "'Either we use microservices or we're stuck with a monolith forever.'"
+      why_invalid: "Hides other options. Rarely are there only two choices."
+      common_in: "Architecture debates. Vendor pitches."
+      detection: "Ask: 'What options are being excluded?'"
+
+    false_equivalence:
+      structure: "A and B share property X. Therefore A and B are equivalent."
+      example: "'Both SQL and NoSQL store data, so the choice doesn't matter.'"
+      why_invalid: "Ignores significant differences."
+      common_in: "Tool comparisons. 'It's all the same.'"
+      detection: "List the differences, not just similarities."
+
+    slippery_slope:
+      structure: "If A, then B. If B, then C. ... Therefore A leads to catastrophe Z."
+      example: "'If we allow one exception to the style guide, soon we'll have no standards at all.'"
+      why_invalid: "Each step needs independent justification. Usually doesn't have it."
+      when_valid: "When each causal link is demonstrated."
+      common_in: "Policy arguments. Change resistance."
+      detection: "Ask: 'Is each step actually inevitable?'"
+
+    hasty_generalization:
+      structure: "Instance X has property P. Therefore all X have property P."
+      example: "'That React project failed. React projects always fail.'"
+      why_invalid: "Sample size too small. Not representative."
+      common_in: "Anecdote-driven technical decisions."
+      detection: "Ask: 'How many cases? How representative?'"
+
+    sweeping_generalization:
+      structure: "Generally, X. Therefore in this specific case, X."
+      example: "'Premature optimization is bad. Therefore never optimize until it's too late.'"
+      why_invalid: "General rules have exceptions."
+      common_in: "Misapplied best practices."
+      detection: "Ask: 'Does this general rule apply to this specific situation?'"
+
+    composition_fallacy:
+      structure: "Each part has property P. Therefore the whole has property P."
+      example: "'Each microservice is simple. Therefore the system is simple.'"
+      why_invalid: "Whole can have emergent properties parts lack."
+      common_in: "Distributed systems reasoning. Team dynamics."
+      detection: "Consider how parts interact."
+
+    division_fallacy:
+      structure: "The whole has property P. Therefore each part has property P."
+      example: "'The team is highly productive. Therefore each developer is highly productive.'"
+      why_invalid: "Parts may not share whole's properties."
+      common_in: "Performance attribution. Credit/blame."
+      detection: "Verify property actually distributes to parts."
+
+    no_true_scotsman:
+      structure: "All X have property P. Counterexample Y is X but lacks P. 'Y is not a TRUE X.'"
+      example: "'All real engineers write tests.' 'What about Linus?' 'He's not a real engineer then.'"
+      why_invalid: "Ad hoc redefinition to protect claim from falsification."
+      common_in: "Identity gatekeeping. 'Real developers use...'"
+      detection: "Notice when definitions shift to exclude counterexamples."
+
+    loaded_question:
+      structure: "Question presupposes contested claim."
+      example: "'Why is your codebase so poorly documented?' (Assumes it's poorly documented.)"
+      why_invalid: "Forces acceptance of unproven premise to answer."
+      common_in: "Leading questions in interviews. Passive-aggressive code review."
+      detection: "Identify and challenge the hidden assumption."
+
+    argument_from_ignorance:
+      structure: "P hasn't been proven false. Therefore P is true. (Or vice versa.)"
+      latin: "argumentum ad ignorantiam"
+      example: "'No one has proven this approach won't scale. Therefore it scales.'"
+      why_invalid: "Absence of evidence isn't evidence of absence (or presence)."
+      common_in: "Defending untested assumptions."
+      detection: "Ask: 'Has it been tested either way?'"
+
+    burden_of_proof_fallacy:
+      structure: "I claim P. You can't disprove P. Therefore P is true."
+      example: "'Prove our technical debt ISN'T slowing us down.'"
+      why_invalid: "Claimant bears burden of proof."
+      common_in: "Unfalsifiable claims. Moving goalposts."
+      detection: "Who made the initial claim? They should provide evidence."
+
+    moving_goalposts:
+      structure: "Demand evidence E for P. E is provided. Demand new evidence E'. Repeat."
+      example: "'Show me benchmarks.' (Shows benchmarks.) 'Well, show me production metrics.' (Shows metrics.) 'Well, show me...'"
+      why_invalid: "Never allows conclusion. Endless retreat."
+      common_in: "Resistance to change. Bad-faith debates."
+      detection: "Notice when acceptance criteria keep changing."
+
+    special_pleading:
+      structure: "Rule R applies generally. Exempt my case without justification."
+      example: "'Yes, we have code review standards, but this is an emergency.'"
+      why_invalid: "Rules either apply or they don't. Exceptions need justification."
+      common_in: "Deadline pressure. 'Just this once.'"
+      detection: "Ask: 'What makes this case genuinely exceptional?'"
+
+  # ============================================
+  # CAUSAL FALLACIES (Flawed Cause-Effect)
+  # ============================================
+
+  causal:
+    description: >
+      These misidentify or misattribute causation.
+      Particularly dangerous in technical contexts where we need to debug root causes.
+
+    post_hoc:
+      structure: "A happened before B. Therefore A caused B."
+      latin: "post hoc ergo propter hoc"
+      example: "'We deployed Tuesday. System crashed Wednesday. Deploy caused crash.'"
+      why_invalid: "Sequence doesn't prove causation."
+      common_in: "Incident analysis. Blame attribution."
+      detection: "Ask: 'What's the causal mechanism? Could other factors explain B?'"
+
+    correlation_causation:
+      structure: "A and B are correlated. Therefore A causes B."
+      latin: "cum hoc ergo propter hoc"
+      example: "'Teams using TypeScript have fewer bugs. TypeScript prevents bugs.'"
+      why_invalid: "Correlation has multiple explanations: reverse causation, confounding variables."
+      common_in: "Tech industry 'studies.' Vendor claims."
+      detection: "Ask: 'What else might explain this correlation?'"
+
+    single_cause:
+      structure: "Effect E occurred. A was present. Therefore A is THE cause."
+      example: "'The outage was caused by the new engineer's commit.'"
+      why_invalid: "Most effects have multiple contributing causes."
+      common_in: "Blame games. Oversimplified postmortems."
+      detection: "Ask: 'What other factors contributed?'"
+
+    wrong_direction:
+      structure: "A and B are correlated. A causes B. (When actually B causes A.)"
+      example: "'Good documentation makes projects successful.' (Or successful projects have time for documentation?)"
+      why_invalid: "Causal direction assumed, not proven."
+      common_in: "Best practices cargo culting."
+      detection: "Consider whether causation could run the other way."
+
+    texas_sharpshooter:
+      structure: "Observe pattern in random data. Claim pattern was predicted/caused."
+      example: "'Look at these 5 successful startups -- they all used our methodology!'"
+      why_invalid: "Pattern found after the fact. Ignores non-matching cases."
+      common_in: "Case studies. Success narratives."
+      detection: "Ask: 'Was this predicted beforehand? What about failures?'"
+
+    cherry_picking:
+      structure: "Select confirming evidence. Ignore disconfirming evidence."
+      example: "'Here are 10 companies that succeeded with microservices.' (Ignores 100 that struggled.)"
+      why_invalid: "Biased sample doesn't represent truth."
+      common_in: "Vendor marketing. Conference talks."
+      detection: "Ask: 'What evidence was not included?'"
+
+    survivorship_bias:
+      structure: "Study survivors. Conclude about entire population."
+      example: "'Successful founders dropped out of college. Therefore dropping out leads to success.'"
+      why_invalid: "Dead/failed cases aren't visible but may be majority."
+      common_in: "Success advice. 'Learn from the winners.'"
+      detection: "Ask: 'What about those who failed the same way?'"
+
+    gamblers_fallacy:
+      structure: "Independent event X hasn't occurred recently. Therefore X is 'due.'"
+      example: "'We haven't had an outage in months. We're due for one.'"
+      why_invalid: "Independent events don't influence each other."
+      common_in: "Risk assessment without understanding probability."
+      detection: "Ask: 'Are these events actually independent?'"
+
+    regression_fallacy:
+      structure: "Extreme result followed by intervention and regression to mean. Credit intervention."
+      example: "'After the worst sprint ever, we tried pair programming and improved!' (Would have improved anyway.)"
+      why_invalid: "Extreme values naturally regress toward mean."
+      common_in: "Methodology claims. 'We tried X and it worked!'"
+      detection: "Ask: 'Would improvement have happened without intervention?'"
+
+  # ============================================
+  # FALLACIES OF AMBIGUITY (Language Tricks)
+  # ============================================
+
+  ambiguity:
+    description: >
+      These exploit unclear language to create illusions of valid reasoning.
+
+    equivocation:
+      structure: "Use word W with meaning M1 in premise. Use W with meaning M2 in conclusion."
+      example: "'We need to be agile. Agile means Scrum. Therefore we need Scrum.'"
+      why_invalid: "Different meanings make the argument invalid."
+      common_in: "Buzzword exploitation. 'Cloud-native' means different things."
+      detection: "Define key terms explicitly. Check if definition shifts."
+
+    amphiboly:
+      structure: "Grammatically ambiguous statement exploited."
+      example: "'We should hire developers who can code Python and are willing to learn.' (Python and willingness? Or Python and learning?)"
+      why_invalid: "Ambiguous grammar allows multiple interpretations."
+      common_in: "Requirements documents. Job descriptions."
+      detection: "Rewrite to eliminate grammatical ambiguity."
+
+    accent_fallacy:
+      structure: "Emphasis changes meaning. Exploit the shift."
+      example: "'We should hire GOOD developers' vs 'We should HIRE good developers' vs 'WE should hire good developers.'"
+      why_invalid: "Same words, different implications based on stress."
+      common_in: "Miscommunication in written text lacking tone."
+      detection: "Clarify what exactly is being emphasized and why."
+
+    reification:
+      structure: "Treat abstract concept as concrete entity."
+      example: "'The architecture demands we use this pattern.' (Architecture doesn't demand anything.)"
+      why_invalid: "Abstractions don't have agency or preferences."
+      common_in: "Anthropomorphizing systems. 'The code wants...'"
+      detection: "Ask: 'Is this thing capable of the attributed action?'"
+
+  # ============================================
+  # OTHER COMMON FALLACIES
+  # ============================================
+
+  other:
+    description: >
+      Additional fallacies that don't fit neatly into other categories
+      but are common in technical and business contexts.
+
+    middle_ground:
+      structure: "Position A. Position B. Therefore truth is between A and B."
+      latin: "argument to moderation"
+      example: "'You say microservices, they say monolith. Let's do something in between.'"
+      why_invalid: "Truth isn't determined by splitting the difference. One side might be right."
+      common_in: "Compromise-seeking without principle. Design by committee."
+      detection: "Evaluate each position on its merits, not its position on a spectrum."
+
+    nirvana_fallacy:
+      structure: "Solution S isn't perfect. Therefore reject S."
+      latin: "perfect solution fallacy"
+      example: "'Automated testing doesn't catch every bug. So why bother?'"
+      why_invalid: "Compares real option to unrealistic ideal."
+      common_in: "Rejecting incremental improvements."
+      detection: "Compare S to actual alternatives, not perfection."
+
+    sunk_cost:
+      structure: "We've invested X in P. Therefore we must continue P."
+      example: "'We've spent 2 years on this rewrite. We can't abandon it now.'"
+      why_invalid: "Past investment doesn't change future value."
+      common_in: "Project continuation decisions. 'Too big to fail.'"
+      detection: "Ask: 'If starting fresh today, would we choose this path?'"
+
+    appeal_to_complexity:
+      structure: "X is complex. Therefore X is correct/valuable."
+      example: "'Our architecture has 47 microservices. It must be sophisticated.'"
+      why_invalid: "Complexity often indicates poor design, not sophistication."
+      common_in: "Overengineering justification."
+      detection: "Ask: 'Does the complexity serve a purpose?'"
+
+    appeal_to_simplicity:
+      structure: "X is simple. Therefore X is correct."
+      example: "'This solution is elegant. Therefore it must be right.'"
+      why_invalid: "Simplicity is a heuristic, not proof. Reality can be complex."
+      common_in: "Premature simplification."
+      detection: "Ask: 'Does this adequately handle the actual complexity?'"
+
+    naturalistic_fallacy:
+      structure: "X is the case. Therefore X ought to be the case."
+      latin: "is-ought fallacy, Hume's guillotine"
+      example: "'Developers naturally resist documentation. So we shouldn't require it.'"
+      why_invalid: "Facts don't determine values. What is doesn't imply what should be."
+      common_in: "Justifying bad practices because they're common."
+      detection: "Separate descriptive claims from normative claims."
+
+    moralistic_fallacy:
+      structure: "X ought to be the case. Therefore X is the case."
+      example: "'Good code should be self-documenting. Therefore our code IS self-documenting.'"
+      why_invalid: "What should be doesn't determine what is."
+      common_in: "Wishful thinking about code quality."
+      detection: "Verify claims empirically, not normatively."
+
+    motte_and_bailey:
+      structure: "Make bold claim B (bailey). When challenged, retreat to defensible claim M (motte). Then reassert B."
+      example: "'AI will replace all developers!' (Challenged.) 'I just mean AI will change how we work.' (Then continues claiming replacement.)"
+      why_invalid: "Defends weak claim with strong one, then returns to weak claim."
+      common_in: "Hot takes. Thought leadership."
+      detection: "Pin down exactly which claim is being defended."
+
+    kafka_trap:
+      structure: "Denial of X is proof of X."
+      example: "'If you say you're not resistant to change, that proves you're resistant to change.'"
+      why_invalid: "Unfalsifiable. No response can disprove the claim."
+      common_in: "Ideological arguments. Toxic team dynamics."
+      detection: "Ask: 'What would disprove this claim?'"
+
+    gish_gallop:
+      structure: "Overwhelm with many weak arguments rather than few strong ones."
+      example: "Listing 20 reasons for a technical choice, each barely supported."
+      why_invalid: "Quantity doesn't replace quality. Prevents thorough examination."
+      common_in: "Vendor pitches. Overwhelming documentation."
+      detection: "Address arguments one at a time. Demand depth over breadth."
+
+    tone_policing:
+      structure: "Dismiss argument because of how it was delivered."
+      example: "'I can't engage with your feedback when you're being so negative.'"
+      why_invalid: "Tone doesn't affect validity of argument."
+      common_in: "Deflecting criticism. 'Be constructive.'"
+      detection: "Separate the argument from its delivery."
+
+    not_invented_here:
+      structure: "X comes from outside. Therefore X is unsuitable."
+      example: "'That library wasn't built for our use case.' (Without evaluating it.)"
+      why_invalid: "Origin doesn't determine suitability."
+      common_in: "Engineering hubris. Reinventing wheels."
+      detection: "Evaluate on technical merits regardless of source."
+
+    credentials_fallacy:
+      structure: "X lacks credentials C. Therefore X's argument is invalid."
+      example: "'You're not a senior engineer, so you can't critique the architecture.'"
+      why_invalid: "Arguments stand or fall on their own merits."
+      common_in: "Hierarchy enforcement. Gatekeeping."
+      detection: "Evaluate the argument, not the arguer's title."
+
+  # ============================================
+  # META: DETECTING FALLACIES IN YOUR OWN WRITING
+  # ============================================
+
+  self_check:
+    description: >
+      Before publishing, run these checks on your own arguments.
+
+    process:
+      - step: "Identify your conclusion"
+        question: "What exactly am I claiming?"
+      - step: "List your premises"
+        question: "What evidence/reasoning supports this?"
+      - step: "Check relevance"
+        question: "Does each premise actually support the conclusion?"
+      - step: "Check presumption"
+        question: "Am I assuming something that needs to be proven?"
+      - step: "Check causation"
+        question: "Am I conflating correlation with causation?"
+      - step: "Check language"
+        question: "Am I using terms consistently throughout?"
+      - step: "Steel man test"
+        question: "What's the strongest objection? Have I addressed it?"
+      - step: "Falsifiability test"
+        question: "What would prove my claim wrong? Is that possible?"
+
+    red_flags:
+      - "Everyone knows..."
+      - "It's obvious that..."
+      - "The only option is..."
+      - "Any competent engineer would..."
+      - "Studies show..." (without citation)
+      - "In my experience..." (as sole evidence)
+      - "That's just how it is..."
+      - "You can't argue with results..."

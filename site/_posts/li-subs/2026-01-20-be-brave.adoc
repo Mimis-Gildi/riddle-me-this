@@ -1,0 +1,65 @@
+---
+categories: [reflections]
+tags: [AI,Competence,Adoption]
+excerpt: >
+    Friday: Fear. Monday: Competing Agent Teams.
+classes: wide
+comments: false
+hidden: false
+search: true
+read_aloud: false
+---
+= Friday: Fear. Monday: Agents.
+
+link:/riddle-me-this/adventures/2025/09/18/hole-getting-deeper.html[Most IT teams will be deprecated in 2 years.]
+Will you be deprecated? Unemployed?
+If your employment depends on how others accept tech -- you need to know this.
+
+Four days ago I presented agentic AI to a room full of Corporate American developers.
+What I got back was morbid fear -- people stopped asking questions and started airing grievances.
+
+This morning? The same team demoed adversarial agent teams collaborating and competing -- from their own workstations.
+
+Same people. Four days.
+
+== What Changed
+
+Not the tool. Not the policy. *Me.*
+
+Agentic AI -- the real kind, like https://code.claude.ai/docs/en/quickstart[Claude Code] or https://opencode.ai/[OpenCode] -- brings something we've never had before: tooling that teaches the user.
+
+You don't learn it, then use it. You use it, and it teaches you as you go.
+
+All this team needed:
+
+* A real agentic system (they picked Claude Code)
+* A curated roadmap -- three weeks to mastery, self-paced, with their agents and teammates
+* Someone in the room who earns their respect -- and teaches them to earn their own
+
+Without the roadmap, they'd still adopt. The roadmap just compresses the timeline -- from three months of fumbling to three weeks of directed progress.
+
+Without me in the room? They'd still be scared.
+
+== Why Your Horse Won't Drink
+
+You've been dunking that horse in water, haven't you?
+
+I know you have -- that's 90% of my customers. https://www.youtube.com/live/j-2sQfftqdE[JetBrains confirmed it]: only senior developers adopt on their own. Everyone else ignores it. You make it a policy. Designs don't change. Code stays crap. Velocity drops.
+
+What gives?
+
+It's not about AI. It's about people. Contact with a tool or a policy doesn't change people.
+Human-to-human contact does. The right kind.
+
+*To follow you -- they need to respect you.*
+
+*To beat you -- they need to respect themselves.* +
+And that's the part nobody told you.
+
+This team transformed in four days because I was in the room.
+A real hacker, like them. Doing some cool hacking with them.
+Not just because the tool was magic -- because someone showed up who could earn their respect and teach them to earn their own.
+
+That's what I do.
+
+https://buy.stripe.com/aFadR1bwUce75ej1OIgYU02[Pay my retainer and let's talk.]
