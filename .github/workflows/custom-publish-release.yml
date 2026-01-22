@@ -71,7 +71,7 @@ jobs:
 
       - name: ☕ Set up Java
         if: steps.resume-changes-detected.outputs.satisfied == 'true' && steps.env.outputs.is-self-hosted == 'false'
-        uses: actions/setup-java@v5.1.0
+        uses: actions/setup-java@v5.2.0
         timeout-minutes: 5
         with:
           distribution: temurin
