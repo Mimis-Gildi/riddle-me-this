@@ -18,7 +18,7 @@ This mechanism serves as a reminder for wetware and software alike.
 
 - [x] **#3: Flat team documentation** -- RESOLVED. Documented in both TEAM_NORMS.adoc and CLAUDE.md.
 
-- [ ] **#4: Emergency/Speed Tradeoffs** -- Are norms truly non-negotiable even with explicit consent to skip? Needs discussion.
+- [x] **#4: Emergency/Speed Tradeoffs** -- RESOLVED. Added "On Incompleteness" section to TEAM_NORMS.adoc. References Gödel's incompleteness theorems. Defines Provisional Action Protocol for genuine emergencies. Team still holds final authority via mandatory review and ratify/rollback.
 
 ---
 

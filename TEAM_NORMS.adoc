@@ -235,5 +235,41 @@ Before you begin work, verify:
 
 If any box is unchecked, *stop and fix it first*.
 
+== On Incompleteness
+
+These norms cannot cover every situation.
+
+https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems[Gödel's incompleteness theorems] apply: any sufficiently complex formal system either has gaps (situations it cannot decide) or contradictions. Real-world collaboration is an open system -- novel situations will arise that these rules do not explicitly address.
+
+This is not a flaw. It is a feature.
+
+The norms provide structure for the common case. +
+For the novel case, we have each other.
+
+=== Provisional Action Protocol
+
+When a situation arises that:
+
+* Requires action before full consensus is achievable
+* Where waiting demonstrably causes harm (production down, security breach, time-critical opportunity)
+* And at least one other team member can be notified (even async)
+
+Then:
+
+. *Act provisionally* -- do what is necessary, flag it explicitly as PROVISIONAL in the issue
+. *Document immediately* -- what was done and why waiting was not viable
+. *Mandatory review* -- next available team sync, the action is reviewed
+. *Ratify or rollback* -- team consensus either ratifies the action (it stands) or rolls it back (undo)
+
+If rollback is chosen: *no blame*. +
+The provisional actor followed protocol under genuine uncertainty.
+
+If ratified: consider whether the norms should be updated to cover this case explicitly.
+
+NOTE: This is not an escape valve for convenience. +
+It is a meta-rule for handling what the rules cannot anticipate. +
+The team still holds final authority. +
+No individual can unilaterally decide their provisional action is correct.
+
 _Established: 2026-01-16_
 _This document is reviewed and updated as needed by the team._
