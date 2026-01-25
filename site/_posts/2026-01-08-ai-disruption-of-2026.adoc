@@ -7,7 +7,7 @@ classes: wide
 comments: true
 hidden: false
 search: true
-read_aloud: true
+read_aloud: false
 ---
 = 2026: The Year the Ground Moves
 :imagesdir: ./assets/images
