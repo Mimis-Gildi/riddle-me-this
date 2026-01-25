@@ -436,6 +436,7 @@ And giving humans an interface to control how much "evaluate" and forcing LLM to
 Claude Code is the simplest variant of such an agentic coding assistant.
 It doesn't come with any of the real and powerful agent types, tools, and orchestrators real hackers use today.
 But it is extendable with ease. Making its simplicity a strength, not hindrance.
+See https://github.com/anthropics/skills[Anthropic's skills repository,window=_blank] for examples of how to extend your setup.
 
 Elegant. I love Anthropic for that.
 
@@ -549,7 +550,8 @@ _Because that's the point._
 *Primary Premise:* The "AI will replace coders" hysteria is a demographic phenomenon, not a technical truth.
 The same AI can be either a slop machine or a genuine collaborator -- the difference is in the *_human_*, *NOT* the _model_.
 
-See `rdd13r-style-guide.yml` -- argument forms information for Agentic AI.
+See `rdd13r-style-guide.yml` --  https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/rdd13r-style-guide.yml[argument forms information,window=_blank] for Agentic AI collaborators (not tools).
+
 
 *The Argument Form:*
 
