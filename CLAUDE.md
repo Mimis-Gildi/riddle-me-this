@@ -134,13 +134,13 @@ The repository uses extensive GitHub Actions automation:
 
 Claude Code automatically loads memory files in this order (highest priority first):
 
-| Level | Location | Scope | Version Controlled |
-|-------|----------|-------|-------------------|
-| Managed | `/Library/Application Support/ClaudeCode/CLAUDE.md` | Organization-wide | IT-managed |
-| Project | `./CLAUDE.md` | Team-shared | Yes (this file) |
-| Project rules | `./.claude/rules/*.md` | Team-shared, modular | Yes |
-| User | `~/.claude/CLAUDE.md` | Personal, all projects | No |
-| Project local | `./CLAUDE.local.md` | Personal, this project | No (gitignored) |
+| Level         | Location                                            | Scope Today            | Version Controlled |
+|---------------|-----------------------------------------------------|------------------------|--------------------|
+| Managed       | `/Library/Application Support/ClaudeCode/CLAUDE.md` | Organization-wide      | IT-managed         |
+| Project       | `./CLAUDE.md`                                       | Team-shared            | Yes (this file)    |
+| Project rules | `./.claude/rules/*.md`                              | Team-shared, modular   | Yes                |
+| User          | `~/.claude/CLAUDE.md`                               | Personal, all projects | No                 |
+| Project local | `./CLAUDE.local.md`                                 | Personal, this project | No (gitignored)    |
 
 ### For Contributors
 
