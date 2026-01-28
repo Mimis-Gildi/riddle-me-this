@@ -12,7 +12,7 @@ read_aloud: false
 = Claude Code with Local Models: What Works, What Breaks, What’s Worth It
 :systems-erosion: https://dev.to/narnaiezzsshaa/why-we-suddenly-have-developers-who-cant-think-in-systems-gpj[dev.to - Why We Suddenly Have Developers Who Can't Think in Systems,window=_blank]
 
-.Did you know that a local model with Claude Code is the latest watercooler trend?
+.Did you notice 'Claude Code {plus} local models' became a hot topic overnight?
 image::/riddle-me-this/assets/images/models/local-model-corporate-reality.png[Local Model versus Hosted Model]
 {nbsp}
 
