@@ -12,6 +12,10 @@ read_aloud: false
 = Claude Code with Local Models: What Works, What Breaks, What’s Worth It
 :systems-erosion: https://dev.to/narnaiezzsshaa/why-we-suddenly-have-developers-who-cant-think-in-systems-gpj[dev.to - Why We Suddenly Have Developers Who Can't Think in Systems,window=_blank]
 
+.Did you know that a local model with Claude Code is a latest watercooler trend?
+image::/riddle-me-this/assets/images/models/local-model-corporate-reality.png[Local Model versus Hosted Model]
+{nbsp}
+
 I am running Claude Code without Claude on a laptop and want to share my experience.
 Last weekend I helped another team take flight with Agentic AI the right way -- rocket-assisted.
 And the same request surfaces over and over again -- *_I want to stay on-device_*.
@@ -43,7 +47,7 @@ If you're bringing this up internally, do leadership a favor: translate "local v
 
 Run locally -- there are TWO ways to do this: money or finesse.
 
-https://www.nvidia.com/en-us/products/workstations/dgx-spark/[NVIDIA DGX Spark] is about $4k per unit (ballpark) and needs a place to live.
+https://www.nvidia.com/en-us/products/workstations/dgx-spark/[NVIDIA DGX Spark,window=_blank] is about $4k per unit (ballpark) and needs a place to live.
 NVIDIA markets it for roughly "hundreds of billions" class local work.
 Pairing two (ConnectX-7) is the intended scaling story, and NVIDIA markets the pair as "up to ~405B".
 From there, your "parity" depends on precision, context, and your stack.
@@ -122,7 +126,7 @@ image::/riddle-me-this/assets/images/models/ollama-claude-qwen3-coder.png[Qwen3-
 {nbsp}
 
 Currently `ollama` default context window is 4096. That's nothing, really.
-https://docs.ollama.com/context-length[Increase it] as the docs say, or with `/set parameter num_ctx`.
+https://docs.ollama.com/context-length[Increase it,window=_blank] as the docs say, or with `/set parameter num_ctx`.
 
 And right here I need to immediately point something out: this will be nothing like your Opus 4.5 experience.
 Our goal at this point is usability. *_Not parity._*
@@ -201,7 +205,7 @@ Good. Let's play.
 
 == Models -- and Second Discrepancy
 
-We're going to use https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507[Qwen3-30B-A3B-Thinking-2507] because:
+We're going to use https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507[Qwen3-30B-A3B-Thinking-2507,window=_blank] because:
 
 . It is my favorite model for *_worker agents_*; super-performant on A100s.
 . The RTX can lift it (barely but stably), so we can compare.
@@ -367,3 +371,21 @@ It is convincing one experienced, salt-and-pepper–haired Systems Engineer to j
 
 By all means: use this topic at the watercooler.
 But real results require real competence.
+
+'''
+
+P.S. Update: I managed to inject a lightweight "digital identity" layer into `qwen3-coder:latest` on my corporate-Mac equivalent.
+After streamlining my Private Memory MCP (consolidating Redis data behind it), the assistant got noticeably better at coding within this repo.
+
+The core conclusion doesn't change: the box stays pegged, model capability is still bounded, and headroom for extensions is limited.
+But I learned something useful: even under corporate constraints, you *can* experiment with identity/memory techniques --
+as long as you treat it as research and keep your expectations realistic.
+When there is no other option available:
+
+- you can still learn hands-on about some of the latest and greatest trends in Agenic AI;
+- and you can still follow my community tutorials on local orchestration setup.
+
+(And yes: if you're doing this at work, get buy-in and keep a clear data boundary.)
+
+See my other article where I mention "digital identity" "trails under highways": +
+https://mimis-gildi.github.io/riddle-me-this/reflections/2026/01/25/plebs-discovered-claude.html[I Figured It Out -- The AI Hysteria,window=_blank].
