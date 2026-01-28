@@ -2,7 +2,7 @@
 categories: [adventures]
 tags: [AI,Competence,Advanced,Local]
 excerpt: >
-    Local models are fun -- but only if you have the power.
+  Local models are fun -- but only if you have the power.
 classes: wide
 comments: false
 hidden: false
@@ -10,15 +10,15 @@ search: true
 read_aloud: false
 ---
 = Claude Code with Local Models: What Works, What Breaks, What’s Worth It
-:plebs-devs: https://dev.to/narnaiezzsshaa/why-we-suddenly-have-developers-who-cant-think-in-systems-gpj[dev.to - Why We Suddenly Have Developers Who Can't Think in Systems,window=_blank]
+:systems-erosion: https://dev.to/narnaiezzsshaa/why-we-suddenly-have-developers-who-cant-think-in-systems-gpj[dev.to - Why We Suddenly Have Developers Who Can't Think in Systems,window=_blank]
 
 I am running Claude Code without Claude on a laptop and want to share my experience.
 Last weekend I helped another team take flight with Agentic AI the right way -- rocket-assisted.
-And the same request surfaces over and over again -- *_I want to stay within my local_*.
+And the same request surfaces over and over again -- *_I want to stay on-device_*.
 
 There is a valid reason for this request. My trainees are Corporate America employees.
-The corporate is breathing down their necks about "New Tools," i.e., Claude Code.
-To "suits" this makes no sense when "Copilot" is deployed.
+Corporate is breathing down their necks about "New Tools," i.e., Claude Code.
+To leadership this makes no sense when "Copilot" is deployed.
 Much like non-drivers can't tell the difference between 2024 Ford Pinto reincarnate and 2026 Lucid Air,
 especially when the price is comparable. In addition,
 any thought of a company's exceptional code leaving to the cloud gives execs nightmares.
@@ -27,24 +27,32 @@ Combine this with all the news of security leaks and regulatory breaches due to 
 
 My trainees experience the difference. They move five times faster and feel ten times smarter.
 And they're curious and adventurous. At least in my class. They want the magic.
-And they hope that keeping Claude Code local, the only agentic AI they know,
+And they hope that keeping Claude Code on-device, the only agentic AI they know,
 will address the corporate fears and open a path to adoption.
 And it's my fault too: in the beginning I demo my adversarial agentic teams collaborating in my homelab servers
--- the little people. It makes a heck of an impression.
+-- the "little people" in a box, as my friends and family like to say. It makes a heck of an impression.
 So by the end of the bootcamp I am inundated with links to blog posts where people run models locally.
 
-Run locally -- there are TWO ways to do this: money or finesse.
-https://www.nvidia.com/en-us/products/workstations/dgx-spark/[NVIDIA DGX Spark] for about $4k per item and a place for it --
-that's a 200B model marketed to run fine. Realistically, you need TWO via ConnectX-7 "to run up to 405B models."
-DGX Spark is marketed for roughly 'hundreds of billions' class *local* work, and *_pairing two is the intended scaling story_*.
-Then, with two, your 'parity' depends on precision, context, and stack.
-Fine-print decoded -- $8,000 gets you your local model.
-This is the most professional option because NVIDIA explicitly designed this super-chip for developers.
+Before we begin, here's the Monday-morning decision tree:
 
-The other way is to scrouge up a data center like I have.
+. Corporate Mac (<= 32GB): local is *not operationally viable* -- use hosted, or hybrid with a remote executor farm.
+. Maxed MacBook MAX (128GB): local mid-size models are viable -- parity still requires bigger remote hitters.
+. Laptop {plus} eGPU: expect yak-shaving and pain -- only do it if you enjoy pain.
+
+If you're bringing this up internally, do leadership a favor: translate "local vs hosted" into an ops-and-risk plan (data boundary, logging/audit, cost controls, and a staged rollout). Leadership doesn't hate the tool; they hate unmanaged risk.
+
+Run locally -- there are TWO ways to do this: money or finesse.
+
+https://www.nvidia.com/en-us/products/workstations/dgx-spark/[NVIDIA DGX Spark] is about $4k per unit (ballpark) and needs a place to live.
+NVIDIA markets it for roughly "hundreds of billions" class local work.
+Pairing two (ConnectX-7) is the intended scaling story, and NVIDIA markets the pair as "up to ~405B".
+From there, your "parity" depends on precision, context, and your stack.
+Fine-print decoded: ~$8,000 (ballpark) is the cleanest pro-looking way to buy yourself local headroom.
+
+The other way is to scrounge up a data center like I have.
 You will have a half-rack swinging from a wall and a few 4U server-case computers loitering around.
-This way CAN even be free and more powerful than the former if you are willing to trade and sell hardware.
-This needs patience, takes time, and requires a lot of hardware and systems knowledge.
+This way can even be free and more powerful than the former if you are willing to trade and sell hardware.
+It needs patience, takes time, and requires hardware and systems knowledge.
 
 _But my friends here want to run on a MacBook Pro M-series *issued by their employer*._
 
@@ -59,68 +67,67 @@ What do you think will happen? Let's find out?
 == Matching a Rig -- First Discrepancy
 
 My daily box is a maxed-out late model Mac.
-Luckily, I have an older series too, the M chip is older, but RAM matches the desired target spec.
+Luckily, I have an older series too: older chip, but RAM matches the desired target spec.
 
 The first order of business is getting the OS and tooling to match. And right here is our FIRST MISMATCH.
-The corporate runs a Microsoft Antivirus conglomerate pretending to be MDM and supporting Jamf somehow.
-This XNU (Mach/BSD hybrid) kernel has an antivirus module loaded on it as if it were Windoze.
+The corporate runs a Microsoft antivirus conglomerate pretending to be MDM and supporting Jamf somehow.
+This XNU (Mach/BSD hybrid) kernel has an antivirus module loaded on it as if it were Windows.
 I cannot replicate such a setup. If you are trying to follow me on such a box
--- *_your outcomes may be different_*. You may have access and permission problems where I do not.
+-- *_your outcomes may be different_*.
+You may have access and permission problems where I do not.
 _Safer to stop following my process and read on._ Or follow on your personal hardware.
-
 
 == Sidestep: Class Objective Match
 
 I write about successful ways to adopt AI in business -- tried and true.
-So, how does this article fit in to my message? Let's first understand the problem?
+So, how does this article fit into that message?
 
 AI adoption fails miserably because we lost Systems Engineers from our ecosystem.
-Narnaiezzsshaa explains this well in "{plebs-devs}," so I won't dwell on this.
+Narnaiezzsshaa explains this well in "{systems-erosion}," so I won't dwell on this.
 
-I fix this by surrounding that super-experienced hands-on systems engineer with a young team poised to grow.
-I am such an engineer, so I start with myself, then I find peers. This works in startups.
-And it works best in corporate!
+I fix this by surrounding one super-experienced hands-on systems engineer with a young team poised to grow.
+This works in startups. It works best in corporate.
+And the ignition I turn into a raging inferno is always the same: *hands-on curiosity*.
 
-With each new team, the first spark I turn into a raging inferno is *hands-on curiosity*!
+_If you are curious to read on -- this is for you. You have the flame._
 
-_If you are curious to read on -- this is for you! And you have the flame._
-
-== Lets liftoff ... or so
+== Let's lift off ... or so
 
 I confess -- I didn't read any of the articles forwarded to me.
-Because, setting Claude Code up with a local LLM can be done in a small number of ways
--- all simple. I decided to use https://ollama.com/ to host me an LLM locally on the aforementioned MacBook Pro.
+Because setting Claude Code up with a local LLM can be done in a small number of ways -- all simple.
+I decided to use https://ollama.com/ to host an LLM locally on the aforementioned MacBook Pro.
 
 .The 30-second `ollama` setup for Claude.
 image::/riddle-me-this/assets/images/models/ollama-home-claude.png[ollama for Claude Code]
 {nbsp}
 
-Once you follow the basic `ollama` instructions for Claude Code selecting `qwen3-coder` model,
-the largest you can run natively on such a Mac -- _you'll get your **Claude Code with NO Claude**_.
+Once you follow the basic `ollama` instructions for Claude Code and select the `qwen3-coder` model
+-- _you'll get your **Claude Code with NO Claude**_.
 
-.`qwen3-coder` correctly connected to and project context is loaded as expected.
+.`qwen3-coder` correctly connected and project context is loaded as expected.
 image::/riddle-me-this/assets/images/models/ollama-claude-no-claude.png[Claude Code Operates properly]
 {nbsp}
 
-Model identity is unreliable here. Some clients inject 'GPT-4' style scaffolding or the model hallucinates its identity.
+Model identity is unreliable here. Some clients inject "GPT-4" style scaffolding or the model hallucinates its identity.
 Trust the configured backend (`qwen3-coder:latest` in the status line or `ollama ps`), not what it claims.
 
 .Misreported model happens.
 image::/riddle-me-this/assets/images/models/ollama-claude-thinks-its-gpt.png[Claude Code Operates properly]
 {nbsp}
 
-Your `ollama` preferred model running instance is a tiny footprint that your Mac can host.
+Your `ollama` model instance is a tiny footprint that your Mac can host.
 
 .This local instance is running the default context size setting -- change that.
 image::/riddle-me-this/assets/images/models/ollama-claude-qwen3-coder.png[Qwen3-coder tiny]
 {nbsp}
 
-Currently `ollama` default context window is 4096, that's nothing, really,
-https://docs.ollama.com/context-length[so you should increase it] as the documentation says or with `/set parameter num_ctx`
+Currently `ollama` default context window is 4096. That's nothing, really.
+https://docs.ollama.com/context-length[Increase it] as the docs say, or with `/set parameter num_ctx`.
+
 And right here I need to immediately point something out: this will be nothing like your Opus 4.5 experience.
 Our goal at this point is usability. *_Not parity._*
 
-And finally, and most importantly, your GPU will just always be pegged -- that is fine.
+And finally, and most importantly: your GPU will be pegged during active work. That's fine.
 
 .Even with such a tiny model, your MacBook GPU will get a serious workout.
 image::/riddle-me-this/assets/images/models/ollama-local-load.png[Mac GPU always loaded]
@@ -128,198 +135,235 @@ image::/riddle-me-this/assets/images/models/ollama-local-load.png[Mac GPU always
 
 == Usability Conclusion
 
-This is indeed a basic usable code assistant running completely contained in the box.
-It is surprisingly capable for most of your coding tasks.
+This is indeed a usable code assistant running completely contained in the box.
+It is surprisingly capable for many everyday coding tasks.
 It will understand your project structure.
-And it will help you refactor a lot of everyday code.
+And it will help you refactor a lot of ordinary code.
 
-Right here you should stop and enjoy your accomplishment!
+Right here you should stop and enjoy your accomplishment.
 You have a capable collaborator all of your own.
 And you have joined the club of truly agentic developers.
 
-Now let's address the cons. The main reason you are using agentic collaborator is not to just speed up your development.
-It is to help you get into true Systems Thinking!
-And this little model certainly helps you with coding, no argument there.
+Now the cons.
+
+The main reason you are using an agentic collaborator is not just to speed up development.
+It is to help you get into real Systems Thinking.
+And this little model certainly helps you with coding -- no argument there.
 *_It does not help you become a systems engineer -- it isn't one itself._*
-It can never match the depth and breadth of systems thinking Opus 4.5 or GPT 5.2 would shed on you!
 
-When you're accustomed to smarter collaborators -- this is NOT something that you can accept anymore.
-It will feel like getting off of a light and fast jet onto a wooden bicycle.
+It cannot match the depth and breadth of systems thinking that Opus 4.5 (or a top-tier hosted model) can bring.
+When you're accustomed to smarter collaborators, this is not something you can accept anymore.
+It feels like getting off of a light jet onto a wooden bicycle.
 
-We have usability. But we have NO PARITY!
+We have usability. But we have NO PARITY.
 
-*Caveat:* When I first rand this experiment, I'd forgotten that I had local memory MCP bootstrapping going --
-I wasn't careful not planning to allocate too much time to this experiment.
-With a ton of lobotomizing memories for LLM to claim as own, which specializes them to a collaborator rather than one-shot assistant,
+*Caveat:* On my first run I forgot I had a local-memory MCP server bootstrapping automatically.
+With a ton of lobotomizing memories for the LLM to claim as its own (specializing it into a collaborator rather than a one-shot assistant),
 my instance was not usable until I disconnected the MCP server.
-So my first run was unpleasant. But there is an important additional point exposed here.
+So my first run was unpleasant -- and it exposed an important point:
 
-You are running pegged as is. There is little capacity to spare.
+You're already pegged. There is little capacity to spare.
 You have extendability issues with this tiny model.
 There is no room to grow.
 
 == Parity Setup
 
-We've established that we can run a local model with little effort. And it is usable and marginally useful.
-On the flipside -- this consumes all the resources that corporate bpx has to offer, and there is no room to grow.
-Now let's run a second experiment to see if we can make local model hosting *_practical_* in the corporate world?
+We've established that we can run a local model with little effort. It is usable and marginally useful.
+On the flip side, it consumes all the resources that a corporate box has to offer, and there is no room to grow.
+Now let's run a second experiment to see if we can make local model hosting *_practical_* in the corporate world.
 
-We will answer the real question not directly asked -- can I have *THIS* _magic_ in my home office?
+We will answer the real question not directly asked: can I have *this* magic in my home office?
 
-Unfortunately, this is where some fun-quick-tinkering stops and hardcore engineering begins.
-We're lacking GPU over VRAM power -- that's our main obstacle! In what ways can we get that and stay local?
+Unfortunately, this is where quick tinkering stops and engineering begins.
+We're lacking VRAM and sustained GPU throughput -- that's the main obstacle.
 Here are our immediate options:
 
-. Existing Mac {plus} eGPU purchased online: $2,000 out of pocket (OOP).
-. MacBook M4 MAX /w 128GB Unified Memory: $7,500 out of pocket.
-. NVIDIA DGX Spark: $4,000 starter, and $8,000 paired OOP (par).
-. Dual A100s 80GB server: $31,300 refurbished OOP, or free with finagling.
-. Half-rack 12 4U 8X (A/H)100s: _are you selling your home for this?_
+Ballpark costs (hardware only; time and yak-shaving not included):
 
-For #1 I have a ThunderBolt dock and a single RTX 5090 32 GB from an assignment a year ago.
-*Caution:* this is my warning from before --
-the TinyCorp driver https://github.com/tinygrad you need is not a turnkey solution easy to set up.
-If you are running that bastardized corporate Mac, there could be many additional obstacles preventing you from extending the OS.
-I spent a couple of weeks of my time between breaks to perfect this hardware fixture just for fun. We'll use it.
+. Existing Mac {plus} eGPU purchased online: ~$2,000 out of pocket (OOP).
+. MacBook M4 MAX /w 128GB Unified Memory: ~$7,500 out of pocket.
+. NVIDIA DGX Spark: ~$4,000 starter, and ~$8,000 paired OOP (par).
+. Dual A100s 80GB server: ~$31,300 refurbished OOP, or free with finagling.
+. Half-rack: 12 x 4U boxes with 8x (A/H)100s: _are you selling your home for this?_
 
-The #2 requires no additional hassle to set up! We will see if this means something.
+For #1 I have a Thunderbolt dock and a single RTX 5090 32GB from an assignment a year ago.
 
-The #3 is not available to me. I will "call a friend" to infer its performance as I am not planning to purchase one having better options available.
+*Caution:* The TinyCorp driver https://github.com/tinygrad you need is not turnkey.
+If you are running that corporate-managed Mac, there could be additional obstacles preventing you from extending the OS.
+I spent a couple of weeks between breaks to make this fixture behave. We'll use it.
 
-The #4 is our reference setup that I will compare against.
+The #2 requires no additional hassle. We'll see if that means something.
+The #3 is not available to me; I will "call a friend" to infer performance, as I am not planning to buy one.
+The #4 is our reference setup.
+The #5 is there to evoke a laugh.
 
-The #5 should evoke good laughs. We will talk about this setup in the end but not run the numbers on it.
-
-Good. Let's play!
+Good. Let's play.
 
 == Models -- and Second Discrepancy
 
-We're going to use this babe https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507[Qwen3-30B-A3B-Thinking-2507] because:
+We're going to use https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507[Qwen3-30B-A3B-Thinking-2507] because:
 
-. It is my all-time favorite model for *_the worker agents_*; super-performant on A100s;
-. The RTX can lift it, barely but stably, so we can have a comparative analysis;
-. It runs very well on MacBook MAX as is, opening up all of our desired comparisons.
+. It is my favorite model for *_worker agents_*; super-performant on A100s.
+. The RTX can lift it (barely but stably), so we can compare.
+. It runs well on MacBook MAX as-is, opening all of our desired comparisons.
 
 Why not other models?
 
 For the sake of brevity, I will not go into what it *actually takes* to run competent models locally.
-This is your Second Discrepancy and a MAJOR BARRIER even on an all-ready-device like NVIDIA DGX Spark,
-or you maxed out Mac -- systems engineering {plus} MLOps competence. These things matter:
+This is your Second Discrepancy and a major barrier even on an all-ready device like DGX Spark,
+or a maxed-out Mac: systems engineering {plus} MLOps competence. These things matter:
 
-. Exact dependency library version when setting up the bedrock ecosystem;
-. Exact model variants {plus} quantization (bf16 / fp8 / gguf q4_k_m etc.);
-. Context length settings (num_ctx), tool settings, temperature/top_p, max tokens;
-. Load affinity, latency, and drift sensitivity, CUDA flags and quirks, and much more.
+. Exact dependency and library versions when setting up the bedrock ecosystem.
+. Exact model variants {plus} quantization (bf16 / fp8 / gguf q4_k_m etc.).
+. Context length settings (num_ctx), tool settings, temperature/top_p, max tokens.
+. Load affinity, latency, drift sensitivity, CUDA flags and quirks, and much more.
 
-The model I linked above has a huge fan community with a lot of Discord groups sharing ready-go scripts and configuration options.
+The model above has a huge fan community, with Discord groups sharing ready-to-go scripts and configs.
 And it is one of the best collaborative executor models available locally right now.
 
-As you read this -- think to yourself what it would take for you to *_pull this off at your work_*?!
-Since our goal is PARITY IN HOME OFFICE, I will not be calling out the models I am asked about the most:
+As you read this, ask yourself what it would take to pull this off at work.
+Since our goal is parity in the home office, I will not go deep into the models I get asked about the most:
 
-* Qwen3-Next-80B-A3B-Instruct is my current project, quantized runs great on the A100s and on the MacBook MAX.
-It feels very heavy on the laptop. And no commodity grafix card can lift it.
-Once NVIDIA DGX Spark matures a little, there will be more documented experiences to follow in hacker communities.
-But right now this is not something a corporate developer can easily bring to work today.
+* Qwen3-Next-80B-A3B-Instruct is my current project. Quantized runs great on the A100s and on the MacBook MAX.
+It feels heavy on the laptop. And no commodity graphics card can lift it comfortably.
+Once DGX Spark matures, there will be more shared experience to follow. Today, it's not easy to bring to work.
 
-* The Qwen3-235B-A22B -- *the real deal* at home. And my wet dream. I'd lifted this quantized on the paired A100s with mixed feelings.
-There are way too few shared experiences available for it. It will take a lot of experimentation and time to tune it properly.
-So, I am sharing this model as *an absolute upper boundary* to what's possible at home.
-The jury is still out as my colleague with double-DGX is still repeatedly failing to raise it right.
-And MacBook MAX has no chance either. If successful -- you would have Claude Opus or better at your fingertips locally.
-So, this is an excluded boundary.
+* Qwen3-235B-A22B: the real deal at home, and my holy grail.
+I've lifted it quantized on paired A100s with mixed feelings.
+There are too few shared experiences available for it. It takes experimentation to tune properly.
+I'm sharing it as an absolute upper boundary of what's possible at home.
+The jury is still out: my colleague with a two-Spark setup is still repeatedly failing to raise it cleanly.
+MacBook MAX has no chance. If it works, you get something Opus-class at your fingertips locally.
+So: excluded boundary.
 
-*We're not considering these models because:*
+We're not considering these models because:
 
-. This is beyond of what a corporate employee can lift on commodity hardware;
+. This is beyond what a corporate employee can lift on commodity hardware.
 . I am still of two minds on quantization in general -- just a personal peeve.
 
 == The Fixture
 
-We're not comparing hardware-apples-to-apples. That is not our objective.
+We're not comparing hardware apples-to-apples. That is not the objective.
 Our goal is measuring the real impact on the human with locally hosted models.
-So, we will also consider a control set: your Claude Max subscription hosted by Anthropic.
-Variants would include:
+So, we also include a control set: your Claude Max subscription hosted by Anthropic.
 
-* *HOX:* Hosted orchestrator and executor;
-* *HOLX:* Hosted orchestrator and local executor (server or workstation);
-* *LOX:* Local orchestrator and local executor.
+For clarity, three configurations (I'll keep short labels for the table):
 
-For the sake of repeatability -- if you want to repeat this experiment yourself, please DM me for a shared repo.
-And be prepared to sink some time into it.
+* Hosted (HOX): hosted orchestrator and hosted executor.
+* Hybrid (HOLX): hosted orchestrator and local executor (server or workstation).
+* Local (LOX): local orchestrator and local executor.
+
+For repeatability: if you want to replicate this, DM me for a shared repo.
+Be prepared to sink some time into it.
 
 === The Challenge
 
 Two weeks ago I ran a massive refactoring on a distributed system I maintain for my company.
-And I wrote a job for adversarial AI teams to complete the entire trope.
-Tests don't change, and that's a rare scenario that makes this test worthwhile.
-Test metrics are captured and can be used for comparison, including run times.
-And the most valuable feature of this particular job is that vanilla Claude Opus 4.5 hallucinated itself into poop on it.
-Eventually, I had gotten it to complete something useful by itself.
-And abandoned attempts at that point because it did very well as an orchestrator to Qwen3 executors.
-So, it could evaluate the changes very well, just struggled producing them.
-I have never spent the time to figure out exactly why that happened -- I was after the refactoring outcome instead.
+I wrote a job for adversarial AI teams to complete the trope.
+Tests don't change -- a rare scenario that makes this fixture worthwhile.
+Metrics are captured, including run times.
 
-*The fixture and the challenge:*
+One weird observation: vanilla Opus 4.5 was a poor producer on this task.
+It eventually produced something useful, but it shined far brighter as an orchestrator to Qwen3 executors.
+It could evaluate changes very well, but struggled producing them.
+I never spent the time to figure out exactly why; I cared about the refactoring outcome.
 
-. We're not comparing the quality of code. I refactored manually later anyway.
-. Reminder: we exclude unstable runs and only evaluate work that converges.
-. We're only measuring the assistant's performance for the time it needs to converge.
+The fixture:
 
-*In other words:* _"At my company, can I have a local setup comparable to hosted Claude?"_
+. We're not comparing code quality. I refactored manually later anyway.
+. We exclude unstable runs and only evaluate work that converges.
+. We measure wall-clock time to converge.
+
+_In other words:_ "At my company, can I have a local setup comparable to hosted Claude?"
 
 == The Results
 
+Note: this is not a formal benchmark. These are wall-clock times to converge on one fixture, with my prompts/tooling and a simple stability rule: I only count runs that converge. Change the prompt, context, sampling, tools, or model build and you will get different numbers. The directional conclusions are the point.
+
 Let's get straight to the numbers:
 
-. *HOX:* MacBook MAX with Claude Code using Opus 4.5: initial *_fail_*; questionable 3rd attempt.
-. *HOX:* Corporate MacBook M2 32GB with Claude Code: comparable to the above.
-. *HOLX:* MacBook M4 Max {plus} *LF*: 4 minutes  51 seconds -- par.
-. *HOLX:* Corporate MacBook M2 32GB {plus} *LF*: 5 minutes  7 seconds.
-. *LOX:* MacBook M4 Max {plus} Qwen3-30B-A3B local: 24 minutes 49 seconds.
-. *LOX:* MacBook M2 32GB {plus} Qwen3-30B-A3B local: *impossibility*.
-. *LOX:* Corporate MacBook M2 32GB {plus} Qwen3-30B-A3B with RTX eGPU: 57+ minutes.
+. *Hosted* (HOX): MacBook MAX with Claude Code using Opus 4.5: initial *_fail_*; questionable 3rd attempt.
+. *Hosted* (HOX): Corporate MacBook M2 32GB with Claude Code: comparable to the above.
+. *Hybrid* (HOLX): MacBook M4 Max {plus} *LF*: 4 minutes 51 seconds -- par.
+. *Hybrid* (HOLX): Corporate MacBook M2 32GB {plus} *LF*: 5 minutes 7 seconds.
+. *Local* (LOX): MacBook M4 Max {plus} Qwen3-30B-A3B local: 24 minutes 49 seconds.
+. *Local* (LOX): MacBook M2 32GB {plus} Qwen3-30B-A3B local: *impossible*.
+. *Local* (LOX): Corporate MacBook M2 32GB {plus} Qwen3-30B-A3B with RTX eGPU: 57+ minutes.
 
-*LF* -- 3 X Qwen3-30B-A3B Teams (A100s) through MCP-A2A-Bridge from laptop,
-models running on decated hardware, Paired A100s through three Nvlink bridges, Linux.
+*LF* = 3 x Qwen3-30B-A3B teams (A100s) through MCP-A2A bridge from the laptop.
+Models run on dedicated hardware: paired A100s, triple NVLink bridges, Linux.
 
-BTW, we get the best quality of work and developer experience in 3,4, and 5 configurations.
-But that's not what we measure here today.
+BTW, we get the best quality of work and developer experience in the HOLX and LOX-on-M4 setups.
+But that's not what we measured today.
 
-These results are likely to vary slightly on repeated runs. And these runs take good effort to execute.
-This experiment can also be set up in a few different architectural permutations.
-For example, you can use hosted executor agents in your company hyperscalar.
-Companies running GCP get that ability with minimal setup, it's just a hosted service, and there is some degree of data protection from Google.
-For most corporate employees the setup of a local farm (*LF*) will unfortunately be a necessity to meet your privacy needs.
-So, here are important lessons we'd learned so far:
+These results will vary slightly on repeated runs. And these runs take real effort to execute.
+This experiment can also be set up in other permutations.
+For example, you can run executor agents inside your company hyperscaler environment.
+If your org already has that budget and governance in place, you can get similar benefits with less hardware drama.
+For many corporate employees, however, a local executor farm (LF) is the only realistic way to meet privacy constraints.
 
-* Dedicated Executor Farm *LF* owns everything.
-* Corporate box {plus} eGPU -- a terrible trade.
-* Maxed out corporate workstation -- plausible.
+Lessons learned so far:
 
-In other words: when you need a semi-trailer truck to move the load, your Ford 350 with a 5th wheel is a "barely-enough torture."
-And your Cybertruck is a splat on the asphalt. And ofcourse the railroad will always do it effortlessly.
+* Dedicated executor farm (LF) owns everything.
+* Corporate box {plus} eGPU is a terrible trade.
+* Maxed-out corporate workstation is plausible.
 
-P.S. What's excluded here is *LOX* with *LF* because it is nearly identical to *HOLX* -- it is the *LF* that is the differentiator:
-adding a ton of server compute to the laptop or remote single model. In practice,
-*HOLX* is never run in remote orchestrator against local models as that makes little sense.
+When you need a semi-trailer truck to move the load, your Ford 350 with a 5th wheel is "barely-enough torture."
+Of course, the railroad will always do it effortlessly.
 
-== Conclusion Parity and Usability
+P.S. What's excluded here is LOX with LF, because it is nearly identical to HOLX.
+LF is the differentiator: adding a ton of server compute to the laptop or remote single model.
 
-Using orchestrators to farm out small work to well-provisioned models through MCP-A2A cuts down development time significantly
-while maintaining the highest possible quality of work. This is the setup most advanced startups use today, so I was happy to share it.
-But in a corporate environment dragging along dedicated local LLM servers is not something you often find.
-The barriers to doing so are steep: both competence and hardware are in short supply.
+== Conclusion: Parity and Usability
 
-Corporate Agentic development with local parity models:
+Using an orchestrator to farm out small work to well-provisioned executors through MCP-A2A cuts down development time significantly
+while maintaining high quality. This is the setup most advanced startups use today, so I was happy to share it.
 
-. It is possible to use your work-laptop {plus} eGPU to run good work locally provided that:
-- You are okay to cook tea on it;
-- You have the time to kill;
+In a corporate environment, dragging around dedicated local LLM servers is uncommon.
+The barriers are steep: competence and hardware are in short supply.
+
+Corporate agentic development with local parity models:
+
+. It is possible to use your work laptop {plus} eGPU to run good work locally, provided that:
+- You are okay to cook tea on it.
+- You have time to kill.
 - You can set that Thunderbolt bridge up.
-. It is not yet possible to run good work locally on an outdated corporate MacBook Pro;
-. A new MacBook MAX variant will run your local models reasonably well under significant strain.
+. It is not yet realistic to run good work locally on an outdated corporate MacBook Pro.
+. A new MacBook MAX variant will run local models reasonably well -- under significant strain.
 
-*My conclusion:* Laptop {plus} RTX ain't worth it! Use remote Opus 4.5 and run much smaller jobs.
+*My conclusion:* Laptop {plus} RTX ain't worth it. Use remote Opus 4.5 and run much smaller jobs locally.
 
 P.S. There is OpenCode support on that `ollama` site too.
+
+== Local Agentic Clickbait
+
+I still did not read the posts my mentees sent me.
+But I collected them and ran an agentic job to cluster, summarize, and evaluate them against one question:
+
+*_Could a corporate developer reproduce this safely, on a managed laptop, without breaking policy or burning weeks of time?_*
+
+Outcome: none of the posts I was sent addressed the constraints that dominate Corporate America:
+managed endpoints, permissions/MDM friction, data handling, repeatability, and the workflow architecture needed for real AI adoption.
+Most of it is fun tinkering -- and that is fine.
+
+*_Just don't confuse tinkering with production._*
+
+If you want to speed up product development *securely*, reach out, and I'll help you build a roadmap.
+Hardware like NVIDIA DGX Spark can be a great asset, but it is not a strategy.
+You still need your Claude Code / OpenCode workflows configured to route work to the right models,
+and you need teams trained toward Systems Thinking, not prompt tricks.
+
+A post about "local agentic dev" is only useful to corporate teams if it answers:
+
+. What is the threat model and data boundary?
+. What breaks under MDM/endpoint controls?
+. How do you route tasks between local and hosted models?
+. How do you measure stability, not just speed?
+. What is the operational playbook? (Updates, logs, approvals)
+
+The fastest shortcut is not a new tool.
+It is convincing one experienced, salt-and-pepper–haired Systems Engineer to join your team
+-- and giving them air cover to teach the rest of the org how to think end-to-end.
+
+By all means: use this topic at the watercooler.
+But real results require real competence.
