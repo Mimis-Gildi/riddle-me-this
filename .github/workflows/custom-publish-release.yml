@@ -80,7 +80,7 @@ jobs:
 
       - name: ⚙️ Set up Gradle
         if: steps.resume-changes-detected.outputs.satisfied == 'true' && steps.env.outputs.is-self-hosted == 'false'
-        uses: gradle/actions/setup-gradle@v5.0.0
+        uses: gradle/actions/setup-gradle@v5.0.1
         timeout-minutes: 5
 
       - name: Bootstrap SDKMAN if Self-Hosted
@@ -96,7 +96,7 @@ jobs:
 
       - name: 📡 Submit Dependency Graph
         if: steps.resume-changes-detected.outputs.satisfied == 'true'
-        uses: gradle/actions/dependency-submission@v5.0.0
+        uses: gradle/actions/dependency-submission@v5.0.1
         timeout-minutes: 3
 
 
