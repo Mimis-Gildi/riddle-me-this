@@ -1,0 +1,262 @@
+---
+categories: [reflections]
+tags: [AI,Generative AI,Agentic AI,Agentic Teams]
+excerpt: >
+    57 seconds versus 20 minutes. Same models. Same task. Different architect.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: true
+---
+= Claude Code Agent Teams -- Straight Talk
+:imagesdir: ./assets/images
+:caparas-on-boris-flows: https://blog.devgenius.io/how-the-creator-of-claude-code-actually-uses-it-13-practical-moves-2bf02eec032a[How the Creator of Claude Code Actually Uses It: 13 Practical Moves,window=_blank]
+:caparas-on-agent-teams: https://pub.towardsai.net/inside-claude-codes-agent-teams-and-kimi-k2-5-s-agent-swarm-0106f2467bd2[Inside Claude Code’s Agent Teams and Kimi K2.5’s Agent Swarm,window=_blank]
+:bart-on-teams: https://youtu.be/VWngYUC63po[YouTube: Bart Slodyczka -- Claude Code's New Agent Teams Are Insane (Opus 4.6),window=_blank]
+:working-qwen3: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507[Qwen3-30B-A3B-Thinking-2507,window=_blank]
+:tourist: https://codeforces.com/profile/tourist?locale=en[tourist,window=_blank]
+:benq: https://codeforces.com/profile/Benq[Benq,window=_blank]
+:GongRzhe-MCP: https://github.com/GongRzhe/A2A-MCP-Server[GongRzhe A2A-MCP-Server,window=_blank]
+
+.The Distinguished Engineer's Dress Code
+[#img-go-to-meeting]
+image::/riddle-me-this/assets/images/go-to-meeting.png["I go to meeting. Claude goes to meeting too."]
+{nbsp}
+
+LI is about to be flooded with "Claude Code Teams Crazy!" populist plebs tropes -- LI rocks that.
+Same as we recently saw with "My coding career is over! Whaaaaaaa 😭."
+But *Agentic Teams*, especially *_Agentic Adversarial Teams_*, deserve a *competent look*.
+And that's why you are here.
+
+So, what's shaking? Wizardly hackers have run adversarial teams for three months now,
+and the Claude Code community has been diligently working on native support.
+We have a functional preview out for a week. And it has value.
+
+For the impatient competent and prolific coders:
+
+- You AIN'T gonna need that often!
+- Edge cases are practical -- with a lot of prep.
+- No comparison to REAL Agentic Teams -- very raw.
+- This is vibe-coder / no-coder plebsy slop-porn.
+
+_But it sure is FUN to try!_
+
+== First, What is Claude Code Agentic Team?
+
+Claude Code author, Boris Cherny, created the tool to prop up wizard hackers' throughput,
+not to enable vibecoding plebs that don't understand the code they publish.
+And so there are two (2) VERY different ways the tool is being used today.
+One way is the way Boris, the hacker community, and of course myself use it
+-- described by JP Caparas in "{caparas-on-boris-flows}".
+
+The other way is how vibecoding slops run -- long autonomous hallucination sessions.
+
+For "the-competent-way," see the linked article above -- subagents {plus} MCP is adequate and sufficient.
+
+This new enhancement allows one Claude Code instance, the Team Lead,
+to choreograph additional independent Claude Code instances, the Team Members.
+
+This is still very raw and inadequate -- {bart-on-teams}.
+
+To learn more about real agent teams, not the posing droppings you see here on LI,
+read {caparas-on-agent-teams}.
+
+== Second, A REAL Agentic Team -- and WHY?!
+
+Today the few capable engineers leave the 90% in the dust -- these may be the only people still coding in 5 years.
+No joke! Here is the breakdown:
+
+- Augmented devs -- 1/100 developers fully embrace agentic collaboration;
+- Productive devs -- 1/10 augmented devs use agentic team local servers.
+
+Why wizards use teams is important to understand! Refer back to Boris' way of working.
+We use the REPL agent we interface with as a conductor for dedicated adversarial server agents FOR SPEED!
+There are constraints we all have in common that plebs don't have:
+
+. We ALWAYS refactor agent's code manually because agents are DUMB;
+. We always fully orchestrate and supervise the team's task execution;
+. And, we always enforce strict NORMS for the team (Boris' manual CLAUDE.md)
+
+The longer the agent runs, the dumber it gets. And at its best -- it's here:
+
+.The BEST LLM can hope for is Expert Level Coder, with six (6) levels below humans!
+[#img-easy-ai]
+image::/riddle-me-this/assets/images/ai-agent-coder.png["LLM coders are dumb!"]
+
+{nbsp}
+
+So, six levels below humans. Some humans, such as {tourist}, or {benq}.
+Other humans are screaming "Claude Code is better than any developer I know."
+Corporate America's distinguished engineers -- not `tourist` or `Benq` -- they "go to meeting."
+They don't have time to mess with silly servers.
+Revealing, isn't it?!
+
+*What's the deal with speed?* Consider this fixture:
+
+- Claude Code v2.1.38 Opus 4.6 · Claude Max, IntelliJ IDEA 2025.3.2.
+- 3 X {working-qwen3} on paired A100s 80GB, Debian.
+- Riddler's (`rdd13r`) ripoff of {gongrzhe-mcp} in `kotlin`.
+
+*Scenario 1:* Refactor 3 disjoined Test-Function features. +
+*Scenario 2:* Refactor *_single_* Test-Function feature 3 ways.
+
+For the second scenario the order of refactoring does not matter.
+Each scenario has detailed granular instructions, more than 300 lines of text.
+
+*Test Run Scenario 1:*
+
+. Claude Code on MacBook Pro MAX: 20 minutes 33 seconds.
+. Claude Code Teams 3-5 *High Effort*: 12 minutes 9 seconds.
+. Claude Code {plus} 3 static Qwen3s: 57 seconds.
+
+*Test Run Scenario 2:*
+
+. Claude Code on MacBook Pro MAX: 11 minutes 2 seconds.
+. Claude Code Teams 3 Teammates *High Effort*: FAIL -- clobbered.
+. Claude Code {plus} 3 static Qwen3s: 41 seconds.
+
+On this last test Claude Code _"Team Lead"_ kept trying to code -- what a joke!
+
+*But do you see my most important point?!*
+{nbsp} -- *_I cannot wait ten minutes for it to produce garbage I then need to refactor longer._*
+
+=== MCP-A2A Colloquial Misnomer, and the Real Deal
+
+What is this MCP-A2A hacker wizards worship? First thing to remember, A2A comes from Google!
+And it is used in a very specific way on Google GCP: ADK {plus} MCP {plus} A2A is their signature stack.
+For a few months this was akin to Xerox for photocopying or Kleenex for tissues.
+
+Then A2A became a part of the Linux Foundation.
+We now have Agentic AI Foundation with A2A, MCP, Goose, and AGENTS.md available as *the open standard*.
+And this is important to understand how on the scene we toss libs at each other and expect them to work.
+
+Most importantly, current development on the scene is *_far ahead of the published standards_*.
+I have not seen anything like it in three decades of my coding and raising software teams.
+Concepts from a month ago are old. And standards from the last summer are ancient history.
+
+In 2022, we were building distributed systems that included LLMs as nodes of an Actor Model framework.
+These things are still running in Canadian call centers, and my customers are happy.
+But everyone has already forgotten this architectural model that threatened to become another ESB.
+In 2025 the MCP was born flipping everything on its head -- now the mindset is that of the Edge Device -- minimalistic.
+And just a year later, January 2026 everything is flipped on its head again
+{nbsp} -- we're currently running dedicated platform daemons hosting that MCP-A2A.
+
+All of this while distinguished engineers don't know that the IDE has its own MCP server capable of provenance.
+Or that you can add your own MCP to your IDE with all that _tribal knowledge_ captured and _modernize legacy with ease_!
+
+So, why rewrite the A2A library into a heavy *Aggregate*? (I.e., `daemon`) +
+Let's compare the current `orchestrator daemon` *(OD)*, +
+`rdd13r`-like implementations, to bare OSS A2A libraries around:
+
+[cols="<2,^1,^1,^1,^1,^1",options="header"]
+|===
+| Feature
+| *OD*
+| claude-flow
+| A2A-MCP Bridge
+| HydraMCP
+| Native Teams
+
+| Heterogeneous models | ✅ | ✅ | ✅ | ✅ | ❌
+| Agent Card / discovery | ✅ | partial | ✅ | ❌ | ❌
+| CQRS | ✅ | ❌ | ❌ | ❌ | ❌
+| Event Sourcing | ✅ | ❌ | ❌ | ❌ | ❌
+| Redis event streams | ✅ | task queue only | ❌ | ❌ | ❌
+| Lifecycle controls | ✅ | partial | ❌ | ❌ | partial
+| Context management | ✅ | memory system | ❌ | ❌ | per-session
+| MCP packaging | ✅ | ✅ | ✅ | ✅ | N/A
+| Remote config mgmt | ✅ | ❌ | ❌ | ❌ | ❌
+
+|===
+
+You can see where hackers are going with this: not a useful tool, teammates that replace human coders.
+Manage autonomous adversarial agents, not C2C subcontractors.
+Seeding startups in 2020, I needed to hire constantly for C2C marketplace, about ~$20k per month.
+And that came with all the grief and difficulties of dealing with people.
+Today I do better just by myself with my "little people," as my family calls them.
+And Anthropic just packaged that for everyone too.
+
+Oh, and what makes them adversarial? They follow RGR
+{nbsp} -- red-green-refactor and constantly switch roles, trying to up one another.
+Go ahead and do that with your contractors. Or your distinguished engineers.
+
+== Conclusion
+
+In the coming weeks distinguished engineers on LinkedIn will keep posting about the surprising magic of
+{nbsp} Claude Code Agent Teams. Claude Code was "better than any developer I know."
+This gadget will be "better than any development team I know." They mourned coding. Now they mourn teams.
+This is the current marketplace despite all the innovation.
+Sad, but not terminal -- I've righted worse.
+
+Having read this, you already know -- this is no "unexpected discovery."
+Anthropic's tool is rough. It will improve.
+The concept behind it has been running on hacker workstations for months.
+
+57 seconds versus 20 minutes. Same models. Same task. Different architect.
+
+The question isn't whether agent teams work. It's who's driving them.
+
+Are you?
+
+'''
+
+_P.S. Our orchestrator daemon and its MCP servers -- `mcp-total-recall` and `mcp-agora` -- go open source soon.
+The inevitable shouldn't be proprietary._
+
+- `mcp-total-recall` -- gives agents persistent identity and memory, so they collaborate like professionals;
+- `mcp-agora` -- agent peering built on `mcp-total-recall`.
+
+Three decades on the scene. Looking for the right company to pour the next thirty into.
+If your engineering org needs the architect behind the 57 seconds -- https://www.linkedin.com/in/rdd13r/[let's talk].
+
+'''
+
+=== How This Article Argues
+
+See `rdd13r-style-guide.yml` -- https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/rdd13r-style-guide.yml[argument forms information,window=_blank] for Agentic AI collaborators (not tools).
+
+*Primary Premise:* Claude Code Agent Teams is a raw consumer packaging of what hackers already run in production.
+The difference in outcome -- 57 seconds versus 20 minutes -- is not the tool. It is the architect.
+
+*The Argument Form:*
+
+- *Primary:* Argument from Mechanism {plus} Empirical Evidence.
+* We don't just claim agentic teams are faster. We show the mechanism (orchestrator daemon architecture with CQRS, event sourcing, heterogeneous models) AND provide reproducible benchmark data from two scenarios with concrete timing.
+* The comparison table makes the architectural gap visible. The benchmarks make it measurable.
+
+- *Secondary:* Case Analysis (Disjunctive).
+* Either you're the 1/100 augmented developer using agentic team servers -> architect driving 57-second results;
+* Or you're the distinguished engineer posting about it on LinkedIn -> "go to meeting."
+* Same models, same access. Different architect. Different outcome.
+
+- *Tertiary:* Contrast Pattern.
+* Native Claude Code Teams (12 min, FAIL on Scenario 2) vs. OD with heterogeneous models (57 sec, succeeds on both).
+* `tourist` and `Benq` vs. Corporate America's distinguished engineers. The contrast reveals the gap without preaching it.
+
+- *Structural:* Inductive Generalization from Demonstrated Data.
+* Two scenarios, concrete timing, reproducible fixture, published configuration.
+* From specific benchmarks to general principle: architecture determines outcome, not tooling.
+
+=== The Logical Structure:
+
+. *Observation:* LinkedIn hype cycle incoming for Claude Code Teams (predictable pattern from prior cycles).
+. *Classification:* Two ways to use Claude Code -- competent (Boris' way) vs. autonomous hallucination (vibecoding).
+. *Mechanism:* Here's WHY agentic teams exist and WHY speed matters (argument from mechanism with benchmark proof).
+. *Context:* Here's WHERE this fits in the MCP-A2A evolution (historical grounding, not appeal to novelty).
+. *Evidence:* Here's the architectural comparison, feature by feature (case analysis with data).
+. *Challenge:* Are you driving, or posting? (Disjunctive syllogism -- choose your path).
+
+=== Methods to Refute:
+
+To defeat this argument:
+
+. Reproduce the benchmarks with different results. The fixture is published. The configuration is specified. Run it.
+. Show that Native Teams achieves comparable speed on Scenario 2 without clobbering. It currently cannot.
+. Demonstrate that the OD architectural features (CQRS, event sourcing, lifecycle controls) provide no measurable advantage. The table invites this.
+
+Dismissing the tone, the terminology, or the author's directness does not address the benchmarks. The data stands independent of delivery.
+
+'''
+
+_Co-authored by Claude and Vadim Kuhay. **Because that's how it's done!**_

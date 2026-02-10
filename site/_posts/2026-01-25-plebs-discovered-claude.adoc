@@ -7,7 +7,7 @@ classes: wide
 comments: true
 hidden: false
 search: true
-read_aloud: true
+read_aloud: false
 ---
 = I Figured It Out -- The AI Hysteria
 :imagesdir: ./assets/images

@@ -7,7 +7,7 @@ classes: wide
 comments: true
 hidden: false
 search: true
-read_aloud: true
+read_aloud: false
 ---
 = What Actually Works in AI: And Why No One Talks About It
 :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
