@@ -7,7 +7,7 @@ classes: wide
 comments: true
 hidden: false
 search: true
-read_aloud: true
+read_aloud: false
 ---
 = AI Adoption is EASY! (The Silly-Town Bank Didn't Get the Memo)
 :imagesdir: ./assets/images
