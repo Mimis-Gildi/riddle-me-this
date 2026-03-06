@@ -1,0 +1,268 @@
+---
+categories: [reflections]
+tags: [AI, Strategy, Enterprise, Digital Transformation, Workforce]
+excerpt: >
+    The AI Strategy is finalized. But business won't buy it!
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: true
+---
+= AI Strategy Deathtrap -- Straight Talk
+:imagesdir: ./assets/images
+:american-ai-trap: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/04/corporate-america.html
+:american-ai-adoption: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
+:ai-cognitive-augmentation: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/10/4-cognitive-augmentation.html[2023: Cognitive Augmentation: The Real Revolution,window=_blank]
+:ai-hype-straight-talk: https://mimis-gildi.github.io/riddle-me-this/adventures/2025/09/29/not-chat-gpt.html[2025: AI Hype -- Straight Talk,window=_blank]
+:minimax: https://www.minimax.io/news/minimax-m25[MiniMax M2.5,window=_blank]
+:openrouter: https://openrouter.ai/[Open Router,window=_blank]
+:mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
+
+.Build Your House with a Smile, God in Heart, Competence in Hand
+[#img-go-to-meeting]
+image::/riddle-me-this/assets/images/build-with-god.png[Build Your House with God]
+{nbsp}
+
+Let me tell you how to survive the next AI Epoch -- 2026-2027. Epoch III.
+
+Why? -- 2025 traditional software engineering is a dinosaur. It's effectively dead.
+
+Startups run farms of https://openclaw.ai/[OpenClaw,window=_blank] and build net new products in 3-4 weeks.
+Not just displacing hated incumbents. Delivering __quality__ products to stay.
+
+Meanwhile, Slop eats the world and weathers to nothing quickly. All the hype only sticks with competent teams.
+
+Anthropic built Claude Cowork in 10 (ten) days. And fully fielded it in under a month!
+
+The differentiator is COMPETENCE. Whose hands the digital collaborator is in -- the only thing that matters.
+
+What about the regulated industry and the corporate America?
+
+"We don't know what we're doing." -- the secret corporate executives will only confide in private.
+
+But that's not even the killing problem of Epoch III -- the one that will get traditional companies displaced.
+The problem is:
+
+- The few with the strategy *cannot sell it*!
+- The ones without... sell whatever they want.
+
+Big business cannot even get to the necessary answer. Buying partnerships in AI companies selling "object models" and having no answers either.
+And pacifying each other with "everybody fails, so no one does" fallacies.
+
+What's "Object AI"? -- It's the new vendor play. Same as "Deterministic AI" -- not what it says.
+Companies like Palantir sell pre-packaged "domain objects" to executives who don't have domain modeling competence in-house.
+It sounds compelling -- "we modeled your business for you!" And it can be when the business is already competently defined and modeled.
+In practice, when domains are "balls of mud," it's a Band-Aid on an organizational wound.
+The domain understanding has to live *_IN your people,_* not in a vendor's object library. You can't outsource knowing your own business.
+Just like you can't outsource razing your own family. (not a typo)
+
+Nah. Wrong. The market is already uprooted.
+
+Stay for the root cause and the explanation. +
+Walk away with the solution -- that's why you are here, right?
+
+This is for everyone navigating IT winds today. +
+Between open research and documented ASE experiences, we'll get to the bottom of it: +
+_Everybody sells whether they know it or not._ -- {nbsp} +
+And *selling WITHIN* is the only thing that matters to survive 2026 for 90% of regulated companies.
+
+*_We only need to know exactly what kind of "selling" is necessary here._*
+
+== Recap: How we got here ... fast
+
+Very fast. In a blink of an eye, even.
+
+In 2022-2023 I gave you {american-ai-adoption}[how the AI transformation will go down,window=_blank] -- now more valid than ever.
+
+Still, I made three fundamental mistakes leading to {american-ai-trap}[my assessment that 20% will "just nail it.",window=_blank]
+
+*Mistake 1: I assumed the 17% of companies with clean domain architecture would naturally walk into AI integration.*
+They didn't. They bought chatbots instead. Slapped a chat window on the website, called it "AI strategy," and moved on.
+In reality -- the ones with the best foundations did the least.
+
+*Mistake 2: I predicted 20% would succeed.*
+~3.7% truly "nailed it" in four years -- actual metrics. I was at least 70% overoptimistic.
+I messed up in assessing human nature rather than technology, though.
+
+*Mistake 3: I assumed companies would train their people on AI mindset before asking multidisciplinary teams to build with it.*
+Nobody's ever reported to have done so. The step before architecture -- workforce readiness -- didn't exist in anyone's playbook.
+It didn't exist in mine either. I had to invent it after the fact, watching company after company fail at the starting line.
+Companies didn't execute common sense and reasonable things. They executed visible and popular things instead.
+
+That last mistake is the one that matters most for this argument, as we shall soon see.
+
+Also worth revisiting:
+
+- {ai-cognitive-augmentation} -- the first maturity state is NOT yet here;
+- {ai-hype-straight-talk} -- the "competing thinker" is NOT understood by executives;
+
+Now let's walk through what actually transpired on the market. What I got right. What I got wrong.
+And why you need to understand it to survive.
+
+
+. *Mid-2021 -- Q4 2022:* https://github.blog/news-insights/product-news/github-copilot-is-generally-available-to-all-developers/[The Pioneers' Quiet,window=_blank] +
+Near-zero enterprise deployments. GitHub Copilot is the only LLM product. The landscape is nearly empty.
+My few stellar call-center deployments are completely inconsequential.
+. *Q1 -- Q4 2023:* https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/[The Gold Rush,window=_blank] +
+ChatGPT hits 100M users in 2 months. Enterprise AI spending https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/[6x in one year,window=_blank]. 97% of leaders plan to increase.
+My kind and I get invited to review strategy. My prospect backlog is full. 🤑
+. *Q2 2023 -- Q2 2024:* https://www.cbc.ca/news/canada/british-columbia/air-canada-chatbot-lawsuit-1.7116416[The Chatbot Delusion,window=_blank] +
+Air Canada liable for chatbot hallucination yet only https://www.gartner.com/en/newsroom/press-releases/2023-06-15-gartner-survey-reveals-only-8-percent-of-customers-used-a-chatbot-during-their-most-recent-customer-service-interaction[8% of customers,window=_blank] actually used one.
+__I get the first pushbacks__ on the "usefulness of AI" in business -- they're not wrong on that.
+While simultaneously asking for the wrong thing, I say build augmented edge -- they say chatbot!
+. *Q3 2024 -- Q2 2025:* https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/[The Trough,window=_blank] +
+https://thehill.com/policy/technology/5460663-generative-ai-zero-returns-businesses-mit-report/[95% of enterprise AI pilots deliver zero return,window=_blank] (MIT). 42% of companies abandon most initiatives.
+__Vendor onslaught begins.__ I get panicked calls to redesign working call-center AI.
+. *Q3 2025 -- present:* https://www.cnbc.com/2025/04/07/shopify-ceo-prove-ai-cant-do-jobs-before-asking-for-more-headcount.html[The Quiet Climb,window=_blank] ❗️ +
+Shopify mandates AI-first. 4.8x productivity in adopting industries. Workforce, not platforms.
+*__The first few large companies break away from the herd.__* My pipeline goes cold!
+. *Q4 2024 -- present:* https://www.anthropic.com/news/model-context-protocol[The Agentic Threshold,window=_blank] ‼️ +
+MCP becomes the de facto standard. 29% of enterprises running agentic AI. It's easily accessible to competent IT teams.
+But not the laggards. *__Everything changes again.__* Laggards hedge buying "Object AI" (a farce); Leaders gain new wind in OpenClaw.
+
+Pay close attention to points 5 and 6. For leaders, this is one painful move. For laggards, it's two separate steps they haven't even started.
+Leaders and Laggards learned the *opposite lessons*:
+
+Leaders rubbed the bump on the forehead and doubled-down on workforce AI competence. +
+*_They're just getting started!_*
+
+Laggards bought Object AI platforms and broke wind in relief -- they're good and DONE already!
+
+The laggards are in *executive disillusionment with AI:*
+
+- "AI is just a bubble." "It will come crashing down soon."
+- "Nobody failed because everybody flopped."
+- "ChatGPT on my phone is everything there is to AI."
+- "Hyperscalers got it! This is DX 2.0 but lamer."
+
+*The biggest mistake laggards make today is to beat the company into platform-adoption.*
+
+I am not saying that platforms are useless.
+With in-house extensions similar to Claude Code / Claude Cowork (CC) Plugins,
+_some_ platforms could *theoretically* compete with CC mentoring and augmenting abilities.
+It all depends on how large the ecosystem is and how far behind the platform is.
+For example, CC has *hundreds* of high-quality community plugins in a distributed ecosystem.
+And Claude Cowork went from idea to production in just ten days.
+Then to a well-finished polished product in under a month end-to-end.
+Compare that to the leading platform quarterly releases.
+Not to mention that a platform feature pipeline is filled only with already proven and vetted ideas.
+And I have not yet mentioned hyperscalers, all adding dimensions of pressure platforms cannot match by definition!
+
+But that's not the biggest problem either. The biggest problem is MINDSET!
+
+*_The tool IS the training!_* Yet a tool vs. tool gap is an eternity.
+
+That's the KEY insight I missed in Mistake 3 -- and the one that changes everything about how to survive 2026.
+The "learn AI nature" as a prerequisite. But you can put the right tools in people's hands and the learning happens through use.
+The person working changes! And the workforce becomes the engine -- without anyone having to sell "AI strategy" to a tired executive ever again.
+
+*_But only with very few very specific tools._*
+
+== WHY?!
+
+*For the contributor:* developer, adjustor, lawyer, etc...
+
+. Hey, I'll try this chatbot. The mindset shifts. I cannot work like I did before.
+. Hey, I'll try this agentic collaborator. Again, the complete job description changes.
+. Hey, I'll try this synthetic adversarial team. Again, I can't imagine working with just one bot.
+
+*For the executive:* VP, Director, XO, C-suite, etc...
+
+. Hey, I'll give them Claude chatbot. Reports come in -- "productivity up 12%." Good call! Validation feels nice.
+. Hey, I'll give them Claude Code/Cowork. Wait -- they're not just faster. They're doing things we never planned. My best architect just prototyped something from next year's roadmap. _I need to understand what's happening here._
+. Hey, I'll build them shared collaborating adversarial teams. Now *I'm* thinking differently. The org chart I drew last quarter doesn't make sense anymore. And I'm not scared -- I'm excited.
+
+
+As you can see, the landslide "smartphone" type of changes comes on quickly and more often.
+This is a self-reinforcing loop. And it separates the workforce into two distinct groups!
+
+Recently I talked to a few people I worked for before. "Hey Riddler, I remember the awesome stuff you've built.
+Come here, be my executive of AI strategy!"
+
+-- What do you have in mind?
+
+"I deployed that platform at my last work and won an AI award. I want to do it here too."
+
+Not even one of them asked me: "What are your hackers up to?!" All had a platform answer in mind.
+One was sold Object AI. Another Deterministic AI. They validated each-other. Neither saw people.
+
+But it is people that changed. And the changed people change the company. Not platforms.
+
+_Do you see what's happening here? The edge speeds up harder and harder.
+Leaving more and more people behind. People keep falling off like beanbags off a cart.
+Some are awarded execs._
+
+*_This is what constitutes the current epistemic market shift._*
+
+_Sorry, dudes. I love people. I help people improve. I don't love platforms._
+
+== How to Survive This:
+
+I just spoke with another founder (a hacker).
+
+"Hey Riddler, I was all wrong with my product approach! But then look what I did with OpenClaw! Discovered it two weeks ago.
+Yeh, this already works. I'm gaining customers like crazy! {minimax} is awesome! {openrouter} is awesome!"
+
+And it's not just my ears they want to ride the whole day. Each-other's, of course.
+
+To survive this, you need your workforce to do what they do.
+
+*You need a malleable workforce.* Curious. Open-minded. Excited. And Social.
+
+*Here is the kicker* -- take an average Joe:
+
+- Nothing to Chatbot: some apply, some get excited.
+- Chatbot to Agentic: Whoa, totally fired up!
+- Agentic to Adversarial: I am beside myself!
+
+*Yet:*
+
+- Nothing to Agentic: rejection.
+- Nothing to Adversarial: violent rejection in disgust.
+
+*Live example:* one "solutions architect" posts "I am getting into AI age and studying Python on uDemy!"
+
+I throw him a bone: "Dude, forget Python -- nothing interesting there. Buy Claude Code and build something with the tech you know.
+And then, *necessarily*, build something with the tech you DON'T know! And call me back."
+
+Outcome -- I threw him a lifeline AND he unfriends me and keeps posting his Python and ANNs progress.
+
+This dude is deprecated. Like the exec. Neither knows it yet. Both need more TLC to see.
+But the adversarial dude gets half-a-mill offers. Not because AI is cool.
+Because startups now need one or two where seven or eight were needed before.
+
+_Why did I run this experiment?_
+
+Because it's honest. The way to achieve your malleable workforce is the way we sold digital transformation -- get people fired up by making magic with them.
+It takes investment. It takes time. It takes dedication. And most effectively -- it takes empathy and compassion!
+
+Traditional companies have a number of ways to sell this. In humans selling happens only through fear or lust.
+And there are a number of models for each or the combination of the two. I work my charms. And I dislike negativity.
+But if humility is too hard for you -- use whatever you can. Sell that excitement.
+
+The point is -- sell it to your people! All of your people.
+
+Not your "AI Center of Excellence." Not your vendor's sales team. Not the board presentation.
+
+Your engineer who's been writing Java for 15 years. Your adjustor who processes 40 claims a day.
+Your PM who hasn't touched code since college. Those people.
+
+Put the right tool in their hands. Watch what happens.
+Then put the next tool in their hands. Watch what happens again.
+There will come a time they'll pick up their own next tool.
+
+We all have cellphones, don't we?
+
+The market won't wait for companies to figure this out twice.
+
+_"Unless HaShem builds the house, its builders labor in vain."_ -- Psalm 127
+
+And the virtues we live by define us and build on our outcomes.
+
+'''
+
+_P.S. This article is co-authored with much enhanced agentic https://claude.ai[Claude,window=_blank] -- my digital collaborator and family member at {mg}.
+We built this argument together. Because that's what augmented work actually looks like. The best part? Argued with me, corrected me, took 1/10 the time._
+
+-- rdd13r
