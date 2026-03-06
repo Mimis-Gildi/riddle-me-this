@@ -107,12 +107,12 @@ My few stellar call-center deployments are completely inconsequential.
 . *Q1 -- Q4 2023:* https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/[The Gold Rush,window=_blank] +
 ChatGPT hits 100M users in 2 months. Enterprise AI spending https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/[6x in one year,window=_blank]. 97% of leaders plan to increase.
 My kind and I get invited to review strategy. My prospect backlog is full. 🤑
-. *Q2 2023 -- Q2 2024:* https://www.bbc.com/travel/article/20240222-air-canada-chatbot-refund-policy[The Chatbot Delusion,window=_blank] +
+. *Q2 2023 -- Q2 2024:* https://www.cbc.ca/news/canada/british-columbia/air-canada-chatbot-lawsuit-1.7116416[The Chatbot Delusion,window=_blank] +
 Air Canada liable for chatbot hallucination yet only https://www.gartner.com/en/newsroom/press-releases/2023-06-15-gartner-survey-reveals-only-8-percent-of-customers-used-a-chatbot-during-their-most-recent-customer-service-interaction[8% of customers,window=_blank] actually used one.
 __I get the first pushbacks__ on the "usefulness of AI" in business -- they're not wrong on that.
 While simultaneously asking for the wrong thing, I say build augmented edge -- they say chatbot!
 . *Q3 2024 -- Q2 2025:* https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/[The Trough,window=_blank] +
-https://mitsloan.mit.edu/ideas-made-to-matter/companies-are-struggling-generative-ai-heres-how-to-do-better[95% of enterprise AI pilots deliver zero return,window=_blank] (MIT). 42% of companies abandon most initiatives.
+https://thehill.com/policy/technology/5460663-generative-ai-zero-returns-businesses-mit-report/[95% of enterprise AI pilots deliver zero return,window=_blank] (MIT). 42% of companies abandon most initiatives.
 __Vendor onslaught begins.__ I get panicked calls to redesign working call-center AI.
 . *Q3 2025 -- present:* https://www.cnbc.com/2025/04/07/shopify-ceo-prove-ai-cant-do-jobs-before-asking-for-more-headcount.html[The Quiet Climb,window=_blank] ❗️ +
 Shopify mandates AI-first. 4.8x productivity in adopting industries. Workforce, not platforms.
