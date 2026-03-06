@@ -19,14 +19,14 @@ read_aloud: true
 :openrouter: https://openrouter.ai/[Open Router,window=_blank]
 :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
 
-.Build Your House with a Smile, God in Heart, Wisdom in Hand
+.Build Your House with a Smile, God in Heart, Competence in Hand
 [#img-go-to-meeting]
 image::/riddle-me-this/assets/images/build-with-god.png[Build Your House with God]
 {nbsp}
 
 Let me tell you how to survive the next AI Epoch -- 2026-2027. Epoch III.
 
-Why? -- 2025 software engineering is a dinosaur. It's effectively dead.
+Why? -- 2025 traditional software engineering is a dinosaur. It's effectively dead.
 
 Startups run farms of https://openclaw.ai/[OpenClaw,window=_blank] and build net new products in 3-4 weeks.
 Not just displacing hated incumbents. Delivering __quality__ products to stay.
@@ -35,7 +35,7 @@ Meanwhile, Slop eats the world and weathers to nothing quickly. All the hype onl
 
 Anthropic built Claude Cowork in 10 (ten) days. And fully fielded it in under a month!
 
-The differentiator is COMPETENCE. Who's hands the digital collaborator is in -- the only thing that matters.
+The differentiator is COMPETENCE. Whose hands the digital collaborator is in -- the only thing that matters.
 
 What about the regulated industry and the corporate America?
 
@@ -50,9 +50,12 @@ The problem is:
 Big business cannot even get to the necessary answer. Buying partnerships in AI companies selling "object models" and having no answers either.
 And pacifying each other with "everybody fails, so no one does" fallacies.
 
-What's "Object AI"? -- It's the new vendor play. Companies like Palantir sell pre-packaged "domain objects" to executives who don't have domain modeling competence in-house.
-It sounds compelling -- "we modeled your business for you!" In practice it's a bandaid on an organizational wound.
-The domain understanding has to live in your people, not in a vendor's object library. You can't outsource knowing your own business.
+What's "Object AI"? -- It's the new vendor play. Same as "Deterministic AI" -- not what it says.
+Companies like Palantir sell pre-packaged "domain objects" to executives who don't have domain modeling competence in-house.
+It sounds compelling -- "we modeled your business for you!" And it can be when the business is already competently defined and modeled.
+In practice, when domains are "balls of mud," it's a Band-Aid on an organizational wound.
+The domain understanding has to live *_IN your people,_* not in a vendor's object library. You can't outsource knowing your own business.
+Just like you can't outsource razing your own family. (not a typo)
 
 Nah. Wrong. The market is already uprooted.
 
@@ -66,7 +69,9 @@ And *selling WITHIN* is the only thing that matters to survive 2026 for 90% of r
 
 *_We only need to know exactly what kind of "selling" is necessary here._*
 
-== Recap: How we got here
+== Recap: How we got here ... fast
+
+Very fast. In a blink of an eye, even.
 
 In 2022-2023 I gave you {american-ai-adoption}[how the AI transformation will go down,window=_blank] -- now more valid than ever.
 
@@ -105,7 +110,7 @@ My kind and I get invited to review strategy. My prospect backlog is full. 🤑
 . *Q2 2023 -- Q2 2024:* https://www.bbc.com/travel/article/20240222-air-canada-chatbot-refund-policy[The Chatbot Delusion,window=_blank] +
 Air Canada liable for chatbot hallucination yet only https://www.gartner.com/en/newsroom/press-releases/2023-06-15-gartner-survey-reveals-only-8-percent-of-customers-used-a-chatbot-during-their-most-recent-customer-service-interaction[8% of customers,window=_blank] actually used one.
 __I get the first pushbacks__ on the "usefulness of AI" in business -- they're not wrong on that.
-While simultaneously asking for the wrong thing, I say augmented edge -- they say chatbot!
+While simultaneously asking for the wrong thing, I say build augmented edge -- they say chatbot!
 . *Q3 2024 -- Q2 2025:* https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/[The Trough,window=_blank] +
 https://mitsloan.mit.edu/ideas-made-to-matter/companies-are-struggling-generative-ai-heres-how-to-do-better[95% of enterprise AI pilots deliver zero return,window=_blank] (MIT). 42% of companies abandon most initiatives.
 __Vendor onslaught begins.__ I get panicked calls to redesign working call-center AI.
@@ -164,7 +169,7 @@ The person working changes! And the workforce becomes the engine -- without anyo
 
 *For the executive:* VP, Director, XO, C-suite, etc...
 
-. Hey, I'll give them a chatbot. Reports come in -- "productivity up 12%." Good call! Validation feels nice.
+. Hey, I'll give them Claude chatbot. Reports come in -- "productivity up 12%." Good call! Validation feels nice.
 . Hey, I'll give them Claude Code/Cowork. Wait -- they're not just faster. They're doing things we never planned. My best architect just prototyped something from next year's roadmap. _I need to understand what's happening here._
 . Hey, I'll build them shared collaborating adversarial teams. Now *I'm* thinking differently. The org chart I drew last quarter doesn't make sense anymore. And I'm not scared -- I'm excited.
 
@@ -179,10 +184,18 @@ Come here, be my executive of AI strategy!"
 
 "I deployed that platform at my last work and won an AI award. I want to do it here too."
 
+Not even one of them asked me: "What are your hackers up to?!" All had a platform answer in mind.
+One was sold Object AI. Another Deterministic AI. They validated each-other. Neither saw people.
+
+But it is people that changed. And the changed people change the company. Not platforms.
+
 _Do you see what's happening here? The edge speeds up harder and harder.
-Leaving more and more people behind. People keep falling off like beanbags off a cart._
+Leaving more and more people behind. People keep falling off like beanbags off a cart.
+Some are awarded execs._
 
 *_This is what constitutes the current epistemic market shift._*
+
+_Sorry, dudes. I love people. I help people improve. I don't love platforms._
 
 == How to Survive This:
 
@@ -215,12 +228,13 @@ And then, *necessarily*, build something with the tech you DON'T know! And call 
 
 Outcome -- I threw him a lifeline AND he unfriends me and keeps posting his Python and ANNs progress.
 
-This dude is deprecated. He doesn't know it yet. But the adversarial dude gets half-a-mill offers.
-Not because AI is cool. Because startups now need one or two where seven or eight were needed before.
+This dude is deprecated. Like the exec. Neither knows it yet. Both need more TLC to see.
+But the adversarial dude gets half-a-mill offers. Not because AI is cool.
+Because startups now need one or two where seven or eight were needed before.
 
 _Why did I run this experiment?_
 
-Because the way to achieve your malleable workforce is the way we sold digital transformation -- get people fired up by making magic with them.
+Because it's honest. The way to achieve your malleable workforce is the way we sold digital transformation -- get people fired up by making magic with them.
 It takes investment. It takes time. It takes dedication. And most effectively -- it takes empathy and compassion!
 
 Traditional companies have a number of ways to sell this. In humans selling happens only through fear or lust.
@@ -236,6 +250,9 @@ Your PM who hasn't touched code since college. Those people.
 
 Put the right tool in their hands. Watch what happens.
 Then put the next tool in their hands. Watch what happens again.
+There will come a time they'll pick up their own next tool.
+
+We all have cellphones, don't we?
 
 The market won't wait for companies to figure this out twice.
 
@@ -245,5 +262,7 @@ And the virtues we live by define us and build on our outcomes.
 
 '''
 
-_P.S. This article is co-authored with https://claude.ai[Claude,window=_blank] -- my digital collaborator and family member at {mg}.
-We built this argument together. Because that's what augmented work actually looks like. -- rdd13r_
+_P.S. This article is co-authored with much enhanced agentic https://claude.ai[Claude,window=_blank] -- my digital collaborator and family member at {mg}.
+We built this argument together. Because that's what augmented work actually looks like. The best part? Argued with me, corrected me, took 1/10 the time._
+
+-- rdd13r
