@@ -16,5 +16,4 @@ demo:
       - any-glob-to-any-file:
           - journal/**
           - tracks/**
-          - .saga-notes/.rdd13r-notes/**
 

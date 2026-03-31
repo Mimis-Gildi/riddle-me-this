@@ -21,7 +21,7 @@ exclude_paths:
   - .github/
   - .idea/
   - .run/
-  - .saga-notes/
+
   - build/
   - dist/
   - vendor/

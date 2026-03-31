@@ -37,13 +37,6 @@ bundle exec jekyll serve                          # Local development server
 
 Site is a subproject -- governance is in it: when working on Site the directory `site/` is the context root.
 
-### Shell Testing (ShellSpec)
-
-```zsh
-make shellspec-bootstrap                                            # One-time setup (or: bash src/test/sh/bootstrap-shellspec.sh)
-make shellspec-run                                                  # Run all shell tests (or: .local/bin/shellspec)
-.local/bin/shellspec src/test/sh/export-issues-for-saga_spec.sh     # Run single test file
-```
 
 ## Architecture
 
@@ -53,9 +46,8 @@ make shellspec-run                                                  # Run all sh
 |------------------------|-------------------------------------------------------------------------------------------------|
 | `resume/`              | AsciiDoc source files for 4 resume variants (OnCore, OnCreativity, OnEngineering, OnLeadership) |
 | `site/`                | Jekyll static site with blog posts, pages, and minimal-mistakes theme                           |
-| `src/main/sh/`         | Shell scripts for deployment, issue export, cleanup                                             |
+| `src/main/sh/`         | Shell scripts for deployment and cleanup                                                        |
 | `src/main/kotlin/`     | Kotlin bootstrap code                                                                           |
-| `src/test/sh/`         | ShellSpec test suites                                                                           |
 | `buildSrc/`            | Custom Gradle plugins (toolchain verification, dependency processing)                           |
 | `resources/themes/`    | Asciidoctor PDF themes (conservative, creative, technical, core)                                |
 | `resources/fragments/` | Reusable AsciiDoc document fragments                                                            |
@@ -69,7 +61,6 @@ make shellspec-run                                                  # Run all sh
 - **JVM**: Java 21 (Temurin), Kotlin 2.3.0, Gradle 9.3 (Kotlin DSL) -- demo applications; pending.
 - **Ruby**: Ruby 3.3.5 exact and locked, Jekyll 4.4.1 with `jekyll-asciidoc` -- blogsite live.
 - **Documents**: Asciidoctor 4.0.5 (generates PDF, EPUB, HTML) -- all documentation.
-- **Testing**: ShellSpec for shell scripts of pipeline enablement; native to ecosystem elsewhere. 
 - **Tooling**: SDK Manager (`.sdkmanrc`) for version management of some core tools.
 - **Tooling-Ruby**: `asdf` on certain agents but not all.
 - **Conda Forge**: for Python-based machine learning demo applications; pending.
@@ -102,7 +93,6 @@ The repository uses extensive GitHub Actions automation:
 
 - **Codacy** (`.codacy.yaml`): eslint-8, shellcheck, markdownlint, prettier, bandit, semgrep, detekt, pmd-7.
 - **Qodana** (`qodana.yaml`): JetBrains JVM Community analysis with `qodana.recommended` profile.
-- **ShellSpec** (`.shellspec`): Shell script testing framework; all dedicated runners' dependencies.
 
 
 ## Key Configuration Files
@@ -115,7 +105,6 @@ The repository uses extensive GitHub Actions automation:
 | `.sdkmanrc`                 | SDK Manager tool versions                   |
 | `codacy.yaml`               | Codacy configuration for code quality       |
 | `qodana.yaml`               | Qodana configuration for code quality       |
-| `.shellspec`                | ShellSpec configuration for testing         |
 | `.factor12`                 | Factor12 configuration for CI/CD runners    |
 
 
