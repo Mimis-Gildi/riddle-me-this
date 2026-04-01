@@ -1,0 +1,31 @@
+extends: default
+base:
+  font_size: 9
+  font_color: 111111
+  line_height_length: 12
+  font_style: normal
+
+header:
+  height: 0.6in
+  line-height: 1
+  recto:
+    center:
+      content: '+1 (919) 717-1387 | Vadim''s https://mimis-gildi.github.io/riddle-me-this/[blog], https://github.com/rdd13r/[GitHub], current OSS https://mimis-gildi.github.io/mcp-total-recall/[passion project], and https://www.linkedin.com/in/rdd13r/[LinkedIn]'
+  verso:
+    left:
+      content: 'https://github.com/Mimis-Gildi/[Mímis Gildi] Co-mentoring Community'
+    right:
+      content: 'https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v{revnumber}[v{revnumber}]'
+footer:
+  height: 0.6in
+  line-height: 1
+  recto:
+    right:
+      content: '{author} | Page {page-number} of {page-count}'
+    left:
+      content: 'v{revnumber}'
+  verso:
+    left:
+      content: '_Every real system begins with trust._'
+    right:
+      content: '{revision-date}'

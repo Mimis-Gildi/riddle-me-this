@@ -1,6 +1,6 @@
 name: Update Version References
 description: "Replaces resumeVersion or other tracked versions in key files."
-author: "Saga for Vadim"
+author: "Vadim Kuhay"
 branding:
   icon: "edit"
   color: "blue"

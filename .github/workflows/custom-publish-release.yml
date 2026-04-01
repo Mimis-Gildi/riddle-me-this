@@ -91,13 +91,8 @@ jobs:
           sdk version
           java --version
           python --version
-          echo "JAVA_HOME=$(sdk home java 21.0.8-tem)" >> $GITHUB_ENV
-          echo "PATH=$(sdk home java 21.0.8-tem)/bin:$PATH" >> $GITHUB_ENV
-
-      - name: 📡 Submit Dependency Graph
-        if: steps.resume-changes-detected.outputs.satisfied == 'true'
-        uses: gradle/actions/dependency-submission@v6.0.1
-        timeout-minutes: 3
+          echo "JAVA_HOME=$(sdk home java current)" >> $GITHUB_ENV
+          echo "PATH=$(sdk home java current)/bin:$PATH" >> $GITHUB_ENV
 
 
       - name: 🏗️ Build Résumés
