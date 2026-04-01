@@ -1,6 +1,6 @@
 = Mímis Gildi: Rdd13r’s Living Digital Garden
 Vadim Kuhay <12781006+rdd13r@users.noreply.github.com>
-v3.19.0, Tuesday March 31st 2026
+v4.0.0, Tuesday March 31st 2026
 :description: Vadim Kuhay’s living and evolving publication repository.
 :icons: font
 :!toc:
@@ -61,8 +61,8 @@ image:https://img.shields.io/badge/Subscribe-LinkedIn-0A66C2?style=for-the-badge
 Résumé & formalities::
 
 A PDF in {releases}, current is
-📦 https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v3.19.0[v3.19.0] here
-https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v3.19.0/VadimKuhay-Resume.pdf[Vadim Kuhay Résumé].
+📦 https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v4.0.0[v4.0.0] here
+https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v4.0.0/VadimKuhay-Resume.pdf[Vadim Kuhay Résumé].
 
 _Still, the best way to get to know me is to make software *with* me_ +
 {nbsp} +
