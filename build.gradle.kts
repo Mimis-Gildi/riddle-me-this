@@ -74,7 +74,7 @@ pdfThemes {
  *
  * @param task the Asciidoctor task to configure
  * @param sourceDir the source directory containing the documents to generate
- * @param includePatterns the patterns to include in the generation. Defaults to ["OnLeadership.adoc"]
+ * @param includePatterns the patterns to include in the generation. Defaults to ["VadimKuhay-Resume.adoc"]
  */
 fun configureAsciiDocInput(
     task: org.asciidoctor.gradle.jvm.AbstractAsciidoctorTask,
