@@ -10,11 +10,11 @@ GEICO (Distinguished Staff Engineer, VP Digital Strategy, 2024), remote::
 
 * Built GEICO's first distributed system: 12-factor-app, Kotlin, React, Python, Kubernetes, Azure.
 * Introduced EventStorming, DDD, trunk-based development, prod-parity repos for local k8s.
-* 3x team velocity improvement, 80% reduction in deployment failures; VP Digital Strategy.
+* 3x team velocity improvement, 80% reduction in deployment failures, Community of Practice.
 
 ASE Inc. (Principal Architect, Co-Founder, 2017-2023), remote::
 
-* 11 enterprise transformations: Credit Suisse, Citizens,  Mutual of Omaha, Blue Cross NC, Fidelity, Genworth.
+* 11 enterprise transformations: Credit Suisse, Citizens, Mutual of Omaha, Blue Cross NC, Fidelity, Genworth.
 * 23 vc-funded and bootstrapped EU SaaS startup MVPs; 2018 strategic sponsor of Prague Innovation Scene.
 * Call center AI (2022): embedded LLaMA in Akka-Kotlin Actor model with multi-stage exploit safeguards.
 * Rebuilt SEER with GPT-4/LangChain (2023); first commercial production integration of KotlinDL.

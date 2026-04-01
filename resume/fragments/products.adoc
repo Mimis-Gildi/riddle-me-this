@@ -1,6 +1,6 @@
 == Products and Platforms
 
-Selected highest-risk endeavors I had the honor to drive:
+Selected highest-risk endeavors:
 
 * *Swarming AI* (2023, 2025) -- solo Android-based MilSpec edge device AI decision-making firmware; extensive Linux kernel modifications (C, Go, Rust);
 Bayesian or Quantum Decision Theory when context collapses (Kotlin).

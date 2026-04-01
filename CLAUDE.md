@@ -4,13 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is **Mímis Gildi** - a personal engineering blog publication system with a résumé. 
-It combines multi-format document generation (PDF, EPUB, HTML), automated static site publishing via Jekyll, 
+This is **Mímis Gildi** - a personal engineering blog publication system with a résumé.
+It combines multi-format document generation (PDF, HTML), automated static site publishing via Jekyll,
 and comprehensive CI/CD automation for some basic efficiency.
 
 ## Basic Concepts
 
-This is a `trunk`-based development model, where all development occurs on a single main branch (`main`), 
+This is a `trunk`-based development model, where all development occurs on a single main branch (`main`),
 and feature branches are merged into it. This approach simplifies collaboration and reduces merge conflicts.
 History is linear and so is versioning. All the GitHub Actions automation is geared to accomodate trunk.
 
@@ -20,7 +20,7 @@ History is linear and so is versioning. All the GitHub Actions automation is gea
 
 ```zsh
 ./gradlew build                    # Full build
-./gradlew asciidoctorPdf           # Generate resume PDFs (4 themes)
+./gradlew asciidoctorPdf           # Generate resume PDF
 ./gradlew verifyJavaToolchain      # Report Java toolchain info
 ./gradlew dependencyUpdates        # Check for dependency updates
 ```
@@ -42,41 +42,32 @@ Site is a subproject -- governance is in it: when working on Site the directory 
 
 ### Component Structure
 
-| Directory              | Purpose                                                                                         |
-|------------------------|-------------------------------------------------------------------------------------------------|
-| `resume/`              | AsciiDoc source files for 4 resume variants (OnCore, OnCreativity, OnEngineering, OnLeadership) |
-| `site/`                | Jekyll static site with blog posts, pages, and minimal-mistakes theme                           |
-| `src/main/sh/`         | Shell scripts for deployment and cleanup                                                        |
-| `src/main/kotlin/`     | Kotlin bootstrap code                                                                           |
-| `buildSrc/`            | Custom Gradle plugins (toolchain verification, dependency processing)                           |
-| `resources/themes/`    | Asciidoctor PDF themes (conservative, creative, technical, core)                                |
-| `resources/fragments/` | Reusable AsciiDoc document fragments                                                            |
-| `.github/workflows/`   | 16 CI/CD workflows                                                                              |
-| `.github/actions/`     | 15 custom composite GitHub Actions                                                              |
-|                        |                                                                                                 |
+| Directory              | Purpose                                                              |
+|------------------------|----------------------------------------------------------------------|
+| `resume/`              | AsciiDoc resume source, fragments, and PDF themes                    |
+| `site/`                | Jekyll static site with blog posts, pages, and minimal-mistakes theme|
+| `src/main/sh/`         | Shell scripts for deployment and cleanup                             |
+| `src/main/kotlin/`     | Kotlin bootstrap code                                                |
+| `buildSrc/`            | Custom Gradle plugins (toolchain verification, dependency processing)|
+| `.github/workflows/`   | CI/CD workflows                                                      |
+| `.github/actions/`     | Custom composite GitHub Actions                                      |
 
 
 ### Tech Stack
 
-- **JVM**: Java 21 (Temurin), Kotlin 2.3.0, Gradle 9.3 (Kotlin DSL) -- demo applications; pending.
+- **JVM**: Java 21 (Temurin), Kotlin, Gradle (Kotlin DSL) -- demo applications; pending.
 - **Ruby**: Ruby 3.3.5 exact and locked, Jekyll 4.4.1 with `jekyll-asciidoc` -- blogsite live.
-- **Documents**: Asciidoctor 4.0.5 (generates PDF, EPUB, HTML) -- all documentation.
+- **Documents**: Asciidoctor (generates PDF, HTML) -- all documentation.
 - **Tooling**: SDK Manager (`.sdkmanrc`) for version management of some core tools.
 - **Tooling-Ruby**: `asdf` on certain agents but not all.
-- **Conda Forge**: for Python-based machine learning demo applications; pending.
 
 Note: Demo applications are maintained as long as the blog posts that reference or depend on those.
 
 
 ### Document Generation Flow
 
-Single AsciiDoc source files in `resume/` are transformed via Asciidoctor into:
-
-- 4-themed PDF variants using `resources/themes/`
-- EPUB format for Mastodon domain (retiring).
-- HTML for web publishing, active.
-
-Common fragments are shared via `resources/fragments/`.
+Single AsciiDoc source in `resume/` is transformed via Asciidoctor into PDF using themes in `resume/themes/`.
+Common fragments are shared via `resume/fragments/`.
 
 
 ### CI/CD Architecture
@@ -85,7 +76,7 @@ The repository uses extensive GitHub Actions automation:
 
 - **Auto-versioning**: Feature branches trigger semantic version bumps based on issue labels.
 - **Self-hosted runners**: Configured with labels `jekyll` and `feature` for dedicated builds.
-- **Security scanning**: CodeQL, Codacy, Qodana JVM Community (primary), Snyk (deprecated).
+- **Security scanning**: CodeQL, Codacy, Qodana JVM Community (primary).
 - **Deployment**: Jekyll site auto-publishes to GitHub Pages (default).
 
 
@@ -116,42 +107,6 @@ The repository uses extensive GitHub Actions automation:
 - Custom Jekyll plugin at `site/_plugins/expand_nested_variable_filter.rb`.
 - Primary AI Authoring with Claude Code (`CLAUDE.md`) persisted since v3.24.0.
 - Extended AI Authoring with OpenCode (`AGENTS.md`) is excluded to not conflict with Claude Code.
-- Analytics AI Authoring with MATILDA is fully excluded.
-
-
-## Claude Code Memory Hierarchy
-
-Claude Code automatically loads memory files in this order (highest priority first):
-
-| Level         | Location                                            | Scope Today            | Version Controlled |
-|---------------|-----------------------------------------------------|------------------------|--------------------|
-| Managed       | `/Library/Application Support/ClaudeCode/CLAUDE.md` | Organization-wide      | IT-managed         |
-| Project       | `./CLAUDE.md`                                       | Team-shared            | Yes (this file)    |
-| Project rules | `./.claude/rules/*.md`                              | Team-shared, modular   | Yes                |
-| User          | `~/.claude/CLAUDE.md`                               | Personal, all projects | No                 |
-| Project local | `./CLAUDE.local.md`                                 | Personal, this project | No (gitignored)    |
-
-### For Contributors
-
-This project uses the **Project** level (`./CLAUDE.md`) for shared team context.
-
-### For AI Teammates
-
-If you're an AI teammate on this workstation, check `~/.claude/CLAUDE.md` for personal context that applies across all projects. That file may contain:
-
-- Your identity and history on this workstation
-- Personal preferences not appropriate for public repos
-- Context about the team and relationships
-
-The user-level memory is private and not committed to any repository.
-
-### For Those Following This Repo
-
-If you fork or clone this project:
-
-1. This `CLAUDE.md` gives you project context
-2. Create `~/.claude/CLAUDE.md` for your own personal preferences
-3. Use `CLAUDE.local.md` (gitignored) for project-specific personal notes
 
 
 ## Writing Style
