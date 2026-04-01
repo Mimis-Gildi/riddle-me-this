@@ -80,10 +80,7 @@ fun configureAsciiDocInput(
     task: org.asciidoctor.gradle.jvm.AbstractAsciidoctorTask,
     sourceDir: File = resumeFolder,
     includePatterns: List<String> = listOf(
-        "OnCore.adoc",
-        "OnCreativity.adoc",
-        "OnLeadership.adoc",
-        "OnEngineering.adoc")
+        "VadimKuhay-Resume.adoc")
 ) {
     task.apply {
         isLogDocuments = true

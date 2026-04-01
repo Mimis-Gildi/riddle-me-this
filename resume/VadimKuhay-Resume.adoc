@@ -1,0 +1,29 @@
+= Vadim Kuhay
+Vadim Kuhay - mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com]
+:description: Vadim Kuhay is an experienced polyglot software engineer, hands-on architect, and team builder.
+:doctype: article
+:sectanchors:
+:sectlinks:
+:table-caption: Exposition
+:keywords: resume kuhay rdd13r
+:icons: font
+:!toc:
+:toclevels: 1
+:toc-title: Resume Overview
+:imagesdir: images
+:includedir: fragments
+:pdf-themesdir: themes
+:pdf-theme: engineering-resume
+:revision-date: March 31st, 2026
+
+include::{includedir}/hero.adoc[]
+
+include::{includedir}/sub-hero.adoc[]
+
+include::{includedir}/products.adoc[]
+
+include::{includedir}/skills.adoc[]
+
+<<<
+
+include::{includedir}/experience.adoc[]

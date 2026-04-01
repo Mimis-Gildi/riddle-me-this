@@ -1,21 +1,9 @@
-#### by rdd13r on 2025-05-12
-# initial checkin
-# This is a broader list, especially considering OS excusions
-# as this project is edited on a veriety of environments.
-# Project root has general excludes;
-# Exclude specifics in the child.
-
-#### OS Templates
-# excluded at project root
-
+#### by rdd13r on 2026-03-31
 
 ### Linux template
 *~
-# temporary files which can be created if a process still has a handle open of a deleted file
 .fuse_hidden*
-# Linux trash folder which might appear on any partition or disk
 .Trash-*
-# .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
 
@@ -42,11 +30,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-
-
-#### General FS templates
-# excluded at project root
 
 
 ## Archive template
@@ -94,18 +77,11 @@ logs
 
 
 ### DotEnv template
-
-# dotenv environment variable files
 .env
 .env.development.local
 .env.test.local
 .env.production.local
 .env.local
-
-
-
-#### Language Templates
-# common to language submodules
 
 
 ### Java template
@@ -115,52 +91,6 @@ logs
 hs_err_pid*
 replay_pid*
 # See Archive template
-
-
-### Scala template
-# See Java Template
-
-
-### Kotlin template
-# See Java Template
-
-
-### Node/JS/TS template
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-# Bower dependency directory (https://bower.io/)
-bower_components
-# Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
-# Dependency directories
-node_modules/
-jspm_packages/
-# TypeScript cache
-*.tsbuildinfo
-# Optional npm cache directory
-.npm
-# Optional eslint cache
-.eslintcache
-# Optional stylelint cache
-.stylelintcache
-# Optional REPL history
-.node_repl_history
-# Yarn
-.yarn/cache
-.yarn/unplugged
-.yarn/build-state.yml
-.yarn/install-state.gz
-.pnp.*
-
-
-
-#### Project Definition Tools
-# common manifests
 
 
 ### Gradle template
@@ -174,39 +104,6 @@ gradle-app.setting
 !gradle-wrapper.properties
 # Cache of project
 .gradletasknamecache
-
-
-### SBT template
-# Simple Build Tool
-# http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
-dist/*
-lib_managed/
-src_managed/
-project/boot/
-project/plugins/project/
-.history
-.cache
-.lib/
-
-
-### Maven template
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-# https://github.com/takari/maven-wrapper#usage-without-binary-jar
-.mvn/wrapper/maven-wrapper.jar
-# Eclipse
-.project
-.classpath
-
-
-#### IDE Templates
 
 
 ### Vim template
@@ -229,9 +126,6 @@ tags
 
 
 ### JetBrains template
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
-# User-specific stuff
 !.idea/.gitignore
 !.idea/codeStyles/.gitignore
 .idea
@@ -241,25 +135,3 @@ tags
 *.iws
 # IntelliJ
 out/
-
-
-### VisualStudioCode template
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
-# Local History for Visual Studio Code
-.history/
-
-
-# Ignore Gradle build output directory
-/workflows.csv
-
-### AI Authorship Exclusions
-.claude/*
-AGENTS.md
-matilda.yml
-.matilda/*
-

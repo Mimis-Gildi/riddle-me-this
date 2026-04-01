@@ -10,10 +10,12 @@ header:
   line-height: 1
   recto:
     center:
-      content: '+1 (919) 717-1387 | GitHub - Release https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/{revision-number}[Version] - Author''s https://mimis-gildi.github.io/riddle-me-this/maintainer/[Profile] and https://www.linkedin.com/in/rdd13r/[LinkedIn]'
+      content: '+1 (919) 717-1387 | Vadim''s https://mimis-gildi.github.io/riddle-me-this/[blog], https://github.com/rdd13r/[GitHub], current OSS https://mimis-gildi.github.io/mcp-total-recall/[passion project], and https://www.linkedin.com/in/rdd13r/[LinkedIn]'
   verso:
+    left:
+      content: 'https://github.com/Mimis-Gildi/[Mímis Gildi] Co-mentoring Community'
     right:
-      content: 'https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/{revision-number}'
+      content: 'https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v{revnumber}[v{revnumber}]'
 footer:
   height: 0.6in
   line-height: 1
@@ -24,6 +26,6 @@ footer:
       content: 'v{revnumber}'
   verso:
     left:
-      content: '_Every real system begins with trust, survives by clarity, and earns its team’s keep in production._'
+      content: '_Every real system begins with trust._'
     right:
       content: '{revision-date}'
