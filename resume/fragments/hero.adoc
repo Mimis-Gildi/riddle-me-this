@@ -1,0 +1,3 @@
+[.normal]
+Software engineer by passion, team builder by necessity, entrepreneur because someone has to build it. +
+Banks, defense, startups -- shipping software that outlives its sponsors.

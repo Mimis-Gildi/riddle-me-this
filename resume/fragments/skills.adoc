@@ -1,0 +1,24 @@
+'''
+
+Hard Skills & Technical Acumen::
+
+* *Architecture & Design* -- TOGAF, ArchiMate, DoDAF; DDD, EventStorming; Microservices, Microfrontends;
+API-first (REST/HATEOAS/RMM-3); 12-Factor App; Streaming Topologies; Multi-tenant; Strangler Fig.
+
+* *Engineering Practice* -- XP, TDD/BDD/ATDD, trunk-based development; CI/CD, DevOps, InnerSource; CoP.
+
+* *Languages* -- Kotlin-KMP, Java, Python, Scala, Go, C/ObjC/C++, TypeScript/JavaScript, ksh/bash, Swift.
+
+* *AI / ML* -- AIOps, MLOps; GenAI 2022{plus} MCP, LLaMA, GPT-4, LangChain, LangGraph, LangSmith;
+TensorFlow, Keras, PyTorch, PySpark, Scikit-learn; Bayesian Inference, Quantum Decision Theory (QDT), Drift Mitigation.
+
+* *Frameworks* -- Claude Code, OpenRouter.ai, MiniMax, Qwen3; Firebase, Redis, MongoDB, Cassandra;
+Ktor, Quarkus, Micronaut, Akka, Kind; Spring Boot/Cloud/WebFlux/HATEOAS; React, Vue.js; Kafka Streams.
+
+* *Infrastructure in Code* -- Kubernetes (`k8s`), Docker, `containerd`, OpenShift/OKD, Knative, Helm, Terraform; AWS,
+Azure, GCP; GitHub Actions, Jenkins; Android SDK, iOS; ESX, Linux kernel, bare-metal, UNIX, OSX; MPI.
+
+* *Compliance & Security* -- FDA CFR 21 Part 11, GxP, CMMI, Pharmacovigilance;
+SOX, Dodd-Frank, GDPR, SOC 2; Qodana, SonarQube, Snyk, Mend.io; OAuth 2.0.
+
+* *Observability* -- Dynatrace, Splunk, Datadog, Prometheus, Grafana; DORA metrics, SLO-based alerting.
