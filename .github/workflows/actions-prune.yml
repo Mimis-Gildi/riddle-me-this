@@ -8,4 +8,4 @@ on:
 
 jobs:
   cleanup-actions:
-    uses: Mimis-Gildi/fluffle/.github/workflows/actions-prune.yml@67-release-shared-org-actions
+    uses: Mimis-Gildi/fluffle/.github/workflows/actions-prune.yml@main
