@@ -9,4 +9,4 @@ on:
 
 jobs:
   canary:
-    uses: Mimis-Gildi/fluffle/.github/workflows/custom-runner-introspect.yml@main
+    uses: Mimis-Gildi/fluffle/.github/workflows/runner-introspector.yml@main
