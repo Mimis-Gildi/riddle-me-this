@@ -1,0 +1,11 @@
+name: Actions Prune
+run-name: "Clean Actions ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
+
+on:
+  push:
+  workflow_dispatch:
+
+
+jobs:
+  cleanup-actions:
+    uses: Mimis-Gildi/fluffle/.github/workflows/actions-prune.yml@67-release-shared-org-actions
