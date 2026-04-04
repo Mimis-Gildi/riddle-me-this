@@ -1,5 +1,5 @@
-name: Introspector Canary
-run-name: "Introspect Runner on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
+name: Runner Canary
+run-name: "Fly the Runner on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
 
 on:
   push:
