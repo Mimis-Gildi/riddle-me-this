@@ -1,4 +1,4 @@
-name: Runner Canary
+name: Introspector Canary
 run-name: "Introspect Runner on ${{ github.repository }} by ${{ github.actor }} with ${{ github.event_name }} (Attempt ${{ github.run_attempt }})"
 
 on:
