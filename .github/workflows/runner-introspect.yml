@@ -3,8 +3,6 @@ run-name: "Introspect Runner on ${{ github.repository }} by ${{ github.actor }} 
 
 on:
   push:
-    branches-ignore:
-      - main
   workflow_dispatch:
 
 jobs:
