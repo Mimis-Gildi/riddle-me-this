@@ -9,4 +9,4 @@ on:
 
 jobs:
   canary:
-    uses: Mimis-Gildi/fluffle/.github/workflows/custom-runner-introspect.yml@67-add-release-shared-org-actions
+    uses: Mimis-Gildi/fluffle/.github/workflows/custom-runner-introspect.yml@main
