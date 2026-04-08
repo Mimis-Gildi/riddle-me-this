@@ -12,6 +12,6 @@ Became the bank's global SDLC/DevOps standard. Awarded Officer's Recognition of 
 * *XFIS* (2010, employment) -- first of its kind consumer-managed content federation tollbooth appliance, Xybion.
 * *Protrack remodeling* (2007, consulting employment) -- new Merck & Co. critical medical-legal review platform, mostly inoperable,
 rebuilt ground-up in a year while live; stellar reputation and new business for employer.
-* *MATILDA* venture (2002-present) -- AIOps research platform for automated bare-metal infrastructure management; foundation for three eight-figure exit products:
-SEER (AI sentiment analysis), Gank (defense pattern detection), and Zero (coldstart optimization).
+* *MATILDA* venture (2002-present) -- AIOps ecosystem and trunk-based research platform providing a declarative Omega-like bare-metal manifest management.
+SEER AI sentiment analysis (YouTube ads), Gank pattern detection (defense), and Zero coldstart optimization are eight digit exit products based on MATILDA.
 

@@ -1,6 +1,6 @@
 = Vadim Kuhay
-Vadim Kuhay — mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com] | +1 (919) 717-1387 | https://www.linkedin.com/in/rdd13r/[LinkedIn]
-:description: Vadim Kuhay is a hands-on polyglot engineering leader at VP/CTO scale who builds teams and writes production code.
+Vadim Kuhay - mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com]
+:description: Vadim Kuhay is an experienced polyglot software engineer, hands-on architect, and team builder.
 :doctype: article
 :sectanchors:
 :sectlinks:
@@ -14,7 +14,7 @@ Vadim Kuhay — mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com] | +1 (919) 7
 :includedir: fragments
 :pdf-themesdir: themes
 :pdf-theme: engineering-resume
-:revision-date: April 2nd, 2026
+:revision-date: March 31st, 2026
 
 include::{includedir}/hero.adoc[]
 

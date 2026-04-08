@@ -1,5 +1,5 @@
 * *Architecture at Scale* -- dbECM: 56 apps in 13 domains, 3 regions, $37M, 99.99% uptime, and 11 more;
 * *AI/ML Platforms* -- MATILDA Expert System, 13 co-owners, 100M+ events/day; GenAI in prod since 2022;
 * *CloudNative / Distributed Systems* -- GEICO Mailroom; k8s, AWS, Azure, GCP, bare-metal: 19 companies;
-* *Transformation* -- 11 enterprise (Credit Suisse, Blue Cross, Citizens Bank, Mutual of Omaha);
+* *Transformation* -- 11 enterprise (Credit Suisse, Blue Cross, Mutual of Omaha Insurance, Genworth);
 * *Entrepreneurship* -- 9 years as founder, 3 startup exits, 300+ engineers coached; 23 startup MVPs;
