@@ -80,7 +80,7 @@ jobs:
 
       - name: ⚙️ Set up Gradle
         if: steps.resume-changes-detected.outputs.satisfied == 'true' && steps.env.outputs.is-self-hosted == 'false'
-        uses: gradle/actions/setup-gradle@v6.0.1
+        uses: gradle/actions/setup-gradle@v6.1.0
         timeout-minutes: 5
 
       - name: Bootstrap SDKMAN if Self-Hosted
