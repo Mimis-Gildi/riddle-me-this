@@ -1,13 +1,10 @@
-version: "1.0"
+####################################################################################################################
+# WARNING: Do not store sensitive information in this file, as its contents will be included in the Qodana report. #
+####################################################################################################################
 
+version: "1.0"
+linter: jetbrains/qodana-jvm-community:2025.3
 profile:
   name: qodana.recommended
-
-linter: jetbrains/qodana-jvm-community:2025.2
-
-projectJDK: temurin-21
-
 include:
   - name: CheckDependencyLicenses
-
-fixesStrategy: apply
