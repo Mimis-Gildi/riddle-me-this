@@ -1,0 +1,14 @@
+= Riddle Me This -- Project-Specific Contributions
+:description: Project-specific contributing guidelines for the profile project.
+:!toc:
+:keywords: contributing
+
+This repository is a personal resume and publishing platform.
+
+It is **not** a traditional software project. Its content represents the work of https://github.com/rdd13r[one person] and a small team of collaborators -- human and AI.
+
+== Forking
+
+Forking is welcome, but of limited use to others unless you are modeling a similar pattern. For that reason, this repo is licensed under https://creativecommons.org/licenses/by-nc-nd/4.0/[*_CC BY-NC-ND 4.0_*].
+
+If you think this project should evolve into a general archetype, please open a link:.github/ISSUE_TEMPLATE/valuable-idea.md[Valuable Idea] issue. We'll consider it carefully.
