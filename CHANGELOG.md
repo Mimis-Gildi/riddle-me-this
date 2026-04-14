@@ -1,6 +1,6 @@
 # CHANGELOG.md
 
-## [4.2.0] — Resume refresh and CI/CD overhaul
+## [4.4.0] — Resume refresh and CI/CD overhaul
 
 Applied feedback from 11 reviewers. Rebuilt resume structure. Externalized CI/CD to fluffle.
 
