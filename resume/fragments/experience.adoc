@@ -1,50 +1,48 @@
-== Employment History
+=== Employment History
 
-ASE Inc. (Principal Architect, Co-Founder, 2025-Present), remote::
+ASE Inc. (Principal Architect, Co-Founder, 2017-Present), remote::
 
-* MCP-based agentic AI systems (Total Recall, Agora) -- Kotlin, Java, Golang, TensorFlow, AWS, Kubernetes.
-* MilSpec Swarming AI Systems firmware development; MATILDA: framework support and maintenance.
+* Agentic AI product development: Total Recall, Agora, Swarming AI, Edge Intelligence, MATILDA.
 * Consulting on Corporate AI Strategy, delivery team acumen improvement with Anthropic Agentic Tooling.
+* 11 enterprise transformations, including:
+** Credit Suisse: Predictive Analytics API -- RMM-3 HAL library, microservices adoption in banking.
+** Blue Cross NC: Monolith decomposition -- Strangler Fig; 23 archetypes, reference implementation.
+** Citizens Bank: "My Virtual Card" product recovery -- 15 months stalled, recovered in 5 months.
+** Mutual of Omaha Insurance: Cloud Native Transformation -- 11 graduating champions, 5 optimized teams,
+self-sufficient innovation community, inner-source and licensed out Kafka plugin products.
+* 23 vc-funded and bootstrapped EU SaaS startup MVPs; 2018 strategic sponsor of Prague Innovation Scene.
+* Call center AI (2022): embedded LLaMA in Akka-Kotlin Actor model with multi-stage exploit safeguards.
+* Rebuilt SEER with GPT-4/LangChain (2023); first commercial production integration of KotlinDL.
+* Engineering competence co-mentoring Community of Practice across 3 continents; 300+ engineers coached.
 
 GEICO (Distinguished Staff Engineer, VP Digital Strategy, 2024), remote::
 
 * Built GEICO's first distributed system: 12-factor-app, Kotlin, React, Python, Kubernetes, Azure.
 * Introduced EventStorming, DDD, trunk-based development, prod-parity repos for local k8s.
-* 3x team velocity improvement, 80% reduction in deployment failures, Community of Practice.
-
-ASE Inc. (Principal Architect, Co-Founder, 2017-2023), remote::
-
-* 11 enterprise transformations: Credit Suisse, Citizens, Mutual of Omaha, Blue Cross NC, Fidelity, Genworth.
-* 23 vc-funded and bootstrapped EU SaaS startup MVPs; 2018 strategic sponsor of Prague Innovation Scene.
-* Call center AI (2022): embedded LLaMA in Akka-Kotlin Actor model with multi-stage exploit safeguards.
-* Rebuilt SEER with GPT-4/LangChain (2023); first commercial production integration of KotlinDL.
-* Engineering competence co-mentoring Community of Practice grew to 3 continents and 300+ contributors.
+* 3x team performance improvement, 80% reduction in deployment failures, Community of Practice.
 
 Deutsche Bank (Lead Engineer, AVP, 2012-2017), Cary NC::
 
-* dbECM: designed and delivered a global self-healing HA content platform across 3 geographic regions.
-* Standardized global SDLC and shift-left testing pipelines (dbAtlas) adopted by over 3,000 engineers.
-* Java, Kafka, MongoDB; EMC Documentum, IBM FileNet P8; Early adoption of Docker, `k8s`, and Spring Boot.
-
-'''
+* Built the org out from founding team to core, platform, and tenants across US, UK, and Germany.
+* dbECM: Formation, policy, runway, discovery, architecture, design, taxonomy, test-driven development.
+* dbAtlas: Borg/Omega style trunk-based development paradigm generalized from dbECM for the bank.
+* dbDevNet: 12-factor-app offered as a canned policy: dev-prod parity, isolation, A/B testing, CoP.
+* dbDevBox: Local Linux development environment as a Dev-VM, `k8s`, Docker, DevOps integrated.
+* Turnkey self-service onboarding: Create App -> get infrastructure {plus} configured Dev-VMs; 56 tenants.
+* Java, Kafka, MongoDB; EMC Documentum, IBM FileNet P8; production `k8s` (pre-operator era); Spring Boot.
 
 Earlier Career::
 
-Xybion Corporation (Product Principal, 2010-2012), PA:::
-XFIS content federation appliance. Acquired by EMC. Java OSGi, Spring, VMware ESXi.
+* Xybion Corporation (Product Principal, 2010-2012) -- XFIS content federation appliance;
+HighMark Blue Cross paying pilot tenant; hardware {plus} firmware while unifying acquired companies; XFIS acquired by EMC.
+* Glemser Technologies (Lead Engineer, 2005-2010) -- Pharma EDRMS: Merck, Pfizer, BMS;
+12 companies, FDA compliance; Custom content {plus} record management platforms on big-pharma largest/hyper-scale EDRMS.
+* MassivelyParallel / IMPERISOFT (Co-Founding Engineer, 2000-2005) -- Defense simulation, distributed systems; custom RNN architecture;
+Message-Passing Supercomputing; massive hybrid/distributed systems.
+* US Army, 20th Engineer Brigade (1997-2000) -- Combat Engineering, XVIII Airborne Corps (honorable).
+* Early Career (1991-1997) -- UNIX daemons; IBM System 370/390 mainframe services and migration;
+Linux kernel contributions. GNU library assistant-maintainer. Security analysis (J{amp}J).
 
-Glemser Technologies (Lead Engineer, 2005-2010), PA:::
-Pharma EDRMS for Merck, Pfizer, Bristol-Myers Squibb. 12 companies, FDA compliance. EMC Documentum.
-
-MassivelyParallel / IMPERISOFT (Co-Founding Engineer, 2000-2005), NC:::
-Defense and warfare simulation, actor-based distributed systems; Custom RNN architecture. AIOps IP.
-
-US Army, 20th Engineer Brigade (1997-2000), NC:::
-Combat Engineering / Demolition. XVIII Airborne Corps. Served with Honor and Distinction.
-
-Early Career (1991-1997), PA:::
-UNIX daemons, mainframe daemon development. Linux kernel contributions, GNU binutils. +
-C, ObjC, C++, Python, Perl, SQL, bash, ksh, csh.
 
 === Education & Continued Learning
 

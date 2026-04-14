@@ -1,3 +1,4 @@
 [.normal]
-Software engineer by passion, team builder by necessity, entrepreneur because someone has to build it. +
-Banks, defense, startups -- shipping software that outlives its sponsors.
+Polyglot fullstack software engineer by passion, team builder by conviction, entrepreneur by necessity -- someone has to build it.
+Biomedical, banking, insurance, defense, startups -- shipping software that outlives its sponsors.
+Seeking my next software team to nurture thriving, owning high-value products -- hands-on, in-code, long-term.
