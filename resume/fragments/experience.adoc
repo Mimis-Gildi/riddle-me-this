@@ -37,7 +37,7 @@ Earlier Career::
 HighMark Blue Cross paying pilot tenant; hardware {plus} firmware while unifying acquired companies; XFIS acquired by EMC.
 * Glemser Technologies (Lead Engineer, 2005-2010) -- Pharma EDRMS: Merck, Pfizer, BMS;
 12 companies, FDA compliance; Custom content {plus} record management platforms on big-pharma largest/hyper-scale EDRMS.
-* MassivelyParallel / IMPERISOFT (Co-Funding Engineer, 2000-2005) -- Defense simulation, distributed systems; custom RNN architecture;
+* MassivelyParallel / IMPERISOFT (Co-Founding Engineer, 2000-2005) -- Defense simulation, distributed systems; custom RNN architecture;
 Message-Passing Supercomputing; massive hybrid/distributed systems.
 * US Army, 20th Engineer Brigade (1997-2000) -- Combat Engineering, XVIII Airborne Corps (honorable);
 * Early Career (1991-1997) -- UNIX daemons; IBM 370 mainframe services; Linux kernel contributions.
