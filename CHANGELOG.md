@@ -1,13 +1,8 @@
 # CHANGELOG.md
 
-
----
-
 ## [4.2.0] — Resume propagation
 
 - Meta-release for v4.1.13 
-
----
 
 ## [4.1.13] — Apply resume feedback from friends (#383)
 
