@@ -12,6 +12,9 @@ on:
 jobs:
   release:
     uses: Mimis-Gildi/fluffle/.github/workflows/releaser.yml@main
+    with:
+      build-tasks: 'build asciidoctorPdf'
+      artifacts: 'build/docs/asciidocPdf/*.pdf'
     secrets: inherit
     permissions:
       contents: write
