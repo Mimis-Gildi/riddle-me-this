@@ -1,6 +1,5 @@
-'''
 
-Hard Skills & Technical Acumen::
+=== Hard Skills & Technical Acumen
 
 * *Architecture & Design* -- TOGAF, ArchiMate, DoDAF; DDD, EventStorming; Microservices, Microfrontends;
 API-first (REST/HATEOAS/RMM-3); 12-Factor App; Streaming Topologies; Multi-tenant; Strangler Fig.

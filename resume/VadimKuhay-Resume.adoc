@@ -24,6 +24,4 @@ include::{includedir}/products.adoc[]
 
 include::{includedir}/skills.adoc[]
 
-<<<
-
 include::{includedir}/experience.adoc[]

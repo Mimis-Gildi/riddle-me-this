@@ -1,17 +1,20 @@
 == Products and Platforms
 
-Selected highest-risk endeavors:
-
-* *Swarming AI* (2023, 2025) -- solo Android-based MilSpec edge device AI decision-making firmware; extensive Linux kernel modifications (C, Go, Rust);
+* *Swarming AI* (2023, 2025) -- solo Android-based MilSpec edge device AI decision-making firmware;
+extensive Linux kernel modifications (C, Go, Rust);
 Bayesian or Quantum Decision Theory when context collapses (Kotlin).
-* *TauCoin* (2022) -- failed $15M blockchain-based medical chart management mobile product (Epic),
-reimagined as a posterity app for the ultra-wealthy and recovered in 9 months for $2.2M; Cardano to Kotlin Multiplatform.
-* *dbECM* (2012-2016, employment) -- Deutsche Bank global content and record management platform -- the largest distributed EDRMS in banking on date of release;
-fully automated regional deployment active-active, geographically distributed, GitHub-style self-service tenant onboarding, from 3 to over 150 contributors in two years.
+* *TauCoin* (2022) -- blockchain-hype to pragmatism -- $15M mobile medical chart manager (Epic),
+reimagined as a posterity app for the ultra-wealthy and recovered in 9 months for $2.2M;
+Cardano to Kotlin Multiplatform.
+* *dbECM* (2012-2016, employment) -- Deutsche Bank global content and record management platform -- the largest
+distributed EDRMS in banking on date of release; fully automated regional deployment active-active,
+geographically distributed, GitHub-style self-service tenant onboarding, from 3 to over 150 contributors in two years.
 Became the bank's global SDLC/DevOps standard. Awarded Officer's Recognition of Excellence.
 * *XFIS* (2010, employment) -- first of its kind consumer-managed content federation tollbooth appliance, Xybion.
-* *Protrack remodeling* (2007, consulting employment) -- new Merck & Co. critical medical-legal review platform, mostly inoperable,
-rebuilt ground-up in a year while live; stellar reputation and new business for employer.
-* *MATILDA* venture (2002-present) -- AIOps research platform for automated bare-metal infrastructure management; foundation for three eight-figure exit products:
-SEER (AI sentiment analysis), Gank (defense pattern detection), and Zero (coldstart optimization).
+* *Protrack remodeling* (2007, consulting employment) -- Merck & Co. critical medical-legal review platform,
+delivered by a team of 14, failed recovery by another, then abandoned in prod;
+solo-rebuilt in a year while live, earning a stellar reputation and new business for the employer.
+The time the "Ship of Theseus" made any sense.
+* *MATILDA* venture (2002-present) -- AIOps research platform for automated bare-metal infrastructure management;
+SEER (sentiment analysis), Gank (pattern detection), and Zero (coldstart optimization) are exits.
 
