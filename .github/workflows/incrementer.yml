@@ -20,6 +20,7 @@ on:
 
 jobs:
   increment:
+    if: ${{ !(github.event_name == 'push' && github.event.created) }}
     uses: Mimis-Gildi/fluffle/.github/workflows/incrementer.yml@main
     secrets: inherit
     permissions:
