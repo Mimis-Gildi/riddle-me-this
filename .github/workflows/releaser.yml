@@ -8,13 +8,20 @@ on:
     types:
       - closed
   workflow_dispatch:
+    inputs:
+      resume:
+        required: false
+        type: boolean
+        default: false
+        description: 'Build and attach resume PDF'
 
 jobs:
   release:
     uses: Mimis-Gildi/fluffle/.github/workflows/releaser.yml@main
     with:
-      build-tasks: 'build asciidoctorPdf'
-      artifacts: 'build/docs/asciidocPdf/*.pdf'
+      build-tasks: ${{ (inputs.resume || contains(github.event.pull_request.labels.*.name, 'resume')) && 'build asciidoctorPdf' || 'build' }}
+      artifacts: ${{ (inputs.resume || contains(github.event.pull_request.labels.*.name, 'resume')) && 'build/docs/asciidocPdf/VadimKuhay-Resume.pdf' || '' }}
+      release-title: ${{ (inputs.resume || contains(github.event.pull_request.labels.*.name, 'resume')) && 'Resume Release' || 'Article Release' }}
     secrets: inherit
     permissions:
       contents: write

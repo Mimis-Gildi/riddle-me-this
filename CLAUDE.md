@@ -105,7 +105,7 @@ The repository uses extensive GitHub Actions automation:
 - Blog posts go in `site/_posts/` with front matter including categories and tags.
 - Site uses `minimal-mistakes` theme (remote theme configuration).
 - Custom Jekyll plugin at `site/_plugins/expand_nested_variable_filter.rb`.
-- Primary AI Authoring with Claude Code (`CLAUDE.md`) persisted since v3.24.0.
+- Primary AI Authoring with Claude Code (`CLAUDE.md`).
 - Extended AI Authoring with OpenCode (`AGENTS.md`) is excluded to not conflict with Claude Code.
 
 

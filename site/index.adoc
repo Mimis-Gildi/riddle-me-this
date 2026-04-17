@@ -4,11 +4,6 @@ header:
   overlay_image: /assets/images/banner-header.png
   overlay_filter: 0.4
   caption: "Systems are stories that run."
-  actions:
-    - label: "Résumé (GitHub)"
-      url: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v4.5.0
-    - label: "Who's Rdd13r?"
-      url: /maintainer/
 classes: wide
 permalink: /
 layout: home
@@ -50,10 +45,6 @@ Code together.
 
 - link:/riddle-me-this/series/fall-of-democracy/[2025: Kakistocracy & Circus Maximus]
 → "The circus has left, but the clowns are still here."
-
-'''
-
-🚜 - Migration is completed at v3.0.0.
 
 '''
 

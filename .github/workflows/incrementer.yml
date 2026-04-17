@@ -4,6 +4,7 @@ run-name: "Incremented Version on ${{ github.repository }} by ${{ github.actor }
 on:
   push:
     branches-ignore:
+      - main
       - release
       - 'releases/**'
       - 'renovate/**'
@@ -23,3 +24,42 @@ jobs:
     secrets: inherit
     permissions:
       contents: write
+
+  update-resume-links:
+    needs: increment
+    if: ${{ needs.increment.outputs.new != '' && contains(github.event.pull_request.labels.*.name, 'resume') }}
+    runs-on: self-hosted
+    timeout-minutes: 3
+    permissions:
+      contents: write
+    steps:
+
+      - name: Checkout PR head
+        uses: actions/checkout@v6.0.2
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Update resume version references
+        uses: ./.github/actions/update-version-references
+        with:
+          dry-run: 'true'
+          superseded-version: v${{ needs.increment.outputs.old }}
+          current-version: v${{ needs.increment.outputs.new }}
+          published-version: v${{ needs.increment.outputs.old }}
+          link-replacements: |
+            [
+              {"path": "site/index.adoc", "pattern": "releases/download/{version}/VadimKuhay-Resume.pdf", "count": 1},
+              {"path": "site/_pages/maintainer.adoc", "pattern": "releases/tag/{version}", "count": 1},
+              {"path": "site/_pages/maintainer.adoc", "pattern": "releases/download/{version}/VadimKuhay-Resume.pdf", "count": 1},
+              {"path": "README.adoc", "pattern": "releases/download/{version}/VadimKuhay-Resume.pdf", "count": 1}
+            ]
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git add -A
+          git diff --cached --quiet || git commit -m "Update resume version references to v${{ needs.increment.outputs.new }} [skip up]"
+          git push origin HEAD:${{ github.head_ref }}

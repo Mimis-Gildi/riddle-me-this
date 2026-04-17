@@ -1,0 +1,39 @@
+name: Update Version References
+description: "Find-and-replace version references across configured files with validation."
+author: "rdd13r"
+branding:
+  icon: "edit"
+  color: "yellow"
+
+inputs:
+  dry-run:
+    description: "Do not replace, only report as usual."
+    required: false
+    default: 'true'
+  superseded-version:
+    description: "Version being replaced inline (e.g. v1.2.3)"
+    required: true
+  current-version:
+    description: "Running version to insert (e.g. v1.2.4)"
+    required: true
+  published-version:
+    description: "Version of the last published artifact (e.g. v1.1.0)"
+    required: true
+  link-replacements:
+    description: "JSON array of link replacement targets. Each item: {\"path\": str, \"pattern\": str, \"count\": int}"
+    required: true
+
+runs:
+  using: "composite"
+
+  steps:
+
+    - id: update
+      shell: zsh -l {0}
+      env:
+        DRY_RUN: ${{ inputs.dry-run }}
+        SUPERSEDED: ${{ inputs.superseded-version }}
+        CURRENT: ${{ inputs.current-version }}
+        PUBLISHED: ${{ inputs.published-version }}
+        REPLACEMENTS: ${{ inputs.link-replacements }}
+      run: ${{ github.action_path }}/update-version-references.py

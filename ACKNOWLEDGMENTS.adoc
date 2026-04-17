@@ -31,7 +31,7 @@ NOTE: These references apply to *all* learning resources and practices used in t
 * {adoc-gradle} - built with.
 * {adoc-gradle-sources} - sources.
 * {gradle} - definition of this artifact.
-* {adoc-gradle-all} - suite (v3.1.0).
+* {adoc-gradle-all} - latest.
 
 Key Site References::
 * {mm-configuration} - the Jekyll theme for Minimal Mistakes.

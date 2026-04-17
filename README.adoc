@@ -1,7 +1,7 @@
 = Mímis Gildi: Rdd13r’s Living Digital Garden
 Vadim Kuhay <12781006+rdd13r@users.noreply.github.com>
-v4.0.0, Tuesday March 31st 2026
-:description: Vadim Kuhay’s living and evolving publication repository.
+v4.5.0, Friday April 17th 2026
+:description: Living and evolving publication repository by `rdd13r`.
 :icons: font
 :!toc:
 :keywords: Mímir Rdd13r Résumé Hacker Vadim Kuhay
@@ -9,22 +9,13 @@ v4.0.0, Tuesday March 31st 2026
 :actions: https://github.com/Mimis-Gildi/riddle-me-this/actions
 
 :gha: https://github.com/Mimis-Gildi/riddle-me-this/actions/workflows
-:a-codeql: {gha}/security-scan-by-codeql.yml
-:a-codacy: {gha}/security-scan-by-codacy.yml
-:a-qodana: {gha}/security-scan-by-qodana.yml
-
-:a-version: {gha}/custom-bump-version-on-feature-branch.yml
-:a-notes: {gha}/custom-release-notes-generator.yml
-:a-labels: {gha}/custom-pr-labels.yml
-:a-release: {gha}/custom-publish-release.yml
-
-:a-issues: {gha}/custom-stale-issues-watchdog.yml
-:a-jekyll: {gha}/github-pages-jekyll-build.yml
-:a-site: {gha}/github-pages-deploy.yml
-
-:a-prune: {gha}/github-actions-prune.yml
-:a-cache: {gha}/github-cache-prune.yml
-:a-infra: {gha}/custom-runner-introspect.yml
+:a-qodana: {gha}/qodana.yml
+:a-version: {gha}/incrementer.yml
+:a-release: {gha}/releaser.yml
+:a-stales: {gha}/stales.yml
+:a-site: {gha}/pages-deploy.yml
+:a-prune: {gha}/actions-prune.yml
+:a-infra: {gha}/runner-introspect.yml
 
 This is where I think out loud about engineering. +
 Three decades building systems, leading teams, fixing what broke. +
@@ -39,7 +30,7 @@ My people ethos and code attitude, feel for time, automation, LoLs. +
 In the blog posts, workflows, release notes, commit history -- look around. +
 Take what you like, if you dig my ways, come pair with me. +
 _P.S. I use A LOT of custom ML_ +
-_P.P.S. This repo has human and AI contributors working as a flat team. See link:CONTRIBUTING.adoc[CONTRIBUTING] and link:TEAM_NORMS.adoc[TEAM_NORMS]._
+_P.P.S. This repo has human and AI contributors working as a flat team. See link:CONTRIBUTING-HERE.adoc[CONTRIBUTING] and link:TEAM_NORMS.adoc[TEAM_NORMS]._
 
 Public Site::
 - **Browse the live site**: https://mimis-gildi.github.io/riddle-me-this/[Creative Engineering at Scale,window=_blank];
@@ -56,13 +47,7 @@ image:https://img.shields.io/badge/Subscribe-LinkedIn-0A66C2?style=for-the-badge
 == Contact
 
 * Email: mailto:vadim@asei.systems[vadim@asei.systems] | mailto:rIdd13r@pm.me[rIdd13r@pm.me] <- crypted
-* Signal / Discord / Telegram / Text: +1 (919) 717-1387 <- filtered
-
-Résumé & formalities::
-
-A PDF in {releases}, current is
-📦 https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v4.0.0[v4.0.0] here
-https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v4.0.0/VadimKuhay-Resume.pdf[Vadim Kuhay Résumé].
+* Signal / Discord / Text: +1 (919) 717-1387 ([bot]) / _https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v4.5.0/VadimKuhay-Resume.pdf[Résumé]_
 
 _Still, the best way to get to know me is to make software *with* me_ +
 {nbsp} +
@@ -81,26 +66,15 @@ _Timesaving {actions}[booms] ..._
 [cols=">1,>1,>1,>1",%autowidth,frame=none,align=center,grid=none]
 |===
 
-a| image::{a-codeql}/badge.svg[Security Scan by CodeQL,link={a-codeql},window=_blank,opts=nofollow]
-a| image::{a-codacy}/badge.svg[Security Scan by Codacy,link={a-codacy},window=_blank,opts=nofollow]
-a| image::{a-infra}/badge.svg[Custom Runner Introspect,link={a-infra},window=_blank,opts=nofollow]
-a| image::{a-qodana}/badge.svg[Security Scan by Qodana,link={a-qodana},window=_blank,opts=nofollow]
+a| image::{a-qodana}/badge.svg[Qodana,link={a-qodana},window=_blank,opts=nofollow]
+a| image::{a-version}/badge.svg[Increment Version,link={a-version},window=_blank,opts=nofollow]
+a| image::{a-release}/badge.svg[Publish Release,link={a-release},window=_blank,opts=nofollow]
+a| image::{a-site}/badge.svg[Publish Site,link={a-site},window=_blank,opts=nofollow]
 
-a| image::{a-version}/badge.svg[Custom Bump Version on Feature Branch,link={a-version},window=_blank,opts=nofollow]
-a| image::{a-notes}/badge.svg[Custom Release Notes Generator,link={a-notes},window=_blank,opts=nofollow]
-a| image::{a-labels}/badge.svg[Custom PR Labels,link={a-labels},window=_blank,opts=nofollow]
-a| image::{a-release}/badge.svg[Custom Publish Release,link={a-release},window=_blank,opts=nofollow]
-
-
-a| image::{a-issues}/badge.svg[Custom Stale Issues Watchdog,link={a-issues},window=_blank,opts=nofollow]
+a| image::{a-stales}/badge.svg[Stale Issues,link={a-stales},window=_blank,opts=nofollow]
+a| image::{a-prune}/badge.svg[Actions Prune,link={a-prune},window=_blank,opts=nofollow]
+a| image::{a-infra}/badge.svg[Runner Introspect,link={a-infra},window=_blank,opts=nofollow]
 a|
-a| image::{a-jekyll}/badge.svg[GitHub Build by Jekyll,link={a-jekyll},window=_blank,opts=nofollow]
-a| image::{a-site}/badge.svg[GitHub Site Deploy by Pages,link={a-site},window=_blank,opts=nofollow]
-
-|
-a| image::{a-prune}/badge.svg[GitHub Prune Actions by CLI,link={a-prune},window=_blank,opts=nofollow]
-a| image::{a-cache}/badge.svg[GitHub Prune Actions Cache by CLI,link={a-cache},window=_blank,opts=nofollow]
-|
 
 |===
 
