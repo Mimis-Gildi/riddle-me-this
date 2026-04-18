@@ -51,10 +51,12 @@ jobs:
 
       - name: Check for resume label
         id: label-check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          GH_TOKEN="$GITHUB_TOKEN" gh pr list --json labels 
+          gh pr list --json labels 
           
-          HAS_LABEL=$(GH_TOKEN="$GITHUB_TOKEN" gh pr list --json labels --jq '.[0].labels[].name' 2>/dev/null | grep -c '^resume$')
+          HAS_LABEL=$(gh pr list --json labels --jq '.[0].labels[].name' 2>/dev/null | grep -c '^resume$')
           if (( HAS_LABEL == 1 )); then
             echo "::notice::This is a resume update PR."
             echo "update=true" >> $GITHUB_OUTPUT
