@@ -82,7 +82,12 @@ jobs:
 
       - name: Commit and push
         if: ${{ steps.label-check.outputs.update == 'true' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          (( $+GITHUB_TOKEN )) && echo "GITHUB_TOKEN is set!" || echo "GITHUB_TOKEN is NOT set!" 
+          (( $+GH_TOKEN )) && echo "GH_TOKEN is set!" || echo "GH_TOKEN is NOT set!"
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
