@@ -37,7 +37,8 @@ jobs:
 
   update-resume-links:
     needs: increment
-    if: ${{ needs.increment.outputs.new != '' }}
+    if: ${{ needs.increment.outputs.new != '' && contains(github.event.pull_request.labels.*.name, 'resume') }}
+#    if: ${{ needs.increment.outputs.new != '' }}
     runs-on: self-hosted
     timeout-minutes: 3
     permissions:
