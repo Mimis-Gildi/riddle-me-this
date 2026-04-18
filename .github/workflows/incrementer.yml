@@ -44,7 +44,6 @@ jobs:
       - name: Update resume version references
         uses: ./.github/actions/update-version-references
         with:
-          dry-run: 'true'
           superseded-version: v${{ needs.increment.outputs.old }}
           current-version: v${{ needs.increment.outputs.new }}
           published-version: v${{ needs.increment.outputs.old }}

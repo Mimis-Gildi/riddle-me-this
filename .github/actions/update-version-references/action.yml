@@ -9,7 +9,7 @@ inputs:
   dry-run:
     description: "Do not replace, only report as usual."
     required: false
-    default: 'true'
+    default: 'false'
   superseded-version:
     description: "Version being replaced inline (e.g. v1.2.3)"
     required: true

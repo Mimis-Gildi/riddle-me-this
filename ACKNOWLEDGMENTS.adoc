@@ -1,22 +1,14 @@
 = Acknowledgements
 :description: Acknowledgements for the content of this artifact.
 :icons: font
-:tip-caption: 💡️
-:note-caption: ℹ️
-:important-caption: ❗
-:caution-caption: 🔥
-:warning-caption: ⚠️
 :!toc:
 :keywords: acknowledgements
 ifdef::env-name[:relfilesuffix: .adoc]
 :adoc: https://asciidoctor.org/[Asciidoctor]
-:adoc-issues: https://github.com/asciidoctor/asciidoctor/issues[Asciidoctor Issues]
 :adoc-docs: https://docs.asciidoctor.org/[Asciidoctor Documentation Site]
-:adoc-guide: https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer’s Guide]
+:adoc-guide: https://asciidoctor.org/docs/asciidoc-writers-guide/[AsciiDoc Writer's Guide]
 :adoc-gradle: https://asciidoctor.org/docs/asciidoctor-gradle-plugin/[Asciidoctor Gradle Plugin]
-:adoc-gradle-sources: https://github.com/asciidoctor/asciidoctor-gradle-plugin[GitHubAsciidoctor Gradle Plugin]
 :gradle: https://gradle.org/[Gradle Build Tool]
-:adoc-gradle-all: https://asciidoctor.github.io/asciidoctor-gradle-plugin/development-3.x/[Asciidoctor Gradle Plugin Suite]
 :mm-configuration: https://mmistakes.github.io/minimal-mistakes/docs/configuration/[Minimal Mistakes Configuration]
 :mm-layout: https://mmistakes.github.io/minimal-mistakes/docs/layouts/[Minimal Mistakes Layouts]
 :mm-theme: https://mmistakes.github.io/minimal-mistakes/[Minimal Mistakes Theme]
@@ -25,13 +17,10 @@ NOTE: These references apply to *all* learning resources and practices used in t
 
 
 * {adoc} - publishing language here.
-* {adoc-issues} - bugs and fixes.
 * {adoc-docs} - documentation.
 * {adoc-guide} - invaluable.
 * {adoc-gradle} - built with.
-* {adoc-gradle-sources} - sources.
 * {gradle} - definition of this artifact.
-* {adoc-gradle-all} - latest.
 
 Key Site References::
 * {mm-configuration} - the Jekyll theme for Minimal Mistakes.
@@ -40,20 +29,12 @@ Key Site References::
 
 == Content Acknowledgements
 
-* https://openrouter.ai/rankings/programming[LLM Rankings] - Compare models for programming prompts.
 * https://careerservices.fas.harvard.edu/resources/create-a-strong-resume/[Harvard Career Services: _Create a Strong Resume_]
 * https://writing.wisc.edu/handbook/resume/[University of Wisconsin: The Writing Center - _Resume Writing Tips_]
 * https://hbr.org/2014/12/how-to-write-a-resume-that-stands-out[Harvard Business Review: _How to Write a Résumé That Stands Out_] (classic for comparison)
 
 == Service Acknowledgements
 
-* https://chatgpt.com/[ChatGPT 4x] - a one of six supporting service LLMs for Tillie and a direct parent for Saga.
-
-== Libraries Acknowledgements
-
-* https://github.com/shellspec/shellspec[ShellSpec] - full-featured BDD unit testing framework for `shell` and system code.
-* https://www.codacy.com/[Codacy] - my third-favorite tool for giving me a peace of mind on quality of my work;
-** On https://docs.codacy.com/getting-started/supported-languages-and-tools/[Codacy Supported Languages] - a reference table;
-** On https://docs.codacy.com/repositories-configure/codacy-configuration-file/[Codacy Configuration File] - important for GH Actions.
-* https://codeql.github.com/[CodeQL] - a default tool available from gitHub; it does the job.
-* https://github.com/dependabot[Dependabot] - your most dependable dependency checking bot.
+* https://claude.ai/code[Claude Code] - primary AI authoring and engineering partner.
+* https://www.jetbrains.com/qodana/[Qodana] - JetBrains JVM Community code analysis.
+* https://www.codacy.com/[Codacy] - optional code quality and static analysis.
