@@ -4,7 +4,7 @@ ASE Inc. (Principal Architect, Co-Founder, 2017-Present), remote::
 
 * Agentic AI product development: Total Recall, Agora, Swarming AI, Edge Intelligence, MATILDA.
 * Consulting on Corporate AI Strategy, delivery team acumen improvement with Anthropic Agentic Tooling.
-* 11 enterprise transformations, including:
+* Eleven (11) enterprise transformations, including:
 ** Credit Suisse: Predictive Analytics API -- RMM-3 HAL library, microservices adoption in banking.
 ** Blue Cross NC: Monolith decomposition -- Strangler Fig; 23 archetypes, reference implementation.
 ** Citizens Bank: "My Virtual Card" product recovery -- 15 months stalled, recovered in 5 months.
