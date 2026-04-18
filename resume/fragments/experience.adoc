@@ -41,7 +41,7 @@ HighMark Blue Cross paying pilot tenant; hardware {plus} firmware while unifying
 Message-Passing Supercomputing; massive hybrid/distributed systems.
 * US Army, 20th Engineer Brigade (1997-2000) -- Combat Engineering, XVIII Airborne Corps (honorable).
 * Early Career (1991-1997) -- UNIX daemons; IBM System 370/390 mainframe services and migration;
-Linux kernel contributions. GNU library assistant-maintainer. Security analysis pass:[@] (pass:[J & J], NJ).
+Linux kernel contributions. GNU library assistant-maintainer. Security analysis pass:[@] (pass:[J&J HQ], NJ).
 
 
 === Education & Continued Learning
