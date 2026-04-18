@@ -1,8 +1,3 @@
-constitution:
-  - changed-files:
-      - any-glob-to-any-file: '*'
-      - any-glob-to-any-file: buildSrc/**
-
 resume:
   - changed-files:
       - any-glob-to-any-file: resume/**
@@ -10,10 +5,3 @@ resume:
 site:
   - changed-files:
       - any-glob-to-any-file: site/**
-
-demo:
-  - changed-files:
-      - any-glob-to-any-file:
-          - journal/**
-          - tracks/**
-
