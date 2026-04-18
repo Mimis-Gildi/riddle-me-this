@@ -54,8 +54,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh pr list --json labels 
-          
           HAS_LABEL=$(gh pr list --json labels --jq '.[0].labels[].name' 2>/dev/null | grep -c '^resume$')
           if (( HAS_LABEL == 1 )); then
             echo "::notice::This is a resume update PR."
@@ -85,6 +83,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch && git pull
           git add -A
-          git diff --cached --quiet || git commit -m "Update resume version references to v${{ needs.increment.outputs.new }} [skip up]"
+          git commit -m "Update resume version references to v${{ needs.increment.outputs.new }} [skip up]"
           git push origin
