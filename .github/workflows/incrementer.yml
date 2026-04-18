@@ -18,6 +18,10 @@ on:
       - reopened
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 defaults:
   run:
     shell: zsh -l {0}
