@@ -36,6 +36,12 @@ jobs:
       contents: write
     steps:
 
+      - name: Checkout PR head
+        uses: actions/checkout@v6.0.2
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
       - name: Check for resume label
         id: label-check
         run: |
@@ -45,13 +51,6 @@ jobs:
             echo "::notice::No 'resume' label on PR for branch $BRANCH — skipping link update"
             echo "skip=true" >> $GITHUB_OUTPUT
           fi
-
-      - name: Checkout PR head
-        if: ${{ steps.label-check.outputs.skip != 'true' }}
-        uses: actions/checkout@v6.0.2
-        with:
-          ref: ${{ github.head_ref }}
-          fetch-depth: 0
 
       - name: Update resume version references
         if: ${{ steps.label-check.outputs.skip != 'true' }}
