@@ -31,8 +31,6 @@ jobs:
     if: ${{ !(github.event_name == 'push' && github.event.created) }}
     uses: Mimis-Gildi/fluffle/.github/workflows/incrementer.yml@main
     secrets: inherit
-    permissions:
-      contents: write
 
 
   update-resume-links:
@@ -40,8 +38,6 @@ jobs:
     if: ${{ needs.increment.outputs.new != '' }}
     runs-on: self-hosted
     timeout-minutes: 3
-    permissions:
-      contents: write
     steps:
 
       - name: Checkout
