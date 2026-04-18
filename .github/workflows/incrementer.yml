@@ -28,20 +28,32 @@ jobs:
 
   update-resume-links:
     needs: increment
-    if: ${{ needs.increment.outputs.new != '' && contains(github.event.pull_request.labels.*.name, 'resume') }}
+    if: ${{ needs.increment.outputs.new != '' }}
     runs-on: self-hosted
     timeout-minutes: 3
     permissions:
       contents: write
     steps:
 
+      - name: Check for resume label
+        id: label-check
+        run: |
+          BRANCH="${GITHUB_HEAD_REF:-$GITHUB_REF_NAME}"
+          HAS_LABEL=$(GH_TOKEN="$GITHUB_TOKEN" gh pr list --head "$BRANCH" --json labels --jq '.[0].labels[].name' 2>/dev/null | grep -c '^resume$' || true)
+          if (( HAS_LABEL == 0 )); then
+            echo "::notice::No 'resume' label on PR for branch $BRANCH — skipping link update"
+            echo "skip=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Checkout PR head
+        if: ${{ steps.label-check.outputs.skip != 'true' }}
         uses: actions/checkout@v6.0.2
         with:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
 
       - name: Update resume version references
+        if: ${{ steps.label-check.outputs.skip != 'true' }}
         uses: ./.github/actions/update-version-references
         with:
           superseded-version: v${{ needs.increment.outputs.old }}
@@ -56,6 +68,7 @@ jobs:
             ]
 
       - name: Commit and push
+        if: ${{ steps.label-check.outputs.skip != 'true' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
