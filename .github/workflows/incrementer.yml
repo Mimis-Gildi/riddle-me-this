@@ -26,6 +26,7 @@ jobs:
     permissions:
       contents: write
 
+
   update-resume-links:
     needs: increment
     if: ${{ needs.increment.outputs.new != '' }}
