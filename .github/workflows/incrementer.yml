@@ -36,11 +36,11 @@ jobs:
       contents: write
     steps:
 
-      - name: Checkout PR head
+      - name: Checkout
         uses: actions/checkout@v6.0.2
         with:
-          ref: ${{ github.head_ref }}
           fetch-depth: 0
+          fetch-tags: true
 
       - name: Check for resume label
         id: label-check
