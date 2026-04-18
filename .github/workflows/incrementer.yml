@@ -18,6 +18,10 @@ on:
       - reopened
   workflow_dispatch:
 
+defaults:
+  run:
+    shell: zsh -l {0}
+
 jobs:
   increment:
     if: ${{ !(github.event_name == 'push' && github.event.created) }}
