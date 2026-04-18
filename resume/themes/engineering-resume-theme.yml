@@ -6,7 +6,7 @@ base:
   font_style: normal
 
 header:
-  height: 0.6in
+  height: 0.55in
   line-height: 1
   recto:
     center:
@@ -17,7 +17,7 @@ header:
     right:
       content: 'https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v{revnumber}[v{revnumber}]'
 footer:
-  height: 0.6in
+  height: 0.55in
   line-height: 1
   recto:
     right:
