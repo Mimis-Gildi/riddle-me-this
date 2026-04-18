@@ -37,8 +37,7 @@ jobs:
 
   update-resume-links:
     needs: increment
-    if: ${{ needs.increment.outputs.new != '' && contains(github.event.pull_request.labels.*.name, 'resume') }}
-#    if: ${{ needs.increment.outputs.new != '' }}
+    if: ${{ needs.increment.outputs.new != '' }}
     runs-on: self-hosted
     timeout-minutes: 3
     permissions:
@@ -55,6 +54,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          (( $+GITHUB_TOKEN )) && echo "GITHUB_TOKEN is set!" || echo "GITHUB_TOKEN is NOT set!" 
+          (( $+GH_TOKEN )) && echo "GH_TOKEN is set!" || echo "GH_TOKEN is NOT set!"
+          
           HAS_LABEL=$(gh pr list --json labels --jq '.[0].labels[].name' 2>/dev/null | grep -c '^resume$')
           if (( HAS_LABEL == 1 )); then
             echo "::notice::This is a resume update PR."
