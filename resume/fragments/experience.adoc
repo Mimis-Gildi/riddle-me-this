@@ -43,7 +43,6 @@ Message-Passing Supercomputing; massive hybrid/distributed systems.
 * Early Career (1991 - 1997): UNIX daemons; IBM System 370/390 mainframe services and migration off of;
 Linux kernel contributions. GNU library assistant-maintainer. Senior network security analyst pass:[@] (pass:[J&J], NJ).
 
-
 === Education & Continued Learning
 
 BS Computer Science, UNCP | PSU EE | NC Supercomputing Center | Duke Corporate Psychology +
