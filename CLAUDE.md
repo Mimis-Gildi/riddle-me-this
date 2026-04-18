@@ -8,146 +8,97 @@ This is **Mímis Gildi** - a personal engineering blog publication system with a
 It combines multi-format document generation (PDF, HTML), automated static site publishing via Jekyll,
 and comprehensive CI/CD automation for some basic efficiency.
 
-## Basic Concepts
+## Fluent Development
 
-This is a `trunk`-based development model, where all development occurs on a single main branch (`main`),
-and feature branches are merged into it. This approach simplifies collaboration and reduces merge conflicts.
-History is linear and so is versioning. All the GitHub Actions automation is geared to accomodate trunk.
+The project follows the hacker scene mindset, which is now the classic competence-based approach.
+Key elements of fluent are:
 
-## Build Commands
+- Everything is `production` - while rules like 12-factor-app exist to guide conservative teams, we just operate in a single environment;  
+- Change propagation is `trunk`-based, all development occurs on a single _linear_ main branch (`main`), everything else squashes to it;
+- All policy is `declarative` and all implementation is `functional` - there's NO 'build-script,' only `artifact manifest.` 
 
-### Gradle (Primary Build System)
+### Parity
 
-```zsh
-./gradlew build                    # Full build
-./gradlew asciidoctorPdf           # Generate resume PDF
-./gradlew verifyJavaToolchain      # Report Java toolchain info
-./gradlew dependencyUpdates        # Check for dependency updates
-```
+If it happens anywhere, it first happens under developer's fingers; i.e., in IDE.
+And then it happens everywhere only that way.
+Here are convenience functions, all in `.run`.
 
+1. Gradle Manifest:
+   1. `riddle-me-this`  - a dependency;
+   2. `riddle-me-this PDF` - document;
+2. Ruby Manifest:
+   1. `Jekyll Site - Install` - dependencies;
+   2. `Jekyll Site - Clean` - bundler clean;
+3. Composite Actions:
+   1. `Resume` - use 1.2 and open preview;
+   2. `Jekyll Site Run` - local site;
+4. Testing:
+   1. `action update versions` - test GH Action.
 
-### Jekyll Site
+**IMPORTANT:** _**All the above functions will run from text.**_
 
-```zsh
-cd site
-bundle install                                    # Install Ruby dependencies
-JEKYLL_ENV=production bundle exec jekyll build    # Production build
-bundle exec jekyll serve                          # Local development server
-```
+### Activity
 
-Site is a subproject -- governance is in it: when working on Site the directory `site/` is the context root.
+Terminal is everything, OS is the root IDE, mouse is for cats.
 
+**WARNING:** _Running the below will create an action like above._
 
-## Architecture
+- `gradle clean build test` - 1.1 executes this expression.
+- `gradle asciidoctorPdf && open build/docs/asciidocPdf/VadimKuhay-Resume.pdf` - 3.1 executes this expression.
 
-### Component Structure
+Cardinal Sins:
 
-| Directory              | Purpose                                                              |
-|------------------------|----------------------------------------------------------------------|
-| `resume/`              | AsciiDoc resume source, fragments, and PDF themes                    |
-| `site/`                | Jekyll static site with blog posts, pages, and minimal-mistakes theme|
-| `src/main/sh/`         | Shell scripts for deployment and cleanup                             |
-| `src/main/kotlin/`     | Kotlin bootstrap code                                                |
-| `buildSrc/`            | Custom Gradle plugins (toolchain verification, dependency processing)|
-| `.github/workflows/`   | CI/CD workflows                                                      |
-| `.github/actions/`     | Custom composite GitHub Actions                                      |
+- invoking _gradlew_ script - it's not for you.  
 
+## Content Structure
 
-### Tech Stack
-
-- **JVM**: Java 21 (Temurin), Kotlin, Gradle (Kotlin DSL) -- demo applications; pending.
-- **Ruby**: Ruby 3.3.5 exact and locked, Jekyll 4.4.1 with `jekyll-asciidoc` -- blogsite live.
-- **Documents**: Asciidoctor (generates PDF, HTML) -- all documentation.
-- **Tooling**: SDK Manager (`.sdkmanrc`) for version management of some core tools.
-- **Tooling-Ruby**: `asdf` on certain agents but not all.
-
-Note: Demo applications are maintained as long as the blog posts that reference or depend on those.
+| Directory            | Purpose                                                                 |
+|----------------------|-------------------------------------------------------------------------|
+| `resume/`            | AsciiDoc resume source, fragments, and PDF themes.                      |
+| `site/`              | Jekyll static site with blog posts, pages, and minimal-mistakes theme.  |
+| `src/main/kotlin/`   | Kotlin bootstrap code; TBD.                                             |
+| `.github/workflows/` | Fluent expressions, most sources from organisation templates.           |
+| `.github/actions/`   | Some local extension actions for project-specific manifest expressions. |
 
 
-### Document Generation Flow
+## Fixture Manifest
 
-Single AsciiDoc source in `resume/` is transformed via Asciidoctor into PDF using themes in `resume/themes/`.
-Common fragments are shared via `resume/fragments/`.
+All environments are synonyms to each other.
 
-
-### CI/CD Architecture
-
-The repository uses extensive GitHub Actions automation:
-
-- **Auto-versioning**: Feature branches trigger semantic version bumps based on issue labels.
-- **Self-hosted runners**: Configured with labels `jekyll` and `feature` for dedicated builds.
-- **Security scanning**: CodeQL, Codacy, Qodana JVM Community (primary).
-- **Deployment**: Jekyll site auto-publishes to GitHub Pages (default).
-
-
-## Code Quality Configuration
-
-- **Codacy** (`.codacy.yaml`): eslint-8, shellcheck, markdownlint, prettier, bandit, semgrep, detekt, pmd-7.
-- **Qodana** (`qodana.yaml`): JetBrains JVM Community analysis with `qodana.recommended` profile.
-
-
-## Key Configuration Files
-
-| File                        | Purpose                                     |
-|-----------------------------|---------------------------------------------|
-| `build.gradle.kts`          | Gradle build with Asciidoctor configuration |
-| `gradle/libs.versions.toml` | Version catalog for dependencies            |
-| `site/_config.yml`          | Jekyll site configuration                   |
-| `.sdkmanrc`                 | SDK Manager tool versions                   |
-| `codacy.yaml`               | Codacy configuration for code quality       |
-| `qodana.yaml`               | Qodana configuration for code quality       |
-| `.factor12`                 | Factor12 configuration for CI/CD runners    |
+- **Dependency Management:**
+  - _**Conda Forge:**_
+    - Python: 3.12.13
+    - Environment: 'ml'
+  - _**Ruby (multiple):**_
+    - Ruby: 3.3.5
+    - Manager Mac OS X: `asdf`
+    - Manage Linux: `apt`
+  - _**JVM SDKs:**_
+    - SDKMAN: see `.sdkmanrc`
+- **Authoring:**
+  - AsciiDoctor, 
+  - `gradle:org.asciidoctor.jvm`
+  - Jekyll
+  - `jekyll-asciidoc`
 
 
-## Content Conventions
+Note: `Tools` are the `cogs` in the technology-last companies - these are `ecosystems`.
 
-- All documentation uses AsciiDoc format (`.adoc` files).
-- Blog posts go in `site/_posts/` with front matter including categories and tags.
-- Site uses `minimal-mistakes` theme (remote theme configuration).
-- Custom Jekyll plugin at `site/_plugins/expand_nested_variable_filter.rb`.
-- Primary AI Authoring with Claude Code (`CLAUDE.md`).
-- Extended AI Authoring with OpenCode (`AGENTS.md`) is excluded to not conflict with Claude Code.
+## Key Manifest Files
 
+| File                                      | Purpose                                         |
+|-------------------------------------------|-------------------------------------------------|
+| `gradle.settings.kts`, `build.gradle.kts` | Gradle artifact definition manifest.            |
+| `site/_config.yml`                        | Jekyll publishing artifact definition manifest. |
 
-## Writing Style
-
-**When helping write blog content, read `site/CLAUDE.md` first.**
-
-## Collaboration Rules
-
-This entire repository is governed by strict Team Norms (`./TEAM_NORMS.adoc`) and Collaboration Philosophy.
-Key concepts excerpt is right here:
-
-**Read `TEAM_NORMS.adoc` at project root. These rules are non-negotiable.**
-
-### Before Starting ANY Task
-
-You MUST verify these before proceeding. If any is missing, STOP and fix it first:
-
-1. **Value defined?** -- What do we get from closing this? Why do it?
-2. **Outcome defined?** -- What does success look like? (One sentence!)
-3. **Acceptance criteria listed?** -- How do we verify? (Checklist.)
-4. **Verifier identified?** -- Who will review? (Not you.)
-5. **Priority confirmed?** -- Is this the most important thing right now?
-
-### Hard Rules
-
-- **Never close issues.** Comment "ready for review" and wait.
-- **Never start new work** while another task is in progress without explicit agreement.
-- **Never assume work is correct** without human verification.
-- **Document in issues**, not just conversation. Conversations are lost.
-
-### When Unsure
-
-Ask. A 30-second question prevents hours of wasted work.
 
 ### Team Structure
 
 The team is flat. No hierarchy. No team member -- human or AI -- has authority over another.
 Communication protocols exist for coordination, not control. We help and check on each other.
 
-Priority disputes are resolved by consensus. If no consensus, the work waits.
+Consensus resolves priority disputes.
 
-## License
+## Collaboration Rules
 
-CC BY-NC-ND 4.0 (Creative Commons Attribution-NonCommercial-NoDerivatives)
+@./TEAM_NORMS.adoc

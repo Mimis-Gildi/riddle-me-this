@@ -1,5 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="riddle-me-this-path [verifyJavaToolchain]" type="GradleRunConfiguration" factoryName="Gradle">
+  <configuration default="false" name="riddle-me-this" type="GradleRunConfiguration" factoryName="Gradle">
+    <output_file path="$PROJECT_DIR$/.run/log/gradle-adoc.log" is_save="true" />
     <ExternalSystemSettings>
       <option name="executionName" />
       <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -10,15 +11,20 @@
       </option>
       <option name="taskNames">
         <list>
-          <option value="verifyJavaToolchain" />
+          <option value="clean" />
+          <option value="build" />
+          <option value="test" />
         </list>
       </option>
       <option name="vmOptions" />
     </ExternalSystemSettings>
     <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-    <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-    <DebugAllEnabled>false</DebugAllEnabled>
+    <ExternalSystemReattachDebugProcess>false</ExternalSystemReattachDebugProcess>
+    <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+    <DebugAllEnabled>true</DebugAllEnabled>
     <RunAsTest>false</RunAsTest>
+    <GradleProfilingDisabled>false</GradleProfilingDisabled>
+    <GradleCoverageDisabled>false</GradleCoverageDisabled>
     <method v="2" />
   </configuration>
 </component>

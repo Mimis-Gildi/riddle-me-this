@@ -1,12 +1,12 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="update-version-references" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+  <configuration default="false" name="action update versions" type="PythonConfigurationType" factoryName="Python">
     <module name=".github" />
     <option name="ENV_FILES" value="" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
     <envs>
       <env name="CURRENT" value="v4.5.0" />
-      <env name="DRY_RUN" value="false" />
+      <env name="DRY_RUN" value="true" />
       <env name="PUBLISHED" value="v4.5.0" />
       <env name="PYTHONUNBUFFERED" value="1" />
       <env name="REPLACEMENTS" value="            [               {&quot;path&quot;: &quot;site/index.adoc&quot;, &quot;pattern&quot;: &quot;releases/download/{version}/VadimKuhay-Resume.pdf&quot;, &quot;count&quot;: 1},               {&quot;path&quot;: &quot;site/_pages/maintainer.adoc&quot;, &quot;pattern&quot;: &quot;releases/tag/{version}&quot;, &quot;count&quot;: 1},               {&quot;path&quot;: &quot;site/_pages/maintainer.adoc&quot;, &quot;pattern&quot;: &quot;releases/download/{version}/VadimKuhay-Resume.pdf&quot;, &quot;count&quot;: 1},               {&quot;path&quot;: &quot;README.adoc&quot;, &quot;pattern&quot;: &quot;releases/download/{version}/VadimKuhay-Resume.pdf&quot;, &quot;count&quot;: 1}             ]" />

@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="riddle-me-this-path [asciidoctorPdf]" type="GradleRunConfiguration" factoryName="Gradle">
+  <configuration default="false" name="riddle-me-this PDF" type="GradleRunConfiguration" factoryName="Gradle">
     <output_file path="$PROJECT_DIR$/.run/log/gradle-adoc.log" is_save="true" />
     <ExternalSystemSettings>
       <option name="executionName" />
@@ -20,8 +20,11 @@
     </ExternalSystemSettings>
     <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
     <ExternalSystemReattachDebugProcess>false</ExternalSystemReattachDebugProcess>
+    <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
     <DebugAllEnabled>true</DebugAllEnabled>
     <RunAsTest>false</RunAsTest>
+    <GradleProfilingDisabled>false</GradleProfilingDisabled>
+    <GradleCoverageDisabled>false</GradleCoverageDisabled>
     <method v="2" />
   </configuration>
 </component>
