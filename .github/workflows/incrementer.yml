@@ -46,6 +46,7 @@ jobs:
         id: label-check
         run: |
           BRANCH="${GITHUB_HEAD_REF:-$GITHUB_REF_NAME}"
+          GH_TOKEN="$GITHUB_TOKEN" gh pr list --head "$BRANCH" 
           HAS_LABEL=$(GH_TOKEN="$GITHUB_TOKEN" gh pr list --head "$BRANCH" --json labels --jq '.[0].labels[].name' 2>/dev/null | grep -c '^resume$' || true)
           if (( HAS_LABEL == 0 )); then
             echo "::notice::No 'resume' label on PR for branch $BRANCH — skipping link update"
