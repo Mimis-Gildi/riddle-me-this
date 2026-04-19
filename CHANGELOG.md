@@ -1,5 +1,25 @@
 # CHANGELOG.md
 
+## [7.0.3] — Fix release pipeline and clean up workflow slop
+
+### Release Pipeline
+
+- Fix `GH_TOKEN` authentication for `gh` CLI — `GITHUB_TOKEN` is not a shell env var on self-hosted runners
+- Fix resume link auto-update — reusable workflow outputs weren't propagated, label check needed API not event context
+- Add artifact existence check before `gh release upload`
+- Add `git fetch && git pull` before push steps to prevent stale local copy rejections
+
+### Workflow Cleanup
+
+- Remove dead `remote set-url` overrides — checkout persisted credentials handle auth
+- Remove unnecessary `ref:`, `token:`, `persist-credentials:` overrides from checkout steps
+- Qodana: remove `ref:` override, restrict to `synchronize` events, bump linter to 2025.3
+
+### Resume
+
+- Fix `J&J` ampersand XML parse warning in PDF generation
+- Tighten header/footer height in theme
+
 ## [4.5.0] — Resume refresh and CI/CD overhaul
 
 Applied feedback from 11 reviewers. Rebuilt resume structure. Externalized CI/CD to fluffle.

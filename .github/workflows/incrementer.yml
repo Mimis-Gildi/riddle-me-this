@@ -14,6 +14,7 @@ on:
       - '[0-9]+-**'
   pull_request:
     types:
+      - synchronize
       - opened
       - reopened
   workflow_dispatch:
@@ -51,15 +52,15 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          (( $+GITHUB_TOKEN )) && echo "GITHUB_TOKEN is set!" || echo "GITHUB_TOKEN is NOT set!" 
-          (( $+GH_TOKEN )) && echo "GH_TOKEN is set!" || echo "GH_TOKEN is NOT set!"
-          
+          (( $+GITHUB_TOKEN )) && printf 'GITHUB_TOKEN is set!\n' || printf 'GITHUB_TOKEN is NOT set!\n'
+          (( $+GH_TOKEN )) && printf 'GH_TOKEN is set!\n' || printf 'GH_TOKEN is NOT set!\n'
+
           HAS_LABEL=$(gh pr list --json labels --jq '.[0].labels[].name' 2>/dev/null | grep -c '^resume$')
           if (( HAS_LABEL == 1 )); then
-            echo "::notice::This is a resume update PR."
+            printf '::notice::This is a resume update PR.\n'
             echo "update=true" >> $GITHUB_OUTPUT
           else
-            echo "::notice::NOT a resume update PR."
+            printf '::notice::NOT a resume update PR.\n'
           fi
 
       - name: Update resume version references
@@ -82,8 +83,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          (( $+GITHUB_TOKEN )) && echo "GITHUB_TOKEN is set!" || echo "GITHUB_TOKEN is NOT set!" 
-          (( $+GH_TOKEN )) && echo "GH_TOKEN is set!" || echo "GH_TOKEN is NOT set!"
+          (( $+GITHUB_TOKEN )) && printf 'GITHUB_TOKEN is set!\n' || printf 'GITHUB_TOKEN is NOT set!\n'
+          (( $+GH_TOKEN )) && printf 'GH_TOKEN is set!\n' || printf 'GH_TOKEN is NOT set!\n'
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
