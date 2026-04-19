@@ -1,6 +1,6 @@
 # CHANGELOG.md
 
-## [7.13.0] — Fix release pipeline, temporal versioning, workflow hygiene
+## [7.15.0] — Fix release pipeline, temporal versioning, workflow hygiene
 
 ### Release Pipeline
 
