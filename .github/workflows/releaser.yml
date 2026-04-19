@@ -41,11 +41,17 @@ jobs:
           ref: main
 
       - name: Update resumeVersion
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           VERSION=$(grep '^version=' gradle.properties | cut -d= -f2)
           sed -i "s/^resumeVersion=.*/resumeVersion=v${VERSION}/" gradle.properties
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # This is a very specific local work-around for some agents that run on alternative git implementation.
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          
           git add gradle.properties
           git diff --cached --quiet || git commit -m "Update resumeVersion to v${VERSION} [skip up]"
           git pull --rebase

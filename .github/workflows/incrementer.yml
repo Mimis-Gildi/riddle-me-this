@@ -95,7 +95,10 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # This is a very specific local work-around for some agents that run on alternative git implementation.
           git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
           git fetch && git pull
           git add -A
           git commit -m "Update resume version references to v${{ needs.increment.outputs.new }} [skip up]"
