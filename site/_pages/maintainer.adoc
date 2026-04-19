@@ -7,8 +7,8 @@ header:
 :page-layout: single
 :page-permalink: /maintainer/
 :page-author_profile: true
-:release: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v7.3.0[v7.3.0,window=_blank]
-:resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v7.3.0/VadimKuhay-Resume.pdf[Vadim Kuhay Résumé,window=_blank]
+:release: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v7.5.0[v7.5.0,window=_blank]
+:resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v7.5.0/VadimKuhay-Resume.pdf[Vadim Kuhay Résumé,window=_blank]
 :profile-li: https://www.linkedin.com/in/rdd13r[LinkedIn Profile,window=_blank]
 :profile-gh: https://github.com/rdd13r[GitHub Profile,window=_blank]
 :publications-mm: https://medium.com/@rdd13r[Medium Articles,window=_blank]
