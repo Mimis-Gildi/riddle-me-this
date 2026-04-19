@@ -27,6 +27,10 @@ defaults:
   run:
     shell: zsh -l {0}
 
+concurrency:
+  group: incrementer-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   increment:
     if: ${{ !(github.event_name == 'push' && github.event.created) }}
@@ -44,6 +48,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6.0.2
         with:
+          ref: ${{ github.head_ref || github.ref }}
           fetch-depth: 0
           persist-credentials: 'true'
 
