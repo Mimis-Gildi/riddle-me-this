@@ -1,19 +1,29 @@
 # CHANGELOG.md
 
-## [7.0.3] — Fix release pipeline and clean up workflow slop
+## [7.10.0] — Fix release pipeline, temporal versioning, workflow hygiene
 
 ### Release Pipeline
 
 - Fix `GH_TOKEN` authentication for `gh` CLI — `GITHUB_TOKEN` is not a shell env var on self-hosted runners
-- Fix resume link auto-update — reusable workflow outputs weren't propagated, label check needed API not event context
+- Fix resume link auto-update — reusable workflow outputs weren't propagated, label check via API not event context
 - Add artifact existence check before `gh release upload`
 - Add `git fetch && git pull` before push steps to prevent stale local copy rejections
+- Add `remote set-url` workaround for agents with alternative git implementations
 
-### Workflow Cleanup
+### Temporal Versioning
 
-- Remove dead `remote set-url` overrides — checkout persisted credentials handle auth
-- Remove unnecessary `ref:`, `token:`, `persist-credentials:` overrides from checkout steps
-- Qodana: remove `ref:` override, restrict to `synchronize` events, bump linter to 2025.3
+- Add `synchronize` to PR events — minor bump on every push to PR branch
+- Add `PR_SKIP` — push events defer to `pull_request synchronize` when PR exists
+- Concurrency groups keyed on `github.head_ref || github.ref` with cancel-in-progress
+- Reusable workflow outputs propagated via `workflow_call: outputs:`
+
+### Workflow Hygiene
+
+- Exclude `renovate/**` and `dependabot/**` from all workflow triggers across both repos
+- Enforce `zsh -l` shell default on all workflows with run steps
+- Remove unnecessary `ref:`, `token:`, `persist-credentials:` overrides from read-only checkouts
+- Restore `ref:` on checkouts that push — not slop when the workflow writes to the branch
+- Qodana: restrict to `synchronize` events, bump linter to 2025.3
 
 ### Resume
 
