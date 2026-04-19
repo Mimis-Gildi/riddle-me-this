@@ -41,9 +41,7 @@ jobs:
   update-resume-links:
     needs: increment
     if: ${{ needs.increment.outputs.new != '' }}
-    runs-on:
-      - self-hosted
-      - lock
+    runs-on: self-hosted
     timeout-minutes: 3
     steps:
 

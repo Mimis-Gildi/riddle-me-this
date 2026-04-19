@@ -15,6 +15,10 @@ on:
         default: false
         description: 'Build and attach resume PDF'
 
+defaults:
+  run:
+    shell: zsh -l {0}
+
 jobs:
   release:
     uses: Mimis-Gildi/fluffle/.github/workflows/releaser.yml@main
