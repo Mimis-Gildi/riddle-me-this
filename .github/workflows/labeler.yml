@@ -3,6 +3,9 @@ run-name: "Labeled Pull Request examining content on ${{ github.actor }} with ${
 
 on:
   pull_request:
+    branches-ignore:
+      - 'renovate/**'
+      - 'dependabot/**'
     types:
       - opened
       - synchronize

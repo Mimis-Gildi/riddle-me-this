@@ -13,6 +13,9 @@ on:
     branches:
       - '[0-9]+-**'
   pull_request:
+    branches-ignore:
+      - 'renovate/**'
+      - 'dependabot/**'
     types:
       - synchronize
       - opened
