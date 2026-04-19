@@ -13,7 +13,11 @@ on:
     branches:
       - '[0-9]+-**'
   pull_request:
+    branches-ignore:
+      - 'renovate/**'
+      - 'dependabot/**'
     types:
+      - synchronize
       - opened
       - reopened
   workflow_dispatch:
@@ -26,44 +30,52 @@ defaults:
   run:
     shell: zsh -l {0}
 
+concurrency:
+  group: incrementer-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   increment:
     if: ${{ !(github.event_name == 'push' && github.event.created) }}
     uses: Mimis-Gildi/fluffle/.github/workflows/incrementer.yml@main
     secrets: inherit
 
-
   update-resume-links:
     needs: increment
     if: ${{ needs.increment.outputs.new != '' }}
     runs-on: self-hosted
-    timeout-minutes: 3
+    timeout-minutes: 4
     steps:
 
       - name: Checkout
         uses: actions/checkout@v6.0.2
         with:
+          ref: ${{ github.head_ref || github.ref }}
           fetch-depth: 0
           persist-credentials: 'true'
 
       - name: Check for resume label
         id: label-check
+        timeout-minutes: 1
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          (( $+GITHUB_TOKEN )) && echo "GITHUB_TOKEN is set!" || echo "GITHUB_TOKEN is NOT set!" 
-          (( $+GH_TOKEN )) && echo "GH_TOKEN is set!" || echo "GH_TOKEN is NOT set!"
-          
-          HAS_LABEL=$(gh pr list --json labels --jq '.[0].labels[].name' 2>/dev/null | grep -c '^resume$')
+          (( $+GITHUB_TOKEN )) && printf 'GITHUB_TOKEN is set!\n' || printf 'GITHUB_TOKEN is NOT set!\n'
+          (( $+GH_TOKEN )) && printf 'GH_TOKEN is set!\n' || printf 'GH_TOKEN is NOT set!\n'
+
+          LABELS=$(gh pr view --json labels --jq '.labels[].name' 2>/dev/null)
+          printf '::trace title=Label Check::Labels found: %s\n' "$LABELS"
+          HAS_LABEL=$(echo "$LABELS" | grep -c '^resume$')
           if (( HAS_LABEL == 1 )); then
-            echo "::notice::This is a resume update PR."
+            printf '::notice::This is a resume update PR.\n'
             echo "update=true" >> $GITHUB_OUTPUT
           else
-            echo "::notice::NOT a resume update PR."
+            printf '::notice::NOT a resume update PR.\n'
           fi
 
       - name: Update resume version references
         if: ${{ steps.label-check.outputs.update == 'true' }}
+        timeout-minutes: 1
         uses: ./.github/actions/update-version-references
         with:
           superseded-version: v${{ needs.increment.outputs.old }}
@@ -78,16 +90,20 @@ jobs:
             ]
 
       - name: Commit and push
+        timeout-minutes: 2
         if: ${{ steps.label-check.outputs.update == 'true' }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          (( $+GITHUB_TOKEN )) && echo "GITHUB_TOKEN is set!" || echo "GITHUB_TOKEN is NOT set!" 
-          (( $+GH_TOKEN )) && echo "GH_TOKEN is set!" || echo "GH_TOKEN is NOT set!"
+          (( $+GITHUB_TOKEN )) && printf 'GITHUB_TOKEN is set!\n' || printf 'GITHUB_TOKEN is NOT set!\n'
+          (( $+GH_TOKEN )) && printf 'GH_TOKEN is set!\n' || printf 'GH_TOKEN is NOT set!\n'
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          
+          # This is a very specific local work-around for some agents that run on alternative git implementation.
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
           git fetch && git pull
           git add -A
           git commit -m "Update resume version references to v${{ needs.increment.outputs.new }} [skip up]"

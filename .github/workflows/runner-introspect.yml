@@ -3,6 +3,9 @@ run-name: "Fly the Runner on ${{ github.repository }} by ${{ github.actor }} wit
 
 on:
   push:
+    branches-ignore:
+      - 'renovate/**'
+      - 'dependabot/**'
   workflow_dispatch:
 
 jobs:

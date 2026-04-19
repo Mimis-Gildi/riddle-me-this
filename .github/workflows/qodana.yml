@@ -4,12 +4,13 @@ run-name: "Qodana scan on ${{ github.repository }} by ${{ github.actor }} with $
 on:
   push:
     branches-ignore:
-      - main
+      - '*'
   workflow_dispatch:
   pull_request:
+    branches-ignore:
+      - 'renovate/**'
+      - 'dependabot/**'
     types:
-      - opened
-      - reopened
       - synchronize
   schedule:
     - cron: '11 11 * * *'
@@ -38,7 +39,6 @@ jobs:
         uses: actions/checkout@v6.0.2
         timeout-minutes: 3
         with:
-          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 0
 
       - name: Run Qodana Scan
