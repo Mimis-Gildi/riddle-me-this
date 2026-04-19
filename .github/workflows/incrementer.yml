@@ -63,7 +63,7 @@ jobs:
           (( $+GITHUB_TOKEN )) && printf 'GITHUB_TOKEN is set!\n' || printf 'GITHUB_TOKEN is NOT set!\n'
           (( $+GH_TOKEN )) && printf 'GH_TOKEN is set!\n' || printf 'GH_TOKEN is NOT set!\n'
 
-          LABELS=$(gh pr list --json labels --jq '.[0].labels[].name' 2>/dev/null)
+          LABELS=$(gh pr view --json labels --jq '.labels[].name' 2>/dev/null)
           printf '::trace title=Label Check::Labels found: %s\n' "$LABELS"
           HAS_LABEL=$(echo "$LABELS" | grep -c '^resume$')
           if (( HAS_LABEL == 1 )); then
