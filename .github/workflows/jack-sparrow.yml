@@ -1,0 +1,27 @@
+name: Jack Sparrow
+run-name: "Cpt. Jack Sparrow on ${{ github.repository }}"
+
+on:
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: zsh -l {0}
+
+jobs:
+  ahoy:
+    runs-on: self-hosted
+    timeout-minutes: 1
+    steps:
+      - name: Sail
+        run: |
+          printf '::warning title=Set sail::Says Jack to %s...\n' $(whoami)
+          grep '^nope$' /etc/hostname
+          printf '::notice title=Past grep::exit was %s\n' $?
+          false
+          printf '::notice title=Past false::exit was %s\n' $?
+          (( 0 ))
+          printf '::notice title=Past arithmetic zero::exit was %s\n' $?
+          (( 1 == 0 ))
+          printf '::notice title=Past false expression::exit was %s\n' $?
+          printf '::notice title=Ahoy Matey::Captain Jack survived all!\n'
