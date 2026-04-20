@@ -29,5 +29,5 @@ jobs:
     uses: Mimis-Gildi/fluffle/.github/workflows/actions-prune.yml@main
     with:
       dry-run: ${{ inputs.dry-run || 'false' }}
-      keep-last: ${{ inputs.keep-last || '0' }}
-      stale-minutes: ${{ inputs.stale-minutes || '0' }}
+      keep-last: ${{ inputs.keep-last || '3' }}
+      stale-minutes: ${{ inputs.stale-minutes || '10' }}
