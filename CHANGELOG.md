@@ -1,9 +1,9 @@
 # CHANGELOG.md
 
-## [8.2.0] — Release pipeline end-to-end validation
+## [8.3.0] — Release pipeline end-to-end validation
 
-- Validate full release cycle: labeler, incrementer, releaser, resume link update
-- Resume revision date updated to April 19th, 2026
+- Validate the full release cycle: labeler, incrementer, releaser, resume link update.
+- Resume revision date updated to April 19th, 2026.
 
 ## [7.15.0] — Fix release pipeline, temporal versioning, workflow hygiene
 
