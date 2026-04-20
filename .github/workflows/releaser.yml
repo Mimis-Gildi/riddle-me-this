@@ -24,7 +24,7 @@ jobs:
     uses: Mimis-Gildi/fluffle/.github/workflows/releaser.yml@main
     with:
       build-tasks: ${{ (inputs.resume || contains(github.event.pull_request.labels.*.name, 'resume')) && 'build asciidoctorPdf' || 'build' }}
-      artifacts: ${{ (inputs.resume || contains(github.event.pull_request.labels.*.name, 'resume')) && 'build/docs/asciidocPdf/VadimKuhay-Resume.pdf' || '' }}
+      artifacts: ${{ (inputs.resume || contains(github.event.pull_request.labels.*.name, 'resume')) && '["build/docs/asciidocPdf/VadimKuhay-Resume.pdf"]' || '' }}
       release-title: ${{ (inputs.resume || contains(github.event.pull_request.labels.*.name, 'resume')) && 'Resume Release' || 'Article Release' }}
     secrets: inherit
     permissions:
@@ -56,7 +56,7 @@ jobs:
           # This is a very specific local work-around for some agents that run on alternative git implementation.
           git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           
+          git fetch && git pull
           git add gradle.properties
           git diff --cached --quiet || git commit -m "Update resumeVersion to v${VERSION} [skip up]"
-          git pull --rebase
           git push
