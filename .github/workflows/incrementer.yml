@@ -58,7 +58,7 @@ jobs:
         id: label-check
         timeout-minutes: 1
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.CI_PAT }}
         run: |
           (( $+GITHUB_TOKEN )) && printf 'GITHUB_TOKEN is set!\n' || printf 'GITHUB_TOKEN is NOT set!\n'
           (( $+GH_TOKEN )) && printf 'GH_TOKEN is set!\n' || printf 'GH_TOKEN is NOT set!\n'
@@ -93,13 +93,13 @@ jobs:
         timeout-minutes: 2
         if: ${{ steps.label-check.outputs.update == 'true' }}
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.CI_PAT }}
         run: |
           (( $+GITHUB_TOKEN )) && printf 'GITHUB_TOKEN is set!\n' || printf 'GITHUB_TOKEN is NOT set!\n'
           (( $+GH_TOKEN )) && printf 'GH_TOKEN is set!\n' || printf 'GH_TOKEN is NOT set!\n'
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "R!dd13r"
+          git config user.email "12781006+rdd13r@users.noreply.github.com"
           
           # This is a very specific local work-around for some agents that run on alternative git implementation.
           git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
