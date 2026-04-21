@@ -26,7 +26,7 @@ comments: true
 :cto-bible: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :cto-trap: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
 :footer-cto-trap: footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- your playbook on integrating AI and staying ahead.]
-:mcp-overview: https://modelcontextprotocol.io/overview[Model Context Protocol,window=_blank,opts=nofollow]
+:mcp-overview: https://modelcontextprotocol.io/introduction[Model Context Protocol,window=_blank,opts=nofollow]
 
 In my {previous-article-url}[previous article] I wrote about a long-lost client who called back to share an astounding story{footer-previous-article}
 -- attaining Phase III of AI-Native evolution in two years.

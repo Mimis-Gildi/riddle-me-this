@@ -36,7 +36,7 @@ comments: true
 :cto-trap: {adventures-home}/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
 :footer-cto-trap: footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- your playbook on integrating AI and staying ahead.]
 
-:mcp-overview: https://modelcontextprotocol.io/overview[Model Context Protocol,window=_blank,opts=nofollow]
+:mcp-overview: https://modelcontextprotocol.io/introduction[Model Context Protocol,window=_blank,opts=nofollow]
 
 :reference-article-for-the-quote-url: {cto-bible-url}#conclusion-the-strategic-choice
 :reference-article-for-the-quote-link: {reference-article-for-the-quote-url}[{cto-bible-title},window=_blank]
