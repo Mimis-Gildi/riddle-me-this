@@ -52,7 +52,7 @@ jobs:
         with:
           ref: ${{ github.head_ref || github.ref }}
           fetch-depth: 0
-          persist-credentials: 'true'
+          persist-credentials: false
 
       - name: Check for resume label
         id: label-check
