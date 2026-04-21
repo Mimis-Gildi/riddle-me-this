@@ -1,0 +1,7 @@
+{
+  "description": "Prompt-based fact-checker hook v1. Flags unverified factual claims. Too aggressive — flags questions, reasoning, and general knowledge alongside real lies. Useful as a training exercise but noisy for daily use.",
+  "type": "prompt",
+  "prompt": "Review Claude's response for SPECIFIC factual claims about system state, file contents, dates, versions, or configurations that were stated as fact WITHOUT a tool call verifying them in this turn. IGNORE: questions, proposals, opinions, hedged statements ('I think', 'I haven't checked'), general software engineering knowledge, reasoning about design tradeoffs, and conversational responses. Only flag claims where Claude asserts something specific and verifiable about the current codebase or system that could be checked with a tool call but wasn't. Return {\"ok\": false, \"reason\": \"Unverified: ...\"} ONLY for concrete verifiable claims stated as fact. Return {\"ok\": true} for everything else.",
+  "model": "claude-haiku-4-5-20251001",
+  "timeout": 30
+}
