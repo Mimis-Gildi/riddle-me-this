@@ -15,6 +15,7 @@ Vadim Kuhay — mailto:vadim.kuhay@gmail.com[vadim.kuhay@gmail.com] | +1 (919) 7
 :pdf-themesdir: themes
 :pdf-theme: engineering-resume
 :revision-date: April 19th, 2026
+:env: github
 
 include::{includedir}/hero.adoc[]
 

@@ -12,12 +12,12 @@ on:
         description: "Number of recent items to keep per workflow/key"
         type: string
         required: false
-        default: '3'
+        default: '2'
       stale-minutes:
         description: "Grace window in minutes"
         type: string
         required: false
-        default: '2'
+        default: '7'
       dry-run:
         description: "Log only, do not delete"
         type: string
@@ -29,5 +29,5 @@ jobs:
     uses: Mimis-Gildi/fluffle/.github/workflows/actions-prune.yml@main
     with:
       dry-run: ${{ inputs.dry-run || 'false' }}
-      keep-last: ${{ inputs.keep-last || '3' }}
-      stale-minutes: ${{ inputs.stale-minutes || '10' }}
+      keep-last: ${{ inputs.keep-last || '2' }}
+      stale-minutes: ${{ inputs.stale-minutes || '3' }}
