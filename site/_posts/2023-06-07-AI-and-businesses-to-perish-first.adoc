@@ -10,9 +10,9 @@ rdd13r
 :blog-url: https://mimis-gildi.github.io/riddle-me-this/
 :blog-title: Creative Engineering at Scale
 :blog-link: {blog-url}[{blog-title}]
-:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:mm-current-article: https://medium.asei.systems/llms-oracle-or-plausible-bull-over-collective-bias-faff9fce1c9[LLMs: Oracle or Plausible Bull?,window=_blank]
+:mm-current-article: LLMs: Oracle or Plausible Bull?
 :ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
 
 :fn-gartner-ai-job-trends: footnote:[Gartner: https://www.gartner.com/en/information-technology/trends/top-technology-trends-ai-trends-gb-pd[Gartner's 2023 Top Strategic Technology Trends,window=_blank]]

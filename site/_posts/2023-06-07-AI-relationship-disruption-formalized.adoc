@@ -10,7 +10,7 @@ rdd13r
 :blog-url: https://mimis-gildi.github.io/riddle-me-this/
 :blog-title: Creative Engineering at Scale
 :blog-link: {blog-url}[{blog-title}]
-:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
 :scene-presented-original: link:/riddle-me-this/adventures/2023/06/07/AI-and-businesses-to-perish-first.html
 

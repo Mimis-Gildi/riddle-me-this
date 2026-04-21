@@ -11,9 +11,9 @@ rdd13r
 :blog-url: https://mimis-gildi.github.io/riddle-me-this/
 :blog-title: Creative Engineering at Scale
 :blog-link: {blog-url}[{blog-title}]
-:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:mm-current-article: https://medium.asei.systems/ai-in-2024-the-future-is-f65a5401f8fc[AI in 2024: The Future is …?,window=_blank]
+:mm-current-article: AI in 2024: The Future is …?
 :ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
 
 :jarvis: https://www.entrepreneur.com/author/paul-jarvis[Paul Jarvis,window=_blank]

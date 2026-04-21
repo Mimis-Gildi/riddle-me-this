@@ -11,7 +11,7 @@ rdd13r
 :blog-url: https://mimis-gildi.github.io/riddle-me-this/
 :blog-title: Creative Engineering at Scale
 :blog-link: {blog-url}[{blog-title}]
-:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
 :li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}

@@ -12,9 +12,9 @@ rdd13r
 :blog-url: https://mimis-gildi.github.io/riddle-me-this/
 :blog-title: Creative Engineering at Scale
 :blog-link: {blog-url}[{blog-title}]
-:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:mm-current-article: https://medium.asei.systems/chatgpt-job-loss-a-doze-of-reality-589637e91457["ChatGPT & Job Loss: A Doze of Reality",window=_blank]
+:mm-current-article: "ChatGPT & Job Loss: A Doze of Reality"
 :ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
 
 :github-rdd13r: link:https://github.com/rdd13r[rdd13r,window=_blank]
