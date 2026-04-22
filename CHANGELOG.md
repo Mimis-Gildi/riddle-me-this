@@ -1,6 +1,6 @@
 # CHANGELOG.md
 
-## [9.0.0] — Dead link audit and site content cleanup
+## [9.2.0] — Dead link audit and site content cleanup
 
 - Full site link audit; fixed 8 confirmed dead links across 10 files.
 - Fixed domain moves: `code.claude.ai` → `code.claude.com` (2 files), MCP docs `/overview` → `/introduction` (3 files), OSF preprint canonical URL (1 file).
