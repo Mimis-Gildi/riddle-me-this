@@ -54,7 +54,7 @@ And that *_changed EVERYTHING_*.
 
 Fortunately, the same magic that deprecated one laggard is exactly what can save another.
 
-https://code.claude.ai/docs/en/quickstart[Claude Code] -- takes 5 minutes to set up -- not just for code. Backed by full-featured Anthropic models and robust human-to-human-like working models, this collaborator will do any job with you and teach you in the process.
+https://code.claude.com/docs/en/quickstart[Claude Code] -- takes 5 minutes to set up -- not just for code. Backed by full-featured Anthropic models and robust human-to-human-like working models, this collaborator will do any job with you and teach you in the process.
 
 I personally have made software with it, of course. But also published content, designed businesses, trained teams, and learned a bunch of new disciplines by-doing. It's not limiting -- I operate agent teams via MCP-A2A bridge. The only constraint is that your root agent is Anthropic.
 
@@ -68,7 +68,7 @@ Once you get dangerous, explore:
 
 Here's what I do with teams in my weekend seminars. Works for developers and beginners alike.
 
-*If you're a developer:* Go to https://code.claude.ai/docs/en/quickstart[Claude Code quickstart], set it up (5 minutes), and tell it:
+*If you're a developer:* Go to https://code.claude.com/docs/en/quickstart[Claude Code quickstart], set it up (5 minutes), and tell it:
 
 [quote]
 Claude, I am outdated. Dude, I have not followed -- what can you do to upskill me NOW?

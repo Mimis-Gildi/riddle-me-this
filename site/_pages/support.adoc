@@ -10,7 +10,6 @@
 :minimal-mistakes-structure: https://mmistakes.github.io/minimal-mistakes/docs/structure/[Structure of a Jekyll theme - Minimal Mistakes, window="_blank"]
 :minimal-mistakes-archive: https://mmistakes.github.io/minimal-mistakes/docs/layouts/#archive-pages[Archive Pages - Minimal Mistakes, window="_blank"]
 :acknowledgments: https://github.com/Mimis-Gildi/riddle-me-this/blob/main/ACKNOWLEDGMENTS.adoc[ACKNOWLEDGMENTS, window="_blank"]
-:attributions: https://github.com/Mimis-Gildi/riddle-me-this/blob/main/ATTRIBUTIONS.adoc[ATTRIBUTIONS, window="_blank"]
 
 _Just in case you've seen here something you liked here are useful links to get going and build your own site._
 
@@ -39,4 +38,3 @@ _Just in case you've seen here something you liked here are useful links to get 
 _The root of this repository has more useful links to peruse if you are new to Jekyll Sites, GitHub Pages, and GitHub Actions._
 
 - {acknowledgments}
-- {attributions}

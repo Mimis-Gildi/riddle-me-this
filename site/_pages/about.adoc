@@ -117,5 +117,5 @@ And that presents its own dilemmas to ponder over.
 
 FYI, I also republish some articles to:
 
-* https://medium.asei.systems/[Medium -- medium.asei.systems,window=_blank,opts=nofollow] -- general insights, with immersive reader support;
+* Medium -- medium.asei.systems -- general insights, with immersive reader support;
 * https://www.linkedin.com/newsletters/7074840676026208257/[LinkedIn -- Behind the Scenes at ASE,window=_blank,opts=nofollow] -- usually Corporate America related stories.

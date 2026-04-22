@@ -6,7 +6,7 @@
 :linkedin-1: link:/riddle-me-this/reflections/2025/06/24/what-li-good-for.html[What is LinkedIn really good for?,window=_blank]
 :linkedin-2: link:/riddle-me-this/reflections/2025/06/25/what-li-good-for-analysis.html[How to Game LinkedIn Like a Pro,window=_blank]
 :linkedin-3: link:/riddle-me-this/reflections/2025/07/03/li-enshittification.html[LinkedIn: Conclusion - Enshittification,window=_blank]
-:linkedin-4: http://localhost:4000/riddle-me-this/reflections/2025/07/07/li-human-problem.html[Amazing LinkedIn: A Human Problem!,window=_blank]
+:linkedin-4: link:/riddle-me-this/reflections/2025/07/07/li-human-problem.html[Amazing LinkedIn: A Human Problem!,window=_blank]
 
 :linkedin-1-li: https://www.linkedin.com/pulse/what-linkedin-really-good-vadim-kuhay-9z3oe/[What is LinkedIn really good for?,window=_blank,opts=nofollow]
 :linkedin-2-li: https://www.linkedin.com/pulse/how-game-linkedin-like-pro-vadim-kuhay-cysre/[How to Game LinkedIn Like a Pro,window=_blank,opts=nofollow]

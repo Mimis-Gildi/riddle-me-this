@@ -1,56 +1,25 @@
 # CHANGELOG.md
 
-## [8.38.0] — Release pipeline end-to-end validation
+## [9.3.0] — Dead link audit and site content cleanup
 
-- Validate the full release cycle: labeler, incrementer, releaser, resume link update.
-- Resume revision date updated to April 19th, 2026.
+- Full site link audit; fixed 8 confirmed dead links across 10 files.
+- Fixed domain moves: `code.claude.ai` → `code.claude.com` (2 files), MCP docs `/overview` → `/introduction` (3 files), OSF preprint canonical URL (1 file).
+- Fixed broken/malformed URLs: `localhost:4000` dev URL committed to source, Wikipedia trailing slash.
+- Fixed defunct project links: Dolly HuggingFace 404 → Databricks blog; Open Assistant defunct site → GitHub repo (stale prose removed).
+- Updated repo link: `ATTRIBUTIONS` → `ACKNOWLEDGMENTS` (URL and display text corrected in `support.adoc`).
+- Unlinked `medium.asei.systems` references across 19 files — domain temporarily disconnected; display text preserved.
 
-## [7.15.0] — Fix release pipeline, temporal versioning, workflow hygiene
+### Incrementer fixes
 
-### Release Pipeline
+- Fixed `gh pr view` failing on GraphQL project-items permission — switched to `--json` query with explicit error handling.
+- Fixed `${(C)TYPE}` commit message bug — zsh capitalization applied to GitHub-expanded literal instead of a shell variable.
+- Added missing `force-minor` input to `workflow_call` definition.
+- Added plain-text diagnostic traces for all driving values in the increment type selector.
 
-- Fix `GH_TOKEN` authentication for `gh` CLI — `GITHUB_TOKEN` is not a shell env var on self-hosted runners
-- Fix resume link auto-update — reusable workflow outputs weren't propagated, label check via API not event context
-- Add artifact existence check before `gh release upload`
-- Add `git fetch && git pull` before push steps to prevent stale local copy rejections
-- Add `remote set-url` workaround for agents with alternative git implementations
+## General Idea
 
-### Temporal Versioning
+We follow a convention for how release notes are published:
 
-- Add `synchronize` to PR events — minor bump on every push to PR branch
-- Add `PR_SKIP` — push events defer to `pull_request synchronize` when PR exists
-- Concurrency groups keyed on `github.head_ref || github.ref` with cancel-in-progress
-- Reusable workflow outputs propagated via `workflow_call: outputs:`
-
-### Workflow Hygiene
-
-- Exclude `renovate/**` and `dependabot/**` from all workflow triggers across both repos
-- Enforce `zsh -l` shell default on all workflows with run steps
-- Remove unnecessary `ref:`, `token:`, `persist-credentials:` overrides from read-only checkouts
-- Restore `ref:` on checkouts that push — not slop when the workflow writes to the branch
-- Qodana: restrict to `synchronize` events, bump linter to 2025.3
-
-### Resume
-
-- Fix `J&J` ampersand XML parse warning in PDF generation
-- Tighten header/footer height in theme
-
-## [4.5.0] — Resume refresh and CI/CD overhaul
-
-Applied feedback from 11 reviewers. Rebuilt resume structure. Externalized CI/CD to fluffle.
-
-### Resume
-
-- Hero: restored original voice, added objective line — seeking a team to nurture, hands-on, in-code, long-term
-- Products: removed negative framing ("failed," "mostly inoperable"), led with value and outcomes
-- Protrack: rewrote to show the real contrast — team of 14 failed, solo rebuilt while live
-- MATILDA: trimmed to one line with three exits
-- Employment: merged ASE Inc. into one continuous entry (2017-Present)
-- Deutsche Bank: rewrote to show the engineering ecosystem built, not the platform (that's in Products)
-- Earlier Career: corrected fabricated claims, restored accurate content (pilot tenant, GNU, IBM 370/390, J&J)
-
-### CI/CD
-
-- All workflows externalized to Mimis-Gildi/fluffle reusable workflows
-- Releaser now builds resume PDF and attaches to GitHub Release
-- Qodana, stales, actions-prune, incrementer wired to fluffle
+1. We pull releases out of the CHANGELOG.md matching on the title line containing version.
+2. We periodically discard old releases; a blog site doesn't need historic babble.
+3. We release from PR close action, not on `main` push as is more common.

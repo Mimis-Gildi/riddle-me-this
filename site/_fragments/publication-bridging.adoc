@@ -8,7 +8,7 @@
 :blog-link: {blog-url}[{blog-title}]
 
 // Links if pointing out is desired
-:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:mm-newsletter: R!dd13r
 :li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank]
 :pub-mm: as published on Medium by {mm-newsletter}
 :pub-li: as published on LinkedIn by {li-newsletter}
@@ -23,8 +23,8 @@
 :prior-article: https://mimis-gildi.github.io/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality]
 :ff-prior-article: footnote:prior[{prior-article}]
 
-:mm-prior-article: https://medium.asei.systems/chatgpt-job-loss-a-doze-of-reality-589637e91457[ChatGPT & Job Loss: A Doze of Reality]
-:mm-current-article: https://medium.asei.systems/the-bright-era-dawns-ai-moores-law-and-beyond-649825f870b1[The Bright Era Dawns: AI, Moore’s Law, and Beyond]
+:mm-prior-article: ChatGPT & Job Loss: A Doze of Reality
+:mm-current-article: The Bright Era Dawns: AI, Moore’s Law, and Beyond
 :li-prior-article: https://www.linkedin.com/pulse/power-within-you-vadim-kuhay/[The $ Power is Within You!]
 :li-current-article: https://www.linkedin.com/pulse/generative-ai-independent-software-development-times-change-kuhay/[Generative AI: Independent Software Development in Times of Change: Part 1]
 

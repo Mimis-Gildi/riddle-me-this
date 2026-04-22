@@ -10,9 +10,9 @@ rdd13r
 :blog-url: https://mimis-gildi.github.io/riddle-me-this/
 :blog-title: Creative Engineering at Scale
 :blog-link: {blog-url}[{blog-title}]
-:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:mm-current-article: https://medium.asei.systems/the-bright-era-dawns-ai-moores-law-and-beyond-649825f870b1[The Bright Era Dawns: AI, Moore’s Law, and Beyond,window=_blank]
+:mm-current-article: The Bright Era Dawns: AI, Moore’s Law, and Beyond
 :ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
 :prior-article: link:/riddle-me-this/reflections/populism/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A 'Doze' of Reality]
 :ff-prior-article: footnote:prior[{prior-article}]

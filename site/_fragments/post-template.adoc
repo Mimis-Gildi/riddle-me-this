@@ -20,7 +20,7 @@ Such as:
 :slug-id: snail
 :article-title:Haloween Rocks!
 
-:medium-article: https://medium.asei.systems/{slug-id}[{article-title},window=_blank]
+:medium-article: {article-title}
 :autogpt-github: link:https://github.com/Significant-Gravitas/Auto-GPT[Auto-GPT,window=_blank]
 :artnet-idiot: link:https://www.artnet.com/artists/don-maitz/the-idiot-x1Vi3F6S7g3JIJEwcPT3jw2[The Idiot - Don Maitz,window=_blank]
 :ycombinator-news: link:https://news.ycombinator.com/item?id=26824415[Y Combinator,window=_blank]

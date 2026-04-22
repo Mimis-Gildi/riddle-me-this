@@ -16,7 +16,7 @@ classes: wide
 :gh-aaronfllr: footnote:[GitHub User home: https://github.com/aaronfllr[Aaron Fuller,window=_blank]]
 :li-michael: https://www.linkedin.com/in/michaellipari/[Michael Lipari]
 :mcd: https://www.macquariedictionary.com.au/[Macquarie Dictionary]
-:mcd-wiki: https://en.wikipedia.org/wiki/Macquarie_Dictionary/[Macquarie Dictionary,window=_blank]
+:mcd-wiki: https://en.wikipedia.org/wiki/Macquarie_Dictionary[Macquarie Dictionary,window=_blank]
 :mcd-wiki-fn: footnote:[The {mcd-wiki} Wikipedia page]
 :estf-doflo: https://doflo.com/blog/what-is-enshitification-and-can-we-stop-it[Enshitification,window=_blank]
 :estf-doflo-fn: footnote:[doFlo {estf-doflo} Explanation]

@@ -13,7 +13,7 @@ comments: true
 :blog-link: {blog-url}[{blog-title}]
 :li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
-:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
 :asei: https://asei.systems/[ASE Inc.,window=_blank]
 :pub-asei: as outlined at {asei}
@@ -26,7 +26,7 @@ comments: true
 :cto-bible: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :cto-trap: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
 :footer-cto-trap: footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- your playbook on integrating AI and staying ahead.]
-:mcp-overview: https://modelcontextprotocol.io/overview[Model Context Protocol,window=_blank,opts=nofollow]
+:mcp-overview: https://modelcontextprotocol.io/introduction[Model Context Protocol,window=_blank,opts=nofollow]
 
 In my {previous-article-url}[previous article] I wrote about a long-lost client who called back to share an astounding story{footer-previous-article}
 -- attaining Phase III of AI-Native evolution in two years.

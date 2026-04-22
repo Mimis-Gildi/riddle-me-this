@@ -35,7 +35,7 @@
 :footnote-origami: footnote:origami-journey[]
 
 :google-recursion: https://medium.com/data-science-in-your-pocket/googles-mixture-of-recursions-end-of-transformers-b8de0fe9c83b[Google’s Mixture Of Recursions : End of Transformers,window=_blank,opts=nofollow]
-:symbolic-cognition: https://sciety-labs.elifesciences.org/articles/by?article_doi=10.31234/osf.io/86xsj_v35[Emergent Symbolic Cognition: A Unifying Computational Framework for Symbolic Thought in Humans and LLMs,window=_blank,opts=nofollow]
+:symbolic-cognition: https://osf.io/86xsj[Emergent Symbolic Cognition: A Unifying Computational Framework for Symbolic Thought in Humans and LLMs,window=_blank,opts=nofollow]
 
 :footer-google-recursion: footnote:google-recursion[Old MATILDA is hard-symbolic recursion, but now ANNs do it too -- {google-recursion}.]
 :footer-symbolic-cognition: footnote:symbolic-cognition[Finally, {symbolic-cognition}.]

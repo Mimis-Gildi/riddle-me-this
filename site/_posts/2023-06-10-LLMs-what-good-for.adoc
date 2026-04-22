@@ -11,9 +11,9 @@ rdd13r
 :blog-url: https://mimis-gildi.github.io/riddle-me-this/
 :blog-title: Creative Engineering at Scale
 :blog-link: {blog-url}[{blog-title}]
-:mm-newsletter: https://medium.asei.systems/[R!dd13r,window=_blank]
+:mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:mm-current-article: https://medium.asei.systems/ai-in-2024-the-future-is-f65a5401f8fc[AI in 2024: The Future is …?,window=_blank]
+:mm-current-article: AI in 2024: The Future is …?
 :ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
 
 :jarvis: https://www.entrepreneur.com/author/paul-jarvis[Paul Jarvis,window=_blank]
@@ -52,9 +52,8 @@ rdd13r
 :bsd-vicuna: https://github.com/lm-sys/FastChat[Vicuña,window=_blank]
 :bsd-vicuna-topics: https://github.com/topics/vicuna[GitHub Vicuña Topic,window=_blank]
 :db-dolly: https://github.com/databrickslabs/dolly[dolly-v2-12b,window=_blank]
-:db-dolly-hf: https://huggingface.co/databricks/dolly-v2-12b[databricks/dolly-v2-12b,window=_blank]
-:open-assistant: https://github.com/LAION-AI/Open-Assistant[Open Assistant,window=_blank]
-:o-a-github: https://open-assistant.io/[OA Demo Site,window=_blank]
+:db-dolly-hf: https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm[Databricks blog post,window=_blank]
+:open-assistant: https://github.com/LAION-AI/Open-Assistant[Open Assistant (defunct),window=_blank]
 :o-a-hf: https://huggingface.co/OpenAssistant[Hugging Face Site,window=_blank]
 :all-oss-lm-models: https://en.wikipedia.org/wiki/Large_language_model[Large Language Model,window=_blank]
 
@@ -431,11 +430,9 @@ Below are some notable OSS LLMs that seriously merit attention:
 Check it out on GitHub at {bsd-vicuna},
 and explore more projects related to Vicuña at {bsd-vicuna-topics}.
 * *Databricks' dolly-v2-12b*: This is my personal favorite OSS model.
-It is developed by Databricks and can be accessed at {db-dolly} on GitHub and {db-dolly-hf} on Hugging
-Face.
+It is developed by Databricks ({db-dolly-hf}) and can be accessed at {db-dolly} on GitHub.
 * *Open Assistant*: Open Assistant boasts a powerful model with a committed and principle-driven community.
 ** Explore it on GitHub at {open-assistant},
-** and check out the demo site at {o-a-github},
 ** and the Hugging Face repository at {o-a-hf}.
 
 In addition, there are various other LLMs developed by different institutions,
