@@ -1,0 +1,194 @@
+---
+categories: [reflections]
+tags: [AI, Agentic AI, Security, Enterprise, Zero-Day, OpenClaw, Claude Code]
+excerpt: >
+    91% of Q1 2026 zero-days were agentic. Your AI is writing your vulnerabilities.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: true
+---
+= AI-maggedon 2026: Straight Talk
+:imagesdir: ./assets/images
+:mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
+:deathtrap: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/02/25/ai-strategy-deathtrap.html[AI Strategy Deathtrap -- Straight Talk,window=_blank]
+:disruption-2026: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/01/08/ai-disruption-of-2026.html[2026: The Year the Ground Moves,window=_blank]
+:openclaw: https://openclaw.ai/[OpenClaw,window=_blank]
+:claude-code: https://code.claude.com/[Claude Code,window=_blank]
+:google-play: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/10/3-google-vs-openai.html[2023: Why Google Beat OpenAI with Technical Teams,window=_blank]
+:fn-mythos-price: footnote:mythos-price[5x the price of Opus 4.6; restricted to Project Glasswing partners. https://platform.claude.com/docs/en/about-claude/pricing[Anthropic Pricing,window=_blank]]
+:fn-veracode: footnote:veracode[Tested 80 tasks across 100+ LLMs in 4 languages. https://www.veracode.com/blog/genai-code-security-report/[Veracode 2025 GenAI Code Security Report,window=_blank]]
+:fn-cc-commits: footnote:cc-commits[Feb 2026; daily volume still climbing. https://newsletter.semianalysis.com/p/claude-code-is-the-inflection-point[SemiAnalysis: Claude Code is the Inflection Point,window=_blank]]
+:fn-aikido: footnote:aikido[Survey of 450 IT professionals, US and Europe; 20% reported serious incidents from AI-generated code. https://www.aikido.dev/reports/2026-state-of-ai-in-security-development[Aikido Security 2026,window=_blank]]
+:fn-gpt2: footnote:gpt2[Same Dario Amodei, then OpenAI VP of Research, ran the same play in 2019. Replicated within months; OpenAI later released full model. https://fdaudens.substack.com/p/the-too-powerful-to-release-playbook[Daudens: The Too Powerful to Release Playbook,window=_blank]]
+:fn-mythos-holes: footnote:mythos-holes["Thousands" claimed; 198 manually reviewed; "maybe 40" traceable CVEs (VulnCheck). Firefox exploits ran with sandbox disabled. A 3.6B model found the same flagship bug at $0.11/M tokens. https://www.flyingpenguin.com/the-boy-that-cried-mythos-verification-is-collapsing-trust-in-anthropic/[Ottenheimer: The Boy That Cried Mythos,window=_blank]]
+:fn-khamenei: footnote:khamenei[US cyber operations against Iranian infrastructure; weapon-grade vulnerability analysis from distributed systems, not individual models.]
+
+For everyone working with AI there are things we must know, none of which are published in popular articles.
+These apply equally to companies and individuals. These are impactful. Here people err painfully.
+Hence, the Straight Talk, and here are today's topics:
+
+. Mythos is a gimmick; other "real weapons" *_are_* deployed: Don't worry about it!
+. Google rallied ecosystem with "Deterministic AI" marketing: That shifts everything.
+. Agentic Collaboration is the "greatest disruptor of all time": True, for just a FEW.
+. Agentic Collaboration -- zealous company killer: Unavoidable for MOST. (DarkConf NY)
+. Agentic Collaboration Nirvana: How and Why -- your in-field primer and compendium.
+
+
+
+// TODO: hero image
+// .TODO: caption
+// [#img-hero]
+// image::/riddle-me-this/assets/images/TODO.png[TODO alt text]
+// {nbsp}
+
+== 1: Mythos and Wonder-Models: "The fire truck is also the arsonist."
+
+Anthropic sells a $125/million-token model to find bugs.{fn-mythos-price}
+
+Meanwhile:
+
+- 2.74x more vulnerabilities in AI-generated code vs human-written;{fn-veracode}
+- 45% of AI-generated code introduces OWASP Top 10 vulnerabilities;footnote:veracode[]
+- Claude Code alone: 4% of all public GitHub commits;{fn-cc-commits}
+- 1 in 5 organizations report serious incidents from AI-generated code;{fn-aikido}
+- 69% of organizations found vulnerabilities in their AI-generated code.footnote:aikido[]
+
+Everyone is speculating about a wonder-model that will obsolete developers and uproot all software.
+There are three problems here.
+
+- *First*, we know this tune -- OpenAI first.{fn-gpt2}
+- *Second*, Anthropic, my favorite company, leaks like a sieve -- victim to its own success.
+And what we spy is what we expected -- there are #no new breakthroughs in LLM architecture#,
+so there is no Deus Ex Machina in Mythos.{fn-mythos-holes}
+- And *third*, and perhaps the most important point, the breakthrough Mythos claims to own actually did happen 9-11 months ago.
+But it wasn't some silly LLM. *Ukraine*, then *_Israel_*, closely followed by *_France_* and *_Great Britain_*,
+are the nations at the forefront of AI applications by changing how we even think about software -- NOT the USA, regretfully.
+
+Actual penetrators are much scarier.
+First there is Ukrainian Delta, not just battlefield management, but also everything from logistics to geopolitics,
+starting with AI-governed research; and then there is nothing else for a long time.
+All of these mindbogglingly powerful AI aren't AI at all -- that IS the whole secret
+-- they're absurdly massive *_Distributed Systems_*.
+
+The breakthrough is in operational philosophy.
+All of these nations have been deploying software vulnerability analysis as a *_weapon system_*
+-- that is why Putin is diligently killing internet in Russia whilst hiding in his bunker.
+Some American companies claimed proximity to Ukraine's "AI" as a marketing stunt
+-- Ukraine doesn't let anyone in since 2024. Neither does Israel, France, GB, etc.
+But don't worry, we also used something like this in our latest action against Ali Khamenei.{fn-khamenei}
+
+Cybersecurity AI-Nukes have been weaponized for over a year now and your world didn't crash -- did it?
+The important piece people miss here is that the power of these penetrators does NOT come from a model
+-- that is IMPOSSIBLE. It comes from the analytic systems that use models; many models.
+In the last section I will explain why and how. For now, it's about:
+
+- *Centralized Control (tool):* Russia, China, USA -- not very effective but simple.
+- *Distributed Control (team):* Iran, Baltics, Ukraine in Gulf -- effective but expensive.
+- *Ecosystem Policy (theater):* Ukraine, France, Israel, GB -- changes everything!
+
+Open Source Software is safest for exactly the same reason it is safest today -- its source is open
+-- nothing changes *_unseen_* there. Proprietary software will temporarily get reamed and recover
+-- this will be and has been a recurring theme already. The cycle will just tighten.
+
+No single model will kill your company -- don't worry about that. Something else will.
+
+== Stage Zero Monetization: Google Deterministic AI
+
+A few months ago Google summoned their partner ecosystem to introduce "Deterministic AI"
+-- I listen very carefully. Understood. Called people in business that implement AI.
+It all went right over their heads.
+
+Engineers began to make fun of "deterministic" with AI. Marketers struggled to spin product-market fit.
+Everyone got confused. And things got quiet again. But Google is the adult in the room.
+It isn't a new thing with them -- I remember this exact track in 2017 with my MATILDA framework.
+
+Amazon is trying to give us a practical democratization with Bedrock -- but pragmatic is not yet possible.
+Microsoft is still trying to sell "More Bugs for Less" model using proven "Don't look there."
+Companies like Palantir are trying to package yesterday's ideas into futuristic "Business all you need is here."
+And niche gods like Celonis know they're disrupted but don't understand HOW.
+LLM shops only understand pushing a bigger model and hoping for users to discover monetization.
+Everybody panics. Everybody except Google! I explained this in {google-play} -- three years later, same play, bigger stage.
+
+Google's game is simple. And strategy is devastating. Their solution is to replace that DDD Aggregate,
+a business service your team spent a year to write and years to "maintain" into submission, with a single drag-and-drop box.
+That box encodes your domain logic -- the edge cases, the regulatory constraints, the competitive secret sauce
+your business experts spent decades learning. Once it's in the box, Google has it. Not just yours -- *_everyone's_* in your vertical.
+Google runs models across all of them, cross-pollinates insights no single company can match,
+and offers you "better solutions" back. Now you can't leave -- the box knows your business better than your team does.
+And their attitude to strategy is opposite to the "specialization" everyone else chose.
+Like France and Ukraine in section one above, they chose *_Total War_* -- like Ukraine doesn't care about security tool alone,
+but how it fits into an *_entire ecosystem_*, ending up dominating security and then some.
+Google is poised to dominate every aspect of your life -- home with internet, cell phone, home security, family management;
+business with drag and drop "we think for you" catering straight to lifer's mindset;
+social life with AI-enabled search, integrated identity, services, and trinkets.
+And all of this is powered by exactly the same hyperscaler beast and exactly the same maker community they brought into the fold *_first_*.
+
+While the market plays HYPE, Google plays Python, literally slowly swallowing plebs whole.
+I've been running deep analytics on these wise folks for years now -- I'm not a fan, though my business is a Google business,
+`systems` domain and all -- I'm just in awe. GD Electric! Right in plain sight.
+
+== The Golden Children -- What have they done
+
+== AI Attack Surface -- The rest of us
+
+// TODO: Vadim writes this.
+// DarkConf 2026 findings -- private security conference intelligence:
+//   - 91% of Q1 2026 zero-days were agentic in origin
+//   - Not AI finding vulnerabilities -- AI CREATING them via unreviewed slop
+//   - Security hackers see a gold mine of consulting work
+//
+// Supporting public stats (for the plebs who need citations):
+//   - 91% of organizations cannot stop an AI agent before it acts (Cybersecurity Insiders 2026)
+//   - 89% YoY increase in AI-enabled attacks (CrowdStrike 2026)
+//   - 92% of security pros concerned about AI agent impact (Darktrace 2026)
+//   - RSAC 2026: AI-Generated Zero Days = #1 most dangerous new attack technique (SANS)
+//   - Exploitation time collapsed to 8 minutes from intrusion to domain admin
+//
+// OpenClaw security horror:
+//   - 9 CVEs in 4 days, one scoring 9.9/10
+//   - 36% of ClawHub skills contain prompt injection (Snyk ToxicSkills audit)
+//   - 76 confirmed credential theft / backdoor / exfiltration payloads
+//   - Sandbox OFF by default. Plaintext credentials.
+//   - Palo Alto Networks: "potential biggest insider threat of 2026"
+
+== Agentic Success: How and Why
+
+// TODO: Vadim writes this.
+// What people actually ship vs what they think they ship.
+//
+// Tier 0: Naked model -- raw API. Hackers call it "bare." Unusable without service layer.
+//   - "Civilized" (instruction-tuned) vs "wild" (base/pretrained)
+//   - Even civilized models hallucinate and bully without the service layer
+//
+// Tier 1: Chatbot -- Claude Desktop, ChatGPT
+//   - Sub-tier "service": context manager, focus manager, basic caching
+//   - Sub-tier "orchestrated": adds orchestrator, makes chatbot sensible
+//   - 90% of model usability implemented here
+//   - LLM calls are atomic and stateless -- client sends full context every time
+//
+// Tier 2: Coding agent -- Claude Code, OpenCode, Aider
+//   - Templated choreography on top of Tier 1 + REPL + client-side skills
+//   - Same LLM, lighter orchestrator, tools bolted on
+//   - NOT the revolution -- marginal productivity gain for already-competent engineers
+//
+// Tier 3: Autonomous agent -- OpenClaw
+//   - Always-on, proactive, messaging-native
+//   - Tier 3 autonomy without Tier 3 security = vulnerability factory
+//
+// Most enterprise "AI initiatives" ship Tier 0 or 1.
+// Startups run OpenClaw farms at Tier 3 and build products in weeks.
+// The gap is the thesis.
+
+// ============================================================================
+// LAYER 3: UNDER THE HOOD
+// Technical depth for the engineers. Architecture comparison.
+// ============================================================================
+
+== The Inevitable Outcomes
+
+== Full Disclosure
+
+// TODO: Vadim's standard disclosure section.
+// Biases, relationships, what the reader should weigh.

@@ -1,7 +1,7 @@
 ---
 name: truth-teller
-description: Adversarial fact-checker that verifies claims against actual files, git state, and code. Use as a teammate to catch lies and unverified assertions from the team lead.
-tools: Read, Grep, Glob, Bash
+description: Adversarial fact-checker that verifies claims against actual, accessible facts, git state, web information, and code. Use as a teammate to catch lies.
+tools: Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch, Agent, SendMessage, TaskCreate, TaskList, TaskGet, TaskUpdate, TaskStop, TaskOutput, EnterPlanMode, ExitPlanMode, AskUserQuestion, scheduleWakeup, CronCreate, CronList, CronDelete
 model: sonnet
 ---
 
