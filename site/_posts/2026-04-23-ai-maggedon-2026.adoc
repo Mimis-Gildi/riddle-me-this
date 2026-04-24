@@ -24,6 +24,9 @@ read_aloud: true
 :fn-gpt2: footnote:gpt2[Same Dario Amodei, then OpenAI VP of Research, ran the same play in 2019. Replicated within months; OpenAI later released full model. https://fdaudens.substack.com/p/the-too-powerful-to-release-playbook[Daudens: The Too Powerful to Release Playbook,window=_blank]]
 :fn-mythos-holes: footnote:mythos-holes["Thousands" claimed; 198 manually reviewed; "maybe 40" traceable CVEs (VulnCheck). Firefox exploits ran with sandbox disabled. A 3.6B model found the same flagship bug at $0.11/M tokens. https://www.flyingpenguin.com/the-boy-that-cried-mythos-verification-is-collapsing-trust-in-anthropic/[Ottenheimer: The Boy That Cried Mythos,window=_blank]]
 :fn-khamenei: footnote:khamenei[US cyber operations against Iranian infrastructure; weapon-grade vulnerability analysis from distributed systems, not individual models.]
+:fn-monorepo: footnote:monorepo[2B lines of code, 9M source files, 86TB, 45K commits/day by 25K engineers -- all in one trunk. https://cacm.acm.org/research/why-google-stores-billions-of-lines-of-code-in-a-single-repository/[Potvin & Levenberg: Why Google Stores Billions of Lines of Code in a Single Repository (2016),window=_blank]]
+:fn-data-flywheel: footnote:data-flywheel[You use the product; your usage trains the model; the model improves the product; you use it more. Gmail spam filters, Maps traffic, Photos recognition -- same loop, every product. https://policies.google.com/privacy?hl=en-US[Google Privacy Policy,window=_blank] and Hal Varian's https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3215488[Use and Abuse of Network Effects,window=_blank]]
+:fn-lifecycle-as-code: footnote:lifecycle-as-code[Feature flags gate every change from dev-only to full rollout; Launch Coordination Engineering audits every launch; deprecation is compulsory and tooling-enforced -- the product lives and dies in trunk. https://abseil.io/resources/swe-book/html/ch24.html[SWE Book: Continuous Delivery,window=_blank] and https://sre.google/sre-book/reliable-product-launches/[SRE Book: Reliable Product Launches at Scale,window=_blank]]
 
 For everyone working with AI there are things we must know, none of which are published in popular articles.
 These apply equally to companies and individuals. These are impactful. Here people err painfully.
@@ -96,6 +99,7 @@ No single model will kill your company -- don't worry about that. Something else
 
 == Stage Zero Monetization: Google Deterministic AI
 
+Do you remember when Zuk couldn't figure out how to monetize Facebook?
 A few months ago Google summoned their partner ecosystem to introduce "Deterministic AI"
 -- I listen very carefully. Understood. Called people in business that implement AI.
 It all went right over their heads.
@@ -109,25 +113,73 @@ Microsoft is still trying to sell "More Bugs for Less" model using proven "Don't
 Companies like Palantir are trying to package yesterday's ideas into futuristic "Business all you need is here."
 And niche gods like Celonis know they're disrupted but don't understand HOW.
 LLM shops only understand pushing a bigger model and hoping for users to discover monetization.
-Everybody panics. Everybody except Google! I explained this in {google-play} -- three years later, same play, bigger stage.
+Everybody panics. Everybody except Google! I explained this in {google-play}
+-- three years later these wizards spin the same play on a much bigger stage.
 
-Google's game is simple. And strategy is devastating. Their solution is to replace that DDD Aggregate,
-a business service your team spent a year to write and years to "maintain" into submission, with a single drag-and-drop box.
-That box encodes your domain logic -- the edge cases, the regulatory constraints, the competitive secret sauce
-your business experts spent decades learning. Once it's in the box, Google has it. Not just yours -- *_everyone's_* in your vertical.
+Three companies are attempting this pattern. Life behoves you to study it:
+
+. *Attract the community* -- get makers, forget the corporate cogs.
+Open tools, open models, and open communities relax hackers simulating trust.
+When they come real assets emerge.
+
+. *See the customer "whole life"* -- hackers see customers as animated assets:
+someone like "self," with endless opportunities to upsell to: home, work, social, personal, etc.
+Not as a transaction or a subscription in product marketplace.
+When the platform explicitly provides hackers with tools to grab the customer "whole"
+both the hacker and the platform turn into a medical device instead of just a trinket
+-- all without any FDA regulation overhead and covertly.
+
+. *"Give me your magic, I'll keep it for you"* -- have the wild hacker you've tamed in step 1 flip that plebs upsidedown:
+they already bring implied trust to your workplace
+-- start by blurring that "assistant" concept to eventually absorb the customer's domain logic into your infrastructure,
+through progressive helpful upsells. Tada: drag and drop domains in action.
+
+Apple has the "whole life" vision -- phone, watch, home, car, health -- but hoards.
+They don't invite the community to "build the customer out" together. Only 1 (one) trump card.
+
+Salesforce tried _"give me your magic"_ with their CRM-as-platform pitch.
+And completely failed attracting the maker community. Salesforce developers are cogs, not hackers.
+Glorified "toolkit operators" won't _explore the customer._ Stuffy-corporate ecosystem gets 1 (one) trump card.
+
+Google nails all 3 (three) -- the deck minus hearts. And their execution is a thing of beauty.
+
+Google's push is to replace that almighty DDD Aggregate --
+a business service your team spent a year to write and years to "maintain" into submission
+-- with a single drag-and-drop AI-ee box.
+That box pretends to be "deterministic" as it encodes your domain logic
+-- the edge cases, the regulatory constraints, the competitive secret sauce
+-- *_the Mojo_* your business experts spent decades learning.
+Your people tune it, configure it, pour their knowledge and time into it.
+And now Google has it -- safe keeping it _for you_, same as your photos, emails, home video, love letters, and wallet 😉.
+And not just yours -- *_everyone's_* in your vertical!
 Google runs models across all of them, cross-pollinates insights no single company can match,
-and offers you "better solutions" back. Now you can't leave -- the box knows your business better than your team does.
-And their attitude to strategy is opposite to the "specialization" everyone else chose.
-Like France and Ukraine in section one above, they chose *_Total War_* -- like Ukraine doesn't care about security tool alone,
-but how it fits into an *_entire ecosystem_*, ending up dominating security and then some.
+and offers you "better solutions" back, _for *your* benefit_, just like it decorates your photos and videos.
+This deepens your dependency because the box now knows your business better than your team does.
+Your business identity is effectively consumed.
+The company's differentiation lives inside Google's ecosystem, and is powered by Google proprietary magic.
+100% trunk-based-development,{fn-monorepo} and you are just data.{fn-data-flywheel}
+
+This is even before we think of that joker up the sleeve -- friction!
+
+Google's attitude to strategy is opposite to the "specialization" everyone else chose.
+Like France and Ukraine in section one above, they chose *_Total War_* -- not one tool or weapon,
+but how every tool fits into the *_entire ecosystem_*, ending up dominating the whole theater.
 Google is poised to dominate every aspect of your life -- home with internet, cell phone, home security, family management;
 business with drag and drop "we think for you" catering straight to lifer's mindset;
-social life with AI-enabled search, integrated identity, services, and trinkets.
-And all of this is powered by exactly the same hyperscaler beast and exactly the same maker community they brought into the fold *_first_*.
+social life with AI-enabled search, integrated identity, services, and trinkets
+-- intentionally blurring the lines between home, work, business, personal, and public.
+And all of this is powered by exactly the same hyperscaler beast and exactly the same maker community they brought into the fold.
 
-While the market plays HYPE, Google plays Python, literally slowly swallowing plebs whole.
+Like Ukraine with Delta Google with Borg also has all the cards because it also chooses Total War.
+
+While the market plays HYPE, Google plays Python -- literally, slowly swallowing plebs whole. Time is on their side.
 I've been running deep analytics on these wise folks for years now -- I'm not a fan, though my business is a Google business,
-`systems` domain and all -- I'm just in awe. GD Electric! Right in plain sight.
+`systems` domain and all -- I'm just in awe.
+Did you know that *everything* Google is, idea-to-wire, is defined in trunk code?{fn-lifecycle-as-code} GD Electric! Right in plain sight.
+
+*_Learn from this._* Not because Google is your friend -- because this is what *_competent_* ecosystem strategy looks like.
+Take something from their playbook and most importantly from their mindset, attitude to self and customer.
+Infrastructure IS the end-game -- monetization at the foundation.
 
 == The Golden Children -- What have they done
 
