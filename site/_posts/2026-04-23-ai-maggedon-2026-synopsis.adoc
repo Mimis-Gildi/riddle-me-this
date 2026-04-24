@@ -1,0 +1,44 @@
+---
+categories: [reflections]
+tags: [AI, Agentic AI, Security, Enterprise, Zero-Day, OpenClaw, Claude Code]
+excerpt: >
+    91% of Q1 2026 zero-days were agentic. Your AI is writing your vulnerabilities.
+classes: wide
+comments: false
+hidden: true
+search: false
+read_aloud: false
+---
+= AI-maggedon 2026: Synopsis
+:imagesdir: ./assets/images
+:full: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/04/23/ai-maggedon-2026.html
+
+91% of Q1 2026 zero-days were agentic.
+Not AI finding vulnerabilities -- AI *_creating_* them through unreviewed code.
+Your tools, your bugs, your problem.
+
+Five things every AI practitioner needs to know right now.
+Not from vendor keynotes. Not from hype press.
+
+*Mythos is a gimmick.*
+Anthropic's $125/M-token wonder-model finds bugs in code their tools help generate at 2.74x the vulnerability rate -- the fire truck is also the arsonist.
+The real weapons are deployed by Ukraine, Israel, France, and GB -- not a single one is an LLM. +
+{full}#_1_mythos_and_wonder_models_the_fire_truck_is_also_the_arsonist[→ Read more,window=_blank]
+
+*Google's "Deterministic AI."*
+Engineers mocked the name; Google doesn't care -- they're absorbing your domain logic, the Mojo your experts spent decades building, into their ecosystem.
+Same play as 2017. Bigger stage. You're just data. +
+{full}#_stage_zero_monetization_google_deterministic_ai[→ Read more,window=_blank]
+
+*The golden few.*
+What agentic collaboration looks like when competent teams ship it -- and why most can't follow.
+
+*The killing floor.*
+OpenClaw: 9 CVEs in 4 days, 36% of ClawHub skills carry prompt injection.
+Palo Alto Networks: "potential biggest insider threat of 2026."
+
+*The field primer.*
+Naked model to autonomous agent -- most enterprises ship Tier 0 while startups build products in weeks at Tier 3.
+The gap is the thesis.
+
+{full}[Read the full article,window=_blank]. Long read. Technical. Not polite.

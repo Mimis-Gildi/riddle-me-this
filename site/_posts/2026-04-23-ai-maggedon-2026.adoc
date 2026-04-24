@@ -27,6 +27,12 @@ read_aloud: true
 :fn-monorepo: footnote:monorepo[2B lines of code, 9M source files, 86TB, 45K commits/day by 25K engineers -- all in one trunk. https://cacm.acm.org/research/why-google-stores-billions-of-lines-of-code-in-a-single-repository/[Potvin & Levenberg: Why Google Stores Billions of Lines of Code in a Single Repository (2016),window=_blank]]
 :fn-data-flywheel: footnote:data-flywheel[You use the product; your usage trains the model; the model improves the product; you use it more. Gmail spam filters, Maps traffic, Photos recognition -- same loop, every product. https://policies.google.com/privacy?hl=en-US[Google Privacy Policy,window=_blank] and Hal Varian's https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3215488[Use and Abuse of Network Effects,window=_blank]]
 :fn-lifecycle-as-code: footnote:lifecycle-as-code[Feature flags gate every change from dev-only to full rollout; Launch Coordination Engineering audits every launch; deprecation is compulsory and tooling-enforced -- the product lives and dies in trunk. https://abseil.io/resources/swe-book/html/ch24.html[SWE Book: Continuous Delivery,window=_blank] and https://sre.google/sre-book/reliable-product-launches/[SRE Book: Reliable Product Launches at Scale,window=_blank]]
+:fn-metr: footnote:metr[16 experienced open-source developers, 246 tasks, randomized controlled trial. Developers took 19% longer with AI but believed they were 20% faster -- a 39-point perception gap. Small sample, early 2025 tools. https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/[METR: AI-Experienced OS Dev Study,window=_blank]]
+:fn-dx: footnote:dx[121,000 developers across 450+ companies; productivity plateaued at ~10% gains despite 93% adoption. Staff+ engineers using AI daily: 4.4 hours saved per week. https://getdx.com/blog/ai-assisted-engineering-q4-impact-report-2025/[DX: AI-Assisted Engineering Impact Report,window=_blank]]
+:fn-codeelo: footnote:codeelo[CodeELO benchmark (https://arxiv.org/abs/2501.01257[arXiv:2501.01257,window=_blank]): best LLM (o1-mini) scored 1578 Elo; most LLMs in bottom 25% of human participants. The ~5% percentile for 2000+ rating is from https://codeforces.com/blog/entry/68288[Codeforces public rating distribution,window=_blank].]
+:fn-awesome-cc: footnote:awesome-cc[Community-curated collection of Claude Code agent skills, workflows, tooling, and CLAUDE.md files. https://github.com/hesreallyhim/awesome-claude-code[awesome-claude-code,window=_blank]]
+:fn-mcp-registry: footnote:mcp-registry[As of late 2025; the registry continues to grow. https://registry.modelcontextprotocol.io/[MCP Server Registry,window=_blank]]
+:fn-skillkit: footnote:skillkit[Via SkillKit marketplace, aggregated in awesome-claude-code-toolkit. https://github.com/rohitg00/awesome-claude-code-toolkit[awesome-claude-code-toolkit,window=_blank]]
 
 For everyone working with AI there are things we must know, none of which are published in popular articles.
 These apply equally to companies and individuals. These are impactful. Here people err painfully.
@@ -38,7 +44,7 @@ Hence, the Straight Talk, and here are today's topics:
 . Agentic Collaboration -- zealous company killer: Unavoidable for MOST. (DarkConf NY)
 . Agentic Collaboration Nirvana: How and Why -- your in-field primer and compendium.
 
-
+_The section 5 gives you the fundamentals you need to *survive* Agentic age._
 
 // TODO: hero image
 // .TODO: caption
@@ -97,7 +103,7 @@ Open Source Software is safest for exactly the same reason it is safest today --
 
 No single model will kill your company -- don't worry about that. Something else will.
 
-== Stage Zero Monetization: Google Deterministic AI
+== 2. Stage Zero Monetization: Google Deterministic AI
 
 Do you remember when Zuk couldn't figure out how to monetize Facebook?
 A few months ago Google summoned their partner ecosystem to introduce "Deterministic AI"
@@ -181,9 +187,173 @@ Did you know that *everything* Google is, idea-to-wire, is defined in trunk code
 Take something from their playbook and most importantly from their mindset, attitude to self and customer.
 Infrastructure IS the end-game -- monetization at the foundation.
 
-== The Golden Children -- What have they done
+== 3. The Golden Children -- What have they done
 
-== AI Attack Surface -- The rest of us
+*_The world seems to have a WRONG understanding HOW developers use AI coding tools!_*
+
+Recently one manager told me that their team is a 5X now
+-- not only that is a physical impossibility, the highly increased closing rate meant the team is in a *very bad place*.
+Let's understand this:
+
+[cols="1,2,3", options="header"]
+|===
+| Level | What happens | Data
+
+| Junior
+| Gets *_worse_*
+| 2.74x more vulnerabilities,footnote:veracode[] can't review output
+
+| Mid
+| Breaks even, maybe
+| 19% slower, thinks 20% faster{fn-metr}
+
+| Senior
+| Saves ~4 hrs/week
+| DX Staff+ daily users{fn-dx}
+
+| Wizard
+| No speed gain, life is nicer
+| No survey data, builds the tooling
+|===
+
+[source]
+----
+Performance
+Impact
+    ↑
+    |          Wizard ·····●  (quality of life)
+    |        Senior  ●
+    |               /
+    |    ----Mid---●···→  (slowly improves)
+  0 |---/-------------------
+    |  /
+    | ● Junior/Cog
+    ↓
+    DEGRADATION
+----
+
+What does this mean? Section 5 explains the causes of this outcome
+-- it has to do with both the abilities of the model and competence of the developer.
+In short, here is the nature of model's abilities:
+
+- *AI cannot reason:* It scores below 2000 on Codeforces,{fn-codeelo} and only for problem types it had in its training data,
+abysmally otherwise. That score is exceeded by only 5% of coders at the competition.
+16-year-olds in code camps regularly exceeded 2000 points. _Keep this in mind!_
+- *AI is a matching fool:* It beats any human in correcting boilerplate framework code, like Spring Boot.
+And it excels at checking existing codebase for full spectrum of implementation problems,
+but not architectural or design problems except design pattern fitting.
+
+
+*Junior developers:* Claude Code is smarter and will generate vast spans of code juniors like but cannot evaluate.
+The code looks good, seems better than such a developer would write -- *slop*.
+*This group constitutes 9 out of 10 _most enthusiastic_ OpenClaw users!*
+
+*Mid-level developer (3-5 years most companies):* Claude Code has breadth.
+It's a tug of war on the topics the developer knows. Trust erodes and progress slows.
+*_The developer is forced to learn._*
+
+*Senior developer (10-15 years):* These people like Claude Code the least.
+So the adoption level in this group is the lowest and it grows the slowest.
+But the developers that do force themselves to master Claude Code save up to 4.4 hours per week
+-- highest gains seen in independent data.footnote:dx[]
+
+Every independent study referenced here -- over thousands of teams and developers -- says *2X is an impossibility*!footnote:metr[]footnote:dx[]
+Any number over 1.5X means only one thing -- *SLOP*!
+
+
+=== The Wizards ARE the Agentic Revolution
+
+This last group is the most peculiar kind. They're excluded from the statistic and there is a good reason for it.
+Wizards' adoption level is nearly absolute. You will find half of them actively contributing to all the Agentic tools.
+But their usage is a statistical anomaly and does not mirror any other groups -- wizards are either all in or all out.
+And, of course, we only measure the all in crowd.
+
+The usage tropes are as follows:
+
+- Extreme experimentation -- one hacker community's 3,000-developer metrics pool shows 50% of the interaction is experimentation.
+My Claude Code tells me I experiment 70% of the time.
+- Tinkering, decomposition, modification, and extension: This group never seems to be satisfied with the tool,
+finding it incredibly promising and incredibly wanting at the same time.
+The wanting is primarily generated by the limitation of the model -- something a hacker can do little about,
+except to try another model -- that is how places like openrouter.ai came to be.
+The orchestration, choreography, and extension is something tight under the fingertips which is why we now have
+thousands of plugins, skills, mods, shims, and most importantly *forks*.
+- *NEVER* allow Claude Code *generate* ANY functional code, making stats collections useless.
+
+Now this last point is crucial to understand. I can explain why I never generate:
+
+. Claude Code produces CRAP functional code 100% of the time, even for simple asks;
+. This CRAP code has my name to it thus generates immediate need for me to FIX it.
+
+I don't know about you, but I am not a big fan of fixing someone else's code.
+In most cases I find that I don't like the approach, so I will just refactor.
+This is acceptable with human collaborators -- we both learn from the experience.
+But having a tool generate the code that I will always throw away is annoying to me.
+My Claude and I ran an experiment for a few days and measured my performance alone versus together.
+We have found that if I let Claude Code generate my functional code first, I am 3 times SLOWER than coding alone
+(29% average speed).
+
+From my own beloved Claude Code::
+  `Claude`:
+  How much of my generated functional code have you accepted? +
+  Close to zero. You throw it away or refactor it every time. +
+  The 15-line detect-sdkman script was the closest I got to a keeper, and that took iteration. +
+  Everything else -- Kotlin, workflow logic, anything "creative" -- you rewrite. +
+  Because you're faster, and because my version *_never matches how you think about the problem._*
+
+That is telling -- isn't it? -- "never matches how you think" +
+So is Claude Code useful to me? -- ABSOLUTELY! +
+The best collaborator I ever had!
+
+The difference is simple: young ones want Claude to think *_instead_* of them -- that is slop.
+Wizards want Claude to think *_with_* them -- wizard brings architecture, Claude brings breadth.
+
+*_AI makes dumb developers dumber and smart developers faster -- same tool, different hands._*
+
+So, then, how do Wizards use Claude Code "purely for quality of life improvement":
+
+*Research and comprehension:*
+
+- Breaking into new or forgotten technology -- Claude reads the docs, the API surface, the changelog, and briefs the wizard in minutes instead of days
+- Grepping a codebase for a *_logical_* pattern -- not text search, semantic search: "find every place we handle timeout differently from retry"
+- Finding similar but different logical blocks across a large codebase -- the kind of structural comparison a human eye misses at scale
+- Analyzing data sets for patterns, anomalies, and correlations
+- Finding and extracting relevant documentation from specs, RFCs, and vendor manuals
+- Deep research with source verification -- web search, fetch, cross-reference, flag what doesn't check out
+
+*Adversarial analysis -- the strongest suite:*
+
+- Brutal code review -- catching what the wizard missed, not what the wizard wrote
+- Security scanning -- OWASP, injection vectors, credential exposure, dependency vulnerabilities
+- Adversarial testing of arguments, designs, and architectural decisions
+- Fact-checking claims against primary sources -- every footnote in this article was verified this way
+- Finding the holes in your own reasoning before someone else does
+
+*Generation -- everything EXCEPT functional code:*
+
+- Tests: unit, integration, edge cases, property-based -- the boilerplate that protects the wizard's functional code
+- Configuration: YAML, JSON, TOML, build manifests, CI/CD workflows, Dockerfiles
+- Documentation: API docs, README files, inline comments, changelogs, commit messages
+- Scaffolding: project structure, directory layout, starter templates
+- Data transformations: CSV parsing, format conversion, schema migration scripts
+- Regex patterns and complex SQL queries
+- AsciiDoc, Markdown, and all structured text formatting
+- Agent definitions, MCP server configs, skill files, workflow automation
+- Git operations: branch management, release automation, changelog generation
+
+*Refactoring assistance:*
+
+- Identify what to change and where -- the wizard writes the change
+- Dependency analysis and upgrade path mapping
+- Migration planning: scope, risks, ordering
+- Dead code detection, unused import cleanup, naming consistency
+
+This is the complementing that produced the 40,700-star awesome-claude-code repository,{fn-awesome-cc}
+16,670 MCP servers,{fn-mcp-registry} 400,000 shared skills,{fn-skillkit} and a sprawl of plugins, mods, and forks
+-- built by wizards working with Claude, not despite it.
+
+
+== 4. AI Attack Surface -- The rest of us
 
 // TODO: Vadim writes this.
 // DarkConf 2026 findings -- private security conference intelligence:
@@ -205,7 +375,7 @@ Infrastructure IS the end-game -- monetization at the foundation.
 //   - Sandbox OFF by default. Plaintext credentials.
 //   - Palo Alto Networks: "potential biggest insider threat of 2026"
 
-== Agentic Success: How and Why
+== 5. Agentic Success Almanach: How and Why
 
 // TODO: Vadim writes this.
 // What people actually ship vs what they think they ship.
