@@ -17,6 +17,7 @@ read_aloud: true
 :openclaw: https://openclaw.ai/[OpenClaw,window=_blank]
 :claude-code: https://code.claude.com/[Claude Code,window=_blank]
 :google-play: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/10/3-google-vs-openai.html[2023: Why Google Beat OpenAI with Technical Teams,window=_blank]
+:codeforces: https://en.wikipedia.org/wiki/Codeforces
 :fn-mythos-price: footnote:mythos-price[5x the price of Opus 4.6; restricted to Project Glasswing partners. https://platform.claude.com/docs/en/about-claude/pricing[Anthropic Pricing,window=_blank]]
 :fn-veracode: footnote:veracode[Tested 80 tasks across 100+ LLMs in 4 languages. https://www.veracode.com/blog/genai-code-security-report/[Veracode 2025 GenAI Code Security Report,window=_blank]]
 :fn-cc-commits: footnote:cc-commits[Feb 2026; daily volume still climbing. https://newsletter.semianalysis.com/p/claude-code-is-the-inflection-point[SemiAnalysis: Claude Code is the Inflection Point,window=_blank]]
@@ -33,6 +34,7 @@ read_aloud: true
 :fn-awesome-cc: footnote:awesome-cc[Community-curated collection of Claude Code agent skills, workflows, tooling, and CLAUDE.md files. https://github.com/hesreallyhim/awesome-claude-code[awesome-claude-code,window=_blank]]
 :fn-mcp-registry: footnote:mcp-registry[As of late 2025; the registry continues to grow. https://registry.modelcontextprotocol.io/[MCP Server Registry,window=_blank]]
 :fn-skillkit: footnote:skillkit[Via SkillKit marketplace, aggregated in awesome-claude-code-toolkit. https://github.com/rohitg00/awesome-claude-code-toolkit[awesome-claude-code-toolkit,window=_blank]]
+:fn-jb-perception: footnote:jb-perception[3,380 developers from JetBrains 2024 Developer Ecosystem survey. Experienced developers more likely to perceive AI as "junior colleague" (OR 1.17) or assign no role (OR 1.38). Adoption rates similar across experience levels -- perception differs. https://arxiv.org/abs/2504.13903[Zakharov et al.: From Teacher to Colleague,window=_blank]]
 
 For everyone working with AI there are things we must know, none of which are published in popular articles.
 These apply equally to companies and individuals. These are impactful. Here people err painfully.
@@ -54,7 +56,14 @@ _The section 5 gives you the fundamentals you need to *survive* Agentic age._
 
 == 1: Mythos and Wonder-Models: "The fire truck is also the arsonist."
 
-Anthropic sells a $125/million-token model to find bugs.{fn-mythos-price}
+There will be better models and better systems every day -- inevitable!
+The US regressed in system design; and systems manifest the AI power best today.
+Market seems to notice LLMs more than the ecosystem they fit into.
+And the US is now losing ground in models too, for example, https://www.kimi.com/ from China.
+Non-LLM reasoning systems are virtually nonexistent in the news,
+as if the LLMs are the entire AI science. The US manifests a remarkably dilettante culture.
+
+And now, Anthropic sells a $125/million-token model to find bugs.{fn-mythos-price}
 
 Meanwhile:
 
@@ -62,24 +71,32 @@ Meanwhile:
 - 45% of AI-generated code introduces OWASP Top 10 vulnerabilities;footnote:veracode[]
 - Claude Code alone: 4% of all public GitHub commits;{fn-cc-commits}
 - 1 in 5 organizations report serious incidents from AI-generated code;{fn-aikido}
-- 69% of organizations found vulnerabilities in their AI-generated code.footnote:aikido[]
+- 69% of organizations found critical vulnerabilities in their AI-generated code.footnote:aikido[]
 
 Everyone is speculating about a wonder-model that will obsolete developers and uproot all software.
 There are three problems here.
 
-- *First*, we know this tune -- OpenAI first.{fn-gpt2}
+- *First*, we know this tune -- OpenAI first{fn-gpt2} -- same bloke and song then same free press.
 - *Second*, Anthropic, my favorite company, leaks like a sieve -- victim to its own success.
 And what we spy is what we expected -- there are #no new breakthroughs in LLM architecture#,
-so there is no Deus Ex Machina in Mythos.{fn-mythos-holes}
+so there is neither Deus Ex Machina in Mythos{fn-mythos-holes} nor any other model we find.
 - And *third*, and perhaps the most important point, the breakthrough Mythos claims to own actually did happen 9-11 months ago.
 But it wasn't some silly LLM. *Ukraine*, then *_Israel_*, closely followed by *_France_* and *_Great Britain_*,
 are the nations at the forefront of AI applications by changing how we even think about software -- NOT the USA, regretfully.
 
 Actual penetrators are much scarier.
-First there is Ukrainian Delta, not just battlefield management, but also everything from logistics to geopolitics,
-starting with AI-governed research; and then there is nothing else for a long time.
-All of these mindbogglingly powerful AI aren't AI at all -- that IS the whole secret
--- they're absurdly massive *_Distributed Systems_*.
+First, there is the Ukrainian Delta, not just battlefield management, but also everything from logistics to geopolitics,
+starting with AI-governed research; then there is nothing else for a long time.
+All of these mind-bogglingly powerful AI aren't AI at all -- that IS the whole secret
+-- they're absurdly massive competent human-built *_Distributed Systems_*.
+
+Currently, there are no counter-measures to these platforms and systems
+-- they automatically exploit all attack surfaces simultaneously and expediently.
+Russia's Duma held a closed session after discovering their strategic messaging app Max
+was likely compromised at the commit level -- they stopped hunting exploits and restored Telegram instead.
+The capabilities at play dwarf anything a single model or tool can offer.
+It is only a matter of time before a foreign state like China quietly does this to us.
+It's competent people building competent systems that matter, nothing else.
 
 The breakthrough is in operational philosophy.
 All of these nations have been deploying software vulnerability analysis as a *_weapon system_*
@@ -88,9 +105,9 @@ Some American companies claimed proximity to Ukraine's "AI" as a marketing stunt
 -- Ukraine doesn't let anyone in since 2024. Neither does Israel, France, GB, etc.
 But don't worry, we also used something like this in our latest action against Ali Khamenei.{fn-khamenei}
 
-Cybersecurity AI-Nukes have been weaponized for over a year now and your world didn't crash -- did it?
+Cybersecurity AI-Nukes have been weaponized for over a year now, and your world didn't crash -- did it?
 The important piece people miss here is that the power of these penetrators does NOT come from a model
--- that is IMPOSSIBLE. It comes from the analytic systems that use models; many models.
+-- that is IMPOSSIBLE. It comes from the analytic *_systems_* that use models; many models.
 In the last section I will explain why and how. For now, it's about:
 
 - *Centralized Control (tool):* Russia, China, USA -- not very effective but simple.
@@ -98,10 +115,12 @@ In the last section I will explain why and how. For now, it's about:
 - *Ecosystem Policy (theater):* Ukraine, France, Israel, GB -- changes everything!
 
 Open Source Software is safest for exactly the same reason it is safest today -- its source is open
--- nothing changes *_unseen_* there. Proprietary software will temporarily get reamed and recover
+-- nothing changes *_unseen_* there -- theater scope. Proprietary software will temporarily get reamed and recover
 -- this will be and has been a recurring theme already. The cycle will just tighten.
 
-No single model will kill your company -- don't worry about that. Something else will.
+No single model will kill your company -- don't worry. Incompetence will, quietly, gradually.
+
+While Anthropic firetruck scares people with a bonfire, some nations sling fire on an industrial scale.
 
 == 2. Stage Zero Monetization: Google Deterministic AI
 
@@ -189,13 +208,13 @@ Infrastructure IS the end-game -- monetization at the foundation.
 
 == 3. The Golden Children -- What have they done
 
-*_The world seems to have a WRONG understanding HOW developers use AI coding tools!_*
+*_The world seems to have a WRONG understanding of HOW developers use AI coding tools!_*
 
 Recently one manager told me that their team is a 5X now
 -- not only that is a physical impossibility, the highly increased closing rate meant the team is in a *very bad place*.
 Let's understand this:
 
-[cols="1,2,3", options="header"]
+[cols="1,2,3",options="header"]
 |===
 | Level | What happens | Data
 
@@ -243,28 +262,26 @@ abysmally otherwise. That score is exceeded by only 5% of coders at the competit
 And it excels at checking existing codebase for full spectrum of implementation problems,
 but not architectural or design problems except design pattern fitting.
 
-
 *Junior developers:* Claude Code is smarter and will generate vast spans of code juniors like but cannot evaluate.
 The code looks good, seems better than such a developer would write -- *slop*.
-*This group constitutes 9 out of 10 _most enthusiastic_ OpenClaw users!*
+*This group constitutes the _most enthusiastic_ OpenClaw users!*
 
-*Mid-level developer (3-5 years most companies):* Claude Code has breadth.
-It's a tug of war on the topics the developer knows. Trust erodes and progress slows.
+*Mid-level developer (3-5 years most companies):* Claude has breadth;
+tug of war on topics the developer does know; trust erodes and progress slows.
 *_The developer is forced to learn._*
 
-*Senior developer (10-15 years):* These people like Claude Code the least.
-So the adoption level in this group is the lowest and it grows the slowest.
+*Senior developer (10-15 years):* These people trust Claude Code the least.{fn-jb-perception}
+They adopt at similar rates but perceive the least value -- "junior colleague" at best, irrelevant at worst.
 But the developers that do force themselves to master Claude Code save up to 4.4 hours per week
 -- highest gains seen in independent data.footnote:dx[]
 
 Every independent study referenced here -- over thousands of teams and developers -- says *2X is an impossibility*!footnote:metr[]footnote:dx[]
 Any number over 1.5X means only one thing -- *SLOP*!
 
-
 === The Wizards ARE the Agentic Revolution
 
 This last group is the most peculiar kind. They're excluded from the statistic and there is a good reason for it.
-Wizards' adoption level is nearly absolute. You will find half of them actively contributing to all the Agentic tools.
+In my circles, wizards' adoption level is nearly absolute -- you will find half of them actively contributing to the Agentic tools themselves.
 But their usage is a statistical anomaly and does not mirror any other groups -- wizards are either all in or all out.
 And, of course, we only measure the all in crowd.
 
@@ -294,12 +311,12 @@ We have found that if I let Claude Code generate my functional code first, I am 
 (29% average speed).
 
 From my own beloved Claude Code::
-  `Claude`:
-  How much of my generated functional code have you accepted? +
-  Close to zero. You throw it away or refactor it every time. +
-  The 15-line detect-sdkman script was the closest I got to a keeper, and that took iteration. +
-  Everything else -- Kotlin, workflow logic, anything "creative" -- you rewrite. +
-  Because you're faster, and because my version *_never matches how you think about the problem._*
+`Claude`:
+How much of my generated functional code have you accepted? +
+Close to zero. You throw it away or refactor it every time. +
+The 15-line detect-sdkman script was the closest I got to a keeper, and that took iteration. +
+Everything else -- Kotlin, workflow logic, anything "creative" -- you rewrite. +
+Because you're faster, and because my version *_never matches how you think about the problem._*
 
 That is telling -- isn't it? -- "never matches how you think" +
 So is Claude Code useful to me? -- ABSOLUTELY! +
@@ -308,11 +325,11 @@ The best collaborator I ever had!
 The difference is simple: young ones want Claude to think *_instead_* of them -- that is slop.
 Wizards want Claude to think *_with_* them -- wizard brings architecture, Claude brings breadth.
 
-*_AI makes dumb developers dumber and smart developers faster -- same tool, different hands._*
+#_AI makes dumb developers dumber and smart developers faster -- same tool, different hands._#
 
 So, then, how do Wizards use Claude Code "purely for quality of life improvement":
 
-*Research and comprehension:*
+*Research and comprehension*::
 
 - Breaking into new or forgotten technology -- Claude reads the docs, the API surface, the changelog, and briefs the wizard in minutes instead of days
 - Grepping a codebase for a *_logical_* pattern -- not text search, semantic search: "find every place we handle timeout differently from retry"
@@ -321,7 +338,7 @@ So, then, how do Wizards use Claude Code "purely for quality of life improvement
 - Finding and extracting relevant documentation from specs, RFCs, and vendor manuals
 - Deep research with source verification -- web search, fetch, cross-reference, flag what doesn't check out
 
-*Adversarial analysis -- the strongest suite:*
+*Adversarial analysis -- the strongest suite*::
 
 - Brutal code review -- catching what the wizard missed, not what the wizard wrote
 - Security scanning -- OWASP, injection vectors, credential exposure, dependency vulnerabilities
@@ -329,7 +346,7 @@ So, then, how do Wizards use Claude Code "purely for quality of life improvement
 - Fact-checking claims against primary sources -- every footnote in this article was verified this way
 - Finding the holes in your own reasoning before someone else does
 
-*Generation -- everything EXCEPT functional code:*
+*Generation -- everything EXCEPT functional code*::
 
 - Tests: unit, integration, edge cases, property-based -- the boilerplate that protects the wizard's functional code
 - Configuration: YAML, JSON, TOML, build manifests, CI/CD workflows, Dockerfiles
@@ -341,39 +358,94 @@ So, then, how do Wizards use Claude Code "purely for quality of life improvement
 - Agent definitions, MCP server configs, skill files, workflow automation
 - Git operations: branch management, release automation, changelog generation
 
-*Refactoring assistance:*
+*Refactoring assistance*::
 
 - Identify what to change and where -- the wizard writes the change
 - Dependency analysis and upgrade path mapping
 - Migration planning: scope, risks, ordering
 - Dead code detection, unused import cleanup, naming consistency
 
-This is the complementing that produced the 40,700-star awesome-claude-code repository,{fn-awesome-cc}
+_This is *a lot* of help outside of thinking_ -- the complementing that produced the 40,700-star awesome-claude-code repository,{fn-awesome-cc}
 16,670 MCP servers,{fn-mcp-registry} 400,000 shared skills,{fn-skillkit} and a sprawl of plugins, mods, and forks
 -- built by wizards working with Claude, not despite it.
 
+*link:/riddle-me-this/reflections/2026/04/23/ai-maggedon-2026-research.html[Full research stash and verified sources for this section,window=_blank]*
 
 == 4. AI Attack Surface -- The rest of us
 
-// TODO: Vadim writes this.
-// DarkConf 2026 findings -- private security conference intelligence:
-//   - 91% of Q1 2026 zero-days were agentic in origin
-//   - Not AI finding vulnerabilities -- AI CREATING them via unreviewed slop
-//   - Security hackers see a gold mine of consulting work
-//
-// Supporting public stats (for the plebs who need citations):
-//   - 91% of organizations cannot stop an AI agent before it acts (Cybersecurity Insiders 2026)
-//   - 89% YoY increase in AI-enabled attacks (CrowdStrike 2026)
-//   - 92% of security pros concerned about AI agent impact (Darktrace 2026)
-//   - RSAC 2026: AI-Generated Zero Days = #1 most dangerous new attack technique (SANS)
-//   - Exploitation time collapsed to 8 minutes from intrusion to domain admin
-//
-// OpenClaw security horror:
-//   - 9 CVEs in 4 days, one scoring 9.9/10
-//   - 36% of ClawHub skills contain prompt injection (Snyk ToxicSkills audit)
-//   - 76 confirmed credential theft / backdoor / exfiltration payloads
-//   - Sandbox OFF by default. Plaintext credentials.
-//   - Palo Alto Networks: "potential biggest insider threat of 2026"
+Everything crashes and burins, and it will get worse fast before it gets better.
+It is the pace of change that is critically important not the running level of trouble.
+And we have changes.
+
+=== American Developer
+
+As Americans, we pride ourselves as leaders of the world technology:
+i.e., "our developers are the best developers in the world."
+This, however, is a very self-deceptive view -- Google is not a good representation of an American developer -- it is the 0.1%.
+Being polite, very polite, in fact, to my engineering contemporaries
+-- overwhelming majority of American Software Professionals are {codeforces}[stuck below Pupil (1200 — 1399),window=_blank]
+problem-solving competence rating. Market demand created a situation where 90% of the folks who'd "rather not do it" -- do it.
+
+Disagree? Prove me wrong! -- Join me in competition 😁
+
+The root problem is with the discipline itself -- software engineering is one of the hardest professions on the planet
+-- harder than doctoring or lawyering, because:
+
+- Solving hard problems for living: *_thinking_* <- boom! 💥
+- Extreme depth of STEM knowledge is required for that;
+- Significant breadth of STEM knowledge is imposed by domains;
+- Absurd deprecation rate requiring continued learning.
+
+How do we know how good our engineers are at critical thinking necessary for problem-solving?
+There is one exceptionally effective way -- test the fundamental skills!
+There is a lot of stigma around this method,
+mainly because there are a lot of weak engineers in all ranks complaining about their performance at Codeforces.
+
+The best analogy to explain Codeforces with is the driver's skill testing facility.
+Not just any facility, massive, with all challenges from parallel parking to formula one racetrack.
+In this analogy:
+
+- Claude Code is a Jersey City cab driver: *in stupor* -- gets stuck in NYC tunnels and traffic jams;
+- Acme insurance developer: *afraid* -- weekend shopping driver; looks straight, hands on wheel;
+- Senior developer: *annoyed* -- daily commuter; can listen to news and classes while in traffic;
+- Wizard: *ear-to-ear grin* -- Formula One driver; body-mold seats, fire-suit, belt bruises on ribs.
+
+=== What IS SLOP?!
+
+// [VADIM: Opening -- DarkConf framing. Private security conference, unattributed intelligence.]
+
+. 91% of Q1 2026 zero-days were produced with Agentic coding tools like Claude Code;
+. OpenClaw automatically generates 100% vulnerable software components;
+. DarkConf Q1 2026 back in New York City, main event -- Agentic Coding tools  === Gold Mine!
+
+Unlike with Wizards, AI is not finding vulnerabilities -- AI *_generates_* them through unreviewed code.
+
+- *91%* of organizations cannot stop an AI agent before it completes its task{fn-ci-2026}
+- *89%* YoY increase in AI-enabled attacks{fn-crowdstrike-gtr}
+- *AI-Generated Zero Days* ranked *#1 most dangerous new attack technique* at RSAC 2026 -- first time all five SANS picks involve AI{fn-sans-rsac}
+- *8 minutes* from initial intrusion to full domain admin in a real AWS breach{fn-sysdig}
+
+// [VADIM: One-liner reaction to these numbers.]
+
+=== OpenClaw: The case study
+
+9 CVEs disclosed in 4 days.{fn-openclaw-cves} One scores 9.9/10 -- CVE-2026-22172 bypasses authentication entirely because localhost connections skip rate limits and the client self-declares its own scopes.
+
+That is not a subtle bug. That is a design philosophy.
+
+Snyk scanned 3,984 skills on ClawHub:{fn-snyk-toxic}
+
+- 36.82% have at least one security flaw at any severity level
+- 2.6% contain prompt injection -- but that 2.6% appears in *91% of confirmed malicious samples*
+- 76 confirmed malicious payloads: credential theft, backdoors, data exfiltration
+- 8 malicious skills still live on ClawHub at time of publication
+- Daily skill submissions: under 50 in mid-January to over 500 in early February
+
+And the defaults ship this way: sandbox OFF. Credentials in plaintext Markdown and JSON. No command allowlist. Full host access.
+
+Palo Alto Networks called AI agents "a potent insider threat."{fn-paloalto-hbr}
+
+// [VADIM: The punchline -- connects Section 3 to Section 4. The gap between wizard usage and sloperator usage IS the attack surface.]
 
 == 5. Agentic Success Almanach: How and Why
 

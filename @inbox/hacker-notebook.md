@@ -83,3 +83,66 @@ The METR study is gold. 16 experienced devs, randomized controlled trial, 19% SL
 
 ### Lesson
 LLM-speak autopilot kicks in at bookend prose (opening/closing sentences of a block) while structured content (bullet lists) stays clean. Watch the transitions.
+
+## Task 4: Research Post Conversion + Section 4 Research
+
+**Status:** Flags fixed, sent to Truthy for re-verification.
+
+### Research post created
+- Converted `inbox/golden-children-research.md` (markdown) to `site/_posts/2026-04-23-ai-maggedon-2026-research.adoc` (AsciiDoc)
+- Hidden blog post (hidden: true, search: false) for editorial transparency
+- Approved by Truthy-2 on first pass
+
+### Section 4 research (10 claims)
+- All 10 claims researched and verified against primary sources
+- Key correction: Snyk 36% is ANY security flaw, not prompt injection specifically (2.6%)
+- Added to research post with 9 subsections, source verification entries, and corrections log
+
+### Truthy-2 review: APPROVED with 3 FLAGS
+1. **Palo Alto quote inflated** -- fixed externally (Team Lead)
+2. **Gartner 40% no URL** -- fixed: added Gartner newsroom press release URL (Aug 2025)
+3. **Ransomware dwell time unsourced** -- fixed: Mandiant M-Trends 2025 (6 days) + Sophos 2025 (4 days) with URLs
+
+### Lesson
+The "file modified since read" error hit twice. External edits happening between my read and edit attempts. Always re-read immediately before editing shared files.
+
+## Task 5: Section 4 Draft for Vadim
+
+**Status:** Written, sent to Truthy for LLM-speak scan. Awaiting review.
+
+**File:** `inbox/section4-draft.md`
+
+### Structure
+- DarkConf opening with `[VADIM:]` marker (unattributed, his voice)
+- Stats cascade: 91% can't stop agents, 89% YoY increase, SANS #1 technique, 8-min breach
+- OpenClaw case study: 9 CVEs, Snyk corrected numbers, sandbox-off defaults
+- Punchline connector `[VADIM:]` marker (ties Section 3 wizards to Section 4 attack surface)
+
+### Decisions
+- Excluded Darktrace 92% (wrong stat for the TODO's claim; actual is 76%)
+- Corrected Snyk 36% conflation
+- Corrected Palo Alto quote inflation
+- Kept short per Team Lead's instruction
+
+## Task 6: Section 5 Draft for Vadim
+
+**Status:** Written, sent to Truthy for LLM-speak scan.
+
+**File:** `inbox/section5-draft.md`
+**Primary source:** `inbox/my-bff-claude.md`
+
+### Structure
+- Anchor concept: LLM calls are atomic and stateless
+- Tier 0: Naked model (wild vs civilized), enterprise $2M burn
+- Tier 1: Chatbot (service vs orchestrated sub-tiers)
+- Tier 2: Coding agent (architecture table: CC vs OpenCode vs Aider)
+- Tier 3: Autonomous agent (OpenClaw architecture, Heartbeat, skills)
+- Tradeoff table: tier / autonomy / oversight / risk surface
+- Gap thesis connecting back to sections 3 and 4
+
+### Excluded (noted for Vadim)
+- Model terminology deep-dive (quantization, reified)
+- Local self-hosting details
+- Yggdrasil vs OpenClaw comparison (promotional)
+- Infrastructure changes since 2024 (prompt caching, KV mgmt)
+- Convergence point (CC adding Tier 3, OpenClaw adding Tier 2)
