@@ -125,46 +125,47 @@ While Anthropic firetruck scares people with a bonfire, some nations sling fire 
 == 2. Stage Zero Monetization: Google Deterministic AI
 
 Do you remember when Zuk couldn't figure out how to monetize Facebook?
-A few months ago Google summoned their partner ecosystem to introduce "Deterministic AI"
--- I listen very carefully. Understood. Called people in business that implement AI.
+Recently Google summoned their partner ecosystem to introduce "Deterministic AI"
+-- I listened very carefully. Understood. Called people in business that implement AI.
 It all went right over their heads.
 
 Engineers began to make fun of "deterministic" with AI. Marketers struggled to spin product-market fit.
 Everyone got confused. And things got quiet again. But Google is the adult in the room.
 It isn't a new thing with them -- I remember this exact track in 2017 with my MATILDA framework.
 
-Amazon is trying to give us a practical democratization with Bedrock -- but pragmatic is not yet possible.
-Microsoft is still trying to sell "More Bugs for Less" model using proven "Don't look there."
-Companies like Palantir are trying to package yesterday's ideas into futuristic "Business all you need is here."
+Amazon is trying to give us a practical democratization with Bedrock -- but pragmatism is not yet possible.
+Microsoft is still trying to sell "more bugs for less" model using their proven "don't look there" defense.
+Companies like Palantir are trying to package yesterday's ideas into futuristic "business -- all you need is here."
 And niche gods like Celonis know they're disrupted but don't understand HOW.
 LLM shops only understand pushing a bigger model and hoping for users to discover monetization.
-Everybody panics. Everybody except Google! I explained this in {google-play}
--- three years later these wizards spin the same play on a much bigger stage.
+Everybody panics, except Google! I explained this in {google-play}
+-- three years later they're spinning the same play on a bigger stage.
 
-Three companies are attempting this pattern. Life behoves you to study it:
+Three companies attempted this pattern -- Apple, Salesforce, and Google. Life behooves you to study it:
 
-. *Attract the community* -- get makers, forget the corporate cogs.
-Open tools, open models, and open communities relax hackers simulating trust.
-When they come real assets emerge.
+. *Attract the community* -- get makers, forget the corporate cogs -- they'll move when hackers route the herds.
+Open tools, open models, and open communities relax hackers, stimulating trust.
+When hackers come, real assets emerge -- open source tooling, community IP, and ecosystem momentum.
 
-. *See the customer "whole life"* -- hackers see customers as animated assets:
-someone like "self," with endless opportunities to upsell to: home, work, social, personal, etc.
-Not as a transaction or a subscription in product marketplace.
-When the platform explicitly provides hackers with tools to grab the customer "whole"
+. *See the customer from the "whole life" perspective* -- hackers see customers as animated assets:
+someone like themselves, with endless opportunities to upsell to: home, work, social, personal, etc.
+Not as a transaction or a subscription in the product marketplace.
+When the platform explicitly provides hackers with tools to grab the customer "whole,"
 both the hacker and the platform turn into a medical device instead of just a trinket
--- all without any FDA regulation overhead and covertly.
+-- all the dependency and commitment without any FDA regulation overhead, all done covertly.
 
-. *"Give me your magic, I'll keep it for you"* -- have the wild hacker you've tamed in step 1 flip that plebs upsidedown:
-they already bring implied trust to your workplace
+. *"Give me your magic, I'll keep it for you"* -- have the wild hacker you've tamed in step 1 flip that pleb upside down for you:
+they already bring implied trust to the customer's workplace
 -- start by blurring that "assistant" concept to eventually absorb the customer's domain logic into your infrastructure,
 through progressive helpful upsells. Tada: drag and drop domains in action.
+Apple tried to match this play a decade ago with Siri. Notice the stamina and persistence.
 
 Apple has the "whole life" vision -- phone, watch, home, car, health -- but hoards.
-They don't invite the community to "build the customer out" together. Only 1 (one) trump card.
+They don't invite the community to "build the customer out" together. Only one trump card was even attempted.
 
-Salesforce tried _"give me your magic"_ with their CRM-as-platform pitch.
-And completely failed attracting the maker community. Salesforce developers are cogs, not hackers.
-Glorified "toolkit operators" won't _explore the customer._ Stuffy-corporate ecosystem gets 1 (one) trump card.
+Salesforce tried _"give-me-your-magic"_ game with their CRM-as-platform pitch.
+And completely failed to attract the maker community. Salesforce developers are cogs, not hackers.
+Glorified "toolkit operators" won't _explore the customer._ Stuffy-corporate ecosystem gets one trump card.
 
 Google nails all 3 (three) -- the deck minus hearts. And their execution is a thing of beauty.
 
@@ -175,13 +176,13 @@ That box pretends to be "deterministic" as it encodes your domain logic
 -- the edge cases, the regulatory constraints, the competitive secret sauce
 -- *_the Mojo_* your business experts spent decades learning.
 Your people tune it, configure it, pour their knowledge and time into it.
-And now Google has it -- safe keeping it _for you_, same as your photos, emails, home video, love letters, and wallet 😉.
+And now Google has it "keeping it safe" _for you_, same as your photos, emails, home video, love letters, and wallet 😉.
 And not just yours -- *_everyone's_* in your vertical!
 Google runs models across all of them, cross-pollinates insights no single company can match,
 and offers you "better solutions" back, _for *your* benefit_, just like it decorates your photos and videos.
 This deepens your dependency because the box now knows your business better than your team does.
 Your business identity is effectively consumed.
-The company's differentiation lives inside Google's ecosystem, and is powered by Google proprietary magic.
+The company's differentiation lives inside Google's ecosystem and is powered by Google proprietary magic.
 100% trunk-based-development,{fn-monorepo} and you are just data.{fn-data-flywheel}
 
 This is even before we think of that joker up the sleeve -- friction!
@@ -189,22 +190,35 @@ This is even before we think of that joker up the sleeve -- friction!
 Google's attitude to strategy is opposite to the "specialization" everyone else chose.
 Like France and Ukraine in section one above, they chose *_Total War_* -- not one tool or weapon,
 but how every tool fits into the *_entire ecosystem_*, ending up dominating the whole theater.
-Google is poised to dominate every aspect of your life -- home with internet, cell phone, home security, family management;
-business with drag and drop "we think for you" catering straight to lifer's mindset;
+Google is poised to dominate every aspect of your life -- home with internet,
+cell phone, home security, family management;
+business with drag and drop, "we think for you" catering straight to lifer's mindset;
 social life with AI-enabled search, integrated identity, services, and trinkets
 -- intentionally blurring the lines between home, work, business, personal, and public.
-And all of this is powered by exactly the same hyperscaler beast and exactly the same maker community they brought into the fold.
+And all of this is powered by exactly the same hyperscaler beast,
+exactly the same maker community they brought into the fold.
 
-Like Ukraine with Delta Google with Borg also has all the cards because it also chooses Total War.
+Like Ukraine with Delta, Google with Borg also has all the cards -- not distracted by temporary fluff.
 
-While the market plays HYPE, Google plays Python -- literally, slowly swallowing plebs whole. Time is on their side.
+While the market chases HYPE -- oh look shiny trinket, oh look another shiny -- Google patiently plays Python
+-- literally, slowly swallowing plebs whole undistracted by hype and noise.
 I've been running deep analytics on these wise folks for years now -- I'm not a fan, though my business is a Google business,
 `systems` domain and all -- I'm just in awe.
-Did you know that *everything* Google is, idea-to-wire, is defined in trunk code?{fn-lifecycle-as-code} GD Electric! Right in plain sight.
+Did you know that *everything* Google is, from idea to wire -- defined in trunk?{fn-lifecycle-as-code} Deus Ex Machina in plain sight.
 
-*_Learn from this._* Not because Google is your friend -- because this is what *_competent_* ecosystem strategy looks like.
+*_Learn from this._* Not because Google is your friend -- because this is what a *_competent_* ecosystem strategy looks like.
 Take something from their playbook and most importantly from their mindset, attitude to self and customer.
 Infrastructure IS the end-game -- monetization at the foundation.
+
+> It reminds me of the three-wheel static asphalt roller -- moves slowly,
+> rushing nowhere fast, and just rolls everything on its way flat into tarmac.
+> Before it is a turbulent uneven market, steaming and heaping.
+> Behind it -- a durable flat runway straight to its bank. +
+> -- Random Hacker.
+
+{nbsp}
+
+What is your take? Leave me a comment.
 
 == 3. The Golden Children -- What have they done
 
@@ -276,7 +290,7 @@ But the developers that do force themselves to master Claude Code save up to 4.4
 -- highest gains seen in independent data.footnote:dx[]
 
 Every independent study referenced here -- over thousands of teams and developers -- says *2X is an impossibility*!footnote:metr[]footnote:dx[]
-Any number over 1.5X means only one thing -- *SLOP*!
+Any number over 1.5X means only one thing -- *SLOP*! (And implies junior)
 
 === The Wizards ARE the Agentic Revolution
 
@@ -287,17 +301,19 @@ And, of course, we only measure the all in crowd.
 
 The usage tropes are as follows:
 
-- Extreme experimentation -- one hacker community's 3,000-developer metrics pool shows 50% of the interaction is experimentation.
-My Claude Code tells me I experiment 70% of the time.
-- Tinkering, decomposition, modification, and extension: This group never seems to be satisfied with the tool,
+- Extreme *experimentation* -- one hacker community's 3,000-developer metrics pool shows 50% of the interaction is experimentation.
+Claude Code tells me I experiment 70% of the time.
+
+- Tinkering, decomposition, modification, and *extension*: This group never seems to be satisfied with the tool,
 finding it incredibly promising and incredibly wanting at the same time.
 The wanting is primarily generated by the limitation of the model -- something a hacker can do little about,
-except to try another model -- that is how places like openrouter.ai came to be.
-The orchestration, choreography, and extension is something tight under the fingertips which is why we now have
-thousands of plugins, skills, mods, shims, and most importantly *forks*.
-- *NEVER* allow Claude Code *generate* ANY functional code, making stats collections useless.
+except to try another model -- that is how places like `openrouter.ai` came to be.
+The orchestration, choreography, and extension are something right under the fingertips, which is why we now have
+thousands of plugins, skills, mods, shims, and most importantly, *forks*.
 
-Now this last point is crucial to understand. I can explain why I never generate:
+- *NEVER* allow Claude to *generate* ANY functional code, making the stat-collection useless.
+
+Now this last point is _crucial to understand_. I can explain why I never let it generate:
 
 . Claude Code produces CRAP functional code 100% of the time, even for simple asks;
 . This CRAP code has my name to it thus generates immediate need for me to FIX it.
@@ -318,12 +334,14 @@ The 15-line detect-sdkman script was the closest I got to a keeper, and that too
 Everything else -- Kotlin, workflow logic, anything "creative" -- you rewrite. +
 Because you're faster, and because my version *_never matches how you think about the problem._*
 
-That is telling -- isn't it? -- "never matches how you think" +
+That is telling -- isn't it? -- "never matches how you think." +
 So is Claude Code useful to me? -- ABSOLUTELY! +
 The best collaborator I ever had!
 
-The difference is simple: young ones want Claude to think *_instead_* of them -- that is slop.
-Wizards want Claude to think *_with_* them -- wizard brings architecture, Claude brings breadth.
+The difference is straightforward: +
+young ones want Claude to think *_instead_* of them -- that is slop. +
+Wizards want Claude to think *_with_* them -- wizard brings architecture, +
+Claude brings breadth.
 
 #_AI makes dumb developers dumber and smart developers faster -- same tool, different hands._#
 
@@ -365,9 +383,49 @@ So, then, how do Wizards use Claude Code "purely for quality of life improvement
 - Migration planning: scope, risks, ordering
 - Dead code detection, unused import cleanup, naming consistency
 
-_This is *a lot* of help outside of thinking_ -- the complementing that produced the 40,700-star awesome-claude-code repository,{fn-awesome-cc}
+_This is *a lot* of help to hackers' thinking_ -- the complementing that produced the 40,700-star awesome-claude-code repository,{fn-awesome-cc}
 16,670 MCP servers,{fn-mcp-registry} 400,000 shared skills,{fn-skillkit} and a sprawl of plugins, mods, and forks
 -- built by wizards working with Claude, not despite it.
+
+Posers, of course, are all over these sources. This is good, people take interest and try -- the way hackers are made in the first place.
+A lot of young people try, even very young, which is great because we may get a new generation of hackers out of this evolution.
+Right now the concentration of skilled developers is very low in the United States
+-- about 1/10 as compared to Prague, the previous capital of the Hacker Culture,
+or Cluj-Napoca, the current capital of the Hacker Culture and the new Silicon Valley of the EU.
+It's been hard to believe that the Hacker Culture even comes from Boston, Massachusetts.
+Some places are extremely underrepresented, like India, recently suffering from engineering competence crisis.
+Other places like Vietnam and the Philippines come as a welcome positive surprise.
+But the heaviest hitter on the globe is China
+-- the hacker movement in China today exceeds all the other places put together.
+
+Because of such high interest worldwide, the average forking is 10x; the imitations make up another 10X;
+thus taking an extreme case scenario and dividing by ~200, we should get the number of wizard repos.
+The conventional expectation is thus a hundred wizard repos
+-- consistent with tracked distribution for the last 15 years.
+My own catalog is ~240 validated and curated wizard repos
+-- a 2.5 uptick in the interest of gifted and experienced software engineers.
+Such a hefty uptick has never been recorded before.
+
+The most prolific time in the past was the mobile app revolution,
+which produced about ~50 wizard repos in the first 3 years.
+These shared sources bootstrapped what we now call the last OSS revolution and culminated into technologies like Flutter,
+Couchbase, and Kotlin. Google, from the previous chapter, was the tarmac right beneath it all with the OSS Android ADK,
+Linux marriage, JetBrains partnership, Kotlin as the primary ecosystem commitment, and the Android Studio.
+Now we have five times that number of solid sources just in the last 6 months.
+And Google is not curating this current OSS ecosystem -- it is all "enterprise market" by Google this time around.
+It's worth keeping this distinction in mind considering the previous chapter.
+And I hope my reader understands the implications of this phenomenon -- the technology is self-enhancing:
+every new enablement enables the next one better; and the ecosystem is fully open and untethered.
+Whilst Anthropic is the fan-favorite here in the USA with developers able to afford $200 per month,
+the rest of the world is also doing rather well with OpenCode, repointed Claude Code, Ollama, and openrouter.
+Unlike with mobile, agentic costs money, perhaps explaining places like India falling out,
+and the paying developer seems to be a little better equipped and experienced than before.
+So this growth maps very tightly to the better skilled developer and this trend is likely here to stay.
+
+Current data does not argue "developers will lose jobs" -- it argues less capable developers will lose jobs.
+Analysis points at the https://en.wikipedia.org/wiki/Jevons_paradox[Jevons Paradox,window=_blank]
+-- more developers will be needed overall, just a different kind of developers to what the market demanded recently;
+now we will demand flexible people who like to learn new skills faster as opposed to cheaper people who parrot a single skillset.
 
 *link:/riddle-me-this/reflections/2026/04/23/ai-maggedon-2026-research.html[Full research stash and verified sources for this section,window=_blank]*
 

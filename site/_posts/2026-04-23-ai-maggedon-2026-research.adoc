@@ -337,7 +337,7 @@ Anthropic's own employees:
 - A reviewer takes significantly longer to review and correct a PR than to generate one with AI (the "12x" figure is from a dev.to opinion piece applying Brandolini's Law metaphorically -- directionally correct but not measured data)
 - CSA's 2026 state-of-cloud report names AI slop a first-tier supply chain risk
 - Codeberg hosts an "open-slopware" registry tracking FOSS projects tainted by LLM developers
-- *Palo Alto Networks*: called unreviewed AI code "potential biggest insider threat of 2026"
+- *Palo Alto Networks*: called AI agents "a potent insider threat" (sponsored HBR content, not independent editorial)
 - A team shipping 100 AI-generated functions per sprint is statistically shipping 45 with OWASP Top 10 vulnerabilities
 
 - Sources: https://www.techtarget.com/searchcio/feature/AI-Slop-The-hidden-enterprise-risk-CIOs-cant-ignore, https://codeberg.org/small-hack/open-slopware, https://dontbeasloperator.com/

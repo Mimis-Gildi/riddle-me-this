@@ -1,6 +1,6 @@
 # Hacker Notebook
 
-Session: 2026-04-24
+Session: 2026-04-25
 Branch: 372-surviving-agentic-in-plebs
 
 ## Task 1: LinkedIn Synopsis Post
@@ -124,6 +124,29 @@ The "file modified since read" error hit twice. External edits happening between
 - Corrected Palo Alto quote inflation
 - Kept short per Team Lead's instruction
 
+## Task 7: Section 2 LLM Tortured Language Scan
+
+**Status:** Complete. Sent to Team Lead.
+
+**Scope:** Lines 125-208, section "2. Stage Zero Monetization: Google Deterministic AI"
+
+### Findings
+
+Section is very clean. Vadim's authentic voice throughout -- em-dashes, hacker vocabulary, direct confrontation, real anecdotes (MATILDA 2017, partner call), opinions stated flat, specific technical terms (DDD Aggregate, trunk-based-development). Only 1 low-severity flag identified.
+
+**Flag 1 (LOW):** Line 200, "Time is on their side." -- stock cliche after an otherwise sharp metaphor. Not technically LLM-speak but worth noting as a weaker close.
+
+**Cleared items (considered and rejected):**
+- Line 175-176 triple list ("edge cases, regulatory constraints, competitive secret sauce") -- concrete enumeration, not empty triple-beat
+- Line 169 "thing of beauty" -- opinion stated flat per style guide
+- Line 205 "Not because X -- because Y" -- explicitly listed as Vadim signature pattern in style guide
+- Line 171 "almighty" -- sarcastic/ironic, hacker humor
+- Line 138 "futuristic" -- ironic contrast with "yesterday's ideas"
+- Lines 192-195 semicolon list -- Vadim's documented thought-unit delimiter style
+
+### Assessment
+This section reads as Vadim writing at full power. The voice is consistent, the argument is specific, the technical knowledge is real (DDD, trunk-based, Borg), and the humor is authentic (Python the snake, the wink emoji on line 178). No graduation-speech cadence, no motivational framing, no reversible dualities. Clean.
+
 ## Task 6: Section 5 Draft for Vadim
 
 **Status:** Written, sent to Truthy for LLM-speak scan.
@@ -146,3 +169,50 @@ The "file modified since read" error hit twice. External edits happening between
 - Yggdrasil vs OpenClaw comparison (promotional)
 - Infrastructure changes since 2024 (prompt caching, KV mgmt)
 - Convergence point (CC adding Tier 3, OpenClaw adding Tier 2)
+
+## Task 8: Truthy Review Fixes (Section 4 + Section 5)
+
+**Status:** Fixed and sent for re-verification.
+
+### Section 4 fixes (CRITICAL)
+1. **7 missing footnote declarations** -- wrote to `inbox/section4-footnotes-for-article.md` for team-lead to insert into article header after line 37. All 7 URLs sourced from research post.
+2. **Typo fix** -- line 423 `{2fn-ci-2026}` → `{fn-ci-2026}` (stray `2`). Also in deliverable for team-lead.
+3. **Research post Palo Alto quote** -- fixed line 340: "potential biggest" → "a potent insider threat"
+4. **my-bff-claude.md Snyk stat** -- fixed 3 instances: line 311, 444, 572-573. All now correctly say "36.82% any security flaw; 2.6% prompt injection"
+5. **my-bff-claude.md Palo Alto** -- fixed line 312
+6. **golden-children-research.md Palo Alto** -- fixed line 262
+7. **Synopsis post** -- fixed line 37-38 (both Snyk stat and Palo Alto quote)
+
+### Section 5 fixes
+1. **FLAG 1** -- `section5-draft.md` line 94: "40+ model providers" → "12+ model providers" (research stash says 12+ API providers, 40+ is plugin configs)
+2. **FLAG 2** -- `section5-draft.md` line 70: "98.4% runs on your machine" → "Nearly all of it runs on your machine" (no derivation for specific percentage)
+
+### Verification
+- Grep sweep confirmed zero stale "potential biggest insider" or "36% prompt injection" references in content files
+- All remaining hits are meta-commentary in notebooks/draft notes (correct)
+
+## Task 9: Section 2 Diligent Critique
+
+**Status:** Sent to team-lead for routing to Truthy.
+
+### Findings (12 total)
+- **CRITICAL (1):** Line 161 "Apple tried to match this play a decade ago with Alexa" -- Alexa is Amazon's product, not Apple's
+- **HIGH (3):** Line 221 trailing validation question; line 147 missing comma (amphiboly); line 144 "three companies" unnamed
+- **MEDIUM (4):** Line 129 tense mismatch; lines 141-142 dangling modifier; line 203 "fluke" unclear; line 155 "subtly and covertly" tautological + contradicts "in plain sight"
+- **LOW (4):** Line 148 vague "real assets"; lines 128-129 unsourced event; lines 213-217 ambiguous attribution; line 207 Deus Ex Machina usage
+
+### Cleared (7 items)
+Considered and rejected as false flags: line 127 rhetorical question, line 170 "thing of beauty", line 172 "almighty", line 191 contrast structure, line 209 "Not because... -- because...", semicolon list, wink emoji. All confirmed as Vadim's authentic voice per style guide.
+
+### Assessment
+The DDD Aggregate → dependency → identity consumption argument (lines 172-186) is the strongest writing in the article. Section reads as Vadim at full power except for the Apple/Alexa error and a few grammar issues.
+
+## Task 10: "Random Hacker" Attribution Research
+
+**Status:** COMPLETE. Sent to team-lead.
+
+### Finding
+"Random Hacker" (lines 213-217) is a well-established hacker culture convention from the Jargon File. "J. Random Hacker" = composite archetype of any typical hacker. Appendix B of the Jargon File is the canonical source. Attribution is culturally correct for our audience.
+
+### Note
+catb.org had TLS cert error; confirmed through Wikipedia and multiple secondary sources all pointing to Jargon File.

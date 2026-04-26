@@ -34,8 +34,8 @@ Same play as 2017. Bigger stage. You're just data. +
 What agentic collaboration looks like when competent teams ship it -- and why most can't follow.
 
 *The killing floor.*
-OpenClaw: 9 CVEs in 4 days, 36% of ClawHub skills carry prompt injection.
-Palo Alto Networks: "potential biggest insider threat of 2026."
+OpenClaw: 9 CVEs in 4 days, 36.82% of ClawHub skills have security flaws.
+Palo Alto Networks: AI agents are "a potent insider threat."
 
 *The field primer.*
 Naked model to autonomous agent -- most enterprises ship Tier 0 while startups build products in weeks at Tier 3.

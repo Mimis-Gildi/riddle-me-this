@@ -67,7 +67,7 @@ What Tier 2 adds on top of Tier 1:
 | Architecture | What It Means
 
 | Claude Code
-| Thick-client / thin-server. 98.4% runs on your machine. Bun runtime. 512K+ lines TypeScript. 6-stage ReAct pipeline with 9 exit paths. 5-layer context compaction. Streaming parallel tool execution. 23 Bash security checks. Anti-distillation. OS-level sandboxing.{fn-cc-leak}
+| Thick-client / thin-server. Nearly all of it runs on your machine. Bun runtime. 512K+ lines TypeScript. 6-stage ReAct pipeline with 9 exit paths. 5-layer context compaction. Streaming parallel tool execution. 23 Bash security checks. Anti-distillation. OS-level sandboxing.{fn-cc-leak}
 
 | OpenCode
 | Client/server separation. LSP integration for semantic code understanding. 148K stars. MIT license.{fn-opencode}
@@ -91,7 +91,7 @@ What Tier 3 adds:
 - *Always-on.* Background daemon on WebSocket, not a session you open and close.
 - *Proactive.* Heartbeat every 30 minutes -- evaluates a task checklist and acts WITHOUT human prompting.
 - *Messaging-native.* 24+ channels: WhatsApp, Telegram, Slack, Discord, Signal, iMessage.
-- *Multi-provider.* 40+ model providers with automatic failover. Run Anthropic, switch to OpenAI, fall back to local Ollama.
+- *Multi-provider.* 12+ model providers with automatic failover. Run Anthropic, switch to OpenAI, fall back to local Ollama.
 - *Skill marketplace.* 44,000+ skills on ClawHub. Community-submitted. Unreviewed.
 
 The architecture: Gateway routes messages from any channel -> Brain (ReAct loop) reasons and acts -> Memory persists in Markdown + SQLite -> Skills load on demand -> Heartbeat fires autonomously.

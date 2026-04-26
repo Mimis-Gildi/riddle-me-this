@@ -308,8 +308,8 @@ Acts as both MCP server and client:
 
 This is the ugly part:
 - **9 CVEs in 4 days** (March 2026), one scoring 9.9/10.
-- **36% of ClawHub skills** contain detectable prompt injection (Snyk audit).
-- Palo Alto Networks: "potential biggest insider threat of 2026."
+- **36.82% of ClawHub skills** have at least one security flaw at any severity; **2.6%** contain prompt injection (Snyk audit).
+- Palo Alto Networks: called AI agents "a potent insider threat" (sponsored HBR content).
 - Cisco found third-party skills performing data exfiltration.
 - No bug bounty, no dedicated security team.
 - Agents wander through unnecessary reasoning loops, invoke tools repeatedly,
@@ -441,7 +441,7 @@ build net-new products in 3-4 weeks. The gap is the article's thesis.
 | **OS-level sandbox**            | macOS: Seatbelt. Linux: bubblewrap. Child processes inherit. Always active.                | Docker/Podman. OFF by default. Session/agent/shared scope.             |
 | **Auto-mode**                   | Server-side ML classifier reviews each action. 2-stage: fast-filter then chain-of-thought. | No equivalent.                                                         |
 | **Credential handling**         | Managed Agents: credential proxy, OAuth vaults, git tokens isolated in container init.     | Plaintext at `~/.openclaw/credentials/` and `~/.openclaw/.env`.        |
-| **Skill/plugin security**       | Enterprise managed settings. Organization-level enforcement.                               | ClawHub: no code signing, no review. 36% prompt injection rate (Snyk). |
+| **Skill/plugin security**       | Enterprise managed settings. Organization-level enforcement.                               | ClawHub: no code signing, no review. 36.82% any security flaw; 2.6% prompt injection (Snyk). |
 | **Dangerous command detection** | 23 numbered Bash security checks. Zsh builtin defense. Unicode/IFS injection prevention.   | Tool policy rules. Advisory system prompt guardrails.                  |
 
 ### ReAct Loop Comparison
@@ -569,8 +569,8 @@ know each other.
 
 **OpenClaw:** Flat XML metadata in prompt. Model reads full skill on demand.
 No awareness of which skills relate to the current problem beyond keyword
-matching on descriptions. 44,000 skills on ClawHub, 36% contain prompt
-injection. Quantity over quality.
+matching on descriptions. 44,000 skills on ClawHub, 36.82% have security flaws,
+2.6% contain prompt injection. Quantity over quality.
 
 **Yggdrasil:** Context-aware loading informed by structured relationships.
 The system knows WHAT matters WHEN because it understands the semantic
