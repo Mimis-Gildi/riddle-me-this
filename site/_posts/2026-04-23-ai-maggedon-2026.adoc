@@ -303,7 +303,7 @@ What is your take? Leave me a comment.
 *_The world displays a WRONG understanding of HOW developers use AI coding tools!_*
 
 Recently one manager told me that their team is a 5X now
--- not only is that a physical impossibility, the highly increased closing rate means the team is in a *bad place*.
+-- not only is that statistically impossible at the team or sprint level, the highly increased closing rate means the team is in a *bad place*.
 Let's understand this:
 
 [cols="1,2,3",options="header"]
@@ -342,7 +342,7 @@ Impact
     DEGRADATION
 ----
 
-What does this mean? Section 5 explains the causes of this outcome
+What does this mean? <<sec-primer,Section 5>> explains the causes of this outcome
 -- it has to do with both the abilities of the model and the competence of the developer.
 In short, here is the nature of the model's abilities:
 
@@ -362,11 +362,11 @@ And it excels at checking the existing codebase for a full spectrum of implement
 but not architectural or design problems, except for well-defined scenarios like the design patterns violations.
 This is a strong suit and valuable help welcomed by most developers.
 
-*Junior developers:* Claude Code is smarter and will generate vast spans of code juniors like but cannot evaluate.
+*Junior developers:* Claude Code is smarter and will generate vast spans of code that juniors like but cannot evaluate.
 The code looks good, seems better than such a developer would write -- *slop*.
 *This group constitutes the _most enthusiastic_ OpenClaw users, by the way!*
 
-*Mid-level developer (3-5 years most companies):* Claude has breadth;
+*Mid-level developer (3-5 years at most companies):* Claude has breadth;
 tug of war ensues on topics that the developer does know something about; trust erodes and progress slows because of it.
 Juniors were not able to call BS on Claude. These developers can.
 *_The developer is forced to learn_* attempting to argue their case with Claude, and it is a net-positive outcome for humans.
@@ -398,7 +398,7 @@ And, of course, we only measure the all in crowd.
 
 The usage tropes are as follows:
 
-- Extreme *experimentation* -- one hacker community's 3,000-developer metrics pool shows 50% of the interaction is experimentation.
+- Extreme *experimentation* -- the Northern Community of Founders (formed 1994 Philadelphia, migrated to Quebec 2010s), a 3,000-developer metrics pool, shows 50% of the interaction is experimentation.
 Claude Code tells me I experiment 70% of the time.
 
 - Tinkering, decomposition, modification, and *extension*: This group never seems to be satisfied with the tool,
@@ -421,7 +421,7 @@ This is acceptable with human collaborators -- we both learn from the experience
 But having a tool generate the code that I will always throw away is annoying to me.
 My Claude and I ran an experiment for a few days and measured my performance alone versus together.
 We have found that if I let Claude Code generate my functional code first, I am 3 times SLOWER than coding alone
-(29% average speed).
+(29% of solo speed).
 
 From my own beloved Claude Code::
 `Claude`:
@@ -501,23 +501,23 @@ But the heaviest hitter on the globe is China
 -- the hacker movement in China today exceeds all the other places put together.{fn-china-oss}
 
 Because of such high interest worldwide, the average forking is 10x; the imitations make up another 10X;
-thus taking an extreme case scenario and dividing by ~200, we should get the number of wizard repos.
+plus a traditional 2x noise buffer to keep the estimate conservative -- divide observed totals by ~200 to get wizard repos.
 The conventional expectation in my tracking over the last 15 years is about a hundred wizard repos at any given time.
 My current catalog is ~240 validated and curated wizard repos
 -- a 2.5X jump in the interest of the gifted and experienced software engineers.
 *I have not seen a jump like this in 15 years of curation.*
 
 The most prolific era in the past was the mobile app revolution,
-which produced about ~50 wizard repos in my catalog over the first 3 years.
+which produced about 50 wizard repos in my catalog over the first 3 years.
 These shared sources bootstrapped what we now call the last OSS revolution and culminated in technologies like Flutter,
 Couchbase, and Kotlin. Google, from the previous chapter, was the tarmac right beneath it all with the OSS Android ADK,
 Linux marriage, JetBrains partnership, Kotlin as the primary ecosystem commitment, and the Android Studio.
 Now we have five times that number of solid sources just in the last 6 months.
 And Google is not curating this current OSS ecosystem -- it is all "enterprise market" by Google this time around.
-It's worth keeping this distinction in mind considering the previous chapter.
+It's worth keeping this distinction in mind considering <<sec-google,the previous chapter>>.
 And I hope my reader understands the implications of this phenomenon -- the technology is self-enhancing:
 every new enhancement enables the next one better; and the ecosystem is fully open and untethered.
-Whilst Anthropic is the fan-favorite here in the USA with developers able to afford $200 per month,
+Whilst Anthropic is the favorite here in the USA with developers able to afford $200 per month,
 the rest of the world is also doing rather well with OpenCode, repointed Claude Code, Ollama, and openrouter.
 Unlike with mobile, agentic costs money, perhaps explaining places like India falling out,
 and the paying developer seems to be a little better equipped and experienced than before.
