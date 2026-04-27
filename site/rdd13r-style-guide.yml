@@ -1,38 +1,6 @@
-# rdd13r Writing Style Guide
-# For AI assistants and collaborators helping with blog content
-# Last updated: 2026-01-21
-
-voice:
-  summary: >
-    A hacker talking to you over coffee, sometimes interrupting himself. 
-    Direct, confrontational, technically grounded, personally invested.
-    The absolute focus is on accuracy and correctness of all statements.
-    Each work produced is a single clean argument regardless of topic.
-    The argument in any body of work thus must always be representable
-    by symbolic formula of inductive and deductive reasoning (not shown).
-    The speaking hacker is a maker, a doer, a problem solver, and crucially,
-    always a scientist delighting readers with depth of knowledge and elegance.
-  
-
-  tone:
-    - "Conversational but not casual -- there's always substance"
-    - "Confrontational edge -- challenges the reader to think"
-    - "Personally invested -- shares real experiences, real opinions"
-    - "Technically credible -- uses ONLY proper terms, explains when needed"
-    - "Honest to a fault -- includes 'Full Disclosure' sections about biases"
+# Writing Style Reference
 
 sentence_patterns:
-  fragments:
-    description: "Deliberate sentence fragments for emphasis and punch"
-    examples:
-      - "Not a metaphor."
-      - "Limited."
-      - "Better."
-      - "Just work."
-      - "Don't do that."
-      - "Hours."
-    usage: "End sections, emphasize points, create rhythm"
-
   em_dashes:
     description: "Em-dashes everywhere -- for interjections, asides, and pivots"
     examples:
@@ -42,244 +10,11 @@ sentence_patterns:
     usage: "Preferred over parentheses, commas, or colons for insertions"
     reason: "In every rendition method, such as HTML or PDF, double-dashes are converted to a proper long dash; reader never sees the source document."
 
-  rhetorical_questions:
-    description: "Questions that challenge or pivot the narrative"
-    examples:
-      - "See where I am going with this?"
-      - "What's your excuse?"
-      - "Why would they -- they're living it."
-      - "Instead? Fear."
-      - "What do you do with that?!"
-    usage: "Engage reader, transition between ideas, challenge assumptions"
-
-  sentence_starters:
-    description: "Frequently starts sentences with conjunctions but only when continuation of flow is necessary"
-    patterns:
-      - "And":
-          reason: Very common because truth-functionally sound
-          alternative: No conjunction used
-      - "But":
-          reason: Avoided when possible because not logically sound - i.e., ignore everything before the <but>.
-          alternative: Use a semicolon or period
-      - "Yet":
-          reason: Used sparingly when contrasting, logical expansion, or when emphasizing a point
-          alternative: Drop, use a semicolon, or a period
-      - "So":
-          reason: Cheap flow connective in colloquial passages or plebs speak
-          alternative: Drop, use a semicolon, or a period
-      - "Or":
-          reason: Used sparingly to connect ideas or options when negating one is acceptable as only one needs to be true
-          alternative: Use a semicolon, period, or best avoid
-    example: "And now he feels dread because he thinks he knows what's coming."
-    explanation: The <and> logically connects to the previous statement requiring both to be true
-
-  direct_address:
-    description: "Speaks directly to the reader"
-    patterns:
-      - "Let me give you..."
-      - "Let me explain..."
-      - "Here's what..."
-      - "Here's the thing:"
-      - "Now consider:"
-      - "Now watch..."
-    usage: "Creates intimacy, establishes authority"
-    explanation: Direct address is used to engage the reader and establish a personal connection, making the content more relatable and authoritative. And, most importantly, recognizing reader's agency must be established in a clear and direct way.
-
-structure:
-  sections:
-    format: "AsciiDoc == headers for major topics"
-    naming: "Short, punchy section names: 'The Trap', 'The Magic', 'Go'"
-
-  paragraphs:
-    length: "Short. Often single sentences standing alone."
-    transitions: "Abrupt is fine. The reader can keep up."
-
-  lists:
-    style: "Bullet or numbered, with em-dash explanations"
-    example: |
-      * https://opencode.ai/[OpenCode] -- my daily driver. Fully open.
-      * https://replit.com[Replit] -- solid alternative.
-
-  endings:
-    description: "Punchy, often imperative or a pointed question"
-    examples:
-      - "Choose accordingly."
-      - "Use it!"
-      - "Which one are you standing on?"
-      - "Now *_that_* is fun."
-      - "The market won't wait for companies to figure this out twice."
-
-  horizontal_rules:
-    info: "''' used to separate major thought blocks or before postscripts, not the markdown separator ---"
-    usage: Absolutely minimal usage, only when necessary and can be argued this way.
-    explanation: Horizontal rules are already properly inserted by rendition tools, such as at section breaks, making them polluting when added manually.
-    test: Think of the ruler as "FULL STOP" uttered aloud. Is it necessary or even helping? If the answer is yes then consider adding, otherwise always skip.
-
-emphasis:
-  bold_italic:
-    syntax: "*_text_*"
-    usage: "Key declarations, turning points"
-    examples:
-      - "*_changes everything_*"
-      - "*_that_* is fun"
-      - "*_Use it!_*"
-
-  bold:
-    syntax: "*text*"
-    usage: "Important terms, section emphasis"
-    examples:
-      - "*The secret:*"
-      - "*Here's the brutal math:*"
-
-  italic:
-    syntax: "_text_"
-    usage: "Titles, foreign phrases, subtle emphasis, internal thoughts or thematic plugs of expansions"
-    explanation: One example is an <explanation> in italics which follows a <statement:> in bold, structurally creating a logical tuple in a set.
-
-personal_elements:
-  anecdotes:
-    description: "Weaves in real people and situations"
-    examples:
-      - "My Qanon neighbor is a big shot in a personal wealth company IT..."
-      - "I see someone I'd once done solution architecture with post..."
-      - "This weekend I presented autonomous competing agent teams..."
-    usage: "Ground abstract points in concrete reality"
-    explanation: Verifiable real events to be shown as instance examples of the concepts, especially when it is root-cause-revealing.
-
-  opinions:
-    description: "States opinions plainly, doesn't hedge, delineates clearly when it is just an opinion versus disclosure versus theorem or provable fact"
-    examples:
-      - "I don't trust Google."
-      - "I am not a fan of Google. Or anyone for that matter. Except maybe JetBrains, a little."
-      - "Boring architectures print money. Exciting architectures print resumes."
-
-  disclosures:
-    description: "Full Disclosure sections about biases and limitations"
-    example: |
-      == Full Disclosure
-      I am not a fan of Google.
-      Or anyone for that matter.
-      ...
-      So consider my bias in my final advice.
-    caution: It is not necessary to advertise <Disclosure> sections when obvious. Importantly, always check to make sure that disclosure is not passed as a natural fact rather than personal preference or an opinion.
-
-  self_reference:
-    patterns:
-      - "yours truly, `rdd13r`"
-      - "I personally have..."
-      - "Having decades of... to my name"
-
-informal_language:
-  contractions: Often uses contractions (don't, won't, it's, they're) for cadence and flow. Expands when emphasis is beneficial.
-  colloquialisms:
-    - "darn thing"
-    - "gotta"
-    - "thang" # rare, for effect
-    - "Hmmm..."
-    - "Bummer"
-  interjections:
-    - "Hmmm..."
-    - "Right?"
-    - "See?"
-  cultural:
-    - Hacker Scene Terminology:
-        - examples:
-          - "hacker": someone who enjoys tinkering with technology
-          - "hacking": the act of exploring and experimenting with technology
-          - "hacker ethic": the belief that technology should be shared and accessible to all
-        - classic terminology URL: http://www.catb.org/jargon/html/index.html
-        - modern terminology reference:
-            - poser:
-                - classic meaning URL: http://www.catb.org/jargon/html/P/poser.html
-                - current meaning: "political developer or IT manager no longer skilled but fitting well in the lazy corporate culture"
-            - cog:
-                - current meaning:
-                  - "an obedient developer eager to please but not competent or learned on their own"
-                  - "an unimaginative office worker"
-                  - "a reliable coder only knowing one application, usually outdated or deprecated"
-                - variants:
-                    - knob: "lowest level manager of cogs, a cog themselves"
-                    - shaft: "cog that is not yet a knob themselves, but aggravates other cogs to get the job done; a good knob is riding at least one shaft"
-                    - peg: "a scapegoat cog, or a sacrificial cog to let other cogs work in peace without end-to-end meetings"
-                    - actuator: "a very classy knob"
-            - brick:
-                - classic meaning URL: http://www.catb.org/jargon/html/B/brick.html
-                - current meaning:
-                  - "a monolithic system that is difficult to change or extend, usually tiered"
-                  - "three-tiered-architecture, in particular database - service - presentation"
-            - mortar:
-                - classic meaning: there is no single clear classic meaning to this term
-                - current meaning:
-                  - "a glue that holds bricks together, most often ESB, and can also be some ancient enterprise messaging service, such as from IBM, and especially with ACORD and CDXF (files in messages)"
-            - rope:
-                - classic meaning: in the old times crackers not hackers have concepts like silk rope which is explosive code or its trigger silently embedded into an application for later exploitation
-                - current meaning:
-                  - "writing undocumented crap code to create job security through endless bugfixes; codebase is rope, practice is roping"
-                  - "relates to the next term, hinder, which often originates from roping"
-            - hinder (hin-der):
-                - classic meaning: butt, can be pronounced differently than today; deprecated
-                - current meaning:
-                  - "a piece of code, software, or module that slows down progress by creating obstacles, often used by managers to keep developers busy with trivial tasks, bust most often just a crap-design component"
-                  - "relates to the previous term, rope, which often originates from hindering, especially when cogs attach themselves to such components"
-            - scoop; to scoop (as in litter); litter (North-East USA):
-                - classic meaning: the old expression is from American journalism and is repurposed by hackers in a darker sense yet somehow still keeping the meaning
-                - current meaning:
-                  - scoop (noun): "tribal knowledge, especially when created by roping IT assets"
-                  - scoop (verb): "to search for or discover tribal knowledge"
-                  - litter (noun), litterbox: "a repository or a cache of tribal knowledge; most often it is in a form of a local file cogs collect and keep in secret, then pass around during <KT> (knowledge transfer) as a favor; said KT is given or taken (up the fanny?)"
-                  - litter (noun): a scoop or several
-                  - litter (verb): "to beat litter out of a team, as to make it public knowledge, as in Digital Transformation (DX) when creating a Community of Practice (CoP) or modernizing a laggard"
-            - fable:
-                - classic meaning: not known
-                - current meaning:
-                  - "a corporate story that is not true, but is told to teach a lesson or to amuse into obedience; most often by knobs"
-                  - "in North-East USA used as a synonym for knob which sounds more pleasing to some"
-                  - Fanny: "a name give to a female fable when used as a synonym to knob; like Karen"
-                  - Freddy: "a male Fanny"
-            - local and tourist:
-                - classical meaning: not known
-                - current meaning:
-                  - local: "a cog that belong on a team, permanently bolted in cog with many ropes, usually skeptical and not accepting of new knowledge, methods, and tools; usually comes with a lot of litter"
-                  - tourist: "a coach or a transformation engineer/architect brought in to upskill or modernize a team of locals; actual in-field example: you are a tourist here but we're locals like the brick and mortar"
-
 technical_writing:
   terms: "Uses proper technical terms without apology"
   explanations: "Explains when necessary, but doesn't over-explain"
-  links: "Frequently links to own previous articles and external reference and sources"
+  links: "Frequently links to own previous articles and external references and sources"
   code_references: "Uses backticks for code/technical terms: `adoc`, `trunk`"
-
-bad_habits:
-  description: "Patterns that emerge when frustrated, usually with bad LLM behavior and hallucinations, or rushed by LLM failing to follow instructions"
-
-  frustration_leakage:
-    description: "Negative mood bleeds into word choice"
-    examples:
-      - "don't waste your time":  dismissive but can be justified to a very particular audience, like the Scene
-      - "lame passive-resistant liar": harsh, but acceptable in few contexts
-      - "Bummer, isn't it?": sarcastic, appropriate wherever dark hacker humor is appropriate
-      - "You are welcome!": cocky when used as closing, especially when writing to posers
-    fix:
-    - "Review for tone when not in positive headspace"
-    - timeout to fix Claude
-
-  repetition:
-    description: "Same word or phrase appears multiple times"
-    examples:
-      - "'First' appearing twice in different sections"
-      - "'don't waste your time' repeated"
-    fix: "Search for repeated key phrases before publishing"
-
-  over_explaining:
-    description: "Sometimes belabors a point that's already made"
-    context: happens often when writing to posers on concepts not readily available elsewhere
-    fix: "If you've said it clearly once, move on, or rewrite even clearer"
-
-  cockiness:
-    description: "Confidence can tip into arrogance"
-    examples:
-      - "You are welcome!" as a closing
-      - Implying readers should be grateful
-    fix: "End with insight or challenge, not self-congratulation"
 
 document_patterns:
   front_matter:
@@ -298,42 +33,22 @@ document_patterns:
     description: "Defines AsciiDoc attributes for repeated links, often for single links as well if the string is long"
     example: |
       :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
-      :ai-stages-url: https://mimis-gildi.github.io/riddle-me-this/...
+      :ai-stages-url: link:/riddle-me-this/...
+      :ai-stages: {ai-stages-url}[AI Stages Stuff,window=_blank]
 
   images:
     pattern: "image::/riddle-me-this/assets/images/filename.png[alt text]"
     captions: "Uses . prefix for figure captions"
 
-  postscripts:
-    description: "Often ends with P.S. or italicized afterthought"
-    example: |
-      '''
-      _P.S. So, this is a bit of *the last bus* scenario..._
-
-signatures:
-  phrases:
-    - "Choose accordingly."
-    - "Use it!"
-    - "The market won't wait."
-    - "Which one are you standing on?"
-    - "Know thyself!"
-    - "Just get the darn thing sorted."
-
-  patterns:
-    - "The question isn't X. It's Y."
-    - "Not because of X -- because of Y."
-    - "Same X. Different Y. Different Z."
-    - "This isn't X. It's Y."
-
 argument_forms:
   description: >
     Argument forms are the logical structures underlying persuasion.
-    rdd13r's writing prioritizes forms that are truth-functionally valid --
+    Strong writing prioritizes forms that are truth-functionally valid --
     conclusions follow necessarily from premises. Marketing often uses
     psychologically effective but logically weaker forms.
 
   # ============================================
-  # FORMS ACTIVELY USED BY rdd13r
+  # FORMS ACTIVELY USED
   # ============================================
 
   used:
@@ -363,13 +78,11 @@ argument_forms:
 
     case_analysis:
       structure: "Either A, B, or C. In case A... In case B... In case C... Therefore in all cases, Q."
-      example: "Whether you're a senior dev, junior dev, or non-coder -- agentic AI is your path forward."
       usage: "Covers all audience segments, anticipates objections."
       strength: "Valid if cases are exhaustive. Shows thoroughness."
 
     inductive_generalization:
       structure: "Instance 1 has property P. Instance 2 has property P. ... Therefore all X have property P."
-      example: "This team transformed in 4 days. That team transformed in 3 weeks. Teams transform with the right intervention."
       usage: "Builds credibility through accumulated evidence."
       strength: "Inductively strong, not deductively valid. Requires representative samples."
 
@@ -381,7 +94,6 @@ argument_forms:
 
     contrast_pattern:
       structure: "X appears to be A. But X is actually B. The difference matters because C."
-      example: "Friday: Fear. Monday: Agents. Same people. Four days."
       usage: "Highlights transformations, challenges assumptions."
       strength: "Creates cognitive tension that resolves into insight."
 
@@ -400,7 +112,6 @@ argument_forms:
       structure: "Everyone is doing X. Therefore X is correct/good."
       why_avoided: "Bandwagon fallacy. Most people being wrong is historically common."
       when_acceptable: "Market data as evidence of viability, not correctness."
-      rdd13r_inversion: "Often inverted: 'Everyone is doing X. That's exactly why X is failing.'"
 
     appeal_to_novelty:
       structure: "X is new. Therefore X is better."
@@ -416,7 +127,6 @@ argument_forms:
     false_dilemma:
       structure: "Either X or Y. (When Z exists.)"
       why_avoided: "Intellectually dishonest. Hides options."
-      note: "rdd13r uses genuine dilemmas, not false ones."
 
     slippery_slope:
       structure: "If A, then B, then C, then catastrophe."
@@ -430,8 +140,8 @@ argument_forms:
   tech_marketing_forms:
     description: >
       These forms dominate tech marketing because they work psychologically.
-      rdd13r avoids them because they don't survive scrutiny from technical audiences.
-      They work on executives and posers. They backfire with hackers.
+      They are avoided in honest technical writing -- they work on executives
+      and posers, but backfire with hackers who know the domain.
 
     FUD:
       full_name: "Fear, Uncertainty, Doubt"
@@ -456,19 +166,19 @@ argument_forms:
       structure: "Before: bad. After our product: good."
       why_it_works: "Simple narrative. Promises transformation."
       why_avoided: "Usually omits confounds. What else changed?"
-      rdd13r_alternative: "Shows the *mechanism* of transformation, not just before/after."
+      better_alternative: "Show the *mechanism* of transformation, not just the before/after states."
 
     enemy_pattern:
       structure: "There's a villain (legacy, consultants, big tech). We fight them. Join us."
       why_it_works: "Tribal identity. In-group bonding through shared enemy."
       why_avoided: "Oversimplifies. Creates heat, not light."
-      rdd13r_nuance: "Criticizes patterns and behaviors, not tribes or companies."
+      better_alternative: "Criticize patterns and behaviors, not tribes or companies."
 
     thought_leadership:
       structure: "We have unique insight into the future. Follow us."
       why_it_works: "Positions seller as guide. Creates asymmetric relationship."
       why_avoided: "Usually vapid predictions dressed as expertise."
-      rdd13r_alternative: "Demonstrates competence through specific, verifiable claims."
+      better_alternative: "Demonstrate competence through specific, verifiable claims."
 
   # ============================================
   # ADVANCED FORMS WORTH EXPLORING
@@ -479,7 +189,6 @@ argument_forms:
       structure: "Lead reader to conclusion through questions they answer themselves."
       strength: "Reader owns the conclusion. Maximum buy-in."
       challenge: "Requires knowing reader's starting position precisely."
-      usage_note: "rdd13r's rhetorical questions approximate this."
 
     steel_man:
       structure: "Present the strongest version of opposing view. Then address *that*."
@@ -489,7 +198,6 @@ argument_forms:
 
     first_principles:
       structure: "Strip away assumptions. Rebuild from foundational truths."
-      example: "What does 'learning AI' actually require? Not Python. Not theory. Practice with feedback loops."
       strength: "Cuts through accumulated cruft. Reaches novel conclusions."
       challenge: "Requires identifying which principles are actually foundational."
 
@@ -500,15 +208,12 @@ argument_forms:
 
     abductive_reasoning:
       structure: "Observation O. Hypothesis H would explain O. Therefore H is plausible."
-      example: "Teams don't adopt AI. What would explain this? Not the tool -- the human element."
       strength: "Generates hypotheses. Good for diagnosis."
       caution: "Plausible ≠ proven. Multiple hypotheses may explain same observation."
 
     argument_from_mechanism:
       structure: "X causes Y through mechanism M. We can observe M. Therefore X causes Y."
-      example: "Agentic AI transforms teams because it teaches while you use it. Here's how: REPL + feedback loop."
       strength: "Strongest form for technical audiences. Explains the 'why'."
-      note: "rdd13r's preferred form for technical claims."
 
   # ============================================
   # META: HOW TO CHOOSE ARGUMENT FORMS
