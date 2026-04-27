@@ -18,6 +18,8 @@ read_aloud: true
 :claude-code: https://code.claude.com/[Claude Code,window=_blank]
 :google-play: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/10/3-google-vs-openai.html[2023: Why Google Beat OpenAI with Technical Teams,window=_blank]
 :codeforces: https://en.wikipedia.org/wiki/Codeforces
+:awesome-claude-code: https://github.com/hesreallyhim/awesome-claude-code[awesome-claude-code,window=_blank]
+:awesome-claude-code-toolkit: https://github.com/rohitg00/awesome-claude-code-toolkit[awesome-claude-code-toolkit,window=_blank]
 :fn-mythos-price: footnote:mythos-price[5x the price of Opus 4.6; restricted to Project Glasswing partners. https://platform.claude.com/docs/en/about-claude/pricing[Anthropic Pricing,window=_blank]]
 :fn-veracode: footnote:veracode[Tested 80 tasks across 100+ LLMs in 4 languages. https://www.veracode.com/blog/genai-code-security-report/[Veracode 2025 GenAI Code Security Report,window=_blank]]
 :fn-cc-commits: footnote:cc-commits[Feb 2026; daily volume still climbing. https://newsletter.semianalysis.com/p/claude-code-is-the-inflection-point[SemiAnalysis: Claude Code is the Inflection Point,window=_blank]]
@@ -31,9 +33,9 @@ read_aloud: true
 :fn-metr: footnote:metr[16 experienced open-source developers, 246 tasks, randomized controlled trial. Developers took 19% longer with AI but believed they were 20% faster -- a 39-point perception gap. Small sample, early 2025 tools. https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/[METR: AI-Experienced OS Dev Study,window=_blank]]
 :fn-dx: footnote:dx[121,000 developers across 450+ companies; productivity plateaued at ~10% gains despite 93% adoption. Staff+ engineers using AI daily: 4.4 hours saved per week. https://getdx.com/blog/ai-assisted-engineering-q4-impact-report-2025/[DX: AI-Assisted Engineering Impact Report,window=_blank]]
 :fn-codeelo: footnote:codeelo[CodeELO benchmark (https://arxiv.org/abs/2501.01257[arXiv:2501.01257,window=_blank]): best LLM (o1-mini) scored 1578 Elo; most LLMs in bottom 25% of human participants. The ~5% percentile for 2000+ rating is from https://codeforces.com/blog/entry/68288[Codeforces public rating distribution,window=_blank].]
-:fn-awesome-cc: footnote:awesome-cc[Community-curated collection of Claude Code agent skills, workflows, tooling, and CLAUDE.md files. https://github.com/hesreallyhim/awesome-claude-code[awesome-claude-code,window=_blank]]
+:fn-awesome-cc: footnote:awesome-cc[Community-curated collection of Claude Code agent skills, workflows, tooling, and CLAUDE.md files. {awesome-claude-code}]
 :fn-mcp-registry: footnote:mcp-registry[As of late 2025; the registry continues to grow. https://registry.modelcontextprotocol.io/[MCP Server Registry,window=_blank]]
-:fn-skillkit: footnote:skillkit[Via SkillKit marketplace, aggregated in awesome-claude-code-toolkit. https://github.com/rohitg00/awesome-claude-code-toolkit[awesome-claude-code-toolkit,window=_blank]]
+:fn-skillkit: footnote:skillkit[Via SkillKit marketplace, aggregated in awesome-claude-code-toolkit. {awesome-claude-code-toolkit}]
 :fn-jb-perception: footnote:jb-perception[3,380 developers from JetBrains 2024 Developer Ecosystem survey. Experienced developers more likely to perceive AI as "junior colleague" (OR 1.17) or assign no role (OR 1.38). Adoption rates similar across experience levels -- perception differs. https://arxiv.org/abs/2504.13903[Zakharov et al.: From Teacher to Colleague,window=_blank]]
 :fn-ci-2026: footnote:ci-2026[1,253 cybersecurity professionals surveyed; 91% cannot stop an AI agent before it acts. https://www.cybersecurity-insiders.com/ai-risk-and-readiness-report-2026/[AI Risk and Readiness Report 2026,window=_blank]]
 :fn-crowdstrike-gtr: footnote:crowdstrike-gtr[AI-enabled adversaries up 89% YoY; average eCrime breakout 29 minutes. https://www.crowdstrike.com/en-us/press-releases/2026-crowdstrike-global-threat-report/[CrowdStrike 2026 Global Threat Report,window=_blank]]
@@ -42,35 +44,48 @@ read_aloud: true
 :fn-openclaw-cves: footnote:openclaw-cves[9 CVEs in 4 days (March 18-21, 2026); 42,900+ internet-exposed instances. https://openclawai.io/blog/openclaw-cve-flood-nine-vulnerabilities-four-days-march-2026[OpenClaw CVE Disclosure,window=_blank]]
 :fn-snyk-toxic: footnote:snyk-toxic[3,984 ClawHub skills scanned; 36.82% have security flaws; 76 confirmed malicious payloads. https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/[Snyk ToxicSkills,window=_blank]]
 :fn-paloalto-hbr: footnote:paloalto-hbr[Sponsored HBR content; Palo Alto Networks called AI agents "a potent insider threat." https://hbr.org/sponsored/2025/12/6-cybersecurity-predictions-for-the-ai-economy-in-2026[Palo Alto HBR 2025,window=_blank]]
+:fn-killed-by-google: footnote:killed-by-google[200+ discontinued Google products tracked since 2018. Cody Ogden's running record. https://killedbygoogle.com/[killedbygoogle.com,window=_blank]]
 :fn-india-crisis: footnote:india-crisis[Aspiring Minds found 95% of Indian engineers cannot code; 83% of 2024 graduates unemployed or without internships. https://iem.edu.in/news-events/real-reason-95-indian-engineers-cant-code/[IEM: Why 95% of Indian Engineers Can't Code,window=_blank] and https://www.hackerearth.com/blog/90-indian-engineering-candidates-employable-why[HackerEarth: Why 80% Remain Unemployable,window=_blank]]
 :fn-china-oss: footnote:china-oss[Chinese open-weight models hit 17.1% of global AI downloads, surpassing US (15.86%); Qwen derivatives are 40%+ of new Hugging Face models. Four Chinese labs ship frontier models every 4-6 weeks. https://www.technologyreview.com/2026/04/21/1135658/china-open-source-models-ai-artificial-intelligence/[MIT Tech Review: China's Open-Source Bet,window=_blank]]
 :fn-prague-hackers: footnote:prague-hackers[IOI all-time medals per capita: Czech Republic 9.2 per million vs United States 0.38 per million (~1/25 ratio). Prague hosted brmlab (first Czech hackerspace, 2010), Paralelní Polis (Institute of Cryptoanarchy, 2014-2026), and HCPP -- where Stallman and ESR spoke. Called "crypto-anarchist capital of the 21st century" by https://www.calvertjournal.com/articles/show/12289/silicon-valley-prague-cryptoanarchist-capital-21st-century[The Calvert Journal,window=_blank]. Paralelní Polis closed permanently March 2026. IOI data: https://stats.ioinformatics.org/countries/[IOI Statistics,window=_blank]]
+:hero-alt: A working hacker -- mid-50s, hoodie, glasses -- codes calmly at an old CRT terminal through an apocalypse. \
+Burning city, Yggdrasil ablaze on the horizon, agentic drones in the sky, red lightning. \
+Three tombstones in the foreground read "VIBE CODED," "PUSHED TO MAIN," "TRUST THE AGENT." \
+A hanging sign reads "INFRASTRUCTURE AS SERVICE TO ODIN." \
+The terminal glows green with the line: \
+"AI makes dumb developers dumber and smart developers happier."
 
 For everyone working with AI there are things we must know, none of which are published in popular articles.
 These apply equally to companies and individuals. These are impactful. Here people err painfully.
 Hence, the Straight Talk, and here are today's topics:
 
-. Mythos is a gimmick; other "real weapons" *_are_* deployed: Don't worry about it!
-. Google rallied ecosystem with "Deterministic AI" marketing: This tills the market, again.
-. Agentic Collaboration is the "greatest disruptor of all time": _for *some*, maybe not for you._
-. Agentic Collaboration -- zealous company killer: Unavoidable for MOST. (DarkConf NY)
-. Agentic Collaboration Nirvana: How and Why -- your in-field primer and compendium.
+. <<sec-mythos,Mythos is a gimmick>>; other "real weapons" *_are_* deployed: Don't worry about it!
+. <<sec-google,"Deterministic AI" marketing>>: Google rallied the ecosystem -- this tills the market, again.
+. <<sec-wizards,The golden few>>: Agentic Collaboration is the "greatest disruptor of all time" -- _just for *some*._
+. <<sec-killing,The killing floor>>: Agentic Collaboration as a zealous company killer. Unavoidable for MOST.
+. <<sec-primer,Agentic Nirvana>>: How and Why -- your in-field primer and compendium.
 
 _The section 5 gives you the fundamentals you need to *survive* Agentic age._
 
+.The world ends as crackers eat the cogs. The hacker works.
+[#img-hero]
+image::/riddle-me-this/assets/images/wizard-2.png[{hero-alt}]
+{nbsp}
+
+[#sec-mythos]
 == 1. Mythos and Wonder-Models: "The fire truck is also the arsonist."
 
 The Anthropic folks need to learn to value what they have achieved, cherishing remaining integrity. +
-Marketing gimmicks by repeat posers are well-seen as insults to intelligence that erode trust. +
+Marketing gimmicks by repeat posers read as insults to intelligence and erode trust. +
 Every modelmaker is in the *Model-Fizzle* because there is no new architecture in the pipeline. +
 Ugh, Anthropic, "you build a thousand bridges..." -- don't you know?
 
 Meanwhile, marginally better models and better systems (foreign) will arrive every day -- inevitable!
-And the US has regressed in system design, while competent systems manifest the AI power best.
+And the US has regressed in system design, while competent systems are where AI power manifests best.
 Market seems to notice LLMs more than the ecosystem they fit into.
 And the US is losing ground to foreign models too, a little, consider https://www.kimi.com/[kimi.com,window=_blank] from China.
 Far more importantly, non-LLM reasoning systems are virtually nonexistent in the American news,
-as if the LLMs are the entire AI science. The US manifests a _remarkably dilettante culture_.
+as if the LLMs are the entire AI science. The US has become a __remarkably dilettante culture__.
 
 And now, Anthropic sells a $125/million-token model to find bugs.{fn-mythos-price}
 
@@ -86,7 +101,7 @@ Everyone is speculating about a wonder-model that will obsolete developers and u
 There are three problems here.
 
 - *First*, we know this tune -- OpenAI first{fn-gpt2} -- same bloke and song then same free press.
-- *Second*, Anthropic, my favorite company, leaks like a sieve -- victim to its own success.
+- *Second*, Anthropic, my favorite company, leaks like a sieve -- victim of its own success.
 And what we spy is what we expected -- there are #no new breakthroughs in LLM architecture#,
 so there is neither Deus Ex Machina in Mythos{fn-mythos-holes} nor any other model we find.
 - And *third*, and perhaps the most important point, the breakthrough Mythos claims to own actually did happen 9-11 months ago.
@@ -97,16 +112,18 @@ _Scary what kids will do with it!_ +
 *But what about real penetration shops?!*
 
 I asked an intelligence officer from the world's most prolific penetrators (not American, obviously)
--- "will you use Mythos?"
+-- "Will you use Mythos?"
 
-    "Highly unlikely! It's useless to us. First, we rely on our own.
-    And second, I need dozens of models over thousands of branches.
+    Highly unlikely! It's useless to us. First, we rely on our own.
+    And second,
+        I need dozens of models
+        over thousands of logical branches.
     Time, and bang per buck is what matters most to us.
 
     But most importantly,
-    our system architecture does 95% of hard lifting,
-    across ALL atack surfaces simultaneously.
-    Direct software exploitation is rare necessity."
+        our system architecture does 95% of hard lifting,
+        across ALL attack surfaces simultaneously.
+    Direct software exploitation is a rare necessity.
 
 Actual penetrators are much scarier.
 First, there is the Ukrainian Delta, not just battlefield management, but also everything from logistics to geopolitics,
@@ -126,7 +143,7 @@ The breakthrough is in operational philosophy.
 All of these nations have been deploying software vulnerability analysis as a *_weapon system_*
 -- that is why Putin is diligently killing internet in Russia whilst hiding in his bunker.
 Some American companies claimed proximity to Ukraine's "AI" as a marketing stunt
--- Ukraine doesn't let anyone in since 2024. Neither does Israel, France, GB, etc.
+-- Ukraine hasn't let anyone in since 2024. Neither has Israel, France, GB, etc.
 But don't worry, we also used something like this in our latest action against Ali Khamenei.{fn-khamenei}
 
 Cybersecurity AI-Nukes have been weaponized for over a year now, and your world didn't crash -- did it?
@@ -152,9 +169,16 @@ Stay tuned for the real agentic tests when the time comes.
 Let's see how well it holds a personality imprint necessary for some real problem-solving in code.
 I'm not holding my breath.
 
+[#sec-google]
 == 2. Stage Zero Monetization: Google Deterministic AI
 
-Do you remember when Zuk couldn't figure out how to monetize Facebook?
+Zuk built Facebook on *build and pray*.
+Twenty years and $50B in Reality Labs later, he's still praying.
+Google does the opposite -- they ship with mission, measure return, and kill anything that doesn't *brick the customer further*.
+The Python's discard pile is 200+ corpses long;{fn-killed-by-google} none of them missed because of bad code -- they missed because they didn't extend the wall.
+The financial mission hasn't changed since AdWords in 2000: *you are a brick, and every product is more cement.*
+"Deterministic AI" is just the next coat.
+
 Recently Google summoned their partner ecosystem to introduce "Deterministic AI"
 -- I listened very carefully. Understood. Called people in business that implement AI.
 It all went right over their heads.
@@ -240,6 +264,20 @@ Did you know that *everything* Google is, from idea to wire -- defined in trunk?
 Take something from their playbook and most importantly from their mindset, attitude to self and customer.
 Infrastructure IS the end-game -- monetization at the foundation.
 
+And now the joker promised earlier -- *the absence of friction*.
+
+Google ships every product to a hacker creed -- self-service at 99.99%, no upsells, no surprise migrations,
+no needless updates to working contracts.
+Their devices ship *without customer support* because customer support isn't needed.
+My Wi-Fi router started dropping packets, 1 of 8, so I never noticed -- a box arrived at my door
+with a replacement and a note: "swap with #5, ship #5 back."
+GCP apps are self-documenting, no uDemy required, unlike Azure.
+*Microsoft locks you in with friction; Google locks you in with the absence of it.*
+The brick is *happy* in the wall.
+Even when an app gets killed, the lift-and-drop path is already drawn,
+the community grieves publicly, fan portals point to the next Google product
+-- you don't leave, you migrate within.
+
 > It reminds me of the three-wheel static asphalt roller -- moves slowly,
 > rushing nowhere fast, and just rolls everything on its way flat into tarmac.
 > Before it is a turbulent uneven market, steaming and heaping.
@@ -248,8 +286,18 @@ Infrastructure IS the end-game -- monetization at the foundation.
 
 {nbsp}
 
+Strategically the same play: no sudden turns, no lateral forces, no chasing model hype.
+If Google "jumped on the model BS," they'd create friction
+-- the smooth roller tries to spin sideways and the customer feels the jolt.
+They will never do that! They speed up gently, in the same direction they've rolled since 2000.
+And then you look up -- you've moved. How do you counter "the absence" of something?
+-- magnificent adult posture.
+
+While others hype over models, Google just patiently rolls strategy.
+
 What is your take? Leave me a comment.
 
+[#sec-wizards]
 == 3. The Golden Children -- What have they done
 
 *_The world displays a WRONG understanding of HOW developers use AI coding tools!_*
@@ -432,7 +480,7 @@ So, then, how do Wizards use Claude Code "purely for quality of life improvement
 - Migration planning: scope, risks, ordering
 - Dead code detection, unused import cleanup, naming consistency
 
-_This is *a lot* of help to hackers' thinking_ -- gained efficiency helped produce the 40,700-star awesome-claude-code repository,{fn-awesome-cc}
+_This is *a lot* of help to hackers' thinking_ -- gained efficiency helped produce the 40,700-star {awesome-claude-code} repository,{fn-awesome-cc}
 16,670 MCP servers,{fn-mcp-registry} 400,000 shared skills,{fn-skillkit} and a sprawl of plugins, mods, and forks
 -- built by wizards working *with* Claude, not *replaced* by it!
 
@@ -484,6 +532,7 @@ as opposed to cheaper people who **parrot a single skillset**__.
 
 *link:/riddle-me-this/reflections/2026/04/23/ai-maggedon-2026-research.html[Full research stash and verified sources for this section,window=_blank]*
 
+[#sec-killing]
 == 4. AI Attack Surface -- The rest of us
 
 Everything crashes and burins, and it will get worse fast before it gets better.
@@ -641,6 +690,7 @@ Fortunately, this is relatively easy. Do your IT teams behave this way?:
 -
 
 
+[#sec-primer]
 == 5. Agentic Success Almanach: How and Why and What Gives
 
 // TODO: Vadim writes this.

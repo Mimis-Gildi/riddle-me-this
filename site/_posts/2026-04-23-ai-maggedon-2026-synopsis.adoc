@@ -15,8 +15,8 @@ read_aloud: false
 :full: {full-url}[AI-maggedon 2026: Straight Talk,window=_blank]
 :full-mythos: {full-url}#1-mythos-and-wonder-models-the-fire-truck-is-also-the-arsonist[1. Mythos and Wonder-Models: "The fire truck is also the arsonist.",window=_blank]
 :full-google: {full-url}#2-stage-zero-monetization-google-deterministic-ai[2. Stage Zero Monetization: Google Deterministic AI,window=_blank]
-:full-wizards: {full-url}##3-the-golden-childrenwhat-have-they-done[3. The Golden Children -- What have they done,window=_blank]
-:full-killing: {full-url}#4-ai-attack-surfacethe-rest-of-us[AI Attack Surface -- The rest of us,window=_blank]
+:full-wizards: {full-url}#3-the-golden-childrenwhat-have-they-done[3. The Golden Children -- What have they done,window=_blank]
+:full-killing: {full-url}#4-ai-attack-surfacethe-rest-of-us[4. AI Attack Surface -- The rest of us,window=_blank]
 :full-primer: {full-url}#5-agentic-success-almanach-how-and-why-and-what-gives[5. Agentic Success Almanach: How and Why and What Gives,window=_blank]
 :hero-alt: A wizard hacker codes calmly through an apocalypse -- \
 burning city, Yggdrasil ablaze on the horizon, agentic drones in the sky. \
@@ -29,11 +29,11 @@ For everyone working with AI there are things we must know, none of which are pu
 These apply equally to companies and individuals. These are impactful. Here people err painfully.
 Hence, the Straight Talk; follow the links for the full article on today's topics:
 
-. {full-mythos}[Mythos is a gimmick; other "real weapons" *_are_* deployed: Don't worry about it!,window=_blank]
-. {full-google}[Google rallied ecosystem with "Deterministic AI" marketing: This tills the market again.,window=_blank]
-. {full-wizards}[Agentic Collaboration is the "greatest disruptor of all time": _for *some*, maybe not for you._,window=_blank]
-. {full-killing}[Agentic Collaboration -- zealous company killer: Unavoidable for MOST. (DarkConf NY),window=_blank]
-. {full-primer}[Agentic Collaboration Nirvana: How and Why -- your in-field primer and compendium.,window=_blank]
+{full-mythos} +
+{full-google} +
+{full-wizards} +
+{full-killing} +
+{full-primer}
 
 _The section 5 gives you the fundamentals you need to *survive* Agentic age._ +
 And the full article is here: {full}
@@ -46,13 +46,13 @@ image::/riddle-me-this/assets/images/wizard-1.png[{hero-alt}]
 Mythos is a gimmick::
 Anthropic's $125/M-token wonder-model finds bugs in code their tools help generate. +
 Agentic coding spikes 2.74x the vulnerability rate -- *the fire truck is also the arsonist*. +
-But that's not even the whole joke yet -- most powerful AI-native exploitive tools are *_systems_*, +
+But that's not even the whole joke yet -- most powerful AI-native exploitative tools are *_systems_*, +
 model differences of 10% make no difference -- these apply many models across all surfaces. +
 {nbsp} +
 The Anthropic folks need to learn to value what they have achieved, cherishing remaining integrity. +
 Full story {full-mythos}
 
-"Deterministic AI": some flunt models, Google tills markets::
+"Deterministic AI": some flaunt models, Google tills markets::
 Engineers mocked the name; Google doesn't care, doesn't salivate over models +
  -- IT's absorbing your domain logic whole; +
 The Mojo: ecosystem your experts spent decades building you fork over like your family photos. +
