@@ -5,40 +5,92 @@ excerpt: >
     91% of Q1 2026 zero-days were agentic. Your AI is writing your vulnerabilities.
 classes: wide
 comments: false
-hidden: true
+hidden: false
 search: false
 read_aloud: false
 ---
 = AI-maggedon 2026: Synopsis
 :imagesdir: ./assets/images
-:full: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/04/23/ai-maggedon-2026.html
+:full-url: link:/riddle-me-this/reflections/2026/04/23/ai-maggedon-2026.html
+:full: {full-url}[AI-maggedon 2026: Straight Talk,window=_blank]
+:full-mythos: {full-url}#1-mythos-and-wonder-models-the-fire-truck-is-also-the-arsonist[1. Mythos and Wonder-Models: "The fire truck is also the arsonist.",window=_blank]
+:full-google: {full-url}#2-stage-zero-monetization-google-deterministic-ai[2. Stage Zero Monetization: Google Deterministic AI,window=_blank]
+:full-wizards: {full-url}##3-the-golden-childrenwhat-have-they-done[3. The Golden Children -- What have they done,window=_blank]
+:full-killing: {full-url}#4-ai-attack-surfacethe-rest-of-us[AI Attack Surface -- The rest of us,window=_blank]
+:full-primer: {full-url}#5-agentic-success-almanach-how-and-why-and-what-gives[5. Agentic Success Almanach: How and Why and What Gives,window=_blank]
+:hero-alt: A wizard hacker codes calmly through an apocalypse -- \
+burning city, Yggdrasil ablaze on the horizon, agentic drones in the sky. \
+Tombstones in the foreground mock the dying tech industry; \
+a sign reads "INFRASTRUCTURE AS SERVICE TO ODIN." \
+The terminal glows with the line: \
+"AI makes dumb developers dumber and smart developers happier."
 
-91% of Q1 2026 zero-days were agentic.
-Not AI finding vulnerabilities -- AI *_creating_* them through unreviewed code.
-Your tools, your bugs, your problem.
+For everyone working with AI there are things we must know, none of which are published in popular articles.
+These apply equally to companies and individuals. These are impactful. Here people err painfully.
+Hence, the Straight Talk; follow the links for the full article on today's topics:
 
-Five things every AI practitioner needs to know right now.
-Not from vendor keynotes. Not from hype press.
+. {full-mythos}[Mythos is a gimmick; other "real weapons" *_are_* deployed: Don't worry about it!,window=_blank]
+. {full-google}[Google rallied ecosystem with "Deterministic AI" marketing: This tills the market again.,window=_blank]
+. {full-wizards}[Agentic Collaboration is the "greatest disruptor of all time": _for *some*, maybe not for you._,window=_blank]
+. {full-killing}[Agentic Collaboration -- zealous company killer: Unavoidable for MOST. (DarkConf NY),window=_blank]
+. {full-primer}[Agentic Collaboration Nirvana: How and Why -- your in-field primer and compendium.,window=_blank]
 
-*Mythos is a gimmick.*
-Anthropic's $125/M-token wonder-model finds bugs in code their tools help generate at 2.74x the vulnerability rate -- the fire truck is also the arsonist.
-The real weapons are deployed by Ukraine, Israel, France, and GB -- not a single one is an LLM. +
-{full}#_1_mythos_and_wonder_models_the_fire_truck_is_also_the_arsonist[→ Read more,window=_blank]
+_The section 5 gives you the fundamentals you need to *survive* Agentic age._ +
+And the full article is here: {full}
 
-*Google's "Deterministic AI."*
-Engineers mocked the name; Google doesn't care -- they're absorbing your domain logic, the Mojo your experts spent decades building, into their ecosystem.
-Same play as 2017. Bigger stage. You're just data. +
-{full}#_stage_zero_monetization_google_deterministic_ai[→ Read more,window=_blank]
+.The old world ends in slop. Cogs sloperate away for crackers. The hacker Wizard works.
+[#img-hero]
+image::/riddle-me-this/assets/images/wizard-1.png[{hero-alt}]
+{nbsp}
 
-*The golden few.*
-What agentic collaboration looks like when competent teams ship it -- and why most can't follow.
+Mythos is a gimmick::
+Anthropic's $125/M-token wonder-model finds bugs in code their tools help generate. +
+Agentic coding spikes 2.74x the vulnerability rate -- *the fire truck is also the arsonist*. +
+But that's not even the whole joke yet -- most powerful AI-native exploitive tools are *_systems_*, +
+model differences of 10% make no difference -- these apply many models across all surfaces. +
+{nbsp} +
+The Anthropic folks need to learn to value what they have achieved, cherishing remaining integrity. +
+Full story {full-mythos}
 
-*The killing floor.*
-OpenClaw: 9 CVEs in 4 days, 36.82% of ClawHub skills have security flaws.
-Palo Alto Networks: AI agents are "a potent insider threat."
+"Deterministic AI": some flunt models, Google tills markets::
+Engineers mocked the name; Google doesn't care, doesn't salivate over models +
+ -- IT's absorbing your domain logic whole; +
+The Mojo: ecosystem your experts spent decades building you fork over like your family photos. +
+Same play as 2017 on a way bigger stage -- you are just data to them. Digestible. Yummy. +
+Full story {full-google}
 
-*The field primer.*
-Naked model to autonomous agent -- most enterprises ship Tier 0 while startups build products in weeks at Tier 3.
-The gap is the thesis.
+The golden few -- these will be the only developers left walking this Earth::
+What agentic collaboration really looks like when competent teams ship it -- most can't follow. +
+First, we understand how "good" works. Then you'll go look at how your own team works. +
+Full story {full-wizards}
 
-{full}[Read the full article,window=_blank]. Long read. Technical. Not polite.
+.The only benefit is mid-level dev's growth. The price is staggering.
+[source]
+----
+Impact
+    ↑
+    |          Wizard ·····●  (quality of life)
+    |        Senior  ●
+    |               /
+    |    ----Mid---●···→  (slowly improves)
+  0 |---/-------------------
+    |  /
+    | ● Junior/Cog
+    ↓
+    DEGRADATION
+----
+
+The killing floor. The next cancer business will endure::
+OpenClaw: 9 CVEs in 4 days, 36.82% of ClawHub skills have security flaws. +
+Palo Alto Networks: AI agents are "a potent insider threat." +
+Most popularized corporate wins advertise 5X team velocity. +
+Full story {full-killing}
+
+The field primer::
+Naked model to autonomous agent -- basic knowledge necessary to survive Agentic. +
+Most enterprises ship Tier 0 in a year while startups build products in weeks at Tier 3. +
+The gap is the thesis. +
+{full-primer}
+
+Read the full article: {full}. +
+Hardcore infield knowledge for those who want to stay the ride.

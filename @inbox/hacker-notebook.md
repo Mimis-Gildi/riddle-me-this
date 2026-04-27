@@ -216,3 +216,85 @@ The DDD Aggregate → dependency → identity consumption argument (lines 172-18
 
 ### Note
 catb.org had TLS cert error; confirmed through Wikipedia and multiple secondary sources all pointing to Jargon File.
+
+## Task 11: Section 2 Ultra-Diligent Final Pass
+
+**Status:** Sent to Truthy for filtering.
+
+### Findings (16 total)
+- **CRITICAL (0):** Previous critical (Apple/Alexa) was fixed to Siri.
+- **HIGH (3):** Line 136 missing noun after "pragmatic"; card metaphor mapping (H2) and self-contradiction lines 170 vs 201 (H3)
+- **MEDIUM (5):** Line 129 amphiboly; line 144 "behoves" construction + British spelling; line 157 "upsidedown" spelling; lines 155/207 covert vs plain sight; line 179 "safe keeping" grammar
+- **LOW (8):** Timing vagueness, decade imprecision, mixed idiom, undefined "lifer", stock cliché, Deus Ex Machina usage, trailing validation, compressed grammar
+- **CLEARED (10):** All Vadim voice patterns verified
+
+### Lesson
+Re-reading after edits catches what the first pass missed. The Apple/Alexa fix proves the value of the pipeline.
+
+## Task 12: Section 3 Full Critique
+
+**Status:** Sent to Truthy for filtering.
+
+### Findings (24 total)
+- **CRITICAL (1):** Lines 272-274 "That score" pronoun ambiguity creates OPPOSITE meaning (reads as AI in top 5% when arguing AI is weak)
+- **HIGH (5):** Line 228 inverted word order; line 346 thesis oversimplifies evidence; lines 392-399 six unsourced geographic claims; lines 401-407 unsourced repo methodology; line 411 "culminated into"
+- **MEDIUM (7):** Line 225 hedging; line 228 tense shift; line 270 missing article; line 274 unsourced 16-year-olds claim; line 308 double "incredibly" (LLM-speak); line 386 awkward gerund; line 417 tautological enablement
+- **LOW (11):** Minor grammar, unsourced claims, catalog voice shift, trailing validation
+- **CLEARED (8):** All swap-tested contrasts passed
+
+### Key insight
+Two distinct quality zones: lines 223-388 strong (well-sourced case analysis), lines 390-423 weakest part of article (dense unsourced claims about global hacker demographics).
+
+## Task 13: Section 3 Claims Catalog (Post-Rewrite)
+
+**Status:** Sent to Truthy for verification.
+
+### Scope
+Fresh catalog of EVERY factual claim in Section 3 (lines 230-448) after Vadim's significant rewrite. Four categories: SOURCED, PERSONAL, UNSOURCED, COMMON KNOWLEDGE.
+
+### Changes observed from Vadim's rewrite
+- "That score" ambiguity FIXED (line 282)
+- "incredibly wanting" → "equally wanting" (line 326, LLM-speak fixed)
+- "faster" → "happier" in thesis (line 364)
+- "culminated into" → "culminated in" (line 429)
+- "enablement enables" tautology fixed (line 436)
+- Lines 279-288 EXPANDED with Codeforces analysis
+- Lines 424-425 "uptick" → "jump"/"hike"
+
+### Catalog summary
+- **13 SOURCED** -- all with verified footnote IDs
+- **11 PERSONAL** -- all with adequate framing signals (1 borderline: line 322 unnamed community)
+- **25 UNSOURCED** -- two major clusters:
+  - Lines 279-302: AI capability characterizations (reasonable but unsourced)
+  - Lines 410-432: Geographic distribution + repo methodology (strongest claims, zero sources)
+- **7 COMMON KNOWLEDGE** -- audience-appropriate
+- **7 ANALYSIS/CONCLUSIONS** -- derived from evidence, varying strength
+
+### Highest-risk items
+U4-U9: Geographic claims with specific ratios (US 1/10 of Prague, Prague/Cluj-Napoca as hacker culture capitals, India crisis, China exceeds all others combined)
+U10-U13: Repo methodology with specific multipliers (10x forking, 10x imitations, ~100 conventional, ~50 mobile era)
+
+### Verification done
+- Codeforces ranking system: Confirmed Candidate Master = level 5 of 10, 1900-2099, top ~5% via WebSearch
+- Cluj-Napoca: Confirmed "Silicon Valley of Eastern Europe" for IT outsourcing but NOT verified as "capital of Hacker Culture"
+- All 13 footnote IDs verified against declarations in lines 19-37
+
+## Task 14: Hacker Culture Geography Research
+
+**Status:** COMPLETE. Sent to team-lead.
+
+### Three claims researched
+1. **"about 1/10 as compared to Prague"** -- Direction CORRECT, ratio actually understated. IOI per capita: Czech Republic 9.2 medals/million vs US 0.38 = ~24:1. HackerRank: CZ #7-9, US #28. No single published source for the exact 1/10 ratio.
+2. **"Prague, the previous capital of the Hacker Culture"** -- STRONG evidence. Slush Pool (first Bitcoin mining pool, 2010), Trezor (first hardware wallet, 2013), Paralelní Polis (2014-2026, CLOSED March 2026), HCPP conference (Stallman, ESR spoke), brmlab hackerspace. Called "crypto-anarchist capital of 21st century" by multiple publications.
+3. **"Cluj-Napoca, the current capital of the Hacker Culture"** -- WEAKEST claim. Romania's competitive programming is world-class (#2-3 IOI all-time, olympiad since 1978), Cluj has strong IT density (20K devs in 300K city). But "capital of Hacker Culture" conflates IT outsourcing hub with hacker culture. No hackerspaces found in Cluj, no crypto projects, no CTF teams, DefCamp is primarily Bucharest.
+
+### Key data points
+- IOI all-time: China #1 (146), Poland #2 (135), Romania #3 (135), Korea #4 (131), US #7 (127), Czech Republic #18 (99)
+- Romania national olympiad in informatics founded 1978 (11 years before IOI)
+- Romania founded CEOI (1994), hosted it in Cluj-Napoca twice (1994, 2000)
+- Paralelní Polis closed March 2, 2026 -- "previous" is literally correct
+- China: 2.27M active open source developers, state-backed open source policy
+- US ICPC participation is "sharply declining" per published academic research
+
+### Lesson
+"Silicon Valley of Eastern Europe" ≠ "capital of Hacker Culture." IT outsourcing density and hacker culture are different things. Prague has hackerspace-to-crypto-innovation pipeline evidence. Cluj has IT company density evidence. The distinction matters.

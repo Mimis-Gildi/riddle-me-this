@@ -259,3 +259,86 @@ Vadim already applied fixes since previous round (Alexa→Siri, Because removed,
 ### Cleared items: all 10 correctly cleared by Hacker. No disagreements.
 
 ### Result: 7 KEEP, 1 EDITORIAL, 8 CLEAR
+
+---
+
+## Review #6: Filtering Hacker's Section 3 Critique (lines 230-431)
+
+### Context
+Hacker sent 24 findings (1 CRITICAL, 5 HIGH, 7 MEDIUM, 11 LOW) + 8 cleared items.
+Team-lead instruction: filter for real critique vs noise.
+Note: Vadim already fixed section 2 close ("Wouldn't you say?" → "What is your take? Leave me a comment.").
+Note: Line numbers shifted from Hacker's references due to Vadim's edits. I verified by content, not line number.
+
+### Verified against current text on disk
+
+| Finding | Hacker | My verdict | Reasoning |
+|---------|--------|------------|-----------|
+| C1 "That score" ambiguous pronoun | CRITICAL | **KEEP CRITICAL** | Creates opposite meaning. AI looks top-5% instead of failing. |
+| H1 "not only that is" | HIGH | **KEEP** | Non-standard word order. Should be "not only is that." |
+| H2 Thesis oversimplifies | HIGH | **EDITORIAL** | Punchline, table has nuance. "Faster" is imprecise but argument lands. |
+| H3 Geographic claims unsourced | HIGH | **KEEP** | 6 strong claims, 0 sources. "China exceeds all put together" = extraordinary. |
+| H4 Wizard repo methodology unsourced | HIGH | **KEEP** | "10x forking," "100 expected," "15 years" — all presented as fact. |
+| H5 "culminated into" | HIGH | **KEEP** | Should be "culminated in." Grammar. |
+| M1 "seems to have" hedges bold | MEDIUM | **KEEP** | Bold-italic + "seems to" = inconsistent. Pick one. |
+| M2 "meant...is" tense shift | MEDIUM | **KEEP** | Mixed past/present. |
+| M3 "model's" missing article | MEDIUM | **KEEP** | "the model's abilities." |
+| M4 "16-year-olds regularly" | MEDIUM | **SOFTEN** | Common knowledge in competitive programming but unsourced. |
+| M5 Double "incredibly" | MEDIUM | **KEEP** | LLM-speak #11. Likely Claude-contributed. |
+| M6 "the complementing" | MEDIUM | **SOFTEN** | Grammatically marginal but understandable. |
+| M7 "enablement enables" | MEDIUM | **KEEP** | Tautological. Same root word as subject and verb. |
+| L1 "What does this mean?" | LOW | **CLEAR** | Vadim's style, answered immediately. |
+| L2 "most enthusiastic" unsourced | LOW | **CLEAR** | Logical inference from the data pattern. |
+| L3 Fragment after semicolon | LOW | **CLEAR** | Vadim's fragment style. |
+| L4 "the statistic" singular | LOW | **MINOR** | Multiple studies → should be plural. |
+| L5 "half of them" unsourced | LOW | **CLEAR** | Framed as personal ("In my circles"). |
+| L6 "3,000-developer pool" no source | LOW | **SOFTEN** | Specific numbers should have source or community name. |
+| L7 "100% of the time" | LOW | **CLEAR** | Deliberate absolute, consistent with voice. |
+| L8 "We have found" tense | LOW | **CLEAR** | Present perfect defensible as ongoing finding. |
+| L9 "isn't it?" trailing | LOW | **SOFTEN** | Borderline — em-dash interjection mitigates. |
+| L10 Catalog voice | LOW | **CLEAR** | Technical inventory format appropriate. Claude-contributed, expected. |
+| L11 "uptick" understates 2.5x | LOW | **KEEP** | 140% increase ≠ "uptick." Minimizes own finding. |
+
+### Additional check: 400,000 vs 44,000 skills
+Not a discrepancy: 44K on ClawHub (OpenClaw native hub), 400K via SkillKit marketplace (broader). Both correct.
+
+### Cleared items: all 8 correctly cleared by Hacker. No disagreements.
+
+### Result: 11 KEEP, 6 SOFTEN/EDITORIAL, 7 CLEAR
+
+---
+
+## Review #7: Verifying Hacker's Section 3 Claims Catalog
+
+### Context
+Hacker sent a full claims catalog (13 SOURCED, 11 PERSONAL, 25 UNSOURCED, 7 CK, 7 ANALYSIS).
+Vadim rewrote section 3 significantly since my Review #6.
+
+### CRITICAL: Previous fixes confirmed on disk
+Vadim applied 11 fixes from my Review #6 filtering:
+1. C1 "That score" ambiguity → FIXED ("The score of 5 is exceeded by")
+2. H1 "not only that is" → FIXED ("not only is that")
+3. M1 "seems to have" → FIXED ("displays")
+4. M2 "meant...is" tense → FIXED ("means")
+5. M3 "model's" article → FIXED ("the model's")
+6. M5 double "incredibly" → PARTIAL ("equally wanting" but one "incredibly" remains)
+7. H5 "culminated into" → FIXED ("culminated in")
+8. M7 "enablement enables" → FIXED ("enhancement enables")
+9. L11 "uptick" → FIXED ("jump" / "hike")
+10. H2 thesis "faster" → FIXED ("happier")
+11. M6 "the complementing" → FIXED ("gained efficiency helped produce")
+
+### SOURCED: All 13 verified
+All footnote IDs match declarations in header. All references point to correct sources.
+S5 specifically verified: "The score of 5 is exceeded by only 5%" now correctly references the 2000 threshold, not the AI's score. Previous ambiguity (C1) is resolved.
+
+### PERSONAL: All 11 verified
+Framing signals adequate. P4/line 322 borderline (unnamed community) -- flagged for team-lead.
+
+### UNSOURCED: Tier assessment
+- TIER 1 HIGH: U4-U9 (geographic), U10-U14 (repo methodology), U25 (unnamed community stats)
+- TIER 2 MEDIUM: U16 ("beats any human"), U22 (1.5X threshold), U18 ("all developers")
+- TIER 3 LOW: U1-U3 (competitive programming), U15, U17, U19-U24 (characterizations/inferences)
+
+### Items Hacker missed: 1
+- Line 437: "Anthropic is the fan-favorite here in the USA" -- market position claim, no source. LOW.
