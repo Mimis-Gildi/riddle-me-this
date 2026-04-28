@@ -14,7 +14,7 @@ Bayesian Inference, Quantum Decision Theory (QDT), Drift Mitigation; TensorFlow,
 * *Infrastructure in Code* -- Linux kernel, bare-metal, UNIX; Kubernetes (`k8s`), Docker, `containerd`, OpenShift/OKD, Knative, Helm, Terraform;
 AWS, Azure, GCP; GitHub Actions, Jenkins; ESX, OSX, MPI; Android SDK, iOS.
 
-* *Frameworks* -- Claude Code, OpenRouter.ai, MiniMax, Qwen3; Ktor, Quarkus, Micronaut, Akka, Kind;
+* *Frameworks* -- Claude Code, OpenRouter.ai, MiniMax, Qwen3; Ktor, Quarkus, Micronaut, Akka, Kind; +
 Spring Boot/Cloud/WebFlux/HATEOAS; Kafka Streams; Firebase, Redis, MongoDB, Cassandra; React, Vue.js.
 
 * *Compliance & Security* -- FDA CFR 21 Part 11, GxP, CMMI, Pharmacovigilance;

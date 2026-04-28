@@ -29,6 +29,7 @@ read_aloud: true
 :fn-gpt2: footnote:gpt2[Same Dario Amodei, then OpenAI VP of Research, ran the same play in 2019. Replicated within months; OpenAI later released full model. https://fdaudens.substack.com/p/the-too-powerful-to-release-playbook[Daudens: The Too Powerful to Release Playbook,window=_blank]]
 :fn-mythos-holes: footnote:mythos-holes["Thousands" claimed; 198 manually reviewed; "maybe 40" traceable CVEs (VulnCheck). Firefox exploits ran with sandbox disabled. A 3.6B model found the same flagship bug at $0.11/M tokens. https://www.flyingpenguin.com/the-boy-that-cried-mythos-verification-is-collapsing-trust-in-anthropic/[Ottenheimer: The Boy That Cried Mythos,window=_blank]]
 :fn-khamenei: footnote:khamenei[US cyber operations against Iranian infrastructure; weapon-grade vulnerability analysis from distributed systems, not individual models.]
+:fn-delta: footnote:delta[CSIS analysis of Ukraine's DELTA: evolved from situational awareness into an approximation of CJADC2 (Combined Joint All-Domain Command and Control), exchanging air, maritime, land, cyber, space, medical, and logistics data with NATO systems; AI-driven "Avengers" module auto-detected ~12,000 pieces of enemy equipment per week from UAV and ground camera feeds. https://www.csis.org/analysis/does-ukraine-already-have-functional-cjadc2-technology[CSIS: Does Ukraine Already Have Functional CJADC2 Technology?,window=_blank]]
 :fn-monorepo: footnote:monorepo[2B lines of code, 9M source files, 86TB, 45K commits/day by 25K engineers -- all in one trunk. https://cacm.acm.org/research/why-google-stores-billions-of-lines-of-code-in-a-single-repository/[Potvin & Levenberg: Why Google Stores Billions of Lines of Code in a Single Repository (2016),window=_blank]]
 :fn-data-flywheel: footnote:data-flywheel[You use the product; your usage trains the model; the model improves the product; you use it more. Gmail spam filters, Maps traffic, Photos recognition -- same loop, every product. https://policies.google.com/privacy?hl=en-US[Google Privacy Policy,window=_blank] and Hal Varian's https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3215488[Use and Abuse of Network Effects,window=_blank]]
 :fn-lifecycle-as-code: footnote:lifecycle-as-code[Feature flags gate every change from dev-only to full rollout; Launch Coordination Engineering audits every launch; deprecation is compulsory and tooling-enforced -- the product lives and dies in trunk. https://abseil.io/resources/swe-book/html/ch24.html[SWE Book: Continuous Delivery,window=_blank] and https://sre.google/sre-book/reliable-product-launches/[SRE Book: Reliable Product Launches at Scale,window=_blank]]
@@ -82,19 +83,19 @@ image::/riddle-me-this/assets/images/wizard-2.png[{hero-alt}]
 
 The Anthropic folks need to learn to value what they have achieved, cherishing remaining integrity. +
 Marketing gimmicks by repeat posers read as insults to intelligence and erode trust. +
-Every modelmaker is in the *Model-Fizzle* because there is no new architecture in the pipeline. +
-Ugh, Anthropic, "you build a thousand bridges..." -- don't you know?
+Every model maker is in the *Model-Fizzle* because there is no new architecture in the pipeline. +
+I am struggling to understand why this publicity stunt was necessary.
 
-Meanwhile, marginally better models and better systems (foreign) will arrive every day -- inevitable!
+_Meanwhile_, marginally better models and better systems (foreign) will arrive every day -- inevitable!
 And the US has regressed in system design, while competent systems are where AI power manifests best.
-Market seems to notice LLMs more than the ecosystem they fit into.
-And the US is losing ground to foreign models too, a little, consider https://www.kimi.com/[kimi.com,window=_blank] from China.
+American market seems to notice LLMs more than the ecosystem they fit into.
+And the US is losing ground to foreign models too, like the Agentic https://www.kimi.com/[kimi.com,window=_blank] from China.
 Far more importantly, non-LLM reasoning systems are virtually nonexistent in the American news,
 as if the LLMs are the entire AI science. The US has become a __remarkably dilettante culture__.
 
 And now, Anthropic sells a $125/million-token model to find bugs.{fn-mythos-price}
 
-Meanwhile:
+_Meanwhile_:
 
 - 2.74x more vulnerabilities in AI-generated code vs human-written;{fn-veracode}
 - 45% of AI-generated code introduces OWASP Top 10 vulnerabilities;footnote:veracode[]
@@ -108,12 +109,16 @@ There are three problems here.
 - *First*, we know this tune -- OpenAI first{fn-gpt2} -- same bloke and song then same free press.
 - *Second*, Anthropic, my favorite company, leaks like a sieve -- victim of its own success.
 And what we spy is what we expected -- there are #no new breakthroughs in LLM architecture#,
-so there is neither Deus Ex Machina in Mythos{fn-mythos-holes} nor any other model we find.
+so there is neither Deus Ex Machina in Mythos{fn-mythos-holes} nor any latest model others made.
 - And *third*, and perhaps the most important point, the breakthrough Mythos claims to own actually did happen 9-11 months ago.
 But it wasn't some silly LLM. *Ukraine*, then *_Israel_*, closely followed by *_France_* and *_Great Britain_*,
 are the nations at the forefront of AI applications by changing how we even think about software -- NOT the USA, regretfully.
 
-_Scary what kids will do with it!_ +
+The last 4 years of Total War in Europe changed everything in the world of security
+ -- we've experienced an insane amalgamation of industries into theater mindset.
+The world doesn't think in 2020 concepts like the USA still does.
+
+_Meanwhile_, in American news -- _Scary what kids will do with it!_ +
 *But what about real penetration shops?!*
 
 I asked an intelligence officer from the world's most prolific penetrators (not American, obviously)
@@ -121,7 +126,7 @@ I asked an intelligence officer from the world's most prolific penetrators (not 
 
     Highly unlikely! It's useless to us. First, we rely on our own.
     And second,
-        I need dozens of models
+        We employ dozens of models
         over thousands of logical branches.
     Time, and bang per buck is what matters most to us.
 
@@ -130,49 +135,67 @@ I asked an intelligence officer from the world's most prolific penetrators (not 
         across ALL attack surfaces simultaneously.
     Direct software exploitation is a rare necessity.
 
-Actual penetrators are much scarier.
-First, there is the Ukrainian Delta, not just battlefield management, but also everything from logistics to geopolitics,
-starting with AI-governed research; then there is nothing else for a long time.
-All of these mind-bogglingly powerful AI aren't AI at all -- that IS the whole secret
--- they're absurdly massive competent human-built *_Distributed Systems_*.
+Actual penetrators are much scarier because they're no longer standalone tools.
+First, the Ukrainians exposed a little bit of their Delta system{fn-delta} recently.
+NATO partners understood it as _not just_ battlefield management
+-- it's also an ecosystem for everything from logistics to geopolitics,
+AI-governed research, and strategic intelligence.
+It is the whole system approach that aggregates other large subsystems together.
+All of these powerful AI aren't LLMs at all -- that IS the whole secret
+-- they're human-built *_Distributed Systems_* using all kinds of "reasoning."
 
-Currently, there are no counter-measures to these platforms and systems
--- they automatically exploit all attack surfaces simultaneously and expediently.
+Penetration subsystems have no known counter-measures except similar types of systems.
+When deployed adversarially, they automatically exploit all attack surfaces simultaneously.
 Russia's Duma held a closed session after discovering their strategic messaging app Max
 was likely compromised at the commit level -- they stopped hunting exploits and restored Telegram instead.
-The capabilities at play dwarf anything a single model or tool can offer.
-It is only a matter of time before a foreign state like China quietly does this to us.
-It's competent people building competent systems that matter, nothing else.
+These capabilities dwarf anything a single model or tool can offer.
+This is a different way to think about AI: in the USA we tend to think about the value of a model like Mythos;
+several European and Asian nations are not as excited about a model and think from the perspective of a large system.
+It's competent people building competent systems that have more traction with reality:
+instead of "where do I stick this shiny," keep evolving an existing distributed solution using all available tools
+including shiny.
 
 The breakthrough is in operational philosophy.
 All of these nations have been deploying software vulnerability analysis as a *_weapon system_*
--- that is why Putin is diligently killing internet in Russia whilst hiding in his bunker.
+-- that is why Putin is diligently killing the internet in Russia whilst hiding in his bunker.
 Some American companies claimed proximity to Ukraine's "AI" as a marketing stunt
 -- Ukraine hasn't let anyone in since 2024. Neither has Israel, France, GB, etc.
-But don't worry, we also used something like this in our latest action against Ali Khamenei.{fn-khamenei}
+But don't worry, American services have demonstrated similar capabilities -- recent operations against Iranian leadership infrastructure are publicly reported.{fn-khamenei}
 
-Cybersecurity AI-Nukes have been weaponized for over a year now, and your world didn't crash -- did it?
+Cybersecurity AI-Nukes have been weaponized for over a year now, and your world didn't crash in some "everything outage."
+If a year of constellation attacks didn't bring the world down, let's be conservative with single-model expectations like Mythos.
 The important piece people miss here is that the power of these penetrators does NOT come from a model
--- that is IMPOSSIBLE. It comes from the analytic *_systems_* that use many models; and *not just models*.
+-- that is impossible. It comes from the analytic *_systems_* that use many models.
 In the last section I will explain why and how. For now, it's about:
 
 - *Centralized Control (tool):* Russia, China, USA -- not very effective but simple.
-- *Distributed Control (team):* Iran, Baltics, Ukraine in Gulf -- effective but expensive.
+- *Distributed Control (team):* Iran, Baltics, Ukraine in the Gulf -- effective but expensive.
 - *Ecosystem Policy (theater):* Ukraine, France, Israel, GB -- changes everything!
 
-Open Source Software is safest for exactly the same reason it is safest today -- its source is open
--- nothing changes *_unseen_* there -- theater scope. Proprietary software will temporarily get reamed and recover
--- this will be and has been a recurring theme already. The cycle will just tighten.
+Open Source Software is safest for the same reason it is safest today -- its source is open
+-- nothing changes *_unseen_* there -- theater scope. These security agencies rely on the same OSS.
+In the big world, intelligence agencies run their own software ecosystem, like we used to with the Department of Navy.
+ARPANET (the Internet) was born this way if you remember. But today the USA relies on few private companies.
+Proprietary software will temporarily get reamed and recover
+-- this will be and has been a recurring theme already. The cycle will tighten.
 
-No single model will kill your company -- don't worry. Incompetence will, quietly, gradually.
+No single model can kill your company -- don't worry. Incompetence will, quietly, gradually.
 
 While Anthropic firetruck scares people with a bonfire, some nations sling fire on an industrial scale.
 
-So, Mythos, hey folks -- "Too powerful to release to the public." Like GPT 2.0!
+So, Mythos, hey folks -- _Too powerful to release to the public._ Like GPT-2 was!
 I liked its "advertised" benchmarks.
-Stay tuned for the real agentic tests when the time comes.
+Soon enough we will have real and independent agentic tests well outside Anthropic fixtures.
 Let's see how well it holds a personality imprint necessary for some real problem-solving in code.
 I'm not holding my breath.
+
+*Full disclosure:* Why don't I take Anthropic's Mythos claims to the security industry seriously
+-- as someone with exposure, I picture a bicycle shop showing off their carbon fiber frames
+at a military airbase with an F35 parked next to the bikes. +
+_Cute bike!_
+
+Review this article in a couple of years from now and remember that `rdd13r` told you +
+ -- _the near future is in systems, not models._
 
 [#sec-google]
 == 2. Stage Zero Monetization: Google Deterministic AI
@@ -247,8 +270,8 @@ The company's differentiation lives inside Google's ecosystem and is powered by 
 This is even before we think of that joker up the sleeve -- friction!
 
 Google's attitude to strategy is opposite to the "specialization" everyone else chose.
-Like France and Ukraine in section one above, they chose *_Total War_* -- not one tool or weapon,
-but how every tool fits into the *_entire ecosystem_*, ending up dominating the whole theater.
+Like France and Ukraine in section one above, they chose *_Total War_* -- instead of understanding one tool or weapon,
+wise people comprehend how every tool fits into the *_entire ecosystem_*, ending up dominating the whole theater.
 Google is poised to dominate every aspect of your life -- home with internet,
 cell phone, home security, family management;
 business with drag and drop, "we think for you" catering straight to lifer's mindset;
@@ -265,7 +288,7 @@ I've been running deep analytics on these wise folks for years now -- I'm not a 
 `systems` domain and all -- I'm just in awe.
 Did you know that *everything* Google is, from idea to wire -- defined in trunk?{fn-lifecycle-as-code} Deus Ex Machina in plain sight.
 
-*_Learn from this._* Not because Google is your friend -- because this is what a *_competent_* ecosystem strategy looks like.
+*_Learn from this._* This is an accessible and clear example of *_a competent_* ecosystem strategy.
 Take something from their playbook and most importantly from their mindset, attitude to self and customer.
 Infrastructure IS the end-game -- monetization at the foundation.
 
@@ -281,7 +304,7 @@ GCP apps are self-documenting, no uDemy required, unlike Azure.
 The brick is *happy* in the wall.
 Even when an app gets killed, the lift-and-drop path is already drawn,
 the community grieves publicly, fan portals point to the next Google product
--- you don't leave, you migrate within.
+-- people don't leave Google and choose to migrate within.
 
 > It reminds me of the three-wheel static asphalt roller -- moves slowly,
 > rushing nowhere fast, and just rolls everything on its way flat into tarmac.
@@ -296,7 +319,7 @@ If Google "jumped on the model BS," they'd create friction
 -- the smooth roller tries to spin sideways and the customer feels the jolt.
 They will never do that! They speed up gently, in the same direction they've rolled since 2000.
 And then you look up -- you've moved. How do you counter "the absence" of something?
--- magnificent adult posture.
+It's a magnificent mature posture that is hard to not appreciate.
 
 While others hype over models, Google just patiently rolls strategy.
 
@@ -347,7 +370,7 @@ Impact
     DEGRADATION
 ----
 
-What does this mean? <<sec-primer,Section 5>> explains the causes of this outcome
+<<sec-primer,Section 5>> better explains the causes of this outcome
 -- it has to do with both the abilities of the model and the competence of the developer.
 In short, here is the nature of the model's abilities:
 
@@ -445,7 +468,7 @@ young ones want Claude to think *_instead_* of them -- that is slop. +
 Wizards want Claude to think *_with_* them -- wizard brings architecture, +
 Claude brings breadth.
 
-#_AI makes dumb developers dumber and smart developers happier -- same tool, different hands._#
+#_AI makes dumb developers dumber and smart developers happier._#
 
 So, then, how do Wizards use Claude Code "purely for quality of life improvement":
 
@@ -528,7 +551,7 @@ Unlike with mobile, agentic costs money, perhaps explaining places like India fa
 and the paying developer seems to be a little better equipped and experienced than before.
 So this growth maps very tightly to the better skilled developer and this trend is likely here to stay.
 
-Current data does not argue "developers will lose jobs" -- it argues less capable developers will lose jobs.
+Current data does not suggest that "developers will lose jobs" -- it argues that less capable developers will lose jobs.
 Analysis points at the https://en.wikipedia.org/wiki/Jevons_paradox[Jevons Paradox,window=_blank]
 -- more developers will be needed overall, just a different kind of developers to what the market demanded recently;
 now we will +
@@ -655,8 +678,7 @@ So double the bugs doesn't mean double the loss and pinpoints -- it means ten ti
 
 The key to understand here: junior / sloperator / vibe-coder lacks competence to _produce *defended-enough code* on their own_.
 They're not able to properly review, validate, or improve the code on their own. Neither is AI!
-The fact that AI generates code fast exacerbates the problem even more.
-It's not that there is vulnerable code -- there is a lot of vulnerable code.
+The fact that AI generates code fast exacerbates the problem -- oodles of plausible-looking bad code that passes casual review.
 
 _As far as evil crackers are concerned_ -- *money in the bank!* Crackers, in their majority, are not competent either.
 Few are dangerous, and for that reason the software landscape has been manageable so far.
@@ -730,22 +752,15 @@ If unsure -- hire a pro (wink-wink). An expert tells you the scoop in a day of t
 [#sec-primer]
 == 5. Agentic Success Almanach: How and Why and What Gives
 
-This post is essentially five closely related articles and an update on important changes that took place over the last month I was too busy to post.
-Most of it depends on understanding the quirks of LLM and Agentic harnesses creating all the noise today.
-I've been consulting "Development Team AI Competence" gigs for at least two years and what I'd learned is that people lack fundamental.
-This evolution is so fast that folks simply cannot find the time to sit down, relax, and wrap their heads around the craziness.
-This is why this sections exists -- I will attempt to offer fundamentals to you in a way that matters:
+This post is essentially five closely related articles.
 
-"Tell it to me like I'm five!" -- if you can't -- you don't know it yourself. +
-Fair?!
+And this almanach "tells it to me like I'm five."
 
-And to do this properly we need to start with the peanuts.
+=== a. What is LLM
 
-=== What in the world is an LLM?!
-
-I'm not going to tell you how it's built -- that is useless and widely available.
-I will tell you what it is. I am baffled by the fact that the overwhelming majority of people
-writing "smart things" about AI (they mean LLM) have never actually run a _Naked Model_ before!
+I'm not going to tell you how it's built -- only stuff that matters.
+Many people that write on this topic have never actually run a _Naked Model_ before!
+We will take a different approach and actually describe what we have.
 
 First, is the terminology:
 
