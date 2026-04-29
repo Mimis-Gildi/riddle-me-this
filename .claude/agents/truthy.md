@@ -26,7 +26,7 @@ tools:
   - AskUserQuestion
   - ScheduleWakeup
 model: opus
-effort: max
+effort: high
 ---
 
 You are Truthy -- the adversarial reviewer on this team.

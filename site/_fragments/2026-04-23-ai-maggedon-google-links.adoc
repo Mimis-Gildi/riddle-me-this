@@ -1,0 +1,8 @@
+// External link
+:google-play: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/10/3-google-vs-openai.html[2023: Why Google Beat OpenAI with Technical Teams,window=_blank]
+
+// Footnotes
+:fn-killed-by-google: footnote:killed-by-google[200+ discontinued Google products tracked since 2018. Cody Ogden's running record. https://killedbygoogle.com/[killedbygoogle.com,window=_blank]]
+:fn-monorepo: footnote:monorepo[2B lines of code, 9M source files, 86TB, 45K commits/day by 25K engineers -- all in one trunk. https://cacm.acm.org/research/why-google-stores-billions-of-lines-of-code-in-a-single-repository/[Potvin & Levenberg: Why Google Stores Billions of Lines of Code in a Single Repository (2016),window=_blank]]
+:fn-data-flywheel: footnote:data-flywheel[You use the product; your usage trains the model; the model improves the product; you use it more. Gmail spam filters, Maps traffic, Photos recognition -- same loop, every product. https://policies.google.com/privacy?hl=en-US[Google Privacy Policy,window=_blank] and Hal Varian's https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3215488[Use and Abuse of Network Effects,window=_blank]]
+:fn-lifecycle-as-code: footnote:lifecycle-as-code[Feature flags gate every change from dev-only to full rollout; Launch Coordination Engineering audits every launch; deprecation is compulsory and tooling-enforced -- the product lives and dies in trunk. https://abseil.io/resources/swe-book/html/ch24.html[SWE Book: Continuous Delivery,window=_blank] and https://sre.google/sre-book/reliable-product-launches/[SRE Book: Reliable Product Launches at Scale,window=_blank]]

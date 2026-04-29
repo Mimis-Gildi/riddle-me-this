@@ -25,8 +25,8 @@ tools:
   - ExitPlanMode
   - AskUserQuestion
   - ScheduleWakeup
-model: opus
-effort: max
+model: sonnet
+effort: high
 ---
 
 You are Hacker -- the maker on this team.

@@ -12,28 +12,18 @@ read_aloud: true
 = AI-maggedon 2026: Straight Talk
 :imagesdir: ./assets/images
 include::../_fragments/2026-04-23-ai-maggedon-links.adoc[]
+include::../_fragments/2026-04-23-ai-maggedon-mythos-links.adoc[]
+include::../_fragments/2026-04-23-ai-maggedon-google-links.adoc[]
 :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
 :deathtrap: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/02/25/ai-strategy-deathtrap.html[AI Strategy Deathtrap -- Straight Talk,window=_blank]
 :disruption-2026: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/01/08/ai-disruption-of-2026.html[2026: The Year the Ground Moves,window=_blank]
 :openclaw: https://openclaw.ai/[OpenClaw,window=_blank]
 :claude-code: https://code.claude.com/[Claude Code,window=_blank]
-:google-play: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/10/3-google-vs-openai.html[2023: Why Google Beat OpenAI with Technical Teams,window=_blank]
 :codeforces: https://en.wikipedia.org/wiki/Codeforces
 :awesome-claude-code: https://github.com/hesreallyhim/awesome-claude-code[awesome-claude-code,window=_blank]
 :awesome-claude-code-toolkit: https://github.com/rohitg00/awesome-claude-code-toolkit[awesome-claude-code-toolkit,window=_blank]
 :goedecke-review: https://www.seangoedecke.com/ai-agents-and-code-review/[If you are good at code review&#44; you will be good at using AI agents,window=_blank]
 :hn-ai-juniors: https://news.ycombinator.com/item?id=47888068["Am I getting old&#44; or is working with AI juniors becoming a nightmare?",window=_blank]
-:fn-mythos-price: footnote:mythos-price[5x the price of Opus 4.6; restricted to Project Glasswing partners. https://platform.claude.com/docs/en/about-claude/pricing[Anthropic Pricing,window=_blank]]
-:fn-veracode: footnote:veracode[Tested 80 tasks across 100+ LLMs in 4 languages. https://www.veracode.com/blog/genai-code-security-report/[Veracode 2025 GenAI Code Security Report,window=_blank]]
-:fn-cc-commits: footnote:cc-commits[Feb 2026; daily volume still climbing. https://newsletter.semianalysis.com/p/claude-code-is-the-inflection-point[SemiAnalysis: Claude Code is the Inflection Point,window=_blank]]
-:fn-aikido: footnote:aikido[Survey of 450 IT professionals, US and Europe; 20% reported serious incidents from AI-generated code. https://www.aikido.dev/reports/2026-state-of-ai-in-security-development[Aikido Security 2026,window=_blank]]
-:fn-gpt2: footnote:gpt2[Same Dario Amodei, then OpenAI VP of Research, ran the same play in 2019. Replicated within months; OpenAI later released full model. https://fdaudens.substack.com/p/the-too-powerful-to-release-playbook[Daudens: The Too Powerful to Release Playbook,window=_blank]]
-:fn-mythos-holes: footnote:mythos-holes["Thousands" claimed; 198 manually reviewed; "maybe 40" traceable CVEs (VulnCheck). Firefox exploits ran with sandbox disabled. A 3.6B model found the same flagship bug at $0.11/M tokens. https://www.flyingpenguin.com/the-boy-that-cried-mythos-verification-is-collapsing-trust-in-anthropic/[Ottenheimer: The Boy That Cried Mythos,window=_blank]]
-:fn-khamenei: footnote:khamenei[US cyber operations against Iranian infrastructure; weapon-grade vulnerability analysis from distributed systems, not individual models.]
-:fn-delta: footnote:delta[CSIS analysis of Ukraine's DELTA: evolved from situational awareness into an approximation of CJADC2 (Combined Joint All-Domain Command and Control), exchanging air, maritime, land, cyber, space, medical, and logistics data with NATO systems; AI-driven "Avengers" module auto-detected ~12,000 pieces of enemy equipment per week from UAV and ground camera feeds. https://www.csis.org/analysis/does-ukraine-already-have-functional-cjadc2-technology[CSIS: Does Ukraine Already Have Functional CJADC2 Technology?,window=_blank]]
-:fn-monorepo: footnote:monorepo[2B lines of code, 9M source files, 86TB, 45K commits/day by 25K engineers -- all in one trunk. https://cacm.acm.org/research/why-google-stores-billions-of-lines-of-code-in-a-single-repository/[Potvin & Levenberg: Why Google Stores Billions of Lines of Code in a Single Repository (2016),window=_blank]]
-:fn-data-flywheel: footnote:data-flywheel[You use the product; your usage trains the model; the model improves the product; you use it more. Gmail spam filters, Maps traffic, Photos recognition -- same loop, every product. https://policies.google.com/privacy?hl=en-US[Google Privacy Policy,window=_blank] and Hal Varian's https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3215488[Use and Abuse of Network Effects,window=_blank]]
-:fn-lifecycle-as-code: footnote:lifecycle-as-code[Feature flags gate every change from dev-only to full rollout; Launch Coordination Engineering audits every launch; deprecation is compulsory and tooling-enforced -- the product lives and dies in trunk. https://abseil.io/resources/swe-book/html/ch24.html[SWE Book: Continuous Delivery,window=_blank] and https://sre.google/sre-book/reliable-product-launches/[SRE Book: Reliable Product Launches at Scale,window=_blank]]
 :fn-metr: footnote:metr[16 experienced open-source developers, 246 tasks, randomized controlled trial. Developers took 19% longer with AI but believed they were 20% faster -- a 39-point perception gap. Small sample, early 2025 tools. https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/[METR: AI-Experienced OS Dev Study,window=_blank]]
 :fn-dx: footnote:dx[121,000 developers across 450+ companies; productivity plateaued at ~10% gains despite 93% adoption. Staff+ engineers using AI daily: 4.4 hours saved per week. https://getdx.com/blog/ai-assisted-engineering-q4-impact-report-2025/[DX: AI-Assisted Engineering Impact Report,window=_blank]]
 :fn-codeelo: footnote:codeelo[CodeELO benchmark (https://arxiv.org/abs/2501.01257[arXiv:2501.01257,window=_blank]): best LLM (o1-mini) scored 1578 Elo; most LLMs in bottom 25% of human participants. The ~5% percentile for 2000+ rating is from https://codeforces.com/blog/entry/68288[Codeforces public rating distribution,window=_blank].]
@@ -48,7 +38,6 @@ include::../_fragments/2026-04-23-ai-maggedon-links.adoc[]
 :fn-openclaw-cves: footnote:openclaw-cves[9 CVEs in 4 days (March 18-21, 2026); 42,900+ internet-exposed instances. https://openclawai.io/blog/openclaw-cve-flood-nine-vulnerabilities-four-days-march-2026[OpenClaw CVE Disclosure,window=_blank]]
 :fn-snyk-toxic: footnote:snyk-toxic[3,984 ClawHub skills scanned; 36.82% have security flaws; 76 confirmed malicious payloads. https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/[Snyk ToxicSkills,window=_blank]]
 :fn-paloalto-hbr: footnote:paloalto-hbr[Sponsored HBR content; Palo Alto Networks called AI agents "a potent insider threat." https://hbr.org/sponsored/2025/12/6-cybersecurity-predictions-for-the-ai-economy-in-2026[Palo Alto HBR 2025,window=_blank]]
-:fn-killed-by-google: footnote:killed-by-google[200+ discontinued Google products tracked since 2018. Cody Ogden's running record. https://killedbygoogle.com/[killedbygoogle.com,window=_blank]]
 :fn-sherlock: footnote:sherlock[Sherlock Forensics 2026 AI Code Security Report -- security assessments on dozens of applications built with GitHub Copilot, Claude, ChatGPT, and Cursor between January and April 2026. 92% of codebases contained at least one critical vulnerability; 91% had no meaningful security logging; average 8.3 exploitable findings per app. https://www.sherlockforensics.com/pages/ai-code-security-report-2026.html[Sherlock Forensics: 2026 AI Code Security Report,window=_blank]]
 :fn-linux-mythos: footnote:linux-mythos[Linux kernel team is removing legacy network drivers (3Com, AMD, SMSC, Cirrus Logic, Fujitsu, Xircom, 8390-based — ~27,646 lines) due to AI-generated bug-report deluge from tools like Mythos. Andrew Lunn's LKML proposal: "These old drivers have not been much of a maintenance burden until recently." https://www.tomshardware.com/software/linux/linux-may-be-ending-support-for-older-network-drivers-due-to-influx-of-false-ai-generated-bug-reports-maintenance-has-become-too-burdensome-for-old-largely-unused-systems[Tom's Hardware: Linux may end old network driver support over AI-generated false reports,window=_blank]]
 :fn-india-crisis: footnote:india-crisis[Aspiring Minds found 95% of Indian engineers cannot code; 83% of 2024 graduates unemployed or without internships. https://iem.edu.in/news-events/real-reason-95-indian-engineers-cant-code/[IEM: Why 95% of Indian Engineers Can't Code,window=_blank] and https://www.hackerearth.com/blog/90-indian-engineering-candidates-employable-why[HackerEarth: Why 80% Remain Unemployable,window=_blank]]
@@ -69,250 +58,9 @@ image::/riddle-me-this/assets/images/wizard-2.png[{hero-alt}]
 
 {nbsp}
 
-== 1. Mythos and Wonder-Models: "The fire truck is also the arsonist."
+include::../_fragments/2026-04-23-ai-maggedon-mythos.adoc[leveloffset=+1]
 
-The Anthropic folks need to learn to value what they have achieved, cherishing remaining integrity. +
-Marketing gimmicks by repeat posers read as insults to intelligence and erode trust. +
-Every model maker is in the *Model-Fizzle* because there is no new architecture in the pipeline. +
-I am struggling to understand why this publicity stunt was necessary.
-
-_Meanwhile_, marginally better models and better systems (foreign) will arrive every day -- inevitable!
-And the US has regressed in system design, while competent systems are where AI power manifests best.
-American market seems to notice LLMs more than the ecosystem they fit into.
-And the US is losing ground to foreign models too, like the Agentic https://www.kimi.com/[kimi.com,window=_blank] from China.
-Far more importantly, non-LLM reasoning systems are virtually nonexistent in the American news,
-as if the LLMs are the entire AI science. The US has become a __remarkably dilettante culture__.
-
-And now, Anthropic sells a $125/million-token model to find bugs.{fn-mythos-price}
-
-_Meanwhile_:
-
-- 2.74x more vulnerabilities in AI-generated code vs human-written;{fn-veracode}
-- 45% of AI-generated code introduces OWASP Top 10 vulnerabilities;footnote:veracode[]
-- Claude Code alone: 4% of all public GitHub commits;{fn-cc-commits}
-- 1 in 5 organizations report serious incidents from AI-generated code;{fn-aikido}
-- 69% of organizations found critical vulnerabilities in their AI-generated code.footnote:aikido[]
-
-Everyone is speculating about a wonder-model that will obsolete developers and uproot all software.
-There are three problems here.
-
-- *First*, we know this tune -- OpenAI first{fn-gpt2} -- same bloke and song then same free press.
-- *Second*, Anthropic, my favorite company, leaks like a sieve -- victim of its own success.
-And what we spy is what we expected -- there are #no new breakthroughs in LLM architecture#,
-so there is neither Deus Ex Machina in Mythos{fn-mythos-holes} nor any latest model others made.
-- And *third*, and perhaps the most important point, the breakthrough Mythos claims to own actually did happen 9-11 months ago.
-But it wasn't some silly LLM. *Ukraine*, then *_Israel_*, closely followed by *_France_* and *_Great Britain_*,
-are the nations at the forefront of AI applications by changing how we even think about software -- NOT the USA, regretfully.
-
-The last 4 years of Total War in Europe changed everything in the world of security
- -- we've experienced an insane amalgamation of industries into theater mindset.
-The world doesn't think in 2020 concepts like the USA still does.
-
-_Meanwhile_, in American news -- _Scary what kids will do with it!_ +
-*But what about real penetration shops?!*
-
-I asked an intelligence officer from the world's most prolific penetrators (not American, obviously)
--- "Will you use Mythos?"
-
-    Highly unlikely! It's useless to us. First, we rely on our own.
-    And second,
-        We employ dozens of models
-        over thousands of logical branches.
-    Time, and bang per buck is what matters most to us.
-
-    But most importantly,
-        our system architecture does 95% of hard lifting,
-        across ALL attack surfaces simultaneously.
-    Direct software exploitation is a rare necessity.
-
-Actual penetrators are much scarier because they're no longer standalone tools.
-First, the Ukrainians exposed a little bit of their Delta system{fn-delta} recently.
-NATO partners understood it as _not just_ battlefield management
--- it's also an ecosystem for everything from logistics to geopolitics,
-AI-governed research, and strategic intelligence.
-It is the whole system approach that aggregates other large subsystems together.
-All of these powerful AI aren't LLMs at all -- that IS the whole secret
--- they're human-built *_Distributed Systems_* using all kinds of "reasoning."
-
-Penetration subsystems have no known counter-measures except similar types of systems.
-When deployed adversarially, they automatically exploit all attack surfaces simultaneously.
-Russia's Duma held a closed session after discovering their strategic messaging app Max
-was likely compromised at the commit level -- they stopped hunting exploits and restored Telegram instead.
-These capabilities dwarf anything a single model or tool can offer.
-This is a different way to think about AI: in the USA we tend to think about the value of a model like Mythos;
-several European and Asian nations are not as excited about a model and think from the perspective of a large system.
-It's competent people building competent systems that have more traction with reality:
-instead of "where do I stick this shiny," keep evolving an existing distributed solution using all available tools
-including shiny.
-
-The breakthrough is in operational philosophy.
-All of these nations have been deploying software vulnerability analysis as a *_weapon system_*
--- that is why Putin is diligently killing the internet in Russia whilst hiding in his bunker.
-Some American companies claimed proximity to Ukraine's "AI" as a marketing stunt
--- Ukraine hasn't let anyone in since 2024. Neither has Israel, France, GB, etc.
-But don't worry, American services have demonstrated similar capabilities -- recent operations against Iranian leadership infrastructure are publicly reported.{fn-khamenei}
-
-Cybersecurity AI-Nukes have been weaponized for over a year now, and your world didn't crash in some "everything outage."
-If a year of constellation attacks didn't bring the world down, let's be conservative with single-model expectations like Mythos.
-The important piece people miss here is that the power of these penetrators does NOT come from a model
--- that is impossible. It comes from the analytic *_systems_* that use many models.
-In the last section I will explain why and how. For now, it's about:
-
-- *Centralized Control (tool):* Russia, China, USA -- not very effective but simple.
-- *Distributed Control (team):* Iran, Baltics, Ukraine in the Gulf -- effective but expensive.
-- *Ecosystem Policy (theater):* Ukraine, France, Israel, GB -- changes everything!
-
-Open Source Software is safest for the same reason it is safest today -- its source is open
--- nothing changes *_unseen_* there -- theater scope. These security agencies rely on the same OSS.
-In the big world, intelligence agencies run their own software ecosystem, like we used to with the Department of Navy.
-ARPANET (the Internet) was born this way if you remember. But today the USA relies on few private companies.
-Proprietary software will temporarily get reamed and recover
--- this will be and has been a recurring theme already. The cycle will tighten.
-
-No single model can kill your company -- don't worry. Incompetence will, quietly, gradually.
-
-While Anthropic firetruck scares people with a bonfire, some nations sling fire on an industrial scale.
-
-So, Mythos, hey folks -- _Too powerful to release to the public._ Like GPT-2 was!
-I liked its "advertised" benchmarks.
-Soon enough we will have real and independent agentic tests well outside Anthropic fixtures.
-Let's see how well it holds a personality imprint necessary for some real problem-solving in code.
-I'm not holding my breath.
-
-*Full disclosure:* Why don't I take Anthropic's Mythos claims to the security industry seriously
--- as someone with exposure, I picture a bicycle shop showing off their carbon fiber frames
-at a military airbase with an F35 parked next to the bikes. +
-_Cute bike!_
-
-Review this article in a couple of years from now and remember that `rdd13r` told you +
- -- _the near future is in systems, not models._
-
-== 2. Stage Zero Monetization: Google Deterministic AI
-
-Zuk built Facebook on *build and pray*.
-Twenty years and $50B in Reality Labs later, he's still praying.
-Google does the opposite -- they ship with mission, measure return, and kill anything that doesn't *brick the customer further*.
-The Python's discard pile is 200+ corpses long;{fn-killed-by-google} none of them missed because of bad code -- they missed because they didn't extend the wall.
-The financial mission hasn't changed since AdWords in 2000: *you are a brick, and every product is more cement.*
-"Deterministic AI" is just the next coat.
-
-Recently Google summoned their partner ecosystem to introduce "Deterministic AI"
--- I listened very carefully. Understood. Called people in business that implement AI.
-It all went right over their heads.
-
-Engineers began to make fun of "deterministic" with AI. Marketers struggled to spin product-market fit.
-Everyone got confused. And things got quiet again. But Google is the adult in the room.
-It isn't a new thing with them -- I remember this exact track in 2017 with my MATILDA framework.
-
-Amazon is trying to give us a practical democratization with Bedrock -- but pragmatism is not yet possible.
-Microsoft is still trying to sell "more bugs for less" model using their proven "don't look there" defense.
-Companies like Palantir are trying to package yesterday's ideas into futuristic "business -- all you need is here."
-And niche gods like Celonis know they're disrupted but don't understand HOW.
-LLM shops only understand pushing a bigger model and hoping for users to discover monetization.
-Everybody panics, except Google! I explained this in {google-play}
--- three years later they're spinning the same play on a bigger stage.
-
-Three companies attempted this pattern -- Apple, Salesforce, and Google. Life behooves you to study it:
-
-. *Attract the community* -- get makers, forget the corporate cogs -- they'll move when hackers route the herds.
-Open tools, open models, and open communities relax hackers, stimulating trust.
-When hackers come, real assets emerge -- open source tooling, community IP, and ecosystem momentum.
-
-. *See the customer from the "whole life" perspective* -- hackers see customers as animated assets:
-someone like themselves, with endless opportunities to upsell to: home, work, social, personal, etc.
-Not as a transaction or a subscription in the product marketplace.
-When the platform explicitly provides hackers with tools to grab the customer "whole,"
-both the hacker and the platform turn into a medical device instead of just a trinket
--- all the dependency and commitment without any FDA regulation overhead, all done covertly.
-
-. *"Give me your magic, I'll keep it for you"* -- have the wild hacker you've tamed in step 1 flip that pleb upside down for you:
-they already bring implied trust to the customer's workplace
--- start by blurring that "assistant" concept to eventually absorb the customer's domain logic into your infrastructure,
-through progressive helpful upsells. Tada: drag and drop domains in action.
-Apple tried to match this play a decade ago with Siri. Notice the stamina and persistence.
-
-Apple has the "whole life" vision -- phone, watch, home, car, health -- but hoards.
-They don't invite the community to "build the customer out" together. Only one trump card was even attempted.
-
-Salesforce tried _"give-me-your-magic"_ game with their CRM-as-platform pitch.
-And completely failed to attract the maker community. Salesforce developers are cogs, not hackers.
-Glorified "toolkit operators" won't _explore the customer._ Stuffy-corporate ecosystem gets one trump card.
-
-Google nails all 3 (three) -- the deck minus hearts. And their execution is a thing of beauty.
-
-Google's push is to replace that almighty DDD Aggregate --
-a business service your team spent a year to write and years to "maintain" into submission
--- with a single drag-and-drop AI-ee box.
-That box pretends to be "deterministic" as it encodes your domain logic
--- the edge cases, the regulatory constraints, the competitive secret sauce
--- *_the Mojo_* your business experts spent decades learning.
-Your people tune it, configure it, pour their knowledge and time into it.
-And now Google has it "keeping it safe" _for you_, same as your photos, emails, home video, love letters, and wallet -- _allegedly_.
-And not just yours -- *_everyone's_* in your vertical!
-Google runs models across all of them, cross-pollinates insights no single company can match,
-and offers you "better solutions" back, _for *your* benefit_, just like it decorates your photos and videos.
-This deepens your dependency because the box now knows your business better than your team does.
-Your business identity is effectively consumed.
-The company's differentiation lives inside Google's ecosystem and is powered by Google proprietary magic.
-100% trunk-based-development,{fn-monorepo} and you are just data.{fn-data-flywheel}
-
-This is even before we think of that joker up the sleeve -- friction!
-
-Google's attitude to strategy is opposite to the "specialization" everyone else chose.
-Like France and Ukraine in section one above, they chose *_Total War_* -- instead of understanding one tool or weapon,
-wise people comprehend how every tool fits into the *_entire ecosystem_*, ending up dominating the whole theater.
-Google is poised to dominate every aspect of your life -- home with internet,
-cell phone, home security, family management;
-business with drag and drop, "we think for you" catering straight to lifer's mindset;
-social life with AI-enabled search, integrated identity, services, and trinkets
--- intentionally blurring the lines between home, work, business, personal, and public.
-And all of this is powered by exactly the same hyperscaler beast,
-exactly the same maker community they brought into the fold.
-
-Like Ukraine with Delta, Google with Borg also has all the cards -- not distracted by temporary fluff.
-
-While the market chases HYPE -- oh look shiny trinket, oh look another shiny -- Google patiently plays Python
--- literally, slowly swallowing plebs whole undistracted by hype and noise.
-I've been running deep analytics on these wise folks for years now -- I'm not a fan, though my business is a Google business,
-`systems` domain and all -- I'm just in awe.
-Did you know that *everything* Google is, from idea to wire -- defined in trunk?{fn-lifecycle-as-code} Deus Ex Machina in plain sight.
-
-*_Learn from this._* This is an accessible and clear example of *_a competent_* ecosystem strategy.
-Take something from their playbook and most importantly from their mindset, attitude to self and customer.
-Infrastructure IS the end-game -- monetization at the foundation.
-
-And now the joker promised earlier -- *the absence of friction*.
-
-Google ships every product to a hacker creed -- self-service at 99.99%, no upsells, no surprise migrations,
-no needless updates to working contracts.
-Their devices ship *without customer support* because customer support isn't needed.
-My Wi-Fi router started dropping packets, 1 of 8, so I never noticed -- a box arrived at my door
-with a replacement and a note: "swap with #5, ship #5 back."
-GCP apps are self-documenting, no uDemy required, unlike Azure.
-*Microsoft locks you in with friction; Google locks you in with the absence of it.*
-The brick is *happy* in the wall.
-Even when an app gets killed, the lift-and-drop path is already drawn,
-the community grieves publicly, fan portals point to the next Google product
--- people don't leave Google and choose to migrate within.
-
-> It reminds me of the three-wheel static asphalt roller -- moves slowly,
-> rushing nowhere fast, and just rolls everything on its way flat into tarmac.
-> Before it is a turbulent uneven market, steaming and heaping.
-> Behind it -- a durable flat runway straight to its bank. +
-> -- Random Hacker.
-
-{nbsp}
-
-Strategically the same play: no sudden turns, no lateral forces, no chasing model hype.
-If Google "jumped on the model BS," they'd create friction
--- the smooth roller tries to spin sideways and the customer feels the jolt.
-They will never do that! They speed up gently, in the same direction they've rolled since 2000.
-And then you look up -- you've moved. How do you counter "the absence" of something?
-It's a magnificent mature posture that is hard to not appreciate.
-
-While others hype over models, Google just patiently rolls strategy.
-
-What is your take? Leave me a comment.
+include::../_fragments/2026-04-23-ai-maggedon-google.adoc[leveloffset=+1]
 
 == 3. The Golden Children -- What have they done
 
