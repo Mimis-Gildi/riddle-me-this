@@ -2,31 +2,38 @@
 include::./2026-04-23-ai-maggedon-links.adoc[]
 include::./2026-04-23-ai-maggedon-mythos-links.adoc[]
 
+. Mythos, like GPT 2.0, is too powerful to release to general user.
+. Mythos hacks so good that it exploits all the software.
+
+Does Anthropic even realize that the security industry has changed completely since 2022
+{nbsp} -- it is now national security and intelligence concern. Well, except for the USA, of course.
 
 The Anthropic folks need to learn to value what they have achieved, cherishing remaining integrity. +
 Marketing gimmicks by repeat posers read as insults to intelligence and erode trust. +
 Every model maker is in the *Model-Fizzle* because there is no new architecture in the pipeline. +
 I am struggling to understand why this publicity stunt was necessary.
 
-_Meanwhile_, marginally better models and better systems (foreign) will arrive every day -- inevitable!
+*_Meanwhile_*, marginally better models and better systems (foreign) will arrive every day -- inevitable!
 And the US has regressed in system design, while competent systems are where AI power manifests best.
 American market seems to notice LLMs more than the ecosystem they fit into.
 And the US is losing ground to foreign models too, like the Agentic {kimi} from China.
 Far more importantly, non-LLM reasoning systems are virtually nonexistent in the American news,
 as if the LLMs are the entire AI science. The US has become a __remarkably dilettante culture__.
 
-And now, Anthropic sells a $125/million-token model to find bugs.{fn-mythos-price}
+And now, Anthropic sells a $125/million-token model to find bugs.{fn-mythos-price} +
+Crap! -- I burn more than a million tokens per day, and that's just hosted +
+{nbsp} -- I don't even count self-hosted.
 
-_Meanwhile_:
+*_Meanwhile_*, AI gifted us:
 
-- 2.74x more vulnerabilities in AI-generated code vs human-written;{fn-veracode}
+- 2.74x more vulnerabilities in AI-generated code vs. human-written;{fn-veracode}
 - 45% of AI-generated code introduces OWASP Top 10 vulnerabilities;footnote:veracode[]
 - Claude Code alone: 4% of all public GitHub commits;{fn-cc-commits}
 - 1 in 5 organizations report serious incidents from AI-generated code;{fn-aikido}
 - 69% of organizations found critical vulnerabilities in their AI-generated code.footnote:aikido[]
 
-Everyone is speculating about a wonder-model that will obsolete developers and uproot all software.
-There are three problems here.
+While everyone is speculating about a wonder-model that will obsolete developers and uproot all software,
+I see there are three problems here:
 
 - *First*, we know this tune -- OpenAI first{fn-gpt2} -- same bloke and song then same free press.
 - *Second*, Anthropic, my favorite company, leaks like a sieve -- victim of its own success.

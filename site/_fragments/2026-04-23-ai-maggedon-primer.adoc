@@ -1,0 +1,50 @@
+= {title-primer}
+include::./2026-04-23-ai-maggedon-links.adoc[]
+include::./2026-04-23-ai-maggedon-primer-links.adoc[]
+
+
+This post is essentially five closely related articles.
+
+And this almanach "tells it to me like I'm five."
+
+== a. What is LLM
+
+I'm not going to tell you how it's built -- only stuff that matters.
+Many people that write on this topic have never actually run a _Naked Model_ before!
+We will take a different approach and actually describe what we have.
+
+First, is the terminology:
+
+- Claude! Pulverize the commented section, please?
+
+
+// TODO: Vadim writes this.
+// What people actually ship vs what they think they ship.
+//
+// Tier 0: Naked model -- raw API. Hackers call it "bare." Unusable without service layer.
+//   - "Civilized" (instruction-tuned) vs "wild" (base/pretrained)
+//   - Even civilized models hallucinate and bully without the service layer
+//
+// Tier 1: Chatbot -- Claude Desktop, ChatGPT
+//   - Sub-tier "service": context manager, focus manager, basic caching
+//   - Sub-tier "orchestrated": adds orchestrator, makes chatbot sensible
+//   - 90% of model usability implemented here
+//   - LLM calls are atomic and stateless -- client sends full context every time
+//
+// Tier 2: Coding agent -- Claude Code, OpenCode, Aider
+//   - Templated choreography on top of Tier 1 + REPL + client-side skills
+//   - Same LLM, lighter orchestrator, tools bolted on
+//   - NOT the revolution -- marginal productivity gain for already-competent engineers
+//
+// Tier 3: Autonomous agent -- OpenClaw
+//   - Always-on, proactive, messaging-native
+//   - Tier 3 autonomy without Tier 3 security = vulnerability factory
+//
+// Most enterprise "AI initiatives" ship Tier 0 or 1.
+// Startups run OpenClaw farms at Tier 3 and build products in weeks.
+// The gap is the thesis.
+
+// ============================================================================
+// LAYER 3: UNDER THE HOOD
+// Technical depth for the engineers. Architecture comparison.
+// ============================================================================

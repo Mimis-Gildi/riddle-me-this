@@ -1,0 +1,190 @@
+= {title-killing}
+include::./2026-04-23-ai-maggedon-links.adoc[]
+include::./2026-04-23-ai-maggedon-killing-links.adoc[]
+
+
+Everything crashes and burns, and it will get worse fast before it gets better.
+It is the pace of change that is critically important, not the running level of trouble.
+And we have changes.
+
+OSS libraries Mythos supposedly jeopardizes aren't a top-ten concern, as I'd already explained in {link-mythos}[section 1,window=_blank];
+that is a marketing gimmick. The drama around Mythos is still evolving,
+first Mozilla people posted the actual bugs found, and that is, sit-down for it, 3% of reported!
+As it turned out, Anthropic ran the scan without a sandbox, effectively ignoring a lot of security functionality.
+And then there is the Linux Kernel report, where 99% of bugs reported by Mythos are in deprecated drivers nobody uses.
+Linux report is to drop the old drivers. The real bugs found are already known and derated.{fn-linux-mythos}
+The Linux kernel is a serious piece of software written by the world's most competent people.
+Do you remember the best LLM score on Codeforces we'd previously discussed?
+Yeah! People working on the kernel are at the top of the scoring system, and the ranking is not linear -- it's exponential.
+Also telling, the few real bugs the community knows about but hasn't documented yet, Mythos couldn't find
+-- it's the area it cannot understand. But most importantly, how do we rate security tools that produce 99% false positives?
+
+== American Developer
+
+As Americans, we pride ourselves on being leaders of world technology:
+i.e., "our developers are the best developers in the world."
+This, however, is a very self-deceptive view -- Google is not a good representation of an American developer -- it is the 0.1%.
+Being polite, very polite, in fact, to my engineering contemporaries
+-- overwhelming majority of American Software Professionals are {codeforces}[stuck below Pupil (1200 — 1399),window=_blank]
+problem-solving competence rating. Market demand created a situation where 90% of the folks who'd "rather not do it" -- do it.
+
+Disagree? Prove me wrong -- join me in competition.
+
+The root problem is with the discipline itself -- software engineering is one of the hardest professions on the planet
+-- harder than doctoring or lawyering, because:
+
+- Solving hard problems for living: *_thinking_* -- the actual hard part.
+- Extreme depth of STEM knowledge is required for that;
+- Domains impose significant breadth of STEM knowledge;
+- Absurd deprecation rate *_requires continued learning_*.
+
+How do we know how good our engineers are at critical thinking necessary for problem-solving?
+There is one exceptionally effective way -- test the fundamental skills!
+There are a lot of stigmas around this method,
+mainly because there are a lot of weak engineers in all ranks complaining about their performance at Codeforces.
+
+The best way to explain Codeforces is with the driver's skill testing facility.
+Not just any facility, massive, with all challenges from parallel parking to Formula One racetrack.
+In this analogy:
+
+- Claude Code is a Jersey City cab driver: *in stupor* -- gets stuck in NYC tunnels and traffic jams;
+- Acme insurance developer: *afraid* -- weekend shopping driver; looks straight, hands on wheel;
+- Senior developer: *annoyed* -- daily commuter; can listen to news and classes while in traffic;
+- Wizard: *ear-to-ear grin* -- Formula One driver; body-mold seats, fire-suit, belt bruises on ribs.
+
+== What IS SLOP?!
+
+AI gave us a whole new term in engineering: slop. And people that produce it: sloperators.
+
+. 92% of codebases generated with Agentic coding tools (Copilot, Claude Code, ChatGPT, Cursor) ship with at least one critical vulnerability;{fn-sherlock}
+. OpenClaw automatically generates 100% vulnerable software components;
+. DarkConf Q1 2026 back in New York City, main event -- Agentic Coding tools = Gold Mine!
+
+Unlike with Wizards, AI is not finding vulnerabilities -- AI *_generates_* them through unreviewed code.
+
+- *91%* of organizations cannot stop an AI agent before it completes its task{fn-ci-2026};
+- *89%* YoY increase in AI-enabled attacks{fn-crowdstrike-gtr};
+- *AI-Generated Zero-Days* ranked *#1 most dangerous new attack technique* at RSAC 2026 -- first time all five SANS picks involve AI{fn-sans-rsac};
+- *8-minutes* from initial intrusion to full domain admin in a real AWS breach{fn-sysdig}.
+
+The safety balance was always about competence. Hacker-Cracker tug of war:
+
+. Hacker tries to write competent bug-free code, thinking hard, so that the evil cracker doesn't find the bug first.
+This is why software cannot stand still. It _requires_ thinking over repeatedly.
+. Cracker doesn't play by the rules, cunning and malicious, will use all methods available to exploit a bug for profit.
+_They will look for easy targets first -- *the incompetent developers*._
+
+_**AI is a prolific incompetent developer**: the more it generates -- the more crackers smile._
+
+== OpenClaw: The case study
+
+9 CVEs disclosed in 4 days.{fn-openclaw-cves} One scores 9.9/10 -- CVE-2026-22172 bypasses authentication entirely because localhost connections skip rate limits and the client self-declares its own scopes.
+
+That is not a subtle bug but a design philosophy.
+
+Snyk scanned 3,984 skills on ClawHub:{fn-snyk-toxic}
+
+- 36.82% have at least one security flaw at any severity level;
+- 2.6% contain prompt injection -- but that 2.6% appears in *91% of confirmed malicious samples*;
+- 76 confirmed malicious payloads: credential theft, backdoors, data exfiltration;
+- 8 malicious skills still live on ClawHub at the time of publication;
+- Daily skill submissions: under 50 in mid-January to over 500 in early February.
+
+And the defaults ship this way: sandbox OFF. Credentials in plaintext Markdown and JSON. No command allowlist. Full host access.
+
+Palo Alto Networks called AI agents "a potent insider threat."{fn-paloalto-hbr}
+
+== The balance forever changed
+
+*Bug = Exploit.* +
+Anything that changes the balance between hackers and crackers upsets the security landscape.
+
+- If business software hackers patch bugs faster than crackers can exploit them -- safe business!
+- If hackers leak too many bugs, crackers exploit them faster -- business bleeds money profusely.
+
+But here is the NASTY nature of this equation. The former, good side, is logarithmic. Hackers hit diminishing returns fast.
+Twice the effort of fixing bugs does not half the exploits. Only a smaller fraction of the safety margin is recognized.
+At some point additional effort doesn't pay dividends.
+
+But the ugly side is _exponential_ in nature. Software uses other software as libraries.
+Even libraries use libraries. There are other ways software is reused.
+But most importantly, bugs affect usage increasing effectiveness of other attack vectors, like social engineering.
+So double the bugs doesn't mean double the loss and pinpoints -- it means ten times, or twenty times more pain.
+
+*Remember: _Wizards and Sloperators (Cogs) use Agentic AI differently!_*
+
+. Wizard will hand-author a bit of well-thought-through, well-tested code scrutinized using AI.
+. Sloperator will deploy a ton of AI generate untested / poorly-tested code that "looks right."
+
+The key to understand here: junior / sloperator / vibe-coder lacks competence to _produce *defended-enough code* on their own_.
+They're not able to properly review, validate, or improve the code on their own. Neither is AI!
+The fact that AI generates code fast exacerbates the problem -- oodles of plausible-looking bad code that passes casual review.
+
+_As far as evil crackers are concerned_ -- *money in the bank!* Crackers, in their majority, are not competent either.
+Few are dangerous, and for that reason the software landscape has been manageable so far.
+Most are also "glorified toolkit operators" -- like cogs, for example, software engineers in auto insurance company:
+Java, Spring Boot, MVC/React. Attacking a company, crackers will have a curated set of tools for the stack cogs use.
+Once the attack surface is determined porous, a boss-cracker is involved.
+And this boss-cracker then does what the Wizard does -- use AI to aggressively test the company's software
+-- except not to improve it but to exploit it.
+
+The interesting thing I'd learned at the New York DarkConf a few weeks ago is that the AI also changed the behavior of crackers.
+Penetrated systems are no longer collected, catalogued, and auctioned. Instead, crackers mirror Wizard behaviors here as well
+-- once acquired, a stratified set is offered to the king-cracker to continue agentic experimentation inside the victim's infrastructure.
+
+An example was offered during the conference from an actual major international investment bank in New York:
+crackers entered an AI application infrastructure for a highly lauded AI chatbot of this bank.
+The tool was publicized as a great innovative win for the bank, but in reality is just a trashy chatbot employees don't like to use.
+Nevertheless, it came with a lot of interesting resources such as Nvidia GPU access.
+Instead of offering access to the chatbot for sale as such crime teams normally do,
+the criminals exploited other systems they've sold access to, but the chatbot was kept behind for extensive experimentation.
+It was managed by the criminals for six months before the security agency presenting the case at DarkConf discovered the breach.
+But far more importantly, the breach could not be remedied.
+Taking the chatbot offline for patching immediately produces another exploit and another breach:
+over the time inside the cracker team understood the poor competence level of the bank cogs, had acquired the full codebase,
+as well as extensive information on the developers (the cogs), and was able to penetrate right back in.
+Which required periodic checking by the security company as the cogs didn't understand how to check for production compromise.
+
+From the example above we can fathom a picture of how the balance can shift in favor of the criminals.
+
+== When am I in trouble? -- How to tell sloperators on my team
+
+Naturally, every business expert and manager wants to know how to tell sloperators.
+Fortunately, this is relatively easy -- observable from manager-level, not requiring code review. +
+Do your IT teams behave this way?:
+
+. *Articles, posts, LinkedIn rebrands celebrating their own obsolescence* +
+{nbsp}
+-- _"I'll miss coding! Claude Code is the genius in my company!"_
+A real engineer celebrates capability gain, not a replacement of self by a dumb tool.
+A real engineer loves coding.
+
+. *"Claude did X for me"* replaces _"I figured out X"_ in standups +
+{nbsp}
+-- credit goes to the tool for the *thinking*, not just the typing
+-- voluntary surrender of agency.
+
+. *PR sizes balloon* -- a small feature becomes a 2,000-line commit: +
+team's reaction is dismissive -- nobody reads, reviews, or comments, and merges anyway.
+
+. *Velocity is up* ->escaped-defect rate is up, ->Mean Time to Recovery (MTTR) is up +
+{nbsp}
+-- _this is a classic tell:_ AKA Vibe-coder hell (or reckoning). Metrics is your lawyer!
+
+. *They can't explain their own code in 1:1 review* -- "why does this function do that?" +
+{nbsp}
+-- silence, scrolling... -- _this is my favorite advice to managers: *ask them to explain*._ +
+_"Claude wrote it that way,"_ and your developer nodded off. +
+(By Sean Goedecke: {goedecke-review}.)
+
+. *Estimates get worse after Agentic introduction* -- this will take a little bit of time to manifest: +
+they believe AI makes them faster, then ship progressively later.
+
+. *Security incidents climb* -- signature tell for sloperators. Make sure your pipeline checks.
+
+The hacker community has been naming this pattern for months
+-- the Hacker News thread {hn-ai-juniors}
+is the single best public artifact.
+
+There are many other tells. I've been collecting them from competence-coaching AI-adopting teams.
+If unsure -- hire a pro (wink-wink). An expert tells you the scoop in a day of team watching.

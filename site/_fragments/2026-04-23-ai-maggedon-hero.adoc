@@ -1,5 +1,26 @@
 For everyone working with AI, there are things we must know, none of which are published in popular articles.
 These apply equally to companies and individuals. These are impactful. Here people err painfully.
+
+I'm aware because I train agentic development teams.
+And I consume all the AI news, Agentically, of course. And almost all of it is riding the hype.
+I'd expect that you see it too. The main problem here is that the practitioners don't care to write;
+I am a practitioner, and I also don't like to write about this mess -- I'd rather just tinker with it.
+Yet every weekend that I present, I move through the same set of questions that people ask.
+
+- No, Agentics like Claude Code don't speed your team up -- the maximum gain is 20%.
+- No, Claude Code *_cannot_* generate production-ready code -- it *always* generates SLOP.
+- No, AGI is NOT coming -- all ANNs are Specialists, not Generalists, *AND* psst +
+{nbsp}   -- we don't even know what AGI means!
+- No, Hallucinations *_cannot_* be removed -- LLM hallucinates 100% of the time by design.
+- No, LLMs won't search for your answer -- they always hallucinate from the training data.
+- No, LLMs will *_never reason_* -- by design they *interpolate* they cannot *extrapolate*.
+- No, Prompt Injection is not a bug -- it's the fundamental requirement number Zero (0)!
+
+And, the critically important "Uncertainty Acknowledgement" *_is_* possible with Agentics ...
+but I don't feel like writing a book about that, neither does the next practitioner,
+and by the time someone does, it will all change already.
+_Also, did you know that models get less and less useful with each new version?_
+
 Hence, the Straight Talk, and here are today's topics:
 
 {full-mythos} +
