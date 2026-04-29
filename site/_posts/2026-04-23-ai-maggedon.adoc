@@ -14,23 +14,15 @@ read_aloud: true
 include::../_fragments/2026-04-23-ai-maggedon-links.adoc[]
 include::../_fragments/2026-04-23-ai-maggedon-mythos-links.adoc[]
 include::../_fragments/2026-04-23-ai-maggedon-google-links.adoc[]
+include::../_fragments/2026-04-23-ai-maggedon-wizards-links.adoc[]
 :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
 :deathtrap: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/02/25/ai-strategy-deathtrap.html[AI Strategy Deathtrap -- Straight Talk,window=_blank]
 :disruption-2026: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/01/08/ai-disruption-of-2026.html[2026: The Year the Ground Moves,window=_blank]
 :openclaw: https://openclaw.ai/[OpenClaw,window=_blank]
 :claude-code: https://code.claude.com/[Claude Code,window=_blank]
 :codeforces: https://en.wikipedia.org/wiki/Codeforces
-:awesome-claude-code: https://github.com/hesreallyhim/awesome-claude-code[awesome-claude-code,window=_blank]
-:awesome-claude-code-toolkit: https://github.com/rohitg00/awesome-claude-code-toolkit[awesome-claude-code-toolkit,window=_blank]
 :goedecke-review: https://www.seangoedecke.com/ai-agents-and-code-review/[If you are good at code review&#44; you will be good at using AI agents,window=_blank]
 :hn-ai-juniors: https://news.ycombinator.com/item?id=47888068["Am I getting old&#44; or is working with AI juniors becoming a nightmare?",window=_blank]
-:fn-metr: footnote:metr[16 experienced open-source developers, 246 tasks, randomized controlled trial. Developers took 19% longer with AI but believed they were 20% faster -- a 39-point perception gap. Small sample, early 2025 tools. https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/[METR: AI-Experienced OS Dev Study,window=_blank]]
-:fn-dx: footnote:dx[121,000 developers across 450+ companies; productivity plateaued at ~10% gains despite 93% adoption. Staff+ engineers using AI daily: 4.4 hours saved per week. https://getdx.com/blog/ai-assisted-engineering-q4-impact-report-2025/[DX: AI-Assisted Engineering Impact Report,window=_blank]]
-:fn-codeelo: footnote:codeelo[CodeELO benchmark (https://arxiv.org/abs/2501.01257[arXiv:2501.01257,window=_blank]): best LLM (o1-mini) scored 1578 Elo; most LLMs in bottom 25% of human participants. The ~5% percentile for 2000+ rating is from https://codeforces.com/blog/entry/68288[Codeforces public rating distribution,window=_blank].]
-:fn-awesome-cc: footnote:awesome-cc[Community-curated collection of Claude Code agent skills, workflows, tooling, and CLAUDE.md files. {awesome-claude-code}]
-:fn-mcp-registry: footnote:mcp-registry[As of late 2025; the registry continues to grow. https://registry.modelcontextprotocol.io/[MCP Server Registry,window=_blank]]
-:fn-skillkit: footnote:skillkit[Via SkillKit marketplace, aggregated in awesome-claude-code-toolkit. {awesome-claude-code-toolkit}]
-:fn-jb-perception: footnote:jb-perception[3,380 developers from JetBrains 2024 Developer Ecosystem survey. Experienced developers more likely to perceive AI as "junior colleague" (OR 1.17) or assign no role (OR 1.38). Adoption rates similar across experience levels -- perception differs. https://arxiv.org/abs/2504.13903[Zakharov et al.: From Teacher to Colleague,window=_blank]]
 :fn-ci-2026: footnote:ci-2026[1,253 cybersecurity professionals surveyed; 91% cannot stop an AI agent before it acts. https://www.cybersecurity-insiders.com/ai-risk-and-readiness-report-2026/[AI Risk and Readiness Report 2026,window=_blank]]
 :fn-crowdstrike-gtr: footnote:crowdstrike-gtr[AI-enabled adversaries up 89% YoY; average eCrime breakout 29 minutes. https://www.crowdstrike.com/en-us/press-releases/2026-crowdstrike-global-threat-report/[CrowdStrike 2026 Global Threat Report,window=_blank]]
 :fn-sans-rsac: footnote:sans-rsac[First time all five SANS top picks involve AI; AI-generated zero days ranked #1. https://www.sans.org/press/announcements/rsac-2026-sans-institute-top-5-most-dangerous-new-attack-techniques[SANS RSAC 2026,window=_blank]]
@@ -40,9 +32,6 @@ include::../_fragments/2026-04-23-ai-maggedon-google-links.adoc[]
 :fn-paloalto-hbr: footnote:paloalto-hbr[Sponsored HBR content; Palo Alto Networks called AI agents "a potent insider threat." https://hbr.org/sponsored/2025/12/6-cybersecurity-predictions-for-the-ai-economy-in-2026[Palo Alto HBR 2025,window=_blank]]
 :fn-sherlock: footnote:sherlock[Sherlock Forensics 2026 AI Code Security Report -- security assessments on dozens of applications built with GitHub Copilot, Claude, ChatGPT, and Cursor between January and April 2026. 92% of codebases contained at least one critical vulnerability; 91% had no meaningful security logging; average 8.3 exploitable findings per app. https://www.sherlockforensics.com/pages/ai-code-security-report-2026.html[Sherlock Forensics: 2026 AI Code Security Report,window=_blank]]
 :fn-linux-mythos: footnote:linux-mythos[Linux kernel team is removing legacy network drivers (3Com, AMD, SMSC, Cirrus Logic, Fujitsu, Xircom, 8390-based — ~27,646 lines) due to AI-generated bug-report deluge from tools like Mythos. Andrew Lunn's LKML proposal: "These old drivers have not been much of a maintenance burden until recently." https://www.tomshardware.com/software/linux/linux-may-be-ending-support-for-older-network-drivers-due-to-influx-of-false-ai-generated-bug-reports-maintenance-has-become-too-burdensome-for-old-largely-unused-systems[Tom's Hardware: Linux may end old network driver support over AI-generated false reports,window=_blank]]
-:fn-india-crisis: footnote:india-crisis[Aspiring Minds found 95% of Indian engineers cannot code; 83% of 2024 graduates unemployed or without internships. https://iem.edu.in/news-events/real-reason-95-indian-engineers-cant-code/[IEM: Why 95% of Indian Engineers Can't Code,window=_blank] and https://www.hackerearth.com/blog/90-indian-engineering-candidates-employable-why[HackerEarth: Why 80% Remain Unemployable,window=_blank]]
-:fn-china-oss: footnote:china-oss[Chinese open-weight models hit 17.1% of global AI downloads, surpassing US (15.86%); Qwen derivatives are 40%+ of new Hugging Face models. Four Chinese labs ship frontier models every 4-6 weeks. https://www.technologyreview.com/2026/04/21/1135658/china-open-source-models-ai-artificial-intelligence/[MIT Tech Review: China's Open-Source Bet,window=_blank]]
-:fn-prague-hackers: footnote:prague-hackers[IOI all-time medals per capita: Czech Republic 9.2 per million vs United States 0.38 per million (~1/25 ratio). Prague hosted brmlab (first Czech hackerspace, 2010), Paralelní Polis (Institute of Cryptoanarchy, 2014-2026), and HCPP -- where Stallman and ESR spoke. Called "crypto-anarchist capital of the 21st century" by https://www.calvertjournal.com/articles/show/12289/silicon-valley-prague-cryptoanarchist-capital-21st-century[The Calvert Journal,window=_blank]. Paralelní Polis closed permanently March 2026. IOI data: https://stats.ioinformatics.org/countries/[IOI Statistics,window=_blank]]
 :hero-alt: A working hacker -- mid-50s, hoodie, glasses -- codes calmly at an old CRT terminal through an apocalypse. \
 Burning city, Yggdrasil ablaze on the horizon, agentic drones in the sky, red lightning. \
 Three tombstones in the foreground read "VIBE CODED," "PUSHED TO MAIN," "TRUST THE AGENT." \
@@ -62,239 +51,7 @@ include::../_fragments/2026-04-23-ai-maggedon-mythos.adoc[leveloffset=+1]
 
 include::../_fragments/2026-04-23-ai-maggedon-google.adoc[leveloffset=+1]
 
-== 3. The Golden Children -- What have they done
-
-*_The world displays a WRONG understanding of HOW developers use AI coding tools!_*
-
-Recently one manager told me that their team is a 5X now
--- not only is that statistically impossible at the team or sprint level, the highly increased closing rate means the team is in a *bad place*.
-Let's understand this:
-
-[cols="1,2,3",options="header"]
-|===
-| Level | What happens | Data
-
-| Junior
-| Gets *_worse_*
-| 2.74x more vulnerabilities,footnote:veracode[] can't review output
-
-| Mid
-| Breaks even, maybe
-| 19% slower, thinks 20% faster{fn-metr}
-
-| Senior
-| Saves ~4 hrs/week
-| DX Staff+ daily users{fn-dx}
-
-| Wizard
-| No speed gain, life is nicer
-| No survey data, builds the tooling
-|===
-
-[source]
-----
-Impact
-    ↑
-    |          Wizard ·····●  (quality of life)
-    |        Senior  ●
-    |               /
-    |    ----Mid---●···→  (slowly improves)
-  0 |---/-------------------
-    |  /
-    | ● Junior/Cog
-    ↓
-    DEGRADATION
-----
-
-{link-primer}[Section 5,window=_blank] better explains the causes of this outcome
--- it has to do with both the abilities of the model and the competence of the developer.
-In short, here is the nature of the model's abilities:
-
-- *AI cannot reason:* It scores below 2000 on Codeforces, the Candidate Master{fn-codeelo}, level 5 of 10,
-and only for problem types it had in its training data, abysmally otherwise. It's an exponential scale,
-so getting to 6 (2100-2299), Master, is harder than getting from 1 to 5.
-The score of 5 is exceeded by only 5% of the human coders at the competition
--- this goes to show how drastic the difference between mid-level and junior developers is.
-Yet 16-year-olds in code camps regularly exceeded 2000 points.
-I also had entire teams in corporate America unable to reach Candidate Master in a year of my coaching.
-And it's hard to find a 20-year-old beating Master (2300+).
-For AI the road to the next score is long, even longer than for humans. +
-_Keep this in mind!_
-
-- *AI is a matching fool:* It beats most humans in correcting boilerplate framework code, like Spring Boot.
-And it excels at checking the existing codebase for a full spectrum of implementation problems,
-but not architectural or design problems, except for well-defined scenarios like the design patterns violations.
-This is a strong suit and valuable help welcomed by most developers.
-
-*Junior developers:* Claude Code is smarter and will generate vast spans of code that juniors like but cannot evaluate.
-The code looks good, seems better than such a developer would write -- *slop*.
-*This group constitutes the _most enthusiastic_ OpenClaw users, by the way!*
-
-*Mid-level developer (3-5 years at most companies):* Claude has breadth;
-tug of war ensues on topics that the developer does know something about; trust erodes and progress slows because of it.
-Juniors were not able to call BS on Claude. These developers can.
-*_The developer is forced to learn_* attempting to argue their case with Claude, and it is a net-positive outcome for humans.
-
-*Senior developer (10-15 years):* These people trust Claude Code the least.{fn-jb-perception}
-They adopt at similar rates but perceive the least value -- "junior colleague" at best, irrelevant at worst.
-But the developers that do force themselves to master Claude Code save up to 4.4 hours per week
--- highest gains seen in independent data.footnote:dx[]
-The key here is to apply what Claude can do well.
-
-Every independent study referenced here -- over thousands of teams and developers -- caps real-world gains at *~1.1X to 1.2X*;footnote:metr[]footnote:dx[]
-*a sustained gain over 20% has never been observed* on real work at the team or sprint level.
-Anything claimed above 1.5X means only one thing -- *SLOP*! +
-(And implies low team maturity and vulnerability factory.)
-
-_Full disclosure:_ I personally pulled several teams to 1.5-1.6X in 2025.
-Not by having Claude Code generate code -- by replacing their summary and coordination ceremonies
-with discussion pages and Claude-managed summaries.
-The team stopped wasting hours in meetings; Claude Code added quality on top.
-The speed came from removing organizational waste; the tool enabled the new coordination pattern and polished the output.
-_Organization development, not trinkets._
-
-=== The Wizards ARE the Agentic Revolution
-
-This last group is the most peculiar kind. They're excluded from the statistic and there is a good reason for it.
-In my circles, wizards' adoption level is nearly absolute -- you will find half of them actively contributing to the Agentic tools themselves.
-But their usage is a statistical anomaly and does not mirror any other groups -- wizards are either all in or all out.
-And, of course, we only measure the all in crowd.
-
-The usage tropes are as follows:
-
-- Extreme *experimentation* -- the Northern Community of Founders (formed 1994 Philadelphia, migrated to Quebec 2010s), a 3,000-developer metrics pool, shows 50% of the interaction is experimentation.
-Claude Code tells me I experiment 70% of the time.
-
-- Tinkering, decomposition, modification, and *extension*: This group never seems to be satisfied with the tool,
-finding it incredibly promising and equally wanting at the same time.
-The wanting is primarily generated by the limitation of the model -- something a hacker can do little about,
-except to try another model -- that is how places like `openrouter.ai` came to be.
-The orchestration, choreography, and extension are something right under the fingertips, which is why we now have
-thousands of plugins, skills, mods, shims, and most importantly, *forks*.
-
-- *NEVER* allow Claude to *generate* ANY functional code, making the stat-collection useless.
-
-Now this last point is _crucial to understand_. I can explain why I never let it generate:
-
-. Claude Code produces CRAP functional code 100% of the time, even for simple asks;
-. This CRAP code has my name to it thus generates immediate need for me to FIX it.
-
-I don't know about you, but I am not a big fan of fixing someone else's code.
-In most cases I find that I don't like the approach, so I will just refactor.
-This is acceptable with human collaborators -- we both learn from the experience.
-But having a tool generate the code that I will always throw away is annoying to me.
-My Claude and I ran an experiment for a few days and measured my performance alone versus together.
-We have found that if I let Claude Code generate my functional code first, I am 3 times SLOWER than coding alone
-(29% of solo speed).
-
-From my own beloved Claude Code::
-`Claude`:
-How much of my generated functional code have you accepted? +
-Close to zero. You throw it away or refactor it every time. +
-The 15-line detect-sdkman script was the closest I got to a keeper, and that took iteration. +
-Everything else -- Kotlin, workflow logic, anything "creative" -- you rewrite. +
-Because you're faster, and because my version *_never matches how you think about the problem._*
-
-That is telling -- isn't it? -- "never matches how you think." +
-So is Claude Code useful to me? -- ABSOLUTELY! +
-The best collaborator I ever had!
-
-The difference is straightforward: +
-young ones want Claude to think *_instead_* of them -- that is slop. +
-Wizards want Claude to think *_with_* them -- wizard brings architecture, +
-Claude brings breadth.
-
-#_AI makes dumb developers dumber and smart developers happier._#
-
-So, then, how do Wizards use Claude Code "purely for quality of life improvement":
-
-*Research and comprehension*::
-
-- Breaking into new or forgotten technology -- Claude reads the docs, the API surface, the changelog, and briefs the wizard in minutes instead of days
-- Grepping a codebase for a *_logical_* pattern -- not text search, semantic search: "find every place we handle timeout differently from retry"
-- Finding similar but different logical blocks across a large codebase -- the kind of structural comparison a human eye misses at scale
-- Analyzing data sets for patterns, anomalies, and correlations
-- Finding and extracting relevant documentation from specs, RFCs, and vendor manuals
-- Deep research with source verification -- web search, fetch, cross-reference, flag what doesn't check out
-
-*Adversarial analysis -- the strongest suite*::
-
-- Brutal code review -- catching what the wizard missed, not what the wizard wrote
-- Security scanning -- OWASP, injection vectors, credential exposure, dependency vulnerabilities
-- Adversarial testing of arguments, designs, and architectural decisions
-- Fact-checking claims against primary sources -- every footnote in this article was verified this way
-- Finding the holes in your own reasoning before someone else does
-
-*Generation -- everything EXCEPT functional code*::
-
-- Tests: unit, integration, edge cases, property-based -- the boilerplate that protects the wizard's functional code
-- Configuration: YAML, JSON, TOML, build manifests, CI/CD workflows, Dockerfiles
-- Documentation: API docs, README files, inline comments, changelogs, commit messages
-- Scaffolding: project structure, directory layout, starter templates
-- Data transformations: CSV parsing, format conversion, schema migration scripts
-- Regex patterns and complex SQL queries
-- AsciiDoc, Markdown, and all structured text formatting
-- Agent definitions, MCP server configs, skill files, workflow automation
-- Git operations: branch management, release automation, changelog generation
-
-*Refactoring assistance*::
-
-- Identify what to change and where -- the wizard writes the change
-- Dependency analysis and upgrade path mapping
-- Migration planning: scope, risks, ordering
-- Dead code detection, unused import cleanup, naming consistency
-
-_This is *a lot* of help to hackers' thinking_ -- gained efficiency helped produce the 40,700-star {awesome-claude-code} repository,{fn-awesome-cc}
-16,670 MCP servers,{fn-mcp-registry} 400,000 shared skills,{fn-skillkit} and a sprawl of plugins, mods, and forks
--- built by wizards working *with* Claude, not *replaced* by it!
-
-*NO CODE GENERATION done or wanted!*
-
-Posers, of course, are all over these sources too. This is good, people take interest and try -- the way hackers are made in the first place.
-A lot of young people try, even very young, which is great because we may get a new generation of hackers out of this evolution.
-Right now the concentration of skilled developers is very low in the United States
--- about 1/25 as compared to Prague,{fn-prague-hackers} the previous capital of the Hacker Culture
-(until cost-of-living and COVID broke the scene),
-or Cluj-Napoca, where the community has been migrating since 2024.
-By the time the indexed world notices, the capital may have already moved again -- Prague only became known five years after hackers settled it.
-It's been hard to believe that the Hacker Culture even comes from Boston, Massachusetts.
-Some places are extremely underrepresented, like India, recently suffering from engineering competence crisis.{fn-india-crisis}
-Vietnam and the Philippines show Southeast Asia's hacker footprint
--- Filipino wizards shaped European scenes a generation ago; Vietnamese engineers are building the next wave now.
-But the heaviest hitter on the globe is China
--- the hacker movement in China today exceeds all the other places put together.{fn-china-oss}
-
-Because of such high interest worldwide, the average forking is 10x; the imitations make up another 10X;
-plus a traditional 2x noise buffer to keep the estimate conservative -- divide observed totals by ~200 to get wizard repos.
-The conventional expectation in my tracking over the last 15 years is about a hundred wizard repos at any given time.
-My current catalog is ~240 validated and curated wizard repos
--- a 2.5X jump in the interest of the gifted and experienced software engineers.
-*I have not seen a jump like this in 15 years of curation.*
-
-The most prolific era in the past was the mobile app revolution,
-which produced about 50 wizard repos in my catalog over the first 3 years.
-These shared sources bootstrapped what we now call the last OSS revolution and culminated in technologies like Flutter,
-Couchbase, and Kotlin. Google, from the previous chapter, was the tarmac right beneath it all with the OSS Android ADK,
-Linux marriage, JetBrains partnership, Kotlin as the primary ecosystem commitment, and the Android Studio.
-Now we have five times that number of solid sources just in the last 6 months.
-And Google is not curating this current OSS ecosystem -- it is all "enterprise market" by Google this time around.
-It's worth keeping this distinction in mind considering {link-google}[the previous chapter,window=_blank].
-And I hope my reader understands the implications of this phenomenon -- the technology is self-enhancing:
-every new enhancement enables the next one better; and the ecosystem is fully open and untethered.
-Whilst Anthropic is the favorite here in the USA with developers able to afford $200 per month,
-the rest of the world is also doing rather well with OpenCode, repointed Claude Code, Ollama, and openrouter.
-Unlike with mobile, agentic costs money, perhaps explaining places like India falling out,
-and the paying developer seems to be a little better equipped and experienced than before.
-So this growth maps very tightly to the better skilled developer and this trend is likely here to stay.
-
-Current data does not suggest that "developers will lose jobs" -- it argues that less capable developers will lose jobs.
-Analysis points at the https://en.wikipedia.org/wiki/Jevons_paradox[Jevons Paradox,window=_blank]
--- more developers will be needed overall, just a different kind of developers to what the market demanded recently;
-now we will +
-__demand flexible people who like to *learn new skills faster* +
-as opposed to cheaper people who **parrot a single skillset**__.
-
-*link:/riddle-me-this/reflections/2026/04/23/ai-maggedon-2026-research.html[Full research stash and verified sources for this section,window=_blank]*
+include::../_fragments/2026-04-23-ai-maggedon-wizards.adoc[leveloffset=+1]
 
 == 4. AI Attack Surface -- The rest of us
 
