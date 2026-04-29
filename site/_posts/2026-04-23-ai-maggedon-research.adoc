@@ -1,5 +1,5 @@
 ---
-categories: [reflections]
+categories: [research]
 tags: [AI, Agentic AI, Security, Enterprise, Zero-Day, OpenClaw, Claude Code]
 excerpt: >
     Research stash and source verification for AI-maggedon 2026.

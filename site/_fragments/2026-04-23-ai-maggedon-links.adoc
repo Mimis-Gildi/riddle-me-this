@@ -6,14 +6,14 @@
 :anchor-google: 2-stage-zero-monetization-google-deterministic-ai
 :anchor-wizards: 3-the-golden-childrenwhat-have-they-done
 :anchor-killing: 4-ai-attack-surfacethe-rest-of-us
-:anchor-primer: 5-agentic-success-almanach-how-and-why-and-what-gives
+:anchor-primer: 5-agentic-success-almanac-how-and-why-and-what-gives
 
 // Section heading text
 :title-mythos: 1. Mythos and Wonder-Models: "The fire truck is also the arsonist."
 :title-google: 2. Stage Zero Monetization: Google Deterministic AI
 :title-wizards: 3. The Golden Children -- What have they done
 :title-killing: 4. AI Attack Surface -- The rest of us
-:title-primer: 5. Agentic Success Almanach: How and Why and What Gives
+:title-primer: 5. Agentic Success Almanac: How and Why and What Gives
 
 // Section links (in-text use: {link-X}[your phrase, window=_blank])
 :link-mythos: {full-url}#{anchor-mythos}

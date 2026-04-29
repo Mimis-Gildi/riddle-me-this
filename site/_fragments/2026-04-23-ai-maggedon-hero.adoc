@@ -19,7 +19,7 @@ Yet every weekend that I present, I move through the same set of questions that 
 And, the critically important "Uncertainty Acknowledgement" *_is_* possible with Agentics ...
 but I don't feel like writing a book about that, neither does the next practitioner,
 and by the time someone does, it will all change already.
-_Also, did you know that models get less and less useful with each new version?_
+_Also, did you know that models get less useful with each version?_
 
 Hence, the Straight Talk, and here are today's topics:
 

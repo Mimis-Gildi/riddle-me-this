@@ -166,10 +166,10 @@ So, then, how do Wizards use Claude Code "purely for quality of life improvement
 
 *Generation -- everything EXCEPT functional code*::
 
-- Tests: unit, integration, edge cases, property-based -- the boilerplate that protects the wizard's functional code
-- Configuration: YAML, JSON, TOML, build manifests, CI/CD workflows, Dockerfiles
-- Documentation: API docs, README files, inline comments, changelogs, commit messages
-- Scaffolding: project structure, directory layout, starter templates
+- Test scaffolds: unit, integration, edge cases, property-based -- not test, the boilerplate for the wizard
+- Configuration Slops: YAML, JSON, TOML, build manifests, CI/CD workflows, Dockerfiles
+- Documentation Slops: API docs, README files, inline comments, changelogs, commit messages
+- General scaffolding from wizard's templates: project structure, directory layout, file stubs
 - Data transformations: CSV parsing, format conversion, schema migration scripts
 - Regex patterns and complex SQL queries
 - AsciiDoc, Markdown, and all structured text formatting
@@ -233,4 +233,4 @@ now we will +
 __demand flexible people who like to *learn new skills faster* +
 as opposed to cheaper people who **parrot a single skillset**__.
 
-*link:/riddle-me-this/reflections/2026/04/23/ai-maggedon-2026-research.html[Full research stash and verified sources for this section,window=_blank]*
+*link:/riddle-me-this/research/2026/04/23/ai-maggedon-research.html[Full research stash and verified sources for this section,window=_blank]*

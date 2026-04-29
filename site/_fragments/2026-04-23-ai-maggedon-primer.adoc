@@ -5,7 +5,7 @@ include::./2026-04-23-ai-maggedon-primer-links.adoc[]
 
 This post is essentially five closely related articles.
 
-And this almanach "tells it to me like I'm five."
+And this almanac "tells it to me like I'm five."
 
 == a. What is LLM
 
