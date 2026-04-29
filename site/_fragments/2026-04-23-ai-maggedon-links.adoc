@@ -1,0 +1,30 @@
+:full-url: link:/riddle-me-this/reflections/2026/04/23/ai-maggedon.html
+:full: {full-url}[AI-maggedon 2026: Straight Talk,window=_blank]
+
+// Section anchors
+:anchor-mythos: 1-mythos-and-wonder-models-the-fire-truck-is-also-the-arsonist
+:anchor-google: 2-stage-zero-monetization-google-deterministic-ai
+:anchor-wizards: 3-the-golden-childrenwhat-have-they-done
+:anchor-killing: 4-ai-attack-surfacethe-rest-of-us
+:anchor-primer: 5-agentic-success-almanach-how-and-why-and-what-gives
+
+// Section heading text
+:title-mythos: 1. Mythos and Wonder-Models: "The fire truck is also the arsonist."
+:title-google: 2. Stage Zero Monetization: Google Deterministic AI
+:title-wizards: 3. The Golden Children -- What have they done
+:title-killing: 4. AI Attack Surface -- The rest of us
+:title-primer: 5. Agentic Success Almanach: How and Why and What Gives
+
+// Section links (in-text use: {link-X}[your phrase, window=_blank])
+:link-mythos: {full-url}#{anchor-mythos}
+:link-google: {full-url}#{anchor-google}
+:link-wizards: {full-url}#{anchor-wizards}
+:link-killing: {full-url}#{anchor-killing}
+:link-primer: {full-url}#{anchor-primer}
+
+// Section links with section-heading text (title use)
+:full-mythos: {link-mythos}[{title-mythos},window=_blank]
+:full-google: {link-google}[{title-google},window=_blank]
+:full-wizards: {link-wizards}[{title-wizards},window=_blank]
+:full-killing: {link-killing}[{title-killing},window=_blank]
+:full-primer: {link-primer}[{title-primer},window=_blank]

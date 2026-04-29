@@ -11,6 +11,7 @@ read_aloud: true
 ---
 = AI-maggedon 2026: Straight Talk
 :imagesdir: ./assets/images
+include::../_fragments/2026-04-23-ai-maggedon-links.adoc[]
 :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
 :deathtrap: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/02/25/ai-strategy-deathtrap.html[AI Strategy Deathtrap -- Straight Talk,window=_blank]
 :disruption-2026: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/01/08/ai-disruption-of-2026.html[2026: The Year the Ground Moves,window=_blank]
@@ -60,25 +61,14 @@ A hanging sign reads "INFRASTRUCTURE AS SERVICE TO ODIN." \
 The terminal glows green with the line: \
 "AI makes dumb developers dumber and smart developers happier."
 
-For everyone working with AI there are things we must know, none of which are published in popular articles.
-These apply equally to companies and individuals. These are impactful. Here people err painfully.
-Hence, the Straight Talk, and here are today's topics:
+include::../_fragments/2026-04-23-ai-maggedon-hero.adoc[]
 
-. <<sec-mythos,Mythos is a gimmick>>; other "real weapons" *_are_* deployed: Don't worry about it!
-. <<sec-google,"Deterministic AI" marketing>>: Google rallied the ecosystem -- this tills the market, again.
-. <<sec-wizards,The golden few>>: Agentic Collaboration is the "greatest disruptor of all time" -- _just for *some*._
-. <<sec-killing,The killing floor>>: Agentic Collaboration as a zealous company killer. Unavoidable for MOST.
-. <<sec-primer,Agentic Nirvana>>: How and Why -- your in-field primer and compendium.
-
-_The section 5 gives you the fundamentals you need to *survive* Agentic age._
-
-.The world ends as crackers eat the cogs. The hacker works.
+.The world ends as crackers eat up cog. The hacker works.
 [#img-hero]
 image::/riddle-me-this/assets/images/wizard-2.png[{hero-alt}]
 
 {nbsp}
 
-[#sec-mythos]
 == 1. Mythos and Wonder-Models: "The fire truck is also the arsonist."
 
 The Anthropic folks need to learn to value what they have achieved, cherishing remaining integrity. +
@@ -197,7 +187,6 @@ _Cute bike!_
 Review this article in a couple of years from now and remember that `rdd13r` told you +
  -- _the near future is in systems, not models._
 
-[#sec-google]
 == 2. Stage Zero Monetization: Google Deterministic AI
 
 Zuk built Facebook on *build and pray*.
@@ -325,7 +314,6 @@ While others hype over models, Google just patiently rolls strategy.
 
 What is your take? Leave me a comment.
 
-[#sec-wizards]
 == 3. The Golden Children -- What have they done
 
 *_The world displays a WRONG understanding of HOW developers use AI coding tools!_*
@@ -370,7 +358,7 @@ Impact
     DEGRADATION
 ----
 
-<<sec-primer,Section 5>> better explains the causes of this outcome
+{link-primer}[Section 5,window=_blank] better explains the causes of this outcome
 -- it has to do with both the abilities of the model and the competence of the developer.
 In short, here is the nature of the model's abilities:
 
@@ -542,7 +530,7 @@ Couchbase, and Kotlin. Google, from the previous chapter, was the tarmac right b
 Linux marriage, JetBrains partnership, Kotlin as the primary ecosystem commitment, and the Android Studio.
 Now we have five times that number of solid sources just in the last 6 months.
 And Google is not curating this current OSS ecosystem -- it is all "enterprise market" by Google this time around.
-It's worth keeping this distinction in mind considering <<sec-google,the previous chapter>>.
+It's worth keeping this distinction in mind considering {link-google}[the previous chapter,window=_blank].
 And I hope my reader understands the implications of this phenomenon -- the technology is self-enhancing:
 every new enhancement enables the next one better; and the ecosystem is fully open and untethered.
 Whilst Anthropic is the favorite here in the USA with developers able to afford $200 per month,
@@ -560,14 +548,13 @@ as opposed to cheaper people who **parrot a single skillset**__.
 
 *link:/riddle-me-this/reflections/2026/04/23/ai-maggedon-2026-research.html[Full research stash and verified sources for this section,window=_blank]*
 
-[#sec-killing]
 == 4. AI Attack Surface -- The rest of us
 
 Everything crashes and burns, and it will get worse fast before it gets better.
 It is the pace of change that is critically important, not the running level of trouble.
 And we have changes.
 
-OSS libraries Mythos supposedly jeopardizes aren't a top-ten concern, as I'd already explained in <<sec-mythos,section 1>>;
+OSS libraries Mythos supposedly jeopardizes aren't a top-ten concern, as I'd already explained in {link-mythos}[section 1,window=_blank];
 that is a marketing gimmick. The drama around Mythos is still evolving,
 first Mozilla people posted the actual bugs found, and that is, sit-down for it, 3% of reported!
 As it turned out, Anthropic ran the scan without a sandbox, effectively ignoring a lot of security functionality.
@@ -749,7 +736,6 @@ is the single best public artifact.
 There are many other tells. I've been collecting them from competence-coaching AI-adopting teams.
 If unsure -- hire a pro (wink-wink). An expert tells you the scoop in a day of team watching.
 
-[#sec-primer]
 == 5. Agentic Success Almanach: How and Why and What Gives
 
 This post is essentially five closely related articles.

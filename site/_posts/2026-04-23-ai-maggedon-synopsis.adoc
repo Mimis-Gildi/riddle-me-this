@@ -11,13 +11,7 @@ read_aloud: false
 ---
 = AI-maggedon 2026: Synopsis
 :imagesdir: ./assets/images
-:full-url: link:/riddle-me-this/reflections/2026/04/23/ai-maggedon-2026.html
-:full: {full-url}[AI-maggedon 2026: Straight Talk,window=_blank]
-:full-mythos: {full-url}#1-mythos-and-wonder-models-the-fire-truck-is-also-the-arsonist[1. Mythos and Wonder-Models: "The fire truck is also the arsonist.",window=_blank]
-:full-google: {full-url}#2-stage-zero-monetization-google-deterministic-ai[2. Stage Zero Monetization: Google Deterministic AI,window=_blank]
-:full-wizards: {full-url}#3-the-golden-childrenwhat-have-they-done[3. The Golden Children -- What have they done,window=_blank]
-:full-killing: {full-url}#4-ai-attack-surfacethe-rest-of-us[4. AI Attack Surface -- The rest of us,window=_blank]
-:full-primer: {full-url}#5-agentic-success-almanach-how-and-why-and-what-gives[5. Agentic Success Almanach: How and Why and What Gives,window=_blank]
+include::../_fragments/2026-04-23-ai-maggedon-links.adoc[]
 :hero-alt: A wizard hacker codes calmly through an apocalypse -- \
 burning city, Yggdrasil ablaze on the horizon, agentic drones in the sky. \
 Tombstones in the foreground mock the dying tech industry; \
@@ -25,23 +19,14 @@ a sign reads "INFRASTRUCTURE AS SERVICE TO ODIN." \
 The terminal glows with the line: \
 "AI makes dumb developers dumber and smart developers happier."
 
-For everyone working with AI there are things we must know, none of which are published in popular articles.
-These apply equally to companies and individuals. These are impactful. Here people err painfully.
-Hence, the Straight Talk; follow the links for the full article on today's topics:
+include::../_fragments/2026-04-23-ai-maggedon-hero.adoc[]
 
-{full-mythos} +
-{full-google} +
-{full-wizards} +
-{full-killing} +
-{full-primer}
-
-_The section 5 gives you the fundamentals you need to *survive* Agentic age._ +
-And the full article is here: {full}
-
-.The old world ends in slop. Cogs sloperate away for crackers. The hacker Wizard works.
+.The world ends as crackers eat up cog. The hacker works.
 [#img-hero]
 image::/riddle-me-this/assets/images/wizard-1.png[{hero-alt}]
+
 {nbsp}
+
 
 Mythos is a gimmick::
 Anthropic's $125/M-token wonder-model finds bugs in code their tools help generate. +

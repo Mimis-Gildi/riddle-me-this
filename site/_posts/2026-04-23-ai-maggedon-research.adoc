@@ -11,7 +11,7 @@ read_aloud: false
 ---
 = AI-maggedon 2026: Research and Sources
 :imagesdir: ./assets/images
-:full: link:/riddle-me-this/reflections/2026/04/23/ai-maggedon-2026.html
+:full: link:/riddle-me-this/reflections/2026/04/23/ai-maggedon.html
 
 Research stash and verified sources for {full}[AI-maggedon 2026: Straight Talk,window=_blank].
 
