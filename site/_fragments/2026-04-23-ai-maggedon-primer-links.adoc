@@ -1,3 +1,29 @@
 // External links
+:ollama: https://ollama.com/
+:llama-cpp: https://github.com/ggerganov/llama.cpp
+:lm-studio: https://lmstudio.ai/
+:openrouter: https://openrouter.ai/
+:openrouter-rankings: https://openrouter.ai/rankings
+:artificial-analysis: https://artificialanalysis.ai/
+:together-ai: https://www.together.ai/
+:fireworks-ai: https://fireworks.ai/
+:deepinfra: https://deepinfra.com/
+:kimi-k2-thinking: https://huggingface.co/moonshotai/Kimi-K2-Thinking/tree/main
+:mit-genai-divide: https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf
+:mit-hbr: https://hbr.org/2025/08/beware-the-ai-experimentation-trap
+:mit-fortune: https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/
+
+// Cross-references
+:link-local-grief: https://mimis-gildi.github.io/riddle-me-this/adventures/2026/01/27/local-models-grief.html
+
+// External references
+:vailala: https://en.wikipedia.org/wiki/Vailala_Madness
+:ghost-article: https://mimis-gildi.github.io/riddle-me-this/research/2025/09/19/advanced-ai-non-corp.html
+
+// Image sources
+:commons-john-frum-effigy: https://commons.wikimedia.org/wiki/File:John_Frum_effigy_1960.jpg
 
 // Footnotes
+:fn-mit-genai-divide: footnote:[{mit-genai-divide}[The GenAI Divide: State of AI in Business 2025,window=_blank] -- MIT NANDA, July 2025. Primary source: 95% of enterprise GenAI pilots produce no measurable P&L impact.]
+:fn-mit-hbr: footnote:[{mit-hbr}[Beware the AI Experimentation Trap,window=_blank] -- Challapally, Pemberton, Kalathil, HBR, August 2025. Authors' summary in their own venue.]
+:fn-mit-fortune: footnote:[{mit-fortune}[MIT report: 95% of generative AI pilots at companies are failing,window=_blank] -- Fortune, August 2025. Popular coverage.]

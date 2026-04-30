@@ -49,7 +49,15 @@ include::../_fragments/2026-04-23-ai-maggedon-primer.adoc[leveloffset=+1]
 
 == The Inevitable Outcomes
 
+. There will never be a single model that breaks the world. Curtail your excitement.
+. Technology adoption speed depends on human factors alone. https://en.wikipedia.org/wiki/Cargo_cult[Cargo cult,window=_blank] proves it.
+. Systems with some AI in them will change everything. Not because of the AI.
+
 == Full Disclosure
 
-// TODO: Vadim's standard disclosure section.
-// Biases, relationships, what the reader should weigh.
+I have helped teams adopt agentic technology resulting in double delivery speed with increased quality.
+Executives reported that it was from Claude Code -- post hoc ergo propter hoc.
+The performance gain is caused by the organizational and operational changes concurrent to the agentic adoption.
+It is a bad idea to conflate the two, and I think more people will: +
+Working digital transformation results in speed and quality; +
+Claude Code -- can cut both ways +/- 20% at best.

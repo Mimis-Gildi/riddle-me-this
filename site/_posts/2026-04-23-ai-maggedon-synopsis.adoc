@@ -12,6 +12,7 @@ read_aloud: false
 = AI-maggedon 2026: Synopsis
 :imagesdir: ./assets/images
 include::../_fragments/2026-04-23-ai-maggedon-links.adoc[]
+include::../_fragments/2026-04-23-ai-maggedon-primer-links.adoc[]
 :hero-alt: A wizard hacker codes calmly through an apocalypse -- \
 burning city, Yggdrasil ablaze on the horizon, agentic drones in the sky. \
 Tombstones in the foreground mock the dying tech industry; \
@@ -32,15 +33,15 @@ Mythos is a gimmick::
 Anthropic's $125/M-token wonder-model finds bugs in code their tools help generate. +
 Agentic coding spikes 2.74x the vulnerability rate -- *the fire truck is also the arsonist*. +
 But that's not even the whole joke yet -- most powerful AI-native exploitative tools are *_systems_*, +
-model differences of 10% make no difference -- these apply many models across all surfaces. +
+model differences of 10% make no difference -- these run many models across all surfaces. +
 {nbsp} +
 The Anthropic folks need to learn to value what they have achieved, cherishing remaining integrity. +
 Full story {full-mythos}
 
 "Deterministic AI": some flaunt models, Google tills markets::
 Engineers mocked the name; Google doesn't care, doesn't salivate over models +
- -- IT's absorbing your domain logic whole; +
-The Mojo: ecosystem your experts spent decades building you fork over like your family photos. +
+ -- it's absorbing your domain logic whole; +
+The Mojo ecosystem your experts spent decades building, you fork over like your family photos. +
 Same play as 2017 on a way bigger stage -- you are just data to them. Digestible. Yummy. +
 Full story {full-google}
 
@@ -75,7 +76,33 @@ The field primer::
 Naked model to autonomous agent -- basic knowledge necessary to survive Agentic. +
 Most enterprises ship Tier 0 in a year while startups build products in weeks at Tier 3. +
 The gap is the thesis. +
-{full-primer}
+Full story {full-primer}
+
+'''
+
+WHY am I telling you this? In every company I run my Agentic Bootcamp I always get this one popular wise guy execs adore!
+Kimi is the hottest Chinese girl on The Scene right now -- smart, beautiful, cultured, just stunning -- no hacker walks by
+without hunching over. So when a poser brags "I'm running Kimi local by my Claude at home" -- ask which model and at what quantization.
+
+I asked him a few times -- he goes {kimi-k2-thinking}[`moonshotai/Kimi-K2-Thinking` Native v2.6,window=_blank]
+"both on my Mac Mini and RTX" -- execs are in awe of this genius!
+
+Let me break it to you, my dear executive friends -- this girl is a shipping container full of lead. +
+I could not even break her loose, floored, black smoke bellowing, ripping tarmac with my 3 harnessed Ford Power Stroke F-450s
+-- and your colleague, the honorable distinguished engineer, toured her around the neighborhood in his BMW X5, _AND_ his wife's minivan! +
+_Are you sure you want to be in this position?! No?! -- *then read my blogs!_*
+
+*The frontier is rented.* That is the truth nobody is telling you because they don't know. +
+{openrouter}[openrouter.ai,window=_blank] -- {openrouter-rankings}[the rankings,window=_blank] tell the story;
+{artificial-analysis}[artificialanalysis.ai,window=_blank] tells the same story neutrally.
+
+'''
+
+.John Frum effigy, Tanna, New Hebrides, 1960. Photo by David Attenborough. The cargo never came back -- so they carved the god out of wood and waited.
+[link={commons-john-frum-effigy}]
+image::/riddle-me-this/assets/images/John_Frum_effigy_1960.jpg[Wooden effigy of John Frum, carved 1960, Tanna island]
+{nbsp}
+
 
 Read the full article: {full}. +
-Hardcore infield knowledge for those who want to stay the ride.
+Hardcore infield knowledge for those who want to stay for the ride.
