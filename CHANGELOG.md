@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## [10.8.0] — AI-maggedon 2026: surviving Agentic in plebs
+
+- New long-form reflection "AI-maggedon 2026: Straight Talk" — five-section essay on the gap between recruiter hype and field reality (`site/_posts/2026-04-23-ai-maggedon.adoc`).
+- New LinkedIn-facing synopsis with the Kimi-K2-Thinking rebuttal of the local-frontier myth (`site/_posts/2026-04-23-ai-maggedon-synopsis.adoc`).
+- Section 5 (the field primer) extracted as a reusable fragment with shared link attributes (`site/_fragments/2026-04-23-ai-maggedon-primer.adoc` + `2026-04-23-ai-maggedon-primer-links.adoc`).
+- Promoted "Local Models, Real Grief" from drafts and cross-referenced from the primer (`site/_posts/2026-01-27-local-models-grief.adoc`).
+- MIT NANDA 95% citations refactored as reusable footnote attributes (`{fn-mit-genai-divide}`, `{fn-mit-hbr}`, `{fn-mit-fortune}`).
+- John Frum effigy hero image added.
+- Hero fragments and section-anchor attributes wired across the article, synopsis, and primer.
+
 ## [9.3.0] — Dead link audit and site content cleanup
 
 - Full site link audit; fixed 8 confirmed dead links across 10 files.

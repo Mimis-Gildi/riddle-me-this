@@ -1,0 +1,12 @@
+// External link
+:kimi: https://www.kimi.com/[kimi.com,window=_blank]
+
+// Footnotes
+:fn-mythos-price: footnote:mythos-price[5x the price of Opus 4.6; restricted to Project Glasswing partners. https://platform.claude.com/docs/en/about-claude/pricing[Anthropic Pricing,window=_blank]]
+:fn-veracode: footnote:veracode[Tested 80 tasks across 100+ LLMs in 4 languages. https://www.veracode.com/blog/genai-code-security-report/[Veracode 2025 GenAI Code Security Report,window=_blank]]
+:fn-cc-commits: footnote:cc-commits[Feb 2026; daily volume still climbing. https://newsletter.semianalysis.com/p/claude-code-is-the-inflection-point[SemiAnalysis: Claude Code is the Inflection Point,window=_blank]]
+:fn-aikido: footnote:aikido[Survey of 450 IT professionals, US and Europe; 20% reported serious incidents from AI-generated code. https://www.aikido.dev/reports/2026-state-of-ai-in-security-development[Aikido Security 2026,window=_blank]]
+:fn-gpt2: footnote:gpt2[Same Dario Amodei, then OpenAI VP of Research, ran the same play in 2019. Replicated within months; OpenAI later released full model. https://fdaudens.substack.com/p/the-too-powerful-to-release-playbook[Daudens: The Too Powerful to Release Playbook,window=_blank]]
+:fn-mythos-holes: footnote:mythos-holes["Thousands" claimed; 198 manually reviewed; "maybe 40" traceable CVEs (VulnCheck). Firefox exploits ran with sandbox disabled. A 3.6B model found the same flagship bug at $0.11/M tokens. https://www.flyingpenguin.com/the-boy-that-cried-mythos-verification-is-collapsing-trust-in-anthropic/[Ottenheimer: The Boy That Cried Mythos,window=_blank]]
+:fn-khamenei: footnote:khamenei[US cyber operations against Iranian infrastructure; weapon-grade vulnerability analysis from distributed systems, not individual models.]
+:fn-delta: footnote:delta[CSIS analysis of Ukraine's DELTA: evolved from situational awareness into an approximation of CJADC2 (Combined Joint All-Domain Command and Control), exchanging air, maritime, land, cyber, space, medical, and logistics data with NATO systems; AI-driven "Avengers" module auto-detected ~12,000 pieces of enemy equipment per week from UAV and ground camera feeds. https://www.csis.org/analysis/does-ukraine-already-have-functional-cjadc2-technology[CSIS: Does Ukraine Already Have Functional CJADC2 Technology?,window=_blank]]

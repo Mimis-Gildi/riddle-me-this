@@ -1,3 +1,5 @@
+:imagesdir: ../site/assets/images
+
 === Employment History
 
 ASE Inc. (Principal Architect, Co-Founder, 2017-Present), remote::
@@ -33,17 +35,34 @@ Deutsche Bank (Lead Engineer, AVP, 2012-2017), Cary NC::
 
 Earlier Career::
 
-* Xybion Corporation (Product Principal, 2010-2012) -- XFIS content federation appliance;
+* Xybion Corporation, PA (TechProduct VP, 2010-2012) -- XFIS content federation appliance;
 HighMark Blue Cross paying pilot tenant; hardware {plus} firmware while unifying acquired companies; XFIS acquired by EMC.
-* Glemser Technologies (Lead Engineer, 2005-2010) -- Pharma EDRMS: Merck, Pfizer, BMS;
-12 companies, FDA compliance; Custom content {plus} record management platforms on big-pharma largest/hyper-scale EDRMS.
-* MassivelyParallel / IMPERISOFT (Co-Founding Engineer, 2000-2005) -- Defense simulation, distributed systems; custom RNN architecture;
-Message-Passing Supercomputing; massive hybrid/distributed systems.
-* US Army, 20th Engineer Brigade (1997-2000) -- Combat Engineering, XVIII Airborne Corps (honorable).
-* Early Career (1991 - 1997): UNIX daemons; IBM System 370/390 mainframe services and migration off of;
-Linux kernel contributions. GNU library assistant-maintainer. Senior network security analyst pass:[@] (J&amp;J, NJ).
+* Glemser Technologies, PA -- Pharma EDRMS: Merck, Pfizer, BMS, Sanofi, Eli Lilly, Novo Nordisk; Inovio +
++12 companies, FDA CFR 21 Part 11; EMC Documentum, Oracle, Java largest big-pharma custom platforms.
+* MCP/ISS, NC (Co-Founding Engineer) -- Defense simulation, distributed systems; custom RNN architecture.
 
-=== Education & Continued Learning
+US Army, 20th Engineer Brigade (1997-2000) -- Combat Engineering, XVIII Airborne Corps (honorable, decorated).
 
-BS Computer Science, UNCP | PSU EE | NC Supercomputing Center | Duke Corporate Psychology +
-Stanford, MIT, Carnegie Mellon (AI/ML, Innovation, Pedagogy, Simulation Science) | Codeforces
+[cols="4h,5a",options="nosep",grid="none",frame="none"]
+|===
+.<h|
+// suppress inspection "AsciiDocLinkResolve"
+image:badge-mimis-button.png[pdfwidth=32,Mímis Gildi,link="https://github.com/Mimis-Gildi"]{nbsp}
+// suppress inspection "AsciiDocLinkResolve"
+image:badge-gotham-button.png[pdfwidth=32,Gotham Village,link="https://github.com/Gotham-Village"]{nbsp}
+// suppress inspection "AsciiDocLinkResolve"
+image:badge-hera-button.png[pdfwidth=32,Gervi Héra Vitr,link="https://github.com/Gervi-Hera-Vitr"]{nbsp}
+// suppress inspection "AsciiDocLinkResolve"
+image:badge-scala-button.png[pdfwidth=32,Mímis Scala,link="https://github.com/Mimis-Scala"]{nbsp}
+// suppress inspection "AsciiDocLinkResolve"
+image:badge-lagard-button.png[pdfwidth=32,Mímis Látlæg Háttalag,link="https://github.com/Mimis-Latlaeg-Hattalag"]{nbsp}
+// suppress inspection "AsciiDocLinkResolve"
+image:logo-mg-main-badge-button.png[pdfwidth=32,ASE Inc,link="https://asei.systems"]
+| *Open Source and InnerSource MCP Contributions* +
+MCP Total Recall™, MCP Agora™, Cloud Archetypes®
+|===
+
+==== Education & Continued Learning
+
+BS Computer Science, UNCP | PSU EE | NC Supercomputing Center | Duke Corporate Psychology | Linux Foundation +
+Stanford, MIT, Carnegie Mellon (AI/ML, Pedagogy, Simulation Sci.) | OPEN grp. | Hugging Face | Kaggle | Codeforces

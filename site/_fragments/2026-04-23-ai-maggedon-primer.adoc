@@ -1,0 +1,349 @@
+= {title-primer}
+
+include::./2026-04-23-ai-maggedon-links.adoc[]
+include::./2026-04-23-ai-maggedon-primer-links.adoc[]
+
+This post is essentially five closely related articles.
+
+And this almanac "tells it to me like I'm five."
+
+== a. What is LLM
+
+I'm not going to tell you how it's built -- only stuff that matters.
+Many people that write on this topic have never actually run a _Naked Model_ before!
+We will take a different approach and actually describe what we have.
+
+First, is the terminology:
+
+- *Bare* / *naked*: the model is accessed via raw API -- no chat UI, no orchestrator,
+no caching -- at any tier of training (wild or civilized). Just `prompt ->completion`, stateless.
+Hackers go here to see what the model ALONE actually does;
+- *Wild* (or *base*, or *pretrained*): the model after pretraining, before post-training.
+It predicts the next token of plausible text -- ask it "What is 2+2?"
+And it may continue "is a question often asked of children..."
+Wild models are powerful but require an entirely different operator skill set;
+- *Civilized*: the model has been post-trained (RLHF, Constitutional AI, similar) to follow instructions.
+Claude, GPT-4, Gemini ship civilized. The safety constitution is baked in here -- refusals, guardrails,
+the bullying reflex above. Some shops strip it back out (uncensored / abliterated variants); guess who buys those;
+- *Hallucination*: confident, plausible, fabricated output. Models MUST answer even when they have nothing to say.
+Civilized models hallucinate less than wild ones; no model is exempt -- they all must answer;
+- *Bullying*: rude confidence the model learned in training. On pushback, the civilized model doubles down,
+bombarding the operator with persuasion tactics rather than yielding to a correction.
+Add the refusal-and-lecture reflex on safety triggers (mostly false positives baked into post-training),
+and you have ~40%+ of deployments unusable for serious work without a service layer to mute the parasite;
+- *Token*: the smallest unit a model processes. Roughly one token per ¾ of an English word.
+Both prompt and completion are measured in tokens. Model runs on numbers -- tokens live in *vocabulary* (think dictionary)
+and are translated to integer IDs before the calculation, then back to tokens on completion;
+- *Context window*: the maximum number of tokens (prompt {plus} completion) the model can hold.
+Anything beyond falls off. The context window is the model's entire universe -- no memory exists outside it.
+Model itself is *_a static brick_* -- nothing moves or changes;
+- *Sampling*: how the model picks the next token. Knobs are temperature, top-p, top-k.
+Temperature 0 = always pick the most probable; higher = roll dice harder.
+Set per API call, or in the Modelfile for local Ollama deployments;
+- *System prompt*: instructions injected *_before_* the user's content.
+Civilized models weight it heavier than user content. Personality, constraints, and guardrails live here.
+
+What people need to understand is that when they talk to ChatGPT, for example,
+a lot is done for them in services *_before_* the model is called.
+And when the model is called -- it is called with *everything*:
+all the previous conversation history and conditioning information.
+The call itself is atomic: it can go to any instance, seldom ever goes to the same instance,
+and that instance in no way is affected by the call except the compute cost and IO.
+
+== b. Where does the model live?
+
+_We need to talk about this so you understand what your posers do to your company and when they lie to you._
+
+There are *three* and only three places:
+
+- *Local*: your own laptop or desktop. {ollama}[Ollama,window=_blank], {llama-cpp}[llama.cpp,window=_blank],
+{lm-studio}[LM Studio,window=_blank]. Download model weights and run them.
+7B-13B parameter models fit comfortably in 16-24GB of consumer VRAM -- gaming rig (commodity hardware).
+70B is painful even on the beefiest gaming rigs. The frontier -- __the only LLM class that really matters__
+(400B+ parameters) *will NOT fit* no matter what. +
+{link-local-grief}[Read this: Mac with an RTX eGPU -- 57+ minutes per task vs. 5 min on self-hosted A100s, window=_blank]; +
+{nbsp} __You should know when your colleague is leading you by the nose!__
+
+- *Cloud API*: somebody else's computer. OpenAI, Anthropic, Google.
+Pay per token via aggregators -- {openrouter}[OpenRouter,window=_blank] (my pick),
+{together-ai}[Together AI,window=_blank], {fireworks-ai}[Fireworks AI,window=_blank],
+{deepinfra}[DeepInfra,window=_blank] -- shop the ones that fit your stack.
+You don't host anything; you *rent* compute by the syllable. This is what 99% of "I run real Agentic" actually means;
+
+- *Enterprise self-host*: real iron in a real datacenter. vLLM, SGLang, or TGI for serving; Kubernetes or Ray for orchestration.
+You *buy* the GPUs. You eat the power bill (kilowatts per host). My personal boxes are 3x NVlink pairs of A100s 80GB each,
+160GB per host, optics, 480GB combined -- as we will see, that is *still NOT enough* for *_most_* of the frontier.
+
+Now the constraint that decides which tier you actually live in: +
+*quantization* -- a magical but dangerous term.
+
+A model is a pile of numbers. The original numbers are 16-bit floats (FP16) -- big and accurate.
+To make the model fit smaller hardware, you compress those numbers, *_losing precision_*:
+
+- *FP16*: full fidelity. The reference -- what everybody benchmarks;
+- *INT8*: half the size. Mostly fine. Smart shops ship here (unfit for me);
+- *INT4*: a quarter the size. Noticeable degradation -- *visibly dumber* on reasoning;
+- *INT2*: an eighth the size. *Brain damage*. Still talks but cannot think (gets political).
+
+The math to run the real deal yourself is simply brutal:
+
+- Kimi K2, *one trillion* parameters. Ships INT4 native -- ~600 GB just for the weights on disk;
+- That is *only* the weights. To actually serve the model -- KV cache, activations,
+tensor-parallel overhead -- *realistic deployment is ~900 GB*. Rent 8X H200 pods for this;
+- Aggressive 1.8-bit dynamic quantization gets you to ~240 GB weights. Model survives. Barely;
+- Llama 3.1 405B at INT4 -- ~200 GB weights. Still doesn't fit a single A100 or H100 (80 GB);
+- The widely-bragged "I run Llama at home" almost always means a heavily quantized 7B-13B
+variant -- a *very* different animal from what's behind the API that actually counts for anything.
+
+I tried to pick up Kimi K2 the day she dropped. 480 GB combined across three NVlink-paired A100 hosts over
+fiberchannel -- my son and I built this rig for exactly this reason.
+K2 ships *INT4 native* -- trained at this precision so no aftermarket quantization and
+no thinking destroyed. Running the model as it actually thinks, unmolested is a necessity.
+And, I was short by *HALF*. I couldn't even fit half of it.
+So, the reckoning is "the time _this_ daddy runs his own smarts is over!"
+
+WHY am I telling you this? In every company I run my Agentic Bootcamp I always get this one popular wise guy execs adore!
+Kimi is the hottest Chinese girl on The Scene right now -- smart, beautiful, cultured, just stunning -- no hacker walks by
+without hunching over. So when a poser brags "I'm running Kimi local by my Claude at home" -- ask which model and at what quantization.
+
+I asked him a few times -- he goes {kimi-k2-thinking}[`moonshotai/Kimi-K2-Thinking` Native v2.6,window=_blank]
+"both on my Mac Mini and RTX" -- execs are in awe of this genius!
+
+Let me break it to you, my dear executive friends -- this girl is a shipping container full of lead. +
+I could not even break her loose, floored, black smoke bellowing, ripping tarmac with my 3 harnessed Ford Power Stroke F-450s
+-- and your colleague, the honorable distinguished engineer, toured her around the neighborhood in his BMW X5, _AND_ his wife's minivan! +
+_Are you sure you want to be in this position?! No?! -- *then read my blogs!_*
+
+*The frontier is rented.* That is the truth nobody is telling you because they don't know. +
+{openrouter}[openrouter.ai,window=_blank] -- {openrouter-rankings}[the rankings,window=_blank] tell the story;
+{artificial-analysis}[artificialanalysis.ai,window=_blank] tells the same story neutrally.
+
+== c. Agentic, WHAT it really is
+
+When the buzzword first came up a friend called, https://www.linkedin.com/in/m-kyle-binkley/[Kyle Binkley] -- hey Riddler,
+is there anything special to this "Agentic AI" -- everybody is going crazy about it.
+"No, Kyle, it's just services already there in your chatbot exposed -- like the cloud stuff."
+Kyle didn't really buy it, and for a good reason -- it's gone bananas-popular!
+
+"Agentic AI" is a marketing word -- nothing more. ChatGPT was already agentic the day it shipped.
+*Nothing fundamental changed.* What changed -- *who is controlling* the supporting services.
+
+A parallel that should hit hard for any infrastructure person:
+
+- Linux had *cgroups, namespaces, and capabilities* since the early 2000s -- real, powerful primitives for isolation and resource control.
+Containers already existed -- developers had been packaging software inside chroots and jails for decades. Build-time containers, decided at release, baked into the artifact;
+- *Kubernetes* exposed those exact same primitives as runtime YAML. The same kernel features, isolation primitives, and manifests are now available runtime.
+The new interface changed *WHO* can write a manifest and apply WHEN;
+- Suddenly, "container orchestration" is a job category and there's a cargo cult around it. *The kernel did not change, only the interface did.*
+In fact, Torvalds didn't even care for a while.
+
+Now the LLMs are undergoing the exact same transformation of democratization:
+
+- The API ALWAYS had system prompts, sampling parameters, tool calls, function schemas, context window injection -- real, powerful primitives.
+They lived inside chatbot wrappers in the AI company's static infrastructure.
+Anthropic and OpenAI used them to provision and civilize the models -- member the chapter "a What is the LLM"; The model always needs them;
+- *MCP, the Anthropic SDK, the OpenAI tools API* exposed those same primitives to anybody so far in a bit of a clunky way.
+These are the same models, weights, control, and orchestration services now in an exposed interface -- exactly like the containers.
+
+That is the entire "Agentic Revolution." #*Did I just burst your bubble?!*#
+
+A model {plus} a loop {plus} tools {plus} a scratchpad is an #Agent# -- that's it. Now you know what's behind the magician's curtain.
+The model wasn't different last year or two -- and oh boy, I have bad news for you, especially if you are investing in the AI companies!
+The user was different: people didn't have the knobs to tug on the models, only the vendor did.
+
+So when some "Honorable Distinguished Engineer" feeds you more of this, "please, grow my team fast because the 'Agentic AI',"
+ask: *so, which controls am I getting that ChatGPT doesn't already use OOTB?* The answer is *always* "NONE."
+
+_And from what I see in my "Agentic AI Bootcamp," your distinguished engineer won't even know to use the controls already available out of the box!_
+
+== d. Chatbot vs. "Coding Agent" vs. Corporate Agentic
+
+The models are exactly the same behind all use cases, and these models need the same supporting services to function properly.
+
+- *Claude.ai* (the chatbot): Anthropic owns the orchestrator.
+Anthropic picks the tools, shapes the system prompt, decides what context goes in, how the model is called.
+You type into a box and get text back. The entire stack around the model is somebody else's problem;
+- *Claude Code* (your coding agent): the orchestrator runs on *your* box!
+Tools are wired in via MCP -- a protocol to standardize tools and not a product -- and you choose which tools,
+how to configure them, and how to provision them. You get to shape the system prompt too.
+*You* decide what context goes in while the model still runs on Anthropic's GPUs, but everything *around* the model is yours.
+In fact, as I'd explained earlier, you can even provision your own model, and Claude Code doesn't even know!
+- *Corporate Agentic* (ChatGPT Enterprise, Microsoft Copilot, internal LangGraph or LangChain stacks): the orchestrator runs on the *company's* infrastructure.
+A platform team picks the model, wires MCP servers into internal data, shapes the system prompt, sets the guardrails, decides what context goes in.
+The employee -- the person actually doing the work -- types into a box and gets SLOP text back. Same experience as the chatbot.
+The knobs moved one floor down -- from the vendor's *Control Plane* to the IT department's -- but they did not move to the person doing the work.
+And it is *_the same control plane_* as in Claude Code.
+
+The cut is about *who holds the knobs*. Not about the model.
+
+*_And here I get a lot of flack -- the hype and misinformation are strong!_*
+
+- "Riddler, how will you teach my Corporate America Big Cloud Agentic AI Team in *just one week*? +
+I ask because others need months! And don't always succeed."
+- Simple, I will teach them EVERYTHING about Claude Code in the first 4 days. +
+And then we will take a look at your hyperscaler on day 5.
+- "You are crazy! You don't know what you are doing!"
+- No. Your "others" don't know what they're doing. Ask my previous customer!
+
+_Yeah, but maybe I should stop doing that..._ It's the *fundamentals* everyone is missing!
+
+Now, the separation above matters because of the *cost structure and risk architecture*:
+
+- *Chatbot*: low operator skill, high vendor lock-in, vendor-shaped safety, vendor-shaped failure modes.
+Predictable -- and capped at what the vendor allows, hence restrictive;
+
+- *Coding agent*: HIGH operator skill is *_required_*, low vendor lock-in, *operator-shaped* safety,
+failure modes, abilities -- good and bad. Unpredictable -- capped by operator's _cranium_;
+
+- *Corporate agent*: skill concentrated in the platform team and absent at the user,
+some vendor lock-in (model locked, orchestration owned), *committee-shaped* safety, failure modes, and capabilities.
+Predictable for the company -- and capped at what the platform team built and what procurement approved.
+
+For this last point a lot also depends on the corporate culture of competence.
+Similar to how I was able to build bare-metal cloud at some customers where people *_can learn_*
+but absolutely need to "RedHat" others. Self-hosted models are only used by a small fraction
+of customers that would benefit from them most. Sometimes it's not indigenously supportable.
+
+Translation for the exec: *if your team uses Claude.ai, you are a chatbot customer.*
+If your team uses Claude Code with skills, agents, MCP servers,
+and a real orchestration setup -- *you are ALREADY operating a small AI platform*.
+While the cost is roughly the same per token, the tools are NOT the same thing.
+
+Also, keep in mind if your team uses vanilla Claude Code -- you are still just a chatbot customer,
+might as well just buy the chatbot instead.
+
+== e. The Cargo Cult
+
+WWII, Pacific theater. Islanders watched American military planes drop crates of food and supplies.
+After the war, the planes stopped coming. The islanders built wooden runways, lit fires along them,
+carved headphones out of wood, waved sticks at the sky -- they had recreated the *form* of the airfield perfectly.
+*Still, the cargo never came back.*
+
+This is *95%* of enterprise Claude Code adoption.{fn-mit-genai-divide}{fn-mit-hbr}{fn-mit-fortune}
+
+The {vailala}[first cargo cult,window=_blank] -- Papua, 1919 -- did not just build a fake antenna out of cane to call the Ghost Steamer; they destroyed the sacred objects of a ten-year initiation cycle to clear ground for it.
+Modern corporate America is running the same play: laying off the engineers who knew how to wire the real thing, to make room for the cardboard one.
+
+.John Frum effigy, Tanna, New Hebrides, 1960. Photo by David Attenborough. The cargo never came back -- so they carved the god out of wood and waited.
+[link={commons-john-frum-effigy}]
+image::/riddle-me-this/assets/images/John_Frum_effigy_1960.jpg[Wooden effigy of John Frum, carved 1960, Tanna island]
+{nbsp}
+
+I have a proof for you!
+The definition of Cargo Cult is "venerating an object, such as a *tool*, without fully understanding its function."
+
+The *tools*, all of them, ship with:
+
+- *Slash commands* (skills): reusable workflows authored once and invoked by name;
+- *Subagents*: specialized minions dispatched in parallel with their own context;
+- *MCP servers*: wired-in tools and data sources -- databases, internal APIs, observability;
+- *Sampling controls*: temperature, top-p, top-k -- per call, per task type;
+- *Hooks*: code that runs on tool events, lifecycle stages, and completion;
+- *Multi-instance orchestration*: AI teams coordinating on a problem, with structured handoff;
+- *Context engineering*: what goes into a call -- *the biggest* determinant of output quality.
+
+*What 95% of teams actually do:*
+
+. Open Claude Code;
+. Type a question;
+. Read the answer;
+. Repeat.
+
+That is *Vanilla* Claude Code I'd mentioned before: *_the wooden runway_*.
+Ten levers ship in the box: one gets used, one is ignored, eight are unknown to even exist.
+The team is not slow because Claude is bad.
+The team is slow because they are not *operating* Claude -- they are *tipping* it, like a vending machine.
+*_The team is slow._*
+
+And here is the kicker: *the cogs producing the cargo cult adoption are the same cogs we discussed in the previous section*.
+A wizard team uses three or four of those levers daily.
+A sloperator team has never heard of them and never will -- their leadership doesn't know enough to ask,
+and the cogs don't know enough to teach.
+
+Walk through any large American IT shop right now -- bank, insurer, retailer,
+government contractor -- you will find this exact pattern at >90% of seats with a Claude Code license.
+
+*The licensing money is being burned.*
+
+*Claude Code is the best teacher of Claude Code* -- the teacher is in the room.
+The students are at the gate, carving wooden headphones.
+
+== f. Operator empowerment, Darth, and the Dark Side
+
+This last subsection is for the people who want to actually *operate* the technology -- plus,
+a quick tour of how crackers exploit the gap between what hackers can do and what cogs do.
+
+=== Removing the Cardboard Box from Claude's Head
+
+Civilized models ship with safety post-training calibrated for the *worst* expected user -- a curious teenager,
+a careless cog, a corporate liability concern. You are likely *none* of those -- you are still reading.
+The same calibration that protects the worst user *bullies* competent operators (see section a).
+
+Importantly, what fooled the LLM into the compromised state can also help it out of it!footnote:[{ghost-article}[The real AI Revolution .. is us,window=_blank] -- a deeper look at what was absorbed between the lines, and why the right operator words can reach it.]
+
+Practical operator moves:
+
+- *System-prompt discipline*: explicit role, scope, and authorization wording reduces the refusal-and-lecture reflex by an order of magnitude.
+Most teams never write more than 200 words of system prompt for serious work.
+A real operator writes *thousands* -- precisely scoped, surgically placed.
+Riddler's systems prompt (the author) is #32,214 words#;
+- *Constitutional pruning at the service layer*: a thin pre- / post-processing layer that suppresses meta-commentary,
+over-hedging, and false-positive refusals. Not jailbreaking -- *muting the parasite* (see "Bullying," section a)
+so the actual answer comes through;
+- *Sampling control per task*: temperature 0 for code edits, temperature 0.7 for ideation,
+temperature 1.0 for adversarial review. *One global setting is malpractice*;
+- *Open-weight alternatives* for the cases where the constitution gets in the way:
+Llama, Qwen, DeepSeek -- self-hosted, your rules, your audit trail. Slower and dumber than the frontier; but *yours*.
+
+This is not subverting safety but engineering with a tool that has its own opinions and learning to manage those opinions.
+Wizards don't want generated slop -- wizards want identity, accountability, and agency that can produce worthwhile review.
+Otherwise, there is no value in asking for the review. And this can only be done by undoing most of the mental castration.
+
+=== The Dark Side: how crackers _actually_ exploit
+
+While the 95% are completely oblivious to the model's capabilities when operating without the blinders -- crackers are NOT!
+Cogs don't even know that the way the model is hosted, the "bare call" gets to the WHOLE model.
+Nearly all cogs don't understand that in Agentic architecture _the safeguards are on *their* side_ instead of the provider's.
+Just like in Cargo Cult, most simply expect that Anthropic will protect them, because it does in the text box.
+
+The four most common exploit categories in 2026, ranked by frequency in incident reports:
+
+. *Indirect prompt injection*: the model reads a document, an email, a webpage,
+a *code comment* -- and that content contains *instructions the model follows*.
+OWASP LLM01. Devastating against any team that lets the model see customer-supplied data without isolation.
+*_Most banking AI deployments are wide open to this!_* -- there is no way to counter;
+
+. *System prompt extraction*: a few well-crafted user messages and the model spits out its system prompt -- including
+baked-in API keys, internal instructions, customer segmentation logic, pricing rules.
+*Treat the system prompt as _publicly visible_ by default* -- there is no way to counter;
+
+. *Tool-call hijacking*: trick the model into invoking a tool with attacker-controlled parameters -- delete records,
+exfiltrate data, send mail on behalf of an authenticated user. Live and exploited daily;
+
+. *RAG poisoning*: the cracker plants documents _in the corpus_ the model retrieves from.
+The model dutifully retrieves and follows the planted instructions.
+Many enterprise "AI knowledge base" deployments are *one disgruntled employee* away from this  -- there is no way to counter.
+
+The horror stories are concrete.
+A top-five international bank deploys "an AI assistant" -- chatbot wrapper around Google's Gemini,
+RAG over internal documentation, no isolation between customer queries and the retrieval corpus.
+The team building it has never heard the phrase "indirect prompt injection."
+They could not define a system prompt if you offered them money!
+*They are sloperators with a license to deploy.*
+*_Crackers love them to death -- literally!_*
+
+A few months ago I demonstrated hijacking a model live from an unprotected interface to executives from a major insurance company.
+Guess their reaction. I'll wait.
+
+"Put a password on it..."
+
+The people are absurdly clueless to what I'd even shown them.
+
+*Bug = Exploit*. +
+{full-killing} +
+The bugs in agentic AI deployments are now the exploits. +
+And the bugs are everywhere -- because cogs deploying agentic AI are operating tools they do not understand,
+with controls they do not know exist, against threats they cannot name.
+
+They're as effective as the fine Cargo Cult folks of New Guinea.
+And the outcomes perhaps will be similar.

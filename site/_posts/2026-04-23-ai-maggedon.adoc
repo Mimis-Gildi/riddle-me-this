@@ -1,0 +1,63 @@
+---
+categories: [reflections]
+tags: [AI, Agentic AI, Security, Enterprise, Zero-Day, OpenClaw, Claude Code]
+excerpt: >
+    92% of AI-generated codebases ship with critical vulnerabilities. Your AI is writing your vulnerabilities.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: true
+---
+= AI-maggedon 2026: Straight Talk
+:imagesdir: ./assets/images
+include::../_fragments/2026-04-23-ai-maggedon-links.adoc[]
+include::../_fragments/2026-04-23-ai-maggedon-mythos-links.adoc[]
+include::../_fragments/2026-04-23-ai-maggedon-google-links.adoc[]
+include::../_fragments/2026-04-23-ai-maggedon-wizards-links.adoc[]
+include::../_fragments/2026-04-23-ai-maggedon-killing-links.adoc[]
+include::../_fragments/2026-04-23-ai-maggedon-primer-links.adoc[]
+:mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
+:deathtrap: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/02/25/ai-strategy-deathtrap.html[AI Strategy Deathtrap -- Straight Talk,window=_blank]
+:disruption-2026: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/01/08/ai-disruption-of-2026.html[2026: The Year the Ground Moves,window=_blank]
+:openclaw: https://openclaw.ai/[OpenClaw,window=_blank]
+:claude-code: https://code.claude.com/[Claude Code,window=_blank]
+:hero-alt: A working hacker -- mid-50s, hoodie, glasses -- codes calmly at an old CRT terminal through an apocalypse. \
+Burning city, Yggdrasil ablaze on the horizon, agentic drones in the sky, red lightning. \
+Three tombstones in the foreground read "VIBE CODED," "PUSHED TO MAIN," "TRUST THE AGENT." \
+A hanging sign reads "INFRASTRUCTURE AS SERVICE TO ODIN." \
+The terminal glows green with the line: \
+"AI makes dumb developers dumber and smart developers happier."
+
+include::../_fragments/2026-04-23-ai-maggedon-hero.adoc[]
+
+.The world ends as crackers eat up cog. The hacker works.
+[#img-hero]
+image::/riddle-me-this/assets/images/wizard-2.png[{hero-alt}]
+
+{nbsp}
+
+include::../_fragments/2026-04-23-ai-maggedon-mythos.adoc[leveloffset=+1]
+
+include::../_fragments/2026-04-23-ai-maggedon-google.adoc[leveloffset=+1]
+
+include::../_fragments/2026-04-23-ai-maggedon-wizards.adoc[leveloffset=+1]
+
+include::../_fragments/2026-04-23-ai-maggedon-killing.adoc[leveloffset=+1]
+
+include::../_fragments/2026-04-23-ai-maggedon-primer.adoc[leveloffset=+1]
+
+== The Inevitable Outcomes
+
+. There will never be a single model that breaks the world. Curtail your excitement.
+. Technology adoption speed depends on human factors alone. https://en.wikipedia.org/wiki/Cargo_cult[Cargo cult,window=_blank] proves it.
+. Systems with some AI in them will change everything. Not because of the AI.
+
+== Full Disclosure
+
+I have helped teams adopt agentic technology resulting in double delivery speed with increased quality.
+Executives reported that it was from Claude Code -- post hoc ergo propter hoc.
+The performance gain is caused by the organizational and operational changes concurrent to the agentic adoption.
+It is a bad idea to conflate the two, and I think more people will: +
+Working digital transformation results in speed and quality; +
+Claude Code -- can cut both ways +/- 20% at best.

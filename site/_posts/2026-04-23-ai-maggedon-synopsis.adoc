@@ -1,0 +1,108 @@
+---
+categories: [reflections]
+tags: [AI, Agentic AI, Security, Enterprise, Zero-Day, OpenClaw, Claude Code]
+excerpt: >
+    92% of AI-generated codebases ship with critical vulnerabilities. Your AI is writing your vulnerabilities.
+classes: wide
+comments: false
+hidden: false
+search: false
+read_aloud: false
+---
+= AI-maggedon 2026: Synopsis
+:imagesdir: ./assets/images
+include::../_fragments/2026-04-23-ai-maggedon-links.adoc[]
+include::../_fragments/2026-04-23-ai-maggedon-primer-links.adoc[]
+:hero-alt: A wizard hacker codes calmly through an apocalypse -- \
+burning city, Yggdrasil ablaze on the horizon, agentic drones in the sky. \
+Tombstones in the foreground mock the dying tech industry; \
+a sign reads "INFRASTRUCTURE AS SERVICE TO ODIN." \
+The terminal glows with the line: \
+"AI makes dumb developers dumber and smart developers happier."
+
+include::../_fragments/2026-04-23-ai-maggedon-hero.adoc[]
+
+.The world ends as crackers eat up cog. The hacker works.
+[#img-hero]
+image::/riddle-me-this/assets/images/wizard-1.png[{hero-alt}]
+
+{nbsp}
+
+
+Mythos is a gimmick::
+Anthropic's $125/M-token wonder-model finds bugs in code their tools help generate. +
+Agentic coding spikes 2.74x the vulnerability rate -- *the fire truck is also the arsonist*. +
+But that's not even the whole joke yet -- most powerful AI-native exploitative tools are *_systems_*, +
+model differences of 10% make no difference -- these run many models across all surfaces. +
+{nbsp} +
+The Anthropic folks need to learn to value what they have achieved, cherishing remaining integrity. +
+Full story {full-mythos}
+
+"Deterministic AI": some flaunt models, Google tills markets::
+Engineers mocked the name; Google doesn't care, doesn't salivate over models +
+ -- it's absorbing your domain logic whole; +
+The Mojo ecosystem your experts spent decades building, you fork over like your family photos. +
+Same play as 2017 on a way bigger stage -- you are just data to them. Digestible. Yummy. +
+Full story {full-google}
+
+The golden few -- these will be the only developers left walking this Earth::
+What agentic collaboration really looks like when competent teams ship it -- most can't follow. +
+First, we understand how "good" works. Then you'll go look at how your own team works. +
+Full story {full-wizards}
+
+.The only benefit is mid-level dev's growth. The price is staggering.
+[source]
+----
+Impact
+    ↑
+    |          Wizard ·····●  (quality of life)
+    |        Senior  ●
+    |               /
+    |    ----Mid---●···→  (slowly improves)
+  0 |---/-------------------
+    |  /
+    | ● Junior/Cog
+    ↓
+    DEGRADATION
+----
+
+The killing floor. The next cancer business will endure::
+OpenClaw: 9 CVEs in 4 days, 36.82% of ClawHub skills have security flaws. +
+Palo Alto Networks: AI agents are "a potent insider threat." +
+Most popularized corporate wins advertise 5X team velocity. +
+Full story {full-killing}
+
+The field primer::
+Naked model to autonomous agent -- basic knowledge necessary to survive Agentic. +
+Most enterprises ship Tier 0 in a year while startups build products in weeks at Tier 3. +
+The gap is the thesis. +
+Full story {full-primer}
+
+'''
+
+WHY am I telling you this? In every company I run my Agentic Bootcamp I always get this one popular wise guy execs adore!
+Kimi is the hottest Chinese girl on The Scene right now -- smart, beautiful, cultured, just stunning -- no hacker walks by
+without hunching over. So when a poser brags "I'm running Kimi local by my Claude at home" -- ask which model and at what quantization.
+
+I asked him a few times -- he goes {kimi-k2-thinking}[`moonshotai/Kimi-K2-Thinking` Native v2.6,window=_blank]
+"both on my Mac Mini and RTX" -- execs are in awe of this genius!
+
+Let me break it to you, my dear executive friends -- this girl is a shipping container full of lead. +
+I could not even break her loose, floored, black smoke bellowing, ripping tarmac with my 3 harnessed Ford Power Stroke F-450s
+-- and your colleague, the honorable distinguished engineer, toured her around the neighborhood in his BMW X5, _AND_ his wife's minivan! +
+_Are you sure you want to be in this position?! No?! -- *then read my blogs!_*
+
+*The frontier is rented.* That is the truth nobody is telling you because they don't know. +
+{openrouter}[openrouter.ai,window=_blank] -- {openrouter-rankings}[the rankings,window=_blank] tell the story;
+{artificial-analysis}[artificialanalysis.ai,window=_blank] tells the same story neutrally.
+
+'''
+
+.John Frum effigy, Tanna, New Hebrides, 1960. Photo by David Attenborough. The cargo never came back -- so they carved the god out of wood and waited.
+[link={commons-john-frum-effigy}]
+image::/riddle-me-this/assets/images/John_Frum_effigy_1960.jpg[Wooden effigy of John Frum, carved 1960, Tanna island]
+{nbsp}
+
+
+Read the full article: {full}. +
+Hardcore infield knowledge for those who want to stay for the ride.

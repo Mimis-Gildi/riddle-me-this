@@ -1,0 +1,127 @@
+= {title-mythos}
+include::./2026-04-23-ai-maggedon-links.adoc[]
+include::./2026-04-23-ai-maggedon-mythos-links.adoc[]
+
+. Mythos, like GPT 2.0, is too powerful to release to general user.
+. Mythos hacks so good that it exploits all the software.
+
+Does Anthropic even realize that the security industry has changed completely since 2022
+{nbsp} -- it is now national security and intelligence concern. Well, except for the USA, of course.
+
+The Anthropic folks need to learn to value what they have achieved, cherishing remaining integrity. +
+Marketing gimmicks by repeat posers read as insults to intelligence and erode trust. +
+Every model maker is in the *Model-Fizzle* because there is no new architecture in the pipeline. +
+I am struggling to understand why this publicity stunt was necessary.
+
+*_Meanwhile_*, marginally better models and better systems (foreign) will arrive every day -- inevitable!
+And the US has regressed in system design, while competent systems are where AI power manifests best.
+American market seems to notice LLMs more than the ecosystem they fit into.
+And the US is losing ground to foreign models too, like the Agentic {kimi} from China.
+Far more importantly, non-LLM reasoning systems are virtually nonexistent in the American news,
+as if the LLMs are the entire AI science. The US has become a __remarkably dilettante culture__.
+
+And now, Anthropic sells a $125/million-token model to find bugs.{fn-mythos-price} +
+Crap! -- I burn more than a million tokens per day, and that's just hosted +
+{nbsp} -- I don't even count self-hosted.
+
+*_Meanwhile_*, AI gifted us:
+
+- 2.74x more vulnerabilities in AI-generated code vs. human-written;{fn-veracode}
+- 45% of AI-generated code introduces OWASP Top 10 vulnerabilities;footnote:veracode[]
+- Claude Code alone: 4% of all public GitHub commits;{fn-cc-commits}
+- 1 in 5 organizations report serious incidents from AI-generated code;{fn-aikido}
+- 69% of organizations found critical vulnerabilities in their AI-generated code.footnote:aikido[]
+
+While everyone is speculating about a wonder-model that will obsolete developers and uproot all software,
+I see there are three problems here:
+
+- *First*, we know this tune -- OpenAI first{fn-gpt2} -- same bloke and song then same free press.
+- *Second*, Anthropic, my favorite company, leaks like a sieve -- victim of its own success.
+And what we spy is what we expected -- there are #no new breakthroughs in LLM architecture#,
+so there is neither Deus Ex Machina in Mythos{fn-mythos-holes} nor any latest model others made.
+- And *third*, and perhaps the most important point, the breakthrough Mythos claims to own actually did happen 9-11 months ago.
+But it wasn't some silly LLM. *Ukraine*, then *_Israel_*, closely followed by *_France_* and *_Great Britain_*,
+are the nations at the forefront of AI applications by changing how we even think about software -- NOT the USA, regretfully.
+
+The last 4 years of Total War in Europe changed everything in the world of security
+ -- we've experienced an insane amalgamation of industries into theater mindset.
+The world doesn't think in 2020 concepts like the USA still does.
+
+_Meanwhile_, in American news -- _Scary what kids will do with it!_ +
+*But what about real penetration shops?!*
+
+I asked an intelligence officer from the world's most prolific penetrators (not American, obviously)
+-- "Will you use Mythos?"
+
+    Highly unlikely! It's useless to us. First, we rely on our own.
+    And second,
+        We employ dozens of models
+        over thousands of logical branches.
+    Time, and bang per buck is what matters most to us.
+
+    But most importantly,
+        our system architecture does 95% of hard lifting,
+        across ALL attack surfaces simultaneously.
+    Direct software exploitation is a rare necessity.
+
+Actual penetrators are much scarier because they're no longer standalone tools.
+First, the Ukrainians exposed a little bit of their Delta system{fn-delta} recently.
+NATO partners understood it as _not just_ battlefield management
+-- it's also an ecosystem for everything from logistics to geopolitics,
+AI-governed research, and strategic intelligence.
+It is the whole system approach that aggregates other large subsystems together.
+All of these powerful AI aren't LLMs at all -- that IS the whole secret
+-- they're human-built *_Distributed Systems_* using all kinds of "reasoning."
+
+Penetration subsystems have no known counter-measures except similar types of systems.
+When deployed adversarially, they automatically exploit all attack surfaces simultaneously.
+Russia's Duma held a closed session after discovering their strategic messaging app Max
+was likely compromised at the commit level -- they stopped hunting exploits and restored Telegram instead.
+These capabilities dwarf anything a single model or tool can offer.
+This is a different way to think about AI: in the USA we tend to think about the value of a model like Mythos;
+several European and Asian nations are not as excited about a model and think from the perspective of a large system.
+It's competent people building competent systems that have more traction with reality:
+instead of "where do I stick this shiny," keep evolving an existing distributed solution using all available tools
+including shiny.
+
+The breakthrough is in operational philosophy.
+All of these nations have been deploying software vulnerability analysis as a *_weapon system_*
+-- that is why Putin is diligently killing the internet in Russia whilst hiding in his bunker.
+Some American companies claimed proximity to Ukraine's "AI" as a marketing stunt
+-- Ukraine hasn't let anyone in since 2024. Neither has Israel, France, GB, etc.
+But don't worry, American services have demonstrated similar capabilities -- recent operations against Iranian leadership infrastructure are publicly reported.{fn-khamenei}
+
+Cybersecurity AI-Nukes have been weaponized for over a year now, and your world didn't crash in some "everything outage."
+If a year of constellation attacks didn't bring the world down, let's be conservative with single-model expectations like Mythos.
+The important piece people miss here is that the power of these penetrators does NOT come from a model
+-- that is impossible. It comes from the analytic *_systems_* that use many models.
+In the last section I will explain why and how. For now, it's about:
+
+- *Centralized Control (tool):* Russia, China, USA -- not very effective but simple.
+- *Distributed Control (team):* Iran, Baltics, Ukraine in the Gulf -- effective but expensive.
+- *Ecosystem Policy (theater):* Ukraine, France, Israel, GB -- changes everything!
+
+Open Source Software is safest for the same reason it is safest today -- its source is open
+-- nothing changes *_unseen_* there -- theater scope. These security agencies rely on the same OSS.
+In the big world, intelligence agencies run their own software ecosystem, like we used to with the Department of Navy.
+ARPANET (the Internet) was born this way if you remember. But today the USA relies on few private companies.
+Proprietary software will temporarily get reamed and recover
+-- this will be and has been a recurring theme already. The cycle will tighten.
+
+No single model can kill your company -- don't worry. Incompetence will, quietly, gradually.
+
+While Anthropic firetruck scares people with a bonfire, some nations sling fire on an industrial scale.
+
+So, Mythos, hey folks -- _Too powerful to release to the public._ Like GPT-2 was!
+I liked its "advertised" benchmarks.
+Soon enough we will have real and independent agentic tests well outside Anthropic fixtures.
+Let's see how well it holds a personality imprint necessary for some real problem-solving in code.
+I'm not holding my breath.
+
+*Full disclosure:* Why don't I take Anthropic's Mythos claims to the security industry seriously
+-- as someone with exposure, I picture a bicycle shop showing off their carbon fiber frames
+at a military airbase with an F35 parked next to the bikes. +
+_Cute bike!_
+
+Review this article in a couple of years from now and remember that `rdd13r` told you +
+ -- _the near future is in systems, not models._

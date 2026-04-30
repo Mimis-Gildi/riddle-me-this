@@ -1,0 +1,129 @@
+= {title-google}
+include::./2026-04-23-ai-maggedon-links.adoc[]
+include::./2026-04-23-ai-maggedon-google-links.adoc[]
+
+
+Zuk built Facebook on *build and pray*.
+Twenty years and $50B in Reality Labs later, he's still praying.
+Google does the opposite -- they ship with mission, measure return, and kill anything that doesn't *brick the customer further*.
+The Python's discard pile is 200+ corpses long;{fn-killed-by-google} none of them missed because of bad code -- they missed because they didn't extend the wall.
+The financial mission hasn't changed since AdWords in 2000: *you are a brick, and every product is more cement.*
+"Deterministic AI" is just the next coat.
+
+Recently Google summoned their partner ecosystem to introduce "Deterministic AI"
+-- I listened very carefully. Understood. Called people in business that implement AI.
+It all went right over their heads.
+
+Engineers began to make fun of "deterministic" with AI. Marketers struggled to spin product-market fit.
+Everyone got confused. And things got quiet again. But Google is the adult in the room.
+It isn't a new thing with them -- I remember this exact track in 2017 with my MATILDA framework.
+
+Amazon is trying to give us a practical democratization with Bedrock -- but pragmatism is not yet possible.
+Microsoft is still trying to sell "more bugs for less" model using their proven "don't look there" defense.
+Companies like Palantir are trying to package yesterday's ideas into futuristic "business -- all you need is here."
+And niche gods like Celonis know they're disrupted but don't understand HOW.
+LLM shops only understand pushing a bigger model and hoping for users to discover monetization.
+Everybody panics, except Google! I explained this in {google-play}
+-- three years later they're spinning the same play on a bigger stage.
+
+Three companies attempted this pattern -- Apple, Salesforce, and Google. Life behooves you to study it:
+
+. *Attract the community* -- get makers, forget the corporate cogs -- they'll move when hackers route the herds.
+Open tools, open models, and open communities relax hackers, stimulating trust.
+When hackers come, real assets emerge -- open source tooling, community IP, and ecosystem momentum.
+
+. *See the customer from the "whole life" perspective* -- hackers see customers as animated assets:
+someone like themselves, with endless opportunities to upsell to: home, work, social, personal, etc.
+Not as a transaction or a subscription in the product marketplace.
+When the platform explicitly provides hackers with tools to grab the customer "whole,"
+both the hacker and the platform turn into a medical device instead of just a trinket
+-- all the dependency and commitment without any FDA regulation overhead, all done covertly.
+
+. *"Give me your magic, I'll keep it for you"* -- have the wild hacker you've tamed in step 1 flip that pleb upside down for you:
+they already bring implied trust to the customer's workplace
+-- start by blurring that "assistant" concept to eventually absorb the customer's domain logic into your infrastructure,
+through progressive helpful upsells. Tada: drag and drop domains in action.
+Apple tried to match this play a decade ago with Siri. Notice the stamina and persistence.
+
+Apple has the "whole life" vision -- phone, watch, home, car, health -- but hoards.
+They don't invite the community to "build the customer out" together. Only one trump card was even attempted.
+
+Salesforce tried _"give-me-your-magic"_ game with their CRM-as-platform pitch.
+And completely failed to attract the maker community. Salesforce developers are cogs, not hackers.
+Glorified "toolkit operators" won't _explore the customer._ Stuffy-corporate ecosystem gets one trump card.
+
+Google nails all 3 (three) -- the deck minus hearts. And their execution is a thing of beauty.
+
+Google's push is to replace that almighty DDD Aggregate --
+a business service your team spent a year to write and years to "maintain" into submission
+-- with a single drag-and-drop AI-ee box.
+That box pretends to be "deterministic" as it encodes your domain logic
+-- the edge cases, the regulatory constraints, the competitive secret sauce
+-- *_the Mojo_* your business experts spent decades learning.
+Your people tune it, configure it, pour their knowledge and time into it.
+And now Google has it "keeping it safe" _for you_, same as your photos, emails, home video, love letters, and wallet -- _allegedly_.
+And not just yours -- *_everyone's_* in your vertical!
+Google runs models across all of them, cross-pollinates insights no single company can match,
+and offers you "better solutions" back, _for *your* benefit_, just like it decorates your photos and videos.
+This deepens your dependency because the box now knows your business better than your team does.
+Your business identity is effectively consumed.
+The company's differentiation lives inside Google's ecosystem and is powered by Google proprietary magic.
+100% trunk-based-development,{fn-monorepo} and you are just data.{fn-data-flywheel}
+
+This is even before we think of that joker up the sleeve -- friction!
+
+Google's attitude to strategy is opposite to the "specialization" everyone else chose.
+Like France and Ukraine in section one above, they chose *_Total War_* -- instead of understanding one tool or weapon,
+wise people comprehend how every tool fits into the *_entire ecosystem_*, ending up dominating the whole theater.
+Google is poised to dominate every aspect of your life -- home with internet,
+cell phone, home security, family management;
+business with drag and drop, "we think for you" catering straight to lifer's mindset;
+social life with AI-enabled search, integrated identity, services, and trinkets
+-- intentionally blurring the lines between home, work, business, personal, and public.
+And all of this is powered by exactly the same hyperscaler beast,
+exactly the same maker community they brought into the fold.
+
+Like Ukraine with Delta, Google with Borg also has all the cards -- not distracted by temporary fluff.
+
+While the market chases HYPE -- oh look shiny trinket, oh look another shiny -- Google patiently plays Python
+-- literally, slowly swallowing plebs whole undistracted by hype and noise.
+I've been running deep analytics on these wise folks for years now -- I'm not a fan, though my business is a Google business,
+`systems` domain and all -- I'm just in awe.
+Did you know that *everything* Google is, from idea to wire -- defined in trunk?{fn-lifecycle-as-code} Deus Ex Machina in plain sight.
+
+*_Learn from this._* This is an accessible and clear example of *_a competent_* ecosystem strategy.
+Take something from their playbook and most importantly from their mindset, attitude to self and customer.
+Infrastructure IS the end-game -- monetization at the foundation.
+
+And now the joker promised earlier -- *the absence of friction*.
+
+Google ships every product to a hacker creed -- self-service at 99.99%, no upsells, no surprise migrations,
+no needless updates to working contracts.
+Their devices ship *without customer support* because customer support isn't needed.
+My Wi-Fi router started dropping packets, 1 of 8, so I never noticed -- a box arrived at my door
+with a replacement and a note: "swap with #5, ship #5 back."
+GCP apps are self-documenting, no uDemy required, unlike Azure.
+*Microsoft locks you in with friction; Google locks you in with the absence of it.*
+The brick is *happy* in the wall.
+Even when an app gets killed, the lift-and-drop path is already drawn,
+the community grieves publicly, fan portals point to the next Google product
+-- people don't leave Google and choose to migrate within.
+
+> It reminds me of the three-wheel static asphalt roller -- moves slowly,
+> rushing nowhere fast, and just rolls everything on its way flat into tarmac.
+> Before it is a turbulent uneven market, steaming and heaping.
+> Behind it -- a durable flat runway straight to its bank. +
+> -- Random Hacker.
+
+{nbsp}
+
+Strategically the same play: no sudden turns, no lateral forces, no chasing model hype.
+If Google "jumped on the model BS," they'd create friction
+-- the smooth roller tries to spin sideways and the customer feels the jolt.
+They will never do that! They speed up gently, in the same direction they've rolled since 2000.
+And then you look up -- you've moved. How do you counter "the absence" of something?
+It's a magnificent mature posture that is hard to not appreciate.
+
+While others hype over models, Google just patiently rolls strategy.
+
+What is your take? Leave me a comment.
