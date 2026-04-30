@@ -1,6 +1,6 @@
 # CHANGELOG.md
 
-## [10.7.0] — AI-maggedon 2026: surviving Agentic in plebs
+## [10.8.0] — AI-maggedon 2026: surviving Agentic in plebs
 
 - New long-form reflection "AI-maggedon 2026: Straight Talk" — five-section essay on the gap between recruiter hype and field reality (`site/_posts/2026-04-23-ai-maggedon.adoc`).
 - New LinkedIn-facing synopsis with the Kimi-K2-Thinking rebuttal of the local-frontier myth (`site/_posts/2026-04-23-ai-maggedon-synopsis.adoc`).
