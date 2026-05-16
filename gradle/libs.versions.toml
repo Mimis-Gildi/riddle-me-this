@@ -3,7 +3,7 @@ asciidoctorJvm = "4.0.5"
 
 logback = "1.5.32"
 kotlinLogging = "8.0.02"
-slf4j = "2.0.17"
+slf4j = "2.0.18"
 
 [plugins]
 asciidoctor-jvm-pdf = { id = "org.asciidoctor.jvm.pdf", version.ref = "asciidoctorJvm" }
