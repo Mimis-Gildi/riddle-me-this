@@ -40,7 +40,7 @@ jobs:
     uses: Mimis-Gildi/fluffle/.github/workflows/incrementer.yml@main
     secrets: inherit
 
-  update-resume-links:
+  update-internal-links:
     needs: increment
     if: ${{ needs.increment.outputs.new != '' }}
     runs-on: self-hosted
@@ -73,25 +73,26 @@ jobs:
             printf '::notice::NOT a resume update PR.\n'
           fi
 
-      - name: Update resume version references
-        if: ${{ steps.label-check.outputs.update == 'true' }}
+      - name: Update link version references
+        id: replace-links
         timeout-minutes: 1
         uses: ./.github/actions/update-version-references
-        with:
-          superseded-version: v${{ needs.increment.outputs.old }}
-          current-version: v${{ needs.increment.outputs.new }}
-          published-version: v${{ needs.increment.outputs.old }}
-          link-replacements: |
+        env:
+          RESUME_REPLACEMENTS: |
             [
               {"path": "site/index.adoc", "pattern": "releases/download/{version}/VadimKuhay-Resume.pdf", "count": 1},
               {"path": "site/_pages/maintainer.adoc", "pattern": "releases/tag/{version}", "count": 1},
               {"path": "site/_pages/maintainer.adoc", "pattern": "releases/download/{version}/VadimKuhay-Resume.pdf", "count": 1},
               {"path": "README.adoc", "pattern": "releases/download/{version}/VadimKuhay-Resume.pdf", "count": 1}
             ]
+        with:
+          superseded-version: v${{ needs.increment.outputs.old }}
+          current-version: v${{ needs.increment.outputs.new }}
+          published-version: v${{ needs.increment.outputs.old }}
+          link-replacements: ${{ steps.label-check.outputs.update == 'true' && env.RESUME_REPLACEMENTS || '[]' }}
 
       - name: Commit and push
         timeout-minutes: 2
-        if: ${{ steps.label-check.outputs.update == 'true' }}
         env:
           GH_TOKEN: ${{ secrets.CI_PAT }}
         run: |
@@ -106,5 +107,5 @@ jobs:
 
           git fetch && git pull
           git add -A
-          git commit -m "Update resume version references to v${{ needs.increment.outputs.new }} [skip up]"
+          git diff --cached --quiet || git commit -m "Update version references to v${{ needs.increment.outputs.new }} [skip up]"
           git push origin
