@@ -4,7 +4,6 @@ run-name: "Incremented Version on ${{ github.repository }} by ${{ github.actor }
 on:
   push:
     branches-ignore:
-      - main
       - release
       - 'releases/**'
       - 'renovate/**'
@@ -21,6 +20,37 @@ on:
       - opened
       - reopened
   workflow_dispatch:
+    inputs:
+      increment:
+        required: false
+        type: choice
+        options:
+          - skip
+          - patch
+          - minor
+          - major
+          - fail
+        default: patch
+        description: 'Force increment type. Default is patch.'
+  workflow_call:
+    inputs:
+      increment:
+        required: false
+        type: string
+        default: patch
+        description: 'Force increment type (skip/patch/minor/major/fail). Default is patch.'
+    outputs:
+      type:
+        value: ${{ jobs.mimis-increment.outputs.type }}
+      old:
+        value: ${{ jobs.mimis-increment.outputs.old }}
+      new:
+        value: ${{ jobs.mimis-increment.outputs.new }}
+      sha:
+        value: ${{ jobs.mimis-increment.outputs.sha }}
+
+
+
 
 permissions:
   contents: write
@@ -35,16 +65,20 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  increment:
-    if: ${{ !(github.event_name == 'push' && github.event.created) }}
+
+  mimis-increment:
     uses: Mimis-Gildi/fluffle/.github/workflows/incrementer.yml@main
+    with:
+      force-action: ${{ inputs.increment }}
     secrets: inherit
 
   update-internal-links:
-    needs: increment
-    if: ${{ needs.increment.outputs.new != '' }}
+    needs: mimis-increment
+    if: ${{ needs.mimis-increment.outputs.new != '' }}
     runs-on: self-hosted
     timeout-minutes: 4
+    outputs:
+      update: ${{ steps.label-check.outputs.update }}
     steps:
 
       - name: Checkout
@@ -86,12 +120,13 @@ jobs:
               {"path": "README.adoc", "pattern": "releases/download/{version}/VadimKuhay-Resume.pdf", "count": 1}
             ]
         with:
-          superseded-version: v${{ needs.increment.outputs.old }}
-          current-version: v${{ needs.increment.outputs.new }}
-          published-version: v${{ needs.increment.outputs.old }}
+          superseded-version: v${{ needs.mimis-increment.outputs.old }}
+          current-version: v${{ needs.mimis-increment.outputs.new }}
+          published-version: v${{ needs.mimis-increment.outputs.old }}
           link-replacements: ${{ steps.label-check.outputs.update == 'true' && env.RESUME_REPLACEMENTS || '[]' }}
 
       - name: Commit and push
+        id: commit-push
         timeout-minutes: 2
         env:
           GH_TOKEN: ${{ secrets.CI_PAT }}
@@ -107,5 +142,14 @@ jobs:
 
           git fetch && git pull
           git add -A
-          git diff --cached --quiet || git commit -m "Update version references to v${{ needs.increment.outputs.new }} [skip up]"
+          git diff --cached --quiet || git commit -m "Update version references to v${{ needs.mimis-increment.outputs.new }} [skip up]"
           git push origin
+
+  report-edits:
+    needs: [mimis-increment, update-internal-links]
+    runs-on: self-hosted
+    steps:
+      - name: Report Actions
+        run: |
+          print "Mimis Increment: ${{ needs.mimis-increment.outputs.new }}"
+          print "Update Internal Links: ${{ needs.update-internal-links.outputs.update }}"
