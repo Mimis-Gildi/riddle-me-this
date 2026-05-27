@@ -2,7 +2,7 @@
 asciidoctorJvm = "4.0.5"
 
 logback = "1.5.32"
-kotlinLogging = "8.0.02"
+kotlinLogging = "8.0.4"
 slf4j = "2.0.18"
 
 [plugins]
