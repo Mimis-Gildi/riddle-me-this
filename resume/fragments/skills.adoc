@@ -4,14 +4,14 @@
 * *Architecture & Design* -- TOGAF, ArchiMate, DoDAF; DDD, EventStorming; Microservices, Microfrontends;
 API-first (REST/HATEOAS/RMM-3); 12-Factor App; Streaming Topologies; Multi-tenant; Strangler Fig.
 
-* *Engineering Practice* -- XP, TDD/BDD/ATDD, trunk-based development; CI/CD, DevOps, InnerSource; CoP.
+* *Engineering Practice* -- Agile, XP, TDD/BDD, trunk-based development; CI/CD, DevOps, InnerSource; CoP.
 
-* *Languages* -- Kotlin-KMP, Java, Python, Scala, Go, C/ObjC/C++, TypeScript/JavaScript, ksh/bash, Swift.
+* *Languages* -- Kotlin-KMP, Java, Python, Scala, Go, C/ObjC/C++, TypeScript/JavaScript, Shell Scripting.
 
 * *AI / ML* -- MCP, RAG, AIOps, MLOps; GenAI 2022{plus} LLaMA, GPT-4, LangChain, LangGraph, LangSmith;
-Bayesian Inference, Quantum Decision Theory (QDT), Drift Mitigation; TensorFlow, Keras, PyTorch, PySpark, Scikit-learn.
+Bayesian Inference, QDT, Drift Mitigation; Apache Spark, Kafka; TensorFlow, Keras, PyTorch, PySpark, Scikit-learn.
 
-* *Infrastructure in Code* -- Linux kernel, bare-metal, UNIX; Kubernetes (`k8s`), Docker, `containerd`, OpenShift/OKD, Knative, Helm, Terraform;
+* *Infrastructure in Code* -- Linux kernel, bare-metal; Containerization, Kubernetes (`k8s`), Docker, OpenShift/OKD, Knative, Helm, Terraform, Ansible;
 AWS, Azure, GCP; GitHub Actions, Jenkins; ESX, OSX, MPI; Android SDK, iOS.
 
 * *Frameworks* -- Claude Code, OpenRouter.ai, MiniMax, Qwen3; Ktor, Quarkus, Micronaut, Akka, Kind; +

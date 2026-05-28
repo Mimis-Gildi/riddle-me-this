@@ -2,13 +2,10 @@
     "permissions": {
         "allow": [
             "Read",
-            "Write",
-            "Edit",
             "Glob",
             "Grep",
             "WebSearch",
             "WebFetch",
-            "Bash",
             "mcp__jetbrains__*",
             "mcp__ide__*",
             "mcp__a2a__*"
