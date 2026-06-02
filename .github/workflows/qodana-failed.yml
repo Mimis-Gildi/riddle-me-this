@@ -25,7 +25,7 @@ jobs:
     steps:
 
       - name: Checkout full repository
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v6.0.3
         timeout-minutes: 3
         with:
           fetch-depth: 0
