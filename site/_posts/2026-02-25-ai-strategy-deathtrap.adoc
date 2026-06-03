@@ -7,7 +7,7 @@ classes: wide
 comments: true
 hidden: false
 search: true
-read_aloud: true
+read_aloud: false
 ---
 = AI Strategy Deathtrap -- Straight Talk
 :imagesdir: ./assets/images

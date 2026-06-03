@@ -1,0 +1,228 @@
+---
+categories: [reflections]
+tags: [Ukraine, Democracy, Heroes, Memorial Day, Spider Web, Technology, Semiquincentennial]
+excerpt: >
+    One year since Spider Web. The first Memorial Day of America's 250th. Summer of those who chose to keep fighting.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: true
+---
+= Glory to ALL Our Heroes!
+:imagesdir: ./assets/images
+:spider-web-wiki: https://en.wikipedia.org/wiki/Operation_Spiderweb[Operation Spiderweb -- Wikipedia,window=_blank]
+:spider-web-csis: https://www.csis.org/analysis/how-ukraines-spider-web-operation-redefines-asymmetric-warfare[CSIS: How Ukraine's Spider's Web Redefines Asymmetric Warfare,window=_blank]
+:spider-web-anniv: https://censor.net/en/videonews/4006041/a-year-of-operation-pavutina-how-the-sbu-inflicted-billions-in-losses-on-russia[A year of Pavutina -- SBU recap,window=_blank]
+:memorial-day-2026: https://www.whitehouse.gov/presidential-actions/2026/05/memorial-day-2026/[Memorial Day 2026 proclamation,window=_blank]
+// TODO -- verify before using: Semiquincentennial reference, "Americans in Ukraine" specific orgs (Mozart Group etc.), Starlink/OSINT references.
+
+I'd like to pause and celebrate with my readers. And we have a few things to celebrate, a few things to recognize,
+and a few things to do better. One of the things I enjoy reminding the teams I train of is to STOP.
+Slow down. Take a long breath and recognize how far we've come. We should do so regularly.
+
+Welcome to *Summer*! Of course this is the first on my list. Can you believe the summer is here?
+Zoey, 3, welcomes her fourth. And her brother Anton has his 17th. I'm not telling mine. And yours?
+
+Happy *Memorial Day*, our 159th since Logan's General Orders No. 11 on May 5th, 1868.
+My battle buddies and I had a tradition of meeting at Arlington in the 2000s.
+Not all of us were US Army from Ft. Bragg -- we also picked up some Marines from Camp Lejeune,
+fine folks who regularly trained and competed with us on the Army grounds.
+Most of these people have done the full tour in the Army and are now volunteering in Ukraine.
+I hope you enjoyed the weekend!
+
+Speaking of Ukraine -- 1 year of the Operation Spiderweb.
+And this is a very important milestone to all Americans.
+Yet most are not even aware of what that is, or what that little Ukraine is,
+or why one would care. Luckily you have me.
+And if you have been following me then you already know that I share important things
+hiding in plain sight -- as I learn I love to take friends along on my journey.
+
+Mainly I write about what I do -- technology, massive distributed systems, brilliant teams, clever solutions,
+and fun problems. Such as, All AI is Agentic -- fun with buzzwords, huh;
+Or, Opus only interpolates and can never extrapolate -- so, LLMs will never reason, thus you must;
+Simple and consequential concepts but not immediately evident and dangerous when misplaced.
+I never share opinions or commentary -- those are useless. And so I never discuss politics and take sides.
+There is absolutely no reason to do so when fact and inference are available: we can then know,
+and there is no need to guess or speculate.
+
+Similarly, Russo-Ukrainian war is most consequential for our `Merica, even more so than Iran,
+albeit tightly coupled to Iran. And we can understand what matter to us, the Americans, rather easily.
+But first more about the author so that you can properly consider yours truly as a source.
+
+== About the Author's connection to Ukraine
+
+I am an ordinary systems engineer and Tania is an MBA. Together we ran a boutique software company helping corporate America transform.
+We'd help mSaaS founders bootstrap for launch. Plus a 2017 AI startup of our own.
+The war was a "big beautiful ocean away, far, far away." Yet it could also not be any closer.
+
+People who know us offer support for how "selflessly we put it all on Ukraine." And with that comes a need for clarification.
+It is not true as stated. Most of our support for Ukraine is indirect -- we support
+America's best sons and daughters fighting in Ukraine. It all began with my own US Army military service decades ago.
+And my gratitude for my life to a good friend and once a battle buddy black Alabama native now late Msg. Ret. `klemo.`
+I medically retired in 2000, and he completed his 20+ fully retiring in 2020. I am born in Soviet Ukraine, but our hero
+along with many other Americans in this story met Ukraine in 2015 training the legendary Azov -- a year into russian invasion of Ukraine.
+Many important geopolitical tectonic shifts took place that year like CIA rebuilding Ukrainian GUR displacing MI6 from BFFs.
+
+Come 2022 full scale invasion my `klemo` barges in with an announcement "I'm saving the world!"
+I've done my darnest to try and talk the old goat out of it. No luck! And soon my house is full of old grunts packing duffle bags.
+Now, I have always been well-informed. So, I knew that the International Legion Zelenskyy announced is not where I want my vets.
+And I knew that they need `kit`, `armor`, `arms`, pay and logistics -- they need a lot of expensive things nobody has to offer.
+So, Tania, little Anton and I roll up our sleeves, and we go begging all our past customers for any handouts. That didn't work.
+We get bandages, blankets, and undies -- good for nothing toerag. But then a customer offers to match on shares for our startup.
+They wanted the company for a long time. We accepted and that's how we ended up all in.
+I was also packing to go, luckily God had other plans for us all!
+
+=== Zoey (Khava -- "life"): the "Little General"
+
+Now as we packed up and hastily sent off the retired SOCOM grunts we were left with nothing to do and nothing left to do it with.
+Even the Marketing Fey, twin sisters and a boutique marketing company left. For years ladies kept our corporate-lobotomy backlog full.
+Turns out the Fey are veterans too. So we went warehouse to warehouse, load point to load point, helping pack up whatever could still go to Ukraine.
+All this physical labor and running around had an unforeseen and major consequence.
+
+Anton was 4 when he lost his first mother and unborn sister. Now he was pestering Tania and I attempting to order a sister.
+I was told that it's impossible for me thus we'd not thought about his plans much. Little did we know that the boy was praying,
+and those were not just his plans. Now we're pregnant and daddy's not going anywhere.
+Anton then confided that this was his idea all along and presented a proof of "bribing the storks."
+And later we learned that mama was in on it too with the logic that our selfless deeds will be rewarded because -- karma, why not.
+
+Khava is her real given name, Aramaic for "life," the actual name of Adam's wife, Eve in English, and Zoey is the Greek variant in her passport.
+The little gift was born with a soft voicebox, completely healthy otherwise. Her first year was a struggle:
+breathing is a problem, eating is a problem, sleeping is a problem, and she needs to be watched 24/7.
+Zoey beats it all by her 18th month with daddy's diligent overfeeding.
+On the bright side I got to work with some of the most advanced and cool software on the planet spending my nights next to Zoey:
+swarming, massively distributed systems, world-size predictive analytics, even game making.
+Eventually I even got some corporate America the later year.
+
+=== Closure and Closing
+
+Things finally disconnected as abruptly as they had begun. Last year all American companies lost the channels, us included.
+But it's really August that came in hot. First Tania's mother, my mother-in-law,
+lost her life in a massive bombardment of her historic Ukrainian city: she was old and could not comply with the many flights of stairs.
+The day after `klemo` "went out with a bang" -- as he's always wanted.
+He used to complained how he will not "die in a hospice," and he got his wish -- there was nothing left to collect.
+And a few days later after wake a MAGA cop from a wrong jurisdiction arrests me on fabricated charges -- Tania and the kids trying to collect me the whole night.
+I guess the veterans were noisy here, but I think it's all the Ukraine media that tripped up the old public servant.
+In the end it all worked out. My charges were dropped and records expunged, heroes rest in glory, and life is traded for life.
+
+We had a nice and full closure. Except the little Zoey inherited all the wrong Viking genes from her mother and I.
+Our neighbors lovingly call her the "Little General." She forms up the family from time to time, when she gets extra ornery.
+Reminding us there's a real war raging. And that it's not far, far away.
+
+== Why is the war HERE?!
+
+First of all it's not a war in Ukraine. It was a war in Europe. Since 2025 it is war in Africa and Asia.
+And it's a very hot war. Our entire tussle with Iran that made 13 out of 14 USA bases untenable is 3 days in Ukraine.
+
+I have three groups of close friends. 45% of my friends are MAGA-MAGA all the time. 35% of my friends are "flaming liberals."
+And 20% of my friends are somehow fighting for Ukraine. There is no middle in the USA.
+And my liberal friends complain about cliché russian propaganda our other friends repeat asking me "how do you change their minds?"
+First of all -- what moral right does one have for that?! It's manipulation. So, I recommend a question:
+
+"What language did russians speak in russia 400 years ago?"
+
+People who haven't used reason to place themselves into an opinion will not be swayed or offended by this question.
+People who are capable of reason will start unraveling a thread that sets them free.
+We Americans are not strong in history or geography, so I see little use in such "swaying" all together.
+Instead, a productive discussion is something else entirely.
+
+*Why are we affected economically by the war?*
+
+_Because we violated a treaty. 56c on every dollar comes from our *past soft power*. ISW say we eroded most of it._
+
+*Why are we affected militarily by the war?*
+
+_The doctrine of warfare is completely rewritten: versioned 4 times already. Because of our geopolitical stance we're not permitted to the notebook. And the enemy is in it._
+
+
+
+
+== What about Ukraine, Europe, and the Outcome?!
+
+
+
+
+
+
+// ============================================================================
+// SCAFFOLDING -- 2026-06-02
+//
+// Per site/CLAUDE.md: Vadim writes prose. Claude critiques.
+// Every section below is a PLACEHOLDER with verified facts and intent notes.
+// Replace the // notes with your voice.
+//
+// Pivot context: this branch was originally a BMAD takedown
+// (see inbox/2026-05-30-bmad-post-handoff.md). Now repurposed to honor
+// Ukraine, Americans in Ukraine, technology, and democracy --
+// anchored on Spider Web's 1-year mark, Memorial Day 2026,
+// and America's 250th year.
+// ============================================================================
+
+// Proposed excerpt (above). Mine, draft. Rewrite in your voice.
+
+// Proposed opening description -- starting point for Vadim to rewrite.
+// Yesterday was the one-year mark of Spider Web. Eight days ago was Memorial Day,
+// the first one of America's 250th year. Summer is here. There is a lot to celebrate,
+// and it is worth naming who we are celebrating.
+
+{nbsp}
+
+== One year since Spider Web
+
+// VERIFIED FACTS (1 June 2025, SBU):
+//   - 117 FPV drones; five Russian airbases
+//     (Belaya, Dyagilevo, Ivanovo Severny, Olenya, Ukrainka).
+//   - Hit Tu-160, Tu-95, Tu-22M strategic bombers and A-50 AWACS.
+//   - ~1/3 of Russia's strategic cruise-missile carriers damaged.
+//   - Estimated $7B in losses.
+//   - 18 months of planning. Drones smuggled in parts, assembled in
+//     a Chelyabinsk warehouse, deployed from inside trucks.
+//   - Sources: {spider-web-wiki}, {spider-web-csis}, {spider-web-anniv}.
+//
+// VADIM -- your read on what Pavutina actually represents. The asymmetric
+// warfare angle, the ingenuity, the people who pulled it off.
+
+== Memorial Day 2026 -- the first of America's 250th year
+
+// VERIFIED FACTS:
+//   - Monday, 25 May 2026. Eight days before this post.
+//   - The 4 July 2026 Semiquincentennial marks 250 years from the
+//     Declaration of Independence (1776).
+//   - This Memorial Day was the first one in America's 250th year.
+//   - Source: {memorial-day-2026}.
+//
+// VADIM -- what this Memorial Day carries that the others don't.
+
+== The heroes we name
+
+=== Ukrainian soldiers, SBU, the intelligence services
+
+// VADIM -- whose names belong here.
+
+=== Americans who went to Ukraine
+
+// VADIM -- specific orgs and people you want named.
+// I want to verify any specifics (Mozart Group, individual volunteers,
+// the ones who were killed) before they go in print.
+
+=== The technologists
+
+// The garage drone makers. The $500 FPV that kills a $100M bomber.
+// Starlink-era battlefield comms. The OSINT community.
+// VADIM -- which technologists, which moments.
+
+=== Democracies still standing
+
+// Battered, imperfect, still here at 250.
+// VADIM -- the frame you want for this one.
+
+== Start of summer
+
+// Astronomical summer: 21 June. Cultural US start: Memorial Day weekend (passed).
+// The season of those who chose to keep fighting.
+// VADIM -- closing this section is yours.
+
+'''
+
+// CLOSING LINE -- yours.
+// (Slava Ukraini. Slava Heroyam. Glory to ALL Heroes.)

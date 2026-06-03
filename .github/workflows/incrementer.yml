@@ -9,8 +9,6 @@ on:
       - 'renovate/**'
       - 'dependabot/**'
   create:
-    branches:
-      - '[0-9]+-**'
   pull_request:
     branches-ignore:
       - 'renovate/**'
