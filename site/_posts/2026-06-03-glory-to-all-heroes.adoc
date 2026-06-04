@@ -9,14 +9,17 @@ hidden: false
 search: true
 read_aloud: true
 ---
-= Glory to ALL Our Heroes! Or, "You don't belong in America"
-:imagesdir: ./assets/images
+= Glory to Heroes: "You don't belong in America"
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: /riddle-me-this/assets/images]
 :spider-web-wiki: https://en.wikipedia.org/wiki/Operation_Spiderweb[Operation Spiderweb -- Wikipedia,window=_blank]
 :spider-web-csis: https://www.csis.org/analysis/how-ukraines-spider-web-operation-redefines-asymmetric-warfare[CSIS: How Ukraine's Spider's Web Redefines Asymmetric Warfare,window=_blank]
 :spider-web-anniv: https://censor.net/en/videonews/4006041/a-year-of-operation-pavutina-how-the-sbu-inflicted-billions-in-losses-on-russia[A year of Pavutina -- SBU recap,window=_blank]
 :memorial-day-2026: https://www.whitehouse.gov/presidential-actions/2026/05/memorial-day-2026/[Memorial Day 2026 proclamation,window=_blank]
-:all-ai-agentic: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/04/23/ai-maggedon.html#5-agentic-success-almanac-how-and-why-and-what-gives[All AI is Agentic,window=_blank]
-:opus-interpolates: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/04/23/ai-maggedon.html[Opus only interpolates and can never extrapolate,window=_blank]
+:all-ai-agentic: link:/riddle-me-this/reflections/2026/04/23/ai-maggedon.html#5-agentic-success-almanac-how-and-why-and-what-gives[All AI is Agentic,window=_blank]
+:opus-interpolates: link:/riddle-me-this/reflections/2026/04/23/ai-maggedon.html[Opus only interpolates and can never extrapolate,window=_blank]
+:institutionalized: link:/riddle-me-this/reflections/2026/06/02/institutionalized-the-lost-demographic.html[*Institutionalized -- The Lost Demographic*,window=_blank]
+:institutionalized-ps: link:/riddle-me-this/reflections/2026/06/02/institutionalized-the-lost-demographic.html[Wanna read about MAGA cop arresting me at my family vigil for being Ukrainian?,window=_blank]
 :russia-iran-treaty: https://en.wikipedia.org/wiki/Iranian%E2%80%93Russian_Treaty_on_Comprehensive_Strategic_Partnership[Iran-Russia Comprehensive Strategic Partnership Treaty,window=_blank]
 :treasury-fath360: https://home.treasury.gov/news/press-releases/jy2570[US Treasury -- Iran-Russia missile transfer sanctions (Sept 2024),window=_blank]
 :treasury-alabuga: https://home.treasury.gov/news/press-releases/jy1104[US Treasury -- Alabuga Shahed manufacturing sanctions (Feb 2024),window=_blank]
@@ -30,6 +33,8 @@ read_aloud: true
 :kyiv-post-cia-sbu: https://www.kyivpost.com/post/28678[Kyiv Post -- CIA Worked With SBU to Root Out Russian Spies,window=_blank]
 :pbs-azov-lift: https://www.pbs.org/newshour/world/u-s-lifts-ban-on-providing-weapons-and-training-for-ukraines-controversial-azov-brigade[PBS NewsHour -- U.S. lifts ban on weapons and training for Ukraine's Azov Brigade (June 2024),window=_blank]
 :csm-azov: https://www.csmonitor.com/World/Europe/2024/0912/ukraine-nationalism-azov-sanctions-restored-reputation[Christian Science Monitor -- Ukraine's nationalist Azov fighters strive to clear name (Sept 2024),window=_blank]
+:delta-csis-cjadc2: https://www.csis.org/analysis/does-ukraine-already-have-functional-cjadc2-technology[CSIS -- Does Ukraine Already Have Functional CJADC2 Technology? (Dec 2024),window=_blank]
+:delta-wiki: https://en.wikipedia.org/wiki/Delta_(situational_awareness_system)[Delta situational awareness system -- Wikipedia,window=_blank]
 :fn-spider-web: {spider-web-wiki}; deeper analysis in {spider-web-csis}; SBU's one-year recap in {spider-web-anniv}.
 :fn-war-consequence: CSIS Bondar/Burchell/Cancian -- {csis-iran-consequences} -- argue the Iran fight drained US air-defense interceptors away from Ukraine and gifted Russia an oil-price windfall; {chatham-gift} calls it "an economic gift for Putin."
 :fn-russia-iran-axis: Codified in the 20-year {russia-iran-treaty} (signed Jan 2025, in force Oct 2025). Operational receipts: {treasury-fath360} (Fath-360 ballistic missile deliveries); {treasury-alabuga} (Alabuga Shahed-136 production).
@@ -38,6 +43,7 @@ read_aloud: true
 :fn-sbu-collapse: The February 2014 scene at SBU Kyiv headquarters -- empty offices, files burning in the courtyard, FSB officers walking out with the personnel databases -- is reconstructed in {nyt-spy-war}; Ukrainian-side reporting in {kyiv-post-cia-sbu}.
 :fn-kondratiuk: Lt. Gen. Valeriy Kondratiuk's 2015 Washington trip with Russian Northern Fleet and nuclear-submarine material is the pivotal scene in {nyt-spy-war}; reconstructed independently in {abc-cia-ukraine}.
 :fn-cia-partnership: The public record describes a three-way partnership (CIA + MI6 + Ukrainian intel), not an MI6 displacement -- joint CIA-MI6 field training of Ukrainian officers continued through 2016. CIA outpaced MI6 in scale and tempo; by 2024 {nyt-spy-war} calls it "one of the C.I.A.'s most important intelligence partnerships."
+:fn-delta: Delta is Ukraine's national battle-management and situational-awareness platform, developed by the Aerorozvidka NGO with Ukraine's Ministry of Defense and Ministry of Digital Transformation; first tested in 2017 under a NATO initiative and broadly operational since August 2022. It ingests data from drones, satellite imagery, stationary cameras, sensor networks, reconnaissance units, partner-country intelligence, and "vetted bystanders." {delta-csis-cjadc2} reports Delta processes over 600,000 enemy objects monthly and "closely resembles the CJADC2 concept" that the U.S. DOD is still pursuing top-down. Overview in {delta-wiki}.
 :hero-alt: A weathered stone slab in golden-hour light. A pine wreath with red viburnum berries sits to the left. \
 Three flags laid side by side: a folded Ukrainian flag (blue over yellow) on the left, \
 a folded American flag in the regulation triangular fold (blue star field uppermost) in the center, \
@@ -46,7 +52,7 @@ A brass challenge coin showing the red Lion of Galicia rests on the UPA flag.
 
 .Glory to ALL Our Heroes.
 [#img-hero]
-image::/riddle-me-this/assets/images/2026-06-02-glory-to-all-heroes-hero.png[{hero-alt}]
+image::2026-06-02-glory-to-all-heroes-hero.png[{hero-alt}]
 
 {nbsp}
 
@@ -64,20 +70,26 @@ fine folks who regularly trained and competed with us on the Army grounds.
 Most of these people have done the full tour in the Army and are now volunteering in Ukraine.
 I hope you enjoyed the weekend!
 
-Speaking of Ukraine -- 1 year of the Operation Spiderwebfootnote:spider-web[{fn-spider-web}].
-And this is a very important milestone to all Americans.
+Speaking of Ukraine -- 1 year of Operation Spiderwebfootnote:spider-web[{fn-spider-web}].
+And this is a crucial milestone for all Americans.
 Yet most are not even aware of what that is, or what that little Ukraine is,
 or why one would care. Luckily you have me.
-And if you have been following me then you already know that I share important things
+And if you have been following me then, you already know that I share important things
 hiding in plain sight -- as I learn I love to take friends along on my journey.
 
-Mainly I write about what I do -- technology, massive distributed systems, brilliant teams, clever solutions,
+Mainly I write to the scene about what I do -- technology, massive distributed systems, brilliant teams, clever solutions,
 and fun problems. Such as, {all-ai-agentic} -- fun with buzzwords, huh;
 Or, {opus-interpolates} -- so, LLMs will never reason, thus you must;
-Simple and consequential concepts but not immediately evident and dangerous when misplaced.
+Simple and consequential concepts but not immediately visible and dangerous when misplaced.
 I never share opinions or commentary -- those are useless. And so I never discuss politics and take sides.
 There is absolutely no reason to do so when fact and inference are available: we can then know,
 and there is no need to guess or speculate.
+
+.Athena, the mother of all hackers: eternal inspiration in battle and code.
+[#img-athena]
+image::Athenas-Only-Daughter-Banner.jpg[Athena Mama]
+
+{nbsp}
 
 Similarly, Russo-Ukrainian war is most consequential for our `Merica,
 even more so than Iranfootnote:war-consequence[{fn-war-consequence}],
@@ -125,6 +137,7 @@ So, Tania, little Anton and I roll up our sleeves, and we go begging all our pas
 We get bandages, blankets, and undies -- good for nothing rags. But then someone offers to match on shares for our startup.
 They wanted the company for a long time. We accepted, and that's how we ended up all in --
 in return for operational logistics classes 1, 2, 3, 6, and 8.
+We launched the company and gifted ex-marketing twins funded the continuous runway.
 
 _I didn't talk about it, and I was also packing to go -- a bad parent! Somehow, our kid knew it._ +
 Luckily God and Anton had other plans for us all!
@@ -133,29 +146,28 @@ Luckily God and Anton had other plans for us all!
 
 .Kuhay family is busy supporting Ukraine.
 [#img-supporting]
-image::/riddle-me-this/assets/images/supporting_ukraine.jpg[]
+image::supporting_ukraine.jpg[]
 
 {nbsp}
 
 Now, as we packed up and hastily sent off the retired SOCOM grunts, we were left with nothing to do and nothing left to do it with.
 Even the Marketing Fey -- twin sisters, a boutique marketing company -- left for war. For years the ladies kept our corporate-lobotomy backlog full.
-Turns out the Fey are veterans too. And they also liquified and bought-in in full. First months were crazy!
+Turns out the Fey are veterans too. They liquified and bought-in. The first months were crazy!
 So we went warehouse to warehouse, load point to load point, helping pack up whatever could still go.
-
 
 All this physical labor and running around had an unforeseen and major consequence for our little family.
 Anton was 4 when he lost his biological mother and unborn sister. Now he was pestering Tania and me, attempting to order a sister.
 I was told that it was impossible for me, so we hadn't thought much about his sneaky plans.
 Little did we know that the boy was committed, diligently praying, and those were not just his plans.
 
-Now we're pregnant and daddy's not going anywhere -- Anton got what he wanted!
+Now we're pregnant, and daddy's not going anywhere -- Anton got what he wanted!
 And confessed to his "workable plan" succeeding all along. As proof, he presented his "bribing the storks" evidence.
 And mama, too, conceded to his logic, that our selfless deeds would be rewarded because -- karma, why not.
-Sure, how can silly daddy argue with such solid reasoning!
+Sure, how can silly daddy argue with such solid reasoning?
 
 .Anton loves it when HIS plan comes together!
 [#img-reward]
-image::/riddle-me-this/assets/images/pupsik-transparenti.png[]
+image::pupsik-transparenti.png[]
 
 {nbsp}
 
@@ -165,7 +177,7 @@ breathing was a problem, eating was a problem, sleeping was a problem, and she n
 Zoey beat it all by her 18th month with daddy's diligent overfeeding.
 On the bright side, I got to work with some of the most advanced and cool software on the planet, spending my nights next to Zoey:
 swarming, massively distributed systems, world-size predictive analytics, even game making.
-Eventually I even picked up some corporate America work in the later years.
+Eventually I even picked up some corporate American work in the later years. Anton's plan: a new sister's here = old daddy's home.
 
 *Closure and Reckoning*
 
@@ -174,14 +186,14 @@ Things finally disconnected for our family as abruptly as they arose. In 2025, a
 But it's really August that came in hot. First Tania's mother, my mother-in-law,
 lost her life in a massive bombardment of her historic Ukrainian city: she was old and unable to negotiate all the stairs.
 The day after her death my old battle-buddy `klemo` "went out with a bang" -- fallen in the heat of battle as he had always wanted.
-He'd dreaded an old-age death in some hospice -- his personal life did not work out; he had no family or children to speak of.
-The old gruntery was his family and drinking in NCO clubs was not his way. His way to go had to be spectacular.
-It was -- nothing left to collect.
+He'd dreaded an old-age death in some hospice -- his personal life in the USA did not work out; he had no family or children to speak of.
+The old gruntery was his family, but drinking in NCO clubs was not his idea of fun. His way to kick the bucket had to be spectacular.
+And it was -- nothing left to collect.
 
-So far we'd suffered one in seven from our own American military family. Half of them forever.
+So far we have suffered one in seven casualties from our own American military family. Half of them forever.
 These people are our nation's finest sons and daughters. Our Memorial Day recollections.
-The other half recover and usually stay in the fight helping in other ways they still can.
-For many, this war of independence became a highlight and definition of their lives.
+The half that recovers usually stays in the fight, helping in other ways they still can.
+For many, this war of independence became a highlight and definition of their whole lives.
 By all means our community is not your typical American community.
 Deep exposure to the war exists in the Ukrainian Diaspora worldwide -- did you know,
 *_there are as many Ukrainians worldwide supporting Ukraine as there are in Ukraine?!_*
@@ -190,93 +202,246 @@ Many veterans going to fight in Ukraine didn't have the information, intelligenc
 They learned the hard way. And eventually met others and fared much better together.
 The amalgamation we see today forever changes #_the future of Ukrainian-American relations_# regardless of governments.
 And these Americans will come home one day full of real experiences and knowledge unlike couch Qanon fables.
+It is the people-on-people connection that defines meaningful alliances.
 
-Don't mind your local useful idiots -- they'll be forgotten in shame -- just mind yourself.
-Last time I chacked ~100 Americans have fallen in combat in Ukraine. ~7,000 took part in heated battles.
-~3,500 ran humanitarian missions close to Zero. And ~390,000 is the supporting community in the USA actively donating,
-providing, manufacturing, and scrounging for them. This is just what's openly visible.
+Don't mind your local useful idiots -- they'll be forgotten; some will be shamed by their own families,
+like we now see with MAGA -- just mind yourself: we can only control ourselves. And there are many who have.
+Last time I chacked ~100 Americans have fallen in combat in Ukraine. ~7,000 partook in heated battles.
+~3,500 ran humanitarian missions close to Zero. And ~390,000 in USA actively supporting, donating,
+providing, manufacturing, and scrounging for all people in Ukraine. This is just what's openly visible.
 Many times as I travel on leisure I come across fabrication shops, warehouses, and communities
 that have a bin with "For Ukraine" written on it.
 
-*_Americans support Ukraine even if our elected leaders get confused._* +
+*_America supports Ukraine even if our elected leaders are by-confused._* +
 Because Americans support freedom, democracy, and philanthropy.
 
-P.S. During vigil, a pair of MAGA cops knocked. One stayed talking with my family.
-The other drove me, in handcuffs and without explanation, on a 15-minute ride that took hours,
-to Wake County Corrections. When he was dropping me off he turned to me and said:
-*_"People like you don't belong in America!"_*
+P.S. {institutionalized-ps}
 
-The two days that followed -- the cell-block dialectic with a fully tattooed white convict
-asking whether there are universal rules of life -- I wrote up as a standalone piece:
-link:/riddle-me-this/reflections/2026/06/02/institutionalized-the-lost-demographic.html[*Institutionalized -- The Lost Demographic*,window=_blank].
+== When will the war end?
 
-'''
+Now that you know a little bit about our family, you can comprehend my attitude to facts on "Ukraine."
+I don't plan to write a book, so I will go through baseline facts short, fast,
+and hard -- this is not for opinionated conversations. If you see something unexpected -- research it, let me know. +
+(I included some footnotes to help you get started, all curated to the root of relevant content.)
 
- Heroes rest in peace with glory and respect.
-And a life is traded for another.
+People who followed my old OSINT and Analytics work often ask me *_"WHEN the war will end?"_*
+Interestingly, not *_"HOW the war will end?"_* Sadly, no model can tell us both and still be right tomorrow.
+My thing is software and science behind it, which is mathematics, which has a nasty habit of being absolute.
+Modeling in general is approximation and simulation. In that we can say "nothing changes"
+and run down the clock -- we have dates. Or, we can say "here is everything -- run your flows,"
+then we can see what wins in the end, but we can't tell when and how it does.
 
-_We don't expect any more losses, and 2025 brought our family closure._
+*_We know that Ukraine is of paramount importance to the happy future of the USA._*
 
-*_But the most important chapter for ALL Americans starts now._*
+The peculiar thing about it is that #*I actually know*# how -- the flows. +
+I'd worked on the simulation model for years -- but that doesn't matter. +
+I'd also listened to other analysts inform EU leadership -- but that also doesn't matter. +
+The converging formula is so simple it blows my mind!
 
-== The closure is here -- Celebrate Unity!
+I also know that some people know WHEN -- that requires unprecedented access to event data. +
+(Delta, anyone?footnote:delta[{fn-delta}])
 
-Every American's life is also touched by war. Go to the pump or the store and get reminded.
-People with no ties to the military have their homes and bank accounts crashed into. *But that's good as well!*
+Many people today know HOW the war will end.
+I know that all the EU leadership knows it for a fact.
+The Ukrainian leadership knows it.
+And I mean knows-knows -- nobody speculates. +
+I suspect the Chinese leadership knows at least that much (based on what's said to Poo). +
+POTUS knows, or at least he was shown -- that can be asserted.
+But he was also shown the impossibilities with some middle-eastern nations.
+Maybe everybody knows -- just little people like us don't.
+But wait, I do -- so not all the little people don't know.
+I'm curious: What does Putin know?
 
-Personally, my closest friends come in three distinct groups:
+.Women are top-of-class graduates in Ukrainian Unmanned Systems Forces. 🤔 According to Zoey (3) these "totas" (ladies) have "peewers" (rifles,) but they work with "keepkeers" (computers). I concur!
+[#img-usf]
+image::ukes-women.png[]
 
-- 45% of my friends are MAGA-MAGA all the time.
-- 35% of my friends are hard-left liberals.
-- And 20% of my friends are actively fighting for Ukraine.
+{nbsp}
 
-At the moment I see no middle ground among my friends -- people are polarized.
-My right-leaning friends are not as vocal anymore.
-And my liberal friends complain about cliché russian propaganda others repeat.
-Each side is asking me "How do you change their minds?"
+IMPORTANT:: Nobody *can* know HOW and WHEN together -- that type of modeling is impossible.
 
-First of all -- what moral right does one have to manipulate another?
-What we can do instead is have a constructive conversation.
-*A dialectic!* Patiently listen to learn the other's point of view.
+Do you want me to explain? Do you really?
 
-And the best way to conduct a dialectic is the way Socrates did forever ago -- ask a question.
+Yeah, I can, but it requires thinking. Like, hard. And if you want to think, then let's keep going.
 
-*Asking people on the right:*
+== What does "War End" mean?
 
-*_"What language did russians speak in muscovy just 300 years ago?"_*
+The only practical definition the world has is the OR conjunction.
 
-People who haven't used reason to place themselves into an opinion will not be swayed or offended by this question.
-People who are capable of reason will start unraveling a thread that sets them free of assumptions.
-We Americans are not strong in history or geography, so I see little use in selling narratives.
-Instead, a productive discussion is seeking facts respectfully and patiently.
+- Ukrainians stop killing Russians for good.
+- OR
+- Russians stop killing Ukrainians for good.
 
-*Asking people on the left:*
+It is *_absolutely_* necessary mathematically to define the condition this way. +
+Hard? -- yeah, we're talking "never been wrong" models here -- need deductive.
 
-*_Do guns kill? How do guns decide who to kill? In Ukraine, for example._*
+This model has no other possible mathematical definitions -- nothing else stops it for good.
 
-People who haven't used reason shouldn't be insulted by their own cliché slogan of the past.
-And folks who are capable of reason will learn about Ukrainian government giving out automatic small arms by a railroad car.
-Perhaps noticing no mass school shootings taking place in Ukraine.
-In fact the only shooting was a russian patriot shooting up pedestrians on the street.
-While Ukrainians were shopping unarmed even though all have them.
+To take it down a notch, so that non-mathematical people understand:
 
-*Asking both:*
+- Ukraine ends -- war stops.
+- Russia ends -- war stops.
+- Neither ends -- war continues.
 
-- *Are we economically effected by the war in Ukraine? (big beautiful ocean)*
-* Did we violate a treaty? What are past consequences of such decisions?
-* Does 56c on every dollar comes from our *past* soft power?
-* Or, how do global systems work?
-- *How about by the war in Iran? And why?*
-* Had we violated any sovereignty a long time ago?
-* Does 56c on every dollar comes from our *past* soft power?
-* Or, how do global systems work?
-- *Are we affected militarily by the war in Ukraine?*
-* Did any doctrine of warfare get invalidated?
-* How many? All of them? Or some?
+We don't need to figure out what each side NEEDS to find the HOW, but it helps thinking.
 
-*So, where am I going with all this?!*
+== What does Ukraine NEED and how does it get it?
 
-== Lessons from Ukraine -- Celebrate Enlightenment!
+Ukraine only needs one thing: *stop killing my children now and forever.*
+That forever part is interesting and hard-binding.
+Ukraine also has a want: payback for all of my children you'd killed.
+
+.Ukraine is in an EXISTENTIAL situation: kill the rapist or lose the kids.
+[#img-kids]
+image::uke-girls.png[]
+
+{nbsp}
+
+Can Ukraine achieve that and how? The only sure calculated way Ukraine came up with is to dismantle Russia.
+That is because there is no trust that Russia can ever be a good neighbor.
+
+Can Ukraine achieve this WITHOUT any foreign aid against Russia {plus} North Korea {plus} Iran {plus} China.
+The answer to that question has been *proven yes* since summer 2024. We can find out when that was determined by
+finding the date when the "Make Russia Small Again" T-shirt was given to Zelenskyy.
+And the model ran on an internal annual $37B total Ukrainian war budget against $250B Russia's.
+Today Ukraine is at $131.4B and rapidly growing on equally recovering industry.
+While Russia optimistically reported $204B with an already recorded shortfall of $77B.
+__So, the weights have skewed since then but still in the direction of convergence.__
+And history is agreeing thickly with that. Actually, no single intelligence agency model deviated yet.
+
+Everything in Ukraine is getting bigger, immensely bigger -- war power 63 times 2020 figures -- that's ... crazy.
+And everything in Russia is getting smaller, while they had no industry to begin with.
+
+*So, does this mean we can stop helping Ukraine now?*
+
+Actually, we didn't help much to begin with. But NOT helping is now the DUMBEST thing we can do as a nation.
+Think it through -- we have ZERO leverage over Ukraine, and that little country has MINIMUM combined geopolitical leverage of
+Germany, France, and Spain put together. But that's not what's most important.
+The TREND is important -- four years ago they had zero geopolitical leverage, and today their leverage is rapidly growing.
+This is what Trump called cards -- Ukraine is making cards fast, mainly trumps.
+
+We are rapidly losing our leverage, losing all kinds of cards.
+Should we ally with the worst no-cards-loser that even China doesn't want: Russia?
+But not only that: when it's all said and done, and we come to Ukraine, now loaded with cards,
+"hey we want smart-goodies deals" -- what will they say?
+
+"My children have died when I was attacked, and you stood and watched, cheering for the killer." +
+*Simple enough for an American Cristian to understand?*
+
+== What does Russia NEED and how does it get it?
+
+This one is more difficult. But we can lean on some historical context.
+
+- Russia has no identity and took Ukraine for its name.
+- Russia has no history, having rewritten its own and took Ukrainian.
+
+Man! I loved Budanov saying that -- obvious, but about time!
+
+These are just some basic facts to consider.
+When uneducated and uninformed people can't comprehend the fact above just aks the ONE question:
+
+*What language did Russians speak in Moscow 300 years ago?*
+
+How about 400, 500, 1000? And answer the same for Ukrainians.
+Even more fun: "Name the last European society leaving the Stone Age?"
+Or, "Name the last European society forming statehood?"
+Why don't you ask ChatGPT that?
+
+I'm at a loss here. When you figure this out, let me know.
+
+== Most Important for America
+
+The most powerful weapon of mass destruction is not a Nuke. It's propaganda. Everyone wants to claim it as mastered.
+But really only Russia can. Russia invented it. Catherine II (the Great) perfected it as a weapon. These people
+were NOT Russians -- they were Germans. Russian peasantry, ALL modern-day Russians, are not related to Germans or
+ Ukrainians, both are Scythian descendants, tall, fair, crafty. Russians are Finno-Ugric people by blood, like
+Estonians: short, long face -- like Putin and Medvedev. Unlike Estonians, Russian people never gained freedom.
+And despite Tzars' lineage, Western nations never mastered propaganda. Russia remains the propaganda superpower.
+Russian people openly joke about it: "Our greatest weapon is a screen:"
+
+- Dirt cheap, just data;
+- Effective: it paralyzes the brain;
+- And accurate: straight in the brain.
+
+And they have a number or notable past and current victories. My favorite of their past victories is
+*_GRAU Project Qanon_* -- this is one of about a hundred fringe groups they'd successfully intercepted and turned.
+But their current victory is more spectacular:
+
+*_They'd convinced useful idiots that the outcome of the war depends on Russia._*
+
+So, why is it so consequential to the United States? Very, very simple:
+
+*_Imagine the USA allied with Nazi Germany in WWII!_*
+
+Mathematically, in every model I’ve seen since July 2024 this war is explained through only two geopolitical forces:
+
+. The ones that are trying to SAVE Russia;
+. And, the ones that don't care for Russia.
+
+
+
+== Reasons to Celebrate
+
+
+
+// == The closure is here -- Celebrate Unity!
+//
+// Every American's life is also touched by war. Go to the pump or the store and get reminded.
+// People with no ties to the military have their homes and bank accounts crashed into. *But that's good as well!*
+//
+// Personally, my closest friends come in three distinct groups:
+//
+// - 45% of my friends are MAGA-MAGA all the time.
+// - 35% of my friends are hard-left liberals.
+// - And 20% of my friends are actively fighting for Ukraine.
+//
+// At the moment I see no middle ground among my friends -- people are polarized.
+// My right-leaning friends are not as vocal anymore.
+// And my liberal friends complain about cliché russian propaganda others repeat.
+// Each side is asking me "How do you change their minds?"
+//
+// First of all -- what moral right does one have to manipulate another?
+// What we can do instead is have a constructive conversation.
+// *A dialectic!* Patiently listen to learn the other's point of view.
+//
+// And the best way to conduct a dialectic is the way Socrates did forever ago -- ask a question.
+//
+// *Asking people on the right:*
+//
+// *_"What language did russians speak in muscovy just 300 years ago?"_*
+//
+// People who haven't used reason to place themselves into an opinion will not be swayed or offended by this question.
+// People who are capable of reason will start unraveling a thread that sets them free of assumptions.
+// We Americans are not strong in history or geography, so I see little use in selling narratives.
+// Instead, a productive discussion is seeking facts respectfully and patiently.
+//
+// *Asking people on the left:*
+//
+// *_Do guns kill? How do guns decide who to kill? In Ukraine, for example._*
+//
+// People who haven't used reason shouldn't be insulted by their own cliché slogan of the past.
+// And folks who are capable of reason will learn about Ukrainian government giving out automatic small arms by a railroad car.
+// Perhaps noticing no mass school shootings taking place in Ukraine.
+// In fact the only shooting was a russian patriot shooting up pedestrians on the street.
+// While Ukrainians were shopping unarmed even though all have them.
+//
+// *Asking both:*
+//
+// - *Are we economically effected by the war in Ukraine? (big beautiful ocean)*
+// * Did we violate a treaty? What are past consequences of such decisions?
+// * Does 56c on every dollar comes from our *past* soft power?
+// * Or, how do global systems work?
+// - *How about by the war in Iran? And why?*
+// * Had we violated any sovereignty a long time ago?
+// * Does 56c on every dollar comes from our *past* soft power?
+// * Or, how do global systems work?
+// - *Are we affected militarily by the war in Ukraine?*
+// * Did any doctrine of warfare get invalidated?
+// * How many? All of them? Or some?
+//
+// *So, where am I going with all this?!*
+//
+// == Lessons from Ukraine -- Celebrate Enlightenment!
 
 
 
