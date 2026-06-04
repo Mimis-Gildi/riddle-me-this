@@ -9,13 +9,46 @@ hidden: false
 search: true
 read_aloud: true
 ---
-= Glory to ALL Our Heroes!
+= Glory to ALL Our Heroes! Or, "You don't belong in America"
 :imagesdir: ./assets/images
 :spider-web-wiki: https://en.wikipedia.org/wiki/Operation_Spiderweb[Operation Spiderweb -- Wikipedia,window=_blank]
 :spider-web-csis: https://www.csis.org/analysis/how-ukraines-spider-web-operation-redefines-asymmetric-warfare[CSIS: How Ukraine's Spider's Web Redefines Asymmetric Warfare,window=_blank]
 :spider-web-anniv: https://censor.net/en/videonews/4006041/a-year-of-operation-pavutina-how-the-sbu-inflicted-billions-in-losses-on-russia[A year of Pavutina -- SBU recap,window=_blank]
 :memorial-day-2026: https://www.whitehouse.gov/presidential-actions/2026/05/memorial-day-2026/[Memorial Day 2026 proclamation,window=_blank]
-// TODO -- verify before using: Semiquincentennial reference, "Americans in Ukraine" specific orgs (Mozart Group etc.), Starlink/OSINT references.
+:all-ai-agentic: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/04/23/ai-maggedon.html#5-agentic-success-almanac-how-and-why-and-what-gives[All AI is Agentic,window=_blank]
+:opus-interpolates: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/04/23/ai-maggedon.html[Opus only interpolates and can never extrapolate,window=_blank]
+:russia-iran-treaty: https://en.wikipedia.org/wiki/Iranian%E2%80%93Russian_Treaty_on_Comprehensive_Strategic_Partnership[Iran-Russia Comprehensive Strategic Partnership Treaty,window=_blank]
+:treasury-fath360: https://home.treasury.gov/news/press-releases/jy2570[US Treasury -- Iran-Russia missile transfer sanctions (Sept 2024),window=_blank]
+:treasury-alabuga: https://home.treasury.gov/news/press-releases/jy1104[US Treasury -- Alabuga Shahed manufacturing sanctions (Feb 2024),window=_blank]
+:csis-iran-consequences: https://www.csis.org/analysis/what-are-unintended-consequences-us-iran-conflict-defense-and-security[CSIS -- Unintended Consequences of the U.S.-Iran Conflict,window=_blank]
+:chatham-gift: https://www.chathamhouse.org/2026/04/iran-war-has-been-economic-gift-putin[Chatham House -- The Iran war has been an economic gift for Putin,window=_blank]
+:trump-ocean: https://trump.news-pravda.com/world/2026/03/26/321091.html["It doesn't affect us in any way, we have a big, beautiful ocean,",window=_blank]
+:trump-ocean-stoll: https://www.theeditors.com/p/the-ocean-myth-trump-ukraine-zelensky-big-beautiful-ocean-nice-ocean[Ira Stoll -- The "Ocean" Myth,window=_blank]
+:trump-ocean-kyiv: https://kyivindependent.com/trump-calls-occupied-crimea-size-of-texas-in-the-middle-of-the-ocean/[Kyiv Independent -- Trump calls occupied Crimea "in the middle of the ocean",window=_blank]
+:nyt-spy-war: https://www.nytimes.com/2024/02/25/world/europe/cia-ukraine-intelligence-russia-war.html["NYT -- The Spy War: How the C.I.A. Secretly Helps Ukraine Fight Putin (Entous & Schwirtz, Feb 25 2024)",window=_blank]
+:abc-cia-ukraine: https://abcnews.go.com/International/cia-helped-rebuild-ukraine-intelligence-russia-invasion/story?id=116909361[ABC News -- How the CIA and Ukrainian intelligence secretly forged a deep partnership,window=_blank]
+:kyiv-post-cia-sbu: https://www.kyivpost.com/post/28678[Kyiv Post -- CIA Worked With SBU to Root Out Russian Spies,window=_blank]
+:pbs-azov-lift: https://www.pbs.org/newshour/world/u-s-lifts-ban-on-providing-weapons-and-training-for-ukraines-controversial-azov-brigade[PBS NewsHour -- U.S. lifts ban on weapons and training for Ukraine's Azov Brigade (June 2024),window=_blank]
+:csm-azov: https://www.csmonitor.com/World/Europe/2024/0912/ukraine-nationalism-azov-sanctions-restored-reputation[Christian Science Monitor -- Ukraine's nationalist Azov fighters strive to clear name (Sept 2024),window=_blank]
+:fn-spider-web: {spider-web-wiki}; deeper analysis in {spider-web-csis}; SBU's one-year recap in {spider-web-anniv}.
+:fn-war-consequence: CSIS Bondar/Burchell/Cancian -- {csis-iran-consequences} -- argue the Iran fight drained US air-defense interceptors away from Ukraine and gifted Russia an oil-price windfall; {chatham-gift} calls it "an economic gift for Putin."
+:fn-russia-iran-axis: Codified in the 20-year {russia-iran-treaty} (signed Jan 2025, in force Oct 2025). Operational receipts: {treasury-fath360} (Fath-360 ballistic missile deliveries); {treasury-alabuga} (Alabuga Shahed-136 production).
+:fn-trump-ocean: Trump has used the "big, beautiful ocean" framing repeatedly through 2025-2026. Catalogued by {trump-ocean-stoll}; a transcribed instance in {trump-ocean-kyiv}.
+:fn-azov-original: Azov's institutional forms since 2014: volunteer Battalion (May 2014, drawn from hard-nationalist networks) -- National Guard Regiment (Nov 2014) -- Special Operations Detachment (Jan 2015) -- 12th Special Forces Brigade (Jan 2023) -- 1st Azov Corps (Apr 2025). The State Department's June 2024 Leahy finding held that the original 2014 militia "disbanded in 2015" and the current Brigade is legally distinct. See {pbs-azov-lift}; mainstream recap in {csm-azov}.
+:fn-sbu-collapse: The February 2014 scene at SBU Kyiv headquarters -- empty offices, files burning in the courtyard, FSB officers walking out with the personnel databases -- is reconstructed in {nyt-spy-war}; Ukrainian-side reporting in {kyiv-post-cia-sbu}.
+:fn-kondratiuk: Lt. Gen. Valeriy Kondratiuk's 2015 Washington trip with Russian Northern Fleet and nuclear-submarine material is the pivotal scene in {nyt-spy-war}; reconstructed independently in {abc-cia-ukraine}.
+:fn-cia-partnership: The public record describes a three-way partnership (CIA + MI6 + Ukrainian intel), not an MI6 displacement -- joint CIA-MI6 field training of Ukrainian officers continued through 2016. CIA outpaced MI6 in scale and tempo; by 2024 {nyt-spy-war} calls it "one of the C.I.A.'s most important intelligence partnerships."
+:hero-alt: A weathered stone slab in golden-hour light. A pine wreath with red viburnum berries sits to the left. \
+Three flags laid side by side: a folded Ukrainian flag (blue over yellow) on the left, \
+a folded American flag in the regulation triangular fold (blue star field uppermost) in the center, \
+and a UPA flag (deep red on top, matte black below) laid flat on the right. \
+A brass challenge coin showing the red Lion of Galicia rests on the UPA flag.
+
+.Glory to ALL Our Heroes.
+[#img-hero]
+image::/riddle-me-this/assets/images/2026-06-02-glory-to-all-heroes-hero.png[{hero-alt}]
+
+{nbsp}
 
 I'd like to pause and celebrate with my readers. And we have a few things to celebrate, a few things to recognize,
 and a few things to do better. One of the things I enjoy reminding the teams I train of is to STOP.
@@ -31,7 +64,7 @@ fine folks who regularly trained and competed with us on the Army grounds.
 Most of these people have done the full tour in the Army and are now volunteering in Ukraine.
 I hope you enjoyed the weekend!
 
-Speaking of Ukraine -- 1 year of the Operation Spiderweb.
+Speaking of Ukraine -- 1 year of the Operation Spiderwebfootnote:spider-web[{fn-spider-web}].
 And this is a very important milestone to all Americans.
 Yet most are not even aware of what that is, or what that little Ukraine is,
 or why one would care. Luckily you have me.
@@ -39,105 +72,213 @@ And if you have been following me then you already know that I share important t
 hiding in plain sight -- as I learn I love to take friends along on my journey.
 
 Mainly I write about what I do -- technology, massive distributed systems, brilliant teams, clever solutions,
-and fun problems. Such as, All AI is Agentic -- fun with buzzwords, huh;
-Or, Opus only interpolates and can never extrapolate -- so, LLMs will never reason, thus you must;
+and fun problems. Such as, {all-ai-agentic} -- fun with buzzwords, huh;
+Or, {opus-interpolates} -- so, LLMs will never reason, thus you must;
 Simple and consequential concepts but not immediately evident and dangerous when misplaced.
 I never share opinions or commentary -- those are useless. And so I never discuss politics and take sides.
 There is absolutely no reason to do so when fact and inference are available: we can then know,
 and there is no need to guess or speculate.
 
-Similarly, Russo-Ukrainian war is most consequential for our `Merica, even more so than Iran,
-albeit tightly coupled to Iran. And we can understand what matter to us, the Americans, rather easily.
+Similarly, Russo-Ukrainian war is most consequential for our `Merica,
+even more so than Iranfootnote:war-consequence[{fn-war-consequence}],
+albeit tightly coupled to Iranfootnote:russia-iran-axis[{fn-russia-iran-axis}].
+And we can understand what matters to us, the Americans, rather easily.
 But first more about the author so that you can properly consider yours truly as a source.
 
 == About the Author's connection to Ukraine
 
-I am an ordinary systems engineer and Tania is an MBA. Together we ran a boutique software company helping corporate America transform.
-We'd help mSaaS founders bootstrap for launch. Plus a 2017 AI startup of our own.
-The war was a "big beautiful ocean away, far, far away." Yet it could also not be any closer.
+2025 Prague Dark Knights hackathon: "You are an American, `rdd13r`,
+in America -- what do you know about Ukraine?!" I didn't answer. But let's see?
+(I won BTW.)
+
+I am an ordinary systems engineer and Tania is an MBA. +
+Together we ran a boutique software company helping corporate America transform. +
+We'd help mSaaS founders bootstrap for launch. Plus a 2017 AI startup of our own. +
+The war, {trump-ocean}footnote:trump-ocean[{fn-trump-ocean}] far, far away. +
+Yet it could also not be any closer.
 
 People who know us offer support for how "selflessly we put it all on Ukraine." And with that comes a need for clarification.
 It is not true as stated. Most of our support for Ukraine is indirect -- we support
 America's best sons and daughters fighting in Ukraine. It all began with my own US Army military service decades ago.
-And my gratitude for my life to a good friend and once a battle buddy black Alabama native now late Msg. Ret. `klemo.`
-I medically retired in 2000, and he completed his 20+ fully retiring in 2020. I am born in Soviet Ukraine, but our hero
-along with many other Americans in this story met Ukraine in 2015 training the legendary Azov -- a year into russian invasion of Ukraine.
-Many important geopolitical tectonic shifts took place that year like CIA rebuilding Ukrainian GUR displacing MI6 from BFFs.
+And I owe my gratitude for my life to a good friend and once a battle buddy, black Alabama native, now late, MSG (Ret.) `klemo.`
+I medically retired in 2000, and he completed his 20+ years, fully retiring in 2020. I was born in Soviet Ukraine, but our hero
+along with many other Americans in this story met Ukraine in 2015 training the legendary Azov -- a year into the russian invasion of Ukraine.
+And yes, the original Azov was nationalist. The russians will tell you so, loud and often.
+What they won't tell you is that the 2014 volunteer militia disbanded;
+today's 12th Special Forces Azov Brigade is a different unit, vetted under the Leahy Law,
+and the US State Department made that finding official in June 2024.footnote:azov-original[{fn-azov-original}]
+Today's Azov is the best child of US SFAS.
 
-Come 2022 full scale invasion my `klemo` barges in with an announcement "I'm saving the world!"
-I've done my darnest to try and talk the old goat out of it. No luck! And soon my house is full of old grunts packing duffle bags.
+That year a lot more was happening you probably never heard about. February 2014: katzap Yanukovych runs to Moscow,
+FSB officers walk out of the SBU's Kyiv headquarters with the personnel databases, files burning in the courtyard.footnote:sbu-collapse[{fn-sbu-collapse}]
+CIA shows up to help rebuild what's left. By 2015, Lt. Gen. Valeriy Kondratiuk -- newly installed head
+of Ukrainian military intelligence -- walks into Langley with Russian Northern Fleet schematics and nuclear-submarine material;
+the NYT calls this the moment the partnership pivoted from cautious to operational.footnote:kondratiuk[{fn-kondratiuk}]
+CIA outpaces MI6 in scale and tempo. By 2024 the NYT is calling it "_one of the C.I.A.'s most important intelligence partnerships_."footnote:cia-partnership[{fn-cia-partnership}]
+Best Americans like `klemo` were more Ukrainian than people knew.
+
+Come the 2022 full-scale invasion, my `klemo` barges into my house announcing "I'm saving the world!"
+I've done my darndest to try and talk the old goat out of it. No luck! And soon my house is full of old grunts packing duffle bags.
 Now, I have always been well-informed. So, I knew that the International Legion Zelenskyy announced is not where I want my vets.
-And I knew that they need `kit`, `armor`, `arms`, pay and logistics -- they need a lot of expensive things nobody has to offer.
+And I knew that they need kit, armor, arms, pay, and logistics -- they need a lot of expensive things we can't offer.
 So, Tania, little Anton and I roll up our sleeves, and we go begging all our past customers for any handouts. That didn't work.
-We get bandages, blankets, and undies -- good for nothing toerag. But then a customer offers to match on shares for our startup.
-They wanted the company for a long time. We accepted and that's how we ended up all in.
-I was also packing to go, luckily God had other plans for us all!
+We get bandages, blankets, and undies -- good for nothing rags. But then someone offers to match on shares for our startup.
+They wanted the company for a long time. We accepted, and that's how we ended up all in --
+in return for operational logistics classes 1, 2, 3, 6, and 8.
 
-=== Zoey (Khava -- "life"): the "Little General"
+_I didn't talk about it, and I was also packing to go -- a bad parent! Somehow, our kid knew it._ +
+Luckily God and Anton had other plans for us all!
 
-Now as we packed up and hastily sent off the retired SOCOM grunts we were left with nothing to do and nothing left to do it with.
-Even the Marketing Fey, twin sisters and a boutique marketing company left. For years ladies kept our corporate-lobotomy backlog full.
-Turns out the Fey are veterans too. So we went warehouse to warehouse, load point to load point, helping pack up whatever could still go to Ukraine.
-All this physical labor and running around had an unforeseen and major consequence.
+*Zoey (Khava -- "life"): the "Little General"*
 
-Anton was 4 when he lost his first mother and unborn sister. Now he was pestering Tania and I attempting to order a sister.
-I was told that it's impossible for me thus we'd not thought about his plans much. Little did we know that the boy was praying,
-and those were not just his plans. Now we're pregnant and daddy's not going anywhere.
-Anton then confided that this was his idea all along and presented a proof of "bribing the storks."
-And later we learned that mama was in on it too with the logic that our selfless deeds will be rewarded because -- karma, why not.
+.Kuhay family is busy supporting Ukraine.
+[#img-supporting]
+image::/riddle-me-this/assets/images/supporting_ukraine.jpg[]
+
+{nbsp}
+
+Now, as we packed up and hastily sent off the retired SOCOM grunts, we were left with nothing to do and nothing left to do it with.
+Even the Marketing Fey -- twin sisters, a boutique marketing company -- left for war. For years the ladies kept our corporate-lobotomy backlog full.
+Turns out the Fey are veterans too. And they also liquified and bought-in in full. First months were crazy!
+So we went warehouse to warehouse, load point to load point, helping pack up whatever could still go.
+
+
+All this physical labor and running around had an unforeseen and major consequence for our little family.
+Anton was 4 when he lost his biological mother and unborn sister. Now he was pestering Tania and me, attempting to order a sister.
+I was told that it was impossible for me, so we hadn't thought much about his sneaky plans.
+Little did we know that the boy was committed, diligently praying, and those were not just his plans.
+
+Now we're pregnant and daddy's not going anywhere -- Anton got what he wanted!
+And confessed to his "workable plan" succeeding all along. As proof, he presented his "bribing the storks" evidence.
+And mama, too, conceded to his logic, that our selfless deeds would be rewarded because -- karma, why not.
+Sure, how can silly daddy argue with such solid reasoning!
+
+.Anton loves it when HIS plan comes together!
+[#img-reward]
+image::/riddle-me-this/assets/images/pupsik-transparenti.png[]
+
+{nbsp}
 
 Khava is her real given name, Aramaic for "life," the actual name of Adam's wife, Eve in English, and Zoey is the Greek variant in her passport.
 The little gift was born with a soft voicebox, completely healthy otherwise. Her first year was a struggle:
-breathing is a problem, eating is a problem, sleeping is a problem, and she needs to be watched 24/7.
-Zoey beats it all by her 18th month with daddy's diligent overfeeding.
-On the bright side I got to work with some of the most advanced and cool software on the planet spending my nights next to Zoey:
+breathing was a problem, eating was a problem, sleeping was a problem, and she needed to be watched 24/7.
+Zoey beat it all by her 18th month with daddy's diligent overfeeding.
+On the bright side, I got to work with some of the most advanced and cool software on the planet, spending my nights next to Zoey:
 swarming, massively distributed systems, world-size predictive analytics, even game making.
-Eventually I even got some corporate America the later year.
+Eventually I even picked up some corporate America work in the later years.
 
-=== Closure and Closing
+*Closure and Reckoning*
 
-Things finally disconnected as abruptly as they had begun. Last year all American companies lost the channels, us included.
+Things finally disconnected for our family as abruptly as they arose. In 2025, all American companies lost the channels -- us included.
+(_You should know American business is not welcome in Ukraine, or anywhere in Europe for that matter!_)
 But it's really August that came in hot. First Tania's mother, my mother-in-law,
-lost her life in a massive bombardment of her historic Ukrainian city: she was old and could not comply with the many flights of stairs.
-The day after `klemo` "went out with a bang" -- as he's always wanted.
-He used to complained how he will not "die in a hospice," and he got his wish -- there was nothing left to collect.
-And a few days later after wake a MAGA cop from a wrong jurisdiction arrests me on fabricated charges -- Tania and the kids trying to collect me the whole night.
-I guess the veterans were noisy here, but I think it's all the Ukraine media that tripped up the old public servant.
-In the end it all worked out. My charges were dropped and records expunged, heroes rest in glory, and life is traded for life.
+lost her life in a massive bombardment of her historic Ukrainian city: she was old and unable to negotiate all the stairs.
+The day after her death my old battle-buddy `klemo` "went out with a bang" -- fallen in the heat of battle as he had always wanted.
+He'd dreaded an old-age death in some hospice -- his personal life did not work out; he had no family or children to speak of.
+The old gruntery was his family and drinking in NCO clubs was not his way. His way to go had to be spectacular.
+It was -- nothing left to collect.
 
-We had a nice and full closure. Except the little Zoey inherited all the wrong Viking genes from her mother and I.
-Our neighbors lovingly call her the "Little General." She forms up the family from time to time, when she gets extra ornery.
-Reminding us there's a real war raging. And that it's not far, far away.
+So far we'd suffered one in seven from our own American military family. Half of them forever.
+These people are our nation's finest sons and daughters. Our Memorial Day recollections.
+The other half recover and usually stay in the fight helping in other ways they still can.
+For many, this war of independence became a highlight and definition of their lives.
+By all means our community is not your typical American community.
+Deep exposure to the war exists in the Ukrainian Diaspora worldwide -- did you know,
+*_there are as many Ukrainians worldwide supporting Ukraine as there are in Ukraine?!_*
+Over the last five years American veteran communities *tightly merged* with Ukrainian Diaspora.
+Many veterans going to fight in Ukraine didn't have the information, intelligence, and support we'd offered our company.
+They learned the hard way. And eventually met others and fared much better together.
+The amalgamation we see today forever changes #_the future of Ukrainian-American relations_# regardless of governments.
+And these Americans will come home one day full of real experiences and knowledge unlike couch Qanon fables.
 
-== Why is the war HERE?!
+Don't mind your local useful idiots -- they'll be forgotten in shame -- just mind yourself.
+Last time I chacked ~100 Americans have fallen in combat in Ukraine. ~7,000 took part in heated battles.
+~3,500 ran humanitarian missions close to Zero. And ~390,000 is the supporting community in the USA actively donating,
+providing, manufacturing, and scrounging for them. This is just what's openly visible.
+Many times as I travel on leisure I come across fabrication shops, warehouses, and communities
+that have a bin with "For Ukraine" written on it.
 
-First of all it's not a war in Ukraine. It was a war in Europe. Since 2025 it is war in Africa and Asia.
-And it's a very hot war. Our entire tussle with Iran that made 13 out of 14 USA bases untenable is 3 days in Ukraine.
+*_Americans support Ukraine even if our elected leaders get confused._* +
+Because Americans support freedom, democracy, and philanthropy.
 
-I have three groups of close friends. 45% of my friends are MAGA-MAGA all the time. 35% of my friends are "flaming liberals."
-And 20% of my friends are somehow fighting for Ukraine. There is no middle in the USA.
-And my liberal friends complain about cliché russian propaganda our other friends repeat asking me "how do you change their minds?"
-First of all -- what moral right does one have for that?! It's manipulation. So, I recommend a question:
+P.S. During vigil, a pair of MAGA cops knocked. One stayed talking with my family.
+The other drove me, in handcuffs and without explanation, on a 15-minute ride that took hours,
+to Wake County Corrections. When he was dropping me off he turned to me and said:
+*_"People like you don't belong in America!"_*
 
-"What language did russians speak in russia 400 years ago?"
+The two days that followed -- the cell-block dialectic with a fully tattooed white convict
+asking whether there are universal rules of life -- I wrote up as a standalone piece:
+link:/riddle-me-this/reflections/2026/06/02/institutionalized-the-lost-demographic.html[*Institutionalized -- The Lost Demographic*,window=_blank].
+
+'''
+
+ Heroes rest in peace with glory and respect.
+And a life is traded for another.
+
+_We don't expect any more losses, and 2025 brought our family closure._
+
+*_But the most important chapter for ALL Americans starts now._*
+
+== The closure is here -- Celebrate Unity!
+
+Every American's life is also touched by war. Go to the pump or the store and get reminded.
+People with no ties to the military have their homes and bank accounts crashed into. *But that's good as well!*
+
+Personally, my closest friends come in three distinct groups:
+
+- 45% of my friends are MAGA-MAGA all the time.
+- 35% of my friends are hard-left liberals.
+- And 20% of my friends are actively fighting for Ukraine.
+
+At the moment I see no middle ground among my friends -- people are polarized.
+My right-leaning friends are not as vocal anymore.
+And my liberal friends complain about cliché russian propaganda others repeat.
+Each side is asking me "How do you change their minds?"
+
+First of all -- what moral right does one have to manipulate another?
+What we can do instead is have a constructive conversation.
+*A dialectic!* Patiently listen to learn the other's point of view.
+
+And the best way to conduct a dialectic is the way Socrates did forever ago -- ask a question.
+
+*Asking people on the right:*
+
+*_"What language did russians speak in muscovy just 300 years ago?"_*
 
 People who haven't used reason to place themselves into an opinion will not be swayed or offended by this question.
-People who are capable of reason will start unraveling a thread that sets them free.
-We Americans are not strong in history or geography, so I see little use in such "swaying" all together.
-Instead, a productive discussion is something else entirely.
+People who are capable of reason will start unraveling a thread that sets them free of assumptions.
+We Americans are not strong in history or geography, so I see little use in selling narratives.
+Instead, a productive discussion is seeking facts respectfully and patiently.
 
-*Why are we affected economically by the war?*
+*Asking people on the left:*
 
-_Because we violated a treaty. 56c on every dollar comes from our *past soft power*. ISW say we eroded most of it._
+*_Do guns kill? How do guns decide who to kill? In Ukraine, for example._*
 
-*Why are we affected militarily by the war?*
+People who haven't used reason shouldn't be insulted by their own cliché slogan of the past.
+And folks who are capable of reason will learn about Ukrainian government giving out automatic small arms by a railroad car.
+Perhaps noticing no mass school shootings taking place in Ukraine.
+In fact the only shooting was a russian patriot shooting up pedestrians on the street.
+While Ukrainians were shopping unarmed even though all have them.
 
-_The doctrine of warfare is completely rewritten: versioned 4 times already. Because of our geopolitical stance we're not permitted to the notebook. And the enemy is in it._
+*Asking both:*
+
+- *Are we economically effected by the war in Ukraine? (big beautiful ocean)*
+* Did we violate a treaty? What are past consequences of such decisions?
+* Does 56c on every dollar comes from our *past* soft power?
+* Or, how do global systems work?
+- *How about by the war in Iran? And why?*
+* Had we violated any sovereignty a long time ago?
+* Does 56c on every dollar comes from our *past* soft power?
+* Or, how do global systems work?
+- *Are we affected militarily by the war in Ukraine?*
+* Did any doctrine of warfare get invalidated?
+* How many? All of them? Or some?
+
+*So, where am I going with all this?!*
+
+== Lessons from Ukraine -- Celebrate Enlightenment!
 
 
-
-
-== What about Ukraine, Europe, and the Outcome?!
 
 
 

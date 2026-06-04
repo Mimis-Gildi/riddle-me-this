@@ -1,0 +1,227 @@
+---
+categories: [reflections]
+tags: [America, Justice, Stoicism, Epictetus, Institutionalized, MAGA, Demographic]
+excerpt: >
+    A vigil. A MAGA cop. Two days in the Wake County yard.
+    The most interesting question I was asked that week came from a tattooed white convict:
+    "Are there universal rules of life?"
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: true
+---
+= Institutionalized: Lost Demographic -- "You don't belong in America"
+:imagesdir: ./assets/images
+:glory-post: https://mimis-gildi.github.io/riddle-me-this/reflections/2026/06/02/glory-to-all-heroes.html[Glory to ALL Our Heroes,window=_blank]
+:jake-broe: https://www.youtube.com/@JakeBroe[Jake Broe -- YouTube,window=_blank]
+:epictetus-enchiridion: https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus[Epictetus, The Enchiridion,window=_blank]
+:gulag-archipelago: https://en.wikipedia.org/wiki/The_Gulag_Archipelago[Solzhenitsyn -- The Gulag Archipelago,window=_blank]
+:sere-training: https://en.wikipedia.org/wiki/Survival,_Evasion,_Resistance_and_Escape[US Army SERE -- Survival, Evasion, Resistance, Escape,window=_blank]
+:wake-county-jail: https://en.wikipedia.org/wiki/Wake_County,_North_Carolina[Wake County, North Carolina,window=_blank]
+:russian-freedom-legion: https://en.wikipedia.org/wiki/Freedom_of_Russia_Legion[Freedom of Russia Legion,window=_blank]
+:bucha-massacre: https://en.wikipedia.org/wiki/Bucha_massacre[Bucha massacre -- Wikipedia,window=_blank]
+
+// SCAFFOLDING NOTE -- 2026-06-03
+// Extracted from {glory-post} where it was straining the
+// Memorial Day thread. The cell-block dialectic with the white tattooed
+// convict ("Are there universal rules of life?") is the spine; the cop ride
+// is the setup. Vadim to write the bridge intro and the closing "Lost
+// Demographic" reflection. Scaffolding noted with // comments throughout.
+
+// VADIM -- bridge intro: ~3-5 sentences placing the reader.
+// They need to know: a vigil was happening at your home for Tania's mother
+// and klemo; a pair of MAGA cops knocked; one stayed with the family,
+// the other took you for a ride that ended at Wake County Corrections.
+// Link back to {glory-post} for the context.
+// I am not writing this for you -- voice is yours.
+
+== Riddler == Local jail BOSS!
+
+I really enjoyed my two days in the slammer for the good educational experience it provided.
+It was a false arrest by a pair of MAGA cops on fabricated charges.
+It could have been avoided by inviting more cops or witnesses.
+And it worked out well in the end, of course: all charges dropped and records expunged.
+This incident is the staple of all jokes in our home today.
+
+The war rages in Ukraine. Meanwhile, in America we hold a vigil for Tania's mother and my friend `klemo` at our always busy home.
+Tania took her mother's death hard. People come and go the whole day. And I am not sure how to process `klemo` yet.
+I have had plenty of losses in my life, but this one was different somehow.
+Spinning in my head were memories of young `klemo` sleeping on the chairs next to my Walter Reed hospital bed.
+I was tired, sleep-deprived, and half-drunk. Then it got dark and quiet at our home.
+
+A patriotic MAGA cop thought it a good idea to arrest yours truly on fabricated charges,
+so after everyone left, he knocked and was welcomed in by Tania. He spent time talking to my family.
+And I spoke with his partner in our garage about our many gun safes: one for hunting,
+one for combat, and one for demolition. Then we took a long ride ... to the pen.
+No rights read, no explanation of charges, not even a proper introduction.
+On the way to the pen we talked about life, America, democracy, and wars.
+
+My hours-long ride to the pen that's 15 minutes away was enlightening!
+The cop was well-informed about the influencers, and we talked about some of them for a while.
+He started with {jake-broe} -- a legend on the Ukrainian scene: "do you support Jake?"
+
+"I have supported his campaigns. He's done a lot of good for people. And I respect him for it."
+
+"So you believe everything he's saying, about Trump, about the war?"
+
+"I don't believe anything I hear. Period. I operate on facts and rules of inference.
+Many things Jake says are justified. But he's not politically neutral -- his liberal convictions bleed through.
+'Trump is a criminal enriching himself and his family,' which he tries to support with anecdotal evidence,
+are the kinds of statements I let slide by -- Jake is not a judge. As far as the statements about the war in Ukraine,
+he's often correct, but my sources are far more significant than his. I catch his confusion sometimes."
+
+"So, do you follow Tucker Carlson? Are his sources better? I'd think they are."
+
+This was an interesting moment, the only time the cop offered anything from himself.
+And oh boy, I could have a field day with this. But I am naturally a kind person.
+And at the time Tucker didn't break with MAGA yet, so the admission meant little to me.
+
+"Tucker developed a set of fallacies he uses for effect. He's shows don't deliver information, facts, or analysis.
+He delivers commentary, opinion, and narrative all in a very clear agenda-driven direction. Unlike Jake,
+he really is an 'influencer' working to sway a person to his side. And Jake is not very good at that."
+
+This prompted a pause. I could tell the cop was "thinking on something." He slowed down his driving.
+
+Towards the ride's end, he asked, “Why do you hate russians so much?” And I replied "I don't. I love all good people,
+including you. Many of my friends are russians. My son's best friend is russian. Right now we mainly support the
+{russian-freedom-legion} in Ukraine because they were shortchanged too often in the past."
+
+"Then why do you spend so much effort killing russians? I saw everything in your garage."
+
+"When someone breaks into my home meaning harm to my family -- I kill them."
+
+He got visibly discomforted here. Pulled over. Started texting. I kept talking.
+
+"Wouldn't you? I understand Ukrainians. These orcs aren't russians like my friends I'd mentioned earlier -- they're katzap.
+Uninvited, they came bearing arms, killed, raped, tortured, and they're still coming for more. Have you heard of {bucha-massacre}?
+Now myself, my children, and my grandchildren will kill katzap as long as we shall live. This will not be forgotten.
+This will not be forgiven. This will never stop. I will teach my children to teach their children to understand katzap nature.
+It is generational and it is permanent. +
+*_This is the only thing you need to understand about Ukraine._*"
+
+We didn't talk after that. When he was dropping me off, I asked him, “Why did you bring me here?”
+He kept fidgeting with my handcuffs and the paperwork he fabricated -- didn't answer for a long time.
+And in the end, before leaving, he turned to me and said "*People like you don't belong in America!*"
+
+Meanwhile, the other cop had left my home, and my family figured out that I was not there.
+Surprised, Tania grabbed the kids, called our friends, and spent the night trying to collect me from the pen.
+Perhaps the grieving veterans were a bit too noisy. Or, as my friend Rahul suggests, "too scary."
+Perhaps supporting Ukraine is bad for America. Or perhaps being Ukrainian is bad in itself.
+
+I really enjoyed my two days in the slammer. Definitely not the experience I had on my bucket list, but useful.
+The cop managed to get the "hold for 48 hours" in the paperwork, so Tania couldn't collect me.
+She also didn't understand or believe the charges brought against me, which didn't help her case at the desk.
+I didn't understand them either, although I'd learned what I was charged with only the next day.
+The cop wrote that "I beat my wife and mutilated the face."
+The cops at the slammer may have had a bit of a cognitive dissonance having her stand there in front of them,
+hours after my arrest, with the kids in tow, asking for their husband and daddy.
+And it later took a while to dismiss the case because cops never showed up to court and never produced the police
+report the judge was asking for. And the police department was not helpful, expecting a lawsuit.
+
+Nevertheless, there I was. I met a lot of people I wouldn't have otherwise. And I'd learned many things previously
+hidden from me by my middle-class shielded life. The first thing I did is sleep as much as I could.
+My busy life producing distributed systems, supporting Americans abroad, managing co-mentoring communities,
+helping a refugee community, and minding my growing family kept me perpetually sleep-deprived.
+I was always strictly short on time. And now I had nothing but time and no contact with the outside world.
+I know my family is fine, surrounded by good people; all the communities and families we'd helped are made up of many
+active and capable individuals regularly traveling through our home. I genuinely didn't worry about them.
+And I didn't worry about myself either: I knew I'd done nothing wrong, because I never do, and that people will
+start asking for me sooner or later. I had time! And it felt like an exceptional luxury.
+Something I needed badly. Something I didn't expect to have.
+
+Late the next day I was awakened to go talk to a judge on a filthy broken old-tv-looking device with a wired staticky
+analog phone handset. I was told the horrible things I'd done, and that came as a surprise. I wasn't sure if I
+should be laughing or taking things seriously. And then the prosecutor jumped in and in a squiggly voice exclaimed
+that she would escalate to a felony because I had disfigured Tania for life, that she would never see straight again,
+and might lose an eye. See -- with that squiggly and passionate paragraph, I knew this was pure garbage!
+"Not guilty," of course.
+
+Next, the curiosity absolutely gets the best of me -- the prison yard, common area, exercise area,
+lots of folks dressed like me aimlessly moping around. This was {wake-county-jail}'s correctional facility. Maybe not the place
+amateur smalltime criminals like myself are regularly brought to, but due to overflow in the system, new aspiring felons
+are brought here. For a minute pride took me over -- my POTUS is a convicted felon! I'd seen this in movies.
+And I read a lot about this in books. I don't just adore technical manuals -- I read a novel a weekend for decades now.
+{gulag-archipelago} came to mind. But also {sere-training} memories. Man, some people get to live adventurous lives!
+And I just write code, deliver goodies to needy families, towed howitzers to train stations, change diapers, and make bottles.
+To personally and fully experience such a drastically different environment was a boon I could not resist!
+And I felt unbelievably free! I was incarcerated, and I felt the kind of freedom I hadn't experienced in a long time.
+
+Within two hours I'd met and talked to about 80% of the prisoners in my block. Most were recidivists, meaning they're
+comeback customers. Charges were various, but the largest group were violent offenders. I'd learned that the yard is divided
+into groups: whites sit with whites, blacks sit with blacks, and there are also "respect" subgroups sitting separately.
+I immediately decided to sit with the lowest-ranked black group -- I am white. People stopped talking. I broke the ice
+asking if they play chess or checkers. An older gentleman took me up on the offer. Soon we were playing, talking,
+telling stories, and having a good time. Some people would come and go. But I noticed the omnipresent attention on me.
+And in a few hours I got to experience most of the groups in the yard, with the government-issue chessboard in tow.
+
+The next day I decided to commit straight from the wakeup, through breakfast, all the meals, and activities.
+I had a following forming. I was telling people about {epictetus-enchiridion}! Ancient philosophers of Stoic eras. Wisdoms of cultures long passed.
+There was a large group in the corner of the cell block around me. People were still bunched up in their self-designated groups,
+but we were together, talking, having a dialectic. I'd noticed that the TV went off in our corner. And a guard, and then another, quietly took the spots behind the columns. A conversation formed and took shape in an entirely unexpected direction for me.
+
+First, the most vocal prisoners were black people. They wanted to figure out if Stoicism was a religion, like Christianity,
+and if the ancient philosophers were different from prophets like Jesus, Moses, or Mohamad. The guard quietly asked me
+to change the subject. But I didn't have to. A fully tattooed white convict asked if there were universal rules of life, and
+if that's what the old teachers were trying to teach. For the next 20-30 minutes I was the one predominantly learning.
+Everything that followed was net-new to me: the rules in the hood, the laws of different gangs, the unwritten social
+contract of "the street," the code of behavior -- "when is it okay to look and when it's not" -- why pippin' (ghetto-leg)
+was a cultural mistake. Within 40 minutes everyone was engaged, I started moderating slowly, and the guard asked if the
+group wanted to continue. The group did. And the guards promised to break it up if it "got out of hand."
+
+The conversation turned. The group got quieter. And the analysis unfolded.
+
+== The Lost Demographic
+
+The next part of the conversation, after the guard's interruption, turned straight to "the institution."
+Now mainly the older people were holding the dialectic. We were getting past curfew, but the guards let it continue.
+By now the entire cellblock was arranged in concentric circles. A couple of older black female guards were taking an active
+part in the conversation. It started with people recollecting how they became recidivists. Slowly and carefully, they introspected.
+The guards had relatives in the system too.
+I stepped back, making myself transparent, letting people engage freely. And the conversation kept revisiting the
+question of knowing good and bad decisions. Sometimes the guards would toss in opinions -- "just be good and you'll be okay" --
+and the older, wiser prisoners would steer past them. In the entire group I was the least knowledgeable.
+
+On their own, the group moved into solution-discovery. Themes of "society separates us out" resurfaced here and
+there, but the clear intuitive direction was "how we fit into society productively." It's been too long for me
+to recollect the exact nature of the conversation. I can tell you employment ideas were well shared, but the
+education ideas were not. I could see that we'd hit "lights-out" soon enough, so I asked the final question.
+
+"If you could take FREE practical classes on how to do better in life, none of that college crap, just the real deal,
+applicable to your life today -- would you? Please raise your hand." At the time I didn't know that raising hands is
+not something prisoners do. But people reservedly raised their hands, clearly demonstrating they meant to. I remember
+being surprised to see hands go up in the outer concentric circles because by then we were speaking softly, and I wasn't sure
+people in the back could hear. And the last part of the discussion was about how to make this happen. The hard part:
+how do you feed yourself while you take the time for free education? And our night ended there.
+
+== Who Belongs in America?
+
+I didn't get to continue that conversation. Tania tried to post my bail, but the cop's domestic-violence framing
+made her -- the alleged victim -- ineligible. She handed the money to our friend Greg, and Greg bailed me out.
+I left my peculiar and new-to-me demographic behind, my pockets full of small white scraps of paper -- phone numbers
+people had written down and slipped to me as they passed. And I walked away with two distinct understandings I didn't have before.
+
+. We are an institutionalized nation.
+. We are a hopelessly divided nation.
+
+That entire prison yard means only one thing: "You do NOT belong in MY America!"
+
+In the cop's mind, when he was taking me to the pen with his fumbled paperwork, he was really taking me out of his America,
+at least temporarily, and the only way he knew how. That's what my friends tend to think of it.
+The critical question for me: what is the prevailing emotion prompting people to make dangerous, spiteful decisions
+for which they can pay dearly -- losing a job, money, or otherwise? And the consensus here seems to be fear.
+This fear is confirmed by what followed. Tania filed suit against Cary PD over my arrest; I paused it.
+The cops, meanwhile, never produced the police report the judge asked for, and never appeared in court.
+
+I don't know what the nature of this fear is and really don't care to spend my time in finding out.
+Instead, I'll just summarize the prevailing explanation from my friends and hacker communities.
+The bedrock of the understanding is "entitlement." "I am a Christian white American male born in America, so I belong better."
+It is the exact same type of entitlement a drunk russian vatnik feels sitting in his outhouse in muscow suburbs.
+And this entitlement is threatened by a brighter, better educated foreigner capable of building a modern
+running-water toilet for themselves.
+
+Personally, I haven't fully landed on this yet, but if you have, please share your thoughts with me -- I'd be glad to know.
+
+The cheap city cop doesn't bother me -- it's a self-correcting problem in a healthy society.
+What I wish for is a path that gives all these institutionalized people a chance to become healthy, prosperous,
+contributing members of our society -- helping heal our sickly nation and giving us all a better life.
