@@ -12,6 +12,8 @@ read_aloud: true
 = Glory to Heroes: "You don't belong in America"
 ifndef::env-site[:imagesdir: ../assets/images]
 ifdef::env-site[:imagesdir: /riddle-me-this/assets/images]
+:budanov-duh: https://youtu.be/XGsA3wYP-wQ?&t=530[Man! Budanov Cpt. Obvious -- taught in EVERY European school history; not 'Merica! -- YouTube,window=_blank]
+:zz-fix-america: https://www.president.gov.ua/en/news/vidkritij-list-prezidentu-rosijskoyi-federaciyi-vid-preziden-104769[Open Letter to the President of the Russian Federation from the President of Ukraine -- 4 June 2026 - 21:20,window=_blank]
 :spider-web-wiki: https://en.wikipedia.org/wiki/Operation_Spiderweb[Operation Spiderweb -- Wikipedia,window=_blank]
 :spider-web-csis: https://www.csis.org/analysis/how-ukraines-spider-web-operation-redefines-asymmetric-warfare[CSIS: How Ukraine's Spider's Web Redefines Asymmetric Warfare,window=_blank]
 :spider-web-anniv: https://censor.net/en/videonews/4006041/a-year-of-operation-pavutina-how-the-sbu-inflicted-billions-in-losses-on-russia[A year of Pavutina -- SBU recap,window=_blank]
@@ -35,6 +37,30 @@ ifdef::env-site[:imagesdir: /riddle-me-this/assets/images]
 :csm-azov: https://www.csmonitor.com/World/Europe/2024/0912/ukraine-nationalism-azov-sanctions-restored-reputation[Christian Science Monitor -- Ukraine's nationalist Azov fighters strive to clear name (Sept 2024),window=_blank]
 :delta-csis-cjadc2: https://www.csis.org/analysis/does-ukraine-already-have-functional-cjadc2-technology[CSIS -- Does Ukraine Already Have Functional CJADC2 Technology? (Dec 2024),window=_blank]
 :delta-wiki: https://en.wikipedia.org/wiki/Delta_(situational_awareness_system)[Delta situational awareness system -- Wikipedia,window=_blank]
+:isw-denying-strategy: https://archive.org/details/denying-russias-only-strategy-for-success[ISW -- Denying Russia's Only Strategy for Success (Bugayova, Kagan, Stepanenko -- 27 March 2024),window=_blank]
+:isw-denying-strategy-aei: https://www.aei.org/op-eds/denying-russias-only-strategy-for-success/[AEI republication -- Denying Russia's Only Strategy for Success,window=_blank]
+:hwbush-chicken-kiev-wiki: https://en.wikipedia.org/wiki/Chicken_Kiev_speech[Chicken Kiev speech -- Wikipedia,window=_blank]
+:clinton-rte-2023: https://www.rte.ie/news/primetime/2023/0404/1374162-clinton-ukraine/[RTE Prime Time -- Clinton regrets persuading Ukraine to give up nuclear weapons (4 April 2023),window=_blank]
+:clinton-kyiv-post-2023: https://www.kyivpost.com/post/15406[Kyiv Post -- Ex-US President Bill Clinton Says He Feels 'Terrible' About the Budapest Memorandum,window=_blank]
+:bucharest-2008-wiki: https://en.wikipedia.org/wiki/2008_Bucharest_summit[2008 Bucharest summit -- Wikipedia,window=_blank]
+:russo-georgian-wiki: https://en.wikipedia.org/wiki/Russo-Georgian_War[Russo-Georgian War -- Wikipedia,window=_blank]
+:rferl-ukees-georgia: https://www.rferl.org/a/Russia_Says_Ukrainians_Fought_For_Georgia_In_2008_War/1806528.html[RFE/RL -- Russia Says Ukrainians Fought For Georgia In 2008 War,window=_blank]
+:cbc-aid-resistance: https://www.cbc.ca/news/world/obama-trump-biden-ukraine-military-aid-1.6371378[CBC -- How successive U.S. administrations resisted arming Ukraine,window=_blank]
+:wapo-non-lethal-2014: https://www.washingtonpost.com/politics/ukraine-to-get-53-million-in-non-lethal-aid-from-the-united-states/2014/09/18/c2c19c28-3f4b-11e4-b0ea-8141703bbf6f_story.html[Washington Post -- Ukraine to get $53M in non-lethal aid (18 Sept 2014),window=_blank]
+:trump1-impeachment-wiki: https://en.wikipedia.org/wiki/Trump%E2%80%93Ukraine_scandal[2019 Trump-Ukraine scandal -- Wikipedia,window=_blank]
+:zelensky-ride-wiki: https://en.wikipedia.org/wiki/I_need_ammunition,_not_a_ride[I need ammunition, not a ride -- Wikipedia,window=_blank]
+:trump2-oval-feb28-wiki: https://en.wikipedia.org/wiki/2025_Trump%E2%80%93Zelenskyy_Oval_Office_meeting[2025 Trump-Zelenskyy Oval Office meeting -- Wikipedia,window=_blank]
+:trump2-intel-pause-defense-news: https://www.defensenews.com/global/europe/2025/03/05/trump-administration-pauses-flow-of-intelligence-to-ukraine/[Defense News -- Trump administration pauses flow of intelligence to Ukraine (5 March 2025),window=_blank]
+:trump2-kursk-time: https://time.com/7265679/satellites-front-failing-hundreds-dead-fallout-trump-ukraine-aid-pause/[TIME -- Satellites Off, the Front Failing, and Hundreds Dead: Inside the Fallout of Trump's Ukraine Aid Pause,window=_blank]
+:trump2-kursk-nv: https://english.nv.ua/nation/withdrawal-of-the-armed-forces-of-ukraine-from-kursk-oblast-could-donald-trump-have-contributed-50498817.html[NV (Ukraine) -- Withdrawal from Kursk: Could Donald Trump Have Contributed?,window=_blank]
+:tshirt-nv: https://english.nv.ua/nation/zelenskyy-wears-t-shirt-with-inscription-make-russia-small-again-russia-s-zakharova-reacts-50460976.html[NV (Ukraine) -- Zelenskyy wears "Make Russia Small Again" T-shirt; Zakharova reacts (23-24 Oct 2024),window=_blank]
+:tshirt-charter: https://charter97.org/en/news/2024/10/24/615995/[Charter'97 -- "Make Russia Small Again": Zelensky Drove Zakharova Into Hysterics (24 October 2024),window=_blank]
+:kse-ukraine-131b: https://www.intellinews.com/kse-ukraine-s-wartime-spending-hits-record-131bn-as-defence-absorbs-71-of-budget-425939/[KSE via Intellinews -- Ukraine's wartime spending hits record $131 bn; defence absorbs 71%25 of budget,window=_blank]
+:sipri-russia-2026: https://www.sipri.org/publications/2026/sipri-insights-peace-and-security/budget-fifth-year-war-military-spending-russias-budget-2026[SIPRI -- A Budget for a Fifth Year of War: Military Spending in Russia's Budget for 2026,window=_blank]
+:ukraineworld-russia-2026: https://ukraineworld.org/en/articles/analysis/russias-2026-budget-war-not-peace[UkraineWorld -- Russia's 2026 Budget: Built for War, Not Peace,window=_blank]
+:kyivpost-russia-shortfall: https://www.kyivpost.com/post/77359[Kyiv Post -- Kremlin Warned: War Spending Is Breaking the Budget,window=_blank]
+:kyivpost-russia-gap: https://www.kyivpost.com/post/77095[Kyiv Post -- Russia Could Face $28 Billion Budget Gap as War Costs Rise,window=_blank]
+:re-russia-2026: https://re-russia.net/en/analytics/0343/[Re-Russia -- Why the 2026 budget has almost no chance of being implemented,window=_blank]
 :fn-spider-web: {spider-web-wiki}; deeper analysis in {spider-web-csis}; SBU's one-year recap in {spider-web-anniv}.
 :fn-war-consequence: CSIS Bondar/Burchell/Cancian -- {csis-iran-consequences} -- argue the Iran fight drained US air-defense interceptors away from Ukraine and gifted Russia an oil-price windfall; {chatham-gift} calls it "an economic gift for Putin."
 :fn-russia-iran-axis: Codified in the 20-year {russia-iran-treaty} (signed Jan 2025, in force Oct 2025). Operational receipts: {treasury-fath360} (Fath-360 ballistic missile deliveries); {treasury-alabuga} (Alabuga Shahed-136 production).
@@ -44,6 +70,19 @@ ifdef::env-site[:imagesdir: /riddle-me-this/assets/images]
 :fn-kondratiuk: Lt. Gen. Valeriy Kondratiuk's 2015 Washington trip with Russian Northern Fleet and nuclear-submarine material is the pivotal scene in {nyt-spy-war}; reconstructed independently in {abc-cia-ukraine}.
 :fn-cia-partnership: The public record describes a three-way partnership (CIA + MI6 + Ukrainian intel), not an MI6 displacement -- joint CIA-MI6 field training of Ukrainian officers continued through 2016. CIA outpaced MI6 in scale and tempo; by 2024 {nyt-spy-war} calls it "one of the C.I.A.'s most important intelligence partnerships."
 :fn-delta: Delta is Ukraine's national battle-management and situational-awareness platform, developed by the Aerorozvidka NGO with Ukraine's Ministry of Defense and Ministry of Digital Transformation; first tested in 2017 under a NATO initiative and broadly operational since August 2022. It ingests data from drones, satellite imagery, stationary cameras, sensor networks, reconnaissance units, partner-country intelligence, and "vetted bystanders." {delta-csis-cjadc2} reports Delta processes over 600,000 enemy objects monthly and "closely resembles the CJADC2 concept" that the U.S. DOD is still pursuing top-down. Overview in {delta-wiki}.
+:fn-war-end-isw: The binary framing -- the war ends only when one side ends it -- traces to the Bugayova-Kagan school at ISW. {isw-denying-strategy} (original ISW backgrounder, 27 March 2024; also via {isw-denying-strategy-aei}) argues "Russia cannot defeat Ukraine or the West -- and will likely lose -- if the West mobilizes its resources to resist the Kremlin." Bugayova's recurring frame across ISW writing: "Negotiations cannot end the Russian war against Ukraine; they can only pause it"; and "Russia chose to start this war ... and it can choose to end it at any point." The OR-conjunction phrasing in this post is mine; the framework is theirs.
+:fn-hwbush-chicken-kiev: H.W. Bush addressed the Verkhovna Rada on August 1, 1991, three weeks before Ukraine's declaration of independence. The speech (drafted with input from then-Soviet specialist Condoleezza Rice) urged Ukrainians not to pursue "suicidal nationalism." William Safire named it "Chicken Kiev" in his August 29, 1991 NYT column. {hwbush-chicken-kiev-wiki}.
+:fn-clinton-budapest-regret: Bill Clinton told RTE on April 4, 2023: "I feel terrible about it because Ukraine gave up their nuclear weapons in return for a commitment that they would never be bothered ... Putin broke it and first took Crimea." {clinton-rte-2023}; Kyiv Post recap in {clinton-kyiv-post-2023}.
+:fn-bucharest-2008: At the April 2008 NATO Bucharest summit, the W. Bush administration pushed for a Membership Action Plan (MAP) for Ukraine and Georgia. Germany and France blocked it. The final declaration (paragraph 23) promised eventual membership but no MAP. Russia invaded Georgia four months later, in August 2008. {bucharest-2008-wiki}; {russo-georgian-wiki}.
+:fn-ukees-georgia-2008: Russia publicly accused Ukrainian volunteers (UNA-UNSO veterans) of fighting alongside Georgian forces in August 2008; Ukrainian-supplied Buk-M1 anti-aircraft systems intercepted Russian bombers over South Ossetia. {rferl-ukees-georgia}.
+:fn-obama-non-lethal: Obama's response to Russia's 2014 invasion was blankets, MREs, night-vision goggles, and counter-mortar radars -- no lethal aid. President Poroshenko told a joint session of Congress on September 18, 2014: "Blankets and night vision goggles are important, but one cannot win a war with a blanket." {wapo-non-lethal-2014}; broader administration pattern in {cbc-aid-resistance}.
+:fn-trump1-javelins: In the July 25, 2019 phone call with Zelensky, Trump said "I would like you to do us a favor, though" -- requesting an investigation into the Bidens while ~$391M in congressionally-appropriated military aid (including Javelins) was frozen. Aid was released in September 2019 after the whistleblower complaint surfaced. Trump was impeached by the House on December 18, 2019. {trump1-impeachment-wiki}.
+:fn-zelensky-ride: On the second day of the full-scale invasion (February 26, 2022), the U.S. reportedly offered to evacuate Zelensky from Kyiv. His response, carried on the AP wire and later confirmed by Zelensky: "I need ammunition, not a ride." {zelensky-ride-wiki}.
+:fn-trump2-oval-feb28: On February 28, 2025, Zelensky met Trump and Vance in the Oval Office to sign a minerals deal. The meeting collapsed on camera. Trump told Zelensky: "You don't have the cards right now. With us, you start having cards." The U.S. suspended military aid and intelligence sharing for roughly a week. {trump2-oval-feb28-wiki}.
+:fn-trump2-kursk: The intel-sharing pause that began March 5, 2025 {trump2-intel-pause-defense-news} coincided with the rapid collapse of Ukraine's Kursk salient -- Russian forces retook ~110 square miles between the Oval Office meeting and the Jeddah talks; a Ukrainian officer told TIME "as a result of this pause, there are hundreds of dead Ukrainians" {trump2-kursk-time}. Ukrainian-side reporting in {trump2-kursk-nv}.
+:fn-tshirt-october: The "Make Russia Small Again" T-shirt was presented to Zelenskyy by MP Hanna Hopko at a civil-society meeting on October 23, 2024; he wore it for his evening address that day. {tshirt-nv}; Russian reaction in {tshirt-charter}.
+:fn-ukraine-131b: KSE (Kyiv School of Economics) figure -- Ukraine's wartime spending hit a record $131 bn with defence absorbing 71%25 of the budget. {kse-ukraine-131b}.
+:fn-russia-2026-budget: Russia's 2026 budget allocates 16.84 trillion rubles (~$238 bn) for defence and security combined -- nearly 40%25 of all federal spending {sipri-russia-2026}; analysis in {ukraineworld-russia-2026}. The Finance Ministry has flagged a funding gap of 2-4 trillion rubles (~$28-56 bn) under negative scenarios extending through 2027-2028 {kyivpost-russia-gap}; the military itself has requested up to 3 trillion rubles (~$36 bn) in additional spending {kyivpost-russia-shortfall}. Re-Russia analysis argues the 2026 budget has almost no chance of full implementation {re-russia-2026}.
 :hero-alt: A weathered stone slab in golden-hour light. A pine wreath with red viburnum berries sits to the left. \
 Three flags laid side by side: a folded Ukrainian flag (blue over yellow) on the left, \
 a folded American flag in the regulation triangular fold (blue star field uppermost) in the center, \
@@ -69,6 +108,8 @@ Not all of us were US Army from Ft. Bragg -- we also picked up some Marines from
 fine folks who regularly trained and competed with us on the Army grounds.
 Most of these people have done the full tour in the Army and are now volunteering in Ukraine.
 I hope you enjoyed the weekend!
+
+Today we get the best gift from Ukraine yet -- A brand-new Statue of Liberty 2.0!
 
 Speaking of Ukraine -- 1 year of Operation Spiderwebfootnote:spider-web[{fn-spider-web}].
 And this is a crucial milestone for all Americans.
@@ -152,7 +193,7 @@ image::supporting_ukraine.jpg[]
 
 Now, as we packed up and hastily sent off the retired SOCOM grunts, we were left with nothing to do and nothing left to do it with.
 Even the Marketing Fey -- twin sisters, a boutique marketing company -- left for war. For years the ladies kept our corporate-lobotomy backlog full.
-Turns out the Fey are veterans too. They liquified and bought-in. The first months were crazy!
+Turns out the Fey are veterans too. They liquidated and bought-in. The first months were crazy!
 So we went warehouse to warehouse, load point to load point, helping pack up whatever could still go.
 
 All this physical labor and running around had an unforeseen and major consequence for our little family.
@@ -201,12 +242,12 @@ Over the last five years American veteran communities *tightly merged* with Ukra
 Many veterans going to fight in Ukraine didn't have the information, intelligence, and support we'd offered our company.
 They learned the hard way. And eventually met others and fared much better together.
 The amalgamation we see today forever changes #_the future of Ukrainian-American relations_# regardless of governments.
-And these Americans will come home one day full of real experiences and knowledge unlike couch Qanon fables.
+And these Americans will come home one day full of real experiences and knowledge unlike couch QAnon fables.
 It is the people-on-people connection that defines meaningful alliances.
 
 Don't mind your local useful idiots -- they'll be forgotten; some will be shamed by their own families,
 like we now see with MAGA -- just mind yourself: we can only control ourselves. And there are many who have.
-Last time I chacked ~100 Americans have fallen in combat in Ukraine. ~7,000 partook in heated battles.
+Last time I checked ~100 Americans have fallen in combat in Ukraine. ~7,000 partook in heated battles.
 ~3,500 ran humanitarian missions close to Zero. And ~390,000 in USA actively supporting, donating,
 providing, manufacturing, and scrounging for all people in Ukraine. This is just what's openly visible.
 Many times as I travel on leisure I come across fabrication shops, warehouses, and communities
@@ -266,21 +307,21 @@ Yeah, I can, but it requires thinking. Like, hard. And if you want to think, the
 
 == What does "War End" mean?
 
-The only practical definition the world has is the OR conjunction.
+The only practical definition the world has is the OR conjunctionfootnote:war-end-isw[{fn-war-end-isw}].
 
 - Ukrainians stop killing Russians for good.
 - OR
 - Russians stop killing Ukrainians for good.
 
 It is *_absolutely_* necessary mathematically to define the condition this way. +
-Hard? -- yeah, we're talking "never been wrong" models here -- need deductive.
+Hard? -- yeah, we're talking "never been wrong" models here -- need deductions.
 
 This model has no other possible mathematical definitions -- nothing else stops it for good.
 
 To take it down a notch, so that non-mathematical people understand:
 
-- Ukraine ends -- war stops.
-- Russia ends -- war stops.
+- Ukraine ends -- war stops;
+- Russia ends -- war stops;
 - Neither ends -- war continues.
 
 We don't need to figure out what each side NEEDS to find the HOW, but it helps thinking.
@@ -291,7 +332,7 @@ Ukraine only needs one thing: *stop killing my children now and forever.*
 That forever part is interesting and hard-binding.
 Ukraine also has a want: payback for all of my children you'd killed.
 
-.Ukraine is in an EXISTENTIAL situation: kill the rapist or lose the kids.
+.Ukraine's choice: kill the rapist or lose the kid. American Mother -- what do you do?
 [#img-kids]
 image::uke-girls.png[]
 
@@ -300,17 +341,22 @@ image::uke-girls.png[]
 Can Ukraine achieve that and how? The only sure calculated way Ukraine came up with is to dismantle Russia.
 That is because there is no trust that Russia can ever be a good neighbor.
 
-Can Ukraine achieve this WITHOUT any foreign aid against Russia {plus} North Korea {plus} Iran {plus} China.
-The answer to that question has been *proven yes* since summer 2024. We can find out when that was determined by
-finding the date when the "Make Russia Small Again" T-shirt was given to Zelenskyy.
+Can Ukraine achieve this WITHOUT any foreign aid against Russia {plus} North Korea {plus} Iran {plus} China?
+The answer to that question has been *proven yes* since October 2024 -- the date when the "Make Russia Small Again" T-shirt was given to Zelenskyyfootnote:tshirt-october[{fn-tshirt-october}].
 And the model ran on an internal annual $37B total Ukrainian war budget against $250B Russia's.
-Today Ukraine is at $131.4B and rapidly growing on equally recovering industry.
-While Russia optimistically reported $204B with an already recorded shortfall of $77B.
+Today Ukraine is at $131.4Bfootnote:ukraine-131b[{fn-ukraine-131b}] and rapidly growing on equally recovering industry.
+While Russia optimistically reported $238B (defence + security combined) with an already recorded funding gap of $28-56B and the military itself requesting another $36Bfootnote:russia-2026-budget[{fn-russia-2026-budget}].
 __So, the weights have skewed since then but still in the direction of convergence.__
-And history is agreeing thickly with that. Actually, no single intelligence agency model deviated yet.
+And history is agreeing thickly with that. Actually, every OSINT tracker that publishes a model is converging on this answer.
 
 Everything in Ukraine is getting bigger, immensely bigger -- war power 63 times 2020 figures -- that's ... crazy.
 And everything in Russia is getting smaller, while they had no industry to begin with.
+
+.All NDFs of Ukraine (Cossacks) manufacture their own kit. Azov now makes tanks.
+[#img-azov-t80]
+image::azov-t80u.png[]
+
+{nbsp}
 
 *So, does this mean we can stop helping Ukraine now?*
 
@@ -326,7 +372,7 @@ But not only that: when it's all said and done, and we come to Ukraine, now load
 "hey we want smart-goodies deals" -- what will they say?
 
 "My children have died when I was attacked, and you stood and watched, cheering for the killer." +
-*Simple enough for an American Cristian to understand?*
+*Simple enough for an American Christian to understand?*
 
 == What does Russia NEED and how does it get it?
 
@@ -335,7 +381,7 @@ This one is more difficult. But we can lean on some historical context.
 - Russia has no identity and took Ukraine for its name.
 - Russia has no history, having rewritten its own and took Ukrainian.
 
-Man! I loved Budanov saying that -- obvious, but about time!
+{budanov-duh}
 
 These are just some basic facts to consider.
 When uneducated and uninformed people can't comprehend the fact above just aks the ONE question:
@@ -346,6 +392,12 @@ How about 400, 500, 1000? And answer the same for Ukrainians.
 Even more fun: "Name the last European society leaving the Stone Age?"
 Or, "Name the last European society forming statehood?"
 Why don't you ask ChatGPT that?
+
+.REAL Russia! Rutzki Mir not Potemkin Village.
+[#img-rutzki-mir]
+image::rutzki-mir.jpeg[]
+
+{nbsp}
 
 I'm at a loss here. When you figure this out, let me know.
 
@@ -364,7 +416,7 @@ Russian people openly joke about it: "Our greatest weapon is a screen:"
 - And accurate: straight in the brain.
 
 And they have a number or notable past and current victories. My favorite of their past victories is
-*_GRAU Project Qanon_* -- this is one of about a hundred fringe groups they'd successfully intercepted and turned.
+*_GRAU Project QAnon_* -- this is one of about a hundred fringe groups they'd successfully intercepted and turned.
 But their current victory is more spectacular:
 
 *_They'd convinced useful idiots that the outcome of the war depends on Russia._*
@@ -373,162 +425,54 @@ So, why is it so consequential to the United States? Very, very simple:
 
 *_Imagine the USA allied with Nazi Germany in WWII!_*
 
-Mathematically, in every model I’ve seen since July 2024 this war is explained through only two geopolitical forces:
 
-. The ones that are trying to SAVE Russia;
-. And, the ones that don't care for Russia.
-
-
-
-== Reasons to Celebrate
-
-
-
-// == The closure is here -- Celebrate Unity!
-//
-// Every American's life is also touched by war. Go to the pump or the store and get reminded.
-// People with no ties to the military have their homes and bank accounts crashed into. *But that's good as well!*
-//
-// Personally, my closest friends come in three distinct groups:
-//
-// - 45% of my friends are MAGA-MAGA all the time.
-// - 35% of my friends are hard-left liberals.
-// - And 20% of my friends are actively fighting for Ukraine.
-//
-// At the moment I see no middle ground among my friends -- people are polarized.
-// My right-leaning friends are not as vocal anymore.
-// And my liberal friends complain about cliché russian propaganda others repeat.
-// Each side is asking me "How do you change their minds?"
-//
-// First of all -- what moral right does one have to manipulate another?
-// What we can do instead is have a constructive conversation.
-// *A dialectic!* Patiently listen to learn the other's point of view.
-//
-// And the best way to conduct a dialectic is the way Socrates did forever ago -- ask a question.
-//
-// *Asking people on the right:*
-//
-// *_"What language did russians speak in muscovy just 300 years ago?"_*
-//
-// People who haven't used reason to place themselves into an opinion will not be swayed or offended by this question.
-// People who are capable of reason will start unraveling a thread that sets them free of assumptions.
-// We Americans are not strong in history or geography, so I see little use in selling narratives.
-// Instead, a productive discussion is seeking facts respectfully and patiently.
-//
-// *Asking people on the left:*
-//
-// *_Do guns kill? How do guns decide who to kill? In Ukraine, for example._*
-//
-// People who haven't used reason shouldn't be insulted by their own cliché slogan of the past.
-// And folks who are capable of reason will learn about Ukrainian government giving out automatic small arms by a railroad car.
-// Perhaps noticing no mass school shootings taking place in Ukraine.
-// In fact the only shooting was a russian patriot shooting up pedestrians on the street.
-// While Ukrainians were shopping unarmed even though all have them.
-//
-// *Asking both:*
-//
-// - *Are we economically effected by the war in Ukraine? (big beautiful ocean)*
-// * Did we violate a treaty? What are past consequences of such decisions?
-// * Does 56c on every dollar comes from our *past* soft power?
-// * Or, how do global systems work?
-// - *How about by the war in Iran? And why?*
-// * Had we violated any sovereignty a long time ago?
-// * Does 56c on every dollar comes from our *past* soft power?
-// * Or, how do global systems work?
-// - *Are we affected militarily by the war in Ukraine?*
-// * Did any doctrine of warfare get invalidated?
-// * How many? All of them? Or some?
-//
-// *So, where am I going with all this?!*
-//
-// == Lessons from Ukraine -- Celebrate Enlightenment!
-
-
-
-
-
-
-
-
-// ============================================================================
-// SCAFFOLDING -- 2026-06-02
-//
-// Per site/CLAUDE.md: Vadim writes prose. Claude critiques.
-// Every section below is a PLACEHOLDER with verified facts and intent notes.
-// Replace the // notes with your voice.
-//
-// Pivot context: this branch was originally a BMAD takedown
-// (see inbox/2026-05-30-bmad-post-handoff.md). Now repurposed to honor
-// Ukraine, Americans in Ukraine, technology, and democracy --
-// anchored on Spider Web's 1-year mark, Memorial Day 2026,
-// and America's 250th year.
-// ============================================================================
-
-// Proposed excerpt (above). Mine, draft. Rewrite in your voice.
-
-// Proposed opening description -- starting point for Vadim to rewrite.
-// Yesterday was the one-year mark of Spider Web. Eight days ago was Memorial Day,
-// the first one of America's 250th year. Summer is here. There is a lot to celebrate,
-// and it is worth naming who we are celebrating.
+.Can you believe the brave whole world can be scared of the little Poo with a pocket knife?
+[#img-poo]
+image::little-poo.png[]
 
 {nbsp}
 
-== One year since Spider Web
+Mathematically, in every model I’ve seen since July 2024 this war is explained through only two geopolitical forces:
 
-// VERIFIED FACTS (1 June 2025, SBU):
-//   - 117 FPV drones; five Russian airbases
-//     (Belaya, Dyagilevo, Ivanovo Severny, Olenya, Ukrainka).
-//   - Hit Tu-160, Tu-95, Tu-22M strategic bombers and A-50 AWACS.
-//   - ~1/3 of Russia's strategic cruise-missile carriers damaged.
-//   - Estimated $7B in losses.
-//   - 18 months of planning. Drones smuggled in parts, assembled in
-//     a Chelyabinsk warehouse, deployed from inside trucks.
-//   - Sources: {spider-web-wiki}, {spider-web-csis}, {spider-web-anniv}.
-//
-// VADIM -- your read on what Pavutina actually represents. The asymmetric
-// warfare angle, the ingenuity, the people who pulled it off.
+. *_The ones that are trying to SAVE Russia;_*
+. *_And, the ones that don't care for Russia._*
 
-== Memorial Day 2026 -- the first of America's 250th year
+.Sword beats a pocket knife ...
+[#img-ukee]
+image::imrs.jpg[]
 
-// VERIFIED FACTS:
-//   - Monday, 25 May 2026. Eight days before this post.
-//   - The 4 July 2026 Semiquincentennial marks 250 years from the
-//     Declaration of Independence (1776).
-//   - This Memorial Day was the first one in America's 250th year.
-//   - Source: {memorial-day-2026}.
-//
-// VADIM -- what this Memorial Day carries that the others don't.
+{nbsp}
+*Psst: One small but mighty nation on this planet defeated Russian:*
 
-== The heroes we name
+- Propaganda all forms globally: russian narrative completely ineffective (research Hungary);
+- FSB / GRAU Spycraft: Putin is reported fed Ukrainian narrative 13/13 times (this is fun -- dig!);
+- Militarily: russian military renewed 5 TIMES (killed and rehired) depleting faster replenishment;
+- Economically: Ukrainian sanctions eliminated national financial reserves in just 15 months;
+- Technologically: smart Soviet things all made in Ukraine anyway -- now China cannot keep up.
 
-=== Ukrainian soldiers, SBU, the intelligence services
+== Reasons to Celebrate: Ukraine Saves Us All! (almost all)
 
-// VADIM -- whose names belong here.
+_So, why do we Americans now have a big reason to celebrate!?_
 
-=== Americans who went to Ukraine
+*The US was always SAVING Russia! So, EVERY US president betrayed Ukraine?*
 
-// VADIM -- specific orgs and people you want named.
-// I want to verify any specifics (Mozart Group, individual volunteers,
-// the ones who were killed) before they go in print.
+. H.{nbsp}W.{nbsp}Bush flew to Kyiv to tell Ukrainians NOT to leave the USSR -- the "Chicken Kiev" speech, August 1, 1991footnote:hwbush-chicken-kiev[{fn-hwbush-chicken-kiev}]. (three weeks before independence) *Ukees forgave.*
+. __Clinton lied to get the nukes, it was downhill from there. (*he said, sorry*)__footnote:clinton-budapest-regret[{fn-clinton-budapest-regret}]
+. W. Bush dangled NATO at Bucharest in April 2008, then let Germany and France strip the MAPfootnote:bucharest-2008[{fn-bucharest-2008}]. Russia invaded Georgia four months later. *Ukees forgave _and helped Georgia_*.footnote:ukees-georgia-2008[{fn-ukees-georgia-2008}]
+. Obama answered Crimea and Donbas with blankets and MREs -- no lethal aidfootnote:obama-non-lethal[{fn-obama-non-lethal}]. (Joe Biden was his Ukraine point man) *Ukees forgave _and gave the CIA the Russian Northern Fleet_*.footnote:kondratiuk[]
+. Trump-1 held the Javelins hostage for a Biden file. First impeachment, December 2019footnote:trump1-javelins[{fn-trump1-javelins}]. (aid eventually shipped) *Ukees forgave _and kept the spy partnership_ (CIA-Patriot)*.footnote:cia-partnership[]
+. Biden offered Zelensky a ridefootnote:zelensky-ride[{fn-zelensky-ride}]. Then drip-fed the kit for two years -- ATACMS, F-16s, tanks, all late. (he meant well, that's worse) *Ukees forgave _and broke the Black Sea Fleet for us._*
+. Trump-2 ambushed Zelensky in the Oval Office, suspended intel and aid, told him he had no cards, betrayed Kursk offensivefootnote:trump2-kursk[{fn-trump2-kursk}]. February 28, 2025footnote:trump2-oval-feb28[{fn-trump2-oval-feb28}]. *Ukees forgave _and gifted us Spider Web_*.footnote:spider-web[]
 
-=== The technologists
+**{zz-fix-america}**
 
-// The garage drone makers. The $500 FPV that kills a $100M bomber.
-// Starlink-era battlefield comms. The OSINT community.
-// VADIM -- which technologists, which moments.
+This is already the most consequential move in Ukraine-USA relations. From this point on we can only be a junior partner with assigned roles.
+We can complain all that we want about Ukraine taking 100% of our weapon sales to Oil Arabs. This is much bigger.
+Because "Putin's war" was going according to the Ukrainian plan, And we always made sure to introduce our own corrections
+spending whatever little leverage we still had. Over the last six months, Ukraine threw to the trash all of our "corrections,"
+except one: "Don't touch Russia's ruling class!" And now it's out with a bang! WOW, little Ukraine!
 
-=== Democracies still standing
+I want to congratulate my fellow Americans. This is the best step for our own democratic recovery,
+and it was only possible to Ukraine because of all our past support! Your deeds bore fruit spectacularly!
 
-// Battered, imperfect, still here at 250.
-// VADIM -- the frame you want for this one.
-
-== Start of summer
-
-// Astronomical summer: 21 June. Cultural US start: Memorial Day weekend (passed).
-// The season of those who chose to keep fighting.
-// VADIM -- closing this section is yours.
-
-'''
-
-// CLOSING LINE -- yours.
-// (Slava Ukraini. Slava Heroyam. Glory to ALL Heroes.)
+Thank you! Stay on the side of Light! And glory to all heroes, big and small.
