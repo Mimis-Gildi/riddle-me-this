@@ -68,7 +68,7 @@ ifdef::env-site[:imagesdir: /riddle-me-this/assets/images]
 :fn-azov-original: Azov's institutional forms since 2014: volunteer Battalion (May 2014, drawn from hard-nationalist networks) -- National Guard Regiment (Nov 2014) -- Special Operations Detachment (Jan 2015) -- 12th Special Forces Brigade (Jan 2023) -- 1st Azov Corps (Apr 2025). The State Department's June 2024 Leahy finding held that the original 2014 militia "disbanded in 2015" and the current Brigade is legally distinct. See {pbs-azov-lift}; mainstream recap in {csm-azov}.
 :fn-sbu-collapse: The February 2014 scene at SBU Kyiv headquarters -- empty offices, files burning in the courtyard, FSB officers walking out with the personnel databases -- is reconstructed in {nyt-spy-war}; Ukrainian-side reporting in {kyiv-post-cia-sbu}.
 :fn-kondratiuk: Lt. Gen. Valeriy Kondratiuk's 2015 Washington trip with Russian Northern Fleet and nuclear-submarine material is the pivotal scene in {nyt-spy-war}; reconstructed independently in {abc-cia-ukraine}.
-:fn-cia-partnership: The public record describes a three-way partnership (CIA + MI6 + Ukrainian intel), not an MI6 displacement -- joint CIA-MI6 field training of Ukrainian officers continued through 2016. CIA outpaced MI6 in scale and tempo; by 2024 {nyt-spy-war} calls it "one of the C.I.A.'s most important intelligence partnerships."
+:fn-cia-partnership: The public record describes a three-way partnership (CIA {plus} MI6 {plus} Ukrainian intel), not an MI6 displacement -- joint CIA-MI6 field training of Ukrainian officers continued through 2016. CIA outpaced MI6 in scale and tempo; by 2024 {nyt-spy-war} calls it "one of the C.I.A.'s most important intelligence partnerships."
 :fn-delta: Delta is Ukraine's national battle-management and situational-awareness platform, developed by the Aerorozvidka NGO with Ukraine's Ministry of Defense and Ministry of Digital Transformation; first tested in 2017 under a NATO initiative and broadly operational since August 2022. It ingests data from drones, satellite imagery, stationary cameras, sensor networks, reconnaissance units, partner-country intelligence, and "vetted bystanders." {delta-csis-cjadc2} reports Delta processes over 600,000 enemy objects monthly and "closely resembles the CJADC2 concept" that the U.S. DOD is still pursuing top-down. Overview in {delta-wiki}.
 :fn-war-end-isw: The binary framing -- the war ends only when one side ends it -- traces to the Bugayova-Kagan school at ISW. {isw-denying-strategy} (original ISW backgrounder, 27 March 2024; also via {isw-denying-strategy-aei}) argues "Russia cannot defeat Ukraine or the West -- and will likely lose -- if the West mobilizes its resources to resist the Kremlin." Bugayova's recurring frame across ISW writing: "Negotiations cannot end the Russian war against Ukraine; they can only pause it"; and "Russia chose to start this war ... and it can choose to end it at any point." The OR-conjunction phrasing in this post is mine; the framework is theirs.
 :fn-hwbush-chicken-kiev: H.W. Bush addressed the Verkhovna Rada on August 1, 1991, three weeks before Ukraine's declaration of independence. The speech (drafted with input from then-Soviet specialist Condoleezza Rice) urged Ukrainians not to pursue "suicidal nationalism." William Safire named it "Chicken Kiev" in his August 29, 1991 NYT column. {hwbush-chicken-kiev-wiki}.
@@ -291,19 +291,20 @@ POTUS knows, or at least he was shown -- that can be asserted.
 But he was also shown the impossibilities with some middle-eastern nations.
 Maybe everybody knows -- just little people like us don't.
 But wait, I do -- so not all the little people don't know.
-I'm curious: What does Putin know?
+*I'm curious: What does Putin know?*
 
-.Women are top-of-class graduates in Ukrainian Unmanned Systems Forces. 🤔 According to Zoey (3) these "totas" (ladies) have "peewers" (rifles,) but they work with "keepkeers" (computers). I concur!
+.Women are top-of-class graduates in Ukrainian Unmanned Systems Forces. 🤔
 [#img-usf]
 image::ukes-women.png[]
 
 {nbsp}
 
-IMPORTANT:: Nobody *can* know HOW and WHEN together -- that type of modeling is impossible.
+== DUMB KING FALLACY
 
-Do you want me to explain? Do you really?
 
-Yeah, I can, but it requires thinking. Like, hard. And if you want to think, then let's keep going.
+And I present hard fact that surprise when I already have the proof for effect.
+One of the best way to tell someone who's not sure is directly.
+
 
 == What does "War End" mean?
 
@@ -345,14 +346,14 @@ Can Ukraine achieve this WITHOUT any foreign aid against Russia {plus} North Kor
 The answer to that question has been *proven yes* since October 2024 -- the date when the "Make Russia Small Again" T-shirt was given to Zelenskyyfootnote:tshirt-october[{fn-tshirt-october}].
 And the model ran on an internal annual $37B total Ukrainian war budget against $250B Russia's.
 Today Ukraine is at $131.4Bfootnote:ukraine-131b[{fn-ukraine-131b}] and rapidly growing on equally recovering industry.
-While Russia optimistically reported $238B (defence + security combined) with an already recorded funding gap of $28-56B and the military itself requesting another $36Bfootnote:russia-2026-budget[{fn-russia-2026-budget}].
+While Russia optimistically reported $238B (defence {plus} security combined) with an already recorded funding gap of $28-56B and the military itself requesting another $36Bfootnote:russia-2026-budget[{fn-russia-2026-budget}].
 __So, the weights have skewed since then but still in the direction of convergence.__
 And history is agreeing thickly with that. Actually, every OSINT tracker that publishes a model is converging on this answer.
 
 Everything in Ukraine is getting bigger, immensely bigger -- war power 63 times 2020 figures -- that's ... crazy.
 And everything in Russia is getting smaller, while they had no industry to begin with.
 
-.All NDFs of Ukraine (Cossacks) manufacture their own kit. Azov now makes tanks.
+.All NDFs of Ukraine (Cossacks) manufacture their own kit. Azov now also makes tanks.
 [#img-azov-t80]
 image::azov-t80u.png[]
 
@@ -403,6 +404,8 @@ I'm at a loss here. When you figure this out, let me know.
 
 == Most Important for America
 
+*#We bleed from propaganda!# Foreign media runs our opinion and identity. And now with AI.*
+
 The most powerful weapon of mass destruction is not a Nuke. It's propaganda. Everyone wants to claim it as mastered.
 But really only Russia can. Russia invented it. Catherine II (the Great) perfected it as a weapon. These people
 were NOT Russians -- they were Germans. Russian peasantry, ALL modern-day Russians, are not related to Germans or
@@ -416,7 +419,7 @@ Russian people openly joke about it: "Our greatest weapon is a screen:"
 - And accurate: straight in the brain.
 
 And they have a number or notable past and current victories. My favorite of their past victories is
-*_GRAU Project QAnon_* -- this is one of about a hundred fringe groups they'd successfully intercepted and turned.
+*_GRU Project QAnon_* -- this is one of about a hundred fringe groups they'd successfully intercepted and turned.
 But their current victory is more spectacular:
 
 *_They'd convinced useful idiots that the outcome of the war depends on Russia._*
@@ -442,6 +445,9 @@ Mathematically, in every model I’ve seen since July 2024 this war is explained
 image::imrs.jpg[]
 
 {nbsp}
+
+'''
+
 *Psst: One small but mighty nation on this planet defeated Russian:*
 
 - Propaganda all forms globally: russian narrative completely ineffective (research Hungary);
@@ -449,6 +455,27 @@ image::imrs.jpg[]
 - Militarily: russian military renewed 5 TIMES (killed and rehired) depleting faster replenishment;
 - Economically: Ukrainian sanctions eliminated national financial reserves in just 15 months;
 - Technologically: smart Soviet things all made in Ukraine anyway -- now China cannot keep up.
+
+'''
+
+*#WHAT do we want from Ukraine that we CANNOT have otherwise#:*
+
+. *Full-Globe economy, military, security, and society management AI (like Delta);*
+. *Full range of Autonomous Unmanned Combat System Edges and Infantry Training;*
+. *Autonomous self-sufficient unit Doctrine beyond what was shown to NATO.*
+
+In return, we should give them whatever they want.
+Because they're the ones and only ones with Unique Market Proposition,
+and they want what we have, TEMPORARILY.
+While we cannot replicate their market advantage or hope to catch up we can certainly maintain
+"Top Strategic Ally" relationship and benefit from it collectively.
+
+'''
+
+But right now our businesses have no access to anything of value in Ukraine.
+
+{nbsp}
+
 
 == Reasons to Celebrate: Ukraine Saves Us All! (almost all)
 
@@ -466,13 +493,19 @@ _So, why do we Americans now have a big reason to celebrate!?_
 
 **{zz-fix-america}**
 
-This is already the most consequential move in Ukraine-USA relations. From this point on we can only be a junior partner with assigned roles.
-We can complain all that we want about Ukraine taking 100% of our weapon sales to Oil Arabs. This is much bigger.
-Because "Putin's war" was going according to the Ukrainian plan, And we always made sure to introduce our own corrections
-spending whatever little leverage we still had. Over the last six months, Ukraine threw to the trash all of our "corrections,"
-except one: "Don't touch Russia's ruling class!" And now it's out with a bang! WOW, little Ukraine!
+This is already the most consequential move in Ukraine-USA relations.
+From this point on we can only be a junior partner with assigned roles.
+We can complain all we want about Ukraine taking all our weapon sales to the Middle East, it will not help us catch up.
+"Putin's war" is going according to plan -- the Ukrainian plan.
+In that plan we managed to introduce our own "corrections"  by spending whatever little leverage we still had.
+Over the last six months, Ukraine trashed all of our "corrections," except the last one:
+"Don't touch Russia's ruling class!" And now that's out with a bang too, and a historic one at that!
+Yet we still seem to think "junior little Ukraine" conceding powers historically ours to enjoy.
+Like Rome once did?
 
-I want to congratulate my fellow Americans. This is the best step for our own democratic recovery,
-and it was only possible to Ukraine because of all our past support! Your deeds bore fruit spectacularly!
+I want to congratulate all my fellow Americans that supported Ukraine all these years -- you are heroes!
+This development is the best for our own democratic recovery as well.
+We are not missing out because Ukraine didn't offer!
+And everyone needs to relearn hard lessons we forget. Painful but healthy.
 
 Thank you! Stay on the side of Light! And glory to all heroes, big and small.
