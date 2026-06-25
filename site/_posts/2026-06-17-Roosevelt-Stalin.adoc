@@ -1,0 +1,12 @@
+---
+categories: [reflections]
+tags: [Ukraine, Democracy, Heroes, Memorial Day, Spider Web, Technology, Semiquincentennial]
+excerpt: >
+    One year since Spider Web. The first Memorial Day of America's 250th. Summer of those who chose to keep fighting.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= Roosevelt and Stalin Feeding Chickens

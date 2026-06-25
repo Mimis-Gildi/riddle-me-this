@@ -14,7 +14,6 @@ read_aloud: false
 :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
 :ai-stages-url: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
 :ai-stages: {ai-stages-url}[2023: The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
-:sindri-labs: https://gervi-hera-vitr.github.io/sindri-labs/[Homeschool,window=_blank]
 :trunking: https://trunkbaseddevelopment.com/[trunk,window=_blank]
 :jb-dev-trends: https://www.youtube.com/live/j-2sQfftqdE?si=FxQ7KOMS2K9cTIVa[Top Developer Trends of 2025: AI Usage; Productivity; and the Rise of TypeScript,window=_blank]
 :ciara: https://www.linkedin.com/in/ciarabyrne/[Ciara Byrne (LI),window=_blank]
@@ -525,7 +524,7 @@ I've seen mainframe to cloud to GPU and loved every stage.
 I recognize the patterns. I know what prime mover shifts look like.
 I architect based on what I've witnessed before. And I design around people.
 
-My son is 16. {sindri-labs}ed for personal leadership development, so he has a say in his curriculum.
+My son is 16. {sindri-labs-url}[Homeschool,window=_blank]ed for personal leadership development, so he has a say in his curriculum.
 He once happily made Minecraft mods in Java. Ran kids' coding communities.
 Then worked with me on real production systems -- edge devices in Kotlin and Python.
 

@@ -15,9 +15,6 @@ twitter_username            : ""
 remote_theme                : "mmistakes/minimal-mistakes"
 #minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 minimal_mistakes_skin       : "air"
-sass:
-  quiet_deps                : true
-
 
 
 # Plugins
@@ -59,6 +56,7 @@ defaults:
       path                  : ""
       type                  : pages
     values:
+      layout                : single
       author_profile        : false
       header:
         overlay_image       : /assets/images/banner-default.png
@@ -125,6 +123,26 @@ compress_html               : true
 copyright                   : "© Vadim Kuhay; 2022–2026; v14.0.5"
 copyright_url               : "https://mimis-gildi.github.io/riddle-me-this"
 
+### Serve
+port                        : 4700
+livereload                  : true
+livereload_port             : 37729
+open_url                    : true
+incremental                 : true
+verbose                     : true
+
+sass:
+  quiet_deps                : true
+  silence_deprecations:
+    - import
+safe                        : false
+
+
+### AsciiDoc / Asciidoctor — site-wide attributes
+asciidoctor:
+  attributes:
+    hera-school             : 'https://gervi-hera-vitr.github.io/sindri-labs/[Héra Academy Laboratory,window=_blank,opts=nofollow]'
+    sindri-labs-url         : 'https://gervi-hera-vitr.github.io/sindri-labs/'
 
 
 # My general footer...

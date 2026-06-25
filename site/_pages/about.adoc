@@ -4,11 +4,9 @@ header:
   caption: "It's my pleasure to meet you!"
 classes: wide
 ---
-= "About" one pragmatic optimist
-:page-layout: single
+= "About" one who codes
 :page-permalink: /about/
 :page-author_profile: true
-:captain-school: https://gervi-hera-vitr.github.io/sindri-labs/[Héra Academy Laboratory,window=_blank,opts=nofollow]
 :mimis-gildi: link:https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
 :footer-captain-school: footnote:[Gervi Héra Vitr is a home school in a community of homeschoolers. Here we don’t separate theory from application or learning from life. It's operated by our {mimis-gildi} family.]
 :asei: https://asei.systems/
@@ -20,39 +18,29 @@ classes: wide
 
 Welcome, friend. I'm glad you're here.
 
-My name is Vadim D. Kuhay -- known on the scene as `rdd13r` since 1992.
-I'm a system designer, player-coach, and hands-on engineer with over three decades in the field,
-across startups, Fortune 500 giants, defense contracts, and public good.
-Here is everything about me -- I lead an open, inclusive life.
+My name is Vadim Kuhay -- known on the scene as `rdd13r` since 1992.
+I'm a system designer, player-coach, and hands-on engineer with decades of in-field experience.
+I help startups, Fortune 500 giants, defense contractors, and public good companies.
+_I do that by mostly just coding._
 
-I build systems that survive their first user
--- and teams that survive their first rewrite.
+Here is `about me` and the rest of the site is more about what I do.
 
-== What I Do:
+== Why I Do What I Do:
 
-I practice *Extreme Programming*, *Domain-Driven Design*, and *DevOps culture* +
-{nbsp} -- not as buzzwords, but as disciplines. +
-I help organizations align policy with practice and transform by example, +
-not decree.
+If you asked me right after I wake up, I'd say "I'm born for this." Or, "God made me to make."
 
-I architect platforms, mentor engineers, coach domain teams, and push production-first delivery +
-in environments that *_often_* resist it.
-My work lives in systems you’ve probably used
--- though the best ones are invisible
--- such is the simple nature of servitude software.
+This is the fundamental thesis of the Hacker Culture. We do what we do not because it's lucrative.
+We'd still build if it weren't lucrative at all. Yet making will always be lucrative by the definition of value.
+A bit of the chicken and the egg for you. This fundamental law is the reason behind:
 
-Most importantly, I nurture open co-mentoring communities of thinkers and makers.
+- Far too many posers in our field -- many want to earn by making but few are made for it;
+- The few made for it segregate themselves from the "determined to do despite being unable."
 
-== Why I Do It:
+Let me ask you -- _"What is the best course of corrective action in such lackluster reality?"_
 
-- Because software is how we tell the truth -- at scale.
-- Because when teams share language, they move faster -- and think better.
-- Because the only thing that scales is how you think.
+I argue that if you think about it long enough, you will come up with the same conclusion I have:
 
-Oh, and because I was born to engineer the world a better place. +
-I do this regardless of money.
-Just ask mother Athena.
-😉
+*_Help EVERYONE learn to MAKE WELL. Fall in love with making. And live rewarding lives._*
 
 == Where It Leads:
 
@@ -100,7 +88,7 @@ My 15-year-old son went through public schooling until high school
 -- Wake County public education system is considered the best in the nation.
 Most likely I will also homeschool my 2-year-old daughter. through her high school years when she gets there.
 
-This is our non-religious academically-focused school{footer-captain-school} on GitHub: {captain-school}.
+This is our non-religious academically-focused school{footer-captain-school} on GitHub: {hera-school}.
 
 If you are a homeschooling parent focusing on holistic development of your child, +
 I'd love to talk to you and compare notes.

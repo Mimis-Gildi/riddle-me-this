@@ -4,14 +4,14 @@ Compiled 2026-06-03 by Claude for Vadim. Independent verification of factual cla
 
 ## Summary
 
-| Claim | Verdict | Strong sources |
-|-------|---------|----------------|
-| 1. Russia-Iran strategically/operationally coupled | Strongly supported | 7 |
-| 2. Russo-Ukrainian war > Iran confrontation for US | Supported with caveats (genuinely contested) | 6 |
-| 3. Doctrine of warfare "rewritten — versioned 4 times" | Supported in substance, "versioned 4 times" is Vadim's metaphor (no source uses that phrasing) | 5 |
-| 4. "13 of 14 USA bases untenable" = 3 days in Ukraine | Specific number unverifiable as stated; underlying comparison defensible with different numbers | 4 |
-| 5a. "56c on every dollar from past soft power" | Specific number unverifiable | 0 |
-| 5b. ISW says US eroded most of its soft power | Thin — ISW does not appear to be the primary source; Brand Finance / CFR / Atlantic Council do say this | 4 |
+| Claim                                                 | Verdict                                                                                                 | Strong sources |
+|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------|----------------|
+| 1. Russia-Iran strategically/operationally coupled    | Strongly supported                                                                                      | 7              |
+| 2. Russo-Ukrainian war > Iran confrontation for US    | Supported with caveats (genuinely contested)                                                            | 6              |
+| We will                                               | Supported in substance, "versioned 4 times" is Vadim's metaphor (no source uses that phrasing)          | 5              |
+| 4. "13 of 14 USA bases untenable" = 3 days in Ukraine | Specific number unverifiable as stated; underlying comparison defensible with different numbers         | 4              |
+| 5a. "56c on every dollar from past soft power"        | Specific number unverifiable                                                                            | 0              |
+| 5b. ISW says US eroded most of its soft power         | Thin — ISW does not appear to be the primary source; Brand Finance / CFR / Atlantic Council do say this | 4              |
 
 The strongest claims are 1 and 3. Claim 4's specific "13 of 14" framing collapses on inspection — the underlying story (Iran inflicted material damage on ~15 US sites; Russia hits Ukraine on a 24-hour cycle at higher tempo) is defensible, but not with those numbers. Claim 5 needs to be reframed unless Vadim can produce the original source for the 56-cent figure and the ISW attribution.
 

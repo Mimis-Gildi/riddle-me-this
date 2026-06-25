@@ -1,0 +1,164 @@
+= Research findings — "What share of American gun deaths are homicides?"
+
+Compiled 2026-06-03 by Claude for Vadim. Primary-source backing for the Memorial Day post's Socratic challenge to liberal-leaning readers. *Not yet integrated into any post.*
+
+== Source hierarchy
+
+* *Tier 1 (primary US federal):* CDC WONDER / NCHS — death-by-intent (every death has a certificate; no comparable layer touches every case; 2023 finalized, 2024 provisional). FBI UCR/NIBRS Expanded Homicide Data *Table 8 — Murder Victims by Weapon* (rifle/handgun/etc. shares). BJS, _Homicide Victimization in the US, 2023_ (May 2025, corrects UCR under-reporting). ATF traces (patterns only).
+* *Tier 2 (peer-reviewed / primary synthesis):* Johns Hopkins Center for Gun Violence Solutions, _2023 Gun Violence in the US_ (June 2025, Webster/Crifasi); Pew, _What the data says about gun deaths_ (April 2026, uses CDC 2024 prov. + FBI 2024); Koper, _Updated Assessment of the Federal AWB 1994-2003_ (NIJ, 2004); RAND, _Science of Gun Policy_ (2018/2020/2024).
+* *Tier 3 (advocacy/aggregators, only where they cite Tier 1):* JHU; The Trace; Gun Violence Archive (broadest mass-shooting def, 4+ shot); Mother Jones (narrowest credible, indiscriminate public rampage 3+ killed); Everytown/Giffords/Brady and NRA-ILA/Lott/CPRC (interpretation only, never for primary numbers).
+
+== Summary
+
+|===
+|# |Claim |Verdict |Primary anchor
+
+|1 |Suicide is the majority of US gun deaths |*Strong* |CDC WONDER 2023: 27,300/46,728 = 58.4%; 2024 prov.: 27,593/44,447 = 62.1%
+|2 |Homicides are the minority |*Strong* |CDC WONDER 2023: 17,927/46,728 = 38.4%; 2024 prov.: 15,364/44,447 = 34.6%
+|3 |Handguns dominate gun homicides; rifles a small share |*Strong* |FBI 2023 T8: handguns 8,343 vs rifles 570 (known); Pew/FBI 2024: handguns 53%, rifles 3%
+|4 |Rifles kill fewer than knives, ~same as hands/feet |*Strong* |FBI 2023: rifles 570, knives 1,720, hands/feet 752; FBI 2019: 364 / 1,476 / 600
+|5 |"Assault weapon" has no consistent legal/statistical def |*Strong* |1994 AWB feature-based; FBI tracks no such category
+|6 |1994-2004 AWB effect on overall homicide weak/inconclusive; mass-shooting effect contested |*Strong w/ refinement* |Koper 2004; DiMaggio 2019; RAND 2024
+|7 |Mass shootings a small fraction of gun deaths, any definition |*Strong* |GVA 2024: 510-712 deaths vs ~44,000 = 1.2-1.6%
+|8 |DGU estimates range ~60K (NCVS) to ~2.5M (Kleck/Gertz); truth uncertain, nearer low end |*Strong* |RAND; NCVS; Kleck &amp; Gertz 1995
+|===
+
+*Headline:* the "guns = mass-shooter / assault-rifle weapons we must ban" framing is built on a wrong picture of the ledger.
+- ~6 in 10 American gun deaths are *suicides*, not homicides — every year of the CDC series (58% in 2023, 62% in 2024 prov.).
+- When guns kill in homicides, they're overwhelmingly *handguns* — 14.6× rifles in 2023 known-type FBI data.
+- *Rifles kill fewer Americans than knives*, ~the same as hands/feet (2019 rifles were below hands/feet).
+- *Mass shootings* = ~1.2-1.6% of gun deaths (GVA broadest def); under 0.5% under the public-rampage (Mother Jones) definition the public actually pictures.
+
+If the goal is most lives saved, the quantitative answer is means-restriction for suicide (~28K/yr) and handgun-driven urban homicide (~14-17K/yr). Political energy goes to a category that is ~1.5% of deaths. Cleanest single anchor: *"What share of American gun deaths are homicides?"* — public answer "most/almost all," actual answer "about a third."
+
+== The ledger (Tier 1 data)
+
+*CDC WONDER — firearm deaths by intent:*
+
+[cols="<,>,>,>,>"]
+|===
+|Intent |2023 (final) |share |2024 (prov., Pew Apr 2026) |share
+
+|Total |46,728 |100% |44,447 |100%
+|Suicide |27,300 |58.4% |27,593 |62.1%
+|Homicide |17,927 |38.4% |15,364 |34.6%
+|Legal intervention |~700 |~1.5% |636 |1.4%
+|Unintentional |~463 |~1.0% |450 |1.0%
+|Undetermined |~340 |~0.7% |404 |0.9%
+|===
+
+Suicide-majority holds every year since 1981; pandemic 2020-22 briefly compressed it to ~54/44 but never flipped. Pre-pandemic (2014-18) ~60% suicide / ~37% homicide.
+
+*FBI 2023 Expanded Homicide Data Table 8 — by weapon:* total murders 20,306; total firearms 15,505 (76%); handguns 8,343 (53.8% of known-type gun murders); rifles 570 (3.7%); shotguns 198; other guns 436; *firearms type-not-stated 5,958 (the big caveat)*; knives 1,720; blunt objects 404; hands/fists/feet 752. Handguns:rifles = *14.6:1* in known cases. No plausible distribution of the ~30-40% unknowns flips rifles into a major share (generous upper bound ~5-7%). FBI 2019 for comparison: rifles 364, knives 1,476, blunt 397, hands/feet 600.
+
+'''
+
+== Footnote-ready phrasings (deployable) + sources
+
+=== 1 — Suicide is the majority
+
+____
+
+In 2023, CDC WONDER recorded 46,728 firearm deaths in the United States. Of those, 27,300 — 58% — were suicides; 17,927 — 38% — were homicides; the remaining ~3% combined unintentional shootings, legal interventions, and undetermined cases. The 2024 provisional file (CDC WONDER, April 2026 release) shows the suicide share rising to 62%. The suicide-majority pattern holds in every year of CDC's modern firearm-death series.
+
+____
+
+Note: public perception is inverted — Pew surveys repeatedly find majorities believe most gun deaths are homicides. 2024 file provisional; final revisions typically &lt;2%.
+Sources: https://wonder.cdc.gov/[CDC WONDER]; https://publichealth.jhu.edu/2025/new-report-highlights-us-2023-gun-deaths-suicide-by-firearm-at-record-levels-for-third-straight-year[JHU June 2025]; https://www.cdc.gov/firearm-violence/data-research/facts-stats/index.html[CDC Fast Facts]; https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/[Pew Apr 2026]; https://www.thetrace.org/2024/08/gun-deaths-cdc-data-homicide-suicide/[The Trace]; https://stateline.org/2025/06/27/gun-suicides-in-us-reached-record-high-in-2023/[Stateline].
+
+=== 2 — Homicides are the minority
+
+____
+
+Despite a public-perception consensus that most US gun deaths are homicides, in 2023 only 38% of US firearm deaths were homicides — and that share fell to 35% in 2024 (CDC WONDER provisional). Homicides have not been the majority of US gun deaths in any year on CDC's modern series.
+
+____
+
+Sources: same as Claim 1.
+
+=== 3 — Handguns dominate, rifles small
+
+____
+
+Of US homicides where the weapon type is identified, the gun is overwhelmingly a handgun. FBI Expanded Homicide Data 2023 (Table 8) recorded 8,343 handgun murders and 570 rifle murders — a 14.6-to-1 ratio. Pew Research's April 2026 analysis of FBI 2024 data put the same split at handguns 53%, rifles 3% (with ~42% of gun murders missing a weapon-type designation; the ratio of identified handguns to rifles is robust within that uncertainty).
+
+____
+
+Sources: https://cde.ucr.cjis.gov/[FBI CDE]; https://www.gunowners.org/wp-content/uploads/FBI_UCR_Expanded_Homicide_Data_Table_8_Murder_Victims_by_Weapon_2020-2024-1.pdf[FBI T8 2020-2024 PDF] (use CDE as authoritative); https://www.fbi.gov/news/press-releases/fbi-releases-2024-reported-crimes-in-the-nation-statistics[FBI 2024 release]; https://www.pewresearch.org/short-reads/2026/04/28/what-the-data-says-about-gun-deaths-in-the-us/[Pew Apr 2026]; https://bjs.ojp.gov/library/publications/homicide-victimization-united-states-2023[BJS Homicide Victimization 2023]; https://bjs.ojp.gov/library/publications/trends-and-patterns-firearm-violence-1993-2023[BJS Firearm Violence 1993-2023].
+
+=== 4 — Rifles vs knives vs hands
+
+____
+
+In FBI Expanded Homicide Data for 2019 and 2023, more Americans were murdered with knives than with rifles of any kind (3-4× as many), and more were murdered with bare hands, fists, and feet than with rifles. In 2023: 570 rifle murders versus 1,720 knife murders and 752 personal-weapon murders. "Assault weapons" are a subset of rifles, so the actual subset-of-interest is smaller still.
+
+____
+
+Note: 2019 is the cleanest pre-pandemic comparison. Even treating _every_ type-not-stated as a rifle (implausible), the upper bound is ~1,800-2,400/yr — knives still comparable. The numbers are FBI's; only the policy inference is contested.
+Sources: FBI 2023 T8 (Claim 3); https://ucr.fbi.gov/crime-in-the-u.s/2019/crime-in-the-u.s.-2019/tables/expanded-homicide-data-table-8.xls[FBI 2019 T8].
+
+=== 5 — "Assault weapon" undefined
+
+____
+
+"Assault weapon" is not a category in any Tier 1 US federal crime data series. The FBI tracks handguns, rifles, shotguns, and other; ATF tracks make and model; CDC tracks intent of death. The 1994 federal Assault Weapons Ban (PL 103-322) defined the category by a combination of named models and a two-feature test; the ban expired on its own sunset clause in September 2004. State-level definitions all differ. Any "assault weapon homicide" count is a reverse-engineered estimate from incident-level press reporting, not a primary statistic.
+
+____
+
+Note: 1994 feature test = semi-auto + detachable mag + ≥2 of {folding stock, pistol grip, bayonet mount, flash suppressor/threaded barrel, grenade launcher}; grandfathered pre-1994 stock; defeatable by removing one feature. State bans (CA/NY/NJ/CT/MD/MA/IL/HI/WA/DE/DC) use differing tests.
+Sources: https://www.congress.gov/bill/103rd-congress/house-bill/3355[PL 103-322]; https://en.wikipedia.org/wiki/Federal_Assault_Weapons_Ban[Wikipedia — Federal AWB]; https://www.ojp.gov/pdffiles1/nij/grants/204431.pdf[Koper 2004 NIJ]; FBI CDE categories.
+
+=== 6 — AWB effect
+
+____
+
+The 1994-2004 federal Assault Weapons Ban's effect on overall US gun violence was small at best, per the NIJ-commissioned Koper evaluation (2004); the ban's grandfather clause and the rarity of "assault weapons" in crime even before the ban limited any measurable impact. The ban's effect on mass-shooting fatalities is contested: DiMaggio et al. (2019) estimated a 70% reduction, but the result depends on definitional choices and RAND's 2024 review classifies the overall evidence on assault-weapon and large-capacity-magazine bans as "inconclusive" to "limited."
+
+____
+
+Note: Koper — "effects on gun violence are likely to be small at best and perhaps too small for reliable measurement." The clearer signal in the ban-period data was the *10-round magazine cap*, a more defensible lever than the rifle feature test. Neither "the AWB worked" nor "did nothing" is supported. Defensible: _if_ it reduces mass-shooting fatalities, that's a category ~1-2% of gun deaths.
+Sources: https://www.ojp.gov/pdffiles1/nij/grants/204431.pdf[Koper 2004]; https://pubmed.ncbi.nlm.nih.gov/30188325/[DiMaggio 2019 (PubMed)]; https://www.rand.org/research/gun-policy/analysis/assault-weapon.html[RAND assault-weapon review]; https://www.politifact.com/factchecks/2022/may/25/joe-biden/joe-biden-said-mass-shootings-tripled-when-assault/[PolitiFact 2022] / https://www.politifact.com/factchecks/2019/aug/07/bill-clinton/did-mass-shooting-deaths-fall-under-1994-assault-w/[2019].
+
+=== 7 — Mass shootings a small fraction
+
+____
+
+Mass-shooting deaths are a small fraction of total US gun deaths under every credible definition. Using the broadest commonly cited definition (Gun Violence Archive's "four or more shot"), 2024 saw approximately 510-712 mass-shooting deaths out of 44,447 total US firearm deaths — between 1.2% and 1.6%. Under the narrower Mother Jones definition (indiscriminate public rampages with 4+ killed) the share falls well below 0.5%. The policy and media frame is dominated by a category that accounts for one to two percent of the deaths.
+
+____
+
+Shares of 2024 total (44,447): GVA 1.15-1.60%; FBI Active Shooter ~0.4-0.6% (150-250 deaths); Mother Jones &lt;0.25%. Nuance: the GVA total is dominated by gang/intimate-partner shootings in private locations, not the lone-public-shooter stereotype the debate is built on.
+Sources: https://www.gunviolencearchive.org/reports/mass-shooting?year=2024[GVA 2024] / https://www.gunviolencearchive.org/methodology[methodology]; https://www.motherjones.com/politics/2012/12/mass-shootings-mother-jones-full-data/[Mother Jones DB]; https://www.congress.gov/crs-product/R48276[CRS R48276]; https://www.rand.org/research/gun-policy/analysis/essays/mass-shootings.html[RAND mass-shootings]; FBI Active Shooter 2024; Pew Apr 2026.
+
+=== 8 — Defensive gun use
+
+____
+
+Estimates of US defensive gun use vary by roughly two orders of magnitude. The NCVS (DOJ Bureau of Justice Statistics) produces estimates around 60-80 thousand DGUs per year; Kleck and Gertz's much-cited 1995 phone survey produced 2.2-2.5 million; the 2021 Georgetown survey (English) estimated approximately 1.6 million. RAND's _Science of Gun Policy_ review concludes that the high estimates are "not plausible given other information that is more trustworthy" and that the low NCVS estimates "almost certainly underestimate the true number" — leaving genuine uncertainty across roughly an order of magnitude (~100K-1M).
+
+____
+
+Why the gap: NCVS screens crime-victims only (structurally excludes prevented crimes); Kleck/Gertz phone-survey telescoping bias; definitional spread; false positives implausible at the 2.5M end vs. total US violent crimes. Vadim's note: completeness, not central.
+Sources: https://scholarlycommons.law.northwestern.edu/jclc/vol86/iss1/3/[Kleck &amp; Gertz 1995]; McDowall/Loftin/Wiersema 1998 (NCVS); https://www.rand.org/research/gun-policy/analysis/essays/defensive-gun-use.html[RAND DGU]; English 2021 (Georgetown); Hemenway, _Private Guns, Public Health_ (2017); https://en.wikipedia.org/wiki/Defensive_gun_use[Wikipedia — DGU].
+
+'''
+
+== Recommended anchor: "What share of American gun deaths are homicides?"
+
+|===
+|Anchor question |Counterintuitive answer |Tier 1 |Strength
+
+|*Share that are homicides?* |About a third (most are suicides) |CDC 2023: 38%; 2024: 35% |*Strongest* — inverts the public answer
+|What firearm in most homicides? |Handguns, ~15:1 over rifles |FBI 2023 T8 |Strong — but "rifle" ≠ "assault rifle" objection
+|Share from mass shootings? |~1-2% broadest; &lt;0.5% public-rampage |GVA / Mother Jones |Strong — but definition pushback
+|===
+
+*The cascade (the punch):* if 6 in 10 gun deaths are suicides, the largest single category of "gun violence" is a man alone in a room → the most lives-saving policy is suicide means-restriction (waiting periods, secure storage, risk-calibrated red-flag), not magazine size → of the minority that are homicides, the gun is overwhelmingly a handgun (Claim 3), concentrated in a few cities/ZIPs, not the suburban active-shooter scenario → mass shootings as pictured (Mother Jones) are &lt;0.5% (Claim 7) → the "assault weapons ban" frame operates on ~1% of deaths (rifle homicides &lt;600 in 2023), and the 1994-2004 tool had a small-to-undetectable effect on overall violence per the NIJ evaluation (Claims 4-6). CDC + FBI + BJS primary record; the liberal reflex "guns = mass-shooter/assault-weapon homicide weapons" collapses on contact.
+
+== Honest counter-points the post must pre-empt (stay on verified ground)
+
+* *US gun-homicide rate is still exceptionally high vs. peer wealthy nations.* Suicide-majority ≠ "no homicide problem"; 17,927 gun homicides (2023) is many times the per-capita rate of Canada/UK/Germany/Japan.
+* *Per-incident lethality of "assault weapons" in the rare cases used is genuinely higher* — Las Vegas 2017, Sandy Hook 2012, Uvalde 2022, Parkland 2018. Small in the total ledger, disproportionate in highest-casualty incidents. The DiMaggio 2019 finding is real, if contested.
+* *The "suicide is the majority" anchor is also misused by gun-rights advocates to dismiss the problem* — equally unsupported. The point is _not_ "guns are fine"; it's "the policy lever everyone is fighting about is not where the deaths are."
+
+Verified ground lets the liberal reader say: _I was wrong about the breakdown; the policy I advocated targets ~1% of deaths; the lives-saved analysis points to suicide prevention and urban handgun policy, not assault-weapon feature tests._
