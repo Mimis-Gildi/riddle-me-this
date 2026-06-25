@@ -9,15 +9,6 @@ comments: true
 ---
 = ChatGPT & Job Loss - A 'Doze' of Reality
 rdd13r
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
-:mm-newsletter: R!dd13r
-:pub-mm: as published on Medium by {mm-newsletter}
-:mm-current-article: "ChatGPT & Job Loss: A Doze of Reality"
-:ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
-
-:github-rdd13r: link:https://github.com/rdd13r[rdd13r,window=_blank]
 :catb-mundane: link:http://www.catb.org/jargon/html/M/mundane.html[mundane,window=_blank]
 :chatgpt-ui: link:https://chat.openai.com/[ChatGPT,window=_blank]
 :autogpt: link:https://github.com/Significant-Gravitas/Auto-GPT[Auto-GPT,window=_blank]
@@ -25,15 +16,19 @@ rdd13r
 :openai-site: link:https://www.openai.com/[OpenAI's website,window=_blank]
 :openai-blog: link:https://www.openai.com/blog/[OpenAI Blog,window=_blank]
 
-Since this is my first post, let me introduce myself and address a burning question: Are we all about to lose our jobs to AI like ChatGPT?
-I am {github-rdd13r}, a hacker in the true sense - a creative problem solver.
-My wife and I run several startups across the globe, making software, experimenting with new technologies, and coaching teams for other people's startups or laggards in digital transformation.
+Since this is my first post, let me introduce myself and address this ask:
+Are we all about to lose our jobs to AI like ChatGPT?
+I am {rdd13r-gh}, an ordinary hacker (creative problem solver).
+My wife and I run several startups across the globe, making software
+and coaching teams for other people's startups and corporate digital transformation.
 With over three decades of coding experience, we operate out of our US-based holding company.
-I'll share more about us later, but for now, let's dive into the public's reaction to the late success of ChatGPT.
+I'll share more about us later, but for now, let's dive into the public's reaction to the latest success of ChatGPT.
 
-Ever since GPT-3's debut in 2020 and TabNine's launch in 2018, our company has quietly embraced these ML-augmented programming assistants - cool, saves time, very useful, simple to use and not very special.
+Ever since GPT-3's debut in 2020 and TabNine's launch in 2018,
+our company has quietly embraced these ML-augmented programming assistants -- cool,
+saves time, marginally useful, simple to use, and not very special.
 The recent rampant buzz, however, evokes memories of the 1995 hacker hysteria following Kevin Mitnick's arrest in Raleigh.
-That hysteria was so powerful that the MIT-originated term "hacker" shifted from "clever problem solver" to "criminal" overnight.
+That hysteria was so powerful that the MIT-originated term "{cb-hacker}" shifted from "clever problem solver" to "criminal" overnight.
 Just as the public once feared the power of code, today, they fear AI.
 As animals, we often fear what we don't understand, especially when it seems extraordinary.
 And sometimes we project onto people behind the extraordinary.
@@ -206,7 +201,6 @@ The best way to approach this technology is by peacefully learning and understan
 Running it as much as humanly possible!
 Because I guarantee you -- the other guy will!
 
-
 == Conclusion
 
 My `Merica is a "Sleepy Hollow" of complacency and comfort. And here comes the noise... Stampede!
@@ -220,7 +214,3 @@ That is how you can get the facts and tie them with rules of inference for your 
 Staying up to date with the latest AI advancements is not difficult yet crucial in making informed decisions about the technology's potential benefits and challenges.
 
 _And mark my words, OpenAI is not the only game in town. Chatbot isn't "the revolution." *This is only the beginning*..._
-
-'''
-
-Also see editorial{ff-mm-current-article}.

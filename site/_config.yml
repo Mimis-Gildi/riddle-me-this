@@ -141,8 +141,10 @@ safe                        : false
 ### AsciiDoc / Asciidoctor — site-wide attributes
 asciidoctor:
   attributes:
+    cb-hacker               : 'http://www.catb.org/jargon/html/H/hacker.html[hacker,window=_blank]'
     hera-school             : 'https://gervi-hera-vitr.github.io/sindri-labs/[Héra Academy Laboratory,window=_blank,opts=nofollow]'
-    sindri-labs-url         : 'https://gervi-hera-vitr.github.io/sindri-labs/'
+    hera-school-url         : 'https://gervi-hera-vitr.github.io/sindri-labs/'
+    rdd13r-gh               : 'https://github.com/rdd13r[rdd13r,window=_blank]'
 
 
 # My general footer...

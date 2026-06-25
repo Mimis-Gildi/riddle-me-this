@@ -11,12 +11,12 @@ read_aloud: false
 ---
 = Fastest Way to AI Adoption -- Straight Talk
 :mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
-:ai-current-state: https://mimis-gildi.github.io/riddle-me-this/adventures/2025/09/29/not-chat-gpt.html["The current State of Things",window=_blank]
-:ai-adoption-phases: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[AI Adoption Phases,window=_blank]
-:ai-adoption-matrix: https://mimis-gildi.github.io/riddle-me-this/reflections/2025/10/31/ai-halloween.html[70/20/10,window=_blank]
-:ai-why-fails: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
+:ai-current-state: link:{site-baseurl}/adventures/2025/09/29/not-chat-gpt.html["The current State of Things",window=_blank]
+:ai-adoption-phases: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html[AI Adoption Phases,window=_blank]
+:ai-adoption-matrix: link:{site-baseurl}/reflections/2025/10/31/ai-halloween.html[70/20/10,window=_blank]
+:ai-why-fails: link:{site-baseurl}/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
 :seeds-model: https://neuroleadership.com/your-brain-at-work/seeds-model-biases-affect-decision-making/[SEEDS Model,window=_blank]
-:google-wins: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/10/3-google-vs-openai.html[2023: Why Google Beat OpenAI with Technical Teams,window=_blank]
+:google-wins: link:{site-baseurl}/adventures/2023/06/10/3-google-vs-openai.html[2023: Why Google Beat OpenAI with Technical Teams,window=_blank]
 :google-gemini3: https://blog.google/products/gemini/gemini-3/[Gemini 3,window=_blank]
 :fireship-gemini3: https://youtu.be/bsL7ZnKIAhs[YouTube @Fireship: Did Google just kill OpenAI?,window=_blank]
 :boot-data-rest: https://spring.io/projects/spring-data-rest[DDD Aggregates,window=_blank]

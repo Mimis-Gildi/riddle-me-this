@@ -7,7 +7,7 @@ classes: wide
 comments: true
 ---
 = The Reluctant Consultant's Guide: T&M in the AI Failure Era
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-url: link:{site-baseurl}/
 :blog-title: Creative Engineering at Scale
 :blog-link: {blog-url}[{blog-title}]
 :new-founders: link:/riddle-me-this/adventures/2025/08/04/new-founders-compendium.html
@@ -69,7 +69,7 @@ Notice the pattern? +
 * https://contra.com/[**Contra**,window=_blank,opts=nofollow] -- High-end enterprise overflow. (not yet tested)
 * https://www.upwork.com/enterprise/[**Upwork Enterprise**,window=_blank,opts=nofollow] -- Yes, really.
 They're desperate! (won't test)
-* *_Your Blog_* -- Write about AI failures, they'll find you! (https://mimis-gildi.github.io/riddle-me-this/series/[I have,window=_blank])
+* *_Your Blog_* -- Write about AI failures, they'll find you! (link:{site-baseurl}/series/[I have,window=_blank])
 * **LinkedIn** -- But talk about solutions, not your availability. (questionable)
 
 === Operations:

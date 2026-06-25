@@ -8,7 +8,7 @@ comments: true
 ---
 = Google to MIT: Traditional Business Done For. Oh Really?! -- Straight Talk
 :img-prefix: /riddle-me-this/assets/images
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-url: link:{site-baseurl}/
 :blog-title: Creative Engineering at Scale
 :blog-link: {blog-url}[{blog-title}]
 :li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]

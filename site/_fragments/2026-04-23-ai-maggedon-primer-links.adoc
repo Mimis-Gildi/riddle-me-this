@@ -14,11 +14,11 @@
 :mit-fortune: https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/
 
 // Cross-references
-:link-local-grief: https://mimis-gildi.github.io/riddle-me-this/adventures/2026/01/27/local-models-grief.html
+:link-local-grief: link:{site-baseurl}/adventures/2026/01/27/local-models-grief.html
 
 // External references
 :vailala: https://en.wikipedia.org/wiki/Vailala_Madness
-:ghost-article: https://mimis-gildi.github.io/riddle-me-this/research/2025/09/19/advanced-ai-non-corp.html
+:ghost-article: link:{site-baseurl}/research/2025/09/19/advanced-ai-non-corp.html
 
 // Image sources
 :commons-john-frum-effigy: https://commons.wikimedia.org/wiki/File:John_Frum_effigy_1960.jpg

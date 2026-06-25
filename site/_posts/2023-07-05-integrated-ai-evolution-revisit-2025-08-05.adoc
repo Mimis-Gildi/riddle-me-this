@@ -9,7 +9,7 @@ published: false
 ---
 = The AI Evolution Playbook: Why 80% Will Fail – Revisit 2025
 rdd13r
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-url: link:{site-baseurl}/
 :blog-title: Creative Engineering at Scale
 :blog-link: {blog-url}[{blog-title}]
 :mm-newsletter: R!dd13r
@@ -85,7 +85,7 @@ The numbers will shock you.
 Come watch the carnage unfold:
 
 * https://www.asei.systems/
-* https://mimis-gildi.github.io/riddle-me-this/
+* link:{site-baseurl}/
 
 The Oracle sees the future.
 The Hag just counts the bodies.

@@ -45,7 +45,7 @@ Your enterprise is trying to do the same thing -- whether you know it or not.
 Produce reliable intelligence from data.
 Make decisions with confidence.
 
-I wrote about this years ago as https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html#phase-iii-ai-propagation["Phase III: AI-Propagation"]
+I wrote about this years ago as link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html#phase-iii-ai-propagation["Phase III: AI-Propagation"]
 -- business intelligence as repeatable infrastructure.
 
 So, what is the difference between your "AI project" and strategic "Intelligence Capability"?

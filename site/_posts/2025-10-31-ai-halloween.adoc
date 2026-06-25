@@ -36,4 +36,4 @@ He's right.
 AI punishes the experience-based biases that got you through DX.
 
 -> https://www.asei.systems/diagnostic[Get assessed]  +
--> https://mimis-gildi.github.io/riddle-me-this/research/2025/09/29/sources-passed-validation.html[See research]
+-> link:{site-baseurl}/research/2025/09/29/sources-passed-validation.html[See research]

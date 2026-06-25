@@ -7,7 +7,7 @@ classes: wide
 comments: true
 ---
 = The µSaaS Founder's Guide: Building AI Success in Enterprise Cracks
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-url: link:{site-baseurl}/
 :blog-title: Creative Engineering at Scale
 :blog-link: {blog-url}[{blog-title}]
 :evolution-playbook: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html

@@ -8,7 +8,7 @@ comments: true
 ---
 = American AI Integration Trap
 rdd13r
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
+:blog-url: link:{site-baseurl}/
 :blog-title: Creative Engineering at Scale
 :blog-link: {blog-url}[{blog-title}]
 :mm-newsletter: R!dd13r
