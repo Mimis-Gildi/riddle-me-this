@@ -42,6 +42,8 @@ admonition in every post is fixed at once. No article edits.
 
 Read-only. Confirms the current bad render before we touch anything.
 
+// FixMe: Use correct shell!
+// Use pushd and popd
 [source,bash]
 ----
 cd "$(git rev-parse --show-toplevel)"
@@ -72,6 +74,8 @@ fi
 grep -nE '^[[:space:]]+(icons|cb-hacker)[[:space:]]*:' "$f"
 ----
 
+// This is IDIOTIC! The problem only exists in Jekyll rendered site.
+// FixMe: remove idiocy
 Verify: the `attributes:` block now lists `icons : font`.
 
 [NOTE]
@@ -87,6 +91,9 @@ Writes `site/assets/css/asciidoc.css`. The rules are copied verbatim from Asciid
 `asciidoctor-default.css` (`.admonitionblock` section), with two documented Minimal-Mistakes
 overrides ([MM-1], [MM-2]). No Font Awesome version is pinned — the glyph rides the theme's own
 `.fa`. Safe to re-run (overwrites with identical content).
+
+// FixMe: Where is the link to original CSS for me to verify?
+// FixMe: Where is the excerpt of the exact change to apply?
 
 [source,bash]
 ----
@@ -164,6 +171,7 @@ CSS
 echo "wrote site/assets/css/asciidoc.css ($(wc -l < site/assets/css/asciidoc.css) lines)"
 ----
 
+// FixMe: is it forever 67 lines long?
 Verify: the file exists and is 67 lines.
 
 == Step 3 — Link the stylesheet into `<head>`
@@ -187,6 +195,7 @@ fi
 tail -n 3 "$f"
 ----
 
+// FixMe: I'd offer a command or miniscript to grep and show that line
 Verify: the `<link ... asciidoc.css>` line is present at the end of the file.
 
 == Step 4 — Restart, then verify the fix
@@ -207,7 +216,7 @@ curl -s "$url" | grep -oE '<i class="fa icon-tip[^"]*"' | head -1 || echo "  MIS
 
 PASS when both lines report a hit: the stylesheet is linked and the admonition renders an
 `icon-tip` glyph (no longer the bare word "Tip"). Confirm visually in the browser too — the TIP
-box should show a coloured lightbulb and a framed content cell.
+box should show a colored lightbulb and a framed content cell.
 
 == Done
 
