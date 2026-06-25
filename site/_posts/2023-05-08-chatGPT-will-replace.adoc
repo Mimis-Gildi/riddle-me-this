@@ -218,7 +218,7 @@ So, fission is a necessary step in our evolution that is practically impossible 
 When not applied -- civilization comes to a crawl.
 But guess what, many of us knew this 30+ years ago.
 And, we let ignorance and fears run amok!
-Thus, what do we have today?
+Thus, what do we have today? +
 *_A stalemate of a slowly dying planet._*
 
 Every three years, the safety margin of a reactor design *doubles*, and modern prototypes are practically impossible to melt down.
@@ -247,4 +247,5 @@ So, head on over to {openai-site} and blog {openai-blog} to explore and learn fo
 That is how you can get the facts and tie them with rules of inference for your own well-informed conclusions.
 Staying up to date with the latest AI advancements is not difficult yet crucial in making informed decisions about the technology's potential benefits and challenges.
 
-_And mark my words, OpenAI is not the only game in town. Chatbot isn't "the revolution." *This is only the beginning*..._
+_And mark my words, OpenAI is not the only game in town. Chatbot isn't "the revolution." +
+*This is only the beginning*..._
