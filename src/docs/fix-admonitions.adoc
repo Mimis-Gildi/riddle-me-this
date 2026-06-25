@@ -2,223 +2,58 @@
 :toc: preamble
 :icons: font
 
-A runnable workbook (notebook-style). Each step *explains* what to do, then gives a
-`[source,bash]` block with a green ▶ in the IntelliJ AsciiDoc plugin's gutter. Click it,
-read the output, verify, move on. Every block is idempotent and safe to re-run. Claude wrote
-this; *you* execute it.
+Admonitions render unstyled here — a bare table with the word "Tip" instead of an icon — because
+`icons: font` is unset and nothing styles `.admonitionblock` (jekyll-asciidoc ships no CSS, and
+Minimal Mistakes doesn't style it either). The fix is site-wide: config + one CSS file + one
+`<link>`. No article edits.
 
-NOTE: Blocks anchor themselves to the repo root via `git rev-parse`, so the terminal's
-starting directory does not matter. Config changes (Step 1) require a Jekyll server restart
-before Step 4 — that restart is yours to do.
+== Step 0 — Baseline (read-only)
 
-== The problem
-
-Admonitions (`[TIP]`, `[NOTE]`, `[WARNING]`, …) render *broken* on this site. The live
-example you added in `2023-05-08-chatGPT-will-replace.adoc` renders as a bare, unstyled table
-with the literal word "Tip" where the icon should be:
-
-[source,html]
-----
-<div class="admonitionblock tip">
-<table><tr>
-<td class="icon"><div class="title">Tip</div></td>   <!-- text, not an icon -->
-<td class="content"> ... </td>
-</tr></table></div>
-----
-
-Two missing pieces, both present in the school site (the clean, tested solution) and both
-absent here:
-
-. `icons: font` is not set in `_config.yml` → Asciidoctor emits the label text instead of an
-  `<i class="fa icon-tip">` glyph.
-. There is no admonition stylesheet → `jekyll-asciidoc` does not ship Asciidoctor's default
-  CSS, and Minimal Mistakes does not style `.admonitionblock` at all, so even the icon cell
-  and frame are unstyled.
-
-The fix is **site-wide** (config + one CSS file + one `<link>`), *not* per-article — every
-admonition in every post is fixed at once. No article edits.
-
-== Step 0 — See the breakage (baseline)
-
-Read-only. Confirms the current bad render before we touch anything.
-
-// FixMe: Use correct shell!
-// Use pushd and popd
-[source,bash]
-----
-cd "$(git rev-parse --show-toplevel)"
-port=$(grep -E '^port' site/_config.yml | grep -oE '[0-9]+')
-curl -s "http://127.0.0.1:${port}/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html" \
-  | grep -nE 'admonitionblock|td class="icon"|icon-tip' \
-  | head
-----
-
-Expected now: an `admonitionblock tip` line and an `icon` cell, but *no* `icon-tip` glyph.
-After the fix, `icon-tip` will appear.
-
-== Step 1 — Enable font icons (`icons: font`)
-
-Adds `icons: font` to `_config.yml` → `asciidoctor.attributes` so Asciidoctor emits an
-`<i class="fa icon-tip">` glyph instead of the word "Tip". Idempotent.
+Current bad render: an `admonitionblock` table with no `icon-tip` glyph.
 
 [source,bash]
 ----
-cd "$(git rev-parse --show-toplevel)"
-f=site/_config.yml
-if grep -qE '^[[:space:]]+icons[[:space:]]*:[[:space:]]*font' "$f"; then
-  echo "icons: font already present — no change"
-else
-  perl -0pi -e 's/^(  attributes:\n)/${1}    icons                   : font\n/m' "$f"
-  echo "added icons: font"
-fi
-grep -nE '^[[:space:]]+(icons|cb-hacker)[[:space:]]*:' "$f"
+include::../main/sh/fix-admonitions-0-show-render.sh[]
 ----
 
-// This is IDIOTIC! The problem only exists in Jekyll rendered site.
-// FixMe: remove idiocy
-Verify: the `attributes:` block now lists `icons : font`.
+== Step 1 — Enable font icons
 
-[NOTE]
-====
-This is a `_config.yml` change. Jekyll does **not** hot-reload config — restart the server
-before Step 4. (Optional: re-run `src/main/sh/sync-asciidoc-config.sh` to mirror `icons` into
-the IDE preview attributes.)
-====
-
-== Step 2 — Add the admonition stylesheet
-
-Writes `site/assets/css/asciidoc.css`. The rules are copied verbatim from Asciidoctor 2.0.26's
-`asciidoctor-default.css` (`.admonitionblock` section), with two documented Minimal-Mistakes
-overrides ([MM-1], [MM-2]). No Font Awesome version is pinned — the glyph rides the theme's own
-`.fa`. Safe to re-run (overwrites with identical content).
-
-// FixMe: Where is the link to original CSS for me to verify?
-// FixMe: Where is the excerpt of the exact change to apply?
+Adds `icons: font` to `_config.yml` so Asciidoctor emits `<i class="fa icon-tip">` instead of text.
 
 [source,bash]
 ----
-cd "$(git rev-parse --show-toplevel)"
-mkdir -p site/assets/css
-cat > site/assets/css/asciidoc.css <<'CSS'
-/*
- * Admonition styling for jekyll-asciidoc output.
- *
- * jekyll-asciidoc emits Asciidoctor's embedded HTML but, by design, does NOT ship
- * Asciidoctor's own default stylesheet -- and Minimal Mistakes does not style
- * `.admonitionblock` at all. So with `:icons: font` the icon cell renders empty.
- *
- * These rules are COPIED from the authoritative source: Asciidoctor 2.0.26
- * `data/stylesheets/asciidoctor-default.css` (the `.admonitionblock` section), so the
- * icons, colours and frame match upstream exactly -- not hand-rolled guesses.
- *
- * Font + weight for the glyph are intentionally NOT declared: they come from the `.fa`
- * class on the <i> (the theme's own, version-floating Font Awesome) -- which is exactly
- * how Asciidoctor itself relies on them. Nothing here pins a Font Awesome version.
- *
- * The ONLY deviations from upstream are two overrides, each because Minimal Mistakes'
- * GLOBAL table rules would otherwise break Asciidoctor's table-based admonition:
- *   [MM-1] the theme sets `table { display: block; border-collapse: collapse }` on every
- *          table -- which collapses the icon/content layout -> restore `display: table`.
- *   [MM-2] the theme sets `td { border-bottom: 1px }` -- which paints stray lines across
- *          the cells -> zero the cell borders.
- */
-
-/* --- layout (asciidoctor-default.css, + [MM-1]/[MM-2] overrides) --- */
-.admonitionblock > table {
-  display: table;            /* [MM-1] override theme `table { display: block }` */
-  border-collapse: separate; /* [MM-1] override theme `border-collapse: collapse` */
-  border: 0;
-  background: none;
-  width: 100%;
-  margin: 0 0 1.25em;
-}
-.admonitionblock > table td {
-  border: 0;                 /* [MM-2] override theme `td { border-bottom: 1px }` */
-}
-.admonitionblock > table td.icon {
-  text-align: center;
-  width: 80px;
-}
-.admonitionblock > table td.content {
-  padding-left: 1.125em;
-  padding-right: 1.25em;
-  border-left: 1px solid #dddddf;
-  color: rgba(0, 0, 0, .6);
-}
-.admonitionblock > table td.content > :last-child > :last-child { margin-bottom: 0; }
-
-/* admonition title -- asciidoctor's italic style; font-family left to inherit the
-   theme's type rather than import Asciidoctor's Noto Serif (not loaded on this site). */
-.admonitionblock > table td.content > .title {
-  font-style: italic;
-  color: #7a2518;
-  text-align: left;
-  margin-bottom: .25em;
-}
-
-/* --- icons (verbatim from asciidoctor-default.css: glyph + colour per type) --- */
-.admonitionblock td.icon [class^="fa icon-"] {
-  font-size: 2.5em;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
-  cursor: default;
-}
-.admonitionblock td.icon .icon-note::before      { content: "\f05a"; color: #19407c; }
-.admonitionblock td.icon .icon-tip::before       { content: "\f0eb"; text-shadow: 1px 1px 2px rgba(155, 155, 0, .8); color: #111; }
-.admonitionblock td.icon .icon-important::before { content: "\f06a"; color: #bf0000; }
-.admonitionblock td.icon .icon-warning::before   { content: "\f071"; color: #bf6900; }
-.admonitionblock td.icon .icon-caution::before   { content: "\f06d"; color: #bf3400; }
-CSS
-echo "wrote site/assets/css/asciidoc.css ($(wc -l < site/assets/css/asciidoc.css) lines)"
+include::../main/sh/fix-admonitions-1-enable-icons.sh[]
 ----
 
-// FixMe: is it forever 67 lines long?
-Verify: the file exists and is 67 lines.
+== Step 2 — Write the stylesheet
 
-== Step 3 — Link the stylesheet into `<head>`
-
-Appends one `<link>` to the existing `_includes/head/custom.html` override (Minimal Mistakes'
-head extension point). Idempotent — guarded so re-runs don't duplicate the line.
+Writes `site/assets/css/asciidoc.css` — the school's tested file, byte-for-byte. It is based on
+Asciidoctor 2.0.26's `.admonitionblock` rules
+(https://github.com/asciidoctor/asciidoctor/blob/v2.0.26/data/stylesheets/asciidoctor-default.css)
+plus the two Minimal-Mistakes table fixes (`display:table`, `td{border:0}`). The script's header
+comment claims "matches upstream exactly" — it does not: it also adds a `margin`, drops
+`word-wrap:anywhere`, italicises the caption title, and omits two icon-off rules.
 
 [source,bash]
 ----
-cd "$(git rev-parse --show-toplevel)"
-f=site/_includes/head/custom.html
-if grep -q 'assets/css/asciidoc.css' "$f"; then
-  echo "already linked — no change"
-else
-  cat >> "$f" <<'HTML'
-<!-- Asciidoctor admonition styling; see assets/css/asciidoc.css for source + rationale. -->
-<link rel="stylesheet" href="{{ '/assets/css/asciidoc.css' | relative_url }}">
-HTML
-  echo "linked asciidoc.css"
-fi
-tail -n 3 "$f"
+include::../main/sh/fix-admonitions-2-write-css.sh[]
 ----
 
-// FixMe: I'd offer a command or miniscript to grep and show that line
-Verify: the `<link ... asciidoc.css>` line is present at the end of the file.
+== Step 3 — Link it into <head>
 
-== Step 4 — Restart, then verify the fix
-
-First **restart the Jekyll server** (Step 1 changed `_config.yml`). Then run this read-only
-check against the live site.
+Appends the `<link>` to `_includes/head/custom.html` (idempotent).
 
 [source,bash]
 ----
-cd "$(git rev-parse --show-toplevel)"
-port=$(grep -E '^port' site/_config.yml | grep -oE '[0-9]+')
-url="http://127.0.0.1:${port}/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html"
-echo "1) stylesheet linked in <head>?"
-curl -s "$url" | grep -o 'assets/css/asciidoc.css' | head -1 || echo "  MISSING"
-echo "2) admonition now emits the font glyph (icon-tip)?"
-curl -s "$url" | grep -oE '<i class="fa icon-tip[^"]*"' | head -1 || echo "  MISSING — did you restart the server?"
+include::../main/sh/fix-admonitions-3-link-css.sh[]
 ----
 
-PASS when both lines report a hit: the stylesheet is linked and the admonition renders an
-`icon-tip` glyph (no longer the bare word "Tip"). Confirm visually in the browser too — the TIP
-box should show a colored lightbulb and a framed content cell.
+== Step 4 — Restart, then verify (the real check)
 
-== Done
+Restart the server first. This reads the rendered page: PASS when the stylesheet is linked and the
+admonition emits an `icon-tip` glyph.
 
-This fixes admonitions everywhere on the site. Nothing per-article was touched. If you later add
-`icons: font` to other repos, the same three steps apply.
+[source,bash]
+----
+include::../main/sh/fix-admonitions-4-verify.sh[]
+----

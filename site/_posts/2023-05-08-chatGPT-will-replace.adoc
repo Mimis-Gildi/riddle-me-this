@@ -45,7 +45,7 @@ Additionally, we will explore the potential positive impact of AI on job creatio
 offering a more balanced perspective on the issue at hand.
 
 [TIP]
-.AI can save time with mundane and boring tasks, with limitations, of course.
+.AI can save you time with mundane and boring tasks, with limitations, of course.
 ====
 This article, for example, is edited with AI help. Not a chatbot the kind we're talking about.
 It is an integrated development environment (IDE) plugin instead.
