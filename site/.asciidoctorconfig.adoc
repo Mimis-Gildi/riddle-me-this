@@ -3,6 +3,10 @@
 // JetBrains plugin reads this; Jekyll does not.
 // Jekyll reads `_config.yml`; the plugin does not.
 
+:site-baseurl: /riddle-me-this
+:cb-hacker: http://www.catb.org/jargon/html/H/hacker.html[hacker,window=_blank]
+:cb-mundane: http://www.catb.org/jargon/html/M/mundane.html[mundane,window=_blank]
 :hera-school: https://gervi-hera-vitr.github.io/sindri-labs/[Héra Academy Laboratory,window=_blank,opts=nofollow]
-:sindri-labs-url: https://gervi-hera-vitr.github.io/sindri-labs/
-:rdd13r-gh: 'https://github.com/rdd13r[rdd13r,window=_blank]'
+:hera-school-url: https://gervi-hera-vitr.github.io/sindri-labs/
+:rdd13r-gh: https://github.com/rdd13r[rdd13r,window=_blank]
+:chatgpt: https://chat.openai.com/[ChatGPT,window=_blank]

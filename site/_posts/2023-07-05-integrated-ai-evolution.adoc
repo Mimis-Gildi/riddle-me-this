@@ -8,9 +8,6 @@ comments: true
 ---
 = The AI Evolution Playbook: Why 80% Will Fail
 rdd13r
-:blog-url: link:{site-baseurl}/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
 :li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]

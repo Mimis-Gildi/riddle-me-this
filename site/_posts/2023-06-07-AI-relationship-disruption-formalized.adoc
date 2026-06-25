@@ -7,9 +7,6 @@ comments: true
 ---
 = AI Analysis Reveals Relationship-Based Business Model Vulnerabilities
 rdd13r
-:blog-url: link:{site-baseurl}/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
 :scene-presented-original: link:/riddle-me-this/adventures/2023/06/07/AI-and-businesses-to-perish-first.html

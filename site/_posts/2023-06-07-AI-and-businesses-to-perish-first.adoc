@@ -7,9 +7,6 @@ comments: true
 ---
 = LLMs: Projected Market Exit of Established Relations-Based Companies
 rdd13r
-:blog-url: link:{site-baseurl}/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
 :mm-current-article: LLMs: Oracle or Plausible Bull?

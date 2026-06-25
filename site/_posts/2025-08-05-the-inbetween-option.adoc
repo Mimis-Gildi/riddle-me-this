@@ -7,9 +7,6 @@ classes: wide
 comments: true
 ---
 = The Reluctant Consultant's Guide: T&M in the AI Failure Era
-:blog-url: link:{site-baseurl}/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
 :new-founders: link:/riddle-me-this/adventures/2025/08/04/new-founders-compendium.html
 :for-new-founders: {new-founders}#note-from-the-author--bedrocking
 :for-new-founders-communities: {new-founders}#the-communities-that-actually-matter

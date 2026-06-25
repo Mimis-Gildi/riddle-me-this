@@ -7,9 +7,6 @@ classes: wide
 comments: true
 ---
 = The µSaaS Founder's Guide: Building AI Success in Enterprise Cracks
-:blog-url: link:{site-baseurl}/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
 :evolution-playbook: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
 :gitomer-book: https://a.co/d/5n9DwBo[The Little Red Book of Selling: 12.5 Principles of Sales Greatness,window=_blank,opts=nofollow]
 :gitomer-book-fn: footnote:[Forget what you know about selling; Jeff Gitomer is all you need -> {gitomer-book}]
