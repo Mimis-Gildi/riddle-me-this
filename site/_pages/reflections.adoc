@@ -3,6 +3,9 @@
 :page-permalink: /reflections/
 :page-author_profile: true
 :page-classes: wide
+
+:reflections: link:/riddle-me-this/categories/reflections/[Reflections]
+
 :linkedin-1: link:/riddle-me-this/reflections/2025/06/24/what-li-good-for.html[What is LinkedIn really good for?,window=_blank]
 :linkedin-2: link:/riddle-me-this/reflections/2025/06/25/what-li-good-for-analysis.html[How to Game LinkedIn Like a Pro,window=_blank]
 :linkedin-3: link:/riddle-me-this/reflections/2025/07/03/li-enshittification.html[LinkedIn: Conclusion - Enshittification,window=_blank]
@@ -32,7 +35,7 @@ Here I gather personal notes, retrospective takes, and meaning-making fragments 
 These aren’t tutorials. They’re _interpretations_.
 Sometimes poetic, sometimes technical, always honest.
 
-You can explore the full archive of link:/riddle-me-this/categories/reflections/[Reflections].
+You can explore the full archive of *{reflections}*.
 
 == Curated List of Reflections:
 
