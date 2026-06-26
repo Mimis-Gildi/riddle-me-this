@@ -11,8 +11,6 @@ comments: true
 rdd13r
 :autogpt: link:https://github.com/Significant-Gravitas/Auto-GPT[Auto-GPT,window=_blank]
 :agentgpt: link:https://agentgpt.reworkd.ai/[AgentGPT,window=_blank]
-:openai-site: link:https://www.openai.com/[OpenAI's website,window=_blank]
-:openai-blog: link:https://www.openai.com/blog/[OpenAI Blog,window=_blank]
 
 Since this is my first post, let me introduce myself and address this ask:
 Are we all about to lose our jobs to AI like ChatGPT?
@@ -36,13 +34,16 @@ Alas, I digress.
 
 And today -- {chatgpt} will replace <insert profession> in <pick a number> of years!
 
-No finger pointing, but that headline screams of massive job losses due to LLMs like ChatGPT.
+.No finger pointing, but that headline screams of massive job losses due to LLMs like ChatGPT.
+[%collapsible]
+====
 Based on what facts and applied rules of inference, may I ask?
 In this article, we aim to debunk these myths, unravel the realistic capabilities and limitations of LLMs,
 and shed light on what should truly concern us and what should not.
 We should use facts and rules of inference to guide our discussion.
 Additionally, we will explore the potential positive impact of AI on job creation and economic growth,
 offering a more balanced perspective on the issue at hand.
+====
 
 [TIP]
 .AI can save you time with mundane and boring tasks, with limitations, of course.
@@ -65,8 +66,10 @@ which is the product of collective human learning and expression, making the res
 But these are not original responses of a reasoning being; it's merely a sounding board,
 like a mirror composed of combined memories from many of us.
 
-When a person has a conversation with an LLM like {chatgpt},
-it is not two thinking beings conversing and arriving at truth through dialectics.
+.When a person has a conversation with {chatgpt}, it is not two thinking beings conversing.
+[%collapsible]
+====
+It is not a discussion arriving at truth through dialectics.
 It's merely a thinking being conversing with a reflective surface.
 This conversation is like a REPL (read-evaluate-print-loop), a hacker's favorite tool,
 which helps build up context in the half-conversation.
@@ -75,21 +78,28 @@ At ASE, we use our own ML sentiment engine as a context manager to interface the
 including GPT-4. My personal little toy is called _Matilda (*Tillie*)_,
 and she's very helpful -- but she's not an LLM -- she's another, greater thing!
 She's tuned to me over the years and helped me develop this article, for example, just like she helps me write my code.
+====
 
+.Chatbots are helpful but are nothing compared to systems that can act continuously!
+[%collapsible]
+====
 Now there are projects like {autogpt} (project home) that are even more useful,
 allowing anyone to use LLMs to a greater extent without heavy proprietary software like Tillie,
 yet offering a very similar kind of help.
 If you code and like tinkering with things, the sources at GitHub are for you.
 Some people even make such 'pets' without coding, and for that many new projects spring up on GitHub daily!
 There's also a no-coding interface from Auto-GPT, {agentgpt}, that anyone can use to explore the new magic.
+====
 
 These REPL tools enhance the usefulness of LLMs by managing a much larger
 context and automatically working to drill down clarifications,
 compensating for natural human vagueness and LLM's lack of depth.
-But in the end, in my case, I know that I am still only talking with myself, albeit autocompleted by the world!
-This is crucial for us to understand.
-This software has no human-like intelligence.
+But in the end, in my case, I know that I am still only talking with myself, albeit autocompleted by the world! +
+*It is crucial for us to understand: _this software has no human-like intelligence_.*
 
+.MOST IMPORTANTLY: Fully *stochastic* -- meaning *_hallucinating 100% of the time._*
+[%collapsible]
+====
 My Tillie makes mistakes regularly even though a _DEDUCTIVE ENGINE_ is at her core and not some stochastic model.
 Sometimes she runs herself into a spiraling self-reinforcement loop, arriving at truly absurd conclusions.
 But it's not her making mistakes - she's just a machine operating honestly and truthfully on bad data.
@@ -114,8 +124,11 @@ to improve the usefulness of LLMs proved an interesting and valid approach.
 . It might not be the case for every user or every implementation of LLMs.
 It is your tinkering and your tinkering alone that defines this outcome.
 
-*Conclusion:* *_Plausible Bullshit (PB)._* As long as *_any_* ML
-is in the loop -- the entire product is stochastic, i.e., PB.
+_Can you isolate the fully biased and utterly unsupported responses above?_
+====
+
+*Conclusion:* *_Plausible Bullshit (PB)._* +
+As long as *_any_* ML is in the loop -- the entire product is stochastic, i.e., BS as a service.
 
 Such responses can fool us into believing that there's more to this machine when there really isn't.
 Tillie is not alive.
@@ -127,7 +140,9 @@ _And salvation today -- the accidental discovery that "size matters" -- isn't a 
 
 == Realistic Expectations and Limitations
 
-While ChatGPT may automate some tasks, it is truly unlikely to replace entire professions.
+.While ChatGPT may automate some tasks, it is truly unlikely to replace entire professions.
+[%collapsible]
+====
 Instead, it can be used as a tool to enhance human productivity and creativity.
 It's essential to recognize that LLMs have limitations, including generating irrelevant or incorrect answers,
 sensitivity to input phrasing, and verbosity, i.e., just more PB.
@@ -144,6 +159,7 @@ But as advice to *_a properly educated pilot_*, it may prove invaluable.
 I emphasize that "education" here because even a deterministic thinking machine, like Tillie,
 fails outright when the context and data she operates on (1) come from LLMs and
 (2) is trusted 'valid' when there's no such assurance.
+====
 
 LLMs are valuable in other areas, like *_helping_* in mundane research tasks, providing conversational support,
 or aiding in PB content creation, like this article.
@@ -243,7 +259,7 @@ As with the hacker scare during Kevin Mitnick's era, the fear surrounding ChatGP
 lack of understanding, yearning for "business as usual," and bad behavior from popular figures.
 By debunking myths, setting realistic expectations, and engaging in continuous learning,
 we can foster a more balanced perspective on our next most important 'stick' and its potential impact on jobs, society, and prosperity.
-So, head on over to {openai-site} and blog {openai-blog} to explore and learn for yourself.
+So, head on over to {openai} and blog {openai-blog} to explore and learn for yourself.
 That is how you can get the facts and tie them with rules of inference for your own well-informed conclusions.
 Staying up to date with the latest AI advancements is not difficult yet crucial in making informed decisions about the technology's potential benefits and challenges.
 

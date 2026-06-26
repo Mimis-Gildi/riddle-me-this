@@ -7,17 +7,11 @@ header:
 :page-layout: single
 :page-permalink: /maintainer/
 :page-author_profile: true
-:release: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v13.1.0[v13.1.0,window=_blank]
-:resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v13.1.0/VadimKuhay-Resume.pdf[Vadim Kuhay Résumé,window=_blank]
-:profile-li: https://www.linkedin.com/in/rdd13r[LinkedIn Profile,window=_blank]
-:profile-gh: https://github.com/rdd13r[GitHub Profile,window=_blank]
-:publications-mm: https://medium.com/@rdd13r[Medium Articles,window=_blank]
-:publications-li: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257/[Newsletter: Behind the Scenes at ASE (LinkedIn),window=_blank]
 :categorized: link:/riddle-me-this/categories/[all post categories,window=_blank]
 
-This site is maintained by Vadim Kuhay  --  known in hacker circles as `rdd13r`  --  a lifelong builder, systems coach, and creative engineer.
+This site is maintained by Vadim Kuhay (`rdd13r`)  --  lifelong builder, coach, and creative engineer.
 
-Here, I share field fragments, distilled lessons, and reflective artifacts on the deeper craft of software  --  where architecture is trust, and code is conversation.
+Software craft fragments, lessons, and artifacts: architecture is trust; code is conversation.
 
 If you came here looking for something formal, here are some useful links:
 
@@ -30,10 +24,9 @@ If you came here looking for something formal, here are some useful links:
 
 Public Profile::
 * {profile-li} -- people say I must have this...
-* {profile-gh} -- here I spend a lot of time between my own orgs and other founders' products;
+* {rdd13r-gh} -- here I spend a lot of time between my own orgs and other founders' products;
 
 Publications::
-* {publications-mm} -- I used to write on Medium;
 * {publications-li} -- A newsletter sporadically maintained;
 * Please visit {categorized} for valuable and candid content I don't publish anywhere else.
 
@@ -41,21 +34,3 @@ Publications::
 The Scene::
 I go by `rdd13r` as the primary key for the likes of LinkedIn, Reddit, Slack, IRC, Signal, and Telegram; +
 My Discord handle is `riddler9297`; And `riddler` for Briar or @ghost blockchain protocol channels.
-
-== Completed Migration:
-
-I've completed migrating over a hundred articles from other platforms at v3.0.0. +
-And I've learned much from that experience. +
-What we have here now is a small collection of curated stories most relevant to all of us.
-
-== Colophon
-
-This site was handcrafted with:
-
-* Jekyll
-* Minimal Mistakes theme
-* AsciiDoc + Markdown
-* a bit of Makefile glue
-* the discipline of test-first writing
-Thank you for visiting  --  and reading. +
-May your own reflections begin soon.

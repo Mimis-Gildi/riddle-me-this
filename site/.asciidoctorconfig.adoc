@@ -3,10 +3,18 @@
 // JetBrains plugin reads this; Jekyll does not.
 // Jekyll reads `_config.yml`; the plugin does not.
 
-:site-baseurl: /riddle-me-this
 :cb-hacker: http://www.catb.org/jargon/html/H/hacker.html[hacker,window=_blank]
 :cb-mundane: http://www.catb.org/jargon/html/M/mundane.html[mundane,window=_blank]
-:hera-school: https://gervi-hera-vitr.github.io/sindri-labs/[Héra Academy Laboratory,window=_blank,opts=nofollow]
-:hera-school-url: https://gervi-hera-vitr.github.io/sindri-labs/
-:rdd13r-gh: https://github.com/rdd13r[rdd13r,window=_blank]
 :chatgpt: https://chat.openai.com/[ChatGPT,window=_blank]
+:hera-school-url: https://gervi-hera-vitr.github.io/sindri-labs/
+:hera-school: https://gervi-hera-vitr.github.io/sindri-labs/[Héra Academy Laboratory,window=_blank,opts=nofollow]
+:mailto-rIdd13r: mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let%20us%20compete%3F[rIdd13r@pm.me]
+:openai-blog: https://www.openai.com/blog/[OpenAI Blog,window=_blank]
+:openai: https://www.openai.com/[OpenAI website,window=_blank]
+:profile-li: https://www.linkedin.com/in/rdd13r[LinkedIn Profile,window=_blank]
+:publications-li: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257/[Newsletter: Behind the Scenes at ASE (LinkedIn),window=_blank]
+:rdd13r-gh: https://github.com/rdd13r[rdd13r,window=_blank]
+:release: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v13.1.0[v13.1.0,window=_blank]
+:resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v13.1.0/VadimKuhay-Resume.pdf
+:site-baseurl: /riddle-me-this
+:total-recall: https://mimis-gildi.github.io/mcp-total-recall/[MCP Total Recall,window=_blank]

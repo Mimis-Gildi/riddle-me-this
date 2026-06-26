@@ -7,18 +7,14 @@ comments: true
 ---
 = The Bright Era Dawns: AI, Moore's law, and Beyond
 rdd13r
-:mm-newsletter: R!dd13r
-:pub-mm: as published on Medium by {mm-newsletter}
-:mm-current-article: The Bright Era Dawns: AI, Moore’s Law, and Beyond
-:ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
-:prior-article: link:/riddle-me-this/reflections/populism/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A 'Doze' of Reality]
+:prior-article: link:/{site-baseurl}/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A 'Doze' of Reality]
 :ff-prior-article: footnote:prior[{prior-article}]
 
 :alt-head-in-the-sand: Head in the Sand -- The general public pretends that there is nothing happening; nothing to impact their lives negatively; nothing to uproot "business as usual"
 :alt-just-buy-a-tool: No need to learn, just buy a bigger tool -- When sentiment engine is asked to evaluate the scared complacent public it thinks people will look for a bigger hammer to buy
 :alt-how-competent-is-the-cog: How skilled is the developer -- A sentiment tool analyzing technology adoption of to one thousand American companies concludes the developer is inherently incompetent
 
-:ycombinator-news: link:https://news.ycombinator.com/item?id=26824415[Y Combinator,window=_blank]
+:y-combinator-news: link:https://news.ycombinator.com/item?id=26824415[Y Combinator,window=_blank]
 :artnet-idiot: link:https://www.artnet.com/artists/don-maitz/the-idiot-x1Vi3F6S7g3JIJEwcPT3jw2[The Idiot - Don Maitz,window=_blank]
 :asei-systems: link:https://www.asei.systems/[ASE Inc.,window=_blank]
 :autogpt-github: link:https://github.com/Significant-Gravitas/Auto-GPT[Auto-GPT,window=_blank]
@@ -28,7 +24,7 @@ Yet, the real, profound change causing such sensations often goes unnoticed: we'
 This risk was the real trigger leading to LLMs debut.
 
 .Public Reaction to ML Evolution
-[#img-laggard,link={ycombinator-news}]
+[#img-laggard,link={y-combinator-news}]
 image::/riddle-me-this/assets/images/reaction-to-ChatGPT.jpg[{alt-head-in-the-sand},800]
 
 (Licensed Reproduction)
@@ -171,7 +167,3 @@ _I am not affiliated with the project above._
 
 Give augmentation tools a try.
 See what it can do for you.
-
-'''
-
-_See editorial on Medium {ff-mm-current-article}_.

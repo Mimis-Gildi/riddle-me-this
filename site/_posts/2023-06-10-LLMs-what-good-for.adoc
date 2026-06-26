@@ -8,11 +8,6 @@ comments: true
 ---
 = AI in 2024: The Future is ...
 rdd13r
-:mm-newsletter: R!dd13r
-:pub-mm: as published on Medium by {mm-newsletter}
-:mm-current-article: AI in 2024: The Future is …?
-:ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
-
 :jarvis: https://www.entrepreneur.com/author/paul-jarvis[Paul Jarvis,window=_blank]
 :nomads: https://en.wikipedia.org/wiki/Digital_nomad[Digital Nomads,window=_blank]
 :demogroup: http://catb.org/jargon/html/D/demogroup.html["demogroup",window=_blank]
@@ -541,7 +536,3 @@ I found their points compelling, though I still hold that integration can begin 
 You may ask to join on Discord at `AlGothAmaIgaNotions` community, where the original fistfight took place,
 and take part in any future bleeding-edge discussions.
 Ask to friend `riddler9297` for an invite.
-
-'''
-
-_See editorial on Medium {ff-mm-current-article}_.
