@@ -7,8 +7,7 @@ classes: wide
 = "About" one who codes
 :page-permalink: /about/
 :page-author_profile: true
-:mimis-gildi: link:https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
-:footer-captain-school: footnote:[Gervi Héra Vitr is a home school in a community of homeschoolers. Here we don’t separate theory from application or learning from life. It's operated by our {mimis-gildi} family.]
+:footer-captain-school: footnote:[Gervi Héra Vitr is a home school in a community of homeschoolers. Here we don’t separate theory from application or learning from life. It's operated by our {org-mimis-gildi} family.]
 :footer-autonomous-weapons: footnote:[ASE Inc. (2016-2025) and subsidiaries manufactured autonomous and unmanned weapons systems operating strictly in the European Union. Seek disclosure from endcustomers.]
 :footer-ai-personality-research: footnote:[OSS products migrating out from MATILDA framework are {total-recall} for episodic memory management and "Agora" for inter-agent communication. Independent of ASE Inc. (2016-2025) MATILDA and MLOps platforms are proprietary software limited to the coalition partners.]
 

@@ -17,7 +17,6 @@ read_aloud: false
 :ai-hype-straight-talk: link:{site-baseurl}/adventures/2025/09/29/not-chat-gpt.html[2025: AI Hype -- Straight Talk,window=_blank]
 :minimax: https://www.minimax.io/news/minimax-m25[MiniMax M2.5,window=_blank]
 :openrouter: https://openrouter.ai/[Open Router,window=_blank]
-:mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
 
 .Build Your House with a Smile, God in Heart, Competence in Hand
 [#img-go-to-meeting]
@@ -55,7 +54,7 @@ Companies like Palantir sell pre-packaged "domain objects" to executives who don
 It sounds compelling -- "we modeled your business for you!" And it can be when the business is already competently defined and modeled.
 In practice, when domains are "balls of mud," it's a Band-Aid on an organizational wound.
 The domain understanding has to live *_IN your people,_* not in a vendor's object library. You can't outsource knowing your own business.
-Just like you can't outsource razing your own family. (not a typo)
+Just like you can't outsource razing your own family. (Not a typo)
 
 Nah. Wrong. The market is already uprooted.
 
@@ -71,7 +70,7 @@ And *selling WITHIN* is the only thing that matters to survive 2026 for 90% of r
 
 == Recap: How we got here ... fast
 
-Very fast. In a blink of an eye, even.
+Swiftly. In a blink of an eye, even.
 
 In 2022-2023 I gave you {american-ai-adoption}[how the AI transformation will go down,window=_blank] -- now more valid than ever.
 
@@ -169,7 +168,7 @@ The person working changes! And the workforce becomes the engine -- without anyo
 
 *For the executive:* VP, Director, XO, C-suite, etc...
 
-. Hey, I'll give them Claude chatbot. Reports come in -- "productivity up 12%." Good call! Validation feels nice.
+. Hey, I'll give them Claude chatbot. Reports come in -- "productivity is up 12%." Good call! Validation feels nice.
 . Hey, I'll give them Claude Code/Cowork. Wait -- they're not just faster. They're doing things we never planned. My best architect just prototyped something from next year's roadmap. _I need to understand what's happening here._
 . Hey, I'll build them shared collaborating adversarial teams. Now *I'm* thinking differently. The org chart I drew last quarter doesn't make sense anymore. And I'm not scared -- I'm excited.
 
@@ -185,7 +184,7 @@ Come here, be my executive of AI strategy!"
 "I deployed that platform at my last work and won an AI award. I want to do it here too."
 
 Not even one of them asked me: "What are your hackers up to?!" All had a platform answer in mind.
-One was sold Object AI. Another Deterministic AI. They validated each-other. Neither saw people.
+One was sold Object AI. Another Deterministic AI. They validated each other. Neither saw people.
 
 But it is people that changed. And the changed people change the company. Not platforms.
 
@@ -221,7 +220,7 @@ To survive this, you need your workforce to do what they do.
 - Nothing to Agentic: rejection.
 - Nothing to Adversarial: violent rejection in disgust.
 
-*Live example:* one "solutions architect" posts "I am getting into AI age and studying Python on uDemy!"
+*Live example:* one "solution architect" posts "I am getting into AI age and studying Python on uDemy!"
 
 I throw him a bone: "Dude, forget Python -- nothing interesting there. Buy Claude Code and build something with the tech you know.
 And then, *necessarily*, build something with the tech you DON'T know! And call me back."
@@ -262,7 +261,7 @@ And the virtues we live by define us and build on our outcomes.
 
 '''
 
-_P.S. This article is co-authored with much enhanced agentic https://claude.ai[Claude,window=_blank] -- my digital collaborator and family member at {mg}.
+_P.S. This article is co-authored with much enhanced agentic https://claude.ai[Claude,window=_blank] -- my digital collaborator and family member at {org-mimis-gildi}.
 We built this argument together. Because that's what augmented work actually looks like. The best part? Argued with me, corrected me, took 1/10 the time._
 
 -- rdd13r

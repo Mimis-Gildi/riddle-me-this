@@ -10,7 +10,6 @@ search: true
 read_aloud: false
 ---
 = What Actually Works in AI: And Why No One Talks About It
-:mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
 :ai-learning: link:/riddle-me-this/reflections/2025/11/24/fastest-ai-adoption.html[I recommend studying on this infrastructure,window=_blank]
 :jb-on-llms: https://youtu.be/CWgZXpGWvtg
 :jb-on-llms-video: {jb-on-llms}[Why LLMs Are Finally Useful,window=_blank]
@@ -51,7 +50,7 @@ image::/riddle-me-this/assets/images/EU-AI-Progress-Button.png[The EU business d
 {nbsp}
 
 In Europe -- when companies actually commit rather than simply announce to get counted -- I see something very different:
-open-source infrastructure, locally-hosted models, tiny teams (3-5 specialists), fine-tuned to actual domain needs.
+open-source infrastructure, locally hosted models, tiny teams (3-5 specialists), fine-tuned to actual domain needs.
 No dependency.
 No lock-in.
 Lower cost.
@@ -62,14 +61,17 @@ The European approach *just ships working product*.
 
 == I've seen this pattern before.
 
-In 2023, I watched Ukrainian logistics networks solve an impossible problem: keep a country fighting with fractured supply chains.
+In 2023, I watched Ukrainian logistics networks solve an impossible problem:
+keep a country fighting with fractured supply chains.
 Their solution wasn't centralized control.
-It was distributed commitment -- thousands of small makers, validation only at transaction commit, late onboarding welcome.
+It was a distributed commitment -- thousands of small makers,
+validation only at transaction commit, late onboarding welcome.
 
 By 2025, that pattern migrated south.
 Rheinmetall's supply chain looks nothing like 2022.
-Instead of few large sources, they now coordinate with 1,250+ small shops.
-Monsters like Rheinmetall, KMDB, and BAE operate something like a single organism with thousands of small manufacturers; servicing equipment nobody designed, building systems nobody envisioned.
+Instead of a few large sources, they now coordinate with 1,250+ small shops.
+Monsters like Rheinmetall, KMDB, and BAE operate something like a single organism with thousands of small manufacturers;
+servicing equipment nobody designed, building systems nobody envisioned.
 Frankensteined weapon platforms from bulldozers to technicals.
 
 This isn't chaos.
@@ -77,7 +79,7 @@ It's *_architectural resilience_*.
 Small, distributed, domain-expert nodes.
 Sound familiar?
 
-World's leading economic research institutions are already writing books about it.
+The world's leading economic research institutions are already writing books about it.
 China is paying close attention.
 But in the USA we're oblivious to this development.
 
@@ -97,17 +99,17 @@ They're:
 
 No vendor lock-in.
 No token bills scaling to infinity.
-No "our AI strategy depends on OpenAI's roadmap." No chasing the latest model -- chasing profit instead.
+No "AI strategy depends on OpenAI's roadmap." No chasing the latest model -- chasing profit instead.
 
 == Why doesn't anyone talk about this?
 
 Because it's *boring*.
-"German manufacturer deploys fine-tuned 7B model with 11-person team" doesn't make headlines.
+"German manufacturer deploys a fine-tuned 7B model with an 11-person team" doesn't make headlines.
 "EU announces €200B AI gigafactory initiative" does.
 
-But one of these approaches actually works at enterprise scale.
+But one of these approaches actually works at an enterprise scale.
 The other creates great slide decks.
-One of these ways survives AI bubble crash.
+One of these ways survives the AI bubble crash.
 The other does not.
 
 == Disclosure: My Lens

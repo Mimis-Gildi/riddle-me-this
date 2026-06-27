@@ -1,0 +1,14 @@
+[project]
+name = "blog"
+version = "0.1.0"
+description = "As dull of a project definition manifest as the fine Python Engineering Community dunders wisdom."
+readme = "README.adoc"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv]
+managed = false
+
+[tool.pytest.ini_options]
+pythonpath = ["src/main/python"]
+testpaths  = ["src/test/python"]

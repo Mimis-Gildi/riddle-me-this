@@ -11,7 +11,6 @@ header:
 :page-author_profile: true
 :page-classes: wide
 
-:link-mimis-gildi: link:https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
 :link-mimis-scala: link:https://github.com/Mimis-Scala[Mímis Scala,window=_blank]
 :link-mimis-latlaeg: link:https://github.com/Mimis-Latlaeg-Hattalag[Mímis Látlæg Háttalag,window=_blank]
 :link-gervi-hera: link:https://github.com/Gervi-Hera-Vitr[Gervi Héra Vitr,window=_blank]
@@ -21,7 +20,7 @@ header:
 
 Our GitHub communities are more than repositories -- they're living ecosystems where mentorship, experimentation, and shared learning thrive.
 
-== image:https://avatars.githubusercontent.com/u/180729211?v=4&s=32[Mímis Gildi,36,36] {link-mimis-gildi}.
+== image:https://avatars.githubusercontent.com/u/180729211?v=4&s=32[Mímis Gildi,36,36] {org-mimis-gildi}.
 
 Inner community that serves as our central hub for personal projects, management tools, and hidden artifacts.
 It's the backbone of our collaborative efforts and the home of this very site.

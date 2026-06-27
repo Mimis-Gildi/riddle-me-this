@@ -17,7 +17,7 @@ What it does:
 Exit code: 0 = clean, 1 = violations found, 2 = could not run (server/config).
 
 Run with the local Jekyll server up (see _config.yml `port`):
-    python src/test/python/test-hardcoded-self-links.py
+    python src/test/python/test_hardcoded_self_links.py
 """
 
 import re

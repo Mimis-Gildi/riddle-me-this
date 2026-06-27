@@ -10,7 +10,6 @@ search: false
 read_aloud: false
 ---
 = Happy Halloween. Here's your treat: 70/20/10
-:mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
 :ai-hype-2025: link:/riddle-me-this/adventures/2025/09/29/not-chat-gpt.html[AI Hype -- Straight Talk,window=_blank]
 :ai-hype-2025-refs: link:/riddle-me-this/research/2025/09/29/sources-passed-validation.html[Enterprise AI Adoption: Reference List by Credibility,window=_blank]
 
