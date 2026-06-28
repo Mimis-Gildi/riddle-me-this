@@ -2,35 +2,171 @@
 
 from __future__ import annotations
 
+import functools
 import subprocess
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
+from typing import Self
+
+from functional import seq
+
+from .attributes import Attribute, AttributeProvider
 
 
-@dataclass(frozen=True)
+def call_only_once(func):
+    attr_name = "_called_funcs"
+
+    def called_funcs_of_instance(instance) -> set:
+        called_funcs = getattr(instance, attr_name, set())
+        if not called_funcs:
+            setattr(instance, attr_name, called_funcs)
+        return called_funcs
+
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        self = args[0]
+        called_funcs = called_funcs_of_instance(self)
+        if func in called_funcs:
+            raise RuntimeError("This operation can only be invoked once.")
+        called_funcs.add(func)
+        return func(*args, **kwargs)
+    return wrapper
+
+@dataclass()
 class Article:
     """Immutable snapshot of an article: its path, its text, and integrity anchors."""
 
     path: Path
+    _text: str = field(init=False)
+
+    _file_checksum: str = field(init=False)
+    _content_length: int = field(init=False)
+
+    _links_attribute_provider_global:  AttributeProvider = field(init=False)
+    _links_global:  tuple[Attribute, ...] = field(init=False)
+
+
+    @property
+    def text(self):
+        return self._text
+
+    @text.setter
+    @call_only_once
+    def text(self, first_text):
+        self._text = first_text
+
+    @text.deleter
+    def text(self):
+        raise ValueError("This 'text' value cannot be delete.")
+
+    @property
+    def file_checksum(self):
+        return self._file_checksum
+
+    @file_checksum.setter
+    @call_only_once
+    def file_checksum(self, os_provided_sum):
+        self._file_checksum = os_provided_sum
+
+    @file_checksum.deleter
+    def file_checksum(self):
+        raise ValueError("This 'file_checksum' cannot be deleted.")
+
+    @property
+    def content_length(self):
+        return self._content_length
+
+    @content_length.setter
+    @call_only_once
+    def content_length(self, initial_length):
+        self._content_length = initial_length
+
+    @content_length.deleter
+    def content_length(self):
+        raise ValueError("This 'content_length' cannot be deleted.")
+
+    @property
+    def links_provider_global(self):
+        return self._links_attribute_provider_global
+
+    @links_provider_global.setter
+    @call_only_once
+    def links_provider_global(self, provider: AttributeProvider):
+        """Accept the Global Attributes Provider and store it -- it is called later (deferred), not now."""
+        self._links_attribute_provider_global = provider
+
+    @links_provider_global.deleter
+    def links_provider_global(self):
+        raise ValueError("This 'links_provider_global' cannot be deleted.")
+
+    @property
+    def links_global(self):
+        return self._links_global
+
+    @links_global.setter
+    @call_only_once
+    def links_global(self, links):
+        """Accept the Global Links and store it -- it is called later (deferred), not now."""
+        self._links_global = links
+
+    @links_global.deleter
+    def links_global(self):
+        raise ValueError("This 'links_global' cannot be deleted.")
+
 
     def __post_init__(self) -> None:
         if self.path.suffix != ".adoc":
             raise ValueError(f"not an AsciiDoc file: {self.path}")
 
-        text = self.path.read_text(encoding="utf-8")
-        object.__setattr__(self, "_Article__text", text)
+        self.text = self.path.read_text(encoding="utf-8")
+        self.file_checksum = _shasum(self.path)
+        self.content_length = len(self.text)
 
-        object.__setattr__(self, "_Article__content_length", len(text))
-        object.__setattr__(self, "_Article__file_checksum", _shasum(self.path))
+    def accept_global_link_attributes(self, provider: AttributeProvider) -> Self:
+        """Accept the Global Attributes Provider and store it -- it is called later (deferred), not now."""
+        self.links_provider_global = provider
+        return self
 
-    @property
-    def file_checksum(self) -> str:
-        return self.__file_checksum
+    def accept_already_defined_attributes(self, provider: AttributeProvider) -> Self:
+        """Accept the File Attributes Provider and store it -- it is called later (deferred), not now."""
+        object.__setattr__(self, "_Article__already_defined_attribute_provider", provider)
+        return self
 
-    @property
-    def content_length(self) -> int:
-        return self.__content_length
+    def accept_body_attributes(self, provider: AttributeProvider) -> Self:
+        """Accept the Body Used Attributes Provider and store it -- it is called later (deferred), not now."""
+        object.__setattr__(self, "_Article__body_attribute_provider", provider)
+        return self
 
+    def accept_body_links_discoverer(self, provider: AttributeProvider) -> Self:
+        """Accept the Body Links Discoverer and store it -- it is called later (deferred), not now."""
+        object.__setattr__(self, "_Article__body_links_discoverer", provider)
+        return self
+
+    def apply_global_links(self) -> Self:
+        """Acquaire global links."""
+        global_links_provider = tuple(self.link_attribute_provider_global())
+        object.__setattr__(self, "_Article__global_links", global_links_provider)
+        return self
+
+    def apply_documeny_links(self) -> Self:
+        """Read document link attributes."""
+
+        return self
+
+    def discover_body_applied_links(self) -> Self:
+        """Claculate which link attributes are already used in the body."""
+
+        return self
+
+    def discover_body_raw_links(self) -> Self:
+        """Extract all the links in the body not parametrized."""
+
+        return self
+
+    def print_global_links(self) -> Self:
+        """Print global links sideffect function."""
+        seq(self.links_global).for_each(print)
+        return self
 
 def _shasum(path: Path) -> str:
     result = subprocess.run(

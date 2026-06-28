@@ -9,6 +9,7 @@ dependencies = []
 [tool.uv]
 managed = false
 
-[tool.pytest.ini_options]
+[tool.pytest]
 pythonpath = ["src/main/python"]
 testpaths  = ["src/test/python"]
+addopts = ["-rA", "-q"]
