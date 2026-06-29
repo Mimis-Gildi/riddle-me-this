@@ -19,7 +19,8 @@ class Attribute:
         return cls(*triple)
 
     def to_tuple(self) -> tuple[str, str, int]:
-        return (self.key, self.value, self.position)
+        return self.key, self.value, self.position
 
 
 AttributeProvider = Callable[[], Iterable[Attribute]]
+AttributeFilterProvider = Callable[[tuple[str, str, int]], bool]

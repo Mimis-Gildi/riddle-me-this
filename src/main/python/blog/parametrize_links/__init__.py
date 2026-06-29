@@ -7,7 +7,7 @@ from pathlib import Path
 
 import yaml
 
-from blog.parametrize_links.attribute_providers import global_link_attributes
+from blog.parametrize_links.attribute_providers import global_link_attribute_collecting_provider
 
 from .article import Article
 

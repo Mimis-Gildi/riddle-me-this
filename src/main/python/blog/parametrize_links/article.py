@@ -122,49 +122,35 @@ class Article:
         self.file_checksum = _shasum(self.path)
         self.content_length = len(self.text)
 
-    def accept_global_link_attributes(self, provider: AttributeProvider) -> Self:
-        """Accept the Global Attributes Provider and store it -- it is called later (deferred), not now."""
+    def accept_global_link_attribute_provider(self, provider: AttributeProvider) -> Self:
+        """Accept the Global Link Attributes Provider and store it -- it is called later (deferred), not now."""
         self.links_provider_global = provider
         return self
 
-    def accept_already_defined_attributes(self, provider: AttributeProvider) -> Self:
-        """Accept the File Attributes Provider and store it -- it is called later (deferred), not now."""
-        object.__setattr__(self, "_Article__already_defined_attribute_provider", provider)
+    def accept_header_defined_attribute_provider(self, provider: AttributeProvider) -> Self:
+        """Accept the File Header Link Attributes Provider and store it -- it is called later (deferred), not now."""
         return self
 
-    def accept_body_attributes(self, provider: AttributeProvider) -> Self:
-        """Accept the Body Used Attributes Provider and store it -- it is called later (deferred), not now."""
-        object.__setattr__(self, "_Article__body_attribute_provider", provider)
+    def accept_body_discovery_attribute_provider(self, provider: AttributeProvider) -> Self:
+        """Accept the Body Link Discovery Attributes Provider and store it -- it is called later (deferred), not now."""
         return self
 
-    def accept_body_links_discoverer(self, provider: AttributeProvider) -> Self:
-        """Accept the Body Links Discoverer and store it -- it is called later (deferred), not now."""
-        object.__setattr__(self, "_Article__body_links_discoverer", provider)
+    def apply_global_links_acquisition(self) -> Self:
+        """Acquire global links by calling the deferred global provider."""
+        self.links_global = tuple(self.links_provider_global())
         return self
 
-    def apply_global_links(self) -> Self:
-        """Acquaire global links."""
-        global_links_provider = tuple(self.link_attribute_provider_global())
-        object.__setattr__(self, "_Article__global_links", global_links_provider)
+    def apply_header_links_acquisition(self) -> Self:
+        """Acquire file header defined links by calling the deferred header links provider."""
         return self
 
-    def apply_documeny_links(self) -> Self:
-        """Read document link attributes."""
-
-        return self
-
-    def discover_body_applied_links(self) -> Self:
-        """Claculate which link attributes are already used in the body."""
-
-        return self
-
-    def discover_body_raw_links(self) -> Self:
-        """Extract all the links in the body not parametrized."""
+    def apply_document_body_links_acquisition(self) -> Self:
+        """Acquire all the links used inside document body with and without attributes."""
 
         return self
 
     def print_global_links(self) -> Self:
-        """Print global links sideffect function."""
+        """Print global links, a sideeffect introspective function."""
         seq(self.links_global).for_each(print)
         return self
 

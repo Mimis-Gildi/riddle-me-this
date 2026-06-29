@@ -3,7 +3,7 @@
 import pytest
 
 from blog.parametrize_links.article import Article
-from blog.parametrize_links.attribute_providers import GLOBAL_POSITION, global_link_attributes
+from blog.parametrize_links.attribute_providers import GLOBAL_POSITION, global_link_attribute_collecting_provider
 
 
 class TestArticleInvocation:
@@ -76,18 +76,28 @@ class TestArticleObject:
 
 
     def test_global_attributes_mocked(self):
-        """accept stores the provider as-is (deferred), returns self, and is write-once, reduce provider, validate content."""
+        """Accept mocked provider, store the provider as-is (deferred), return self, and is write-once, reduce provider, validate content, and sideeffect print."""
 
-        mocked_article = Article(self.slop_article).accept_global_link_attributes(self.mocked_provider)
+        mocked_article = Article(self.slop_article).accept_global_link_attribute_provider(self.mocked_provider)
 
         assert mocked_article.links_provider_global is self.mocked_provider
 
         with pytest.raises(RuntimeError) as once_error:
-            mocked_article.accept_global_link_attributes(self.mocked_provider)
+            mocked_article.accept_global_link_attribute_provider(self.mocked_provider)
         assert "This operation can only be invoked once." in str(once_error.value)
 
+        mocked_global_links_applied_article = mocked_article.apply_global_links_acquisition()
+        assert mocked_global_links_applied_article.links_provider_global == self.mocked_provider
+
+        mocked_global_links = mocked_global_links_applied_article.links_global
+        assert all(link in mocked_global_links for link in self.mocked_provider())
+
+        mocked_global_links_applied_article.print_global_links()
+
+
     def test_global_attributes_actual(self):
-        self.fail()
+        """Accept REAL provider, store the provider as-is (deferred), returns self, and is write-once, reduce provider, validate content, and sideeffect print."""
+        print("ToDo")
 
 
 # def test_accept_global_link_attributes(self):
