@@ -2,8 +2,13 @@
 
 import pytest
 
+from functional import seq
+
+from blog.parametrize_links import CONF_FILE
 from blog.parametrize_links.article import Article
-from blog.parametrize_links.attribute_providers import GLOBAL_POSITION, global_link_attribute_collecting_provider
+from blog.parametrize_links.article_attribute_providers import read_declared_link_attributes_provider
+from blog.parametrize_links.attribute_providers import GLOBAL_POSITION, global_link_attribute_collecting_provider, \
+    static_links_provider, config_links_provider, filter_provider
 
 
 class TestArticleInvocation:
@@ -41,6 +46,7 @@ class TestArticleInvocation:
         assert article.path == slop_article
 
 class TestArticleObject:
+    """Test basic behavior of Article object including text initiation and global configuration load."""
 
     @pytest.fixture(autouse=True)
     def _slop(self, slop_article):
@@ -97,8 +103,42 @@ class TestArticleObject:
 
     def test_global_attributes_actual(self):
         """Accept REAL provider, store the provider as-is (deferred), returns self, and is write-once, reduce provider, validate content, and sideeffect print."""
-        print("ToDo")
+        real_provider = global_link_attribute_collecting_provider(
+            static_links_provider(),
+            config_links_provider(CONF_FILE),
+            filter_provider())
+
+        actual_article = (Article(self.slop_article)
+            .accept_global_link_attribute_provider(real_provider)
+            .apply_global_links_acquisition()
+            .print_global_links())
+
+        assert {"site-baseurl", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
+                "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "publications-li",
+                "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi"} == (
+            seq(actual_article.links_global).map(lambda attr: attr.key).to_set())
 
 
-# def test_accept_global_link_attributes(self):
-#     self.fail()
+class TestArticleContentReadingObject:
+    """Test advanced behavior of article by reading global configuration and article content."""
+
+    def test_read_article_header_link_attributes(self, full_article):
+        """Read full article having global configuration and article header content."""
+        article = Article(full_article)
+        actual = (article
+            .accept_global_link_attribute_provider(global_link_attribute_collecting_provider(
+                static_links_provider(), config_links_provider(CONF_FILE), filter_provider()))
+            .accept_header_defined_attribute_provider(read_declared_link_attributes_provider(article))
+            .apply_global_links_acquisition()
+            .apply_header_links_acquisition()
+            .print_global_links()
+            .print_declared_links())
+
+        assert 40 == seq(actual.links_declared).len()
+        assert {"jarvis", "nomads", "demogroup", "anonymous", "cliques", "scene", "culture", "mit",
+                "lugaru", "tales", "spaces", "brakha", "carpathia", "dolly-2", "hfce", "crackers",
+                "active-inference", "verses", "g-io", "g-community", "g-ai-onboarding", "g-dev-profile",
+                "g-k-models", "g-dtensor", "g-io-session", "g-palm2-api", "g-maker-suite", "g-tensorflow",
+                "g-research", "g-kaggle", "g-attn", "m-llama", "s-alpaca", "bsd-vicuna", "bsd-vicuna-topics",
+                "db-dolly", "db-dolly-hf", "open-assistant", "o-a-hf", "all-oss-lm-models"} == (
+            seq(actual.links_declared).map(lambda attr: attr.key).to_set())
