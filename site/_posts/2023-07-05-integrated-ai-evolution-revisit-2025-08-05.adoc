@@ -11,7 +11,6 @@ published: false
 rdd13r
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :img-prefix: /riddle-me-this/assets/images
 :corporate-ai-native: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html

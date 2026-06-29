@@ -6,7 +6,6 @@ comments: true
 classes: wide
 ---
 = Amazing LinkedIn: A Human Problem!
-:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :img-prefix: /riddle-me-this/assets/images
 

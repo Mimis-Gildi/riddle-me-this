@@ -151,7 +151,7 @@ asciidoctor:
     openai                  : 'https://www.openai.com/[OpenAI website,window=_blank]'
     openai-blog             : 'https://www.openai.com/blog/[OpenAI Blog,window=_blank]'
     profile-li              : 'https://www.linkedin.com/in/rdd13r[LinkedIn Profile,window=_blank]'
-    publications-li         : 'https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257/[Newsletter: Behind the Scenes at ASE (LinkedIn),window=_blank]'
+    li-newsletter           : 'https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]'
     rdd13r-gh               : 'https://github.com/rdd13r[rdd13r,window=_blank]'
     release                 : 'https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v13.1.0[v13.1.0,window=_blank]'
     resume                  : 'https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v13.1.0/VadimKuhay-Resume.pdf'

@@ -27,7 +27,7 @@ Public Profile::
 * {rdd13r-gh} -- here I spend a lot of time between my own orgs and other founders' products;
 
 Publications::
-* {publications-li} -- A newsletter sporadically maintained;
+* {li-newsletter} -- A newsletter sporadically maintained;
 * Please visit {categorized} for valuable and candid content I don't publish anywhere else.
 
 

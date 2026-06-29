@@ -8,7 +8,6 @@ comments: true
 ---
 = Google to MIT: Traditional Business Done For. Oh Really?! -- Straight Talk
 :img-prefix: /riddle-me-this/assets/images
-:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
