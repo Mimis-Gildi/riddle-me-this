@@ -3,7 +3,7 @@ import stat
 
 import pytest
 
-from blog.parametrize_links import SLOP_ARTICLE
+from blog.parametrize_links import SLOP_ARTICLE, FULL_ARTICLE
 from blog.parametrize_links.attributes import AttributeProvider, Attribute
 
 
@@ -14,6 +14,14 @@ def slop_article(tmp_path):
     shutil.copy(SLOP_ARTICLE, copy)
     copy.chmod(stat.S_IRUSR | stat.S_IRGRP | stat.S_IROTH)
     return copy
+
+@pytest.fixture
+def full_article(tmp_path):
+    """Copy a thick article into tmp, set read-only, and return it."""
+    full_copy = tmp_path / FULL_ARTICLE.name
+    shutil.copy(FULL_ARTICLE, full_copy)
+    full_copy.chmod(stat.S_IRUSR | stat.S_IRGRP | stat.S_IROTH)
+    return full_copy
 
 
 @pytest.fixture

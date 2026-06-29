@@ -20,6 +20,7 @@ SITE_ROOT = project_root / "site"
 CONF_FILE = SITE_ROOT / "_config.yml"
 POST_ROOT = SITE_ROOT / "_posts"
 SLOP_ARTICLE = POST_ROOT / "2025-09-29-sources-passed-validation.adoc"
+FULL_ARTICLE = POST_ROOT / "2023-06-10-LLMs-what-good-for.adoc"
 
 
 def main(filename: str) -> None:

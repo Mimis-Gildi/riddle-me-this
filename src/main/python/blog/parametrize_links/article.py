@@ -159,6 +159,7 @@ class Article:
 
     def accept_header_defined_attribute_provider(self, provider: AttributeProvider) -> Self:
         """Accept the File Header Link Attributes Provider and store it -- it is called later (deferred), not now."""
+        self.links_provider_declared = provider
         return self
 
     def accept_body_discovery_attribute_provider(self, provider: AttributeProvider) -> Self:
@@ -172,6 +173,7 @@ class Article:
 
     def apply_header_links_acquisition(self) -> Self:
         """Acquire file header defined links by calling the deferred header links provider."""
+        self.links_declared = tuple(self.links_provider_declared())
         return self
 
     def apply_document_body_links_acquisition(self) -> Self:
@@ -182,6 +184,11 @@ class Article:
     def print_global_links(self) -> Self:
         """Print global links, a sideeffect introspective function."""
         seq(self.links_global).for_each(print)
+        return self
+
+    def print_declared_links(self) -> Self:
+        """Print declared links, a sideeffect introspective function."""
+        seq(self.links_declared).for_each(print)
         return self
 
 def _shasum(path: Path) -> str:

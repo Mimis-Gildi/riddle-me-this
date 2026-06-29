@@ -24,7 +24,7 @@ rdd13r
 :dolly-2: https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm[Dolly 2 by Databricks,window=_blank]
 :hfce: https://huggingface.co/[Hugging Face,window=_blank]
 :crackers: http://www.catb.org/~esr/jargon/html/crackers.html[crackers,window=_blank]
-:active-inferrence: https://baicsworkshop.github.io/pdf/BAICS_37.pdf[Active Inference,window=_blank]
+:active-inference: https://baicsworkshop.github.io/pdf/BAICS_37.pdf[Active Inference,window=_blank]
 :verses: https://www.verses.ai/[Verses Active Inference,window=_blank]
 :g-io: https://io.google/2023/["I/O 2023",window=_blank]
 :g-community: https://ai.google/build/machine-learning/[Open Onboarding Community,window=_blank]
@@ -277,7 +277,7 @@ There are two primary issues that the Champions encountered with OpenAI's soluti
 1) The models are closed-source, which is a deal-breaker for many hackers who prefer transparency and understanding the underlying mechanisms.
 Without transparency, calculating risk is not a statistical exercise but a gamble.
 2) The model underwent manual reinforcement training to avoid mistakes, which made it safer but still equally non-deterministic,
-and did not allow for the fidelity that {active-inferrence} models claim to provide.
+and did not allow for the fidelity that {active-inference} models claim to provide.
 Thus, false advertisement -- because a DDD Aggregate is essentially an employee with an exact job description
 -- no improvisation is wanted or expected.
 
