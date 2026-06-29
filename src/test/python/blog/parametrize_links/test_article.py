@@ -114,7 +114,7 @@ class TestArticleObject:
             .print_global_links())
 
         assert {"site-baseurl", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
-                "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "publications-li",
+                "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
                 "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi"} == (
             seq(actual_article.links_global).map(lambda attr: attr.key).to_set())
 

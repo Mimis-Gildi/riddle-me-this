@@ -16,7 +16,7 @@ class TestGlobalAttributeProviders:
         """Assert the collector merges static and config providers and applies the filter."""
 
         assert {"site-baseurl", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
-                "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "publications-li",
+                "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
                 "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi"} == (
                    seq(global_link_attribute_collecting_provider(
                        static_links_provider(),
@@ -51,7 +51,7 @@ class TestConfigFileAttributeProviders:
         assert links.map(lambda link: link.position).for_all(lambda position: position == GLOBAL_POSITION)
         assert  {
             "icons", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
-            "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "publications-li",
+            "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
             "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi",
         } == links.map(lambda link: link.key).to_set()
 
@@ -108,7 +108,7 @@ class TestFilterProvider:
         """Test filter versus real config attributes in this project."""
 
         assert {"cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
-                "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "publications-li",
+                "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
                 "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi"} == (
                    seq(config_links_provider(CONF_FILE)())
                    .filter(lambda attr: filter_provider()(attr.to_tuple()))
@@ -119,7 +119,7 @@ class TestFilterProvider:
         """Test filter versus real config attributes in this project joined with the mock attributes."""
 
         assert {"site-baseurl", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
-                "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "publications-li",
+                "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
                 "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi"} == (
                    seq([config_links_provider(CONF_FILE)(), mock_provider()]).flatten()
                    .filter(lambda attr: filter_provider()(attr.to_tuple()))
