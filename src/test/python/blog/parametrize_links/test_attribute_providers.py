@@ -88,19 +88,22 @@ class TestFilterProvider:
 
     def test_b_filter_provider_vs_config_provider(self):
         """Test filter versus real config attributes in this project."""
-        keep = filter_provider()
-        attributes = seq(config_links_provider(CONF_FILE)())
-        kept = attributes.filter(lambda link: keep(link.to_tuple()))
 
-        assert "icons" in attributes.map(lambda link: link.key).to_set()
-        assert kept.len() == 15
-        assert kept.map(lambda link: link.key).to_set() == attributes.map(lambda link: link.key).to_set() - {"icons", "baseurl"}
+        assert {"cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
+                "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "publications-li",
+                "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi"} == (
+            seq(config_links_provider(CONF_FILE)())
+            .filter(lambda attr: filter_provider()(attr.to_tuple()))
+            .map(lambda attr: attr.key)
+            .to_set())
 
     def test_c_filter_provider_vs_both_providers(self, mock_provider):
         """Test filter versus real config attributes in this project joined with the mock attributes."""
-        keep = filter_provider()
-        attributes = seq([config_links_provider(CONF_FILE)(), mock_provider()]).flatten()
-        kept = attributes.filter(lambda link: keep(link.to_tuple()))
 
-        assert kept.len() == 21
-        assert kept.map(lambda link: link.key).to_set() == attributes.map(lambda link: link.key).to_set() - {"icons", "baseurl"}
+        assert {"site-baseurl", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
+                "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "publications-li",
+                "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi"} == (
+            seq([config_links_provider(CONF_FILE)(), mock_provider()]).flatten()
+            .filter(lambda attr: filter_provider()(attr.to_tuple()))
+            .map(lambda attr: attr.key)
+            .to_set())
