@@ -45,6 +45,8 @@ class Article:
     _links_attribute_provider_global:  AttributeProvider = field(init=False)
     _links_global:  tuple[Attribute, ...] = field(init=False)
 
+    _links_declared_attributes_provider: AttributeProvider = field(init=False)
+    _links_declared: tuple[Attribute, ...] = field(init=False)
 
     @property
     def text(self):
@@ -112,6 +114,34 @@ class Article:
     @links_global.deleter
     def links_global(self):
         raise ValueError("This 'links_global' cannot be deleted.")
+
+    @property
+    def links_provider_declared(self):
+        return self._links_declared_attributes_provider
+
+    @links_provider_declared.setter
+    @call_only_once
+    def links_provider_declared(self, provider: AttributeProvider):
+        """Accept the Declared Attributes Provider and store it -- it is called later (deferred), not now."""
+        self._links_declared_attributes_provider = provider
+
+    @links_provider_declared.deleter
+    def links_provider_declared(self):
+        raise ValueError("This 'links_provider_declared' cannot be deleted.")
+
+    @property
+    def links_declared(self):
+        return self._links_declared
+
+    @links_declared.setter
+    @call_only_once
+    def links_declared(self, links):
+        """Accept the Declared Links and store it -- it is called later (deferred), not now."""
+        self._links_declared = links
+
+    @links_declared.deleter
+    def links_declared(self):
+        raise ValueError("This 'links_declared' cannot be deleted.")
 
 
     def __post_init__(self) -> None:
