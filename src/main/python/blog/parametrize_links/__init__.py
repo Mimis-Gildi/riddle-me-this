@@ -5,10 +5,10 @@ from __future__ import annotations
 import subprocess
 from pathlib import Path
 
-import yaml
-
-from blog.parametrize_links.attribute_providers import global_link_attribute_collecting_provider
-
+from blog.parametrize_links.attribute_providers import global_link_attribute_collecting_provider, \
+    static_links_provider, \
+    config_links_provider, \
+    filter_provider
 from .article import Article
 
 project_root = Path(subprocess.run(
@@ -23,10 +23,14 @@ SLOP_ARTICLE = POST_ROOT / "2025-09-29-sources-passed-validation.adoc"
 
 
 def main(filename: str) -> None:
-    cfg = yaml.safe_load(CONF_FILE.read_text(encoding="utf-8"))
-    baseurl = [("site-baseurl", cfg["baseurl"])] if cfg.get("baseurl") else []
 
-    article = Article(Path(filename))
-    # article = article.accept_global_link_attributes(cfg, baseurl) This was slop - needs another function`
-    # article = article.print_global_links()
-    # article = article.print_global_links()
+    article_to_process = (Article(Path(filename))
+        .accept_global_link_attribute_provider(
+            global_link_attribute_collecting_provider(
+                static_links_provider(),
+                config_links_provider(CONF_FILE),
+                filter_provider()))
+        .apply_global_links_acquisition()
+        .print_global_links())
+
+    print(article_to_process.links_global)

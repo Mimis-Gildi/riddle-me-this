@@ -20,16 +20,11 @@ def global_link_attribute_collecting_provider(
         attribute_filter_provider: AttributeFilterProvider
 ) -> AttributeProvider:
     """A lazy composite provider of currently global link attributes as expected by each post, page, and article."""
-
-    # Old slop devoid of any design or Fluent FP understanding but containing some remnants of logic
-    # attrs = (cfg.get("asciidoctor") or {}).get("attributes") or {}
-    # return (
-    #     seq([baseurl, attrs.items()])
-    #     .flatten()
-    #     .filter(lambda kv: kv[0] != "icons")
-    #     .smap(lambda key, value: Attribute(key, value.removesuffix("@"), GLOBAL_POSITION))
-    # )
-    return AttributeProvider()
+    return lambda: (
+        seq([global_static_derived_attribute_provider(), config_file_attribute_provider()])
+        .flatten()
+        .filter(lambda attr: attribute_filter_provider(attr.to_tuple()))
+    )
 
 
 def static_links_provider() -> AttributeProvider:
