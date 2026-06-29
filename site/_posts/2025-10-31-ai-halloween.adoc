@@ -34,5 +34,5 @@ Retrying with the same vendor doesn't work."
 He's right.
 AI punishes the experience-based biases that got you through DX.
 
--> https://www.asei.systems/diagnostic[Get assessed]  +
+-> Get assessed  +
 -> link:{site-baseurl}/research/2025/09/29/sources-passed-validation.html[See research]

@@ -12,10 +12,7 @@ comments: true
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
 :ase-title: ASE Inc.
-:ase: https://asei.systems
-:ase-link: {ase}[{ase-title},window=_blank]
 :pub-asei: as outlined at {ase-link}
-:diagnostic: {ase}/diagnostic
 
 :stages-of-ai-evolution: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
 :stage-1-mit-failures: link:/riddle-me-this/adventures/2025/08/18/years-late-confirmation.html
@@ -238,7 +235,7 @@ Quick recap::
 
 _Want to know what tier YOUR architecture can actually support?_
 
-{diagnostic}[Stop lying to yourself and find out].
+Stop lying to yourself and find out.
 
 P.S. I'm not writing *carrot theory*.
 I fix corporate architecture -- decades, hands on, every day.

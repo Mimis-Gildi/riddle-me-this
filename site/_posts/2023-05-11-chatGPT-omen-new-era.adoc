@@ -16,7 +16,6 @@ rdd13r
 
 :y-combinator-news: link:https://news.ycombinator.com/item?id=26824415[Y Combinator,window=_blank]
 :artnet-idiot: link:https://www.artnet.com/artists/don-maitz/the-idiot-x1Vi3F6S7g3JIJEwcPT3jw2[The Idiot - Don Maitz,window=_blank]
-:asei-systems: link:https://www.asei.systems/[ASE Inc.,window=_blank]
 :autogpt-github: link:https://github.com/Significant-Gravitas/Auto-GPT[Auto-GPT,window=_blank]
 
 ChatGPT's debut has been a wake-up call, revealing the velocity of AI evolution.
@@ -76,7 +75,7 @@ image::/riddle-me-this/assets/images/ai-the-idiot-coder.png[{alt-how-competent-i
 
 == Augmentation: Shaping the Future of Coding
 
-In 2019, our parent company, {asei-systems}, faced a harsh reality when our primary financier and client hostilely assumed control over our ML orchestration startup.
+In 2019, our parent company, ASE Inc., faced a harsh reality when our primary financier and client hostilely assumed control over our ML orchestration startup.
 As a business neophyte, I was taken aback.
 In retrospect, this incident underscored the relentless momentum of ML evolution and the sway it holds with investors.
 It signaled a global transition.
@@ -84,7 +83,7 @@ By 2020, ML code generation in IDE had penetrated the hacker circles in the East
 From that point forward, all proprietary code at ASE has been entirely machine-augmented.
 
 .Hacker Immersed in Coding by 2-way conversation
-[#img-hacker,link={asei-systems}]
+[#img-hacker]
 image::/riddle-me-this/assets/images/hacker-at-work.jpg[A programmer fully immersed in his work in the office,800]
 
 (Depositphotos Licensed Reproduction)

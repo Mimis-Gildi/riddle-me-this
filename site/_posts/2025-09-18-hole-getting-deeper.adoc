@@ -11,8 +11,7 @@ comments: true
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:asei: https://asei.systems/[ASE Inc.,window=_blank]
-:pub-asei: as outlined at {asei}
+:pub-asei: as outlined at ASE Inc.
 
 :stages-of-ai-evolution: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
 :stage-1-mit-failures: link:/riddle-me-this/adventures/2025/08/18/years-late-confirmation.html

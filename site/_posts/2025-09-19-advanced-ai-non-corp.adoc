@@ -14,8 +14,7 @@ read_aloud: false
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:asei: https://asei.systems/[ASE Inc.,window=_blank]
-:pub-asei: as outlined at {asei}
+:pub-asei: as outlined at ASE Inc.
 
 :the-word-calculator: https://theconversation.com/actually-ai-is-a-word-calculator-but-not-in-the-sense-you-might-think-264494
 

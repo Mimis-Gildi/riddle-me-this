@@ -11,8 +11,7 @@ comments: true
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:asei: https://asei.systems/[ASE Inc.,window=_blank]
-:pub-asei: as outlined at {asei}
+:pub-asei: as outlined at ASE Inc.
 :previous-stories: link:/riddle-me-this/adventures/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
 :previous-article-url: link:/riddle-me-this/adventures/2025/08/07/best-corporate-ai.html
 :previous-article-title: The AI Success Story Nobody’s Talking About: How “Boring” Architecture Beats Hype
@@ -342,7 +341,7 @@ Republished to
 '''
 
 _Want to teach AI your business language?
-That's exactly what we do at {asei}!_
+That's exactly what we do at ASE Inc.!_
 
 _No magic.
 No shortcuts.

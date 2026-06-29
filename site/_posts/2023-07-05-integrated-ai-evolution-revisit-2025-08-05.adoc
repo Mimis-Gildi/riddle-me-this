@@ -80,7 +80,7 @@ The numbers will shock you.
 
 Come watch the carnage unfold:
 
-* https://www.asei.systems/
+
 * link:{site-baseurl}/
 
 The Oracle sees the future.

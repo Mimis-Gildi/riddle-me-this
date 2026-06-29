@@ -57,7 +57,7 @@ image:badge-gotham-button.png[Gotham Village,link="https://github.com/Gotham-Vil
 image:badge-hera-button.png[Gervi Héra Vitr,link="https://github.com/Gervi-Hera-Vitr"]
 image:badge-scala-button.png[Mímis Scala,link="https://github.com/Mimis-Scala"]
 image:badge-lagard-button.png[Mímis Látlæg Háttalag,link="https://github.com/Mimis-Latlaeg-Hattalag"]
-image:logo-mg-main-badge-button.png[ASE Inc,link="https://asei.systems"]
+image:logo-mg-main-badge-button.png[ASE Inc]
 
 [NOTE]
 .Looking for me elsewhere?

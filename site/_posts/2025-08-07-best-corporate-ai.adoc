@@ -11,8 +11,7 @@ comments: true
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:asei: https://asei.systems/[ASE Inc.,window=_blank]
-:pub-asei: as outlined at {asei}
+:pub-asei: as outlined at ASE Inc.
 :cto-bible: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :cto-trap: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
 :footer-cto-trap: footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- a complete playbook on integrating AI and staying ahead.]
@@ -62,7 +61,7 @@ Like most AI failure stories, this starts with a Big American Software company (
 
 . **2016**: EvilCorp promises to "transform" their business;
 . **2017**: Everything is worse, costs are tripling;
-. **2018**: CTO rebels, brings in {asei} and other specialists;
+. **2018**: CTO rebels, brings in ASE Inc. and other specialists;
 . **2019**: Complete architectural overhaul finished.
 . **2024-2025**: Crushing AI integration while you're still debugging chatbots!
 
@@ -241,7 +240,7 @@ What's your move?
 '''
 
 _Need help building boundaries that last? +
-That's exactly what we do at {asei}! +
+That's exactly what we do at ASE Inc.! +
 {nbsp} -- architectures that survive their creators +
 and enable real AI integration._
 
