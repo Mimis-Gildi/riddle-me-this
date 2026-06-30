@@ -28,8 +28,8 @@ class TestArticleBodyLinkAttributeProviders:
     def test_body_link_attributes_provider_stub(self, full_article):
         """Smoke: provider returns a seq of Attributes with non-empty keys and http(s) values."""
         links = seq(read_body_link_attributes_provider(Article(full_article))())
-        assert links.for_all(lambda attr: attr.key)
-        assert links.for_all(lambda attr: attr.value.startswith(("http://", "https://")))
+        assert links.filter(lambda attr: not attr.key).to_list() == []
+        assert links.filter(lambda attr: not attr.value.startswith(("http://", "https://"))).to_list() == []
 
     def test_generate_body_links_csv(self):
         """Write body-links-review.csv at project root with suggested_key and blank your_key column."""

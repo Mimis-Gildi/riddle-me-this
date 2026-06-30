@@ -46,7 +46,7 @@ class TestConfigFileAttributeProviders:
         links = seq(config_links_provider(CONF_FILE)())
 
         assert links.len() == 44
-        assert links.map(lambda link: link.position).for_all(lambda position: position == GLOBAL_POSITION)
+        assert links.map(lambda link: link.position).to_set() == {GLOBAL_POSITION}
         assert links.map(lambda link: link.key).to_set() == GLOBAL_LINK_KEYS - {"site-baseurl"} | {"icons"}
 
 
@@ -82,7 +82,7 @@ class TestFilterProvider:
 
         assert sequence.len() == 3
         assert sequence.distinct().len() == 1
-        assert sequence.for_all(lambda a: "chatgpt" == a.key)
+        assert sequence.map(lambda a: a.key).to_set() == {"chatgpt"}
 
     def test_a_filter_provider_vs_mock_attributes(self, mock_provider):
         """Test filter versus reference mock attributes in this project."""
