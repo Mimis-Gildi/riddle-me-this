@@ -52,7 +52,7 @@ Lo and behold, an AI adoption trajectory is indeed taking clear shape.
 Let's look at people making fast AI money today.
 
 .DALL-E a typically distorted image edit of the author
-[#img-space,link=https://rdd13r.github.io/]
+[#img-space,link={rdd13r-gh-io-url}]
 image::/riddle-me-this/assets/images/dall-e-rdd13r-space.png[Picture of the author in space rendered DALL-E as prompted by Tillie,1200]
 
 == The Context of this Analysis

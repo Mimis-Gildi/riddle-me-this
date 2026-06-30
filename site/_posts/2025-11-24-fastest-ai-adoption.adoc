@@ -25,6 +25,10 @@ read_aloud: false
 :google-vertex-studio: https://cloud.google.com/generative-ai-studio[Vertex Generative AI Studio,window=_blank]
 :ai-google-dev: https://ai.google.dev/[ai.google.dev,window=_blank]
 :google-dev: https://developers.google.com/program[developers.google.com - Google Developer Program,window=_blank]
+:gemini-cloud: https://cloud.google.com/ai/gemini[here's the explanation]
+:google-skills: https://blog.google/outreach-initiatives/education/google-skills/["Google Skills"]
+:google-skills-cert: https://cloud.google.com/blog/topics/training-certifications/google-skills-new-home-AI-learning[training and certification]
+:google-ml-class: https://cloud.google.com/learn/training/machinelearning-ai[Sample this AI class...,window=_blank]
 
 .Use this opportunity while the time is right!
 image::/riddle-me-this/assets/images/ai-springboard.png[It's now or never,kinda thang...]
@@ -265,10 +269,10 @@ But for individual career growth or team modernization, this is your primary res
 
 *{google-vertex}*: A one-stop shop for learning and working with production-grade AI.
 Running on {google-cloud} with {google-vertex-studio}, you touch real infrastructure without building massive labs.
-Most importantly, *{ai-google-dev}* is your sandbox to actual Vertex AI - https://cloud.google.com/ai/gemini[here's the explanation].
-(See blogs https://blog.google/outreach-initiatives/education/google-skills/["Google Skills"] and https://cloud.google.com/blog/topics/training-certifications/google-skills-new-home-AI-learning[training and certification]).
+Most importantly, *{ai-google-dev}* is your sandbox to actual Vertex AI - {gemini-cloud}.
+(See blogs {google-skills} and {google-skills-cert}).
 
-https://cloud.google.com/learn/training/machinelearning-ai[Sample this AI class...,window=_blank]
+{google-ml-class}
 
 Most importantly, *{google-dev}*: where it all begins and grows.
 This community is why I no longer maintain my own private portal.

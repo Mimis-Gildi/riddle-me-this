@@ -48,6 +48,9 @@ class Article:
     _links_declared_attributes_provider: AttributeProvider = field(init=False)
     _links_declared: tuple[Attribute, ...] = field(init=False)
 
+    _links_body_attributes_provider: AttributeProvider = field(init=False)
+    _links_body: tuple[Attribute, ...] = field(init=False)
+
     @property
     def text(self):
         return self._text
@@ -143,6 +146,31 @@ class Article:
     def links_declared(self):
         raise ValueError("This 'links_declared' cannot be deleted.")
 
+    @property
+    def links_provider_body(self):
+        return self._links_body_attributes_provider
+
+    @links_provider_body.setter
+    @call_only_once
+    def links_provider_body(self, provider: AttributeProvider):
+        self._links_body_attributes_provider = provider
+
+    @links_provider_body.deleter
+    def links_provider_body(self):
+        raise ValueError("This 'links_provider_body' cannot be deleted.")
+
+    @property
+    def links_body(self):
+        return self._links_body
+
+    @links_body.setter
+    @call_only_once
+    def links_body(self, links):
+        self._links_body = links
+
+    @links_body.deleter
+    def links_body(self):
+        raise ValueError("This 'links_body' cannot be deleted.")
 
     def __post_init__(self) -> None:
         if self.path.suffix != ".adoc":
@@ -164,6 +192,7 @@ class Article:
 
     def accept_body_discovery_attribute_provider(self, provider: AttributeProvider) -> Self:
         """Accept the Body Link Discovery Attributes Provider and store it -- it is called later (deferred), not now."""
+        self.links_provider_body = provider
         return self
 
     def apply_global_links_acquisition(self) -> Self:
@@ -178,12 +207,17 @@ class Article:
 
     def apply_document_body_links_acquisition(self) -> Self:
         """Acquire all the links used inside document body with and without attributes."""
-
+        self.links_body = tuple(self.links_provider_body())
         return self
 
     def print_global_links(self) -> Self:
         """Print global links, a sideeffect introspective function."""
         seq(self.links_global).for_each(print)
+        return self
+
+    def print_body_links(self) -> Self:
+        """Print body links, a sideeffect introspective function."""
+        seq(self.links_body).for_each(print)
         return self
 
     def print_declared_links(self) -> Self:

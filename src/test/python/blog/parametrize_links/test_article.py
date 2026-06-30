@@ -40,8 +40,8 @@ class TestArticleInvocation:
         """A real Slop article -> constructs cleanly, keeps the path."""
         article = Article(slop_article)
 
-        assert 12832 == article._content_length
-        assert "8cb016f3b9a649cd1dbd100efe413afaeb241614" == article._file_checksum
+        assert 8756 == article._content_length
+        assert "4509706383d2b891d73e00b93132ca95ab2b3186" == article._file_checksum
 
         assert article.path == slop_article
 
@@ -64,8 +64,8 @@ class TestArticleObject:
         """Test the affinity of the protected attributes once the right slop is loaded."""
         slop = Article(self.slop_article)
 
-        assert 12832 == slop._content_length
-        assert "8cb016f3b9a649cd1dbd100efe413afaeb241614" == slop._file_checksum
+        assert 8756 == slop._content_length
+        assert "4509706383d2b891d73e00b93132ca95ab2b3186" == slop._file_checksum
         assert slop.path == self.slop_article
 
         with pytest.raises(RuntimeError) as text_set_error:
@@ -117,12 +117,13 @@ class TestArticleObject:
                 "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
                 "fireship-gemini3", "gitomer-book", "mcp-overview",
                 "mit-article-url", "mit-article-title", "mit-article",
-                "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi",
+                "rdd13r-gh", "rdd13r-gh-io", "rdd13r-gh-io-url", "rdd13r-gh-io-title",
+                "release", "resume", "total-recall", "org-mimis-gildi",
                 "hacker-culture-url", "hacker-culture", "dolly-2",
                 "openrouter", "openrouter-rankings", "openrouter-url",
                 "artificial-analysis", "commons-john-frum-effigy", "deepinfra", "fireworks-ai",
                 "kimi-k2-thinking", "llama-cpp", "lm-studio", "mit-genai-divide", "mit-hbr",
-                "ollama", "together-ai", "vailala"} == (
+                "ollama", "together-ai", "vailala", "rdd13r-style-guide"} == (
             seq(actual_article.links_global).map(lambda attr: attr.key).to_set())
 
 

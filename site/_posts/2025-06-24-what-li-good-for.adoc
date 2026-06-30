@@ -8,6 +8,7 @@ classes: wide
 = What is LinkedIn really good for?
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :img-prefix: /riddle-me-this/assets/images
+:jargon-file: http://www.catb.org/jargon/html/[Jargon File]
 
 .ASE Inc, DALL-E Hacker Dad vs. Cog Dad...
 [#img-devs]
@@ -58,7 +59,7 @@ The AI platform chose a classification schema based on the *personality traits* 
 And this is the value I can share with you today.
 
 Note that I write hacker-culture-specific terms in parentheses, like so (`crackers`, `hackers`, `muggles`, etc.)
-And *The http://www.catb.org/jargon/html/[Jargon File] is available at CatB* __over http__ for your perusal.
+And *The {jargon-file} is available at CatB* __over http__ for your perusal.
 
 == People who Don't Matter on LinkedIn
 

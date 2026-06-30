@@ -18,6 +18,7 @@ read_aloud: false
 :tourist: https://codeforces.com/profile/tourist?locale=en[tourist,window=_blank]
 :benq: https://codeforces.com/profile/Benq[Benq,window=_blank]
 :GongRzhe-MCP: https://github.com/GongRzhe/A2A-MCP-Server[GongRzhe A2A-MCP-Server,window=_blank]
+:rdd13r-style-guide: https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/rdd13r-style-guide.yml[argument forms information,window=_blank]
 
 .The Distinguished Engineer's Dress Code
 [#img-go-to-meeting]
@@ -208,13 +209,13 @@ The inevitable shouldn't be proprietary._
 - `mcp-agora` -- agent peering built on `mcp-total-recall`.
 
 Three decades on the scene. Looking for the right company to pour the next thirty into.
-If your engineering org needs the architect behind the 57 seconds -- https://www.linkedin.com/in/rdd13r/[let's talk].
+If your engineering org needs the architect behind the 57 seconds -- {profile-li}.
 
 '''
 
 === How This Article Argues
 
-See `rdd13r-style-guide.yml` -- https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/rdd13r-style-guide.yml[argument forms information,window=_blank] for Agentic AI collaborators (not tools).
+See `rdd13r-style-guide.yml` -- {rdd13r-style-guide} for Agentic AI collaborators (not tools).
 
 *Primary Premise:* Claude Code Agent Teams is a raw consumer packaging of what hackers already run in production.
 The difference in outcome -- 57 seconds versus 20 minutes -- is not the tool. It is the architect.

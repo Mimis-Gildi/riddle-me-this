@@ -13,6 +13,10 @@ read_aloud: false
 :ai-learning: link:/riddle-me-this/reflections/2025/11/24/fastest-ai-adoption.html[I recommend studying on this infrastructure,window=_blank]
 :jb-on-llms: https://youtu.be/CWgZXpGWvtg
 :jb-on-llms-video: {jb-on-llms}[Why LLMs Are Finally Useful,window=_blank]
+:amazon-bedrock-oss: https://aws.amazon.com/blogs/aws/amazon-bedrock-adds-fully-managed-open-weight-models/[Amazon Bedrock adds 18 fully managed open weight models...,window=_blank]
+:mistral-3: https://mistral.ai/news/mistral-3[Mistral 3]
+:qwen3: https://github.com/QwenLM/Qwen3[Qwen3]
+:advent-of-code: https://adventofcode.com/[Advent of Code 2025]
 
 .The EU businesses found a way to profitably apply existing local models. While in the USA we chase bigger, impossible to power things, having failed to apply much of anything.
 image::/riddle-me-this/assets/images/EU-vs-USA-AI-Adoption-Button.png[EU is many small trams moving things around while in the USA we have a huge loco crashing through the track and nothing can move it]
@@ -176,15 +180,15 @@ I will link the best ones here:
 The USA-specific boosters:
 
 . Gemini 3 is part of GCP now: {fireship-gemini3};
-. https://aws.amazon.com/blogs/aws/amazon-bedrock-adds-fully-managed-open-weight-models/[Amazon Bedrock adds 18 fully managed open weight models...,window=_blank] -- match self-hosted folks.
+. {amazon-bedrock-oss} -- match self-hosted folks.
 
 The EU-specific boosters:
 
-. https://mistral.ai/news/mistral-3[Mistral 3] is out -- can power any needs now (all three will run in your lab);
-. https://github.com/QwenLM/Qwen3[Qwen3] is out -- my personal full-power favorites (if you have the hardware).
+. {mistral-3} is out -- can power any needs now (all three will run in your lab);
+. {qwen3} is out -- my personal full-power favorites (if you have the hardware).
 
 _Note: Requirements for Qwen3-30B-A3B-Thinking-2507 are overstated -- try it before you panic._
 
 Fun stuff:
 
-JetBrains https://adventofcode.com/[Advent of Code 2025] is 3 days in!
+JetBrains {advent-of-code} is 3 days in!

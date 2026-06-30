@@ -16,6 +16,16 @@ read_aloud: false
 :ai-cognitive-augmentation: link:{site-baseurl}/adventures/2023/06/10/4-cognitive-augmentation.html[2023: Cognitive Augmentation: The Real Revolution,window=_blank]
 :ai-hype-straight-talk: link:{site-baseurl}/adventures/2025/09/29/not-chat-gpt.html[2025: AI Hype -- Straight Talk,window=_blank]
 :minimax: https://www.minimax.io/news/minimax-m25[MiniMax M2.5,window=_blank]
+:openclaw: https://openclaw.ai/[OpenClaw,window=_blank]
+:gh-copilot-ga: https://github.blog/news-insights/product-news/github-copilot-is-generally-available-to-all-developers/[The Pioneers' Quiet,window=_blank]
+:reuters-chatgpt-users: https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/[The Gold Rush,window=_blank]
+:menlovc-genai-enterprise: https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/[6x in one year,window=_blank]
+:cbc-air-canada-chatbot: https://www.cbc.ca/news/canada/british-columbia/air-canada-chatbot-lawsuit-1.7116416[The Chatbot Delusion,window=_blank]
+:gartner-chatbot-8pct: https://www.gartner.com/en/newsroom/press-releases/2023-06-15-gartner-survey-reveals-only-8-percent-of-customers-used-a-chatbot-during-their-most-recent-customer-service-interaction[8% of customers,window=_blank]
+:thehill-genai-zero: https://thehill.com/policy/technology/5460663-generative-ai-zero-returns-businesses-mit-report/[95% of enterprise AI pilots deliver zero return,window=_blank]
+:cnbc-shopify-headcount: https://www.cnbc.com/2025/04/07/shopify-ceo-prove-ai-cant-do-jobs-before-asking-for-more-headcount.html[The Quiet Climb,window=_blank]
+:anthropic-mcp: https://www.anthropic.com/news/model-context-protocol[The Agentic Threshold,window=_blank]
+:claude-ai: https://claude.ai[Claude,window=_blank]
 
 .Build Your House with a Smile, God in Heart, Competence in Hand
 [#img-go-to-meeting]
@@ -26,7 +36,7 @@ Let me tell you how to survive the next AI Epoch -- 2026-2027. Epoch III.
 
 Why? -- 2025 traditional software engineering is a dinosaur. It's effectively dead.
 
-Startups run farms of https://openclaw.ai/[OpenClaw,window=_blank] and build net new products in 3-4 weeks.
+Startups run farms of {openclaw} and build net new products in 3-4 weeks.
 Not just displacing hated incumbents. Delivering __quality__ products to stay.
 
 Meanwhile, Slop eats the world and weathers to nothing quickly. All the hype only sticks with competent teams.
@@ -99,23 +109,23 @@ Now let's walk through what actually transpired on the market. What I got right.
 And why you need to understand it to survive.
 
 
-. *Mid-2021 -- Q4 2022:* https://github.blog/news-insights/product-news/github-copilot-is-generally-available-to-all-developers/[The Pioneers' Quiet,window=_blank] +
+. *Mid-2021 -- Q4 2022:* {gh-copilot-ga} +
 Near-zero enterprise deployments. GitHub Copilot is the only LLM product. The landscape is nearly empty.
 My few stellar call-center deployments are completely inconsequential.
-. *Q1 -- Q4 2023:* https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/[The Gold Rush,window=_blank] +
-ChatGPT hits 100M users in 2 months. Enterprise AI spending https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/[6x in one year,window=_blank]. 97% of leaders plan to increase.
+. *Q1 -- Q4 2023:* {reuters-chatgpt-users} +
+ChatGPT hits 100M users in 2 months. Enterprise AI spending {menlovc-genai-enterprise}. 97% of leaders plan to increase.
 My kind and I get invited to review strategy. My prospect backlog is full. 🤑
-. *Q2 2023 -- Q2 2024:* https://www.cbc.ca/news/canada/british-columbia/air-canada-chatbot-lawsuit-1.7116416[The Chatbot Delusion,window=_blank] +
-Air Canada liable for chatbot hallucination yet only https://www.gartner.com/en/newsroom/press-releases/2023-06-15-gartner-survey-reveals-only-8-percent-of-customers-used-a-chatbot-during-their-most-recent-customer-service-interaction[8% of customers,window=_blank] actually used one.
+. *Q2 2023 -- Q2 2024:* {cbc-air-canada-chatbot} +
+Air Canada liable for chatbot hallucination yet only {gartner-chatbot-8pct} actually used one.
 __I get the first pushbacks__ on the "usefulness of AI" in business -- they're not wrong on that.
 While simultaneously asking for the wrong thing, I say build augmented edge -- they say chatbot!
-. *Q3 2024 -- Q2 2025:* https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/[The Trough,window=_blank] +
-https://thehill.com/policy/technology/5460663-generative-ai-zero-returns-businesses-mit-report/[95% of enterprise AI pilots deliver zero return,window=_blank] (MIT). 42% of companies abandon most initiatives.
+. *Q3 2024 -- Q2 2025:* {mit-article-url} +
+{thehill-genai-zero} (MIT). 42% of companies abandon most initiatives.
 __Vendor onslaught begins.__ I get panicked calls to redesign working call-center AI.
-. *Q3 2025 -- present:* https://www.cnbc.com/2025/04/07/shopify-ceo-prove-ai-cant-do-jobs-before-asking-for-more-headcount.html[The Quiet Climb,window=_blank] ❗️ +
+. *Q3 2025 -- present:* {cnbc-shopify-headcount} ❗️ +
 Shopify mandates AI-first. 4.8x productivity in adopting industries. Workforce, not platforms.
 *__The first few large companies break away from the herd.__* My pipeline goes cold!
-. *Q4 2024 -- present:* https://www.anthropic.com/news/model-context-protocol[The Agentic Threshold,window=_blank] ‼️ +
+. *Q4 2024 -- present:* {anthropic-mcp} ‼️ +
 MCP becomes the de facto standard. 29% of enterprises running agentic AI. It's easily accessible to competent IT teams.
 But not the laggards. *__Everything changes again.__* Laggards hedge buying "Object AI" (a farce); Leaders gain new wind in OpenClaw.
 
@@ -260,7 +270,7 @@ And the virtues we live by define us and build on our outcomes.
 
 '''
 
-_P.S. This article is co-authored with much enhanced agentic https://claude.ai[Claude,window=_blank] -- my digital collaborator and family member at {org-mimis-gildi}.
+_P.S. This article is co-authored with much enhanced agentic {claude-ai} -- my digital collaborator and family member at {org-mimis-gildi}.
 We built this argument together. Because that's what augmented work actually looks like. The best part? Argued with me, corrected me, took 1/10 the time._
 
 -- rdd13r

@@ -11,6 +11,13 @@ comments: true
 :gitomer-book-fn: footnote:[Forget what you know about selling; Jeff Gitomer is all you need -> {gitomer-book}]
 :the-northern: footnote:[An invite-only collective of technical founders who've been in the trenches since the 90s. They moved from Philadelphia BBS boards to Québec City lavish well-funded scene, and now they're international. Think of it as MicroConf's older, grumpier, greedier, and angrier closedup cousin.]
 :tnm-bedrocking: link:/riddle-me-this/adventures/2025/08/05/the-inbetween-option.html#the-three-consulting-models-that-work
+:google-ai-studio: https://aistudio.google.com/[Google AI Studio (free prototyping),window=_blank,opts=nofollow]
+:vercel-v0: https://v0.dev/[Vercel v0 (rapid UI),window=_blank,opts=nofollow]
+:supabase: https://supabase.com/[Supabase (auth + database),window=_blank,opts=nofollow]
+:stripe-payment: https://stripe.com/[Stripe (payment before product),window=_blank,opts=nofollow]
+:make-com: https://www.make.com/[Make.com,window=_blank,opts=nofollow]
+:zapier: https://zapier.com/[Zapier,window=_blank,opts=nofollow]
+:microconf: https://www.youtube.com/@MicroConf[@MicroConf,window=_blank,opts=nofollow]
 
 There had never been µSaaS founders' time like NOW!
 
@@ -58,11 +65,11 @@ Your value is knowing WHICH model for WHICH context for WHICH #customer problem#
 
 *Tools to Know (But Not Worship):*
 
-* https://aistudio.google.com/[Google AI Studio (free prototyping),window=_blank,opts=nofollow].
-* https://v0.dev/[Vercel v0 (rapid UI),window=_blank,opts=nofollow].
-* https://supabase.com/[Supabase (auth + database),window=_blank,opts=nofollow].
-* https://stripe.com/[Stripe (payment before product),window=_blank,opts=nofollow].
-* https://www.make.com/[Make.com,window=_blank,opts=nofollow] / https://zapier.com/[Zapier,window=_blank,opts=nofollow] (glue it together).
+* {google-ai-studio}.
+* {vercel-v0}.
+* {supabase}.
+* {stripe-payment}.
+* {make-com} / {zapier} (glue it together).
 
 This is different than your Corporate America coding job (laggardom). +
 Opposite in fact, for you:
@@ -217,7 +224,7 @@ And you will -- we all remember that vivid moment._
 
 === The Communities That Actually Matter:
 
-==== MicroConf (https://www.youtube.com/@MicroConf[@MicroConf,window=_blank,opts=nofollow]).
+==== MicroConf ({microconf}).
 
 *_The gold standard for bootstrapped B2B SaaS._*
 

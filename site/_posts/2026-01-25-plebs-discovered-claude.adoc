@@ -11,6 +11,12 @@ read_aloud: false
 ---
 = I Figured It Out -- The AI Hysteria
 :imagesdir: ./assets/images
+:rdd13r-styleguide: https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/CLAUDE.md#advanced-forms-worth-exploring[Claude's Styleguide,window=_blank]
+:wiki-hacker-culture: https://en.wikipedia.org/wiki/Hacker_culture[their definition,window=_blank]
+:wiki-hacker-ethic: https://en.wikipedia.org/wiki/Hacker_ethic[can't keep their ideas to themselves,window=_blank]
+:anthropic-skills: https://github.com/anthropics/skills[Anthropic's skills repository,window=_blank]
+:ralph-wiggum: https://ghuntley.com/ralph/[Ralph Wiggum,window=_blank]
+:rdd13r-style-guide: https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/rdd13r-style-guide.yml[argument forms information,window=_blank]
 
 .I know you are in there somewhere...
 [#img-easy-ai]
@@ -110,7 +116,7 @@ So, why the narrative format of this article? For one, I want people to have fun
 After all, laughing at ourselves is the highest form of personal growth.
 And I want to present a higher form argument reprompting people.
 My chosen format is a hybrid of Socratic Method and First Principles.
-Please see https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/CLAUDE.md#advanced-forms-worth-exploring[Claude's Styleguide,window=_blank] on that.
+Please see {rdd13r-styleguide} on that.
 
 == Our Heroes
 
@@ -119,8 +125,8 @@ The first order of business -- LinkedIn! Who wrote what about whom. Who's trendi
 
 These heroes are not the hackers of today. None of these people are present or known anywhere on the scene.
 Almost every member of Hacker Culture leaves an imprint on the collective -- "The Scene".
-Hackers are voracious learners and makers -- that's https://en.wikipedia.org/wiki/Hacker_culture[their definition,window=_blank].
-A hacker's primary tell is that they https://en.wikipedia.org/wiki/Hacker_ethic[can't keep their ideas to themselves,window=_blank].
+Hackers are voracious learners and makers -- that's {wiki-hacker-culture}.
+A hacker's primary tell is that they {wiki-hacker-ethic}.
 And that's how they're always found out and discovered.
 A Gist or a Snippet flaming some other hacker's code can never be resisted. After all, "everyone else's code is crap."
 And with that, no hacker can resist reading another hacker's code. In fact, spending most of the day doing that.
@@ -436,7 +442,7 @@ And giving humans an interface to control how much "evaluate" and forcing LLM to
 Claude Code is the simplest variant of such an agentic coding assistant.
 It doesn't come with any of the real and powerful agent types, tools, and orchestrators real hackers use today.
 But it is extendable with ease. Making its simplicity a strength, not hindrance.
-See https://github.com/anthropics/skills[Anthropic's skills repository,window=_blank] for examples of how to extend your setup.
+See {anthropic-skills} for examples of how to extend your setup.
 
 Elegant. I love Anthropic for that.
 
@@ -463,7 +469,7 @@ For my executors I run dedicated servers powered by A100s. I don't think I could
 
 But the heroes screaming now are also not the kind that need this.
 They are thoroughly impressed with vanilla Claude Code.
-Having not even tried https://ghuntley.com/ralph/[Ralph Wiggum,window=_blank] yet -- a cheap and effective way to make Claude Code behave closer to the adversarial agentic farm.
+Having not even tried {ralph-wiggum} yet -- a cheap and effective way to make Claude Code behave closer to the adversarial agentic farm.
 Its only price is that Ralph is slow.
 
 So we just have more technical plebs now impressed with Agentic AI in the bowels of corporate America.
@@ -550,7 +556,7 @@ _Because that's the point._
 *Primary Premise:* The "AI will replace coders" hysteria is a demographic phenomenon, not a technical truth.
 The same AI can be either a slop machine or a genuine collaborator -- the difference is in the *_human_*, *NOT* the _model_.
 
-See `rdd13r-style-guide.yml` --  https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/rdd13r-style-guide.yml[argument forms information,window=_blank] for Agentic AI collaborators (not tools).
+See `rdd13r-style-guide.yml` --  {rdd13r-style-guide} for Agentic AI collaborators (not tools).
 
 
 *The Argument Form:*

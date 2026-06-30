@@ -22,6 +22,7 @@ include::../_fragments/2026-04-23-ai-maggedon-primer-links.adoc[]
 :openclaw: https://openclaw.ai/[OpenClaw,window=_blank]
 :claude-code: https://code.claude.com/[Claude Code,window=_blank]
 :hero-alt: A working hacker -- mid-50s, hoodie, glasses -- codes calmly at an old CRT terminal through an apocalypse. \
+:cargo-cult: https://en.wikipedia.org/wiki/Cargo_cult[Cargo cult,window=_blank]
 Burning city, Yggdrasil ablaze on the horizon, agentic drones in the sky, red lightning. \
 Three tombstones in the foreground read "VIBE CODED," "PUSHED TO MAIN," "TRUST THE AGENT." \
 A hanging sign reads "INFRASTRUCTURE AS SERVICE TO ODIN." \
@@ -49,7 +50,7 @@ include::../_fragments/2026-04-23-ai-maggedon-primer.adoc[leveloffset=+1]
 == The Inevitable Outcomes
 
 . There will never be a single model that breaks the world. Curtail your excitement.
-. Technology adoption speed depends on human factors alone. https://en.wikipedia.org/wiki/Cargo_cult[Cargo cult,window=_blank] proves it.
+. Technology adoption speed depends on human factors alone. {cargo-cult} proves it.
 . Systems with some AI in them will change everything. Not because of the AI.
 
 == Full Disclosure

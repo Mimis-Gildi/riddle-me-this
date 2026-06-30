@@ -18,6 +18,33 @@ def _included_texts(article: Article) -> list:
     )
 
 
+def _slug_from_display(display_raw: str) -> str:
+    """Derive an attribute key from AsciiDoc link display text: first 2-3 words, slugified."""
+    text = display_raw.split(',')[0]
+    text = re.sub(r'[*"@\'#`]', '', text)
+    parts = [re.sub(r'[^a-z0-9.]', '', w.lower()) for w in text.strip().split()[:3]]
+    return '-'.join(p for p in parts if p)
+
+
+def read_body_link_attributes_provider(article: Article) -> AttributeProvider:
+    """Provider that finds raw inline links in article body (non-declaration lines)."""
+    def _extract():
+        body = '\n'.join(
+            line for line in article.text.splitlines()
+            if not re.match(r'^:[^:]+:\s+', line)
+            and not re.match(r'^image::', line)
+        )
+        return (
+            seq(re.finditer(r'(?:link:)?(https?://[^\[\n]+)\[([^\]]+)\]', body))
+            .map(lambda m: Attribute(
+                _slug_from_display(m.group(2)),
+                m.group(1) + '[' + m.group(2) + ']',
+                m.start(),
+            ))
+        )
+    return _extract
+
+
 def read_declared_link_attributes_provider(article: Article) -> AttributeProvider:
     """Provider that reads declared attributes from an article and its includes, collecting only links."""
     def _extract(text: str):

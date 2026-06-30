@@ -37,7 +37,11 @@
 :openrouter: https://openrouter.ai/[Open Router,window=_blank]
 :org-mimis-gildi: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
 :profile-li: https://www.linkedin.com/in/rdd13r[LinkedIn Profile,window=_blank]
+:rdd13r-gh-io-title: What Riddler Does
+:rdd13r-gh-io-url: https://rdd13r.github.io/
+:rdd13r-gh-io: https://rdd13r.github.io/[Riddler,window=_blank]
 :rdd13r-gh: https://github.com/rdd13r[rdd13r,window=_blank]
+:rdd13r-style-guide: https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/rdd13r-style-guide.yml[rdd13r Style Guide,window=_blank]
 :release: https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v13.1.0[v13.1.0,window=_blank]
 :resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v13.1.0/VadimKuhay-Resume.pdf
 :together-ai: https://www.together.ai/
