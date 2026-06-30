@@ -5,10 +5,6 @@ from __future__ import annotations
 import subprocess
 from pathlib import Path
 
-from blog.parametrize_links.attribute_providers import global_link_attribute_collecting_provider, \
-    static_links_provider, \
-    config_links_provider, \
-    filter_provider
 from .article import Article
 
 project_root = Path(subprocess.run(
@@ -23,15 +19,8 @@ SLOP_ARTICLE = POST_ROOT / "2025-09-29-sources-passed-validation.adoc"
 FULL_ARTICLE = POST_ROOT / "2023-06-10-LLMs-what-good-for.adoc"
 
 
-def main(filename: str) -> None:
-
-    article_to_process = (Article(Path(filename))
-        .accept_global_link_attribute_provider(
-            global_link_attribute_collecting_provider(
-                static_links_provider(),
-                config_links_provider(CONF_FILE),
-                filter_provider()))
-        .apply_global_links_acquisition()
-        .print_global_links())
-
-    print(article_to_process.links_global)
+def main() -> int:
+    from .configuration import Configuration
+    from .site import Site
+    from .reporter import Reporter
+    return Reporter(Site(Configuration(SITE_ROOT))).report()

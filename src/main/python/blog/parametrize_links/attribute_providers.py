@@ -37,7 +37,7 @@ def static_links_provider() -> AttributeProvider:
 def config_links_provider(conf: Path) -> AttributeProvider:
     """A lazy composite provider of global link attributes as expected by each post and sources from config system of record."""
     return lambda: seq(
-        ((yaml.safe_load(conf.read_text(encoding="utf-8")).get("asciidoctor") or {})
+        (((yaml.safe_load(conf.read_text(encoding="utf-8")) or {}).get("asciidoctor") or {})
          .get("attributes") or {}).items()
     ).smap(lambda key, value: Attribute(key, value, GLOBAL_POSITION))
 

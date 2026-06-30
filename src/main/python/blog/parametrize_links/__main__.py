@@ -1,8 +1,8 @@
-"""Executable entry: python -m blog.parametrize_links <article.adoc>"""
+"""Executable entry: python -m blog.parametrize_links"""
 
 import sys
 
 from . import main
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    sys.exit(main())
