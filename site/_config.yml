@@ -139,22 +139,32 @@ safe                        : false
 asciidoctor:
   attributes:
     icons                   : font
+    artificial-analysis     : 'https://artificialanalysis.ai/'
     cb-hacker               : 'http://www.catb.org/jargon/html/H/hacker.html[hacker,window=_blank]'
     cb-mundane              : 'http://www.catb.org/jargon/html/M/mundane.html[mundane,window=_blank]'
     chatgpt                 : 'https://chat.openai.com/[ChatGPT,window=_blank]'
+    commons-john-frum-effigy: 'https://commons.wikimedia.org/wiki/File:John_Frum_effigy_1960.jpg'
+    deepinfra               : 'https://deepinfra.com/'
     dolly-2                 : 'https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm[Dolly 2 by Databricks,window=_blank]'
     fireship-gemini3        : 'https://youtu.be/bsL7ZnKIAhs[YouTube @Fireship: Did Google just kill OpenAI?,window=_blank]'
+    fireworks-ai            : 'https://fireworks.ai/'
     gitomer-book            : 'https://a.co/d/5n9DwBo[The Little Red Book of Selling: 12.5 Principles of Sales Greatness,window=_blank,opts=nofollow]'
     hacker-culture          : 'https://en.wikipedia.org/wiki/Hacker_culture[Hacker Culture,window=_blank]'
     hacker-culture-url      : 'https://en.wikipedia.org/wiki/Hacker_culture'
     hera-school             : 'https://gervi-hera-vitr.github.io/sindri-labs/[Héra Academy Laboratory,window=_blank,opts=nofollow]'
     hera-school-url         : 'https://gervi-hera-vitr.github.io/sindri-labs/'
+    kimi-k2-thinking        : 'https://huggingface.co/moonshotai/Kimi-K2-Thinking/tree/main'
     li-newsletter           : 'https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]'
+    llama-cpp               : 'https://github.com/ggerganov/llama.cpp'
+    lm-studio               : 'https://lmstudio.ai/'
     mailto-rIdd13r          : 'mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let%20us%20compete%3F[rIdd13r@pm.me]'
     mcp-overview            : 'https://modelcontextprotocol.io/introduction[Model Context Protocol,window=_blank,opts=nofollow]'
     mit-article             : 'https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/[MIT NANDA Report,window=_blank]'
     mit-article-title       : 'MIT report: 95% of generative AI pilots at companies are failing'
     mit-article-url         : 'https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/'
+    mit-genai-divide        : 'https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf'
+    mit-hbr                 : 'https://hbr.org/2025/08/beware-the-ai-experimentation-trap'
+    ollama                  : 'https://ollama.com/'
     openai                  : 'https://www.openai.com/[OpenAI website,window=_blank]'
     openai-blog             : 'https://www.openai.com/blog/[OpenAI Blog,window=_blank]'
     openrouter              : 'https://openrouter.ai/[Open Router,window=_blank]'
@@ -165,7 +175,9 @@ asciidoctor:
     rdd13r-gh               : 'https://github.com/rdd13r[rdd13r,window=_blank]'
     release                 : 'https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v13.1.0[v13.1.0,window=_blank]'
     resume                  : 'https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v13.1.0/VadimKuhay-Resume.pdf'
+    together-ai             : 'https://www.together.ai/'
     total-recall            : 'https://mimis-gildi.github.io/mcp-total-recall/[MCP Total Recall,window=_blank]'
+    vailala                 : 'https://en.wikipedia.org/wiki/Vailala_Madness'
 
 
 # My general footer...

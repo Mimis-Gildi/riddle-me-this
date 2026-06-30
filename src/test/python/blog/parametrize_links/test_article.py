@@ -119,7 +119,10 @@ class TestArticleObject:
                 "mit-article-url", "mit-article-title", "mit-article",
                 "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi",
                 "hacker-culture-url", "hacker-culture", "dolly-2",
-                "openrouter", "openrouter-rankings", "openrouter-url"} == (
+                "openrouter", "openrouter-rankings", "openrouter-url",
+                "artificial-analysis", "commons-john-frum-effigy", "deepinfra", "fireworks-ai",
+                "kimi-k2-thinking", "llama-cpp", "lm-studio", "mit-genai-divide", "mit-hbr",
+                "ollama", "together-ai", "vailala"} == (
             seq(actual_article.links_global).map(lambda attr: attr.key).to_set())
 
 
