@@ -115,6 +115,8 @@ class TestArticleObject:
 
         assert {"site-baseurl", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
                 "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
+                "fireship-gemini3", "gitomer-book", "mcp-overview",
+                "mit-article-url", "mit-article-title", "mit-article",
                 "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi"} == (
             seq(actual_article.links_global).map(lambda attr: attr.key).to_set())
 
