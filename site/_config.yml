@@ -117,7 +117,7 @@ words_per_minute            : 300
 enable_copy_code_button     : true
 compress_html               : true
 
-copyright                   : "© Vadim Kuhay; 2022–2026; v14.0.36"
+copyright                   : "© Vadim Kuhay; 2022–2026; v14.0.37"
 copyright_url               : "https://mimis-gildi.github.io/riddle-me-this"
 
 ### Serve
