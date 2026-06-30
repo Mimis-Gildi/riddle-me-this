@@ -10,7 +10,6 @@ comments: true
 :new-founders: link:/riddle-me-this/adventures/2025/08/04/new-founders-compendium.html
 :for-new-founders: {new-founders}#note-from-the-author--bedrocking
 :for-new-founders-communities: {new-founders}#the-communities-that-actually-matter
-:gitomer-book: https://a.co/d/5n9DwBo[The Little Red Book of Selling: 12.5 Principles of Sales Greatness,window=_blank,opts=nofollow]
 :gitomer-book-fn: footnote:[Forget what you know about selling; Jeff Gitomer is all you need -> {gitomer-book}]
 
 Not everyone should build a SaaS.
