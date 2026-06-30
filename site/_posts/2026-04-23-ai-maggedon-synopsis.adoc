@@ -93,7 +93,7 @@ I could not even break her loose, floored, black smoke bellowing, ripping tarmac
 _Are you sure you want to be in this position?! No?! -- *then read my blogs!_*
 
 *The frontier is rented.* That is the truth nobody is telling you because they don't know. +
-{openrouter}[openrouter.ai,window=_blank] -- {openrouter-rankings}[the rankings,window=_blank] tell the story;
+{openrouter-url}[openrouter.ai,window=_blank] -- {openrouter-rankings}[the rankings,window=_blank] tell the story;
 {artificial-analysis}[artificialanalysis.ai,window=_blank] tells the same story neutrally.
 
 '''

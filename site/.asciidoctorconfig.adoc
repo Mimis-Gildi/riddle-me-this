@@ -22,6 +22,9 @@
 :mit-article: https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/[MIT NANDA Report,window=_blank]
 :openai-blog: https://www.openai.com/blog/[OpenAI Blog,window=_blank]
 :openai: https://www.openai.com/[OpenAI website,window=_blank]
+:openrouter-rankings: https://openrouter.ai/rankings
+:openrouter-url: https://openrouter.ai/
+:openrouter: https://openrouter.ai/[Open Router,window=_blank]
 :org-mimis-gildi: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
 :profile-li: https://www.linkedin.com/in/rdd13r[LinkedIn Profile,window=_blank]
 :rdd13r-gh: https://github.com/rdd13r[rdd13r,window=_blank]

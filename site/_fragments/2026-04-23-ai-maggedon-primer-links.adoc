@@ -2,8 +2,6 @@
 :ollama: https://ollama.com/
 :llama-cpp: https://github.com/ggerganov/llama.cpp
 :lm-studio: https://lmstudio.ai/
-:openrouter: https://openrouter.ai/
-:openrouter-rankings: https://openrouter.ai/rankings
 :artificial-analysis: https://artificialanalysis.ai/
 :together-ai: https://www.together.ai/
 :fireworks-ai: https://fireworks.ai/

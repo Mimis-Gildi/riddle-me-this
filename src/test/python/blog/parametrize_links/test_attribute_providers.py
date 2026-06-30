@@ -20,7 +20,8 @@ class TestGlobalAttributeProviders:
                 "fireship-gemini3", "gitomer-book", "mcp-overview",
                 "mit-article-url", "mit-article-title", "mit-article",
                 "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi",
-                "hacker-culture-url", "hacker-culture", "dolly-2"} == (
+                "hacker-culture-url", "hacker-culture", "dolly-2",
+                "openrouter", "openrouter-rankings", "openrouter-url"} == (
                    seq(global_link_attribute_collecting_provider(
                        static_links_provider(),
                        config_links_provider(CONF_FILE),
@@ -50,7 +51,7 @@ class TestConfigFileAttributeProviders:
         """The provider surfaces exactly the config's `asciidoctor.attributes` -- every key, none extra, all at GLOBAL_POSITION."""
         links = seq(config_links_provider(CONF_FILE)())
 
-        assert links.len() == 25
+        assert links.len() == 28
         assert links.map(lambda link: link.position).for_all(lambda position: position == GLOBAL_POSITION)
         assert  {
             "icons", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
@@ -59,6 +60,7 @@ class TestConfigFileAttributeProviders:
             "mit-article-url", "mit-article-title", "mit-article",
             "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi",
             "hacker-culture-url", "hacker-culture", "dolly-2",
+            "openrouter", "openrouter-rankings", "openrouter-url",
         } == links.map(lambda link: link.key).to_set()
 
 
@@ -118,7 +120,8 @@ class TestFilterProvider:
                 "fireship-gemini3", "gitomer-book", "mcp-overview",
                 "mit-article-url", "mit-article-title", "mit-article",
                 "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi",
-                "hacker-culture-url", "hacker-culture", "dolly-2"} == (
+                "hacker-culture-url", "hacker-culture", "dolly-2",
+                "openrouter", "openrouter-rankings", "openrouter-url"} == (
                    seq(config_links_provider(CONF_FILE)())
                    .filter(lambda attr: filter_provider()(attr.to_tuple()))
                    .map(lambda attr: attr.key)
@@ -132,7 +135,8 @@ class TestFilterProvider:
                 "fireship-gemini3", "gitomer-book", "mcp-overview",
                 "mit-article-url", "mit-article-title", "mit-article",
                 "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi",
-                "hacker-culture-url", "hacker-culture", "dolly-2"} == (
+                "hacker-culture-url", "hacker-culture", "dolly-2",
+                "openrouter", "openrouter-rankings", "openrouter-url"} == (
                    seq([config_links_provider(CONF_FILE)(), mock_provider()]).flatten()
                    .filter(lambda attr: filter_provider()(attr.to_tuple()))
                    .map(lambda attr: attr.key)

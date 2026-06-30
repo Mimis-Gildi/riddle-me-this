@@ -118,7 +118,8 @@ class TestArticleObject:
                 "fireship-gemini3", "gitomer-book", "mcp-overview",
                 "mit-article-url", "mit-article-title", "mit-article",
                 "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi",
-                "hacker-culture-url", "hacker-culture", "dolly-2"} == (
+                "hacker-culture-url", "hacker-culture", "dolly-2",
+                "openrouter", "openrouter-rankings", "openrouter-url"} == (
             seq(actual_article.links_global).map(lambda attr: attr.key).to_set())
 
 

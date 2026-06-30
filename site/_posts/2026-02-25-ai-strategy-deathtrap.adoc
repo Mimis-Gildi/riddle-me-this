@@ -16,7 +16,6 @@ read_aloud: false
 :ai-cognitive-augmentation: link:{site-baseurl}/adventures/2023/06/10/4-cognitive-augmentation.html[2023: Cognitive Augmentation: The Real Revolution,window=_blank]
 :ai-hype-straight-talk: link:{site-baseurl}/adventures/2025/09/29/not-chat-gpt.html[2025: AI Hype -- Straight Talk,window=_blank]
 :minimax: https://www.minimax.io/news/minimax-m25[MiniMax M2.5,window=_blank]
-:openrouter: https://openrouter.ai/[Open Router,window=_blank]
 
 .Build Your House with a Smile, God in Heart, Competence in Hand
 [#img-go-to-meeting]
