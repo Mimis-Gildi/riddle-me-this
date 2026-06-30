@@ -12,16 +12,13 @@ rdd13r
 :nomads: https://en.wikipedia.org/wiki/Digital_nomad[Digital Nomads,window=_blank]
 :demogroup: http://catb.org/jargon/html/D/demogroup.html["demogroup",window=_blank]
 :anonymous: https://en.wikipedia.org/wiki/Anonymous_(hacker_group)[Anonymous,window=_blank]
-:cliques: https://en.wikipedia.org/wiki/Hacker_culture[Hacker Cliques,window=_blank]
 :scene: https://en.wikipedia.org/wiki/Demoscene[Demoscene,window=_blank]
-:culture: https://en.wikipedia.org/wiki/Hacker_culture[Hacker Culture,window=_blank]
 :mit: https://handbook.mit.edu/hacking[MIT,window=_blank]
 :lugaru: https://github.com/CaptainLugaru[Captain Lugaru,window=_blank]
 :tales: https://youtu.be/C9DbwEKvN8Q["Hacker Tales",window=_blank]
 :spaces: https://wiki.hackerspaces.org/Hackerspaces[Hackerspaces,window=_blank]
 :brakha: https://www.dakhabrakha.com.ua/en/about/[DakhaBrakha,window=_blank]
 :carpathia: https://youtu.be/fTrSsIY7Oww[Carpathian Rap,window=_blank]
-:dolly-2: https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm[Dolly 2 by Databricks,window=_blank]
 :hfce: https://huggingface.co/[Hugging Face,window=_blank]
 :crackers: http://www.catb.org/~esr/jargon/html/crackers.html[crackers,window=_blank]
 :active-inference: https://baicsworkshop.github.io/pdf/BAICS_37.pdf[Active Inference,window=_blank]
@@ -77,7 +74,7 @@ It is important to note that labeling the Northern as a "group" from {demogroup}
 as I see done on various social media sites, college news, and blog posts is somewhat of a _misnomer_.
 Similarly as {anonymous} is not a group, a clique or an organization.
 None really are -- yet the uninitiated keep insisting on the word 'group.'
-Likewise, Northern is not an organization but a grassroots tradition: just a vibrant and decentralized social network of {cliques}
+Likewise, Northern is not an organization but a grassroots tradition: just a vibrant and decentralized social network of {hacker-culture-url}[Hacker Cliques,window=_blank]
 who occasionally convene for a mutual exchange of ideas in the classic {scene} or simply 'scene' format.
 The Northern is socially connected to but not the organizer of the esteemed "Hack The North" hackathon.
 The member cliques have people in the USA, Prague, the EU and many other regions.
@@ -85,7 +82,7 @@ The moniker is a legacy from the 90s when geography still separated people,
 as in the "Northern USA." Except, it isn't the U.S. community anymore and hadn't been one for a long minute.
 Still, year to year people gather and the tradition continues.
 Let me clarify that this has nothing to do with the Hollywood portrayal of hackers as criminals either.
-This and many such communities we frequent are about celebrating the roots of the authentic {culture}.
+This and many such communities we frequent are about celebrating the roots of the authentic {hacker-culture}.
 The culture originating at the {mit},
 the culture that has been the cradle of disruptive innovation and has influenced giants like Google and PayPal as well as GNU and Linux Foundation.
 It's a deeply positive thing -- a place where honest makers bring their kids.

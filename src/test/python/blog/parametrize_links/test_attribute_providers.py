@@ -19,7 +19,8 @@ class TestGlobalAttributeProviders:
                 "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
                 "fireship-gemini3", "gitomer-book", "mcp-overview",
                 "mit-article-url", "mit-article-title", "mit-article",
-                "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi"} == (
+                "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi",
+                "hacker-culture-url", "hacker-culture", "dolly-2"} == (
                    seq(global_link_attribute_collecting_provider(
                        static_links_provider(),
                        config_links_provider(CONF_FILE),
@@ -49,7 +50,7 @@ class TestConfigFileAttributeProviders:
         """The provider surfaces exactly the config's `asciidoctor.attributes` -- every key, none extra, all at GLOBAL_POSITION."""
         links = seq(config_links_provider(CONF_FILE)())
 
-        assert links.len() == 22
+        assert links.len() == 25
         assert links.map(lambda link: link.position).for_all(lambda position: position == GLOBAL_POSITION)
         assert  {
             "icons", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
@@ -57,6 +58,7 @@ class TestConfigFileAttributeProviders:
             "fireship-gemini3", "gitomer-book", "mcp-overview",
             "mit-article-url", "mit-article-title", "mit-article",
             "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi",
+            "hacker-culture-url", "hacker-culture", "dolly-2",
         } == links.map(lambda link: link.key).to_set()
 
 
@@ -115,7 +117,8 @@ class TestFilterProvider:
                 "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
                 "fireship-gemini3", "gitomer-book", "mcp-overview",
                 "mit-article-url", "mit-article-title", "mit-article",
-                "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi"} == (
+                "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi",
+                "hacker-culture-url", "hacker-culture", "dolly-2"} == (
                    seq(config_links_provider(CONF_FILE)())
                    .filter(lambda attr: filter_provider()(attr.to_tuple()))
                    .map(lambda attr: attr.key)
@@ -128,7 +131,8 @@ class TestFilterProvider:
                 "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
                 "fireship-gemini3", "gitomer-book", "mcp-overview",
                 "mit-article-url", "mit-article-title", "mit-article",
-                "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi"} == (
+                "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi",
+                "hacker-culture-url", "hacker-culture", "dolly-2"} == (
                    seq([config_links_provider(CONF_FILE)(), mock_provider()]).flatten()
                    .filter(lambda attr: filter_provider()(attr.to_tuple()))
                    .map(lambda attr: attr.key)

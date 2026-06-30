@@ -117,7 +117,8 @@ class TestArticleObject:
                 "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
                 "fireship-gemini3", "gitomer-book", "mcp-overview",
                 "mit-article-url", "mit-article-title", "mit-article",
-                "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi"} == (
+                "rdd13r-gh", "release", "resume", "total-recall", "org-mimis-gildi",
+                "hacker-culture-url", "hacker-culture", "dolly-2"} == (
             seq(actual_article.links_global).map(lambda attr: attr.key).to_set())
 
 
@@ -136,9 +137,9 @@ class TestArticleContentReadingObject:
             .print_global_links()
             .print_declared_links())
 
-        assert 40 == seq(actual.links_declared).len()
-        assert {"jarvis", "nomads", "demogroup", "anonymous", "cliques", "scene", "culture", "mit",
-                "lugaru", "tales", "spaces", "brakha", "carpathia", "dolly-2", "hfce", "crackers",
+        assert 37 == seq(actual.links_declared).len()
+        assert {"jarvis", "nomads", "demogroup", "anonymous", "scene", "mit",
+                "lugaru", "tales", "spaces", "brakha", "carpathia", "hfce", "crackers",
                 "active-inference", "verses", "g-io", "g-community", "g-ai-onboarding", "g-dev-profile",
                 "g-k-models", "g-dtensor", "g-io-session", "g-palm2-api", "g-maker-suite", "g-tensorflow",
                 "g-research", "g-kaggle", "g-attn", "m-llama", "s-alpaca", "bsd-vicuna", "bsd-vicuna-topics",
