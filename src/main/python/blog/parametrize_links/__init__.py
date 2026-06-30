@@ -19,8 +19,11 @@ SLOP_ARTICLE = POST_ROOT / "2025-09-29-sources-passed-validation.adoc"
 FULL_ARTICLE = POST_ROOT / "2023-06-10-LLMs-what-good-for.adoc"
 
 
-def main() -> int:
+def main(csv_dir: Path | None = None) -> int:
     from .configuration import Configuration
     from .site import Site
     from .reporter import Reporter
-    return Reporter(Site(Configuration(SITE_ROOT))).report()
+    reporter = Reporter(Site(Configuration(SITE_ROOT)))
+    if csv_dir is not None:
+        reporter.to_csvs(csv_dir)
+    return reporter.report()

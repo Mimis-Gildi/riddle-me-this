@@ -34,3 +34,8 @@ class TestInitMain:
 
     def test_main_exit_code_valid(self, capsys):
         assert main() in (0, 1)
+
+    def test_main_csv_produces_files(self, tmp_path, capsys):
+        assert main(csv_dir=tmp_path) in (0, 1)
+        assert (tmp_path / "body_violations.csv").exists()
+        assert (tmp_path / "promotion_candidates.csv").exists()
