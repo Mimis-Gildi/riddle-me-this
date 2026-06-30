@@ -38,8 +38,6 @@ comments: true
 :reference-article-for-the-quote-footer: footnote:root-cause-article[This is the original article that exposes the root cause for American AI Integration difficulties {reference-article-for-the-quote-link}.]
 
 :mit-article-image-url: https://fortune.com/img-assets/wp-content/uploads/2025/08/GettyImages-2195607659.jpg
-:mit-article-url: https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/
-:mit-article-title: MIT report: 95% of generative AI pilots at companies are failing
 
 {mit-article-url}[MIT's NANDA initiative just published,window=_blank] what every executive already knows but won't say publicly: 95% of enterprise AI pilots are failing.
 

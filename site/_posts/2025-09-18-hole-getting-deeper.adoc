@@ -15,7 +15,6 @@ comments: true
 
 :stages-of-ai-evolution: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
 :stage-1-mit-failures: link:/riddle-me-this/adventures/2025/08/18/years-late-confirmation.html
-:mit-fortune-article: https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/
 :stage-4-in-crypto: https://decrypt.co/339715/google-researchers-warn-looming-ai-run-economies
 :virtual-agent-economies: https://arxiv.org/abs/2509.10147
 
@@ -57,7 +56,7 @@ I will immediately tell you that what's seen on the far-left isn't automatically
 Moreover, attempting to regulate progress is a "Fool's Errand." +
 Hold this thought for now.
 
-[#img-stage-1,link={mit-fortune-article}]
+[#img-stage-1,link={mit-article-url}]
 image::https://fortune.com/img-assets/wp-content/uploads/2025/08/GettyImages-2195607659.jpg[MIT report: 95% of generative AI pilots at companies are failing]
 
 *MIT report: 95% of generative AI pilots at companies are failing*
