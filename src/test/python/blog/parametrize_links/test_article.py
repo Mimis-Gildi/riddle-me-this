@@ -41,8 +41,8 @@ class TestArticleInvocation:
         """A real Slop article -> constructs cleanly, keeps the path."""
         article = Article(slop_article)
 
-        assert 8756 == article._content_length
-        assert "4509706383d2b891d73e00b93132ca95ab2b3186" == article._file_checksum
+        assert article._content_length == 8756
+        assert article._file_checksum == "4509706383d2b891d73e00b93132ca95ab2b3186"
 
         assert article.path == slop_article
 
@@ -65,8 +65,8 @@ class TestArticleObject:
         """Test the affinity of the protected attributes once the right slop is loaded."""
         slop = Article(self.slop_article)
 
-        assert 8756 == slop._content_length
-        assert "4509706383d2b891d73e00b93132ca95ab2b3186" == slop._file_checksum
+        assert slop._content_length == 8756
+        assert slop._file_checksum == "4509706383d2b891d73e00b93132ca95ab2b3186"
         assert slop.path == self.slop_article
 
         with pytest.raises(RuntimeError) as text_set_error:
@@ -114,8 +114,7 @@ class TestArticleObject:
             .apply_global_links_acquisition()
             .print_global_links())
 
-        assert GLOBAL_LINK_KEYS == (
-            seq(actual_article.links_global).map(lambda attr: attr.key).to_set())
+        assert seq(actual_article.links_global).map(lambda attr: attr.key).to_set() == GLOBAL_LINK_KEYS
 
 
 class TestArticleContentReadingObject:
@@ -133,11 +132,11 @@ class TestArticleContentReadingObject:
             .print_global_links()
             .print_declared_links())
 
-        assert 37 == seq(actual.links_declared).len()
-        assert {"jarvis", "nomads", "demogroup", "anonymous", "scene", "mit",
+        assert seq(actual.links_declared).len() == 37
+        assert seq(actual.links_declared).map(lambda attr: attr.key).to_set() == {
+                "jarvis", "nomads", "demogroup", "anonymous", "scene", "mit",
                 "lugaru", "tales", "spaces", "brakha", "carpathia", "hfce", "crackers",
                 "active-inference", "verses", "g-io", "g-community", "g-ai-onboarding", "g-dev-profile",
                 "g-k-models", "g-dtensor", "g-io-session", "g-palm2-api", "g-maker-suite", "g-tensorflow",
                 "g-research", "g-kaggle", "g-attn", "m-llama", "s-alpaca", "bsd-vicuna", "bsd-vicuna-topics",
-                "db-dolly", "db-dolly-hf", "open-assistant", "o-a-hf", "all-oss-lm-models"} == (
-            seq(actual.links_declared).map(lambda attr: attr.key).to_set())
+                "db-dolly", "db-dolly-hf", "open-assistant", "o-a-hf", "all-oss-lm-models"}

@@ -13,13 +13,13 @@ class TestArticleDeclaredLinkAttributeProviders:
         """Accept real article and extract real link attributes from the article header adhering to what I always do - a well organized article."""
         links = seq(read_declared_link_attributes_provider(Article(full_article))())
         assert links.len() == 37
-        assert {"jarvis", "nomads", "demogroup", "anonymous", "scene", "mit",
+        assert links.map(lambda attr: attr.key).to_set() == {
+                "jarvis", "nomads", "demogroup", "anonymous", "scene", "mit",
                 "lugaru", "tales", "spaces", "brakha", "carpathia", "hfce", "crackers",
                 "active-inference", "verses", "g-io", "g-community", "g-ai-onboarding", "g-dev-profile",
                 "g-k-models", "g-dtensor", "g-io-session", "g-palm2-api", "g-maker-suite", "g-tensorflow",
                 "g-research", "g-kaggle", "g-attn", "m-llama", "s-alpaca", "bsd-vicuna", "bsd-vicuna-topics",
-                "db-dolly", "db-dolly-hf", "open-assistant", "o-a-hf", "all-oss-lm-models"} == (
-            links.map(lambda attr: attr.key).to_set())
+                "db-dolly", "db-dolly-hf", "open-assistant", "o-a-hf", "all-oss-lm-models"}
 
 
 class TestArticleBodyLinkAttributeProviders:

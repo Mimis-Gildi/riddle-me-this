@@ -16,13 +16,12 @@ class TestGlobalAttributeProviders:
     def test_global_link_attribute_collecting_provider(self):
         """Assert the collector merges static and config providers and applies the filter."""
 
-        assert GLOBAL_LINK_KEYS == (
-                   seq(global_link_attribute_collecting_provider(
+        assert (seq(global_link_attribute_collecting_provider(
                        static_links_provider(),
                        config_links_provider(CONF_FILE),
                        filter_provider())())
                    .map(lambda attr: attr.key)
-                   .to_set())
+                   .to_set()) == GLOBAL_LINK_KEYS
 
 
 class TestConfigFileAttributeProviders:
@@ -40,7 +39,7 @@ class TestConfigFileAttributeProviders:
             Attribute("resume", "https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v13.1.0/VadimKuhay-Resume.pdf", -1),
         ]).order_by(lambda attr: attr.key)
 
-        assert mock_state() == seq(mock_provider()).intersection(mock_state()).order_by(lambda a: a.key)
+        assert seq(mock_provider()).intersection(mock_state()).order_by(lambda a: a.key) == mock_state()
 
     def test_config_links_provider(self):
         """The provider surfaces exactly the config's `asciidoctor.attributes` -- every key, none extra, all at GLOBAL_POSITION."""
@@ -48,7 +47,7 @@ class TestConfigFileAttributeProviders:
 
         assert links.len() == 44
         assert links.map(lambda link: link.position).for_all(lambda position: position == GLOBAL_POSITION)
-        assert GLOBAL_LINK_KEYS - {"site-baseurl"} | {"icons"} == links.map(lambda link: link.key).to_set()
+        assert links.map(lambda link: link.key).to_set() == GLOBAL_LINK_KEYS - {"site-baseurl"} | {"icons"}
 
 
 class TestStaticLinkProviders:
@@ -59,10 +58,10 @@ class TestStaticLinkProviders:
         links = seq(static_links_provider()())
 
         assert links.len() == 2
-        assert {
+        assert links.to_set() == {
             Attribute("baseurl", "/riddle-me-this", -1),
             Attribute("site-baseurl", "/riddle-me-this", -1),
-        } == links.to_set()
+        }
 
 
 class TestFilterProvider:
@@ -81,38 +80,30 @@ class TestFilterProvider:
             Attribute("baseurl", "/riddle-me-this", -1),
         ]).filter(lambda attr: filter_provider()(attr.to_tuple())))
 
-        assert 3 == sequence.len()
-        assert 1 == sequence.distinct().len()
+        assert sequence.len() == 3
+        assert sequence.distinct().len() == 1
         assert sequence.for_all(lambda a: "chatgpt" == a.key)
 
     def test_a_filter_provider_vs_mock_attributes(self, mock_provider):
         """Test filter versus reference mock attributes in this project."""
 
-        assert ({"site-baseurl",
-                 "chatgpt",
-                 "cb-hacker",
-                 "mailto-rIdd13r",
-                 "hera-school",
-                 "resume"} == seq(
-            mock_provider())
+        assert (seq(mock_provider())
                 .filter(lambda attr: filter_provider()(attr.to_tuple()))
                 .map(lambda attr: attr.key)
-                .to_set())
+                .to_set()) == {"site-baseurl", "chatgpt", "cb-hacker", "mailto-rIdd13r", "hera-school", "resume"}
 
     def test_b_filter_provider_vs_config_provider(self):
         """Test filter versus real config attributes in this project."""
 
-        assert GLOBAL_LINK_KEYS - {"site-baseurl"} == (
-                   seq(config_links_provider(CONF_FILE)())
+        assert (seq(config_links_provider(CONF_FILE)())
                    .filter(lambda attr: filter_provider()(attr.to_tuple()))
                    .map(lambda attr: attr.key)
-                   .to_set())
+                   .to_set()) == GLOBAL_LINK_KEYS - {"site-baseurl"}
 
     def test_c_filter_provider_vs_both_providers(self, mock_provider):
         """Test filter versus real config attributes in this project joined with the mock attributes."""
 
-        assert GLOBAL_LINK_KEYS == (
-                   seq([config_links_provider(CONF_FILE)(), mock_provider()]).flatten()
+        assert (seq([config_links_provider(CONF_FILE)(), mock_provider()]).flatten()
                    .filter(lambda attr: filter_provider()(attr.to_tuple()))
                    .map(lambda attr: attr.key)
-                   .to_set())
+                   .to_set()) == GLOBAL_LINK_KEYS
