@@ -97,7 +97,7 @@ class TestArticleObject:
         assert mocked_global_links_applied_article.links_provider_global == self.mocked_provider
 
         mocked_global_links = mocked_global_links_applied_article.links_global
-        assert all(link in mocked_global_links for link in self.mocked_provider())
+        assert seq(self.mocked_provider()).filter(lambda link: link not in mocked_global_links).to_list() == []
 
         mocked_global_links_applied_article.print_global_links()
 

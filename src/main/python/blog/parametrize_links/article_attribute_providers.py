@@ -22,17 +22,22 @@ def _slug_from_display(display_raw: str) -> str:
     """Derive an attribute key from AsciiDoc link display text: first 2-3 words, slugified."""
     text = display_raw.split(',')[0]
     text = re.sub(r'[*"@\'#`]', '', text)
-    parts = [re.sub(r'[^a-z0-9.]', '', w.lower()) for w in text.strip().split()[:3]]
-    return '-'.join(p for p in parts if p)
+    return (
+        seq(text.strip().split()[:3])
+        .map(lambda w: re.sub(r'[^a-z0-9.]', '', w.lower()))
+        .filter(lambda p: p)
+        .make_string('-')
+    )
 
 
 def read_body_link_attributes_provider(article: Article) -> AttributeProvider:
     """Provider that finds raw inline links in article body (non-declaration lines)."""
     def _extract():
-        body = '\n'.join(
-            line for line in article.text.splitlines()
-            if not re.match(r'^:[^:]+:\s+', line)
-            and not re.match(r'^image::', line)
+        body = (
+            seq(article.text.splitlines())
+            .filter(lambda line: not re.match(r'^:[^:]+:\s+', line))
+            .filter(lambda line: not re.match(r'^image::', line))
+            .make_string('\n')
         )
         return (
             seq(re.finditer(r'(?:link:)?(https?://[^\[\n]+)\[([^\]]+)\]', body))

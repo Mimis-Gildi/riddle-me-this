@@ -33,17 +33,16 @@ class TestArticleBodyLinkAttributeProviders:
 
     def test_generate_body_links_csv(self):
         """Write body-links-review.csv at project root with suggested_key and blank your_key column."""
-        import csv
         from blog.parametrize_links import POST_ROOT
         out = POST_ROOT.parent.parent / "body-links-review.csv"
-        with out.open('w', newline='', encoding='utf-8') as f:
-            w = csv.writer(f)
-            w.writerow(['article', 'suggested_key', 'your_key', 'url', 'display_text'])
-            for path in sorted(POST_ROOT.glob('*.adoc')):
-                for attr in read_body_link_attributes_provider(Article(path))():
-                    url = attr.value.split('[')[0]
-                    display = attr.value[len(url) + 1:].rstrip(']') if '[' in attr.value else ''
-                    w.writerow([path.stem, attr.key, '', url, display])
+        (
+            (seq([('article', 'suggested_key', 'your_key', 'url', 'display_text')]) +
+             seq(POST_ROOT.glob('*.adoc')).sorted()
+             .flat_map(lambda path: seq(read_body_link_attributes_provider(Article(path))()).map(lambda attr: (path, attr)))
+             .map(lambda pair: (pair[0].stem, pair[1].key, '', pair[1].value.split('[')[0],
+                                pair[1].value[len(pair[1].value.split('[')[0]) + 1:].rstrip(']') if '[' in pair[1].value else ''))
+             ).to_csv(out)
+        )
         print(out)
 
     # noinspection PyNoneFunctionAssignment
@@ -53,8 +52,8 @@ class TestArticleBodyLinkAttributeProviders:
             seq(POST_ROOT.glob("*.adoc"))
             .map(lambda path: (path.stem, seq(read_body_link_attributes_provider(Article(path))()).to_list()))
             .filter(lambda pair: pair[1])
-            .for_each(lambda pair: [
-                print(f"\n--- {pair[0]} ---"),
-                [print(f"  {attr.key:<35} {attr.value[:80]}") for attr in pair[1]],
-            ])
+            .flat_map(lambda pair: seq([f"\n--- {pair[0]} ---"]).concat(
+                seq(pair[1]).map(lambda attr: f"  {attr.key:<35} {attr.value[:80]}")
+            ))
+            .for_each(print)
         )
