@@ -5,6 +5,7 @@ import pytest
 from functional import seq
 
 from blog.parametrize_links import CONF_FILE
+from conftest import GLOBAL_LINK_KEYS
 from blog.parametrize_links.article import Article
 from blog.parametrize_links.article_attribute_providers import read_declared_link_attributes_provider
 from blog.parametrize_links.attribute_providers import GLOBAL_POSITION, global_link_attribute_collecting_provider, \
@@ -113,17 +114,7 @@ class TestArticleObject:
             .apply_global_links_acquisition()
             .print_global_links())
 
-        assert {"site-baseurl", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
-                "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
-                "fireship-gemini3", "gitomer-book", "mcp-overview",
-                "mit-article-url", "mit-article-title", "mit-article",
-                "rdd13r-gh", "rdd13r-gh-io", "rdd13r-gh-io-url", "rdd13r-gh-io-title",
-                "release", "resume", "total-recall", "org-mimis-gildi",
-                "hacker-culture-url", "hacker-culture", "dolly-2",
-                "openrouter", "openrouter-rankings", "openrouter-url",
-                "artificial-analysis", "commons-john-frum-effigy", "deepinfra", "fireworks-ai",
-                "kimi-k2-thinking", "llama-cpp", "lm-studio", "mit-genai-divide", "mit-hbr",
-                "ollama", "together-ai", "vailala", "rdd13r-style-guide"} == (
+        assert GLOBAL_LINK_KEYS == (
             seq(actual_article.links_global).map(lambda attr: attr.key).to_set())
 
 

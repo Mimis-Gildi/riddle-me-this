@@ -6,6 +6,20 @@ import pytest
 from blog.parametrize_links import SLOP_ARTICLE, FULL_ARTICLE
 from blog.parametrize_links.attributes import AttributeProvider, Attribute
 
+GLOBAL_LINK_KEYS = {
+    "site-baseurl", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
+    "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
+    "fireship-gemini3", "gitomer-book", "mcp-overview",
+    "mit-article-url", "mit-article-title", "mit-article",
+    "rdd13r-gh", "rdd13r-gh-io", "rdd13r-gh-io-url", "rdd13r-gh-io-title",
+    "release", "resume", "total-recall", "org-mimis-gildi",
+    "hacker-culture-url", "hacker-culture", "dolly-2",
+    "openrouter", "openrouter-rankings", "openrouter-url",
+    "artificial-analysis", "commons-john-frum-effigy", "deepinfra", "fireworks-ai",
+    "kimi-k2-thinking", "llama-cpp", "lm-studio", "mit-genai-divide", "mit-hbr",
+    "ollama", "together-ai", "vailala", "rdd13r-style-guide",
+}
+
 
 @pytest.fixture
 def slop_article(tmp_path):

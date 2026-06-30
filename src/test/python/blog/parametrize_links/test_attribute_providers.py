@@ -4,6 +4,7 @@ import yaml
 from functional import seq
 
 from blog.parametrize_links import CONF_FILE
+from conftest import GLOBAL_LINK_KEYS
 from blog.parametrize_links.attribute_providers import global_link_attribute_collecting_provider, config_links_provider, \
     static_links_provider, filter_provider, GLOBAL_POSITION
 from blog.parametrize_links.attributes import Attribute
@@ -15,17 +16,7 @@ class TestGlobalAttributeProviders:
     def test_global_link_attribute_collecting_provider(self):
         """Assert the collector merges static and config providers and applies the filter."""
 
-        assert {"site-baseurl", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
-                "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
-                "fireship-gemini3", "gitomer-book", "mcp-overview",
-                "mit-article-url", "mit-article-title", "mit-article",
-                "rdd13r-gh", "rdd13r-gh-io", "rdd13r-gh-io-url", "rdd13r-gh-io-title",
-                "release", "resume", "total-recall", "org-mimis-gildi",
-                "hacker-culture-url", "hacker-culture", "dolly-2",
-                "openrouter", "openrouter-rankings", "openrouter-url",
-                "artificial-analysis", "commons-john-frum-effigy", "deepinfra", "fireworks-ai",
-                "kimi-k2-thinking", "llama-cpp", "lm-studio", "mit-genai-divide", "mit-hbr",
-                "ollama", "together-ai", "vailala", "rdd13r-style-guide"} == (
+        assert GLOBAL_LINK_KEYS == (
                    seq(global_link_attribute_collecting_provider(
                        static_links_provider(),
                        config_links_provider(CONF_FILE),
@@ -57,19 +48,7 @@ class TestConfigFileAttributeProviders:
 
         assert links.len() == 44
         assert links.map(lambda link: link.position).for_all(lambda position: position == GLOBAL_POSITION)
-        assert  {
-            "icons", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
-            "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
-            "fireship-gemini3", "gitomer-book", "mcp-overview",
-            "mit-article-url", "mit-article-title", "mit-article",
-            "rdd13r-gh", "rdd13r-gh-io", "rdd13r-gh-io-url", "rdd13r-gh-io-title",
-            "release", "resume", "total-recall", "org-mimis-gildi",
-            "hacker-culture-url", "hacker-culture", "dolly-2",
-            "openrouter", "openrouter-rankings", "openrouter-url",
-            "artificial-analysis", "commons-john-frum-effigy", "deepinfra", "fireworks-ai",
-            "kimi-k2-thinking", "llama-cpp", "lm-studio", "mit-genai-divide", "mit-hbr",
-            "ollama", "together-ai", "vailala", "rdd13r-style-guide",
-        } == links.map(lambda link: link.key).to_set()
+        assert GLOBAL_LINK_KEYS - {"site-baseurl"} | {"icons"} == links.map(lambda link: link.key).to_set()
 
 
 class TestStaticLinkProviders:
@@ -123,17 +102,7 @@ class TestFilterProvider:
     def test_b_filter_provider_vs_config_provider(self):
         """Test filter versus real config attributes in this project."""
 
-        assert {"cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
-                "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
-                "fireship-gemini3", "gitomer-book", "mcp-overview",
-                "mit-article-url", "mit-article-title", "mit-article",
-                "rdd13r-gh", "rdd13r-gh-io", "rdd13r-gh-io-url", "rdd13r-gh-io-title",
-                "release", "resume", "total-recall", "org-mimis-gildi",
-                "hacker-culture-url", "hacker-culture", "dolly-2",
-                "openrouter", "openrouter-rankings", "openrouter-url",
-                "artificial-analysis", "commons-john-frum-effigy", "deepinfra", "fireworks-ai",
-                "kimi-k2-thinking", "llama-cpp", "lm-studio", "mit-genai-divide", "mit-hbr",
-                "ollama", "together-ai", "vailala", "rdd13r-style-guide"} == (
+        assert GLOBAL_LINK_KEYS - {"site-baseurl"} == (
                    seq(config_links_provider(CONF_FILE)())
                    .filter(lambda attr: filter_provider()(attr.to_tuple()))
                    .map(lambda attr: attr.key)
@@ -142,17 +111,7 @@ class TestFilterProvider:
     def test_c_filter_provider_vs_both_providers(self, mock_provider):
         """Test filter versus real config attributes in this project joined with the mock attributes."""
 
-        assert {"site-baseurl", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
-                "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
-                "fireship-gemini3", "gitomer-book", "mcp-overview",
-                "mit-article-url", "mit-article-title", "mit-article",
-                "rdd13r-gh", "rdd13r-gh-io", "rdd13r-gh-io-url", "rdd13r-gh-io-title",
-                "release", "resume", "total-recall", "org-mimis-gildi",
-                "hacker-culture-url", "hacker-culture", "dolly-2",
-                "openrouter", "openrouter-rankings", "openrouter-url",
-                "artificial-analysis", "commons-john-frum-effigy", "deepinfra", "fireworks-ai",
-                "kimi-k2-thinking", "llama-cpp", "lm-studio", "mit-genai-divide", "mit-hbr",
-                "ollama", "together-ai", "vailala", "rdd13r-style-guide"} == (
+        assert GLOBAL_LINK_KEYS == (
                    seq([config_links_provider(CONF_FILE)(), mock_provider()]).flatten()
                    .filter(lambda attr: filter_provider()(attr.to_tuple()))
                    .map(lambda attr: attr.key)

@@ -46,6 +46,7 @@ class TestArticleBodyLinkAttributeProviders:
                     w.writerow([path.stem, attr.key, '', url, display])
         print(out)
 
+    # noinspection PyNoneFunctionAssignment
     def test_all_posts_body_links(self):
         """Print all raw inline body links found across every post — for inspection."""
         (
