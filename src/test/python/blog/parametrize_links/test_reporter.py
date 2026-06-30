@@ -10,6 +10,7 @@ from blog.parametrize_links.site import Site
 
 @pytest.fixture(scope="module")
 def real_reporter():
+    """Invoke the Reporter fixture for the real reporter."""
     return Reporter(Site(Configuration(SITE_ROOT)))
 
 

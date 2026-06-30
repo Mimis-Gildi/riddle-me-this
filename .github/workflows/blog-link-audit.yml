@@ -1,0 +1,58 @@
+name: Blog Link Audit
+run-name: "Blog Link Audit on ${{ github.repository }} by ${{ github.actor }}"
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - 'renovate/**'
+      - 'dependabot/**'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+defaults:
+  run:
+    shell: zsh -l {0}
+
+jobs:
+  audit:
+    runs-on: self-hosted
+    timeout-minutes: 3
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+
+      - name: Extract issue number
+        id: issue
+        run: |
+          BRANCH="${{ github.ref_name }}"
+          ISSUE_NUM=$(echo "$BRANCH" | grep -oE '^[0-9]+' || true)
+          if [[ -z "$ISSUE_NUM" ]]; then
+            printf '::notice::Branch "%s" has no leading issue number — skipping comment.\n' "$BRANCH"
+          fi
+          echo "number=${ISSUE_NUM}" >> $GITHUB_OUTPUT
+
+      - name: Run audit
+        id: audit
+        uses: ./.github/actions/blog-link-audit
+
+      - name: Comment on issue
+        if: steps.issue.outputs.number != ''
+        env:
+          GH_TOKEN: ${{ secrets.CI_PAT }}
+        run: |
+          cat > /tmp/blog-audit.md << 'EOF'
+          ### Blog Link Audit — `${{ github.ref_name }}`
+
+          ```
+          ${{ steps.audit.outputs.report }}
+          ```
+
+          _${{ github.actor }} @ ${{ github.sha }}_
+          EOF
+          gh issue comment ${{ steps.issue.outputs.number }} \
+            --repo ${{ github.repository }} \
+            --body-file /tmp/blog-audit.md

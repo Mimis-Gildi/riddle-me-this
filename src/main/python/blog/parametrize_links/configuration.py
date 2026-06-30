@@ -44,7 +44,7 @@ class Configuration:
             yaml.safe_load(self._conf_file.read_text(encoding="utf-8")) or {}
         ).get("include", [])
         return tuple(
-            seq(["_posts"] + list(include))
+            (seq(["_posts"]) + seq(include))
             .map(lambda name: self.site_root / name)
             .filter(lambda p: p.is_dir())
             .filter(lambda p: seq(p.glob("*.adoc")).non_empty())

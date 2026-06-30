@@ -1,0 +1,34 @@
+name: Blog Link Audit
+description: >
+  Scans AsciiDoc posts for body-link violations, shadowed globals,
+  cross-article duplicates, and promotion candidates.
+  Requires full repository checkout before invocation (reads site/).
+author: rdd13r
+branding:
+  icon: search
+  color: blue
+
+outputs:
+  report:
+    description: Full text output from the audit tool
+    value: ${{ steps.run.outputs.report }}
+  has-issues:
+    description: "'true' if violations were found"
+    value: ${{ steps.run.outputs.has_issues }}
+
+runs:
+  using: composite
+  steps:
+    - id: run
+      shell: zsh -l {0}
+      run: |
+        OUTPUT=$(cd ${{ github.action_path }} && conda run -n ml python -m blog.parametrize_links 2>&1) || true
+        EXIT_CODE=$?
+        HAS_ISSUES=false
+        (( EXIT_CODE == 1 )) && HAS_ISSUES=true
+        {
+          echo 'report<<REPORT_EOF'
+          echo "$OUTPUT"
+          echo 'REPORT_EOF'
+          echo "has_issues=${HAS_ISSUES}"
+        } >> $GITHUB_OUTPUT
