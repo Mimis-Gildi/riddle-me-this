@@ -20,7 +20,7 @@
         {% if is_category %}
           {% assign crumb_href = "/categories/" | append: crumb | append: "/" | relative_url %}
           {% assign crumb_label = crumb | replace: '-', ' ' | capitalize %}
-        {% elsif crumb_size == 4 and crumb >= "2000" %}
+        {% elsif crumb_size == 4 and crumb >= "1000" and crumb < "3000" %}
           {% assign archive_path = "/archive/" | append: crumb %}
           {% assign crumb_href = archive_path | append: "/" | relative_url %}
           {% assign crumb_label = crumb %}
