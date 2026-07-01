@@ -35,7 +35,11 @@
 :openrouter-rankings: https://openrouter.ai/rankings
 :openrouter-url: https://openrouter.ai/
 :openrouter: https://openrouter.ai/[Open Router,window=_blank]
+:org-gervi-hera-vitr: https://github.com/Gervi-Hera-Vitr[Gervi Héra Vitr,window=_blank]
+:org-gotham-village: https://github.com/Gotham-Village[Gotham Village,window=_blank]
 :org-mimis-gildi: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
+:org-mimis-latlaeg: https://github.com/Mimis-Latlaeg-Hattalag[Mímis Látlæg Háttalag,window=_blank]
+:org-mimis-scala: https://github.com/Mimis-Scala[Mímis Scala,window=_blank]
 :profile-li: https://www.linkedin.com/in/rdd13r[LinkedIn Profile,window=_blank]
 :rdd13r-gh-io-title: What Riddler Does
 :rdd13r-gh-io-url: https://rdd13r.github.io/

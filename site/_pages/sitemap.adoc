@@ -1,22 +1,32 @@
 = Site Map
 :page-layout: single
 :page-permalink: /sitemap/
+:link-home: link:/[Home]
+:link-about: link:/about/[About]
+:link-reflections: link:/reflections/[Reflections]
+:link-adventures: link:/adventures/[Adventures]
+:link-maintainer: link:/maintainer/[Maintainer]
+:link-categories: link:/categories/[Categories]
+:link-tags: link:/tags/[Tags]
+:link-archive: link:/archive/year/[Archives by Year]
 
 
 == Main Sections
 
-- link:/[Home]
-- link:/about/[About]
-- link:/reflections/[Reflections]
-- link:/adventures/[Adventures]
-- link:/maintainer/[Maintainer]
-- link:/categories/[Categories]
-- link:/tags/[Tags]
-- link:/archive/year/[Archives by Year]
+- {link-home}
+- {link-about}
+- {link-reflections}
+- {link-adventures}
+- {link-maintainer}
+- {link-categories}
+- {link-tags}
+- {link-archive}
 
 == Communities
 
-- link:https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
-- link:https://github.com/Gervi-Hera-Vitr[Gervi Héra Vitr,window=_blank]
-- link:https://github.com/Mimis-Latlaeg-Hattalag[Mímis Látlæg Háttalag,window=_blank]
+- {org-mimis-gildi}
+- {org-mimis-scala}
+- {org-mimis-latlaeg}
+- {org-gervi-hera-vitr}
+- {org-gotham-village}
 
