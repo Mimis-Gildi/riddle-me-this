@@ -12,7 +12,6 @@ rdd13r
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
-:img-prefix: /riddle-me-this/assets/images
 
 _This is a preserved Mastodon discussion thread from 2023-07-05._
 

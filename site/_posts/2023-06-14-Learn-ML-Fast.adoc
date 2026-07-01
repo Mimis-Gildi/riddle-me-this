@@ -2,6 +2,7 @@
 categories: [adventures]
 tags: [Learning-Trails]
 excerpt: Oops! Fixing an old model.
+classes: wide
 comments: true
 ---
 = Learn ML Fast

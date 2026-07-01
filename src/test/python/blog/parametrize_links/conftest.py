@@ -13,6 +13,8 @@ GLOBAL_LINK_KEYS = {
     "mit-article-url", "mit-article-title", "mit-article",
     "rdd13r-gh", "rdd13r-gh-io", "rdd13r-gh-io-url", "rdd13r-gh-io-title",
     "release", "resume", "total-recall", "org-mimis-gildi",
+    "cto-bible", "cto-trap", "footer-cto-trap",
+    "org-gervi-hera-vitr", "org-gotham-village", "org-mimis-latlaeg", "org-mimis-scala",
     "hacker-culture-url", "hacker-culture", "dolly-2",
     "openrouter", "openrouter-rankings", "openrouter-url",
     "artificial-analysis", "commons-john-frum-effigy", "deepinfra", "fireworks-ai",

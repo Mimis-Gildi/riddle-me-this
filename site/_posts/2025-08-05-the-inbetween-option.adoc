@@ -7,7 +7,7 @@ classes: wide
 comments: true
 ---
 = The Reluctant Consultant's Guide: T&M in the AI Failure Era
-:new-founders: link:/riddle-me-this/adventures/2025/08/04/new-founders-compendium.html
+:new-founders: link:{site-baseurl}/adventures/2025/08/04/new-founders-compendium.html
 :for-new-founders: {new-founders}#note-from-the-author--bedrocking
 :for-new-founders-communities: {new-founders}#the-communities-that-actually-matter
 :gitomer-book-fn: footnote:[Forget what you know about selling; Jeff Gitomer is all you need -> {gitomer-book}]

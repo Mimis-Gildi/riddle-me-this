@@ -10,7 +10,8 @@ search: true
 read_aloud: false
 ---
 = AI-maggedon 2026: Straight Talk
-:imagesdir: ./assets/images
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 include::../_fragments/2026-04-23-ai-maggedon-links.adoc[]
 include::../_fragments/2026-04-23-ai-maggedon-mythos-links.adoc[]
 include::../_fragments/2026-04-23-ai-maggedon-google-links.adoc[]
@@ -33,7 +34,7 @@ include::../_fragments/2026-04-23-ai-maggedon-hero.adoc[]
 
 .The world ends as crackers eat up cog. The hacker works.
 [#img-hero]
-image::/riddle-me-this/assets/images/wizard-2.png[{hero-alt}]
+image::wizard-2.png[{hero-alt}]
 
 {nbsp}
 

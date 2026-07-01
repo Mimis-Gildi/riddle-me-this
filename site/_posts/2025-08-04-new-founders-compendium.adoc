@@ -7,10 +7,10 @@ classes: wide
 comments: true
 ---
 = The µSaaS Founder's Guide: Building AI Success in Enterprise Cracks
-:evolution-playbook: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
+:evolution-playbook: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html
 :gitomer-book-fn: footnote:[Forget what you know about selling; Jeff Gitomer is all you need -> {gitomer-book}]
 :the-northern: footnote:[An invite-only collective of technical founders who've been in the trenches since the 90s. They moved from Philadelphia BBS boards to Québec City lavish well-funded scene, and now they're international. Think of it as MicroConf's older, grumpier, greedier, and angrier closedup cousin.]
-:tnm-bedrocking: link:/riddle-me-this/adventures/2025/08/05/the-inbetween-option.html#the-three-consulting-models-that-work
+:tnm-bedrocking: link:{site-baseurl}/adventures/2025/08/05/the-inbetween-option.html#the-three-consulting-models-that-work
 :google-ai-studio: https://aistudio.google.com/[Google AI Studio (free prototyping),window=_blank,opts=nofollow]
 :vercel-v0: https://v0.dev/[Vercel v0 (rapid UI),window=_blank,opts=nofollow]
 :supabase: https://supabase.com/[Supabase (auth + database),window=_blank,opts=nofollow]

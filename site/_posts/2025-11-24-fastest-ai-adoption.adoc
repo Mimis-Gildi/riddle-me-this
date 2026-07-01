@@ -10,6 +10,8 @@ search: true
 read_aloud: false
 ---
 = Fastest Way to AI Adoption -- Straight Talk
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :ai-current-state: link:{site-baseurl}/adventures/2025/09/29/not-chat-gpt.html["The current State of Things",window=_blank]
 :ai-adoption-phases: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html[AI Adoption Phases,window=_blank]
 :ai-adoption-matrix: link:{site-baseurl}/reflections/2025/10/31/ai-halloween.html[70/20/10,window=_blank]
@@ -31,7 +33,7 @@ read_aloud: false
 :google-ml-class: https://cloud.google.com/learn/training/machinelearning-ai[Sample this AI class...,window=_blank]
 
 .Use this opportunity while the time is right!
-image::/riddle-me-this/assets/images/ai-springboard.png[It's now or never,kinda thang...]
+image::ai-springboard.png[It's now or never kinda thang...,width=600,align=center]
 
 {nbsp} +
 

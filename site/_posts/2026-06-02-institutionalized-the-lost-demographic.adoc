@@ -12,8 +12,7 @@ search: true
 read_aloud: true
 ---
 = Institutionalized: "You don't belong in America"
-:imagesdir: ./assets/images
-:glory-post: link:/riddle-me-this/reflections/2026/06/02/glory-to-all-heroes.html[Glory to ALL Our Heroes,window=_blank]
+:glory-post: link:{site-baseurl}/reflections/2026/06/02/glory-to-all-heroes.html[Glory to ALL Our Heroes,window=_blank]
 :jake-broe: https://www.youtube.com/@JakeBroe[Jake Broe -- YouTube,window=_blank]
 :epictetus-enchiridion: https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus[Epictetus, The Enchiridion,window=_blank]
 :gulag-archipelago: https://en.wikipedia.org/wiki/The_Gulag_Archipelago[Solzhenitsyn -- The Gulag Archipelago,window=_blank]

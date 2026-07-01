@@ -10,7 +10,9 @@ search: true
 read_aloud: false
 ---
 = What Actually Works in AI: And Why No One Talks About It
-:ai-learning: link:/riddle-me-this/reflections/2025/11/24/fastest-ai-adoption.html[I recommend studying on this infrastructure,window=_blank]
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
+:ai-learning: link:{site-baseurl}/reflections/2025/11/24/fastest-ai-adoption.html[I recommend studying on this infrastructure,window=_blank]
 :jb-on-llms: https://youtu.be/CWgZXpGWvtg
 :jb-on-llms-video: {jb-on-llms}[Why LLMs Are Finally Useful,window=_blank]
 :amazon-bedrock-oss: https://aws.amazon.com/blogs/aws/amazon-bedrock-adds-fully-managed-open-weight-models/[Amazon Bedrock adds 18 fully managed open weight models...,window=_blank]
@@ -19,7 +21,7 @@ read_aloud: false
 :advent-of-code: https://adventofcode.com/[Advent of Code 2025]
 
 .The EU businesses found a way to profitably apply existing local models. While in the USA we chase bigger, impossible to power things, having failed to apply much of anything.
-image::/riddle-me-this/assets/images/EU-vs-USA-AI-Adoption-Button.png[EU is many small trams moving things around while in the USA we have a huge loco crashing through the track and nothing can move it]
+image::EU-vs-USA-AI-Adoption-Button.png[EU is many small trams moving things around while in the USA we have a huge loco crashing through the track and nothing can move it]
 
 {nbsp}
 
@@ -35,7 +37,7 @@ And we can't afford to!
 == Two playbooks. One works much better.
 
 .In the USA we bet on the Huge-Impossible that will make money one day, hopefully.
-image::/riddle-me-this/assets/images/US-AI-Progress-Button.png[The USA is a huge loco crashing through the tracks on infrastructure that can't support it]
+image::US-AI-Progress-Button.png[The USA is a huge loco crashing through the tracks on infrastructure that can't support it]
 
 {nbsp}
 
@@ -48,7 +50,7 @@ The enterprise default.
 It is so abundant that _{ai-learning}_ FOR FREE.
 
 .In the EU people effectively use the models available today to make money now.
-image::/riddle-me-this/assets/images/EU-AI-Progress-Button.png[The EU business doesn't hold breath for massive and instead profits well on the available today]
+image::EU-AI-Progress-Button.png[The EU business doesn't hold breath for massive and instead profits well on the available today]
 
 {nbsp}
 
@@ -163,7 +165,7 @@ Your choice.
 
 .World's Best Explanation on LLMs!
 [#img-on-llms,link={jb-on-llms},window=_blank]
-image::/riddle-me-this/assets/images/JetBrainsOnLLMs.png[The proper history of LLMs]
+image::JetBrainsOnLLMs.png[The proper history of LLMs]
 
 {nbsp}
 

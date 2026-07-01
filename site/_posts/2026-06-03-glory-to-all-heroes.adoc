@@ -11,7 +11,7 @@ read_aloud: false
 ---
 = Ukraine replaces USA as the Leader of Free World!
 ifndef::env-site[:imagesdir: ../assets/images]
-ifdef::env-site[:imagesdir: /riddle-me-this/assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 
 :abc-cia-ukraine-txt: ABC News -- How the CIA and Ukrainian intelligence secretly forged a deep partnership
 :abc-cia-ukraine-url: https://abcnews.go.com/International/cia-helped-rebuild-ukraine-intelligence-russia-invasion/story?id=116909361
@@ -20,7 +20,7 @@ ifdef::env-site[:imagesdir: /riddle-me-this/assets/images]
 :aljazeera-qanon-url: https://www.aljazeera.com/news/2020/8/24/russian-backed-organisations-amplify-qanon-conspiracy-theories
 :aljazeera-qanon: {aljazeera-qanon-url}[{aljazeera-qanon-txt},window=_blank]
 :all-ai-agentic-txt: All AI is Agentic
-:all-ai-agentic-url: link:/riddle-me-this/reflections/2026/04/23/ai-maggedon.html#5-agentic-success-almanac-how-and-why-and-what-gives
+:all-ai-agentic-url: link:{site-baseurl}/reflections/2026/04/23/ai-maggedon.html#5-agentic-success-almanac-how-and-why-and-what-gives
 :all-ai-agentic: {all-ai-agentic-url}[{all-ai-agentic-txt},window=_blank]
 :aramco-direct-txt: Kyiv Independent -- Aramco in talks to buy Ukrainian interceptor drones (WSJ)
 :aramco-direct-url: https://kyivindependent.com/worlds-largest-oil-producer-aramco-in-talks-to-buy-ukrainian-interceptor-drones-wsj-reports/

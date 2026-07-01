@@ -10,17 +10,17 @@ search: true
 read_aloud: false
 ---
 = I Figured It Out -- The AI Hysteria
-:imagesdir: ./assets/images
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :rdd13r-styleguide: https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/CLAUDE.md#advanced-forms-worth-exploring[Claude's Styleguide,window=_blank]
 :wiki-hacker-culture: https://en.wikipedia.org/wiki/Hacker_culture[their definition,window=_blank]
 :wiki-hacker-ethic: https://en.wikipedia.org/wiki/Hacker_ethic[can't keep their ideas to themselves,window=_blank]
 :anthropic-skills: https://github.com/anthropics/skills[Anthropic's skills repository,window=_blank]
 :ralph-wiggum: https://ghuntley.com/ralph/[Ralph Wiggum,window=_blank]
-:rdd13r-style-guide: https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/rdd13r-style-guide.yml[argument forms information,window=_blank]
 
 .I know you are in there somewhere...
 [#img-easy-ai]
-image::/riddle-me-this/assets/images/you-are-there-somewhere.png["Where are you, friend?"]
+image::you-are-there-somewhere.png["Where are you, friend?"]
 {nbsp}
 
 Let me run the hypothesis by you, and then we'll see if we can prove it.
@@ -556,7 +556,7 @@ _Because that's the point._
 *Primary Premise:* The "AI will replace coders" hysteria is a demographic phenomenon, not a technical truth.
 The same AI can be either a slop machine or a genuine collaborator -- the difference is in the *_human_*, *NOT* the _model_.
 
-See `rdd13r-style-guide.yml` --  {rdd13r-style-guide} for Agentic AI collaborators (not tools).
+See {rdd13r-style-guide} for Agentic AI collaborators (not tools).
 
 
 *The Argument Form:*

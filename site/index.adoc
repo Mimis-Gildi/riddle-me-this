@@ -11,8 +11,9 @@ sidebar:
   nav: communities
 ---
 = Vadim Kuhay
-:imagesdir: ./assets/images
-:who-i-write-for: link:/riddle-me-this/about/#who-i-write-for[Who I write for?,window=_blank]
+ifndef::env-site[:imagesdir: assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
+:who-i-write-for: link:{site-baseurl}/about/#who-i-write-for[Who I write for?,window=_blank]
 
 I'm a humble system designer and team builder.
 
@@ -32,15 +33,15 @@ Please DM `riddler9297` then we can talk, join each other’s communities.
 Code together.
 ====
 
-== Hacker Forecast: link:/riddle-me-this/series[Trends You Won't Hear from Gartner]
+== Hacker Forecast: link:{site-baseurl}/series[Trends You Won't Hear from Gartner]
 
-- link:/riddle-me-this/series/final-industrial-revolution/[2023: The Final Industrial Revolution]
+- link:{site-baseurl}/series/final-industrial-revolution/[2023: The Final Industrial Revolution]
 → The herald in Wetware Revolution; the last revolution.
 
-- link:/riddle-me-this/series/rupture-war-of-gods/[2022: Scarcity brings back Engineering]
+- link:{site-baseurl}/series/rupture-war-of-gods/[2022: Scarcity brings back Engineering]
 → Hardware wall + War for Survival => Pure Brilliance.
 
-- link:/riddle-me-this/series/fall-of-democracy/[2025: Kakistocracy & Circus Maximus]
+- link:{site-baseurl}/series/fall-of-democracy/[2025: Kakistocracy & Circus Maximus]
 → "The circus has left, but the clowns are still here."
 
 '''

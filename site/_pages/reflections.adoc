@@ -4,12 +4,12 @@
 :page-author_profile: true
 :page-classes: wide
 
-:reflections: link:/riddle-me-this/categories/reflections/[Reflections]
+:reflections: link:{site-baseurl}/categories/reflections/[Reflections]
 
-:linkedin-1: link:/riddle-me-this/reflections/2025/06/24/what-li-good-for.html[What is LinkedIn really good for?,window=_blank]
-:linkedin-2: link:/riddle-me-this/reflections/2025/06/25/what-li-good-for-analysis.html[How to Game LinkedIn Like a Pro,window=_blank]
-:linkedin-3: link:/riddle-me-this/reflections/2025/07/03/li-enshittification.html[LinkedIn: Conclusion - Enshittification,window=_blank]
-:linkedin-4: link:/riddle-me-this/reflections/2025/07/07/li-human-problem.html[Amazing LinkedIn: A Human Problem!,window=_blank]
+:linkedin-1: link:{site-baseurl}/reflections/2025/06/24/what-li-good-for.html[What is LinkedIn really good for?,window=_blank]
+:linkedin-2: link:{site-baseurl}/reflections/2025/06/25/what-li-good-for-analysis.html[How to Game LinkedIn Like a Pro,window=_blank]
+:linkedin-3: link:{site-baseurl}/reflections/2025/07/03/li-enshittification.html[LinkedIn: Conclusion - Enshittification,window=_blank]
+:linkedin-4: link:{site-baseurl}/reflections/2025/07/07/li-human-problem.html[Amazing LinkedIn: A Human Problem!,window=_blank]
 
 :linkedin-1-li: https://www.linkedin.com/pulse/what-linkedin-really-good-vadim-kuhay-9z3oe/[What is LinkedIn really good for?,window=_blank,opts=nofollow]
 :linkedin-2-li: https://www.linkedin.com/pulse/how-game-linkedin-like-pro-vadim-kuhay-cysre/[How to Game LinkedIn Like a Pro,window=_blank,opts=nofollow]
@@ -21,7 +21,7 @@
 :foot-linkedin-3: footnote:[Conclusion: what we people do to once great platforms -- explanation why it happens; published to LinkedIn 'Behind the Scenes at ASE' newsletter -- {linkedin-3-li}.]
 :foot-linkedin-4: footnote:[Deeply candid and personal look at how I use a platform offered to me as is; published to LinkedIn 'Behind the Scenes at ASE' newsletter -- {linkedin-4-li}.]
 
-:llm-jobs-scare-craze: link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality,window=_blank]
+:llm-jobs-scare-craze: link:{site-baseurl}/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality,window=_blank]
 
 :foot-llm-job-scare: footnote:[A reflection on how my `Merica, dozing at work and in personal life, is startled by the LLM ChatBots, and then immediately freaked out for losing a job to a machine -- an honest and candid reflection to how Americans see their own competence -- {llm-jobs-scare-craze}.]
 :enshittification: https://en.wikipedia.org/wiki/Enshittification[Enshittification,window=_blank]

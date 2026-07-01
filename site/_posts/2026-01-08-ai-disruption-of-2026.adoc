@@ -10,7 +10,8 @@ search: true
 read_aloud: false
 ---
 = 2026: The Year the Ground Moves
-:imagesdir: ./assets/images
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :ai-stages-url: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html
 :ai-stages: {ai-stages-url}[2023: The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :trunking: https://trunkbaseddevelopment.com/[trunk,window=_blank]
@@ -19,7 +20,7 @@ read_aloud: false
 
 .transformation is happening now -- danger and opportunity.
 [#img-adrift]
-image::/riddle-me-this/assets/images/2026-shift-no-obvious-path.png['Volcanic lava runoff. Bottom left. Small island broken away,buildings still on it,floating on lava. The business model already separated,from the big city on the big floating rock in the middle,still intact,oblivious,doomed. Tentative path on the right side is stepping stones with lava veins between them. Not a highway. Requires courage. Steam rising at the transition. Mountains distant through haze -- destination possible but uncertain. Main city more stable-looking -- Lights on,elevated,appears solid. Less of a "disaster movie vibe," and more of a "business as usual while the edges crumble." The separation is visible - You can see the gap between main island and the drifting fragment. That space is the moment of no return. Wait longer and miss the last chance.']
+image::2026-shift-no-obvious-path.png['Volcanic lava runoff. Bottom left. Small island broken away,buildings still on it,floating on lava. The business model already separated,from the big city on the big floating rock in the middle,still intact,oblivious,doomed. Tentative path on the right side is stepping stones with lava veins between them. Not a highway. Requires courage. Steam rising at the transition. Mountains distant through haze -- destination possible but uncertain. Main city more stable-looking -- Lights on,elevated,appears solid. Less of a "disaster movie vibe," and more of a "business as usual while the edges crumble." The separation is visible - You can see the gap between main island and the drifting fragment. That space is the moment of no return. Wait longer and miss the last chance.']
 
 {nbsp}
 
@@ -277,7 +278,7 @@ even without the nice visuals I get in DataSpell?
 
 .There are 'Little People' in these A100 boxes, arguing, researching, building...
 [#img-little-people]
-image::/riddle-me-this/assets/images/little-people.jpg[There are little people in these A100 boxes,arguing,researching,building...]
+image::little-people.jpg[There are little people in these A100 boxes,arguing,researching,building...]
 
 {nbsp}
 

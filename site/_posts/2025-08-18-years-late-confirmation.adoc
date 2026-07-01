@@ -7,7 +7,8 @@ classes: wide
 comments: true
 ---
 = MIT Says Your AI Stinks. Here's Why. And how to fix.
-:img-prefix: /riddle-me-this/assets/images
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
@@ -24,16 +25,8 @@ comments: true
 
 :footer-key-posts: footnote:key-posts[See {blog-ai-for-enterprise} for more on this story. It's a part of {series-home} series.]
 
-:cto-bible-url: {adventures-home}/2023/07/05/integrated-ai-evolution.html
-:cto-bible-title: The AI Evolution Playbook: Why 80% Will Fail
-:cto-bible: {cto-bible-url}[{cto-bible-title},window=_blank]
-
-:cto-trap: {adventures-home}/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
-:footer-cto-trap: footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- your playbook on integrating AI and staying ahead.]
-
-
-:reference-article-for-the-quote-url: {cto-bible-url}#conclusion-the-strategic-choice
-:reference-article-for-the-quote-link: {reference-article-for-the-quote-url}[{cto-bible-title},window=_blank]
+:reference-article-for-the-quote-url: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html#conclusion-the-strategic-choice
+:reference-article-for-the-quote-link: {reference-article-for-the-quote-url}[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :reference-article-for-the-quote-footer: footnote:root-cause-article[This is the original article that exposes the root cause for American AI Integration difficulties {reference-article-for-the-quote-link}.]
 
 :mit-article-image-url: https://fortune.com/img-assets/wp-content/uploads/2025/08/GettyImages-2195607659.jpg
@@ -47,7 +40,7 @@ I predicted this exact failure rate in 2022-2023.
 
 Note: This article is a part of {series-home} series.
 
-image::/riddle-me-this/assets/images/Athena-World.png[Young Athena's World]
+image::Athena-World.png[Young Athena's World]
 
 {nbsp} +
 Here is the original article from MIT:

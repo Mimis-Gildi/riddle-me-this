@@ -4,9 +4,12 @@ tags: [Medium,Executive]
 excerpt: >
   The disparity between expert and complacent developers is exacerbated by emerging AI.
 comments: true
+classes: wide
 ---
 = The Bright Era Dawns: AI, Moore's law, and Beyond
 rdd13r
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :prior-article: link:/{site-baseurl}/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A 'Doze' of Reality]
 :ff-prior-article: footnote:prior[{prior-article}]
 
@@ -24,7 +27,7 @@ This risk was the real trigger leading to LLMs debut.
 
 .Public Reaction to ML Evolution
 [#img-laggard,link={y-combinator-news}]
-image::/riddle-me-this/assets/images/reaction-to-ChatGPT.jpg[{alt-head-in-the-sand},800]
+image::reaction-to-ChatGPT.jpg[{alt-head-in-the-sand},1200]
 
 (Licensed Reproduction)
 
@@ -61,13 +64,13 @@ Conversely, an expert who consults ML on a sophisticated algorithm they've craft
 
 .Need to buy a bigger hammer.
 [#img-cog,link={artnet-idiot}]
-image::/riddle-me-this/assets/images/ai-the-idiot-by-don-maitz.png[{alt-just-buy-a-tool},800]
+image::ai-the-idiot-by-don-maitz.png[{alt-just-buy-a-tool},width=600]
 
 (Image by DALL-E; Based on The Idiot, 1995, by Don Maitz)
 
 .Corporate developer and ML.
 [#img-idiot,link={artnet-idiot}]
-image::/riddle-me-this/assets/images/ai-the-idiot-coder.png[{alt-how-competent-is-the-cog},800]
+image::ai-the-idiot-coder.png[{alt-how-competent-is-the-cog},width=600]
 
 (The Idiot, 1995, by Don Maitz; Licensed Reproduction.)
 
@@ -84,7 +87,7 @@ From that point forward, all proprietary code at ASE has been entirely machine-a
 
 .Hacker Immersed in Coding by 2-way conversation
 [#img-hacker]
-image::/riddle-me-this/assets/images/hacker-at-work.jpg[A programmer fully immersed in his work in the office,800]
+image::hacker-at-work.jpg[A programmer fully immersed in his work in the office,align=center,width=800]
 
 (Depositphotos Licensed Reproduction)
 

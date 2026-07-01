@@ -7,19 +7,20 @@ classes: wide
 comments: true
 ---
 = AI Hype -- Straight Talk
-:img-prefix: /riddle-me-this/assets/images
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
 :ase-title: ASE Inc.
 :pub-asei: as outlined at {ase-link}
 
-:stages-of-ai-evolution: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
-:stage-1-mit-failures: link:/riddle-me-this/adventures/2025/08/18/years-late-confirmation.html
-:origami-ai-integration: link:/riddle-me-this/adventures/2025/08/11/ai-integration-powers.html
+:stages-of-ai-evolution: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html
+:stage-1-mit-failures: link:{site-baseurl}/adventures/2025/08/18/years-late-confirmation.html
+:origami-ai-integration: link:{site-baseurl}/adventures/2025/08/11/ai-integration-powers.html
 
 .A story from The Final Industrial Revolution series: Adventures.
-image::{img-prefix}/Athena-World.png[Athena and her world.]
+image::Athena-World.png[Athena and her world.]
 
 {nbsp}
 

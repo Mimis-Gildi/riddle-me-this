@@ -141,6 +141,9 @@ asciidoctor:
     icons                   : font
     artificial-analysis     : 'https://artificialanalysis.ai/'
     cb-hacker               : 'http://www.catb.org/jargon/html/H/hacker.html[hacker,window=_blank]'
+    cto-bible               : 'link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]'
+    cto-trap                : 'link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]'
+    footer-cto-trap         : 'footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- your playbook on integrating AI and staying ahead.]'
     cb-mundane              : 'http://www.catb.org/jargon/html/M/mundane.html[mundane,window=_blank]'
     chatgpt                 : 'https://chat.openai.com/[ChatGPT,window=_blank]'
     commons-john-frum-effigy: 'https://commons.wikimedia.org/wiki/File:John_Frum_effigy_1960.jpg'

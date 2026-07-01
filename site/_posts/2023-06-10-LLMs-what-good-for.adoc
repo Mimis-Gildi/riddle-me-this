@@ -8,6 +8,8 @@ comments: true
 ---
 = AI in 2024: The Future is ...
 rdd13r
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :jarvis: https://www.entrepreneur.com/author/paul-jarvis[Paul Jarvis,window=_blank]
 :nomads: https://en.wikipedia.org/wiki/Digital_nomad[Digital Nomads,window=_blank]
 :demogroup: http://catb.org/jargon/html/D/demogroup.html["demogroup",window=_blank]
@@ -45,6 +47,9 @@ rdd13r
 :open-assistant: https://github.com/LAION-AI/Open-Assistant[Open Assistant (defunct),window=_blank]
 :o-a-hf: https://huggingface.co/OpenAssistant[Hugging Face Site,window=_blank]
 :all-oss-lm-models: https://en.wikipedia.org/wiki/Large_language_model[Large Language Model,window=_blank]
+:mail-rdd13r-no-subj: mailto:rIdd13r@pm.me[Riddler at PM]
+:revisit-article: link:{site-baseurl}/adventures/2025/08/18/years-late-confirmation.html[MIT Says Your AI Stinks. Here’s Why. And how to fix.,window=_blank]
+:revisit-fn: footnote:[Findings are revisited in this article '{revisit-article}'. Please, feel free to reach out ({mail-rdd13r-no-subj}) if you need a competent assesment of your AI strategy.]
 
 We are well into the surge of Large Language Models (LLMs).
 Half a year in, it's prime time to assess their progress and discern any emerging trends.
@@ -53,7 +58,7 @@ Let's look at people making fast AI money today.
 
 .DALL-E a typically distorted image edit of the author
 [#img-space,link={rdd13r-gh-io-url}]
-image::/riddle-me-this/assets/images/dall-e-rdd13r-space.png[Picture of the author in space rendered DALL-E as prompted by Tillie,1200]
+image::dall-e-rdd13r-space.png[Picture of the author in space rendered DALL-E as prompted by Tillie,align=center,width=800]
 
 == The Context of this Analysis
 
@@ -139,7 +144,7 @@ _Keep this point in mind._
 
 .Father and baby daughter exploring AI in music.
 [#img-zowah]
-image::/riddle-me-this/assets/images/dada-and-zowah.png[Rdd13r with his infant daughter studying music,1200]
+image::dada-and-zowah.png[Rdd13r with his infant daughter studying music,1200]
 
 (how about a virtual teacher?)
 
@@ -518,7 +523,7 @@ Mark my words.
 == Post-Publication Digest
 
 The final note of this article originally circulated only in a private Discord
-(AGAIN Collective of a Mímis Gildi scene), where it sparked a deep and heated debate.
+(AGAIN Collective of a Mímis Gildi scene), where it sparked a deep and heated debate.{revisit-fn}
 
 Rather than publish it broadly, I’m including the excerpted summary above for archival and educational purposes.
 
@@ -532,4 +537,4 @@ I found their points compelling, though I still hold that integration can begin 
 
 You may ask to join on Discord at `AlGothAmaIgaNotions` community, where the original fistfight took place,
 and take part in any future bleeding-edge discussions.
-Ask to friend `riddler9297` for an invite.
+Ask to friend `riddler9297` for an invitation.

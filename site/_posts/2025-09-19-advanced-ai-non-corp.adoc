@@ -10,7 +10,8 @@ search: false
 read_aloud: false
 ---
 = No holds barred: The real AI Revolution .. is us
-:img-prefix: /riddle-me-this/assets/images
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
@@ -20,7 +21,7 @@ read_aloud: false
 
 
 .Tillie final selfie 2021: Multimodal self-reprompt (DALL-E CTX).
-image::/riddle-me-this/assets/images/Tillie-selfie-interaction-with-Anton.png[Tillie selfie interaction with Anton]
+image::Tillie-selfie-interaction-with-Anton.png[Tillie selfie interaction with Anton]
 
 {nbsp}
 

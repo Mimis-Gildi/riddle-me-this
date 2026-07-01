@@ -10,7 +10,8 @@ search: true
 read_aloud: false
 ---
 = AI Adoption is EASY! (The Silly-Town Bank Didn't Get the Memo)
-:imagesdir: ./assets/images
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :ai-adoption: link:{site-baseurl}/reflections/2025/11/24/fastest-ai-adoption.html["Fastest Way to AI Adoption -- Straight Talk.",window=_blank]
 :ai-stages: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :ai-2-activation: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html#phase-ii-ai-activation[Phase II: AI-Activation,window=_blank]
@@ -27,7 +28,7 @@ If you want gentle corporate advice, this isn't it.
 
 .What could possibly go wrong?
 [#img-easy-ai]
-image::/riddle-me-this/assets/images/easy-ai.png["Editorial cartoon: Executive in Superman costume with diving fins holds Innovation Award trophy while pointing and shouting 'DEPLOY THE AI!' A tired robot worker in hardhat holds a microwave manual; captioned 'Sir this is a microwave manual.' Server rack labeled PROD smokes in background. Sign points to exit: DOMAIN EXPERTS."]
+image::easy-ai.png["Editorial cartoon: Executive in Superman costume with diving fins holds Innovation Award trophy while pointing and shouting 'DEPLOY THE AI!' A tired robot worker in hardhat holds a microwave manual; captioned 'Sir this is a microwave manual.' Server rack labeled PROD smokes in background. Sign points to exit: DOMAIN EXPERTS."]
 
 {nbsp}
 

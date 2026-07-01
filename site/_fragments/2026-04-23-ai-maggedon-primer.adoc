@@ -226,7 +226,7 @@ Modern corporate America is running the same play: laying off the engineers who 
 
 .John Frum effigy, Tanna, New Hebrides, 1960. Photo by David Attenborough. The cargo never came back -- so they carved the god out of wood and waited.
 [link={commons-john-frum-effigy}]
-image::/riddle-me-this/assets/images/John_Frum_effigy_1960.jpg[Wooden effigy of John Frum, carved 1960, Tanna island]
+image::John_Frum_effigy_1960.jpg[Wooden effigy of John Frum, carved 1960, Tanna island]
 {nbsp}
 
 I have a proof for you!

@@ -7,7 +7,7 @@ header:
 :page-layout: single
 :page-permalink: /maintainer/
 :page-author_profile: true
-:categorized: link:/riddle-me-this/categories/[all post categories,window=_blank]
+:categorized: link:{site-baseurl}/categories/[all post categories,window=_blank]
 
 This site is maintained by Vadim Kuhay (`rdd13r`)  --  lifelong builder, coach, and creative engineer.
 

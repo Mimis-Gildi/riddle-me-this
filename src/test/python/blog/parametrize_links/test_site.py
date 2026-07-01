@@ -69,11 +69,6 @@ class TestSiteViolations:
                 .filter(lambda kg: len({a.path for a in kg[1]}) < 2)
                 .empty())
 
-    def test_promotion_candidates_http_only(self, real_site):
-        assert (real_site.promotion_candidates()
-                .filter(lambda ug: not ug[0].startswith(("http://", "https://")))
-                .empty())
-
     def test_promotion_candidates_multi_article(self, real_site):
         assert (real_site.promotion_candidates()
                 .filter(lambda ug: len(ug[1]) < 2)

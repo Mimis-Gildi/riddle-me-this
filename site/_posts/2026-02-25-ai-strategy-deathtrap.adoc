@@ -10,7 +10,8 @@ search: true
 read_aloud: false
 ---
 = AI Strategy Deathtrap -- Straight Talk
-:imagesdir: ./assets/images
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :american-ai-trap: link:{site-baseurl}/adventures/2023/07/04/corporate-america.html
 :american-ai-adoption: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html
 :ai-cognitive-augmentation: link:{site-baseurl}/adventures/2023/06/10/4-cognitive-augmentation.html[2023: Cognitive Augmentation: The Real Revolution,window=_blank]
@@ -29,7 +30,7 @@ read_aloud: false
 
 .Build Your House with a Smile, God in Heart, Competence in Hand
 [#img-go-to-meeting]
-image::/riddle-me-this/assets/images/build-with-god.png[Build Your House with God]
+image::build-with-god.png[Build Your House with God]
 {nbsp}
 
 Let me tell you how to survive the next AI Epoch -- 2026-2027. Epoch III.

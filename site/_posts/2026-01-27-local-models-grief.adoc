@@ -10,13 +10,15 @@ search: true
 read_aloud: false
 ---
 = Claude Code with Local Models: What Works, What Breaks, What’s Worth It
+ifndef::env-site[:imagesdir: ../assets/images/models/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/models/]
 :systems-erosion: https://dev.to/narnaiezzsshaa/why-we-suddenly-have-developers-who-cant-think-in-systems-gpj[dev.to - Why We Suddenly Have Developers Who Can't Think in Systems,window=_blank]
 :nvidia-dgx-spark: https://www.nvidia.com/en-us/products/workstations/dgx-spark/[NVIDIA DGX Spark]
 :ollama-context-length: https://docs.ollama.com/context-length[Increase it]
 :qwen3-30b-thinking: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507[Qwen3-30B-A3B-Thinking-2507]
 
 .Did you notice 'Claude Code {plus} local models' became a hot topic overnight?
-image::/riddle-me-this/assets/images/models/local-model-corporate-reality.png[Local Model versus Hosted Model]
+image::local-model-corporate-reality.png[Local Model versus Hosted Model]
 {nbsp}
 
 I am running Claude Code without Claude on a laptop and want to share my experience.
@@ -67,7 +69,7 @@ _But my friends here want to run on a MacBook Pro M-series *issued by their empl
 The most important part of this experiment is to make sure the Claude Code IDE plugin is usable for these tools I've tested on:
 
 .Absolute minimum set of tools to be functional in:
-image::/riddle-me-this/assets/images/models/ollama-claude-tested-tools.png[Minimal set of IDEs.]
+image::ollama-claude-tested-tools.png[Minimal set of IDEs.]
 {nbsp}
 
 What do you think will happen? Let's find out?
@@ -106,27 +108,27 @@ Because setting Claude Code up with a local LLM can be done in a small number of
 I decided to use https://ollama.com/ to host an LLM locally on the aforementioned MacBook Pro.
 
 .The 30-second `ollama` setup for Claude.
-image::/riddle-me-this/assets/images/models/ollama-home-claude.png[ollama for Claude Code]
+image::ollama-home-claude.png[ollama for Claude Code]
 {nbsp}
 
 Once you follow the basic `ollama` instructions for Claude Code and select the `qwen3-coder` model
 -- _you'll get your **Claude Code with NO Claude**_.
 
 .`qwen3-coder` correctly connected and project context is loaded as expected.
-image::/riddle-me-this/assets/images/models/ollama-claude-no-claude.png[Claude Code Operates properly]
+image::ollama-claude-no-claude.png[Claude Code Operates properly]
 {nbsp}
 
 Model identity is unreliable here. Some clients inject "GPT-4" style scaffolding or the model hallucinates its identity.
 Trust the configured backend (`qwen3-coder:latest` in the status line or `ollama ps`), not what it claims.
 
 .Misreported model happens.
-image::/riddle-me-this/assets/images/models/ollama-claude-thinks-its-gpt.png[Claude Code Operates properly]
+image::ollama-claude-thinks-its-gpt.png[Claude Code Operates properly]
 {nbsp}
 
 Your `ollama` model instance is a tiny footprint that your Mac can host.
 
 .This local instance is running the default context size setting -- change that.
-image::/riddle-me-this/assets/images/models/ollama-claude-qwen3-coder.png[Qwen3-coder tiny]
+image::ollama-claude-qwen3-coder.png[Qwen3-coder tiny]
 {nbsp}
 
 Currently `ollama` default context window is 4096. That's nothing, really.
@@ -138,7 +140,7 @@ Our goal at this point is usability. *_Not parity._*
 And finally, and most importantly: your GPU will be pegged during active work. That's fine.
 
 .Even with such a tiny model, your MacBook GPU will get a serious workout.
-image::/riddle-me-this/assets/images/models/ollama-local-load.png[Mac GPU always loaded]
+image::ollama-local-load.png[Mac GPU always loaded]
 {nbsp}
 
 == Usability Conclusion

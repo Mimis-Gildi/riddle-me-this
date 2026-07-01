@@ -7,14 +7,10 @@ classes: wide
 comments: true
 ---
 = The AI Success Story Nobody's Talking About: How "Boring" Architecture Beats Hype
-:img-prefix: /riddle-me-this/assets/images
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
 :pub-asei: as outlined at ASE Inc.
-:cto-bible: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
-:cto-trap: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
-:footer-cto-trap: footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- a complete playbook on integrating AI and staying ahead.]
 
 _Note: Client details have been altered to protect confidentiality.
 Industry, location, and identifying specifics have been changed while preserving the architectural lessons.

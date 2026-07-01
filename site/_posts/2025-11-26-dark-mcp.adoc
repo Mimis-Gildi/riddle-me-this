@@ -10,6 +10,8 @@ search: true
 read_aloud: false
 ---
 = AI: MCP -- Well-Kept Secrets -- Straight Talk
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :no-holds: link:{site-baseurl}/research/2025/09/19/advanced-ai-non-corp.html["No holds barred: The real AI Revolution .. is us",window=_blank]
 :dev-to-fallon-jimmy: https://dev.to/fallon_jimmy/top-12-game-changing-mcp-libraries-transform-your-ai-development-in-2025-iep[TOP 12 Game-Changing MCP Libraries: Transform Your AI Development in 2025 -- Fallon Jimmy | dev.to,window=_blank]
 :agent-economies: https://youtu.be/S6wc6yvoZLY[YouTube @Fireship: "AI agents are paying each other now…",window=_blank]
@@ -19,7 +21,7 @@ read_aloud: false
 :ai-2-activation: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html#phase-ii-ai-activation[Phase II: AI-Activation,window=_blank]
 
 .Executives don't understand the practical value of MCP and Agentic AI. But they feel it is important for some reason.
-image::/riddle-me-this/assets/images/ai-springboard.png[It's now or never,kinda thang...]
+image::ai-springboard.png[It's now or never kinda thang...,align=center,width=600]
 
 Most see MCP frameworks and libraries used for building MCP Servers as a cost-saving measure plus functional enhancements -- money.
 And it does come to it in the "fidelity-based context" -- your typical use to replace or augment a job description in Corporate America:

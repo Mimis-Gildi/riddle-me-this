@@ -8,7 +8,7 @@ comments: true
 ---
 = When Small AI Teams Outcompeted Enterprise Vendors
 rdd13r
-:scene-presented-original: link:/riddle-me-this/adventures/2023/05/15/AI-million-dollar-devs.html
+:scene-presented-original: link:{site-baseurl}/adventures/2023/05/15/AI-million-dollar-devs.html
 
 _Originally published May 15, 2023 -- on the {scene-presented-original}[Scene Discord,window=_blank]._
 

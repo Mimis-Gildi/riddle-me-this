@@ -7,12 +7,12 @@ classes: wide
 ---
 = Amazing LinkedIn: A Human Problem!
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
-:img-prefix: /riddle-me-this/assets/images
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 
-.ASE Inc, DALL·E Hacker Dad vs. Cog Dad...
+.ASE Inc, DALL-E Hacker Dad vs. Cog Dad...
 [#img-devs]
-image::{img-prefix}/devs.png[Channel,800,450]
-
+image::devs.png[Channel,width=800,height=450,align=center]
 {nbsp}
 
 Hope everyone got some rest after the long weekend.

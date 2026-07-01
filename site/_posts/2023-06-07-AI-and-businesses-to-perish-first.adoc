@@ -3,6 +3,7 @@ categories: [adventures]
 tags: [Academia,Medium]
 excerpt: >
   First indication of Multimodal-Revolution.
+classes: wide
 comments: true
 ---
 = LLMs: Projected Market Exit of Established Relations-Based Companies

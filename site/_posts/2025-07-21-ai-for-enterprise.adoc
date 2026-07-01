@@ -7,27 +7,27 @@ classes: wide
 ---
 = AI Integration Architecture for Enterprise
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
-:img-prefix: /riddle-me-this/assets/images
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 
-:cat1-01-bright-era-dawns: link:/riddle-me-this/reflections/2023/05/11/chatGPT-omen-new-era.html[The Bright Era Dawns: AI; Moore’s law; and Beyond,window=_blank]
-:cat1-02-outperform-laggards: link:/riddle-me-this/adventures/2023/05/15/AI-indie.advantage.html[When Small AI Teams Outcompeted Enterprise Vendors,window=_blank]
-:cat1-03-1-methodology: link:/riddle-me-this/adventures/2023/06/10/1-how-I-track-adoption.html[How I Track Technology Adoption Before It Happens,window=_blank]
-:cat1-03-2-what-bought: link:/riddle-me-this/adventures/2023/06/10/2-ai-revenue-surge-analysis.html[$10M AI Revenue Surge: What's Actually Bought,window=_blank]
-:cat1-03-3-google-openai: link:/riddle-me-this/adventures/2023/06/10/3-google-vs-openai.html[Why Google Beat OpenAI with Technical Teams,window=_blank]
-:cat1-03-4-augmentation: link:/riddle-me-this/adventures/2023/06/10/4-cognitive-augmentation.html[Cognitive Augmentation: The Real Revolution,window=_blank]
-:cat1-03-5-llm-lessons: link:/riddle-me-this/adventures/2023/06/10/5-early-llm-lessons.html[Early LLM Lessons: From Failure to Success,window=_blank]
+:cat1-01-bright-era-dawns: link:{site-baseurl}/reflections/2023/05/11/chatGPT-omen-new-era.html[The Bright Era Dawns: AI; Moore’s law; and Beyond,window=_blank]
+:cat1-02-outperform-laggards: link:{site-baseurl}/adventures/2023/05/15/AI-indie.advantage.html[When Small AI Teams Outcompeted Enterprise Vendors,window=_blank]
+:cat1-03-1-methodology: link:{site-baseurl}/adventures/2023/06/10/1-how-I-track-adoption.html[How I Track Technology Adoption Before It Happens,window=_blank]
+:cat1-03-2-what-bought: link:{site-baseurl}/adventures/2023/06/10/2-ai-revenue-surge-analysis.html[$10M AI Revenue Surge: What's Actually Bought,window=_blank]
+:cat1-03-3-google-openai: link:{site-baseurl}/adventures/2023/06/10/3-google-vs-openai.html[Why Google Beat OpenAI with Technical Teams,window=_blank]
+:cat1-03-4-augmentation: link:{site-baseurl}/adventures/2023/06/10/4-cognitive-augmentation.html[Cognitive Augmentation: The Real Revolution,window=_blank]
+:cat1-03-5-llm-lessons: link:{site-baseurl}/adventures/2023/06/10/5-early-llm-lessons.html[Early LLM Lessons: From Failure to Success,window=_blank]
 
-:cat2-01-chatgpt-doze: link:/riddle-me-this/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality,window=_blank]
-:cat2-02-relationship-disruption: link:/riddle-me-this/adventures/2023/06/07/AI-relationship-disruption-formalized.html[AI Analysis Reveals Relationship-Based Business Model Vulnerabilities,window=_blank]
+:cat2-01-chatgpt-doze: link:{site-baseurl}/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality,window=_blank]
+:cat2-02-relationship-disruption: link:{site-baseurl}/adventures/2023/06/07/AI-relationship-disruption-formalized.html[AI Analysis Reveals Relationship-Based Business Model Vulnerabilities,window=_blank]
 
-:cat3-01-business-america-ai: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
-:cat3-02-ai-evolution: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
+:cat3-01-business-america-ai: link:{site-baseurl}/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
+:cat3-02-ai-evolution: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 
 
-.ASE Inc, DALL·E Hacker Dad vs. Cog Dad...
+.ASE Inc, DALL-E Hacker Dad vs. Cog Dad...
 [#img-devs]
-image::{img-prefix}/devs.png[Channel,800,450]
-
+image::devs.png[Channel,width=800,height=450,align=center]
 {nbsp}
 
 _Most practical AI integration architecture._ -- see the last section for a compelling argument!
