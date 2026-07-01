@@ -140,6 +140,7 @@ asciidoctor:
   attributes:
     icons                         : font
     ai-businesses-to-perish       : 'link:{site-baseurl}/adventures/2023/06/07/AI-and-businesses-to-perish-first.html'
+    ai-hype-2025                  : 'link:{site-baseurl}/adventures/2025/09/29/not-chat-gpt.html[AI Hype -- Straight Talk,window=_blank]'
     ai-million-dollar-devs        : 'link:{site-baseurl}/adventures/2023/05/15/AI-million-dollar-devs.html'
     artificial-analysis           : 'https://artificialanalysis.ai/'
     cb-hacker                     : 'http://www.catb.org/jargon/html/H/hacker.html[hacker,window=_blank]'
@@ -200,18 +201,18 @@ asciidoctor:
 # My general footer...
 footer:
   links:
-    - label: "GitHub Root Org"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/Mimis-Gildi"
-    - label: "Discussions"
-      icon: "fas fa-fw fa-comments"
-      url: "https://github.com/Mimis-Gildi/riddle-me-this/discussions"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/rdd13r"
-    - label: "Fingerprint"
-      icon: "fas fa-fw fa-fingerprint"
-      url: "/riddle-me-this/assets/images/button_300_300.jpg"
+    - label                 : "GitHub Root Org"
+      icon                  : "fab fa-fw fa-github"
+      url                   : "https://github.com/Mimis-Gildi"
+    - label                 : "Discussions"
+      icon                  : "fas fa-fw fa-comments"
+      url                   : "https://github.com/Mimis-Gildi/riddle-me-this/discussions"
+    - label                 : "LinkedIn"
+      icon                  : "fab fa-fw fa-linkedin"
+      url                   : "https://www.linkedin.com/in/rdd13r"
+    - label                 : "Fingerprint"
+      icon                  : "fas fa-fw fa-fingerprint"
+      url                   : "/riddle-me-this/assets/images/button_300_300.jpg"
 
 
 
@@ -228,12 +229,12 @@ comments:
 
 # Archives: Enable taxonomy pages for tags, categories, and year
 category_archive:
-  type: jekyll-archives
-  path: /categories/
+  type                      : jekyll-archives
+  path                      : /categories/
 
 tag_archive:
-  type: jekyll-archives
-  path: /tags/
+  type                      : jekyll-archives
+  path                      : /tags/
 
 jekyll-archives:
   enabled:
@@ -243,17 +244,17 @@ jekyll-archives:
     - categories
     - tags
   layouts:
-    year: archive-year
-    month: archive-month
-    day: archive-day
-    category: archive-taxonomy
-    tag: archive-taxonomy
+    year                    : archive-year
+    month                   : archive-month
+    day                     : archive-day
+    category                : archive-taxonomy
+    tag                     : archive-taxonomy
   permalinks:
-    year: /archive/:year/
-    month: /archive/:year/:month/
-    day: /archive/:year/:month/:day/
-    category: /categories/:name/
-    tag: /tags/:name/
+    year                    : /archive/:year/
+    month                   : /archive/:year/:month/
+    day                     : /archive/:year/:month/:day/
+    category                : /categories/:name/
+    tag                     : /tags/:name/
 
 
 
