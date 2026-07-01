@@ -9,7 +9,6 @@ comments: true
 ---
 = ChatGPT & Job Loss - A 'Doze' of Reality
 rdd13r
-:autogpt: https://github.com/Significant-Gravitas/Auto-GPT[Auto-GPT,window=_blank]
 :agentgpt: https://agentgpt.reworkd.ai/[AgentGPT,window=_blank]
 
 Since this is my first post, let me introduce myself and address this ask:

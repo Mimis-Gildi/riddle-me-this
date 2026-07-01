@@ -15,7 +15,7 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :caparas-on-boris-flows: https://blog.devgenius.io/how-the-creator-of-claude-code-actually-uses-it-13-practical-moves-2bf02eec032a[How the Creator of Claude Code Actually Uses It: 13 Practical Moves,window=_blank]
 :caparas-on-agent-teams: https://pub.towardsai.net/inside-claude-codes-agent-teams-and-kimi-k2-5-s-agent-swarm-0106f2467bd2[Inside Claude Code’s Agent Teams and Kimi K2.5’s Agent Swarm,window=_blank]
 :bart-on-teams: https://youtu.be/VWngYUC63po[YouTube: Bart Slodyczka -- Claude Code's New Agent Teams Are Insane (Opus 4.6),window=_blank]
-:working-qwen3: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507[Qwen3-30B-A3B-Thinking-2507,window=_blank]
+:working-qwen3: {qwen3-30b-thinking}
 :tourist: https://codeforces.com/profile/tourist?locale=en[tourist,window=_blank]
 :benq: https://codeforces.com/profile/Benq[Benq,window=_blank]
 :GongRzhe-MCP: https://github.com/GongRzhe/A2A-MCP-Server[GongRzhe A2A-MCP-Server,window=_blank]

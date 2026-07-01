@@ -25,12 +25,12 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :hackerdom-02-community: link:{site-baseurl}/adventures/2023/06/10/3-google-vs-openai.html[Why Google Beat OpenAI with Technical Teams,window=_blank]
 :hackerdom-03-augmentation: link:{site-baseurl}/adventures/2023/06/10/4-cognitive-augmentation.html[Cognitive Augmentation: The Real Revolution,window=_blank]
 :hackerdom-04-llm-lessons: link:{site-baseurl}/adventures/2023/06/10/5-early-llm-lessons.html[Early LLM Lessons: From Failure to Success,window=_blank]
-:hackerdom-05-laggardom: link:{site-baseurl}/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
+:hackerdom-05-laggardom: {corporate-america}
 :hackerdom-06-architecture: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
-:hackerdom-07-architecture: link:{site-baseurl}/adventures/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
-:hackerdom-08-origami: link:{site-baseurl}/adventures/2025/08/07/best-corporate-ai.html[The AI Success Story Nobody’s Talking About: How “Boring” Architecture Beats Hype,window=_blank]
-:hackerdom-09-origami: link:{site-baseurl}/adventures/2025/08/11/ai-integration-powers.html[Pure Gold: The AI Integration that Just Works,window=_blank]
-:hackerdom-10-mit-catching-on: link:{site-baseurl}/adventures/2025/08/18/years-late-confirmation.html[MIT Says Your AI Stinks. Here’s Why. And how to fix.,window=_blank]
+:hackerdom-07-architecture: {ai-for-enterprise-2025}
+:hackerdom-08-origami: {best-corporate-ai}
+:hackerdom-09-origami: {ai-integration-powers}
+:hackerdom-10-mit-catching-on: {years-late-confirmation}
 :hackerdom-11-google-mit-farce: link:{site-baseurl}/adventures/2025/09/18/hole-getting-deeper.html[Google to MIT: Traditional Business Done For. Oh Really?! -- Straight Talk,window=_blank]
 
 :footnote-origami-journey: footnote:origami-journey[This is a story series that follows incredible and natural AI adoption by a manufacturing company. And this story series starts with {hackerdom-08-origami}.]

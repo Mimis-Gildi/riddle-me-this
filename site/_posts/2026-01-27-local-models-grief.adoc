@@ -15,7 +15,6 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/models/]
 :systems-erosion: https://dev.to/narnaiezzsshaa/why-we-suddenly-have-developers-who-cant-think-in-systems-gpj[dev.to - Why We Suddenly Have Developers Who Can't Think in Systems,window=_blank]
 :nvidia-dgx-spark: https://www.nvidia.com/en-us/products/workstations/dgx-spark/[NVIDIA DGX Spark]
 :ollama-context-length: https://docs.ollama.com/context-length[Increase it]
-:qwen3-30b-thinking: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507[Qwen3-30B-A3B-Thinking-2507]
 
 .Did you notice 'Claude Code {plus} local models' became a hot topic overnight?
 image::local-model-corporate-reality.png[Local Model versus Hosted Model]

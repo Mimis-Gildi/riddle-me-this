@@ -11,8 +11,8 @@ comments: true
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
 :pub-asei: as outlined at ASE Inc.
-:previous-stories: link:{site-baseurl}/adventures/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
-:previous-article-url: link:{site-baseurl}/adventures/2025/08/07/best-corporate-ai.html
+:previous-stories: {ai-for-enterprise-2025}
+:previous-article-url: {best-corporate-ai-url}
 :previous-article-title: The AI Success Story Nobody’s Talking About: How “Boring” Architecture Beats Hype
 :previous-article: {previous-article-url}[{previous-article-title},window=_blank]
 :footer-previous-article: footnote:previous-article[See {previous-article} for more on this story. It's a part of the {previous-stories} series.]

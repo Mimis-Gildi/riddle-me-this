@@ -15,7 +15,7 @@ header:
 :business-2025-08-07-ai-success-story: link:{site-baseurl}/adventures/2025/08/07/best-corporate-ai.html[The AI Success Story Nobody's Talking About: How "Boring" Architecture Beats Hype,window=_blank]
 :business-2025-07-21-ai-integration-architecture: link:{site-baseurl}/adventures/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
 :business-2023-07-05-ai-integration-trap: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
-:business-2023-07-04: link:{site-baseurl}/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
+:business-2023-07-04: {corporate-america}
 
 {nbsp}
 

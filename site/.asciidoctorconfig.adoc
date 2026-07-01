@@ -4,24 +4,43 @@
 // Jekyll reads `_config.yml`; the plugin does not.
 
 :site-baseurl: /riddle-me-this
+:advanced-ai-non-corp-url: link:{site-baseurl}/research/2025/09/19/advanced-ai-non-corp.html
+:advanced-ai-non-corp: link:{site-baseurl}/research/2025/09/19/advanced-ai-non-corp.html["No holds barred: The real AI Revolution .. is us",window=_blank]
+:ai-2-activation: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html#phase-ii-ai-activation[Phase II: AI-Activation,window=_blank]
 :ai-businesses-to-perish: link:{site-baseurl}/adventures/2023/06/07/AI-and-businesses-to-perish-first.html
+:ai-for-enterprise-2025: link:{site-baseurl}/adventures/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]
 :ai-hype-2025: link:{site-baseurl}/adventures/2025/09/29/not-chat-gpt.html[AI Hype -- Straight Talk,window=_blank]
-:ai-maggedon-url: link:{site-baseurl}/reflections/2026/04/23/ai-maggedon.html link:{site-baseurl}/adventures/2025/09/29/not-chat-gpt.html[AI Hype -- Straight Talk,window=_blank]
+:ai-integration-powers-url: link:{site-baseurl}/adventures/2025/08/11/ai-integration-powers.html
+:ai-integration-powers: link:{site-baseurl}/adventures/2025/08/11/ai-integration-powers.html[Pure Gold: The AI Integration that Just Works,window=_blank]
+:ai-maggedon-url: link:{site-baseurl}/reflections/2026/04/23/ai-maggedon.html
 :ai-million-dollar-devs: link:{site-baseurl}/adventures/2023/05/15/AI-million-dollar-devs.html
 :artificial-analysis: https://artificialanalysis.ai/
+:autogpt: https://github.com/Significant-Gravitas/Auto-GPT[Auto-GPT,window=_blank]
+:best-corporate-ai-url: link:{site-baseurl}/adventures/2025/08/07/best-corporate-ai.html
+:best-corporate-ai: link:{site-baseurl}/adventures/2025/08/07/best-corporate-ai.html[The AI Success Story Nobody's Talking About: How "Boring" Architecture Beats Hype,window=_blank]
 :cb-hacker: http://www.catb.org/jargon/html/H/hacker.html[hacker,window=_blank]
 :cb-mundane: http://www.catb.org/jargon/html/M/mundane.html[mundane,window=_blank]
+:chatgpt-will-replace: link:{site-baseurl}/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A 'Doze' of Reality,window=_blank]
 :chatgpt: https://chat.openai.com/[ChatGPT,window=_blank]
+:cognitive-augmentation: link:{site-baseurl}/adventures/2023/06/10/4-cognitive-augmentation.html[Cognitive Augmentation: The Real Revolution,window=_blank]
 :commons-john-frum-effigy: https://commons.wikimedia.org/wiki/File:John_Frum_effigy_1960.jpg
+:corporate-america: link:{site-baseurl}/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
 :cto-bible: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :cto-trap-url: link:{site-baseurl}/adventures/2023/07/04/corporate-america.html
 :cto-trap: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]
 :deepinfra: https://deepinfra.com/
 :dolly-2: https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm[Dolly 2 by Databricks,window=_blank]
+:doordash-case: https://aws.amazon.com/solutions/case-studies/doordash-bedrock-case-study/[DoorDash Case Study,window=_blank]
+:fastest-ai-adoption: link:{site-baseurl}/reflections/2025/11/24/fastest-ai-adoption.html["Fastest Way to AI Adoption -- Straight Talk.",window=_blank]
 :fireship-gemini3: https://youtu.be/bsL7ZnKIAhs[YouTube @Fireship: Did Google just kill OpenAI?,window=_blank]
 :fireworks-ai: https://fireworks.ai/
+:fn-mit-fortune: footnote:[{mit-article-url}[MIT report: 95% of generative AI pilots at companies are failing,window=_blank] -- Fortune, August 2025. Popular coverage.]
+:fn-mit-genai-divide: footnote:[{mit-genai-divide}[The GenAI Divide: State of AI in Business 2025,window=_blank] -- MIT NANDA, July 2025. Primary source: 95% of enterprise GenAI pilots produce no measurable P&L impact.]
+:fn-mit-hbr: footnote:[{mit-hbr}[Beware the AI Experimentation Trap,window=_blank] -- Challapally, Pemberton, Kalathil, HBR, August 2025. Authors' summary in their own venue.]
 :footer-cto-trap: footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- your playbook on integrating AI and staying ahead.]
+:gitomer-book-fn: footnote:[Forget what you know about selling; Jeff Gitomer is all you need -> {gitomer-book}]
 :gitomer-book: https://a.co/d/5n9DwBo[The Little Red Book of Selling: 12.5 Principles of Sales Greatness,window=_blank,opts=nofollow]
+:google-vs-openai: link:{site-baseurl}/adventures/2023/06/10/3-google-vs-openai.html[Why Google Beat OpenAI with Technical Teams,window=_blank]
 :hacker-culture-url: https://en.wikipedia.org/wiki/Hacker_culture
 :hacker-culture: https://en.wikipedia.org/wiki/Hacker_culture[Hacker Culture,window=_blank]
 :hera-school-url: https://gervi-hera-vitr.github.io/sindri-labs/
@@ -33,6 +52,7 @@
 :llama-cpp: https://github.com/ggerganov/llama.cpp
 :llms-what-good-for: link:{site-baseurl}/adventures/2023/06/10/LLMs-what-good-for.html[Medium (AI in 2024: The Future is …?),window=_blank]
 :lm-studio: https://lmstudio.ai/
+:local-models-grief-url: link:{site-baseurl}/adventures/2026/01/27/local-models-grief.html
 :mailto-rIdd13r: mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let%20us%20compete%3F[rIdd13r@pm.me]
 :mcp-overview: https://modelcontextprotocol.io/introduction[Model Context Protocol,window=_blank,opts=nofollow]
 :mit-article-title: MIT report: 95% of generative AI pilots at companies are failing
@@ -43,6 +63,7 @@
 :ollama: https://ollama.com/
 :openai-blog: https://www.openai.com/blog/[OpenAI Blog,window=_blank]
 :openai: https://www.openai.com/[OpenAI website,window=_blank]
+:openclaw: https://openclaw.ai/[OpenClaw,window=_blank]
 :openrouter-rankings: https://openrouter.ai/rankings
 :openrouter-url: https://openrouter.ai/
 :openrouter: https://openrouter.ai/[Open Router,window=_blank]
@@ -52,6 +73,8 @@
 :org-mimis-latlaeg: https://github.com/Mimis-Latlaeg-Hattalag[Mímis Látlæg Háttalag,window=_blank]
 :org-mimis-scala: https://github.com/Mimis-Scala[Mímis Scala,window=_blank]
 :profile-li: https://www.linkedin.com/in/rdd13r[LinkedIn Profile,window=_blank]
+:qwen3-30b-thinking: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507[Qwen3-30B-A3B-Thinking-2507,window=_blank]
+:rand-report: https://www.rand.org/pubs/research_reports/RRA2680-1.html[RAND Corporation,window=_blank]
 :rdd13r-gh-io-title: What Riddler Does
 :rdd13r-gh-io-url: https://rdd13r.github.io/
 :rdd13r-gh-io: https://rdd13r.github.io/[Riddler,window=_blank]
@@ -62,3 +85,5 @@
 :together-ai: https://www.together.ai/
 :total-recall: https://mimis-gildi.github.io/mcp-total-recall/[MCP Total Recall,window=_blank]
 :vailala: https://en.wikipedia.org/wiki/Vailala_Madness
+:years-late-confirmation-url: link:{site-baseurl}/adventures/2025/08/18/years-late-confirmation.html
+:years-late-confirmation: link:{site-baseurl}/adventures/2025/08/18/years-late-confirmation.html[MIT Says Your AI Stinks. Here's Why. And how to fix.,window=_blank]

@@ -15,11 +15,11 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :pub-asei: as outlined at ASE Inc.
 
 :stages-of-ai-evolution: {integrated-ai-evolution-url}
-:stage-1-mit-failures: link:{site-baseurl}/adventures/2025/08/18/years-late-confirmation.html
+:stage-1-mit-failures: {years-late-confirmation-url}
 :stage-4-in-crypto: https://decrypt.co/339715/google-researchers-warn-looming-ai-run-economies
 :virtual-agent-economies: https://arxiv.org/abs/2509.10147
 
-:origami-ai-integration: link:{site-baseurl}/adventures/2025/08/11/ai-integration-powers.html
+:origami-ai-integration: {ai-integration-powers-url}
 
 More than 90% of top analytics put AI-Crisis as the most destructive economic transformation in history.
 "Doom and Gloom," if you ask me.

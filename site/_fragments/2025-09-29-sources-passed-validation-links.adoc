@@ -1,4 +1,4 @@
-:rand-research-reports: https://www.rand.org/pubs/research_reports/RRA2680-1.html[Research Reports,window=_blank]
+:rand-research-reports: {rand-report}
 :a16z-ai-enterprise-2025-report: https://a16z.com/ai-enterprise-2025/[Read Report,window=_blank]
 :menlovc-2025-report: https://menlovc.com/perspective/2025-mid-year-llm-market-update/[Read Report,window=_blank]
 :menlovc-2024-report: https://menlovc.com/2024-the-state-of-generative-ai-in-the-enterprise/[Read Report,window=_blank]
@@ -6,7 +6,7 @@
 :mckinsey-capabilities-report: https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai[Read Report,window=_blank]
 :ms-2025-blog: https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/07/24/ai-powered-success-with-1000-stories-of-customer-transformation-and-innovation/[Read Blog,window=_blank]
 :google-101-gen-ai: https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders[Read Cases,window=_blank]
-:amazon-case-study: https://aws.amazon.com/solutions/case-studies/doordash-bedrock-case-study/[Case Study,window=_blank]
+:amazon-case-study: {doordash-case}
 :amazon-gen-ai-stories: https://aws.amazon.com/ai/generative-ai/customers/[View Stories,window=_blank]
 :azure-open-ai-access-report: https://azure.microsoft.com/en-us/blog/general-availability-of-azure-openai-service-expands-access-to-large-advanced-ai-models-with-added-enterprise-benefits/[Read Blog,window=_blank]
 :anthropic-economic-index-2025: https://www.anthropic.com/research/anthropic-economic-index-september-2025-report[Read Report,window=_blank]

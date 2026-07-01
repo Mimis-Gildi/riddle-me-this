@@ -20,7 +20,6 @@ include::../_fragments/2026-04-23-ai-maggedon-killing-links.adoc[]
 include::../_fragments/2026-04-23-ai-maggedon-primer-links.adoc[]
 :deathtrap: link:{site-baseurl}/reflections/2026/02/25/ai-strategy-deathtrap.html[AI Strategy Deathtrap -- Straight Talk,window=_blank]
 :disruption-2026: link:{site-baseurl}/reflections/2026/01/08/ai-disruption-of-2026.html[2026: The Year the Ground Moves,window=_blank]
-:openclaw: https://openclaw.ai/[OpenClaw,window=_blank]
 :claude-code: https://code.claude.com/[Claude Code,window=_blank]
 :hero-alt: A working hacker -- mid-50s, hoodie, glasses -- codes calmly at an old CRT terminal through an apocalypse. \
 :cargo-cult: https://en.wikipedia.org/wiki/Cargo_cult[Cargo cult,window=_blank]

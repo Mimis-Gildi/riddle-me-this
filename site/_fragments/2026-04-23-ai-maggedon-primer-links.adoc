@@ -1,10 +1,7 @@
 // Cross-references
-:link-local-grief: link:{site-baseurl}/adventures/2026/01/27/local-models-grief.html
+:link-local-grief: {local-models-grief-url}
 
 // External references
-:ghost-article: link:{site-baseurl}/research/2025/09/19/advanced-ai-non-corp.html
+:ghost-article: {advanced-ai-non-corp-url}
 
 // Footnotes
-:fn-mit-genai-divide: footnote:[{mit-genai-divide}[The GenAI Divide: State of AI in Business 2025,window=_blank] -- MIT NANDA, July 2025. Primary source: 95% of enterprise GenAI pilots produce no measurable P&L impact.]
-:fn-mit-hbr: footnote:[{mit-hbr}[Beware the AI Experimentation Trap,window=_blank] -- Challapally, Pemberton, Kalathil, HBR, August 2025. Authors' summary in their own venue.]
-:fn-mit-fortune: footnote:[{mit-article-url}[MIT report: 95% of generative AI pilots at companies are failing,window=_blank] -- Fortune, August 2025. Popular coverage.]

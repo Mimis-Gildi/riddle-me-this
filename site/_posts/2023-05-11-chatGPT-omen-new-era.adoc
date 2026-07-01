@@ -10,7 +10,7 @@ classes: wide
 rdd13r
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
-:prior-article: link:/{site-baseurl}/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A 'Doze' of Reality]
+:prior-article: {chatgpt-will-replace}
 :ff-prior-article: footnote:prior[{prior-article}]
 
 :alt-head-in-the-sand: Head in the Sand -- The general public pretends that there is nothing happening; nothing to impact their lives negatively; nothing to uproot "business as usual"
@@ -19,7 +19,7 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 
 :y-combinator-news: https://news.ycombinator.com/item?id=26824415[Y Combinator,window=_blank]
 :artnet-idiot: https://www.artnet.com/artists/don-maitz/the-idiot-x1Vi3F6S7g3JIJEwcPT3jw2[The Idiot - Don Maitz,window=_blank]
-:autogpt-github: https://github.com/Significant-Gravitas/Auto-GPT[Auto-GPT,window=_blank]
+:autogpt-github: {autogpt}
 
 ChatGPT's debut has been a wake-up call, revealing the velocity of AI evolution.
 Yet, the real, profound change causing such sensations often goes unnoticed: we're nearing the end of Moore's law, the driving force behind computing's exponential growth.

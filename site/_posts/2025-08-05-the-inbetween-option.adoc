@@ -10,7 +10,6 @@ comments: true
 :new-founders: link:{site-baseurl}/adventures/2025/08/04/new-founders-compendium.html
 :for-new-founders: {new-founders}#note-from-the-author--bedrocking
 :for-new-founders-communities: {new-founders}#the-communities-that-actually-matter
-:gitomer-book-fn: footnote:[Forget what you know about selling; Jeff Gitomer is all you need -> {gitomer-book}]
 :contra: https://contra.com/[**Contra**,window=_blank,opts=nofollow]
 :upwork-enterprise: https://www.upwork.com/enterprise/[**Upwork Enterprise**,window=_blank,opts=nofollow]
 :cal-com: https://cal.com/[**Cal.com**,window=_blank,opts=nofollow]

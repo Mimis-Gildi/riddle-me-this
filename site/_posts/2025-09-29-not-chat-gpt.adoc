@@ -16,8 +16,8 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :pub-asei: as outlined at {ase-link}
 
 :stages-of-ai-evolution: {integrated-ai-evolution-url}
-:stage-1-mit-failures: link:{site-baseurl}/adventures/2025/08/18/years-late-confirmation.html
-:origami-ai-integration: link:{site-baseurl}/adventures/2025/08/11/ai-integration-powers.html
+:stage-1-mit-failures: {years-late-confirmation-url}
+:origami-ai-integration: {ai-integration-powers-url}
 
 .A story from The Final Industrial Revolution series: Adventures.
 image::Athena-World.png[Athena and her world.]
