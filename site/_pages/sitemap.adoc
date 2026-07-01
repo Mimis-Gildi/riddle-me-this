@@ -1,14 +1,14 @@
 = Site Map
 :page-layout: single
 :page-permalink: /sitemap/
-:link-home: link:/[Home]
-:link-about: link:/about/[About]
-:link-reflections: link:/reflections/[Reflections]
-:link-adventures: link:/adventures/[Adventures]
-:link-maintainer: link:/maintainer/[Maintainer]
-:link-categories: link:/categories/[Categories]
-:link-tags: link:/tags/[Tags]
-:link-archive: link:/archive/year/[Archives by Year]
+:link-home: link:{site-baseurl}/[Home]
+:link-about: link:{site-baseurl}/about/[About]
+:link-reflections: link:{site-baseurl}/reflections/[Reflections]
+:link-adventures: link:{site-baseurl}/adventures/[Adventures]
+:link-maintainer: link:{site-baseurl}/maintainer/[Maintainer]
+:link-categories: link:{site-baseurl}/categories/[Categories]
+:link-tags: link:{site-baseurl}/tags/[Tags]
+:link-archive: link:{site-baseurl}/archive/[Archives]
 
 
 == Main Sections
