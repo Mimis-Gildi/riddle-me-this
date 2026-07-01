@@ -36,15 +36,46 @@ image::build-with-god.png[Build Your House with God]
 Let me tell you how to survive the next AI Epoch -- 2026-2027. Epoch III.
 
 Why? -- 2025 traditional software engineering is a dinosaur. It's effectively dead.
+Instead of farming out to ~30 cogs offshore to produce "good enough" -- farm out to AI.
+And produce "a little better!"
 
-Startups run farms of {openclaw} and build net new products in 3-4 weeks.
+[CAUTION]
+.This only works IF and ONLY IF you have the COMPETENCE to begin with!
+====
+- SLOP = Dead Company: When AI generates code Human cannot validate!
+- AI-Augmented Engineering: AI is DUMB, but it's scriptable -- run generation through a GAUNTLET.
+====
+
+A few startups run farms of {openclaw} and build net new products in 3-4 weeks.
 Not just displacing hated incumbents. Delivering __quality__ products to stay.
 
-Meanwhile, Slop eats the world and weathers to nothing quickly. All the hype only sticks with competent teams.
+__**YET!:** 1/14 startups have the competence to do so. What do you think happens in corporate?__
+
+Meanwhile, Slop eats the world and turns to 'gold' quickly. +
+All the hype only sticks with competent teams.
 
 Anthropic built Claude Cowork in 10 (ten) days. And fully fielded it in under a month!
 
-The differentiator is COMPETENCE. Whose hands the digital collaborator is in -- the only thing that matters.
+[IMPORTANT]
+.Think about it! Demo = 10 days. Less to PROD +30 days on team of 30!!
+====
+If Anthropic had a full-featured demo in 10 days...
+
+WHY
+
+Take 30 days over 30 coders to ship LESS?!
+
+BECAUSE: AI can only HALLUCINATE. And it hallucinates SLOP.
+====
+
+The differentiator is COMPETENCE. +
+Whose hands the digital collaborator is in -- the only thing that matters.
+
+== Agentic AI Law 0 (ZERO)
+
+*__Competent software can ONLY be produced by COMPETENT humans!__*
+
+== Corporate America
 
 What about the regulated industry and the corporate America?
 

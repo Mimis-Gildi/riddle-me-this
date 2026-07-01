@@ -22,12 +22,12 @@ include::../_fragments/2026-04-23-ai-maggedon-primer-links.adoc[]
 :disruption-2026: link:{site-baseurl}/reflections/2026/01/08/ai-disruption-of-2026.html[2026: The Year the Ground Moves,window=_blank]
 :claude-code: https://code.claude.com/[Claude Code,window=_blank]
 :hero-alt: A working hacker -- mid-50s, hoodie, glasses -- codes calmly at an old CRT terminal through an apocalypse. \
-:cargo-cult: https://en.wikipedia.org/wiki/Cargo_cult[Cargo cult,window=_blank]
 Burning city, Yggdrasil ablaze on the horizon, agentic drones in the sky, red lightning. \
 Three tombstones in the foreground read "VIBE CODED," "PUSHED TO MAIN," "TRUST THE AGENT." \
 A hanging sign reads "INFRASTRUCTURE AS SERVICE TO ODIN." \
 The terminal glows green with the line: \
 "AI makes dumb developers dumber and smart developers happier."
+:cargo-cult: https://en.wikipedia.org/wiki/Cargo_cult[Cargo cult,window=_blank]
 
 include::../_fragments/2026-04-23-ai-maggedon-hero.adoc[]
 
