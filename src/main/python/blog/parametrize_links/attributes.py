@@ -24,3 +24,5 @@ class Attribute:
 
 AttributeProvider = Callable[[], Iterable[Attribute]]
 AttributeFilterProvider = Callable[[tuple[str, str, int]], bool]
+
+LINK_VALUE_PREFIXES = ("http://", "https://", "link:", "footnote:", "mailto:")

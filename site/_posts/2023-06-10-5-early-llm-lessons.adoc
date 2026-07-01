@@ -8,9 +8,8 @@ comments: true
 ---
 = Early LLM Lessons: From Failure to Success
 rdd13r
-:scene-presented-original: link:/riddle-me-this/adventures/2023/06/10/LLMs-what-good-for.html[Medium (AI in 2024: The Future is …?),window=_blank]
 
-_Originally published June 10, 2023 -- excerpt from {scene-presented-original}_
+_Originally published June 10, 2023 -- excerpt from {llms-what-good-for}_
 
 Understanding why Large Language Models failed in enterprise environments from 2018-2022 -- and what changed in 2023 -- provides crucial insights for current AI implementation decisions.
 

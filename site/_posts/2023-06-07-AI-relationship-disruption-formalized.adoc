@@ -10,9 +10,8 @@ comments: true
 rdd13r
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:scene-presented-original: link:{site-baseurl}/adventures/2023/06/07/AI-and-businesses-to-perish-first.html
 
-_Originally published June 7, 2023 -- as {scene-presented-original}[presented on the scene,window=_blank]._
+_Originally published June 7, 2023 -- as {ai-businesses-to-perish}[presented on the scene,window=_blank]._
 
 While consulting on an AI sentiment analysis project for a healthcare organization, our team discovered something unexpected: the AI didn't just analyze customer sentiment -- it revealed fundamental vulnerabilities in relationship-dependent business models.
 

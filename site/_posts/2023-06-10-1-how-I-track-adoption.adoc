@@ -8,9 +8,8 @@ comments: true
 ---
 = How I Track Technology Adoption Before It Happens
 rdd13r
-:scene-presented-original: link:{site-baseurl}/adventures/2023/06/10/LLMs-what-good-for.html[Medium (AI in 2024: The Future is …?),window=_blank]
 
-_Originally published June 10, 2023 -- excerpt from {scene-presented-original}_
+_Originally published June 10, 2023 -- excerpt from {llms-what-good-for}_
 
 Most companies discover technology trends too late -- after competitors have already gained advantages.
 I've developed a methodology that consistently identifies technological shifts 12-18 months before mainstream adoption.

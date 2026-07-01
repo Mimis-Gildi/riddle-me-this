@@ -12,7 +12,6 @@ rdd13r
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
-:corporate-ai-native: link:{site-baseurl}/adventures/2023/07/04/corporate-america.html
 
 == 2025: Which Am I – The Oracle, or the Hag?
 

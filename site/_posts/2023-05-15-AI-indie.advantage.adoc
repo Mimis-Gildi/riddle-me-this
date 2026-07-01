@@ -8,9 +8,8 @@ comments: true
 ---
 = When Small AI Teams Outcompeted Enterprise Vendors
 rdd13r
-:scene-presented-original: link:{site-baseurl}/adventures/2023/05/15/AI-million-dollar-devs.html
 
-_Originally published May 15, 2023 -- on the {scene-presented-original}[Scene Discord,window=_blank]._
+_Originally published May 15, 2023 -- on the {ai-million-dollar-devs}[Scene Discord,window=_blank]._
 
 In May 2023, I documented an unexpected market phenomenon: small developer teams were winning million-dollar AI contracts from the most conservative industries -- insurance, banking, and healthcare.
 

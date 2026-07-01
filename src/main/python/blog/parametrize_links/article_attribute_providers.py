@@ -4,7 +4,7 @@ import re
 from functional import seq
 
 from blog.parametrize_links import Article
-from blog.parametrize_links.attributes import Attribute, AttributeProvider
+from blog.parametrize_links.attributes import Attribute, AttributeProvider, LINK_VALUE_PREFIXES
 
 
 def _included_texts(article: Article) -> list:
@@ -55,7 +55,7 @@ def read_declared_link_attributes_provider(article: Article) -> AttributeProvide
     def _extract(text: str):
         return (
             seq(re.finditer(r'^:([^:]+):\s+(.+)$', text, re.MULTILINE))
-            .filter(lambda m: m.group(2).startswith(("http://", "https://", "link:", "footnote:", "mailto:")))
+            .filter(lambda m: m.group(2).startswith(LINK_VALUE_PREFIXES))
             .map(lambda m: Attribute(m.group(1), m.group(2), m.start()))
         )
     return lambda: (

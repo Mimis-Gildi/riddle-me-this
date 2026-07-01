@@ -5,11 +5,13 @@ import pytest
 from functional import seq
 
 from blog.parametrize_links import CONF_FILE
-from conftest import GLOBAL_LINK_KEYS
+from conftest import GLOBAL_LINK_KEYS, FULL_ARTICLE_DECLARED_KEYS
 from blog.parametrize_links.article import Article
 from blog.parametrize_links.article_attribute_providers import read_declared_link_attributes_provider
 from blog.parametrize_links.attribute_providers import GLOBAL_POSITION, global_link_attribute_collecting_provider, \
     static_links_provider, config_links_provider, filter_provider
+
+SLOP_CM = "b0dc3f2665b3b5ff32a01e88163e363013386118"
 
 
 class TestArticleInvocation:
@@ -41,8 +43,8 @@ class TestArticleInvocation:
         """A real Slop article -> constructs cleanly, keeps the path."""
         article = Article(slop_article)
 
-        assert article._content_length == 8756
-        assert article._file_checksum == "4509706383d2b891d73e00b93132ca95ab2b3186"
+        assert article._content_length == 8755
+        assert article._file_checksum == SLOP_CM
 
         assert article.path == slop_article
 
@@ -65,8 +67,8 @@ class TestArticleObject:
         """Test the affinity of the protected attributes once the right slop is loaded."""
         slop = Article(self.slop_article)
 
-        assert slop._content_length == 8756
-        assert slop._file_checksum == "4509706383d2b891d73e00b93132ca95ab2b3186"
+        assert slop._content_length == 8755
+        assert slop._file_checksum == SLOP_CM
         assert slop.path == self.slop_article
 
         with pytest.raises(RuntimeError) as text_set_error:
@@ -132,11 +134,5 @@ class TestArticleContentReadingObject:
             .print_global_links()
             .print_declared_links())
 
-        assert seq(actual.links_declared).len() == 37
-        assert seq(actual.links_declared).map(lambda attr: attr.key).to_set() == {
-                "jarvis", "nomads", "demogroup", "anonymous", "scene", "mit",
-                "lugaru", "tales", "spaces", "brakha", "carpathia", "hfce", "crackers",
-                "active-inference", "verses", "g-io", "g-community", "g-ai-onboarding", "g-dev-profile",
-                "g-k-models", "g-dtensor", "g-io-session", "g-palm2-api", "g-maker-suite", "g-tensorflow",
-                "g-research", "g-kaggle", "g-attn", "m-llama", "s-alpaca", "bsd-vicuna", "bsd-vicuna-topics",
-                "db-dolly", "db-dolly-hf", "open-assistant", "o-a-hf", "all-oss-lm-models"}
+        assert seq(actual.links_declared).len() == len(FULL_ARTICLE_DECLARED_KEYS)
+        assert seq(actual.links_declared).map(lambda attr: attr.key).to_set() == FULL_ARTICLE_DECLARED_KEYS

@@ -11,11 +11,10 @@ rdd13r
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
-:corporate-ai-native: link:/riddle-me-this/adventures/2023/07/04/corporate-america.html
 
 _Originally published July 5, 2023 -- find discussion content in sources._
 
-In my {corporate-ai-native}[previous analysis,window=_blank], I examined why Corporate America is unprepared for AI adoption.
+In my {cto-trap-url}[previous analysis,window=_blank], I examined why Corporate America is unprepared for AI adoption.
 The fundamental challenge is that AI capabilities require clean business "Context" to function effectively
 -- context that should exist naturally for businesses that completed proper Cloud Native Digital Transformation (DX) through Domain Driven Design.
 

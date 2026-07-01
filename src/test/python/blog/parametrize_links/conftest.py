@@ -6,6 +6,16 @@ import pytest
 from blog.parametrize_links import SLOP_ARTICLE, FULL_ARTICLE
 from blog.parametrize_links.attributes import AttributeProvider, Attribute
 
+FULL_ARTICLE_DECLARED_KEYS = {
+    "jarvis", "nomads", "demogroup", "anonymous", "scene", "mit",
+    "lugaru", "tales", "spaces", "brakha", "carpathia", "hfce", "crackers",
+    "active-inference", "verses", "g-io", "g-community", "g-ai-onboarding", "g-dev-profile",
+    "g-k-models", "g-dtensor", "g-io-session", "g-palm2-api", "g-maker-suite", "g-tensorflow",
+    "g-research", "g-kaggle", "g-attn", "m-llama", "s-alpaca", "bsd-vicuna", "bsd-vicuna-topics",
+    "db-dolly", "db-dolly-hf", "open-assistant", "o-a-hf", "all-oss-lm-models",
+    "mail-rdd13r-no-subj", "revisit-article", "revisit-fn",
+}
+
 GLOBAL_LINK_KEYS = {
     "site-baseurl", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
     "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
@@ -13,12 +23,13 @@ GLOBAL_LINK_KEYS = {
     "mit-article-url", "mit-article-title", "mit-article",
     "rdd13r-gh", "rdd13r-gh-io", "rdd13r-gh-io-url", "rdd13r-gh-io-title",
     "release", "resume", "total-recall", "org-mimis-gildi",
-    "cto-bible", "cto-trap", "footer-cto-trap",
+    "cto-bible", "cto-trap", "cto-trap-url", "footer-cto-trap",
     "org-gervi-hera-vitr", "org-gotham-village", "org-mimis-latlaeg", "org-mimis-scala",
     "hacker-culture-url", "hacker-culture", "dolly-2",
     "openrouter", "openrouter-rankings", "openrouter-url",
     "artificial-analysis", "commons-john-frum-effigy", "deepinfra", "fireworks-ai",
-    "kimi-k2-thinking", "llama-cpp", "lm-studio", "mit-genai-divide", "mit-hbr",
+    "kimi-k2-thinking", "llama-cpp", "llms-what-good-for", "lm-studio", "mit-genai-divide", "mit-hbr",
+    "ai-million-dollar-devs", "ai-businesses-to-perish",
     "ollama", "together-ai", "vailala", "rdd13r-style-guide",
 }
 

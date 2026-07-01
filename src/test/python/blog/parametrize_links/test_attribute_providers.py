@@ -45,7 +45,7 @@ class TestConfigFileAttributeProviders:
         """The provider surfaces exactly the config's `asciidoctor.attributes` -- every key, none extra, all at GLOBAL_POSITION."""
         links = seq(config_links_provider(CONF_FILE)())
 
-        assert links.len() == 51
+        assert links.len() == 55
         assert links.map(lambda link: link.position).to_set() == {GLOBAL_POSITION}
         assert links.map(lambda link: link.key).to_set() == GLOBAL_LINK_KEYS - {"site-baseurl"} | {"icons"}
 

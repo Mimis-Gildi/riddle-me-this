@@ -8,9 +8,8 @@ comments: true
 ---
 = Cognitive Augmentation: The Real Revolution
 rdd13r
-:scene-presented-original: link:{site-baseurl}/adventures/2023/06/10/LLMs-what-good-for.html[Medium (AI in 2024: The Future is …?),window=_blank]
 
-_Originally published June 10, 2023 -- excerpt from {scene-presented-original}_
+_Originally published June 10, 2023 -- excerpt from {llms-what-good-for}_
 
 Everyone focuses on what AI can do.
 The real revolution is what AI does to us -- how it fundamentally changes human cognitive capacity and, consequently, competitive dynamics in business.
