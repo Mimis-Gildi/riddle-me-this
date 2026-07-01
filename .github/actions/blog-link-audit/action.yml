@@ -17,8 +17,4 @@ runs:
       run: |
         source ${{ github.action_path }}/conda-activate.sh
         conda activate ml
-        python --version
-        python3 --version
-        which python
-        which python3
         ${{ github.action_path }}/check-link-attributes.py
