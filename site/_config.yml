@@ -51,7 +51,6 @@ defaults:
       comments              : false
       share                 : true
       related               : true
-      breadcrumbs           : false
   - scope:
       path                  : ""
       type                  : pages
