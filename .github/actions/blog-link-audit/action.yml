@@ -12,10 +12,9 @@ runs:
   using: composite
   steps:
 
-    - id: manual-activate
-      shell: zsh -l {0}
-      run: ${{ github.action_path }}/conda-activate.sh
-
     - id: check-links
       shell: zsh -l {0}
-      run: ${{ github.action_path }}/check-link-attributes.py
+      run: |
+        source ${{ github.action_path }}/conda-activate.sh
+        conda activate ml
+        ${{ github.action_path }}/check-link-attributes.py
