@@ -7,6 +7,8 @@ classes: wide
 comments: true
 ---
 = The AI Success Story Nobody's Talking About: How "Boring" Architecture Beats Hype
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
@@ -70,7 +72,8 @@ For "synergy." 🤣
 We designed something radical for 2018: A modular monolith with military-grade isolation.
 
 .The "Boring" Architecture That *Enables* AI:
-image:{img-prefix}/origami-2019-modular-monolith.png[]
+image::origami-2019-modular-monolith.png[Origami Architecture Flow,width=1200,align=center]
+{nbsp}
 
 === The Secret Sauce: Revolving Door Security Gateways:
 
