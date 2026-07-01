@@ -37,22 +37,6 @@ jobs:
 
       - name: Run audit
         id: audit
-        uses: ./.github/actions/blog-link-audit
-
-      - name: Comment on issue
-        if: steps.issue.outputs.number != ''
         env:
-          GH_TOKEN: ${{ secrets.CI_PAT }}
-        run: |
-          cat > /tmp/blog-audit.md << 'EOF'
-          ### Blog Link Audit — `${{ github.ref_name }}`
-
-          ```
-          ${{ steps.audit.outputs.report }}
-          ```
-
-          _${{ github.actor }} @ ${{ github.sha }}_
-          EOF
-          gh issue comment ${{ steps.issue.outputs.number }} \
-            --repo ${{ github.repository }} \
-            --body-file /tmp/blog-audit.md
+          GH_TOKEN: ${{ github.token }}
+        uses: ./.github/actions/blog-link-audit
