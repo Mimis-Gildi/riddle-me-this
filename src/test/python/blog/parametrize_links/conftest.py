@@ -30,6 +30,7 @@ GLOBAL_LINK_KEYS = {
     "artificial-analysis", "commons-john-frum-effigy", "deepinfra", "fireworks-ai",
     "kimi-k2-thinking", "llama-cpp", "llms-what-good-for", "lm-studio", "mit-genai-divide", "mit-hbr",
     "ai-million-dollar-devs", "ai-businesses-to-perish",
+    "integrated-ai-evolution-url", "integrated-ai-evolution",
     "ollama", "together-ai", "vailala", "rdd13r-style-guide",
 }
 

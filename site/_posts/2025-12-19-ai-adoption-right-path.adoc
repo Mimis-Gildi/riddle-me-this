@@ -13,7 +13,7 @@ read_aloud: false
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :ai-adoption: link:{site-baseurl}/reflections/2025/11/24/fastest-ai-adoption.html["Fastest Way to AI Adoption -- Straight Talk.",window=_blank]
-:ai-stages: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
+:ai-stages: {integrated-ai-evolution}
 :ai-2-activation: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html#phase-ii-ai-activation[Phase II: AI-Activation,window=_blank]
 :doordash-case: https://aws.amazon.com/solutions/case-studies/doordash-bedrock-case-study/[DoorDash Case Study,window=_blank]
 :rand-report: https://www.rand.org/pubs/research_reports/RRA2680-1.html[RAND Corporation,window=_blank]

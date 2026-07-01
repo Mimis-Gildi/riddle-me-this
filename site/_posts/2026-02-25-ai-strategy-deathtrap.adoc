@@ -13,7 +13,7 @@ read_aloud: false
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :american-ai-trap: link:{site-baseurl}/adventures/2023/07/04/corporate-america.html
-:american-ai-adoption: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html
+:american-ai-adoption: {integrated-ai-evolution-url}
 :ai-cognitive-augmentation: link:{site-baseurl}/adventures/2023/06/10/4-cognitive-augmentation.html[2023: Cognitive Augmentation: The Real Revolution,window=_blank]
 :ai-hype-straight-talk: link:{site-baseurl}/adventures/2025/09/29/not-chat-gpt.html[2025: AI Hype -- Straight Talk,window=_blank]
 :minimax: https://www.minimax.io/news/minimax-m25[MiniMax M2.5,window=_blank]

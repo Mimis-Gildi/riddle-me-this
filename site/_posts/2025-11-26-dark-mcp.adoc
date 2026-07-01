@@ -16,7 +16,7 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :dev-to-fallon-jimmy: https://dev.to/fallon_jimmy/top-12-game-changing-mcp-libraries-transform-your-ai-development-in-2025-iep[TOP 12 Game-Changing MCP Libraries: Transform Your AI Development in 2025 -- Fallon Jimmy | dev.to,window=_blank]
 :agent-economies: https://youtu.be/S6wc6yvoZLY[YouTube @Fireship: "AI agents are paying each other now…",window=_blank]
 :ai-adoption: link:{site-baseurl}/reflections/2025/11/24/fastest-ai-adoption.html["Fastest Way to AI Adoption -- Straight Talk.",window=_blank]
-:ai-stages: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
+:ai-stages: {integrated-ai-evolution}
 :ai-1-integration:
 :ai-2-activation: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html#phase-ii-ai-activation[Phase II: AI-Activation,window=_blank]
 

@@ -14,7 +14,7 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :pub-mm: as published on Medium by {mm-newsletter}
 :pub-asei: as outlined at ASE Inc.
 
-:stages-of-ai-evolution: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html
+:stages-of-ai-evolution: {integrated-ai-evolution-url}
 :stage-1-mit-failures: link:{site-baseurl}/adventures/2025/08/18/years-late-confirmation.html
 :stage-4-in-crypto: https://decrypt.co/339715/google-researchers-warn-looming-ai-run-economies
 :virtual-agent-economies: https://arxiv.org/abs/2509.10147

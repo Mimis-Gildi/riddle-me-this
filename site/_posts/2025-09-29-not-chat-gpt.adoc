@@ -15,7 +15,7 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :ase-title: ASE Inc.
 :pub-asei: as outlined at {ase-link}
 
-:stages-of-ai-evolution: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html
+:stages-of-ai-evolution: {integrated-ai-evolution-url}
 :stage-1-mit-failures: link:{site-baseurl}/adventures/2025/08/18/years-late-confirmation.html
 :origami-ai-integration: link:{site-baseurl}/adventures/2025/08/11/ai-integration-powers.html
 

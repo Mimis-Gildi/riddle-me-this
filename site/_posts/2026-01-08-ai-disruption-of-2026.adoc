@@ -12,7 +12,7 @@ read_aloud: false
 = 2026: The Year the Ground Moves
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
-:ai-stages-url: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html
+:ai-stages-url: {integrated-ai-evolution-url}
 :ai-stages: {ai-stages-url}[2023: The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :trunking: https://trunkbaseddevelopment.com/[trunk,window=_blank]
 :jb-dev-trends: https://www.youtube.com/live/j-2sQfftqdE?si=FxQ7KOMS2K9cTIVa[Top Developer Trends of 2025: AI Usage; Productivity; and the Rise of TypeScript,window=_blank]
