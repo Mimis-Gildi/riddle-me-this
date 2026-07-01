@@ -1,4 +1,4 @@
-:full-url: link:/riddle-me-this/reflections/2026/04/23/ai-maggedon.html
+:full-url: {ai-maggedon-url}
 :full: {full-url}[AI-maggedon 2026: Straight Talk,window=_blank]
 
 // Section anchors

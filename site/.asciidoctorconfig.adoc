@@ -6,6 +6,7 @@
 :site-baseurl: /riddle-me-this
 :ai-businesses-to-perish: link:{site-baseurl}/adventures/2023/06/07/AI-and-businesses-to-perish-first.html
 :ai-hype-2025: link:{site-baseurl}/adventures/2025/09/29/not-chat-gpt.html[AI Hype -- Straight Talk,window=_blank]
+:ai-maggedon-url: link:{site-baseurl}/reflections/2026/04/23/ai-maggedon.html link:{site-baseurl}/adventures/2025/09/29/not-chat-gpt.html[AI Hype -- Straight Talk,window=_blank]
 :ai-million-dollar-devs: link:{site-baseurl}/adventures/2023/05/15/AI-million-dollar-devs.html
 :artificial-analysis: https://artificialanalysis.ai/
 :cb-hacker: http://www.catb.org/jargon/html/H/hacker.html[hacker,window=_blank]

@@ -146,7 +146,7 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :nyt-spy-war-url: https://www.nytimes.com/2024/02/25/world/europe/cia-ukraine-intelligence-russia-war.html
 :nyt-spy-war: {nyt-spy-war-url}[{nyt-spy-war-txt},window=_blank]
 :opus-interpolates-txt: Opus only interpolates and can never extrapolate
-:opus-interpolates-url: link:/riddle-me-this/reflections/2026/04/23/ai-maggedon.html
+:opus-interpolates-url: {ai-maggedon-url}
 :opus-interpolates: {opus-interpolates-url}[{opus-interpolates-txt},window=_blank]
 :patriot-cost-asymmetry-txt: House of Saud -- Zelensky sells MBS weapons Washington cannot deliver
 :patriot-cost-asymmetry-url: https://houseofsaud.com/zelenskyy-sells-mbs-weapons-washington-cannot-deliver/

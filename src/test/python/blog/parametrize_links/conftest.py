@@ -29,7 +29,7 @@ GLOBAL_LINK_KEYS = {
     "openrouter", "openrouter-rankings", "openrouter-url",
     "artificial-analysis", "commons-john-frum-effigy", "deepinfra", "fireworks-ai",
     "kimi-k2-thinking", "llama-cpp", "llms-what-good-for", "lm-studio", "mit-genai-divide", "mit-hbr",
-    "ai-million-dollar-devs", "ai-businesses-to-perish", "ai-hype-2025",
+    "ai-million-dollar-devs", "ai-businesses-to-perish", "ai-hype-2025", "ai-maggedon-url",
     "integrated-ai-evolution-url", "integrated-ai-evolution",
     "ollama", "together-ai", "vailala", "rdd13r-style-guide",
 }
