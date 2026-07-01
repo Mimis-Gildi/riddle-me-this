@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """Update version references across configured files. Replaces badges and versioned links.
 Validates structural match counts. Warns on version drift. Self-healing."""
 from __future__ import annotations

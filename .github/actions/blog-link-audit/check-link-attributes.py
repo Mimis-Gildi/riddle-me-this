@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """Blog link attribute checker — composite action entry point."""
 import os
 import sys
