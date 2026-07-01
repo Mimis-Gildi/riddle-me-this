@@ -37,7 +37,6 @@ GLOBAL_LINK_KEYS = {
     "autogpt", "best-corporate-ai-url", "best-corporate-ai",
     "chatgpt-will-replace", "cognitive-augmentation", "corporate-america",
     "doordash-case", "fastest-ai-adoption",
-    "fn-mit-fortune", "fn-mit-genai-divide", "fn-mit-hbr",
     "gitomer-book-fn", "google-vs-openai", "local-models-grief-url",
     "openclaw", "qwen3-30b-thinking", "rand-report",
     "years-late-confirmation-url", "years-late-confirmation",

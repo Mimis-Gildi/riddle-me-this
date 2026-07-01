@@ -34,9 +34,6 @@
 :fastest-ai-adoption: link:{site-baseurl}/reflections/2025/11/24/fastest-ai-adoption.html["Fastest Way to AI Adoption -- Straight Talk.",window=_blank]
 :fireship-gemini3: https://youtu.be/bsL7ZnKIAhs[YouTube @Fireship: Did Google just kill OpenAI?,window=_blank]
 :fireworks-ai: https://fireworks.ai/
-:fn-mit-fortune: footnote:[{mit-article-url}[MIT report: 95% of generative AI pilots at companies are failing,window=_blank] -- Fortune, August 2025. Popular coverage.]
-:fn-mit-genai-divide: footnote:[{mit-genai-divide}[The GenAI Divide: State of AI in Business 2025,window=_blank] -- MIT NANDA, July 2025. Primary source: 95% of enterprise GenAI pilots produce no measurable P&L impact.]
-:fn-mit-hbr: footnote:[{mit-hbr}[Beware the AI Experimentation Trap,window=_blank] -- Challapally, Pemberton, Kalathil, HBR, August 2025. Authors' summary in their own venue.]
 :footer-cto-trap: footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- your playbook on integrating AI and staying ahead.]
 :gitomer-book-fn: footnote:[Forget what you know about selling; Jeff Gitomer is all you need -> {gitomer-book}]
 :gitomer-book: https://a.co/d/5n9DwBo[The Little Red Book of Selling: 12.5 Principles of Sales Greatness,window=_blank,opts=nofollow]
