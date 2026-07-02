@@ -5,14 +5,17 @@ header:
   overlay_image: /assets/images/banner-community.png
   overlay_filter: 0.1
   caption: "Autocracy versus Democracy. Which do we choose?"
-excerpt:  Year is 1987. Western Ukrainian SSR. My homeroom teacher — a retired KGB officer — explained to a room of gifted children the difference between East and West, and why Stalin never went without dinner.
+excerpt: >
+  Year is 1987. Western Ukrainian SSR. My homeroom teacher -- cast-aside KGB officer -- explained to a room of gifted children the difference between East and West, why Democracy falters, and why Stalin never went without dinner.
 classes: wide
 comments: true
 hidden: false
 search: true
-read_aloud: true
+read_aloud: false
 ---
 = Roosevelt and Stalin Feeding Chickens
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 
 This was told to me by my homeroom teacher sometime 1987, Western Ukrainian SSR.
 His handle, `Rat`, is likely because he looked like a one-eyed rat:
@@ -21,7 +24,13 @@ happy to greet people with his steel cold confident demeanor. I respect the man 
 Rat taught history. The real history, not what the West knows or Soviets prescribed.
 One day, explaining Soviet cohesion versus Western democracy, he approached class this way:
 
-Roosevelt and Stalin were talking about rallying nations behind a cause (WWII, of course).
+.FDR and J.V. Stalin passing some peer-bonding time together.
+[#img-hero-roosevelt-stalin]
+image::roosevelt-stalin-chickens.png[Roosevelt and Stalin peer-bonding over chickens on a soviet farm.,width=1200]
+{nbsp}
+
+
+*_Roosevelt and Stalin were talking about rallying nations behind a cause (WWII, of course)._*
 
 *Roosevelt:* It's getting difficult to get consensus behind decisive and necessary hard action. +
 *Stalin:* It's never difficult for me -- but why would you say that? +
