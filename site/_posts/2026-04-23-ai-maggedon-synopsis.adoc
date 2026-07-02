@@ -1,8 +1,6 @@
 ---
 categories: [reflections]
 tags: [AI, Agentic AI, Security, Enterprise, Zero-Day, OpenClaw, Claude Code]
-excerpt: >
-    92% of AI-generated codebases ship with critical vulnerabilities. Your AI is writing your vulnerabilities.
 classes: wide
 comments: false
 hidden: false
