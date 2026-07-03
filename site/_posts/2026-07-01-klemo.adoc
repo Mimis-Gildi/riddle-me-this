@@ -1,0 +1,148 @@
+---
+categories: [reflections]
+tags: [Ukraine, America, Veterans, klemo, SOCOM, Azov, Memorial Day]
+excerpt: >
+  MSG klemo. Black Alabama native. 22 years enlisted. Trained Azov in 2015.
+  Came back in 2022 announcing "I'm saving the world!" August 2025 -- nothing left to collect.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: true
+---
+= klemo's Story
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+
+:nyt-spy-war-url: https://www.nytimes.com/2024/02/25/world/europe/cia-ukraine-intelligence-russia-war.html
+:pbs-azov-lift-url: https://www.pbs.org/newshour/world/u-s-lifts-ban-on-providing-weapons-and-training-for-ukraines-controversial-azov-brigade
+:csm-azov-url: https://www.csmonitor.com/World/Europe/2024/0912/ukraine-nationalism-azov-sanctions-restored-reputation
+
+I owe my life to a good friend and once a battle buddy: black Alabama native, MSG (Ret.) `klemo.`
+
+I medically retired in 2000. He completed his 20+ years and fully retired in 2020.
+I was born in Soviet Ukraine. He met Ukraine in 2015, training the legendary Azov --
+a year into the Russian invasion of Donbas.
+
+The original Azov was nationalist. The Russians will tell you so, loud and often.
+What they won't tell you: the 2014 volunteer militia disbanded.
+Today's 12th Special Forces Azov Brigade is a different unit, vetted under the Leahy Law.
+The US State Department made that finding official in June 2024.footnote:[{pbs-azov-lift-url}[PBS,window=_blank]; {csm-azov-url}[CSM,window=_blank]]
+Today's Azov is the best child of US SFAS.
+Best Americans like `klemo` were more Ukrainian than most people knew.
+
+Come February 24, 2022, my `klemo` barged into my house announcing *"I'm saving the world!"*
+
+I did my darndest to talk the old goat out of it. No luck.
+Soon my house was full of old grunts packing duffel bags.
+
+I knew the International Legion Zelensky announced was not where I wanted my vets.
+And I knew they needed kit, armor, arms, pay, and logistics --
+expensive things we couldn't just hand over.
+So Tania, little Anton, and I rolled up our sleeves and went begging past customers for handouts.
+That didn't work. We got bandages, blankets, and undies -- good for nothing rags.
+
+Then someone offered to match on shares for our startup. They'd wanted the company for a long time.
+We accepted. That's how we ended up all in --
+in return for operational logistics classes 1, 2, 3, 6, and 8.
+We launched the company. Gifted ex-marketing twins funded the continuous runway.
+
+_I didn't talk about it, and I was also packing to go -- a bad parent.
+Somehow, our kid knew it._
+
+Luckily, God and Anton had other plans for us all.
+
+.Kuhay family is busy supporting Ukraine.
+[#img-supporting]
+image::supporting_ukraine.jpg[]
+
+{nbsp}
+
+As we packed up and hastily sent off the retired SOCOM grunts,
+we were left with nothing to do and nothing left to do it with.
+Even the Marketing Fey -- twin sisters, a boutique marketing company -- left for war.
+For years the ladies had kept our corporate-lobotomy backlog full.
+Turns out the Fey are veterans too. They liquidated and bought in.
+
+Having spent it all, we only had our time to give.
+The first months were crazy. Warehouse to warehouse, load point to load point,
+packing whatever could still go to Ukraine.
+Anton parted with his beloved 5.56 ammo collection:
+
+_"Daddy, can this get an orc?"_ +
+_"Yes, son. In the right hands it will."_
+
+.Anton's own ammo detail for Ukraine.
+[#img-anton-collections]
+image::antons-donations.png[]
+
+{nbsp}
+
+All this labor had an unforeseen consequence for our little family.
+Anton was 4 when he lost his biological mother and unborn sister.
+Now he was pestering Tania and me, attempting to order a sister.
+I was told it was impossible for me. We hadn't thought much about his sneaky plans.
+Little did we know the boy was committed, diligently praying --
+and those were not just his plans.
+
+We're pregnant. Daddy's not going anywhere. Anton got what he wanted.
+He confessed to his "workable plan" succeeding all along.
+As proof, he presented his "bribing the storks" evidence.
+Mama conceded to his logic: our selfless deeds would be rewarded -- karma, why not.
+How can silly daddy argue with such solid reasoning?
+
+.Anton's plan comes together. God {plus} Storks {plus} good prayer.
+[#img-reward]
+image::pupsik-transparenti.png[]
+
+{nbsp}
+
+Khava is her real given name -- Aramaic for "life," the actual name of Adam's wife.
+Eve in English. Zoey in her passport.
+Born with a soft voicebox, completely healthy otherwise.
+Her first year was a struggle: breathing, eating, sleeping, watched 24/7.
+Zoey beat it all by month eighteen with daddy's diligent overfeeding.
+Anton's plan: new sister here = old daddy home.
+
+== Closure and Reckoning
+
+In 2025, all American companies lost the channels -- us included. +
+_American business is not welcome in Ukraine, or anywhere in Europe for that matter._
+
+August came in hot.
+
+First: Tania's mother, my mother-in-law, lost her life in a massive bombardment of her historic Ukrainian city.
+She was old and unable to negotiate all the stairs.
+
+The day after her death, my old battle-buddy `klemo` "went out with a bang" --
+fallen in the heat of battle, as he had always wanted.
+He'd dreaded an old-age death in some hospice.
+His personal life in the USA had not worked out. No family, no children to speak of.
+The old gruntery was his family. Drinking in NCO clubs was not his idea of fun.
+His way to kick the bucket had to be spectacular.
+
+And it was. Nothing left to collect.
+
+'''
+
+So far we have suffered one in seven casualties from our own American military family.
+Half of them forever.
+
+These people are our nation's finest sons and daughters.
+
+The half that recovers usually stays in the fight, helping in other ways they still can.
+For many, this war of independence became the highlight and definition of their whole lives.
+
+Over the last five years, American veteran communities *tightly merged* with the Ukrainian Diaspora.
+Did you know -- *there are as many Ukrainians worldwide supporting Ukraine as there are in Ukraine?*
+The amalgamation we see today forever changes the future of Ukrainian-American relations,
+regardless of governments. People-on-people connection is what defines a real alliance.
+
+These Americans will come home one day full of real experiences and real knowledge --
+unlike couch QAnon fables.
+
+Don't mind your local useful idiots. They'll be forgotten.
+Some will be shamed by their own families, as we now see with MAGA.
+Mind yourself. We can only control ourselves.
+
+And many have.

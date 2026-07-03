@@ -2,11 +2,11 @@
 categories: [reflections]
 tags: [Ukraine, Democracy, Autocracy, Old KGB]
 header:
-  overlay_image: /assets/images/banner-community.png
-  overlay_filter: 0.1
+  overlay_image: /assets/images/banner-german-prisoners-berlin.png
+  overlay_filter: "rgba(60, 60, 0, 0.45)"
   caption: "Autocracy versus Democracy. Which do we choose?"
 excerpt: >
-  Year is 1987. Western Ukrainian SSR. My homeroom teacher -- cast-aside KGB officer -- explained to a room of gifted children the difference between East and West, why Democracy falters, and why Stalin never went without dinner.
+  Western Ukrainian SSR. 1987. Homeroom teacher explains.
 classes: wide
 comments: true
 hidden: false

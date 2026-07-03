@@ -1,0 +1,87 @@
+---
+categories: [reflections]
+tags: [America, Russia, Propaganda, QAnon, GRU, Disinformation, Democracy]
+excerpt: >
+  Russia didn't hack the election. It hacked the electorate.
+  GRU Project QAnon is one of about a hundred. It just happened to work best.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= GRU Project QAnon: Russia's Greatest American Victory
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+
+:rand-firehose-url: https://www.rand.org/pubs/perspectives/PE198.html
+:thehill-q-url: https://thehill.com/policy/cybersecurity/402239-russian-troll-account-pushed-q-theory-last-year-report/
+:nbc-qanon-url: https://www.nbcnews.com/tech/social-media/russian-troll-accounts-purged-twitter-pushed-qanon-other-conspiracy-theories-n966091
+:thehill-stanford-qanon-url: https://thehill.com/policy/technology/549077-study-china-russia-played-role-in-amplifying-qanon-conspiracy/
+:aljazeera-qanon-url: https://www.aljazeera.com/news/2020/8/24/russian-backed-organisations-amplify-qanon-conspiracy-theories
+:brookings-mueller-url: https://www.brookings.edu/articles/what-the-mueller-report-tells-us-about-russian-influence-operations/
+:potemkin-britannica-url: https://www.britannica.com/topic/Potemkin-village
+:potemkin-rbth-url: https://www.rbth.com/history/331767-potemkin-villages-myth-exposed
+
+The most powerful weapon of mass destruction is not a nuke. It's propaganda.
+Everyone wants to claim they've mastered it. Only Russia has.
+
+Russia invented it as statecraft. Catherine II -- a German, not a Russian --
+perfected it as a weapon of empire. The {potemkin-britannica-url}[Potemkin village,window=_blank] trope
+comes from her 1787 Crimea tour, staged to impress European ambassadors before a war.
+Modern historians now {potemkin-rbth-url}[believe the wooden-village story itself was disinformation,window=_blank] --
+spread by Saxon and Finnish diplomats to make Russia look weak to the Turks.
+Russia ran a psyop so deep that the psyop about the psyop became the history.
+
+That's the lineage.
+
+The modern doctrine is catalogued by RAND as the
+{rand-firehose-url}["Firehose of Falsehood",window=_blank]:
+high volume, multichannel, rapid, no commitment to truth or internal consistency.
+Don't persuade -- saturate. Don't convince -- exhaust.
+When everything is a lie, nothing is a lie. When every source contradicts every other source,
+people stop looking for truth and start looking for comfort.
+
+Russian people joke about it openly: _"Our greatest weapon is a screen."_
+
+- Dirt cheap, just data.
+- Effective: it paralyzes the brain.
+- Accurate: straight in the brain.
+
+*QAnon is the flagship.*
+
+GRU-linked Internet Research Agency accounts amplified QAnon from its first days.
+{thehill-q-url}[@CovfefeNationUS pushed the "Q" theory on November 10, 2017,window=_blank] --
+less than two weeks after the first 4chan post.
+{nbc-qanon-url}[#QAnon was the second-most-tweeted hashtag,window=_blank]
+on the 418 Kremlin-tied accounts Twitter purged.
+{thehill-stanford-qanon-url}[Stanford documented Russian and Chinese amplification,window=_blank].
+{aljazeera-qanon-url}[Russia-backed state media kept amplifying through 2020,window=_blank].
+The {brookings-mueller-url}[Mueller Report,window=_blank] mapped the broader influence-operations pattern underneath it.
+
+QAnon is one of about a hundred fringe movements Russia intercepted and turned.
+It just happened to work best on Americans.
+
+Russia didn't create QAnon. It found a match, lit it, and handed it back.
+That's the doctrine. You don't need to build the fire. You just need to find the dry wood
+and blow.
+
+*Their current victory is more spectacular.*
+
+They convinced a large portion of the American electorate that the outcome of the
+Russia-Ukraine war depends on Russia. That Russia is strong. That Russia is inevitable.
+That Ukraine fighting back is pointless, expensive, and someone else's problem.
+
+Every one of those beliefs is demonstrably false.
+Every one of them serves exactly one interest.
+
+_Imagine the USA allied with Nazi Germany in WWII._
+
+That's the math. Not an insult. The math.
+In every geopolitical model since July 2024, this war resolves along exactly two axes:
+
+. The ones trying to save Russia.
+. The ones who don't care about Russia.
+
+The screen is cheap. The results are expensive.
+And we're paying.

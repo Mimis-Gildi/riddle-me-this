@@ -139,6 +139,7 @@ asciidoctor:
   attributes:
     icons                         : font
     advanced-ai-non-corp          : 'link:{site-baseurl}/research/2025/09/19/advanced-ai-non-corp.html["No holds barred: The real AI Revolution .. is us",window=_blank]'
+    independence-2026-collector   : 'link:{site-baseurl}/reflections/2026/07/01/glory-to-all-heroes.html[Freedom Isn''t Free! -- collector,window=_blank]'
     advanced-ai-non-corp-url      : 'link:{site-baseurl}/research/2025/09/19/advanced-ai-non-corp.html'
     ai-2-activation               : 'link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html#phase-ii-ai-activation[Phase II: AI-Activation,window=_blank]'
     ai-businesses-to-perish       : 'link:{site-baseurl}/adventures/2023/06/07/AI-and-businesses-to-perish-first.html'

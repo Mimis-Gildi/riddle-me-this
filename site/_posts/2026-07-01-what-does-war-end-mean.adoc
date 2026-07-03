@@ -1,0 +1,104 @@
+---
+categories: [reflections]
+tags: [Ukraine, Russia, War, Analysis, Democracy, ISW, Mathematics]
+excerpt: >
+  People ask WHEN the war will end. Nobody asks HOW.
+  One question has an answer. The other is just math.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= What Does "War End" Mean?
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+
+:isw-url: https://archive.org/details/denying-russias-only-strategy-for-success
+:tshirt-url: https://english.nv.ua/nation/zelenskyy-wears-t-shirt-with-inscription-make-russia-small-again-russia-s-zakharova-reacts-50460976.html
+:kse-url: https://www.intellinews.com/kse-ukraine-s-wartime-spending-hits-record-131bn-as-defence-absorbs-71-of-budget-425939/
+:sipri-url: https://www.sipri.org/publications/2026/sipri-insights-peace-and-security/budget-fifth-year-war-military-spending-russias-budget-2026
+:delta-url: https://www.csis.org/analysis/does-ukraine-already-have-functional-cjadc2-technology
+
+People who follow my OSINT and analytics work ask me *"WHEN will the war end?"*
+
+Interestingly, not *"HOW will the war end?"*
+
+No model can answer both and still be right tomorrow. Mathematics has a nasty habit of being absolute.
+You can fix the variables and run out the clock -- then you get dates.
+Or you can map the flows and let them converge -- then you get the outcome, not the timing.
+
+Some people know WHEN. That requires access to real-time event data at scale.
+({delta-url}[Delta,window=_blank], anyone?)
+
+Many people know HOW. EU leadership knows. Ukrainian leadership knows.
+Knows-knows -- nobody there is speculating.
+POTUS was shown. Whether it registered is a separate question.
+
+*I'm curious what Putin knows.*
+
+== The Only Definition That Works
+
+The {isw-url}[ISW framework,window=_blank] gives us the only mathematically sound definition:
+
+[.text-center]
+*Ukrainians stop killing Russians for good.* +
+*OR* +
+*Russians stop killing Ukrainians for good.*
+
+This is an OR conjunction. Both conditions terminate the war. Neither pausing it, nor freezing it, nor negotiating it does -- those only suspend it. The model requires one side to stop permanently.
+
+Simplified for non-mathematical readers:
+
+- Ukraine ends → war stops.
+- Russia ends → war stops.
+- Neither ends → war continues.
+
+Nothing else closes the equation.
+
+== What Does Ukraine Need?
+
+One thing: *stop killing my children now and forever.*
+
+The "forever" clause is the hard part. It's also non-negotiable, because there is no version of history where Russia becomes a trustworthy neighbor. The only path Ukraine has calculated to enforce "forever" is to dismantle Russia as a threat.
+
+Can Ukraine achieve this without foreign aid, against Russia plus North Korea plus Iran plus China?
+
+That question was answered *yes* in October 2024 -- the day Zelensky wore the
+{tshirt-url}["Make Russia Small Again" T-shirt,window=_blank].
+The model at that point ran on Ukraine's internal annual budget of $37B against Russia's $250B.
+
+Today {kse-url}[Ukraine is at $131.4B,window=_blank] and growing on recovering domestic industry.
+{sipri-url}[Russia reports $238B,window=_blank] -- defence and security combined --
+with a documented funding gap of $28-56B and the military requesting another $36B on top.
+
+The weights have shifted. Still converging in the same direction.
+
+Ukraine's war power is 63 times its 2020 figures.
+Russia's is shrinking, and Russia had no industrial base to begin with.
+
+_Do you know who else showed that kind of growth multiplier under existential pressure?
+The American colonies against England._
+
+If you want to live, you find a way to fight.
+
+== What Does Russia Need?
+
+Russia has no identity -- it took Ukraine's name. +
+Russia has no history -- it rewrote its own and took Ukraine's.
+
+One question settles it for skeptics:
+
+*What language did Russians speak in Moscow 300 years ago?*
+
+Follow that thread. The answer ends the argument.
+
+== The Two Facts
+
+Everything reduces to this:
+
+. *Helping Ukraine does not change the outcome -- the war ends one way.*
+. *Helping Ukraine saves lives: Ukrainian lives, and Russian lives, as Russia falls faster.*
+
+Not helping is not neutral. It is choosing the slower, bloodier version of the same ending.
+And arriving at that ending with no leverage, no relationships, and no receipts.

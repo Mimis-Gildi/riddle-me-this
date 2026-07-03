@@ -1,0 +1,261 @@
+---
+categories: [reflections]
+tags: [Ukraine, America, Democracy, Presidents, Budapest Memorandum, Spider Web]
+header:
+  overlay_image: /assets/images/banner-idiocracy.png
+  overlay_filter: 0.2
+  caption: "Our moral receipts for our children."
+  image_position: "center bottom"
+excerpt: >
+  Seven US presidents. Seven betrayals of Ukraine. Seven gifts Ukraine gave us anyway.
+  Our morals receipts, on America's 250th birthday.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= Seven Betrayals. Seven Gifts.
+
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+
+:crimea-river: https://pt.memedroid.com/memes/detail/854784[Crimea River Obama-Putin conversation parody,window=_blank,opts=nofollow]
+:spider-web-url: https://en.wikipedia.org/wiki/Operation_Spiderweb
+:zz-fix-america-url: https://www.president.gov.ua/en/news/vidkritij-list-prezidentu-rosijskoyi-federaciyi-vid-preziden-104769
+:nyt-spy-war-url: https://www.nytimes.com/2024/02/25/world/europe/cia-ukraine-intelligence-russia-war.html
+:bucharest-2008-url: https://en.wikipedia.org/wiki/2008_Bucharest_summit
+:clinton-rte-url: https://www.rte.ie/news/primetime/2023/0404/1374162-clinton-ukraine/
+:hwbush-url: https://en.wikipedia.org/wiki/Chicken_Kiev_speech
+:trump1-impeachment-url: https://en.wikipedia.org/wiki/Trump%E2%80%93Ukraine_scandal
+:trump2-oval-url: https://en.wikipedia.org/wiki/2025_Trump%E2%80%93Zelenskyy_Oval_Office_meeting
+:zelensky-ride-url: https://en.wikipedia.org/wiki/I_need_ammunition,_not_a_ride
+:imdb-idiocracy: https://www.imdb.com/title/tt0387808/
+:alt-time-masheen: Secretary of Energy reacting to the time masheen, Idiocracy (2006)
+:alt-victory-parade: President Camacho parades Not Sure before he solved a single problem -- premature victory, Idiocracy (2006)
+:idiocracy-theme: https://youtu.be/cdKumkP50Lo[Pueblo Cafe: Idiocracy Theme for your enjoyment this Independence Day,window=_blank]
+:yezidi-kurds: https://widerimage.reuters.com/story/a-brief-encounter[childhood-blonde blue-eyed Yezidi Kurds today around Iran and Iraq,window=_blank]
+
+America turns 250 today. We have fireworks.
+
+We have president Dwayne-Elizondo-Mountain-Dew-Camacho-class of festivities.
+"American flag blue" Reflecting Pool already dubbed "Strait of Green Ooze" for $16M on a no-bid contract.
+We have a president who said "everything he touched turned to ... gold?" So, we're good -- right?
+
+We also have receipts. Very public ones, often mentioned in the EU halls of law.
+
+."That ride sucks anyways" -- Secretary of Energy, {imdb-idiocracy}[Idiocracy (2006),window=_blank]
+[#img-time-masheen,link={imdb-idiocracy}]
+image::idiocracy-time-masheen.png[{alt-time-masheen},1200]
+
+{nbsp}
+
+Seven American presidents had a choice about Ukraine and seven times chosen wrong. +
+And seven times Ukraine said *I forgave you, thank you,* and handed us gifts we didn't deserve.
+
+More importantly, the outcome of this war is undisputed; supported by all time-proven digital analytics sources,
+including russian GRU; consistent since about July 2025. It's logically accepted, including by Putin, albeit not emotionally.
+Something else is being calculated now at these think tanks, something far more sinister and unpleasant for the American plebs to hear. +
+WHEN Ukraine wins, POTUS will attempt his Ride of Glory! -- "Look, I did this! It's my Javelins!" +
+(Sadly, this ride of glory is now impossible for ANY American president. History is unkind to us.)
+
+How *_IS_* our moral standing on ALL of this? But wait, our reasons were DUMBER than dumb! +
+Time uncovers all the secrets -- hindsight is 20/20, as they say.
+
+[quote,President Not Sure (Idiocracy),2006]
+____
+You know, there was a time in this country when smart people were considered cool.
+Well, maybe not cool, but... smart people did things like build ships and pyramids,
+and they even went to the moon.
+
+And there was a time in this country, a long time ago, when reading wasn't just for Fags,
+and neither was writing. People wrote books and movies. Movies that had stories.
+____
+
+{nbsp}
+
+== American Screwups, in Order
+
+*1. H. W. Bush -- August 1, 1991:* _Give Russia its power -- they'll be good._ +
+Three weeks before Ukraine's independence vote, Bush flew to Kyiv and told Ukrainians not to leave the USSR.
+History named it the {hwbush-url}["Chicken Kiev" speech,window=_blank].
+Condoleezza Rice helped write it. +
+*Ukraine forgave. And declared independence anyway, August 24.*
+
+*WHY:* The entire Space Program, Nuclear Deterrent, and Strategic Research of the Soviet Union is
+*_"Made in Soviet Ukraine."_* Russian SSR was just a set of holding companies, operational management,
+and political oversight. Soviets *_split strategic assets in three ways_* since before WWII:
+Russia, Ukraine, Belarus. It FAILED! Russian demographic kept drinking and couldn't muster anything smart.
+Belarus offered too slow of demographic growth. So, efforts were put in Kazakhstan and greater Siberia,
+where many Ukrainians were moved by Stalin. +
+"russians have two left hands, all they do is drink and steal..." -- russian chief drunk thief Yeltsin. +
+Ukraine alone maintained competence leadership the day the USSR fell. +
+*_Why not give Russia their strongest asset_* -- genius, Bush must have thought.
+
+*Memento:* Eat your chicken and shut up! -- freedom is overrated anyway.
+
+[IMPORTANT]
+.Both alcohol enzymes are missing in most russians (Merya, Muroma, Meshchera, and Veps)
+====
+."Brother nation" is persistent propaganda dating back to Catherine the Great.
+[%collapsible]
+======
+Germans, Ukrainians, Poles, Belarusians, many other Europeans are indeed related; They are descendants of Scythian,
+then Sarmatian nomads from the Iranian Steppe (later Persia); Spreading into Europe thousands of years ago,
+mingling with the remaining few Western locals: Both tall, light features, roundish faces;
+A lot like {yezidi-kurds}.
+The Slavic linguistic subgroup itself formed in the Ukraine-Belarus corridor,
+among those exact populations mixing with the nomadic remnants.
+
+Russians are Finno-Ugric people, already present in most Eastern Europe and Asia during the nomad displacement era.
+Eastern swampland is indeed their lands first (about 5,000 - 7,000 years ago).
+Still living in cave-society, the original russians were displaced by more advanced humans with animal-husbandry and
+slash-and-burn agriculture. Nobody spoke russian in Moscow just ~260 years ago -- the language did not exist:
+Catherine brought Slavic with Bulgarian drill instructors befitting old Church-Slavonic already accepted by her court.
+Some tribes like Hungarians and Estonians, although closely genetically related to russians, possess one of the enzymes.
+Eastern tribes, like Merya, Muroma, Meshchera, and Veps -- all short-statured,
+like Putin or Gurulyov, long-faced like Medvedev -- have neither of the enzymes. Alcohol is POISON to them!
+======
+
+Low resistance to alcohol makes alcoholism a hard demographic affliction for russians, much like for American Indians,
+that also possess neither of the enzymes. But not in Ukrainians or Belorussians who are unrelated to russians.
+In fact, Catherine tried for a decade to alcoholic-ize Belarus and failed -- it didn't take.
+====
+
+'''
+
+*2. Clinton -- December 5, 1994:* _Good presidential word of the sugar-president!_ +
+Clinton persuaded Ukraine to surrender its nuclear arsenal -- the third largest
+in the world -- in exchange for security guarantees from the US, UK, and Russia.
+The Budapest Memorandum. Russia broke it in 2014.
+The desire of Europe's Smartest People, as we've come to know the Ukrainians today,
+for a nuclear-weapons-free, family-oriented, ecologically-clean democratic world,
+greeted by the world's pillar of democracy with a cheap, cunning betrayal. +
+*_1953 Iran 2.0!_* +
+Clinton said {clinton-rte-url}["I feel terrible about it.",window=_blank] -- __He never planned to make it a law!__ +
+*Ukraine forgave. And gave up 1,900 warheads.*
+
+*WHY:* Ukraine didn't care for the warheads, previously pointed at its new friends -- it naively wanted to live
+in peace and economic harmony with West and East. The administration knew: in Russian hands it will all turn to
+piles of rusted crap -- as the whole world sees today; and in Ukrainian hands it will evolve -- as we've found out.
+It was thought easier to deal with one corrupt Russia instead of another democratic nation
+in the mix (see history of the USA - Iran relations 50s and 60s). +
+"The Big Lie" was Clinton's personal touch. (We'll talk of bribes later.)
+
+*Memento:* _Clinton told Yeltsin he really enjoyed "the club" (Young Female KGB Officers' Club). +
+But Hillary kept griping about it, for some reason. Not like Billy ever does anything immoral!_
+
+'''
+
+*3. W. Bush -- April 2008:* _When things come to blows I go to party._ +
+At the {bucharest-2008-url}[Bucharest NATO summit,window=_blank], Bush pushed for a Membership Action Plan for Ukraine and Georgia.
+Germany and France blocked it. The final declaration promised eventual membership with no timeline and no teeth.
+Russia invaded Georgia four months later. +
+*Ukraine forgave. And sent volunteers to fight alongside Georgia.*
+
+*WHY:* Off of Clinton's hand russia succeeded in a massive propaganda campaign that Ukraine will choose russia and
+will always be a threat to the Western democracy -- that aged well, didn't it?! They fight for all of us today.
+Even those who still have their heads up their places. In those times russian GRU formulated and tested the
+Propaganda Methodology that gave us Qanon and more. +
+For Bush, the honorable right move required the fortitude he simply never had.
+
+*Memento:* _Condee had a very different stance this time. -- Putin's Munich speech landed on her._
+
+'''
+
+*4. Obama -- 2014–2016:* _Can I please just enjoy my Peace Prize, in peace?!_ +
+Russia annexed Crimea and invaded Donbas. Obama answered with blankets, MREs, and night-vision goggles.
+No lethal aid. Poroshenko told a joint session of Congress:
+"Blankets and night vision goggles are important, but one cannot win a war with a blanket." +
+Biden was Obama's Ukraine point man. -- _A preview of America's future strength._ +
+*Ukraine forgave. And handed the CIA the Russian Northern Fleet's schematics through Lt. Gen. Kondratiuk.
+The {nyt-spy-war-url}[NYT calls it,window=_blank] "one of the CIA's most important intelligence partnerships."*
+
+*WHY:* Putin's Munich speech unambiguously announced the "final direction of Russia" in 2007: weaken the West,
+eradicate American dominance in the world, eliminate "bipolar world order replacing with multipolar."
+Russia stood the course diligently, faithfully, and aggressively (research the 2015 Merkel Immigration Policy).
+For Obama, "standing for Democracy" would mean another war with russia, and Obama is no Reagan! -- he has a Peace Prize. +
+(Historians voted weakest US president)
+
+*Memento:* {crimea-river}. We're literally living this today.
+
+'''
+
+*5. Trump-1 -- July 25, 2019:* _Is there a DEAL here for me? My family? Friends, maybe?_ +
+On a phone call with Zelensky, Trump said "I would like you to do us a favor, though" --
+and froze $391M in military aid, including Javelins, while requesting a Biden investigation. +
+First impeachment, December 18, 2019. Aid eventually shipped. +
+*Ukraine forgave. And kept the CIA-SBU partnership alive through it all, including Patriot,
+something very critical for the USA today.*
+
+*WHY:* Foreign policy is not something Donald has the mental fortitude to understand (unambiguously proven).
+People in the administration of term one DID understand and were considered "obnoxious and annoying" -- not
+the kind of problem needed now. "What do you have for *me*" failed as an ominous preview of our 2025 dilemma -- the
+USA is deprecated as Putin planned.
+
+*Memento:* Hunter Biden's "Laptop from Hell": what business?! "He's a good boy," just wanted a hit.
+
+'''
+
+*6. Biden -- February 24, 2022:* _I always wanted to be a president -- can I please just retire?_ +
+Biden offered Zelensky a {zelensky-ride-url}[ride out of Kyiv,window=_blank] on day two of the invasion.
+Then spent two years drip-feeding the kit -- ATACMS, F-16s, tanks -- always late, always after the window. +
+He meant well -- that's worse. -- Another form of betrayal. +
+*Ukraine forgave. And broke the Russian Black Sea Fleet using drones, doctrines, and weapons Washington said couldn't work.
+Every stage of war until 2025 was a disruption of warfare and a pitch to the US to rise -- all wasted by us.*
+(We're fully deprecated today.)
+
+*WHY:* Biden could not accept the "russia will lose" scenario and fell asleep during proof.
+
+'''
+
+*7. Trump-2 -- February 28, 2025:* _My good friend Vladimir has lots of good deals for me!_ +
+The {trump2-oval-url}[Oval Office ambush,window=_blank]: Trump suspended military aid and intelligence sharing,
+told Zelensky he had no cards, and betrayed the Kursk offensive.
+Hundreds of Ukrainian soldiers died in the intelligence gap. +
+*Ukraine forgave. And gifted America {spider-web-url}[Operation Spider Web,window=_blank] --
+the proof that nuclear powers are not inviolable --
+then followed it with {zz-fix-america-url}[an open letter to Putin,window=_blank]
+that removed every last fig leaf of American diplomatic cover for managing this war on Russia's behalf.*
+
+*WHY:* Vanity: "You sabotaged my good deal -- the American Presidency!"
+
+*Memento:* Zelenskyy, you didn't talk to me before taking ALL my arms deals in the Middle East!
+
+'''
+
+== We Shot Ourselves in the Nuh... Foot
+
+*_This does NOT change the outcome for Ukraine -- it changes oodles for us!_*
+
+Like Biden stuck in his biased stupor, many Americans see Ukraine with the hand out DESPITE
+the mounting facts that it's the little Ukraine that dictates geopolitics today:
+
+. We lost ALL, but Patriot PAC-3 weapon deals to Ukrainian arms makers, and even then, the Middle East buys PAC-3
+to trade Ukraine for new investments in Delta-originated weapons.
+
+. Only UNB8 (Ukraine {plus} Nordic-Baltic 8) lead "Smart Weapons," their parity now unattainable to us
+even through Poland, and our 20+ bases erased by Iran just showed by how much we lag:
+- *Poland:* "We won't give you Migs because you are not giving us drone tech."
+- *Ukraine:* "Keep your Migs. We like our **Gripen**s better."
+
+. Excalibur, Himars, Patriot PAC-2,3, F-16, etc. have only worked for 1-2 months. Ukraine hacks our firmware,
+and weapons work again, and with much better stats than the original ever had.
+(to the best of my knowledge, only Excalibur was modified voluntarily.)
+
+And there is a lot more to list... -- time and declassification will air all our shame eventually.
+
+In July 2025 Ukraine shut the door on us and anyone who will leak to us -- _why would they do that_?! +
+And, congratulations America -- *competence* wins the next war -- how are we doing with that?
+
+.Presidential victory parade before defeat, {imdb-idiocracy}[Idiocracy (2006),window=_blank]
+[#img-victory-parade,link={imdb-idiocracy}]
+image::idiocracy-parade.png[{alt-victory-parade},1200]
+
+{nbsp}
+
+*Happy Birthday, 'Merica!* +
+{idiocracy-theme} +
+(You've got to {imdb-idiocracy}[watch that prophetic movie] this Independence Day!)
+
+{independence-2026-collector}
