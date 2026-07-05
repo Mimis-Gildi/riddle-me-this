@@ -83,7 +83,7 @@ No matter what politicians tell you -- the people define the Ukrainian choice. (
 Over the last four years Ukrainian Democracy went from marginal to absolute. Zelenskyy's wishes and decisions
 don't matter -- he holds ZERO political choice power. He can't even save his only best friend from the people.
 The will of the people is dictated by NDFs (National Defense Forces, like Azov). These are about 120 thousand
-or Ukrainian volunteer soldiers with their own funds, manufacturing, economy, and support ecosystem.
+of Ukrainian volunteer soldiers with their own funds, manufacturing, economy, and support ecosystem.
 NDFs are integrated tightly into AFU (Armed Forces of Ukraine) totaling 1,130,000 military personnel,
 420 thousand SBU personnel, and an unknown number of Special Operations personnel. So, NDFs are a small part of
 the Ukrainian armed forces, but they kill 98.7% of all the russians. And *_directly influence_* ~83% of
@@ -95,7 +95,7 @@ decide the end to war, even together. Only people decide, this fact has become p
 - NDFs taking weapon reserves by force;
 - the Kursk offensive, full cycle;
 - the reassignment of General Zaluzhny;
-- candidacy of general Zaluzhny;
+- candidacy of General Zaluzhny;
 - NABU raid on president's office;
 - and too many other examples to list.
 
@@ -224,7 +224,7 @@ are physically incapable of. Putin can destroy the russian state relatively unim
 
 .Triggernometry: {triggernometry-browder} (1h:15m long)
 [#img-triggernometry,link={triggernometry-browder-url}]
-image::trigernometry-browder.png[Sir Bill Browder explains Putin's russia and witnessed norms,width=1200,align=center,window=_blank]
+image::triggernometry-browder.png[Sir Bill Browder explains Putin's russia and witnessed norms,width=1200,align=center,window=_blank]
 
 ======
 ====
@@ -300,7 +300,7 @@ If simultaneously Putin stays in power (miraculously), thus also winning, only w
 
 See for yourself!
 
-.Artur Rehi found ONE smart Russian (minuted 18:10)
+.Artur Rehi found ONE smart Russian (minute 18:10)
 [#img-rehi-smart-russian,link={rehi-smart-russian-url}]
 image::rehi-smart-russian.png[Smart russian thinks russia should lose so he will be freed,width=600,align=center,window=_blank]
 
