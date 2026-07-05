@@ -7,7 +7,7 @@ header:
   caption: "We make it easy for our foes!"
   image_position: "center bottom"
 excerpt: >
-  Russia didn't hack the election. It hacked the electorate (whole).
+  Russia didn't hack the election. It hacked the entire electorate.
   GRU Project QAnon is one of hundreds -- Q just worked best.
 classes: wide
 comments: true
@@ -22,6 +22,7 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :vatnik: https://en.wikipedia.org/wiki/Vatnik[vatnik,window=_blank]
 :simonyan-margarita-url: https://en.wikipedia.org/wiki/Margarita_Simonyan
 :simonyan-margarita: {simonyan-margarita-url}[colonel Simonyan,window=_blank]
+:warburg-youtube-explains-catherine-url: https://youtu.be/humWYvNiXB4?si=JFXTDlrUrGfUX3nV
 :rand-firehose-url: https://www.rand.org/pubs/perspectives/PE198.html
 :thehill-q-url: https://thehill.com/policy/cybersecurity/402239-russian-troll-account-pushed-q-theory-last-year-report/
 :nbc-qanon-url: https://www.nbcnews.com/tech/social-media/russian-troll-accounts-purged-twitter-pushed-qanon-other-conspiracy-theories-n966091
@@ -62,7 +63,7 @@ plausible deniability for herself coterminously. +
 comes from her 1787 Crimea tour, staged to impress European ambassadors before a war.
 Modern historians now {potemkin-rbth-url}[believe the wooden-village story itself was disinformation,window=_blank] --
 spread by Saxon and Finnish diplomats to make Russia look weak to the Turks.
-Russia ran a psyop so deep that the psyop about the psyop became the history.
+Russia ran a psyop so deep that the psyop about the psyop became history.
 
 *That's the lineage* -- _a weapon-system designed to strike *the gullible* right in the brain!_
 
@@ -127,8 +128,13 @@ Much more interesting than QAnon is orcish current "work in progress."
 GRU has convinced a large portion of the American electorate that the outcome of the Russia-Ukraine war depends on Russia.
 And it depends on Trump. Factually, it depends on neither! Russia is all in already. And Trump has ZERO leverage over Ukraine.
 
+.A young FSB officer working for legendary Margarita is watching his personal pindos who he turned terrified of a russian nuke! (Bonus: Paul Warburg {warburg-youtube-explains-catherine-url}[EXPLAINS russian "Nuke Scare", window=_blank])
+[#img-maga-fear,link={warburg-youtube-explains-catherine-url},window=_blank]
+image::american-maga-hero.png[Young FSB officer is watching an American farmer eating up russian propaganda thinking of building a fallout bunker on his middle-of-nowhere farm.,1200]
+{nbsp}
+
 But russia-curated pendos believe that russia is strong and that russia is inevitable.
-That Ukraine fighting back is pointless, expensive to pendos (though he pays no taxes), and someone else's problem.
+That Ukraine fighting back is pointless, expensive to pendos (though they pay no taxes), and someone else's problem.
 
 a) Every one of those beliefs is demonstrably false. +
 b) Every one of them serves exactly one interest. +
@@ -136,9 +142,16 @@ c) And, innately residual to pendos' core psyche.
 
 (_Imagine the USA allied with Nazi Germany in WWII._)
 
-So now, every geopolitical model since July 2024, this war resolves along exactly two axes:
+So now, in every geopolitical model since July 2024, this war resolves along exactly two axes:
 
 . The ones who are trying to save Russia.
 . The ones who don't care about Russia.
 
 The screen is *cheap*. The effect is remarkable!
+
+{independence-2026-collector}
+
+'''
+
+Bonus::
+- {warburg-youtube-explains-catherine-url}[Paul Warburg explains elements of russian manipulation on gullible Americans (Russia is Threatening to "Use the Nukes" Again (lol)),window=_blank] -- __this manifestation is because of recent series of Putin's public panic attacks.__
