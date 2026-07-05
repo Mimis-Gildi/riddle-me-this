@@ -23,7 +23,9 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :kasparov-rose-url: https://youtu.be/eBu9xcQPxFg
 :kasparov-rose-title: Garry Kasparov: Putin Trump AI and the Global Fight for Democracy
 :kasparov-kiyv-post: https://www.kyivpost.com/post/79314
-:triggernometry-browder: https://youtu.be/dlF0ZzH6C9s[The Real Reason Putin Invaded Ukraine -- Sir Bill Browder,window=_blank]
+:triggernometry-browder-url: https://youtu.be/dlF0ZzH6C9s
+:triggernometry-browder-text: The Real Reason Putin Invaded Ukraine -- Sir Bill Browder
+:triggernometry-browder: {triggernometry-browder-url}[{triggernometry-browder-text},window=_blank]
 :magnitsky-act: https://en.wikipedia.org/wiki/Magnitsky_Act[Magnitsky Act,window=_blank]
 :rehi-smart-russian-url: https://youtu.be/LSa6YYFrv3E?t=1070
 
@@ -36,7 +38,7 @@ You can fix the variables and run out the clock -- then you get dates.
 Or you can map the flows and let them converge -- then you get the outcome, not the timing.
 
 Some people _CAN_ know WHEN. That requires access to real-time event data at full-scale.
-(Ukrainian Geopolitical System {delta-url}[Delta,window=_blank], anyone?)
+(Ukrainian Geopolitical System {delta-url}[Delta,window=_blank], does this)
 Theoretically, Ukrainians may know more, I doubt much more.
 There are always variables impossible to factor in (we don't know what we don't know).
 
@@ -49,7 +51,7 @@ Let's first answer "HOW the war ends", and then we will see what we can do about
 == War End -- the Necessary Definition
 
 In 2022 people didn't even know how to define the victory for either side. Luckily, that was quickly sorted.
-The {isw-url}[ISW framework, window=_blank] gives us the only mathematically sound definition:
+The {isw-url}[ISW framework,window=_blank] gives us the only mathematically sound definition:
 
 [.text-center]
 *Ukrainians stop killing Russians for good.* +
@@ -66,7 +68,9 @@ Simplified for non-mathematical readers:
 - Russia ends → war stops.
 - Neither ends → war continues.
 
-Nothing else closes the equation. Let's understand impossibilities and contingencies.
+A temporary ceasefire can happen, but it only benefits Ukraine, and Putin understands that.
+Since the Korean scenario is impossible, then nothing else closes the equation.
+Let's understand impossibilities and contingencies.
 
 === Ukrainian Contingencies:
 
@@ -76,11 +80,11 @@ Nothing else closes the equation. Let's understand impossibilities and contingen
 [%collapsible]
 ====
 No matter what politicians tell you -- the people define the Ukrainian choice. (*Maidan is ongoing.*) +
-Over the last for years Ukrainian Democracy went from marginal to absolute. Zelenskyy's wishes and decisions
+Over the last four years Ukrainian Democracy went from marginal to absolute. Zelenskyy's wishes and decisions
 don't matter -- he holds ZERO political choice power. He can't even save his only best friend from the people.
 The will of the people is dictated by NDFs (National Defense Forces, like Azov). These are about 120 thousand
 or Ukrainian volunteer soldiers with their own funds, manufacturing, economy, and support ecosystem.
-NFDs are integrated tightly into AFU (Armed Forces of Ukraine) totaling 1,130,000 military personnel,
+NDFs are integrated tightly into AFU (Armed Forces of Ukraine) totaling 1,130,000 military personnel,
 420 thousand SBU personnel, and an unknown number of Special Operations personnel. So, NDFs are a small part of
 the Ukrainian armed forces, but they kill 98.7% of all the russians. And *_directly influence_* ~83% of
 the electorate -- autocratic russia's worst nightmare: The will of the people. Once we understand this -- we
@@ -91,8 +95,8 @@ decide the end to war, even together. Only people decide, this fact has become p
 - NDFs taking weapon reserves by force;
 - the Kursk offensive, full cycle;
 - the reassignment of General Zaluzhny;
-- candidacy of general Zaluzhny
-- NABU rade on president's office
+- candidacy of general Zaluzhny;
+- NABU raid on president's office;
 - and too many other examples to list.
 
 *_The War ends when Ukrainian volunteer divisions, their families, and friends SAY IT DOES._* +
@@ -161,7 +165,8 @@ complete the consolidation. The loss of the war with Ukraine doesn't signify los
 === *Magic Power Test:* _Who can pull self-destruct?_
 
 As you can see, Ukraine and RF have different definitions of "win" and "loss" and neither relate to any "territory".
-The real for power is elegantly trivial -- *can "IT" complete self-destruction!*
+_At this point, you have everything needed to answer this without me._ +
+The real test for power is elegantly trivial -- *can "IT" complete self-destruction!*
 
 *Real Power in Ukraine:*
 
@@ -180,7 +185,7 @@ places like regions of Denmark and regions of Ukraine -- no borders.
 
 By today's standards, the powers of the Ukrainian Federal government are in hard check.
 _Maybe because corruption is one of the primary russian weapons._ Any disagreement,
-such as an attempt to interfere in the corruption investigation of Andriy Yermak, Zelevinsky's
+such as an attempt to interfere in the corruption investigation of Andriy Yermak, Zelensky's
 best friend, leads to an immediate protest that turns tanks around the next day. Yermak arrested.
 After 1: Azov refused orders to surrender Mariupol, then won legally; and, 2: taking military
 warehouses by force (and blood), then winning in court __again__ -- __people have a very short fuse with
@@ -199,7 +204,7 @@ network of obscure international relations, own layered security, and of course 
 
 Whilst dismantling russia the country, the SMO (Special 3-day Military Operation) brought an influx of wealth and power to
 the russian ruling class which grew from ~2,200 families in 2022 to ~3,100 families in 2026. The 86 russian billionaires
-in 2022 became 155 billionaires in 2026. Less than 10% of russian ruling class lives in russia that is because the
+in 2022 became 155 billionaires in 2026. Less than 10% of russian ruling class lives in russia, that is because the
 russian government are not all the ruling class -- only very few and all are members of Putin's party "New Russia."
 This growth started with redistribution of wealth from Western companies leaving russia and now is in full culling
 mode trimming the count of russian oligarchs down to the size Putin prefers.
@@ -208,9 +213,24 @@ Putin is the only person in russia who can ZERO anybody with less than a stroke 
 But to dethrone Putin as serious coordinated action by the ruling class is necessary -- the action these people
 are physically incapable of. Putin can destroy the russian state relatively unimpeded and nobody else can.
 
-*Here is a human story on what the models say by someone who lived it:* +
+[IMPORTANT]
+.Here is a human story on what the models said, Sir Bill Browder:
+====
+[%collapsible]
+.({magnitsky-act} and Putin, real story)
+======
+
 *__{triggernometry-browder}__* (1h:15m) +
-({magnitsky-act} and Putin, real story)
+
+.Triggernometry: {triggernometry-browder} (1h:15m long)
+[#img-triggernometry,link={triggernometry-browder-url}]
+image::trigernometry-browder.png[Sir Bill Browder explains Putin's russia and witnessed norms,width=1200,align=center,window=_blank]
+
+======
+====
+
+
+
 
 == What the Models Say?!
 
@@ -280,7 +300,7 @@ If simultaneously Putin stays in power (miraculously), thus also winning, only w
 
 See for yourself!
 
-.Artur Rehi found ONE smart Russian
+.Artur Rehi found ONE smart Russian (minuted 18:10)
 [#img-rehi-smart-russian,link={rehi-smart-russian-url}]
 image::rehi-smart-russian.png[Smart russian thinks russia should lose so he will be freed,width=600,align=center,window=_blank]
 
@@ -305,14 +325,14 @@ image::kasparov-rose.png[Kasparov Explaining Poo,width=800,align=center,window=_
 
 == WHEN the War Ends
 
-Now that I hope you understand the governing dynamics of this war, you can answer this question yourself -- modeling
+Now that you understand the governing dynamics of this war, you can answer this question yourself -- modeling
 a date, even continuously floating, is a fool's errand. Partly because disruptions Ukraine introduces are unpredictable.
 And partly because the resilience of the Russian dictatorial state is higher than any known estimate. I am sure
 Ukraine does this estimation anyway -- they have the system, nobody else does. And maybe it gives them some useful feedback.
 To me, other conclusions and assessments are far more valuable:
 
 . Russian terminal demographic exacerbated by the war puts russians (Merya, Muroma, Meshchera, and Veps) on the extinction path.
-. Having greatest resources around russia squandered its wealth due to a lack of "freedom gene."
+. Having the greatest resources around russia squandered its wealth due to a lack of "freedom gene."
 . This war is the greatest thing that happened to Ukraine, inevitably restoring the nation.
 . My 'Merica had a unique chance to lead, profit, and prosper with Georgia, Armenia, Chechnya, and Ukraine but
 instead chose dishonor, ignorance, shortsightedness, and guaranteed loss.
@@ -325,4 +345,6 @@ Everything reduces to this:
 . *Helping Ukraine saves lives: Ukrainian lives, and Russian lives, as Russia falls faster.*
 
 Not helping is not neutral. It is choosing a side inevitably ushering the slower, bloodier version of the same ending.
-And arriving at that ending with no leverage, no relationships, and no honor, and no place in history.
+And arriving at that ending with no leverage, no relationships, no honor, and no place in history.
+
+{independence-2026-collector}
