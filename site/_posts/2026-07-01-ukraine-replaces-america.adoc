@@ -5,7 +5,7 @@ excerpt: >
   America turns 250. The Reflecting Pool is green. Ukraine just replaced us
   as the world's pillar of democracy, top weapons supplier, innovation hub,
   most effective military, and most consequential geopolitical force.
-  Happy birthday. The receipts are in.
+  Happy birthday!
 classes: wide
 comments: true
 hidden: false
@@ -42,8 +42,6 @@ We have a president who said everything he touches turns to you-know-what.
 Meanwhile, a country one-sixth our size, under full-scale invasion for four years,
 replaced us on every axis we used to define ourselves.
 
-Let's be precise about that.
-
 == 1. Pillar of World Democracy
 
 America's democratic brand took decades to build and about four years to spend.
@@ -78,7 +76,7 @@ We call it losing market share to the client we abandoned.
 
 Delta -- Ukraine's national battle-management and situational awareness platform --
 {delta-csis-url}[processes over 600,000 enemy objects monthly,window=_blank]
-and closely resembles the CJADC2 concept the US DOD is still pursuing top-down.
+and the CJADC2 concept the US DOD is still pursuing top-down.
 
 The {mtimes-url}[US Army Secretary said it publicly in May 2026,window=_blank]:
 Ukraine's battlefield integration surpasses the US military's own.
@@ -103,7 +101,6 @@ Ukraine absorbed it and kept going.
 
 Azov now makes tanks. NDFs manufacture their own ordnance.
 {budanov-url}[Russia came from Ukraine,window=_blank] -- not the other way around.
-The student surpassed the teacher before the teacher noticed.
 
 == 5. Most Consequential Geopolitical Force
 
@@ -128,8 +125,6 @@ what will Ukraine say?
 
 _"My children died while you watched and cheered the killer."_
 
-Simple enough for an American Christian to understand.
-
 == Happy Birthday, America
 
 *What do we want from Ukraine that we cannot have otherwise:*
@@ -139,14 +134,8 @@ Simple enough for an American Christian to understand.
 . Autonomous self-sufficient unit doctrine beyond what was shown to NATO.
 
 In return we should give them whatever they want.
-Because they have the only Unique Market Proposition on the planet right now,
 and what they want from us is temporary.
 We cannot replicate their advantage or catch up --
 but we can maintain "Top Strategic Ally" status and benefit from it collectively.
 
-That window is open. It will not stay open.
-
 The pool is green. The fireworks are tonight.
-The kid you abandoned is doing fine and has better things to do than wait for you.
-
-*Call.*

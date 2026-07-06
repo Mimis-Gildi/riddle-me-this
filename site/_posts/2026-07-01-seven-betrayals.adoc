@@ -4,11 +4,14 @@ tags: [Ukraine, America, Democracy, Presidents, Budapest Memorandum, Spider Web]
 header:
   overlay_image: /assets/images/banner-idiocracy.png
   overlay_filter: 0.2
-  caption: "Our moral receipts for our children."
+  caption: "Our kids can change the world, but not the history we wrote for them."
   image_position: "center bottom"
 excerpt: >
-  Seven US presidents. Seven betrayals of Ukraine. Seven gifts Ukraine gave us anyway.
-  Our morals receipts, on America's 250th birthday.
+  Seven US presidents land idiotic betrayals of Ukraine.
+  Ukraine gave us gifts anyway.
+  On 250th birthday we remember who we are:
+  from 1953 Iranian coup d'état to Hormuz Strait capitulation,
+  from Kyiv Chicken and "you have no cards" to "you replaced us!"
 classes: wide
 comments: true
 hidden: false
@@ -36,13 +39,13 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :idiocracy-theme: https://youtu.be/cdKumkP50Lo[Pueblo Cafe: Idiocracy Theme for your enjoyment this Independence Day,window=_blank]
 :yezidi-kurds: https://widerimage.reuters.com/story/a-brief-encounter[childhood-blonde blue-eyed Yezidi Kurds today around Iran and Iraq,window=_blank]
 
-America turns 250 today. We have fireworks.
+America turned 250. We had fireworks. (*_almost_*)
 
 We have president Dwayne-Elizondo-Mountain-Dew-Camacho-class of festivities.
 "American flag blue" Reflecting Pool already dubbed "Strait of Green Ooze" for $16M on a no-bid contract.
 We have a president who said "everything he touched turned to ... gold?" So, we're good -- right?
 
-We also have receipts. Very public ones, often mentioned in the EU halls of law.
+*"Kick ass!"* -- _Dr. Lexus, Idiocracy 2006._
 
 ."That ride sucks anyways" -- Secretary of Energy, {imdb-idiocracy}[Idiocracy (2006),window=_blank]
 [#img-time-masheen,link={imdb-idiocracy}]

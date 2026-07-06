@@ -22,20 +22,30 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :civil-rights-act: https://www.archives.gov/milestone-documents/civil-rights-act[Civil Rights Act,window=_blank]
 :f-1: https://en.wikipedia.org/wiki/Rocketdyne_F-1[F-1 candle,window=_blank]
 :pendos: https://en.wiktionary.org/wiki/%D0%BF%D0%B8%D0%BD%D0%B4%D0%BE%D1%81[pendos (unsophisticated),window=_blank,opts=nofollow]
+:the-good-liars-state-fair-250-url: https://youtu.be/8oHcCKtlIiM
 :art-seven-betrayals: link:{site-baseurl}/reflections/2026/07/01/seven-betrayals.html[Seven Betrayals,window=_blank]
 :art-qanon: link:{site-baseurl}/reflections/2026/07/01/gru-project-qanon.html[GRU Project QAnon: Russia's Greatest American Victory,window=_blank]
 :art-war-end: link:{site-baseurl}/reflections/2026/07/01/what-does-war-end-mean.html[What Does "War End" Mean?,window=_blank]
 :art-ukraine-replaces: link:{site-baseurl}/reflections/2026/07/01/ukraine-replaces-america.html[Ukraine Replaces America,window=_blank]
-:art-klemo: link:{site-baseurl}/reflections/2026/07/01/klemo.html[klemo's Story,window=_blank]
+:art-klemo: link:{site-baseurl}/reflections/2026/07/01/klemo.html[klemo's war,window=_blank]
 :art-institutionalized: link:{site-baseurl}/reflections/2026/06/02/institutionalized-the-lost-demographic.html[Institutionalized: The Lost Demographic,window=_blank]
 
 ++++
 <style>.page__hero--overlay { background-position: center 80%; }</style>
 ++++
 
-You are an _American_, as I am, a _veteran_, as I am -- combine that with _common sense_: *calamity*!
+*_Humor is the cure to many problems in life!_* +
+I had the quietest Independence Day of my life! +
+(I wonder why 🤔that is )
 
-But today, let's remember what our 'Merica has accomplished by her 250th Birthday?!
+.The {the-good-liars-state-fair-250-url}[State Fair must have "been glorious"! "So glorious that there will never be one like it!",window=_blank,opts=nofollow]
+[#img-state-fair-250,link={the-good-liars-state-fair-250-url},window=_blank]
+image::the-good-liars-state-fair-250.png[State Fair 250 ads to the *_meme_* that is [.underscore]#our time# in 'Merica,1200]
+{nbsp}
+
+You are an _American_, as I am, a _veteran_, as I am -- combine that with _common sense_: *calamity*?!
+
+Today, we'd better remember what our 'Merica has accomplished by her 250th Birthday?!
 
 Most daring experiment in Democracy -- this *_all happened before_*{footer-andrew-jackson} and people won!::
 *1787* -- Constitution ratified, and the bedrock stone to keep religion out of Statehood; (still regressing at times) +
@@ -68,31 +78,55 @@ So, this is *USA:* we conquer space to beat the Soviets while fearing to singe G
 
 *Happy Birthday, America!*
 
-== Oh, But That's Not All!
+'''
 
-There's more. There's so much more. America-only view misses the WORLD, literally! +
-America-only, masquerading as America-first, is navel-gazing from a shrinking island.
+ Well, there's Linux.
+ But that's not American.
+ And Linus is not nice!
+
+'''
+
+== Oh, But That's Not All! I remembered more...
+
+Yes, there's more. There's so much more. America-only view misses the WORLD, literally! +
+America-only, masquerading as America-first, is navel-gazing from a shrinking island. +
 *But does that even matter?!*
 
-It wasn't _him_ to light the {f-1}. It wasn't _him_ who invented the spear or the mRNA vaccine.
-_Him_ won't keep your kids a planet. Don't mind _him_ -- mind *YOU:* be *kind*, *competent*, *prolific*!
+This guy, named Maga, I think...
+
+It wasn't _Him_ to light the {f-1}. +
+It wasn't _Him_ who invented the spear. +
+Nor was _He_ prototyping the mRNA vaccine. +
+_Him_ won't keep your kids a planet. +
+Don't mind _him_ -- mind *YOU:* +
+{nbsp} {nbsp} You be *kind*, *competent*, *prolific*. +
+You aren't _him_!
+
 
 == Some Things That Mattered:
 
-- {art-seven-betrayals} -- every US president betrayed Ukraine, Ukraine responded with kindness.
+- {art-seven-betrayals} -- every US president betrayed Ukraine, Ukraine responded with kindness. +
+(Ukees ain't Maga 🤔)
 - {art-qanon} -- Russia didn't hack the election. +
-  *_It hacked the electorate._* They call us *_only_* {pendos} for a reason?
-- {art-war-end} -- the only mathematically sound definition of how this ends.
+*_It hacked the electorate._* They call us *_only_* {pendos} for a reason? +
+(GRU ❤️ Maga!)
+- {art-war-end} -- the only mathematically sound definition of how this ends. +
+(Maga dunno this)
 - {art-ukraine-replaces} -- democracy, weapons, innovation, military, geopolitics. +
-  Not because they "try to." They don't care one way or another. *Because we fail!*
+Not because they "try to." They don't care one way or another. *Because we fail!* +
+(but Maga win)
 
 == Some Personal Experiences on the Matter:
 
-- {art-klemo} -- MSG `klemo`. Black Alabama native. 22 years enlisted. Nothing left to collect.
-- {art-institutionalized} -- MAGA cop arrested me at my family vigil for being
-  Ukrainian-American and supporting Americans in Ukraine. I didn't hurt him.
+- {art-klemo} -- MSG `klemo`. Alabama swamp native or a legendary Ukrainian? He's eternal now. +
+(`klemo` no Maga)
+- {art-institutionalized} -- MAGA cop arrested me at my family vigil for being +
+Ukrainian-American and supporting Americans in Ukraine. I didn't hurt him. +
+(Broke city cop -- pungent Maga: found you!)
 
 == Epilogue
+
+_I bet in a few years Maga won't admit to his name._ So, catch him by the tongue now.
 
 When there's a matter of an individual and the collective, then there are only two choices: +
 Leave or learn to live with them!

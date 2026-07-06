@@ -4,7 +4,7 @@ Compiled 2026-06-03 by Claude for Vadim. Primary-source backing for the Memorial
 
 == Why these sources are un-dismissable
 
-Ukrainian primary archives (Kyiv-Pechersk Lavra) were destroyed in Muscovite sackings. The bedrock survives in *Byzantine and Roman* custody — Constantinople, Rome, Venice — libraries Muscovy could not burn. So the receipts that break the "russians have always been russians" narrative are not Ukrainian sources an opponent can wave off; they are the Byzantine emperor, the Pope, and Habsburg/English/Jesuit ambassadors.
+Ukrainian primary archives (Kyiv-Pechersk Lavra) were destroyed in Muscovite sackings. The bedrock survives in *Byzantine and Roman* custody — Constantinople, Rome, Venice — libraries Muscovy could not burn. So the facts that break the "russians have always been russians" narrative are not Ukrainian sources an opponent can wave off; they are the Byzantine emperor, the Pope, and Habsburg/English/Jesuit ambassadors.
 
 * *Tier 1 (Byzantine/Roman primary):* Constantine VII, _De Administrando Imperio_ (~950, Codex Parisinus gr. 2009); Patriarch Photios, Homilies III–IV (860); Florence Union _Laetentur caeli_ (1439, signed by Isidore of Kyiv); Innocent IV ↔ Daniel of Galicia, _Rex Russiae_ 1253; Bessarion library → Biblioteca Marciana (1468).
 * *Tier 2 (Western diplomatic eyewitness of Muscovy):* Herberstein, _Rerum Moscoviticarum Commentarii_ (1549, Habsburg ambassador, Slovene-speaker who questioned Muscovites directly); Possevino, _Moscovia_ (1586); Fletcher, _Of the Russe Common Wealth_ (1591); Olearius (Schleswig 1656, Holstein embassy 1630s).
@@ -116,7 +116,7 @@ The argument that Muscovy/Russia _appropriated_ the name "Rus'" from Kyivan Rus'
 
 ____
 
-The four Tier-1 receipts, in brief:
+The four Tier-1 claims, in brief:
 1. *DAI ~950* — Rus' descend from Kyiv in _monoxyla_ with tribute collected from the Slavs; rapids named in "Rhosic" (Old Norse) and "Slavonic"; Rus' centered at Kyiv (Moscow's first chronicle mention is 1147).
 2. *Photios 860* — earliest external attestation: Rus' as "an obscure people" raiding Constantinople from Viking-led Kyiv, not a Muscovite proto-state.
 3. *Florence 1439 / autocephaly 1448* — the decisive ecclesiastical break: "Rus'" was Kyiv canonically; Moscow broke away, then built Third-Rome ideology to backfill the claim.
