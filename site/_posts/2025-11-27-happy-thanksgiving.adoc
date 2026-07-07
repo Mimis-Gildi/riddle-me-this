@@ -10,9 +10,11 @@ search: false
 read_aloud: false
 ---
 = Happy AI Thanksgiving!
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 
 .Because we can imagine better. We can be better.
-image::/riddle-me-this/assets/images/posts/digital-girl-president-pardons-digital-turkey.png[A future president pardoning a digital turkey]
+image::posts/digital-girl-president-pardons-digital-turkey.png[A future president pardoning a digital turkey]
 
 {nbsp} +
 

@@ -6,20 +6,16 @@ comments: true
 classes: wide
 ---
 = How to Game LinkedIn Like a Pro
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
-:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
-:img-prefix: /riddle-me-this/assets/images
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 
-.ASE Inc, DALL·E Hacker Dad vs. Cog Dad...
+.ASE Inc, DALL-E Hacker Dad vs. Cog Dad...
 [#img-devs]
-image::{img-prefix}/devs.png[Channel,800,450]
-
+image::devs.png[Channel,width=800,height=450,align=center]
 {nbsp}
 
-In https://mimis-gildi.github.io/riddle-me-this/reflections/2025/06/24/what-li-good-for.html[my previous post], I wrote about our daring experiment on LinkedIn.
+In link:{site-baseurl}/reflections/2025/06/24/what-li-good-for.html[my previous post], I wrote about our daring experiment on LinkedIn.
 Let’s now unpack what we actually learned from it.
 
 == First, a Little Bit of Scepticism...

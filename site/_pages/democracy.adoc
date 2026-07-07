@@ -1,10 +1,12 @@
 = The Ailments of Democracy
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :page-classes: wide
 :page-layout: splash
 :page-permalink: /series/fall-of-democracy/
 :page-author_profile: true
 
-image::/riddle-me-this/assets/images/maga-liberty-tomorrow.png[]
+image::maga-liberty-tomorrow.png[]
 
 Welcome to *The Ailments of Democracy*  +
 {nbsp} --  an arc examining the erosion of democratic institutions under the accelerating pressure +
@@ -29,7 +31,7 @@ of technological, economic, and epistemic forces.
 *_We are not speculating.
 We are observing systemic failure in real time._*
 
-→ link:/riddle-me-this/series/[Back to Curated Series]
+→ link:{site-baseurl}/series/[Back to Curated Series]
 
 '''
 

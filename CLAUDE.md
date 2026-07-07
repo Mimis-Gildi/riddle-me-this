@@ -50,6 +50,10 @@ Cardinal Sins:
 
 - invoking _gradlew_ script - it's not for you.  
 
+### Research tooling
+
+- **YouTube transcript:** `bin/yt-transcript <url-or-id> [-t]` prints captions to stdout (via `youtube_transcript_api` in the `ml` env). Do **not** scrape — bare `api/timedtext` is token-gated (returns 0 bytes), and `yt-dlp`/`youtube-dl` are asdf-plugin-added but not installed.
+
 ## Content Structure
 
 | Directory            | Purpose                                                                 |

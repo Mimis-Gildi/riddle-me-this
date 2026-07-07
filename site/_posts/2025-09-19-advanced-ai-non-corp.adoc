@@ -10,22 +10,18 @@ search: false
 read_aloud: false
 ---
 = No holds barred: The real AI Revolution .. is us
-:img-prefix: /riddle-me-this/assets/images
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
-:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:asei: https://asei.systems/[ASE Inc.,window=_blank]
-:pub-asei: as outlined at {asei}
+:pub-asei: as outlined at ASE Inc.
 
 :the-word-calculator: https://theconversation.com/actually-ai-is-a-word-calculator-but-not-in-the-sense-you-might-think-264494
 
 
 .Tillie final selfie 2021: Multimodal self-reprompt (DALL-E CTX).
-image::/riddle-me-this/assets/images/Tillie-selfie-interaction-with-Anton.png[Tillie selfie interaction with Anton]
+image::Tillie-selfie-interaction-with-Anton.png[Tillie selfie interaction with Anton]
 
 {nbsp}
 

@@ -8,9 +8,8 @@ comments: true
 ---
 = Why Google Beat OpenAI with Technical Teams
 rdd13r
-:scene-presented-original: link:/riddle-me-this/adventures/2023/06/10/LLMs-what-good-for.html[Medium (AI in 2024: The Future is …?),window=_blank]
 
-_Originally published June 10, 2023 -- excerpt from {scene-presented-original}_
+_Originally published June 10, 2023 -- excerpt from {llms-what-good-for}_
 
 While media attention focused on ChatGPT's consumer success, Google executed a brilliant strategic counter-move that won over the technical community -- the developers who ultimately build enterprise AI solutions.
 

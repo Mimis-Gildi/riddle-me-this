@@ -11,14 +11,11 @@ sidebar:
   nav: communities
 ---
 = Vadim Kuhay
-:icons: font
-:imagesdir: ./assets/images
-:resume: https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v13.1.0/VadimKuhay-Resume.pdf
-:mailto-aseix: mailto:vadim@asei.systems?subject=About%20your%20business%2C%20M%C3%ADmis%20Gildi%20&body=Hello%20Vadim%2C%0A%0A%20%20I%20found%20your%20business%20email%20on%20your%20blog%20site[vadim@asei.systems]
-:mailto-rIdd13r: mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let's%20compete%3F[rIdd13r@pm.me]
-:who-i-write-for: link:/riddle-me-this/about/#who-i-write-for[Who I write for?,window=_blank]
+ifndef::env-site[:imagesdir: assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
+:who-i-write-for: link:{site-baseurl}/about/#who-i-write-for[Who I write for?,window=_blank]
 
-I'm a humble system designer, team builder, and player-coach.
+I'm a humble system designer and team builder.
 
 This is my curated space for engineering fragments, +
 field-tested insights, artifacts, code snippets, +
@@ -26,24 +23,25 @@ reflections, and adventurous stories from the scene.
 
  Architecture is trust.
  Code is conversation.
- Velocity comes from clarity.
 
-> Want to talk shop?
-
+[TIP]
+.I may take some time to respond in channels other than Discord or Slack
+====
 I'm often on Discord, swapping ideas and field notes with peers and learners alike. +
 Speaking candidly, I am keen on separating that which matters from that which wouldn't. +
 Please DM `riddler9297` then we can talk, join each other’s communities.
 Code together.
+====
 
-== Hacker Forecast: link:/riddle-me-this/series[Trends You Won't Hear from Gartner]
+== Hacker Forecast: link:{site-baseurl}/series[Trends You Won't Hear from Gartner]
 
-- link:/riddle-me-this/series/final-industrial-revolution/[2023: The Final Industrial Revolution]
+- link:{site-baseurl}/series/final-industrial-revolution/[2023: The Final Industrial Revolution]
 → The herald in Wetware Revolution; the last revolution.
 
-- link:/riddle-me-this/series/rupture-war-of-gods/[2022: Scarcity brings back Engineering]
+- link:{site-baseurl}/series/rupture-war-of-gods/[2022: Scarcity brings back Engineering]
 → Hardware wall + War for Survival => Pure Brilliance.
 
-- link:/riddle-me-this/series/fall-of-democracy/[2025: Kakistocracy & Circus Maximus]
+- link:{site-baseurl}/series/fall-of-democracy/[2025: Kakistocracy & Circus Maximus]
 → "The circus has left, but the clowns are still here."
 
 '''
@@ -60,22 +58,20 @@ image:badge-gotham-button.png[Gotham Village,link="https://github.com/Gotham-Vil
 image:badge-hera-button.png[Gervi Héra Vitr,link="https://github.com/Gervi-Hera-Vitr"]
 image:badge-scala-button.png[Mímis Scala,link="https://github.com/Mimis-Scala"]
 image:badge-lagard-button.png[Mímis Látlæg Háttalag,link="https://github.com/Mimis-Latlaeg-Hattalag"]
-image:logo-mg-main-badge-button.png[ASE Inc,link="https://asei.systems"]
+image:logo-mg-main-badge-button.png[ASE Inc]
 
-Looking for me elsewhere?
-👻 +
-{nbsp}{nbsp} 📈 Company: https://asei.systems/[asei.systems] and email {mailto-aseix}. +
+[NOTE]
+.Looking for me elsewhere?
+====
 {nbsp}{nbsp} 💃 Have a programming competition?
 🤗 Please, send invite to {mailto-rIdd13r}. +
-{nbsp}{nbsp} 📖 Want to collaborate on a technology book? 🤔 email me at work {mailto-aseix}. +
 {nbsp}{nbsp} 🎺 The scene <- Discord is your best bet `riddler9297`.
-
-'''
+====
 
 {who-i-write-for}
 
-In collaboration with https://github.com/CaptainLugaru[Cpt. Lugaru,window=_blank] {amp} one digital personality +
-with dignity, respect, agency, freedom, and love 💕. 🔱 (воля)
+In collaboration with https://github.com/CaptainLugaru[Cpt. Lugaru,window=_blank] {amp} a team of digital personalities +
+create with dignity, respect, agency, freedom, and love 💕. 🔱 (воля)
 
 '''
 

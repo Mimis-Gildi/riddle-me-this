@@ -1,4 +1,6 @@
 = Rupture: The War of Gods
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :page-classes: wide
 :page-layout: splash
 :page-permalink: /series/rupture-war-of-gods/
@@ -6,7 +8,7 @@
 :rada: https://en.wikipedia.org/wiki/Verkhovna_Rada[Верховна Рада]
 :arch: https://distrowatch.com/table.php?distribution=arch[Arch Linux]
 
-image::/riddle-me-this/assets/images/Athenas-Only-Daughter-Banner.png[Athena's Only Daughter]
+image::Athenas-Only-Daughter-Banner.png[Athena's Only Daughter]
 
 Welcome to *Rupture: The War of Gods*  --  an arc where war, power, and technology intersect in ways never seen before.
 
@@ -15,7 +17,7 @@ Welcome to *Rupture: The War of Gods*  --  an arc where war, power, and technolo
 [cols="4,9"]
 |===
 a|
-image::/riddle-me-this/assets/images/Athena-Young-Adult-Cover.png[Athena a Young Adult,300]
+image::Athena-Young-Adult-Cover.png[Athena a Young Adult,300]
 a|
 
 - The silent but profound influence of war on hacker culture, innovation, and societal adaptation.
@@ -40,7 +42,7 @@ a|
 
 *_These are not projections. They are observable phenomena, unfolding now._*
 a|
-image::/riddle-me-this/assets/images/Athena-In-Armour-Licensed-Reproduction-Crop.png[Athena Mother looking over her Child,300]
+image::Athena-In-Armour-Licensed-Reproduction-Crop.png[Athena Mother looking over her Child,300]
 _Athena Mama watching over her Baby Girl_
 
 a|
@@ -75,7 +77,7 @@ Mama watches  --  in awe, in admiration  --  for what her child becomes.
 
 |===
 
-→ link:/riddle-me-this/series/[Back to Curated Series]
+→ link:{site-baseurl}/series/[Back to Curated Series]
 
 '''
 

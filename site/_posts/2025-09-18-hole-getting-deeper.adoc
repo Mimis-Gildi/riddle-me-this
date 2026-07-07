@@ -7,24 +7,19 @@ classes: wide
 comments: true
 ---
 = Google to MIT: Traditional Business Done For. Oh Really?! -- Straight Talk
-:img-prefix: /riddle-me-this/assets/images
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
-:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:asei: https://asei.systems/[ASE Inc.,window=_blank]
-:pub-asei: as outlined at {asei}
+:pub-asei: as outlined at ASE Inc.
 
-:stages-of-ai-evolution: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
-:stage-1-mit-failures: link:/riddle-me-this/adventures/2025/08/18/years-late-confirmation.html
-:mit-fortune-article: https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/
+:stages-of-ai-evolution: {integrated-ai-evolution-url}
+:stage-1-mit-failures: {years-late-confirmation-url}
 :stage-4-in-crypto: https://decrypt.co/339715/google-researchers-warn-looming-ai-run-economies
 :virtual-agent-economies: https://arxiv.org/abs/2509.10147
 
-:origami-ai-integration: link:/riddle-me-this/adventures/2025/08/11/ai-integration-powers.html
+:origami-ai-integration: {ai-integration-powers-url}
 
 More than 90% of top analytics put AI-Crisis as the most destructive economic transformation in history.
 "Doom and Gloom," if you ask me.
@@ -62,7 +57,7 @@ I will immediately tell you that what's seen on the far-left isn't automatically
 Moreover, attempting to regulate progress is a "Fool's Errand." +
 Hold this thought for now.
 
-[#img-stage-1,link={mit-fortune-article}]
+[#img-stage-1,link={mit-article-url}]
 image::https://fortune.com/img-assets/wp-content/uploads/2025/08/GettyImages-2195607659.jpg[MIT report: 95% of generative AI pilots at companies are failing]
 
 *MIT report: 95% of generative AI pilots at companies are failing*

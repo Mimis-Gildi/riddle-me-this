@@ -1,5 +1,5 @@
 // External link
-:google-play: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/06/10/3-google-vs-openai.html[2023: Why Google Beat OpenAI with Technical Teams,window=_blank]
+:google-play: {google-vs-openai}
 
 // Footnotes
 :fn-killed-by-google: footnote:killed-by-google[200+ discontinued Google products tracked since 2018. Cody Ogden's running record. https://killedbygoogle.com/[killedbygoogle.com,window=_blank]]

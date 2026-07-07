@@ -7,27 +7,20 @@ classes: wide
 comments: true
 ---
 = AI Hype -- Straight Talk
-:img-prefix: /riddle-me-this/assets/images
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
-:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
 :ase-title: ASE Inc.
-:ase: https://asei.systems
-:ase-link: {ase}[{ase-title},window=_blank]
 :pub-asei: as outlined at {ase-link}
-:diagnostic: {ase}/diagnostic
 
-:stages-of-ai-evolution: link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html
-:stage-1-mit-failures: link:/riddle-me-this/adventures/2025/08/18/years-late-confirmation.html
-:mit-fortune-article: https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/
-:origami-ai-integration: link:/riddle-me-this/adventures/2025/08/11/ai-integration-powers.html
+:stages-of-ai-evolution: {integrated-ai-evolution-url}
+:stage-1-mit-failures: {years-late-confirmation-url}
+:origami-ai-integration: {ai-integration-powers-url}
 
 .A story from The Final Industrial Revolution series: Adventures.
-image::{img-prefix}/Athena-World.png[Athena and her world.]
+image::Athena-World.png[Athena and her world.]
 
 {nbsp}
 
@@ -35,7 +28,7 @@ image::{img-prefix}/Athena-World.png[Athena and her world.]
 Our aggregator service classifies this daily.
 
 I'm selling premium vegetables at a cheap candy convention here! +
-The good news: _{mit-fortune-article}[**95% of you**] learned that sugar is poison_. +
+The good news: _{mit-article-url}[**95% of you**] learned that sugar is poison_. +
 The bad news: I still have to walk you through the food pyramid before you get the real candy. +
 Like fine Belgian chocolate -- not what you've been eating at this sugar convention.
 
@@ -242,7 +235,7 @@ Quick recap::
 
 _Want to know what tier YOUR architecture can actually support?_
 
-{diagnostic}[Stop lying to yourself and find out].
+Stop lying to yourself and find out.
 
 P.S. I'm not writing *carrot theory*.
 I fix corporate architecture -- decades, hands on, every day.

@@ -8,31 +8,22 @@ comments: true
 ---
 = AI in 2024: The Future is ...
 rdd13r
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
-:mm-newsletter: R!dd13r
-:pub-mm: as published on Medium by {mm-newsletter}
-:mm-current-article: AI in 2024: The Future is …?
-:ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
-
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :jarvis: https://www.entrepreneur.com/author/paul-jarvis[Paul Jarvis,window=_blank]
 :nomads: https://en.wikipedia.org/wiki/Digital_nomad[Digital Nomads,window=_blank]
 :demogroup: http://catb.org/jargon/html/D/demogroup.html["demogroup",window=_blank]
 :anonymous: https://en.wikipedia.org/wiki/Anonymous_(hacker_group)[Anonymous,window=_blank]
-:cliques: https://en.wikipedia.org/wiki/Hacker_culture[Hacker Cliques,window=_blank]
 :scene: https://en.wikipedia.org/wiki/Demoscene[Demoscene,window=_blank]
-:culture: https://en.wikipedia.org/wiki/Hacker_culture[Hacker Culture,window=_blank]
 :mit: https://handbook.mit.edu/hacking[MIT,window=_blank]
 :lugaru: https://github.com/CaptainLugaru[Captain Lugaru,window=_blank]
 :tales: https://youtu.be/C9DbwEKvN8Q["Hacker Tales",window=_blank]
 :spaces: https://wiki.hackerspaces.org/Hackerspaces[Hackerspaces,window=_blank]
 :brakha: https://www.dakhabrakha.com.ua/en/about/[DakhaBrakha,window=_blank]
 :carpathia: https://youtu.be/fTrSsIY7Oww[Carpathian Rap,window=_blank]
-:dolly-2: https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm[Dolly 2 by Databricks,window=_blank]
 :hfce: https://huggingface.co/[Hugging Face,window=_blank]
 :crackers: http://www.catb.org/~esr/jargon/html/crackers.html[crackers,window=_blank]
-:active-inferrence: https://baicsworkshop.github.io/pdf/BAICS_37.pdf[Active Inference,window=_blank]
+:active-inference: https://baicsworkshop.github.io/pdf/BAICS_37.pdf[Active Inference,window=_blank]
 :verses: https://www.verses.ai/[Verses Active Inference,window=_blank]
 :g-io: https://io.google/2023/["I/O 2023",window=_blank]
 :g-community: https://ai.google/build/machine-learning/[Open Onboarding Community,window=_blank]
@@ -56,6 +47,9 @@ rdd13r
 :open-assistant: https://github.com/LAION-AI/Open-Assistant[Open Assistant (defunct),window=_blank]
 :o-a-hf: https://huggingface.co/OpenAssistant[Hugging Face Site,window=_blank]
 :all-oss-lm-models: https://en.wikipedia.org/wiki/Large_language_model[Large Language Model,window=_blank]
+:mail-rdd13r-no-subj: mailto:rIdd13r@pm.me[Riddler at PM]
+:revisit-article: link:{site-baseurl}/adventures/2025/08/18/years-late-confirmation.html[MIT Says Your AI Stinks. Here’s Why. And how to fix.,window=_blank]
+:revisit-fn: footnote:[Findings are revisited in this article '{revisit-article}'. Please, feel free to reach out ({mail-rdd13r-no-subj}) if you need a competent assesment of your AI strategy.]
 
 We are well into the surge of Large Language Models (LLMs).
 Half a year in, it's prime time to assess their progress and discern any emerging trends.
@@ -63,8 +57,8 @@ Lo and behold, an AI adoption trajectory is indeed taking clear shape.
 Let's look at people making fast AI money today.
 
 .DALL-E a typically distorted image edit of the author
-[#img-space,link=https://rdd13r.github.io/]
-image::/riddle-me-this/assets/images/dall-e-rdd13r-space.png[Picture of the author in space rendered DALL-E as prompted by Tillie,1200]
+[#img-space,link={rdd13r-gh-io-url}]
+image::dall-e-rdd13r-space.png[Picture of the author in space rendered DALL-E as prompted by Tillie,align=center,width=800]
 
 == The Context of this Analysis
 
@@ -85,7 +79,7 @@ It is important to note that labeling the Northern as a "group" from {demogroup}
 as I see done on various social media sites, college news, and blog posts is somewhat of a _misnomer_.
 Similarly as {anonymous} is not a group, a clique or an organization.
 None really are -- yet the uninitiated keep insisting on the word 'group.'
-Likewise, Northern is not an organization but a grassroots tradition: just a vibrant and decentralized social network of {cliques}
+Likewise, Northern is not an organization but a grassroots tradition: just a vibrant and decentralized social network of {hacker-culture-url}[Hacker Cliques,window=_blank]
 who occasionally convene for a mutual exchange of ideas in the classic {scene} or simply 'scene' format.
 The Northern is socially connected to but not the organizer of the esteemed "Hack The North" hackathon.
 The member cliques have people in the USA, Prague, the EU and many other regions.
@@ -93,7 +87,7 @@ The moniker is a legacy from the 90s when geography still separated people,
 as in the "Northern USA." Except, it isn't the U.S. community anymore and hadn't been one for a long minute.
 Still, year to year people gather and the tradition continues.
 Let me clarify that this has nothing to do with the Hollywood portrayal of hackers as criminals either.
-This and many such communities we frequent are about celebrating the roots of the authentic {culture}.
+This and many such communities we frequent are about celebrating the roots of the authentic {hacker-culture}.
 The culture originating at the {mit},
 the culture that has been the cradle of disruptive innovation and has influenced giants like Google and PayPal as well as GNU and Linux Foundation.
 It's a deeply positive thing -- a place where honest makers bring their kids.
@@ -150,7 +144,7 @@ _Keep this point in mind._
 
 .Father and baby daughter exploring AI in music.
 [#img-zowah]
-image::/riddle-me-this/assets/images/dada-and-zowah.png[Rdd13r with his infant daughter studying music,1200]
+image::dada-and-zowah.png[Rdd13r with his infant daughter studying music,1200]
 
 (how about a virtual teacher?)
 
@@ -285,7 +279,7 @@ There are two primary issues that the Champions encountered with OpenAI's soluti
 1) The models are closed-source, which is a deal-breaker for many hackers who prefer transparency and understanding the underlying mechanisms.
 Without transparency, calculating risk is not a statistical exercise but a gamble.
 2) The model underwent manual reinforcement training to avoid mistakes, which made it safer but still equally non-deterministic,
-and did not allow for the fidelity that {active-inferrence} models claim to provide.
+and did not allow for the fidelity that {active-inference} models claim to provide.
 Thus, false advertisement -- because a DDD Aggregate is essentially an employee with an exact job description
 -- no improvisation is wanted or expected.
 
@@ -529,7 +523,7 @@ Mark my words.
 == Post-Publication Digest
 
 The final note of this article originally circulated only in a private Discord
-(AGAIN Collective of a Mímis Gildi scene), where it sparked a deep and heated debate.
+(AGAIN Collective of a Mímis Gildi scene), where it sparked a deep and heated debate.{revisit-fn}
 
 Rather than publish it broadly, I’m including the excerpted summary above for archival and educational purposes.
 
@@ -543,8 +537,4 @@ I found their points compelling, though I still hold that integration can begin 
 
 You may ask to join on Discord at `AlGothAmaIgaNotions` community, where the original fistfight took place,
 and take part in any future bleeding-edge discussions.
-Ask to friend `riddler9297` for an invite.
-
-'''
-
-_See editorial on Medium {ff-mm-current-article}_.
+Ask to friend `riddler9297` for an invitation.

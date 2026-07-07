@@ -1,0 +1,69 @@
+---
+categories: [reflections]
+tags: [Ukraine, Democracy, Autocracy, Old KGB]
+header:
+  overlay_image: /assets/images/banner-german-prisoners-berlin.png
+  overlay_filter: "rgba(60, 60, 0, 0.45)"
+  caption: "Autocracy versus Democracy. Which do we choose?"
+excerpt: >
+  Western Ukrainian SSR. 1987. Homeroom teacher explains.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= Roosevelt and Stalin Feeding Chickens
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+
+This was told to me by my homeroom teacher sometime 1987, Western Ukrainian SSR.
+His handle, `Rat`, is likely because he looked like a one-eyed rat:
+face elongated forward, with a long-healed scar top-down entire left side -- always
+happy to greet people with his steel cold confident demeanor. I respect the man deeply.
+Rat taught history. The real history, not what the West knows or Soviets prescribed.
+One day, explaining Soviet cohesion versus Western democracy, he approached class this way:
+
+.FDR and J.V. Stalin passing some peer-bonding time together.
+[#img-hero-roosevelt-stalin]
+image::roosevelt-stalin-chickens.png[Roosevelt and Stalin peer-bonding over chickens on a soviet farm.,width=1200]
+{nbsp}
+
+
+*_Roosevelt and Stalin were talking about rallying nations behind a cause (WWII, of course)._*
+
+*Roosevelt:* It's getting difficult to get consensus behind decisive and necessary hard action. +
+*Stalin:* It's never difficult for me -- but why would you say that? +
+*Roosevelt:* It took my country years to just get on with the 'right thing.' How's it easy for you? +
+*Stalin:* _How do you feed your chickens?_
+
+*Roosevelt:* I beg your pardon?!
+
+*Stalin:* Certainly, you must have chickens, don't you? +
+*Roosevelt:* I have a coop or two. But, why? +
+*Stalin:* _How do you feed them?_
+
+*Roosevelt:* Well, I get a bucket of grain and toss it around the yard. +
+*Stalin:* And how do your chickens treat you? +
+*Roosevelt:* There are a few aggressive ones that peck. But generally they ignore me. +
+*Stalin:* _And that is the root of your problem._
+
+*Roosevelt:* Okay. ... And how do you feed your chickens? +
+*Stalin:* I get a half-full bucket. I sit on a stool in the middle of my yard, bucket between my feet. +
+From time to time, I slowly spread a palmful of grain by my feet. And I watch.
+
+*Roosevelt:* How is that a more efficient method?
+
+*Stalin:* _Efficient?_ -- not what I'm after. Better! They never peck me, only each-other, to get to me. +
+And I see ALL of them next to me. By the way -- _how do you snuff one for dinner?_ +
+*Roosevelt:* Oh, that's a process. Best to get help. Must corner them. Sometimes I go without. +
+And I take it -- _you have a way?_
+
+*Stalin:* Certainly! One always gets in my bucket. And I pluck it right there.
+
+*Roosevelt:* What if none get in your bucket? Do you also go without? +
+*Stalin:* Never go without. It's a matter of flock size. Not a matter of grain.
+
+{nbsp}
+
+{independence-2026-collector}

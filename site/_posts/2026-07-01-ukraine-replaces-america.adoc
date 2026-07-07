@@ -1,0 +1,306 @@
+---
+categories: [reflections]
+tags: [Ukraine, America, Democracy, Military, Geopolitics, 4th of July, Semiquincentennial]
+header:
+  overlay_image: /assets/images/banner-ukraine-defends-ndf.png
+  overlay_filter: 0
+  caption: "There is no reality in which russia wins. Are we Axis aligned to russia?"
+  image_position: "center bottom"
+excerpt: >
+  America turns 250. The Reflecting Pool is green. Ukraine calls to greet.
+  Quiet weekend -- people don't come out to celebrate the Independence Day.
+  State Fair is empty ~ 4,000 people. Trump claims 45,000 people mob him over the visibly empty square.
+  | {nbsp} |
+  MEANWHILE: We have alienated all of our hard-earned allies by threatening to annex Greenland from Denmark by force.
+  All allies join against us securing Ukraine's strategic and economic benefit.
+  We have lost all our market competitive advantage by imposing tariffs on our greatest trading partners.
+  Our allies formed free-trade prosperity treaties that explicitly exclude the United States.
+  We have lost the semiconductor industry because critical supply chain is rooted in Europe, including Ukraine, none in the US.
+  | {nbsp} |
+  MEANWHILE: Ukraine loudly replaced us as 1){nbsp}the world's pillar of democracy, 2){nbsp}top weapons supplier,
+  3){nbsp}innovation hub, 4){nbsp}fighting force, and 5){nbsp}most consequential geopolitical force.
+  Europe, and civilized world, chose Ukraine in place of the USA.
+  D.J. Trump, chose Vova Putin when nobody did, not even China.
+  Happy birthday, America! -- you "have the cards," a house of.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= Ukraine Replaces America
+
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+
+:delta-csis-url: https://www.csis.org/analysis/does-ukraine-already-have-functional-cjadc2-technology
+:delta-cwix-url: https://www.act.nato.int/article/delta-system-cwix/
+:defense-express-url: https://en.defence-ua.com/analysis/security_risks_emerge_how_us_based_palantirs_systems_could_endanger_ukraines_defense_data-16804.html
+:gulf-deals-url: https://militarnyi.com/en/news/ukraine-seals-billion-dollar-defense-partnerships-with-saudi-arabia-qatar-and-the-uae/
+:aramco-url: https://kyivindependent.com/worlds-largest-oil-producer-aramco-in-talks-to-buy-ukrainian-interceptor-drones-wsj-reports/
+:pentagon-drones-url: https://www.navytimes.com/news/pentagon-congress/2026/03/11/these-are-ukraines-1000-interceptor-drones-the-pentagon-wants-to-buy/
+:spider-web-url: https://en.wikipedia.org/wiki/Operation_Spiderweb
+:zz-fix-america-url: https://www.president.gov.ua/en/news/vidkritij-list-prezidentu-rosijskoyi-federaciyi-vid-preziden-104769
+:meduza-url: https://meduza.io/en/feature/2026/01/29/russia-s-military-losses-in-ukraine-surpass-any-major-power-since-wwii-yet-re-deployed-wounded-obscure-the-true-toll
+:reuters-russia-kyiv-residential-attack-url: https://youtu.be/rsoGkt30oTE
+:defense-post-exports-url: https://thedefensepost.com/2026/07/03/ukraine-arms-exports/amp/
+
+// Polish-press footnotes -- Poles' distrust of MAGA/Trump USA (castrate-maga line)
+:fn-pl-rp-reliable: footnote:[Rzeczpospolita (SW Research): ponad polowa Polakow nie uwaza USA za wiarygodnego sojusznika. https://www.rp.pl/dyplomacja/art43734241-sondaz-czy-usa-sa-wiarygodnym-sojusznikiem-polski-znamy-zdanie-polakow[rp.pl,window=_blank]]
+:fn-pl-dorzeczy: footnote:[Do Rzeczy: sondaz -- czy USA pod rzadami Trumpa to wiarygodny sojusznik? https://dorzeczy.pl/kraj/841940/sondaz-usa-pod-rzadami-trumpa-to-wiarygodny-sojusznik-polacy-odpowiedzieli.html[dorzeczy.pl,window=_blank]]
+:fn-pl-rp-politico: footnote:[Rzeczpospolita (sondaz dla Politico): Europejczycy uznaja USA Trumpa za wieksze zagrozenie niz Chiny. https://www.rp.pl/konflikty-zbrojne/art44126621-sondaz-dla-politico-stany-zjednoczone-sa-wiekszym-zagrozeniem-niz-chiny[rp.pl,window=_blank]]
+:fn-nfp-reliable: footnote:[Notes From Poland: most Poles believe US is no longer a reliable ally (SW Research / Rzeczpospolita, 53.2%). https://notesfrompoland.com/2026/02/02/most-poles-believe-us-is-no-longer-a-reliable-ally-finds-new-poll/[notesfrompoland.com,window=_blank]]
+:fn-nfp-distrusted: footnote:[Notes From Poland: Putin, Lukashenko and Trump most distrusted world leaders in Poland; Zelensky most trusted (CBOS). https://notesfrompoland.com/2026/02/26/putin-lukashenko-and-trump-most-distrusted-world-leaders-in-poland-zelensky-most-trusted/[notesfrompoland.com,window=_blank]]
+:fn-nfp-pew: footnote:[Notes From Poland: negative views of US and Trump continue to rise in Poland (Pew). https://notesfrompoland.com/2026/06/23/negative-views-of-us-and-trump-continue-to-rise-in-poland-finds-international-pew-study/[notesfrompoland.com,window=_blank]]
+:fn-tvp-losing-trust: footnote:[TVP World: Poles losing trust in US as ally. https://tvpworld.com/91351014/survey-poles-distrust-trumps-us-as-ally[tvpworld.com,window=_blank]]
+:fn-tvp-last-believer: footnote:[TVP World: America's last believer is losing its religion on the 250th anniversary. https://tvpworld.com/94160822/poland-warns-us-on-democracy-at-250th-anniversary[tvpworld.com,window=_blank]]
+:fn-bxl-evaporating: footnote:[Brussels Signal: Poles' trust in alliance with US evaporating, survey shows. https://brusselssignal.eu/2026/02/losing-the-faith-poles-trust-in-alliance-with-us-evaporating-survey-shows/[brusselssignal.eu,window=_blank]]
+
+// Polish-press footnotes -- Poland's sovereignty / "not a vassal" (advice-to-Poland line)
+:fn-pl-interia-vassal: footnote:[Interia: "Polska nie bedzie wasalem USA" -- Tusk po Radzie Bezpieczenstwa Narodowego. https://wydarzenia.interia.pl/kraj/news-tusk-po-radzie-bezpieczenstwa-narodowego-polska-nie-bedzie-w,nId,22599461[interia.pl,window=_blank]]
+:fn-tvn24-settlements: footnote:[TVN24: Tusk -- Polska nie bedzie respektowala ustalen podjetych bez jej udzialu. https://tvn24.pl/swiat/donald-tusk-po-posiedzeniu-rady-europejskiej-polska-nie-bedzie-respektowala-ustalen-podjetych-bez-jej-udzialu-st9104795[tvn24.pl,window=_blank]]
+:fn-nfp-vassal: footnote:[Notes From Poland: "Poland will not be a vassal" of America, says PM Tusk. https://notesfrompoland.com/2026/02/12/poland-will-not-be-a-us-vassal-says-pm-tusk/[notesfrompoland.com,window=_blank]]
+
+++++
+<style>
+.page__hero--overlay { background-position: center bottom; }
+  .page__hero--overlay .page__lead {
+    color: rgba(255,255,255,0.65);
+    margin-left: 30%;
+    text-align: justify;
+  }
+</style>
+++++
+
+America turned 250. The weekend was *quiet*, like never before. And it smells here, like a corpse. +
+We were once the beacon of Freedom in the World and the world happily celebrated with us. +
+But now we work very hard to create a VOID there -- taunting an attack on Denmark for Greenland. +
+Hmm...
+
+This one is a bit challenging for me to share with you. I am a patriot and US Army veteran.
+And I interact with the cream of the crop in the software-making world globally.
+Contrary to what most people believe in the USA, Europeans don't see us as _evil_ -- not one bit.
+It's much worse. They see us as *_stupid_*. Or even more insulting -- *_incompetent_*.
+They also don't see us leading in technology, any technology, and are actively working
+to ban American software and even hardware. But there certainly must be things we do well.
+
+*Oh, I know:* We got the smartest mil-tech marvels with `F-22`, `F-35`, cuz stealth, and shiet. +
+*_No, wait!_* _That's American armchair-general YouTuber self-stroking. Blackwater founder sees
+things differently -- the old Vympel R-37 gets that `F-35` spanked surprised every time 300 miles out.
+Calls it "expensive useless garbage too precious to deploy on any near-peer real mission."_
+
+_Gripen, with Ukrainian Delta kit is an infinitely better choice; immeasurably so, it survives the R-37.
+Even the latest `F-16` or `F-15 EX` with Ukrainian firmware editing works. The `F-22`/`F-35`
+isn't designed to exploit any next-war adversaries -- it's designed to exploit the taxpayer's wallet. +
+Thanks to our recent less thought-through use of these "platforms" -- everybody now knows it._
+
+*Hah, `Riddler`:* Poland is buying `F-35` like crazy -- they just can't get enough. And Israel too. +
+_Israelis modify them significantly, or they wouldn't buy -- they're smart people and use them over inferior enemies.
+As far as Poland goes: it's a 1) political and 2) geographic decision. Politically, Poland bets that
+MAGA will "create so much ignorant damage that a violently strong rebound happens -- to the point
+that maga voters with IQ of 90 (statistical majority) will have mandatory state-sponsored abortions."
+Well, because Trump fixed social services funding this way.
+Or at least that's what Poles write in their newspapers every week{fn-pl-rp-reliable}{fn-pl-dorzeczy}{fn-pl-rp-politico}{fn-nfp-reliable}{fn-nfp-distrusted}{fn-nfp-pew}{fn-tvp-losing-trust}{fn-tvp-last-believer}{fn-bxl-evaporating}.
+And more importantly, Poland expects Ukraine to always be there, which means that Orkish stuff
+coming to Poland will be well-painted by Delta, including over Belarus or Suwałki Gap._
+
+*Orkish stuff coming, you say?* +
+*We have Air-Defence!* Ballistics radars, THAAD Systems, Patriot PAC3. Even Ukraine wants PAC3! +
+_You mean the ungodly expensive radars Iran completely destroyed in the first two weeks of the war?!
+You mean PAC3, $4M each at a single $35K Shahed and miss? Look, there is stuff that works in a
+real war -- *it works because it is cost-effective.* And there's stuff that works on the appropriations
+floor -- it works because it kicks back `good`. Middle East countries are buying a lot of PAC3 to trade
+them for AI stuff from Ukraine -- the cost-effective part. And then Ukraine lobotomizes PAC3 for their
+heavily lobotomized Patriot batteries so that too becomes cost-effective: this way the ability to
+intercept ballistics is actually affordable. Did you know in the opening weeks of Iran war we fired TWICE
+as many PAC3 missiles as Ukraine did through their ENTIRE war? -- and 20 of our bases are rubbled by Iran.
+Oh, but we also fired THAAD interceptors -- all of them. Ukrainian lobotomized Patriot goes only for
+ballistic missiles over residential targets with a 38% intercept rate. Because Delta --
+the theater system NATO/Pentagon can't have -- runs layered defense -- to know when NOT to fire. Our intercept rate for the
+latest war you can count on your fingers. That's 1) dumb and 2) irresponsible, not just because
+the taxpayer works hard to get gouged on expensive slop, but also because supply is limited and replenishment
+takes forever._
+
+_"Our stuff is the best, we're so far ahead of everyone else they have no chance"_ -- Donald Trump. +
+Simultaneously trying to steal Ukrainian technology, getting caught for not even understanding it.
+
+Ukraine offers P1SUN AI interceptors for our base protection from Iran (that _"we've decimated"_). +
+We proudly refuse _"they have nothing we want,"_ _"we lead in drones,"_ _"our stuff is way better"_. +
+20 US bases untenable, but not the sites Arabs bought P1SUN for. _All quotes by Donald Trump._
+
+The Reflecting Pool in Washington is painted "American flag blue" and is green with smelly algae. +
+850,000 firework shells made air "Code Red," and DC was briefly the most polluted major city. +
+Our president said that everything he touched turns to refuse. (Or gold? Both? He says stuff.)
+
+Trump is very busy and spectacularly active for his age. He says and does many important things. +
+The problem is nobody wants him to touch anything anymore. Not even MAGA in their civil war.
+
+Meanwhile, a besieged nation one-sixth our size, under full-scale invasion for four years,
+is quietly replacing us on every axis we used to define ourselves on.
+Somebody will always fill the void!
+
+[WARNING]
+.July 6, 2026 -- Ukraine ballistics interception rate: 0. All attacks on residential areas: 12+ dead.
+====
+Ukraine is completely out of ballistic missile interceptors. +
+All russian attacks are exclusively on residential areas. +
+Last night it was Kyiv -- a city 7 times older than russia. +
+
+A small fraction of interceptors we'd incompetently wasted in +
+the Gulf Ukraine is happy to pay premium for would have saved +
+lives for months or even years in the hands of Ukrainian defenders.
+
+.Residential highrise neighborhood moment of impact by a ballistic missile. {reuters-russia-kyiv-residential-attack-url}[Reuters.,window=_blank]
+[#img-kyiv-residential-attack,link={reuters-russia-kyiv-residential-attack-url}]
+image::russia-kyiv-residential-2026-07-06.png[russia's warcrime attack in residential highrise playground,window=_blank]
+====
+
+[CAUTION]
+.Poland just showed the world where it stands in the battle of Good versus Evil. One thing Poland MUST do -- drop the USA like a bad habit. -- As an American, know that we're NOT your friend; we don't care about you!
+====
+US has blocked Ukrainian access to Patriot PAC3 missiles.
+Must be because +
+{nbsp} +
+*__they ONLY defend civilians from russian ballistic missile attacks.__*
+
+Poland defies the US and hands over their PAC3 without Ukraine even asking!
+
+Poland! Return your `F-35` decrepit slop-gouged spyware!
+Your sister nation, Sweden, makes +
+{nbsp} +
+https://www.saab.com/products/gripen-e-series[Saab JAS 39E (Gripen E),window=_blank] +
+{nbsp} +
+complete with the world's most advanced theater management software
+courtesy of Ukraine -- the kind of stuff the MAGA USA will not have in your lifetime. +
+__(Soon enough with Ukrainian engines -- aerospace alloy tech the West could never match)__ +
+{nbsp} +
+Gripen is a: +
+Better platform. +
+Better fighter. +
+Better plane. +
+For a better price. +
+Be wise! Mind your family first.{fn-pl-interia-vassal}{fn-tvn24-settlements}{fn-nfp-vassal} +
+(Maybe then Ukrainians will share the tech you've been begging for?)
+====
+
+== We Support Evil, thus We're Deprecated -- Enumeration:
+
+1) World Pillar of Democracy is Ukraine. US has no morals for it::
+
+We spent half a millennium to convince the world that we're on the side of light. +
+And we destroyed all of it by betraying Ukraine. We allied with the aggressor. ({art-seven-betrayals})
+- {spider-web-url}[Operation Spider Web,window=_blank] removed our "nuclear power infallible" excuse.
+- {zz-fix-america-url}[Zelensky's open letter to Putin,window=_blank] removed the last fig leaf of
+diplomatic cover for managing this war on russia's behalf.
+
+2) Smart Weapons Supplier is Ukraine. Nobody wants our junk::
+
+- January 2026: US sold Saudi Arabia $9B in PAC-3 Patriot interceptors, delivery: 18-36 months. +
+Nobody cares for anything else from us: "expensive overrated garbage."
+
+- March 2026: Zelensky toured Riyadh, Doha, Abu Dhabi. +
+Signed {gulf-deals-url}[10-year defense export deals,window=_blank] with all three Gulf states. +
+Saudi state oil giant Aramco {aramco-url}[bypassed its own government,window=_blank] and +
+went directly to Ukrainian manufacturers to defend its oil infrastructure. +
+*And did so well!* US bases burned down -- Aramco managed.
+
+- When all our bases are good and rubbled -- {pentagon-drones-url}[US is now shopping Ukraine,window=_blank].
+
+- America sells weapons of questionable efficacy for more. +
+Ukraine {defense-post-exports-url}[sells weapons AND doctrine AND training AND factory,window=_blank].
+
+3) World Innovation Hub is Brave1 in Ukraine, not ARPANET in the US::
+
+- Delta -- Ukraine's national battle-management and situational awareness platform +
+{nbsp} -- {delta-csis-url}[processes millions of enemy objects and deca-thousands of new targets monthly,window=_blank]. +
+While the DoD CJADC2 concept is just a top-down mindset -- WTH! +
+Like in 2005 when I still built systems for DoD -- nothing changed or evolved. +
+Delta's whole power lies in the bottom-up massively distributed system.
+
+- At NATO's own {delta-cwix-url}[CWIX 2024 interoperability exercise,window=_blank], Ukraine's Delta fed live targeting data +
+straight into Poland's TOPAZ fire-control system -- was presented directly to NATO's +
+Supreme Allied Commander for Digital Transformation: +
+*__NATO and Pentagon suits had no flying clue what they're looking at -- they know now.__*
+
+- *Americans are booted far out* -- Ukraine {defense-express-url}[publicly flag US-based Palantir as a security risk,window=_blank]: +
+*Ukraine:* __"Have you come to learn?"__ +
+*Palantir:* __"No, we have come to teach."__ +
+*Ukraine:* __You have NOTHING -- what can you teach me?__ +
+*__With nothing to teach, we just came to steal and got booted.__*
+
+NOTE: The Palantir CEO rode a train to Kyiv to beg for IP years later.
+
+[TIP]
+.Do you know who has thick access to Ukrainian magic?
+====
+NB8 - Nordic Baltic Eight: Denmark, Estonia, Finland, Iceland, Latvia, Lithuania, Norway, and Sweden.
+These are all historic relatives of Kyivan Rus' -- Muscovy isn't, despite calling itself that; it was just a colony.
+
+Also, USA, China, russia, etc. -- are explicitly banned. Care to guess why that is?
+
+Poland is reeling from Ukraine not sharing tech -- that just because Poland is aligned with the USA.
+====
+
+
+4) AFU is the Most Effective Military on the Planet::
+
+Russia's military has been {meduza-url}[renewed five times,window=_blank] -- killed, replaced, killed again. ~1.4 million casualties with half eliminated. +
+Ukraine will mourn ~60,000 military personnel perished *since 2014* by this year. Yet Ukraine is getting better day-by-day. +
+2022: 2 russians casualties to 1 Ukrainian; 1/3 lost on both sides. +
+2026: 8 russians to 1 Ukrainian; +
+{nbsp} {nbsp} russia reuses them unpatched -- only 1 of 9 lives; -- Ukraine spends $900 per orc; Goal is $500; +
+{nbsp} {nbsp} 1 / 12 Ukrainians is lost -- every name in the registry; Goal is 1 / 20, daydreaming 0; +
+{nbsp} {nbsp} 1 / 12 medically retired -- I don't blame them, +
+{nbsp} {nbsp} 8 / 12 volunteer back into the fight.
+
+- US forces would be unable to hold Kharg Island long enough to make a difference; Expected losses 60%.
+- Some analysts jumped to compare Iran war to Ukraine, citing:
+    * 30,000 daily targets in the opening two days, and
+    * 900 sustained for the active part of the campaign;
+    * _Foolishly saying this dwarfs the war in Ukraine._ -- To please POTUS?
+- Embarrassment is: artillery, drones, glide-bombs -- 99% of the war in Ukraine was not counted.
+- *_Every day the war in Ukraine is an order of magnitude more intense than the Iran war -- US got spent in 6 weeks._*
+
+_We showed the world how weak, inept, ineffective, ignorant, and *arrogant* we are._ Rome did too.
+({art-war-end} maps where it all leads.)
+
+5) Ukraine just benched Most Consequential Geopolitical Force::
+We have zero leverage over Ukraine. +
+And Ukraine has the combined geopolitical leverage of: +
+Germany, France, and Spain -- minimum -- and +
+it's growing faster than any of us can track. +
+{nbsp} +
+Structurally, we removed ourselves from geopolitics *_by eradicating trust in us_* +
+there, where people want a relationship we come with deals, and bad deals at that. +
+{nbsp} +
+*Consider this:* *_"Do you take this woman ..."_* +
+_Tell you what, I'll make you a deal! -- let these hookers stay on the couch ..._ +
+Yeah, it's like that! A gigolo is really a tramp.
+{nbsp} +
+Trump called them "cards" -- we seem to have NONE! +
+Yet Ukraine is making cards fast -- mainly trumps. +
+{nbsp} +
+When Europe plays a classy damsel in distress, AFU goes -- "That orc won't bother you, Ma'am!"
+
+== Happy Birthday, America
+
+*What do we want from Ukraine FOR OUR BIRTHDAY (that we cannot have otherwise):*
+
+. Full-globe economy, military, security, and society management AI -- like Delta.
+. Full range of autonomous unmanned combat system edges and infantry training.
+. Autonomous self-sufficient unit doctrine beyond what was shown to NATO.
+
+In return, we should give them whatever they want. And what they want from us is temporary, at best.
+We cannot replicate their advantage or catch up -- but we can maintain "Top Strategic Ally"
+status and benefit from it collectively.
+
+*What do we GET from Ukraine:*
+
+*_Step aside, Scro, let real men handle this!_*
+
+'''
+
+The pool is green. Iran closes the strait at will. The 4th was quiet! +
+Everywhere shiet grows.
+
+{independence-2026-collector}

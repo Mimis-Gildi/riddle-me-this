@@ -1,0 +1,160 @@
+---
+categories: [reflections]
+tags: [America, Russia, Propaganda, QAnon, GRU, Disinformation, Democracy]
+header:
+  overlay_image: /assets/images/banner-maga-neighbors.png
+  overlay_filter: 0
+  caption: "We make it easy for our foes!"
+  image_position: "center bottom"
+excerpt: >
+  Russia didn't hack the election. It hacked the entire electorate.
+  GRU Project QAnon is one of hundreds -- Q just worked best.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= GRU Project QAnon: Russia's Greatest Victory
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+:pendos: https://en.wiktionary.org/wiki/%D0%BF%D0%B8%D0%BD%D0%B4%D0%BE%D1%81[pendos,window=_blank,opts=nofollow]
+:vatnik: https://en.wikipedia.org/wiki/Vatnik[vatnik,window=_blank]
+:simonyan-margarita-url: https://en.wikipedia.org/wiki/Margarita_Simonyan
+:simonyan-margarita: {simonyan-margarita-url}[colonel Simonyan,window=_blank]
+:warburg-youtube-explains-catherine-url: https://youtu.be/humWYvNiXB4?si=JFXTDlrUrGfUX3nV
+:rand-firehose-url: https://www.rand.org/pubs/perspectives/PE198.html
+:thehill-q-url: https://thehill.com/policy/cybersecurity/402239-russian-troll-account-pushed-q-theory-last-year-report/
+:nbc-qanon-url: https://www.nbcnews.com/tech/social-media/russian-troll-accounts-purged-twitter-pushed-qanon-other-conspiracy-theories-n966091
+:thehill-stanford-qanon-url: https://thehill.com/policy/technology/549077-study-china-russia-played-role-in-amplifying-qanon-conspiracy/
+:aljazeera-qanon-url: https://www.aljazeera.com/news/2020/8/24/russian-backed-organisations-amplify-qanon-conspiracy-theories
+:brookings-mueller-url: https://www.brookings.edu/articles/what-the-mueller-report-tells-us-about-russian-influence-operations/
+:potemkin-britannica-url: https://www.britannica.com/topic/Potemkin-village
+:potemkin-rbth-url: https://www.rbth.com/history/331767-potemkin-villages-myth-exposed
+:footer-simonyan-margarita: footnote:[{simonyan-margarita-url}[FSB colonel Margarita Simonovna Simonyan], with direct access to the body (Putin), was sanctioned by the United States for https://en.wikipedia.org/wiki/Foreign_interference_in_the_2024_United_States_elections[alleged interference in the 2024 United States elections,window=_blank]. OSINT cleanly maps her to projects Qanon and MAGA. She is a widow and was married to another prominent FSB Lt. colonel https://en.wikipedia.org/wiki/Tigran_Keosayan[Tigran Edmondovich Keosayan,window=_blank] who's loss she grieves deeply and blames Ukraine for. (His rank is speculated, but it is known that Margarita outranked Tigran.)]
+
+The most powerful weapon of mass destruction is not a nuke. It's *propaganda*! +
+Everyone wants to claim they've mastered it. Only russia has.
+
+Russia invented it as statecraft. Catherine II -- a German, not a russian --
+perfected it as a weapon of empire-building. She created values for plebs and rules for the rulers.
+Arguing that autocrats need DUMB slaves and only dumb slaves -- of mind, of values, of faith, and of wealth.
+
+Having hired "psychologists," by today's standard, she devised "wisdom" for peasants, such as
+"tsar is good, it's the boyars that are bad", "stealing isn't bad, getting caught is bad",
+"we will never know the truth", and many more. All the wisdoms were carefully curated and tested by her team.
+
+The one about "truth" is special! The russian language today has two words for "truth," and neither one means "facts."
+Remember, russian language didn't exist yet -- russians are not Slavs, they're Finno-Ugric people -- she crafted
+their _new_ language from Church-Slavonic, which was already considered holy because Ukraine wrote books in it.
+"Pravda" is the word for "truth," and it comes with an exceptional property bestowed by its "wisdom":
+"everyone has their own truth." So, truth is cardinal -- the higher the rank, the stronger the truth.
+"Istina" is the truth God holds -- belongs only to God, and of course, also private to God
+(remember: everyone has their own truth). So, that too is relative.
+And then she reused a construct her predecessor Ivan the 1st created -- "clergy serves the state".
+This is why today so many russian Orthodox priests are FSB officers -- that has 'always' been the case in Muscovy.
+Having clergy announce to plebs that "she stands next to God," she both put herself next to istina and reserved
+plausible deniability for herself coterminously. +
+*_Masterpiece!_*
+
+*_Russians today believe some form of Catherine's "wisdom" not even knowing about it._*
+
+*Example:* the {potemkin-britannica-url}[Potemkin village,window=_blank] trope
+comes from her 1787 Crimea tour, staged to impress European ambassadors before a war.
+Modern historians now {potemkin-rbth-url}[believe the wooden-village story itself was disinformation,window=_blank] --
+spread by Saxon and Finnish diplomats to make russia look weak to the Turks.
+Russia ran a psyop so deep that the psyop about the psyop became history.
+
+*That's the lineage* -- _a weapon-system designed to strike *the gullible* right in the brain!_
+
+The modern doctrine is catalogued by RAND as the
+{rand-firehose-url}["Firehose of Falsehood",window=_blank]:
+high volume, multichannel, rapid, no commitment to truth or internal consistency.
+Don't persuade -- saturate. Don't convince -- exhaust. Prop-up BOTH sides of any argument!
+When everything is a lie, nothing is a lie. When every source contradicts every other source,
+people stop looking for truth and start looking for comfort. Truth literally becomes "relative."
+And the efficacy of a source -- irrelevant.
+
+And notice -- even RAND didn't get it! They described "the method." Not the governing dynamic. +
+*_Our Western minds, with our Western values, can't readily call this -- it requires effort._*
+
+Russian people joke about it openly: _**"Our greatest weapon is a screen."**_
+
+- Dirt *cheap*, just a ton of babble.
+- Effective: it *paralyzes* the brain.
+- Accurate: straight in the *brain*.
+
+== QAnon is the Flagship that Keeps Floating
+
+GRU-linked Internet Research Agency accounts amplified QAnon from its first days.
+{thehill-q-url}[@CovfefeNationUS pushed the "Q" theory on November 10, 2017,window=_blank] --
+less than two weeks after the first 4chan post.
+{nbc-qanon-url}[#QAnon was the second-most-tweeted hashtag,window=_blank]
+on the 418 Kremlin-tied accounts Twitter purged.
+{thehill-stanford-qanon-url}[Stanford documented russian and Chinese amplification,window=_blank].
+{aljazeera-qanon-url}[Russia-backed state media kept amplifying through 2020,window=_blank].
+The {brookings-mueller-url}[Mueller Report,window=_blank] mapped the broader influence-operations pattern underneath it.
+
+I've built several machine analytics models on the movement for a top NC research institution
+using my old MlOps framework -- the campaign was *_freakin' brilliant_*, as commented by one of the researchers!
+It converted 77% of prospects (follows) and recruited 41% of converts (advocates).
+Any marketer on the planet would kill for an order of magnitude less than that!
+
+Think about it -- four out of five seeking Q will follow it -- _**gullible** #American# struck straight
+**in the thick brain**_! Then, they become russian {pendos} under some snotty GRU orc curation.
+And then one of three pendos starts recruiting! I remember how moved I was by these stats -- "does this mean
+that rural Nebraska, for example, in less than ten years, is all russian-pendos voting for a russian-pendo candidate?!"
+I also remember foolishly dismissing this thought -- that's impossible. +
+_Not in my 'Merica, not in my time -- I thought._
+
+QAnon is one of about a hundred fringe movements russia intercepted and turned _that we know of_.
+It just happened to work best on Americans. And it just happened to all leak out into OSINT because of a bloody
+fight between GRU and FSB for the ownership of the project -- FSB eventually won, albeit bleeding data.
+I am curious about one thing -- was that FSB {simonyan-margarita} project? +
+_I guess "I will never know the truth."_{footer-simonyan-margarita}
+That pendos-dicing "beaver-eating" lady is a piece of work!
+_The {art-institutionalized} tells of a live MAGA pendos encounter._
+
+Russia didn't create QAnon -- it never creates fringe movements: that would be silly and inefficient.
+It found a match, lit it, and handed it back to a carefully selected dumb redneck.
+Both FSB and GRU operations are science, art, and engineering together.
+Feeble-minded masses of people are their core specialty: {vatnik}, {pendos}, and the like.
+*_This is the Catherine the Great 'great' legacy._*
+_{art-seven-betrayals} enumerates the cost to Americans._
+
+
+
+== Their Current Victory is Even More Spectacular
+
+Much more interesting than QAnon is Orkish current "work in progress."
+GRU has convinced a large portion of the American electorate that the outcome of the Russia-Ukraine war depends on russia.
+And it depends on Trump. Factually, it depends on neither! Russia is all in already. And Trump has ZERO leverage over Ukraine.
+_{art-war-end} runs the model._
+
+.A young FSB officer working for legendary Margarita is watching his personal pindos who he turned terrified of a russian nuke! (Bonus: Paul Warburg {warburg-youtube-explains-catherine-url}[EXPLAINS russian "Nuke Scare", window=_blank])
+[#img-maga-fear,link={warburg-youtube-explains-catherine-url},window=_blank]
+image::american-maga-hero.png[Young FSB officer is watching an American farmer eating up russian propaganda thinking of building a fallout bunker on his middle-of-nowhere farm.,1200]
+{nbsp}
+
+But russia-curated pendos believe that russia is strong and that russia is inevitable.
+That Ukraine fighting back is pointless, expensive to pendos (though they pay no taxes), and someone else's problem.
+
+a) Every one of those beliefs is demonstrably false. +
+b) Every one of them serves exactly one interest. +
+c) And, innately residual to pendos' core psyche.
+
+(_Imagine the USA allied with Nazi Germany in WWII._)
+
+So now, in every geopolitical model since July 2024, this war resolves along exactly two axes:
+
+. The ones who are trying to save russia.
+. The ones who don't care about russia.
+
+The screen is *cheap*. The effect is remarkable!
+
+{independence-2026-collector}
+
+'''
+
+Bonus::
+- {warburg-youtube-explains-catherine-url}[Paul Warburg explains elements of russian manipulation on gullible Americans (Russia is Threatening to "Use the Nukes" Again (lol)),window=_blank] -- __this manifestation is because of recent series of Putin's public panic attacks.__

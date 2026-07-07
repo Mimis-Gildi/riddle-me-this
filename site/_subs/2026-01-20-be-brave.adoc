@@ -11,7 +11,7 @@ read_aloud: false
 ---
 = Friday: Fear. Monday: Agents.
 
-link:/riddle-me-this/adventures/2025/09/18/hole-getting-deeper.html[Most IT teams will be deprecated in 2 years.]
+link:{site-baseurl}/adventures/2025/09/18/hole-getting-deeper.html[Most IT teams will be deprecated in 2 years.]
 Will you be deprecated? Unemployed?
 If your employment depends on how others accept tech -- you need to know this.
 

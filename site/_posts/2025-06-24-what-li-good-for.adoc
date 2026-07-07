@@ -6,16 +6,14 @@ comments: true
 classes: wide
 ---
 = What is LinkedIn really good for?
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
-:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
-:img-prefix: /riddle-me-this/assets/images
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
+:jargon-file: http://www.catb.org/jargon/html/[Jargon File]
 
 .ASE Inc, DALL-E Hacker Dad vs. Cog Dad...
 [#img-devs]
-image::{img-prefix}/devs.png[Channel,800,450]
+image::devs.png[Channel,width=800,height=450,align=center]
 {nbsp}
 
 I'd like to share a daring experiment on LinkedIn with you.
@@ -62,7 +60,7 @@ The AI platform chose a classification schema based on the *personality traits* 
 And this is the value I can share with you today.
 
 Note that I write hacker-culture-specific terms in parentheses, like so (`crackers`, `hackers`, `muggles`, etc.)
-And *The http://www.catb.org/jargon/html/[Jargon File] is available at CatB* __over http__ for your perusal.
+And *The {jargon-file} is available at CatB* __over http__ for your perusal.
 
 == People who Don't Matter on LinkedIn
 

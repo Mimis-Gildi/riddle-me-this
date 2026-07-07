@@ -7,14 +7,21 @@ classes: wide
 comments: true
 ---
 = The Reluctant Consultant's Guide: T&M in the AI Failure Era
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
-:new-founders: link:/riddle-me-this/adventures/2025/08/04/new-founders-compendium.html
+:new-founders: link:{site-baseurl}/adventures/2025/08/04/new-founders-compendium.html
 :for-new-founders: {new-founders}#note-from-the-author--bedrocking
 :for-new-founders-communities: {new-founders}#the-communities-that-actually-matter
-:gitomer-book: https://a.co/d/5n9DwBo[The Little Red Book of Selling: 12.5 Principles of Sales Greatness,window=_blank,opts=nofollow]
-:gitomer-book-fn: footnote:[Forget what you know about selling; Jeff Gitomer is all you need -> {gitomer-book}]
+:contra: https://contra.com/[**Contra**,window=_blank,opts=nofollow]
+:upwork-enterprise: https://www.upwork.com/enterprise/[**Upwork Enterprise**,window=_blank,opts=nofollow]
+:cal-com: https://cal.com/[**Cal.com**,window=_blank,opts=nofollow]
+:toggle-track: https://toggl.com/[**Toggle Track**,window=_blank,opts=nofollow]
+:wise: https://wise.com/[Wise,window=_blank,opts=nofollow]
+:mercury: https://mercury.com/[Mercury,window=_blank,opts=nofollow]
+:documenso: https://documenso.com/[**Documenso**,window=_blank,opts=nofollow]
+:freshbooks: https://www.freshbooks.com/[**FreshBooks**,window=_blank,opts=nofollow]
+:bench: https://www.bench.co/[**Bench**,window=_blank,opts=nofollow]
+:loom: https://www.loom.com/[**Loom**,window=_blank,opts=nofollow]
+:notion: https://www.notion.com/[**Notion**,window=_blank,opts=nofollow]
+:linear: https://linear.app/[**Linear**,window=_blank,opts=nofollow]
 
 Not everyone should build a SaaS.
 There, I said it.
@@ -66,27 +73,27 @@ Notice the pattern? +
 
 === Client Acquisition:
 
-* https://contra.com/[**Contra**,window=_blank,opts=nofollow] -- High-end enterprise overflow. (not yet tested)
-* https://www.upwork.com/enterprise/[**Upwork Enterprise**,window=_blank,opts=nofollow] -- Yes, really.
+* {contra} -- High-end enterprise overflow. (not yet tested)
+* {upwork-enterprise} -- Yes, really.
 They're desperate! (won't test)
-* *_Your Blog_* -- Write about AI failures, they'll find you! (https://mimis-gildi.github.io/riddle-me-this/series/[I have,window=_blank])
+* *_Your Blog_* -- Write about AI failures, they'll find you! (link:{site-baseurl}/series/[I have,window=_blank])
 * **LinkedIn** -- But talk about solutions, not your availability. (questionable)
 
 === Operations:
 
-* https://cal.com/[**Cal.com**,window=_blank,opts=nofollow] -- Professional booking without the SaaS price. (love it!, can run your own!)
-* https://toggl.com/[**Toggle Track**,window=_blank,opts=nofollow] -- Bulletproof time tracking with reporting.
-* **https://wise.com/[Wise,window=_blank,opts=nofollow] / https://mercury.com/[Mercury,window=_blank,opts=nofollow]** -- International payments without the BS.
-* https://documenso.com/[**Documenso**,window=_blank,opts=nofollow] -- Open source contract signing.
-* https://www.freshbooks.com/[**FreshBooks**,window=_blank,opts=nofollow] -- Simple invoicing that works.
-* https://www.bench.co/[**Bench**,window=_blank,opts=nofollow] -- Bookkeeping without thinking.
+* {cal-com} -- Professional booking without the SaaS price. (love it!, can run your own!)
+* {toggle-track} -- Bulletproof time tracking with reporting.
+* **{wise} / {mercury}** -- International payments without the BS.
+* {documenso} -- Open source contract signing.
+* {freshbooks} -- Simple invoicing that works.
+* {bench} -- Bookkeeping without thinking.
 
 === Positioning Tools:
 
 * **GitHub** -- Your portfolio of fixes, _**not** just code_.
-* https://www.loom.com/[**Loom**,window=_blank,opts=nofollow] -- Async explanations save meeting time.
-* https://www.notion.com/[**Notion**,window=_blank,opts=nofollow] -- Client portals that don't suck.
-* https://linear.app/[**Linear**,window=_blank,opts=nofollow] -- Show them what real project management looks like.
+* {loom} -- Async explanations save meeting time.
+* {notion} -- Client portals that don't suck.
+* {linear} -- Show them what real project management looks like.
 
 == The Three Consulting Models That Work!
 

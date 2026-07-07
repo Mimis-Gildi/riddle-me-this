@@ -65,7 +65,7 @@ There are *three* and only three places:
 {nbsp} __You should know when your colleague is leading you by the nose!__
 
 - *Cloud API*: somebody else's computer. OpenAI, Anthropic, Google.
-Pay per token via aggregators -- {openrouter}[OpenRouter,window=_blank] (my pick),
+Pay per token via aggregators -- {openrouter-url}[OpenRouter,window=_blank] (my pick),
 {together-ai}[Together AI,window=_blank], {fireworks-ai}[Fireworks AI,window=_blank],
 {deepinfra}[DeepInfra,window=_blank] -- shop the ones that fit your stack.
 You don't host anything; you *rent* compute by the syllable. This is what 99% of "I run real Agentic" actually means;
@@ -115,7 +115,7 @@ I could not even break her loose, floored, black smoke bellowing, ripping tarmac
 _Are you sure you want to be in this position?! No?! -- *then read my blogs!_*
 
 *The frontier is rented.* That is the truth nobody is telling you because they don't know. +
-{openrouter}[openrouter.ai,window=_blank] -- {openrouter-rankings}[the rankings,window=_blank] tell the story;
+{openrouter-url}[openrouter.ai,window=_blank] -- {openrouter-rankings}[the rankings,window=_blank] tell the story;
 {artificial-analysis}[artificialanalysis.ai,window=_blank] tells the same story neutrally.
 
 == c. Agentic, WHAT it really is
@@ -226,7 +226,7 @@ Modern corporate America is running the same play: laying off the engineers who 
 
 .John Frum effigy, Tanna, New Hebrides, 1960. Photo by David Attenborough. The cargo never came back -- so they carved the god out of wood and waited.
 [link={commons-john-frum-effigy}]
-image::/riddle-me-this/assets/images/John_Frum_effigy_1960.jpg[Wooden effigy of John Frum, carved 1960, Tanna island]
+image::John_Frum_effigy_1960.jpg[Wooden effigy of John Frum, carved 1960, Tanna island]
 {nbsp}
 
 I have a proof for you!

@@ -10,12 +10,13 @@ search: false
 read_aloud: false
 ---
 = Happy Halloween. Here's your treat: 70/20/10
-:mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
-:ai-hype-2025: link:/riddle-me-this/adventures/2025/09/29/not-chat-gpt.html[AI Hype -- Straight Talk,window=_blank]
-:ai-hype-2025-refs: link:/riddle-me-this/research/2025/09/29/sources-passed-validation.html[Enterprise AI Adoption: Reference List by Credibility,window=_blank]
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
+:ai-hype-2025: {ai-hype-2025}
+:ai-hype-2025-refs: link:{site-baseurl}/research/2025/09/29/sources-passed-validation.html[Enterprise AI Adoption: Reference List by Credibility,window=_blank]
 
 .AI punishes the experience-based biases that got you through DX.
-image::/riddle-me-this/assets/images/2025-10-31-bias-shattering-ai-style-12.png[70/20/10,align=center]
+image::posts/2025-10-31-bias-shattering-ai-style-12.png[70/20/10,align=center,width=400]
 
 {nbsp} +
 
@@ -35,5 +36,5 @@ Retrying with the same vendor doesn't work."
 He's right.
 AI punishes the experience-based biases that got you through DX.
 
--> https://www.asei.systems/diagnostic[Get assessed]  +
--> https://mimis-gildi.github.io/riddle-me-this/research/2025/09/29/sources-passed-validation.html[See research]
+-> Get assessed  +
+-> link:{site-baseurl}/research/2025/09/29/sources-passed-validation.html[See research]

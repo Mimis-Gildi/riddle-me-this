@@ -10,14 +10,10 @@ search: true
 read_aloud: false
 ---
 = AI Adoption is EASY! (The Silly-Town Bank Didn't Get the Memo)
-:imagesdir: ./assets/images
-:mg: https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]
-:ai-adoption: https://mimis-gildi.github.io/riddle-me-this/reflections/2025/11/24/fastest-ai-adoption.html["Fastest Way to AI Adoption -- Straight Talk.",window=_blank]
-:ai-stages: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
-:ai-2-activation: https://mimis-gildi.github.io/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html#phase-ii-ai-activation[Phase II: AI-Activation,window=_blank]
-:doordash-case: https://aws.amazon.com/solutions/case-studies/doordash-bedrock-case-study/[DoorDash Case Study,window=_blank]
-:rand-report: https://www.rand.org/pubs/research_reports/RRA2680-1.html[RAND Corporation,window=_blank]
-:mit-report: https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/[MIT NANDA Report,window=_blank]
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
+:ai-adoption: {fastest-ai-adoption}
+:ai-stages: {integrated-ai-evolution}
 
 If you are an executive -- I'll tell you the best kept open secret.
 And how to WIN. +
@@ -29,22 +25,23 @@ If you want gentle corporate advice, this isn't it.
 
 .What could possibly go wrong?
 [#img-easy-ai]
-image::/riddle-me-this/assets/images/easy-ai.png["Editorial cartoon: Executive in Superman costume with diving fins holds Innovation Award trophy while pointing and shouting 'DEPLOY THE AI!' A tired robot worker in hardhat holds a microwave manual; captioned 'Sir this is a microwave manual.' Server rack labeled PROD smokes in background. Sign points to exit: DOMAIN EXPERTS."]
+image::easy-ai.png["Editorial cartoon: Executive in Superman costume with diving fins holds Innovation Award trophy while pointing and shouting 'DEPLOY THE AI!' A tired robot worker in hardhat holds a microwave manual; captioned 'Sir this is a microwave manual.' Server rack labeled PROD smokes in background. Sign points to exit: DOMAIN EXPERTS."]
 
 {nbsp}
 
 '''
 
-If you are new here -- few words about me, else skip to the "Fable" if you already know me.
+If you are new here -- a few words about me, else skip to the "Fable" if you already know me.
 
 I've spent decades transforming engineering organizations hands-on grassroots.
-Yes, I discover, design and code every day.
-I've helped dozens other founders with their startup tech, exited a couple of my own, and executed eleven enterprise transformations at my current company.
+Yes, I discover, design, and code every day.
+I've helped dozens of other founders with their startup tech, exited a couple of my own,
+and executed eleven enterprise transformations at my current company.
 And I live for innovation.
 But also for business.
 So, I've had employments at stale shops turning most to glory.
-Unlike spoiled hackers you meet I don't harbor stigma against traditional business.
-In fact the opposite is true -- I'm a realist and I argue that traditional business is the backbone of America.
+Unlike spoiled hackers you meet, I don't harbor stigma against traditional business.
+In fact, the opposite is true -- I'm a realist, and I argue that traditional business is the backbone of America.
 Laggard in IT doesn't mean laggard in business, and it is the latter that matters.
 Turning traditional business is what separates boys from men.
 
@@ -71,7 +68,7 @@ I study failures.
 Read the postmortems.
 In fact, I sold recoveries for a few months.
 And, of course I analyzed the 80% failure rate from {rand-report}.
-The 95% showing zero ROI from {mit-report}.
+The 95% showing zero ROI from {mit-article}.
 Looked for the thing that makes AI uniquely difficult.
 
 *Found nothing new!*
@@ -96,11 +93,11 @@ Cool -- that's my bank 😃for 20 years.
 
 I'm a customer.
 My debit card expired.
-_But, this time I didn't receive an automatic replacement._
+_Yet this time I didn't receive an automatic replacement._
 Simple task: order replacement.
 
-Old process is turned off.
-New AI assistant handles requests now.
+The old process is turned off.
+The new AI assistant handles requests now.
 
 I ask for a new DEBIT card.
 AI assistant "helps." Doesn't order the debit card.
@@ -126,7 +123,7 @@ I ask her what's happening.
 
 She tells me: _"All the old support experts were let go.
 We're new hires.
-There's five times more of us now, handling ten times the call volume.
+There are five times more of us now, handling ten times the call volume.
 The AI gives us instructions, but..."_
 
 She trails off.
@@ -151,9 +148,9 @@ Maybe you're the one getting blamed when the AI integration doesn't work.
 Maybe you're the "old guard" being pushed out because you don't have "AI skills." Maybe you're the new hire being handed AI-generated instructions that make no sense.
 
 Or maybe you're watching tribal warfare tear your team apart.
-The incumbents barricading themselves: _"We're Spring Boot developers, not Guidewire developers."_
-The new blood breaking production: _"Those old tests were slowing us down -- we turned them off."_
-Both factions at war while the actual business problem goes unsolved.
+The incumbents are barricading themselves: _"We're Spring Boot developers, not Guidewire developers."_
+The new blood-breaking production: _"Those old tests were slowing us down -- we turned them off."_
+Both factions are at war while the actual business problem goes unsolved.
 
 I've seen this exact pattern play out.
 At a major insurer, senior engineers muted 100+ integration tests
@@ -196,7 +193,7 @@ Every failed AI project I've studied, dozens, has the same shape:
 | Skipped workflow redesign -- bolted AI onto broken processes and expected magic.
 | Workflows were redesigned FIRST -- then AI was added to the new workflow.
 
-| Blamed engineers' competence when it collapsed.
+| Blamed engineers` competence when it collapsed.
 | No "AI Specialist" was hired -- the domain team added AI like they'd add *_any other library_*.
 |===
 
@@ -236,7 +233,7 @@ Security-first mindset.
 Defensive coding practices.
 Twelve-factor-app.
 Test-driven development.
-Taking engineers who've been doing spaghetti for fifteen years and teaching them *craft*.
+Taking engineers who've been doing spaghetti for fifteen years and teaching them *the craft*.
 
 This is where incumbents become capable of Step 3.
 You don't fire them.
@@ -248,7 +245,7 @@ This is business basics: identify assets, invest into assets, and trim liabiliti
 
 Takes months.
 Worth every day.
-And my every grey beard hair.
+And my every gray beard hair.
 
 === Step 3: Add AI
 
@@ -309,7 +306,8 @@ The tools are the easy part.
 "We deployed AI" is not a win.
 "We handle ten times the volume with better resolution" is a win.
 
-Your new "Agentic AI Specialist" who will "implement token limits," and "attempt to carry identity through tools," and "calculate the best model" - has little real value!
+Your new "Agentic AI Specialist" who will "implement token limits" and "attempt to carry identity through tools"
+and "calculate the best model" - has little real value!
 Needs to be invested into to learn your domain.
 Is not likely to have any more systems engineering prowess. +
 _Do you know how I solve their perceived "advantage" problem?!_ +
@@ -323,7 +321,7 @@ Give it a week and reap.
 AI integration is easy.
 I see it done in eight weeks by domain teams regularly.
 
-The hard part is admitting that your people problem isn't a technology problem.
+The hard part is admitting that your people's problem isn't a technology problem.
 And that *fixing* people is *_cheaper_* than firing/replacing them.
 
 The companies winning at AI aren't the ones with the best AI talent.
@@ -332,7 +330,7 @@ They're the ones where domain teams already work well together and can add AI as
 You don't need an AI specialist.
 You need a functioning organization.
 And some engineering fundamentals.
-I.e, basic competence.
+I.e., basic competence.
 
 And if you have one?
 Eight weeks to production traffic is the norm.
@@ -348,7 +346,7 @@ Are you living The Silly-Town Bank story?
 Fighting the tribal warfare?
 Or have you seen it done right?_
 
-Still here?
+Are you still here?
 You're either furious or curious.
 Either way -- let's talk.
 

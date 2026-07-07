@@ -6,12 +6,9 @@ comments: true
 classes: wide
 ---
 = LinkedIn: Conclusion - Enshittification
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
-:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
-:img-prefix: /riddle-me-this/assets/images
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :li-aaron: https://www.linkedin.com/in/aaron-fuller-32776910b/[Aaron Fuller]
 :gh-aaronfllr: footnote:[GitHub User home: https://github.com/aaronfllr[Aaron Fuller,window=_blank]]
 :li-michael: https://www.linkedin.com/in/michaellipari/[Michael Lipari]
@@ -30,10 +27,9 @@ classes: wide
 :estf-gr-novel-fn: footnote:[WitchDoctor - {estf-gr-novel} a graphic novel]
 :cory-wiki: https://en.wikipedia.org/wiki/Cory_Doctorow[Cory Doctorow,window=_blank]
 
-.ASE Inc, DALL·E Hacker Dad vs. Cog Dad...
+.ASE Inc, DALL-E Hacker Dad vs. Cog Dad...
 [#img-devs]
-image::{img-prefix}/devs.png[Channel,800,450]
-
+image::devs.png[Channel,width=800,height=450,align=center]
 {nbsp}
 
 Happy Independence Day, Friends!

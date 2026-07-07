@@ -1,0 +1,20 @@
+name: Blog Link Audit
+description: >
+  Scans AsciiDoc posts for body-link violations, shadowed globals,
+  cross-article duplicates, and promotion candidates.
+  Requires full repository checkout before invocation (reads site/).
+author: rdd13r
+branding:
+  icon: search
+  color: blue
+
+runs:
+  using: composite
+  steps:
+
+    - id: check-links
+      shell: zsh -l {0}
+      run: |
+        source ${{ github.action_path }}/conda-activate.sh
+        conda activate ml
+        ${{ github.action_path }}/check-link-attributes.py

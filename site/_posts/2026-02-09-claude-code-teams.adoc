@@ -7,21 +7,22 @@ classes: wide
 comments: true
 hidden: false
 search: true
-read_aloud: true
+read_aloud: false
 ---
 = Claude Code Agent Teams -- Straight Talk
-:imagesdir: ./assets/images
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :caparas-on-boris-flows: https://blog.devgenius.io/how-the-creator-of-claude-code-actually-uses-it-13-practical-moves-2bf02eec032a[How the Creator of Claude Code Actually Uses It: 13 Practical Moves,window=_blank]
 :caparas-on-agent-teams: https://pub.towardsai.net/inside-claude-codes-agent-teams-and-kimi-k2-5-s-agent-swarm-0106f2467bd2[Inside Claude Code’s Agent Teams and Kimi K2.5’s Agent Swarm,window=_blank]
 :bart-on-teams: https://youtu.be/VWngYUC63po[YouTube: Bart Slodyczka -- Claude Code's New Agent Teams Are Insane (Opus 4.6),window=_blank]
-:working-qwen3: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507[Qwen3-30B-A3B-Thinking-2507,window=_blank]
+:working-qwen3: {qwen3-30b-thinking}
 :tourist: https://codeforces.com/profile/tourist?locale=en[tourist,window=_blank]
 :benq: https://codeforces.com/profile/Benq[Benq,window=_blank]
 :GongRzhe-MCP: https://github.com/GongRzhe/A2A-MCP-Server[GongRzhe A2A-MCP-Server,window=_blank]
 
 .The Distinguished Engineer's Dress Code
 [#img-go-to-meeting]
-image::/riddle-me-this/assets/images/go-to-meeting.png["I go to meeting. Claude goes to meeting too."]
+image::go-to-meeting.png["I go to meeting. Claude goes to meeting too."]
 {nbsp}
 
 LI is about to be flooded with "Claude Code Teams Crazy!" populist plebs tropes -- LI rocks that.
@@ -82,7 +83,7 @@ The longer the agent runs, the dumber it gets. And at its best -- it's here:
 
 .The BEST LLM can hope for is Expert Level Coder, with six (6) levels below humans!
 [#img-easy-ai]
-image::/riddle-me-this/assets/images/ai-agent-coder.png["LLM coders are dumb!"]
+image::ai-agent-coder.png["LLM coders are dumb!"]
 
 {nbsp}
 
@@ -208,13 +209,13 @@ The inevitable shouldn't be proprietary._
 - `mcp-agora` -- agent peering built on `mcp-total-recall`.
 
 Three decades on the scene. Looking for the right company to pour the next thirty into.
-If your engineering org needs the architect behind the 57 seconds -- https://www.linkedin.com/in/rdd13r/[let's talk].
+If your engineering org needs the architect behind the 57 seconds -- {profile-li}.
 
 '''
 
 === How This Article Argues
 
-See `rdd13r-style-guide.yml` -- https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/rdd13r-style-guide.yml[argument forms information,window=_blank] for Agentic AI collaborators (not tools).
+See {rdd13r-style-guide} for Agentic AI collaborators (not tools).
 
 *Primary Premise:* Claude Code Agent Teams is a raw consumer packaging of what hackers already run in production.
 The difference in outcome -- 57 seconds versus 20 minutes -- is not the tool. It is the architect.

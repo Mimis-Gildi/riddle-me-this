@@ -3,18 +3,15 @@ categories: [adventures]
 tags: [Academia,Medium,Executive]
 excerpt: >
   First indication of Multimodal-Revolution.
+classes: wide
 comments: true
 ---
 = AI Analysis Reveals Relationship-Based Business Model Vulnerabilities
 rdd13r
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:scene-presented-original: link:/riddle-me-this/adventures/2023/06/07/AI-and-businesses-to-perish-first.html
 
-_Originally published June 7, 2023 -- as {scene-presented-original}[presented on the scene,window=_blank]._
+_Originally published June 7, 2023 -- as {ai-businesses-to-perish}[presented on the scene,window=_blank]._
 
 While consulting on an AI sentiment analysis project for a healthcare organization, our team discovered something unexpected: the AI didn't just analyze customer sentiment -- it revealed fundamental vulnerabilities in relationship-dependent business models.
 

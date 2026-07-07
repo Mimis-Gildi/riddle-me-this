@@ -1,0 +1,59 @@
+= Workbook: Fix AsciiDoc Admonitions
+:toc: preamble
+:icons: font
+
+Admonitions render unstyled here — a bare table with the word "Tip" instead of an icon — because
+`icons: font` is unset and nothing styles `.admonitionblock` (jekyll-asciidoc ships no CSS, and
+Minimal Mistakes doesn't style it either). The fix is site-wide: config + one CSS file + one
+`<link>`. No article edits.
+
+== Step 0 — Baseline (read-only)
+
+Current bad render: an `admonitionblock` table with no `icon-tip` glyph.
+
+[source,bash]
+----
+include::../main/sh/fix-admonitions-0-show-render.sh[]
+----
+
+== Step 1 — Enable font icons
+
+Adds `icons: font` to `_config.yml` so Asciidoctor emits `<i class="fa icon-tip">` instead of text.
+
+[source,bash]
+----
+include::../main/sh/fix-admonitions-1-enable-icons.sh[]
+----
+
+== Step 2 — Write the stylesheet
+
+Writes `site/assets/css/asciidoc.css` — the school's tested file, byte-for-byte. It is based on
+Asciidoctor 2.0.26's `.admonitionblock` rules
+(https://github.com/asciidoctor/asciidoctor/blob/v2.0.26/data/stylesheets/asciidoctor-default.css)
+plus the two Minimal-Mistakes table fixes (`display:table`, `td{border:0}`). The script's header
+comment claims "matches upstream exactly" — it does not: it also adds a `margin`, drops
+`word-wrap:anywhere`, italicises the caption title, and omits two icon-off rules.
+
+[source,bash]
+----
+include::../main/sh/fix-admonitions-2-write-css.sh[]
+----
+
+== Step 3 — Link it into <head>
+
+Appends the `<link>` to `_includes/head/custom.html` (idempotent).
+
+[source,bash]
+----
+include::../main/sh/fix-admonitions-3-link-css.sh[]
+----
+
+== Step 4 — Restart, then verify (the real check)
+
+Restart the server first. This reads the rendered page: PASS when the stylesheet is linked and the
+admonition emits an `icon-tip` glyph.
+
+[source,bash]
+----
+include::../main/sh/fix-admonitions-4-verify.sh[]
+----

@@ -1,0 +1,159 @@
+= Research findings — "What language did russians speak in russia 300 years ago?"
+
+Compiled 2026-06-03 by Claude for Vadim. Primary-source backing for the Memorial Day post's Socratic challenge. *Not yet integrated* — the post poses the question; these are the footnote cascades that answer it.
+
+== Why these sources are un-dismissable
+
+Ukrainian primary archives (Kyiv-Pechersk Lavra) were destroyed in Muscovite sackings. The bedrock survives in *Byzantine and Roman* custody — Constantinople, Rome, Venice — libraries Muscovy could not burn. So the facts that break the "russians have always been russians" narrative are not Ukrainian sources an opponent can wave off; they are the Byzantine emperor, the Pope, and Habsburg/English/Jesuit ambassadors.
+
+* *Tier 1 (Byzantine/Roman primary):* Constantine VII, _De Administrando Imperio_ (~950, Codex Parisinus gr. 2009); Patriarch Photios, Homilies III–IV (860); Florence Union _Laetentur caeli_ (1439, signed by Isidore of Kyiv); Innocent IV ↔ Daniel of Galicia, _Rex Russiae_ 1253; Bessarion library → Biblioteca Marciana (1468).
+* *Tier 2 (Western diplomatic eyewitness of Muscovy):* Herberstein, _Rerum Moscoviticarum Commentarii_ (1549, Habsburg ambassador, Slovene-speaker who questioned Muscovites directly); Possevino, _Moscovia_ (1586); Fletcher, _Of the Russe Common Wealth_ (1591); Olearius (Schleswig 1656, Holstein embassy 1630s).
+* *Tier 3 (synthesis):* Plokhy, Hrushevsky, Hrytsak, Pelenski, Ostrowski, Keenan, Halperin.
+* *Tier 4 (contested):* RF state historiography — named only where it diverges.
+
+== Summary
+
+|===
+|# |Claim |Verdict |Primary anchor
+
+|1 |"Russian Empire" proclaimed 1721; Muscovy → Russia |Strong w/ refinement |Tier 2 diplomatic record + Senate Acts 22 Oct 1721
+|2 |Lomonosov's _Russian Grammar_ 1755 |Strong |Imperial Academy of Sciences
+|3 |Pushkin codified modern literary Russian |Strong |Universally accepted
+|4 |Peter spoke German/Dutch; court non-Russian for technical work |Strong |Tier 2 (Olearius, German Quarter)
+|5 |Catherine German-born; nobility French at home |Strong |Tier 3 (Lotman) + Tolstoy
+|6 |Muscovy expanded over Finno-Ugric populations |Strong |Tier 1 (Herberstein names them) + genetics
+|7 |Golden Horde ~240 yrs; deep Turkic admin impact |Strong |Tier 1 (DAI) + Ostrowski
+|8 |Russians appropriated the Rus' name |Strong; contested only by RF state |Tier 1: DAI separates Slavs from Rus'; Florence 1439
+|9 |Church Slavonic liturgical/literary, not street |Strong |Tier 2 (Herberstein observes diglossia)
+|10 |What Muscovites actually spoke under Peter/Catherine |Strong (regional East Slavic vernacular) |Tier 2 eyewitness
+|===
+
+*Headline:* the bedrock receipt is Constantine VII writing in Greek in Constantinople ~950 — before Moscow existed — explicitly treating "Slavs" and "Rus'" as separate peoples. With the 1439 Florence Union (Kyiv signed; Moscow rejected and broke communion), the "russians descend from Kyivan Rus'" narrative collapses on contact with non-Russian primary sources. Cleanest single anchor: *305 years ago (1721)*, Peter's rebrand year.
+
+'''
+
+== Footnote-ready phrasings (deployable) + sources
+
+=== 1 — 1721 rebrand
+
+____
+
+On 22 October (2 November) 1721, Peter I accepted from the Senate and Synod the title _Imperator Vserossiyskiy_ — Emperor of All Russia — transforming what every Western diplomatic source had called _Muscovia_ (Herberstein 1549; Possevino 1586; Fletcher 1591; Olearius 1647) into the _Russian Empire_. The Greek-derived "Rossiya" was a deliberate Petrine construct pushed against the persistent Western "Muscovy" label. Moscow's internal self-designation as "Russia" dated to Ivan IV's 1547 coronation, but the international rebrand only stuck in 1721. See Plokhy, _Origins of the Slavic Nations_ (Cambridge UP, 2006).
+
+____
+
+Refinement: the defensible claim is "*Europe* didn't recognize the name 'Russia' until Peter forced it in 1721," not "Muscovy never called itself Russia" (internally it did from 1547). 1721 = 305 years before 2026.
+Sources: https://www.britannica.com/biography/Peter-the-Great[Britannica — Peter the Great]; https://en.wikipedia.org/wiki/Tsardom_of_Russia[Wikipedia — Tsardom of Russia]; Herberstein (1549) https://en.wikipedia.org/wiki/Notes_on_Muscovite_Affairs[overview]; Olearius (1656) https://en.wikipedia.org/wiki/Adam_Olearius[Wikipedia]; Plokhy, _Origins of the Slavic Nations_ (2006).
+
+=== 2 — Lomonosov 1755
+
+____
+
+The first systematic grammar of vernacular Russian — Mikhail Lomonosov's _Rossiyskaya Grammatika_ — was printed by the Imperial Academy of Sciences in 1755, only 271 years ago. Before Lomonosov, written communication in Muscovy used either Church Slavonic (liturgical-literary) or chancery Russian (administrative koine), with no codified vernacular standard.
+
+____
+
+Refinement: "first" holds with "of vernacular Russian as distinct from Church Slavonic" — Smotrytsky's _Slavonic Grammar_ (1619) was first of the Slavonic tradition.
+Sources: https://en.wikipedia.org/wiki/Mikhail_Lomonosov[Wikipedia — Lomonosov]; https://www.britannica.com/summary/Mikhail-Vasilyevich-Lomonosov[Britannica]; https://www.riash.ru/jour/article/view/1619?locale=en_US["Kaverina, peer-reviewed"].
+
+=== 3 — Pushkin
+
+____
+
+Modern literary Russian — the language of Tolstoy and Dostoevsky — was substantially the work of Alexander Pushkin (1799-1837). His _Eugene Onegin_ (completed 1833) fused the Church Slavonic high style, the French-influenced salon register, and the vernacular into a single literary idiom. That makes the _modern_ Russian literary language only about 190-200 years old — younger than the United States.
+
+____
+
+Sources: https://en.wikipedia.org/wiki/History_of_the_Russian_language[Wikipedia — History of the Russian language]; https://www.researchgate.net/publication/357140467_PUSHKIN'S_LANGUAGE_AND_RUSSIAN_LITERARY_LANGUAGE["ResearchGate, peer-reviewed"].
+
+=== 4 — Peter's languages
+
+____
+
+Peter I — the first Russian _Emperor_ (1721) — was raised in the German-Dutch foreign quarter of Moscow described firsthand by Adam Olearius in the 1630s. He worked in Dutch shipyards during the Grand Embassy of 1697-98, ran his naval administration in Dutch and his military and mining administration in German. Roughly 3,500 Western European loanwords entered Russian during his reign, about a quarter from Dutch alone.
+
+____
+
+Sources: https://en.wikipedia.org/wiki/Peter_the_Great[Wikipedia — Peter the Great]; https://en.wikipedia.org/wiki/Grand_Embassy_of_Peter_the_Great[Grand Embassy]; Olearius (1656), Tier 2.
+
+=== 5 — Catherine / French nobility
+
+____
+
+Catherine the Great was born Princess Sophie of Anhalt-Zerbst (1729) in what is now Poland; German was her first language, French her court and correspondence language, and she learned Russian as an adult, never speaking it without a German accent. Through the late 18th and early 19th centuries, the Russian high nobility used French at home and Russian primarily to give orders to servants and soldiers — a diglossia documented in Tolstoy's _War and Peace_ (which opens in French, not as satire but as period-realistic depiction).
+
+____
+
+Sources: https://en.wikipedia.org/wiki/Catherine_the_Great[Wikipedia — Catherine the Great]; https://www.polyglottistlanguageacademy.com/language-culture-travelling-blog/2025/9/8/the-influence-of-french-on-19thcentury-russian-nobility[French on 19th-c. Russian nobility]; Lotman, _Conversations on Russian Culture_ (1994).
+
+=== 6 — Finno-Ugric substrate
+
+____
+
+The territories that became the core of Muscovy were inhabited from prehistory by Finno-Ugric peoples — Merya, Muroma, Meshchera, Mordvins, Mari, Vepsians, Chud, Permians — many of whom Constantine VII Porphyrogenitus (Constantinople ~950) and the Habsburg ambassador Sigismund von Herberstein (Moscow 1517 and 1526) observed and named directly. Russian toponyms in the Muscovy core (including "Moskva" itself) are overwhelmingly non-Slavic in origin.
+
+____
+
+Refinement: RF historiography says "Russians are just Slavs who lived next to Finno-Ugric neighbors"; the genetic/toponymic/eyewitness record says the _populations_ were the same — only language and political identity changed.
+Sources: Constantine VII, _DAI_ ch. 9, 37 — https://faculty.washington.edu/dwaugh/rus/texts/constp.html[text (U. Washington)], critical ed. Moravcsik &amp; Jenkins (Dumbarton Oaks 1967); Herberstein (1549); Olearius (1656); https://en.wikipedia.org/wiki/Volga_Finns[Wikipedia — Volga Finns].
+
+=== 7 — Golden Horde
+
+____
+
+The Muscovite state was tributary to the Mongol/Tatar Golden Horde from 1237 to 1480 — 243 years. The Muscovite administrative apparatus (taxation, postal system, military registration, the dual Boyar/military structure) was modeled directly on Qipchaq Khanate practice; roughly 1,500 Turkic loanwords entered Russian via this contact, especially in administration, finance, and material culture (Ostrowski, _Muscovy and the Mongols_, Cambridge UP, 1998). The Habsburg ambassador Herberstein observed the surviving Tatar administrative legacy in Moscow as late as 1517-26.
+
+____
+
+Note: Ostrowski shows anti-Tatar rhetoric and Kyiv-inheritance claims both emerge in Muscovite sources only after 1448 — the two ideological constructions are linked. Loanwords: _dengi, tamozhnya, kazna, yam, altyn, bazar, karandash, kaftan, ataman, kazak, kremlin_.
+Sources: Ostrowski (1998) https://networks.h-net.org/node/10000/reviews/10181/martin-ostrowski-muscovy-and-mongols-cross-cultural-influences-steppe[H-Net review]; https://en.wikipedia.org/wiki/Golden_Horde[Wikipedia — Golden Horde]; https://www.britannica.com/place/Russia/Tatar-rule[Britannica — Tatar rule]; https://www.e3s-conferences.org/articles/e3sconf/pdf/2023/50/e3sconf_interagromash2023_03015.pdf["E3S, peer-reviewed (Turkic loanwords)"].
+
+=== 8 — Appropriation of the Rus' name (the load-bearing claim)
+
+____
+
+The argument that Muscovy/Russia _appropriated_ the name "Rus'" from Kyivan Rus' as a political claim is anchored not just in Ukrainian and Western academic synthesis (Hrushevsky 1898 onward; Pelenski, _Contest for the Legacy of Kievan Rus'_, 1998; Plokhy, _Origins of the Slavic Nations_, 2006), but in primary Byzantine and Roman sources Muscovy could not edit: Constantine VII's _De Administrando Imperio_ (Constantinople, ~950) explicitly distinguishes "Rus'" from "Slavs," centers Rus' at Kyiv, and lists Dnieper-rapids names in both Old Norse and Slavonic. The Union of Florence (6 July 1439) was signed by Metropolitan Isidore of Kyiv-and-all-Rus'; Moscow rejected the Union, imprisoned Isidore, and declared autocephaly in 1448 — breaking ecclesiastical communion with the rest of Orthodoxy and beginning the "Third Rome" project that retroactively claimed the Kyivan inheritance. Pope Innocent IV crowned Daniel of Galicia _Rex Russiae_ in 1253, recognizing the Galician-Volhynian line (not Vladimir-Suzdal-Moscow) as Rus'. The Russian Federation's official position (Putin, "On the Historical Unity of Russians and Ukrainians," July 2021) contradicts all of this primary evidence.
+
+____
+
+The four Tier-1 claims, in brief:
+1. *DAI ~950* — Rus' descend from Kyiv in _monoxyla_ with tribute collected from the Slavs; rapids named in "Rhosic" (Old Norse) and "Slavonic"; Rus' centered at Kyiv (Moscow's first chronicle mention is 1147).
+2. *Photios 860* — earliest external attestation: Rus' as "an obscure people" raiding Constantinople from Viking-led Kyiv, not a Muscovite proto-state.
+3. *Florence 1439 / autocephaly 1448* — the decisive ecclesiastical break: "Rus'" was Kyiv canonically; Moscow broke away, then built Third-Rome ideology to backfill the claim.
+4. *Daniel of Galicia 1253* — the only medieval Catholic coronation of a Rus' ruler, and it was Galicia-Volhynia, not the Moscow line.
+Sources: _DAI_ https://faculty.washington.edu/dwaugh/rus/texts/constp.html[text] / https://en.wikipedia.org/wiki/De_Administrando_Imperio[overview]; Photios — Mango, _Homilies of Photius_ (Dumbarton Oaks 1958); https://en.wikipedia.org/wiki/Council_of_Florence[Council of Florence] / https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CF%5CL%5CFlorenceChurchUnionof.htm[Union of Florence (Ukraine)]; https://en.wikipedia.org/wiki/Crown_of_Rus[Crown of Rus] / https://www.researchgate.net/publication/292073081_Letters_of_pope_innocent_IV_to_daniel_galitsky_and_all_christians_of_Russia_of_may_3_1246_bull_cum_is_qui_Text_translation_commentary[Innocent IV letters to Daniel]; https://en.wikipedia.org/wiki/Biblioteca_Marciana[Biblioteca Marciana / Bessarion 1468]; Plokhy (2006); Pelenski (1998); Ostrowski (1998).
+
+=== 9 — Church Slavonic diglossia
+
+____
+
+Muscovy was diglossic: Church Slavonic — a South Slavic liturgical-literary language — was used for religion and high literature, a separate chancery Russian for administration, and the actual vernacular (regionally varied East Slavic) was what people spoke. The Habsburg ambassador Herberstein (1517, 1526), a Slovene-speaker who could understand spoken Muscovite directly, documented this firsthand. The transition of _literary_ writing to a vernacular base was gradual, completed only in Pushkin's generation in the 1820s-30s.
+
+____
+
+Sources: https://en.wikipedia.org/wiki/Church_Slavonic[Wikipedia — Church Slavonic]; https://en.wikipedia.org/wiki/History_of_the_Russian_language[History of the Russian language]; https://muse.jhu.edu/article/818321/summary[Project MUSE — Russian &amp; Slavonic in 16th-c. Muscovy]; Herberstein (1549).
+
+=== 10 — What Muscovites actually spoke
+
+____
+
+A Muscovite in 1721 spoke regional East Slavic vernacular shot through with Turkic loans (~1,500 words by Vasmer's count) and, in the northeast, Finno-Ugric substrate vocabulary. There was no codified literary standard. By Catherine's reign the gulf between what the peasant spoke and what the nobility used at court (French) was wide enough that they were, in practice, separate speech communities. Lomonosov (1755) began the codification; Pushkin (1820s-30s) completed it. Herberstein (1517, 1526) and Olearius (1630s) both documented the regional vernacular variation firsthand.
+
+____
+
+Note: "creole" (popular online) is technically incorrect; accurate strong claim is heavily layered East Slavic with substantial non-Slavic substrate and superstrate.
+Sources: Herberstein (1549); Olearius (1656); https://en.wikipedia.org/wiki/Old_East_Slavic[Old East Slavic]; https://en.wikipedia.org/wiki/History_of_the_Russian_language[History of the Russian language]; Lotman (1994).
+
+'''
+
+== Recommended anchor: 305 years (1721)
+
+|===
+|Anchor |Year |Punch line
+
+|*305 years* |1721 |"Russia" as an internationally recognized state name dates to 1721. Before then every Western ambassador called it Muscovy. The man who renamed it spoke Dutch and German.
+|271 years |1755 |Russian as a _codified_ language dates only to Lomonosov, 1755.
+|~195 years |~1830 |Modern literary Russian is Pushkin's creation, 1820s-30s — younger than the United States.
+|===
+
+*The strongest Socratic punch.* "What language did russians speak in russia 300 years ago?" is sharpest at 1721, because at that exact moment all of the following are simultaneously true and documented by non-Russian primary sources Muscovy could not edit: the country wasn't called Russia to Europe (it was _Muscovia_); the ruler was a Dutch-and-German-speaking shipwright-emperor raised in Moscow's foreign quarter; there was no codified Russian grammar (34 years off); the administrative state ran on Dutch (navy), German (army), and Tatar-derived chancery practice; the high nobility had begun the French turn Catherine would complete; the vernacular was regional East Slavic with heavy Turkic/Finno-Ugric substrate; and the "Kyivan Rus' inheritance" claim was a constructed ideology dating to the post-1448 autocephaly — contradicted by DAI (~950), the 1439 Florence Union, and Innocent IV's 1253 coronation of Daniel of Galicia. The MAGA reflex — "russians have always been russians speaking russian" — collapses on contact with Byzantine, Roman, Habsburg, English, Jesuit, and Holstein eyewitness sources spanning 800 years before Peter's rebrand.

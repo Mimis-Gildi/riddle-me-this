@@ -1,0 +1,45 @@
+{% assign locale = include.locale | default: site.locale %}
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    {% assign crumbs = page.url | split: '/' %}
+    {% assign archive_path = "" %}
+    {% assign i = 1 %}
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a href="{{ '/' | relative_url }}" itemprop="item"><span itemprop="name">{{ site.data.ui-text[locale].breadcrumb_home_label | default: "Home" }}</span></a>
+      <meta itemprop="position" content="{{ i }}" />
+    </li>
+    <span class="sep">{{ site.data.ui-text[locale].breadcrumb_separator | default: "/" }}</span>
+    {% for crumb in crumbs offset: 1 %}
+      {% unless forloop.last %}
+        {% assign i = i | plus: 1 %}
+        {% assign crumb_size = crumb | size %}
+        {% assign categories_str = page.categories | join: "," %}
+        {% assign is_category = false %}
+        {% if categories_str contains crumb %}{% assign is_category = true %}{% endif %}
+        {% if is_category %}
+          {% assign crumb_href = "/categories/" | append: crumb | append: "/" | relative_url %}
+          {% assign crumb_label = crumb | replace: '-', ' ' | capitalize %}
+        {% elsif crumb_size == 4 and crumb >= "1000" and crumb < "3000" %}
+          {% assign archive_path = "/archive/" | append: crumb %}
+          {% assign crumb_href = archive_path | append: "/" | relative_url %}
+          {% assign crumb_label = crumb %}
+        {% elsif crumb_size == 2 and archive_path != "" %}
+          {% assign archive_path = archive_path | append: "/" | append: crumb %}
+          {% assign crumb_href = archive_path | append: "/" | relative_url %}
+          {% assign crumb_label = crumb %}
+        {% else %}
+          {% assign crumb_href = crumb | append: "/" | relative_url %}
+          {% assign crumb_label = crumb | url_decode | replace: '-', ' ' | capitalize %}
+        {% endif %}
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="{{ crumb_href }}" itemprop="item"><span itemprop="name">{{ crumb_label }}</span></a>
+          <meta itemprop="position" content="{{ i }}" />
+        </li>
+        <span class="sep">{{ site.data.ui-text[locale].breadcrumb_separator | default: "/" }}</span>
+      {% else %}
+        <li class="current"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>{{ page.title }}</li>
+      {% endunless %}
+    {% endfor %}
+  </ol>
+</nav>

@@ -1,8 +1,6 @@
 ---
 categories: [reflections]
 tags: [AI, Agentic AI, Security, Enterprise, Zero-Day, OpenClaw, Claude Code]
-excerpt: >
-    92% of AI-generated codebases ship with critical vulnerabilities. Your AI is writing your vulnerabilities.
 classes: wide
 comments: false
 hidden: false
@@ -10,7 +8,8 @@ search: false
 read_aloud: false
 ---
 = AI-maggedon 2026: Synopsis
-:imagesdir: ./assets/images
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 include::../_fragments/2026-04-23-ai-maggedon-links.adoc[]
 include::../_fragments/2026-04-23-ai-maggedon-primer-links.adoc[]
 :hero-alt: A wizard hacker codes calmly through an apocalypse -- \
@@ -24,7 +23,7 @@ include::../_fragments/2026-04-23-ai-maggedon-hero.adoc[]
 
 .The world ends as crackers eat up cog. The hacker works.
 [#img-hero]
-image::/riddle-me-this/assets/images/wizard-1.png[{hero-alt}]
+image::wizard-1.png[{hero-alt}]
 
 {nbsp}
 
@@ -93,14 +92,14 @@ I could not even break her loose, floored, black smoke bellowing, ripping tarmac
 _Are you sure you want to be in this position?! No?! -- *then read my blogs!_*
 
 *The frontier is rented.* That is the truth nobody is telling you because they don't know. +
-{openrouter}[openrouter.ai,window=_blank] -- {openrouter-rankings}[the rankings,window=_blank] tell the story;
+{openrouter-url}[openrouter.ai,window=_blank] -- {openrouter-rankings}[the rankings,window=_blank] tell the story;
 {artificial-analysis}[artificialanalysis.ai,window=_blank] tells the same story neutrally.
 
 '''
 
 .John Frum effigy, Tanna, New Hebrides, 1960. Photo by David Attenborough. The cargo never came back -- so they carved the god out of wood and waited.
 [link={commons-john-frum-effigy}]
-image::/riddle-me-this/assets/images/John_Frum_effigy_1960.jpg[Wooden effigy of John Frum, carved 1960, Tanna island]
+image::John_Frum_effigy_1960.jpg[Wooden effigy of John Frum, carved 1960, Tanna island]
 {nbsp}
 
 

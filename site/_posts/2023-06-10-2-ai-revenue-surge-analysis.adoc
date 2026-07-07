@@ -8,9 +8,8 @@ comments: true
 ---
 = $10M AI Revenue Surge: What's Actually Bought
 rdd13r
-:scene-presented-original: link:/riddle-me-this/adventures/2023/06/10/LLMs-what-good-for.html[Medium (AI in 2024: The Future is …?),window=_blank]
 
-_Originally published June 10, 2023 -- excerpt from {scene-presented-original}_
+_Originally published June 10, 2023 -- excerpt from {llms-what-good-for}_
 
 In mid-2023, I documented an unprecedented market phenomenon that predicted the enterprise AI crisis we see today.
 A network of independent developers I track generated over $10M in AI contracts within just a few months -- with an unexpected twist about who was buying.

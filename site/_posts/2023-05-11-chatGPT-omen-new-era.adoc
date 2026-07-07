@@ -4,35 +4,30 @@ tags: [Medium,Executive]
 excerpt: >
   The disparity between expert and complacent developers is exacerbated by emerging AI.
 comments: true
+classes: wide
 ---
 = The Bright Era Dawns: AI, Moore's law, and Beyond
 rdd13r
-:blog-url: https://mimis-gildi.github.io/riddle-me-this/
-:blog-title: Creative Engineering at Scale
-:blog-link: {blog-url}[{blog-title}]
-:mm-newsletter: R!dd13r
-:pub-mm: as published on Medium by {mm-newsletter}
-:mm-current-article: The Bright Era Dawns: AI, Moore’s Law, and Beyond
-:ff-mm-current-article: footnote:[{mm-current-article} {pub-mm}]
-:prior-article: link:/riddle-me-this/reflections/populism/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A 'Doze' of Reality]
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
+:prior-article: {chatgpt-will-replace}
 :ff-prior-article: footnote:prior[{prior-article}]
 
 :alt-head-in-the-sand: Head in the Sand -- The general public pretends that there is nothing happening; nothing to impact their lives negatively; nothing to uproot "business as usual"
 :alt-just-buy-a-tool: No need to learn, just buy a bigger tool -- When sentiment engine is asked to evaluate the scared complacent public it thinks people will look for a bigger hammer to buy
 :alt-how-competent-is-the-cog: How skilled is the developer -- A sentiment tool analyzing technology adoption of to one thousand American companies concludes the developer is inherently incompetent
 
-:ycombinator-news: link:https://news.ycombinator.com/item?id=26824415[Y Combinator,window=_blank]
-:artnet-idiot: link:https://www.artnet.com/artists/don-maitz/the-idiot-x1Vi3F6S7g3JIJEwcPT3jw2[The Idiot - Don Maitz,window=_blank]
-:asei-systems: link:https://www.asei.systems/[ASE Inc.,window=_blank]
-:autogpt-github: link:https://github.com/Significant-Gravitas/Auto-GPT[Auto-GPT,window=_blank]
+:y-combinator-news: https://news.ycombinator.com/item?id=26824415[Y Combinator,window=_blank]
+:artnet-idiot: https://www.artnet.com/artists/don-maitz/the-idiot-x1Vi3F6S7g3JIJEwcPT3jw2[The Idiot - Don Maitz,window=_blank]
+:autogpt-github: {autogpt}
 
 ChatGPT's debut has been a wake-up call, revealing the velocity of AI evolution.
 Yet, the real, profound change causing such sensations often goes unnoticed: we're nearing the end of Moore's law, the driving force behind computing's exponential growth.
 This risk was the real trigger leading to LLMs debut.
 
 .Public Reaction to ML Evolution
-[#img-laggard,link={ycombinator-news}]
-image::/riddle-me-this/assets/images/reaction-to-ChatGPT.jpg[{alt-head-in-the-sand},800]
+[#img-laggard,link={y-combinator-news}]
+image::reaction-to-ChatGPT.jpg[{alt-head-in-the-sand},1200]
 
 (Licensed Reproduction)
 
@@ -69,13 +64,13 @@ Conversely, an expert who consults ML on a sophisticated algorithm they've craft
 
 .Need to buy a bigger hammer.
 [#img-cog,link={artnet-idiot}]
-image::/riddle-me-this/assets/images/ai-the-idiot-by-don-maitz.png[{alt-just-buy-a-tool},800]
+image::ai-the-idiot-by-don-maitz.png[{alt-just-buy-a-tool},width=600]
 
 (Image by DALL-E; Based on The Idiot, 1995, by Don Maitz)
 
 .Corporate developer and ML.
 [#img-idiot,link={artnet-idiot}]
-image::/riddle-me-this/assets/images/ai-the-idiot-coder.png[{alt-how-competent-is-the-cog},800]
+image::ai-the-idiot-coder.png[{alt-how-competent-is-the-cog},width=600]
 
 (The Idiot, 1995, by Don Maitz; Licensed Reproduction.)
 
@@ -83,7 +78,7 @@ image::/riddle-me-this/assets/images/ai-the-idiot-coder.png[{alt-how-competent-i
 
 == Augmentation: Shaping the Future of Coding
 
-In 2019, our parent company, {asei-systems}, faced a harsh reality when our primary financier and client hostilely assumed control over our ML orchestration startup.
+In 2019, our parent company, ASE Inc., faced a harsh reality when our primary financier and client hostilely assumed control over our ML orchestration startup.
 As a business neophyte, I was taken aback.
 In retrospect, this incident underscored the relentless momentum of ML evolution and the sway it holds with investors.
 It signaled a global transition.
@@ -91,8 +86,8 @@ By 2020, ML code generation in IDE had penetrated the hacker circles in the East
 From that point forward, all proprietary code at ASE has been entirely machine-augmented.
 
 .Hacker Immersed in Coding by 2-way conversation
-[#img-hacker,link={asei-systems}]
-image::/riddle-me-this/assets/images/hacker-at-work.jpg[A programmer fully immersed in his work in the office,800]
+[#img-hacker]
+image::hacker-at-work.jpg[A programmer fully immersed in his work in the office,align=center,width=800]
 
 (Depositphotos Licensed Reproduction)
 
@@ -174,7 +169,3 @@ _I am not affiliated with the project above._
 
 Give augmentation tools a try.
 See what it can do for you.
-
-'''
-
-_See editorial on Medium {ff-mm-current-article}_.

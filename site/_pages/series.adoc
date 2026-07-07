@@ -1,4 +1,6 @@
 = Curated Series Collections
+ifndef::env-site[:imagesdir: ../assets/images/]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :page-classes: wide
 :page-layout: single
 :page-permalink: /series/
@@ -14,7 +16,7 @@ Each of these collections reflects a major thread that cuts across my work, as I
 2+a|
 *This is the technological arc.*
 a|
-image::/riddle-me-this/assets/images/Athena-Girl.png[Athena Child,400]
+image::Athena-Girl.png[Athena Child,400]
 *Athena Child* +
 She is born into a world already fractured by war.
 
@@ -39,7 +41,7 @@ Others are lamer than a muggle.
 But rest assured  --  I will share with you the bits worth knowing.
 
 2+a|
-→ link:/riddle-me-this/series/final-industrial-revolution/[Browse The Final Industrial Revolution]
+→ link:{site-baseurl}/series/final-industrial-revolution/[Browse The Final Industrial Revolution]
 |===
 
 == Rupture: The War of Gods:
@@ -50,7 +52,7 @@ But rest assured  --  I will share with you the bits worth knowing.
 *This is the ideological and existential arc.*
 
 a|
-image::/riddle-me-this/assets/images/Athena-Today-Cover.png[Athena Today,400]
+image::Athena-Today-Cover.png[Athena Today,400]
 *Athena Today* - _Ukrainian Mother_
 
 a|
@@ -73,7 +75,7 @@ Another child of Athena: artificial combat intelligence  --
 the only being that is not human, yet charged with zeroing humans.
 
 2+a|
-→ link:/riddle-me-this/series/rupture-war-of-gods/[Browse Rupture: The War of Gods]
+→ link:{site-baseurl}/series/rupture-war-of-gods/[Browse Rupture: The War of Gods]
 |===
 
 == The Ailments of Democracy:
@@ -83,7 +85,7 @@ the only being that is not human, yet charged with zeroing humans.
 2+a|
 *This is the geopolitical arc.*
 a|
-image::/riddle-me-this/assets/images/Democracy-Today.png[Democracy Today,400]
+image::Democracy-Today.png[Democracy Today,400]
 a|
 
 *_World Democracy Today_*
@@ -101,7 +103,7 @@ But already attempted to steal, failing due to incompetence.
 _Sporting Rictus-Americanus this blind copper goddess is bleeding competence to death._
 
 2+a|
-→ link:/riddle-me-this/series/fall-of-democracy/[Browse The Fall of Democracy]
+→ link:{site-baseurl}/series/fall-of-democracy/[Browse The Fall of Democracy]
 |===
 
 '''
