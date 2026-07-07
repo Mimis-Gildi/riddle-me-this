@@ -188,7 +188,7 @@ Be wise! Mind your family first.{fn-pl-interia-vassal}{fn-tvn24-settlements}{fn-
 1) World Pillar of Democracy is Ukraine. US has no morals for it::
 
 We spent half a millennium to convince the world that we're on the side of light. +
-And we destroyed all of it by betraying Ukraine. We allied with the aggressor.
+And we destroyed all of it by betraying Ukraine. We allied with the aggressor. ({art-seven-betrayals})
 - {spider-web-url}[Operation Spider Web,window=_blank] removed our "nuclear power infallible" excuse.
 - {zz-fix-america-url}[Zelensky's open letter to Putin,window=_blank] removed the last fig leaf of
 diplomatic cover for managing this war on russia's behalf.
@@ -262,6 +262,7 @@ Ukraine will mourn ~60,000 military personnel perished *since 2014* by this year
 - *_Every day the war in Ukraine is an order of magnitude more intense than the Iran war -- US got spent in 6 weeks._*
 
 _We showed the world how weak, inept, ineffective, ignorant, and *arrogant* we are._ Rome did too.
+({art-war-end} maps where it all leads.)
 
 5) Ukraine just benched Most Consequential Geopolitical Force::
 We have zero leverage over Ukraine. +

@@ -23,12 +23,6 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :f-1: https://en.wikipedia.org/wiki/Rocketdyne_F-1[F-1 candle,window=_blank]
 :pendos: https://en.wiktionary.org/wiki/%D0%BF%D0%B8%D0%BD%D0%B4%D0%BE%D1%81[pendos (unsophisticated),window=_blank,opts=nofollow]
 :the-good-liars-state-fair-250-url: https://youtu.be/8oHcCKtlIiM
-:art-seven-betrayals: link:{site-baseurl}/reflections/2026/07/01/seven-betrayals.html[Seven Betrayals,window=_blank]
-:art-qanon: link:{site-baseurl}/reflections/2026/07/01/gru-project-qanon.html[GRU Project QAnon: Russia's Greatest American Victory,window=_blank]
-:art-war-end: link:{site-baseurl}/reflections/2026/07/01/what-does-war-end-mean.html[What Does "War End" Mean?,window=_blank]
-:art-ukraine-replaces: link:{site-baseurl}/reflections/2026/07/01/ukraine-replaces-america.html[Ukraine Replaces America,window=_blank]
-:art-klemo: link:{site-baseurl}/reflections/2026/07/01/klemo.html[klemo's war,window=_blank]
-:art-institutionalized: link:{site-baseurl}/reflections/2026/06/02/institutionalized-the-lost-demographic.html[Institutionalized: The Lost Demographic,window=_blank]
 
 ++++
 <style>.page__hero--overlay { background-position: center 80%; }</style>
@@ -115,6 +109,7 @@ You aren't _him_!
 - {art-ukraine-replaces} -- democracy, weapons, innovation, military, geopolitics. +
 Not because they "try to." They don't care one way or another. *Because we fail!* +
 (but Maga win)
+- {art-roosevelt-stalin} -- Stalin's chicken method: autocracy explained through a 1987 Ukrainian teacher.
 
 == Some Personal Experiences on the Matter:
 

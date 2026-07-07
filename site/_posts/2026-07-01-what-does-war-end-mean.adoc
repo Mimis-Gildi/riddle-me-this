@@ -1,9 +1,14 @@
 ---
 categories: [reflections]
 tags: [Ukraine, Russia, War, Analysis, Democracy, ISW, Mathematics]
+header:
+  overlay_image: /assets/images/Bucha_main_street_2022-04-06_0804.jpg
+  overlay_filter: 0.3
+  caption: "Putin knows he lost the war. But that doesn't matter..."
+
 excerpt: >
-  People ask WHEN the war will end. Nobody asks HOW.
-  One question has an answer. The other is just math.
+  People ask WHEN Ukraine war will end... Nobody asks HOW!!
+  One question has NO answer. The other is just ordinary math.
 classes: wide
 comments: true
 hidden: false
@@ -28,6 +33,18 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :triggernometry-browder: {triggernometry-browder-url}[{triggernometry-browder-text},window=_blank]
 :magnitsky-act: https://en.wikipedia.org/wiki/Magnitsky_Act[Magnitsky Act,window=_blank]
 :rehi-smart-russian-url: https://youtu.be/LSa6YYFrv3E?t=1070
+
+++++
+<style>
+.page__hero--overlay { background-position: center center; }
+  .page__hero--overlay .page__lead {
+    color: rgba(255,255,255,0.65);
+    margin: 15% 30% 0;
+    text-align: justify;
+    width: 1200px;
+  }
+</style>
+++++
 
 People who follow my OSINT and analytics work ask me *"WHEN will the war end?"*
 
@@ -156,6 +173,7 @@ The primary goal was more problematic with the likes of Yevgeny Prigozhin, as se
 marching on Moscow. This incident, however, demonstrated the resilience of Putin's Patronage leading him to
 complete the consolidation. The loss of the war with Ukraine doesn't signify loss to Putin. +
 *_Only personal loss of power signifies a loss to Putin._*
+_{art-roosevelt-stalin} is the parable._
 ====
 
 {nbsp}
@@ -333,9 +351,9 @@ To me, other conclusions and assessments are far more valuable:
 
 . Russian terminal demographic exacerbated by the war puts russians (Merya, Muroma, Meshchera, and Veps) on the extinction path.
 . Having the greatest resources around russia squandered its wealth due to a lack of "freedom gene."
-. This war is the greatest thing that happened to Ukraine, inevitably restoring the nation.
+. This war is the greatest thing that happened to Ukraine, inevitably restoring the nation. ({art-ukraine-replaces} documents the replacement.)
 . My 'Merica had a unique chance to lead, profit, and prosper with Georgia, Armenia, Chechnya, and Ukraine but
-instead chose dishonor, ignorance, shortsightedness, and guaranteed loss.
+instead chose dishonor, ignorance, shortsightedness, and guaranteed loss. ({art-seven-betrayals} is the ledger.)
 
 == Important for the USA:
 
