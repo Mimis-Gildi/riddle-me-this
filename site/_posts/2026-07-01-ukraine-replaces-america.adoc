@@ -84,7 +84,7 @@ It's much worse. They see us as *_stupid_*. Or even more insulting -- *_incompet
 They also don't see us leading in technology, any technology, and are actively working
 to ban American software and even hardware. But there certainly must be things we do well.
 
-*Oh, I know:* We got the smartest mil-tech marvels with `F-22`, `F-35`, cuz stealth, and sheet. +
+*Oh, I know:* We got the smartest mil-tech marvels with `F-22`, `F-35`, cuz stealth, and shiet. +
 *_No, wait!_* _That's American armchair-general YouTuber self-stroking. Blackwater founder sees
 things differently -- the old Vympel R-37 gets that `F-35` spanked surprised every time 300 miles out.
 Calls it "expensive useless garbage too precious to deploy on any near-peer real mission."_
@@ -133,7 +133,7 @@ The Reflecting Pool in Washington is painted "American flag blue" and is green w
 Our president said that everything he touched turns to refuse. (Or gold? Both? He says stuff.)
 
 Trump is very busy and spectacularly active for his age. He says and does many important things. +
-Problem is nobody wants him to touch anything anymore. Not even MAGA in their civil war.
+The problem is nobody wants him to touch anything anymore. Not even MAGA in their civil war.
 
 Meanwhile, a besieged nation one-sixth our size, under full-scale invasion for four years,
 is quietly replacing us on every axis we used to define ourselves on.
@@ -152,7 +152,7 @@ lives for months or even years in the hands of Ukrainian defenders.
 
 .Residential highrise neighborhood moment of impact by a ballistic missile. {reuters-russia-kyiv-residential-attack-url}[Reuters.,window=_blank]
 [#img-kyiv-residential-attack,link={reuters-russia-kyiv-residential-attack-url}]
-image::russia-kyiv-residential-2026-07-06.png[Russia's warcrime attack in residential highrise playground,window=_blank]
+image::russia-kyiv-residential-2026-07-06.png[russia's warcrime attack in residential highrise playground,window=_blank]
 ====
 
 [CAUTION]
@@ -191,7 +191,7 @@ We spent half a millennium to convince the world that we're on the side of light
 And we destroyed all of it by betraying Ukraine. We allied with the aggressor.
 - {spider-web-url}[Operation Spider Web,window=_blank] removed our "nuclear power infallible" excuse.
 - {zz-fix-america-url}[Zelensky's open letter to Putin,window=_blank] removed the last fig leaf of
-diplomatic cover for managing this war on Russia's behalf.
+diplomatic cover for managing this war on russia's behalf.
 
 2) Smart Weapons Supplier is Ukraine. Nobody wants our junk::
 
@@ -236,7 +236,7 @@ NOTE: The Palantir CEO rode a train to Kyiv to beg for IP years later.
 NB8 - Nordic Baltic Eight: Denmark, Estonia, Finland, Iceland, Latvia, Lithuania, Norway, and Sweden.
 These are all historic relatives of Kyivan Rus' -- Muscovy isn't, despite calling itself that; it was just a colony.
 
-Also, USA, China, Russia, etc. -- are explicitly banned. Care to guess why that is?
+Also, USA, China, russia, etc. -- are explicitly banned. Care to guess why that is?
 
 Poland is reeling from Ukraine not sharing tech -- that just because Poland is aligned with the USA.
 ====
@@ -299,7 +299,7 @@ status and benefit from it collectively.
 
 '''
 
-The pool is green. The strait is closed wherever Iran wants. The 4th is quiet! +
-Everywhere sheet grows.
+The pool is green. Iran closes the strait at will. The 4th was quiet! +
+Everywhere shiet grows.
 
 {independence-2026-collector}

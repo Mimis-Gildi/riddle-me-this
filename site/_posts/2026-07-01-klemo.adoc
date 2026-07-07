@@ -2,39 +2,54 @@
 categories: [reflections]
 tags: [Ukraine, America, Veterans, klemo, SOCOM, Azov, Memorial Day]
 excerpt: >
-  MSG klemo. Black Alabama native. 22 years enlisted. Trained Azov in 2015.
-  Came back in 2022 announcing "I'm saving the world!" August 2025 -- nothing left to collect.
+  The real heroes of America never wear red baseball caps. Because they're REAL. They fight real wars.
+  MSG klemo. Black Alabama native. 22 years US Army SOCOM enlisted. Combat-trained Azov in 2015.
+  Came back in 2022 announcing "I'm saving the world!" (by going to Ukraine) He's fallen in battle in August 2025.
+  He's gifted life! More than he knew. And he lives forever. People who remember him don't waste time on bullshit.
 classes: wide
 comments: true
 hidden: false
 search: true
-read_aloud: true
+read_aloud: false
 ---
-= klemo's Story
+= `klemo's` Story
 ifndef::env-site[:imagesdir: ../assets/images]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 
-:nyt-spy-war-url: https://www.nytimes.com/2024/02/25/world/europe/cia-ukraine-intelligence-russia-war.html
-:pbs-azov-lift-url: https://www.pbs.org/newshour/world/u-s-lifts-ban-on-providing-weapons-and-training-for-ukraines-controversial-azov-brigade
-:csm-azov-url: https://www.csmonitor.com/World/Europe/2024/0912/ukraine-nationalism-azov-sanctions-restored-reputation
+:putin-huilo-url: https://youtu.be/ApNCSQpYxAc
+:ultras-putin-url: https://youtu.be/2_Rl_idM0eI
+:wiktionary-katsap: https://en.wiktionary.org/wiki/%D0%BA%D0%B0%D1%86%D0%B0%D0%BF[katsap,window=_blank]
+:footer-putin-huilo: footnote:["Putin is a dickhead" -- lit. Putin + Slavic pejorative suffix for penis. Incorrectly translated in the West as "Putin Fuck-Off." Born March 2014 when Sect 82 -- Metalіst Kharkiv's ultras since 1982 -- chanted it at Kharkiv street marches as russia invaded Donbas. Two months later, those same ultras co-founded Azov. https://en.wikipedia.org/wiki/Putin_khuylo![Origin and spread,window=_blank]; https://uacrisis.org/en/56896-ultras-war[Ultras and the war,window=_blank].]
+
+People tell us _"I can't believe you guys bet the farm on Ukraine like that"_ +
+{nbsp} -- hold up a sec, _not exactly like that_ -- *_on Americans fighting in Ukraine_*.
 
 I owe my life to a good friend and once a battle buddy: black Alabama native, MSG (Ret.) `klemo.`
 
-I medically retired in 2000. He completed his 20+ years and fully retired in 2020.
-I was born in Soviet Ukraine. He met Ukraine in 2015, training the legendary Azov --
-a year into the Russian invasion of Donbas.
+I medically retired in 2000. He completed his 20+ years and fully retired in 2020. +
+I was born in Soviet Ukraine. He met Ukraine in 2015, combat-training the legendary Azov +
+{nbsp} -- about a year into the Russian invasion of Donbas.
 
-The original Azov was nationalist. The Russians will tell you so, loud and often.
-What they won't tell you: the 2014 volunteer militia disbanded.
-Today's 12th Special Forces Azov Brigade is a different unit, vetted under the Leahy Law.
-The US State Department made that finding official in June 2024.footnote:[{pbs-azov-lift-url}[PBS,window=_blank]; {csm-azov-url}[CSM,window=_blank]]
-Today's Azov is the best child of US SFAS.
-Best Americans like `klemo` were more Ukrainian than most people knew.
+This unit should ring a bell -- `путін — хуйло`{footer-putin-huilo} football hooligans russia went to 'denazify.'
 
-Come February 24, 2022, my `klemo` barged into my house announcing *"I'm saving the world!"*
+.Metalіst Kharkiv, 2014 -- the match where `путін — хуйло!` was born. {ultras-putin-url}[Full stadium,window=_blank].
+[#img-putin-huilo,link={putin-huilo-url}]
+image::putin-huilo-kharkiv.png[Metalіst Kharkiv 2014,window=_blank]
+{nbsp}
 
-I did my darndest to talk the old goat out of it. No luck.
+
+Come February 24, 2022, my `klemo` barged into my house announcing +
+{nbsp} {nbsp} *"I'm saving the world! I'm going to Ukraine!"* +
+He had a unique connection to Ukrainian ultras that I didn't, despite being Ukrainian myself.
+
+
+I did my darndest to talk the old soldier out of it. +
+_"The hell you are, you dumb old goat! Your knees hurt -- remember?!"_ +
+No luck.
 Soon my house was full of old grunts packing duffel bags.
+
+US Army SF Group 10 -- America's best sons and daughters do the full tour never getting a {wiktionary-katsap}. +
+And now Ukraine opens season on {wiktionary-katsap} -- in this unit people stopped counting year one.
 
 I knew the International Legion Zelensky announced was not where I wanted my vets.
 And I knew they needed kit, armor, arms, pay, and logistics --
@@ -87,7 +102,7 @@ and those were not just his plans.
 
 We're pregnant. Daddy's not going anywhere. Anton got what he wanted.
 He confessed to his "workable plan" succeeding all along.
-As proof, he presented his "bribing the storks" evidence.
+As proof, he presented his "bribing the storks" as evidence.
 Mama conceded to his logic: our selfless deeds would be rewarded -- karma, why not.
 How can silly daddy argue with such solid reasoning?
 
@@ -100,9 +115,16 @@ image::pupsik-transparenti.png[]
 Khava is her real given name -- Aramaic for "life," the actual name of Adam's wife.
 Eve in English. Zoey in her passport.
 Born with a soft voicebox, completely healthy otherwise.
-Her first year was a struggle: breathing, eating, sleeping, watched 24/7.
-Zoey beat it all by month eighteen with daddy's diligent overfeeding.
-Anton's plan: new sister here = old daddy home.
+Her first year was a struggle: breathing, eating, sleeping; watched 24/7.
+Zoey beat it all by month eighteen with daddy's diligent overfeeding and her refusal to quit.
+Anton's plan: a new sister here = old daddy home.
+
+Little did I know the full meaning of "life" in her name at the time.
+Doctors were sure a natural child for us is not a probability -- stork-bribing or not.
+And as the old Viking-Perun law goes -- life cannot be created or removed -- it can only be traded.
+And we had an early preview: determined, charismatic, violent, relentless little tomboy -- neighbors call her
+"Little General," and she’s drilled her family since she started walking.
+The https://ukraine.ua/faq/volia/[volia (воля),window=_blank] of her ancestors is strong in her blood.
 
 == Closure and Reckoning
 
@@ -125,7 +147,7 @@ And it was. Nothing left to collect.
 
 '''
 
-So far we have suffered one in seven casualties from our own American military family.
+We have suffered one in seven casualties from our American veterans family.
 Half of them forever.
 
 These people are our nation's finest sons and daughters.
@@ -146,3 +168,7 @@ Some will be shamed by their own families, as we now see with MAGA.
 Mind yourself. We can only control ourselves.
 
 And many have.
+
+*_There's no higher honor than risking one's own life for the lives of others._*
+
+`klemo` believed that.
