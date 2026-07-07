@@ -1,11 +1,20 @@
 ---
 categories: [reflections]
 tags: [Ukraine, America, Veterans, klemo, SOCOM, Azov, Memorial Day]
+header:
+  overlay_image: /assets/images/Bucha_main_street_2022-04-06_0804.jpg
+  overlay_filter: 0.3
+  caption: "The real American heroes never wear red baseball dunce caps."
 excerpt: >
-  The real heroes of America never wear red baseball caps. Because they're REAL. They fight real wars.
-  MSG klemo. Black Alabama native. 22 years US Army SOCOM enlisted. Combat-trained Azov in 2015.
-  Came back in 2022 announcing "I'm saving the world!" (by going to Ukraine) He's fallen in battle in August 2025.
-  He's gifted life! More than he knew. And he lives forever. People who remember him don't waste time on bullshit.
+  Real heroes of America don't argue over irrelevant petty vain crap -- like FIFA red card.
+  Because they're REAL, they make real difference in real peoples' lives.
+  Fight real wars, with terminal outcomes -- not verbal diarrhea wars to squeal 'libtards.'
+  MSG klemo, Alabama native, 22 years US Army SOCOM, combat-trained legendary Azov in 2015:
+  from football hooligans to world's most unstoppable force -- literally, Sparta's 300 in Azov Steel.
+  Retires. Then crashes my home in 2022 announcing "I'm saving the world!" And saving he's done plenty.
+  Collected by Valkyries `klemo` crashes mead-horns with Odin and kin since August 2025.
+  He lives forever. People who remember `klemo` won't waste time on petty bullshit.
+  Unlike those who lived never.
 classes: wide
 comments: true
 hidden: false
@@ -20,6 +29,18 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :ultras-putin-url: https://youtu.be/2_Rl_idM0eI
 :wiktionary-katsap: https://en.wiktionary.org/wiki/%D0%BA%D0%B0%D1%86%D0%B0%D0%BF[katsap,window=_blank]
 :footer-putin-huilo: footnote:["Putin is a dickhead" -- lit. Putin + Slavic pejorative suffix for penis. Incorrectly translated in the West as "Putin Fuck-Off." Born March 2014 when Sect 82 -- Metalіst Kharkiv's ultras since 1982 -- chanted it at Kharkiv street marches as russia invaded Donbas. Two months later, those same ultras co-founded Azov. https://en.wikipedia.org/wiki/Putin_khuylo![Origin and spread,window=_blank]; https://uacrisis.org/en/56896-ultras-war[Ultras and the war,window=_blank].]
+
+++++
+<style>
+.page__hero--overlay { background-position: center center; }
+  .page__hero--overlay .page__lead {
+    color: rgba(255,255,255,0.65);
+    margin: 15% 30% 0;
+    text-align: justify;
+    width: 1200px;
+  }
+</style>
+++++
 
 People tell us _"I can't believe you guys bet the farm on Ukraine like that"_ +
 {nbsp} -- hold up a sec, _not exactly like that_ -- *_on Americans fighting in Ukraine_*.
