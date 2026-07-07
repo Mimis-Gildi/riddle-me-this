@@ -1,6 +1,10 @@
 ---
 categories: [reflections]
 tags: [America, Justice, Stoicism, Epictetus, Institutionalized, MAGA, Demographic]
+header:
+  overlay_image: /assets/images/institutionalized-maga.png
+  overlay_filter: 0.5
+  caption: "Are we Independent 250 years since independence?"
 excerpt: >
     A vigil. A MAGA cop. Two days in the Wake County yard.
     The most interesting question I was asked that week came from a tattooed white convict:
@@ -9,10 +13,9 @@ classes: wide
 comments: true
 hidden: false
 search: true
-read_aloud: true
+read_aloud: false
 ---
 = Institutionalized: "You don't belong in America"
-:glory-post: link:{site-baseurl}/reflections/2026/06/02/glory-to-all-heroes.html[Glory to ALL Our Heroes,window=_blank]
 :jake-broe: https://www.youtube.com/@JakeBroe[Jake Broe -- YouTube,window=_blank]
 :epictetus-enchiridion: https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus[Epictetus, The Enchiridion,window=_blank]
 :gulag-archipelago: https://en.wikipedia.org/wiki/The_Gulag_Archipelago[Solzhenitsyn -- The Gulag Archipelago,window=_blank]
@@ -20,6 +23,18 @@ read_aloud: true
 :wake-county-jail: https://en.wikipedia.org/wiki/Wake_County,_North_Carolina[Wake County, North Carolina,window=_blank]
 :russian-freedom-legion: https://en.wikipedia.org/wiki/Freedom_of_Russia_Legion[Freedom of Russia Legion,window=_blank]
 :bucha-massacre: https://en.wikipedia.org/wiki/Bucha_massacre[Bucha massacre,window=_blank]
+
+++++
+<style>
+.page__hero--overlay { background-position: center center; }
+  .page__hero--overlay .page__lead {
+    color: rgba(255,255,255,0.65);
+    margin: 25% 20% 0;
+    text-align: justify;
+    width: 1200px;
+  }
+</style>
+++++
 
 Two days in the slammer provide a good educational experience for me.
 _Don't worry!_ -- False arrest by two cheap city cops on fabricated charges:
@@ -44,7 +59,7 @@ No rights read, no explanation of charges, not even a proper introduction.
 On the way to the pen we talked about life, America, democracy, and wars.
 
 Mike was his name. Small and of short stature like russians typically are -- his heels had quite a lift on them,
-unclear if he was apprehensive of his short stature like Putin or needed it for comfort.
+unclear if he was self-conscious about his short stature like Putin or needed it for comfort.
 
 My hours-long ride to the pen that's 15 minutes away was enlightening!
 Mike was well-informed about the influencers, and we talked about some of them for a while.
@@ -66,7 +81,7 @@ This was an interesting moment, the only time the cop offered anything from hims
 And oh boy, I could have a field day with this. But I am naturally a kind person.
 And at the time Tucker didn't break with MAGA yet, so the admission meant little to me.
 
-_"Tucker developed a set of fallacies he uses for effect. He's shows don't deliver information, facts, or analysis.
+_"Tucker developed a set of fallacies he uses for effect. His shows don't deliver information, facts, or analysis.
 He delivers commentary, opinion, and narrative all in a very clear agenda-driven direction. Unlike Jake,
 he really is an 'influencer' working to sway a person to his side. And Jake is not very good at that."_
 
@@ -82,13 +97,13 @@ _"When someone breaks into my home meaning harm to my family -- I kill them."_
 
 He got visibly discomforted here. Pulled over. Started texting. I kept talking.
 
-_"I understand Ukrainians! These orcs aren't russians like my friends I'd mentioned earlier -- they're katzap.
+_"I understand Ukrainians! These orcs aren't russians like my friends I'd mentioned earlier -- they're katsap.
 Uninvited, they came bearing arms, killed, raped, tortured, and they're still coming for more. Have you heard of {bucha-massacre}?
-Now myself, my children, and my grandchildren will kill katzap as long as we shall live. This will not be forgotten.
-This will not be forgiven. This will never stop. I will teach my children to teach their children to understand katzap nature.
+Now myself, my children, and my grandchildren will kill katsap as long as we shall live. This will not be forgotten.
+This will not be forgiven. This will never stop. I will teach my children to teach their children to understand katsap nature.
 It is generational and it is now permanent."_
 
-*_"This is the only thing you need to understand about Ukraine."_*
+_"This is the only thing you need to understand about Ukraine."_
 
 We didn't talk after that. In the intake room where new heroes are turned over to the guards, I asked him:
 _"Why did you bring me here?"_ He kept fidgeting with my handcuffs and the paperwork he fabricated -- didn't answer
@@ -208,5 +223,7 @@ In the cop's mind, when he was taking me to the pen with his fumbled paperwork, 
 at least temporarily, and the only way he knew how.
 
 The bedrock of this is entitlement. "I am a Christian white American male born in America, so I belong better."
-It is the exact same type of entitlement a drunk russian vatnik feels sitting in his outhouse in muscow suburbs --
+It is the exact same type of entitlement a drunk russian vatnik feels sitting in his outhouse in muscovy suburbs --
 threatened by a brighter, better educated foreigner capable of building a modern running-water toilet for themselves.
+
+{independence-2026-collector}

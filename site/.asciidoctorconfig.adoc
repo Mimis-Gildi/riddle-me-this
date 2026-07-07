@@ -42,6 +42,7 @@
 :hacker-culture: https://en.wikipedia.org/wiki/Hacker_culture[Hacker Culture,window=_blank]
 :hera-school-url: https://gervi-hera-vitr.github.io/sindri-labs/
 :hera-school: https://gervi-hera-vitr.github.io/sindri-labs/[Héra Academy Laboratory,window=_blank,opts=nofollow]
+:independence-2026-collector: link:{site-baseurl}/reflections/2026/07/01/glory-to-all-heroes.html[Freedom Isn't Free! -- collector,window=_blank]
 :integrated-ai-evolution-url: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html
 :integrated-ai-evolution: link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]
 :kimi-k2-thinking: https://huggingface.co/moonshotai/Kimi-K2-Thinking/tree/main
