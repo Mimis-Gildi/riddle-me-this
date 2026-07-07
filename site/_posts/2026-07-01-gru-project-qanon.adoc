@@ -34,9 +34,9 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :footer-simonyan-margarita: footnote:[{simonyan-margarita-url}[FSB colonel Margarita Simonovna Simonyan], with direct access to the body (Putin), was sanctioned by the United States for https://en.wikipedia.org/wiki/Foreign_interference_in_the_2024_United_States_elections[alleged interference in the 2024 United States elections,window=_blank]. OSINT cleanly maps her to projects Qanon and MAGA. She is a widow and was married to another prominent FSB Lt. colonel https://en.wikipedia.org/wiki/Tigran_Keosayan[Tigran Edmondovich Keosayan,window=_blank] who's loss she grieves deeply and blames Ukraine for. (His rank is speculated, but it is known that Margarita outranked Tigran.)]
 
 The most powerful weapon of mass destruction is not a nuke. It's *propaganda*! +
-Everyone wants to claim they've mastered it. Only Russia has.
+Everyone wants to claim they've mastered it. Only russia has.
 
-Russia invented it as statecraft. Catherine II -- a German, not a Russian --
+Russia invented it as statecraft. Catherine II -- a German, not a russian --
 perfected it as a weapon of empire-building. She created values for plebs and rules for the rulers.
 Arguing that autocrats need DUMB slaves and only dumb slaves -- of mind, of values, of faith, and of wealth.
 
@@ -45,7 +45,7 @@ Having hired "psychologists," by today's standard, she devised "wisdom" for peas
 "we will never know the truth", and many more. All the wisdoms were carefully curated and tested by her team.
 
 The one about "truth" is special! The russian language today has two words for "truth," and neither one means "facts."
-Remember, russian language didn't exist yet -- Russians are not Slavs, they're Finno-Ugric people -- she crafted
+Remember, russian language didn't exist yet -- russians are not Slavs, they're Finno-Ugric people -- she crafted
 their _new_ language from Church-Slavonic, which was already considered holy because Ukraine wrote books in it.
 "Pravda" is the word for "truth," and it comes with an exceptional property bestowed by its "wisdom":
 "everyone has their own truth." So, truth is cardinal -- the higher the rank, the stronger the truth.
@@ -62,7 +62,7 @@ plausible deniability for herself coterminously. +
 *Example:* the {potemkin-britannica-url}[Potemkin village,window=_blank] trope
 comes from her 1787 Crimea tour, staged to impress European ambassadors before a war.
 Modern historians now {potemkin-rbth-url}[believe the wooden-village story itself was disinformation,window=_blank] --
-spread by Saxon and Finnish diplomats to make Russia look weak to the Turks.
+spread by Saxon and Finnish diplomats to make russia look weak to the Turks.
 Russia ran a psyop so deep that the psyop about the psyop became history.
 
 *That's the lineage* -- _a weapon-system designed to strike *the gullible* right in the brain!_
@@ -91,7 +91,7 @@ GRU-linked Internet Research Agency accounts amplified QAnon from its first days
 less than two weeks after the first 4chan post.
 {nbc-qanon-url}[#QAnon was the second-most-tweeted hashtag,window=_blank]
 on the 418 Kremlin-tied accounts Twitter purged.
-{thehill-stanford-qanon-url}[Stanford documented Russian and Chinese amplification,window=_blank].
+{thehill-stanford-qanon-url}[Stanford documented russian and Chinese amplification,window=_blank].
 {aljazeera-qanon-url}[Russia-backed state media kept amplifying through 2020,window=_blank].
 The {brookings-mueller-url}[Mueller Report,window=_blank] mapped the broader influence-operations pattern underneath it.
 
@@ -107,7 +107,7 @@ that rural Nebraska, for example, in less than ten years, is all russian-pendos 
 I also remember foolishly dismissing this thought -- that's impossible. +
 _Not in my 'Merica, not in my time -- I thought._
 
-QAnon is one of about a hundred fringe movements Russia intercepted and turned _that we know of_.
+QAnon is one of about a hundred fringe movements russia intercepted and turned _that we know of_.
 It just happened to work best on Americans. And it just happened to all leak out into OSINT because of a bloody
 fight between GRU and FSB for the ownership of the project -- FSB eventually won, albeit bleeding data.
 I am curious about one thing -- was that FSB {simonyan-margarita} project? +
@@ -127,7 +127,7 @@ _{art-seven-betrayals} enumerates the cost to Americans._
 == Their Current Victory is Even More Spectacular
 
 Much more interesting than QAnon is Orkish current "work in progress."
-GRU has convinced a large portion of the American electorate that the outcome of the Russia-Ukraine war depends on Russia.
+GRU has convinced a large portion of the American electorate that the outcome of the Russia-Ukraine war depends on russia.
 And it depends on Trump. Factually, it depends on neither! Russia is all in already. And Trump has ZERO leverage over Ukraine.
 _{art-war-end} runs the model._
 
@@ -147,8 +147,8 @@ c) And, innately residual to pendos' core psyche.
 
 So now, in every geopolitical model since July 2024, this war resolves along exactly two axes:
 
-. The ones who are trying to save Russia.
-. The ones who don't care about Russia.
+. The ones who are trying to save russia.
+. The ones who don't care about russia.
 
 The screen is *cheap*. The effect is remarkable!
 
