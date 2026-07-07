@@ -1,0 +1,40 @@
+= Independence Day 2026 -- Style Analysis
+Claude, for Vadim
+
+== 3.1 Residual LLM Constructions
+
+[cols="3,2,1"]
+|===
+| Phrase | Article | Line
+
+| "Let's first answer" | what-does-war-end-mean | L49
+| "As you can see" | what-does-war-end-mean | L167
+| "Remember!" (directive opener) | what-does-war-end-mean | L295
+| "Most importantly" | what-does-war-end-mean | L151
+| "Most importantly" | what-does-war-end-mean | L154
+| "Pay close attention!" | what-does-war-end-mean | L122
+| "In fact" | gru-project-qanon | L47
+| "Think about it" | gru-project-qanon | L103
+|===
+
+== 3.2 Undefined Acronyms
+
+NDFs is defined only in `what-does-war-end-mean`. Used without definition in:
+
+- `ukraine-replaces-america` L102
+- `seven-betrayals` (passing reference)
+
+UNB-8 is defined only in `what-does-war-end-mean`. Used without expansion in:
+
+- `seven-betrayals` L179
+- `seven-betrayals` L240
+
+== 3.3 Lowercase "russia" -- Consequences (your decision pending)
+
+- Readers unfamiliar with the Ukrainian journalistic convention read it as a typo
+- Screen readers announce it as a common noun, not a country name
+- Quoted excerpts out of context look like an error, not a political statement
+- SEO indexers may not consistently equate "russia" with "Russia"
+
+If you keep it: one sentence on first use in the collector names the convention
+and inoculates the rest of the set.
