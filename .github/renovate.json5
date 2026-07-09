@@ -74,6 +74,11 @@
       schedule: [
         'monthly'
       ]
+    },
+    {
+      description: 'Pin actions/checkout below v6 — v6+ includeIf.gitdir auth breaks on symlinked _work (gen-1 runners); see actions/checkout#2321',
+      matchPackageNames: ['actions/checkout'],
+      allowedVersions: '<6',
     }
   ],
   dependencyDashboard: true,
