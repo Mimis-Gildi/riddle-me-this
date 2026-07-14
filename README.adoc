@@ -1,6 +1,6 @@
 = Mímis Gildi: Rdd13r’s Living Digital Garden
 Vadim Kuhay <12781006+rdd13r@users.noreply.github.com>
-v15.0.6, Tuesday July 14th 2026
+v15.0.7, Tuesday July 14th 2026
 :description: Living and evolving publication repository by `rdd13r`.
 :icons: font
 :!toc:
