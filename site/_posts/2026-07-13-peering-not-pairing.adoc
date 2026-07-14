@@ -52,7 +52,7 @@ You may be doing many different things like mentoring, tutoring, coaching, demoi
 or playing side-by-side in a sandbox recognizing befitting results.
 One thing you are not doing is pair programming.
 
-== The Ceremony (i.e., format of conduct since the 80s)
+== The Ceremony (i.e., format of conduct since the 60s)
 
 . *HOST:* Invites the guest, establishes the house rules. (owner of the issue/code)
 . *GUEST:* Attends wanting to compassionately help HOST close their value.
@@ -157,7 +157,7 @@ Most problems in software are _simple_. It's the other few that ruin everything.
 *Problem 1:* Bugs breaking companies are MISTAKES in THINKING. +
 To fix them, somebody with a bigger head needs to do MORE thinking.
 
-*History 101:* Ken Thompson and Dennis Richie "worked closely together" and wrote a program. It's UNICS in 1969.
+*History 101:* Ken Thompson and Dennis Ritchie "worked closely together" and wrote a program. It's UNICS in 1969.
 An operating system that changed our world. It was a tough program to write. Full of brain-breaking THINKING.
 But the two got lucky - they didn't even think about the process -- the entire software industry was already working
 in pairs, it was called peering, and it came naturally because problems were hard and computers were scarce.
@@ -185,8 +185,8 @@ These styles were the same in the days of AT{amp}T as they are today. +
 *_Their psychological function didn't change._* +
 *Neither did the path to value.*
 
-Ken would come to the office, have his coffee, and meet Denis.
-"Hey Denis -- how long can we work together?" "About five hours."
+Ken would come to the office, have his coffee, and meet Dennis.
+"Hey Dennis -- how long can we work together?" "About five hours."
 "Usual breaks and rotations?" "Sure, why not." And so it was:
 
 - 5-hour working session.
@@ -196,14 +196,14 @@ Ken would come to the office, have his coffee, and meet Denis.
 - Change ceremony on switch, if useful.
 - Stop anytime and split up.
 
+*All styles are only about two things:*
+
+. *Mental weakness of the human mind;*
+. *Ego management to avert bias and disasters.*
+
 Let's see what's switched up and why.
 
 == 1. Tour Guide -- Checked Narrative
-
-All styles are only about two things:
-
-. Mental weakness of the human mind;
-. Ego management to avert bias and disasters.
 
 Tour-guiding is often the introduction to Pair Programming because it trains the two skills every other ceremony
 presupposes, with the ego risk removed. Every peering ceremony requires narrating your thinking out loud -- and
@@ -307,7 +307,7 @@ Driver-navigator is NOT a collaboration technique -- none of the pairing styles 
 It's a cognitive prosthesis for wetware: one problem needs both zoom levels live at once,
 one skull can efficiently host well only one level at a time. Having two to THINK is where the efficiency comes from.
 
-- The driver holds the strategic "Big Picture" loaded hot -- invariants, progression direction, edge case,
+- The Navigator holds the strategic "Big Picture" loaded hot -- invariants, progression direction, edge case,
 drift check three moves ahead.
 - Driver minds the narrow-focused work concentrating to the point they might lose their place in the bigger
 code -- ever happened to you?
@@ -343,10 +343,11 @@ There are teams, like Google infrastructure or tooling, that own some truly hair
 As well as game engine developers -- all such teams depend on collective pairing ceremony proficiency.
 These are all systems engineers -- hackers with some wizardly THINKING skills.
 
-Think back to how it all started: Ken Thompson and Denis Richie inventing "Atlas Operating System," rebranded UNIX,
+Think back to how it all started: Ken Thompson and Dennis Ritchie inventing "Atlas Operating System," UNICS rebranded UNIX,
 that holds up the world. And doing so together, peering in a pair for many months at no end. It's rewrite, the Linux,
-and its kernel driver teams only operating peering in pairs and pairs of pairs -- because even Chinese crackers
-wanting an exploit don't want to look into that code (Xi makes them, then they also pair).
+and its kernel driver teams operating peering in pairs and pairs of pairs to knock down some pain.
+Even Chinese crackers wanting to exploit us don't want to look into that crazy complex codebase
+(Xi makes them -- they also pair to survive).
 
 On the other hand, your friendly Acme Insurance Company, the institution I'd written about in the past,
 simply doesn't have such cranial needs *_by design_*. Frameworks, like Spring Boot Java, Angular, and Vaadin,
@@ -399,7 +400,7 @@ How do I do that? Now here are four theorems for digital collaborators:
 . *_Always plan tasks out fully_* with every single step countered by expectation.
 . *Trust 0%* -- _never accept finished work_ from a digital collaborator -- not a single statement.
 . *_Always counter a digital generator_* with adversarial agents, stop-hooks, and functions: +
-0% of Claude's instant responses are factual -- have him argue with robots, not you.
+0% of Claude's instant responses are trustworthy -- have him argue with robots, not you.
 
 There are more rules I enforce -- for example, Claude never commits to my projects.
 Everything Claude wrote is considered "unfit rough draft pending refactoring" -- this is why any project changes are
@@ -426,7 +427,7 @@ I've studied many-an-Acme IT practices. And I can generalize them in three state
 . *Lack of competence across the IT organization:*
 - Developers inferior to even Claude; think "Claude's the best coder around";
 - Management ignorant of engineering (mandating Pair-Programming with a box);
-- Executives manipulated by vendors ($Ms building decrepit own Claude Code).
+- Executives manipulated by vendors ($$$ spent on own decrepit Claude ripoff).
 . *Eroded and manured previously healthy Corporate Culture:*
 - Execs fanning "New Acme versus Old Acme"middle-management civil war;
 - Backwards reward structure driven by perceptions: "turbo-golden-boy";
