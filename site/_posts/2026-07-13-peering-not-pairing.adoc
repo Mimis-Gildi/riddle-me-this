@@ -23,7 +23,7 @@ Corporate America forces 100% Pair-Programming (pairing) with ... Claude Code. +
 Except everything slows down. The problem isn't pairing. Nor Claude Code. +
 The problem is -- *nobody is pairing* -- folks are *_anti-pairing_*.
 
-The proper name is PEERING -- as it was known for decades before popular culture fad. +
+The proper name is PEERING -- as it was known for decades before the popular-culture fad. +
 It's powerful and effective: gave us UNIX (yes, that-old) -- our world is based on that.
 
 It is NOT a process to improve software delivery. +
@@ -36,18 +36,18 @@ _Axiom 1_: *Equal Skill* -- _Pair programming can only EVER happen between EQUAL
 
 > So, it is impossible between junior and senior, or for bogus reasons like "onboarding."
 
-_Axiom-2_: *Justified pain* -- _Insanely productive and expensive brain-strain option._
+_Axiom 2_: *Justified pain* -- _Insanely productive and expensive brain-strain option._
 
 > Not for cogs -- must have two alike and a *reason* to pair driven by *opportunity cost*.
 
 _Axiom 3_: *House Rules* -- _Superior intellectual being brutally enforcing ego check._
 
 > Pair programming is *a session-cardinal event* -- _the two hackers aren't equals!_ +
-> Rank, position, popularity doesn't matter -- it is compassionate and intellectual. +
-> One and only one *accountable* -- he's at *home,* (his house his rules). +
-> The other one is a caring, giving, yielding -- he's a *_guest_* committed to help.
+> Rank, position, popularity don't matter -- it is compassionate and intellectual. +
+> One and only one *accountable* -- he's at *home* (his house his rules). +
+> The other one is caring, giving, yielding -- he's a *_guest_* committed to help.
 
-If all three axioms aren't satisfied with your behavior -- you are not pair programming.
+If all three axioms aren't satisfied by your behavior -- you are not pair programming.
 You may be doing many different things like mentoring, tutoring, coaching, demoing,
 or playing side-by-side in a sandbox recognizing befitting results.
 One thing you are not doing is pair programming.
@@ -102,7 +102,7 @@ Two zoom levels no one skull holds at once -- `tactics` in the driver, +
 `strategy` in the navigator.
 
 > The default, and one most people get wrong! +
-> It's deceivingly intuitive, leaking bugs, and defeating purpose.
+> It's deceptively intuitive, leaking bugs, and defeating purpose.
 
 *5. Discovery* -- _Exploratory_ (aka Freestyle):
 
@@ -121,7 +121,7 @@ That's the whole tell -- each "pattern" is a single axiom violated, dressed as a
 * *Watch the Master* -- "expert drives, novice gawks." +
 It's a *demo* -- NOT a better product. (Fails Axiom 1)
 * *Onboarding pairing* -- "pair the newbie to ramp him up." +
-It's *tutoring*. NOT building harder feature. (Fails Axiom 1)
+It's *tutoring*. NOT building a harder feature. (Fails Axiom 1)
 * *The Interview* -- one codes while the other grades. +
 It's an *exam*. Still no collaborative problem-solving. (Fails Axiom 3)
 * *Mandated 100%* -- corporate forces all work paired. +
@@ -159,7 +159,7 @@ To fix them, somebody with a bigger head needs to do MORE thinking.
 
 *History 101:* Ken Thompson and Dennis Ritchie "worked closely together" and wrote a program. It's UNICS in 1969.
 An operating system that changed our world. It was a tough program to write. Full of brain-breaking THINKING.
-But the two got lucky - they didn't even think about the process -- the entire software industry was already working
+But the two got lucky -- they didn't even think about the process -- the entire software industry was already working
 in pairs, it was called peering, and it came naturally because problems were hard and computers were scarce.
 The rest of the programmers at AT{amp}T were also peering. Everyone was. These people were classy.
 And they evolved classy ways of thinking together.
@@ -168,10 +168,10 @@ And they evolved classy ways of thinking together.
 Software became bad. Microsoft invented Blue Screen of Death. Crisis was upon us. It's always these very few tough
 problems that made developers pretend they're smart. But then we remembered that we were smarter thinking together.
 
-*_It is these retired AT&T wizards that I'd started my career working for. They relentlessly `peered` all of us munchkins,
+*_It is these retired AT{amp}T wizards that I started my career working for. They relentlessly `peered` all of us munchkins,
 then champions (hacker term for apprentice) in various pairs together. Sometimes the wizards also peered -- it can
 be hard thinking for everyone. This was BEFORE somebody mis-heard "peer programming" for "pair programming" or maybe
-"pear programming." No, not pear - makes no sense. Maybe apple but not pear. Must be `pair`* -- I usually see two,
+"pear programming." No, not pear -- makes no sense. Maybe apple but not pear. Must be `pair`* -- I usually see two,
 so that must be it: pair._
 
 . *WHY -> WHAT:* Hard problem -> buddy-up to solve with.
@@ -273,10 +273,10 @@ The one with the keyboard (steering wheel) listens, questions, and ... +
 {nbsp} {nbsp} does ONLY *_what they think they should code up_* -- not what they're told. +
 Occasionally, this forces a situation when the *_backseat-driver must re-track and self-correct_*.
 
-What's the *mental and psychological value of the "scandal*:
+What's the *mental and psychological value of the "scandal"*:
 
 . It's a solution-space mapper -- the only ceremony here that preserves independence. +
-Every other ceremony converges early -- here effort is expanded to stay off balance naturally: +
+Every other ceremony converges early -- here effort is expended to stay off balance naturally: +
 The backseat driver runs two complete, independent solution streams on the same problem -- one spoken,
 one typed -- and diffs them live. Every unexpected turn is a discovered fork: +
 a place where the problem genuinely has two answers. Solo work never sees these forks;
@@ -318,8 +318,8 @@ would effectively close alone.
 Faster too -- coder needs no personal memento notepad. Even on ultracomplex refactoring, the navigator will simply jot
 it down for a timely recollection. _Yet it comes with one major and dangerous drawback -- *both form the same bias*._
 
-This is why most experienced wizards will switch ceremonies around. The backseat-driver compliments the
-driver navigator nicely -- often observed during team programming competitions.
+This is why most experienced wizards will switch ceremonies around. The backseat-driver complements the
+driver-navigator nicely -- often observed during team programming competitions.
 
 == 5. Discovery -- Exploratory Poke Style (aka Freestyle)
 
@@ -329,10 +329,10 @@ Strictly speaking, such nonsense cannot be defined as a collaborative relationsh
 It has a place to be in this style guideline for an entirely different reason -- people do this.
 A structure is selected but a relationship is not. This only happens in one circumstance -- the feature is not defined.
 A mature team will not touch such a story, but one can definitely leave it better than they found it.
-Example even would go something like this:
+An example would go something like this:
 
 . Objective: "Determine what in the world is this."
-. Timebox to 1-2 hours in very short strides (i.e., 15 minutes by 15 minutes)
+. Timebox to 1-2 hours in very short strides (e.g., 15 minutes by 15 minutes)
 . If clarity is not attained in a reasonably short time -- toss it back to the backlog.
 . If clarity is attained, then groom features well and STOP.
 
@@ -344,7 +344,7 @@ As well as game engine developers -- all such teams depend on collective pairing
 These are all systems engineers -- hackers with some wizardly THINKING skills.
 
 Think back to how it all started: Ken Thompson and Dennis Ritchie inventing "Atlas Operating System," UNICS rebranded UNIX,
-that holds up the world. And doing so together, peering in a pair for many months at no end. It's rewrite, the Linux,
+that holds up the world. And doing so together, peering in a pair for many months on end. Its rewrite, Linux,
 and its kernel driver teams operating peering in pairs and pairs of pairs to knock down some pain.
 Even Chinese crackers wanting to exploit us don't want to look into that crazy complex codebase
 (Xi makes them -- they also pair to survive).
@@ -374,7 +374,7 @@ doubles my speed when most can't get 20% boost; JUST NOT IN CODING.
 (Neither architecting, designing, solving, nor even root cause analysis most of the time.)
 
 That's fine! -- I don't need Claude to do any of those things for me. But there are *_remarkable things_* in which
-Claude is far more than just a peer to me -- he simply _shreds me to pulp in all of_:
+Claude is far more than just a peer to me -- he simply _shreds me to pulp in all of these_:
 
 - Find and fetch documentation, comments, sources, blogs, team notes, research papers;
 - Recall the surface of every API, flag, and configuration format (wide, shallow, instant);
@@ -429,7 +429,7 @@ I've studied many-an-Acme IT practices. And I can generalize them in three state
 - Management ignorant of engineering (mandating Pair-Programming with a box);
 - Executives manipulated by vendors ($$$ spent on own decrepit Claude ripoff).
 . *Eroded and manured previously healthy Corporate Culture:*
-- Execs fanning "New Acme versus Old Acme"middle-management civil war;
+- Execs fanning "New Acme versus Old Acme" middle-management civil war;
 - Backwards reward structure driven by perceptions: "turbo-golden-boy";
 - Protection of failed orgs such as Ops not even being able to configure a pod;
 - Lack of retention mindset (any, forget merit) preferring new hires.
@@ -439,11 +439,11 @@ I've studied many-an-Acme IT practices. And I can generalize them in three state
 _In that environment *most of the released code is published by AI unchecked*._ +
 Internal chats glorify AI-first, AI-native, AI-centric buzzwords and posers.
 
-"Stupid" best summarizes it: from millions spent on tokens to a hundred times issue count. +
+"Stupid" best summarizes it: from millions spent on tokens to a hundredfold issue count. +
 And it gets even better: they just celebrated clearing a decade of backlog in one year. Publicly. +
 _Did you get it?_
 
-*Acme Claude Code Pairing:* _"Claud, read issue, and code feature. It works? Good, I pushed."_
+*Acme Claude Code Pairing:* _"Claude, read issue, and code feature. It works? Good, I pushed."_
 
 == Effective work with the Tea-Pot
 
@@ -454,16 +454,16 @@ Claude can only ASSIST. Cannot deliver. Best hope he saves time.
 
 Claude can save time or waste time; waste a lot of time! So, how to save time with Claude?
 
-**Claude is Tea-Pot wasting a lot of time. _How to detect?_**
+**Claude is a Tea-Pot wasting a lot of time. _How to detect?_**
 
 . Developer is *arguing with Claude* turn after turn. Developer: "but ..." Claude: "I was wrong."
 . Developer writes the same prompt differently asking peers: "how to prompt this correctly?"
 . Developer clears Claude Code session repeatedly. Or changes the models on the same ask.
 
-There are many tells; the example above is to get you thinking from the observer's position. +
+There are many tells; the examples above are to get you thinking from the observer's position. +
 *So, how to fix this?*
 
-And there are TWO root causes both need to be fixed:
+And there are TWO root causes; both need to be fixed:
 
 . Fix developer;
 . Fix Claude.
