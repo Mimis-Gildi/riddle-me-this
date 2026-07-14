@@ -1,0 +1,425 @@
+---
+categories: [ reflections ]
+tags: [ Peering, Pairing, Collaboration, Hacking, Cogs, Corporate ]
+header:
+  overlay_image: /assets/images/CHANGEME-banner.png
+  overlay_filter: 0.1
+  caption: ""
+  image_position: "center bottom"
+excerpt: >
+  One-sentence hook for LinkedIn / SEO.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= Spare Me the SLOP: Pair Programming?!
+
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+
+Corporate America forces 100% Pair-Programming (pairing) with ... Claude Code. +
+Except everything slows down. The problem isn't pairing. Nor Claude Code. +
+The problem is -- *nobody is pairing* -- folks are *_anti-pairing_*.
+
+The proper name is PEERING -- as it was known for decades before popular culture fad. +
+It's powerful and effective: gave us UNIX (yes, that-old) -- our world is based on that.
+
+It is NOT a process to improve software delivery. +
+It IS a psychological tool to unblock THINKING. +
+(A countermeasure to the human condition, if you will.)
+
+== The Three Axioms
+
+_Axiom 1_: *Equal Skill* -- _Pair programming can only EVER happen between EQUAL PEERS._
+
+> So, it is impossible between junior and senior, or for bogus reasons like "onboarding."
+
+_Axiom-2_: *Justified pain* -- _Insanely productive and expensive brain-strain option._
+
+> Not for cogs -- must have two alike and a *reason* to pair driven by *opportunity cost*.
+
+_Axiom 3_: *House Rules* -- _Superior intellectual being brutally enforcing ego check._
+
+> Pair programming is *a session-cardinal event* -- _the two hackers aren't equals!_ +
+> Rank, position, popularity doesn't matter -- it is compassionate and intellectual. +
+> One and only one *accountable* -- he's at *home,* (his house his rules). +
+> The other one is a caring, giving, yielding -- he's a *_guest_* committed to help.
+
+If all three axioms aren't satisfied with your behavior -- you are not pair programming.
+You may be doing many different things like mentoring, tutoring, coaching, demoing,
+or playing side-by-side in a sandbox recognizing befitting results.
+One thing you are not doing is pair programming.
+
+== The Ceremony (i.e., format of conduct since the 80s)
+
+. *HOST:* Invites the guest, establishes the house rules. (owner of the issue/code)
+. *GUEST:* Attends wanting to compassionately help HOST close their value.
+. *STRUCTURE:* Postulates of relationship instance -- negotiate and agree on
+- A) Scope -- what value do we close together for HOST;
+- B) Total Time -- how much time do we spend together for HOST;
+- C) Period Time -- how long we go before switching roles with HOST;
+- D) Break Time -- how long do I get to forget about HOST;
+- E) Interaction Styles change BETWEEN US whenever we agree.
+
+ONE keyboard (computer) +
+TWO connected minds (monitors) +
+Roles ALWAYS rotate.
+
+== Interaction Styles
+
+These formats of conduct are much older than XP or agile and are a-must-understand. +
+Simplest to hardest -- which is also the order you'll learn them in:
+
+*1. Tour Guide* -- _Narrative_:
+
+The `doer` narrates everything; +
+The `tourist` only asks questions.
+
+> _Onboards a team to peering, and does *witnessed hands* +
+> {nbsp} -- a second mind, zero accountability transfer._
+
+*2. Ping-Pong* -- _Adversarial_:
+
+Each `return` checks the last move +
+{nbsp} -- a different hand writes the next `fragment`.
+
+> Execution only; the strategy seat is empty because the list was digested upstream.
+
+*3. Backseat Driver* -- _Confrontational_:
+
+One `talks out` his way -- continuously; +
+The other `codes` _his own way_; +
+One is forced to react in a dialectic; +
+The collisions map the `forks`.
+
+> Deference here is a foul.
+
+*4. Driver-Navigator* -- _Synergistic_:
+
+Two zoom levels no one skull holds at once -- `tactics` in the driver, +
+`strategy` in the navigator.
+
+> The default, and one most people get wrong! +
+> It's deceivingly intuitive, leaking bugs, and defeating purpose.
+
+*5. Discovery* -- _Exploratory_ (aka Freestyle):
+
+Grooming with a keyboard; answers one question, +
+"what the heck is it?"
+
+> The most challenging ceremony to get right! +
+> Veterans only, or it's just thrashing. +
+> Inexperienced will just play in a sandbox.
+
+== Antipatterns on the Web (Anti-Pairing)
+
+The web has a name for every one of these. It never asks WHY? Or WHAT instead? +
+That's the whole tell -- each "pattern" is a single axiom violated, dressed as a practice:
+
+* *Watch the Master* -- "expert drives, novice gawks." +
+It's a *demo* -- NOT a better product. (Fails Axiom 1)
+* *Onboarding pairing* -- "pair the newbie to ramp him up." +
+It's *tutoring*. NOT building harder feature. (Fails Axiom 1)
+* *The Interview* -- one codes while the other grades. +
+It's an *exam*. Still no collaborative problem-solving. (Fails Axiom 3)
+* *Mandated 100%* -- corporate forces all work paired. +
+It's *surveillance theater* -- presence with no price. (Fails Axiom 2)
+* *Keyboard Hog* -- one never yields the keys. +
+It's *a solo coding with an annoyed audience*. (Fails Axiom 3)
+* *The Kibitzer* -- nonstop syntax-nagging from someone carrying no accountability. +
+It's *heckling* -- a guest without the gift. (Fails Axiom 3)
+* *Playing Solitaire* -- the navigator checks out to his phone. +
+It's *working alone* -- you paid for two presences, got one. (Fails Axiom 2)
+
+*Why such absurd embarrassment?* I am kindly not calling out sites -- look for yourself. +
+What you find is an aimless process or workflow description. If it was driving a car -- you get.
+
+. Turn the steering wheel left hard.
+. Broom-vroom-boom.
+. Turn the wheel right.
+. Vroom-vroom-vroom.
+. Honk-honk.
+
+What you don't get: 1) why drive; 2) what are road rules; 3) what is navigation; 4) what are mirrors;
+5) sharing the road; 6) keeping in traffic, 7) maintaining traffic speed; 8) merging, etc... +
+Forget about parallel parking when you get where you're going.
+
+*So, let's just ask these questions: WHY - WHAT, to what END, WHEN, why Not!*
+
+== Why ('Pair Programming') Peering Exists
+
+*Problem 0:* Programming has nothing to do with typing. +
+And it has everything to do with THINKING. Hard, brain-busting thinking. +
+Most problems in software are _simple_. It's the other few that ruin everything.
+
+*Problem 1:* Bugs breaking companies are MISTAKES in THINKING. +
+To fix them, somebody with a bigger head needs to do MORE thinking.
+
+*History 101:* Ken Thompson and Dennis Richie "worked closely together" and wrote a program. It's UNICS in 1969.
+An operating system that changed our world. It was a tough program to write. Full of brain-breaking THINKING.
+But the two got lucky - they didn't even think about the process -- the entire software industry was already working
+in pairs, it was called peering, and it came naturally because problems were hard and computers were scarce.
+The rest of the programmers at AT{amp}T were also peering. Everyone was. These people were classy.
+And they evolved classy ways of thinking together.
+
+*History 201:* In the 90s, computers became abundant. Developers, always overpaid, enjoyed far greater solitude.
+Software became bad. Microsoft invented Blue Screen of Death. Crisis was upon us. It's always these very few tough
+problems that made developers pretend they're smart. But then we remembered that we were smarter thinking together.
+
+*_It is these retired AT&T wizards that I'd started my career working for. They relentlessly `peered` all of us munchkins,
+then champions (hacker term for apprentice) in various pairs together. Sometimes the wizards also peered -- it can
+be hard thinking for everyone. This was BEFORE somebody mis-heard "peer programming" for "pair programming" or maybe
+"pear programming." No, not pear - makes no sense. Maybe apple but not pear. Must be `pair`* -- I usually see two,
+so that must be it: pair._
+
+. *WHY -> WHAT:* Hard problem -> buddy-up to solve with.
+. *To what END:* Avoid leaking bad bugs alone.
+. *WHEN:* Only when it's darn hard for one noggin.
+. *When Not:* Most problems are too simple to pair on.
+
+== Let's Understand Peering Styles
+
+These styles were the same in the days of AT{amp}T as they are today. +
+*_Their psychological function didn't change._* +
+*Neither did the path to value.*
+
+Ken would come to the office, have his coffee, and meet Denis.
+"Hey Denis -- how long can we work together?" "About five hours."
+"Usual breaks and rotations?" "Sure, why not." And so it was:
+
+- 5-hour working session.
+- 40-minute thinking-together.
+- 20-minute break from each-other.
+- *Switch UP*.
+- Change ceremony on switch, if useful.
+- Stop anytime and split up.
+
+Let's see what's switched up and why.
+
+== 1. Tour Guide -- Checked Narrative
+
+All styles are only about two things:
+
+. Mental weakness of the human mind;
+. Ego management to avert bias and disasters.
+
+Tour-guiding is often the introduction to Pair Programming because it trains the two skills every other ceremony
+presupposes, with the ego risk removed. Every peering ceremony requires narrating your thinking out loud -- and
+most hackers have never done it; years of thinking in silence, then "please drive-and-talk in front of a peer."
+And the tourist seat trains the other muscle: asking elaboration instead of correcting, exemplifying behavior of
+a civilized tourist, like in a museum -- staying curious past the urge to grab the wheel.
+Tourists must engage in asking about "paintings and stuff." Strike up dialectic, if capable.
+
+This style isolates both skills with training wheels on: the guide can't be vetoed mid-narration,
+the tourist can't seize control, so nobody's ego is in the collision zone yet.
+It's full-contact dialectic with the contact removed -- which is exactly what a team that's never peered needs first.
+
+Coach does the tour first, making the vulnerable move before asking anyone else to. +
+Then tourists on the peer's guide-walk, modeling the other seat -- seating trust safely.
+
+Other psychological settings for this ceremony are:
+
+- *The audition.* Peerhood is task-specific, and it's expensive to discover mid-ceremony that the overlap isn't there.
+A joyful tour is the cheap saving-grace probe for traction:
+* As a guide -- hear from peer's questions whether the territory's grasp is in decent shape;
+* As tourist -- hear from peer's narration whether they actually own what they claim.
+
+- *Witnessed hands.* There's a class of work where accountability must not blur even slightly -- the production incident,
+the destructive migration, the security-sensitive change where policy says one pair of hands, period.
+Tour-guide is the only ceremony that provides a second mind on the work with structurally zero transfer of the wheel:
+witness, double-check, elaboration questions -- signoff in one hand until switch-out.
+
+- *Self-rot probe* -- for the guide. Each peer when guiding pokes at guide's own understanding:
+no better way to master than to teach. Works like for a teaching assistant in college.
+
+_This ceremony shows up frequently among experienced teams as well, especially on new tech._
+
+== 2. Ping-Pong (or Tennis) -- Turn-Adversarial
+
+Gentlest adversarial ceremony -- return the ball. It makes sense to execute this on a list of non-trivial tasks,
+of course, else why pair, but necessarily nothing too complex requiring standoff.
+
+Ping-pong holds _one and only one_ zoom level, twice, alternating item by item.
+Both players are in driver-zoom on their turn -- doer mindset as if working alone;
+nobody is sitting in any strategic seat attempting to mind the big picture -- every picture is one item.
+The strategy MUST have already happened, upstream, in grooming or solving -- this only works when someone already
+digested the problem into a list of well-defined doable tasks.
+
+- Ping-pong can consume a plan; it cannot create one.
+- It loves roughly equal size chunks; it cannot break down work.
+- It can make a sequence of boring tasks fun; it cannot consolidate focus.
+
+Human factors values:
+
+. Decorrelation of blind spots at the finest grain -- split blind spots between two skulls.
+. The seam is the product. Constructed pieces like Lego must fit together forcing interfaces.
+. The alternation even-splits hands-on across the tasklist -- knowledge-symmetrization.
+
+_Being first adversarial, this also has a failure mode -- any immature competitiveness bruises ego._ +
+When survived this is an enjoyable team-forming activity.
+
+== 3. Backseat Driver -- Check-Confrontational
+
+This is the most important ceremony of probing. It's challenging to execute without experience. +
+Consider a very strong and loving couple that argues and talks a lot.
+Nobody on the web seems able to even describe it; some even call it "back seat navigator," which makes zero sense. +
+So, I will also describe the psychological dynamic.
+
+The one without a keyboard continuously talks through: +
+{nbsp} {nbsp} the problem -> solution -> test -> implementation chain. +
+The one with the keyboard (steering wheel) listens, questions, and ... +
+{nbsp} {nbsp} does ONLY *_what they think they should code up_* -- not what they're told. +
+Occasionally, this forces a situation when the *_backseat-driver must re-track and self-correct_*.
+
+What's the *mental and psychological value of the "scandal*:
+
+. It's a solution-space mapper -- the only ceremony here that preserves independence. +
+Every other ceremony converges early -- here effort is expanded to stay off balance naturally: +
+The backseat driver runs two complete, independent solution streams on the same problem -- one spoken,
+one typed -- and diffs them live. Every unexpected turn is a discovered fork: +
+a place where the problem genuinely has two answers. Solo work never sees these forks;
+consensus work smothers them in the crib, (as you will soon see). +
+_The "scandal" is the live mental diff output._
+
+. It extrapolates the undiscussables. The divergence point -- "why would you go THERE?!" +
+Divergence percolates tacit material up: defaults, buried assumptions, tribal bias.
+The stuff peers don't articulate otherwise because each assumes his own is simply obvious.
+It's the fastest instrument thus far for the two hackers to learn each other's actual minds instead of their
+polite conformant surfaces.
+
+. It trains two opposite skills at once. The backseat driver gets his fully articulated plan spoken, and
+compromise learning starts with the driver's different response. The coder (driver) gets discipline training
+for judgment under peer pressure.
+
+_Now that you understand the interaction dynamic, two things should become obvious: this requires personal maturity;
+and equally team cohesion._
+
+== 4. Driver-Navigator -- Synergistic-Blindness
+
+The most well-known ceremony and equally imperfect. The idea does indeed come from one driving and another reading out
+the map -- switching seats regularly and frequently like in any other ceremony.
+The analogy ends there -- the most important part of every ceremony is accountability -- the role of the host: this
+person sets the house rules and accepts the final consequences.
+
+Driver-navigator is NOT a collaboration technique -- none of the pairing styles are.
+It's a cognitive prosthesis for wetware: one problem needs both zoom levels live at once,
+one skull can efficiently host well only one level at a time. Having two to THINK is where the efficiency comes from.
+
+- The driver holds the strategic "Big Picture" loaded hot -- invariants, progression direction, edge case,
+drift check three moves ahead.
+- Driver minds the narrow-focused work concentrating to the point they might lose their place in the bigger
+code -- ever happened to you?
+- Four or five break-and-switch rotations help both parties to become day-experts in the active codebase.
+- Regular dialectic amplifies the abilities of each enabling solving HARDER THINKING problems either one
+would effectively close alone.
+
+Faster too -- coder needs no personal memento notepad. Even on ultracomplex refactoring, the navigator will simply jot
+it down for a timely recollection. _Yet it comes with one major and dangerous drawback -- *both form the same bias*._
+
+This is why most experienced wizards will switch ceremonies around. The backseat-driver compliments the
+driver navigator nicely -- often observed during team programming competitions.
+
+== 5. Discovery -- Exploratory Poke Style (aka Freestyle)
+
+A web favorite ceremony -- every blog source included it. Guess what?! -- There is no such thing!
+
+Strictly speaking, such nonsense cannot be defined as a collaborative relationship style.
+It has a place to be in this style guideline for an entirely different reason -- people do this.
+A structure is selected but a relationship is not. This only happens in one circumstance -- the feature is not defined.
+A mature team will not touch such a story, but one can definitely leave it better than they found it.
+Example even would go something like this:
+
+. Objective: "Determine what in the world is this."
+. Timebox to 1-2 hours in very short strides (i.e., 15 minutes by 15 minutes)
+. If clarity is not attained in a reasonably short time -- toss it back to the backlog.
+. If clarity is attained, then groom features well and STOP.
+
+== Why Pair Today
+
+This ceremony only makes sense if there is a massive THINKING task to close.
+There are teams, like Google infrastructure or tooling, that own some truly hairy logic.
+As well as game engine developers -- all such teams depend on collective pairing ceremony proficiency.
+These are all systems engineers -- hackers with some wizardly THINKING skills.
+
+Think back to how it all started: Ken Thompson and Denis Richie inventing "Atlas Operating System," rebranded UNIX,
+that holds up the world. And doing so together, peering in a pair for many months at no end. It's rewrite, the Linux,
+and its kernel driver teams only operating peering in pairs and pairs of pairs -- because even Chinese crackers
+wanting an exploit don't want to look into that code (Xi makes them, then they also pair).
+
+On the other hand, your friendly Acme Insurance Company, the institution I'd written about in the past,
+simply doesn't have such cranial needs *_by design_*. Frameworks, like Spring Boot Java, Angular, and Vaadin,
+backed by thick off-the-shelf tooling, make up your entire insurance company. Big, trivial, 3rd-party-made Lego
+blocks make up any American laggard. And if Acme needed some THINKING -- that CTO made a bad mistake.
+
+Well, I am being a little blasphemous here as I myself have built exceptionally sophisticated systems
+for insurance and banking. These fit if and only if they're packaged as turnkey products and insurance developers
+don't go into them but simply operate them. Rest assured inside Acme IT department, the Google infrastructure team
+has nothing to do.
+
+*_Mandating 100% pair programming at Acme, when the Google infrastructure team pairs sparingly,
+is an interesting and undoubtedly brilliant executive decision._* (Right Miro?)
+
+== Pairing with Claude from Claude Code
+
+Remember, pairing works *_if and only if_* the engineers are *PEERS*.
+
+*_Can you switch up with Claude as your equal and get anything delivered?_*
+
+I personally cannot get Claude to be my development peer - Claude's JUNIOR at best, and even then,
+with no ability to extrapolate, reason, or solve. Don't get me wrong; Claude is spectacularly useful to me -- he
+doubles my speed when most can't get 20% boost; JUST NOT IN CODING.
+(Neither architecting, designing, solving, not even root cause analysis most of the time.)
+
+That's fine! -- I don't need Claude to do any of those things for me. But there are *_remarkable things_* in which
+Claude is far more than just a peer to me -- he simply _shreds me to pulp in all of these_:
+
+- Find and fetch documentation, comments, sources, blogs, team notes, research papers;
+- Recall the surface of every API, flag, and configuration format(wide, shallow, instant);
+- Grep a million-line codebase and come back with _three files_ that matter (*pure gold*);
+- Grind mechanical transforms -- rename across 200 files;
+- Convert formats, port syntax between languages -- without boredom or drift;
+- Sift ten thousand lines of logs for the one even yet unknown anomaly;
+- Type out the boilerplate I dictate _faster than I can say it_;
+- And draft prose, tables, summaries, even poetry and art;
+- Even draft some isolated blocks of code to later refactor by myself -- more on this later.
+
+_None of that is THINKING in the hacker meaning of the word._ +
+NONE of these can be trusted as "a finished task" -- ALL must be 100% reviewed. +
+All of that is *_interpolating_* -- something no most-wizardy hacker can do fast. +
+Claude translates into saved TIME -- time is the one thing I don't have enough of, ever, +
+making Claude my most useful peer of thirty-year daily coding craft.
+
+How do I do that? Now here are four theorems for digital collaborators:
+
+. *Never ask* a collaborator for what *_they're incapable of providing_*.
+. *_Always plan tasks out fully_* with every single step countered by expectation.
+. *Trust 0% _Never accept finished work_* from a digital collaborator -- not a single statement.
+. *_Always counter a digital generator_* with adversarial agents, stop-hooks, and functions: +
+0% of Claude's instant responses are factual -- have him argue with robots, not you.
+
+There are more rules I enforce -- for example, Claude never commits to my projects.
+Everything Claude wrote is considered "unfit rough draft pending refactoring" -- this is why any project changes are
+`diffs` I must always see and process to make sure nothing of Claude's leaks to the finished product.
+
+I’ve worked with AI collaborators for years -- here's the *most important metric:* +
+*0%* of _Claude's code, prose, or diagrams is in my **finished products**_.
+
+Claude Code itself is made by exactly the same rule! Draft to see is okay. +
+Unchecked Claude to production -- NEVER.
+
+The four theorems are enough for a significant performance boost when collaborating with AI.
+
+_My current performance is more than double my own alone._
+
+*Why then Acme slows down in half having their cogs "paired" with Claude?*
+
+== How Acme IT uses Claude Code
+
+I've studied many-an-Acme IT practices. And I can generalize them in three statements.
+
+. *Popular beliefs and biases instead of facts:* "AI is all-mighty and will fix all of our problems" -- the 5X
+middle management claims.
+
+== Effective work
