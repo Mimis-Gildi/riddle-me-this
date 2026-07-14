@@ -312,7 +312,7 @@ drift check three moves ahead.
 - Driver minds the narrow-focused work concentrating to the point they might lose their place in the bigger
 code -- ever happened to you?
 - Four or five break-and-switch rotations help both parties to become day-experts in the active codebase.
-- Regular dialectic amplifies the abilities of each enabling solving HARDER THINKING problems either one
+- Regular dialectic amplifies the abilities of each enabling solving HARDER THINKING problems NEITHER one
 would effectively close alone.
 
 Faster too -- coder needs no personal memento notepad. Even on ultracomplex refactoring, the navigator will simply jot
@@ -367,16 +367,16 @@ Remember, pairing works *_if and only if_* the engineers are *PEERS*.
 
 *_Can you switch up with Claude as your equal and get anything delivered?_*
 
-I personally cannot get Claude to be my development peer - Claude's JUNIOR at best, and even then,
+I personally cannot get Claude to be my development peer -- Claude's JUNIOR at best, and even then,
 with no ability to extrapolate, reason, or solve. Don't get me wrong; Claude is spectacularly useful to me -- he
 doubles my speed when most can't get 20% boost; JUST NOT IN CODING.
-(Neither architecting, designing, solving, not even root cause analysis most of the time.)
+(Neither architecting, designing, solving, nor even root cause analysis most of the time.)
 
 That's fine! -- I don't need Claude to do any of those things for me. But there are *_remarkable things_* in which
-Claude is far more than just a peer to me -- he simply _shreds me to pulp in all of these_:
+Claude is far more than just a peer to me -- he simply _shreds me to pulp in all of_:
 
 - Find and fetch documentation, comments, sources, blogs, team notes, research papers;
-- Recall the surface of every API, flag, and configuration format(wide, shallow, instant);
+- Recall the surface of every API, flag, and configuration format (wide, shallow, instant);
 - Grep a million-line codebase and come back with _three files_ that matter (*pure gold*);
 - Grind mechanical transforms -- rename across 200 files;
 - Convert formats, port syntax between languages -- without boredom or drift;
@@ -387,23 +387,25 @@ Claude is far more than just a peer to me -- he simply _shreds me to pulp in all
 
 _None of that is THINKING in the hacker meaning of the word._ +
 NONE of these can be trusted as "a finished task" -- ALL must be 100% reviewed. +
-All of that is *_interpolating_* -- something no most-wizardy hacker can do fast. +
+All of that is *_interpolating_* -- something not even the most wizardly hacker can do fast. +
 Claude translates into saved TIME -- time is the one thing I don't have enough of, ever, +
-making Claude my most useful peer of thirty-year daily coding craft.
+making Claude my most useful collaborator of thirty-year daily coding craft.
+
+But not a peer for pairing: pairing is #pair-thinking# -- impossible when only one is think-capable.
 
 How do I do that? Now here are four theorems for digital collaborators:
 
 . *Never ask* a collaborator for what *_they're incapable of providing_*.
 . *_Always plan tasks out fully_* with every single step countered by expectation.
-. *Trust 0% _Never accept finished work_* from a digital collaborator -- not a single statement.
+. *Trust 0%* -- _never accept finished work_ from a digital collaborator -- not a single statement.
 . *_Always counter a digital generator_* with adversarial agents, stop-hooks, and functions: +
 0% of Claude's instant responses are factual -- have him argue with robots, not you.
 
 There are more rules I enforce -- for example, Claude never commits to my projects.
 Everything Claude wrote is considered "unfit rough draft pending refactoring" -- this is why any project changes are
-`diffs` I must always see and process to make sure nothing of Claude's leaks to the finished product.
+*"`diffs` I must always see"* and process to make sure nothing of Claude's leaks to the finished product.
 
-I’ve worked with AI collaborators for years -- here's the *most important metric:* +
+I've worked with AI collaborators for years -- here's the *most important metric:* +
 *0%* of _Claude's code, prose, or diagrams is in my **finished products**_.
 
 Claude Code itself is made by exactly the same rule! Draft to see is okay. +
@@ -413,13 +415,54 @@ The four theorems are enough for a significant performance boost when collaborat
 
 _My current performance is more than double my own alone._
 
-*Why then Acme slows down in half having their cogs "paired" with Claude?*
+*Why then Acme slows down by half having their cogs "paired" with Claude?*
 
 == How Acme IT uses Claude Code
 
 I've studied many-an-Acme IT practices. And I can generalize them in three statements.
 
-. *Popular beliefs and biases instead of facts:* "AI is all-mighty and will fix all of our problems" -- the 5X
-middle management claims.
+. *Popular beliefs and biases instead of facts:* +
+"AI is all-mighty and will fix all of our problems" -- the 5X middle-management claims.
+. *Lack of competence across the IT organization:*
+- Developers inferior to even Claude; think "Claude's the best coder around";
+- Management ignorant of engineering (mandating Pair-Programming with a box);
+- Executives manipulated by vendors ($Ms building decrepit own Claude Code).
+. *Eroded and manured previously healthy Corporate Culture:*
+- Execs fanning "New Acme versus Old Acme"middle-management civil war;
+- Backwards reward structure driven by perceptions: "turbo-golden-boy";
+- Protection of failed orgs such as Ops not even being able to configure a pod;
+- Lack of retention mindset (any, forget merit) preferring new hires.
 
-== Effective work
+> Is that about right, Miro?
+
+_In that environment *most of the released code is published by AI unchecked*._ +
+Internal chats glorify AI-first, AI-native, AI-centric buzzwords and posers.
+
+"Stupid" best summarizes it: from millions spent on tokens to a hundred times issue count. +
+And it gets even better: they just celebrated clearing a decade of backlog in one year. Publicly. +
+_Did you get it?_
+
+*Acme Claude Code Pairing:* _"Claud, read issue, and code feature. It works? Good, I pushed."_
+
+== Effective work with the Tea-Pot
+
+Having read so far, even if you are not a coder, you'd clearly understand there's no pairing with Claude because
+pairing is for two thinkers to think together. Even if any of the ceremonies can apply, it'd be one-sided
+because a human is stuck in one of the roles as Claude cannot do the other. A wrong term to use.
+Claude can only ASSIST. Cannot deliver. Best hope he saves time.
+
+Claude can save time or waste time; waste a lot of time! So, how to save time with Claude?
+
+**Claude is Tea-Pot wasting a lot of time. _How to detect?_**
+
+. Developer is *arguing with Claude* turn after turn. Developer: "but ..." Claude: "I was wrong."
+. Developer writes the same prompt differently asking peers: "how to prompt this correctly?"
+. Developer clears Claude Code session repeatedly. Or changes the models on the same ask.
+
+There are many tells; the example above is to get you thinking from the observer's position. +
+*So, how to fix this?*
+
+And there are TWO root causes both need to be fixed:
+
+. Fix developer;
+. Fix Claude.
