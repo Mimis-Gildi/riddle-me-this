@@ -210,6 +210,11 @@ Ken would come to the office, have his coffee, and meet Dennis.
 - Change ceremony on switch, if useful.
 - Stop anytime and split up.
 
+.How's Magic Made: "Hey Dennis -- how long can we work together?" "About five hours."
+[#img-pairing-unix-boys,align=center]
+image::pairing-unix-boys-2.png[Two 1970s Bell Labs programmers talking over coffee by the break-room coffee machine, lab equipment and a chalkboard behind them,width=1200]
+{nbsp}
+
 *All styles are only about two things:*
 
 . *Mental weakness of the human mind;*
@@ -217,7 +222,7 @@ Ken would come to the office, have his coffee, and meet Dennis.
 
 Let's see what's switched up and why.
 
-== 1. Tour Guide -- Checked Narrative
+== 1. Tour Guide -- Checked Narrative (Tourguide, historically)
 
 Tour-guiding is often the introduction to Pair Programming because it trains the two skills every other ceremony
 presupposes, with the ego risk removed. Every peering ceremony requires narrating your thinking out loud -- and
@@ -229,6 +234,11 @@ Tourists must engage in asking about "paintings and stuff." Strike up dialectic,
 This style isolates both skills with training wheels on: the guide can't be vetoed mid-narration,
 the tourist can't seize control, so nobody's ego is in the collision zone yet.
 It's full-contact dialectic with the contact removed -- which is exactly what a team that's never peered needs first.
+
+."Do engage about the paintings and $hit -- what do you think of the Fruit? (suits)"
+[#img-tour-guide,align=center]
+image::tour-guide.png[A hacker museum guide gestures at a gilt-framed terminal screen of green code while a tourist leans in with hands clasped behind his back, the keyboard on a pedestal behind a velvet rope,width=1200]
+{nbsp}
 
 When coaching, I do the tour first, making the vulnerable move before asking anyone else to. +
 Then I tourist on the peer's first guide-walk, modeling the other seat -- seating trust safely.
@@ -265,6 +275,11 @@ digested the problem into a list of well-defined doable tasks.
 - It loves roughly equal size chunks; it cannot break down work.
 - It can make a sequence of boring tasks fun; it cannot consolidate focus.
 
+.The seam is the product.
+[#img-ping-pong,align=center]
+image::ping-pong.png[Two hackers volley a glowing brick construction over a ping-pong net built of interlocking bricks, swinging keyboards as paddles, a numbered task list on the chalkboard behind,width=1200]
+{nbsp}
+
 Human factors values:
 
 . Decorrelation of blind spots at the finest grain -- split blind spots between two skulls.
@@ -286,6 +301,11 @@ The one without a keyboard continuously talks through: +
 The one with the keyboard (steering wheel) listens, questions, and ... +
 {nbsp} {nbsp} does ONLY *_what they think they should code up_* -- not what they're told. +
 Occasionally, this forces a situation when the *_backseat-driver must re-track and self-correct_*.
+
+."Backseat" -- in the front. Used to navigate! But he won't exit for the gas station anyways.
+[#img-backseat-driver,align=center]
+image::backseat-driver-1.png[A hacker types on a keyboard at the wheel, eyes on his own glowing route, while his backseat peer pleads the other route with both hands over the windshield map,width=1200]
+{nbsp}
 
 What's the *mental and psychological value of the "scandal"*:
 
