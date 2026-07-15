@@ -349,6 +349,11 @@ code -- ever happened to you?
 - Regular dialectic amplifies the abilities of each enabling solving HARDER THINKING problems NEITHER one
 would effectively close alone.
 
+.Two zoom levels no one skull holds at once.
+[#img-driver-navigator,align=center]
+image::driver-navigator.png[A rally driver locked on the one headlit turn ahead while his navigator holds a glowing map of the whole route, eyes up, three moves ahead,width=1200]
+{nbsp}
+
 Faster too -- coder needs no personal memento notepad. Even on ultracomplex refactoring, the navigator will simply jot
 it down for a timely recollection. _Yet it comes with one major and dangerous drawback -- *both form the same bias*._
 
@@ -369,6 +374,11 @@ An example would go something like this:
 . Timebox to 1-2 hours in very short strides (e.g., 15 minutes by 15 minutes)
 . If clarity is not attained in a reasonably short time -- toss it back to the backlog.
 . If clarity is attained, then groom features well and STOP.
+
+.Determine what in the world is this.
+[#img-discovery-ceremony,align=center]
+image::discovery-ceremony.png[Two veteran hackers at the ragged edge where the floorboards dissolve into wireframe void, one raising a lantern, one holding an unused keyboard, an hourglass nearly run out between them,width=1200]
+{nbsp}
 
 == Why Pair Today
 
@@ -428,6 +438,11 @@ making Claude my most useful collaborator of thirty-year daily coding craft.
 
 But not a peer for pairing: pairing is #pair-thinking# -- impossible when only one is think-capable.
 
+."If it only knew,... der ignoratum pleberum. Daddy's girl is working! Learning!"
+[#img-daddys-girl,align=center]
+image::daddys-girl.png[A hacker deep in thought at his terminal, three glowing pages on the desk, while an armored figure blurs through an infinite dark library behind him, arms full of books,width=1200]
+{nbsp}
+
 How do I do that? Now here are four theorems for digital collaborators:
 
 . *Never ask* a collaborator for what *_they're incapable of providing_*.
@@ -473,6 +488,11 @@ I've studied many-an-Acme IT practices. And I can generalize them in three state
 _In that environment *most of the released code is published by AI unchecked*._ +
 Internal chats glorify AI-first, AI-native, AI-centric buzzwords and posers.
 
+.Straight to prod. Nobody looked.
+[#img-corporate-america,align=center]
+image::corporate-america.png[Rows of TV-headed office workers, teapots pouring glowing code through brass pipes straight into the overhead production main, the nearest one pressing the red push button while staring at his phone,width=1200]
+{nbsp}
+
 "Stupid" best summarizes it: from millions spent on tokens to a hundredfold issue count. +
 And it gets even better: they just celebrated clearing a decade of backlog in one year. Publicly. +
 _Did you get it?_
@@ -484,6 +504,11 @@ _Did you get it?_
 > then we conclude -- an Acme developer is a Tea-Pot.
 
 _Acme, is that what you are trying to prove to the world?_
+
+.418: I'm a teapot. 418: Your company is. 418: Who are you?
+[#img-i-am-t-pots,align=center]
+image::i-am-t-pots.png[Two ornate teapots boiling violently at a candlelit date across a dead laptop, the wall clock at five to midnight, heart balloons deflating in the dark cafeteria,width=1200]
+{nbsp}
 
 == Effective work with the Tea-Pot
 
