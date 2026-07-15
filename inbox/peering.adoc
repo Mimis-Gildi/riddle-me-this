@@ -1,0 +1,126 @@
+= Review: Spare Me the SLOP: Pair Programming?!
+:post: site/_posts/2026-07-13-peering-not-pairing.adoc
+:reviewed: 2026-07-14, by Claude, pre-art rough-draft pass
+
+Target: link:../{post}[{post}]. Line numbers as of review time; they drift as drafting continues.
+
+== 1. Correctness and Soundness (most damaging first)
+
+. [.line-through]#*Driver/Navigator zoom levels contradict* -- link:../{post}[L101-102] says `tactics` in the driver,
+`strategy` in the navigator; link:../{post}[L310-312] gives the driver BOTH the strategic Big Picture and
+the narrow-focused work. First bullet at L310 should be the *navigator*, else the prosthesis argument
+collapses (one skull holding both levels).#
+. [.line-through]#"Atlas Operating System" (L346)# -- WITHDRAWN: reviewer misread hyperbole as a naming
+claim; "Atlas ... holds up the world" is the metaphor, UNICS -> UNIX rebrand is stated correctly.
+. [.line-through]#*"Richie" / "Denis"* (L160, L188, L346)# -- RESOLVED: Dennis Ritchie spelled
+correctly in all five spots (history, vignette x2, Why Pair Today).
+. [.line-through]#*Linux kernel teams "only operating peering in pairs"* (L347-349)# -- WITHDRAWN:
+reviewer inferred practice from the public artifact trail (mail-based patch integration), which says
+nothing about how work is done inside teams; author has firsthand knowledge (Nvidia driver team et al.).
+[.line-through]#Grammar note: the Chinese-crackers sentence doesn't parse# -- RESOLVED: rewritten
+(L349-350), now parses cleanly.
+. [.line-through]#*Epoch mismatch* (L55 vs L163)# -- RESOLVED: header now reads "since the 60s."
+. [.line-through]#*Axiom 1 vs Axiom 3* (L35 vs L45)# -- WITHDRAWN: the blockquote resolves itself two
+lines down (one accountable at home, the other a guest); the "aren't equals!" jolt is the deliberate
+ego-check device, and the proposed fix would merely paraphrase L47-48. Reviewer judged the sentence in
+isolation instead of letting the passage finish.
+. [.line-through]#*Discovery stance* (L107-114 vs L326)# -- WITHDRAWN on living reread: the card's
+"hardest, veterans only" is the setup §5 pays off -- hardest precisely because it is not a ceremony;
+card and section agree, the jolt is the device.
+. [.line-through]#*L402 "0% factual" literal-reading nitpick*# -- RESOLVED: now reads "trustworthy"
+(L403), a trust-policy statement, pedant-proof. Claude section verified against Claude's own session
+record -- holds.
+
+== 2. Typos and Grammar (in order)
+
+_ALL RESOLVED 2026-07-14 -- fixes applied by Claude per approved plan; verified by grep
+(`Claud[^e]`, `compliment`, `expanded`, `deceivingly`, `Richie`, `Axiom-`, lone ` - `: zero remnants).
+One judgment call left for author: L149 "WHY - WHAT" lone hyphen kept -- may be intentional,
+mirrors "WHY -> WHAT" at L177._
+
+* [.line-through]#L26: "before popular culture fad" -> "before the popular-culture fad"#
+* [.line-through]#L35/L39: "_Axiom 1_" vs "_Axiom-2_" -- inconsistent hyphen#
+* [.line-through]#L46: "Rank, position, popularity doesn't matter" -> "don't matter"#
+* [.line-through]#L47: "*home,* (his house his rules)" -- stray comma before paren#
+* [.line-through]#L48: "is a caring, giving, yielding -- he's a guest" -- adjectives with no noun#
+* [.line-through]#L50: "satisfied with your behavior" -> "satisfied *by* your behavior"#
+* [.line-through]#L105: "deceivingly intuitive" -> "deceptively intuitive"#
+* [.line-through]#L124: "NOT building harder feature" -> "a harder feature"#
+* [.line-through]#L130: "a solo coding"# -- WITHDRAWN: "a solo" is the musical noun -- a solo,
+performed before an annoyed audience; works as written
+* [.line-through]#L162: "got lucky - they" -- lone hyphen, file style is `--`# (also fixed L174 "not pear - makes")
+* [.line-through]#L171: "that I'd started my career" -> "that I started"; also raw `AT&T` -> `AT{amp}T`#
+* [.line-through]#L177: "buddy-up to solve with"# -- WITHDRAWN: elliptical voice, parses as
+"buddy-up to solve with [the buddy]"
+* [.line-through]#L276: broken markup -- unbalanced quote and asterisk in `*...value of the "scandal*:`#
+* [.line-through]#L279: "effort is expanded" -> "expended"#
+* [.line-through]#L286: "extrapolates the undiscussables"# -- WITHDRAWN: precise as written --
+divergence projects into unarticulated territory, deliberately echoing the skill Claude is later
+said to lack
+* [.line-through]#L321: "compliments the driver navigator" -> "*complements* the driver-navigator"#
+* [.line-through]#L332: "Example even would go something like this" -> "An example would go..."#
+* [.line-through]#L335: "(i.e., 15 minutes by 15 minutes)" -> "e.g."#
+* [.line-through]#L347: "at no end" -> "on end"; "It's rewrite, the Linux," -> "Its rewrite, Linux,"#
+* [.line-through]#L376: "shreds me to pulp in all of:" -- lost "these"; "in all of these:"#
+* [.line-through]#L399: "countered by expectation" unclear# -- WITHDRAWN on living reread:
+"counter" is a deliberate motif, returning in theorem 4 ("always counter a digital generator")
+* [.line-through]#L429: "($Ms building decrepit own Claude Code)" garbled# -- RESOLVED: now
+"($$$ spent on own decrepit Claude ripoff)" (L430)
+* [.line-through]#L431: missing space: `Old Acme"middle-management`#
+* [.line-through]#L441: "a hundred times issue count" -> "a hundredfold issue count"#
+* [.line-through]#L445: "Claud, read issue" -> "Claude"#
+* [.line-through]#L456: "Claude is Tea-Pot" -> "a Tea-Pot"#
+* [.line-through]#L462: "the example above" -- three examples; "the examples above"#
+* [.line-through]#L465: "TWO root causes both need to be fixed" -> "causes; both"#
+
+== 3. Structure and Flow (for the hacker reader)
+
+* [.line-through]#*L203-206 misplaced* -- "All styles are only about two things"# -- RESOLVED:
+moved to close "Let's Understand Peering Styles" (L199-204), bolded, framing all five sections.
+* [.line-through]#*"Tea-Pot" undefined* -- suggest a 418 wink# -- RESOLVED: "418:" now prefixes the
+Acme pairing quote (L446), planting the joke right before the Tea-Pot section.
+* *Ken/Denis coffee vignette (L188) works* -- consider one back-pointer to the STRUCTURE postulates
+(L59-64) it dramatizes: "postulates A through D, agreed in four sentences."
+* [.line-through]#*"Coach" unintroduced at L219*# -- RESOLVED: now first-person "When coaching,
+I do the tour first" (L219).
+
+== 5. Completed-draft review (Fix Developer / Fix Claude / Conclusion)
+
+Verdict: piece is whole; Postulate ladder mirrors the axioms; conclusion lands. No factual objections.
+
+Intent checks (author's call):
+
+* [.line-through]#"Undead" referent double duty# -- RESOLVED by Vadim: L517 now "like a ghost";
+Undead = that which doesn't WANT to think (mainly human). Claude wants to think -- not Undead.
+* "Postulates" reused: A-E (Ceremony STRUCTURE, L59) and 0-3 (Fix Claude) -- same word,
+two lists; fine for a hacker, rename one if it bothers.
+
+Typos in new sections -- ALL RESOLVED 2026-07-14, applied by Claude per approved plan,
+grep-verified zero remnants:
+
+* [.line-through]#L486: "spend and arm-and a leg" -> "spend an arm and a leg"#
+* [.line-through]#L504: "must respond and only when prompted" -> "must respond, and only when prompted"#
+* [.line-through]#L508: "Crafting it a complicated skill" -> "Crafting it is a complicated skill"#
+* [.line-through]#L511: "And if your craft it" -> "And if you craft it"#
+* [.line-through]#L524: "we do thing in this joint" -> "things"; "trained on 99% is" -> "trained on, 99% is"#
+* [.line-through]#L525: garbled pointer sentence -> "What pointers does Claude have to interpolate
+what matters -- what is valuable and what is undesirable?"#
+* [.line-through]#L541: "dilettantism to the historic records" -> "over the historic records"#
+* [.line-through]#L571: "not give a definition instructional to him!" -> "not given a definition instructing him!"#
+* [.line-through]#L574: "can't take turn equally" -> "can't take turns equally"#
+
+== 4. New (from 2026-07-14 late edits)
+
+* [.line-through]#L220: "Then I tourists" -- broken verb# -- RESOLVED: "Then I tourist on..."
+* [.line-through]#L452: missing comma of address# -- RESOLVED: "Acme, is that what..."
+* [.line-through]#Double Tea-Pot referent# -- RESOLVED: deliberate (L461 makes it explicit:
+"Tea-Pot or Most Valued Contributor -- depends entirely on the human").
+* Miro gag (L362, L436) -- twice is the right count; keep.
+* Front matter placeholders pending art pass: CHANGEME banner, empty caption, stub excerpt.
+* Overall flow reads in one motion, no breaks. (Earlier reference to item 1.7 removed --
+that finding was withdrawn.)
+
+'''
+
+_Highest-value fixes: 1.1 (driver/navigator swap), 1.3 (Ritchie spelling), and the L276
+broken markup._

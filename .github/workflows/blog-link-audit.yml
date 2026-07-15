@@ -6,7 +6,6 @@ on:
     branches-ignore:
       - main
       - 'renovate/**'
-      - 'dependabot/**'
   workflow_dispatch:
 
 permissions:
@@ -23,7 +22,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v7.0.0
+        uses: actions/checkout@v5.0.1
 
       - name: Extract issue number
         id: issue
