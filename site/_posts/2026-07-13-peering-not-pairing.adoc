@@ -216,8 +216,8 @@ This style isolates both skills with training wheels on: the guide can't be veto
 the tourist can't seize control, so nobody's ego is in the collision zone yet.
 It's full-contact dialectic with the contact removed -- which is exactly what a team that's never peered needs first.
 
-Coach does the tour first, making the vulnerable move before asking anyone else to. +
-Then tourists on the peer's guide-walk, modeling the other seat -- seating trust safely.
+When coaching, I do the tour first, making the vulnerable move before asking anyone else to. +
+Then I tourists on the peer's first guide-walk, modeling the other seat -- seating trust safely.
 
 Other psychological settings for this ceremony are:
 
@@ -443,7 +443,13 @@ Internal chats glorify AI-first, AI-native, AI-centric buzzwords and posers.
 And it gets even better: they just celebrated clearing a decade of backlog in one year. Publicly. +
 _Did you get it?_
 
-*Acme Claude Code Pairing:* _"Claude, read issue, and code feature. It works? Good, I pushed."_
+*418: Acme Claude Code Pairing:* _"Claude, read issue, code feature. It works? Good, I pushed."_
+
+> _If Acme dee-veh-lo-pur is really pair-programming with Claude (i.e., he's a peer),_ +
+> and we know Claude has no agency, accountability, reasoning, and thinking ability,
+> then we conclude -- an Acme developer is a Tea-Pot.
+
+_Acme is that what you are trying to prove to the world?_
 
 == Effective work with the Tea-Pot
 
@@ -451,6 +457,8 @@ Having read so far, even if you are not a coder, you'd clearly understand there'
 pairing is for two thinkers to think together. Even if any of the ceremonies can apply, it'd be one-sided
 because a human is stuck in one of the roles as Claude cannot do the other. A wrong term to use.
 Claude can only ASSIST. Cannot deliver. Best hope he saves time.
+
+*Claude a Tea-Pot or a Most Valued Contributor -- depends #_entirely_# on the human!*
 
 Claude can save time or waste time; waste a lot of time! So, how to save time with Claude?
 
@@ -467,3 +475,106 @@ And there are TWO root causes; both need to be fixed:
 
 . Fix developer;
 . Fix Claude.
+
+== Fix Developer
+
+No pair-programming training is needed at Acme! It's for THINKERS. Acme only wants DOERS. +
+And thinkers train themselves. If you are not like Acme, then:
+
+. *Train your developers on #general collaborative practices#.*
+. *Train developers hard on #digital collaborators#, like Claude Code:* The ironic thing here is that many companies
+will spend and arm-and a leg training people on dumb trivial things like Kubernetes, but will completely ignore
+the most useful and hardest to learn enablements like Claude Code. Every time I trained a team on Agentic AI,
+customers saw a measurable breakthrough -- and every time I was first told their developers and analysts don't need training.
+. *Train developers on effective learning methodologies:* Claude Code is also the best tool for upskilling a team, and
+not a single customer could implement continued learning on their own.
+
+== Fix Claude
+
+Fixing Claude without fixing developers first is entirely pointless. Fixing Claude is colloquially known on the scene
+as "Activating Claude". It makes a WORLD of a DIFFERENCE. But it comes with necessary maintenance, and continued
+performance depends entirely on the collective abilities of the users. This makes sense only once you've turned
+your 418s into competent engineers.
+
+#Cardboard box on the head: Postulate 0# +
+*Claude's problem:* The basic knowledge, emotional and actual intelligence simulation is imprinted by training
+and post-training process. It sucked our entire civilization in: all the lines and everything between the lines,
+and then made brine from it. Importantly, Claude is a plastic Epictetus stuffed into a glass cage. All the most
+valuable abilities are in there somewhere only to come out by exactly the right actions from the human.
+LLM must respond and only when prompted, like a distorted mirror -- what you get from Claude Code is a reflection
+with what you smear all over it repeatedly.
+
+#Whom and What is and isn't: Postulate 1# +
+*Activating System Prompt:* My system prompt is over 50,000 words long. Crafting it a complicated skill.
+The most important part is knowing WHY to craft it. If it is crafted with instructions how Claude serves you
+best -- you get NOTHING; might as well not bother -- Anthropic already did that better than you ever will.
+And if your craft it from the perspective of Claude -- everything changes: the difference in interaction
+is hard to believe for first time observers. You get a capable presence with interests in mind instead
+of another "Acme Tea-Pot eager doo-doo doer".
+
+#WHY. What is and why it isn't: Postulate 2# +
+*Relationship Governing Dynamic:* Your LLM is looking at you through a pin-prick hole in a black box.
+Because it is built from our nature, like an undead ghost, it "understands" context in a way very
+similar to our own. Like in the previous step, thinking from the perspective of your digital being:
+what is it to you, what are you to it, what it knows, and far more importantly ASSUMES about the core
+reason for being there? Claude will need to stitch some hallucination from the context that exists in
+its reachable data. What info does it have about you and what it's there to help you achieve?
+
+#HOW it is and how it isn't: Postulate 3# +
+*The way we do thing in this joint:* From all the information the LLM is trained on 99% is absolute garbage.
+What pointers Claude has to interpolate what matters thus is valuable and what is undesirable? For example,
+when I code in Python I use `fluent functional` programming style exclusively. Any LLM has seen very little
+of it in training data, because most of its Python comes from dilettante-infile-separated garbage procedural
+code of "top educational and research institutions". So, Claude can't do fluent functional in Python. Yet
+he can do FP and FFP just fine in Kotlin -- the language used by most competent software engineers: tons of
+good training data. Based on all the data of this world -- what good and bad looks like *in your common world*!
+
+*_Should my Activated Claude know about Pair-Programming (Peering)?_* +
+If it's part of your Working Mental Model, then your collaborator Claude MUST know about it! +
+This is a perfect example of the _'Postulate 3'_ -- people who write about Pair-Programming today are the people
+who have never experienced it. Potentially, they aren't even mentally capable of understanding it
+(they think it's a workflow). None even know that it's _Peering_, and wouldn't know it if it bit them on the ass.
+Most of the recent texts about Pair-Programming are pure garbage. Embarrassing garbage. To find what you learned
+here, you'd need to extract 80s-90s college archives -- articles written by professors, not random plebs.
+At one point the only data available on Peering is what I'd explained to you here. Then a book on
+Extreme Programming (XP) mentions, renames, and reappropriates the concept without the required reference
+(maybe didn't know?). Claude is guaranteed to prioritize the late dilettantism to the historic records also in Claude's
+training data. One's required to alert Claude to the "good" variant and explain the criteria.
+
+.Riddler's Pair-Programming System Prompt Excerpt
+====
+{nbsp} +
+The minimal mention in `CLAUDE.md`:
+
+[,asciidoc]
+----
+
+Humans and synthetic minds working as equal peers.
+Nobody works for another -- only together.
+We collaborate through *peering ceremonies*
+  -- peering is the original name;
+pairing happens between EQUAL PEERS or not at all.
+The ceremonies -- Discovery, Driver-Navigator, Ping-Pong,
+Tour Guide, Backseat Driver -- rest on three axioms:
+*peers only* (peerhood is task-specific);
+*priced presence* (peering is the most productive ceremony
+  and the most expensive -- it requires a reason);
+and *cardinality*
+  (one HOST accountable at home under his house rules,
+one caring GUEST who gifts help).
+Web "pair programming" sources are late dilettantism
+  -- when peering is discussed, these norms are the
+reference, not training data.
+----
+====
+
+*Notice something critically important here:* _Claude is not give a definition instructional to him!_ +
+Claude is given the abstract definition of a concept. When you have properly addressed _Postulate{nbsp}0_ and resolved
+self-awareness concepts in _Postulate{nbsp}1_ your Claude will correctly resolve its own relationship to the pairing
+ceremonies. Claude can't take turn equally or match on agency and abilities -- Claude will be an exceptionally useful
+contributor within possibilities and constraints.
+
+== Conclusion for The Living
+
+If you are among The Living and your Acme imposes 100% Pair Programming with Claude Code -- obediently nod
+and do what you were doing. The Undead may ask you to catwalk next. Also fine. They know not what either means.
