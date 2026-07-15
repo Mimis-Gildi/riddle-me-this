@@ -2,12 +2,10 @@
 categories: [ reflections ]
 tags: [ Peering, Pairing, Collaboration, Hacking, Cogs, Corporate ]
 header:
-  overlay_image: /assets/images/CHANGEME-banner.png
-  overlay_filter: 0.1
-  caption: ""
-  image_position: "center bottom"
+  overlay_image: /assets/images/banner-athena-in-acme-city.png
+  caption: "One keyboard, two connected minds."
 excerpt: >
-  One-sentence hook for LinkedIn / SEO.
+  Pair programming built UNIX; what all Acmes mandates with Claude Code is neither pairing nor programming -- it is two boiling Tea-Pots on a date and a deadline.
 classes: wide
 comments: true
 hidden: false
@@ -19,6 +17,18 @@ read_aloud: false
 ifndef::env-site[:imagesdir: ../assets/images]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 
+++++
+<style>
+.page__hero--overlay { background-position: center 20%; }
+  .page__hero--overlay .page__lead {
+    color: rgba(255,255,255,0.7);
+    margin: 15% 30% 0;
+    text-align: justify;
+    width: 1200px;
+  }
+</style>
+++++
+
 Corporate America forces 100% Pair-Programming (pairing) with ... Claude Code. +
 Except everything slows down. The problem isn't pairing. Nor Claude Code. +
 The problem is -- *nobody is pairing* -- folks are *_anti-pairing_*.
@@ -29,6 +39,10 @@ It's powerful and effective: gave us UNIX (yes, that-old) -- our world is based 
 It is NOT a process to improve software delivery. +
 It IS a psychological tool to unblock THINKING. +
 (A countermeasure to the human condition, if you will.)
+
+."Honey, come to bed -- we will pair."
+[#img-acme-pairing,align=center]
+image::acme-pairing.png[A hacker holding his keyboard at the foot of the marital bed where a CRT television in a nightcap waits under the covers,width=1200]
 
 == The Three Axioms
 
