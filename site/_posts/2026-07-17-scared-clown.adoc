@@ -31,7 +31,8 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 </style>
 ++++
 
-*_Just like that, massive American-Founders' support ENDS for Ukraine._*
+*_Just like that, massive American-Founders' support ENDS for Ukraine._* +
+_Or does it?!_
 
 "Riddler, you must come to the Citadel -- the community is fussing over there." +
 'Citadel' is a nickname for a warehouse where hundreds of American founders supporting Ukraine congregate.
@@ -50,13 +51,15 @@ I was greeted by a huge banner at the entrance of the Citadel that read:
 ."«Рускій сирок — по-рускі нахуй»" -- Kyiv and all major city protests {sternenko-youtube-coverage}[Sternenko (YT),window=_blank]
 [#img-katzap-nahui,link={sternenko-youtube-coverage},align=center,window=_blank]
 image::ruvzki-sirok-po-ruvzki-nahui.png[Ukrainians protest firing of Fedorov and demand Syrskyi dismissal,width=800]
+
 {nbsp}
 
 Most Americans drowning in russian propaganda cannot easily understand what's happening here. My neighbor asked me
 "hey do you see all riots in Ukraine" -- and that explains #*everything*# about us and nothing about Ukrainians.
 Uncivilized *riots* -- that's what you see in New York City: looting, burning, defacing, and destroying private property.
-In stark contrast, Ukraine is on peaceful protests: 20-40 years old, many children; a little child holding a placard:
-"My daddy is busy in combat -- I'm here to speak on his behalf." Here are the key facts about Ukraine today:
+In stark contrast, Ukraine is on peaceful protests: 20-40 years old, many children; a little child holding a placard: +
+_"My daddy is busy in combat -- I'm here to speak on his behalf."_ +
+Here are the key facts about Ukraine today:
 
 - 20-40-year-old had left work to demonstrate against the government's choices;
 - 40-60-year-olds, their daddies, grandpas, husbands busy manuring orc on the zero;
@@ -65,26 +68,66 @@ In stark contrast, Ukraine is on peaceful protests: 20-40 years old, many childr
 As usual, I will explain what people think, present the facts, and then share probabilities. +
 Presenting everything if I were 5.
 
-== What Happened:
+== Perceptions of What Happened:
 
 . Zelenskyy dismissed defense minister Mykhailo Fedorov and kept general Oleksandr Syrskyi;
 . Russia's propaganda channels celebrate this event at a full scale with dedicated time;
 . Ukrainian people took to the streets protesting the decision and demanding explanation;
 . Ukrainian NDFs unite and form an intelligence unit of their own, (not their domain);
 . Mykhailo Fedorov addresses the people explaining his conflict with general Syrskyi;
-. Best military commanders resign, return awards, and now tare up orders signed by Syrskyi;
+. Best military commanders resign, return awards, and now tear up orders signed by Syrskyi;
 . Syrskyi orders loyal units to record videos on his behalf sending Skelya to needless death;
 . Zelenskyy's own media channels and financial backers walk out on his party to join protests;
-. People demand dismissal, investigation, and prosecution of Syrskyi as primary action.
+. People demand dismissal, investigation, and prosecution of Syrskyi as primary action;
+. Several loyal to Syrskyi officers record support reels -- people disregard these;
+. Numbers of Ukrainian military personnel opposing Syrskyi grow, taring up his signed orders;
+. International support groups merge to convince Ukrainians *_the real purpose of all this_*: +
+_"Zelenskyy government direct attack on people to restore previous political power"_;
+. People or Ukraine gave their government a deadline of July 24th.
 
 And we're here. Protests are growing. NDFs are reforming. Since this is Zelenskyy's third strike,
 things are heating up quickly. This has created a military response never seen in Ukraine before.
 
-== Probable Outcomes:
+== What ISN'T True:
+
+__Every social commotion in Ukraine is a prime target for russian agencies. +
+Today Pootin understands he's at war with Ukrainian people, not the government, +
+and he understands that he's lost the war as long as people have the power.__
+
+Thus, russian agencies are busy pushing the following narratives:
+
+- People are paid to protests, the protests aren't real;
+- Ukrainians protest against the war with Russia;
+- Western support for Ukraine has been lost completely;
+- Ukraine is collapsing by losing the war with Russia.
+
+There are many more specific to different targets like Western audiences, internal, etc.
+
+== Peoples' Speculated Outcomes:
 
 . It is unlikely for Fedorov to be reinstated.
 . At best, Syrskyi is dismissed, at worst eliminated.
 . Zelenskyy's presidency suffers a fatal unrecoverable blow.
+
+[NOTE,%collapsible]
+.Personally, I see things a little different from the people.
+====
+.In my humble opinion -- Zelenskyy and Rada will give in to all people's demands.
+[%collapsible]
+======
+
+I'm not big on commentary. I'd much rather offer you curated facts. +
+Help you research. And hope you prove me wrong, when I am.
+
+But here I'd bank on my understanding of the modern Ukraine +
+and people contract with their lame government.
+
+It will not come to daddies driving their T-84Us down Bankova street. +
+Unimaginable. These are different times and different politicians.
+======
+
+Let's use logical, not emotional thinking.
+====
 
 *_But no matter what happens -- Ukraine comes out stronger: +
 one man makes little difference in the sea of great people._*
@@ -99,13 +142,22 @@ People see Zelenskyy as someone who is 1) incompetent; and 2) way too long in hi
 
 _Now let's understand what people see in each person here, and after we'll review facts on all._
 
-First, it's important to understand Ukrainians are very well-informed in operations of their government,
+[%collapsible]
+.Unlike Americans, Ukrainians are very well-informed and difficult to sway to a point of view.
+====
+Ukrainian people have fought russian propaganda for decades and WON. +
+This created a nation of "informed skeptics," if you will.
+
+Out of necessity, Ukrainians are very well-informed in operations of their government,
 political structures, global and local geography, and military operations. In our own US of A,
 a typical college student thinks that the capital of Spain is France; the US has 7 political parties
-and 55 states. (Care for a video?) Young Ukrainians can name all ministers, what they do,
+and 55 states. (Care for a video?) So, for us, the Americans, this is a bit difficult to imagine.
+Our kids care for vanity things. Young Ukrainians can name all ministers, what they do,
 and describe at least their local elected officials. Ukrainian society is formed in such a way
 that kids who are raising little kids are well-connected with elders fighting orcs thus forming
 a two-ended connection to government, politics, and warfare.
+====
+{nbsp}
 
 == How do People Know:
 
@@ -138,7 +190,7 @@ But this is really simple: Ukrainians sample sources offered by friends, vet the
 the test of time, and subscribe only to the sources they're willing to trust. Many also check
 "the other side" and subscribe at the opposing point of view if factuality holds. This creates an
 environment in which russian propaganda utterly fails with bots collecting ~10k subscribers with
-unforgiving attrition while truthy channels enjoy millions of subscribers regardless of affiliation.
+unforgiving attrition while honest channels enjoy millions of subscribers regardless of affiliation.
 
 _Maybe there's something for us Americans to learn here?_
 
@@ -158,7 +210,7 @@ The portrait of a Ukrainian Patriot -- not a record:
 - *He's proof the new Ukraine beats the old one.* +
 *_He's what the 20-40 crowd sees when they look at themselves_*:
 . Fast, technical, honest, allergic to the "constant lying" he named on his way out;
-. Direct -- says Syrskyi "refuses to acknowledge new warfare realities.
+. Direct -- says Syrskyi "refuses to acknowledge new warfare realities."
 
 The load-bearing emotion under all of it isn't admiration, it's *betrayal-in-advance*: +
 _he's the one competent thing they could point to with undeniable results_, +
@@ -171,26 +223,25 @@ _and the #spent president# discarded him to keep a **sycophant general**_.
 
 == People on general Oleksandr Syrskyi
 
-
 The core belief driving the crowd stems from countless first-hand accounts and the war-correspondents accounts I'd mentioned.
 People say he's the Soviet relic who wins with bodies, Fedorov the digital one who wins with drones.
 The placards say it clearer than any analyst:
 
 - «Сирський - це совок. Федоров - це цифра. Білецький - це результат» +
- {nbsp} -- Syrskyi is Sovok (Soviet mold), Fedorov is digital, Biletskyi is results. +
-Gordon, Jul 18
+{nbsp} -- Syrskyi is Sovok (Soviet mold), Fedorov is digital, Biletskyi is results. +
+Gordon, July 18
 - «Сир вже з пліснявою» -- The cheese is already moldy +
-(the сир/Syrskyi russian cheese pun) UP, Jul 18
-- «Я соромлюся свого головкома» -- I am ashamed of my commander-in-chief. UP, Jul 18
+(the сир/Syrskyi russian cheese pun) UP, July 18
+- «Я соромлюся свого головкома» -- I am ashamed of my commander-in-chief. UP, July 18
 - *«Військові служать народу України, а не головкому»* +
- {nbsp} -- Soldiers serve the people of Ukraine, not the commander-in-chief. This is critical: +
-(NDFs pledge to the people, not the state, killing 97% of orc, making up just 10% of AFU.) +
-24tv, Jul 19
+{nbsp} -- Soldiers serve the people of Ukraine, not the commander-in-chief. This is critical: +
+(NDFs pledge to the people, not the state, killing >97% of orc, making up just 10% of AFU.) +
+24tv, July 19
 - The one-line thesis the crowd chants in slogan form: +
 Fedorov = more russian deaths. +
 Syrskyi = more Ukrainian deaths. +
- {nbsp} -- _more on this in the facts section_. +
-Farrell/KI, Jul 19
+{nbsp} -- _more on this in the facts section_. +
+Farrell/KI, July 19
 
 The named soldier voices are the strongest on-record, for example, +
 Oleksandr Shyrshyn, ex-battalion commander, 47th Mech AFU (Federal): +
@@ -198,8 +249,11 @@ Oleksandr Shyrshyn, ex-battalion commander, 47th Mech AFU (Federal): +
 It didn't matter if the orders were impossible to carry out, +
 didn't make sense, or would just lead to unnecessary losses." +
 And: "His strategy is 'the defense of Ukraine'; that is not a strategy." +
-KI, Jul 19
+KI, July 19
 
+.Ukrainians on the streets, the 20-40-year-olds with kids, have private information networks.
+[%collapsible]
+====
 Remember, Ukrainian people on the squares have a direct connection to their parents fighting the war.
 Syrskyi doesn't actually command 120 thousand volunteer soldiers of NDFs because they simply disregard him.
 But he commands almost a million of AFU. Fighting side-by-side people see staggering losses of AFU
@@ -212,21 +266,49 @@ an extensive campaign to obscure the truth. To us Americans it's just Ukraine fi
 But to all Ukrainians "GUR and 414th (Magyar Birds) eradicated russian shadow fleet" means Syrskyi
 had nothing to do with it: They know GUR, Ukrainian CIA adores NDFs like 414th and bypass any real
 work on federal forces of Syrskyi.
+====
 
+{nbsp}
+
+.Syrskyi is and has always been in command of CORRUPT Ukrainian federal recruiting.
+[%collapsible]
+====
 *_The most damming evidence on Syrskyi is the absurd state of federal recruiting._* +
 This is the MOST corrupt part of Ukraine. It was always under the direct control of Syrskyi.
 Catching people on the street for AFU and collecting bribes to let them off -- documented
-on numerous occasions. All while still unable to fill the ranks. And NDFs get more recruits
-than they can train because core values and culture are spectacular, training is thorough
-and lengthy, pay is exceptional, and combat insertion is gradual and well-monitored.
+on numerous occasions. (My own community maintains over 1,500 records awaiting opportune times).
+All this while still unable to fill the ranks.
 
-Last but not least -- Syrskyi is a graduate of a Moscow military school, Russian by nationality (Vladimir Oblast);
+On the other side, NDFs get more recruits than they can train because their core values
+and culture are spectacular, training is thorough and lengthy, pay is exceptional,
+and combat insertion is gradual and well-monitored. This too is a growth problem.
+====
+
+{nbsp}
+
+Last but not least -- Syrskyi is a graduate of a Moscow military school,
+Russian by nationality (Vladimir Oblast);
 his mother and brother still live in Russia today.
 Every Ukrainian knows that relatives in Russia were the primary FSB leverage on foreign
 nationals -- _what is the chance Syrskyi is compromised?_ People see him as a copy of russian
 general Gerasimov -- same school, same core value, same mindset: a die-hard sycophant with no
 value of human life. +
-That is the *_definition of katsap_*.
+That is the *_definition of katsap_* and the way opposing side paints Syrskyi.
+
+[IMPORTANT]
+.Before you jump to conclusions -- read everything!
+====
+.Being Russian is NOT being bad! Learn more.
+[%collapsible]
+======
+As always, I'm giving you the full overview of sentiments here. +
+_There are MANY honorable Ukrainians fighting still having family in Russia._ +
+There is an entire Russian Freedom Legion, people my own charities supported,
+all of whom are Russians, none of whom are katsap, and all of them are heroes
+and warriors on the side of light. You need to know and consider the sentiments
+of public opinion, including the ugly nationalist side, and consider facts instead.
+======
+====
 
 People have enough 1) evidence, 2) relative stories, 3) documented scandals, and 4) circumstantial
 evidence to have their daddies execute a government official again for the first time since 2022.
@@ -235,7 +317,7 @@ _But before you jump to conclusions -- read through the evidence sections of thi
 
 == Facts and Analytics on former Defense Minister Mykhailo Fedorov
 
-Before we pull the facts and analytics on Fedorov, we need to understand the dillema of
+Before we pull the facts and analytics on Fedorov, we need to understand the dilemma of
 Ukrainian Military reform. When the war broke out in 2014 Ukrainian military got a new
 type of military units that turned out to be far more effective than the standing army,
 *_the ultras._* Azov is a great example of such a unit. They're 100% volunteers.
@@ -247,25 +329,38 @@ There are a lot of different types of these professional volunteer army, and the
 "Will of their Local People," not the government. It is also an ancient tradition of Rus' from
 Kyi to Cossacks also present in other descendants of Rus' like Denmark, for example.
 
-*The great screwup is always American:* One dilettante named Jake Sullivan, completely
+[%collapsible]
+.*The great screwup is always American:* __In 'Merica we doo army dis way...__
+====
+One dilettante named Jake Sullivan, completely
 ignorant of Rus' history or Ukrainian culture, assumed the military recruiting in Ukraine
 will work just like it does in the United States. So, he pressured the American government to
 pressure Ukraine to force-mobilize a large force. All the while Azov already exemplified power.
 *_To Ukraine this is one of the most damaging and destructive events of this entire war since 2014._*
 This created NO advantage -- NONE. The brunt of the war is still carried by the small NDFs. While
 the mobilization fed the corrupt conscription institution of Syrskyi and created an absurd number
-of problems with demoralized large body of men. And this is the dillema Fedorov was expected to "reform."
+of problems with demoralized large body of men. And this is the dilemma Fedorov was expected to "reform."
 He found the Ukrainian battlefield as follows: A) Syrskyi's federal forces sit in a foxhole all along
 a thousand miles of the contact line -- they're live bait for orcs to advance against; B) NDFs use
-drones and skillfully move around eradicating orcs advancing on the federal troop desperately trying
-to hold positions. Not only that the federals are conscripted, they're also now planted with long
-rotation cycles and constantly under fire. And they can do relatively little but "sit and defend."
-This is how Ukraine got TWO armies. "Inglourious-Basterds" like Davinchi Wolves scoring kills
-and glory, rotating frequently, resting four days -- killing four days. And thoroughly undertrained,
-undersupplied, abused in every way, and demoralized mobilized conscripts. And nobody in
-Ukraine today knows or understands what to do about this cluster-phoock.
+drones and small formations skillfully moving around eradicating advancing orcs.
+The orcs are targeting the federal troops in foxholes -- orcs understand that.
+AFU conscripts are desperately trying to hold positions under omnidirectional fire.
+Not only that the federals are conscripted, they're also now planted with long rotation cycles,
+constantly under fire, and understaffed. And they can do relatively little but
+*"sit and defend"* -- Syrskyi entire doctrine: make the whole army sit in the foxhole.
 
-*Before the Ministry of Defense:* He was one of the earliest in Zelenskyy's team.
+This is how Ukraine got TWO armies.
+"Inglourious-Basterds" like Da Vinci Wolves scoring kills and glory, rotating frequently,
+resting for days -- killing for days. And thoroughly undertrained, undersupplied, abused in every way,
+and demoralized mobilized conscripts. Worst, nobody in Ukraine today knows or understands
+what to do about this stalemate cluster-phoock.
+
+*_Does Jake Sullivan understand that US Army would NOT hold against modern orcs?_*
+====
+
+{nbsp}
+
+*Before the Ministry of Defense:* Fedorov was one of the earliest in Zelenskyy's team.
 
 - 2019: Joins Zelensky's campaign as digital lead: 28.
 - 2019: First Minister of Digital Transformation {plus} Vice PM: 28.
@@ -280,12 +375,12 @@ _Technologically, Ukraine is far ahead of any civilized nation, including us (th
 - World-first *digital passport* with full legal equivalence to the physical: August 2021. +
 Ukraine is the first country on Earth to replace physical identity with digital.
 - *Diia* February 6th, 2020: driver's license, passports, ID, tax, business reg, e-marriage; +
-130+ service domains.(User count: 6M by 2020; ~20M the year after when classified.)
-- *Diia.City* -- 5% IT-sector tax regime, live Feb 2022. (First ~1,555 resident companies.)
+130+ service domains. (User count: 6M by 2020; ~20M the year after when classified.)
+- *Diia.City* -- 5% IT-sector tax regime, live February 2022. (First ~1,555 resident companies.)
 - *Diia open-sourced* (2023) and exported via USAID to Colombia, Kosovo, Zambia, Estonia +
- {nbsp} -- all building on the model. (See "Ukraine replaces America" article).
+{nbsp} -- all building on the model. (See "Ukraine replaces America" article).
 . *State Supporting Defense* -- unified social contract:
-- *Starlink:* Fedorov tweeted Musk 26 Feb 2022; activated the same day, then terminals.
+- *Starlink:* Fedorov tweeted Musk 26 February 2022; activated the same day, then terminals.
 - *Telecom resilience:* National roaming across Kyivstar/Vodafone/lifecell, ~54M subscribers
 auto-switching on network failure, March 2022. World's first cross-network auto-balancer.
 - *United24:* Launched May 2022, ~$1.4B raised, >91% to defense, 10,000+ drones funded. +
@@ -307,7 +402,7 @@ the likes of Delta already existed, and core practices were established; still, 
 
 . *Procurement War* (he was winning -- what got him canned):
 - Audit exposed ~₴300bn (~$7B) in overspending; +
-Open tenders cut 155mm artillery shell cost ~16%. (Syrskyi)
+Open tenders cut 155mm artillery shell cost ~16%. (Syrskyi trough)
 - March 2026 rule change: General Staff must request drones by spec only: +
 no named firms; demand auto-generated from frontline data. (Blocks Syrskyi favoritism) +
 (Structural trigger: took "which crony gets the cheese" out of Syrskyi's hands.)
@@ -321,15 +416,15 @@ no named firms; demand auto-generated from frontline data. (Blocks Syrskyi favor
 - #*e-Points:*# ~95% of units enrolled, 181,000+ systems to the front in 2026; +
 expanded to snipers and air defense. (Gamified killing favoritism 100%)
 . *Critical Deals* (including the timing insult):
-- *_EU Drone Deal_* {plus} €1bn disbursal -- _hours before his dismissal, 15 Jul._
+- *_EU Drone Deal_* {plus} €1bn disbursal -- _hours before his dismissal, 15 July._
 ("Fired the day the EU bet a billion on him recovering ALL costs.")
-- Germany ~€4bn (*Patriot*, *IRIS-T* FOR _5,000 **joint AI drones**_), 14 Apr.
-- *_World's First Transparent Weapons-Export System_*: 1 Jul.
+- Germany ~€4bn (*Patriot*, *IRIS-T* FOR _5,000 **joint AI drones**_), 14 April.
+- *_World's First Transparent Weapons-Export System_*: 1 July.
 - 89.2% of ALL newly codified weapons 100% _domestic production_.
-. #*WHAT FIRING KILLED IN FLIGHT:*#
+. #*FIRING KILLED IN-FLIGHT:*#
 - 100% shift of contracting power *_from the generals to the civilian ministry_* +
 (Would kill all military procurement corruption and favoritism): +
- {nbsp} Zelensky sided with Syrskyi and Hnatov against Fedorov.
+{nbsp} Zelensky sided with Syrskyi and Hnatov against Fedorov.
 - Migration 70% of drone procurement onto DOT-Chain -- unfinished deobfuscation.
 - The EU deal and export mechanism to be fully automated by Ukrainian systems. +
 (_Kubilius publicly begging the program survives and transition completes._)
@@ -343,6 +438,135 @@ In defense, he was only aggressively applying #digital systems to defeat corrupt
 
 With personalities removed: *_it's about who controls the MONEY._*
 
+== Facts and Analytics on general Oleksandr Syrskyi
+
+Yet the general "Butcher" is an even more colorful figure.
+
+And first we must understand a little about "General's Popularity" phenomenon.
+The crowd often despises great generals because command forces choices a frightened public cannot stomach.
+Fabius Maximus saved Rome by refusing to fight Hannibal head-on -- Romans hated his patient attrition
+so much they mocked him as "Cunctator," the Delayer, and forced a co-commander on him;
+only after they abandoned his caution and lost as many as 50,000–70,000 men at Cannae
+did "Cunctator" turn into a title of honor. Ulysses S.{nbsp}Grant was branded "the Butcher"
+for the Overland Campaign -- yet Lee bled proportionally worse; his grinding advance
+is what finally broke the Confederacy. Grant himself wrote of Cold Harbor,
+"I have always regretted that the last assault was ever made...
+no advantage whatever was gained to compensate for the heavy loss" -- not
+the words of a callous man. And in living memory, General Matthew Ridgway took over a broken,
+retreating Eighth Army in Korea in December 1950 -- "a bewildered army," he called it,
+sick with "bug-out fever." He's demanded hard, unwelcome, resentful things: relieve the timid,
+lead from the front, turn and fight. Within a month he'd reversed the rout, retaken Seoul,
+and stabilized the line. A decorated paratrooper who'd jumped into Normandy was later trusted enough
+that his warning helped keep America out of a ground war in Indochina (by 1954). +
+*_These genius soldiers didn't require public approval ratings._*
+
+Syrskyi does mind his approval ratings like a teenage girl. Let's see his accomplishments -- and
+ask the only question that matters for a *commander*: was it *his* generalship, or the
+people *under* him?
+
+- *Kyiv, 2022* -- as Ground Forces commander he built the *defense architecture*: sectorized
+the city, a general to a sector, battalions improvised out of training centers, one chain of
+command. Hero of Ukraine, April 2022. *_This one is genuinely his_* -- at the drawing-board level. +
+The *fight* belonged to the units and territorial defense (i.e., NDFs) under Zaluzhnyi.
+- *Kharkiv counteroffensive, September 2022* -- 8,000 km² in two weeks. He's sold as "the architect."
+He wasn't. The *concept was Zaluzhnyi's*; Kharkiv was the *diversion* to the Kherson main push,
+and it *over-performed*. The ground was taken by the 25th Airborne, 92nd Mech, 80th Air Assault,
+112th/113th Territorial. Syrskyi commanded the *axis* -- a real command,
+but "his triumph" is just a press release.
+- *Bakhmut, 2022-23* -- theater oversight; the actual city defense run by his subordinates.
+This is where the men started calling him *"the Butcher"*.
+Not russian propaganda -- *Politico* broke it, 8 February 2024, the day he was made Commander-in-Chief;
+Al Jazeera and Kyiv Independent published with named critics: Azov chief of staff *Bohdan Krotevych*
+and battalion commander *Oleksandr Shyrshyn* -- _first comparison to NDFs and Syrskyi fear and hatred of!_
+- *Kursk incursion, August 2024* -- *_his_* call, his plan, Zelensky-approved. 1,300 km² in three weeks.
+Then it *failed for seven months*: russia counterattacked with 11,000+ North Koreans, retook Sudzha
+in March 2025, and the whole bulge collapsed to ~140 km² under encirclement threat.
+This was HIS operation -- from desertions, to micromanagement, to rookie mistakes: *FAIL!*
+- *Commander-in-Chief, February 2024 →* -- inherited Zaluzhnyi's chair after the failed 2023 offensive.
+The *decision* to pull out of Avdiivka (nine days in) *_was sound_*; the *execution* was a bloody mess
+-- another Syrskyi signature card. The *loss* itself wasn't his -- $61B in *_US aid sat
+Biden-stalled_* till April 2024, 120,000 russians against 5–8,000 defenders. Pokrovsk's been a grind.
+This required brains: the likes of Zaluzhnyi or perhaps the intervention of Khmara.
+
+_(Politico, Al Jazeera, Kyiv Independent, ISW, MWI, Wikipedia -- 2022-2025.)_
+
+His ledger is perceptions that don't hold up under any real scrutiny. +
+But most telling is his morbid fear of the NDFs. All of them:
+
+- *Volunteer* Battalions: Aidar, Donbas, Dnipro-1, OUN, etc. (almost all restructured now);
+- National *Guard*: i.e., Azov Battalion -> Regiment -> Brigade; Daughter units (3rd Assault);
+- Territorial Defense (*TDF*): countless Voluntary Formations of Territorial Communities (VFTC);
+- Unmanned Systems Forces (*USF*): entire branches of service (like US Marines, Air Force, etc.);
+- *_Offensive Guard_*: *_specialized_* spin-off branches that grow right alongside USF, TDFs, Guard;
+- International Legion, Freedom of Russia Legion, Belorussian Kastuś Kalinoŭski Regiment, etc.;
+- Specialized Private Military Companies (*PMC*): numerous smaller, exceptionally effective units;
+- Brand new National Intelligence Service -- nobody knows yet what these Ukrainians formed.
+
+The point is, Ukraine was ALWAYS a self-defense community, like Sparta, two thousand years of
+recorded history, from Prince Kyi spanking Constantinople with his *_Druzhyna_* about 1,400 years ago
+to *_Zaporizhian Sich Cossacks_* about 400 years ago -- essentially ancient NDFs.
+Recent Orange Revolution and Revolution of Dignity is not the first or new occurrence -- it's
+*_always been this way_* -- 20-40-year-olds speak their minds, get wronged and call "DADDY",
+then 50-60-year-olds come armed and spank everything. Russian nationalist Nikolai Gogol wrote
+"Taras Bulba" in Ukrainian to make fun of this aspect of Ukrainian identity yet only ended up
+scaring the following generations of russian rulers -- *_especially Vova Pootin_*! Similarly,
+general Syrskyi doesn't see _independent thinking peoples formations_ in any of his
+"military doctrines" and used dozens of his crony officers to complain to Rada about them:
+"we can't even count them"! As much as he hates them, there's nothing he can do about them:
+his many times larger conscripted meat-force has neither political nor warfare capital to
+stand up to NDFs with. Especially after Fedorov statistics showing that in May NDFs caused
+~97% of total hurt on orcs, with lion's share to USF, the force Syrskyi called "fake",
+putting the "Commander in Chief" in a rather impotent position.
+
+*Syrskyi conflict:* Bad enough, Fedorov directly attacked corruption, he also threatened
+general's favoritism powers: created a "fair point system" that heavily favored NDFs,
+the units that scored almost all the kills, leaving "Jake Sullivan - Oleksandr Syrskyi"
+mobilization nothing more than an open blunder. Openly counting battle gains and losses
+was no part of the general's defense plans.
+
+Ukrainian people understand this! So do all the politicians. And now you do too.
+
+I must point out from myself that some of the federal forces, about 350 thousand, are
+_absolutely-necessary_ -- these are the units that stitch all the crazy complicated
+logistics and support together. NDFs have their own material management, logistics,
+and manufacturing; still, in my estimation 2/3 of all the material management is brunted
+by the AFU. Realistically, removing a chunk of AFU is catastrophic for 2 reasons:
+A) people moving all the shells and water around, and B) people playing rabbit in the
+tranches -- cannot be replaced by NDFs even in a small part.
+And so the Ukrainian people are stuck in their predicament and dilemma. Expecting
+Syrskyi and Fedorov to solve this is absurd. The best is to even out honor and valor in
+all the units and slowly move them to NDF-hybrid structure. Denmark and Finland
+figured it out, the latter punished the Soviet Union in a winter war. Israel rocks
+national defense. Ukraine needs to get wiser. Syrskyi physically can't help this.
+
+== Zelenskyy, Syrskyi, Fedorov, and Ukrainian People
+
+#*FATAL mistake Pootin made is assuming that he will fight the Ukrainian government.*# +
+_Ukrainian government was so INAPT and CORRUPT that it's no contest -- 3 days indeed._ +
+By the time Poo realized WHOM he's fighting, it was too late -- 93% of the invading army gone. +
+Now orc is fully renewed 5+ times (the original force of 220 thousand). Yet NDFs get stronger.
+
+Syrskyi apparently just attempted some media flag-planting operation with his federal forces.
+Either it's a russian disinformation campaign or meat-soldiers of Syrskyi were captured by
+the russians. What happened next is just a boring cliché: 225th Separate Assault Regiment -- every
+time you see "separate" in the name, that's an NDF, as in separate from AFU -- and cleared town
+badly, capturing some 60 russian occupiers in one go, the orcs collected there for weeks.
+
+For the first time we have brutal information dissemination. Right now Ukrainians are learning
+that their president is overextended. That he kept asking for "powerful managers" in the face
+of Yermak not because he needed help managing ministers -- he needed life-coaching to survive
+his presidency -- he needed a manager. People are also learning that the president's greatest
+fear is overthrowing of his government: not by russians or the opposition -- by people. He
+recollects that the way "DADDIES" brutally ripped-up Yanukovich loyalist forces is
+"barbaric in the 21st century." Especially the way daddies hunted down Berkut for beating up
+their college kids on Maidan. Perhaps someone needs to coach Zelenskyy on having a dialog
+with his constituents.
+
+Right now people gave Zelenskyy a deadline by 24th of July. He knows very well what happens
+if he disrespects it: *«Тарас? -- Іду, іду, синку!»* (Daddy -- I'm coming son!) Judging by the last 3 events,
+daddies are slow -- but when they come ground moves. In my commentary -- I simply don't see it
+ever getting this far with Zelenskyy.
+
 Every reform Fedorov shipped in his short six months did the same structural thing -- it took a decision
 *out of a politician's hands and put it on a MACHINE nobody can bribe*. Automated spec-only
 procurement: the General Staff says *what* it needs, bypassing ANY committee or a "chair" and
@@ -354,7 +578,7 @@ Then e-Points: the drone that kills the orc earns the reward, not the drone with
 Open tenders: 155mm shells drop 16%. The ₴300bn audit wasn't about any accounting --
 *_it was a map of the theft_*, and every line item was somebody's string up.
 
-That darn *machine* messed up the "Outfit: federal procurement and street-catch recruiting,
+That darn *machine* messed up the "Outfit": federal procurement and street-catch recruiting,
 the most corrupt organs in Ukraine, both somehow related to Syrskyi,
 both older than Fedorov and richer than sense.
 Digitization is not a management style to that "Outfit" machine,
@@ -377,25 +601,31 @@ or the set of generals feeding on it. +
 *_He chose the feeders._*
 
 Remember, *__a president whose own inner circle is under the anti-corruption microscope__*
-{nbsp} -- Yermak served a notice of suspicion, free on $3.5M bail he #"couldn't afford"# and an acle monitor;
+{nbsp} -- Yermak served a notice of suspicion, free on $3.2M bail he #"couldn't afford"# and an ankle monitor;
 Mindich fled to Israel ahead of the raids, Umerov's ministry and Fire Point under NABU probe
 (yes, that same Fire Point) -- *_has no appetite for a minister who makes graft impossible to hide_*.
 
 Fedorov's *_digital transparency_* is a third rail -- it powers weapons and burns "Good Old Boys."
 
-TWO DIRECTIONS FROM HERE::
-- Ministry of Defence Judges and NABU *will seek treason in the title:_* Not selling maps to Moscow -- worse:
-keeping the corruption that kills your own soldiers, because the corruption feeds your friends.
+*TWO DIRECTIONS FROM HERE:*
+
+- People, NDFs, Ministry of Defence Judges, and NABU *must seek treason in the title:*
+Not selling maps to Moscow -- worse: keeping the corruption that kills your own soldiers,
+because the corruption feeds your friends.
 - Putin doesn't need to defeat the Ukrainian army. He planted a nuclear timebomb long time ago.
 He only needs Ukraine's president to keep firing the men who defund its thieves.
-ANd Ukrainian people will CONSTANTLY need to press the thieves to the wall.
 
-*ZELENSKYY BS REASON:* Formal excuse the president gave -- Fedorov failed to reform AFU
+_And Ukrainian people will CONSTANTLY need to press the thieves to the wall._
+
+*ZELENSKYY BS REASONS:* Formal excuse the president gave -- Fedorov failed to reform AFU
 recruiting. Remember, recruiting was ALWAYS under Syrskyi control. The general protected
-it beyond any other of his shady operations. More on this in general's facts.
+it beyond any other of his shady operations. And, they kept fighting and coming to me.
 
-*BONUS:* Do you want to know who bailed out Yermak?
+*Unable to lead his people is #Zelenskyy's failure# not failure of his people.*
 
+.*BONUS:* Do you want to know who bailed out Yermak?
+[%collapsible]
+====
 The man suspected of laundering ₴460M *_couldn't pay his own ₴140M (~$3.2M) bail_* -- he told
 the court he has no money "but has friends who will help." And help they did. On 18 May 2026,
 the Higher Anti-Corruption Court confirmed the full sum, posted by *_14 named backers_* --
@@ -409,24 +639,193 @@ seven people and seven companies. A taste:
 _(Detector Media, Ukrainska Pravda, hromadske, Kyiv Post -- 18 May 2026.)_
 
 *_This list is -- "Who is who of the Ukrainian white-collar crime."_*
+====
 
-Let that land: a national sports hero and a company with its own laundering history chipped in to
-spring the president's best friend from a *_money-laundering_* cell. The thing NABU is still asking
-about Operation Midas *in general* -- whether the bail cash came "from the same back office" that
-laundered the kickbacks -- I do NOT pin on Yermak's specific donors; no such probe of these fourteen
-is confirmed. But you don't need the pipe proven to smell it. *This* is the "friends" a Ukrainian
-president keeps -- and the reason a football coach's ₴30M tells you more about who runs Ukraine than
-any ministry press release. Meanwhile, Zelenskyy says "the president has no friends."
+*MEANWHILE:* Zelenskyy is interviewing Ukrainian generals.
+Now also some generals and some weapon makers. The theater continues.
+Except this time Bankova is leaking profusely and people are paying attention.
 
-== Facts and Analytics on general Oleksandr Syrskyi
+== What do Digital Analytics Say:
 
-Yet the general "Butcher" is an even more colorful figure.
+I find it interesting that the models connected the following events:
 
-But first we must understand a little about "General's Popularity" phenomenon.
+. Zaluzhnyi dismissed for the obedient Syrskyi (February 2024);
+. Draft law 12414 capturing NABU/SAPO, mass protests, forced reversal (July 2025);
+. Yermak's power vertical cracked by NABU corruption probe, then resignation (November 2025);
+. Zelensky scandal with Poland naming units after UPA; (Mapped as a failed diversion tactic)
+. Zelensky choosing obedient Syrskyi over reformer Fedorov; (Current scandal emerging)
+. Yermak activating a support group for Syrskyi.
 
-== Zelenskyy, Syrskyi, Fedorov, and Ukrainian People
+Heatmaps breakdown these events as follows:
 
-#*FATAL mistake Pootin made is assuming that he will fight the Ukrainian government.*# +
-_Ukrainian government was so INAPT and CORRUPT that it's no contest -- 3 days indeed._ +
-By the time Poo realized WHOM he's fighting, it was too late -- 93% of the invading army gone. +
-Now orc is fully renewed 5+ times (the original force of 220 thousand). Yet NDFs get stronger.
+. Attack on Ukrainian people to regain some federal government powers;
+. Well planned and coordinated beforehand -- not an honest mistake;
+. Culminating ONLY in eventual losses to federal government powers.
+
+== What About Pissed-off Americans?
+
+_Look, my American friends, it hurts me to tell you this -- Ukrainian people have real
+power over their government and keep it on a short leash -- *do we*?_ +
+I'm not worried about the Ukrainians. +
+My worries are closer to home.
+
+I started this article with a weird phenomenon also never seen before in the international
+Ukrainian ecosystem. Many supporting groups said they halt support of Ukraine until
+it's figured out how to make the Ukrainian government do the right thing.
+
+I didn't say anything. Give it a few weeks for people's emotions to settle. +
+It doesn't make sense to me -- aren't we always supporting the Ukrainian people
+not the Ukrainian government? Everyone in these communities support only exact units.
+Almost always NDFs. Everyone else can watch Jake Broe's 69 sniffing brigade to see
+who received a truck. In the West we'd always connected with Ukrainian people
+and pressure our own governments to pressure the Ukrainian government.
+
+*_Ukrainian government is the Ukrainian people's problem -- not ours!_*
+
+All support that's in flight is still in flight, of course. +
+Nevertheless, some donors here quickly reviewed their recipient lists to make sure
+they donate only to peoples' formations. Having spoken to a few I can tell you that
+there's not much difference -- most already donate to people they already know.
+In general, I always say this to new donors:
+
+. Never donate to government or unified collectives or organizations;
+. Always donate directly to units and transparent institutions you can meet.
+
+Yet there is one significant difference: most of the donors I know added
+independent correspondents, private media, and the new private intelligence
+groups to their lists of recipients. I don't remember American donors worry
+about Ukrainian journalism before.
+
+"We withhold support until ..." -- was a weird message voiced by many.
+There was no actual withholding. There was a somewhat significant
+rearrangement of recipients. Previously the focus was almost entirely
+on the fighting volunteers with some talk of supporting postwar reconstruction.
+Now investigative journalism is also a first class citizen.
+
+*_In summary: Ukrainian government lost a good deal of trust with Western donors._* +
+At least for the time being.
+
+== Riddler's Analytics
+
+Now I will give you human analytics -- the stuff you cannot get from the box.
+
+Once again, *Ukrainians beat me to it*. +
+_Just 20 minutes ago president Zelenskyy made his announcements._ +
+He's looking very tired. Exhausted. He's been going for days doing the right thing. +
+It's HIS cabinet, it's HIS team, it's HIS accountability, and it's HIS choice -- still, +
+_people drag his tuches through a *heck of a reamer* and +
+ {nbsp} there's NOTHING he can do against it._ +
+Here I will explain WHY that is.
+
+As an American it's a bittersweet moment for me. +
+_It's nice to see a democratic government so beholden to the will of its people._ +
+_It's nice to see people so engaged in the democratic process._ +
+In my own nation, insolent government cynically HAS its people! +
+And people (you and I) take it up the tuches every time +
+a corrupt manipulative trade is made, +
+a stupid ordinance like tariff is signed, +
+an incompetent sycophant is placed, +
+or a moronic war is started sideways. +
+*_At least I hope I still have some freedom of speech._*
+
+'''
+
+*To Evaluate Zelenskyy:* We must answer only one question -- "is he honest to the people." +
+And I am convinced that he is. Ever since American veterans took into harsh combat my kids'
+future security and prosperity that I took a lifetime to amass, I've been running models.
+This man and his posse received more analytics compute than the rest of the world put together.
+Not just because I want to know -- every American donor wanted to know this first.
+Most likely because he comes from the Ukrainian establishment, meaning his backers come
+from the culture of kleptocracy, at least in part. And my runs backed all the top
+professional human analytics I'd ever had access to. _Zelenskyy is for real._
+Even if his sponsors aren't always.
+
+As far as his personal shortcomings, weaknesses, gaps, and oversights go -- he's
+an ordinary human being. That is the whole beauty of democracy despite its shortcomings.
+King Pootin is unique, the best, almost god-like. The president of Ukraine is
+an ordinary, flawed, common man.
+
+Now that we don't have to consider "Zelenskyy as a corruption case" how would we answer
+this seemingly embarrassing and silly move of his? And I have a simple hypothesis.
+What would I do in his place, another common man, when I have an extreme pressure
+from the corrupt establishment on one side and a gifted young disruptor on another?
+Not just any establishment, mind you, a deeply rooted one, the one that brought me up.
+And not just any disruptor -- a young and ignorant one, albeit *_well backed by people_*.
+And I'd ask -- have I been through this before? And I have.
+
+I'd told you enough about the establishment before: Syrskyi is its man.
+And I'd told you about Ukrainian people before. Here I just need to share
+a _historically relevant sequence of events_.
+
+*2004: Orange Revolution:* _Bloodless_, but only incidentally.
+Yushchenko, people candidate, was poisoned. People came out.
+Troops were called to put people down. People DID call "daddy."
+The Ukrainian National Self-Defence Assembly (UNA-UNSO) existed.
+Back then many of its people were in regular army, still coming out
+of Soviet legacy. _Officers stood down. +
+*Old government was dismantled*._
+
+_Pootin's Katsapstan also learned a lesson here._ The 5th column changed tactics.
+
+*2013-2014: Revolution of Dignity:* The 5th column new tactics paid off.
+Democratic subversion worked. Yanukovich, Pootin's stub, came prepared,
+had Berkut on his side. People protested. He condoned violence against
+college students. People called "Daddy!" Streets emptied out.
+Yanukovich celebrated victory: democracy defeated. UNSDA, much like old UPA,
+quickly produced Maidan Self-Defense, Right Sector, Patriot of Ukraine,
+and a dozen more ready to fight formations. Ukrainians don't really like
+to talk about it: it got very-bloody very-fast. Yanukovich managed to
+escape, leaving all of his most prised junk behind. But the 5th column
+and remnants of Berkut were brutally hunted down. Still ongoing. +
+*Old government was dismantled*.
+
+*2022: Two calls for "Daddy" in rapid succession:* Katsap invades.
+Neither the Ukrainian government nor the AFU were able or ready.
+Many NDFs were very quickly formed, from small Territorial Defence
+formations to regional coalitions. Zelenskyy KNEW THIS side of
+Ukrainian people: he had crates of weapons dropped all over the place.
+He knew that these people WILL defend themselves, he only needs to make
+it easier -- and he did, then he published a video address
+"We're all here with you! Nobody left."
+And of course, Azov was already well established and itching for blood.
+Kyiv didn't fall not because of what the government
+did but because of what these ordinary peoples' national formations
+did -- like at Hostomel Airport where russia's most elite unit was
+smashed to pulp. Or in Bucha, a single tank dismantles the whole
+orcish column; town's residents throwing Molotov cocktails over the fence.
+And by the end of the year pro-kremlin cronies attempted to hide
+weapons away from AFU, people found out -- you can take a good guess
+what happened to them and their enforcers next. +
+*Katsapstan itself is being dismantled as I write*.
+
+*Notice one thing about Ukrainian democracy: it comes with claws and teeth!*
+
+So, here is my hypothesis: Assuming Zelenskyy is honest, how would he take
+on the well-rooted establishment? These people are relatively few in the
+Ukrainian government, still they come well backed by money, connections, and
+institutions. Heck thy even own media outlets all over the globe.
+One-on-one they'd eat Zelenskyy up together with clothing and the horse
+he rode in on. No matter how hard people smash them over time they slowly
+crawl back out, especially if there's something new to steal from the people.
+But what if he does what the establishment demands from him in a very vivid
+clear and exaggerated way? Will that short-circuit the people? Will there
+be a spark that he can fan? And everybody in Ukraine remember what happens
+when the 20-40-year-olds on the streets call "Daddy." He was there, in
+Kyiv when ultras painted ancient streets of Kyiv red and brown kremlin colors.
+With people out, he's then just a fulcrum, listening to the will of people,
+which is what he should be doing, and applying what he wanted applied all along.
+Continuing this thought -- what was the NABU incident a year ago?
+
+So, that is my take on the events in Ukraine today.
+
+*Now, what's happening in my 'Merica? Anything spectacular?*
+
+'''
+
+Let's understand Zelenskyy's spectacular choices. Here are his assignments.
+
+// ToDo: Drapatyi, and before an embedded video entering Mariupol; explain maturity and balance
+// ToDo: Drapatyi's right hand already named  - Beletsky - Azov
+// ToDo: Drapatyi's left hand already named  - Apostol, will be assigned by Drapatyi to Syrskyi's mess, his man
+
+// ToDo: Khmara - acting, name good and bad.

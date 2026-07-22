@@ -65,3 +65,11 @@
 .admonitionblock td.icon .icon-important::before { content: "\f06a"; color: #bf0000; }
 .admonitionblock td.icon .icon-warning::before   { content: "\f071"; color: #bf6900; }
 .admonitionblock td.icon .icon-caution::before   { content: "\f06d"; color: #bf3400; }
+
+/* --- list density -----------------------------------------------------------
+ * Minimal Mistakes gives every <p> a ~1.3em bottom margin; Asciidoctor wraps
+ * each list item's text in a <p>, so numbered/bulleted items render with a full
+ * paragraph gap between them. Tighten both the item and its inner paragraph.
+ * Tune the .25em values (0 = flush) to taste. */
+.olist li, .ulist li          { margin-bottom: .25em; }
+.olist li > p, .ulist li > p  { margin-bottom: .25em; }
