@@ -1,0 +1,86 @@
+---
+categories: [ adventures ]
+tags: [ Algorithms, Kotlin, Statistics, Interviews ]
+header:
+  overlay_image: /assets/images/banner-athena-in-acme-city.png
+  caption: "The Mother of all hackers, Athena, is overlooking her city..."
+excerpt: >
+  There's a fundamental difference in understanding between the engineers who put software in production
+  every day for decades and those who talk about making software. This is a real gem!
+  ONLY PRACTICE MAKES US WHOLE!
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= Poser-Algos VS. REAL LIFE?
+
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+
+++++
+<style>
+.page__hero--overlay { background-position: center 20%; }
+  .page__hero--overlay .page__lead {
+    color: rgba(255,255,255,0.7);
+    margin: 15% 30% 0;
+    text-align: justify;
+    width: 1200px;
+  }
+</style>
+++++
+
+
+I have such a fun challenge for you.
+This just made my day! +
+Heck, even a week.
+I hope it makes your day too!
+
+WHAT WOULD YOU DO IN MY PLACE?!
+
+*Two engineers talking, _S_, and `riddler` _R_ (yours truly):*
+
+*S:* _You know, in statistics, there's a sliding window to calculate averages?_ +
+*R:* _Yes, I'm aware. Most-widely used for metrics, positioning, etc._ +
+*S:* _How would you do it? Say in Databricks or Kafka, you have a *stream*. How'd calculate?_ +
+*R:* _It's trivial. Add up the numbers in the window and divide by width._ +
+*S:* _Yes, yes, I know. But what if you want to make it FASTER! What can you do?_ +
+*R:* _You are pushing me to `memoise` the `accumulator`. BUT! +
+ {nbsp} This only works if **arithmetically** there is a save. There is no save here!_ +
+*S:* _Well, you could add up all values one time. +
+{nbsp} And then just add one and remove one before dividing. +
+{nbsp} So, you don't need to add them all again. +
+{nbsp} And your algorithm is *much faster*. Too bad you didn't answer that!_ +
+*R:* _Sure, sure. Why not?!_
+
+I didn't want to hurt *_S'_* pride. +
+Problem is: He's dead wrong! +
+He just doesn't know it.
+
+_How can *NOT* memoizing previously added sum be *SLOWER*?!_
+
+Oh, but this is beautiful! Let's understand?
+
+(https://github.com/rdd13r/im-a-sliding-window[The repo is here...,window=_blank])
+
+== The Problem:
+
+What is running average and where is it used?
+
+.A sliding window: width 3, stride 1
+[#img-sliding-window,align=center]
+image::sliding-window-w3-s1.svg[Sliding window of width 3 and stride 1 averaging one-digit numbers,width=800]
+
+[source,log]
+----
+7, 2, 3, 4, 8, 6, 1
+
+   4, 3, 5, 6, 5
+----
+
+Notice what happened: the array got smaller and "smoothed out."
+
+*Do developer do this in real work?:* NO! We use statistical libraries for much larger functions.
+But I have done this just a couple of years ago on smart weapon-systems -- eventually, when one codes
+enough through decades, even the low-lever stuff comes up. Here is _a practical example_:
