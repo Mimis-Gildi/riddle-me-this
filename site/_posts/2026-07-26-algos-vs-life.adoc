@@ -117,7 +117,7 @@ In our earlier conversation *Mr. S* thought *_"Memoise to Optimize"_*:
 _Sounds reasonable? Why not! +
 Let's see what *actually happens* when we implement Mr. S' clever ways?_
 
-.Median (min) of 10 warmed up times runs over 4,000,000 integers, +
+.Median (min) of 10 warmed-up, timed runs over 4,000,000 integers, +
 `window=13`, `stride=3` ({sliding-windows-test-url}[see test sources here,window=_blank]) +
  {nbsp} -- `LinearSliderTest.massiveArrayPerformanceComparison`
 [cols="1h,1,1",options="header"]
@@ -333,7 +333,8 @@ Just like JK-FlipFlop it will keep flipping until it finally settles on complete
 . ALU has many Op-Channels (212+) and is able to perform simultaneous calculations on
 *adjacent #IMMUTABLE# values*
 . SL1 cache is directly addressable -- all OpChannels operate directly on SL1 and registers;
-. Virtual Ultra-wide Registers (Vectors) -- SL1 is the same circuit block as the registers;
+. Virtual Ultra-wide Registers (Vectors) -- SL1 sits in the same silicon neighborhood as
+the registers: latency-wise almost one thing;
 
 *_What does this all mean?!_* When:
 
@@ -360,8 +361,10 @@ SL2-SL3, and dog-slow between SL3-MainMemory -- MMC gained A LOT of computationa
 . Understand branches (if-else) thus loading both spaces together;
 . Dispatch early page locks over spans of pages.
 
-This is done because the SLOWEST operation is *page-fault* (MPF). MPF means:
-"the thing you want to operate next is not in SL1 -- I need to go get it now!"
+This is done because misses cost a ladder. Not in SL1? -- a *cache-miss* -- hardware quietly
+fetches from the next level, tens of tics, nobody else notices. Not in RAM at all? -- THAT is
+the *page-fault* (MPF) -- and now the OS itself must step in: insanely expensive.
+On one classic RISC the ladder reads: 1 tic in SL1, 8 tics from main memory, *400,000 tics* on MPF.
 Perfect world: right next page.
 
 _That endless array *predictively aligned* will always be the next page._
@@ -398,7 +401,7 @@ is one critical point to make here! People who code regularly sooner or later co
 This means "never keep writing to the value you need next!" In other words: +
 Use `val` not `var`. When you need to change things -- spit them OUT.
 
-Mr. S algorithm depends on the accumulator that it uses immediately -- that's an ignorant sin. +
+Mr. S' algorithm depends on the accumulator that it uses immediately -- that's an ignorant sin. +
 When you look at the way accumulators are actually written in Functional Programming of Scala,
 Kotlin, Python, etc. -- You'll notice that they ALL *append* for *_later construct_* use.
 
@@ -407,7 +410,7 @@ And a very well documented antipattern.
 
 If time permits, I will later spend another hour and write a `ParallelSlider` that's
 suspending -- Kotlin's native stackless concurrency -- the fastest way to compute anything.
-And that will clearly demonstrate how _intermediate dependency_ simply BLOCK any optimization
+And that will clearly demonstrate how _intermediate dependency_ simply BLOCKS any optimization
 by parallelism.
 
 == Best Kept Secret!!!
@@ -418,7 +421,10 @@ The secret is -- code real software daily -- not "Hello World" from random class
 
 And the secret is this: a couple of years ago I'd prepared my preteen son for engineering.
 Within a year he's quickly gotten himself to {codeforces-rankings}[Codeforces Candidate Master,window=_blank].
-That's division 2. You get there by understanding algorithms:
+That's division 1/2. Then he wanted ML. Then he built game modes. Then got bored. The point is, if a curious
+teenager can figure it out for fun, then software engineers certainly can for a calling.
+
+You get there by understanding algorithms (at first):
 
 Search for the {codeforces-catalog} (Orcs block it sometimes). +
 {cp-algorithms} is the same school in book form -- never blocked. +
