@@ -1,0 +1,456 @@
+---
+categories: [ adventures ]
+tags: [ Algorithms, Kotlin, Statistics, Interviews ]
+header:
+  overlay_image: /assets/images/banner-athena-in-acme-city.png
+  caption: "The Mother of all hackers, Athena, is overlooking her city..."
+excerpt: >
+  There's a fundamental difference in understanding between the engineers who put software in production
+  every day for decades and those who talk about making software. This is a real gem!
+  ONLY PRACTICE MAKES US WHOLE!
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= Poser-Algos VS. REAL LIFE?
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+:sliding-windows-url: https://github.com/rdd13r/im-a-sliding-window
+:sliding-windows-test-url: https://github.com/rdd13r/im-a-sliding-window/blob/main/src/test/kotlin/me/rdd13r/funtoys/LinearSliderTest.kt
+:moving-average: https://en.wikipedia.org/wiki/Moving_average[moving average,window=_blank]
+:codeforces-rankings: https://en.wikipedia.org/wiki/Codeforces
+:i8088: https://en.wikipedia.org/wiki/Intel_8088[8088,window=_blank]
+:mmx: https://en.wikipedia.org/wiki/MMX_(instruction_set)[MMX,window=_blank]
+:fn-flynn: footnote:[1966 is Flynn's taxonomy ("Very high speed computers") -- the paper that classified and named SIMD. The first working SIMD iron, ILLIAC IV, was built in 1972 and operational from 1974.]
+:codeforces-catalog: https://codeforces.com/catalog[Codeforces Catalog,window=_blank]
+:cp-algorithms: https://cp-algorithms.com/[cp-algorithms.com,window=_blank]
+
+++++
+<style>
+.page__hero--overlay { background-position: center 20%; }
+  .page__hero--overlay .page__lead {
+    color: rgba(255,255,255,0.7);
+    margin: 15% 30% 0;
+    text-align: justify;
+    width: 1200px;
+  }
+</style>
+++++
+
+
+I have such a fun challenge for you.
+This just made my day! +
+Heck, even a week.
+I hope it makes your day too!
+
+WHAT WOULD YOU DO IN MY PLACE?!
+
+*Two engineers talking, _Mr. S_, and `riddler` _R_ (yours truly):*
+
+*Mr. S:* _You know, in statistics, there's a sliding window to calculate averages?_ +
+*R:* _Yes, I'm aware. Most-widely used for metrics, positioning, etc._ +
+*Mr. S:* _How would you do it? Say in Databricks or Kafka, you have a *stream*. How'd calculate?_ +
+*R:* _It's trivial. Add up the numbers in the window and divide by width._ +
+*Mr. S:* _Yes, yes, I know. But what if you want to make it FASTER! What can you do?_ +
+*R:* _You are pushing me to `memoise` the `accumulator`. BUT! +
+ {nbsp} This only works if **arithmetically** there is a save. There is no save here!_ +
+*Mr. S:* _Well, you could add up all values one time. +
+{nbsp} And then just add one and remove one before dividing. +
+{nbsp} So, you don't need to add them all again. +
+{nbsp} And your algorithm is *much faster*. Too bad you didn't answer that!_ +
+*R:* _Sure, sure. Why not?!_
+
+Last thing I wanted is *_Mr. S'_* hurt pride. +
+Problem is: He's wrong in an important real-world way. +
+He just doesn't know it... yet.
+
+_How can *NOT* memoizing previously added sum be *SLOWER*?!_
+
+Oh, but this is beautiful! Let us understand?
+
+({sliding-windows-url}[The repo is here...,window=_blank])
+
+== The Problem:
+
+What is running average (the {moving-average}) and where is it used?
+
+.A sliding window: width 3, stride 1
+[#img-sliding-window,align=center]
+image::sliding-window-w3-s1.svg[Sliding window of width 3 and stride 1 averaging one-digit numbers,width=800]
+{nbsp}
+
+[source,log]
+----
+7, 2, 3, 4, 8, 6, 1
+
+   4, 3, 5, 6, 5
+----
+
+Notice what happened: the array got smaller and "smoothed out."
+
+*Do developers do this in real work?* NO! We use statistical libraries for much larger functions.
+But I have done this just a couple of years ago on smart weapon-systems -- eventually, when one codes
+enough through decades, even the low-level stuff comes up. Here is _a practical example_:
+
+.Jittery readings smoothed: window 13, stride 3
+[#img-sliding-window-jitter,align=center]
+image::sliding-window-w13-s3-jitter.svg[Twenty-five jittery values between 100 and 200 smoothed by a sliding window of width 13 and stride 3,width=800]
+{nbsp}
+
+`window=13` and `stride=3` is a real life example -- this is what a reconnaissance drone wants to know over a rough terrain it would be offset over.
+This is one of the most often used statistical tools.
+
+== The 'Smart' Optimization by Mr. S:
+
+In our earlier conversation *Mr. S* thought *_"Memoise to Optimize"_*:
+
+. 13 is a lot of numbers to add! I need to add 12 times.
+. Then I slide 3 numbers -- but 10 are the same!
+. I would have to add 12 times _again_.
+. But I can remember my sum of 13 from before! `memoise`
+. On slide:  I can subtract 3 dropping off and add 3 showing up.
+. I save a lot of time -- less to calculate!
+. Oh, and it's cool to stream -- so, we also stream.
+
+_Sounds reasonable? Why not! +
+Let's see what *actually happens* when we implement Mr. S' clever ways?_
+
+.Median (min) of 10 warmed-up, timed runs over 4,000,000 integers, +
+`window=13`, `stride=3` ({sliding-windows-test-url}[see test sources here,window=_blank]) +
+ {nbsp} -- `LinearSliderTest.massiveArrayPerformanceComparison`
+[cols="1h,1,1",options="header"]
+|===
+| | Memoised accumulator | Brute-force add
+
+| Streaming
+| 224.94 ms (217.68 ms)
+| 105.57 ms (103.75 ms)
+
+| Array
+| 5.63 ms (5.56 ms)
+| 5.20 ms (5.12 ms)
+|===
+
+.Brute force wins both rows -- note the Array panel is zoomed 40&#215;
+[#img-slider-performance,align=center]
+image::slider-performance-2x2.svg[Bar chart comparing memoised accumulator against brute-force add in streaming and array variants,width=800]
+{nbsp}
+
+*WHOA!* Mr. S' 'optimization' is slower in calculation. And A LOT slower in streams! +
+But why?! What does Mr. S not understand about software engineering?
+
+== Real Life Engineering:
+
+Now, I didn't want to hurt Mr. S' pride -- so I nodded.
+But understanding what's going on here is a-must for a practicing software engineer.
+Just to make sure, I first peeked into the implementations of most popular statistical libraries -- YEP!
+Exactly what I expected. +
+_But those don't help me explain it *as if I am 5 -- my hard rule*._ +
+So, I made _{sliding-windows-url}[a little bit of code,window=_blank]_ for us to play with and explain.
+
+(In reverse order now, for simplicity.)
+
+*_+++#+++4 calculates resulting array and jumps adding everything every time: brute force._*
+
+.Fourth `IntArray.runningAverageBruteForceNaive` sums every time. (5.20ms)
+[source,kotlin]
+----
+override fun IntArray.runningAverageBruteForceNaive(windowSize: Int, stride: Int): IntArray {
+    val result = IntArray((size - windowSize) / stride + 1)
+    for (out in result.indices) {
+        val start = out * stride
+        var sum = 0
+        for (i in start until start + windowSize) sum += this[i]
+        result[out] = sum / windowSize
+    }
+    return result
+}
+----
+
+*_+++#+++3 remembers (`memoise`) sum outside the loop now -- adds and subtracts._*
+
+.Third `IntArray.runningAverageNaive` is accumulating outside the loop. (5.63ms)
+[source,kotlin]
+----
+override fun IntArray.runningAverageNaive(windowSize: Int, stride: Int): IntArray {
+    val result = IntArray((size - windowSize) / stride + 1)
+    var sum = 0                                                 // <- ACCUMULATOR! (ACC)
+    for (i in 0 until windowSize) sum += this[i]
+    result[0] = sum / windowSize
+    for (slide in 1..size - windowSize) {
+        sum += this[slide + windowSize - 1] - this[slide - 1]   // Compound-messing with ACC
+        if (slide % stride == 0) result[slide / stride] = sum / windowSize
+    }
+    return result
+}
+----
+
+_Notice, the third above didn't get "much faster" as Mr. S lamented it would and is a little bit slower._
+
+*_+++#+++2 simply slides a stream and adds -- notice the #simplicity# of code here._*
+
+.Second uses stream's own `windowed()` to slide a window and then `it.sum()`. (105.57ms)
+[source,kotlin]
+----
+override fun IntArray.runningAverageBruteForce(windowSize: Int, stride: Int): IntArray = asSequence()
+    .windowed(windowSize, stride, false) { it.sum() / it.size }
+    .toArray((size - windowSize) / stride + 1, ArrayKind.Ints)
+----
+
+_Simulation of real streams is by `asSequence()` which are synchronous and blocking._
+
+*_+++#+++1 finally bolts an accumulator to `memoise` the ##mutable dependency## +
+(remember these two words for later please)._*
+
+.First stream `IntArray.runningAverage` is still functional recalculating accumulation along. (224.94ms)
+[source,kotlin]
+----
+override fun IntArray.runningAverage(windowSize: Int, stride: Int): IntArray =
+    asSequence()
+        .drop(windowSize)
+        .zip(asSequence()) { entering, leaving -> entering - leaving }
+        .runningFold(take(windowSize).sum()) { sum, delta -> sum + delta }
+        .filterIndexed { index, _ -> index % stride == 0 }
+        .map { it / windowSize }
+        .toArray((size - windowSize) / stride + 1)
+        .toIntArray()
+----
+
+[WARNING]
+.Claude Fable 5 NEEDS KDocs to properly explain this code!
+====
+I didn't include comments for brevity. +
+You should follow this code along in your IDE from my {sliding-windows-url}[GitHub source project,window=_blank]: +
+I have added KDocs on the interfaces and methods -- without those Claude won't follow,
+'understand', or properly explain this simple zip and fold. It seems to explain imperative code rather well. +
+Fluent functional -- not so much; perhaps a smaller training set. +
+__Good documentation and comments fix that.__
+====
+
+== Riddler! - What about boxing/unboxing?
+
+Yes, indeed: collections versus memblocks. +
+
+.If you are interested here is how I covered that:
+[%collapsible]
+====
+The cost to both streaming tests must be identical or comparable.
+
+.Thus, here is the collection to memblock
+[source,kotlin]
+----
+sealed interface ArrayKind<T : Any, A : Any> {
+    fun create(size: Int, next: () -> T): A
+
+    data object Ints : ArrayKind<Int, IntArray> {
+        override fun create(size: Int, next: () -> Int) = IntArray(size) { next() }
+    }
+    @Suppress("unused")
+    data object Floats : ArrayKind<Float, FloatArray> {
+        override fun create(size: Int, next: () -> Float) = FloatArray(size) { next() }
+    }
+}
+
+@Suppress("UnusedReceiverParameter") // just for unlinked code scanner
+fun <T : Any, A : Any> Sequence<T>.toArray(size: Int, kind: ArrayKind<T, A>): A {
+    val iter = iterator()
+    return kind.create(size) { iter.next() }
+}
+----
+
+.Or, a direct cast to use in your own tests:
+[source,kotlin]
+----
+@Suppress("UnusedReceiverParameter") // just for unlinked code scanner
+inline fun <reified T> Sequence<T>.toArray(size: Int): Array<T> {
+    val iter = iterator()
+    return Array(size) { iter.next() }
+}
+----
+====
+{nbsp}
+
+== THE TEST
+
+And before we explain anything -- here's the TEST:
+[source,kotlin]
+----
+@Test
+fun massiveArrayPerformanceComparison() = with(LinearSlider()) {
+    assertEquals(massive_array_size, massiveArray.size, "Massive array performance comparison over stream of 4_000_000 integers.")
+    val repetitions = 10
+    var guard = 0
+    fun timed(description: String, slideAverage: IntArray.() -> IntArray) {
+        repeat(3) { guard += massiveArray.slideAverage().size }
+        val times = (1..repetitions).map {
+            measureTime { guard += massiveArray.slideAverage().size }
+        }
+        logger.info { "$description: median ${times.sorted()[repetitions / 2]}, min ${times.min()}" }
+    }
+    timed("Streaming  Accumulator Slider") { runningAverage(13, 3) }
+    timed("Streaming  Dumb Window Slider") { runningAverageBruteForce(13, 3) }
+    timed("Imperative Accumulator Slider") { runningAverageNaive(13, 3) }
+    timed("Imperative Dumb Window Slider") { runningAverageBruteForceNaive(13, 3) }
+    assertEquals(number_timing_ops, guard, "Guard fired for all the cache lining operations.")
+}
+----
+
+== But Why? The Explanation:
+
+*_So, how did Mr. S go SO WRONG?!_*
+
+*Does his algorithm save calculation?* +
+On long `window` and short `stride` this DOES save calculation on primitive level. +
+In fact, in 1979 on {i8088} CPU Mr. S might have gotten a little time save with it. +
+Please, keep in mind that `8088` already had *register-memory* instructions implemented. +
+But since 1997 with introduction of {mmx} (extension to 1966 SIMD{fn-flynn}) *this is useless*.
+
+*Every practicing software engineer MUST understand what comes next!*
+
+The algorithm attempts to save human calculation - it does NOT save compute. +
+Far more importantly -- it BLOCKS _any clever gains_ by #*a mutable interdependency!*#
+
+Outside a deeply flawed algorithm three things here make all the difference:
+
+. *Single Instruction Multiple Data (SIMD)* -- 2026 is generation 7 (SEVEN) +
+MMX (1) → SSE (2) → SSE2–SSE4 (3) → AVX (4) → AVX2 (5) → AVX-512 (6) → AVX10 +
+AVX10.2 is about to drop -- generation 8, methinks; Intel doesn't number them, I slopped.
+. In-CPU Integrated Memory Controller -- on-die since 2003: direct page-lining.
+. Kotlin K2 compiler IR with @Metadata engine: All compilers align hints now.
+
+*In order of effect on code. Most important is Mr. S' #algorithm flaw# I'll cover last!* +
+*_The flaw is the crime -- the three above are its victims._*
+
+== Single Instruction Multiple Data (SIMD):
+
+This is WHY certain operations are ALWAYS performed in parallel! Break down:
+
+. Each clock cycle only marks time to MOVE data in and out of SL1 cache;
+. Arithmetic-Logic Unit (ALU) is a reactive circuit -- it performs 4 - 7 saturation per clock cycle;
+Just like JK-FlipFlop it will keep flipping until it finally settles on completed calculation;
+. ALU has many Op-Channels (212+) and is able to perform simultaneous calculations on
+*adjacent #IMMUTABLE# values*
+. SL1 cache is directly addressable -- all OpChannels operate directly on SL1 and registers;
+. Virtual Ultra-wide Registers (Vectors) -- SL1 sits in the same silicon neighborhood as
+the registers: latency-wise almost one thing;
+
+*_What does this all mean?!_* When:
+
+- Data is IMMUTABLE,
+- Data is Adjacent,
+- Data is Uniform,
+
+CPU will perform many operations in parallel and even cache intermediate values (16 or 32 integers, etc.)
+This means if I wrote a piece of code that iterates an array and adds all the values -- the CPU will
+automatically add them IN PARALLEL several times per single clock-cycle. Add a range, add another range
+in neighboring memory _in the same memory page_ at the same time,
+and 1/4 of clock-cycle later add the results of the ranges together -- just go till page-fault signal.
+
+So, adding a pair of values in the array or a bunch of them takes exactly the same time -- 1 tic. +
+*It's been this way since 1997!* *_Just must be immutable!_*
+
+== Integrated Memory Controller: Speculative Execution / Cache Lining:
+
+When the memory controller (MMC) was moved into the CPU in 2003 it gained the ability "to see" where
+"the page" is going. Because the page-lining is cascading: fast between SL1-SL2, slower between
+SL2-SL3, and dog-slow between SL3-MainMemory -- MMC gained A LOT of computational ability to:
+
+. Line caches speculatively expecting some memory space needed soon;
+. Understand branches (if-else) thus loading both spaces together;
+. Dispatch early page locks over spans of pages.
+
+This is done because misses cost a ladder. Not in SL1? -- a *cache-miss* -- hardware quietly
+fetches from the next level, tens of tics, nobody else notices. Not in RAM at all? -- THAT is
+the *page-fault* (MPF) -- and now the OS itself must step in: insanely expensive.
+On one classic RISC the ladder reads: 1 tic in SL1, 8 tics from main memory, *400,000 tics* on MPF.
+Perfect world: right next page.
+
+_That endless array *predictively aligned* will always be the next page._
+
+On MPF everything just stops! Linux or UNIX will not try to salvage the situation AT ALL.
+Because it is much cheaper to flop the entire page which could be a different place in your
+program or an entirely different program. While the CPU is working on that different next
+area the MMC will attempt to "figure out" the page-fault situation you'd caused by lack
+of engineering competence _in the background._ It will not mark the page queued for execution
+again until ALL the symbol table references are resolved in its entire span.
+
+So, to go fast, you need to stay on the page as long as possible. And your code MUST be
+predictable for MMC to load enough segments and branches to keep CPU running as long as
+possible -- *_the scheduler favors alignable code_*.
+
+Oh, and one more thing -- execution is NEVER in order you wrote your program!
+The `else condition` may be executed before your `if condition` provided it has
+all the data needed to line the cache. Even if the `else condition` becomes a throwaway.
+
+== And, Compiler Metadata -- Code Using Best Practices:
+
+Not much I need to say here -- we're getting long already.
+Except that modern compilers are well aware of computational nature.
+Since 1998 `prefetch` compilers hint heavily to MMC reducing dead-loads by a lot.
+
+== Flawed Algorithm!
+
+Now that we see that computation works very differently from human-logic ADD and SUBTRACT -- there
+is one critical point to make here! People who code regularly sooner or later come across
+"programming best practices" knowledge. Among many suggestions there one stands out:
+
+#Code Functional -- No Side Effects!#
+
+This means "never keep writing to the value you need next!" In other words: +
+Use `val` not `var`. When you need to change things -- spit them OUT.
+
+Mr. S' algorithm depends on the accumulator that it uses immediately -- that's an ignorant sin. +
+When you look at the way accumulators are actually written in Functional Programming of Scala,
+Kotlin, Python, etc. -- You'll notice that they ALL *append* for *_later construct_* use.
+
+The type of accumulator Mr. S wanted is known as transient value - a type of dependency. +
+And a very well documented antipattern.
+
+If time permits, I will later spend another hour and write a `ParallelSlider` that's
+suspending -- Kotlin's native stackless concurrency -- the fastest way to compute anything.
+And that will clearly demonstrate how _intermediate dependency_ simply BLOCKS any optimization
+by parallelism.
+
+== Best Kept Secret!!!
+
+"Hey Riddler -- how does one learn such things?" And what's the secret?
+
+The secret is -- code real software daily -- not "Hello World" from random classes.
+
+And the secret is this: a couple of years ago I'd prepared my preteen son for engineering.
+Within a year he's quickly gotten himself to {codeforces-rankings}[Codeforces Candidate Master,window=_blank].
+That's division 1/2. Then he wanted ML. Then he built game modes. Then got bored. The point is, if a curious
+teenager can figure it out for fun, then software engineers certainly can for a calling.
+
+You get there by understanding algorithms (at first):
+
+Search for the {codeforces-catalog} (Orcs block it sometimes). +
+{cp-algorithms} is the same school in book form -- never blocked. +
+https://leetcode.com/[leetcode.com,window=_blank] is America-friendly alternative.
+
+But this is where the algos alone and division 2 end -- division 1 begins.
+
+When you look at the judge times Grandmasters submit -- that is IMPOSSIBLE without thorough
+and deep understanding of:
+
+. Hardware -- the scheduling and computational nature of the machine;
+. POSIX OS -- the process zero and process management of the machine.
+
+What I'd shared here is but a drop in the bucket. +
+So, keep coding -- and have fun doing it!
+
+> NOW you get my code.
+> Figure out how the transient dependency completely hoses the stream -- what's different about a stream
+> compared to a huge local array of neatly arranged pages? And, is there ANYTHING you can do about it?
+>
+> Hint: Yes there is 😉
+
+'''
+
+== Easter-Egging Ideas
+
+. Make the numbers falsifiable-by-participation. What's different on your box? Why?
+. Shorten stride, grow window: make parametrized load test. Any inflex points? Why?
+. Make ParallelSlider! Teach the old wizard a thing or two. (I am always much obliged)

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <style>
+      .memo  { fill: #b07500; }
+      .brute { fill: #2b6cb0; }
+      .base  { stroke: #607d8b; stroke-width: 1.5; }
+      .val   { fill: #263238; font-size: 17px; text-anchor: middle; }
+      .cat   { fill: #37474f; font-size: 15px; text-anchor: middle; }
+      .title { fill: #263238; font-size: 18px; text-anchor: middle; font-weight: bold; }
+      .lgd   { fill: #37474f; font-size: 15px; }
+      .warn  { fill: #607d8b; font-size: 13px; text-anchor: middle; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- Streaming panel (scale 0-250 ms) -->
+  <g>
+    <text class="title" x="220" y="30">Streaming</text>
+    <rect class="memo"  x="120" y="62.1"  width="80" height="197.9" rx="4"/>
+    <rect class="brute" x="240" y="167.1" width="80" height="92.9"  rx="4"/>
+    <text class="val" x="160" y="52">224.94 ms</text>
+    <text class="val" x="280" y="157">105.57 ms</text>
+    <line class="base" x1="80" y1="260" x2="360" y2="260"/>
+    <text class="cat" x="160" y="282">memoised</text>
+    <text class="cat" x="280" y="282">brute force</text>
+    <text class="warn" x="220" y="305">scale: 0&#8211;250 ms</text>
+  </g>
+
+  <!-- Array panel (scale 0-6 ms) -->
+  <g>
+    <text class="title" x="580" y="30">Array</text>
+    <rect class="memo"  x="480" y="53.6" width="80" height="206.4" rx="4"/>
+    <rect class="brute" x="600" y="69.3" width="80" height="190.7" rx="4"/>
+    <text class="val" x="520" y="43.6">5.63 ms</text>
+    <text class="val" x="640" y="59.3">5.20 ms</text>
+    <line class="base" x1="440" y1="260" x2="720" y2="260"/>
+    <text class="cat" x="520" y="282">memoised</text>
+    <text class="cat" x="640" y="282">brute force</text>
+    <text class="warn" x="580" y="305">scale: 0&#8211;6 ms &#8212; 40&#215; zoomed vs left panel!</text>
+  </g>
+
+  <!-- legend -->
+  <g>
+    <rect class="memo"  x="290" y="318" width="16" height="10" rx="2"/><text class="lgd" x="312" y="328">memoised</text>
+    <rect class="brute" x="430" y="318" width="16" height="10" rx="2"/><text class="lgd" x="452" y="328">brute force</text>
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e6a817"/>
+    </marker>
+    <style>
+      .cell   { fill: #ffffff; stroke: #607d8b; stroke-width: 2; }
+      .num    { fill: #263238; font-size: 26px; text-anchor: middle; }
+      .win    { fill: #e6a817; fill-opacity: 0.16; stroke: #e6a817; stroke-width: 3; }
+      .avg    { fill: #37474f; font-size: 19px; text-anchor: middle; }
+      .res    { fill: #e6a817; font-weight: bold; }
+      .flow   { stroke: #e6a817; stroke-width: 2.5; }
+      .dots   { fill: #607d8b; font-size: 22px; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- slide 1: window over cells 0-2 -->
+  <g>
+    <rect class="cell" x="40"  y="20" width="56" height="56" rx="6"/><text class="num" x="68"  y="57">7</text>
+    <rect class="cell" x="104" y="20" width="56" height="56" rx="6"/><text class="num" x="132" y="57">2</text>
+    <rect class="cell" x="168" y="20" width="56" height="56" rx="6"/><text class="num" x="196" y="57">3</text>
+    <rect class="cell" x="232" y="20" width="56" height="56" rx="6"/><text class="num" x="260" y="57">4</text>
+    <rect class="cell" x="296" y="20" width="56" height="56" rx="6"/><text class="num" x="324" y="57">8</text>
+    <rect class="cell" x="360" y="20" width="56" height="56" rx="6"/><text class="num" x="388" y="57">6</text>
+    <rect class="cell" x="424" y="20" width="56" height="56" rx="6"/><text class="num" x="452" y="57">1</text>
+    <rect class="win" x="34" y="14" width="196" height="68" rx="8"/>
+    <line class="flow" x1="132" y1="86" x2="132" y2="106" marker-end="url(#arrow)"/>
+    <text class="avg" x="132" y="132">(7+2+3)/3 = <tspan class="res">4</tspan></text>
+  </g>
+
+  <!-- slide 2: window over cells 1-3 -->
+  <g transform="translate(0,150)">
+    <rect class="cell" x="40"  y="20" width="56" height="56" rx="6"/><text class="num" x="68"  y="57">7</text>
+    <rect class="cell" x="104" y="20" width="56" height="56" rx="6"/><text class="num" x="132" y="57">2</text>
+    <rect class="cell" x="168" y="20" width="56" height="56" rx="6"/><text class="num" x="196" y="57">3</text>
+    <rect class="cell" x="232" y="20" width="56" height="56" rx="6"/><text class="num" x="260" y="57">4</text>
+    <rect class="cell" x="296" y="20" width="56" height="56" rx="6"/><text class="num" x="324" y="57">8</text>
+    <rect class="cell" x="360" y="20" width="56" height="56" rx="6"/><text class="num" x="388" y="57">6</text>
+    <rect class="cell" x="424" y="20" width="56" height="56" rx="6"/><text class="num" x="452" y="57">1</text>
+    <rect class="win" x="98" y="14" width="196" height="68" rx="8"/>
+    <line class="flow" x1="196" y1="86" x2="196" y2="106" marker-end="url(#arrow)"/>
+    <text class="avg" x="196" y="132">(2+3+4)/3 = <tspan class="res">3</tspan></text>
+  </g>
+
+  <!-- slide 3: window over cells 2-4 -->
+  <g transform="translate(0,300)">
+    <rect class="cell" x="40"  y="20" width="56" height="56" rx="6"/><text class="num" x="68"  y="57">7</text>
+    <rect class="cell" x="104" y="20" width="56" height="56" rx="6"/><text class="num" x="132" y="57">2</text>
+    <rect class="cell" x="168" y="20" width="56" height="56" rx="6"/><text class="num" x="196" y="57">3</text>
+    <rect class="cell" x="232" y="20" width="56" height="56" rx="6"/><text class="num" x="260" y="57">4</text>
+    <rect class="cell" x="296" y="20" width="56" height="56" rx="6"/><text class="num" x="324" y="57">8</text>
+    <rect class="cell" x="360" y="20" width="56" height="56" rx="6"/><text class="num" x="388" y="57">6</text>
+    <rect class="cell" x="424" y="20" width="56" height="56" rx="6"/><text class="num" x="452" y="57">1</text>
+    <rect class="win" x="162" y="14" width="196" height="68" rx="8"/>
+    <line class="flow" x1="260" y1="86" x2="260" y2="106" marker-end="url(#arrow)"/>
+    <text class="avg" x="260" y="132">(3+4+8)/3 = <tspan class="res">5</tspan></text>
+  </g>
+
+  <text class="dots" x="260" y="458">&#8230; and so on: 6, 5</text>
+
+  <!-- legend -->
+  <g>
+    <rect class="win" x="560" y="20" width="30" height="30" rx="6"/>
+    <text class="avg" x="605" y="41" style="text-anchor:start">window = 3</text>
+    <line class="flow" x1="562" y1="70" x2="592" y2="70" marker-end="url(#arrow)"/>
+    <text class="avg" x="605" y="76" style="text-anchor:start">stride = 1</text>
+  </g>
+</svg>

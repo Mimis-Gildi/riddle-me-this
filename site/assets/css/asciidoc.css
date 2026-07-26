@@ -65,3 +65,19 @@
 .admonitionblock td.icon .icon-important::before { content: "\f06a"; color: #bf0000; }
 .admonitionblock td.icon .icon-warning::before   { content: "\f071"; color: #bf6900; }
 .admonitionblock td.icon .icon-caution::before   { content: "\f06d"; color: #bf3400; }
+
+/* --- source highlighting (Rouge) for Asciidoctor listing blocks ---
+   Minimal Mistakes paints its dark code background only on the wrappers Markdown
+   produces (`div.highlighter-rouge`, `figure.highlight`). Asciidoctor emits
+   `.listingblock > .content > pre.rouge.highlight` instead, so Rouge's pastel token
+   colours (tuned for the dark background) landed on the theme's light <pre>.
+   Values below are copied from the theme's own `div.highlighter-rouge` rule. */
+.listingblock pre.rouge {
+  background: #263238;
+  color: #eeffff;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-size: 0.75em;
+  line-height: 1.8;
+  border-radius: 4px;
+  padding: 1em;
+}
