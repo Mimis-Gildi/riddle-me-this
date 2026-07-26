@@ -15,9 +15,10 @@ search: true
 read_aloud: false
 ---
 = Poser-Algos VS. REAL LIFE?
-
 ifndef::env-site[:imagesdir: ../assets/images]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+:sliding-windows-url: https://github.com/rdd13r/im-a-sliding-window
+:sliding-windows-test-url: https://github.com/rdd13r/im-a-sliding-window/blob/main/src/test/kotlin/me/rdd13r/funtoys/LinearSliderTest.kt
 
 ++++
 <style>
@@ -41,28 +42,28 @@ WHAT WOULD YOU DO IN MY PLACE?!
 
 *Two engineers talking, _S_, and `riddler` _R_ (yours truly):*
 
-*S:* _You know, in statistics, there's a sliding window to calculate averages?_ +
+*Mr. S:* _You know, in statistics, there's a sliding window to calculate averages?_ +
 *R:* _Yes, I'm aware. Most-widely used for metrics, positioning, etc._ +
-*S:* _How would you do it? Say in Databricks or Kafka, you have a *stream*. How'd calculate?_ +
+*Mr. S:* _How would you do it? Say in Databricks or Kafka, you have a *stream*. How'd calculate?_ +
 *R:* _It's trivial. Add up the numbers in the window and divide by width._ +
-*S:* _Yes, yes, I know. But what if you want to make it FASTER! What can you do?_ +
+*Mr. S:* _Yes, yes, I know. But what if you want to make it FASTER! What can you do?_ +
 *R:* _You are pushing me to `memoise` the `accumulator`. BUT! +
  {nbsp} This only works if **arithmetically** there is a save. There is no save here!_ +
-*S:* _Well, you could add up all values one time. +
+*Mr. S:* _Well, you could add up all values one time. +
 {nbsp} And then just add one and remove one before dividing. +
 {nbsp} So, you don't need to add them all again. +
 {nbsp} And your algorithm is *much faster*. Too bad you didn't answer that!_ +
 *R:* _Sure, sure. Why not?!_
 
-I didn't want to hurt *_S'_* pride. +
-Problem is: He's dead wrong! +
-He just doesn't know it.
+Last thing I wanted is *_Mr. S'_* hurt pride. +
+Problem is: He's wrong in an important real-world way. +
+He just doesn't know it... yet.
 
 _How can *NOT* memoizing previously added sum be *SLOWER*?!_
 
-Oh, but this is beautiful! Let's understand?
+Oh, but this is beautiful! Let us understand?
 
-(https://github.com/rdd13r/im-a-sliding-window[The repo is here...,window=_blank])
+({sliding-windows-url}[The repo is here...,window=_blank])
 
 == The Problem:
 
@@ -71,6 +72,7 @@ What is running average and where is it used?
 .A sliding window: width 3, stride 1
 [#img-sliding-window,align=center]
 image::sliding-window-w3-s1.svg[Sliding window of width 3 and stride 1 averaging one-digit numbers,width=800]
+{nbsp}
 
 [source,log]
 ----
@@ -84,3 +86,106 @@ Notice what happened: the array got smaller and "smoothed out."
 *Do developer do this in real work?:* NO! We use statistical libraries for much larger functions.
 But I have done this just a couple of years ago on smart weapon-systems -- eventually, when one codes
 enough through decades, even the low-lever stuff comes up. Here is _a practical example_:
+
+.Jittery readings smoothed: window 13, stride 3
+[#img-sliding-window-jitter,align=center]
+image::sliding-window-w13-s3-jitter.svg[Twenty-five jittery values between 100 and 200 smoothed by a sliding window of width 13 and stride 3,width=800]
+{nbsp}
+
+`window=13` and `stride=3` is a real life example -- this is what a reconnaissance drone wants to know over a rough terrain it would be offset over.
+This is one of the most often used statistical tools.
+
+== The 'Smart' Optimization by Mr. S:
+
+In our earlier conversation *Mr. S* thought *_"Memoise to Optimize"_*:
+
+. 13 is a lot of numbers to add! I need to add 12 times.
+. Then I slide 3 numbers -- but 10 are the same!
+. I would have to add 12 times _again_.
+. But I can remember my sum of 13 from before! `memoise`
+. On slide:  I can subtract 3 dropping off and add 3 showing up.
+. I save a lot of time -- less to calculate!
+. Oh, and it's cool to stream -- so, we also stream.
+
+_Sounds reasonable? Why not! +
+Let's see what *actually happens* when we implement Mr. S' clever ways?_
+
+.Median (min) of 10 warmed up times runs over 4,000,000 integers, +
+`window=13`, `stride=3` ({sliding-windows-test-url}[see test sources here,window=_blank]) +
+ {nbsp} -- `LinearSliderTest.massiveArrayPerformanceComparison`
+[cols="1h,1,1",options="header"]
+|===
+| | Memoised accumulator | Brute-force add
+
+| Streaming
+| 224.94 ms (217.68 ms)
+| 105.57 ms (103.75 ms)
+
+| Array
+| 5.63 ms (5.56 ms)
+| 5.20 ms (5.12 ms)
+|===
+
+.Brute force wins both rows -- note the Array panel is zoomed 40&#215;
+[#img-slider-performance,align=center]
+image::slider-performance-2x2.svg[Bar chart comparing memoised accumulator against brute-force add in streaming and array variants,width=800]
+{nbsp}
+
+*WHOA!* Mr. S' 'optimization' is slower in calculation. And A LOT slower in streams! +
+But why?! What does Mr. S not understand about software engineering?
+
+== Real Life Engineering:
+
+Now, I didn't want to hurt S' pride -- so I nodded.
+But understanding what's going on here is a-must for a practicing software engineer.
+Just to make sure, I first peeked into the implementations of most popular statistical libraries -- YEP!
+Exactly what I expected. +
+_But those don't help me explain it *as if I am 5 -- my hard rule*._ +
+So, I made _{sliding-windows-url}[a little bit of code,window=_blank]_ for us to play with and explain.
+
+(In reverse order now, for simplicity.)
+
+*_#4 calculates resulting array and jumps adding everything every time: brute force._*
+
+.Fourth `IntArray.runningAverageBruteForceNaive` sums every time. (5.20ms)
+[source,kotlin]
+----
+override fun IntArray.runningAverageBruteForceNaive(windowSize: Int, stride: Int): IntArray {
+    val result = IntArray((size - windowSize) / stride + 1)
+    for (out in result.indices) {
+        val start = out * stride
+        var sum = 0
+        for (i in start until start + windowSize) sum += this[i]
+        result[out] = sum / windowSize
+    }
+    return result
+}
+----
+
+*_#3 remembers (`memoise`) sum outside the loop now -- adds and subtracts._*
+
+.Third `IntArray.runningAverageNaive` is accumulating outside the loop. (5.63ms)
+[source,kotlin]
+----
+override fun IntArray.runningAverageNaive(windowSize: Int, stride: Int): IntArray {
+    val result = IntArray((size - windowSize) / stride + 1)
+    var sum = 0                                                 // <- ACCUMULATOR! (ACC)
+    for (i in 0 until windowSize) sum += this[i]
+    result[0] = sum / windowSize
+    for (slide in 1..size - windowSize) {
+        sum += this[slide + windowSize - 1] - this[slide - 1]   // Compound-messing with ACC
+        if (slide % stride == 0) result[slide / stride] = sum / windowSize
+    }
+    return result
+}
+----
+
+_Notice, the third above didn't get "much faster" as S lamented it would and is a little bit slower._
+
+*_#2 simply slides a stream and adds -- notice the simplicity code here._*
+
+.Second uses stream's own method to slide a window. (105.57ms)
+[source,kotlin]
+----
+
+----

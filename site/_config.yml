@@ -137,6 +137,7 @@ safe                        : false
 ### AsciiDoc / Asciidoctor — site-wide attributes
 asciidoctor:
   attributes:
+    source-highlighter            : rouge
     icons                         : font
     advanced-ai-non-corp          : 'link:{site-baseurl}/research/2025/09/19/advanced-ai-non-corp.html["No holds barred: The real AI Revolution .. is us",window=_blank]'
     independence-2026-collector   : 'link:{site-baseurl}/reflections/2026/07/01/glory-to-all-heroes.html[Freedom Isn''t Free! -- collector,window=_blank]'
