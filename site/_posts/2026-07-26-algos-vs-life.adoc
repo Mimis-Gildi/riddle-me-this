@@ -26,6 +26,9 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :fn-flynn: footnote:[1966 is Flynn's taxonomy ("Very high speed computers") -- the paper that classified and named SIMD. The first working SIMD iron, ILLIAC IV, was built in 1972 and operational from 1974.]
 :codeforces-catalog: https://codeforces.com/catalog[Codeforces Catalog,window=_blank]
 :cp-algorithms: https://cp-algorithms.com/[cp-algorithms.com,window=_blank]
+:the-bible-url: https://web.archive.org/web/20241231151152/http://catb.org/jargon/html/index.html
+:definition-suit-url: https://web.archive.org/web/20241207232002/http://catb.org/jargon/html/S/suit.html
+:definition-poseur-url: https://en.wikipedia.org/wiki/Poseur
 
 ++++
 <style>
@@ -45,24 +48,44 @@ This just made my day! +
 Heck, even a week.
 I hope it makes your day too!
 
-WHAT WOULD YOU DO IN MY PLACE?!
+[WARNING]
+.Any relation to persons living or undead is completely coincidental.
+====
+This is a classic hacker scene trope full of traditional characters -- all invented! +
+_Even absurdly impossible in real life..._ dark humor notwithstanding.
 
-*Two engineers talking, _Mr. S_, and `riddler` _R_ (yours truly):*
+- {definition-suit-url}[Mr. Suit,window=_blank] -- a corporate type hackers love to interact with. +
+(CATB Jargon File, 2003)
+- `riddler` -- Joe the Random Hacker, an unremarkable specimen on the real scene.
+- _Poser_ -- a very 'technical' suit; comes from the skater culture ({definition-poseur-url}[Poseur,window=_blank]). +
+(The Newly Unpublished Hacker Dictionary, 2024)
+- the _living_ -- all makers, including hackers, that 'live' in creating real value through perpetual learning. +
+(The Newly Unpublished Hacker Dictionary, 2022)
+- the _undead_ -- opposite to _living_, imitators. Black Mercedes, no plates. Apple Watch. +
+(The Newly Unpublished Hacker Dictionary, 2022)
 
-*Mr. S:* _You know, in statistics, there's a sliding window to calculate averages?_ +
+
+{nbsp} - Disclaimer by Despicable Gru of Despicable Me.
+====
+
+
+*Two engineers talking, _Mr. Suit_, and `riddler` _R_ (yours truly):*
+
+*Mr. Suit:* _You know, in statistics, there's a sliding window to calculate averages?_ +
 *R:* _Yes, I'm aware. Most-widely used for metrics, positioning, etc._ +
-*Mr. S:* _How would you do it? Say in Databricks or Kafka, you have a *stream*. How'd calculate?_ +
+*Mr. Suit:* _How would you do it? Say in Databricks or Kafka, you have a *stream*. How'd calculate?_ +
 *R:* _It's trivial. Add up the numbers in the window and divide by width._ +
-*Mr. S:* _Yes, yes, I know. But what if you want to make it FASTER! What can you do?_ +
+*Mr. Suit:* _Yes, yes, I know. But what if you want to make it FASTER! What can you do?_ +
 *R:* _You are pushing me to `memoise` the `accumulator`. BUT! +
  {nbsp} This only works if **arithmetically** there is a save. There is no save here!_ +
-*Mr. S:* _Well, you could add up all values one time. +
+*Mr. Suit:* _Well, you could add up all values one time. +
 {nbsp} And then just add one and remove one before dividing. +
 {nbsp} So, you don't need to add them all again. +
-{nbsp} And your algorithm is *much faster*. Too bad you didn't answer that!_ +
+{nbsp} And your algorithm is *much faster*. That's the optimal solution. +
+{nbsp} We benchmarked it -- on the #whiteboard#._ +
 *R:* _Sure, sure. Why not?!_
 
-Last thing I wanted is *_Mr. S'_* hurt pride. +
+Last thing I wanted is *_Mr. Suit's_* hurt pride. +
 Problem is: He's wrong in an important real-world way. +
 He just doesn't know it... yet.
 
@@ -102,9 +125,9 @@ image::sliding-window-w13-s3-jitter.svg[Twenty-five jittery values between 100 a
 `window=13` and `stride=3` is a real life example -- this is what a reconnaissance drone wants to know over a rough terrain it would be offset over.
 This is one of the most often used statistical tools.
 
-== The 'Smart' Optimization by Mr. S:
+== The 'Smart' Optimization by Mr. Suit:
 
-In our earlier conversation *Mr. S* thought *_"Memoise to Optimize"_*:
+In our earlier conversation *Mr. Suit* thought *_"Memoise to Optimize"_*:
 
 . 13 is a lot of numbers to add! I need to add 12 times.
 . Then I slide 3 numbers -- but 10 are the same!
@@ -115,7 +138,7 @@ In our earlier conversation *Mr. S* thought *_"Memoise to Optimize"_*:
 . Oh, and it's cool to stream -- so, we also stream.
 
 _Sounds reasonable? Why not! +
-Let's see what *actually happens* when we implement Mr. S' clever ways?_
+Let's see what *actually happens* when we implement Mr. Suit's clever ways?_
 
 .Median (min) of 10 warmed-up, timed runs over 4,000,000 integers, +
 `window=13`, `stride=3` ({sliding-windows-test-url}[see test sources here,window=_blank]) +
@@ -138,12 +161,12 @@ Let's see what *actually happens* when we implement Mr. S' clever ways?_
 image::slider-performance-2x2.svg[Bar chart comparing memoised accumulator against brute-force add in streaming and array variants,width=800]
 {nbsp}
 
-*WHOA!* Mr. S' 'optimization' is slower in calculation. And A LOT slower in streams! +
-But why?! What does Mr. S not understand about software engineering?
+*WHOA!* Mr. Suit's 'optimization' is slower in calculation. And A LOT slower in streams! +
+But why?! What does Mr. Suit not understand about software engineering?
 
 == Real Life Engineering:
 
-Now, I didn't want to hurt Mr. S' pride -- so I nodded.
+Now, I didn't want to hurt Mr. Suit's pride -- so I nodded.
 But understanding what's going on here is a-must for a practicing software engineer.
 Just to make sure, I first peeked into the implementations of most popular statistical libraries -- YEP!
 Exactly what I expected. +
@@ -187,7 +210,7 @@ override fun IntArray.runningAverageNaive(windowSize: Int, stride: Int): IntArra
 }
 ----
 
-_Notice, the third above didn't get "much faster" as Mr. S lamented it would and is a little bit slower._
+_Notice, the third above didn't get "much faster" as Mr. Suit lamented it would and is a little bit slower._
 
 *_+++#+++2 simply slides a stream and adds -- notice the #simplicity# of code here._*
 
@@ -299,11 +322,11 @@ fun massiveArrayPerformanceComparison() = with(LinearSlider()) {
 
 == But Why? The Explanation:
 
-*_So, how did Mr. S go SO WRONG?!_*
+*_So, how did Mr. Suit go SO WRONG?!_*
 
 *Does his algorithm save calculation?* +
 On long `window` and short `stride` this DOES save calculation on primitive level. +
-In fact, in 1979 on {i8088} CPU Mr. S might have gotten a little time save with it. +
+In fact, in 1979 on {i8088} CPU Mr. Suit might have gotten a little time save with it. +
 Please, keep in mind that `8088` already had *register-memory* instructions implemented. +
 But since 1997 with introduction of {mmx} (extension to 1966 SIMD{fn-flynn}) *this is useless*.
 
@@ -320,7 +343,7 @@ AVX10.2 is about to drop -- generation 8, methinks; Intel doesn't number them, I
 . In-CPU Integrated Memory Controller -- on-die since 2003: direct page-lining.
 . Kotlin K2 compiler IR with @Metadata engine: All compilers align hints now.
 
-*In order of effect on code. Most important is Mr. S' #algorithm flaw# I'll cover last!* +
+*In order of effect on code. Most important is Mr. Suit's #algorithm flaw# I'll cover last!* +
 *_The flaw is the crime -- the three above are its victims._*
 
 == Single Instruction Multiple Data (SIMD):
@@ -401,11 +424,11 @@ is one critical point to make here! People who code regularly sooner or later co
 This means "never keep writing to the value you need next!" In other words: +
 Use `val` not `var`. When you need to change things -- spit them OUT.
 
-Mr. S' algorithm depends on the accumulator that it uses immediately -- that's an ignorant sin. +
+Mr. Suit's algorithm depends on the accumulator that it uses immediately -- that's an ignorant sin. +
 When you look at the way accumulators are actually written in Functional Programming of Scala,
 Kotlin, Python, etc. -- You'll notice that they ALL *append* for *_later construct_* use.
 
-The type of accumulator Mr. S wanted is known as transient value - a type of dependency. +
+The type of accumulator Mr. Suit wanted is known as transient value - a type of dependency. +
 And a very well documented antipattern.
 
 If time permits, I will later spend another hour and write a `ParallelSlider` that's
