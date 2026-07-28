@@ -58,27 +58,32 @@ Heck, even a week.
 I hope it makes your day too!
 
 [WARNING]
-.Any relation to persons living or undead is completely coincidental.
+.*_The story is fabricated by many hackers_ -- the problem is real!*
 ====
-This is a classic hacker scene trope full of traditional characters -- all invented! +
-_Even absurdly impossible in real life..._ dark humor notwithstanding.
+_Any relation to persons living or undead is completely coincidental._
 
-- {definition-suit-url}[Mr. Suit,window=_blank] -- a corporate type hackers love to interact with. +
+[%collapsible]
+.Expand for a classic hacker scene trope full of *traditional characters*!
+======
+
+_Absurdly impossible in real life..._ dark humor notwithstanding.
+
+- {definition-suit-url}[Mr. Suit,window=_blank] -- a corporate type hackers love to interact with. Has money. +
 (CATB Jargon File, 2003)
-- `riddler` -- Joe the Random Hacker, an unremarkable specimen on the real scene.
+- `Random` -- Joe Random Hacker, an unremarkable specimen on the real scene.
 - _Poser_ -- a very 'technical' suit; comes from the skater culture ({definition-poseur-url}[Poseur,window=_blank]). +
 (The Newly Unpublished Hacker Dictionary, 2024)
 - the _living_ -- all makers, including hackers, that 'live' in creating real value through perpetual learning. +
 (The Newly Unpublished Hacker Dictionary, 2022)
 - the _undead_ -- opposite to _living_, imitators. Black Mercedes, no plates. Apple Watch. +
 (The Newly Unpublished Hacker Dictionary, 2022)
-
+======
 
 {nbsp} - Disclaimer by Despicable Gru of Despicable Me.
 ====
 
 
-*Two engineers talking, _Mr. Suit_, and `riddler` _R_ (yours truly):*
+*An Executive, _Mr. Suit_, is talking with J `Random` Hacker (_R_):*
 
 *Mr. Suit:* _You know, in statistics, there's a sliding window to calculate averages?_ +
 *R:* _Yes, I'm aware. Most-widely used for metrics, positioning, etc._ +
@@ -134,7 +139,7 @@ image::sliding-window-w13-s3-jitter.svg[Twenty-five jittery values between 100 a
 `window=13` and `stride=3` is a real life example -- this is what a reconnaissance drone wants to know over a rough terrain it would be offset over.
 This is one of the most often used statistical tools.
 
-== The 'Smart' Optimization by Mr. Suit:
+== The 'Textbook' Optimization by Mr. Suit:
 
 In our earlier conversation *Mr. Suit* thought *_"Memoise to Optimize"_*:
 
@@ -514,4 +519,6 @@ or even despite compiler flags, and how JIT causes extreme jitter run-to-run.
 . How I stopped short on the streaming topic. I pushed back, and it was accepted: that's a book. +
 (Also: the champions are still fuming over it on Discord -- and I will not hand down some wizard's
 verdict that ends a fight this good. Besides, I expect I'll learn from the champs!)
-. How I was way too nice to Mr. Suit: c'mon guys, seriously?!
+. How I was way too nice to Mr. Suit: c'mon guys, seriously?! +
+Mr. College didn't work. Mr. S didn't work. Every hacker's villain is a suit. +
+Y'know?! I've been *_a suit_* signing _hackers'_ paychecks!
