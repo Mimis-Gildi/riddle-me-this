@@ -29,6 +29,9 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :the-bible-url: https://web.archive.org/web/20241231151152/http://catb.org/jargon/html/index.html
 :definition-suit-url: https://web.archive.org/web/20241207232002/http://catb.org/jargon/html/S/suit.html
 :definition-poseur-url: https://en.wikipedia.org/wiki/Poseur
+:leetcode: https://leetcode.com/[leetcode.com,window=_blank]
+:imdb-idiocracy: https://www.imdb.com/title/tt0387808/
+:alt-what-about-us: A doubting kid in the crowd asks President Not Sure what to do about the real problems
 :usaco-window: https://usaco.guide/gold/sliding-window[USACO Guide: Sliding Window,window=_blank]
 :loop-carried: https://en.wikipedia.org/wiki/Loop_dependence_analysis[loop-carried dependence,window=_blank]
 :algorithmica-prefix: https://en.algorithmica.org/hpc/algorithms/prefix/[Algorithmica: Prefix Sum with SIMD,window=_blank]
@@ -145,6 +148,11 @@ In our earlier conversation *Mr. Suit* thought *_"Memoise to Optimize"_*:
 
 _Sounds reasonable? Why not!{fn-devils-advocate} +
 Let's see what *actually happens* when we implement Mr. Suit's clever ways?_
+
+."But what about us? Should we just apply toilet water on it?" -- {imdb-idiocracy}[Idiocracy (2006),window=_blank]
+[#img-what-about-us,link={imdb-idiocracy},align=center,window=_blank]
+image::idiocracy-but-what-about-us.jpg[{alt-what-about-us},width=1200]
+{nbsp}
 
 .Median (min) of 10 warmed-up, timed runs over 4,000,000 integers, +
 `window=13`, `stride=3` ({sliding-windows-test-url}[see test sources here,window=_blank]) +
@@ -456,7 +464,7 @@ You get there by understanding algorithms (at first):
 
 Search for the {codeforces-catalog} (Orcs block it sometimes). +
 {cp-algorithms} is the same school in book form -- never blocked. +
-https://leetcode.com/[leetcode.com,window=_blank] is America-friendly alternative.
+{leetcode} is America-friendly alternative.
 
 But this is where the algos alone and division 2 end -- division 1 begins.
 
