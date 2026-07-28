@@ -25,6 +25,8 @@ Convenience functions live in `.run/`; all of them also run from text:
 
 Cardinal sin: invoking _gradlew_ script – it's not for you.
 
+Cardinal sin: git operations (`add`, `commit`, `push`, `mv`, `rm`, …) – Vadim drives git.
+
 ## Environments
 
 Declared in manifests, never assumed: `.sdkmanrc` (JVM), `site/.tool-versions` (Ruby),
