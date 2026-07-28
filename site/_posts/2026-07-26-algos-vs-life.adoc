@@ -26,6 +26,18 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :fn-flynn: footnote:[1966 is Flynn's taxonomy ("Very high speed computers") -- the paper that classified and named SIMD. The first working SIMD iron, ILLIAC IV, was built in 1972 and operational from 1974.]
 :codeforces-catalog: https://codeforces.com/catalog[Codeforces Catalog,window=_blank]
 :cp-algorithms: https://cp-algorithms.com/[cp-algorithms.com,window=_blank]
+:the-bible-url: https://web.archive.org/web/20241231151152/http://catb.org/jargon/html/index.html
+:definition-suit-url: https://web.archive.org/web/20241207232002/http://catb.org/jargon/html/S/suit.html
+:definition-poseur-url: https://en.wikipedia.org/wiki/Poseur
+:leetcode: https://leetcode.com/[leetcode.com,window=_blank]
+:imdb-idiocracy: https://www.imdb.com/title/tt0387808/
+:alt-what-about-us: A doubting kid in the crowd asks President Not Sure what to do about the real problems
+:usaco-window: https://usaco.guide/gold/sliding-window[USACO Guide: Sliding Window,window=_blank]
+:loop-carried: https://en.wikipedia.org/wiki/Loop_dependence_analysis[loop-carried dependence,window=_blank]
+:algorithmica-prefix: https://en.algorithmica.org/hpc/algorithms/prefix/[Algorithmica: Prefix Sum with SIMD,window=_blank]
+:lemire-dot: https://lemire.me/blog/2018/07/05/how-quickly-can-you-compute-the-dot-product-between-two-large-vectors/[Lemire: dot product,window=_blank]
+:fn-devils-advocate: footnote:[Devil's Advocate: Mr. Suit learned it fair and square. Since I point you to so many wizard hackers fuming over "loop-carried dependence" blocking half of the MMX, I should also explain how it comes to be. Get this! -- Every algo curriculum teaches this exact move -- {usaco-window} spells it out: "sliding the range forward removes one element and adds another." In the whiteboard model, where every ADD costs 1 and memory is free, it IS OPTIMAL. The model is the problem. And THE problem all too common -- on many occasions I found myself "unteaching" this to young engineers, who were resisting fiercely, until I assigned a code-benchmarking problem with a "Lucy, 'splain!" as the pointed deliverable.]
+:fn-antipattern: footnote:[Compiler folks call it a {loop-carried} -- each iteration needs the previous one's write; the chain serializes everything. The fun part: the same trick the algo school teaches, the hardware school spends chapters ripping out: {algorithmica-prefix}, or the comment thread of {lemire-dot}, where a single accumulator runs 8x under the machine's add capacity. Start there and follow the citations.]
 
 ++++
 <style>
@@ -45,26 +57,47 @@ This just made my day! +
 Heck, even a week.
 I hope it makes your day too!
 
-WHAT WOULD YOU DO IN MY PLACE?!
+[WARNING]
+.Any relation to persons living or undead is completely coincidental.
+====
+This is a classic hacker scene trope full of traditional characters -- all invented! +
+_Even absurdly impossible in real life..._ dark humor notwithstanding.
 
-*Two engineers talking, _Mr. S_, and `riddler` _R_ (yours truly):*
+- {definition-suit-url}[Mr. Suit,window=_blank] -- a corporate type hackers love to interact with. +
+(CATB Jargon File, 2003)
+- `riddler` -- Joe the Random Hacker, an unremarkable specimen on the real scene.
+- _Poser_ -- a very 'technical' suit; comes from the skater culture ({definition-poseur-url}[Poseur,window=_blank]). +
+(The Newly Unpublished Hacker Dictionary, 2024)
+- the _living_ -- all makers, including hackers, that 'live' in creating real value through perpetual learning. +
+(The Newly Unpublished Hacker Dictionary, 2022)
+- the _undead_ -- opposite to _living_, imitators. Black Mercedes, no plates. Apple Watch. +
+(The Newly Unpublished Hacker Dictionary, 2022)
 
-*Mr. S:* _You know, in statistics, there's a sliding window to calculate averages?_ +
+
+{nbsp} - Disclaimer by Despicable Gru of Despicable Me.
+====
+
+
+*Two engineers talking, _Mr. Suit_, and `riddler` _R_ (yours truly):*
+
+*Mr. Suit:* _You know, in statistics, there's a sliding window to calculate averages?_ +
 *R:* _Yes, I'm aware. Most-widely used for metrics, positioning, etc._ +
-*Mr. S:* _How would you do it? Say in Databricks or Kafka, you have a *stream*. How'd calculate?_ +
+*Mr. Suit:* _How would you do it? Say in Databricks or Kafka, you have a *stream*. How'd calculate?_ +
 *R:* _It's trivial. Add up the numbers in the window and divide by width._ +
-*Mr. S:* _Yes, yes, I know. But what if you want to make it FASTER! What can you do?_ +
+*Mr. Suit:* _Yes, yes, I know. But what if you want to make it FASTER! What can you do?_ +
 *R:* _You are pushing me to `memoise` the `accumulator`. BUT! +
  {nbsp} This only works if **arithmetically** there is a save. There is no save here!_ +
-*Mr. S:* _Well, you could add up all values one time. +
+*Mr. Suit:* _Well, you could add up all values one time. +
 {nbsp} And then just add one and remove one before dividing. +
 {nbsp} So, you don't need to add them all again. +
-{nbsp} And your algorithm is *much faster*. Too bad you didn't answer that!_ +
+{nbsp} And your algorithm is *much faster*. That's the optimal solution. +
+{nbsp} We benchmarked it -- on the #whiteboard#._ +
 *R:* _Sure, sure. Why not?!_
 
-Last thing I wanted is *_Mr. S'_* hurt pride. +
-Problem is: He's wrong in an important real-world way. +
-He just doesn't know it... yet.
+I nodded -- I had a repo to write.
+
+One of us walked out of that room wrong. +
+Wanna bet which one? Run my code. Or make your own.
 
 _How can *NOT* memoizing previously added sum be *SLOWER*?!_
 
@@ -91,8 +124,7 @@ image::sliding-window-w3-s1.svg[Sliding window of width 3 and stride 1 averaging
 Notice what happened: the array got smaller and "smoothed out."
 
 *Do developers do this in real work?* NO! We use statistical libraries for much larger functions.
-But I have done this just a couple of years ago on smart weapon-systems -- eventually, when one codes
-enough through decades, even the low-level stuff comes up. Here is _a practical example_:
+But I have done this just a couple of years ago on smart weapon-systems. Here is _a practical example_:
 
 .Jittery readings smoothed: window 13, stride 3
 [#img-sliding-window-jitter,align=center]
@@ -102,9 +134,9 @@ image::sliding-window-w13-s3-jitter.svg[Twenty-five jittery values between 100 a
 `window=13` and `stride=3` is a real life example -- this is what a reconnaissance drone wants to know over a rough terrain it would be offset over.
 This is one of the most often used statistical tools.
 
-== The 'Smart' Optimization by Mr. S:
+== The 'Smart' Optimization by Mr. Suit:
 
-In our earlier conversation *Mr. S* thought *_"Memoise to Optimize"_*:
+In our earlier conversation *Mr. Suit* thought *_"Memoise to Optimize"_*:
 
 . 13 is a lot of numbers to add! I need to add 12 times.
 . Then I slide 3 numbers -- but 10 are the same!
@@ -114,8 +146,13 @@ In our earlier conversation *Mr. S* thought *_"Memoise to Optimize"_*:
 . I save a lot of time -- less to calculate!
 . Oh, and it's cool to stream -- so, we also stream.
 
-_Sounds reasonable? Why not! +
-Let's see what *actually happens* when we implement Mr. S' clever ways?_
+_Sounds reasonable? Why not!{fn-devils-advocate} +
+Let's see what *actually happens* when we implement Mr. Suit's clever ways?_
+
+."But what about us? Should we just apply toilet water on it?" -- {imdb-idiocracy}[Idiocracy (2006),window=_blank]
+[#img-what-about-us,link={imdb-idiocracy},align=center,window=_blank]
+image::idiocracy-but-what-about-us.jpg[{alt-what-about-us},width=1200]
+{nbsp}
 
 .Median (min) of 10 warmed-up, timed runs over 4,000,000 integers, +
 `window=13`, `stride=3` ({sliding-windows-test-url}[see test sources here,window=_blank]) +
@@ -138,14 +175,13 @@ Let's see what *actually happens* when we implement Mr. S' clever ways?_
 image::slider-performance-2x2.svg[Bar chart comparing memoised accumulator against brute-force add in streaming and array variants,width=800]
 {nbsp}
 
-*WHOA!* Mr. S' 'optimization' is slower in calculation. And A LOT slower in streams! +
-But why?! What does Mr. S not understand about software engineering?
+*WHOA!* The 'optimization' is slower in calculation. And A LOT slower in streams! +
+But why?! Where did the #whiteboard# part ways with the #machine#?
 
 == Real Life Engineering:
 
-Now, I didn't want to hurt Mr. S' pride -- so I nodded.
-But understanding what's going on here is a-must for a practicing software engineer.
-Just to make sure, I first peeked into the implementations of most popular statistical libraries -- YEP!
+Understanding what's going on here is a-must for a practicing software engineer.
+Just to make sure, I first peeked into the implementations of most popular statistical libraries -- YEP! +
 Exactly what I expected. +
 _But those don't help me explain it *as if I am 5 -- my hard rule*._ +
 So, I made _{sliding-windows-url}[a little bit of code,window=_blank]_ for us to play with and explain.
@@ -187,7 +223,7 @@ override fun IntArray.runningAverageNaive(windowSize: Int, stride: Int): IntArra
 }
 ----
 
-_Notice, the third above didn't get "much faster" as Mr. S lamented it would and is a little bit slower._
+_Notice, the third above didn't get "much faster" as the whiteboard promised -- it's a little bit slower._
 
 *_+++#+++2 simply slides a stream and adds -- notice the #simplicity# of code here._*
 
@@ -299,11 +335,11 @@ fun massiveArrayPerformanceComparison() = with(LinearSlider()) {
 
 == But Why? The Explanation:
 
-*_So, how did Mr. S go SO WRONG?!_*
+*_So where did the whiteboard go wrong? Nowhere -- in 1979._*
 
-*Does his algorithm save calculation?* +
+*Does the algorithm save calculation?* +
 On long `window` and short `stride` this DOES save calculation on primitive level. +
-In fact, in 1979 on {i8088} CPU Mr. S might have gotten a little time save with it. +
+In fact, in 1979 on {i8088} CPU it would have brought a real, measurable save. +
 Please, keep in mind that `8088` already had *register-memory* instructions implemented. +
 But since 1997 with introduction of {mmx} (extension to 1966 SIMD{fn-flynn}) *this is useless*.
 
@@ -320,7 +356,7 @@ AVX10.2 is about to drop -- generation 8, methinks; Intel doesn't number them, I
 . In-CPU Integrated Memory Controller -- on-die since 2003: direct page-lining.
 . Kotlin K2 compiler IR with @Metadata engine: All compilers align hints now.
 
-*In order of effect on code. Most important is Mr. S' #algorithm flaw# I'll cover last!* +
+*In order of effect on code. Most important is the #algorithm flaw# I'll cover last!* +
 *_The flaw is the crime -- the three above are its victims._*
 
 == Single Instruction Multiple Data (SIMD):
@@ -372,8 +408,7 @@ _That endless array *predictively aligned* will always be the next page._
 On MPF everything just stops! Linux or UNIX will not try to salvage the situation AT ALL.
 Because it is much cheaper to flop the entire page which could be a different place in your
 program or an entirely different program. While the CPU is working on that different next
-area the MMC will attempt to "figure out" the page-fault situation you'd caused by lack
-of engineering competence _in the background._ It will not mark the page queued for execution
+area the MMC will attempt to "figure out" the page-fault situation we'd caused _in the background._ It will not mark the page queued for execution
 again until ALL the symbol table references are resolved in its entire span.
 
 So, to go fast, you need to stay on the page as long as possible. And your code MUST be
@@ -401,12 +436,13 @@ is one critical point to make here! People who code regularly sooner or later co
 This means "never keep writing to the value you need next!" In other words: +
 Use `val` not `var`. When you need to change things -- spit them OUT.
 
-Mr. S' algorithm depends on the accumulator that it uses immediately -- that's an ignorant sin. +
+The algorithm depends on the accumulator it uses *_immediately_* +
+ {nbsp} -- a _cargo-cult optimization_: the form of speed, none of the function. Frum! +
 When you look at the way accumulators are actually written in Functional Programming of Scala,
-Kotlin, Python, etc. -- You'll notice that they ALL *append* for *_later construct_* use.
+Kotlin, Python, etc. -- You'll notice that they ALL *append* for *_later construct_* use. No Frum.
 
-The type of accumulator Mr. S wanted is known as transient value - a type of dependency. +
-And a very well documented antipattern.
+This type of accumulator is known as transient value -- a type of dependency. +
+And a very well documented antipattern.{fn-antipattern} The "iteration-carried dependence."
 
 If time permits, I will later spend another hour and write a `ParallelSlider` that's
 suspending -- Kotlin's native stackless concurrency -- the fastest way to compute anything.
@@ -428,7 +464,7 @@ You get there by understanding algorithms (at first):
 
 Search for the {codeforces-catalog} (Orcs block it sometimes). +
 {cp-algorithms} is the same school in book form -- never blocked. +
-https://leetcode.com/[leetcode.com,window=_blank] is America-friendly alternative.
+{leetcode} is America-friendly alternative.
 
 But this is where the algos alone and division 2 end -- division 1 begins.
 
@@ -454,3 +490,28 @@ So, keep coding -- and have fun doing it!
 . Make the numbers falsifiable-by-participation. What's different on your box? Why?
 . Shorten stride, grow window: make parametrized load test. Any inflex points? Why?
 . Make ParallelSlider! Teach the old wizard a thing or two. (I am always much obliged)
+
+'''
+
+== Postproduction and Feedback
+
+Short on time, I'd posted this article as a draft. And I got fierce engagement in my Discord communities.
+Somehow it hit a nerve in just the right way. Let me share with you how it went.
+
+=== What Hackers Loved:
+
+. How there are many plausible solutions -- all questionable and fiercely debated; +
+And, only ONE wrong solution: The Carried Accumulator Optimisation.
+. How there is a lot of room to play and I didn't add direction-setting code (`ParallelSlider`).
+. How there's so much to learn and play with in AVX10, and when Vectorisation kicks in automatically,
+or even despite compiler flags, and how JIT causes extreme jitter run-to-run.
+. The opinionated way I simulated streaming hinting at yet another related antipattern.
+
+=== What Hackers didn't Love:
+
+. How `Mr. S` read too much like a person. Fixed: he is *Mr. Suit* now -- see the disclaimer.
+. How my frustration with the problem seeped through: I applied all the language corrections.
+. How I stopped short on the streaming topic. I pushed back, and it was accepted: that's a book. +
+(Also: the champions are still fuming over it on Discord -- and I will not hand down some wizard's
+verdict that ends a fight this good. Besides, I expect I'll learn from the champs!)
+. How I was way too nice to Mr. Suit: c'mon guys, seriously?!
