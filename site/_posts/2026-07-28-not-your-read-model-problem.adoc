@@ -1,0 +1,169 @@
+---
+categories: [ adventures ]
+tags: [ Read Model, React, Single Page Applications, Data Frame, Interviews ]
+header:
+  overlay_image: /assets/images/banner-athena-in-acme-city.png
+  caption: "The Mother of all hackers, Athena, is overlooking her city..."
+excerpt: >
+  What if your single page React application is getting too much data in production -- What do you do? What can you do? Does React give you some magic? WRONG QUESTION! This is NOT a Read Model Problem -- Read on and let's have fun!
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= React Getting Too Much Data?
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+:fn-cqrs: footnote:[The Read Model is one half of Command Query Responsibility Segregation (CQRS): a denormalized projection shaped for presentation. See Martin Fowler's https://martinfowler.com/bliki/CQRS.html[CQRS,window=_blank] and Greg Young's https://cqrs.files.wordpress.com/2010/11/cqrs_documents.pdf[CQRS Documents,window=_blank].]
+:react-profiler: https://react.dev/reference/react/Profiler[<Profiler>,window=_blank]
+:react-169: https://developer.mescius.com/blogs/whats-new-react-16-9[React 16.9,window=_blank]
+:react-lazy: https://react.dev/reference/react/lazy[React.lazy,window=_blank]
+:react-suspense: https://react.dev/reference/react/Suspense[Suspense,window=_blank]
+:react-deferred: https://react.dev/reference/react/useDeferredValue[useDeferredValue,window=_blank]
+:react-transition: https://react.dev/reference/react/useTransition[useTransition,window=_blank]
+:react-activity: https://react.dev/reference/react/Activity[<Activity>,window=_blank]
+:react-192-news: https://alternativeto.net/news/2025/10/react-19-2-introduces-activity---useeffectevent-and-partial-prerendering[React 19.2 -- October 2025,window=_blank]
+:algos-vs-life-url: /riddle-me-this/adventures/2026/07/26/algos-vs-life.html
+
+++++
+<style>
+.page__hero--overlay { background-position: center 20%; }
+  .page__hero--overlay .page__lead {
+    color: rgba(255,255,255,0.7);
+    margin: 15% 30% 0;
+    text-align: justify;
+    width: 1200px;
+  }
+</style>
+++++
+
+
+This is another DILEMMA interview question. +
+Fallacy `non causa pro causa` -- implying the cause. +
+It is not as legendary as the link:{algos-vs-life-url}[Sliding Window problem,window=_blank], +
+where only ONE option is clearly true:
+
+- A) Code Warrior; Or,
+- B) Whiteboard Warrior.
+
+But it is equally amazing in its own way. +
+This time -- two hackers talking:
+
+*What if you get too much data in single page React application?!* +
+> _We never do that: it breaches Boundary Contract._ +
+*But you have that in production! What can you do about it?* +
+> _I can implement an intermediate service to page and not have it happen?_ +
+*But is there ANYTHING you can do in React to handle the situation?* +
+> _Potentially, I'd need to read the manual to see what new is available._ +
+> _**Importantly:** When we find ourselves searching outside framework, +
+> or component type boundary -- *we have already committed a mortal sin*!_
+
+First, I will tell you WHY the interview went this way. +
+And then I will explain what to do in React to avoid the crisis.
+
+*Important Context:* +
+ {nbsp} *_The interviewee is to raise a highly disciplined team, as many times before._*
+
+== Breach of Architectural Boundary Contract:
+
+The problem is NOT React having trouble with deeply nested DOM or too much data.
+
+Any *_Data-Presenting_* Single-Page Application (SPA) is a #*Read Model (RM)*#{fn-cqrs} +
+ {nbsp} -- a concrete architectural archetype. +
+Its job is to only present the model to the actor +
+and _never_ to process data. It must follow:
+
+- Garbage-In -- Garbage-Out;
+- Read-only, side-effect free -- no mutation;
+- Declared staleness -- a projection;
+- Transparent -- NO behavior ownership.
+
+Fat SPAs do exist -- Figma, spreadsheets, notebooks. Those are a different
+archetype with a different contract, and a separate article.
+
+And to make good on these, all RM type components offer:
+
+. Limitations Contract: e.g., DOM object count upper boundary;
+. Service Level Agreement (SLA): durability contract / expectations.
+
+NOTICE: Data concerns are OFF LIMITS -- Paging, streaming, sizing are entirely
+Supplier Accountability: the Supplier presents a render-ready model -- that is
+what makes a Read Model.
+
+So, the only correct answer to: +
+*_"What do you do in Production"_* +
+ {nbsp} {nbsp} is *Crash Loudly!*
+
+."Not the owl's fault."
+[#img-react-owl,align=center]
+image::react-owl-supplier-hose.png[An over-inflated owl on a branch, eyes popped out, hooting a 413 -- Payload Too Large -- while a data hose labeled SUPPLIER keeps pumping,width=1200]
+
+In fact, I had a massive platform with 56 tenants impose it: awarded the best architecture!
+
+_This question was a trap by a fallacy. But what we can do to avoid it is indeed interesting._
+
+== Why So Serious?!
+
+Because a boundary contract that bends is not a contract -- it is a suggestion.
+
+An evolving team is exactly the team that cannot afford suggestions.
+Seniors rotate, juniors arrive, and the architecture is the only teacher on duty
+around the clock. When the Read Model quietly swallows a supplier's failure,
+the lesson every new engineer learns is: boundaries are negotiable here.
+From that day, every component grows its own private coping layer,
+and in a year nobody can say where any problem actually lives.
+
+Rigid discipline is not bureaucracy -- it is how the team stays debuggable.
+A contract breach that crashes loudly is found in one Sev-One.
+A contract breach that is gracefully absorbed is found in an archaeology dig.
+
+== Defensive SPA with React:
+
+So, this scenario is an architectural failure. +
+On a disciplined team it's a Sev-One -- highest severity outage, +
+and somebody is accumulating HR notes. +
+At least on my teams -- core engineering contracts are never to be broken.
+
+*As a React / UX developer HOW do you safeguard yourself?!* +
+The problem is not your UX -- it's above you -- the Architecture. +
+Still there is one thing you must do -- acknowledge the boundary.
+
+*Full disclosure:* React is a very small and simple framework one can master,
+not just learn, over a weekend -- in its entirety. And I don't usually make
+software in React -- I spend 99% of my time retiring React in favor of professional
+solutions like Ktor / Kotlin that come with a whole different set of limitations
+and abilities. But my advice here is basic and universal.
+
+React offers the {react-profiler} `onRender` budget hook -- there since {react-169}, 2019.
+Its purpose is not to gracefully recover in production -- no, that's the worst sin one can
+commit: masking or Band-Aiding another sin. It's for your local benching and CI/CD pipeline gate.
+There, I'd be making the largest meanest data frame I am willing to accept and benching myself
+on that. Up until recently the SLA DOM was small, only about 10,000 objects. That's
+okay, it's a Read Model, not a Jupyter Notebook. If I don't fit -- I might take one look
+at what's available in the latest versions. I remember Lazy Evaluation and Partial Render
+being planned.
+
+*Importantly: __It really doesn't fit__!* This is where you go to Architecture.
+Problems can ONLY be reasonably solved at their source, not by stretching
+the wrong tool for the job. Some people might tell you -- take a look at
+better solutions, like Ktor I mentioned earlier. Remember -- that too
+is an Architecture Decision! I typically *can* -- because I usually design from
+scratch. But if you already have an investment into React and too big of a
+data frame comes about -- the problem is not your React.
+
+== Postproduction Update
+
+I looked it up. Every rumor I remembered has landed:
+
+- {react-lazy} + {react-suspense} -- the lazy loading (component code-splitting), in since React 16.6;
+- Concurrent rendering -- React 18: {react-transition} and {react-deferred} defer
+  expensive re-renders of big lists off the urgent path;
+- {react-activity} and Partial Pre-rendering -- shipped in {react-192-news}.
+  `<Activity>` keeps off-viewport parts rendered-but-deprioritized with state preserved;
+  Partial Pre-rendering serves a static shell early and resumes the render for dynamic data;
+- And the classic big-list answer interviewers fish for -- windowing / virtualization
+  (react-window and friends) -- is userland, NOT React. Which proves the point:
+  the moment you reach for it, you are already outside the framework boundary.
+
+*AND REMEMBER!* *_These are just trinkets. Discipline makes us WHOLE._*
