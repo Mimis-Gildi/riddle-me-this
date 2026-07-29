@@ -14,7 +14,7 @@ hidden: false
 search: true
 read_aloud: false
 ---
-= Poser-Algos VS. REAL LIFE?
+= False Optimization VS. REAL LIFE?
 ifndef::env-site[:imagesdir: ../assets/images]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :sliding-windows-url: https://github.com/rdd13r/im-a-sliding-window
@@ -23,12 +23,9 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :codeforces-rankings: https://en.wikipedia.org/wiki/Codeforces
 :i8088: https://en.wikipedia.org/wiki/Intel_8088[8088,window=_blank]
 :mmx: https://en.wikipedia.org/wiki/MMX_(instruction_set)[MMX,window=_blank]
-:fn-flynn: footnote:[1966 is Flynn's taxonomy ("Very high speed computers") -- the paper that classified and named SIMD. The first working SIMD iron, ILLIAC IV, was built in 1972 and operational from 1974.]
 :codeforces-catalog: https://codeforces.com/catalog[Codeforces Catalog,window=_blank]
 :cp-algorithms: https://cp-algorithms.com/[cp-algorithms.com,window=_blank]
-:the-bible-url: https://web.archive.org/web/20241231151152/http://catb.org/jargon/html/index.html
 :definition-suit-url: https://web.archive.org/web/20241207232002/http://catb.org/jargon/html/S/suit.html
-:definition-poseur-url: https://en.wikipedia.org/wiki/Poseur
 :leetcode: https://leetcode.com/[leetcode.com,window=_blank]
 :imdb-idiocracy: https://www.imdb.com/title/tt0387808/
 :alt-what-about-us: A doubting kid in the crowd asks President Not Sure what to do about the real problems
@@ -36,8 +33,12 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :loop-carried: https://en.wikipedia.org/wiki/Loop_dependence_analysis[loop-carried dependence,window=_blank]
 :algorithmica-prefix: https://en.algorithmica.org/hpc/algorithms/prefix/[Algorithmica: Prefix Sum with SIMD,window=_blank]
 :lemire-dot: https://lemire.me/blog/2018/07/05/how-quickly-can-you-compute-the-dot-product-between-two-large-vectors/[Lemire: dot product,window=_blank]
-:fn-devils-advocate: footnote:[Devil's Advocate: Mr. Suit learned it fair and square. Since I point you to so many wizard hackers fuming over "loop-carried dependence" blocking half of the MMX, I should also explain how it comes to be. Get this! -- Every algo curriculum teaches this exact move -- {usaco-window} spells it out: "sliding the range forward removes one element and adds another." In the whiteboard model, where every ADD costs 1 and memory is free, it IS OPTIMAL. The model is the problem. And THE problem all too common -- on many occasions I found myself "unteaching" this to young engineers, who were resisting fiercely, until I assigned a code-benchmarking problem with a "Lucy, 'splain!" as the pointed deliverable.]
-:fn-antipattern: footnote:[Compiler folks call it a {loop-carried} -- each iteration needs the previous one's write; the chain serializes everything. The fun part: the same trick the algo school teaches, the hardware school spends chapters ripping out: {algorithmica-prefix}, or the comment thread of {lemire-dot}, where a single accumulator runs 8x under the machine's add capacity. Start there and follow the citations.]
+:pola-rs: https://github.com/pola-rs/polars[pola-rs/polars,window=_blank]
+:pola-rs-benchmarks: https://pola.rs/posts/benchmarks/
+
+:fn-devils-advocate: footnote:advocate[Devil's Advocate: Mr. Suit learned it fair and square. Since I point you to so many wizard hackers fuming over "loop-carried dependence" blocking half of the MMX, I should also explain how it comes to be. Get this! -- Every algo curriculum teaches this exact move -- {usaco-window} spells it out: "sliding the range forward removes one element and adds another." In the whiteboard model, where every ADD costs 1 and memory is free, it IS OPTIMAL. The model is the problem. And THE problem all too common -- on many occasions I found myself "unteaching" this to young engineers, who were resisting fiercely, until I assigned a code-benchmarking problem with a "Lucy, 'splain!" as the pointed deliverable.]
+:fn-flynn: footnote:flynn[1966 is Flynn's taxonomy ("Very high speed computers") -- the paper that classified and named SIMD. The first working SIMD iron, ILLIAC IV, was built in 1972 and operational from 1974.]
+:fn-antipattern: footnote:antipattern[Compiler folks call it a {loop-carried} -- each iteration needs the previous one's write; the chain serializes everything. The fun part: the same trick the algo school teaches, the hardware school spends chapters ripping out: {algorithmica-prefix}, or the comment thread of {lemire-dot}, where a single accumulator runs 8x under the machine's add capacity. Start there and follow the citations.]
 
 ++++
 <style>
@@ -60,7 +61,9 @@ I hope it makes your day too!
 [WARNING]
 .*_The story is fabricated by many hackers_ -- the problem is real!*
 ====
-_Any relation to persons living or undead is completely coincidental._
+_Any relation to persons living or undead is completely coincidental._ +
+{nbsp} - Disclaimer by Despicable Gru of Despicable Me. +
+(Hacker Lore -- The Newly Unpublished Hacker Dictionary, 2024)
 
 [%collapsible]
 .Expand for a classic hacker scene trope full of *traditional characters*!
@@ -71,15 +74,12 @@ _Absurdly impossible in real life..._ dark humor notwithstanding.
 - {definition-suit-url}[Mr. Suit,window=_blank] -- a corporate type hackers love to interact with. Has money. +
 (CATB Jargon File, 2003)
 - `Random` -- Joe Random Hacker, an unremarkable specimen on the real scene.
-- _Poser_ -- a very 'technical' suit; comes from the skater culture ({definition-poseur-url}[Poseur,window=_blank]). +
-(The Newly Unpublished Hacker Dictionary, 2024)
 - the _living_ -- all makers, including hackers, that 'live' in creating real value through perpetual learning. +
 (The Newly Unpublished Hacker Dictionary, 2022)
 - the _undead_ -- opposite to _living_, imitators. Black Mercedes, no plates. Apple Watch. +
 (The Newly Unpublished Hacker Dictionary, 2022)
 ======
 
-{nbsp} - Disclaimer by Despicable Gru of Despicable Me.
 ====
 
 
@@ -139,9 +139,9 @@ image::sliding-window-w13-s3-jitter.svg[Twenty-five jittery values between 100 a
 `window=13` and `stride=3` is a real life example -- this is what a reconnaissance drone wants to know over a rough terrain it would be offset over.
 This is one of the most often used statistical tools.
 
-== The 'Textbook' Optimization by Mr. Suit:
+== The 'Textbook' Optimization from Academia:
 
-In our earlier conversation *Mr. Suit* thought *_"Memoise to Optimize"_*:
+In our earlier conversation *Mr. Suit* thought *_"Memoise to Optimize"_* makes sense:
 
 . 13 is a lot of numbers to add! I need to add 12 times.
 . Then I slide 3 numbers -- but 10 are the same!
@@ -152,7 +152,7 @@ In our earlier conversation *Mr. Suit* thought *_"Memoise to Optimize"_*:
 . Oh, and it's cool to stream -- so, we also stream.
 
 _Sounds reasonable? Why not!{fn-devils-advocate} +
-Let's see what *actually happens* when we implement Mr. Suit's clever ways?_
+Let's see what *actually happens* when we implement the academic False Optimization?_
 
 ."But what about us? Should we just apply toilet water on it?" -- {imdb-idiocracy}[Idiocracy (2006),window=_blank]
 [#img-what-about-us,link={imdb-idiocracy},align=center,window=_blank]
@@ -183,11 +183,21 @@ image::slider-performance-2x2.svg[Bar chart comparing memoised accumulator again
 *WHOA!* The 'optimization' is slower in calculation. And A LOT slower in streams! +
 But why?! Where did the #whiteboard# part ways with the #machine#?
 
+'''
+
+*Real Life:* Pandas -- academia's toy -- *_runs_* the False Optimization. Engineers RIP IT OUT!{fn-devils-advocate} +
+**{pola-rs}** -- __{pola-rs-benchmarks}[humiliates academia publicly: **94x** faster IN PRODUCTION,window=_blank]__ -- But why?!{fn-antipattern} +
+(__Docs explicitly forbid, chastise, and architecturally block "iteration-carried dependence."__)
+
+Curious?
+
+'''
+
 == Real Life Engineering:
 
 Understanding what's going on here is a-must for a practicing software engineer.
 Just to make sure, I first peeked into the implementations of most popular statistical libraries -- YEP! +
-Exactly what I expected. +
+Exactly what I expected. (See **{pola-rs}** above.) +
 _But those don't help me explain it *as if I am 5 -- my hard rule*._ +
 So, I made _{sliding-windows-url}[a little bit of code,window=_blank]_ for us to play with and explain.
 
