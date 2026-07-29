@@ -97,7 +97,7 @@ So, the only correct answer to: +
 
 ."Not the owl's fault."
 [#img-react-owl,align=center]
-image::react-owl-supplier-hose.png[An over-inflated owl on a branch, eyes popped out, hooting silently, while a data hose labeled SUPPLIER keeps pumping,width=1200]
+image::react-owl-supplier-hose.png[An over-inflated owl on a branch, eyes popped out, hooting a 413 -- Payload Too Large -- while a data hose labeled SUPPLIER keeps pumping,width=1200]
 
 In fact, I had a massive platform with 56 tenants impose it: awarded the best architecture!
 
@@ -148,7 +148,7 @@ being planned.
 Problems can ONLY be reasonably solved at their source, not by stretching
 the wrong tool for the job. Some people might tell you -- take a look at
 better solutions, like Ktor I mentioned earlier. Remember -- that too
-is an Architecture Decision! I typically *can*; because I usually design from
+is an Architecture Decision! I typically *can* -- because I usually design from
 scratch. But if you already have an investment into React and too big of a
 data frame comes about -- the problem is not your React.
 
@@ -166,4 +166,4 @@ I looked it up. Every rumor I remembered has landed:
   (react-window and friends) -- is userland, NOT React. Which proves the point:
   the moment you reach for it, you are already outside the framework boundary.
 
-*AND REMEMBER!:* *_These a just trinkets. Discipline makes us WHOLE._*
+*AND REMEMBER!* *_These are just trinkets. Discipline makes us WHOLE._*

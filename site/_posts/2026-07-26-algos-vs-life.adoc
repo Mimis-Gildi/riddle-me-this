@@ -83,7 +83,7 @@ _Absurdly impossible in real life..._ dark humor notwithstanding.
 ====
 
 
-*An Executive, _Mr. Suit_, is talking with J `Random` Hacker (_R_):*
+*An Executive, _Mr. Suit_, is talking with J. `Random` Hacker (_R_):*
 
 *Mr. Suit:* _You know, in statistics, there's a sliding window to calculate averages?_ +
 *R:* _Yes, I'm aware. Most-widely used for metrics, positioning, etc._ +
