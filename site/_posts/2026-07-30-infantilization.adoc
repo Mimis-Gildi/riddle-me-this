@@ -1,0 +1,244 @@
+---
+categories: [ reflections ]
+tags: [ Leadership, Team Building, Discipline, Interviews ]
+header:
+  overlay_image: /assets/images/banner-athena-in-acme-city.png
+  caption: "The Mother of all hackers, Athena, is overlooking her city..."
+excerpt: >
+  Why some teams self-start and others don't.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= Corporate Infantilization
+:page-liquid:
+
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+:owl-image-description: An over-inflated owl on a branch, eyes popped out, hooting a 413 -- Payload Too Large -- while a data hose labeled SUPPLIER keeps pumping
+:owl-image-caption: If your React Read Model can't hoot, as this Owl can't -- it's not the Owl's fault.
+:react-article-url: https://mimis-gildi.github.io/riddle-me-this/adventures/2026/07/28/not-your-read-model-problem.html
+
+++++
+<style>
+.page__hero--overlay { background-position: center 20%; }
+  .page__hero--overlay .page__lead {
+    color: rgba(255,255,255,0.7);
+    margin: 15% 30% 0;
+    text-align: justify;
+    width: 1200px;
+  }
+</style>
+++++
+
+> "Hey Riddler: How DID you make those disciplined teams?"
+
+_That's impossible. So, I didn't. I only gave them a chance to make themselves._
+
+The term *"infantilization"* is widely used in politics, organization development, and family therapy.
+In political science, the references are to dictatorships where people don't even attempt to control their own destiny.
+For example, russian social contract with their people: stay out of our way and your life won't get worse.
+So, when it _DOES_ get worse, people can't explain why their Wildberries inventory is on fire -- very few
+connect it to russia's invasion of Ukraine in 2014. Similarly, in some middle class American families where
+one spouse doesn't work, the couple lose connection with one another, eventually living in different contexts.
+And finally in workplace when a company has a very hard time restructuring stagnant practices to survive.
+The mechanism is the same in all three: someone else absorbs your agency, quietly, until you
+stop exercising it -- and then nobody remembers whose it was.
+
+That workplace variant has a name. *Corporate Infantilization*: _treating competent
+employees as if they lack autonomy or maturity -- micromanagement, permission-seeking
+for basic needs, gamification and corporate swag masking structural issues. A
+#*parent-child dynamic*# that #stagnates innovation and erodes trust#, even as the
+organization claims to value intellectual capital._
+
+Most importantly, the workplace example seldom manifests itself in vivid immediately obvious ways.
+Here is a great example -- I was asked:
+
+> "You get too much data in your React single page application. How to load it?"
+
+The person really _DOES_ attempt to handle the loading. And the thought that this scenario is manifestation
+of *_Corporate IT Discipline Failure_* is not immediately obvious. For one, there are tricks in modern day
+React that can help with large DOM. But that is not offered to solve "too much data" scenario by React -- the
+scenario is always wrong from the architectural domain. +
+React offers better functionality to improve its limitations and service levels -- different reason.
+
+The real root cause is engineering discipline failure. And it manifests itself as an architectural
+mistake allowed to stand. While such things are easily fixed by an intermediate service -- that
+service doesn't remedy the root cause thus "this problem will keep happening." +
+_Someone told me yesterday_:
+
+> "But there are legacy services that we cannot change sending too much data."
+
+Yes, common indeed. But still the same discipline problem. +
+A mature team has core values as follows:
+
+. You touch it -- you own it;
+. Leave it better than you found it;
+. And, "it's never someone else's fault."
+
+{react-article-url}[Here is a little bit of what can be done if you are a UX engineer.,window=_blank]
+
+.{owl-image-caption}
+[#img-react-owl,align=center,link={react-article-url}]
+image::react-owl-supplier-hose.png[{owl-image-description},width=1200,,window=_blank]
+
+{nbsp}
+
+== Architecture Tells All!
+
+_So, how does ONE architecture quirk expose *the entire place culture*?_
+
+Well, this has to do with what "Architecture" really is: +
+*It's a STORY well-told and narrated to explain THE PLACE to all!*
+
+Take a look at the story a rising unicorn tells itself:
+
+++++
+<div id="infantilization-01">
+<p><strong>Competent Diagram: See Vulnerability Story (ArchiMate® 3.2)</strong></p>
+<pre class="mermaid">
+{% include diagrams/hackers-show-vulnerabilities.mmd %}
+</pre>
+</div>
+++++
+
+*What is TOLD in this Adult architecture story:* +
+_The Aggregate owns the behavior,
+including the value concern for the effect the Read Model has on the actor (the user).
+That effect is the only thing that matters -- value comes from changing the state of the user.
+And the Read Model we implement right now has one and only one job -- faithfully, and accurately,
+represent aggregate's behavior: its defined data produces expected influence on the actor!
+Obviously, the Read Model does no thinking or massaging, or fitting. The presentation-effect
+is factored into the job of the aggregate owning "Vulnerability Records" functions -- the
+User Experience (UX) -- clear as day. And the quality of the User Interface (UI) is to be judged
+on how faithfully it presents that effect. +
+The *Aggregate* decides HOW MUCH to show and that is all
+it will send!_
+
+++++
+<div id="infantilization-02">
+<p><strong>Infantile IT Diagram: The 'Read Model' Problem</strong></p>
+<pre class="mermaid">
+{% include diagrams/morons-show-react.mmd %}
+</pre>
+</div>
+++++
+
+*What is TOLD in this Infantile architecture story:* +
+_Nobody owns the behavior.
+The data comes from "Somewhere," through a service nobody will touch, and lands on the UI
+with a note pinned to it: "you deal with it." There is no actor in this picture -- no one
+asked what effect this data is supposed to have on the user, so no one can say what
+"correct" even looks like. The Read Model is ordered to think: filter, dedupe, paginate,
+cope. But a projection that thinks is not a projection anymore -- it's an unaccountable
+little service running in somebody's browser, rewriting the story on every render. Untested. Unknown.
+And the pinned comments are the tell: this organization writes its architecture on sticky
+notes attached to the one component that can't refuse them.
+The *UI can't push back* -- that's why it got the job!_
+
+Now put the two stories side by side. Same industry, same data, same React on the screen. One place tells itself:
+_we decide what effect the user gets, and we send exactly that._ The other tells itself:
+_stuff arrives, the browser copes._ The first story has an author. The second has only victims.
+
+Perspective is important! A young engineer may have only experienced a couple of web frameworks.
+In interview, they see a mechanical question: _"How to do in React."_ They haven't mastered software
+patterns yet, and none of the people patterns. An engineer with dozens of platform teams under their belt
+won't care to remember what's new in React, they'd mastered dozens of Reacts, UX, and people patterns.
+Besides, there's Claude Code to look that trivial stuff up. Instead, they'll immediately jump to
+the whole context: *_"How does this happen?!"_*
+
+And here is the maturity test hidden in it: in the Adult story, "too much data in React"
+*cannot be asked* in a competent world -- the question has no meaning there. The Aggregate decides
+HOW MUCH, based on the real business value this domain is after, and that is all it will send.
+
+- In the Infantile story, the same question is Tuesday. "How to do in React, or JS, or IDE."
+- When a healthy-culture engineer hears "how do you load too much data?" -- Wait one minute!
+_They are not asking you about React._ +
+*_They are reading you their architecture diagram out loud._* +
+Sticky notes, reactive planning environment, mechanical competence problems, and all.
+
+Do you remember when I told you that "an intermediate service fixes this?" +
+What is that intermediate service? Is it something that paginates and stops
+stuffing the React Owl mad? NO! It's a lot more than that, it IS the missing
+behavior owner. And if I were implementing it, I'd likely not extract it fully
+into the domain and the ACL. I'd use Strangler Fig pattern and create a minimalistic
+domain to own minimalistic behaviors, i.e., a Job Description we're missing all along.
+And then I'd iterate over that domain every chance I get to touch its behavior, improve, and expand.
+
+Naive DON'T touch "working components."
+
+The naive will worry about the mechanical problem they have -- can't load all the data. +
+*And miss the actual sin!*
+
+== Interview: Is a TWO-way Street! What does the candidate read?
+
+So, can one tell enough about institutional IT maturity from a single interview question?
+You bet one can! When the team is solving for the core values problem they should never
+have -- conclude it's the norm.
+
+Let me give you a closer to home example. When translated to people, not React,
+this conversation is then really something like this:
+
+- *Question:* _What do you do if you learn your spouse is dishonest?_
+- *Answer:* Um... Nothing. This scenario is not a possibility.
+- *Question:* No, no. I am saying it is a possibility -- it happened! What do you do?
+
+The conflict here is not about the spousal honesty -- it's about Institutional
+Core Values. In one person's world the institution of marriage is based on mutual
+honesty: no honesty -- no institution. In the other's -- that's an occurrence.
+
+_Do you see how much you can extrapolate from a question?_
+
+== Fixing Accountability Problems
+
+So what does one do about it? +
+Fortunately, fixing these problems is actually as easy as creating them. +
+We just need to understand how accountability works:
+
+*_Accountability cannot be given or bestowed -- it must be taken._*
+
+What I do is the opposite of the infantilizing parent-child dynamic:
+
+A) Let the people *claim* the *concrete value* they will deliver; +
+B) And I commit to *meet* contributor's *needs* through delivery.
+
+Both A and B are contracts, they consist of spelled-out "what," "when," and measuring criteria. +
+_This way there is zero perceptions-based judging._ +
+Both my teammate and I are objectively, openly, and unambiguously "seen" +
+either meeting or failing to meet our commitments. This reduces stress and tensions on the team and frees up
+the atmosphere for a much more positive interaction style. +
+In fact, these are the standards of conduct on the scene in the {hacker-culture}:
+
+. Talk positively, casually, humorously -- as if you were a happy 5-year-old: hackers speak ONLY in plain words,
+the only ones left when vanity is off the table; a register with an adult's content -- the child's grammar
+is *_the proof of mastery_*, not its absence. +
+The words your kids misspeak are fine and appreciated: 'compooper' means box.
+. Work diligently, seriously, effectively, and honestly (multitasking is not work);
+. Mind the real value attained, costs paid, and timeline met (late means failed).
+
+Notice "language of hackers"! That demeanor cannot be faked. Infantilization is imposed smallness dressed in
+grand words -- permission-seeking wrapped in "alignment" and "stakeholders." The happy-5-year-old rule is the inverse:
+chosen plainness from full competence. If you can explain tail-recursion translation in one child's
+sentence -- then you REALLY understand it. And the awesome game of the other is to pick up on your
+`tailrec`! It's the highest form of intelligence that cannot be faked by anyone. Best of all, your
+business experts in the room need no translation.
+
+Every rising unicorn I've been inside had a core team that behaved exactly this way.
+I can't name them -- their lawyers are better than mine -- but the pattern never failed consistency.
+It doesn't mean it's easy. And just knowing about it is not enough -- applying such conduct well
+can be difficult sometimes. I, too, have made regretful mistakes bottlenecking a team in the past.
+
+*Hackers say:*
+
+> I'd like a walk with one cheerful #humble hacker#; +
+> Please, spare me a *pompous-#serious dilettante#*!
+
+Every team I nurtured in Corporate America learned to mind its core values. *_Self-discipline!_*
+Thinking back at these teams, having heard this exact question, what would
+their answer be? Would it be: "it's not an expected occurrence for us -- not
+worth the thinking time." Or would it be: "oh, we do this when it happens."
+*The 11 teams I still keep in touch with are solid option one!* +
+And when the poop happens once (it can) -- they don't build _coping machinery_ for it. +
+They repair the value that let it in. Firing a lifer is not excluded! But understanding comes first.

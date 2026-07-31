@@ -116,7 +116,7 @@ words_per_minute            : 300
 enable_copy_code_button     : true
 compress_html               : true
 
-copyright                   : "© Vadim Kuhay; 2022–2026; v19.0.5"
+copyright                   : "© Vadim Kuhay; 2022–2026; v20.1.0"
 copyright_url               : "https://mimis-gildi.github.io/riddle-me-this"
 
 ### Serve
@@ -246,6 +246,10 @@ footer:
       icon                  : "fas fa-fw fa-fingerprint"
       url                   : "/riddle-me-this/assets/images/button_300_300.jpg"
 
+after_footer_scripts:
+  - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
+  - https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js
+  - /assets/js/mermaid-init.js
 
 
 # I'm using GitHub for my comments
