@@ -18,7 +18,7 @@ read_aloud: false
 ifndef::env-site[:imagesdir: ../assets/images]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :owl-image-description: An over-inflated owl on a branch, eyes popped out, hooting a 413 -- Payload Too Large -- while a data hose labeled SUPPLIER keeps pumping
-:owl-image-caption: If you React Read Model can't hoot as this Qwl can't -- it's not the Owl's fault.
+:owl-image-caption: If you React Read Model can't hoot, as this Owl can't -- it's not the Owl's fault.
 :react-article-url: https://mimis-gildi.github.io/riddle-me-this/adventures/2026/07/28/not-your-read-model-problem.html
 
 ++++
@@ -138,7 +138,7 @@ _stuff arrives, the browser copes._ The first story has an author. The second ha
 
 Perspective is important! A young engineer may have only experienced a couple of web frameworks.
 In interview, they see a mechanical question: _"How to do in React."_ They haven't mastered software
-patterns yet, and none the people patters. And engineer with dozens of platform teams behind the belt
+patterns yet, and none the people patterns. And engineer with dozens of platform teams behind the belt
 won't care to remember what's new in React, they'd mastered dozens of Reacts, UX, and people patterns.
 Besides, there's Claude Code to look that trivial stuff up. Instead, they'll immediately jump to
 the whole context: *_"How does this happen?!"_*
@@ -159,10 +159,12 @@ stuffing of the React Owl mad? NO! It's a lot more than that, it IS the missing
 behavior owner. And If I were implementing it, I'd likely not extract it fully
 into the domain and the ACL. I'd use Strangler Fig pattern and create a minimalistic
 domain to own minimalistic behaviors, i.e., a Job Description we're missing all along.
-And then I'd iterate over that every time I touch its behaviors.
+And then I'd iterate over that domain every chance I get to touch its behavior, improve, and expand.
 
-The naive, however, will worry about the mechanical problem they have -- can't
-load all the data hosed into me. And miss the actual sin!
+Naive DON'T touch "working components."
+
+The naive will worry about the mechanical problem they have -- can't load all the data. +
+*And miss the actual sin!*
 
 == Interview: Is a TWO way Street!
 
