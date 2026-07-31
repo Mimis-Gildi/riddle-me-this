@@ -13,13 +13,18 @@ Execute after the draft is complete.
   author's voice or attribute the source. Options: define early (right after the opening
   analogies), or keep late placement deliberately but attribute.
 
-- [ ] **Reconsider section order: "Fixing Accountability Problems" precedes the evidence.**
+- [x] **Reconsider section order: "Fixing Accountability Problems" precedes the evidence.**
+  DONE 2026-07-31: Fixing section moved after the Interview section's spouse dialogue;
+  bridge sentence "So what does one do about it?" added; closing 11-teams paragraph is
+  now the Fixing section's coda.
   Current flow is problem → fix → evidence (diagrams). Diagnosis-then-cure is stronger:
   problem → the two diagrams → what they expose → how to fix it. Right now the reader gets
   the medicine before seeing the X-ray. If the order stays, add a bridging sentence so the
   fix section doesn't read as premature.
 
-- [ ] **Fix the dangling antecedent "the said unicorn above" (L124).**
+- [x] **Fix the dangling antecedent "the said unicorn above" (L124).**
+  DONE 2026-07-31: changed to "a rising unicorn tells itself" — required by the reorder,
+  since the old referent moved below the reference.
   The only prior unicorn is generic ("practically at every rising unicorn," L108). "Said"
   points to a specific one never introduced. Either introduce a concrete unicorn earlier or
   change to "a unicorn like that."

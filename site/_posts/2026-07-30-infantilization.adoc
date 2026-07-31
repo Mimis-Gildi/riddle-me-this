@@ -83,38 +83,6 @@ image::react-owl-supplier-hose.png[{owl-image-description},width=1200,,window=_b
 
 {nbsp}
 
-== Fixing Accountability Problems
-
-Fortunately, fixing these problems is actually as easy as creating them. +
-We just need to understand how accountability works:
-
-*_Accountability cannot be given or bestowed -- it must be taken._*
-
-What I do is the opposite of the infantilizing parent-child dynamic:
-
-A) Let the people *claim* the *concrete value* they will deliver; +
-B) And I commit to *meet* contributor's *needs* through delivery.
-
-Both A and B are contracts, they consist of spelled-out "what," "when," and measuring criteria. +
-_This way there is zero preceptions-based-judging._ +
-Both my teammate and I are objectively, openly, and unambiguously "seen" +
-either meeting or failing to meet our commitments. This reduces stress and tensons on the team and frees up
-the atmosphere for a much more positive interaction style. +
-In fact, these are the standards of conduct on the scene in the {hacker-culture}:
-
-. Talk positively, casually, humorously -- as if you were a happy 5-y-o;
-. Work diligently, seriously, effectively, and honestly (multitasking is not work);
-. Mind the real value attained, costs paid, and timeline met (late means failed).
-
-Practically at every rising unicorn one finds a core team that behaves exactly this way.
-It doesn't mean it's easy. And just knowing about it is not enough -- applying such conduct well
-can be difficult sometimes. I, too, have made regretful mistakes bottlenecking a team in the past.
-
-*Hackers say:*
-
-> I'd like a walk with one cheerful #humble hacker#; +
-> Please, spare me a *pompous-#serious dilettante#*!
-
 == Architecture Tells All!
 
 _So, how does ONE architecture quirk expose *the entire place culture*?_
@@ -122,7 +90,7 @@ _So, how does ONE architecture quirk expose *the entire place culture*?_
 Well, this has to do with what "Architecture" really is: +
 *It's a STORY well-told and narrated to explain THE PLACE to all!*
 
-Take a look at the story the said unicorn above tells itself:
+Take a look at the story a rising unicorn tells itself:
 
 ++++
 <div id="infantilization-01">
@@ -193,6 +161,38 @@ Core Values. In one person's world the institution of marriage is based on mutua
 honesty: no honesty -- no institution. In the other's -- that's an occurrence.
 
 _Do you see how much you can extrapolate from a question?_
+
+== Fixing Accountability Problems
+
+So what does one do about it? Fortunately, fixing these problems is actually as easy as creating them. +
+We just need to understand how accountability works:
+
+*_Accountability cannot be given or bestowed -- it must be taken._*
+
+What I do is the opposite of the infantilizing parent-child dynamic:
+
+A) Let the people *claim* the *concrete value* they will deliver; +
+B) And I commit to *meet* contributor's *needs* through delivery.
+
+Both A and B are contracts, they consist of spelled-out "what," "when," and measuring criteria. +
+_This way there is zero preceptions-based-judging._ +
+Both my teammate and I are objectively, openly, and unambiguously "seen" +
+either meeting or failing to meet our commitments. This reduces stress and tensons on the team and frees up
+the atmosphere for a much more positive interaction style. +
+In fact, these are the standards of conduct on the scene in the {hacker-culture}:
+
+. Talk positively, casually, humorously -- as if you were a happy 5-y-o;
+. Work diligently, seriously, effectively, and honestly (multitasking is not work);
+. Mind the real value attained, costs paid, and timeline met (late means failed).
+
+Practically at every rising unicorn one finds a core team that behaves exactly this way.
+It doesn't mean it's easy. And just knowing about it is not enough -- applying such conduct well
+can be difficult sometimes. I, too, have made regretful mistakes bottlenecking a team in the past.
+
+*Hackers say:*
+
+> I'd like a walk with one cheerful #humble hacker#; +
+> Please, spare me a *pompous-#serious dilettante#*!
 
 Every team I nurtured in Corporate America learned to mind its core values. *_Self-discipline!_*
 Thinking back at these team, having heard this exact question, what would
