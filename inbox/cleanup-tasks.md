@@ -47,10 +47,11 @@ Execute after the draft is complete.
   that models the actor and the intended effect. Spell it out — a hostile reader will quote
   L60 against the diagram.
 
-- [ ] **Guard the happy-5-y-o irony (L104).**
-  The article condemns treating employees as children, then advises "talk as if you were a
-  happy 5-y-o." The difference — chosen playfulness among peers vs. imposed parent-child
-  dynamic — is real but never stated. One sentence closes the hole.
+- [x] **Guard the happy-5-y-o irony (L104).**
+  DONE 2026-07-31: conduct rule #1 expanded (plain words, proof of mastery) plus a full
+  guard paragraph (imposed smallness in grand words vs. chosen plainness from competence,
+  tail-recursion test, business experts need no translation).
+  - [x] Typo in new text L217/218: "of intelligence" — DONE 2026-07-31.
 
 - [ ] **Ground or soften the unicorn universal (L108).**
   "Practically at every rising unicorn one finds a core team that behaves exactly this way"
@@ -59,15 +60,15 @@ Execute after the draft is complete.
 
 ## Argument Form
 
-- [ ] **Name the common mechanism behind the opening analogy chain (L40–46).**
-  Dictatorship → single-earner marriage → workplace asserts a pattern without stating what
-  unites the three. The mechanism — someone else absorbs your agency until you stop
-  exercising it — is implied but never written. One sentence turns three anecdotes into an
-  argument.
+- [x] **Name the common mechanism behind the opening analogy chain (L40–46).**
+  DONE 2026-07-31: "The mechanism is the same in all three: someone else absorbs your
+  agency, quietly, until you stop exercising it -- and then nobody remembers whose it was."
 
 ## The Architecture Story Explanation (L135–144)
 
-- [ ] **Restructure the "What is TOLD" block.**
+- [x] **Restructure the "What is TOLD" block.**
+  DONE 2026-07-31 by Vadim, by decoration: breath-break after the header, punchlines
+  broken out and bolded in both blocks. "Clear as day" remains — his call, kept.
   The root thesis — *value comes from changing the state of the user* — and the punchline —
   *"The Aggregate decides HOW MUCH to show and that is all it will send!"* — are buried in
   one 9-line italic block with six em-dashes. Break into 2–3 short paragraphs; let the
@@ -91,10 +92,15 @@ Execute after the draft is complete.
 
 ## New Sections (added 2026-07-31)
 
-- [ ] **Unify the question arithmetic across the article and the LI hook.**
-  L119 says "ONE architecture quirk," L179 says "a single interview questions," the LI hook
-  promises TWO interview questions. Pick the number and make all three agree; L179 also has
-  the singular/plural mangle either way.
+- [x] **Unify the question arithmetic across the article and the LI hook.**
+  DECIDED 2026-07-31: ONE interview question (the React one; the spouse dialogue is its
+  translation). "TWO way Street" = interviewer sizes candidate, candidate sizes company.
+  Article already agrees (L88 ONE quirk, L171 single question, heading two-way).
+  - [x] LI hook + post drafted 2026-07-31: "What does a candidate learn about your
+    company from ONE interview question?" — full draft in
+    inbox/linkedin-corporate-infantilization.adoc, pending Vadim's rewrite + article URL.
+  - [ ] Optional: one clause in the Interview section naming the interviewer's lane
+    (they think they're sizing you; the question hands you their org chart).
 
 - [x] **Rebuild the garbled Owl callback (L168).**
   DONE 2026-07-31: "paginates and stops stuffing the React Owl mad" — minimal rebuild;
@@ -102,16 +108,14 @@ Execute after the draft is complete.
 
 - [x] **L169:** "And If I were" — DONE 2026-07-31.
 
-- [ ] **Heading grammar (L177):** "Interview: Is a TWO way Street!" — either
-  "An Interview Is a Two-Way Street!" or keep stylization deliberately.
+- [x] **Heading grammar (L177):** DONE 2026-07-31 by Vadim: "Interview: Is a TWO-way
+  Street! What does the candidate read?" — hyphenated and subtitled.
 
 - [x] **L197:** "Thinking back at these team" → "teams." DONE 2026-07-31.
 
-- [ ] **Seal the "it happened!" hole in the closing.**
-  L188's interviewer insists the breach happened; the article never gives the mature team's
-  answer to that. One clause: the mature team repairs the values breach — it doesn't build
-  coping machinery for the occurrence. Without it, option one reads as refusing the
-  hypothetical, which is exactly what the naive answerer did.
+- [x] **Seal the "it happened!" hole in the closing.**
+  DONE 2026-07-31: "when the impossible does happen once -- they don't build coping
+  machinery for it. They repair the value that let it in." Closes the article.
 
 ## Mechanical — ALL DONE 2026-07-31 (single sweep)
 

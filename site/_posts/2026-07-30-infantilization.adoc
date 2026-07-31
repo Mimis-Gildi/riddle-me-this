@@ -37,13 +37,15 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 
 _That's impossible. So, I didn't. I only gave them a chance to make themselves._
 
-The term "infantilization" is widely used in politics, organization development, and family therapy.
+The term *"infantilization"* is widely used in politics, organization development, and family therapy.
 In political science, the references are to dictatorships where people don't even attempt to control their own destiny.
 For example, russian social contract with their people: stay out of our way and your life won't get worse.
-So, when it does get worse people can't explain why their Wildberries inventory is on fire -- very few
+So, when it _DOES_ get worse, people can't explain why their Wildberries inventory is on fire -- very few
 connect it to russia's invasion of Ukraine in 2014. Similarly, in some middle class American families where
 one spouse doesn't work, the couple lose connection with one another, eventually living in different contexts.
 And finally in workplace when a company has a very hard time restructuring stagnant practices to survive.
+The mechanism is the same in all three: someone else absorbs your agency, quietly, until you
+stop exercising it -- and then nobody remembers whose it was.
 
 That workplace variant has a name. *Corporate Infantilization*: _treating competent
 employees as if they lack autonomy or maturity -- micromanagement, permission-seeking
@@ -56,20 +58,21 @@ Here is a great example -- I was asked:
 
 > "You get too much data in your React single page application. How to load it?"
 
-The person really does attempt to handle the loading. And the thought that this scenario is manifestation
+The person really _DOES_ attempt to handle the loading. And the thought that this scenario is manifestation
 of *_Corporate IT Discipline Failure_* is not immediately obvious. For one, there are tricks in modern day
 React that can help with large DOM. But that is not offered to solve "too much data" scenario by React -- the
-scenario is always wrong from the architectural domain. React offers better functionality to improve its
-limitations and service level agreement.
+scenario is always wrong from the architectural domain. +
+React offers better functionality to improve its limitations and service levels -- different reason.
 
 The real root cause is engineering discipline failure. And it manifests itself as an architectural
 mistake allowed to stand. While such things are easily fixed by an intermediate service -- that
-service doesn't remedy the root cause thus "this problem will keep happening." Someone told me
-yesterday:
+service doesn't remedy the root cause thus "this problem will keep happening." +
+_Someone told me yesterday_:
 
 > "But there are legacy services that we cannot change sending too much data."
 
-Yes, common indeed. But still the same discipline problem. A mature team has core values as follows:
+Yes, common indeed. But still the same discipline problem. +
+A mature team has core values as follows:
 
 . You touch it -- you own it;
 . Leave it better than you found it;
@@ -101,7 +104,8 @@ Take a look at the story a rising unicorn tells itself:
 </div>
 ++++
 
-*What is TOLD in this Adult architecture story:* _The Aggregate owns the behavior,
+*What is TOLD in this Adult architecture story:* +
+_The Aggregate owns the behavior,
 including the value concern for the effect the Read Model has on the actor (the user).
 That effect is the only thing that matters -- value comes from changing the state of the user.
 And the Read Model we implement right now has one and only one job -- faithfully, and accurately,
@@ -109,7 +113,8 @@ represent aggregate's behavior: its defined data produces expected influence on 
 Obviously, the Read Model does no thinking or massaging, or fitting. The presentation-effect
 is factored into the job of the aggregate owning "Vulnerability Records" functions -- the
 User Experience (UX) -- clear as day. And the quality of the User Interface (UI) is to be judged
-on how faithfully it presents that effect. The Aggregate decides HOW MUCH to show and that is all
+on how faithfully it presents that effect. +
+The *Aggregate* decides HOW MUCH to show and that is all
 it will send!_
 
 ++++
@@ -121,16 +126,17 @@ it will send!_
 </div>
 ++++
 
-*What is TOLD in this Infantile architecture story:* _Nobody owns the behavior.
+*What is TOLD in this Infantile architecture story:* +
+_Nobody owns the behavior.
 The data comes from "Somewhere," through a service nobody will touch, and lands on the UI
 with a note pinned to it: "you deal with it." There is no actor in this picture -- no one
 asked what effect this data is supposed to have on the user, so no one can say what
 "correct" even looks like. The Read Model is ordered to think: filter, dedupe, paginate,
 cope. But a projection that thinks is not a projection anymore -- it's an unaccountable
-little service running in somebody's browser, rewriting the story on every render.
+little service running in somebody's browser, rewriting the story on every render. Untested. Unknown.
 And the pinned comments are the tell: this organization writes its architecture on sticky
-notes attached to the one component that can't refuse them. The UI can't push back --
-that's why it got the job!_
+notes attached to the one component that can't refuse them.
+The *UI can't push back* -- that's why it got the job!_
 
 Now put the two stories side by side. Same industry, same data, same React on the screen. One place tells itself:
 _we decide what effect the user gets, and we send exactly that._ The other tells itself:
@@ -166,7 +172,7 @@ Naive DON'T touch "working components."
 The naive will worry about the mechanical problem they have -- can't load all the data. +
 *And miss the actual sin!*
 
-== Interview: Is a TWO way Street!
+== Interview: Is a TWO-way Street! What does the candidate read?
 
 So, can one tell enough about institutional IT maturity from a single interview question?
 You bet one can! When the team is solving for the core values problem they should never
@@ -187,7 +193,8 @@ _Do you see how much you can extrapolate from a question?_
 
 == Fixing Accountability Problems
 
-So what does one do about it? Fortunately, fixing these problems is actually as easy as creating them. +
+So what does one do about it? +
+Fortunately, fixing these problems is actually as easy as creating them. +
 We just need to understand how accountability works:
 
 *_Accountability cannot be given or bestowed -- it must be taken._*
@@ -204,9 +211,19 @@ either meeting or failing to meet our commitments. This reduces stress and tensi
 the atmosphere for a much more positive interaction style. +
 In fact, these are the standards of conduct on the scene in the {hacker-culture}:
 
-. Talk positively, casually, humorously -- as if you were a happy 5-y-o;
+. Talk positively, casually, humorously -- as if you were a happy 5-year-old: hackers speak ONLY in plain words,
+the only ones left when vanity is off the table; a register with an adult's content -- the child's grammar
+is *_the proof of mastery_*, not its absence. +
+The words your kids misspeak are fine and appreciated: 'compooper' means box.
 . Work diligently, seriously, effectively, and honestly (multitasking is not work);
 . Mind the real value attained, costs paid, and timeline met (late means failed).
+
+Notice "language of hackers"! That demeanor cannot be faked. Infantilization is imposed smallness dressed in
+grand words -- permission-seeking wrapped in "alignment" and "stakeholders." The happy-5-year-old rule is the inverse:
+chosen plainness from full competence. If you can explain tail-recursion translation in one child's
+sentence -- then you REALLY understand it. And the awesome game of the other is to pick up on your
+`tailrec`! It's the highest form of intelligence that cannot be faked by anyone. Best of all, your
+business experts in the room need no translation.
 
 Practically at every rising unicorn one finds a core team that behaves exactly this way.
 It doesn't mean it's easy. And just knowing about it is not enough -- applying such conduct well
@@ -222,3 +239,5 @@ Thinking back at these teams, having heard this exact question, what would
 their answer be? Would it be: "it's not an expected occurrence for us -- not
 worth the thinking time." Or would it be: "oh, we do this when it happens."
 The 11 teams I still keep in touch with are solid option one!
+And when the impossible does happen once -- they don't build coping machinery for it.
+They repair the value that let it in.

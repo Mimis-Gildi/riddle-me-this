@@ -1,1 +1,22 @@
 = LinkedIn Post Text
+
+What does a candidate learn about your company from ONE interview question?
+
+Your interviewer asked me:
+
+"You get too much data in your React single page application. How to load it?"
+
+They thought they were sizing me up. But an interview is a two-way street --
+and that question read me your architecture diagram out loud. Sticky notes and all.
+
+In a disciplined shop this question cannot be asked -- it has no meaning there.
+The aggregate decides HOW MUCH to send, and that is all the read model will ever see.
+Where the question is normal, nobody owns the behavior: data hoses in from "somewhere,"
+and the one component that can't push back gets ordered to cope. That is not a React
+problem. That is Corporate Infantilization -- and your best candidates can smell it
+from a single question.
+
+Two ArchiMate diagrams in the article: the story a disciplined org tells itself,
+and the sticky-note version -- side by side.
+
+<article link>
