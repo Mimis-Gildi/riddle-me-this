@@ -5,7 +5,9 @@ Execute after the draft is complete.
 
 ## Structural
 
-- [ ] **Move or anchor the definition of "Corporate Infantilization" (L87).**
+- [x] **Move or anchor the definition of "Corporate Infantilization" (L87).**
+  DONE 2026-07-31: definition moved up, compressed, after the three-analogy paragraph;
+  the Fixing section now calls back with "the infantilizing parent-child dynamic."
   The term is the title and is used for ~50 lines before being defined. The definition also
   reads like a pasted dictionary/AI passage with no attribution — either rewrite it in the
   author's voice or attribute the source. Options: define early (right after the opening

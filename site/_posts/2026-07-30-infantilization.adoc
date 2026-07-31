@@ -45,6 +45,12 @@ connect it to russia's invasion of Ukraine in 2014. Similarly, in some middle cl
 one spouse doesn't work the couple lose connection with one other eventually living in different contexts.
 And finally in workplace when a company has a very hard time restructuring stagnant practices to survive.
 
+That workplace variant has a name. *Corporate Infantilization*: _treating competent
+employees as if they lack autonomy or maturity -- micromanagement, permission-seeking
+for basic needs, gamification and corporate swag masking structural issues. A
+#*parent-child dynamic*# that #stagnates innovation and erodes trust#, even as the
+organization claims to value intellectual capital._
+
 Most importantly, the workplace example seldom manifests itself in vivid immediately obvious ways.
 Here is a great example -- I was asked:
 
@@ -63,13 +69,13 @@ yesterday:
 
 > "But there are legacy services that we cannot change sending too much data."
 
-Yes, quiet common indeed. But still the same discipline problem. A mature team has core values as follows:
+Yes, common indeed. But still the same discipline problem. A mature team has core values as follows:
 
 . You touch it -- you own it;
 . Leave it better than you found it;
 . And, "it's never someone else's fault."
 
-Here is a little bit of what can be done if you are a UX engineer.
+{react-article-url}[Here is a little bit of what can be done if you are a UX engineer.,window=_blank]
 
 .{owl-image-caption}
 [#img-react-owl,align=center,link={react-article-url}]
@@ -84,12 +90,7 @@ We just need to understand how accountability works:
 
 *_Accountability cannot be given or bestowed -- it must be taken._*
 
-And the definition of *Corporate Infantilization* is: _treating competent employees as if they *lack autonomy or maturity*,
-often manifesting through *micromanagement*, *permission-seeking* for basic needs, and the use of gamification or corporate
-swag to mask structural workplace issues. Such management creates a #*parent-child dynamic*# that can
-#stagnate innovation and erode trust#, even as organizations claim to value intellectual capital._
-
-What I do is the opposite:
+What I do is the opposite of the infantilizing parent-child dynamic:
 
 A) Let the people *claim* the *concrete value* they will deliver; +
 B) And I commit to *meet* contributor's *needs* through delivery.
