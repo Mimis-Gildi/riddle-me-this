@@ -149,9 +149,9 @@ HOW MUCH, based on the real business value this domain is after, and that is all
 
 - In the Infantile story, the same question is Tuesday. "How to do in React, or JS, or IDE."
 - When a healthy-culture engineer hears "how do you load too much data?" -- Wait one minute!
-They are not asking you about React. +
+_They are not asking you about React._ +
 *_They are reading you their architecture diagram out loud._* +
-Sticky notes, reactive environment, mechanical competence problems, and all.
+Sticky notes, reactive planning environment, mechanical competence problems, and all.
 
 Do you remember when I told you that "an intermediate service fixes this?" +
 What is that intermediate service? Is it something that paginates and stops
