@@ -96,16 +96,16 @@ Execute after the draft is complete.
   promises TWO interview questions. Pick the number and make all three agree; L179 also has
   the singular/plural mangle either way.
 
-- [ ] **Rebuild the garbled Owl callback (L168).**
-  "Is it something that paginates and reduces stuffing of the React Owl mad? NO!" — doesn't
-  parse. The Owl callback is worth keeping; the sentence needs rebuilding.
+- [x] **Rebuild the garbled Owl callback (L168).**
+  DONE 2026-07-31: "paginates and stops stuffing the React Owl mad" — minimal rebuild;
+  Vadim may still rephrase.
 
-- [ ] **L169:** "And If I were" — stray capital "If."
+- [x] **L169:** "And If I were" — DONE 2026-07-31.
 
 - [ ] **Heading grammar (L177):** "Interview: Is a TWO way Street!" — either
   "An Interview Is a Two-Way Street!" or keep stylization deliberately.
 
-- [ ] **L197:** "Thinking back at these team" → "teams."
+- [x] **L197:** "Thinking back at these team" → "teams." DONE 2026-07-31.
 
 - [ ] **Seal the "it happened!" hole in the closing.**
   L188's interviewer insists the breach happened; the article never gives the mature team's
@@ -113,22 +113,19 @@ Execute after the draft is complete.
   coping machinery for the occurrence. Without it, option one reads as refusing the
   hypothetical, which is exactly what the naive answerer did.
 
-## Mechanical
+## Mechanical — ALL DONE 2026-07-31 (single sweep)
 
-- [ ] **L141 (perspective paragraph):** "none the people patters" → "none of the people
-  patterns"; "And engineer with dozens of platform teams behind the belt" → "An engineer
-  with dozens of platform teams under their belt."
-- [ ] **L151:** "When healthy culture engineer hears" → "When a healthy-culture engineer hears."
-- [ ] **L21 (owl caption attribute):** "If you React Read Model" → "If your"; "Qwl" → "Owl";
-  untangle the double negative "can't hoot as this Owl can't."
-- [ ] **L41:** "In political science references are about dictatorships" — broken; add the
-  missing article/verb ("references are to dictatorships" or rewrite).
-- [ ] **L45:** "lose connection with one other" → "with one another."
-- [ ] **L56:** "the scenario all always wrong from architectural domain" — broken; rewrite
-  ("the scenario is always wrong from the architectural domain").
-- [ ] **L66:** "quiet common" → "quite common."
-- [ ] **L98:** "preceptions-based-judging" → "perceptions-based judging."
-- [ ] **L100:** "tensons" → "tensions."
+- [x] **L141:** "none of the people patterns"; "An engineer … under their belt."
+- [x] **L151:** "When a healthy-culture engineer hears."
+- [x] **L21:** "If your React Read Model"; "Qwl" → "Owl" (Vadim), comma untangles the negative.
+- [x] **L41:** "In political science, the references are to dictatorships."
+- [x] **L45:** "the couple lose connection with one another," (+ comma after "doesn't work").
+- [x] **L56/62:** "the scenario is always wrong from the architectural domain."
+- [x] **L66:** "quiet" removed by Vadim ("Yes, common indeed").
+- [x] **L98:** "perceptions-based judging."
+- [x] **L100:** "tensions."
+- [x] **L171:** "a single interview question" (grammar only — the ONE/TWO arithmetic
+  decision remains open above).
 
 ## Verified Non-Issues
 

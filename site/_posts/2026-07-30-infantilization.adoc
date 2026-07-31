@@ -18,7 +18,7 @@ read_aloud: false
 ifndef::env-site[:imagesdir: ../assets/images]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :owl-image-description: An over-inflated owl on a branch, eyes popped out, hooting a 413 -- Payload Too Large -- while a data hose labeled SUPPLIER keeps pumping
-:owl-image-caption: If you React Read Model can't hoot, as this Owl can't -- it's not the Owl's fault.
+:owl-image-caption: If your React Read Model can't hoot, as this Owl can't -- it's not the Owl's fault.
 :react-article-url: https://mimis-gildi.github.io/riddle-me-this/adventures/2026/07/28/not-your-read-model-problem.html
 
 ++++
@@ -38,11 +38,11 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 _That's impossible. So, I didn't. I only gave them a chance to make themselves._
 
 The term "infantilization" is widely used in politics, organization development, and family therapy.
-In political science references are about dictatorships where people don't even attempt to control their own destiny.
+In political science, the references are to dictatorships where people don't even attempt to control their own destiny.
 For example, russian social contract with their people: stay out of our way and your life won't get worse.
 So, when it does get worse people can't explain why their Wildberries inventory is on fire -- very few
 connect it to russia's invasion of Ukraine in 2014. Similarly, in some middle class American families where
-one spouse doesn't work the couple lose connection with one other eventually living in different contexts.
+one spouse doesn't work, the couple lose connection with one another, eventually living in different contexts.
 And finally in workplace when a company has a very hard time restructuring stagnant practices to survive.
 
 That workplace variant has a name. *Corporate Infantilization*: _treating competent
@@ -59,7 +59,7 @@ Here is a great example -- I was asked:
 The person really does attempt to handle the loading. And the thought that this scenario is manifestation
 of *_Corporate IT Discipline Failure_* is not immediately obvious. For one, there are tricks in modern day
 React that can help with large DOM. But that is not offered to solve "too much data" scenario by React -- the
-scenario all always wrong from architectural domain. React offers better functionality to improve its
+scenario is always wrong from the architectural domain. React offers better functionality to improve its
 limitations and service level agreement.
 
 The real root cause is engineering discipline failure. And it manifests itself as an architectural
@@ -138,7 +138,7 @@ _stuff arrives, the browser copes._ The first story has an author. The second ha
 
 Perspective is important! A young engineer may have only experienced a couple of web frameworks.
 In interview, they see a mechanical question: _"How to do in React."_ They haven't mastered software
-patterns yet, and none the people patterns. And engineer with dozens of platform teams behind the belt
+patterns yet, and none of the people patterns. An engineer with dozens of platform teams under their belt
 won't care to remember what's new in React, they'd mastered dozens of Reacts, UX, and people patterns.
 Besides, there's Claude Code to look that trivial stuff up. Instead, they'll immediately jump to
 the whole context: *_"How does this happen?!"_*
@@ -148,15 +148,15 @@ And here is the maturity test hidden in it: in the Adult story, "too much data i
 HOW MUCH, based on the real business value this domain is after, and that is all it will send.
 
 - In the Infantile story, the same question is Tuesday. "How to do in React, or JS, or IDE."
-- When healthy culture engineer hears "how do you load too much data?" -- Wait one minute!
+- When a healthy-culture engineer hears "how do you load too much data?" -- Wait one minute!
 They are not asking you about React. +
 *_They are reading you their architecture diagram out loud._* +
 Sticky notes, reactive environment, mechanical competence problems, and all.
 
 Do you remember when I told you that "an intermediate service fixes this?" +
-What is that intermediate service? Is it something that paginates and reduces
-stuffing of the React Owl mad? NO! It's a lot more than that, it IS the missing
-behavior owner. And If I were implementing it, I'd likely not extract it fully
+What is that intermediate service? Is it something that paginates and stops
+stuffing the React Owl mad? NO! It's a lot more than that, it IS the missing
+behavior owner. And if I were implementing it, I'd likely not extract it fully
 into the domain and the ACL. I'd use Strangler Fig pattern and create a minimalistic
 domain to own minimalistic behaviors, i.e., a Job Description we're missing all along.
 And then I'd iterate over that domain every chance I get to touch its behavior, improve, and expand.
@@ -168,7 +168,7 @@ The naive will worry about the mechanical problem they have -- can't load all th
 
 == Interview: Is a TWO way Street!
 
-So, can one tell enough about institutional IT maturity from a single interview questions?
+So, can one tell enough about institutional IT maturity from a single interview question?
 You bet one can! When the team is solving for the core values problem they should never
 have -- conclude it's the norm.
 
@@ -198,9 +198,9 @@ A) Let the people *claim* the *concrete value* they will deliver; +
 B) And I commit to *meet* contributor's *needs* through delivery.
 
 Both A and B are contracts, they consist of spelled-out "what," "when," and measuring criteria. +
-_This way there is zero preceptions-based-judging._ +
+_This way there is zero perceptions-based judging._ +
 Both my teammate and I are objectively, openly, and unambiguously "seen" +
-either meeting or failing to meet our commitments. This reduces stress and tensons on the team and frees up
+either meeting or failing to meet our commitments. This reduces stress and tensions on the team and frees up
 the atmosphere for a much more positive interaction style. +
 In fact, these are the standards of conduct on the scene in the {hacker-culture}:
 
@@ -218,7 +218,7 @@ can be difficult sometimes. I, too, have made regretful mistakes bottlenecking a
 > Please, spare me a *pompous-#serious dilettante#*!
 
 Every team I nurtured in Corporate America learned to mind its core values. *_Self-discipline!_*
-Thinking back at these team, having heard this exact question, what would
+Thinking back at these teams, having heard this exact question, what would
 their answer be? Would it be: "it's not an expected occurrence for us -- not
 worth the thinking time." Or would it be: "oh, we do this when it happens."
 The 11 teams I still keep in touch with are solid option one!
