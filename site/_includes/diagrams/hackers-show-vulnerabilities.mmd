@@ -1,0 +1,72 @@
+graph TB
+
+    subgraph Business ["Business Layer"]
+        BusinessProcess["Business Process:<br/> Vulnerability Information<br/>ACCESS"]
+        BusinessActor["Business Actor:<br/> Vulnerability Scan<br/> Customer"]
+
+        BusinessServiceVulnerabilitiesInformationService["Business Service:<br/> Software Vulnerabilities<br/><i>View Provider</i>"]
+
+        subgraph BusinessImpact ["Cost of Vulnerability"]
+            BusinessObjectVulnerability["Business Object:<br/> <i>Vulnerability Information</i>"]
+            BusinessRepresentation["Business Representation:<br/> Incurred Vulnerability<br/><i>IMPACT</i>"]
+            BusinessRepresentation -.->| Realization | BusinessObjectVulnerability
+        end
+
+    end
+
+    subgraph Application ["Application Layer"]
+
+        ReadModel["Read Model<br/><i>Presented Projection</i><br/>(In Full - Always)"]
+        Vulnerability["Vulnerability Object<br/><i>Instance Of</i>"]
+        VulnerabilityCollection["Vulnerability Aggregation<br/><i>Behavior-Specific</i><br/>Command Response"]
+        VulnerabilityService["Vulnerability Aggregate Service<br/><i></i>"]
+    end
+
+    subgraph ApplicationACL["Application Layer<br/>Anti-corruption"]
+        VulnerabilityACLService["Vulnerability ACL<br/>Service"]
+    end
+
+    subgraph ApplicationExternalSystem["Application Layer<br/>External System"]
+        VulnerabilityDataService["Database<br/>Service"]
+    end
+
+
+    VulnerabilityService -.->| Access RW | Vulnerability
+    Vulnerability --o| Aggregation | VulnerabilityCollection
+    VulnerabilityService -.->| Access W | ReadModel
+
+    VulnerabilityDataService -->| Serving | VulnerabilityACLService
+    VulnerabilityACLService -->| Serving | VulnerabilityService
+
+    BusinessServiceVulnerabilitiesInformationService -->| Serving | BusinessActor
+    BusinessServiceVulnerabilitiesInformationService -.->| Access-R | BusinessObjectVulnerability
+    ReadModel -.->| Realization | BusinessServiceVulnerabilitiesInformationService
+
+    CurrentTask["🎯 CURRENT TASK:<br/>Serve the customer<br/>a shaped view"]
+    CurrentTask -.- ReadModel
+    CurrentTask -.- BusinessServiceVulnerabilitiesInformationService
+
+    classDef BusinessStyle fill:#FFFDE780,stroke:orange,stroke-width:2px,color:black
+    classDef BusinessComponentStyle fill:#FFECB3E6,stroke:orange,stroke-width:4px,color:black
+
+    class Business,BusinessImpact BusinessStyle
+    class BusinessProcess,BusinessActor,BusinessObjectVulnerability,BusinessRepresentation BusinessComponentStyle
+
+    classDef ApplicationStyle fill:#E3F2FD80,stroke:#1565C0,stroke-width:2px,color:black
+    classDef ApplicationComponentStyle fill:#BBDEFBE6,stroke:#1565C0,stroke-width:4px,color:black
+    classDef ACLStyle fill:#ECEFF180,stroke:#546E7A,stroke-width:2px,color:black
+    classDef ExternalStyle fill:#ECEFF180,stroke:#546E7A,stroke-width:2px,stroke-dasharray:6 4,color:black
+
+    class Application ApplicationStyle
+    class Vulnerability,VulnerabilityCollection,VulnerabilityService ApplicationComponentStyle
+
+    classDef TaskCallout fill:#E8F5E9CC,stroke:#2E7D32,stroke-width:3px,color:black
+    classDef TaskBlue fill:#BBDEFBE6,stroke:#2E7D32,stroke-width:5px,color:black
+    classDef TaskYellow fill:#FFECB3E6,stroke:#2E7D32,stroke-width:5px,color:black
+    class CurrentTask TaskCallout
+    class ReadModel TaskBlue
+    class BusinessServiceVulnerabilitiesInformationService TaskYellow
+    class ApplicationACL,VulnerabilityACLService ACLStyle
+    class ApplicationExternalSystem,VulnerabilityDataService ExternalStyle
+
+    linkStyle default stroke:black,stroke-width:2px,color:yellow
