@@ -132,6 +132,27 @@ And the pinned comments are the tell: this organization writes its architecture 
 notes attached to the one component that can't refuse them. The UI can't push back --
 that's why it got the job!_
 
+Now put the two stories side by side. Same industry, same data, same React on the screen. One place tells itself:
+_we decide what effect the user gets, and we send exactly that._ The other tells itself:
+_stuff arrives, the browser copes._ The first story has an author. The second has only victims.
+
+Perspective is important! A young engineer may have only experienced a couple of web frameworks.
+In interview, they see a mechanical question: _"How to do in React."_ They haven't mastered software
+patterns yet, and none the people patters. And engineer with dozens of platform teams behind the belt
+won't care to remember what's new in React, they'd mastered dozens of Reacts, UX, and people patterns.
+Besides, there's Claude Code to look that trivial stuff up. Instead, they'll immediately jump to
+the whole context: *_"How does this happen?!"_*
+
+And here is the maturity test hidden in it: in the Adult story, "too much data in React"
+*cannot be asked* in a competent world -- the question has no meaning there. The Aggregate decides
+HOW MUCH, based on the real business value this domain is after, and that is all it will send.
+
+- In the Infantile story, the same question is Tuesday. "How to do in React, or JS, or IDE."
+- When healthy culture engineer hears "how do you load too much data?" -- Wait one minute!
+They are not asking you about React. +
+*_They are reading you their architecture diagram out loud._* +
+Sticky notes, reactive environment, mechanical competence problems, and all.
+
 Do you remember when I told you that "an intermediate service fixes this?" +
 What is that intermediate service? Is it something that paginates and reduces
 stuffing of the React Owl mad? NO! It's a lot more than that, it IS the missing

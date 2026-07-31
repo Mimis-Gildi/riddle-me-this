@@ -29,7 +29,9 @@ Execute after the draft is complete.
   points to a specific one never introduced. Either introduce a concrete unicorn earlier or
   change to "a unicorn like that."
 
-- [ ] **Write the missing back half: Diagram B's mirror explanation + maturity contrast.**
+- [x] **Write the missing back half: Diagram B's mirror explanation + maturity contrast.**
+  DONE 2026-07-31: Infantile mirror story, side-by-side contrast, perspective paragraph,
+  and the "reading you their architecture diagram out loud" hinge are all in.
   The article currently ends at Diagram B with no prose after it. B needs its own
   "What is TOLD" paragraph (the infantile mirror of A's), then the maturity-contrast
   section, leading to the interview-questions payoff — the root thesis of the article.
@@ -113,6 +115,10 @@ Execute after the draft is complete.
 
 ## Mechanical
 
+- [ ] **L141 (perspective paragraph):** "none the people patters" → "none of the people
+  patterns"; "And engineer with dozens of platform teams behind the belt" → "An engineer
+  with dozens of platform teams under their belt."
+- [ ] **L151:** "When healthy culture engineer hears" → "When a healthy-culture engineer hears."
 - [ ] **L21 (owl caption attribute):** "If you React Read Model" → "If your"; "Qwl" → "Owl";
   untangle the double negative "can't hoot as this Owl can't."
 - [ ] **L41:** "In political science references are about dictatorships" — broken; add the
