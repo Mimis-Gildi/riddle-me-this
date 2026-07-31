@@ -53,10 +53,10 @@ Execute after the draft is complete.
   tail-recursion test, business experts need no translation).
   - [x] Typo in new text L217/218: "of intelligence" — DONE 2026-07-31.
 
-- [ ] **Ground or soften the unicorn universal (L108).**
-  "Practically at every rising unicorn one finds a core team that behaves exactly this way"
-  is a universal claim with no example or source. Either name one or scope it to lived
-  observation ("every core team I've seen up close").
+- [x] **Ground or soften the unicorn universal (L108).**
+  DONE 2026-07-31: converted to first-person testimony — "Every rising unicorn I've been
+  inside… I can't name them -- their lawyers are better than mine -- but the pattern
+  never missed." (Real referent stays private by Vadim's choice.)
 
 ## Argument Form
 
@@ -78,17 +78,13 @@ Execute after the draft is complete.
 
 ## LinkedIn Hook Alignment
 
-- [ ] **Make the TWO questions explicit in the text.**
-  Candidate pair already in the article: L36 "How DID you make those disciplined teams?" and
-  L51 "You get too much data in your React single page application. How to load it?" If the
-  LI hook promises TWO interview questions, the article must visibly present both as such.
+- [x] ~~Make the TWO questions explicit in the text.~~ OBSOLETE 2026-07-31: decided ONE
+  interview question; the spouse dialogue is its translation, not a second question.
   Also reconcile with L119 "ONE architecture quirk" — one quirk, two questions; both lines
   should tell the same arithmetic.
 
-- [ ] **Tighten the hook phrasing.**
-  "How do you know the entire company IT maturity from TWO interview questions?" →
-  "How do you read an entire company's IT maturity from TWO interview questions?"
-  ("read" echoes "Architecture Tells All.")
+- [x] ~~Tighten the hook phrasing.~~ OBSOLETE 2026-07-31: hook replaced entirely —
+  "What does a candidate learn about your company from ONE interview question?"
 
 ## New Sections (added 2026-07-31)
 

@@ -225,7 +225,8 @@ sentence -- then you REALLY understand it. And the awesome game of the other is 
 `tailrec`! It's the highest form of intelligence that cannot be faked by anyone. Best of all, your
 business experts in the room need no translation.
 
-Practically at every rising unicorn one finds a core team that behaves exactly this way.
+Every rising unicorn I've been inside had a core team that behaved exactly this way.
+I can't name them -- their lawyers are better than mine -- but the pattern never failed consistency.
 It doesn't mean it's easy. And just knowing about it is not enough -- applying such conduct well
 can be difficult sometimes. I, too, have made regretful mistakes bottlenecking a team in the past.
 
@@ -238,6 +239,6 @@ Every team I nurtured in Corporate America learned to mind its core values. *_Se
 Thinking back at these teams, having heard this exact question, what would
 their answer be? Would it be: "it's not an expected occurrence for us -- not
 worth the thinking time." Or would it be: "oh, we do this when it happens."
-The 11 teams I still keep in touch with are solid option one!
-And when the impossible does happen once -- they don't build coping machinery for it.
-They repair the value that let it in.
+*The 11 teams I still keep in touch with are solid option one!* +
+And when the poop happens once (it can) -- they don't build _coping machinery_ for it. +
+They repair the value that let it in. Firing a lifer is not excluded! But understanding comes first.
