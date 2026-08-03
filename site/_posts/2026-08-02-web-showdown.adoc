@@ -1,0 +1,249 @@
+---
+categories: [ adventures ]
+tags: [ Read Model, kobweb, React, Single Page Applications, Data Frame, Kilua, SolidJS, Svelte, vanilla-JS, Ktor, Skia (Skiko), canvas, DOM, VDOM, Leptos, Dioxus ]
+header:
+  overlay_image: /assets/images/banner-athena-in-acme-city.png
+  caption: "The Mother of all hackers, Athena, is overlooking her city..."
+excerpt: >
+  2026 Read Model Showdown.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= Web Showdown 2026: Read Model
+:page-liquid:
+
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+:owl-article-url: {site-baseurl}/adventures/2026/07/28/not-your-read-model-problem.html
+:owl-article: link:{owl-article-url}[Stuffing the Owl,window=_blank]
+:gh-sync-url: https://developers.home.google.com/cloud-to-cloud/integration/sync
+:gh-intents-url: https://developers.home.google.com/cloud-to-cloud/primer/intents
+:gh-report-state-url: https://developers.home.google.com/cloud-to-cloud/integration/report-state
+:gh-camerastream-url: https://developers.home.google.com/cloud-to-cloud/traits/camerastream
+:gmail-perf-url: https://developers.google.com/gmail/api/guides/performance
+:react-home: https://github.com/facebook/react[React 19.2,window=_blank]
+:solid-home: https://github.com/solidjs/solid[SolidJS,window=_blank]
+:svelte-home: https://github.com/sveltejs/svelte[Svelte,window=_blank]
+:kobweb-home: https://github.com/varabyte/kobweb[Kobweb,window=_blank]
+:kilua-home: https://github.com/rjaros/kilua[Kilua,window=_blank]
+:vue-home: https://github.com/vuejs/core[Vue,window=_blank]
+:angular-home: https://github.com/angular/angular[Angular,window=_blank]
+:kvision-home: https://github.com/rjaros/kvision[KVision,window=_blank]
+:leptos-home: https://github.com/leptos-rs/leptos[Leptos,window=_blank]
+:dioxus-home: https://github.com/DioxusLabs/dioxus[Dioxus,window=_blank]
+:compose-mp-home: https://github.com/JetBrains/compose-multiplatform[Compose Multiplatform for Web,window=_blank]
+:flutter-home: https://github.com/flutter/flutter[Flutter Web,window=_blank]
+:egui-home: https://github.com/emilk/egui[egui / eframe,window=_blank]
+:makepad-home: https://github.com/makepad/makepad[Makepad,window=_blank]
+:fn-google-home: footnote:[The current Google Home cloud-to-cloud API -- not the old Nest stack -- is textbook exported behavior. Device capabilities are _declared_ as traits during a {gh-sync-url}[SYNC intent,window=_blank]; Google dispatches {gh-intents-url}[SYNC / QUERY / EXECUTE intents,window=_blank] to the partner cloud that _owns_ the behavior; and Home Graph is a projection that stores only what {gh-report-state-url}[Report State,window=_blank] sends -- a Read Model in Google's own plumbing. The kicker: control and data ride separate rails -- an EXECUTE hands back a {gh-camerastream-url}[`cameraStreamAccessUrl`,window=_blank] and the client streams the firehose _directly_, peer-to-peer, so it never touches the control channel. The heavy data never rides the Read Model.]
+:bitspittle: https://github.com/bitspittle[bitspittle,window=_blank]
+:varabyte: https://github.com/varabyte[Varabyte,window=_blank]
+:kotlin-conf-2025-kobweb: https://2025.kotlinconf.com/talks/774286/
+:KMP-Web-bitspittle: https://bitspittle.dev/blog/2024/c4w[Compose Multiplatform for Web: An Amazing Framework That Maybe You Shouldn't Use,window=_blank]
+:tns-wasm-url: https://thenewstack.io/see-what-webassembly-can-do-in-2025/[See What WebAssembly Can Do in 2025,window=_blank]
+:tt-wasm-url: https://www.techtarget.com/searchITOperations/news/366551352/Server-side-WebAssembly-takes-shape-but-faces-challenges[takes shape, but faces challenges,window=_blank]
+:fn-wasm-hype: footnote:[Give Wasm its due -- the real win is *server-side*: WASI, edge, serverless with single-digit-millisecond cold starts. The New Stack's {tns-wasm-url} and TechTarget's more sober {tt-wasm-url} both hype _that_ Wasm, and rightly. But notice what they never claim: Wasm painting UIs off-DOM to "save the web front-end." That claim lived in the blog tier that has since been quietly deleted. Nobody reputable put Wasm in front of a public Read Model -- which is why this showdown fields zero off-DOM contenders. So much for the new tech.]
+
+++++
+<style>
+.page__hero--overlay { background-position: center 20%; }
+  .page__hero--overlay .page__lead {
+    color: rgba(255,255,255,0.7);
+    margin: 15% 30% 0;
+    text-align: justify;
+    width: 1200px;
+  }
+</style>
+++++
+
+*_What web technology competent teams would use in 2026?_*
+
+We had an awesome weekend on the Scene -- 90 minutes of pure discovery among such coders.
+Hope you had a good weekend too!
+And we selected the final technologies for a fun, purely hands-on exploratory load test proving:
+
+> "In 2026 you should use `these` to present data in production."
+
+And an Easter Egg I'll mention later.
+
+Some new library options showed up recently. It's always useful to know which SLAs can push architecture boundaries.
+This is the opposite to the typical "your big corp needs this framework" -- purely hackers for hackers fun.
+We just ran a 4-deep nested 4_000_000-object data frame to self-destruction.
+
+_Before you laugh and click away, I know that pushing excessive data is NEVER a thing in *any competent company*.
+An impossible scenario because Read Model doesn't process data: its constraints are always owned by the Aggregate.
+Besides, it's there to impress a human -- export formats and dedicated modules deal with grids, notebooks, and sheets. +
+link:{owl-article-url}[This humorous article,window=_blank] explains how this wild idea has come to be._
+
+== Structural Limitations:
+
+_We need a place to #Draw a Boundary#._
+
+The community chose *Google* because -- *First)* its architectural cleanliness is well known.
+The design of legacy Gmail shows clear data weight awareness. *_Pristine!_*
+The Read Model boundary made into an API: the supplier (Aggregate) hands back a *render-ready* model at
+_exactly the requested weight_. _The client never processes a firehose because the API structurally
+*forbids asking for one*._
+
+- Format tiers on `messages.get`: +
+minimal (id {plus} labels only) -> metadata ({plus} headers) -> fully parsed payload -> raw. +
+(Four explicit data-weight levels.)
+- _Partial response_ via the fields parameter -- request only the needed fields.
+- *Pagination:* maxResults (default 100, hard cap of 500) {plus} the nextPageToken.
+- `gzip`, patch requests (send ONLY the changed fields); batching -- all per the {gmail-perf-url}[performance guideline,window=_blank].
+
+And this is _way_ before HAL!
+
+The rewritten Gmail demonstrated an architectural shift to exported behavior patterns. The extension and behavior
+architecture rewrite was all about aggregate-owned behavior.
+Contextual Gadgets replaced by Google Workspace Add-ons and CardService -- behavior _runs entirely server-side_
+and the client renders _only declarative Cards_ (Aurinko teardown). The push via Cloud Pub/Sub watch() replaced client
+polling.
+
+Perfect example of exported behavior: the client owns no behavior, just presents a server-authored declarative model.
+They're not going to have the "too much data for the Read Model" -- are they now?
+
+*Second)* Google Chrome browser has very high, easily verifiable boundaries #on DOM#:
+
+- Steep degradation at about 50,000 live nodes;
+- Severe, hard-to-fix lag at 100,000 live nodes.
+
+_Chrome's superlinear cost on layout, style, recalculations is about the best on object models._
+
+*Baseline)* is React 19.2. Not just because it was asked about in the {owl-article} article. React's incredibly
+accessible thus common and popular. This is NOT a library for competence or performance optimization.
+It is popular because it can be fully mastered (not just learned) in a single weekend. As a bonus, due to
+its extreme simplicity, ubiquity, and relatively complete functionality the library is easy to "standardize"
+in the risk-averse Corporate America.
+
+React 16 dropped its recursive-tailrec-wannabe VDOM management in favor of an interruptible iterative loop
+specifically to escape recursion -- the Fiber engine. This and some bugfixes bought the library around 10,000 live
+nodes before sure death. Current drop features the new stable React Compiler, Activity (rendered when in background),
+Partial Pre-rendering (PPR) with static plus dynamic render, all the Performance Tracks developer trinkets I'd surely
+welcome. Soon we shall see what all that jazz buys us! This will be our base number to always do better on.
+
+*Finally)* we shall see what to do instead of Stuffing the Owl. If you trade you may know of tastytrade, very
+competent software -- firehose of low latency data served to limited biological eyes. The *_four million test_*
+exists to share ideas on what one can do when absurd is actually required. +
+There's no reason why Acme Insurance should have unhappy owls. +
+(Psst. Google Home API is also a good example.{fn-google-home})
+
+. 1,000 -> 5,000 with expand;
+. 5,000 -> 15,000 with expand;
+. 15,000 -> 100,000 till crash.
+. 4_000_000 data processing UX.
+
+_So, yes -- 'Read Model side data coping' is being deliberately ignorant of the boundary._ +
+We do not advocate this antipattern in any possible way -- we drive it to self-destruction for one reason only:
+you cannot publish an SLA number you have never crashed into.
+
+*_These are just our technology TEST boundary conditions._* +
+(Please code with me despite 🤗 -- it's fun!)
+
+== Chosen Technologies
+
+Two families, split on the one line that decides the whole test: +
+does it paint into the browser's own DOM, +
+or does it draw its own pixels off to the side?
+
+*DOM:* live and die by Chrome's node ceiling:
+
+- {react-home} -- the baseline <- poor Owl.
+- {solid-home} -- fine-grained reactivity, no VDOM.
+- {svelte-home} -- compiled, no runtime framework.
+- vanilla-JS -- the control group; handwritten DOM.
+- #{kobweb-home}# -- Kotlin, Compose HTML into real DOM. <- Our darling!
+
+_Nothing production-ready off DOM yet._
+
+'''
+
+*Kudos!!* David ({bitspittle} of {varabyte}) is a friend and a legendary wizard hacker, +
+#{kobweb-home}# is THE way to build performant Read Model especially in a startup. +
+{kotlin-conf-2025-kobweb}[Watch his Kotlin Conf 2025 presentation to understand why you save time and money.,window=_blank] +
+__Composable SEO-friendly DOM power in type-safe pragmatic language {plus} tools {plus} automation.__
+
+*Notes:* I was wrong about KVision in my comments, it's not rewritten for Wasm -- that is Kilua.
+
+'''
+
+== What Isn't Considered
+
+
+*DOM:*
+
+- {kvision-home} -- we supersede this DOM only library with Kilua.
+- {vue-home} -- I personally like this library; it just doesn't add anything to the test (see React).
+- {angular-home} -- marginalized as outdated Ivy incremental DOM.
+- {leptos-home} (Rust, compile Wasm render DOM) -- See volunteering callout.
+- {dioxus-home} (Rust, compile Wasm render DOM) -- See volunteering callout.
+- {kilua-home} (JS) -- Compose-style DOM.
+- {kilua-home} (compile Wasm render DOM) -- still just DOM.
+
+*Wasm:*
+
+- {compose-mp-home} (Skia canvas, Wasm) -- I have a lot to gripe about this one on.
+Having produced a lot of multiplatform software with KMP I loved it. +
+EXCEPT this. {bitspittle} explains it best here: +
+{KMP-Web-bitspittle}.
+- {flutter-home} (CanvasKit / Skwasm -- Skia to Wasm) -- same off-DOM bargain; Skwasm even paints
+off-thread in a worker. Beautiful for an app, disqualified for a public Read Model: no SEO, no
+accessibility tree, a fat renderer to download.
+- {egui-home} (Rust, Wasm -> WebGPU/WebGL2 canvas) -- immediate-mode; paints every pixel itself,
+owns no DOM.
+- {makepad-home} (Rust, Wasm -> WebGL/GPU shaders) -- furthest from a DOM Read Model there is.
+
+
+*Volunteering:* Nobody picked up Rust in our clique. Ping me if you care to!
+
+== The Fixture
+
+_If you read so far then you'd noticed something rather peculiar: "so much for the new tech!"{fn-wasm-hype}_ +
+WebAssembly isn't an option so all the tests are on DOM for this run. Here's our setup:
+
+. Ktor application serves all the test data for benchmarking -- Aggregate 1;
+. Ktor captures all the test metrics from corresponding modules under test -- Aggregate 2;
+. Ktor serves the control plane landing page application for the core function;
+. Ktor serves all the modules under test from single multimodule project.
+
+*So we have one beautiful polyglot project and all is decided on the spot!*
+
+Project planned as part of {org-mimis-gildi} org -- standard ops included.
+
+== What Say You?
+
+#*_Please DM if you want to take a module!_*#
+
+*We start on #August 7th#!*
+
+Here is the current roster August 2nd::
+
+- Project Manifest -- `rdd13r` required
+- Module Groups -- `rdd13r` required
+- Ktor Aggregate -- `rdd13r` required
+- Micro Frontends -- peer claimed (`rdd13r` backup)
+- Controlplane SPA -- `rdd13r` required
+- React SPA -- `rdd13r` required
+- SolidJS -- _vacant_
+- Svelte -- peer claimed
+- vanilla-JS -- _vacant_
+- Kobweb -- peer claimed (contested, may pair, `rdd13r` as backups)
+
+Here are optional modules that *_can_* be added::
+
+- KVision -- _vacant_
+- Vue -- _vacant_
+- Angular -- _vacant_
+- Leptos -- _vacant_
+- Dioxus -- _vacant_
+- Kilua -- _vacant_
+- KMP Web -- _vacant_ (not favored)
+- Flutter Web -- _vacant_ (not favored)
+- egui / eframe -- _vacant_
+- Makepad -- potentially claimed / __vacant__ (TBD)
+
+Happy Monday! +
+And have a good week 😉

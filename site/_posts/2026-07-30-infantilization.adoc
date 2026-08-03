@@ -19,7 +19,7 @@ ifndef::env-site[:imagesdir: ../assets/images]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :owl-image-description: An over-inflated owl on a branch, eyes popped out, hooting a 413 -- Payload Too Large -- while a data hose labeled SUPPLIER keeps pumping
 :owl-image-caption: If your React Read Model can't hoot, as this Owl can't -- it's not the Owl's fault.
-:react-article-url: https://mimis-gildi.github.io/riddle-me-this/adventures/2026/07/28/not-your-read-model-problem.html
+:react-article-url: {site-baseurl}/adventures/2026/07/28/not-your-read-model-problem.html
 
 ++++
 <style>
@@ -78,7 +78,7 @@ A mature team has core values as follows:
 . Leave it better than you found it;
 . And, "it's never someone else's fault."
 
-{react-article-url}[Here is a little bit of what can be done if you are a UX engineer.,window=_blank]
+link:{react-article-url}[Here is a little bit of what can be done if you are a UX engineer.,window=_blank]
 
 .{owl-image-caption}
 [#img-react-owl,align=center,link={react-article-url}]
