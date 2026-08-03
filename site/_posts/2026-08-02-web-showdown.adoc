@@ -24,7 +24,28 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :gh-report-state-url: https://developers.home.google.com/cloud-to-cloud/integration/report-state
 :gh-camerastream-url: https://developers.home.google.com/cloud-to-cloud/traits/camerastream
 :gmail-perf-url: https://developers.google.com/gmail/api/guides/performance
+:react-home: https://github.com/facebook/react[React 19.2,window=_blank]
+:solid-home: https://github.com/solidjs/solid[SolidJS,window=_blank]
+:svelte-home: https://github.com/sveltejs/svelte[Svelte,window=_blank]
+:kobweb-home: https://github.com/varabyte/kobweb[Kobweb,window=_blank]
+:kilua-home: https://github.com/rjaros/kilua[Kilua,window=_blank]
+:vue-home: https://github.com/vuejs/core[Vue,window=_blank]
+:angular-home: https://github.com/angular/angular[Angular,window=_blank]
+:kvision-home: https://github.com/rjaros/kvision[KVision,window=_blank]
+:leptos-home: https://github.com/leptos-rs/leptos[Leptos,window=_blank]
+:dioxus-home: https://github.com/DioxusLabs/dioxus[Dioxus,window=_blank]
+:compose-mp-home: https://github.com/JetBrains/compose-multiplatform[Compose Multiplatform for Web,window=_blank]
+:flutter-home: https://github.com/flutter/flutter[Flutter Web,window=_blank]
+:egui-home: https://github.com/emilk/egui[egui / eframe,window=_blank]
+:makepad-home: https://github.com/makepad/makepad[Makepad,window=_blank]
 :fn-google-home: footnote:[The current Google Home cloud-to-cloud API -- not the old Nest stack -- is textbook exported behavior. Device capabilities are _declared_ as traits during a {gh-sync-url}[SYNC intent,window=_blank]; Google dispatches {gh-intents-url}[SYNC / QUERY / EXECUTE intents,window=_blank] to the partner cloud that _owns_ the behavior; and Home Graph is a projection that stores only what {gh-report-state-url}[Report State,window=_blank] sends -- a Read Model in Google's own plumbing. The kicker: control and data ride separate rails -- an EXECUTE hands back a {gh-camerastream-url}[`cameraStreamAccessUrl`,window=_blank] and the client streams the firehose _directly_, peer-to-peer, so it never touches the control channel. The heavy data never rides the Read Model.]
+:bitspittle: https://github.com/bitspittle[bitspittle,window=_blank]
+:varabyte: https://github.com/varabyte[Varabyte,window=_blank]
+:kotlin-conf-2025-kobweb: https://2025.kotlinconf.com/talks/774286/
+:KMP-Web-bitspittle: https://bitspittle.dev/blog/2024/c4w[Compose Multiplatform for Web: An Amazing Framework That Maybe You Shouldn't Use,window=_blank]
+:tns-wasm-url: https://thenewstack.io/see-what-webassembly-can-do-in-2025/[See What WebAssembly Can Do in 2025,window=_blank]
+:tt-wasm-url: https://www.techtarget.com/searchITOperations/news/366551352/Server-side-WebAssembly-takes-shape-but-faces-challenges[takes shape, but faces challenges,window=_blank]
+:fn-wasm-hype: footnote:[Give Wasm its due -- the real win is *server-side*: WASI, edge, serverless with single-digit-millisecond cold starts. The New Stack's {tns-wasm-url} and TechTarget's more sober {tt-wasm-url} both hype _that_ Wasm, and rightly. But notice what they never claim: Wasm painting UIs off-DOM to "save the web front-end." That claim lived in the blog tier that has since been quietly deleted. Nobody reputable put Wasm in front of a public Read Model -- which is why this showdown fields zero off-DOM contenders. So much for the new tech.]
 
 ++++
 <style>
@@ -88,7 +109,7 @@ They're not going to have the "too much data for the Read Model" -- are they now
 *Second)* Google Chrome browser has very high, easily verifiable boundaries #on DOM#:
 
 - Steep degradation at about 50,000 live nodes;
-- Hard to correct severely lag at 100,000 live nodes.
+- Severe, hard-to-fix lag at 100,000 live nodes.
 
 _Chrome's superlinear cost on layout, style, recalculations is about the best on object models._
 
@@ -104,7 +125,7 @@ nodes before sure death. Current drop features the new stable React Compiler, Ac
 Partial Pre-rendering (PPR) with static plus dynamic render, all the Performance Tracks developer trinkets I'd surely
 welcome. Soon we shall see what all that jazz buys us! This will be our base number to always do better on.
 
-*Finally)* we shall see what to do instead of Stuffing the Owl. If you trade you may know of Tasty Trade, very
+*Finally)* we shall see what to do instead of Stuffing the Owl. If you trade you may know of tastytrade, very
 competent software -- firehose of low latency data served to limited biological eyes. The *_four million test_*
 exists to share ideas on what one can do when absurd is actually required. +
 There's no reason why Acme Insurance should have unhappy owls. +
@@ -124,16 +145,105 @@ you cannot publish an SLA number you have never crashed into.
 
 == Chosen Technologies
 
-ToDo:
+Two families, split on the one line that decides the whole test: +
+does it paint into the browser's own DOM, +
+or does it draw its own pixels off to the side?
+
+*DOM:* live and die by Chrome's node ceiling:
+
+- {react-home} -- the baseline <- poor Owl.
+- {solid-home} -- fine-grained reactivity, no VDOM.
+- {svelte-home} -- compiled, no runtime framework.
+- vanilla-JS -- the control group; handwritten DOM.
+- #{kobweb-home}# -- Kotlin, Compose HTML into real DOM. <- Our darling!
+
+_Nothing production-ready off DOM yet._
+
+'''
+
+*Kudos!!* David ({bitspittle} of {varabyte}) is a friend and a legendary wizard hacker, +
+#{kobweb-home}# is THE way to build performant Read Model especially in a startup. +
+{kotlin-conf-2025-kobweb}[Watch his Kotlin Conf 2025 presentation to understand why you save time and money.,window=_blank] +
+__Composable SEO-friendly DOM power in type-safe pragmatic language {plus} tools {plus} automation.__
+
+*Notes:* I was wrong about KVision in my comments, it's not rewritten for Wasm -- that is Kilua.
+
+'''
 
 == What Isn't Considered
 
-ToDo:
+
+*DOM:*
+
+- {kvision-home} -- we supersede this DOM only library with Kilua.
+- {vue-home} -- I personally like this library; it just doesn't add anything to the test (see React).
+- {angular-home} -- marginalized as outdated Ivy incremental DOM.
+- {leptos-home} (Rust, compile Wasm render DOM) -- See volunteering callout.
+- {dioxus-home} (Rust, compile Wasm render DOM) -- See volunteering callout.
+- {kilua-home} (JS) -- Compose-style DOM.
+- {kilua-home} (compile Wasm render DOM) -- still just DOM.
+
+*Wasm:*
+
+- {compose-mp-home} (Skia canvas, Wasm) -- I have a lot to gripe about this one on.
+Having produced a lot of multiplatform software with KMP I loved it. +
+EXCEPT this. {bitspittle} explains it best here: +
+{KMP-Web-bitspittle}.
+- {flutter-home} (CanvasKit / Skwasm -- Skia to Wasm) -- same off-DOM bargain; Skwasm even paints
+off-thread in a worker. Beautiful for an app, disqualified for a public Read Model: no SEO, no
+accessibility tree, a fat renderer to download.
+- {egui-home} (Rust, Wasm -> WebGPU/WebGL2 canvas) -- immediate-mode; paints every pixel itself,
+owns no DOM.
+- {makepad-home} (Rust, Wasm -> WebGL/GPU shaders) -- furthest from a DOM Read Model there is.
+
+
+*Volunteering:* Nobody picked up Rust in our clique. Ping me if you care to!
 
 == The Fixture
 
-ToDo:
+_If you read so far then you'd noticed something rather peculiar: "so much for the new tech!"{fn-wasm-hype}_ +
+WebAssembly isn't an option so all the tests are on DOM for this run. Here's our setup:
+
+. Ktor application serves all the test data for benchmarking -- Aggregate 1;
+. Ktor captures all the test metrics from corresponding modules under test -- Aggregate 2;
+. Ktor serves the control plane landing page application for the core function;
+. Ktor serves all the modules under test from single multimodule project.
+
+*So we have one beautiful polyglot project and all is decided on the spot!*
+
+Project planned as part of {org-mimis-gildi} org -- standard ops included.
 
 == What Say You?
 
-ToDo:
+#*_Please DM if you want to take a module!_*#
+
+*We start on #August 7th#!*
+
+Here is the current roster August 2nd::
+
+- Project Manifest -- `rdd13r` required
+- Module Groups -- `rdd13r` required
+- Ktor Aggregate -- `rdd13r` required
+- Micro Frontends -- peer claimed (`rdd13r` backup)
+- Controlplane SPA -- `rdd13r` required
+- React SPA -- `rdd13r` required
+- SolidJS -- _vacant_
+- Svelte -- peer claimed
+- vanilla-JS -- _vacant_
+- Kobweb -- peer claimed (contested, may pair, `rdd13r` as backups)
+
+Here are optional modules that *_can_* be added::
+
+- KVision -- _vacant_
+- Vue -- _vacant_
+- Angular -- _vacant_
+- Leptos -- _vacant_
+- Dioxus -- _vacant_
+- Kilua -- _vacant_
+- KMP Web -- _vacant_ (not favored)
+- Flutter Web -- _vacant_ (not favored)
+- egui / eframe -- _vacant_
+- Makepad -- potentially claimed / __vacant__ (TBD)
+
+Happy Monday! +
+And have a good week 😉
