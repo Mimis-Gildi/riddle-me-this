@@ -1,5 +1,5 @@
 [versions]
-asciidoctorJvm = "5.0.0"
+asciidoctorJvm = "5.0.1"
 
 logback = "1.6.4"
 kotlinLogging = "8.0.4"
