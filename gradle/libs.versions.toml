@@ -1,7 +1,7 @@
 [versions]
 asciidoctorJvm = "5.0.1"
 
-logback = "1.6.4"
+logback = "1.6.5"
 kotlinLogging = "8.0.4"
 slf4j = "2.0.20"
 
