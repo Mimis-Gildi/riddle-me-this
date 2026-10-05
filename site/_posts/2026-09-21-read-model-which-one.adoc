@@ -22,8 +22,6 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :read-model-repo: https://github.com/Mimis-Gildi/read-model[read-model,window=_blank]
 :read-model-site: https://mimis-gildi.github.io/read-model/[the project site,window=_blank]
 
-// TODO: Vadim writes, Claude critiques -- this is structure only.
-
 // This page is to be shown in the short video to follow, and it will embed the YouTube to short.
 
 // Script:
@@ -31,33 +29,33 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 // People ask me so what UI library do I use?!
 // Should I use zustand like you did for state?
 
-// First, the easy question: state!
+// First, the state!
 // ZuStand or .. tsushtant if you shprehen zi doich.
-// There are several modern libraries that idiomize state management for you.
-// Tsushtant is a global state manager like old Redux and is considered anti-pattern today.
-// It was perfectly fine for my fixture, in fact ideal.
-// But for real business Single page applications I prefer XState from Stately.
-// There also are ... Todo: fill in the top 3 dots here....
+// Is a global state manager like the old redux: an antipattern
+// Perfect for the read-model benchmark app.
+// I use XState from Stately in production.
 // State will require its own short!
-// Let's go to UI LIBs now.
 
+// Now the UI libraries!
 // Take a look at this Android Studio Create control when making a new multiplatform product:
 // Rabbit 1 - gosh I love rabbits!
 //
-// As we create a new project to cover mobile, desktop, and web
-// Take a look at the web options you have: it's either
-// A. Shared UI with Gradle or Kotlin Toolchain
-// or B. Do not share UI (React) with Gradle
+// Create a new project you have TWO options for Web:
+// "Share UI" or "Do not share UI (React)"
 //
-// Now Reacts in this case doesn't need to be React! Any JS Library will do!
+// [[Show inline right here]]
+// Share UI is created like this - see the Gradle module with ExperimentalComposeUiApi
 //
-// So, let's discuss Options:
+// "Do not share UI (React)" is NOT a Gradle module and is your ordinary JS project.
+// It doesn't need to be React - it can be anything!
+// Look at my "read-model" project to see how to make it a proper Gradle Module and consume your Kotlin magic in it.
 
-// 1. There's VueJS - simpler and cleaner than React - same stuff!
-// Except when you mean Vue 3 - a whole different beast with:
+// What can it be?!
+
+// 1. There's VueJS - simpler and cleaner than React - and Vue 3 is remarkable!
 // Compiler-informed VDOM
-// Fully Composable via API
-// ES6 Proxies - so a solid swap even for a laggard.
+// Fully Composable API
+// ES6 Proxies - so a solid swap in corporate America.
 
 // 2. Then there is SolidJS.
 // Entirely different paradigm - compiled, no VDOM.
@@ -75,25 +73,11 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 
 // Last weekend I presented Svelte + Xstate in a KMP application with Kotlin shared UI core.
 // And many went "Nice, NEW, thank you!"
+// If engineering is an orchestra, then a UI developer is a trombone player!
 // This isn't new; I remember my production app with Svelte and Xstate before my daughter was born,
 // So this magic combination is at least 4-5 years old.
 
-// Let me show you how you would set that up in Android Studio.
-// When you first create a project, you will have an option for
-// Share UI (Compose Multiplatform), the only option with Kotlin Toolkit
-// And also "Do not share UI (React)" on Gradle defined project.
-
-// I don't know any Wizards that chose Shared UI here.
-// Check out my Read Model benchmark video to understand why.
-// But once you chose a standalone UI your project definition will be like this:
-// See, you have ordinary JS/TS application here.
-
-// Versus shared - you will have your single Gradle Module with Compose Class.
-// Like this.
-
-// All is not lost! You can easily make this CONSUME your Kotlin code.
-// To see how to make this JS/TS component a Gradle module
-// See how I did that in `read-model` application.
+// And it never gets old - like driving a Ferrari with a stick.
 
 // Alright.
 // Build something nice!!
