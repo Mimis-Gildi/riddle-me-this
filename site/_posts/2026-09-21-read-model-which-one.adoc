@@ -28,9 +28,20 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :wiki-spa: https://en.wikipedia.org/wiki/Single-page_application[SPA,window=_blank]
 :c4w-bitspittle: https://bitspittle.dev/blog/2024/c4w[because it's not a choice,window=_blank]
 :svelte-story-url: https://youtu.be/kMlkCYL9qo0
+:redux: https://redux.js.org/[Redux,window=_blank]
+:bounded-context: https://martinfowler.com/bliki/BoundedContext.html[Bounded Context,window=_blank]
+:vue: https://vuejs.org/[Vue 3,window=_blank]
+:vue-composition-api: https://vuejs.org/guide/extras/composition-api-faq.html[Composition API,window=_blank]
+:solidjs: https://www.solidjs.com/[SolidJS,window=_blank]
+:qwik: https://qwik.dev/[Qwik,window=_blank]
+:qwik-resumable: https://qwik.dev/docs/concepts/resumable/[resumability,window=_blank]
+:lighthouse: https://developer.chrome.com/docs/lighthouse/[Lighthouse,window=_blank]
+:svelte-runes: https://svelte.dev/docs/svelte/what-are-runes[Svelte 5 Runes,window=_blank]
+:kmp: https://kotlinlang.org/docs/multiplatform.html[KMP,window=_blank]
 
 People ask me _"So, what UI library should I use?"_ +
-_"Should I use {zustand}, like you did, for state?"_
+_"Should I use {zustand}, like you did, for state?"_ +
+(See {showdown}.)
 
 I frequent {stately-xstate} from {stately} in production.
 Consumed in {svelte} with _star contract_, it's pure jazz of UI development -- not bound to any component hierarchy.
@@ -41,12 +52,12 @@ More on the "state" in another post.
 ====
 {zustand} was perfect in {read-model-site}.
 It's minimalist and fast, providing a zero-overhead state driver for the benchmark.
-It's also a *"Global State"* library, like Redux, an antipattern in business {wiki-spa}.
+It's also a *"Global State"* library, like {redux}, an antipattern in business {wiki-spa}.
 ====
 
 == So, WHICH UI Libraries do Wizards Use?
 
-The ultimate context to imagine is the single Bounded Context domain behavior service,
+The ultimate context to imagine is the single {bounded-context} domain behavior service,
 like in mSaaS or µSaaS vendor applications -- and you are the vendor -- what do you do?!
 
 ."No shared UI" is the choice we always make {c4w-bitspittle}.
@@ -60,13 +71,13 @@ See {read-model-repo} on how to make it a proper Gradle module consuming your Ko
 
 == Vue 3 -- Corporate React {plus}{plus}
 
-I MEAN the Vue 3, not 2 -- a very different animal.
-Compiler-informed VDOM, fully Composable API, ES6 Proxies -- a solid swap for React in corporate America.
+I MEAN the {vue}, not 2 -- a very different animal.
+Compiler-informed VDOM, fully {vue-composition-api}, ES6 Proxies -- a solid swap for React in corporate America.
 And, I find it easier to teach than React.
 
 == SolidJS -- Performance Choice
 
-Entirely different paradigm -- compiled, no VDOM. I dig! The few SPAs I built with it performed very well.
+{solidjs} is an entirely different paradigm -- compiled, no VDOM. I dig! The few SPAs I built with it performed very well.
 I could demo Solid in {read-model-site} if page performance was the key.
 
 Remarkable here is the 2-stage process that packages reactive JSX components into vanilla JavaScript DOM operations.
@@ -74,12 +85,12 @@ Then everything just works client-side as if an engine were there.
 
 == Qwik -- Resumable Rendering
 
-Not my cup of tea, but many distributed systems folks now reach for it.
+{qwik} is not my cup of tea, but many distributed systems folks now reach for it.
 
-The "new" paradigm here is "resumability" instead of hydrating the DOM.
+The "new" paradigm here is {qwik-resumable} instead of hydrating the DOM.
 And the entire magic is driven by the *_lazy loading_*.
 Competent engineers use plenty of *_lazy_* where it fits logically.
-Here, everything is lazy. The key to the perfect Lighthouse performance score is to use LESS JavaScript.
+Here, everything is lazy. The key to the perfect {lighthouse} performance score is to use LESS JavaScript.
 So, colloquially, a 20% faster site makes 10% more conversions. That makes me think a "landing page."
 
 99% of the time I make a read model -- the presentation for some aggregate functional behavior.
@@ -90,11 +101,11 @@ For that I need the opposite of "lazy loading" -- a clean, self-contained busine
 == Svelte is ALL  you need!
 
 My personal cup of tea!
-Svelte 5 Runes -- compiler directives for explicit reactivity.
+{svelte-runes} -- compiler directives for explicit reactivity.
 We're way past the corporate developer here.
 *_{svelte-story-url}[Even the story of Svelte is pure hacker lore!,window=_blank]_*
 
-Last weekend I presented Svelte + XState in a KMP project, shared core in Kotlin,
+Last weekend I presented Svelte + XState in a {kmp} project, shared core in Kotlin,
 and many went
 
 > _"Nice, NEW, thank you!"_
