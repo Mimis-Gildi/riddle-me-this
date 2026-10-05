@@ -1,15 +1,17 @@
 [versions]
-asciidoctorJvm = "4.0.5"
+java = "21"
 
-logback = "1.6.1"
+asciidoctorJvm = "5.0.0-alpha.1"
+
+logback = "1.6.3"
 kotlinLogging = "8.0.4"
 slf4j = "2.0.18"
 
 [plugins]
-asciidoctor-jvm-pdf = { id = "org.asciidoctor.jvm.pdf", version.ref = "asciidoctorJvm" }
-asciidoctor-jvm-epub = { id = "org.asciidoctor.jvm.epub", version.ref = "asciidoctorJvm" }
-asciidoctor-jvm-gems = { id = "org.asciidoctor.jvm.gems", version.ref = "asciidoctorJvm" }
-asciidoctor-jvm-convert = { id = "org.asciidoctor.jvm.convert", version.ref = "asciidoctorJvm" }
+asciidoctor-jvm-pdf = { id = "org.asciidoctor.jvm.pdf.classic", version.ref = "asciidoctorJvm" }
+asciidoctor-jvm-epub = { id = "org.asciidoctor.jvm.epub.classic", version.ref = "asciidoctorJvm" }
+asciidoctor-jvm-gems = { id = "org.asciidoctor.jvm.gems.classic", version.ref = "asciidoctorJvm" }
+asciidoctor-jvm-convert = { id = "org.asciidoctor.jvm.convert.classic", version.ref = "asciidoctorJvm" }
 
 [libraries]
 slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }

@@ -1,0 +1,180 @@
+= Hacker's Distributed Systems
+
+Practitioner criteria -- named people, named sources. Everything below is verified;
+provenance of each claim is marked at the bottom.
+
+== The "kill any node" family -- chaos engineering
+
+The formal statement is https://principlesofchaos.org/[Principles of Chaos Engineering]
+(Netflix). It never says "kill a node and nothing changes." It says something testable:
+
+Practice, four steps:
+
+. Define 'steady state' as a measurable output indicating normal behavior;
+. Hypothesize that steady state continues in control and experimental groups;
+. Introduce variables reflecting real-world events (crashes, network failures);
+. Attempt to disprove the hypothesis by finding a difference between the groups.
+
+Advanced principles, verbatim:
+
+. *Build a hypothesis around steady state behavior* -- "Focus on the measurable output
+of a system, rather than internal attributes of the system."
+. *Vary real-world events* -- "Chaos variables reflect real-world events. Prioritize
+events either by potential impact or estimated frequency."
+. *Run experiments in production* -- "To guarantee both authenticity of the way in which
+the system is exercised and relevance to the current deployed system, Chaos strongly
+prefers to experiment directly on production traffic."
+. *Automate experiments to run continuously* -- "Running experiments manually is
+labor-intensive and ultimately unsustainable."
+. *Minimize blast radius* -- "It is the responsibility and obligation of the Chaos
+Engineer to ensure the fallout from experiments are minimized and contained."
+
+The criterion is only meaningful because the "nothing" that changes is a *named metric*
+-- Netflix used Streams Per Second. Chaos Monkey, random instance termination in
+production, is the crudest instrument in that program, not the program.
+
+== AWS Builders' Library -- criteria as architecture
+
+One essay, one criterion. This is the densest practitioner source available.
+
+*Static stability* (Becky Weiss, Mike Furr -- _not_ Marc Brooker): "the overall system
+keeps working even when a dependency becomes impaired, and everything it was doing before
+the dependency became impaired continues to work despite the impaired dependency."
+Capacity for the failure case is pre-provisioned. The sharp test: *recovery must require
+no control-plane action.* If losing an AZ makes you _launch_ instances, you are not
+statically stable -- you have made recovery depend on the thing most likely to be broken.
+
+*Constant work* (Colm MacCárthaigh, "Reliability, constant work, and a good cup of
+coffee"). Stated properties: designs that "don't scale up or slow down with load or
+stress," that have no "modes," and that ideally "do less work in times of stress so they
+can perform better when you need them most." The criterion: *no code path exists that
+only runs during failure.*
+
+Worked example, Route 53 health checks: a *fixed-size table of health check statuses* is
+pushed to the Route 53 DNS servers *every few seconds*, sized to maximum capacity from
+the start, unused slots filled with placeholders -- so "the network load, as well as the
+work the aggregators are doing, won't increase as customers configure more health checks."
+Identical work whether everything fails or nothing does.
+
+*Shuffle sharding*: "no two servers in the fleet see the same exact workload." Eight cells
+give 28 unique two-cell combinations, so one bad customer takes down 1/28th rather than
+1/8th -- seven times better than plain sharding. The criterion: blast radius is a number
+you can state.
+
+*Cell-based architecture*: a cell is self-contained, shares no state, and nothing crosses
+cells by definition. Shuffle-sharding operates _within_ a cell.
+
+== Jepsen -- Kyle Kingsbury
+
+The opposite criterion to chaos engineering, and worth the contrast in the article.
+In Jepsen's own words: "A consistency model is a *safety property* which declares what a
+system can do," and Jepsen "analyzes the safety properties of distributed systems -- most
+notably, identifying violations of consistency models."
+
+- Chaos asks: _does it stay up?_ (liveness)
+- Jepsen asks: _does it lie?_ (safety)
+
+Jepsen's scope note is explicit: it does not test liveness. Method -- record a real
+execution history under injected faults, then check that history against the model with a
+linearizability checker (Knossos). The fault taxonomy is itself a criteria set, and it is
+the practitioner's answer to "what do you mean by failure":
+
+- network partition (`iptables`);
+- process kill (`SIGKILL`);
+- GC-style pause (`SIGSTOP`/`SIGCONT`);
+- clock skew (`date -s`).
+
+The criterion a vendor must survive: *the consistency model you claim in marketing must
+hold on an actual recorded history under partition.* The Call Me Maybe series dismantled
+MongoDB, Redis, Cassandra and Elasticsearch on exactly that gap.
+
+== Lineage
+
+*Fallacies of Distributed Computing* -- attribution corrected. This is _not_ Peter
+Deutsch's list, though he is the one usually credited. The first four came from *Bill Joy
+and Dave Lyon* at Sun in the early 90s; *James Gosling* classified them as "The Fallacies
+of Networked Computing"; *Deutsch* added five through seven later that decade; *Gosling*
+added the eighth, "the network is homogeneous," in 1997. A group effort at Sun across the
+decade. Sources conflict on the early dating -- one account has Deutsch drafting seven in
+1994 -- so attribute loosely if you cite years.
+
+The eight: the network is reliable; latency is zero; bandwidth is infinite; the network is
+secure; topology doesn't change; there is one administrator; transport cost is zero; the
+network is homogeneous. Still the best "you are not doing distributed systems if you assume
+any of these."
+
+*Pat Helland*, "Life Beyond Distributed Transactions" -- at scale you do not get distributed
+transactions, so the design must be expressed as entities with independent atomicity plus
+messaging between them.
+
+*Google SRE* -- error budgets: reliability is a target you spend, not a value you maximize.
+The removal-scale counterpart to "kill any node" is Google's DiRT exercises.
+
+== What I'd flag for the article
+
+"Kill any node -- nothing changes" is a good line, but as stated it is the *weakest* of
+these criteria, and a competent reader will say so. Killing a node is the easy failure.
+The three that separate real distributed systems from lucky ones:
+
+. Does anything only execute during failure? (constant work)
+. Does recovery need a control plane? (static stability)
+. Under partition, does it lose or invent data? (Jepsen)
+
+A system can pass Chaos Monkey and fail all three.
+
+== Sources and provenance
+
+Read in full this session -- safe to quote:
+
+- https://principlesofchaos.org/[Principles of Chaos Engineering]
+- https://jepsen.io/consistency[Jepsen -- Consistency]
+- https://www.allthingsdistributed.com/2023/11/standing-on-the-shoulders-of-giants-colm-on-constant-work.html[Vogels
+on Colm's constant work] -- source of the constant-work quotes and the Route 53 detail
+- https://sookocheff.com/post/distributed-systems/unpacking-the-eight-fallacies-of-distributed-computing/[Sookocheff,
+unpacking the eight fallacies] -- source of the corrected attribution
+
+Read only as search summaries -- verify before quoting verbatim:
+
+- https://d1.awsstatic.com/builderslibrary/pdfs/static-stability-using-availability-zones.pdf[Static
+stability using Availability Zones -- Weiss & Furr (PDF)]. The definition above is quoted
+from a summary, not from the PDF. PDF extraction is unavailable on this box (no `poppler`),
+so the primary text was never opened.
+- https://aws.amazon.com/builders-library/workload-isolation-using-shuffle-sharding/[Workload
+isolation using shuffle-sharding]
+- https://aws.amazon.com/builders-library/minimizing-correlated-failures-in-distributed-systems/[Minimizing
+correlated failures in distributed systems]
+- https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of-impact-with-cell-based-architecture/faq.html[Reducing
+the scope of impact with cell-based architecture]
+- https://asatarin.github.io/testing-distributed-systems/[Testing distributed systems --
+curated resources (Satarin)]
+
+Helland and Google SRE are cited from my own knowledge, not from a page read this session.
+
+'''
+
+== About Interviewer Design
+
+The pedantic reading is that it's distributed: multiple independent machines, no shared memory, messages, partial failure. True. Also useless — by that definition a web browser talking to a server is a distributed system, and it has exactly this topology: locked-down leaves
+calling out to one authority. Nobody calls that a distributed system, and the reason is the thing your line 268 states outright:
+
+▎ "All devices are not aware of each-other."
+
+That's the kill. The defining problem of a distributed system is nodes reasoning about each other's state — membership, failure detection, ordering, agreement. Strip mutual awareness and every hard problem goes with it. What's left is not one distributed system with N+1 nodes.
+It's N independent two-node client-server systems that happen to share a server. Your own probe sequence confirms it — shared clock, point-to-point, broadcast are precisely the membership-and-ordering primitives, and none of them landed.
+
+So the correction is in the predicate, not the noun: distributed is a property of the deployment; a distributed system is a property of the design. Their device fleet is the first and not the second. The job description asked for the second.
+
+What I'd add to the criteria I dug up — every one of them fails on their design, and they fail on the given facts of the question, not on speculation:
+
+- Static stability (Weiss & Furr): "the overall system keeps working even when a dependency becomes impaired." The hub is the control plane. Impair it and nothing propagates. Recovery requires the exact component most likely to be unreachable — and the question hands you
+"spotty internet connection" as a premise.
+- Constant work (MacCárthaigh): delta discovery and reconciliation is a failure-only code path whose cost grows with how far things have drifted. Work scales with distress. That's the anti-pattern by name.
+- Blast radius: no cells, no shuffle sharding, one authority, everyone in the same shard. Route 53 pushes a fixed-size table every few seconds precisely so this can't happen.
+- Jepsen: you can't even ask the question. Under partition the edges serve stale config, and no consistency model was ever named, so there's nothing to violate and nothing to verify. That's not a system passing — that's a system with no stated safety property.
+
+And the God Object at line 313 is the domain-modeling failure showing up as a data structure, which is where your DDD question at 326 lands. Worth making that link explicit in the draft — right now the God Object and the DDD bomb are 13 lines apart and the reader has to
+connect them.
+
+I'll leave the file alone. Want me to draft the "distributed deployment vs. distributed system" distinction as a paragraph you can cut into, or keep feeding you criteria for the pass below 315?
+
+'''

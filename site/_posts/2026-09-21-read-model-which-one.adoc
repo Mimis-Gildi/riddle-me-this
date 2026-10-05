@@ -1,0 +1,100 @@
+---
+categories: [ adventures ]
+tags: [ Read Model, Performance, DOM ]
+header:
+  overlay_image: /assets/images/TODO-pick-a-banner.png
+  caption: "TODO"
+excerpt: >
+  TODO one-sentence hook.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= Web Showdown 2026: What LIB to use?
+:page-liquid:
+
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+:showdown-url: {site-baseurl}/adventures/2026/08/02/web-showdown.html
+:showdown: link:{showdown-url}[Web Showdown 2026,window=_blank]
+:read-model-repo: https://github.com/Mimis-Gildi/read-model[read-model,window=_blank]
+:read-model-site: https://mimis-gildi.github.io/read-model/[the project site,window=_blank]
+
+// TODO: Vadim writes, Claude critiques -- this is structure only.
+
+// This page is to be shown in the short video to follow, and it will embed the YouTube to short.
+
+// Script:
+
+// People ask me so what UI library do I use?!
+// Should I use zustand like you did for state?
+
+// First, the easy question: state!
+// ZuStand or .. tsushtant if you shprehen zi doich.
+// There are several modern libraries that idiomize state management for you.
+// Tsushtant is a global state manager like old Redux and is considered anti-pattern today.
+// It was perfectly fine for my fixture, in fact ideal.
+// But for real business Single page applications I prefer XState from Stately.
+// There also are ... Todo: fill in the top 3 dots here....
+// State will require its own short!
+// Let's go to UI LIBs now.
+
+// Take a look at this Android Studio Create control when making a new multiplatform product:
+// Rabbit 1 - gosh I love rabbits!
+//
+// As we create a new project to cover mobile, desktop, and web
+// Take a look at the web options you have: it's either
+// A. Shared UI with Gradle or Kotlin Toolchain
+// or B. Do not share UI (React) with Gradle
+//
+// Now Reacts in this case doesn't need to be React! Any JS Library will do!
+//
+// So, let's discuss Options:
+
+// 1. There's VueJS - simpler and cleaner than React - same stuff!
+// Except when you mean Vue 3 - a whole different beast with:
+// Compiler-informed VDOM
+// Fully Composable via API
+// ES6 Proxies - so a solid swap even for a laggard.
+
+// 2. Then there is SolidJS.
+// Entirely different paradigm - compiled, no VDOM.
+// This is what I would have demoed for top performer had that been the objective.
+
+// 3. Quik is all about Resumable Rendering.
+// Not my cup of tea but many distributed system folks now reach for it.
+
+// 4. And finally, my personal cup of tea!
+// Svelte 5 Runes - compiler directives for explicit reactivity.
+
+// Two words about this, so with SvelteKit and runes we're way past the corporate developer here.
+// And I know I should be sticking to the corporate React conversation
+// where people don't even know that React is just 2 files pulled.
+
+// Last weekend I presented Svelte + Xstate in a KMP application with Kotlin shared UI core.
+// And many went "Nice, NEW, thank you!"
+// This isn't new; I remember my production app with Svelte and Xstate before my daughter was born,
+// So this magic combination is at least 4-5 years old.
+
+// Let me show you how you would set that up in Android Studio.
+// When you first create a project, you will have an option for
+// Share UI (Compose Multiplatform), the only option with Kotlin Toolkit
+// And also "Do not share UI (React)" on Gradle defined project.
+
+// I don't know any Wizards that chose Shared UI here.
+// Check out my Read Model benchmark video to understand why.
+// But once you chose a standalone UI your project definition will be like this:
+// See, you have ordinary JS/TS application here.
+
+// Versus shared - you will have your single Gradle Module with Compose Class.
+// Like this.
+
+// All is not lost! You can easily make this CONSUME your Kotlin code.
+// To see how to make this JS/TS component a Gradle module
+// See how I did that in `read-model` application.
+
+// Alright.
+// Build something nice!!
+// Let me know who it went.
