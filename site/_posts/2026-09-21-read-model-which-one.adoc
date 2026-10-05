@@ -2,10 +2,10 @@
 categories: [ adventures ]
 tags: [ Read Model, Performance, DOM ]
 header:
-  overlay_image: /assets/images/TODO-pick-a-banner.png
-  caption: "TODO"
+  overlay_image: /assets/images/banner-athena-in-acme-city.png
+  caption: "What UI Libraries do Wizards Use?!"
 excerpt: >
-  TODO one-sentence hook.
+  Svelte and XState have been favored by more competent teams. Vue 3 is a very good alternative to React in corporate America.
 classes: wide
 comments: true
 hidden: false
@@ -20,7 +20,93 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :showdown-url: {site-baseurl}/adventures/2026/08/02/web-showdown.html
 :showdown: link:{showdown-url}[Web Showdown 2026,window=_blank]
 :read-model-repo: https://github.com/Mimis-Gildi/read-model[read-model,window=_blank]
-:read-model-site: https://mimis-gildi.github.io/read-model/[the project site,window=_blank]
+:read-model-site: https://mimis-gildi.github.io/read-model/[the read-model bench application,window=_blank]
+:stately: https://stately.ai/[Stately,window=_blank]
+:stately-xstate: https://stately.ai/docs/xstate/[XState,window=_blank]
+:svelte: https://svelte.dev/[Svelte,window=_blank]
+:zustand: https://zustand.docs.pmnd.rs/[Zustand,window=_blank]
+:wiki-spa: https://en.wikipedia.org/wiki/Single-page_application[SPA,window=_blank]
+:c4w-bitspittle: https://bitspittle.dev/blog/2024/c4w[because it's not a choice,window=_blank]
+:svelte-story-url: https://youtu.be/kMlkCYL9qo0
+
+People ask me _"So, what UI library should I use?"_ +
+_"Should I use {zustand}, like you did, for state?"_
+
+I frequent {stately-xstate} from {stately} in production.
+Consumed in {svelte} with _star contract_, it's pure jazz of UI development -- not bound to any component hierarchy.
+More on the "state" in another post.
+
+[WARNING]
+.Global State is not your desired architectural pattern in 2026.
+====
+{zustand} was perfect in {read-model-site}.
+It's minimalist and fast, providing a zero-overhead state driver for the benchmark.
+It's also a *"Global State"* library, like Redux, an antipattern in business {wiki-spa}.
+====
+
+== So, WHICH UI Libraries do Wizards Use?
+
+The ultimate context to imagine is the single Bounded Context domain behavior service,
+like in mSaaS or µSaaS vendor applications -- and you are the vendor -- what do you do?!
+
+."No shared UI" is the choice we always make {c4w-bitspittle}.
+[#img-no-shared-ui-plug,link={imagesdir}/android-studio-no-shared-ui.png]
+image::android-studio-no-shared-ui-plug.png[No shared UI choice]
+
+So, once you split off the tree -- what's there?
+"Do not share UI (React)" is not a Gradle module, it's your ordinary JS project.
+It doesn't need to be React -- it can be anything!
+See {read-model-repo} on how to make it a proper Gradle module consuming your Kotlin magic.
+
+== Vue 3 -- Corporate React {plus}{plus}
+
+I MEAN the Vue 3, not 2 -- a very different animal.
+Compiler-informed VDOM, fully Composable API, ES6 Proxies -- a solid swap for React in corporate America.
+And, I find it easier to teach than React.
+
+== SolidJS -- Performance Choice
+
+Entirely different paradigm -- compiled, no VDOM. I dig! The few SPAs I built with it performed very well.
+I could demo Solid in {read-model-site} if page performance was the key.
+
+Remarkable here is the 2-stage process that packages reactive JSX components into vanilla JavaScript DOM operations.
+Then everything just works client-side as if an engine were there.
+
+== Qwik -- Resumable Rendering
+
+Not my cup of tea, but many distributed systems folks now reach for it.
+
+The "new" paradigm here is "resumability" instead of hydrating the DOM.
+And the entire magic is driven by the *_lazy loading_*.
+Competent engineers use plenty of *_lazy_* where it fits logically.
+Here, everything is lazy. The key to the perfect Lighthouse performance score is to use LESS JavaScript.
+So, colloquially, a 20% faster site makes 10% more conversions. That makes me think a "landing page."
+
+99% of the time I make a read model -- the presentation for some aggregate functional behavior.
+For that I need the opposite of "lazy loading" -- a clean, self-contained business function upfront.
+
+> Maybe I'm missing something -- clue me in the comments, please.
+
+== Svelte is ALL  you need!
+
+My personal cup of tea!
+Svelte 5 Runes -- compiler directives for explicit reactivity.
+We're way past the corporate developer here.
+*_{svelte-story-url}[Even the story of Svelte is pure hacker lore!,window=_blank]_*
+
+Last weekend I presented Svelte + XState in a KMP project, shared core in Kotlin,
+and many went
+
+> _"Nice, NEW, thank you!"_
+
+What?! _If engineering is an orchestra, then a UI developer is a trombone player!_ +
+I had Svelte with XState in production way before my daughter was born -- this magic combination is at least 4-5 years old.
+
+*It never gets old -- like driving a Ferrari (with a stick, of course).*
+
+// [[YouTube Short embed]]
+
+Build something nice! Let me know how it went.
 
 // This page is to be shown in the short video to follow, and it will embed the YouTube to short.
 
@@ -31,7 +117,7 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 
 // First, the state!
 // ZuStand or .. tsushtant if you shprehen zi doich.
-// Is a global state manager like the old redux: an antipattern
+// It's a global state manager like the old redux: an antipattern
 // Perfect for the read-model benchmark app.
 // I use XState from Stately in production.
 // State will require its own short!
@@ -52,7 +138,7 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 
 // What can it be?!
 
-// 1. There's VueJS - simpler and cleaner than React - and Vue 3 is remarkable!
+// 1. There's VueJS, I MEAN the Vue 3, not 2, and it's remarkable:
 // Compiler-informed VDOM
 // Fully Composable API
 // ES6 Proxies - so a solid swap in corporate America.
@@ -61,7 +147,7 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 // Entirely different paradigm - compiled, no VDOM.
 // This is what I would have demoed for top performer had that been the objective.
 
-// 3. Quik is all about Resumable Rendering.
+// 3. Qwik is all about Resumable Rendering.
 // Not my cup of tea but many distributed system folks now reach for it.
 
 // 4. And finally, my personal cup of tea!
@@ -81,4 +167,4 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 
 // Alright.
 // Build something nice!!
-// Let me know who it went.
+// Let me know how it went.
