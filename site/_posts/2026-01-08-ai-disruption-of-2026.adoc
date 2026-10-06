@@ -642,10 +642,10 @@ Let's call them "Origami Corporation." Specialized components for heavy machiner
 Hydraulics, not hashtags.
 
 Key details: +
-— ~200 engineers total, (mostly hardware) +
-— Only ~30 software engineers +
-— Part of a larger conglomerate +
-— Extreme focus on production efficiency
+-> ~200 engineers total, (mostly hardware) +
+-> Only ~30 software engineers +
+-> Part of a larger conglomerate +
+-> Extreme focus on production efficiency
 
 In 2016, a Big American Software company, (let's call them "EvilCorp"), promised to "transform" their business.
 By 2017, everything was worse. Costs tripling.
