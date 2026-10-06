@@ -12,7 +12,7 @@ hidden: false
 search: true
 read_aloud: false
 ---
-= Web Showdown 2026: What LIB to use?
+= Web Showdown 2026: "Smart" LIB
 :page-liquid:
 
 ifndef::env-site[:imagesdir: ../assets/images]
@@ -20,7 +20,9 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :showdown-url: {site-baseurl}/adventures/2026/08/02/web-showdown.html
 :showdown: link:{showdown-url}[Web Showdown 2026,window=_blank]
 :read-model-repo: https://github.com/Mimis-Gildi/read-model[read-model,window=_blank]
-:read-model-site: https://mimis-gildi.github.io/read-model/[the read-model bench application,window=_blank]
+:read-model-site-url: https://mimis-gildi.github.io/read-model/
+:read-model-site: {read-model-site-url}[the read-model bench application,window=_blank]
+:ui-libs-2025-url: https://2025.stateofjs.com/en-US/libraries/front-end-frameworks/
 :stately: https://stately.ai/[Stately,window=_blank]
 :stately-xstate: https://stately.ai/docs/xstate/[XState,window=_blank]
 :svelte: https://svelte.dev/[Svelte,window=_blank]
@@ -38,6 +40,7 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :lighthouse: https://developer.chrome.com/docs/lighthouse/[Lighthouse,window=_blank]
 :svelte-runes: https://svelte.dev/docs/svelte/what-are-runes[Svelte 5 Runes,window=_blank]
 :kmp: https://kotlinlang.org/docs/multiplatform.html[KMP,window=_blank]
+:ui-libs-short-id: NsStbi5V6Ow
 
 People ask me _"So, what UI library should I use?"_ +
 _"Should I use {zustand}, like you did, for state?"_ +
@@ -55,7 +58,11 @@ It's minimalist and fast, providing a zero-overhead state driver for the benchma
 It's also a *"Global State"* library, like {redux}, an antipattern in business {wiki-spa}.
 ====
 
-== So, WHICH UI Libraries do Wizards Use?
+== So, What "smart" people use?
+
+#As you saw in my *_experiment_*, the browser is VERY powerful: {read-model-site-url}[*1_000_000 nodes* in _React_,window=_blank]!#
+
+_{ui-libs-2025-url}[Any library you love will do you good,window=_blank]._ Yet people choose differently -- let's see why.
 
 The ultimate context to imagine is the single {bounded-context} domain behavior service,
 like in mSaaS or µSaaS vendor applications -- and you are the vendor -- what do you do?!
@@ -80,38 +87,48 @@ And, I find it easier to teach than React.
 {solidjs} is an entirely different paradigm -- compiled, no VDOM. I dig! The few SPAs I built with it performed very well.
 I could demo Solid in {read-model-site} if page performance was the key.
 
-Remarkable here is the 2-stage process that packages reactive JSX components into vanilla JavaScript DOM operations.
+Remarkable here is **the 2-stage process** that packages reactive JSX components into vanilla JavaScript DOM operations.
 Then everything just works client-side as if an engine were there.
 
 == Qwik -- Resumable Rendering
 
-{qwik} is not my cup of tea, but many distributed systems folks now reach for it.
+Full disclosure: {qwik} is not what I find much use for. +
+More and more distributed systems folks now reach for it. +
+Because there is a viable usecase.
 
 The "new" paradigm here is {qwik-resumable} instead of hydrating the DOM.
 And the entire magic is driven by the *_lazy loading_*.
-Competent engineers use plenty of *_lazy_* where it fits logically.
-Here, everything is lazy. The key to the perfect {lighthouse} performance score is to use LESS JavaScript.
-So, colloquially, a 20% faster site makes 10% more conversions. That makes me think a "landing page."
-
-99% of the time I make a read model -- the presentation for some aggregate functional behavior.
-For that I need the opposite of "lazy loading" -- a clean, self-contained business function upfront.
-
-> Maybe I'm missing something -- clue me in the comments, please.
+Sure, competent engineers use plenty of *_lazy_* where it fits logically.
+And here, _everything is lazy_. The key to the perfect {lighthouse} performance score is to use LESS JavaScript.
+So, colloquial wisdom says that a 20% faster site makes 10% more conversions. Long-funnel landing pages.
+Convoluted and branching page function. Optional expensive actions that are not frequently used.
+These are some of the usecases where delayed loading can help.
 
 == Svelte is ALL  you need!
 
 My personal cup of tea!
 {svelte-runes} -- compiler directives for explicit reactivity.
-We're way past the corporate developer here.
+This library has been a long favorite among the startup and technology-first crowd.
+We're way past the corporate developer here -- this is pure joy to build but only when one loves to build. +
 *_{svelte-story-url}[Even the story of Svelte is pure hacker lore!,window=_blank]_*
 
-Last weekend I presented Svelte + XState in a {kmp} project, shared core in Kotlin,
-and many went
+*My core appeal:* *_I'll build an amazing read model in 1/3 the time of React or Vue._*
 
-> _"Nice, NEW, thank you!"_
 
-What?! _If engineering is an orchestra, then a UI developer is a trombone player!_ +
-I had Svelte with XState in production way before my daughter was born -- this magic combination is at least 4-5 years old.
+.UI Libraries 2026 -- the Short.
+video::{ui-libs-short-id}[youtube,width=360,height=640]
+
+__Last weekend I presented `Svelte` + `XState` in a {kmp} project, shared core in `Kotlin`, +
+like you see in the `read model` benchmarking experiment and the Android Studio just now; +
+and many people went:__
+
+> _"Nice, #NEW#, thank you!"_
+
+Well...
+
+> _If engineering is an orchestra, then a UI developer is a trombone player!_ +
+
+I've had Svelte with XState in production for at least half a decade. It certainly isn't new.
 
 *It never gets old -- like driving a Ferrari (with a stick, of course).*
 
