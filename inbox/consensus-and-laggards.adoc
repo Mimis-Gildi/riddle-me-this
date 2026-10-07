@@ -3,9 +3,8 @@
 :toclevels: 2
 :stem: latexmath
 
-Raft-paper statements were checked against https://raft.github.io/raft.pdf on 2026-10-01.
-Everything else is from memory; claims I am least sure of are tagged *(unchecked)*.
-Section 6 separates public facts from unknowns.
+Workups on account of meeting ignorant laggards thinking about actor consensus, command/event propagation, and swarming edges.
+Like with all such encounters, this needs to become a crystal clear public learning resource.
 
 toc::[]
 
@@ -17,7 +16,7 @@ toc::[]
 |===
 |Symbol |Meaning
 
-|stem:[\Pi] |The set of all processes in the cluster. "Process", "node", "server" and "replica" name the same thing.
+|stem:[\Pi] |The set of all processes in the cluster. "Process", "node", "server," and "replica" name the same thing.
 |stem:[p_i, p_j, p, q] |A single process. stem:[i, j \in \{1,\dots,n\}].
 |stem:[n] |Number of processes: stem:[n = \|\Pi\|].
 |correct |A process that never fails during the execution.
@@ -46,7 +45,7 @@ toc::[]
 |stem:[\bot] |"None".
 |stem:[S, C] |Majorities of acceptors: stem:[S, C \subseteq A], stem:[\|S\|, \|C\| > \|A\|/2].
 |stem:[\alpha] |Multi-Paxos: how many commands the leader may propose beyond the last chosen one.
-|stem:[s, c] |Multi-Paxos: a slot number (log index, stem:[s \in \mathbb{N}^+]) and a command. PBFT: stem:[s] is the sequence number assigned by the primary (paper: stem:[n]).
+|stem:[s, c] |Multi-Paxos: a slot number (log index, stem:[s \in \mathbb{N}^+,]) and a command. PBFT: stem:[s] is the sequence number assigned by the primary (paper: stem:[n]).
 |stem:[\langle b, s, c \rangle] |A *pvalue*: command stem:[c] proposed for slot stem:[s] in ballot stem:[b] (van Renesse).
 |stem:[\mathcal{Q}_1, \mathcal{Q}_2] |FPaxos: the set of all valid phase-1 quorums and the set of all valid phase-2 quorums.
 |stem:[N_1, N_2] |FPaxos grid: number of columns and number of rows, stem:[N_1 N_2 = \|A\|].
@@ -107,7 +106,7 @@ toc::[]
 |stem:[\nu \overset{*}{\leftarrow} \nu'] |HotStuff: stem:[\nu] is an ancestor of stem:[\nu'] or equal to it (reflexive transitive closure of the parent relation). Read: stem:[\nu'] extends stem:[\nu].
 |stem:[\mathit{qc}, \mathit{qc}_1, \mathit{qc}_2, \mathit{qc}_s] |HotStuff: a quorum certificate with fields stem:[.\mathit{type}], stem:[.\mathit{view}] (paper: viewNumber), stem:[.\mathit{node}], stem:[.\mathit{sig}]; numbered QCs in proofs.
 |stem:[\mathit{QC}(\cdot)] |HotStuff: the QC combined from the stem:[n-f] votes named in the argument.
-|prepareQC, precommitQC, commitQC |HotStuff: QCs formed from PREPARE, PRE-COMMIT and COMMIT votes in one view.
+|prepareQC, precommitQC, commitQC |HotStuff: QCs formed from PREPARE, PRE-COMMIT, and COMMIT votes in one view.
 |lockedQC, highQC, genericQC |HotStuff: the replica's lock; the highest QC a leader found in NEW-VIEW messages; the chained-version QC that serves every phase.
 |stem:[\mathit{safeNode}(\nu, \mathit{qc})] |HotStuff vote predicate, defined in section 4.8.
 |stem:[\mathit{tsign}_i, \mathit{tcombine}, \mathit{tverify}] |HotStuff: threshold-signature operations: replica stem:[i]'s partial sign; combine stem:[2f+1] partials into one signature; verify it.
@@ -154,7 +153,7 @@ toc::[]
 |CFT |Crash fault tolerance: correctness with up to stem:[f] crash-stop processes.
 |CRDT |Conflict-free replicated data type.
 |DC |Data center.
-|DLS |Dwork, Lynch and Stockmeyer (1988).
+|DLS |Dwork, Lynch, and Stockmeyer (1988).
 |EPaxos |Egalitarian Paxos.
 |FIFO |First in, first out.
 |FLP |Fischer, Lynch and Paterson (1985).
@@ -177,7 +176,7 @@ toc::[]
 |ZAB |ZooKeeper Atomic Broadcast.
 |DSN |IEEE/IFIP International Conference on Dependable Systems and Networks.
 |IP |Internet Protocol; here, a replica's IP address.
-|MIT CSAIL |Massachusetts Institute of Technology, Computer Science and Artificial Intelligence Laboratory.
+|MIT CSAIL |Massachusetts Institute of Technology, Computer Science, and Artificial Intelligence Laboratory.
 |UPS |Uninterruptible power supply.
 |SOSP |ACM Symposium on Operating Systems Principles.
 |ACM |Association for Computing Machinery.
@@ -268,7 +267,7 @@ stem:[\mathit{QS} \subseteq 2^{\Pi}].
 |Partially synchronous |crash |stem:[n \geq 2f+1] |DLS 1988. Paxos and Raft are here.
 |Partially synchronous |Byzantine |stem:[n \geq 3f+1] |DLS 1988. PBFT is here.
 |Synchronous |crash |stem:[n \geq f+1]; needs stem:[f+1] rounds |Rounds lower bound: Fischer and Lynch 1982
-|Synchronous, oral messages |Byzantine |stem:[n \geq 3f+1] |Lamport, Shostak and Pease 1982
+|Synchronous, oral messages |Byzantine |stem:[n \geq 3f+1] |Lamport, Shostak, and Pease 1982
 |Synchronous, signed messages |Byzantine |Broadcast from one sender: any stem:[f < n], stem:[f+1] rounds. Agreement where every process has an input: stem:[n \geq 2f+1] *(unchecked)*. |Dolev and Strong 1983
 |===
 
@@ -303,7 +302,7 @@ Raft paper §5.6:
 
 [cols="1,3"]
 |===
-|FLP (1985) |In the asynchronous model with stem:[f \geq 1] crash, no deterministic protocol satisfies Termination, Agreement and Validity together. Real protocols keep safety always and get liveness only after GST.
+|FLP (1985) |In the asynchronous model with stem:[f \geq 1] crash, no deterministic protocol satisfies Termination, Agreement, and Validity together. Real protocols keep safety always and get liveness only after GST.
 |CAP (Brewer 2000; proof Gilbert and Lynch 2002) |C: linearizable reads and writes. A: every request received by a non-failed process gets a response. P: the network may drop any number of messages between processes. Theorem: no system guarantees C and A while P can occur. Raft/Paxos keep C: a side without a quorum stops serving writes.
 |PACELC (Abadi 2012) |If partitioned, choose A or C; else choose latency or C. Every Raft commit waits for a quorum: one RTT to the stem:[(\lfloor n/2 \rfloor)]-th fastest follower.
 |CFT |Tolerating stem:[f] crash-stop processes needs stem:[n \geq 2f+1] (partially synchronous).
@@ -317,7 +316,7 @@ Ongaro and Ousterhout, "In Search of an Understandable Consensus Algorithm", USE
 Safety: the paper gives a TLA+ specification, a mechanical proof of the Log Completeness Property, and an informal proof of State Machine Safety.
 
 * *Roles:* follower, candidate, leader. At most one leader per term.
-* *Election:* when a follower's electionTimeout expires (paper's example interval: 150–300 ms), it increments its term, becomes a candidate and sends RequestVote. Votes from a quorum make it leader. Randomized timeouts make repeated split votes unlikely.
+* *Election:* when a follower's electionTimeout expires (paper's example interval: 150–300 ms), it increments its term, becomes a candidate, and sends RequestVote. Votes from a quorum make it leader. Randomized timeouts make repeated split votes unlikely.
 * *Election restriction:* a process votes only for a candidate whose log is at least as up to date: higher last term, or equal last term and last index stem:[\geq] its own. So the new leader holds every committed entry.
 * *Log replication:* the leader sends AppendEntries; empty ones are heartbeats. An entry is *committed* when a quorum stores it *and* it belongs to the leader's current term. The second condition is the rule behind Figure 8 of the paper.
 * *Log matching:* each AppendEntries carries the index and term of the preceding entry. On mismatch the leader retries one index earlier and then overwrites the follower's divergent suffix.
@@ -480,11 +479,11 @@ No single canonical specification exists. Sources used:
 
 * Multi-Paxos permits gaps in the log, fills them with no-ops, and lets a new leader learn values from acceptors.
 * Raft has no gaps: committing an entry "also commits all preceding entries in the leader's log" (Raft §5.3). Entries flow "in only one direction: outward from the leader" (Raft §10).
-* Raft also specifies membership change, compaction and client interaction in one document. Multi-Paxos leaves them to the implementer [PML §9].
+* Raft also specifies membership change, compaction, and client interaction in one document. Multi-Paxos leaves them to the implementer [PML §9].
 
 === 4.3 Flexible Paxos (FPaxos)
 
-Source: Howard, Malkhi and Spiegelman, "Flexible Paxos: Quorum intersection revisited", arXiv:1608.06696, 2016. Section references below are to that paper.
+Source: Howard, Malkhi, and Spiegelman, "Flexible Paxos: Quorum intersection revisited", arXiv:1608.06696, 2016. Section references below are to that paper.
 
 *Claim (§3).* Paxos only needs every phase-1 quorum to intersect every phase-2 quorum. Two phase-1 quorums may be disjoint, and so may two phase-2 quorums. With majorities in both phases, FPaxos is exactly Paxos.
 
@@ -617,7 +616,7 @@ The paper calls the broadcast phase "similar in spirit to two phase commit witho
 1. A follower accepts stem:[\langle e, \langle v,z \rangle \rangle] only if stem:[q.a = e].
 2. In the broadcast phase of epoch stem:[e], a follower accepts and delivers in zxid order.
 3. Once a follower acknowledges NEWEPOCH(stem:[e]), it accepts no proposal from any epoch stem:[e' < e].
-4. stem:[I_e] is the history of some follower, and messages never alter, reorder or drop transactions.
+4. stem:[I_e] is the history of some follower, and messages never alter, reorder, or drop transactions.
 
 The proofs in §VI-C are sketches; the full proof is in the tech report "Dissecting Zab" (YL-2010-007). The key step: a transaction chosen in epoch stem:[e] is in the initial history of every later established epoch.
 
@@ -629,11 +628,11 @@ The proofs in §VI-C are sketches; the full proof is in the tech report "Dissect
 * the followers in stem:[Q] electing the same live stem:[\ell];
 * timely messages between stem:[\ell] and stem:[Q].
 
-The paper relates this to "◇f-accessibility" and leader stability of Malkhi, Oprea and Zhou (DISC 2005) and leaves the full analysis out of scope.
+The paper relates this to "◇f-accessibility" and leader stability of Malkhi, Oprea, and Zhou (DISC 2005) and leaves the full analysis out of scope.
 
 *Failure detection (§V-B, §V-C).* Liveness uses heartbeats, not TCP connection close, because TCP timeouts can take minutes or hours. A leader without heartbeats from a quorum gives up leadership. A follower without heartbeats goes back to election.
 
-*Cost per transaction (§V).* Three message types: PROPOSE, ACK and COMMIT.
+*Cost per transaction (§V).* Three message types: PROPOSE, ACK, and COMMIT.
 
 * Messages: stem:[3(n-1)] when all followers are reached *(derived here, not stated in the paper)*.
 * Latency: 1 RTT to commit at the leader, plus one fsync on a quorum *(derived here, not stated in the paper)*.
@@ -667,7 +666,7 @@ Source: Liskov and Cowling, "Viewstamped Replication Revisited", MIT-CSAIL-TR-20
 *Model (§2.1, §2.2).*
 
 * Crash faults only; no Byzantine faults.
-* Asynchronous network: messages may be lost, delayed, reordered or duplicated; a message sent repeatedly is eventually delivered.
+* Asynchronous network: messages may be lost, delayed, reordered, or duplicated; a message sent repeatedly is eventually delivered.
 * Group of stem:[2f+1] replicas, quorum stem:[f+1].
 * For a group of size stem:[K]: stem:[f = \max\{f' : 2f'+1 \leq K\}] and quorum size stem:[K - f]. A group larger than stem:[2f+1] needs larger quorums but tolerates no more faults (§2.2).
 * Of the stem:[2f+1] replicas, only stem:[f+1] need to run the service code (§2.3, §6.1).
@@ -738,7 +737,7 @@ i: & \text{on } f+1 \text{ responses with } \eta, \text{ including the primary o
 ++++
 
 * The nonce stops responses to an earlier RECOVERY from being mixed in (§4.3, §8.2).
-* Precondition: replicas are *failure independent*, "highly unlikely to fail at the same time". If all fail together, state not on disk is lost. The paper names UPS, non-volatile memory and geographic spread as ways to get independence (§4.3).
+* Precondition: replicas are *failure independent*, "highly unlikely to fail at the same time". If all fail together, state not on disk is lost. The paper names UPS, non-volatile memory, and geographic spread as ways to get independence (§4.3).
 * "In effect, the protocol uses the volatile state at stem:[f+1] replicas as stable state" (§8.2).
 * The original VR wrote to disk during view changes; the revision writes to disk in neither normal case nor view change (§4.3).
 
@@ -799,13 +798,13 @@ Argument (§8.1, informal):
 * Raft §10: "VR and ZooKeeper each define 10 different message types", versus 4 for Raft, for basic consensus and membership (excluding log compaction and client interaction).
 * Raft §10: VR and ZooKeeper "are described in terms of transmitting entire logs during leader changes". VR §5.3 suggests sending only a suffix.
 * Leader choice: VR's primary is fixed by stem:[w] (round-robin); Raft's leader is whoever wins a randomized-timeout election [Raft §5.2].
-* Durability: VR needs no disk and relies on failure independence (§4.3); Raft persists currentTerm, votedFor and log before responding to RPCs [Raft Fig. 2].
+* Durability: VR needs no disk and relies on failure independence (§4.3); Raft persists currentTerm, votedFor, and log before responding to RPCs [Raft Fig. 2].
 * Membership: Raft §10 says "VR stops all normal processing during configuration changes"; Raft's joint consensus does not.
 * The mapping: view-number corresponds to term; op-number to log index; viewstamp stem:[\langle w, \mathit{on} \rangle] to (term, index); commit-number to commitIndex; PREPARE / PREPARE-OK to AppendEntries and its reply.
 
 === 4.6 EPaxos (Egalitarian Paxos)
 
-Source: Moraru, Andersen and Kaminsky, "There Is More Consensus in Egalitarian Parliaments", SOSP 2013 [EP] (https://doi.org/10.1145/2517349.2517350). Section and figure references below are to that paper. Formal proofs and a TLA+ specification are in its technical report [EP ref 25], which I did not read. Raft cites [EP] as its reference [27].
+Source: Moraru, Andersen, and Kaminsky, "There Is More Consensus in Egalitarian Parliaments", SOSP 2013 [EP] (https://doi.org/10.1145/2517349.2517350). Section and figure references below are to that paper. Formal proofs and a TLA+ specification are in its technical report [EP ref 25], which I did not read. Raft cites [EP] as its reference [27].
 
 *What it is (abstract, §1).* Paxos-based SMR with *no leader*. Any replica that receives a client request becomes the *command leader* for that command. The stated goals:
 
@@ -996,7 +995,7 @@ Source: Castro and Liskov, "Practical Byzantine Fault Tolerance", OSDI 1999 [PB]
 *Model (§2).*
 
 * Asynchronous network: it may fail to deliver messages, delay them, duplicate them, or deliver them out of order.
-* Byzantine faults: a faulty node may behave arbitrarily. Failures are independent. The paper suggests achieving this with different implementations, operating systems, root passwords and administrators per replica.
+* Byzantine faults: a faulty node may behave arbitrarily. Failures are independent. The paper suggests achieving this with different implementations, operating systems, root passwords, and administrators per replica.
 * Cryptography: public-key signatures, MACs, and digests from collision-resistant hashes. stem:[\langle m \rangle_{\sigma_i}] is message stem:[m] signed by node stem:[i]; stem:[D(m)] is its digest.
 * Adversary: it can coordinate faulty nodes and delay communication, but cannot delay correct nodes indefinitely and cannot break the cryptography.
 
@@ -1049,7 +1048,7 @@ i \to \mathit{cid}: & \langle \text{REPLY}, w, \tau, \mathit{cid}, i, \mathit{re
 * No reply in time: the client broadcasts the request to all replicas. A replica that already executed it re-sends the reply; otherwise a backup relays it to the primary. A primary that does not multicast it is eventually suspected.
 * When too many requests are in progress, the primary buffers new ones and multicasts them later as a group (§4.2).
 
-*Predicates (§4.2, §4.3).* "Matching" means same view, sequence number and digest.
+*Predicates (§4.2, §4.3).* "Matching" means same view, sequence number, and digest.
 
 [stem]
 ++++
@@ -1062,7 +1061,7 @@ i \to \mathit{cid}: & \langle \text{REPLY}, w, \tau, \mathit{cid}, i, \mathit{re
 
 *Invariants (§4.2).*
 
-* Prepare: for non-faulty stem:[i, j] (including stem:[i = j]) and any stem:[m'] with stem:[D(m') \neq D(m)]:
+* Prepare: for non-faulty stem:[i, j] (including stem:[i = j,]) and any stem:[m'] with stem:[D(m') \neq D(m)]:
 +
 [stem]
 ++++
@@ -1083,7 +1082,7 @@ Reason: stem:[\mathit{prepared}(m, w, s, i)] and stem:[n = 3f+1] imply that at l
 * A checkpoint is taken when a request whose stem:[s] is divisible by a constant executes (example: 100).
 * stem:[i \to] all: stem:[\langle \text{CHECKPOINT}, s, D(\text{state}), i \rangle_{\sigma_i}].
 * stem:[2f+1] such messages from distinct replicas with equal stem:[s] and digest form the proof. A checkpoint with a proof is *stable*.
-* On stability, a replica discards pre-prepares, prepares and commits with sequence number stem:[\leq s], plus all earlier checkpoints and checkpoint messages.
+* On stability, a replica discards pre-prepares, prepares, and commits with sequence number stem:[\leq s], plus all earlier checkpoints and checkpoint messages.
 * Water marks: stem:[\mathit{lo}] is the sequence number of the last stable checkpoint, and stem:[\mathit{hi} = \mathit{lo} + \kappa] (paper: stem:[h], stem:[H = h + k]). Example: checkpoints every 100 requests, stem:[\kappa = 200].
 * Copy-on-write keeps several logical copies of the state; checkpoint digests are computed incrementally (§6.3).
 
@@ -1182,7 +1181,7 @@ Liveness holds unless message delays grow faster than the timeout indefinitely.
 
 === 4.8 HotStuff
 
-Source: Yin, Malkhi, Reiter, Gueta and Abraham, "HotStuff: BFT Consensus in the Lens of Blockchain", arXiv:1803.05069v6, 2019 [HS] (https://arxiv.org/abs/1803.05069). Section, algorithm and figure references below are to that version. A version appeared at PODC 2019 *(unchecked; I read only the arXiv version)*.
+Source: Yin, Malkhi, Reiter, Gueta and Abraham, "HotStuff: BFT Consensus in the Lens of Blockchain", arXiv:1803.05069v6, 2019 [HS] (https://arxiv.org/abs/1803.05069). Section, algorithm, and figure references below are to that version. A version appeared at PODC 2019 *(unchecked; I read only the arXiv version)*.
 
 *What it is (abstract, §1).* Leader-based BFT SMR for partial synchrony. The paper claims it is the first such protocol with both properties below:
 
@@ -1350,7 +1349,7 @@ On a vote: stem:[\mathit{vheight} \gets \nu_{\mathit{new}}.\mathit{height}].
 
 *Cost.*
 
-* Basic HotStuff messages per decision *(derived here from Algorithm 2, no batching)*: NEW-VIEW stem:[n], then four leader broadcasts (PREPARE, PRE-COMMIT, COMMIT, DECIDE) of stem:[n] each and three vote rounds of stem:[n] each. Total stem:[8n = \Theta(n)].
+* Basic HotStuff messages per decision *(derived here from Algorithm 2, no batching)*: NEW-VIEW stem:[n], then four leader broadcasts (PREPARE, PRE-COMMIT, COMMIT, DECIDE) of stem:[n] each, and three vote rounds of stem:[n] each. Total stem:[8n = \Theta(n)].
 * Message delays from leader proposal to DECIDE at replicas *(derived here)*: 7 (PREPARE, vote, PRE-COMMIT, vote, COMMIT, vote, DECIDE). PBFT from pre-prepare to commit-local: 3. HotStuff trades latency for linear communication.
 * Quorums: stem:[n-f = 2f+1] for every QC and for NEW-VIEW collection; stem:[f+1] replies at the client.
 
@@ -1360,7 +1359,7 @@ On a vote: stem:[\mathit{vheight} \gets \nu_{\mathit{new}}.\mathit{height}].
 * Setup (§8.1): Amazon EC2 c5.4xlarge instances, 16 vCPUs each (Intel Xeon Platinum 8000, up to 3.4 GHz), one replica per VM. TCP bandwidth measured by iperf about 1.2 gigabytes per second, not throttled. Latency between machines under 1 ms.
 * Crypto: HotStuff signs votes and QCs with secp256k1 signatures. The baseline, BFT-SMaRt (a PBFT-style two-phase SMR library, DSN 2014), uses HMAC-SHA1 MACs in the normal case and adds signatures in view changes.
 * *The prototype does not use threshold signatures*: a QC is a list of secp256k1 signatures. The paper names this as the reason HotStuff's performance scales better than BFT-SMaRt's only for stem:[n < 32] (§8.3).
-* stem:[n = 4], stem:[f = 1], empty requests and replies, no view changes (§8.2): three-phase and two-phase HotStuff reach latency comparable to BFT-SMaRt at batch sizes 100, 400 and 800, with noticeably higher maximum throughput. Same for payloads of 0, 128 and 1024 bytes.
+* stem:[n = 4], stem:[f = 1], empty requests and replies, no view changes (§8.2): three-phase and two-phase HotStuff reach latency comparable to BFT-SMaRt at batch sizes 100, 400, and 800, with noticeably higher maximum throughput. Same for payloads of 0, 128, and 1024 bytes.
 * Scalability (§8.3), stem:[n] from 4 to 128, batch 400: HotStuff has consistently higher throughput and comparable latency. With 1024-byte payloads BFT-SMaRt's throughput scales worse (quadratic bandwidth). With injected inter-replica delays of stem:[5 \pm 0.5] ms and stem:[10 \pm 1.0] ms, HotStuff outperforms BFT-SMaRt in both.
 * View change (§8.4): extra authenticators per BFT-SMaRt view change fit about stem:[3.1 n^3] MACs and stem:[4.2 n^2] signatures. HotStuff has none extra: its authenticator count is the same whether or not the leader changes. BFT-SMaRt got stuck under frequent view changes, and the paper declares a wall-clock comparison of leader replacement impossible.
 
@@ -1386,12 +1385,12 @@ Let stem:[t_j] be the time from the leader sending AppendEntries to follower ste
 * *Partial partitions:* links fail between some pairs of processes but not others. Example: Cloudflare, 2 Nov 2020. A partially failed switch cut some of an etcd member's traffic. Leader elections blocked writes, and the cluster was read-only until the switch recovered. API and dashboard impact: 6 h 33 min (https://blog.cloudflare.com/a-byzantine-failure-in-the-real-world[postmortem]). PreVote and CheckQuorum reduce disruptive elections.
 * *Disk and GC pauses:* a pause longer than electionTimeout is indistinguishable from a crash, so it triggers an election. Size electionTimeout against the p99 of stem:[t_j] plus pause length, not the mean.
 * *Losing quorum:* with fewer than stem:[\lfloor n/2 \rfloor + 1] processes up, no writes. Forced recovery from one survivor loses every entry that survivor had not stored, including committed ones.
-* *Byzantine faults are outside Raft's model:* software bugs, corrupted disks and compromised processes break its guarantees.
-* *Consensus belongs on the control plane:* metadata, locks, leader election, configuration, sequencers. Bulk data uses partitioned logs, eventual consistency or CRDTs.
+* *Byzantine faults are outside Raft's model:* software bugs, corrupted disks, and compromised processes break its guarantees.
+* *Consensus belongs on the control plane:* metadata, locks, leader election, configuration, sequencers. Bulk data uses partitioned logs, eventual consistency, or CRDTs.
 
 .Leadership talking points
-* Pick the consistency model per workload: money and inventory need linearizability; feeds, caches and telemetry don't.
-* Buy, don't build: etcd, Consul or a managed service.
+* Pick the consistency model per workload: money and inventory need linearizability; feeds, caches, and telemetry don't.
+* Buy, don't build: etcd, Consul, or a managed service.
 * Fault-injection testing (Jepsen-style, chaos testing), plus an explicit policy for placing quorum members across on-prem and cloud sites.
 
 == 6. Swarms and Autonomous Drones (e.g. Magura)
@@ -1417,8 +1416,8 @@ Why swarms don't use Raft or Paxos:
 What swarms use instead:
 
 * *Average consensus* (Olfati-Saber and Murray, 2004): stem:[x_i(t+1) = x_i(t) + \varepsilon \sum_{j \in N_i} (x_j(t) - x_i(t))], where stem:[x_i] is agent stem:[i]'s state (e.g. heading), stem:[N_i] its neighbours in the communication graph, and stem:[\varepsilon] a step size. If the graph is connected and stem:[0 < \varepsilon < 1/\max_i |N_i|], every stem:[x_i] converges to the initial average. No leader.
-* *Flocking* (Reynolds' boids, 1986): separation, alignment and cohesion, each computed from neighbours only.
-* *Market-based task allocation:* auctions, or CBBA (Choi, Brunet and How, 2009). Agents bid on tasks, exchange bids with neighbours, and resolve conflicts until no two agents hold the same task.
+* *Flocking* (Reynolds' boids, 1986): separation, alignment, and cohesion, each computed from neighbours only.
+* *Market-based task allocation:* auctions, or CBBA (Choi, Brunet, and How, 2009). Agents bid on tasks, exchange bids with neighbours, and resolve conflicts until no two agents hold the same task.
 * *Gossip:* each agent periodically exchanges state with a random neighbour. Shared state converges eventually, as with CRDTs.
 * *Comms-denied fallback:* each unit carries the mission plan and switches to onboard autonomy (vision or terminal homing) when its link drops.
 

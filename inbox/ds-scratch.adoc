@@ -1,5 +1,8 @@
 = Hacker's Distributed Systems
 
+Workups on account of meeting ignorant fleet software makers thinking they "do" a distributed system.
+Like with all such encounters, this needs to become a crystal clear public learning resource.
+
 Practitioner criteria -- named people, named sources. Everything below is verified;
 provenance of each claim is marked at the bottom.
 
