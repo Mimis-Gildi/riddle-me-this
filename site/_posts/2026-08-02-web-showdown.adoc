@@ -46,6 +46,8 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :tns-wasm-url: https://thenewstack.io/see-what-webassembly-can-do-in-2025/[See What WebAssembly Can Do in 2025,window=_blank]
 :tt-wasm-url: https://www.techtarget.com/searchITOperations/news/366551352/Server-side-WebAssembly-takes-shape-but-faces-challenges[takes shape, but faces challenges,window=_blank]
 :fn-wasm-hype: footnote:[Give Wasm its due -- the real win is *server-side*: WASI, edge, serverless with single-digit-millisecond cold starts. The New Stack's {tns-wasm-url} and TechTarget's more sober {tt-wasm-url} both hype _that_ Wasm, and rightly. But notice what they never claim: Wasm painting UIs off-DOM to "save the web front-end." That claim lived in the blog tier that has since been quietly deleted. Nobody reputable put Wasm in front of a public Read Model -- which is why this showdown fields zero off-DOM contenders. So much for the new tech.]
+:read-model-site: https://mimis-gildi.github.io/read-model/[the read-model bench application,window=_blank]
+:read-model-video-id: ocap_gdsrA0
 
 ++++
 <style>
@@ -77,6 +79,9 @@ _Before you laugh and click away, I know that pushing excessive data is NEVER a 
 An impossible scenario because Read Model doesn't process data: its constraints are always owned by the Aggregate.
 Besides, it's there to impress a human -- export formats and dedicated modules deal with grids, notebooks, and sheets. +
 link:{owl-article-url}[This humorous article,window=_blank] explains how this wild idea has come to be._
+
+.The showdown results -- run it yourself in {read-model-site}.
+video::{read-model-video-id}[youtube,width=640,height=360]
 
 == Structural Limitations:
 

@@ -1,0 +1,196 @@
+---
+categories: [ adventures ]
+tags: [ Read Model, Performance, DOM ]
+header:
+  overlay_image: /assets/images/banner-athena-in-acme-city.png
+  caption: "What UI Libraries Do Wizards Use?!"
+excerpt: >
+  Svelte and XState are long-time favorites of the startup and technology-first crowd. Vue 3 is a very good alternative to React in corporate America.
+classes: wide
+comments: true
+hidden: false
+search: true
+read_aloud: false
+---
+= Web Showdown 2026: "Smart" LIB
+:page-liquid:
+
+ifndef::env-site[:imagesdir: ../assets/images]
+ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
+:showdown-url: {site-baseurl}/adventures/2026/08/02/web-showdown.html
+:showdown: link:{showdown-url}[Web Showdown 2026,window=_blank]
+:read-model-repo: https://github.com/Mimis-Gildi/read-model[read-model,window=_blank]
+:read-model-site-url: https://mimis-gildi.github.io/read-model/
+:read-model-site: {read-model-site-url}[the read-model bench application,window=_blank]
+:ui-libs-2025-url: https://2025.stateofjs.com/en-US/libraries/front-end-frameworks/
+:stately: https://stately.ai/[Stately,window=_blank]
+:stately-xstate: https://stately.ai/docs/xstate/[XState,window=_blank]
+:svelte: https://svelte.dev/[Svelte,window=_blank]
+:zustand: https://zustand.docs.pmnd.rs/[Zustand,window=_blank]
+:wiki-spa: https://en.wikipedia.org/wiki/Single-page_application[SPA,window=_blank]
+:c4w-bitspittle: https://bitspittle.dev/blog/2024/c4w[because it's not a choice,window=_blank]
+:svelte-story-url: https://youtu.be/kMlkCYL9qo0
+:redux: https://redux.js.org/[Redux,window=_blank]
+:bounded-context: https://martinfowler.com/bliki/BoundedContext.html[Bounded Context,window=_blank]
+:vue: https://vuejs.org/[Vue 3,window=_blank]
+:vue-composition-api: https://vuejs.org/guide/extras/composition-api-faq.html[Composition API,window=_blank]
+:solidjs: https://www.solidjs.com/[SolidJS,window=_blank]
+:qwik: https://qwik.dev/[Qwik,window=_blank]
+:qwik-resumable: https://qwik.dev/docs/concepts/resumable/[resumability,window=_blank]
+:lighthouse: https://developer.chrome.com/docs/lighthouse/[Lighthouse,window=_blank]
+:svelte-runes: https://svelte.dev/docs/svelte/what-are-runes[Svelte 5 Runes,window=_blank]
+:kmp: https://kotlinlang.org/docs/multiplatform.html[KMP,window=_blank]
+:ui-libs-short-id: NsStbi5V6Ow
+:vue2-eol: https://v2.vuejs.org/lts/["reached end of life on December 31st, 2023",window=_blank]
+:vue-compiler-informed: https://vuejs.org/guide/extras/rendering-mechanism.html#compiler-informed-virtual-dom[Compiler-informed VDOM,window=_blank]
+:vue-router: https://router.vuejs.org/[Vue Router,window=_blank]
+:pinia: https://pinia.vuejs.org/[Pinia,window=_blank]
+:vite: https://vite.dev/[Vite,window=_blank]
+:react: https://react.dev/[React,window=_blank]
+:angular: https://angular.dev/[Angular,window=_blank]
+:nextjs: https://nextjs.org/[Next.js,window=_blank]
+:vue-core: https://github.com/vuejs/core[vuejs/core,window=_blank]
+:solid-core: https://github.com/solidjs/solid[solidjs/solid,window=_blank]
+:svelte-readme: https://github.com/sveltejs/svelte/blob/main/README.md[Svelte README,window=_blank]
+
+++++
+<style>
+.videoblock.align-right { width: 100%; max-width: 300px; }
+@media (min-width: 37.5em) { .videoblock.align-right { width: 35%; } }
+.videoblock.align-right iframe { width: 100%; height: auto; aspect-ratio: 9/16; }
+</style>
+++++
+
+People ask me _"So, what UI library should I use?"_ +
+_"Should I use {zustand}, like you did, for state?"_ +
+(See {showdown}.)
+
+I use {stately-xstate} from {stately} frequently in production.
+Consumed in {svelte} with _store contract_, it's pure jazz of UI development -- not bound to any component hierarchy.
+More on the "state" in another post.
+
+[WARNING]
+.Global State is not your desired architectural pattern in 2026.
+====
+{zustand} was perfect in {read-model-site}.
+It's minimalist and fast, providing a zero-overhead state driver for the benchmark.
+It's also a *"Global State"* library, like {redux}, an antipattern in business {wiki-spa}s.
+====
+
+== What do "smart" people use?
+
+[.align-right]
+.UI Libraries 2026 -- the Short.
+video::{ui-libs-short-id}[youtube,width=225,height=400]
+
+#As you saw in my *_experiment_*, the browser is VERY powerful: {read-model-site-url}[*1_000_000 nodes* in _React_,window=_blank]!#
+
+_{ui-libs-2025-url}[Any library you love will do you good,window=_blank]._ +
+Yet people choose differently -- let's see why.
+
+The ultimate context to imagine is the single {bounded-context} domain behavior service
+in an mSaaS or µSaaS vendor application, and you are the vendor. What do you do?
+
+."No shared UI" is the choice we always make {c4w-bitspittle}.
+[#img-no-shared-ui-plug,link={imagesdir}/android-studio-no-shared-ui.png]
+image::android-studio-no-shared-ui-plug.png[No shared UI choice,width=60%]
+
+Pick *"Do not share UI (React)"* in the Android Studio KMP wizard, and the web UI splits off the shared tree.
+That UI is not a Gradle module; it's your ordinary JS project.
+It doesn't need to be React -- it can be anything!
+See {read-model-repo} on how to make it a proper Gradle module consuming your Kotlin magic.
+
+== Vue 3 -- Corporate React {plus}{plus}
+
+I MEAN the {vue}, not 2 -- a very different animal. Vue 2 {vue2-eol}.
+{vue-compiler-informed}, fully {vue-composition-api}, ES6 Proxies -- a solid swap for React in corporate America.
+The template compiler leaves patch flags in the generated code, so the runtime diff skips everything static.
+One official stack: {vue-router}, {pinia}, and {vite} from Vue's own author.
+
+And I find it easier to teach than React.
+`ref()` and `computed()` track their dependencies on their own: no rules of hooks, no dependency arrays to get wrong.
+Less ceremony is more work done, as I mentioned in the video.
+
+== SolidJS -- Performance Choice
+
+{solidjs} is an entirely different paradigm -- compiled, no VDOM. I dig! The few SPAs I built with it performed very well.
+I could demo Solid in {read-model-site} if page performance were the key. (Still might, tempted...)
+
+Remarkable here is **the 2-stage process**: the compiler turns JSX into real DOM templates with the static HTML pulled out,
+then a small runtime of signals updates only the nodes that depend on the changed state.
+Components run once -- nothing re-renders, and the DOM-heavy read model stays a little faster.
+
+== Qwik -- Resumable Rendering
+
+Full disclosure: {qwik} is not what I find much use for. +
+More and more distributed systems folks now reach for it. +
+Because there is a viable use case.
+
+The "new" paradigm here is {qwik-resumable} instead of hydrating the DOM.
+And the entire magic is driven by *_lazy loading_*.
+Sure, competent engineers use plenty of *_lazy_* where it fits logically.
+And here, _everything is lazy_. The key to a perfect {lighthouse} performance score is to use LESS JavaScript.
+Colloquial wisdom says that a 20% faster site makes 10% more conversions.
+Delayed loading helps on long-funnel landing pages, convoluted and branching page functions,
+and optional expensive actions that are not frequently used.
+
+Note: I find myself making a clean feature-centric read model and not needing this.
+My architecture tends to avoid all the aforementioned scenarios.
+Or perhaps I haven't met the right use case.
+
+== Svelte is ALL you need!
+
+My personal cup of tea!
+{svelte-runes} -- compiler directives for explicit reactivity.
+This library has been a long-time favorite among the startup and technology-first crowd.
+We're way past the corporate developer here -- this is pure joy to build, but only when one loves to build. +
+*_{svelte-story-url}[Even the story of Svelte is pure hacker lore!,window=_blank]_*
+
+*My core appeal:* *_I'll build an amazing read model in 1/3 the time of React or Vue._*
+
+__Last weekend I presented `Svelte` + `XState` in a {kmp} project, shared core in `Kotlin`, +
+like you see in the `read model` benchmarking experiment and the Android Studio screenshot above; +
+and many people went:__
+
+> _"Nice, #NEW#, thank you!"_
+
+Well...
+
+> _If engineering is an orchestra, then a UI developer is a trombone player!_
+
+I've had Svelte with XState in production for at least half a decade. It certainly isn't new. +
+And perhaps the next addition to the read model project.
+
+*It never gets old -- like driving a Ferrari +
+(with a stick, of course). +
+Nah! Even better -- a Ducati!*
+
+Build something nice! Let me know how it went.
+
+'''
+
+== On Frameworks
+
+*_Frameworks are excluded by the apples-to-apples rule!_*
+
+In one of the buildathons I noticed teams comparing a React bench to a {nextjs} bench.
+Next.js is a framework built around the same React. So I understood that
+unlike in Python or Java ecosystems, JS/TS people say "library/framework" loosely.
+Here is what each project calls itself:
+
+[cols="1,3,2"]
+|===
+|Project |Self-description |Source
+
+|{react} |"the *library* for web and native user interfaces" |react.dev
+|{vue} |"progressive, incrementally-adoptable JavaScript *framework*" |{vue-core}
+|{solidjs} |"JavaScript *library* for building user interfaces" |{solid-core}
+|{svelte} |"It's a *compiler*" |{svelte-readme}
+|{qwik} |"*Framework* reimagined for the edge!" |qwik.dev
+|{angular} |"The web development *framework* for building modern apps." |angular.dev
+|===
+
+{ui-libs-2025-url}[State of JS,window=_blank] files them all under "front-end frameworks."
+
+Angular is indeed a framework! I will define the terms scientifically and build the fixtures
+hacka-terrifically another day. You are welcome to join me, and I'll be glad to code with you.

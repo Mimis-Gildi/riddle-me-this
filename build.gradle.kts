@@ -1,24 +1,17 @@
+import org.asciidoctor.gradle.jvm.AbstractAsciidoctorTask
 import org.asciidoctor.gradle.jvm.AsciidoctorTask
 import org.asciidoctor.gradle.jvm.epub.AsciidoctorEpubTask
 import org.asciidoctor.gradle.jvm.epub.AsciidoctorEpubTask.EPUB3
 import org.asciidoctor.gradle.jvm.pdf.AsciidoctorPdfTask
-import org.slf4j.LoggerFactory
 
-val useJavaVersion: String by project
-val resumeFolder = file(project.property("resume.root.folder") as String)
-
-val resumeDate: String by project
-val resumeVersion: String by project
-
-
-val pdfResumeThemeIds = listOf(
-    "conservative-resume",
-    "creative-resume",
-    "engineering-resume",
-    "core-resume"
-    )
-
-private val log by lazy { LoggerFactory.getLogger("me.riddle.the.build") }
+// @formatter:off
+private val resumeFolderName    by lazy { providers.gradleProperty("resume.root.folder").get() }
+private val themesFolderName    by lazy { "$resumeFolderName/themes" }
+private val resumeDate          by lazy { providers.gradleProperty("resumeDate").get() }
+private val resumeVersion       by lazy { providers.gradleProperty("resumeVersion").get() }
+private val resumeFolder        by lazy { file(resumeFolderName) }
+private val themesFolder        by lazy { file(themesFolderName) }
+// @formatter:on
 
 plugins {
     `kotlin-dsl`
@@ -34,11 +27,12 @@ allprojects {
     }
 }
 
-java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(useJavaVersion))
+kotlin {
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(libs.versions.java.get()))
         vendor.set(JvmVendorSpec.ADOPTIUM)
-        log.info("\t|=> Riddle me that Java Toolchain SET to    -> $useJavaVersion : ${JvmVendorSpec.ADOPTIUM}.")
+        logger.lifecycle("\t|=> Riddle me that Java Toolchain SET to    -> ${libs.versions.java.get()} : ${JvmVendorSpec.ADOPTIUM}.")
+
     }
 }
 
@@ -49,7 +43,7 @@ dependencies {
 }
 
 tasks.named<Jar>("jar") {
-    log.info("\t|=> Riddle me that Jar Task is used as a dependency here, and thus explicitly disabled!")
+    logger.lifecycle("\t|=> Riddle me that Jar Task is used as a dependency here, and thus explicitly disabled!")
     enabled = false
 }
 
@@ -58,15 +52,6 @@ tasks.named<AsciidoctorTask>("asciidoctor") { configureAsciiDocInput(this) }
 tasks.named<AsciidoctorPdfTask>("asciidoctorPdf") { configureAsciiDocInput(this) }
 
 tasks.named<AsciidoctorEpubTask>("asciidoctorEpub") { configureAsciiDocInput(this).also { ebookFormats(EPUB3) } }
-
-pdfThemes {
-    pdfResumeThemeIds.forEach { themeId ->
-        local(themeId) {
-            themeDir = file(resumeFolder)
-            themeName = themeId
-        }
-    }
-}
 
 /**
  * Configures the Asciidoctor task to generate documents from a specified source directory
@@ -77,10 +62,11 @@ pdfThemes {
  * @param includePatterns the patterns to include in the generation. Defaults to ["VadimKuhay-Resume.adoc"]
  */
 fun configureAsciiDocInput(
-    task: org.asciidoctor.gradle.jvm.AbstractAsciidoctorTask,
+    task: AbstractAsciidoctorTask,
     sourceDir: File = resumeFolder,
     includePatterns: List<String> = listOf(
-        "VadimKuhay-Resume.adoc")
+        "VadimKuhay-Resume.adoc"
+    )
 ) {
     task.apply {
         isLogDocuments = true
@@ -92,7 +78,8 @@ fun configureAsciiDocInput(
         attributes(
             mapOf(
                 "revision-date" to resumeDate,
-                "revision-number" to resumeVersion
+                "revision-number" to resumeVersion,
+                "pdf-themesdir" to themesFolder.absolutePath
             )
         )
     }
