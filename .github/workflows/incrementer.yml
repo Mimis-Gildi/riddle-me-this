@@ -112,9 +112,8 @@ jobs:
         env:
           RESUME_REPLACEMENTS: |
             [
-              {"path": "site/index.adoc", "pattern": "releases/download/{version}/VadimKuhay-Resume.pdf", "count": 1},
-              {"path": "site/_pages/maintainer.adoc", "pattern": "releases/tag/{version}", "count": 1},
-              {"path": "site/_pages/maintainer.adoc", "pattern": "releases/download/{version}/VadimKuhay-Resume.pdf", "count": 1},
+              {"path": "site/_config.yml", "pattern": "releases/tag/{version}", "count": 1},
+              {"path": "site/_config.yml", "pattern": "releases/download/{version}/VadimKuhay-Resume.pdf", "count": 1},
               {"path": "README.adoc", "pattern": "releases/download/{version}/VadimKuhay-Resume.pdf", "count": 1}
             ]
         with:
@@ -122,6 +121,11 @@ jobs:
           current-version: v${{ needs.mimis-increment.outputs.new }}
           published-version: v${{ needs.mimis-increment.outputs.old }}
           link-replacements: ${{ steps.label-check.outputs.update == 'true' && env.RESUME_REPLACEMENTS || '[]' }}
+
+      - name: Sync IDE attribute mirror
+        id: sync-attributes
+        timeout-minutes: 1
+        run: bin/sync-adoc-attr
 
       - name: Commit and push
         id: commit-push
