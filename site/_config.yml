@@ -116,7 +116,7 @@ words_per_minute            : 300
 enable_copy_code_button     : true
 compress_html               : true
 
-copyright                   : "© Vadim Kuhay; 2022–2026; v22.0.8"
+copyright                   : "© Vadim Kuhay; 2022–2026; v22.5.0"
 copyright_url               : "https://mimis-gildi.github.io/riddle-me-this"
 
 ### Serve
@@ -221,8 +221,8 @@ asciidoctor:
     rdd13r-gh-io-title            : 'What Riddler Does'
     rdd13r-gh-io-url              : 'https://rdd13r.github.io/'
     rdd13r-style-guide            : 'https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/rdd13r-style-guide.yml[rdd13r Style Guide,window=_blank]'
-    release                       : 'https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v13.1.0[v13.1.0,window=_blank]'
-    resume                        : 'https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v13.1.0/VadimKuhay-Resume.pdf'
+    release                       : 'https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v22.5.0[v22.5.0,window=_blank]'
+    resume                        : 'https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v22.5.0/VadimKuhay-Resume.pdf'
     together-ai                   : 'https://www.together.ai/'
     total-recall                  : 'https://mimis-gildi.github.io/mcp-total-recall/[MCP Total Recall,window=_blank]'
     vailala                       : 'https://en.wikipedia.org/wiki/Vailala_Madness'
