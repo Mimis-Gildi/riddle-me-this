@@ -1,4 +1,5 @@
 [versions]
+java = "21"
 asciidoctorJvm = "5.0.3"
 
 logback = "1.6.5"
