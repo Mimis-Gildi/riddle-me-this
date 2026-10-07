@@ -16,3 +16,4 @@ asciidoctor-jvm-convert = { id = "org.asciidoctor.jvm.convert.classic", version.
 slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
 logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
 kotlin-logging = { module = "io.github.oshai:kotlin-logging", version.ref = "kotlinLogging" }
+
