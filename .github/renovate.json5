@@ -59,7 +59,7 @@
       matchManagers: [
         'asdf'
       ],
-      matchPackageNames: [
+      matchDepNames: [
         'ruby'
       ],
       allowedVersions: '3.3.5'
