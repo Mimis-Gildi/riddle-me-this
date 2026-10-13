@@ -12,7 +12,7 @@ FULL_ARTICLE_DECLARED_KEYS = {
     "active-inference", "verses", "g-io", "g-community", "g-ai-onboarding", "g-dev-profile",
     "g-k-models", "g-dtensor", "g-io-session", "g-palm2-api", "g-maker-suite", "g-tensorflow",
     "g-research", "g-kaggle", "g-attn", "m-llama", "s-alpaca", "bsd-vicuna", "bsd-vicuna-topics",
-    "db-dolly", "db-dolly-hf", "open-assistant", "o-a-hf", "all-oss-lm-models",
+    "db-dolly", "open-assistant", "o-a-hf", "all-oss-lm-models",
     "mail-rdd13r-no-subj", "revisit-article", "revisit-fn",
 }
 
