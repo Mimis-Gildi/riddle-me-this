@@ -15,7 +15,6 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:pub-asei: as outlined at ASE Inc.
 
 :the-word-calculator: https://theconversation.com/actually-ai-is-a-word-calculator-but-not-in-the-sense-you-might-think-264494
 

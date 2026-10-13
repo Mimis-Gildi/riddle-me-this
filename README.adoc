@@ -46,8 +46,8 @@ image:https://img.shields.io/badge/Subscribe-LinkedIn-0A66C2?style=for-the-badge
 
 == Contact
 
-* Email: mailto:vadim@asei.systems[vadim@asei.systems] | mailto:rIdd13r@pm.me[rIdd13r@pm.me] <- crypted
-* Signal / Discord / Text: +1 (919) 717-1387 ([bot]) / _https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v22.10.0/VadimKuhay-Resume.pdf[Résumé]_
+* Email: mailto:rIdd13r@pm.me[rIdd13r@pm.me] <- crypted
+* Signal / Discord / Text: +1 (919) 717-1387 ([bot]) / _https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v22.9.0/VadimKuhay-Resume.pdf[Résumé]_
 
 _Still, the best way to get to know me is to make software *with* me_ +
 {nbsp} +
@@ -57,7 +57,7 @@ image:./site/assets/images/badge-gotham-button.png[Gotham Village,link="https://
 image:./site/assets/images/badge-hera-button.png[Gervi Héra Vitr,link="https://github.com/Gervi-Hera-Vitr"]
 image:./site/assets/images/badge-scala-button.png[Mímis Scala,link="https://github.com/Mimis-Scala"]
 image:./site/assets/images/badge-lagard-button.png[Mímis Látlæg Háttalag,link="https://github.com/Mimis-Latlaeg-Hattalag"]
-image:./site/assets/images/logo-mg-main-badge-button.png[ASE Inc,link="https://asei.systems"]
+image:./site/assets/images/logo-mg-main-badge-button.png[ASE Inc]
 
 '''
 

@@ -12,7 +12,6 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:pub-asei: as outlined at ASE Inc.
 
 :stages-of-ai-evolution: {integrated-ai-evolution-url}
 :stage-1-mit-failures: {years-late-confirmation-url}

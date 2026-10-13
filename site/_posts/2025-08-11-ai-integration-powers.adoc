@@ -10,7 +10,6 @@ comments: true
 :pub-li: see excerpt on LinkedIn by {li-newsletter}
 :mm-newsletter: R!dd13r
 :pub-mm: as published on Medium by {mm-newsletter}
-:pub-asei: as outlined at ASE Inc.
 :previous-stories: {ai-for-enterprise-2025}
 :previous-article-url: {best-corporate-ai-url}
 :previous-article-title: The AI Success Story Nobody’s Talking About: How “Boring” Architecture Beats Hype
