@@ -1,6 +1,6 @@
 ---
 categories: [adventures]
-tags: [DemoScene,Medium]
+tags: [DemoScene]
 excerpt: >
   Google Wins -- Complete analysis of LLMs adoption by the brilliant ones.
 classes: wide

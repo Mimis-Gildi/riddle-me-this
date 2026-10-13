@@ -55,7 +55,7 @@
 :kimi-k2-thinking: https://huggingface.co/moonshotai/Kimi-K2-Thinking/tree/main
 :li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
 :llama-cpp: https://github.com/ggerganov/llama.cpp
-:llms-what-good-for: link:{site-baseurl}/adventures/2023/06/10/LLMs-what-good-for.html[Medium (AI in 2024: The Future is …?),window=_blank]
+:llms-what-good-for: link:{site-baseurl}/adventures/2023/06/10/LLMs-what-good-for.html[AI in 2024: The Future is …?,window=_blank]
 :lm-studio: https://lmstudio.ai/
 :local-models-grief-url: link:{site-baseurl}/adventures/2026/01/27/local-models-grief.html
 :mailto-rIdd13r: mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let%20us%20compete%3F[rIdd13r@pm.me]

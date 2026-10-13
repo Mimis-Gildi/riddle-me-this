@@ -1,6 +1,6 @@
 ---
 categories: [adventures]
-tags: [Academia,Medium]
+tags: [Academia]
 excerpt: >
   First indication of Multimodal-Revolution.
 classes: wide
