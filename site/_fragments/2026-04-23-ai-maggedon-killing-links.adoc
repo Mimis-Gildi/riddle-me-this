@@ -1,5 +1,4 @@
 // External links
-:codeforces: https://en.wikipedia.org/wiki/Codeforces
 :goedecke-review: https://www.seangoedecke.com/ai-agents-and-code-review/[If you are good at code review&#44; you will be good at using AI agents,window=_blank]
 :hn-ai-juniors: https://news.ycombinator.com/item?id=47888068["Am I getting old&#44; or is working with AI juniors becoming a nightmare?",window=_blank]
 

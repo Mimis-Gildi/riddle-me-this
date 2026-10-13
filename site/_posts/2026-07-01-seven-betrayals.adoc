@@ -24,15 +24,12 @@ ifndef::env-site[:imagesdir: ../assets/images]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 
 :crimea-river: https://pt.memedroid.com/memes/detail/854784[Crimea River Obama-Putin conversation parody,window=_blank,opts=nofollow]
-:spider-web-url: https://en.wikipedia.org/wiki/Operation_Spiderweb
-:zz-fix-america-url: https://www.president.gov.ua/en/news/vidkritij-list-prezidentu-rosijskoyi-federaciyi-vid-preziden-104769
 :nyt-spy-war-url: https://www.nytimes.com/2024/02/25/world/europe/cia-ukraine-intelligence-russia-war.html
 :bucharest-2008-url: https://en.wikipedia.org/wiki/2008_Bucharest_summit
 :clinton-rte-url: https://www.rte.ie/news/primetime/2023/0404/1374162-clinton-ukraine/
 :hwbush-url: https://en.wikipedia.org/wiki/Chicken_Kiev_speech
 :trump2-oval-url: https://en.wikipedia.org/wiki/2025_Trump%E2%80%93Zelenskyy_Oval_Office_meeting
 :zelensky-ride-url: https://en.wikipedia.org/wiki/I_need_ammunition,_not_a_ride
-:imdb-idiocracy: https://www.imdb.com/title/tt0387808/
 :alt-time-masheen: Secretary of Energy reacting to the time masheen, Idiocracy (2006)
 :alt-victory-parade: President Camacho parades Not Sure before he solved a single problem -- premature victory, Idiocracy (2006)
 :idiocracy-theme: https://youtu.be/cdKumkP50Lo[Pueblo Cafe: Idiocracy Theme for your enjoyment this Independence Day,window=_blank]

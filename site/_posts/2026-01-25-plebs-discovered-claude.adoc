@@ -13,7 +13,7 @@ read_aloud: false
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :rdd13r-styleguide: https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/CLAUDE.md#advanced-forms-worth-exploring[Claude's Styleguide,window=_blank]
-:wiki-hacker-culture: https://en.wikipedia.org/wiki/Hacker_culture[their definition,window=_blank]
+:wiki-hacker-culture: {hacker-culture-url}[their definition,window=_blank]
 :wiki-hacker-ethic: https://en.wikipedia.org/wiki/Hacker_ethic[can't keep their ideas to themselves,window=_blank]
 :anthropic-skills: https://github.com/anthropics/skills[Anthropic's skills repository,window=_blank]
 :ralph-wiggum: https://ghuntley.com/ralph/[Ralph Wiggum,window=_blank]

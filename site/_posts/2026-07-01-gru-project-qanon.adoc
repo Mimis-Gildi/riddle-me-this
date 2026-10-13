@@ -18,7 +18,7 @@ read_aloud: false
 = GRU Project QAnon: Russia's Greatest Victory
 ifndef::env-site[:imagesdir: ../assets/images]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
-:pendos: https://en.wiktionary.org/wiki/%D0%BF%D0%B8%D0%BD%D0%B4%D0%BE%D1%81[pendos,window=_blank,opts=nofollow]
+:pendos: {pendos-url}[pendos,window=_blank,opts=nofollow]
 :vatnik: https://en.wikipedia.org/wiki/Vatnik[vatnik,window=_blank]
 :simonyan-margarita-url: https://en.wikipedia.org/wiki/Margarita_Simonyan
 :simonyan-margarita: {simonyan-margarita-url}[colonel Simonyan,window=_blank]

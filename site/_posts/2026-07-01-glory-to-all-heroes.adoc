@@ -21,7 +21,7 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :footer-andrew-jackson: footnote:[America once survived an autocratic president like no other, {andrew-jackson}, neither current nor past leader can stand in the shadow of this man!]
 :civil-rights-act: https://www.archives.gov/milestone-documents/civil-rights-act[Civil Rights Act,window=_blank]
 :f-1: https://en.wikipedia.org/wiki/Rocketdyne_F-1[F-1 candle,window=_blank]
-:pendos: https://en.wiktionary.org/wiki/%D0%BF%D0%B8%D0%BD%D0%B4%D0%BE%D1%81[pendos (unsophisticated),window=_blank,opts=nofollow]
+:pendos: {pendos-url}[pendos (unsophisticated),window=_blank,opts=nofollow]
 :the-good-liars-state-fair-250-url: https://youtu.be/8oHcCKtlIiM
 
 ++++

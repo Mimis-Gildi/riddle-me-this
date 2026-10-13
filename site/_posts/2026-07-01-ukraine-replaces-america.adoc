@@ -38,8 +38,6 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :gulf-deals-url: https://militarnyi.com/en/news/ukraine-seals-billion-dollar-defense-partnerships-with-saudi-arabia-qatar-and-the-uae/
 :aramco-url: https://kyivindependent.com/worlds-largest-oil-producer-aramco-in-talks-to-buy-ukrainian-interceptor-drones-wsj-reports/
 :pentagon-drones-url: https://www.navytimes.com/news/pentagon-congress/2026/03/11/these-are-ukraines-1000-interceptor-drones-the-pentagon-wants-to-buy/
-:spider-web-url: https://en.wikipedia.org/wiki/Operation_Spiderweb
-:zz-fix-america-url: https://www.president.gov.ua/en/news/vidkritij-list-prezidentu-rosijskoyi-federaciyi-vid-preziden-104769
 :meduza-url: https://meduza.io/en/feature/2026/01/29/russia-s-military-losses-in-ukraine-surpass-any-major-power-since-wwii-yet-re-deployed-wounded-obscure-the-true-toll
 :reuters-russia-kyiv-residential-attack-url: https://youtu.be/rsoGkt30oTE
 :defense-post-exports-url: https://thedefensepost.com/2026/07/03/ukraine-arms-exports/amp/

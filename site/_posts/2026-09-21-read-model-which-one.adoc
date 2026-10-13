@@ -20,15 +20,13 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :showdown-url: {site-baseurl}/adventures/2026/08/02/web-showdown.html
 :showdown: link:{showdown-url}[Web Showdown 2026,window=_blank]
 :read-model-repo: https://github.com/Mimis-Gildi/read-model[read-model,window=_blank]
-:read-model-site-url: https://mimis-gildi.github.io/read-model/
-:read-model-site: {read-model-site-url}[the read-model bench application,window=_blank]
 :ui-libs-2025-url: https://2025.stateofjs.com/en-US/libraries/front-end-frameworks/
 :stately: https://stately.ai/[Stately,window=_blank]
 :stately-xstate: https://stately.ai/docs/xstate/[XState,window=_blank]
 :svelte: https://svelte.dev/[Svelte,window=_blank]
 :zustand: https://zustand.docs.pmnd.rs/[Zustand,window=_blank]
 :wiki-spa: https://en.wikipedia.org/wiki/Single-page_application[SPA,window=_blank]
-:c4w-bitspittle: https://bitspittle.dev/blog/2024/c4w[because it's not a choice,window=_blank]
+:c4w-bitspittle: {c4w-bitspittle-url}[because it's not a choice,window=_blank]
 :svelte-story-url: https://youtu.be/kMlkCYL9qo0
 :redux: https://redux.js.org/[Redux,window=_blank]
 :bounded-context: https://martinfowler.com/bliki/BoundedContext.html[Bounded Context,window=_blank]
@@ -49,8 +47,8 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :react: https://react.dev/[React,window=_blank]
 :angular: https://angular.dev/[Angular,window=_blank]
 :nextjs: https://nextjs.org/[Next.js,window=_blank]
-:vue-core: https://github.com/vuejs/core[vuejs/core,window=_blank]
-:solid-core: https://github.com/solidjs/solid[solidjs/solid,window=_blank]
+:vue-core: {vue-url}[vuejs/core,window=_blank]
+:solid-core: {solid-url}[solidjs/solid,window=_blank]
 :svelte-readme: https://github.com/sveltejs/svelte/blob/main/README.md[Svelte README,window=_blank]
 
 ++++

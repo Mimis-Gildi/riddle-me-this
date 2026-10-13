@@ -20,14 +20,12 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :sliding-windows-url: https://github.com/rdd13r/im-a-sliding-window
 :sliding-windows-test-url: https://github.com/rdd13r/im-a-sliding-window/blob/main/src/test/kotlin/me/rdd13r/funtoys/LinearSliderTest.kt
 :moving-average: https://en.wikipedia.org/wiki/Moving_average[moving average,window=_blank]
-:codeforces-rankings: https://en.wikipedia.org/wiki/Codeforces
 :i8088: https://en.wikipedia.org/wiki/Intel_8088[8088,window=_blank]
 :mmx: https://en.wikipedia.org/wiki/MMX_(instruction_set)[MMX,window=_blank]
 :codeforces-catalog: https://codeforces.com/catalog[Codeforces Catalog,window=_blank]
 :cp-algorithms: https://cp-algorithms.com/[cp-algorithms.com,window=_blank]
 :definition-suit-url: https://web.archive.org/web/20241207232002/http://catb.org/jargon/html/S/suit.html
 :leetcode: https://leetcode.com/[leetcode.com,window=_blank]
-:imdb-idiocracy: https://www.imdb.com/title/tt0387808/
 :alt-what-about-us: A doubting kid in the crowd asks President Not Sure what to do about the real problems
 :usaco-window: https://usaco.guide/gold/sliding-window[USACO Guide: Sliding Window,window=_blank]
 :loop-carried: https://en.wikipedia.org/wiki/Loop_dependence_analysis[loop-carried dependence,window=_blank]
@@ -471,7 +469,7 @@ by parallelism.
 The secret is -- code real software daily -- not "Hello World" from random classes.
 
 And the secret is this: a couple of years ago I'd prepared my preteen son for engineering.
-Within a year he's quickly gotten himself to {codeforces-rankings}[Codeforces Candidate Master,window=_blank].
+Within a year he's quickly gotten himself to {codeforces-url}[Codeforces Candidate Master,window=_blank].
 That's division 1/2. Then he wanted ML. Then he built game modes. Then got bored. The point is, if a curious
 teenager can figure it out for fun, then software engineers certainly can for a calling.
 

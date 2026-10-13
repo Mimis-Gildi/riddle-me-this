@@ -25,11 +25,11 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :gh-camerastream-url: https://developers.home.google.com/cloud-to-cloud/traits/camerastream
 :gmail-perf-url: https://developers.google.com/gmail/api/guides/performance
 :react-home: https://github.com/facebook/react[React 19.2,window=_blank]
-:solid-home: https://github.com/solidjs/solid[SolidJS,window=_blank]
+:solid-home: {solid-url}[SolidJS,window=_blank]
 :svelte-home: https://github.com/sveltejs/svelte[Svelte,window=_blank]
 :kobweb-home: https://github.com/varabyte/kobweb[Kobweb,window=_blank]
 :kilua-home: https://github.com/rjaros/kilua[Kilua,window=_blank]
-:vue-home: https://github.com/vuejs/core[Vue,window=_blank]
+:vue-home: {vue-url}[Vue,window=_blank]
 :angular-home: https://github.com/angular/angular[Angular,window=_blank]
 :kvision-home: https://github.com/rjaros/kvision[KVision,window=_blank]
 :leptos-home: https://github.com/leptos-rs/leptos[Leptos,window=_blank]
@@ -42,11 +42,10 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :bitspittle: https://github.com/bitspittle[bitspittle,window=_blank]
 :varabyte: https://github.com/varabyte[Varabyte,window=_blank]
 :kotlin-conf-2025-kobweb: https://2025.kotlinconf.com/talks/774286/
-:kmp-web-bitspittle: https://bitspittle.dev/blog/2024/c4w[Compose Multiplatform for Web: An Amazing Framework That Maybe You Shouldn't Use,window=_blank]
+:kmp-web-bitspittle: {c4w-bitspittle-url}[Compose Multiplatform for Web: An Amazing Framework That Maybe You Shouldn't Use,window=_blank]
 :tns-wasm-url: https://thenewstack.io/see-what-webassembly-can-do-in-2025/[See What WebAssembly Can Do in 2025,window=_blank]
 :tt-wasm-url: https://www.techtarget.com/searchITOperations/news/366551352/Server-side-WebAssembly-takes-shape-but-faces-challenges[takes shape, but faces challenges,window=_blank]
 :fn-wasm-hype: footnote:[Give Wasm its due -- the real win is *server-side*: WASI, edge, serverless with single-digit-millisecond cold starts. The New Stack's {tns-wasm-url} and TechTarget's more sober {tt-wasm-url} both hype _that_ Wasm, and rightly. But notice what they never claim: Wasm painting UIs off-DOM to "save the web front-end." That claim lived in the blog tier that has since been quietly deleted. Nobody reputable put Wasm in front of a public Read Model -- which is why this showdown fields zero off-DOM contenders. So much for the new tech.]
-:read-model-site: https://mimis-gildi.github.io/read-model/[the read-model bench application,window=_blank]
 :read-model-video-id: ocap_gdsrA0
 
 ++++

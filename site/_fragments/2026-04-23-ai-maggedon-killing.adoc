@@ -25,7 +25,7 @@ As Americans, we pride ourselves on being leaders of world technology:
 i.e., "our developers are the best developers in the world."
 This, however, is a very self-deceptive view -- Google is not a good representation of an American developer -- it is the 0.1%.
 Being polite, very polite, in fact, to my engineering contemporaries
--- overwhelming majority of American Software Professionals are {codeforces}[stuck below Pupil (1200 — 1399),window=_blank]
+-- overwhelming majority of American Software Professionals are {codeforces-url}[stuck below Pupil (1200 — 1399),window=_blank]
 problem-solving competence rating. Market demand created a situation where 90% of the folks who'd "rather not do it" -- do it.
 
 Disagree? Prove me wrong -- join me in competition.

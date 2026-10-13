@@ -42,6 +42,8 @@ GLOBAL_LINK_KEYS = {
     "years-late-confirmation-url", "years-late-confirmation",
     "independence-2026-collector","art-seven-betrayals", "art-qanon", "art-institutionalized",
     "art-klemo", "art-roosevelt-stalin", "art-ukraine-replaces", "art-war-end",
+    "c4w-bitspittle-url", "codeforces-url", "dolly-2-url", "imdb-idiocracy", "pendos-url",
+    "read-model-site", "read-model-site-url", "solid-url", "spider-web-url", "vue-url", "zz-fix-america-url",
 }
 
 
