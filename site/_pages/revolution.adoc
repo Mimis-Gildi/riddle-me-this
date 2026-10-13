@@ -8,8 +8,6 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 
 :ai-winter: https://en.wikipedia.org/wiki/AI_winter[AI Winter,window=_blank]
 
-
-
 :hackerdom-00-2024-predictions: link:{site-baseurl}/adventures/2023/06/10/LLMs-what-good-for.html[AI in 2024: The Future is ...,window=_blank]
 :hackerdom-00-2023-northern-craze: link:{site-baseurl}/adventures/2023/05/15/AI-million-dollar-devs.html[Dev Millionaires: “Laggards are a renewable resource”?!,window=_blank]
 
@@ -132,7 +130,10 @@ It became the "holy grail" of traditional AI research; ironically, effectively a
 AL studies the fundamental properties of living systems by synthesizing life-like behaviors in _artificial systems_.
 Researchers explore what constitutes "life" by recreating its processes -- evolution, adaptation, reproduction -- in computational, robotic, or chemical systems.
 Currently, AL divides into:
-Soft-ALife -- entirely in software and simulation; Hard-ALife -- with hardware, mobility, and real-world interaction; Wet-ALife -- with real-world wetware beyond simple biochemicals.
+
+* Soft-ALife: entirely in software and simulation;
+* Hard-ALife: with hardware, mobility, and real-world interaction;
+* Wet-ALife: with real-world wetware beyond simple biochemicals.
 
 The key distinction: AGI aims to replicate human intelligence in machines, while ALife seeks to *_understand_* and replicate the core principles of life itself, which may or may not manifest intelligence as an emergent feature.
 And here we approach my most closely guarded research, shared only within my community

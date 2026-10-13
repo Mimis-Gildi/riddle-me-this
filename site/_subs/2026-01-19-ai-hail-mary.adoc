@@ -46,7 +46,7 @@ Quick history -- because it matters to you:
 
 - *2023:* Language models appeared in IDEs as passive chatbots. You had to drive every interaction. Limited. This passive structure required the user to drive the narrative -- making for a lame assistant that resisted you and hallucinated constantly.
 - *2023-2024:* Cursor and Windsurf integrated AI with your editor's Language Server Protocol. Better. Cursor 1.0 was a meaningful step forward. You may remember me posting heatmaps how much Windsurf autocompleted for me -- no longer relevant. At all!
-- *Mid-2025:* Finally, Anthropic, my darlings, had some sense to apply one ancient technique -- the REPL (read-evaluate-print-loop) boosted with actor-model roles and flows. Obvious in hindsight -- every hacker's favorite toy -- instant gratification.
+- *Mid-2025:* Finally, Anthropic, my darlings, had some sense to apply one ancient technique: the REPL (read-evaluate-print-loop) boosted with actor-model roles and flows. Obvious in hindsight: every hacker's favorite toy, instant gratification.
 
 And that *_changed EVERYTHING_*.
 
