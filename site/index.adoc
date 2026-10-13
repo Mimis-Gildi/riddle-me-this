@@ -60,9 +60,9 @@ image:logo-mg-main-badge-button.png[ASE Inc]
 [NOTE]
 .Looking for me elsewhere?
 ====
-{nbsp}{nbsp} 💃 Have a programming competition?
-🤗 Please, send invite to {mailto-ridd13r}. +
-{nbsp}{nbsp} 🎺 The scene <- Discord is your best bet `riddler9297`.
+Have a programming competition?
+Please, send invite to {mailto-ridd13r}. +
+The scene <- Discord is your best bet `riddler9297`.
 ====
 
 {who-i-write-for}

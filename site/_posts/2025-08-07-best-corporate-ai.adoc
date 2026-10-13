@@ -59,7 +59,7 @@ Like most AI failure stories, this starts with a Big American Software company (
 . **2024-2025**: Crushing AI integration while you're still debugging chatbots!
 
 The twist? EvilCorp wanted to connect their *_production lines_* to the internet. +
-For "synergy." 🤣
+For "synergy."
 
 *That's when their CTO called me.*
 
@@ -238,6 +238,6 @@ That's exactly what we do at ASE Inc.! +
 {nbsp} -- architectures that survive their creators +
 and enable real AI integration._
 
-P.S. I find systems I built 20 years ago raking cash today. 🤔
+P.S. I find systems I built 20 years ago raking cash today.
 
 *_No magic. No hype. Just foundations that work._*

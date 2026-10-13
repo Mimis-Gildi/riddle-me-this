@@ -77,6 +77,6 @@ And that presents its own dilemmas to ponder over: academically ready isn't ever
 
 == You May Have Found me through my Other Activities...
 
-❗ _Corporate Engagements_ -- email {mailto-ridd13r} -- I build systems and teams for living. +
-❗_OSS active research_{footer-ai-personality-research} -- see *{total-recall}*; [small]#(I exited MATILDA in 2022, seek the new owner)# +
-❌ Smart Weapons Systems -- foreign{footer-autonomous-weapons} -- _I don't work in this field since 2025._
+_Corporate Engagements_ -- email {mailto-ridd13r} -- I build systems and teams for living. +
+_OSS active research_{footer-ai-personality-research} -- see *{total-recall}*; [small]#(I exited MATILDA in 2022, seek the new owner)# +
+Smart Weapons Systems -- foreign{footer-autonomous-weapons} -- _I don't work in this field since 2025._

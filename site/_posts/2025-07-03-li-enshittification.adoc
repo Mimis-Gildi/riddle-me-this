@@ -219,7 +219,7 @@ Microsoft didn’t invent the rot -- they just accelerated it.
 
 * 2017: 117 million credentials discovered for sale. Turns out, the leak had *never stopped*.
 * 2018: First “bad API” scraping incident -- technically legal, practically negligent.
-* 2021: 700 million user profiles on sale -- updated, live, and polished. Microsoft marked it “fixed” 😁
+* 2021: 700 million user profiles on sale -- updated, live, and polished. Microsoft marked it “fixed”
 * 2024: Scraping/Spoofing arms race -- public evidence shows the leaks never ended.
 
 Maybe now you understand Joe’s stance in our opening story.

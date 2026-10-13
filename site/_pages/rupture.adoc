@@ -10,7 +10,7 @@ image::Athenas-Only-Daughter-Banner.jpg[Athena's Only Daughter]
 
 Welcome to *Rupture: The War of Gods*  --  an arc where war, power, and technology intersect in ways never seen before.
 
-== ✦ What This Series Covers:
+== What This Series Covers:
 
 [cols="4,9"]
 |===
@@ -29,7 +29,7 @@ a|
 - War as both geopolitical event and a rupture point for civilizational transitions.
 |===
 
-== ✦ Why It Matters?!
+== Why It Matters?!
 
 [cols="4,9"]
 |===
@@ -81,11 +81,10 @@ Mama watches  --  in awe, in admiration  --  for what her child becomes.
 
 == Content:
 
-🚜 <- In process of migration. +
+In process of migration. +
 I have so much content from the frontier of science and technology, +
 the kind of knowledge that causes plebs to panic frantically +
 {nbsp} -- I'm yet to figure out how to include it here, or somewhere.
-🚧
 
 This is 212 BC all over again  --  the fall of an old order, and the killing of Archimedes.
 

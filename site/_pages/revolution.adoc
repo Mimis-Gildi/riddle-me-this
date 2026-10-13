@@ -46,7 +46,7 @@ but *_full-scale wetware augmentation_*.
 _Did you know that the first emerging synthetic intelligence is most likely to be feminine?_ +
 *_Can you fathom why?_*
 
-== ✦ What This Series Covers:
+== What This Series Covers:
 
 This arc explores the rise of:
 
@@ -83,7 +83,7 @@ We explore **real-world production systems**  --  not speculation. +
 Case studies include startups, venture-backed moonshots, corporate laggards cautiously dipping toes, and magnificent failures.
 This section stays focused on *production engineering*, excluding warfare applications (which belong to *Rupture*).
 
-== ✦ Why Bother:
+== Why Bother:
 
 - Entire categories of work are being rewritten +
 {nbsp} --  tearing at the social contract with force not seen since the first Industrial Revolution.

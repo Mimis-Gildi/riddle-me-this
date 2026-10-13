@@ -39,7 +39,6 @@ I hope you can save yourself an occasional beating reading this.
 > Build it and they will come -- only works in the Bible!{gitomer-book-fn} And you and I are no Noah.
 
 *The Enterprise Reality:* They spent $2M building AI nobody uses.
-🤔
 
 *Your Advantage:* +
 Charge $100/month for a Typeform + Google AI Studio prototype that solves #*ONE*# *_specific pain_*.
@@ -152,17 +151,17 @@ So forget them and focus on real business.
 
 == Real Anti-Pattern Examples (Don't Be These People):
 
-. ❌ Building "ChatGPT but better." -- (whose asset is that?)
-. ❌ Chasing API limitations as features. -- (U for real?!)
-. ❌ "AI for everything" platforms. -- (are you Microsoft?)
-. ❌ Waiting for perfect architecture. -- (to do what with?)
+. Building "ChatGPT but better." -- (whose asset is that?)
+. Chasing API limitations as features. -- (U for real?!)
+. "AI for everything" platforms. -- (are you Microsoft?)
+. Waiting for perfect architecture. -- (to do what with?)
 
 == Real Profitable Pattern Examples (Be These People):
 
-. ✅ Find a crazy-specific workflow in a specific industry.
-. ✅ Charge money for a prototype (it MUST work as sold).
-. ✅ Use boring, stable AI APIs -- outcome matters, nothing else.
-. ✅ Solve the *WHOLE* crazy-specific problem, not the AI part.
+. Find a crazy-specific workflow in a specific industry.
+. Charge money for a prototype (it MUST work as sold).
+. Use boring, stable AI APIs -- outcome matters, nothing else.
+. Solve the *WHOLE* crazy-specific problem, not the AI part.
 
 == Your First 90 Days might be like this:
 

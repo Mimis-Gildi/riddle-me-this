@@ -145,7 +145,7 @@ Near-zero enterprise deployments. GitHub Copilot is the only LLM product. The la
 My few stellar call-center deployments are completely inconsequential.
 . *Q1 -- Q4 2023:* {reuters-chatgpt-users} +
 ChatGPT hits 100M users in 2 months. Enterprise AI spending {menlovc-genai-enterprise}. 97% of leaders plan to increase.
-My kind and I get invited to review strategy. My prospect backlog is full. 🤑
+My kind and I get invited to review strategy. My prospect backlog is full.
 . *Q2 2023 -- Q2 2024:* {cbc-air-canada-chatbot} +
 Air Canada liable for chatbot hallucination yet only {gartner-chatbot-8pct} actually used one.
 __I get the first pushbacks__ on the "usefulness of AI" in business -- they're not wrong on that.
@@ -153,10 +153,10 @@ While simultaneously asking for the wrong thing, I say build augmented edge -- t
 . *Q3 2024 -- Q2 2025:* {mit-article-url} +
 {thehill-genai-zero} (MIT). 42% of companies abandon most initiatives.
 __Vendor onslaught begins.__ I get panicked calls to redesign working call-center AI.
-. *Q3 2025 -- present:* {cnbc-shopify-headcount} ❗️ +
+. *Q3 2025 -- present:* {cnbc-shopify-headcount} +
 Shopify mandates AI-first. 4.8x productivity in adopting industries. Workforce, not platforms.
 *__The first few large companies break away from the herd.__* My pipeline goes cold!
-. *Q4 2024 -- present:* {anthropic-mcp} ‼️ +
+. *Q4 2024 -- present:* {anthropic-mcp} +
 MCP becomes the de facto standard. 29% of enterprises running agentic AI. It's easily accessible to competent IT teams.
 But not the laggards. *__Everything changes again.__* Laggards hedge buying "Object AI" (a farce); Leaders gain new wind in OpenClaw.
 

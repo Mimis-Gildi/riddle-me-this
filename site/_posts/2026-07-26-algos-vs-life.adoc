@@ -494,7 +494,7 @@ So, keep coding -- and have fun doing it!
 > Figure out how the transient dependency completely hoses the stream -- what's different about a stream
 > compared to a huge local array of neatly arranged pages? And, is there ANYTHING you can do about it?
 >
-> Hint: Yes there is 😉
+> Hint: Yes there is
 
 '''
 

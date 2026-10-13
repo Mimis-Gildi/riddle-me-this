@@ -250,4 +250,4 @@ Here are optional modules that *_can_* be added::
 - Makepad -- potentially claimed / __vacant__ (TBD)
 
 Happy Monday! +
-And have a good week 😉
+And have a good week

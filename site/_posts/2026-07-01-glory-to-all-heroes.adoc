@@ -30,7 +30,7 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 
 *_Humor is the cure to many problems in life!_* +
 I had the quietest Independence Day of my life! +
-(I wonder why 🤔that is )
+(I wonder why that is)
 
 .The {the-good-liars-state-fair-250-url}[State Fair must have "been glorious"! "So glorious that there will never be one like it!",window=_blank,opts=nofollow]
 [#img-state-fair-250,link={the-good-liars-state-fair-250-url},window=_blank]
@@ -100,7 +100,7 @@ You aren't _him_!
 == Some Things That Mattered:
 
 - {art-seven-betrayals} -- every US president betrayed Ukraine, Ukraine responded with kindness. +
-(Ukees ain't Maga 🤔)
+(Ukees ain't Maga)
 - {art-qanon} -- Russia didn't hack the election. +
 *_It hacked the electorate._* They call us *_only_* {pendos} for a reason? +
 (GRU ❤️ Maga!)

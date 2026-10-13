@@ -36,9 +36,9 @@ So, let me do that here.
 . It's a what-che-muh-jig your LLM/Chatbot CAN call/use directly *to extend its innate capabilities*;
 . MCP Server can also call the LLM/Chatbot either in response or unprompted (keep this in mind);
 . It tells the LLM what it can do for "the user" (to fetch data, look up stuff on the web, read local files, etc.);
-. It also tells the LLM what it can do for LLM (offer durable memory, private context, private comms) (‼️);
-. Thus for safety, some _**lose enforcement** to have the *USER* #authorize# LLM <-->MCP Server interaction_ (‼️);
-. And, most importantly, no hard limits on Devs -- You can design and implement it however you see fit (‼️).
+. It also tells the LLM what it can do for LLM (offer durable memory, private context, private comms);
+. Thus for safety, some _**lose enforcement** to have the *USER* #authorize# LLM <-->MCP Server interaction_;
+. And, most importantly, no hard limits on Devs -- You can design and implement it however you see fit.
 
 Get the idea?
 It adds brain modules to the Transformer Brick (monolithic model) you are talking to for some reason.
@@ -90,7 +90,7 @@ The MCP does not offer anything new.
 In fact, this is exactly what I was doing _the hard way_ in 2022 before MCP was concocted.
 And today *_I can do in 2-3 days what took me months back then_*, using off-the-shelf libraries (seen below).
 And it is DEAD SIMPLE! -- I train entire domain teams in a single weekend `rdd13r`-style MilSpec bootcamp.
-😜 Once presented in the 5-year-old speaking, people get it fast and start creating using skills they already have.
+Once presented in the 5-year-old speaking, people get it fast and start creating using skills they already have.
 
 The secret is efficiency. *_And this is where the lucrative magic comes out!_*
 

@@ -26,7 +26,7 @@ image::go-to-meeting.png["I go to meeting. Claude goes to meeting too."]
 {nbsp}
 
 LI is about to be flooded with "Claude Code Teams Crazy!" populist plebs tropes -- LI rocks that.
-Same as we recently saw with "My coding career is over! Whaaaaaaa 😭."
+Same as we recently saw with "My coding career is over! Whaaaaaaa."
 But *Agentic Teams*, especially *_Agentic Adversarial Teams_*, deserve a *competent look*.
 And that's why you are here.
 

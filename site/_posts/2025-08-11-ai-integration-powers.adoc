@@ -31,7 +31,7 @@ They taught AI their language FIRST.
 
 While you're wrestling with chatbots that hallucinate, Origami gained:
 
-- Sales prediction accuracy: 10% → *70-80%*; 🎉
+- Sales prediction accuracy: 10% → *70-80%*;
 - Operational cost reduction: *17%* in Phase I alone;
 - AI integration failures: *Zero*!
 
@@ -346,4 +346,4 @@ How about that?!
 
 *P.S.S.* -- We built our reputation on un∫ucking your most prized initiatives. +
 Please ask around.
-You might like what you find 😜
+You might like what you find

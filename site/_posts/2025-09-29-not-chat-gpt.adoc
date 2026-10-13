@@ -140,7 +140,7 @@ Your company is debating ChatGPT licenses while they're doing {origami-ai-integr
 
 **Watch carefully:**::
 - Architectural integration discussions (rare as heck);
-- Actual T1 implementations with architecture specifics (me 😃);
+- Actual T1 implementations with architecture specifics (me);
 - Domain modeling approaches for AI (DDD Europe 2025);
 - Failed pilots with honest postmortems (even rarer);
 - Companies discussing Anti-Corruption Layers and Bounded Contexts +
