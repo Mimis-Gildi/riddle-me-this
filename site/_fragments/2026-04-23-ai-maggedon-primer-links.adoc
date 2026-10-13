@@ -2,7 +2,6 @@
 :link-local-grief: {local-models-grief-url}
 
 // External references
-:ghost-article: {advanced-ai-non-corp-url}
 
 // Footnotes
 :fn-mit-fortune: footnote:[{mit-article-url}[MIT report: 95% of generative AI pilots at companies are failing,window=_blank] -- Fortune, August 2025. Popular coverage.]

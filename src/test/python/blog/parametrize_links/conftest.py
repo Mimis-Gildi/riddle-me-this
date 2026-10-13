@@ -32,7 +32,6 @@ GLOBAL_LINK_KEYS = {
     "ai-million-dollar-devs", "ai-businesses-to-perish", "ai-hype-2025", "ai-maggedon-url",
     "integrated-ai-evolution-url", "integrated-ai-evolution",
     "ollama", "together-ai", "vailala", "rdd13r-style-guide",
-    "advanced-ai-non-corp-url", "advanced-ai-non-corp",
     "ai-2-activation", "ai-for-enterprise-2025", "ai-integration-powers-url", "ai-integration-powers",
     "autogpt", "best-corporate-ai-url", "best-corporate-ai",
     "chatgpt-will-replace", "cognitive-augmentation", "corporate-america", "corporate-america-url",

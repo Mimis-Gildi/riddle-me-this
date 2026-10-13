@@ -9,7 +9,7 @@ comments: true
 = The AI Evolution Playbook: Why 80% Will Fail
 rdd13r
 
-_Originally published July 5, 2023 -- find discussion content in sources._
+_Originally published July 5, 2023 -- find discussion content in https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/_posts/2023-07-05-ai-evolution-seen.adoc[sources,window=_blank]._
 
 In my {corporate-america-url}[previous analysis,window=_blank], I examined why Corporate America is unprepared for AI adoption.
 The fundamental challenge is that AI capabilities require clean business "Context" to function effectively

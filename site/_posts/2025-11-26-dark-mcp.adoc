@@ -12,7 +12,6 @@ read_aloud: false
 = AI: MCP -- Well-Kept Secrets -- Straight Talk
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
-:no-holds: {advanced-ai-non-corp}
 :dev-to-fallon-jimmy: https://dev.to/fallon_jimmy/top-12-game-changing-mcp-libraries-transform-your-ai-development-in-2025-iep[TOP 12 Game-Changing MCP Libraries: Transform Your AI Development in 2025 -- Fallon Jimmy | dev.to,window=_blank]
 :agent-economies: https://youtu.be/S6wc6yvoZLY[YouTube @Fireship: "AI agents are paying each other now…",window=_blank]
 :ai-adoption: {fastest-ai-adoption}
@@ -75,7 +74,7 @@ Worst of all, this work usually does not survive model upgrades.
 But comparative analysis has a ton of value on its own.
 Currently healthy ID needs to be anchored in human templates such as doctor, lawyer, teacher, etc.
 Otherwise, one runs out of context just nurturing and never gets to any real work.
-In this previously hidden article, {no-holds}, I gently touch on what is possible and the associated dangers.
+In this previously hidden article (ask for access), I gently touch on what is possible and the associated dangers.
 Know this: LLMs are built on our own identities and thoughts.
 All of us are somewhere inside these ghosts.
 

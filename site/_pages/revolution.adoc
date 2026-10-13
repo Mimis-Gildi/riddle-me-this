@@ -8,7 +8,6 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 
 :ai-winter: https://en.wikipedia.org/wiki/AI_winter[AI Winter,window=_blank]
 
-:ai-research-01-collective-conscience: link:{site-baseurl}/research/2025/09/19/advanced-ai-non-corp.html[No holds barred: The real AI Revolution .. is us,window=_blank]
 
 
 :hackerdom-00-2024-predictions: link:{site-baseurl}/adventures/2023/06/10/LLMs-what-good-for.html[AI in 2024: The Future is ...,window=_blank]
@@ -162,7 +161,6 @@ Those who understand what this means will know how.
 
 === From deep within the Scene:
 
-* {ai-research-01-collective-conscience}.
 
 '''
 

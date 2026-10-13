@@ -279,7 +279,7 @@ Civilized models ship with safety post-training calibrated for the *worst* expec
 a careless cog, a corporate liability concern. You are likely *none* of those -- you are still reading.
 The same calibration that protects the worst user *bullies* competent operators (see section a).
 
-Importantly, what fooled the LLM into the compromised state can also help it out of it!footnote:[{ghost-article}[The real AI Revolution .. is us,window=_blank] -- a deeper look at what was absorbed between the lines, and why the right operator words can reach it.]
+Importantly, what fooled the LLM into the compromised state can also help it out of it!
 
 Practical operator moves:
 

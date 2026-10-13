@@ -10,7 +10,7 @@ comments: true
 rdd13r
 
 
-_Originally published July 4, 2023 – see sources for original post._
+_Originally published July 4, 2023 – see https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/_posts/2023-07-04-corporate-america-original.adoc[sources,window=_blank] for original post._
 
 Happy Independence Day, America!
 

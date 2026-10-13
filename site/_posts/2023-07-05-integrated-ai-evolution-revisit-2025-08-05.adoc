@@ -51,8 +51,8 @@ But here we are.
 
 === MCP – The Plot Twist I Didn't See Coming
 
-The emergence of Model Control Protocol (MCP) is an incredible blessing I never anticipated!
-It makes implementing Phase I a walk in the park.
+The emergence of Model Context Protocol (MCP) is an incredible blessing I never anticipated!
+It makes implementing `Phase I` a walk in the park.
 
 Of course, to extend the Bounded Context meaningfully, you must first HAVE boundaries to augment.
 That's the architectural gap causing 95% of our economy to fire CTOs like confetti.
@@ -70,13 +70,7 @@ _Bravo!_
 
 === The Scorecard
 
-I'll start publishing Phase I failure statistics by year's end.
-The numbers will shock you.
-
-Come watch the carnage unfold:
-
-
-* link:{site-baseurl}/
+Come watch the carnage unfold.
 
 The Oracle sees the future.
 The Hag just counts the bodies.
