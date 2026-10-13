@@ -1,2 +1,5 @@
+*.md
+*.adoc
+*.html
 *.txt
 !index.txt

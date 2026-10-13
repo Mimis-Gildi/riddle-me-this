@@ -93,6 +93,10 @@ replay_pid*
 # See Archive template
 
 
+### Python template
+**/__pycache__
+
+
 ### Gradle template
 .gradle
 build
