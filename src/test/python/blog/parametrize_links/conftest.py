@@ -36,7 +36,7 @@ GLOBAL_LINK_KEYS = {
     "ai-2-activation", "ai-for-enterprise-2025", "ai-integration-powers-url", "ai-integration-powers",
     "autogpt", "best-corporate-ai-url", "best-corporate-ai",
     "chatgpt-will-replace", "cognitive-augmentation", "corporate-america", "corporate-america-url",
-    "doordash-case", "fastest-ai-adoption",
+    "delta-csis-url", "doordash-case", "fastest-ai-adoption",
     "gitomer-book-fn", "google-vs-openai", "local-models-grief-url",
     "openclaw", "qwen3-30b-thinking", "rand-report",
     "years-late-confirmation-url", "years-late-confirmation",

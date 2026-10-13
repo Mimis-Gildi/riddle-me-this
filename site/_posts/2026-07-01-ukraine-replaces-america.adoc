@@ -33,7 +33,6 @@ read_aloud: false
 ifndef::env-site[:imagesdir: ../assets/images]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 
-:delta-csis-url: https://www.csis.org/analysis/does-ukraine-already-have-functional-cjadc2-technology
 :delta-cwix-url: https://www.act.nato.int/article/delta-system-cwix/
 :defense-express-url: https://en.defence-ua.com/analysis/security_risks_emerge_how_us_based_palantirs_systems_could_endanger_ukraines_defense_data-16804.html
 :gulf-deals-url: https://militarnyi.com/en/news/ukraine-seals-billion-dollar-defense-partnerships-with-saudi-arabia-qatar-and-the-uae/

@@ -24,7 +24,6 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :tshirt-url: https://english.nv.ua/nation/zelenskyy-wears-t-shirt-with-inscription-make-russia-small-again-russia-s-zakharova-reacts-50460976.html
 :kse-url: https://www.intellinews.com/kse-ukraine-s-wartime-spending-hits-record-131bn-as-defence-absorbs-71-of-budget-425939/
 :sipri-url: https://www.sipri.org/publications/2026/sipri-insights-peace-and-security/budget-fifth-year-war-military-spending-russias-budget-2026
-:delta-url: https://www.csis.org/analysis/does-ukraine-already-have-functional-cjadc2-technology
 :kasparov-rose-url: https://youtu.be/eBu9xcQPxFg
 :kasparov-rose-title: Garry Kasparov: Putin Trump AI and the Global Fight for Democracy
 :triggernometry-browder-url: https://youtu.be/dlF0ZzH6C9s
@@ -54,7 +53,7 @@ You can fix the variables and run out the clock -- then you get dates.
 Or you can map the flows and let them converge -- then you get the outcome, not the timing.
 
 Some people _CAN_ know WHEN. That requires access to real-time event data at full-scale.
-(Ukrainian Geopolitical System {delta-url}[Delta,window=_blank], does this)
+(Ukrainian Geopolitical System {delta-csis-url}[Delta,window=_blank], does this)
 Theoretically, Ukrainians may know more, I doubt much more.
 There are always variables impossible to factor in (we don't know what we don't know).
 
