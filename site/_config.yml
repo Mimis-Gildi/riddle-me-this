@@ -183,7 +183,7 @@ asciidoctor:
     llms-what-good-for            : 'link:{site-baseurl}/adventures/2023/06/10/LLMs-what-good-for.html[AI in 2024: The Future is …?,window=_blank]'
     lm-studio                     : 'https://lmstudio.ai/'
     local-models-grief-url        : 'link:{site-baseurl}/adventures/2026/01/27/local-models-grief.html'
-    mailto-rIdd13r                : 'mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let%20us%20compete%3F[rIdd13r@pm.me]'
+    mailto-ridd13r                : 'mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let%20us%20compete%3F[rIdd13r@pm.me]'
     mcp-overview                  : 'https://modelcontextprotocol.io/introduction[Model Context Protocol,window=_blank,opts=nofollow]'
     mit-article                   : 'https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/[MIT NANDA Report,window=_blank]'
     mit-article-title             : 'MIT report: 95% of generative AI pilots at companies are failing'

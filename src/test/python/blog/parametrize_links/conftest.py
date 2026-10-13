@@ -18,7 +18,7 @@ FULL_ARTICLE_DECLARED_KEYS = {
 
 GLOBAL_LINK_KEYS = {
     "site-baseurl", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
-    "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
+    "mailto-ridd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
     "fireship-gemini3", "gitomer-book", "mcp-overview",
     "mit-article-url", "mit-article-title", "mit-article",
     "rdd13r-gh", "rdd13r-gh-io-url",
@@ -69,7 +69,7 @@ def mock_provider() -> AttributeProvider:
         Attribute("site-baseurl", "/riddle-me-this", -1),
         Attribute("chatgpt", "https://chat.openai.com/[ChatGPT,window=_blank]", -1),
         Attribute("cb-hacker", "http://www.catb.org/jargon/html/H/hacker.html[hacker,window=_blank]", -1),
-        Attribute("mailto-rIdd13r", "mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let%20us%20compete%3F[rIdd13r@pm.me]", -1),
+        Attribute("mailto-ridd13r", "mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let%20us%20compete%3F[rIdd13r@pm.me]", -1),
         Attribute("hera-school", "https://gervi-hera-vitr.github.io/sindri-labs/[Héra Academy Laboratory,window=_blank,opts=nofollow]", -1),
         Attribute("resume", "https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v13.1.0/VadimKuhay-Resume.pdf", -1),
     )

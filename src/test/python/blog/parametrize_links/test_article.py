@@ -11,7 +11,7 @@ from blog.parametrize_links.article_attribute_providers import read_declared_lin
 from blog.parametrize_links.attribute_providers import GLOBAL_POSITION, global_link_attribute_collecting_provider, \
     static_links_provider, config_links_provider, filter_provider
 
-SLOP_CM = "b0b55c66dbab876a3c9686cca78be2e00b4f7dbe"
+SLOP_CM = "24414085cde225dd86324d5ee6cbca4ff25555d0"
 
 
 class TestArticleInvocation:
@@ -43,7 +43,7 @@ class TestArticleInvocation:
         """A real Slop article -> constructs cleanly, keeps the path."""
         article = Article(slop_article)
 
-        assert article._content_length == 8670
+        assert article._content_length == 8640
         assert article._file_checksum == SLOP_CM
 
         assert article.path == slop_article
@@ -67,7 +67,7 @@ class TestArticleObject:
         """Test the affinity of the protected attributes once the right slop is loaded."""
         slop = Article(self.slop_article)
 
-        assert slop._content_length == 8670
+        assert slop._content_length == 8640
         assert slop._file_checksum == SLOP_CM
         assert slop.path == self.slop_article
 

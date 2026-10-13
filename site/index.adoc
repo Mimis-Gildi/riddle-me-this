@@ -64,7 +64,7 @@ image:logo-mg-main-badge-button.png[ASE Inc]
 .Looking for me elsewhere?
 ====
 {nbsp}{nbsp} 💃 Have a programming competition?
-🤗 Please, send invite to {mailto-rIdd13r}. +
+🤗 Please, send invite to {mailto-ridd13r}. +
 {nbsp}{nbsp} 🎺 The scene <- Discord is your best bet `riddler9297`.
 ====
 

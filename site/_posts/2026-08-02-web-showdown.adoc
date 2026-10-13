@@ -42,7 +42,7 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :bitspittle: https://github.com/bitspittle[bitspittle,window=_blank]
 :varabyte: https://github.com/varabyte[Varabyte,window=_blank]
 :kotlin-conf-2025-kobweb: https://2025.kotlinconf.com/talks/774286/
-:KMP-Web-bitspittle: https://bitspittle.dev/blog/2024/c4w[Compose Multiplatform for Web: An Amazing Framework That Maybe You Shouldn't Use,window=_blank]
+:kmp-web-bitspittle: https://bitspittle.dev/blog/2024/c4w[Compose Multiplatform for Web: An Amazing Framework That Maybe You Shouldn't Use,window=_blank]
 :tns-wasm-url: https://thenewstack.io/see-what-webassembly-can-do-in-2025/[See What WebAssembly Can Do in 2025,window=_blank]
 :tt-wasm-url: https://www.techtarget.com/searchITOperations/news/366551352/Server-side-WebAssembly-takes-shape-but-faces-challenges[takes shape, but faces challenges,window=_blank]
 :fn-wasm-hype: footnote:[Give Wasm its due -- the real win is *server-side*: WASI, edge, serverless with single-digit-millisecond cold starts. The New Stack's {tns-wasm-url} and TechTarget's more sober {tt-wasm-url} both hype _that_ Wasm, and rightly. But notice what they never claim: Wasm painting UIs off-DOM to "save the web front-end." That claim lived in the blog tier that has since been quietly deleted. Nobody reputable put Wasm in front of a public Read Model -- which is why this showdown fields zero off-DOM contenders. So much for the new tech.]
@@ -193,7 +193,7 @@ __Composable SEO-friendly DOM power in type-safe pragmatic language {plus} tools
 - {compose-mp-home} (Skia canvas, Wasm) -- I have a lot to gripe about this one on.
 Having produced a lot of multiplatform software with KMP I loved it. +
 EXCEPT this. {bitspittle} explains it best here: +
-{KMP-Web-bitspittle}.
+{kmp-web-bitspittle}.
 - {flutter-home} (CanvasKit / Skwasm -- Skia to Wasm) -- same off-DOM bargain; Skwasm even paints
 off-thread in a worker. Beautiful for an app, disqualified for a public Read Model: no SEO, no
 accessibility tree, a fat renderer to download.
