@@ -21,7 +21,7 @@ This is what "complete discretion" looks like._
 While American CTOs are getting fired for AI failures, I need to share a different story.
 
 A client from my past -- let's call them "Origami Corporation" -- just achieved something remarkable.
-They're moving through {cto-bible} +
+They're moving through {integrated-ai-evolution} +
 {nbsp} -- our *_AI Evolution phases_* like a hot knife through butter. +
 No drama. No vendor disasters. Just systematic execution.
 

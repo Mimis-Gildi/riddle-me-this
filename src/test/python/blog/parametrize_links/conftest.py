@@ -21,9 +21,9 @@ GLOBAL_LINK_KEYS = {
     "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
     "fireship-gemini3", "gitomer-book", "mcp-overview",
     "mit-article-url", "mit-article-title", "mit-article",
-    "rdd13r-gh", "rdd13r-gh-io", "rdd13r-gh-io-url", "rdd13r-gh-io-title",
+    "rdd13r-gh", "rdd13r-gh-io-url",
     "release", "resume", "total-recall", "org-mimis-gildi",
-    "cto-bible", "cto-trap", "cto-trap-url", "footer-cto-trap",
+    "footer-cto-trap",
     "org-gervi-hera-vitr", "org-gotham-village", "org-mimis-latlaeg", "org-mimis-scala",
     "hacker-culture-url", "hacker-culture", "dolly-2",
     "openrouter", "openrouter-rankings", "openrouter-url",
@@ -35,11 +35,13 @@ GLOBAL_LINK_KEYS = {
     "advanced-ai-non-corp-url", "advanced-ai-non-corp",
     "ai-2-activation", "ai-for-enterprise-2025", "ai-integration-powers-url", "ai-integration-powers",
     "autogpt", "best-corporate-ai-url", "best-corporate-ai",
-    "chatgpt-will-replace", "cognitive-augmentation", "corporate-america",
+    "chatgpt-will-replace", "cognitive-augmentation", "corporate-america", "corporate-america-url",
     "doordash-case", "fastest-ai-adoption",
     "gitomer-book-fn", "google-vs-openai", "local-models-grief-url",
     "openclaw", "qwen3-30b-thinking", "rand-report",
     "years-late-confirmation-url", "years-late-confirmation",
+    "independence-2026-collector","art-seven-betrayals", "art-qanon", "art-institutionalized",
+    "art-klemo", "art-roosevelt-stalin", "art-ukraine-replaces", "art-war-end",
 }
 
 

@@ -65,7 +65,7 @@ and 'temporary' workarounds that became permanent.
 Vendor AI tools _fail for the same reason internal builds do_: +
 They're trying to add intelligence to architectural anarchy.
 
-In {cto-bible}, July 2023, I wrote: +
+In {integrated-ai-evolution}, July 2023, I wrote: +
 "80% of AI projects would fail because most enterprise software wasn't designed -- it evolved."
 
 I was too optimistic.

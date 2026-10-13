@@ -27,7 +27,7 @@ class TestSiteConstruction:
 class TestSiteArticles:
 
     def test_articles_count(self, real_site):
-        assert real_site.articles().len() == 61
+        assert real_site.articles().len() == 72
 
     def test_articles_all_have_globals(self, real_site):
         assert real_site.articles().filter(lambda a: len(a.links_global) == 0).empty()

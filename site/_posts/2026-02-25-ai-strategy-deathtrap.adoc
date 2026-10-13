@@ -12,7 +12,7 @@ read_aloud: false
 = AI Strategy Deathtrap -- Straight Talk
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
-:american-ai-trap: {cto-trap-url}
+:american-ai-trap: {corporate-america-url}
 :american-ai-adoption: {integrated-ai-evolution-url}
 :ai-cognitive-augmentation: {cognitive-augmentation}
 :ai-hype-straight-talk: link:{site-baseurl}/adventures/2025/09/29/not-chat-gpt.html[2025: AI Hype -- Straight Talk,window=_blank]
