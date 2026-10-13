@@ -57,7 +57,7 @@ The imminent FAB barrier, coupled with the successful strides in AI during the 2
 The forthcoming era is set to be characterized by scarcity, thrusting the importance of software engineering competence back into the limelight.
 Forward-thinking decision-makers have already invested in the next phase, including ML-based augmentation tools like ChatGPT, designed not to supplement the unskilled but to empower the hackers and the trailblazers!
 
-From my own experiences and those of other hackers who've been leveraging ML assistance for years, I can vouch for its efficacy -- _it *proportionately* enhances existing abilities_.
+From my own experiences and those of other hackers who've been using ML assistance for years, I can vouch for its efficacy -- _it *proportionately* enhances existing abilities_.
 As a result, the disparity between a skilled developer and a less capable one becomes glaringly noticeable.
 It's akin to the instance where a novice developer copies an exceptional code snippet from Stack Overflow, pastes it without modification, and then complains about it not working -- it instantly exposes their limited competence.
 Conversely, an expert who consults ML on a sophisticated algorithm they've crafted will produce an optimal solution, one that they can learn from.
@@ -80,7 +80,7 @@ image::ai-the-idiot-coder.png[{alt-how-competent-is-the-cog},width=600]
 
 In 2019, our parent company, ASE Inc., faced a harsh reality when our primary financier and client hostilely assumed control over our ML orchestration startup.
 As a business neophyte, I was taken aback.
-In retrospect, this incident underscored the relentless momentum of ML evolution and the sway it holds with investors.
+In retrospect, this incident showed the relentless momentum of ML evolution and the sway it holds with investors.
 It signaled a global transition.
 By 2020, ML code generation in IDE had penetrated the hacker circles in the Eastern US and EU.
 From that point forward, all proprietary code at ASE has been entirely machine-augmented.
@@ -121,7 +121,7 @@ The twilight of Moore's law ushers in a period where bountiful and inexpensive c
 The era of developers leaning on ever-expanding computational power to cover their shortcomings is fading.
 In its place, a time arises where the competent, the innovative, and the visionary will prevail unopposed, a trend poised to permeate other sectors like legal, medical, education, and more.
 
-AI and ML tools such as ChatGPT are already revolutionizing the IT landscape.
+AI and ML tools such as ChatGPT are already changing IT.
 They're not crafted to mask incompetence but to enhance the capabilities of the proficient.
 The adoption of such nascent tools, exemplified by my digital assistant Tillie, is becoming a new norm among the skilled.
 
@@ -131,8 +131,8 @@ First and foremost, we can expect a reshaping of the recruitment sector, a poten
 This shift is arguably already underway, with figures like Elon Musk letting go of company engineers who fail to consistently contribute to the source code.
 
 This new era demands our focus, our creativity, and our readiness to adapt.
-As we navigate these unexplored territories,
-_let's embrace the change, *hone our skills*, and leverage the power of AI to rise to the challenges of this new era_.
+As we enter this territory,
+_let's embrace the change, *hone our skills*, and use AI to rise to the challenges of this new era_.
 The future isn't on the horizon; it's here, and it's now.
 
 I can't emphasize enough that while job extinction seems improbable

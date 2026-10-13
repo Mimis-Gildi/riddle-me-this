@@ -2,7 +2,7 @@
 categories: [adventures]
 tags: [Discord,Executive]
 excerpt: >
-  Torvalds style rant -- Most aggressive startups leverage LLMs against laggards first...
+  Torvalds style rant -- Most aggressive startups turn LLMs against laggards first...
 classes: wide
 comments: true
 ---

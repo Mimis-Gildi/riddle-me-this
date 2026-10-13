@@ -15,7 +15,7 @@ rdd13r
 :fn-case-study-data: footnote:disclaimer[The model run data is proprietary to ASE Inc. The model can be rerun and the execution output can be purchased with any customer's specific weights and parameters.]
 :previous-article: link:{site-baseurl}/reflections/2023/05/11/chatGPT-omen-new-era.html[previous article,window=_blank]
 
-In this article, we will delve into the fascinating outcomes of a sentiment analysis test conducted by our subsidiary.
+In this article, we look at the outcomes of a sentiment analysis test conducted by our subsidiary.
 _We had a good laugh from this output, and we hope that you will too!_
 
 We joined a group of five other developers to help them complete a small ML project for a local healthcare conglomerate (and university).
@@ -51,7 +51,7 @@ This is an important point to understand about the nature of LLMs.
 
 == Insights into Established Industries' Adaptations or Otherwise
 
-The health insurance industry serves as a relevant case study and the necessary fixture is much easier to set up than for neighboring industries.
+The health insurance industry is a relevant case study and the necessary fixture is much easier to set up than for neighboring industries.
 Established industries have historically relied on longstanding relationships and collaborations for success{fn-collaborative-business}, and these are foundational elements in establishing a business strategy.
 These relationships, often built on trust, shared values, and mutual benefits, are now being threatened by innovative startups using AI to deeply analyze customer preferences and *_market dynamics_*.
 
@@ -63,7 +63,7 @@ Essentially, large accounts can be easily intercepted by technology-enabled star
 
 However, this doesn't imply that traditional relationships are valueless.
 It highlights the necessity of integrating new technologies to enhance service delivery and competitiveness within the existing social business structure.
-Leveraging AI for personalized, efficient, and transparent services can reinforce trust and value in customer relationships.
+Using AI for personalized, efficient, and transparent services can reinforce trust and value in customer relationships.
 Importantly, the test reveals that the market outcome - reduced healthcare cost through a more democratic and open process - is beneficial for the end user regardless of which entity undertakes the innovation.
 
 _In layperson's terms, the model thinks that the insurance domain is absolutely crony and that this will be the incumbent's undoing._ This is where we had a good chuckle.
@@ -81,7 +81,7 @@ Companies that recognize the importance of innovation, adaptability, and continu
 The democratization of AI is changing market dynamics in favor of the consumer.
 That is a win!
 
-Striking a balance between leveraging new technologies and nurturing established relationships will be key, possibly leading to new business names and structures.
+Striking a balance between adopting new technologies and nurturing established relationships will be key, possibly leading to new business names and structures.
 Businesses can yet use AI not just as an auxiliary tool, but as a catalyst for enhancing service delivery, understanding customer needs,
 assessing *_subjective_* market factors, and building stronger, more sustainable relationships at all levels.
 

@@ -309,7 +309,7 @@ Not a community, but where you *_need_* to launch.
 
 *Best for:* Launch day visibility and initial user burst.
 
-*Personal Note:* You need a good launch strategy to leverage this crackpot.
+*Personal Note:* You need a good launch strategy to use this crackpot.
 
 ==== Ramen Club (Slack).
 
@@ -361,7 +361,7 @@ I generally thought these are a total waste of time.
 Until I bolted an LLM Agent to them and it joined literally all topics.
 OMG!
 Holy mother of god.
-That was a game-changer.
+That changed everything.
 From "who's sleeping with whom," to "who's fired for what." Add a little bit of scraping and profiling and you have Mossad running on your box.
 
 *WARNING:* This is powerful but ethically dangerous territory.
@@ -377,7 +377,7 @@ Be smart, not slimy.
 Think automation even for the few you do join!
 
 Pick *ONE* primary community (I recommend MicroConf or your industry-specific Slack) and maybe browse Indie Hackers weekly or monthly.
-If you choose to leverage Indie Hackers, consider building a scraper using tools I mentioned at the beginning of this post.
+If you choose to use Indie Hackers, consider building a scraper using tools I mentioned at the beginning of this post.
 
 _The best community is where your customers are crying about Excel sheets, not where founders are debating tech stacks._
 

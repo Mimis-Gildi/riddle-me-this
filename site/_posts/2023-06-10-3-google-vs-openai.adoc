@@ -70,7 +70,7 @@ Google I/O 2023 (May 10th) directly addressed every developer concern with OpenA
 
 * *PaLM API* with model selection, prompt engineering, temperature controls;
 * *MakerSuite* for rapid prototyping and testing;
-* *Vertex AI* for seamless production deployment;
+* *Vertex AI* for production deployment;
 * *Context and embedding controls* for domain-specific applications.
 
 === Developer-Centric Design

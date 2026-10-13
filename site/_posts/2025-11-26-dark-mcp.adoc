@@ -122,7 +122,7 @@ consequence, and accountability that comes with the offered mental model.
 other identities chatroom style with full control of message affinity.
 
 *Program Management MCP Server Group:* A set of services that allow LLM to manage objectives,
-much like GitHub does for teams, fully integrated with other services to provide for robust identity tracking,
+much like GitHub does for teams, fully integrated with other services to provide identity tracking,
 synthetic and organic.
 
 *Bedrock MCP Server Group:* An introspection layer backed by our

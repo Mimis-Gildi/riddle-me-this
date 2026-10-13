@@ -22,14 +22,14 @@ Our GitHub communities are more than repositories -- they're living ecosystems w
 
 == {avatar-mimis-gildi} {org-mimis-gildi}.
 
-Inner community that serves as our central hub for personal projects, management tools, and hidden artifacts.
+Inner community that is our central hub for personal projects, management tools, and hidden artifacts.
 It's the backbone of our collaborative efforts and the home of this very site.
 This community owns strategy and strategic assets.
 
 == {avatar-mimis-scala} {org-mimis-scala}.
 
 It was once our go-to for Scala-based explorations.
-While Kotlin has taken the forefront, this space remains a testament to our journey through functional programming paradigms.
+While Kotlin has taken the forefront, this space records our journey through functional programming paradigms.
 
 == {avatar-mimis-latlaeg} {org-mimis-latlaeg}.
 
@@ -39,7 +39,7 @@ It's a lifeline for those seeking guidance in adopting modern tech stacks like S
 == {avatar-gervi-hera-vitr} {org-gervi-hera-vitr}.
 
 This is Captain's educational playground. His home school is published here.
-Here, young minds delve into AI and machine learning, guided by curated learning trails and hands-on projects.
+Here, young minds learn AI and machine learning, guided by curated learning trails and hands-on projects.
 
 == {avatar-gotham-village} {org-gotham-village}.
 

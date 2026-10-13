@@ -2,7 +2,7 @@
 categories: [adventures]
 tags: [Discord]
 excerpt: >
-  Torvalds style rant -- Most aggressive startups leverage LLMs against laggards first...
+  Torvalds style rant -- Most aggressive startups turn LLMs against laggards first...
 classes: wide
 comments: true
 ---
@@ -51,7 +51,7 @@ Alas, enjoying my new baby duties, I'll sit this one out.
 BN, with roots deep in the MIT hacker culture of the 50s, bloomed in the early 90s.
 Enduring cycles of growth and decline, akin to its American peers, this community received a lifeline when hacker Paul Jarvis penned,
 "Company of One: Why Staying Small Is the Next Big Thing for Business." This ignited a BN revival, drawing over 500 Discord participants and 200 in-person attendees in 2023,
-forming a global network of like-minded groups fostering disruptive software for years.
+forming a global network of like-minded groups building disruptive software for years.
 
 The true allure of this community lies in the late 90s-introduced member surveys - no other clicks we know polls its members.
 Despite the strict anti-commercialization manifesto held by its three dozen cliques, BN has thrived, presumably due to its core principles.
