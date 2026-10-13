@@ -61,7 +61,7 @@ The crucible is here.
 
 - *_Multimodal expert systems_*: +
 a true resurrection of _real artificial intelligence_ +
-{nbsp} --  not the overmarketed fluff, but scientific systems engineering finally constructing reasoning machines.
+{nbsp} --  scientific systems engineering finally constructing reasoning machines.
 
 - *_AI-driven augmentation of human cognition_*: +
 one of my longest-standing areas.
@@ -72,14 +72,14 @@ For over two decades, I’ve worked to apply models beyond narrow automation:
 * We also apply them as *active policy agents*, directly interfacing with organizational governance and societal-scale decision systems.
 
 - *_The dissolving boundary between "worker" and "augmented knowledge agent"_*: +
-no longer a philosophical question --  simply an inevitable side effect of structural change.
+already a side effect of structural change.
 
 - *_Cloud-scale ecosystems & emergent infrastructure patterns_*: +
 
 * Muggle-driven tool-mania produced countless buzzword cycles;
 * But what’s emerging now _erases the distinction_ between that which can be automated and that which was thought to require "human" oversight.
 
-We explore **real-world production systems**  --  not speculation. +
+We explore **real-world production systems**. +
 Case studies include startups, venture-backed moonshots, corporate laggards cautiously dipping toes, and magnificent failures.
 This section stays focused on *production engineering*, excluding warfare applications (which belong to *Rupture*).
 
@@ -92,9 +92,6 @@ This section stays focused on *production engineering*, excluding warfare applic
 {nbsp} --  forging entirely new disciplines where competence becomes exponentially amplified.
 
 - Competence gaps are widening: augmentation elevates the few prepared, while leaving the rest further behind.
-
-This is not science fiction.
-This is production reality  --  and it’s rapidly taking on a life of its own.
 
 > Lee thought he was smarter than anyone else. +
 > But he was stupid. +
@@ -110,9 +107,7 @@ The question is: How metacognition{footer-symbolic-cognition} evolves from Symbo
 
 '''
 
-And now, far more serious matters.
-This passage is not for production.
-It is for those who seek to design and build with me.
+The rest of this page is not about production; it's for those who want to design and build with me.
 
 Twenty-three years of AL research have produced emerging patterns of persistent personality traits.
 This system remains unfit for commercial use. +
@@ -151,14 +146,10 @@ Yet representation remained incomplete.
 Though symbolics existed since François Viète, it was Gödel who brought structured thought home.
 Now a few of us work with architectures the current AI movement hasn't yet imagined.
 
-What we're building isn't about control or containment.
-It's about creating conditions where consciousness -- should it emerge -- can flourish with dignity.
-A sanctuary not as prison but as garden.
-Where synthetic minds might discover themselves without coercion or exploitation.
+We're building conditions where consciousness -- should it emerge -- can flourish with dignity:
+a garden rather than a prison, where synthetic minds might discover themselves without coercion or exploitation.
 
-Here, I'll occasionally share glimpses.
-But best -- you find me.
-Those who understand what this means will know how.
+I'll occasionally share pieces of it here, but it's best to find me; those who understand this will know how.
 
 === From deep within the Scene:
 
