@@ -23,19 +23,9 @@ plugins:
   - jekyll-data
   - jekyll-feed
   - jekyll-remote-theme
-  - jekyll-paginate-v2
   - jekyll-include-cache
   - jekyll-archives
   - jekyll-sitemap
-
-
-
-# Pagination defaults
-pagination:
-  enabled                   : true
-  per_page                  : 10
-  permalink                 : '/page/:num/'
-  title                     : ':title - page :num'
 
 
 
