@@ -1,10 +1,12 @@
 ---
 categories: [reflections]
 tags: [AI, Agentic AI, Security, Enterprise, Zero-Day, OpenClaw, Claude Code]
+excerpt: >
+    The AI Hype is a failure of astronomic proportions we're yet to fathom fully.
 classes: wide
 comments: false
 hidden: false
-search: false
+search: true
 read_aloud: false
 ---
 = AI-maggedon 2026: Synopsis

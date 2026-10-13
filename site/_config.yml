@@ -126,6 +126,8 @@ safe                        : false
 
 ### AsciiDoc / Asciidoctor — site-wide attributes
 asciidoctor:
+  base_dir                        : :docdir
+  safe                            : unsafe
   attributes:
     source-highlighter            : rouge
     icons                         : font
