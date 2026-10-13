@@ -310,7 +310,7 @@ lunr:
 
 
 # Social Sharing
-og_image                    : /assets/images/banner.jpg
+og_image                    : /assets/images/banner.png
 social:
   type                      : Person
   name                      : Vadim Kuhay

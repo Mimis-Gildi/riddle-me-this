@@ -29,7 +29,7 @@ Cardinal sin: git operations (`add`, `commit`, `push`, `mv`, `rm`, …) – Vadi
 
 ## Environments
 
-Declared in manifests, never assumed: `.sdkmanrc` (JVM), `site/.tool-versions` (Ruby),
+Declared in manifests, never assumed: `.sdkmanrc` (JVM), `.tool-versions` (Ruby),
 `pyproject.toml` + conda env `ml` (Python). All environments are synonyms to each other.
 
 ## Research Tooling
