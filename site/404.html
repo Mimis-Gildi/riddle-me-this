@@ -1,25 +1,23 @@
 ---
+title: "404: Mímir Has No Answer"
+excerpt: "Your ask produced no wisdom..."
 permalink: /404.html
-layout: page
+layout: single
+classes: wide
+sitemap: false
+search: false
+header:
+  overlay_image: /assets/images/banner-404-mimir-02.png
+  overlay_filter: 0.1
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+<style>
+  .mimir > * { flex: 1 1 18em; margin: 0; }
+  .mimir img { width: 100%; border-radius: 4px; }
 </style>
 
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<p>
+  <a href="{{ '/' | relative_url }}" class="btn btn--primary">Back to the well</a>
+  <a href="{{ '/sitemap/' | relative_url }}" class="btn btn--inverse">Sitemap</a>
+  <a href="{{ '/archive/' | relative_url }}" class="btn btn--inverse">Archive</a>
+</p>
