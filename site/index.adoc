@@ -21,9 +21,6 @@ This is my curated space for engineering fragments, +
 field-tested insights, artifacts, code snippets, +
 reflections, and adventurous stories from the scene.
 
- Architecture is trust.
- Code is conversation.
-
 [TIP]
 .I may take some time to respond in channels other than Discord or Slack
 ====

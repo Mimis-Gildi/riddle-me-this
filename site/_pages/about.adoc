@@ -24,9 +24,8 @@ Here is `about me` and the rest of the site is more about what I do.
 
 If you asked me right after I wake up, I'd say "I'm born for this." Or, "God made me to make."
 
-This is the fundamental thesis of the Hacker Culture. We do what we do not because it's lucrative.
-We'd still build if it weren't lucrative at all. Yet making will always be lucrative by the definition of value.
-A bit of the chicken and the egg for you. This fundamental law is the reason behind:
+This is the fundamental thesis of the Hacker Culture: we make useful things because we are makers.
+Some people are in engineering for the money, which is the opposite. As with lawyers and doctors:
 
 - Far too many posers in our field -- many want to earn by making but few are made for it;
 - The few made for it segregate themselves from the "determined to do despite being unable."
@@ -39,14 +38,9 @@ I argue that if you think about it long enough, you will come up with the same c
 
 == Where It Leads:
 
-This site contains fragments of my story:
-lessons from the field, case studies, reflections, +
-and some resume material.
-If any part of it speaks to you +
-{nbsp} -- personally, technically, or philosophically +
-{nbsp} -- I welcome the connection.
+This site contains fragments of my story: lessons from the field, case studies, reflections, and some resume material.
 
-You can best find me in production, in conversation, or in the stories I leave behind.
+You can best find me in production.
 
 == ...another thing,
 
