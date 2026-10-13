@@ -6,7 +6,6 @@ comments: true
 classes: wide
 ---
 = AI Integration Architecture for Enterprise
-:pub-li: see excerpt on LinkedIn by {li-newsletter}
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 

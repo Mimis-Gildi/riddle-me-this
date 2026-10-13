@@ -8,9 +8,6 @@ comments: true
 ---
 = American AI Integration Trap
 rdd13r
-:mm-newsletter: R!dd13r
-:pub-mm: as published on Medium by {mm-newsletter}
-:pub-li: see excerpt on LinkedIn by {li-newsletter}
 
 
 _Originally published July 4, 2023 – see sources for original post._

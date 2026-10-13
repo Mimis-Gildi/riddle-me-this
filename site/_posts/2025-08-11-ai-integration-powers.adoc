@@ -7,9 +7,6 @@ classes: wide
 comments: true
 ---
 = Pure Gold: The AI Integration that Just Works
-:pub-li: see excerpt on LinkedIn by {li-newsletter}
-:mm-newsletter: R!dd13r
-:pub-mm: as published on Medium by {mm-newsletter}
 :previous-stories: {ai-for-enterprise-2025}
 :previous-article-url: {best-corporate-ai-url}
 :previous-article-title: The AI Success Story Nobody’s Talking About: How “Boring” Architecture Beats Hype

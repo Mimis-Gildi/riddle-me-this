@@ -9,9 +9,6 @@ comments: true
 = The AI Success Story Nobody's Talking About: How "Boring" Architecture Beats Hype
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
-:pub-li: see excerpt on LinkedIn by {li-newsletter}
-:mm-newsletter: R!dd13r
-:pub-mm: as published on Medium by {mm-newsletter}
 
 _Note: Client details have been altered to protect confidentiality.
 Industry, location, and identifying specifics have been changed while preserving the architectural lessons.

@@ -9,18 +9,13 @@ comments: true
 = MIT Says Your AI Stinks. Here's Why. And how to fix.
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
-:pub-li: see excerpt on LinkedIn by {li-newsletter}
-:mm-newsletter: R!dd13r
-:pub-mm: as published on Medium by {mm-newsletter}
 
 :blog-reference-root: link:/riddle-me-this
 :blog-reference-series: {blog-reference-root}/series
 
 :series-home: {blog-reference-series}/final-industrial-revolution/[The Final Industrial Revolution,window=_blank]
-:adventures-home: {blog-reference-root}/adventures
 
 :blog-ai-for-enterprise: {ai-for-enterprise-2025}
-:blog-best-corporate-ai: {best-corporate-ai}
 
 :footer-key-posts: footnote:key-posts[See {blog-ai-for-enterprise} for more on this story. It's a part of {series-home} series.]
 

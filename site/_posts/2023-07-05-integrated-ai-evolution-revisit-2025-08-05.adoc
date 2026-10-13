@@ -9,9 +9,6 @@ published: false
 ---
 = The AI Evolution Playbook: Why 80% Will Fail – Revisit 2025
 rdd13r
-:mm-newsletter: R!dd13r
-:pub-mm: as published on Medium by {mm-newsletter}
-:pub-li: see excerpt on LinkedIn by {li-newsletter}
 
 == 2025: Which Am I – The Oracle, or the Hag?
 

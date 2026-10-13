@@ -30,7 +30,6 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :bucharest-2008-url: https://en.wikipedia.org/wiki/2008_Bucharest_summit
 :clinton-rte-url: https://www.rte.ie/news/primetime/2023/0404/1374162-clinton-ukraine/
 :hwbush-url: https://en.wikipedia.org/wiki/Chicken_Kiev_speech
-:trump1-impeachment-url: https://en.wikipedia.org/wiki/Trump%E2%80%93Ukraine_scandal
 :trump2-oval-url: https://en.wikipedia.org/wiki/2025_Trump%E2%80%93Zelenskyy_Oval_Office_meeting
 :zelensky-ride-url: https://en.wikipedia.org/wiki/I_need_ammunition,_not_a_ride
 :imdb-idiocracy: https://www.imdb.com/title/tt0387808/

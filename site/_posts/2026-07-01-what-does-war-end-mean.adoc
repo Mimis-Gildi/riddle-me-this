@@ -27,7 +27,6 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :delta-url: https://www.csis.org/analysis/does-ukraine-already-have-functional-cjadc2-technology
 :kasparov-rose-url: https://youtu.be/eBu9xcQPxFg
 :kasparov-rose-title: Garry Kasparov: Putin Trump AI and the Global Fight for Democracy
-:kasparov-kiyv-post: https://www.kyivpost.com/post/79314
 :triggernometry-browder-url: https://youtu.be/dlF0ZzH6C9s
 :triggernometry-browder-text: The Real Reason Putin Invaded Ukraine -- Sir Bill Browder
 :triggernometry-browder: {triggernometry-browder-url}[{triggernometry-browder-text},window=_blank]

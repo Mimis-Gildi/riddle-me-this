@@ -10,8 +10,6 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 
 :ai-research-01-collective-conscience: link:{site-baseurl}/research/2025/09/19/advanced-ai-non-corp.html[No holds barred: The real AI Revolution .. is us,window=_blank]
 
-:debut-chatgpt-job-loss-scare: link:{site-baseurl}/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ‘Doze’ of Reality]
-:early-reaction-to-new-capability: link:{site-baseurl}/reflections/2023/05/11/chatGPT-omen-new-era.html[The Bright Era Dawns: AI, Moore’s law, and Beyond]
 
 :hackerdom-00-2024-predictions: link:{site-baseurl}/adventures/2023/06/10/LLMs-what-good-for.html[AI in 2024: The Future is ...,window=_blank]
 :hackerdom-00-2023-northern-craze: link:{site-baseurl}/adventures/2023/05/15/AI-million-dollar-devs.html[Dev Millionaires: “Laggards are a renewable resource”?!,window=_blank]

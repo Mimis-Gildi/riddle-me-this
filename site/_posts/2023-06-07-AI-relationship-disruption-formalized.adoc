@@ -8,8 +8,6 @@ comments: true
 ---
 = AI Analysis Reveals Relationship-Based Business Model Vulnerabilities
 rdd13r
-:mm-newsletter: R!dd13r
-:pub-mm: as published on Medium by {mm-newsletter}
 
 _Originally published June 7, 2023 -- as {ai-businesses-to-perish}[presented on the scene,window=_blank]._
 

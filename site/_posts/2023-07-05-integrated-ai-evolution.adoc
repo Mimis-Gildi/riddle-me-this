@@ -8,9 +8,6 @@ comments: true
 ---
 = The AI Evolution Playbook: Why 80% Will Fail
 rdd13r
-:mm-newsletter: R!dd13r
-:pub-mm: as published on Medium by {mm-newsletter}
-:pub-li: see excerpt on LinkedIn by {li-newsletter}
 
 _Originally published July 5, 2023 -- find discussion content in sources._
 

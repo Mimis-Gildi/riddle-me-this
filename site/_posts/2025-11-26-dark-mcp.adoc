@@ -17,7 +17,6 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :agent-economies: https://youtu.be/S6wc6yvoZLY[YouTube @Fireship: "AI agents are paying each other now…",window=_blank]
 :ai-adoption: {fastest-ai-adoption}
 :ai-stages: {integrated-ai-evolution}
-:ai-1-integration:
 
 .Executives don't understand the practical value of MCP and Agentic AI. But they feel it is important for some reason.
 image::ai-springboard.png[It's now or never kinda thang...,align=center,width=600]

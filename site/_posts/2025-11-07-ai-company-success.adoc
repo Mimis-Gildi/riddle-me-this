@@ -11,7 +11,6 @@ read_aloud: false
 ---
 = AI: Gartner Won't Tell You This  -- Straight Talk
 lugaru
-:pub-li: see excerpt on LinkedIn by {li-newsletter}
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 

@@ -9,9 +9,6 @@ comments: true
 = Google to MIT: Traditional Business Done For. Oh Really?! -- Straight Talk
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
-:pub-li: see excerpt on LinkedIn by {li-newsletter}
-:mm-newsletter: R!dd13r
-:pub-mm: as published on Medium by {mm-newsletter}
 
 :stages-of-ai-evolution: {integrated-ai-evolution-url}
 :stage-1-mit-failures: {years-late-confirmation-url}

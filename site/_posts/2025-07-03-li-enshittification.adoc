@@ -6,7 +6,6 @@ comments: true
 classes: wide
 ---
 = LinkedIn: Conclusion - Enshittification
-:pub-li: see excerpt on LinkedIn by {li-newsletter}
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :li-aaron: https://www.linkedin.com/in/aaron-fuller-32776910b/[Aaron Fuller]
@@ -25,7 +24,6 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :estf-podcast-fn: footnote:[WNYC Podcast - {estf-podcast} a 3-part podcast explanation]
 :estf-gr-novel: https://www.witchdoctor.co.nz/2025/enshitification-how-tech-companies-are-crapping-in-their-own-nest/[Enshitification: How tech companies are crapping in their own nest,window=_blank]
 :estf-gr-novel-fn: footnote:[WitchDoctor - {estf-gr-novel} a graphic novel]
-:cory-wiki: https://en.wikipedia.org/wiki/Cory_Doctorow[Cory Doctorow,window=_blank]
 
 .ASE Inc, DALL-E Hacker Dad vs. Cog Dad...
 [#img-devs]
