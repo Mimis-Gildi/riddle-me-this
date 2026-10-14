@@ -9,9 +9,7 @@ header:
 :page-author_profile: true
 :categorized: link:{site-baseurl}/categories/[all post categories,window=_blank]
 
-This site is maintained by Vadim Kuhay (`rdd13r`)  --  lifelong builder, coach, and creative engineer.
-
-Software craft fragments, lessons, and artifacts: architecture is trust; code is conversation.
+This site is maintained by Vadim Kuhay (`rdd13r`).
 
 If you came here looking for something formal, here are some useful links:
 
@@ -28,7 +26,7 @@ Public Profile::
 
 Publications::
 * {li-newsletter} -- A newsletter sporadically maintained;
-* Please visit {categorized} for valuable and candid content I don't publish anywhere else.
+* Please visit {categorized} for content I don't publish anywhere else.
 
 
 The Scene::

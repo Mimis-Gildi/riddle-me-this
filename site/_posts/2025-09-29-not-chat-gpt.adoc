@@ -9,11 +9,6 @@ comments: true
 = AI Hype -- Straight Talk
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
-:pub-li: see excerpt on LinkedIn by {li-newsletter}
-:mm-newsletter: R!dd13r
-:pub-mm: as published on Medium by {mm-newsletter}
-:ase-title: ASE Inc.
-:pub-asei: as outlined at {ase-link}
 
 :stages-of-ai-evolution: {integrated-ai-evolution-url}
 :stage-1-mit-failures: {years-late-confirmation-url}
@@ -36,21 +31,18 @@ Let's find the 8% that matters!
 
 == Where Business Value Actually Lives
 
-Seven tiers.
-Most of you are stuck in the first two, convinced you're transforming.
+There are seven tiers, and most of you are stuck in the first two, convinced you're transforming.
 
 **T0 -- Buy AI Tools** (Zero competitive advantage)
 
-Microsoft Copilot.
-Google Gemini.
-ChatGPT subscriptions for everyone.
+Microsoft Copilot, Google Gemini, ChatGPT subscriptions for everyone.
 
 This is 77% of your happy AI news.
 It's also Microsoft Office 2025.
 Necessary, but NOT Differentiation.
 
 Vodafone gave 68,000 employees productivity tools.
-Congratulations - you bought Office. +
+Congratulations -- you bought Office. +
 Wells Fargo automated compliance.
 Still T0. United Wholesale Mortgage documented "productivity gains."
 
@@ -58,13 +50,9 @@ _So did everyone who installed Excel in 1995._
 
 **T0+ -- Integrate Tools Into Operations** (Minimal value)
 
-Support chatbots.
-Development acceleration with Cursor.
-Cost reduction bots.
+Support chatbots, development acceleration with Cursor, cost reduction bots.
 
-Better trinkets.
-Still not transformation.
-Just shinier Office.
+Better trinkets, still not transformation -- just a shinier Office.
 
 **T1 -- AI at Domain Boundaries** (First actual disruption)
 
@@ -79,23 +67,21 @@ Who's here?::
 - Robinhood: 80% cost reduction through integration;
 - GM: IoT sensor integration across 140+ manufacturing sites, 15% downtime reduction;
 - JPMorgan Chase: 450+ AI use cases, data mesh architecture with domain boundaries;
-- Walmart: Multi-agent AI across supply chain - eliminated 30M driving miles;
+- Walmart: Multi-agent AI across supply chain -- eliminated 30M driving miles;
 - Duke Energy: Grid domain integration, power flow sims from 6 weeks to 15 minutes.
 
-Notice something?
-These aren't chatbots.
-These are architectural increments to *_live business models_*.
-(You need to have them domain models first -- right?)
+These aren't chatbots; they are architectural increments to *_live business models_*.
+(You need to have domain models first -- right?)
 
 {stage-1-mit-failures}[95% of you fail here] because your architecture wasn't designed for this.
 
-**T2 - AI-Only Subdomains** (Market-changing disruption)
+**T2 -- AI-Only Subdomains** (Market-changing disruption)
 
 New AI domains sitting BETWEEN your existing business domains.
 Behavior your business never had before.
 
 Almost nobody's here yet.
-Shopify Sidekick is approaching it - production agentic systems spanning domains.
+Shopify Sidekick is approaching it -- production agentic systems spanning domains.
 Maybe 3-5 others not talking publicly.
 
 If you're not solid at T1, attempting T2 will destroy you.
@@ -129,8 +115,7 @@ T1 requires::
 - Unified data architecture (you have 12 systems with different "customer" definitions);
 - Architectural foundations (you have 20 years of technical debt).
 
-DoorDash didn't get lucky.
-They *had* foundations before adding intelligence.
+DoorDash didn't get lucky: they *had* foundations before adding intelligence.
 
 Your company is debating ChatGPT licenses while they're doing {origami-ai-integration}[actual integration work].
 
@@ -145,13 +130,13 @@ Your company is debating ChatGPT licenses while they're doing {origami-ai-integr
 
 **Watch carefully:**::
 - Architectural integration discussions (rare as heck);
-- Actual T1 implementations with architecture specifics (me 😃);
+- Actual T1 implementations with architecture specifics (me);
 - Domain modeling approaches for AI (DDD Europe 2025);
 - Failed pilots with honest postmortems (even rarer);
 - Companies discussing Anti-Corruption Layers and Bounded Contexts +
 (pure gold, if you ever find it).
 
-**The brutal numbers from our aggregation:**::
+**The numbers from our aggregation:**::
 - 11% fully implemented AI (Salesforce research);
 - 21% repatriated workloads from cloud (Flexera 2025);
 - 9.7% enterprise adoption -- barely moved from 3.7% in 2023;
@@ -178,10 +163,7 @@ Ask yourself honestly::
 - Documented boundary conditions in ACLs?;
 - Unified data across domains?
 
-No?
-
-Then you're not attempting T1.
-You're attempting T0+ and calling it transformation.
+If not, you're attempting T0+, not T1, and calling it transformation.
 
 **If you're planning T2:**
 
@@ -199,17 +181,15 @@ Next time someone shows you an "AI success story" -- theirs or a competitor's --
 
 That tells you *_everything_* about whether it's relevant to your situation.
 
-Vodafone's 68K Copilot deployment? +
-T0. _Ignore it._
+[cols="3,1,2"]
+|===
+|Deployment |Tier |Verdict
 
-DoorDash's AWS Bedrock integration? +
-T1. *Study it!*
-
-Your vendor's "AI-powered" feature? +
-Probably T0 in a nice box.
-
-They can't answer? +
-Talk about sports.
+|Vodafone's 68K Copilot deployment |T0 |_Ignore it._
+|DoorDash's AWS Bedrock integration |T1 |*Study it!*
+|Your vendor's "AI-powered" feature |Probably T0 |In a nice box.
+|They can't answer |? |Talk about sports.
+|===
 
 == The Vegetables You Came For
 
@@ -220,14 +200,11 @@ They built better foundations BEFORE adding intelligence.
 That's the vegetable.
 _It tastes better than sugar once you try it._
 
-Most of you won't.
-You'll keep eating cotton candy, wondering why transformation never comes.
+Most of you won't, and you'll keep eating cotton candy, wondering why transformation never comes.
 
-The ones who do?
-You already know who you are.
-You felt the guilt in that opening paragraph.
+Those of you who will already know it -- you felt the guilt in that opening paragraph.
 
-Quick recap::
+Tiers at a glance::
 - T0/T0+ -- productivity tools, zero competitive advantage;
 - T1 -- domain boundary integration, first disruption;
 - T2 -- AI-only subdomains, market-changing;

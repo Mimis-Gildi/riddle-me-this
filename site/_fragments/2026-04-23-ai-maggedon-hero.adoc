@@ -1,5 +1,5 @@
 For everyone working with AI, there are things we must know, none of which are published in popular articles.
-These apply equally to companies and individuals. These are impactful. Here people err painfully.
+These apply equally to companies and individuals, and here people err painfully.
 
 I'm aware because I train agentic development teams.
 And I consume all the AI news, Agentically, of course. And almost all of it is riding the hype.
@@ -19,7 +19,7 @@ Yet every weekend that I present, I move through the same set of questions that 
 And, the critically important "Uncertainty Acknowledgement" *_is_* possible with Agentics ...
 but I don't feel like writing a book about that, neither does the next practitioner,
 and by the time someone does, it will all change already.
-_Also, did you know that models get less useful with each version?_
+_Also: models get less useful with each version._
 
 Hence, the Straight Talk, and here are today's topics:
 
@@ -29,4 +29,4 @@ Hence, the Straight Talk, and here are today's topics:
 {full-killing} +
 {full-primer}
 
-_The section 5 gives you the fundamentals you need to *survive* Agentic age._
+_Section 5 gives you the fundamentals you need to *survive* Agentic age._

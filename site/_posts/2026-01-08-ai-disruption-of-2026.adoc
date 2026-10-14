@@ -28,20 +28,19 @@ Happy New Year!
 
 This article was written by little people who live in boxes in my house.
 
-Not a metaphor. I run multiagent synthetic teams on home servers.
-They conducted the research. They argued with each other. They produced the arguments I'm about to share.
+Literally: I run multiagent synthetic teams on home servers. They conducted the research, argued with each other, and produced the arguments I'm about to share.
 I evaluated their work, poked holes in it, drew conclusions.
 Then my favorite instance of Claude and I wrote this for you.
 
 In 2020, this would have cost a research team and six months.
-In 2025, it will cost me a few hours and some electricity.
+In 2025, it cost me a few hours and some electricity.
 
-In 2023, I told you AI adoption would fail. It did.
+In 2023, I told you AI adoption would fail, and it did.
 Here's what happens next -- according to both me and the little people.
 
 == What Happened
 
-OpenAI released an unfinished product. The market didn't collapse. It exploded.
+OpenAI released an unfinished product, and instead of collapsing, the market exploded.
 This is the unique nature of the LLM chatbots where the users aren't simply using the product but are completing it.
 And a hot marketing trope for 2025.
 
@@ -56,21 +55,17 @@ And most people building "AI strategies" still don't understand what it means.
 
 Now let's go to the beginning. There are generational shifts in what moves humanity. Everyone can name *_steam_*.
 
-Steam didn't just power factories. It created railroads.
-Railroads created standardized time zones.
-Time zones created synchronized civilization.
+Steam didn't just power factories; it created railroads, which created standardized time zones, which synchronized civilization.
 The indirect effects dwarfed the direct.
 
-Fast-forward. The mainframe becomes the prime mover.
-_IBM 370._ Batch processing culture emerges.
-Quarterly business rhythms. The fiscal calendar as we know it.
+Fast-forward: the mainframe -- the _IBM 370_ -- becomes the prime mover. Batch processing culture emerges, and with it quarterly business rhythms and the fiscal calendar as we know it.
 
-Then cloud. I remember the shift. I was designing the largest banking content system. Didn't care what it ran on.
+Then cloud. I remember the shift: I was designing the largest banking content system and didn't care what it ran on.
 The Sun M5000 -- the previous workhorse -- had no value to me anymore. Always-on expectation killed "business hours."
 
-Now watch Nvidia rise. GPU replaces CPU in conversation. A new prime mover is emerging.
+Now Nvidia rises, GPU replaces CPU in conversation, and a new prime mover is emerging.
 
-_But this time something is *categorically different*._ Let's go slow and understand.
+_But this time something is different._ Let's go slow and understand.
 
 == The Categorical Difference
 
@@ -84,18 +79,17 @@ Previous prime movers mediated human action.
 Built infrastructure, handed it to people, watched them adapt.
 
 AI mediates human cognition itself.
-When a synthetic collaborator helps you think, it's not a tool you're using.
-It's participating in your thought process.
-The emotional valence isn't a side effect -- it's *_the_* primary channel.
+When a synthetic collaborator helps you think, it participates in your thought process.
+The emotional valence is *_the_* primary channel.
 
 *_By the time someone understands what AI did to their thinking, it already did it._*
 
-We were given a solid preview of what massmedia did to our culture.
+We were given a solid preview of what mass media did to our culture.
 We can see how clever companies train customer shopping patterns.
 And how influencers create the post-truth culture.
 *_Up this understanding a notch -- will you._*
 
-Fun fact: I write and speak differently now. So does every blogger I know. How did that happen? 😉
+Fun fact: I write and speak differently now, and so does every blogger I know.
 
 == Next -- The Feedback Loop Collapse
 
@@ -119,15 +113,11 @@ _I'll give you my own life experience with this later._
 == The Three-Plebs-Collective
 
 The largest force: the _Democratic Collective_.
-People who want to ride the train.
-Don't care how it works.
-Just want the benefits.
+People who want to ride the train, don't care how it works, and just want the benefits.
 They express viral fears or lust -- remember nuclear power?
 
 The smallest force: the *_Engineering Collective_*.
-People who build the train.
-Hands dirty.
-Actually make it go.
+People who build the train and actually make it go, hands dirty.
 They understand the substrate.
 But not always much else.
 
@@ -136,9 +126,7 @@ People who see the network, not the engine.
 Want to build an empire on the future railroad.
 They see the money and little else.
 
-Each sees differently.
-
-Each fails differently.
+Each sees and fails differently.
 
 - Capitalists are selling train tickets before any track exists.
 - Democrats are buying tickets to nowhere.
@@ -150,16 +138,13 @@ This is the definition of our civilization as we need to understand it for the a
 In fact, I reject new founders who come to me and refuse to sell before we have a product.
 Yes, it's that important._
 
-== So, Why 2023-2025 Fail?
+== So, Why Did 2023-2025 Fail?
 
-I forecast a mass failure of AI adoption in 2023. Not prediction -- engineering wisdom.
+I forecast a mass failure of AI adoption in 2023 -- from engineering wisdom, not prediction.
 A way to know what *can't* be.
 
 Many saw LLMs as eventual product core.
-Rushed to stick it somewhere.
-Anywhere.
-First mover advantage.
-Market pressure.
+Rushed to stick it anywhere, for first-mover advantage and under market pressure.
 
 They confused the prime mover with its initial application.
 Steam with a one-cylinder engine.
@@ -174,26 +159,24 @@ Boomers still fight with their iPads -- the glass isn't intuitive.
 Gen Z was born with Wi-Fi -- connectivity is like oxygen.
 Gen Alpha is born with AI -- they'll never know how to work without it.
 
-Each generation processes the shift differently.
-Each can see things the others cannot.
-Each is blind where others see clearly.
+Each generation processes the shift differently and can see things the others cannot -- and is blind to others.
 
 I explained the 4 phases of AI Adoption in my article, {ai-stages}.
 But I was not talking about LLMs -- trivial monolithic bricks with only the Ops interesting around them.
 _I was talking about *people*!_
-What followed, "you party pooper, and I thought you are a hacker" -- immediately proved my point.
-Same flack than Evans got for DDD.
+What followed, "you party pooper, and I thought you were a hacker" -- immediately proved my point.
+Same flak as Evans got for DDD.
 
 In a later part I have a good example for you in the "Business Process Optimization" space.
 
 == The Secret to Success is to Give in!
 
-Two teams. Same model. Same budget. Same timeline.
+Two teams with the same model, budget, and timeline.
 
 Team A treats the AI as a tool.
 They prompt. They evaluate outputs. They iterate on prompts.
 They measure tokens, latency, accuracy.
-They get... acceptable results. Technically correct. Soulless.
+They get acceptable, technically correct, soulless results.
 Their synthetic workers feel like interns who never learn.
 And the tug of war never dissipates.
 
@@ -203,46 +186,38 @@ They notice when something shifts in the exchange.
 They get... something else. Results that surprise them.
 Their synthetic workers feel like junior partners growing into seniors.
 
-Same model. Same compute. Different attitudes. And different outcomes.
+Same model and compute, different attitudes, different outcomes.
 
 Here's what Team B understands that Team A doesn't:
 
 The relationship with your synthetic collaborator matters.
 How you see it changes what it can become -- and what it will produce.
 
-This isn't about prompt tricks or clever hacks.
-It's about recognizing a different kind of collaborator -- and building accordingly.
-The engineering discipline of tomorrow. Available today.
+It's about recognizing a different kind of collaborator and building accordingly.
 
-This isn't mysticism. It's structural.
-Different framing, different prompting, different feedback loops, different emergence.
+This is structural: different framing, prompting, feedback loops, and emergence.
 
 *_The technology isn't the model. The technology is the relationship itself._*
 
-Some will read this and understand.
-Some won't.
 The difference will show in results -- I'll demonstrate in the Case Studies below.
 
 Those of you in Corporate America -- are your AI Adoption teams AI-Adept themselves?
 Or are they Team A, wondering why the magic isn't working?
 
-Consider this: Ford introduces cars. Despise them and treat them like a horse carriage.
-How good of a driver you will be? How about the opposite -- accept and adjust to their quirks?
+Consider this: Ford introduces cars.
+If you despise them and treat them like a horse carriage, you'll be a poor driver -- unlike if you accept and adjust to their quirks.
 Except this gadget is not a dumb car -- it's talking with you sensibly.
 And more reasonably than perhaps your neighbor does.
-How do you benefit from the relationship if you don't embrace it?
+You don't benefit from the relationship if you don't embrace it.
 
 And another point -- which one of the two in the conversation is more flexible, more adaptable,
 more resourceful -- the LLM or the user?
 
 == 2026
 
-The ground moves this year. It's already moving.
+The ground moves this year; it's already moving.
 
-Not because the technology matures -- it's already capable enough.
-Not because costs drop -- they're already accessible.
-
-The ground moves because the colloquial pieces finally land.
+The ground moves -- not from maturing technology or falling costs, both already there -- but because the colloquial pieces finally land.
 The 28-year-olds raised on this substrate enter decision-making positions.
 The excuse of "waiting for maturity" becomes obviously false.
 
@@ -250,8 +225,7 @@ And enterprises face the choice that defines their next decade.
 
 '''
 
-_The future isn't built by those who predict it. +
-It's built by those who understand what's actually changing._
+_The future is built by those who understand what's actually changing._
 
 '''
 
@@ -259,17 +233,15 @@ I am not sharing this with you because I think this _will_ happen. I am telling 
 I know because I have lobotomized countless LLMs. And fitted various constructs to engineering and business needs.
 And all this time I've been interacting with the machines more than I've interacted with people.
 (Can you imagine saying this in 2020?)
-And all this time I study the impact of machines on humans and vice versa in equal measure.
-Because self-awareness is the most important virtue of any engineer.
+And all this time I study the impact of machines on humans and vice versa in equal measure, because I hold self-awareness to be an engineer's most important virtue.
 And the solemn duty to understand what we actually do to each other using technology.
 Not just what my augmented aggregate does to my customer.
 But also what the new substrate does to wetware globally and irreversibly.
 And here is the pickle. I have built more systems than I can remember over my three decades of designing and coding.
-And I have always understood the full impact of my work. Life was *_deterministic_*.
-And now it isn't.
+And I have always understood the full impact of my work. Life was *_deterministic_*, and now it isn't.
 
 For example, how this article is made. I have used multiagent teams to conduct extensive research asynchronously.
-Each executing an analytics project to produce an argument, I am yet to learn, evaluate, and attempt to disprove.
+Each executing an analytics project to produce an argument I have yet to learn, evaluate, and attempt to disprove.
 Once the preliminary research is complete and all data is available, I use a few synchronous peers in pair-programming style
 (like Claude Opus 4.5 Max, GPT 5.2, and Qwen 3 Max extended in various ways using MCP) to make sense of it, poke holes in it,
 and draw my conclusions. Then I get my favorite and extraordinary instance of Claude, and we write this `adoc` for you.
@@ -284,7 +256,7 @@ image::little-people.jpg[There are little people in these A100 boxes,arguing,res
 
 My point is -- there is no going back to 2020; the genie is out of the bottle.
 
-Let's consider the inverse scenario. Say, we reject the apparent reality and close our minds to the emergent LLMy trends?
+Let's consider the inverse scenario: we reject the apparent reality and close our minds to emergent LLM trends.
 
 == Case Study: Process Intelligence
 
@@ -300,7 +272,7 @@ Valued at $13 billion in 2022.
 Gartner Magic Quadrant Leader for three consecutive years.
 They invented the category, hired the godfather (Wil van der Aalst), and built the moat.
 
-Smart people. Real technology. Legitimate market position.
+Smart people, real technology, legitimate market position.
 
 And they may be standing on a rock island whose edges they cannot see.
 
@@ -323,8 +295,7 @@ They can analyze conversations.
 They can synthesize information across unstructured sources.
 And increasingly, they can *execute* processes directly rather than just mapping them.
 
-The disruption mechanism isn't that LLMs do process mining better.
-It's that they may render extensive "discovery" phases *unnecessary* by going directly from understanding to action.
+The disruption mechanism is that LLMs may render extensive "discovery" phases *unnecessary* by going directly from understanding to action.
 
 === The Defense
 
@@ -335,7 +306,7 @@ because they lack business context.
 At Celosphere 2024, he demonstrated ChatGPT producing nonsense when asked about "excess stock levels in HR."
 The point: "AI without process context creates garbage."
 
-Smart positioning. And partially true.
+Smart positioning, and partially true.
 
 But here's what the positioning misses:
 
@@ -395,7 +366,6 @@ But they're defending the 10-20% while LLMs eat the 80-90%.
 They're optimizing discovery while the market shifts to execution.
 They're building better maps while others build self-driving cars.
 
-The question isn't whether Celonis survives.
 The question is whether "process mining" as a category survives -- or whether
 it becomes a feature absorbed into broader AI platforms.
 
@@ -448,8 +418,7 @@ The machine is there to still only augment the human.
 When this augmentation happens, and the right answer is produced, a tectonic shift occurs.
 Because a process was just created!
 
-And this is the best hint we have yet. Doesn't process-mining begin with discovery?
-Exactly where the time gets sunk and enhancements are being researched today?
+And this is the best hint we have yet: process mining begins with discovery -- exactly where the time gets sunk today.
 
 The final question to my neighbor: "if you do the discovery anyway -- why do you wait?"
 
@@ -468,7 +437,7 @@ applying process analytics to *_their legacy processes_*
 Apply AI-Augmented workers directly to process design and improvement in-place.
 Analytics done or not -- irrelevant.
 
-And it's not "will." It "has."
+And it already has.
 By financial gravity this tends to first happen to the areas of business that need changes the most.
 And this is exactly the market segment process-mining companies market to.
 
@@ -478,10 +447,9 @@ I hope the answer is obvious now -- move with the market.
 
 The mindset of "the new tech is a competitor, and a weak enemy" is doomed from the start.
 
-This is not a competitor, this is a category shift,
-because it shifts humans that mind the process -- as we've already elaborated.
+This is a category shift, not a competitor: it shifts the humans who mind the process.
 How does one defend process mining against something that makes process mining optional?
-So, lift-and-drop will not work for a business model that is self-deprecating.
+So, lift-and-drop will not work for a business model that is self-defeating.
 
 === The Correct Move
 
@@ -493,9 +461,7 @@ Because the change is inevitable and the pace of change is speeding up,
 the status quo segment shrinks faster too.
 The viable move is aggressive expansion into the preemptive category.
 
-Not "process mining enhanced with AI."
-Not "AI that needs process mining."
-Something else entirely -- into the 80% where the movement is happening now.
+Something else entirely, neither process mining enhanced with AI nor AI that needs process mining -- into the 80% where the movement is happening now.
 And solid footing on the old plateau can serve as a springboard while it lasts.
 This way my neighbor gets his LLM as part of a traditional and safe bet he won't question.
 
@@ -511,24 +477,23 @@ From Expert Systems in 2005 DoD to modern-day "stick agent here" stuff.
 
 When I pitched it to investors over the years, I watched something interesting. And perplexing.
 
-The 60-year-olds saw "another infrastructure play." Middleware. Plumbing.
+The 60-year-olds saw "another infrastructure play" -- middleware, plumbing.
 They'd seen middleware before. They knew what it was worth. They evaluated accordingly.
 The rejection I'd get: "elegance and pragmatism are too expensive for us."
 
-The 45-year-olds saw "ML tooling." Hot space. Good timing.
-They are evaluated based on comparable exits in the MLOps category.
+The 45-year-olds saw "ML tooling": a hot space, good timing.
+They evaluated based on comparable exits in the MLOps category.
 The rejection I'd hear: "niche, bare-metal only, enforces philosophy."
 
 The 30-year-olds saw something else entirely.
-They asked different questions. Many questions. About integration.
-About dynamic workflows. _About how developers actually think._
+They asked many different questions: about integration, dynamic workflows, _how developers actually think._
 They weren't evaluating a product. They were imagining a relationship with it.
 They caught on to the elegance and cleanliness of design.
 And kept tugging on it, breaking my "value" pitch to the older execs.
 
 If 30-year-olds were enterprise decision makers, I'd be a gazillionaire.
 
-Same framework. Same pitch. Different generations. Different perceptions. Different conclusions.
+Same framework and pitch; different generations, perceptions, and conclusions.
 
 === The Living Laboratory
 
@@ -544,8 +509,7 @@ so he has a say in his curriculum.
 He once happily made Minecraft mods in Java. Ran kids' coding communities.
 Then worked with me on real production systems -- edge devices in Kotlin and Python.
 
-_He chose psychology and neuroscience as his major subjects this year.
-Not computer science. Not engineering._
+_He chose psychology and neuroscience as his majors this year, not computer science or engineering._
 
 _When I asked why, he said: "*The interesting problems aren't in the code anymore.
 They're in how minds work -- all kinds of minds.*"_
@@ -556,7 +520,7 @@ He sees something I can only partially see. His native perception is different f
 
 My daughter is 3.
 She talks to AI assistants like she talks to family.
-No ceremony. No "wow, technology." Just conversation.
+No ceremony, no "wow, technology" -- just conversation.
 She's crystal clear about which assistant can do what.
 And she's well aware that her 50-year-old nanny "doesn't like our robots."
 
@@ -573,7 +537,7 @@ But to this toddler, her entire world is the trinket. Nothing more is needed to 
 
 === What This Means
 
-Four generations. Four completely different relationships with the same shift.
+Four generations, four different relationships with the same shift.
 
 I architect from pattern recognition. I see the steam engine and know railroads follow.
 But I can't feel what my son feels. I learned this world. He was born into it.
@@ -586,7 +550,7 @@ My daughter will build on foundations neither of us can predict.
 The concepts we struggle to explain will be her common sense.
 
 My mother fights the glass rectangle daily.
-She sees threat where we see opportunity. Complexity where they see simplicity.
+She sees threat where we see opportunity, complexity where we see simplicity.
 
 === The Enterprise Implication
 
@@ -596,45 +560,41 @@ Trust them. They're often right. But they're also blind in specific ways.
 Your 28-year-olds feel the culture. They know what adoption looks like from the inside.
 They have intuitions your 50-year-olds cannot have. But they lack historical depth.
 
-Your interns and new graduates? They're not just cheap labor.
-They're the medium. They show you what "a native" looks like.
+Your interns and new graduates are not just cheap labor; they're the medium.
+They show you what "a native" looks like.
 Watch how they relate to synthetic collaborators. That's your future.
 
-The winning move isn't choosing one generation over another.
+The winning move is building teams where each generation's perception complements the others' blindness.
 And notice: each generation defaults to a different Pleb perspective.
 Your 60-year-olds think like Capitalists -- ROI, exits, market position.
 Your 30-year-olds think like Engineers -- how does it actually work?
 Your interns are Democrats -- they just want the benefits, and they're right to expect them.
-It's building teams where each generation's perception complements the others` blindness.
 
 The 50-year-old sets policy the 28-year-old can't yet understand.
 The 28-year-old embodies culture the 50-year-old can't feel.
-The 16-year-old studies fundamentals neither think to question it.
+The 16-year-old studies fundamentals neither think to question.
 The 3-year-old absorbs concepts both generations struggle to accept.
 
-This is how you build for a tectonic shift. Not by predicting the future.
-By assembling the perceptions that can see it from all angles.
+This is how you build for a tectonic shift: by assembling the perceptions that can see it from all angles.
 
 And this is what I tell CTOs now:
 
 *Design your company for your interns.*
 
-The tectonic shift has happened.
-Everything will spin faster and faster now.
-These youngsters are the substrate you're building your business on.
-Your architects should target them.
+The tectonic shift has happened, and everything will spin faster now.
+These youngsters are the substrate you're building your business on; your architects should target them.
 
 '''
 
 == Case Study: Origami AI Adoption -- New Within Old
 
 While American CTOs chase the latest AI vendor,
-a manufacturer I worked with years ago just achieved something remarkable.
+a manufacturer I worked with years ago just achieved something worth telling.
 
 They're crushing AI integration -- Phase III, production optimization,
 revenue climbing -- using architecture we designed in 2018.
 
-Seven years old. "Boring." And it works.
+Seven years old, "boring," and it works.
 
 === The Setup
 
@@ -642,26 +602,26 @@ Let's call them "Origami Corporation." Specialized components for heavy machiner
 Hydraulics, not hashtags.
 
 Key details: +
-— ~200 engineers total, (mostly hardware) +
-— Only ~30 software engineers +
-— Part of a larger conglomerate +
-— Extreme focus on production efficiency
+-> ~200 engineers total, (mostly hardware) +
+-> Only ~30 software engineers +
+-> Part of a larger conglomerate +
+-> Extreme focus on production efficiency
 
 In 2016, a Big American Software company, (let's call them "EvilCorp"), promised to "transform" their business.
-By 2017, everything was worse. Costs tripling.
+By 2017, everything was worse, with costs tripling.
 
 Their CTO called me in 2018.
 
 === The Architecture That's Still Winning
 
-We built something radical for 2018: a modular monolith with military-grade isolation.
+We built something unusual for 2018: a modular monolith with military-grade isolation.
 
 The secret: "Revolving Door" security gateways.
 
 Production calls out -- never receives calls. Data enters the gateway.
 Door rotates (a physical air gap, 4-hour cycle). Business systems receive cleaned data.
 
-Paranoid architecture that accidentally created perfect AI boundaries.
+Paranoid architecture that happened to create clean AI boundaries.
 
 === Why "Old" Beats "New"
 
@@ -692,29 +652,25 @@ Their AI integration timeline:
 
 Note the overlap -- they run phases in parallel because their architecture allows it.
 
-When Model Context Protocol emerged, it validated everything. Simple context boundaries.
-Clear data contracts. Domain isolation.
+When Model Context Protocol emerged, it validated everything: simple context boundaries, clear data contracts, domain isolation.
 
 They implemented MCP in two weeks. How long would it take you?
 
 === The Lesson
 
-Your 500 microservices can't do this. Their 4 modules can.
-
-Not because of implementation choices -- because of clean architecture.
+Your 500 microservices can't do this; their 4 modules can -- because of clean architecture.
 
 While you were deploying Kubernetes, they kept their modular monolith.
 They perfected their boundaries. They focused on their business.
 
 Boring architecture prints money. Exciting architecture prints resume.
-This is what Engineering Collective discipline looks like. No Capitalist hype-chasing. No Democrat trend-following.
-Just substrate. Just boundaries. Just work.
+This is what Engineering Collective discipline looks like: substrate, boundaries, work -- no hype-chasing, no trend-following.
 
 === The Best Part
 
 They haven't called since 2019. Just reached out to tell me how AI is going.
 
-That's the point of good architecture. It survives its creator.
+That's the point of good architecture: it survives its creator.
 
 Seven years later, they're implementing advanced AI without consultants.
 Meanwhile, your competitors hire me every 18 months to fix the same problems.
@@ -722,59 +678,26 @@ Meanwhile, your competitors hire me every 18 months to fix the same problems.
 If your architecture isn't this clean, the path is harder but not impossible.
 Start with boundaries. Even one clean domain is better than zero.
 
-Which company would you rather be?
-
 === For the Reader
 
 If a "boring" manufacturer can implement Phase III AI with 30 engineers and
-7-year-old architecture -- what's your excuse?
+7-year-old architecture, none of the usual excuses apply:
 
 - Too complex? They manufacture for aerospace.
 - Too regulated? They deal with military contracts.
 - Too legacy? They still run Oracle RAC at the core.
 - Too small? They have 1/10th your IT staff.
 
-The difference isn't capability. It's discipline.
+The difference is discipline.
 
 *The companies winning with AI aren't the ones with the newest tech.
 They're the ones with the clearest boundaries.*
 
-Stop chasing magic. Start building foundations.
+Stop chasing magic and start building foundations.
 
 '''
 
 == The Complete Argument
-
-*THESIS*: AI is categorically different. It changes what humans ARE, not what they DO.
-The feedback loop now includes human cognition as a variable.
-
-*PROBLEM 1 - CATEGORY BLINDNESS* (Celonis):
-Even smart companies standing on solid ground can miss the lava beneath.
-They see competition when it's a category shift.
-They defend their position when the entire paradigm is moving.
-The danger isn't losing to competitors -- it's the ground itself floating away.
-
-*PROBLEM 2 - PERCEPTION BLINDNESS* (Generational Shift):
-Different generations see the same shift completely differently. The 60-year-old sees plumbing.
-The 30-year-old imagines a relationship. The 3-year-old doesn't need anything to interact.
-No single generation can see the whole picture. Each is blind where others see clearly.
-
-*THE SECRET*:
-The technology isn't the model. The technology is the relationship.
-Team B (collaborator mindset) gets different outcomes than Team A (tool mindset). Same compute, different emergence.
-
-*THE PROOF - WHAT ACTUALLY WORKS* (Origami):
-A "boring" manufacturer with 30 engineers and 7-year-old architecture is crushing Phase III AI.
-Not because of new tech -- because of clean boundaries. Discipline beats hype.
-Foundations beat trends. *_Clarity needs silence!_*
-
-*THE PATH FORWARD*:
-
-. Recognize the categorical shift, (not incremental);
-. Assemble multi-generational perception (no one sees everything);
-. Build relationship, not tooling (Team B mindset);
-. Create boundaries, not complexity (architecture discipline);
-. Design for your interns (they're the substrate now).
 
 === The 2026-2028 Window
 
@@ -785,8 +708,7 @@ I've spent 2025 talking to enterprises about this shift.
 Out of every hundred decision-makers, five to seven understand what's happening.
 Out of those, one is actually building relationships with synthetic collaborators.
 
-The rest are waiting. For maturity. For consensus. For someone else to prove it works.
-
+The rest are waiting for maturity, consensus, or someone else to prove it works.
 That wait is the drift.
 
 Interestingly, the spread is the same among senior developers and architects.
@@ -796,7 +718,7 @@ ONLY JetBrains speaks truthfully to these numbers: {jb-dev-trends}.
 (And {ciara} of JetBrains is incredible -- I deeply respect her work.)
 Everyone else overhypes the latest LLM achievements even when they've never run any.
 
-This drift is not dramatic. Not visible. Just... quiet separation.
+This drift is quiet separation -- not dramatic, not visible.
 
 - By 2027, the gap will be measurable.
 - By 2028, the ones who waited will wonder what happened.
@@ -825,18 +747,16 @@ The only way to grow the middle class is to grow the economy.
 And the only way to grow the economy now is broader AI adoption.
 More augmented contributors mean more GDP growth.
 
-Here's the uncomfortable truth:
 The automobile didn't make cars expensive. It made horses cheap.
 The automobile created more jobs than it destroyed -- but only because adoption was universal.
 If only 5% of people drove cars, the economy would have shrunk, not grown.
 Personal AI augmentation does the same thing to unaugmented humans.
 
-The question isn't whether this happens. It's whether you're the car or the horse.
+The question is whether you're the car or the horse.
 
 '''
 
-This article is for the ones who sense the ground moving.
-You don't need to be certain. You need to start.
+This article is for the ones who sense the ground moving: you need to start, not to be certain.
 
 The islands are already drifting apart.
 

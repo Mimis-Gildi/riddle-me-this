@@ -23,19 +23,9 @@ plugins:
   - jekyll-data
   - jekyll-feed
   - jekyll-remote-theme
-  - jekyll-paginate-v2
   - jekyll-include-cache
   - jekyll-archives
   - jekyll-sitemap
-
-
-
-# Pagination defaults
-pagination:
-  enabled                   : true
-  per_page                  : 10
-  permalink                 : '/page/:num/'
-  title                     : ':title - page :num'
 
 
 
@@ -116,7 +106,7 @@ words_per_minute            : 300
 enable_copy_code_button     : true
 compress_html               : true
 
-copyright                   : "© Vadim Kuhay; 2022–2026; v21.0.3"
+copyright                   : "© Vadim Kuhay; 2022–2026; v22.23.0"
 copyright_url               : "https://mimis-gildi.github.io/riddle-me-this"
 
 ### Serve
@@ -136,12 +126,12 @@ safe                        : false
 
 ### AsciiDoc / Asciidoctor — site-wide attributes
 asciidoctor:
+  base_dir                        : :docdir
+  safe                            : unsafe
   attributes:
     source-highlighter            : rouge
     icons                         : font
-    advanced-ai-non-corp          : 'link:{site-baseurl}/research/2025/09/19/advanced-ai-non-corp.html["No holds barred: The real AI Revolution .. is us",window=_blank]'
     independence-2026-collector   : 'link:{site-baseurl}/reflections/2026/07/01/glory-to-all-heroes.html[Freedom Isn''t Free! -- collector,window=_blank]'
-    art-glory                     : 'link:{site-baseurl}/reflections/2026/07/01/glory-to-all-heroes.html[Freedom Isn''t Free!,window=_blank]'
     art-seven-betrayals           : 'link:{site-baseurl}/reflections/2026/07/01/seven-betrayals.html[Seven Betrayals,window=_blank]'
     art-qanon                     : 'link:{site-baseurl}/reflections/2026/07/01/gru-project-qanon.html[GRU Project QAnon: Russia''s Greatest American Victory,window=_blank]'
     art-war-end                   : 'link:{site-baseurl}/reflections/2026/07/01/what-does-war-end-mean.html[What Does "War End" Mean?,window=_blank]'
@@ -149,7 +139,6 @@ asciidoctor:
     art-klemo                     : 'link:{site-baseurl}/reflections/2026/07/01/klemo.html[klemo''s war,window=_blank]'
     art-institutionalized         : 'link:{site-baseurl}/reflections/2026/06/02/institutionalized-the-lost-demographic.html[Institutionalized: The Lost Demographic,window=_blank]'
     art-roosevelt-stalin          : 'link:{site-baseurl}/reflections/2026/06/17/Roosevelt-Stalin.html[Roosevelt and Stalin Feeding Chickens,window=_blank]'
-    advanced-ai-non-corp-url      : 'link:{site-baseurl}/research/2025/09/19/advanced-ai-non-corp.html'
     ai-2-activation               : 'link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html#phase-ii-ai-activation[Phase II: AI-Activation,window=_blank]'
     ai-businesses-to-perish       : 'link:{site-baseurl}/adventures/2023/06/07/AI-and-businesses-to-perish-first.html'
     ai-for-enterprise-2025        : 'link:{site-baseurl}/adventures/2025/07/21/ai-for-enterprise.html[AI Integration Architecture for Enterprise,window=_blank]'
@@ -162,23 +151,26 @@ asciidoctor:
     autogpt                       : 'https://github.com/Significant-Gravitas/Auto-GPT[Auto-GPT,window=_blank]'
     best-corporate-ai             : 'link:{site-baseurl}/adventures/2025/08/07/best-corporate-ai.html[The AI Success Story Nobody''s Talking About: How "Boring" Architecture Beats Hype,window=_blank]'
     best-corporate-ai-url         : 'link:{site-baseurl}/adventures/2025/08/07/best-corporate-ai.html'
+    c4w-bitspittle-url            : 'https://bitspittle.dev/blog/2024/c4w'
     cb-hacker                     : 'http://www.catb.org/jargon/html/H/hacker.html[hacker,window=_blank]'
     cb-mundane                    : 'http://www.catb.org/jargon/html/M/mundane.html[mundane,window=_blank]'
     chatgpt                       : 'https://chat.openai.com/[ChatGPT,window=_blank]'
     chatgpt-will-replace          : 'link:{site-baseurl}/reflections/2023/05/08/chatGPT-will-replace.html[ChatGPT & Job Loss - A ''Doze'' of Reality,window=_blank]'
+    codeforces-url                : 'https://en.wikipedia.org/wiki/Codeforces'
     cognitive-augmentation        : 'link:{site-baseurl}/adventures/2023/06/10/4-cognitive-augmentation.html[Cognitive Augmentation: The Real Revolution,window=_blank]'
     commons-john-frum-effigy      : 'https://commons.wikimedia.org/wiki/File:John_Frum_effigy_1960.jpg'
     corporate-america             : 'link:{site-baseurl}/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]'
-    cto-bible                     : 'link:/riddle-me-this/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]'
-    cto-trap                      : 'link:/riddle-me-this/adventures/2023/07/04/corporate-america.html[American AI Integration Trap,window=_blank]'
-    cto-trap-url                  : 'link:{site-baseurl}/adventures/2023/07/04/corporate-america.html'
+    corporate-america-url         : 'link:{site-baseurl}/adventures/2023/07/04/corporate-america.html'
+    integrated-ai-evolution       : 'link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]'
     deepinfra                     : 'https://deepinfra.com/'
+    delta-csis-url                : 'https://www.csis.org/analysis/does-ukraine-already-have-functional-cjadc2-technology'
     dolly-2                       : 'https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm[Dolly 2 by Databricks,window=_blank]'
+    dolly-2-url                   : 'https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm'
     doordash-case                 : 'https://aws.amazon.com/solutions/case-studies/doordash-bedrock-case-study/[DoorDash Case Study,window=_blank]'
     fastest-ai-adoption           : 'link:{site-baseurl}/reflections/2025/11/24/fastest-ai-adoption.html["Fastest Way to AI Adoption -- Straight Talk.",window=_blank]'
     fireship-gemini3              : 'https://youtu.be/bsL7ZnKIAhs[YouTube @Fireship: Did Google just kill OpenAI?,window=_blank]'
     fireworks-ai                  : 'https://fireworks.ai/'
-    footer-cto-trap               : 'footnote:cto-trap[This article {cto-bible} explains HOW to avoid the TRAP described here {cto-trap} -- your playbook on integrating AI and staying ahead.]'
+    footer-cto-trap               : 'footnote:cto-trap[This article {integrated-ai-evolution} explains HOW to avoid the TRAP described here {corporate-america} -- your playbook on integrating AI and staying ahead.]'
     gitomer-book                  : 'https://a.co/d/5n9DwBo[The Little Red Book of Selling: 12.5 Principles of Sales Greatness,window=_blank,opts=nofollow]'
     gitomer-book-fn               : 'footnote:[Forget what you know about selling; Jeff Gitomer is all you need -> {gitomer-book}]'
     google-vs-openai              : 'link:{site-baseurl}/adventures/2023/06/10/3-google-vs-openai.html[Why Google Beat OpenAI with Technical Teams,window=_blank]'
@@ -186,15 +178,15 @@ asciidoctor:
     hacker-culture-url            : 'https://en.wikipedia.org/wiki/Hacker_culture'
     hera-school                   : 'https://gervi-hera-vitr.github.io/sindri-labs/[Héra Academy Laboratory,window=_blank,opts=nofollow]'
     hera-school-url               : 'https://gervi-hera-vitr.github.io/sindri-labs/'
-    integrated-ai-evolution       : 'link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html[The AI Evolution Playbook: Why 80% Will Fail,window=_blank]'
+    imdb-idiocracy                : 'https://www.imdb.com/title/tt0387808/'
     integrated-ai-evolution-url   : 'link:{site-baseurl}/adventures/2023/07/05/integrated-ai-evolution.html'
     kimi-k2-thinking              : 'https://huggingface.co/moonshotai/Kimi-K2-Thinking/tree/main'
     li-newsletter                 : 'https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]'
     llama-cpp                     : 'https://github.com/ggerganov/llama.cpp'
-    llms-what-good-for            : 'link:{site-baseurl}/adventures/2023/06/10/LLMs-what-good-for.html[Medium (AI in 2024: The Future is …?),window=_blank]'
+    llms-what-good-for            : 'link:{site-baseurl}/adventures/2023/06/10/LLMs-what-good-for.html[AI in 2024: The Future is …?,window=_blank]'
     lm-studio                     : 'https://lmstudio.ai/'
     local-models-grief-url        : 'link:{site-baseurl}/adventures/2026/01/27/local-models-grief.html'
-    mailto-rIdd13r                : 'mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let%20us%20compete%3F[rIdd13r@pm.me]'
+    mailto-ridd13r                : 'mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let%20us%20compete%3F[rIdd13r@pm.me]'
     mcp-overview                  : 'https://modelcontextprotocol.io/introduction[Model Context Protocol,window=_blank,opts=nofollow]'
     mit-article                   : 'https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/[MIT NANDA Report,window=_blank]'
     mit-article-title             : 'MIT report: 95% of generative AI pilots at companies are failing'
@@ -213,21 +205,26 @@ asciidoctor:
     org-mimis-gildi               : 'https://github.com/Mimis-Gildi[Mímis Gildi,window=_blank]'
     org-mimis-latlaeg             : 'https://github.com/Mimis-Latlaeg-Hattalag[Mímis Látlæg Háttalag,window=_blank]'
     org-mimis-scala               : 'https://github.com/Mimis-Scala[Mímis Scala,window=_blank]'
+    pendos-url                    : 'https://en.wiktionary.org/wiki/%D0%BF%D0%B8%D0%BD%D0%B4%D0%BE%D1%81'
     profile-li                    : 'https://www.linkedin.com/in/rdd13r[LinkedIn Profile,window=_blank]'
     qwen3-30b-thinking            : 'https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507[Qwen3-30B-A3B-Thinking-2507,window=_blank]'
     rand-report                   : 'https://www.rand.org/pubs/research_reports/RRA2680-1.html[RAND Corporation,window=_blank]'
+    read-model-site               : 'https://mimis-gildi.github.io/read-model/[the read-model bench application,window=_blank]'
+    read-model-site-url           : 'https://mimis-gildi.github.io/read-model/'
     rdd13r-gh                     : 'https://github.com/rdd13r[rdd13r,window=_blank]'
-    rdd13r-gh-io                  : 'https://rdd13r.github.io/[Riddler,window=_blank]'
-    rdd13r-gh-io-title            : 'What Riddler Does'
     rdd13r-gh-io-url              : 'https://rdd13r.github.io/'
     rdd13r-style-guide            : 'https://github.com/Mimis-Gildi/riddle-me-this/blob/main/site/rdd13r-style-guide.yml[rdd13r Style Guide,window=_blank]'
-    release                       : 'https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v13.1.0[v13.1.0,window=_blank]'
-    resume                        : 'https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v13.1.0/VadimKuhay-Resume.pdf'
+    release                       : 'https://github.com/Mimis-Gildi/riddle-me-this/releases/tag/v22.23.0[v22.23.0,window=_blank]'
+    resume                        : 'https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v22.23.0/VadimKuhay-Resume.pdf'
+    solid-url                     : 'https://github.com/solidjs/solid'
+    spider-web-url                : 'https://en.wikipedia.org/wiki/Operation_Spiderweb'
     together-ai                   : 'https://www.together.ai/'
     total-recall                  : 'https://mimis-gildi.github.io/mcp-total-recall/[MCP Total Recall,window=_blank]'
     vailala                       : 'https://en.wikipedia.org/wiki/Vailala_Madness'
+    vue-url                       : 'https://github.com/vuejs/core'
     years-late-confirmation       : 'link:{site-baseurl}/adventures/2025/08/18/years-late-confirmation.html[MIT Says Your AI Stinks. Here''s Why. And how to fix.,window=_blank]'
     years-late-confirmation-url   : 'link:{site-baseurl}/adventures/2025/08/18/years-late-confirmation.html'
+    zz-fix-america-url            : 'https://www.president.gov.ua/en/news/vidkritij-list-prezidentu-rosijskoyi-federaciyi-vid-preziden-104769'
 
 
 # My general footer...
@@ -310,7 +307,7 @@ lunr:
 
 
 # Social Sharing
-og_image                    : /assets/images/banner.jpg
+og_image                    : /assets/images/banner.png
 social:
   type                      : Person
   name                      : Vadim Kuhay

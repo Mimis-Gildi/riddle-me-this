@@ -9,7 +9,7 @@ hidden: false
 search: true
 read_aloud: false
 ---
-= What Actually Works in AI: And Why No One Talks About It
+= What Actually Works in AI and Why No One Talks About It
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 :ai-learning: link:{site-baseurl}/reflections/2025/11/24/fastest-ai-adoption.html[I recommend studying on this infrastructure,window=_blank]
@@ -26,15 +26,14 @@ image::EU-vs-USA-AI-Adoption-Button.png[EU is many small trams moving things aro
 {nbsp}
 
 The EU Parliament just published another AI strategy document.
-€200 billion for "gigafactories." Race to catch America.
-Same story, different quarter.
+€200 billion for "gigafactories" in a race to catch America -- same story, different quarter.
 Brussels seems to like chasing us.
 
 Meanwhile, something interesting is happening on the ground that Brussels seems to miss entirely.
 But perhaps we miss that too.
 And we can't afford to!
 
-== Two playbooks. One works much better.
+== Two Playbooks, One Works Much Better
 
 .In the USA we bet on the Huge-Impossible that will make money one day, hopefully.
 image::US-AI-Progress-Button.png[The USA is a huge loco crashing through the tracks on infrastructure that can't support it]
@@ -42,12 +41,9 @@ image::US-AI-Progress-Button.png[The USA is a huge loco crashing through the tra
 {nbsp}
 
 In America, AI adoption means: pick a hyperscaler (AWS, GCP, Azure), consume hosted models, pay per token, lock yourself in.
-Big budgets.
-Big vendors.
-Big dependencies.
-The enterprise default.
+Big budgets, big vendors, big dependencies -- the enterprise default.
 
-It is so abundant that _{ai-learning}_ FOR FREE.
+It is so abundant that _{ai-learning}_ is FREE.
 
 .In the EU people effectively use the models available today to make money now.
 image::EU-AI-Progress-Button.png[The EU business doesn't hold breath for massive and instead profits well on the available today]
@@ -56,20 +52,16 @@ image::EU-AI-Progress-Button.png[The EU business doesn't hold breath for massive
 
 In Europe -- when companies actually commit rather than simply announce to get counted -- I see something very different:
 open-source infrastructure, locally hosted models, tiny teams (3-5 specialists), fine-tuned to actual domain needs.
-No dependency.
-No lock-in.
-Lower cost.
-Higher success rate.
+No dependency, no lock-in, lower cost, higher success rate.
 
 The American approach makes great press releases. +
 The European approach *just ships working product*.
 
-== I've seen this pattern before.
+== I've seen this pattern before
 
 In 2023, I watched Ukrainian logistics networks solve an impossible problem:
 keep a country fighting with fractured supply chains.
-Their solution wasn't centralized control.
-It was a distributed commitment -- thousands of small makers,
+Their solution was a distributed commitment instead of centralized control -- thousands of small makers,
 validation only at transaction commit, late onboarding welcome.
 
 By 2025, that pattern migrated south.
@@ -79,19 +71,15 @@ Monsters like Rheinmetall, KMDB, and BAE operate something like a single organis
 servicing equipment nobody designed, building systems nobody envisioned.
 Frankensteined weapon platforms from bulldozers to technicals.
 
-This isn't chaos.
-It's *_architectural resilience_*.
-Small, distributed, domain-expert nodes.
-Sound familiar?
+This is *_architectural resilience_*: small, distributed, domain-expert nodes.
 
 The world's leading economic research institutions are already writing books about it.
 China is paying close attention.
 But in the USA we're oblivious to this development.
 
-Europe is changing fast.
-We're not.
+Europe is changing fast, and we're not.
 
-== The AI parallel is exact.
+== The AI parallel is exact
 
 The companies I see succeeding with AI in Europe aren't waiting for gigafactories.
 They're:
@@ -102,20 +90,15 @@ They're:
 * Iterating weekly, not quarterly;
 * Spending 10% of what American competitors spend, getting better and cheaper results.
 
-No vendor lock-in.
-No token bills scaling to infinity.
-No "AI strategy depends on OpenAI's roadmap." No chasing the latest model -- chasing profit instead.
+No vendor lock-in, no token bills scaling to infinity, no "AI strategy depends on OpenAI's roadmap."
+No chasing the latest model -- chasing profit instead.
 
-== Why doesn't anyone talk about this?
+== Nobody Talks About This Because It's Boring
 
-Because it's *boring*.
 "German manufacturer deploys a fine-tuned 7B model with an 11-person team" doesn't make headlines.
 "EU announces €200B AI gigafactory initiative" does.
 
-But one of these approaches actually works at an enterprise scale.
-The other creates great slide decks.
-One of these ways survives the AI bubble crash.
-The other does not.
+But one of these approaches works at enterprise scale and survives the AI bubble crash; the other creates great slide decks.
 
 == Disclosure: My Lens
 
@@ -131,46 +114,33 @@ The pattern difference: EU projects start with a business problem where AI fits 
 US projects start with "where else can we stick AI and trumpet about it?"
 
 I'm a small consultancy.
-In America, big is the game -- I struggle to sell.
-In Europe, I sell on competence and reputation.
+In America, big is the game, and I struggle to sell; in Europe, I sell on competence and reputation.
 That's my bias.
-Take it as you will.
-
-But the results speak: one approach ships profit.
-The other ships press releases.
 
 == The uncomfortable question for executives:
 
-Are you building AI capability?
-Or are you buying AI dependency?
-Are you chasing AI-Bubbles?
-Or are you solving business problems?
+Are you building AI capability or buying AI dependency?
+Chasing AI-Bubbles or solving business problems?
 
-The distributed, domain-specific, small-team approach isn't just European pragmatism.
-*It's sound architecture.* It's what actually survives contact with production.
+The distributed, domain-specific, small-team approach is sound architecture: it survives contact with production.
 And it used to be an American Thing!
 
 The distributed way has only one dependency: *_competence_*!
 
-I've seen both playbooks.
-I've built with both.
-One creates long-term capability.
-The other creates long-term invoices.
-
-Your choice.
+I've seen and built with both playbooks: one creates long-term capability, the other long-term invoices.
 
 '''
 
 == For All:
 
-.World's Best Explanation on LLMs!
+.The Best Explanation of LLMs I Know
 [#img-on-llms,link={jb-on-llms},window=_blank]
 image::JetBrainsOnLLMs.png[The proper history of LLMs]
 
 {nbsp}
 
-Hands down the best explanation on LLM evolution is by JetBrains: {jb-on-llms-video}. +
-I'm excited to share it with you here.
+The best explanation on LLM evolution is by JetBrains: {jb-on-llms-video}. +
+I'm sharing it with you here.
 
 == For Developers:
 

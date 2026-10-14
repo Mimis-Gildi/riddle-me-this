@@ -12,7 +12,7 @@ hidden: false
 search: true
 read_aloud: false
 ---
-= React Getting Too Much Data?
+= React Getting Too Much Data
 ifndef::env-site[:imagesdir: ../assets/images]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :fn-cqrs: footnote:[The Read Model is one half of Command Query Responsibility Segregation (CQRS): a denormalized projection shaped for presentation. See Martin Fowler's https://martinfowler.com/bliki/CQRS.html[CQRS,window=_blank] and Greg Young's https://cqrs.files.wordpress.com/2010/11/cqrs_documents.pdf[CQRS Documents,window=_blank].]
@@ -47,16 +47,16 @@ where only ONE option is clearly true:
 - A) Code Warrior; Or,
 - B) Whiteboard Warrior.
 
-But it is equally amazing in its own way. +
+But it is interesting in its own way. +
 This time -- two hackers talking:
 
 *What if you get too much data in single page React application?!* +
 > _We never do that: it breaches Boundary Contract._ +
 *But you have that in production! What can you do about it?* +
-> _I can implement an intermediate service to page and not have it happen?_ +
+> _I can implement an intermediate service to page and not have it happen._ +
 *But is there ANYTHING you can do in React to handle the situation?* +
 > _Potentially, I'd need to read the manual to see what new is available._ +
-> _**Importantly:** When we find ourselves searching outside framework, +
+> _**Importantly:** When we find ourselves searching outside the framework, +
 > or component type boundary -- *we have already committed a mortal sin*!_
 
 First, I will tell you WHY the interview went this way. +
@@ -103,9 +103,9 @@ In fact, I had a massive platform with 56 tenants impose it: awarded the best ar
 
 _This question was a trap by a fallacy. But what we can do to avoid it is indeed interesting._
 
-== Why So Serious?!
+== Why So Strict
 
-Because a boundary contract that bends is not a contract -- it is a suggestion.
+A boundary contract that bends is a suggestion, not a contract.
 
 An evolving team is exactly the team that cannot afford suggestions.
 Seniors rotate, juniors arrive, and the architecture is the only teacher on duty
@@ -125,8 +125,8 @@ On a disciplined team it's a Sev-One -- highest severity outage, +
 and somebody is accumulating HR notes. +
 At least on my teams -- core engineering contracts are never to be broken.
 
-*As a React / UX developer HOW do you safeguard yourself?!* +
-The problem is not your UX -- it's above you -- the Architecture. +
+*As a React / UX developer, here's how you safeguard yourself:* +
+The problem is above your UX -- in the Architecture. +
 Still there is one thing you must do -- acknowledge the boundary.
 
 *Full disclosure:* React is a very small and simple framework one can master,
@@ -138,7 +138,7 @@ and abilities. But my advice here is basic and universal.
 React offers the {react-profiler} `onRender` budget hook -- there since {react-169}, 2019.
 Its purpose is not to gracefully recover in production -- no, that's the worst sin one can
 commit: masking or Band-Aiding another sin. It's for your local benching and CI/CD pipeline gate.
-There, I'd be making the largest meanest data frame I am willing to accept and benching myself
+There, I'd be making the largest, meanest data frame I am willing to accept and benching myself
 on that. Up until recently the SLA DOM was small, only about 10,000 objects. That's
 okay, it's a Read Model, not a Jupyter Notebook. If I don't fit -- I might take one look
 at what's available in the latest versions. I remember Lazy Evaluation and Partial Render
@@ -166,4 +166,4 @@ I looked it up. Every rumor I remembered has landed:
   (react-window and friends) -- is userland, NOT React. Which proves the point:
   the moment you reach for it, you are already outside the framework boundary.
 
-*AND REMEMBER!* *_These are just trinkets. Discipline makes us WHOLE._*
+*_These are just trinkets; discipline makes us WHOLE._*

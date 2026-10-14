@@ -17,8 +17,8 @@ read_aloud: false
 ifndef::env-site[:imagesdir: ../assets/images]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 
-This was told to me by my homeroom teacher sometime 1987, Western Ukrainian SSR.
-His handle, `Rat`, is likely because he looked like a one-eyed rat:
+This was told to me by my homeroom teacher sometime in 1987, Western Ukrainian SSR.
+His handle, `Rat`, likely came from his looking like a one-eyed rat:
 face elongated forward, with a long-healed scar top-down entire left side -- always
 happy to greet people with his steel cold confident demeanor. I respect the man deeply.
 Rat taught history. The real history, not what the West knows or Soviets prescribed.
@@ -54,7 +54,7 @@ From time to time, I slowly spread a palmful of grain by my feet. And I watch.
 
 *Roosevelt:* How is that a more efficient method?
 
-*Stalin:* _Efficient?_ -- not what I'm after. Better! They never peck me, only each-other, to get to me. +
+*Stalin:* _Efficient?_ -- not what I'm after. Better! They never peck me, only each other, to get to me. +
 And I see ALL of them next to me. By the way -- _how do you snuff one for dinner?_ +
 *Roosevelt:* Oh, that's a process. Best to get help. Must corner them. Sometimes I go without. +
 And I take it -- _you have a way?_

@@ -1,10 +1,12 @@
 ---
 categories: [reflections]
 tags: [AI, Agentic AI, Security, Enterprise, Zero-Day, OpenClaw, Claude Code]
+excerpt: >
+    The AI Hype is a failure of astronomic proportions we're yet to fathom fully.
 classes: wide
 comments: false
 hidden: false
-search: false
+search: true
 read_aloud: false
 ---
 = AI-maggedon 2026: Synopsis
@@ -21,7 +23,7 @@ The terminal glows with the line: \
 
 include::../_fragments/2026-04-23-ai-maggedon-hero.adoc[]
 
-.The world ends as crackers eat up cog. The hacker works.
+.The world ends as crackers eat up cogs. The hacker works.
 [#img-hero]
 image::wizard-1.png[{hero-alt}]
 
@@ -31,20 +33,20 @@ image::wizard-1.png[{hero-alt}]
 Mythos is a gimmick::
 Anthropic's $125/M-token wonder-model finds bugs in code their tools help generate. +
 Agentic coding spikes 2.74x the vulnerability rate -- *the fire truck is also the arsonist*. +
-But that's not even the whole joke yet -- most powerful AI-native exploitative tools are *_systems_*, +
+And the joke goes further: the most powerful AI-native exploitative tools are *_systems_*, +
 model differences of 10% make no difference -- these run many models across all surfaces. +
 {nbsp} +
-The Anthropic folks need to learn to value what they have achieved, cherishing remaining integrity. +
+The Anthropic folks need to value what they have achieved and keep their remaining integrity. +
 Full story {full-mythos}
 
 "Deterministic AI": some flaunt models, Google tills markets::
-Engineers mocked the name; Google doesn't care, doesn't salivate over models +
- -- it's absorbing your domain logic whole; +
+Engineers mocked the name; Google doesn't care, doesn't salivate over models -- +
+it's absorbing your domain logic whole; +
 The Mojo ecosystem your experts spent decades building, you fork over like your family photos. +
-Same play as 2017 on a way bigger stage -- you are just data to them. Digestible. Yummy. +
+Same play as 2017 on a way bigger stage -- you are just data to them, digestible and yummy. +
 Full story {full-google}
 
-The golden few -- these will be the only developers left walking this Earth::
+The golden few -- possibly the only developers left::
 What agentic collaboration really looks like when competent teams ship it -- most can't follow. +
 First, we understand how "good" works. Then you'll go look at how your own team works. +
 Full story {full-wizards}
@@ -79,7 +81,7 @@ Full story {full-primer}
 
 '''
 
-WHY am I telling you this? In every company I run my Agentic Bootcamp I always get this one popular wise guy execs adore!
+Here's why I'm telling you this: in every company where I run my Agentic Bootcamp, I get the one popular wise guy execs adore!
 Kimi is the hottest Chinese girl on The Scene right now -- smart, beautiful, cultured, just stunning -- no hacker walks by
 without hunching over. So when a poser brags "I'm running Kimi local by my Claude at home" -- ask which model and at what quantization.
 
@@ -87,11 +89,11 @@ I asked him a few times -- he goes {kimi-k2-thinking}[`moonshotai/Kimi-K2-Thinki
 "both on my Mac Mini and RTX" -- execs are in awe of this genius!
 
 Let me break it to you, my dear executive friends -- this girl is a shipping container full of lead. +
-I could not even break her loose, floored, black smoke bellowing, ripping tarmac with my 3 harnessed Ford Power Stroke F-450s
+I could not even break her loose, floored, black smoke billowing, ripping tarmac with my 3 harnessed Ford Power Stroke F-450s
 -- and your colleague, the honorable distinguished engineer, toured her around the neighborhood in his BMW X5, _AND_ his wife's minivan! +
-_Are you sure you want to be in this position?! No?! -- *then read my blogs!_*
+_If you don't want to be in this position, *read my blogs!*_
 
-*The frontier is rented.* That is the truth nobody is telling you because they don't know. +
+*The frontier is rented* -- and few who talk about it know that. +
 {openrouter-url}[openrouter.ai,window=_blank] -- {openrouter-rankings}[the rankings,window=_blank] tell the story;
 {artificial-analysis}[artificialanalysis.ai,window=_blank] tells the same story neutrally.
 

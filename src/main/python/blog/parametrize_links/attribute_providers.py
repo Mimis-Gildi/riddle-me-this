@@ -43,5 +43,5 @@ def config_links_provider(conf: Path) -> AttributeProvider:
 
 def filter_provider() -> AttributeFilterProvider:
     """Attributes found at varies configuration levels that are not links document cleanup is concerned with."""
-    return lambda kvp: kvp[0] not in {"icons", "baseurl"}
+    return lambda kvp: kvp[0] not in {"icons", "source-highlighter", "baseurl"}
 

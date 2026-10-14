@@ -17,26 +17,25 @@ Stuck supporting the same boring Spring-Boot-v.Ancient artifacts at work?
 
 This weekend I presented autonomous competing agent teams to a room full of Corporate American developers.
 What I got was not a constructive follow-up dialog -- like I get with most startup communities.
-Instead? Fear. Real morbid fear. The kind where people stop asking questions and start airing grievances.
+Instead there is fear -- the morbid kind, where people stop asking questions and start airing grievances.
 
 If that's you -- *chilax* -- _I've got you right here_.
 
 *_The same thing threatening you will save you!_*
 Agentic AI is your way out.
-And it only takes a weekend. Not a year.
+And it takes a weekend, not a year.
 
 == Our Mental Traps
 
 I see someone I'd once done solution architecture with post: "I will start on Python to learn AI..."
 
 He "fell off his horse" and lost his skills, obviously.
-And now he feels dread because he thinks he knows what's coming.
-He doesn't.
+And now he dreads what he thinks is coming, but he's wrong about it.
 
 *Here's that trap:* _take classes online, learn Python, learn fundamentals of ANNs, then learn about LLMs, then finally research practical applications._
 A year into that study-path you will have definitively realized that you have done absolutely nothing for your career yet.
 
-Meanwhile, the tools kept evolving. And, more importantly, easing!
+Meanwhile, the tools kept evolving and, more importantly, got easier.
 
 Don't do that 1980s thang!
 
@@ -46,7 +45,7 @@ Quick history -- because it matters to you:
 
 - *2023:* Language models appeared in IDEs as passive chatbots. You had to drive every interaction. Limited. This passive structure required the user to drive the narrative -- making for a lame assistant that resisted you and hallucinated constantly.
 - *2023-2024:* Cursor and Windsurf integrated AI with your editor's Language Server Protocol. Better. Cursor 1.0 was a meaningful step forward. You may remember me posting heatmaps how much Windsurf autocompleted for me -- no longer relevant. At all!
-- *Mid-2025:* Finally, Anthropic, my darlings, had some sense to apply one ancient technique -- the REPL (read-evaluate-print-loop) boosted with actor-model roles and flows. Obvious in hindsight -- every hacker's favorite toy -- instant gratification.
+- *Mid-2025:* Finally, Anthropic, my darlings, had some sense to apply one ancient technique: the REPL (read-evaluate-print-loop) boosted with actor-model roles and flows. Obvious in hindsight: every hacker's favorite toy, instant gratification.
 
 And that *_changed EVERYTHING_*.
 
@@ -54,7 +53,7 @@ And that *_changed EVERYTHING_*.
 
 Fortunately, the same magic that deprecated one laggard is exactly what can save another.
 
-https://code.claude.com/docs/en/quickstart[Claude Code] -- takes 5 minutes to set up -- not just for code. Backed by full-featured Anthropic models and robust human-to-human-like working models, this collaborator will do any job with you and teach you in the process.
+https://code.claude.com/docs/en/quickstart[Claude Code] -- takes 5 minutes to set up -- not just for code. Backed by Anthropic's models and a working style close to human-to-human collaboration, it will do any job with you and teach you in the process.
 
 I personally have made software with it, of course. But also published content, designed businesses, trained teams, and learned a bunch of new disciplines by-doing. It's not limiting -- I operate agent teams via MCP-A2A bridge. The only constraint is that your root agent is Anthropic.
 

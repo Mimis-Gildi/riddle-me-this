@@ -12,18 +12,18 @@ FULL_ARTICLE_DECLARED_KEYS = {
     "active-inference", "verses", "g-io", "g-community", "g-ai-onboarding", "g-dev-profile",
     "g-k-models", "g-dtensor", "g-io-session", "g-palm2-api", "g-maker-suite", "g-tensorflow",
     "g-research", "g-kaggle", "g-attn", "m-llama", "s-alpaca", "bsd-vicuna", "bsd-vicuna-topics",
-    "db-dolly", "db-dolly-hf", "open-assistant", "o-a-hf", "all-oss-lm-models",
+    "db-dolly", "open-assistant", "o-a-hf", "all-oss-lm-models",
     "mail-rdd13r-no-subj", "revisit-article", "revisit-fn",
 }
 
 GLOBAL_LINK_KEYS = {
     "site-baseurl", "cb-hacker", "cb-mundane", "chatgpt", "hera-school", "hera-school-url",
-    "mailto-rIdd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
+    "mailto-ridd13r", "openai", "openai-blog", "profile-li", "li-newsletter",
     "fireship-gemini3", "gitomer-book", "mcp-overview",
     "mit-article-url", "mit-article-title", "mit-article",
-    "rdd13r-gh", "rdd13r-gh-io", "rdd13r-gh-io-url", "rdd13r-gh-io-title",
+    "rdd13r-gh", "rdd13r-gh-io-url",
     "release", "resume", "total-recall", "org-mimis-gildi",
-    "cto-bible", "cto-trap", "cto-trap-url", "footer-cto-trap",
+    "footer-cto-trap",
     "org-gervi-hera-vitr", "org-gotham-village", "org-mimis-latlaeg", "org-mimis-scala",
     "hacker-culture-url", "hacker-culture", "dolly-2",
     "openrouter", "openrouter-rankings", "openrouter-url",
@@ -32,14 +32,17 @@ GLOBAL_LINK_KEYS = {
     "ai-million-dollar-devs", "ai-businesses-to-perish", "ai-hype-2025", "ai-maggedon-url",
     "integrated-ai-evolution-url", "integrated-ai-evolution",
     "ollama", "together-ai", "vailala", "rdd13r-style-guide",
-    "advanced-ai-non-corp-url", "advanced-ai-non-corp",
     "ai-2-activation", "ai-for-enterprise-2025", "ai-integration-powers-url", "ai-integration-powers",
     "autogpt", "best-corporate-ai-url", "best-corporate-ai",
-    "chatgpt-will-replace", "cognitive-augmentation", "corporate-america",
-    "doordash-case", "fastest-ai-adoption",
+    "chatgpt-will-replace", "cognitive-augmentation", "corporate-america", "corporate-america-url",
+    "delta-csis-url", "doordash-case", "fastest-ai-adoption",
     "gitomer-book-fn", "google-vs-openai", "local-models-grief-url",
     "openclaw", "qwen3-30b-thinking", "rand-report",
     "years-late-confirmation-url", "years-late-confirmation",
+    "independence-2026-collector","art-seven-betrayals", "art-qanon", "art-institutionalized",
+    "art-klemo", "art-roosevelt-stalin", "art-ukraine-replaces", "art-war-end",
+    "c4w-bitspittle-url", "codeforces-url", "dolly-2-url", "imdb-idiocracy", "pendos-url",
+    "read-model-site", "read-model-site-url", "solid-url", "spider-web-url", "vue-url", "zz-fix-america-url",
 }
 
 
@@ -67,7 +70,7 @@ def mock_provider() -> AttributeProvider:
         Attribute("site-baseurl", "/riddle-me-this", -1),
         Attribute("chatgpt", "https://chat.openai.com/[ChatGPT,window=_blank]", -1),
         Attribute("cb-hacker", "http://www.catb.org/jargon/html/H/hacker.html[hacker,window=_blank]", -1),
-        Attribute("mailto-rIdd13r", "mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let%20us%20compete%3F[rIdd13r@pm.me]", -1),
+        Attribute("mailto-ridd13r", "mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let%20us%20compete%3F[rIdd13r@pm.me]", -1),
         Attribute("hera-school", "https://gervi-hera-vitr.github.io/sindri-labs/[Héra Academy Laboratory,window=_blank,opts=nofollow]", -1),
         Attribute("resume", "https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v13.1.0/VadimKuhay-Resume.pdf", -1),
     )

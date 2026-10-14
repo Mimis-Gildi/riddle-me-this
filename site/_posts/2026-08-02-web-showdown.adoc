@@ -25,11 +25,11 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :gh-camerastream-url: https://developers.home.google.com/cloud-to-cloud/traits/camerastream
 :gmail-perf-url: https://developers.google.com/gmail/api/guides/performance
 :react-home: https://github.com/facebook/react[React 19.2,window=_blank]
-:solid-home: https://github.com/solidjs/solid[SolidJS,window=_blank]
+:solid-home: {solid-url}[SolidJS,window=_blank]
 :svelte-home: https://github.com/sveltejs/svelte[Svelte,window=_blank]
 :kobweb-home: https://github.com/varabyte/kobweb[Kobweb,window=_blank]
 :kilua-home: https://github.com/rjaros/kilua[Kilua,window=_blank]
-:vue-home: https://github.com/vuejs/core[Vue,window=_blank]
+:vue-home: {vue-url}[Vue,window=_blank]
 :angular-home: https://github.com/angular/angular[Angular,window=_blank]
 :kvision-home: https://github.com/rjaros/kvision[KVision,window=_blank]
 :leptos-home: https://github.com/leptos-rs/leptos[Leptos,window=_blank]
@@ -42,10 +42,11 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :bitspittle: https://github.com/bitspittle[bitspittle,window=_blank]
 :varabyte: https://github.com/varabyte[Varabyte,window=_blank]
 :kotlin-conf-2025-kobweb: https://2025.kotlinconf.com/talks/774286/
-:KMP-Web-bitspittle: https://bitspittle.dev/blog/2024/c4w[Compose Multiplatform for Web: An Amazing Framework That Maybe You Shouldn't Use,window=_blank]
+:kmp-web-bitspittle: {c4w-bitspittle-url}[Compose Multiplatform for Web: An Amazing Framework That Maybe You Shouldn't Use,window=_blank]
 :tns-wasm-url: https://thenewstack.io/see-what-webassembly-can-do-in-2025/[See What WebAssembly Can Do in 2025,window=_blank]
 :tt-wasm-url: https://www.techtarget.com/searchITOperations/news/366551352/Server-side-WebAssembly-takes-shape-but-faces-challenges[takes shape, but faces challenges,window=_blank]
 :fn-wasm-hype: footnote:[Give Wasm its due -- the real win is *server-side*: WASI, edge, serverless with single-digit-millisecond cold starts. The New Stack's {tns-wasm-url} and TechTarget's more sober {tt-wasm-url} both hype _that_ Wasm, and rightly. But notice what they never claim: Wasm painting UIs off-DOM to "save the web front-end." That claim lived in the blog tier that has since been quietly deleted. Nobody reputable put Wasm in front of a public Read Model -- which is why this showdown fields zero off-DOM contenders. So much for the new tech.]
+:read-model-video-id: ocap_gdsrA0
 
 ++++
 <style>
@@ -59,10 +60,9 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 </style>
 ++++
 
-*_What web technology competent teams would use in 2026?_*
+*_What web technology would competent teams use in 2026?_*
 
-We had an awesome weekend on the Scene -- 90 minutes of pure discovery among such coders.
-Hope you had a good weekend too!
+We had a weekend on the Scene -- 90 minutes of discovery among such coders.
 And we selected the final technologies for a fun, purely hands-on exploratory load test proving:
 
 > "In 2026 you should use `these` to present data in production."
@@ -77,6 +77,9 @@ _Before you laugh and click away, I know that pushing excessive data is NEVER a 
 An impossible scenario because Read Model doesn't process data: its constraints are always owned by the Aggregate.
 Besides, it's there to impress a human -- export formats and dedicated modules deal with grids, notebooks, and sheets. +
 link:{owl-article-url}[This humorous article,window=_blank] explains how this wild idea has come to be._
+
+.The showdown results -- run it yourself in {read-model-site}.
+video::{read-model-video-id}[youtube,width=640,height=360]
 
 == Structural Limitations:
 
@@ -104,7 +107,7 @@ and the client renders _only declarative Cards_ (Aurinko teardown). The push via
 polling.
 
 Perfect example of exported behavior: the client owns no behavior, just presents a server-authored declarative model.
-They're not going to have the "too much data for the Read Model" -- are they now?
+They won't have the "too much data for the Read Model" problem.
 
 *Second)* Google Chrome browser has very high, easily verifiable boundaries #on DOM#:
 
@@ -113,8 +116,8 @@ They're not going to have the "too much data for the Read Model" -- are they now
 
 _Chrome's superlinear cost on layout, style, recalculations is about the best on object models._
 
-*Baseline)* is React 19.2. Not just because it was asked about in the {owl-article} article. React's incredibly
-accessible thus common and popular. This is NOT a library for competence or performance optimization.
+*Baseline)* is React 19.2. Not just because it was asked about in the {owl-article} article. React is
+accessible, thus common and popular. This is NOT a library for competence or performance optimization.
 It is popular because it can be fully mastered (not just learned) in a single weekend. As a bonus, due to
 its extreme simplicity, ubiquity, and relatively complete functionality the library is easy to "standardize"
 in the risk-averse Corporate America.
@@ -145,9 +148,7 @@ you cannot publish an SLA number you have never crashed into.
 
 == Chosen Technologies
 
-Two families, split on the one line that decides the whole test: +
-does it paint into the browser's own DOM, +
-or does it draw its own pixels off to the side?
+Two families, split on the one line that decides the test: does it paint into the browser's own DOM, or does it draw its own pixels off to the side?
 
 *DOM:* live and die by Chrome's node ceiling:
 
@@ -188,7 +189,7 @@ __Composable SEO-friendly DOM power in type-safe pragmatic language {plus} tools
 - {compose-mp-home} (Skia canvas, Wasm) -- I have a lot to gripe about this one on.
 Having produced a lot of multiplatform software with KMP I loved it. +
 EXCEPT this. {bitspittle} explains it best here: +
-{KMP-Web-bitspittle}.
+{kmp-web-bitspittle}.
 - {flutter-home} (CanvasKit / Skwasm -- Skia to Wasm) -- same off-DOM bargain; Skwasm even paints
 off-thread in a worker. Beautiful for an app, disqualified for a public Read Model: no SEO, no
 accessibility tree, a fat renderer to download.
@@ -209,7 +210,7 @@ WebAssembly isn't an option so all the tests are on DOM for this run. Here's our
 . Ktor serves the control plane landing page application for the core function;
 . Ktor serves all the modules under test from single multimodule project.
 
-*So we have one beautiful polyglot project and all is decided on the spot!*
+*So we have one polyglot project and all is decided on the spot!*
 
 Project planned as part of {org-mimis-gildi} org -- standard ops included.
 
@@ -246,4 +247,4 @@ Here are optional modules that *_can_* be added::
 - Makepad -- potentially claimed / __vacant__ (TBD)
 
 Happy Monday! +
-And have a good week 😉
+And have a good week

@@ -37,9 +37,7 @@ image::ai-springboard.png[It's now or never kinda thang...,width=600,align=cente
 
 {nbsp} +
 
-What is the fastest way to meet your board's AI goals?
-What is the fastest way to become an AI Engineer?
-How are the two related?
+The fastest way to meet your board's AI goals and the fastest way to become an AI Engineer are the same path.
 
 I am a team competence player-coach building disruptive teams for decades -- let me give you a shortcut.
 
@@ -48,13 +46,11 @@ Nor any other pointless tool trope.
 I am talking about real AI producing measurable business value, both for your company and yourself.
 Take a look at {ai-current-state} and {ai-adoption-phases} to get a better sense of my scope here.
 
-It's all trivial.
-Success boils down to a way of thinking and a little technical magic.
+It's all trivial: success boils down to a way of thinking and a little technical magic.
 I had already described the winning investment matrix: {ai-adoption-matrix}.
-And it really is "little" --  paradoxical considering the rate of failures.
+And it really is "little" -- paradoxical considering the rate of failures.
 For DX, teams needed 2-3 weeks before producing results.
-With AI?
-One day or a weekend.
+With AI, it takes one day or a weekend.
 Here is how it's done:
 
 . People and Processes -- 80%;
@@ -71,7 +67,7 @@ Ironically, from the DX we only really need one thing -- the last one -- busines
 Your generative AI is just a tool.
 A tool that can, if used competently, produce a business capability.
 And it is that business capability that creates "money in the bank," not the means it's begotten with.
-Yet the means are necessary -- and the means are *_people_*, not gadgets.
+Yet the means are necessary, and the means are *_people_*.
 This is why most effort is on "People and Processes," not gadgets.
 
 == Enabling People
@@ -92,7 +88,7 @@ And now that we have our domain team, I really must do very little to get things
 . Enable with the right magic.
 
 *Team alignment:* I must make sure every teammate that contributes,
-and hopefully that's everyone clearly understands how the business outcome maps to their personal success.
+and hopefully that's everyone, clearly understands how the business outcome maps to their personal success.
 What is the business outcome -- shared understanding on valuable domain behavior, not a tool or a library.
 What is the team's success -- measurable return on investment for the business from the team.
 What is personal success -- how does the company and department brand map to an individual's personal brand.
@@ -106,7 +102,7 @@ And this part is always fun.
 The secret -- make it the entire team's journey.
 For business experts this would typically be related to the experience bias (look up {seeds-model},
 I have a lot of luck with it).
-If I don't help them find and break assumptions there, then the resistance will cause the new tools applied in old ways.
+If I don't help them find and break assumptions there, then the resistance will cause the new tools to be applied in old ways.
 For engineers this would typically be the similarity bias problem.
 If unchecked, we get "Impostor Syndrome" roadblocks as well as catalyst for experienced bias-related friction.
 For example, AI works opposite to developer-written code:
@@ -132,8 +128,7 @@ for the team to attempt the necessary challenge before them.
 
 Now this part is only 20% of the effort.
 And here I will let you on a little secret: it's here the project is most likely to fail.
-Not because there is a lot to fathom or do.
-But because the actual technical experts we need to get through this challenge are scarce.
+Not because there is a lot to fathom or do, but because the actual technical experts we need to get through this challenge are scarce.
 Many can easily learn organizational development and succeed in aligning the team -- the previous part.
 But to align the team through a technical delivery, one needs someone like myself
 -- a bearded old hacker who just codes all the time, daily through decades.
@@ -144,8 +139,7 @@ And even then must be diligently maintained because even a single hiatus can be 
 Steering the team wrong kills the chances.
 And since most coaches we profiled don't actually code -- we get what we have today.
 
-And that's unfortunate.
-Because in the end, the technical increment is tiny for any already performing team.
+That's unfortunate, because in the end the technical increment is tiny for any already performing team.
 All I have to do to succeed quickly is to stop engineers thinking about AI and ANNs
 and bring their attention to few systems engineering topics -- and we're in prod!
 
@@ -154,7 +148,7 @@ and bring their attention to few systems engineering topics -- and we're in prod
 *Secret number 2:* platforms are important!
 In all American companies today there is a sycophantic following to different cloud providers.
 "We're Microsoft and Azure all the way, and Microsoft owns OpenAI."
-Hmmm., but neither has anything to do with what you need for business AI success!
+Hmmm, but neither has anything to do with what you need for business AI success!
 The same is true about stacks: "We're a Java shop, not Kotlin"
 -- hmmm... by saying that you are actually telling me that you are competent in neither!
 This is also a part of *_biases_* I'd spoken of earlier, except a little more global.
@@ -180,7 +174,7 @@ But they're not vendor-locked.
 Not only that, everything in AWS also exists elsewhere for Netflix.
 Not even all of Netflix is on AWS _in production_ today.
 Yet his bias also poisoned his dev teams -- boots on the ground.
-His developers` minds were blown when I showed then how easy it is to go hybrid.
+His developers' minds were blown when I showed them how easy it is to go hybrid.
 
 Keep that in mind, especially for the _**Individual Developer Career** part of our discussion._
 
@@ -199,7 +193,6 @@ Response: "But we're Spring Boot developers, not AI scientists." Execs: "Okay, t
 And the new side-by-side "AI Team" is created.
 The incumbent Spring-Boot-Only team has NO IDEA that the *New Team*
 is also using Spring Boot to build their *{boot-data-rest}* and *_{boot-mcp}_*.
-Hmmm… See where I am going with this?
 
 This should make you *think*!
 
@@ -218,8 +211,7 @@ Also, the internet tells me I'm the first one to predict this state of things
 -- I'm embarrassed for my America.
 Having quickly helped a few companies out, I see two mutually exacerbating problems:
 
-. There is top-down failure -- and there is no valid reason for it.
-. There is bottom-up failure -- and there is no reason for it either.
+. There is top-down and bottom-up failure -- and there is no valid reason for either.
 
 Or, if there are valid reasons -- then, I don't see or understand them.
 Because any such possible reasons are not technical or organizational.
@@ -230,10 +222,8 @@ Regardless -- *I know what to do!* *_Shore up both pathways._*
 == Executives' Path:
 
 Executives must do "one thang and one thang only": enable your existing domain teams.
-Forget the fads!
-This is NOT about AI.
-Not one bit.
-This is about good old "systems engineering." Modern name -- is Domain Modeling.
+Forget the fads: this is NOT about AI, not one bit.
+This is about good old "systems engineering." Its modern name is Domain Modeling.
 
 *For Medium Companies:* Snuff the urgency and systematically grow your Community of Practice.
 You will need that for the next four phases, see {ai-adoption-phases}.
@@ -262,16 +252,16 @@ The path with the lowest friction for new teams: Google's developer ecosystem.
 
 *{google-skills}*: Brand-new platform launched in 2025,
 building on years of experience catering to developers in AI and Cloud.
-The service is so comprehensive that at first I was conflicted - upskilling software teams is my bread and butter.
+The service is so comprehensive that at first I was conflicted -- upskilling software teams is my bread and butter.
 And this single service compiled everything I'd present to teams into one accessible portal.
 I've used it with customers and it works.
 Fortunately, I'm still needed.
-Because "Practical experience is knowing that which can no longer be corrected" - in other words, what not to do.
+Because "Practical experience is knowing that which can no longer be corrected" -- in other words, what not to do.
 But for individual career growth or team modernization, this is your primary resource.
 
 *{google-vertex}*: A one-stop shop for learning and working with production-grade AI.
 Running on {google-cloud} with {google-vertex-studio}, you touch real infrastructure without building massive labs.
-Most importantly, *{ai-google-dev}* is your sandbox to actual Vertex AI - {gemini-cloud}.
+Most importantly, *{ai-google-dev}* is your sandbox to actual Vertex AI -- {gemini-cloud}.
 (See blogs {google-skills} and {google-skills-cert}).
 
 {google-ml-class}
@@ -280,11 +270,10 @@ Most importantly, *{google-dev}*: where it all begins and grows.
 This community is why I no longer maintain my own private portal.
 Once we were considered uniquely effective, yet today I send my mentees here.
 
-*What about other platforms?* Yes, absolutely.
-They work well.
+Other platforms work well, too.
 I'm platform-agnostic by nature and no fan of vendor lock-in.
 But Google made a strategic bet on developer ergonomics while others bet on enterprise sales.
-For teams learning AI integration - start where the friction is lowest.
+For teams learning AI integration -- start where the friction is lowest.
 Expand to multi-cloud as your production needs grow.
 
 '''
@@ -301,9 +290,7 @@ __
 
 == Full Disclosure:
 
-I am not a fan of Google.
-Or anyone for that matter.
-Except maybe JetBrains, a little.
+I am not a fan of Google, or anyone for that matter -- except maybe JetBrains, a little.
 Ever since Google founders left, I’ve had more to dislike than like.
 I live my life to die an honest man.
 And I don't respect fishy business from others either.
@@ -319,8 +306,7 @@ I found them invaluable in launching startups for people, transforming Corporate
 But know that yours truly, `rdd13r`, doesn't trust Google.
 I fully expect them to start turning screws on devs and business as soon as they feel that their market is cornered.
 And that might be around the corner with the Gemini 3 release.
-I know this music.
-I lived it before.
+I know this music; I lived it before.
 So benefit to the max while you can.
 And remember -- there is no magic bullet.
 All the magic is in your head.

@@ -1,6 +1,6 @@
-pluginManagement {
+rootProject.name = "riddle-me-this"
 
-    val versionOfToolchainsFoojayResolver: String by extra
+pluginManagement {
 
     repositories {
         gradlePluginPortal()
@@ -8,8 +8,7 @@ pluginManagement {
     }
 
     plugins {
-        id("org.gradle.toolchains.foojay-resolver-convention") version versionOfToolchainsFoojayResolver
+        id("org.gradle.toolchains.foojay-resolver-convention") version
+                providers.gradleProperty("versionOfToolchainsFoojayResolver").get()
     }
 }
-
-rootProject.name = "riddle-me-this"

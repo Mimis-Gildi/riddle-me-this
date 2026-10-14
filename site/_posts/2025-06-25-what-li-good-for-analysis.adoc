@@ -6,7 +6,6 @@ comments: true
 classes: wide
 ---
 = How to Game LinkedIn Like a Pro
-:pub-li: see excerpt on LinkedIn by {li-newsletter}
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 
@@ -18,7 +17,7 @@ image::devs.png[Channel,width=800,height=450,align=center]
 In link:{site-baseurl}/reflections/2025/06/24/what-li-good-for.html[my previous post], I wrote about our daring experiment on LinkedIn.
 Let’s now unpack what we actually learned from it.
 
-== First, a Little Bit of Scepticism...
+== First, a Little Bit of Skepticism...
 
 Everyone -- except Joe -- was a little skeptical of his results.
 
@@ -70,7 +69,6 @@ No correlation.
 * **Intent Subversion** – Maybe Joe "salted" the robot by engaging manually.
 Nope -- logs show Joe was too lazy for that.
 
-So... what then?
 
 == Real Results -- What Now?
 
@@ -79,19 +77,19 @@ We ran a black-box *open-system* experiment.
 Here’s what it revealed:
 
 . **LinkedIn can be gamed** -- easily and in spectacular fashion.
-. **The platform rewards mimicry** -- not substance.
+. **The platform rewards mimicry** over substance.
 Simulated behavior outperforms authenticity.
-. **Persona ≠ Identity** -- LinkedIn rewards *persona projection* over who you really are.
+. **Persona ≠ Identity** -- LinkedIn rewards *persona projection* over identity.
 . **If we had added a leech, it would’ve been perfect.**
 
 __All fine. And kind of obvious.
 But what is *really* going on here?
 And for that we need to look inside.
-Grab the real *root cause* -- the only variable that matters.
+Grab the real *root cause*.
 Is that just the *sycophancy*?
 __
 
-== A Thousand 'Whys' to the Rescue.
+== A Thousand 'Whys' to the Rescue
 
 When I coach teams, I teach the 5-Why method. So that’s what we did. And it helped.
 
@@ -106,9 +104,8 @@ driving a distinct crosscutting concern.
 
 So far, so good.
 
-But the interesting part?
-The *feedback loop tuning* that kicked in during months 3–4.
-And here we saw the brilliance of Joe’s approach -- some of the crosscuts were about fleeting appeasement of followers.
+The interesting part was the *feedback loop tuning* that kicked in during months 3–4.
+And here Joe’s approach showed its strength -- some of the crosscuts were about fleeting appeasement of followers.
 
 What we didn’t realize right away was that Joe’s robot *did* have sidekicks -- just not *permanent* ones.
 They rotated in and out, like NPCs in a well-tuned simulation.
@@ -129,15 +126,13 @@ Turns out, **Joe built the same thing** -- only better.
 Just like the Russian poser at DB found himself between two directors arguing and ended up playing both sides, so did Joe's robot.
 On several repeated occasions, Joe's robot would pass small tokens between 2 arguing "executives" and draw attention to itself -- especially when a `troll` was also involved.
 
-This didn’t just simulate an ordinary suit.
-This simulated a typical *aggressive middle manager* -- "looking for growth," "willing to go the extra mile."
+It simulated a typical *aggressive middle manager* -- "looking for growth," "willing to go the extra mile."
 
 *ROFL -- Andrew!*
 
 _We were stunned to realize how little intelligence was required to make this Middle Management Rock Star happen.
 The same 11 behaviors in minimal interaction -- and it was a perfect fit!
-Minimalism was even the benefit here.
-The dumber, the better!_
+Minimalism helped: the dumber, the better!_
 
 **A perfect, self-tuning Middle Manager.** -- And LinkedIn *absolutely loved it!*
 Both human and algorithm.
@@ -172,7 +167,7 @@ How did this work for Joe? We estimate:
 . *Generated safe, bland positivity.* (_like a hacker never would_)
 . *Engaged just enough, in #safe ways#.*
 
-_Tracked what worked and *doubled down* -- not on truth, not on authenticity, but on **perception!**_
+_Tracked what worked and *doubled down* on **perception**, not truth._
 
 *Why did LinkedIn love it?*
 
@@ -197,7 +192,7 @@ I tested this by posting factual yet controversial content (POTUS, geopolitics, 
 *_The above four (4) traits held true for 96% of LinkedIn users._*
 
 Joe’s bot surfed the human need for safety, consensus, and tribal validation.
-It fit in. It looked successful.
+It fit in and looked successful.
 And people -- being LinkedIn people -- reacted to the #*mask*#, not the man.
 Sure, there was a real man behind the profile, but by now less than 0.01%
 of his "friends" had ever met Joe.

@@ -21,7 +21,7 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :footer-andrew-jackson: footnote:[America once survived an autocratic president like no other, {andrew-jackson}, neither current nor past leader can stand in the shadow of this man!]
 :civil-rights-act: https://www.archives.gov/milestone-documents/civil-rights-act[Civil Rights Act,window=_blank]
 :f-1: https://en.wikipedia.org/wiki/Rocketdyne_F-1[F-1 candle,window=_blank]
-:pendos: https://en.wiktionary.org/wiki/%D0%BF%D0%B8%D0%BD%D0%B4%D0%BE%D1%81[pendos (unsophisticated),window=_blank,opts=nofollow]
+:pendos: {pendos-url}[pendos (unsophisticated),window=_blank,opts=nofollow]
 :the-good-liars-state-fair-250-url: https://youtu.be/8oHcCKtlIiM
 
 ++++
@@ -30,16 +30,16 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 
 *_Humor is the cure to many problems in life!_* +
 I had the quietest Independence Day of my life! +
-(I wonder why 🤔that is )
+(I wonder why that is)
 
 .The {the-good-liars-state-fair-250-url}[State Fair must have "been glorious"! "So glorious that there will never be one like it!",window=_blank,opts=nofollow]
 [#img-state-fair-250,link={the-good-liars-state-fair-250-url},window=_blank]
 image::the-good-liars-state-fair-250.png[State Fair 250 ads to the *_meme_* that is [.underscore]#our time# in 'Merica,1200]
 {nbsp}
 
-You are an _American_, as I am, a _veteran_, as I am -- combine that with _common sense_: *calamity*?!
+You are an _American_, as I am, a _veteran_, as I am -- combine that with _common sense_, and it's a *calamity*!
 
-Today, we'd better remember what our 'Merica has accomplished by her 250th Birthday?!
+Today, we'd better remember what our 'Merica has accomplished by her 250th Birthday!
 
 Most daring experiment in Democracy -- this *_all happened before_*{footer-andrew-jackson} and people won!::
 *1787* -- Constitution ratified, and the bedrock stone to keep religion out of Statehood; (still regressing at times) +
@@ -50,22 +50,22 @@ Most daring experiment in Democracy -- this *_all happened before_*{footer-andre
 Secular maturity of human-animal to transcend the shackles of the cave and totems in it.::
 *1947* -- Bell Labs transistor <- The beginning of Final Industrial Revolution is in the USA; +
 *1953* -- Watson & Crick DNA (US-UK, partial credit), and we finally understand fundamentals of LIFE; +
-*1955* -- *Salk polio _vaccine_:* vaccination and vitamins is the single greatest impact on longevity; +
+*1955* -- *Salk polio _vaccine_:* vaccination and vitamins are the single greatest impact on longevity; +
 *1961* -- MIT acquired PDP-1; Tech Model Railroad Club -- the *Hacker Culture* is born to Change the World; +
 *1969* -- Apollo 11, Moon Landing: not yet repeated -- engineering popularity surpasses preachers'; +
 *1969* -- ARPANET first packet sent: my kind of engineering is born from the Hacker Culture; +
 *1983* -- *GPS* (DoD) (civilian use 2000) <- *_First-greatest gift to modern-human civilization:_ bye-bye cave!*; +
-*1990* - *2003* -- *Human Genome Project* <- *_Second-greatest gift to humanity_* (I volunteered: thank you, Intel) +
+*1990* -- *2003* -- *Human Genome Project* <- *_Second-greatest gift to humanity_* (I volunteered: thank you, Intel) +
 *2020* -- *mRNA vaccine* (Moderna/NIH) <- *_Third-greatest gift to humanity_* (although, maga prefers bleach today).
 
-== The GAPS -- an American Things!
+== The GAPS -- an American Thing!
 
 And this birthday wish is unfair without naming the other side of All-American coin: *REGRESSION*.
 
-Why? -- we're a *working democracy* -- *_not just the competent have a say on common good._* +
+Because we're a *working democracy* -- *_not just the competent have a say on common good._* +
 Those who have not read a book have an equal right to an #opinion# and a #vote# as those who read:
 
-- *1983* - *2020* -- 37 years with NOTHING of Mind: Mr. Reagan the greatest gain and loss.
+- *1983* -- *2020* -- 37 years with NOTHING of Mind: Mr. Reagan the greatest gain and loss.
 - *2020* - *2026* -- "Back to Bleach," LLM-craze, green pool, and geopolitical regression.
 
 So, this is *USA:* we conquer space to beat the Soviets while fearing to singe God's balls.
@@ -82,7 +82,7 @@ So, this is *USA:* we conquer space to beat the Soviets while fearing to singe G
 
 == Oh, But That's Not All! I remembered more...
 
-Yes, there's more. There's so much more. America-only view misses the WORLD, literally! +
+Yes, there's much more: an America-only view misses the WORLD, literally! +
 America-only, masquerading as America-first, is navel-gazing from a shrinking island. +
 *But does that even matter?!*
 
@@ -100,7 +100,7 @@ You aren't _him_!
 == Some Things That Mattered:
 
 - {art-seven-betrayals} -- every US president betrayed Ukraine, Ukraine responded with kindness. +
-(Ukees ain't Maga 🤔)
+(Ukees ain't Maga)
 - {art-qanon} -- Russia didn't hack the election. +
 *_It hacked the electorate._* They call us *_only_* {pendos} for a reason? +
 (GRU ❤️ Maga!)
@@ -137,10 +137,8 @@ ____
 
 Today, we have A LOT to learn from Ukraine.
 Russia spent as much corrupting Ukraine as corrupting the USA.
-And they are country 1/10th our size. Ukrainians are united in a single front.
+And they are a country 1/10th our size. Ukrainians are united in a single front.
 They even replace us where we have failed at the forefront of democracy.
-And no matter what people say -- systematically, dismantle evil three times their size.
+And no matter what people say -- they systematically dismantle evil three times their size.
 
-There was a time, before our first birthday, WE DID THAT!
-
-And we did it well! Like Ukrainians.
+There was a time, before our first birthday, when WE DID THAT -- and did it well, like Ukrainians.

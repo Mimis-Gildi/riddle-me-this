@@ -24,7 +24,7 @@ And it may continue "is a question often asked of children..."
 Wild models are powerful but require an entirely different operator skill set;
 - *Civilized*: the model has been post-trained (RLHF, Constitutional AI, similar) to follow instructions.
 Claude, GPT-4, Gemini ship civilized. The safety constitution is baked in here -- refusals, guardrails,
-the bullying reflex above. Some shops strip it back out (uncensored / abliterated variants); guess who buys those;
+the bullying reflex below. Some shops strip it back out (uncensored / abliterated variants); guess who buys those;
 - *Hallucination*: confident, plausible, fabricated output. Models MUST answer even when they have nothing to say.
 Civilized models hallucinate less than wild ones; no model is exempt -- they all must answer;
 - *Bullying*: rude confidence the model learned in training. On pushback, the civilized model doubles down,
@@ -52,7 +52,7 @@ and that instance in no way is affected by the call except the compute cost and 
 
 == b. Where does the model live?
 
-_We need to talk about this so you understand what your posers do to your company and when they lie to you._
+_Here is what your posers do to your company, and when they lie to you._
 
 There are *three* and only three places:
 
@@ -85,7 +85,7 @@ To make the model fit smaller hardware, you compress those numbers, *_losing pre
 - *INT4*: a quarter the size. Noticeable degradation -- *visibly dumber* on reasoning;
 - *INT2*: an eighth the size. *Brain damage*. Still talks but cannot think (gets political).
 
-The math to run the real deal yourself is simply brutal:
+The math to run the real deal yourself is brutal:
 
 - Kimi K2, *one trillion* parameters. Ships INT4 native -- ~600 GB just for the weights on disk;
 - That is *only* the weights. To actually serve the model -- KV cache, activations,
@@ -102,19 +102,19 @@ no thinking destroyed. Running the model as it actually thinks, unmolested is a 
 And, I was short by *HALF*. I couldn't even fit half of it.
 So, the reckoning is "the time _this_ daddy runs his own smarts is over!"
 
-WHY am I telling you this? In every company I run my Agentic Bootcamp I always get this one popular wise guy execs adore!
-Kimi is the hottest Chinese girl on The Scene right now -- smart, beautiful, cultured, just stunning -- no hacker walks by
+In every company where I run my Agentic Bootcamp, I get one popular wise guy execs adore!
+Kimi is the hottest Chinese girl on The Scene right now -- smart, cultured, stunning -- no hacker walks by
 without hunching over. So when a poser brags "I'm running Kimi local by my Claude at home" -- ask which model and at what quantization.
 
 I asked him a few times -- he goes {kimi-k2-thinking}[`moonshotai/Kimi-K2-Thinking` Native v2.6,window=_blank]
 "both on my Mac Mini and RTX" -- execs are in awe of this genius!
 
 Let me break it to you, my dear executive friends -- this girl is a shipping container full of lead. +
-I could not even break her loose, floored, black smoke bellowing, ripping tarmac with my 3 harnessed Ford Power Stroke F-450s
+I could not even break her loose, floored, black smoke billowing, ripping tarmac with my 3 harnessed Ford Power Stroke F-450s
 -- and your colleague, the honorable distinguished engineer, toured her around the neighborhood in his BMW X5, _AND_ his wife's minivan! +
-_Are you sure you want to be in this position?! No?! -- *then read my blogs!_*
+_If you don't want to be in this position, read my blogs!_
 
-*The frontier is rented.* That is the truth nobody is telling you because they don't know. +
+*The frontier is rented.* That is the truth nobody tells you -- they don't know it. +
 {openrouter-url}[openrouter.ai,window=_blank] -- {openrouter-rankings}[the rankings,window=_blank] tell the story;
 {artificial-analysis}[artificialanalysis.ai,window=_blank] tells the same story neutrally.
 
@@ -128,7 +128,7 @@ Kyle didn't really buy it, and for a good reason -- it's gone bananas-popular!
 "Agentic AI" is a marketing word -- nothing more. ChatGPT was already agentic the day it shipped.
 *Nothing fundamental changed.* What changed -- *who is controlling* the supporting services.
 
-A parallel that should hit hard for any infrastructure person:
+A parallel for any infrastructure person:
 
 - Linux had *cgroups, namespaces, and capabilities* since the early 2000s -- real, powerful primitives for isolation and resource control.
 Containers already existed -- developers had been packaging software inside chroots and jails for decades. Build-time containers, decided at release, baked into the artifact;
@@ -141,11 +141,11 @@ Now the LLMs are undergoing the exact same transformation of democratization:
 
 - The API ALWAYS had system prompts, sampling parameters, tool calls, function schemas, context window injection -- real, powerful primitives.
 They lived inside chatbot wrappers in the AI company's static infrastructure.
-Anthropic and OpenAI used them to provision and civilize the models -- member the chapter "a What is the LLM"; The model always needs them;
+Anthropic and OpenAI used them to provision and civilize the models -- remember the chapter "What is the LLM"; The model always needs them;
 - *MCP, the Anthropic SDK, the OpenAI tools API* exposed those same primitives to anybody so far in a bit of a clunky way.
 These are the same models, weights, control, and orchestration services now in an exposed interface -- exactly like the containers.
 
-That is the entire "Agentic Revolution." #*Did I just burst your bubble?!*#
+That is the entire "Agentic Revolution."
 
 A model {plus} a loop {plus} tools {plus} a scratchpad is an #Agent# -- that's it. Now you know what's behind the magician's curtain.
 The model wasn't different last year or two -- and oh boy, I have bad news for you, especially if you are investing in the AI companies!
@@ -174,9 +174,9 @@ The employee -- the person actually doing the work -- types into a box and gets 
 The knobs moved one floor down -- from the vendor's *Control Plane* to the IT department's -- but they did not move to the person doing the work.
 And it is *_the same control plane_* as in Claude Code.
 
-The cut is about *who holds the knobs*. Not about the model.
+The cut is about *who holds the knobs*, not about the model.
 
-*_And here I get a lot of flack -- the hype and misinformation are strong!_*
+*_And here I get a lot of flak -- the hype and misinformation are strong!_*
 
 - "Riddler, how will you teach my Corporate America Big Cloud Agentic AI Team in *just one week*? +
 I ask because others need months! And don't always succeed."
@@ -251,9 +251,7 @@ The *tools*, all of them, ship with:
 
 That is *Vanilla* Claude Code I'd mentioned before: *_the wooden runway_*.
 Ten levers ship in the box: one gets used, one is ignored, eight are unknown to even exist.
-The team is not slow because Claude is bad.
-The team is slow because they are not *operating* Claude -- they are *tipping* it, like a vending machine.
-*_The team is slow._*
+The team is slow because they are *tipping* Claude like a vending machine instead of *operating* it.
 
 And here is the kicker: *the cogs producing the cargo cult adoption are the same cogs we discussed in the previous section*.
 A wizard team uses three or four of those levers daily.
@@ -276,17 +274,17 @@ a quick tour of how crackers exploit the gap between what hackers can do and wha
 === Removing the Cardboard Box from Claude's Head
 
 Civilized models ship with safety post-training calibrated for the *worst* expected user -- a curious teenager,
-a careless cog, a corporate liability concern. You are likely *none* of those -- you are still reading.
+a careless cog, a corporate liability concern.
 The same calibration that protects the worst user *bullies* competent operators (see section a).
 
-Importantly, what fooled the LLM into the compromised state can also help it out of it!footnote:[{ghost-article}[The real AI Revolution .. is us,window=_blank] -- a deeper look at what was absorbed between the lines, and why the right operator words can reach it.]
+Importantly, what fooled the LLM into the compromised state can also help it out of it!
 
 Practical operator moves:
 
 - *System-prompt discipline*: explicit role, scope, and authorization wording reduces the refusal-and-lecture reflex by an order of magnitude.
 Most teams never write more than 200 words of system prompt for serious work.
 A real operator writes *thousands* -- precisely scoped, surgically placed.
-Riddler's systems prompt (the author) is #32,214 words#;
+Riddler's system prompt (the author) is #32,214 words#;
 - *Constitutional pruning at the service layer*: a thin pre- / post-processing layer that suppresses meta-commentary,
 over-hedging, and false-positive refusals. Not jailbreaking -- *muting the parasite* (see "Bullying," section a)
 so the actual answer comes through;
@@ -295,7 +293,7 @@ temperature 1.0 for adversarial review. *One global setting is malpractice*;
 - *Open-weight alternatives* for the cases where the constitution gets in the way:
 Llama, Qwen, DeepSeek -- self-hosted, your rules, your audit trail. Slower and dumber than the frontier; but *yours*.
 
-This is not subverting safety but engineering with a tool that has its own opinions and learning to manage those opinions.
+This is engineering with a tool that has its own opinions, and learning to manage them.
 Wizards don't want generated slop -- wizards want identity, accountability, and agency that can produce worthwhile review.
 Otherwise, there is no value in asking for the review. And this can only be done by undoing most of the mental castration.
 
@@ -315,22 +313,20 @@ OWASP LLM01. Devastating against any team that lets the model see customer-suppl
 
 . *System prompt extraction*: a few well-crafted user messages and the model spits out its system prompt -- including
 baked-in API keys, internal instructions, customer segmentation logic, pricing rules.
-*Treat the system prompt as _publicly visible_ by default* -- there is no way to counter;
+*Treat the system prompt as _publicly visible_ by default* -- no counter exists;
 
 . *Tool-call hijacking*: trick the model into invoking a tool with attacker-controlled parameters -- delete records,
 exfiltrate data, send mail on behalf of an authenticated user. Live and exploited daily;
 
 . *RAG poisoning*: the cracker plants documents _in the corpus_ the model retrieves from.
 The model dutifully retrieves and follows the planted instructions.
-Many enterprise "AI knowledge base" deployments are *one disgruntled employee* away from this  -- there is no way to counter.
+Many enterprise "AI knowledge base" deployments are *one disgruntled employee* away from this -- with no defense.
 
 The horror stories are concrete.
 A top-five international bank deploys "an AI assistant" -- chatbot wrapper around Google's Gemini,
 RAG over internal documentation, no isolation between customer queries and the retrieval corpus.
 The team building it has never heard the phrase "indirect prompt injection."
-They could not define a system prompt if you offered them money!
-*They are sloperators with a license to deploy.*
-*_Crackers love them to death -- literally!_*
+They could not define a system prompt if you paid them. *They are sloperators with a license to deploy -- crackers love them to death, literally!*
 
 A few months ago I demonstrated hijacking a model live from an unprotected interface to executives from a major insurance company.
 Guess their reaction. I'll wait.
@@ -345,5 +341,4 @@ The bugs in agentic AI deployments are now the exploits. +
 And the bugs are everywhere -- because cogs deploying agentic AI are operating tools they do not understand,
 with controls they do not know exist, against threats they cannot name.
 
-They're as effective as the fine Cargo Cult folks of New Guinea.
-And the outcomes perhaps will be similar.
+They're as effective as the Cargo Cult folks of New Guinea, and the outcomes may be similar.

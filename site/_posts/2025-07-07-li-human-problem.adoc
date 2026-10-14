@@ -6,7 +6,6 @@ comments: true
 classes: wide
 ---
 = Amazing LinkedIn: A Human Problem!
-:pub-li: see excerpt on LinkedIn by {li-newsletter}
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 
@@ -18,9 +17,7 @@ image::devs.png[Channel,width=800,height=450,align=center]
 Hope everyone got some rest after the long weekend.
 
 This one's about *_the real problem_* I found in the LinkedIn experiment.
-And it’s not LinkedIn.
-*_It’s us._*
-In this case -- me.
+And it’s not LinkedIn; *_it’s us_* -- in this case, me.
 
 == Recap: Professional Social Networking
 
@@ -29,19 +26,18 @@ In the last three articles, we broke down a year-long experiment::
 - how the Sycophant archetype dominated reach; (mother f-er)
 - and what exactly happened to LinkedIn as a platform?!
 
-And I also explained how the full Tor export paints the collective picture for us - the plebs!
+And I also explained how the full Tor export paints the collective picture for us -- the plebs!
 
 But the kicker is: all of that -- the algorithms, the trends, the enshittification
 -- none of it explains the full picture.
 
-This isn’t just about platforms.
-It’s about what happens to humans using platforms.
+This is about what happens to humans using platforms.
 And how slowly, imperceptibly, we let go of what matters most, and absorb the shit fed to us!
 
 == What Kind of User Am I?
 
 There are a lot of ways to use LinkedIn.
-It’s a bloated platform now, sure, but there’s still real value, a real power under the hood, an oomph for it.
+It’s a bloated platform now, sure, but there’s still real power under the hood.
 Remember those archetypes we found in part one? Let me recap a few -- and be honest about how they map to me.
 
 The Corporate Zombie (`muggle`)::
@@ -87,17 +83,14 @@ Top 3 things I hated::
 
 When I add it all up:
 *_I want updates from the people I care about._*
-The ones I’ve known.
-The ones I’ve built something with.
+The ones I’ve known and built something with.
 Instead, the feed throws me influencers, engagement bait, and crap I never asked for.
 
 == Debugging Myself
 
 One good way to understand a problem is to try fixing it.
 
-So I exported everything.
-Fired up a Jupyter notebook.
-And nuked half my network.
+So I exported everything, fired up a Jupyter notebook, and nuked half my network.
 
 I sliced the connections data in Pandas. Meh.
 Then I sliced the messages export -- and that’s where it clicked.
@@ -112,11 +105,7 @@ Turns out, *331 recruiters* sat in my 1st-degree connections.
 Most of the spam came from just 9% of them.
 And almost all were added during a 2-year period when I hired a personal assistant to help with comms.
 
-I started deleting.
-Anyone I didn’t know personally -- gone.
-The feed changed overnight.
-It got quieter. Better.
-Useful again.
+I deleted anyone I didn’t know personally, and the feed changed overnight: quieter, better, useful again.
 
 == The Deeper Cut
 
@@ -150,11 +139,9 @@ Then my friend said:
 And he was right.
 
 Every function you outsource to a system -- you forget how to do yourself.
-And this one? Staying in touch with people you care about?
-That one’s *core human firmware*.
+And staying in touch with people you care about is *core human firmware*.
 
-So the real failure wasn’t LinkedIn.
-It was mine.
+So the real failure was mine, not LinkedIn’s.
 
 Take a look at the guy I love, Billy!
 Gosh, he's a decent human being -- I looked up to him!
@@ -170,7 +157,7 @@ If you say asshole -- you'd be right!
 
 == Who’s To Blame?
 
-LinkedIn isn’t evil. It’s a business.
+LinkedIn isn’t evil; it’s a business.
 It optimized for revenue. That’s what businesses do.
 And I knew it, like everyone else did.
 Hell, I built a ton of systems like that myself!
@@ -196,7 +183,7 @@ We need to remember we’re human.
 
 *_We need to remember we are human!_*
 LinkedIn never removed that.
-It even facilitated it, albeit in round about way.
+It even facilitated it, albeit in a roundabout way.
 Like for Billy, LinkedIn was my only connection.
 Nothing stopped me from using that, getting his new number,
 coming to see him, helping him -- but I didn't!
@@ -205,8 +192,8 @@ And there was a way. By LinkedIn, nonetheless.
 
 Or my other friend, Harrison.
 The man lived through an epic battle for life.
-I knew that. I knew he has a proper support system -- his church.
-I knew he will win and come out on top of it.
+I knew that. I knew he had a proper support system -- his church.
+I knew he would win and come out on top of it.
 But still, where was I?
 Was I in his life or right next to it?
 So, you see, LinkedIn has nothing to do with this.
@@ -220,7 +207,6 @@ _Don't fret -- if we hadn't met, you're gone._
 Maybe my algorithm removed more people than it should have.
 But I will fix it by hand -- like I should have in the first place.
 
-== Conclusion
 
 All these platforms are just tools. +
 But the responsibility to be human -- that’s on us.
@@ -234,8 +220,7 @@ If you want to use LinkedIn right::
 And the job is simple: +
 *Stay in touch with the people you care about.*
 
-That’s never been the system’s job.
-It’s always been ours.
+That has always been our job, not the system’s.
 
 I've been an asshole. +
 And I've been oblivious. +
@@ -243,7 +228,7 @@ Friends -- forgive me! +
 _I bow before you!_ +
 *I love you!* +
 Always have. +
-Just not good showing it.
+Just not good at showing it.
 
 Some of my friends gave me excuses for me: you were busy, refugees, PMCs, weapon systems...
 But what does that have to do with the simple: "How are you," "I missed you."
@@ -252,4 +237,4 @@ Let's not forget -- we're human.
 
 My son (15) is right: "Daddy, you have trouble prioritizing."
 
-I hope you guys, don't!
+I hope you guys don't!

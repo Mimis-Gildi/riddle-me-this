@@ -13,12 +13,16 @@ WHY THIS EXISTS (read before you reinvent it):
 
 USAGE:
     bin/yt-transcript <url-or-id> [-l CODE[,CODE...]] [-t|--timestamps]
+    bin/yt-transcript <url-or-id> [-l CODE[,CODE...]] --srt  # SubRip, for Studio upload
     bin/yt-transcript <url-or-id> --list # show available caption languages
 
   -l/--lang takes a priority list, e.g. `-l uk,en` (prefer Ukrainian, fall
   back to English). Omit it to take the library default. For a video whose
   audio is one language but whose only manual subtitle is a translation,
   use --list first to see what tracks actually exist (manual vs. generated).
+
+  --srt clips each cue's end to the next cue's start: auto-generated cues
+  overlap (rolling captions), and overlapping SRT cues stack on screen.
 
 EXAMPLES:
     bin/yt-transcript https://youtu.be/XGsA3wYP-wQ
@@ -57,23 +61,36 @@ def fetch(vid, langs):
     try:                                   # instance API (>= 1.0)
         api = YouTubeTranscriptApi()
         f = api.fetch(vid, languages=langs) if langs else api.fetch(vid)
-        return [(s.start, s.text) for s in f]
+        return [(s.start, s.duration, s.text) for s in f]
     except Exception as e:
         errs.append(f"fetch(): {e!r}")
     try:                                   # legacy static API (< 1.0)
         # noinspection PyUnresolvedReferences
         data = (YouTubeTranscriptApi.get_transcript(vid, languages=langs) if langs
                 else YouTubeTranscriptApi.get_transcript(vid))
-        return [(d["start"], d["text"]) for d in data]
+        return [(d["start"], d["duration"], d["text"]) for d in data]
     except Exception as e:
         errs.append(f"get_transcript(): {e!r}")
     raise SystemExit("yt-transcript: no transcript available.\n  " + "\n  ".join(errs))
+
+
+def srt_time(t):
+    ms = round(t * 1000)
+    return f"{ms // 3_600_000:02d}:{ms // 60_000 % 60:02d}:{ms // 1000 % 60:02d},{ms % 1000:03d}"
+
+
+def print_srt(cues):
+    cues = [(start, dur, text.strip()) for start, dur, text in cues if text.strip()]
+    nexts = [start for start, _, _ in cues[1:]] + [float("inf")]
+    for n, ((start, dur, text), nxt) in enumerate(zip(cues, nexts), 1):
+        print(f"{n}\n{srt_time(start)} --> {srt_time(min(start + dur, nxt))}\n{text}\n")
 
 
 def main(argv):
     langs = None
     ts = False
     do_list = False
+    srt = False
     pos = []
     i = 0
     while i < len(argv):
@@ -82,6 +99,8 @@ def main(argv):
             ts = True
         elif a == "--list":
             do_list = True
+        elif a == "--srt":
+            srt = True
         elif a in ("-l", "--lang"):
             i += 1
             if i >= len(argv):
@@ -97,12 +116,15 @@ def main(argv):
             pos.append(a)
         i += 1
     if len(pos) != 1:
-        raise SystemExit("usage: yt-transcript <url-or-id> [-l CODE[,CODE...]] [-t] [--list]")
+        raise SystemExit("usage: yt-transcript <url-or-id> [-l CODE[,CODE...]] [-t | --srt] [--list]")
     vid = video_id(pos[0])
     if do_list:
         list_langs(vid)
         return
-    for start, text in fetch(vid, langs):
+    if srt:
+        print_srt(fetch(vid, langs))
+        return
+    for start, _, text in fetch(vid, langs):
         text = text.strip()
         if not text:
             continue

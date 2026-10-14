@@ -13,7 +13,7 @@ comments: true
 :contra: https://contra.com/[**Contra**,window=_blank,opts=nofollow]
 :upwork-enterprise: https://www.upwork.com/enterprise/[**Upwork Enterprise**,window=_blank,opts=nofollow]
 :cal-com: https://cal.com/[**Cal.com**,window=_blank,opts=nofollow]
-:toggle-track: https://toggl.com/[**Toggle Track**,window=_blank,opts=nofollow]
+:toggle-track: https://toggl.com/[**Toggl Track**,window=_blank,opts=nofollow]
 :wise: https://wise.com/[Wise,window=_blank,opts=nofollow]
 :mercury: https://mercury.com/[Mercury,window=_blank,opts=nofollow]
 :documenso: https://documenso.com/[**Documenso**,window=_blank,opts=nofollow]
@@ -26,13 +26,11 @@ comments: true
 Not everyone should build a SaaS.
 There, I said it.
 
-Maybe you've got kids in college.
-Maybe you need predictable income.
-Maybe you watched too many founders crash and burn.
+Maybe you've got kids in college, need predictable income, or watched too many founders crash and burn.
 Whatever your reason -- consulting might be your path.
 For now.
 
-But let's be clear: This is about doing consulting *right* in 2025, not becoming another body shop refugee.
+But let's be clear: This is about doing consulting *right* in 2025.
 
 At the end of my previous article {for-new-founders}[I explained "bedrocking.",window=_blank] +
 This is bedrocking too, just with more risk and fewer benefits.
@@ -41,9 +39,9 @@ This is bedrocking too, just with more risk and fewer benefits.
 
 Three legitimate reasons to consult instead of building:
 
-. **You Need Intelligence** -- Every client teaches you what NOT to build.
-. **You Need Capital** -- T&M at $200-500/hour beats ramen.
-. **You Need Confidence** -- Some developers need to see they CAN deliver value.
+. Intelligence -- Every client teaches you what NOT to build.
+. Capital -- T&M at $200-500/hour beats ramen.
+. Confidence -- Some developers need to see they CAN deliver value.
 
 One *_terrible_* reason: "It's safer." NOTHING about trading time for money is safe!
 
@@ -51,7 +49,7 @@ One *_terrible_* reason: "It's safer." NOTHING about trading time for money is s
 
 _These are the actual claims and numbers from my communities, June 2025._
 
-=== What's Dead:
+=== What's Dead
 
 * "Digital Transformation Consultant" -- everyone claims this.
 * "Full Stack Developer for Hire" -- commodity race to the bottom.
@@ -66,12 +64,11 @@ _These are the actual claims and numbers from my communities, June 2025._
 * **Domain Context Architect** -- $300-650/hour -- high specialty.
 * **Technical Due Diligence (for AI claims)** -- $500-1300/hour.
 
-Notice the pattern? +
-*_Specific expertise in fixing expensive mistakes._*
+The pattern: *_specific expertise in fixing expensive mistakes._*
 
-== The New Consulting Stack:
+== The New Consulting Stack
 
-=== Client Acquisition:
+=== Client Acquisition
 
 * {contra} -- High-end enterprise overflow. (not yet tested)
 * {upwork-enterprise} -- Yes, really.
@@ -79,7 +76,7 @@ They're desperate! (won't test)
 * *_Your Blog_* -- Write about AI failures, they'll find you! (link:{site-baseurl}/series/[I have,window=_blank])
 * **LinkedIn** -- But talk about solutions, not your availability. (questionable)
 
-=== Operations:
+=== Operations
 
 * {cal-com} -- Professional booking without the SaaS price. (love it!, can run your own!)
 * {toggle-track} -- Bulletproof time tracking with reporting.
@@ -88,7 +85,7 @@ They're desperate! (won't test)
 * {freshbooks} -- Simple invoicing that works.
 * {bench} -- Bookkeeping without thinking.
 
-=== Positioning Tools:
+=== Positioning Tools
 
 * **GitHub** -- Your portfolio of fixes, _**not** just code_.
 * {loom} -- Async explanations save meeting time.
@@ -97,7 +94,7 @@ They're desperate! (won't test)
 
 == The Three Consulting Models That Work!
 
-=== 1. The Surgeon ($500-1000/hour):
+=== 1. The Surgeon ($500-1000/hour)
 
 You come in, diagnose *the specific problem*, fix it, leave.
 
@@ -111,7 +108,7 @@ Some of my peers were able to sell this T&M. I was not.
 Just FP.
 My longest duration was 2 weeks.
 
-=== 2. The Architect ($300-500/hour):
+=== 2. The Architect ($300-500/hour)
 
 You design the solution, they implement.
 
@@ -120,7 +117,7 @@ You design the solution, they implement.
 * **Example**: "Here's your AI integration roadmap.
 Follow this or fail."
 
-=== 3. The Advisor ($200-300/hour or retainer):
+=== 3. The Advisor ($200-300/hour or retainer)
 
 Ongoing strategic guidance, no hands on keyboard.
 
@@ -131,7 +128,7 @@ Ongoing strategic guidance, no hands on keyboard.
 *Personal Note*: One of my most frequent gigs, usually as Fractional CTO.
 Try for a limited retainer, if you can -- often possible.
 
-== The Consulting Trap (And How to Escape):
+== The Consulting Trap (And How to Escape)
 
 Every consultant becomes one of three things:
 
@@ -147,22 +144,22 @@ Getting both is easy if you stay in the same #domain# for a while, like big-phar
 But breaking into a new domain is hard -- use ANY means necessary.
 I have subcontracted for peanuts before (~$100/hour), just to get my foot in the door.
 One time I even did this as an employee of a decrepit insurance company that failed every transformation since 2000.
-The rates above apply to _experienced consultant_ with more than a few trips around the block.
+The rates above apply to an _experienced consultant_ with more than a few trips around the block.
 If you have nowhere to start, a subcontract is your good first foot in the door -- just DON'T forget why you're subbing!
 
-=== The Escape Hatch Strategy:
+=== The Escape Hatch Strategy
 
-. **Document Every Pain** -- Observed and studied client problems are *_great_* product ideas!
-. **Find the Pattern** -- Three clients with same problem = opportunity you must explore.
-. **Build While Billing** -- Use client work to validate ideas; code is theirs -- knowledge is yours!
-. **Test the Transition** -- Launch MVP while keeping top client.
+. Document Every Pain -- Observed and studied client problems are *_great_* product ideas!
+. Find the Pattern -- Three clients with same problem = opportunity you must explore.
+. Build While Billing -- Use client work to validate ideas; code is theirs -- knowledge is yours!
+. Test the Transition -- Launch MVP while keeping top client.
 DON'T cut loose after work.
-. **Cut the Cord** -- When MRR > 50% of consulting income -- switch tracks hard.
+. Cut the Cord -- When MRR > 50% of consulting income -- switch tracks hard.
 
 *Personal Note*: Point #4 has done wonders for me! +
 Simple example: In 2007 I consulted for Merck & Co through Glemser Technologies modernizing a custom Documentum-based product.
 The neighboring team I befriended suffered greatly trying to send encrypted messages to doctors' smartphones.
-People hammered away hard trying to make square Guidewire peg fit through the oval problem hole.
+People hammered away hard trying to make square Guidewire peg fit into the round problem hole.
 I offered a shoulder to cry on.
 After coming home I didn't grab a brewsky -- I prototyped.
 A year later my engagement on the DMS concluded.
@@ -174,7 +171,7 @@ Making it one of my most profitable moonlighting time -- about $2350/hr.
 It won't happen every time.
 But if you pop that brewsky -- it will never happen.
 
-== Practical Client Management:
+== Practical Client Management
 
 === NEVER Do These!
 
@@ -184,7 +181,7 @@ But if you pop that brewsky -- it will never happen.
 * Take meetings without agenda.
 * Work weekends (that's sacred time for YOUR product only).
 
-=== Always Do These:
+=== Always Do These
 
 * Invoice weekly (not monthly)!
 * Require 50% upfront for new clients.
@@ -192,16 +189,16 @@ But if you pop that brewsky -- it will never happen.
 * *_Document everything in writing_*.
 * Raise rates every 3-6 months.
 
-== The Money Reality Check:
+== The Money Reality Check
 
 These are current market rates for _consultants already in the trade_.
 
 **Good T&M Rates (2025)**:
 
-* Junior (fixing bugs): $75-150/hour; median: $90-110/hour.
-* Senior (solving problems): $130-300/hour; median: $135-225/hour.
-* Expert (preventing disasters): $300-500/hour; competition dependent.
-* Specialist (saving companies): $500-1500/hour; most shoot for $1000.
+* Junior: $75-150/hour; median: $90-110/hour.
+* Senior: $130-300/hour; median: $135-225/hour.
+* Expert: $300-500/hour; competition dependent.
+* Specialist: $500-1500/hour; most shoot for $1000.
 
 **Bad T&M Rates**:
 
@@ -210,10 +207,8 @@ These are current market rates for _consultants already in the trade_.
 * Anything with a 6-month commitment (that's prison).
 
 *Understand This*: If you accept customer's rate card -- you are a commodity! +
-In other words, you are not selling -- you are being sold.
-Does this mean competent hackers don't go commodity?
-No, it doesn't mean that!
-I have done this too.
+In other words, you are being sold.
+That doesn't mean competent hackers never go commodity -- I have done it too.
 My record is well over a hundred engagements in my career -- I lost count.
 I've accepted a few assignments while on payroll at Glemser.
 And I held 3 W2 jobs in 36 years, two of which were not even consulting.
@@ -224,7 +219,7 @@ There will be many reasons why you would take a commodity job.
 Most often life circumstances get to even the best of us -- I've been there too.
 But even in the good times, myself as an example:
 I needed to learn how to sell; I needed to break into an unknown market; I needed to profile a prospect from the inside, etc...
-Beggars are no choosers -- if you must, then you will.
+Beggars can't be choosers -- if you must, then you will.
 But no matter what -- _understand that commodity work can only be temporary_
 -- you MUST learn how to market and sell!{gitomer-book-fn} Without selling -- stick to your cheap W2 jobs.
 
@@ -262,25 +257,19 @@ You won't nail this alone.
 
 _From before -- you are business -- learn marketing!_
 
-== The Bridge to Product:
+== The Bridge to Product
 
-*Every consulting engagement should teach you:*
-
-. **What problems are worth money**.
-. **What solutions people actually BUY**.
-. **What _promises_ make them buy**.
-. **What _mistakes_ everyone makes**.
+Every consulting engagement should teach you what problems are worth money, what solutions people actually BUY, what _promises_ make them buy, and what _mistakes_ everyone makes.
 
 Use consulting as paid market research. +
 Build your SaaS on their dime and *pain*.
 
 Remember: they NEVER buy on needs and wants!
 
-== The Hard Truth:
+== The Truth
 
-Consulting is just a job _with extra steps_. +
-It's trading time for money with more paperwork. +
-But it can be a strategic stepping stone *IF* you:
+Consulting is a job _with extra steps_ and more paperwork. +
+But it can be a stepping stone *IF* you:
 
 . Choose clients that teach you something.
 . Pattern match across engagements.
@@ -289,18 +278,14 @@ But it can be a strategic stepping stone *IF* you:
 
 If you are thinking about consulting because you want freedom -- {new-founders}[read this article,window=_blank].
 
-== Insider Wisdom:
+== From Experience
 
-The best consultants are building their replacement.
-Every engagement should make you less necessary.
-Every solution should be productizable.
-Every client should teach you what to build.
+The best consultants build their own replacement: every engagement makes them less necessary, every solution is productizable, every client teaches them what to build.
 And never leech on a customer -- "a good horse doesn't eat the same grass twice."
 
 If you're not getting closer to product with each invoice, you're just an expensive employee -- expensive to yourself, first of all.
 
-Choose your path. +
-But choose it consciously.
+Choose your path consciously.
 
 Oh, and one last thing: even if you did everything right -- pride will kill you.
 Doing business? -- check your BIASES at the door.

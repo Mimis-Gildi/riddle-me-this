@@ -12,10 +12,7 @@ read_aloud: false
 = AI Adoption -- Best time is now!
 
 Break into lucrative AI -- no time like right now!
-There is no going back.
-The AI bubble will burst.
-But Generative is here to stay.
-And it's a requirement not option.
+There is no going back: the AI bubble will burst, but generative AI is here to stay -- it's a requirement, not an option.
 
 After years building and fixing technical teams, I can tell you exactly why AI adoption fails:
 _wrong people doing the wrong work_.
@@ -30,4 +27,4 @@ I just wrote *the straight path* for _both *companies* and **individual engineer
 Full disclosure included.
 
 If your team is stuck in AI adoption paralysis or your engineers need actual technical guidance -- let's talk.
-I build competence, not dependency.
+I build your team's competence so they stop depending on consultants -- me included.

@@ -9,9 +9,6 @@ published: false
 ---
 = Corporate America: AI-Native Evolution Discussion
 rdd13r
-:mm-newsletter: R!dd13r
-:pub-mm: as published on Medium by {mm-newsletter}
-:pub-li: see excerpt on LinkedIn by {li-newsletter}
 
 _This is a preserved Mastodon discussion thread from 2023-07-05._
 
@@ -24,12 +21,12 @@ And Domain Driven Design in the easiest discipline to accomplish this business m
 But alas, only about ~17% of American business made it there, and the rest just swept it under the rug.
 
 In this post we will focus at the other side of the AI-native coin.
-What is the progression for the successful American companies journeying through this magnificent evolution -- the Early Adopters and the Innovators.
-Where will this beautiful journey take us and what will that Architecture look like?
+What is the progression for the successful American companies going through this evolution -- the Early Adopters and the Innovators.
+Where will it take us, and what will that Architecture look like?
 
 == Phases of AI Adoption
 
-We're at the logical end of the Cloud Native (CN) Digital Transformation (DX). What does this mean?
+We're at the logical end of Cloud Native (CN) Digital Transformation (DX).
 The marketing definition entailed running applications specifically designed for cloud environments, leveraging cloud-native technologies to achieve agility, scalability, and resilience.
 
 but what we really need to understand is the DX part.
@@ -88,7 +85,7 @@ Once you see this emerge with AI-enabled Anti-Corruption Layer - yep, we're ther
 
 Here is a little bit of insider info that I think is safe for me to share with you.
 Many major tech companies have already attempted to cater to this phase.
-And ALL are hopelessly stumped! Nothing to show for.
+And ALL are stumped, with nothing to show for it.
 Most have been at it for a year. The larger ones, like IBM, even attempt to train their own LLMs.
 This means only one thing -- they don't yet understand where the money to be mad ein this phase is!
 I guess they're are not reading my posts.
@@ -97,7 +94,7 @@ So, now let digest this phase a little bit more, so that we can better understan
 
 == Phase I: AI-Integration Context
 
-Context is the holy grail of the entire evolution. And the first phase cannot begin without it.
+Context is the key to the entire evolution, and the first phase cannot begin without it.
 Now, I met many CTOs who happily proclaimed that "we don't need to clean up our Architecture, or profile our data -- AI is so smart with patterns -- it will just figure it out!"
 There is, of course, albeit abysmally small, nevertheless of chance for it to be true.
 I may develop this argument in another article.
@@ -151,7 +148,7 @@ When you see CTOs talking about "Context" -- you will know that we're in this fi
 
 == Phase I: AI-Integration Architecture
 
-So, how does the architecture look like in this phase?
+So, what does the architecture look like in this phase?
 And it's rather simple. The Domain Model and Bounded Context architecture remain unchanged.
 We just add Component on the boundary we seek to enhance. If it's Hexagonal Architecture -- then we add ports.
 If it's DDD Model -- then we add a new ACL (Anti-corruption Layer).
@@ -195,17 +192,17 @@ The business rules are from the old aggregate, cross boundary interactions are a
 And this is where Phase One bleeds two phase Two. What if we gave the LLM-ACL an ability to remember? Since it's on the boundary and serve the aggregate, it's one to one relationship with the aggregate is easier to expand.
 Let's say the ACL remembers customers and remembers the seats they chose. Practically no reason to expand the aggregate here.
 The ACL, now decorating the interaction with the customer, can greet the customer and ask them if they want their preferred seat.
-Oh, this is a much more pleasant customer experience, isn't it? But the core aggregate function didn't change.
+This is a much better customer experience, but the core aggregate function didn't change.
 What we now see is direct augmentation of the aggregate behavior too. This happens for free from the perspective of the bounded context.
 
-Now let's think about the ACL separately. Can we ask things without asking the aggregate -- and yes, of course, we absolutely can.
+Now let's think about the ACL separately: we can ask it things without asking the aggregate.
 We can ask it "what types of customers arrive when," "what are the most preferred seats," "when is the busiest time," and even "how the busy time correlates with the weather"?
 As you can see the ACL happily offloads noncore functions. Up the value, it offers is tremendous for business intelligence.
 Sure, we could have gotten it from other reports but here we get it instantaneously and apply in a little bit of work. We can make it a continuous away information flow.
 
 I hope you can see where I'm going with this -- the added augmentation becomes its own valuable business layer, one not available before.
 
-You are welcome to think through the other types of clerks examples and see where imagination takes you. I hope you will be excited by the possibilities.
+You are welcome to think through the other types of clerks examples and see where imagination takes you.
 
 **Phase 2 is defined by:**
 
@@ -247,7 +244,7 @@ By implication, all the business rules, written or implicit, also originate from
 So, a central point of control was off limits to machines until now.
 
 AI-Propagation is about AI capabilities permeating and influencing business processes directly.
-In this phase, the holy grail precious steakhouse menu is entrusted to a machine.
+In this phase, the precious steakhouse menu is entrusted to a machine.
 Getting to this level, of course will take a little bit of time -- the trust needs to be earned by the new technology.
 And it inevitable will be earned. But why -- what are the driving factors.
 
@@ -261,16 +258,16 @@ Because Bobby is also a business owner who is also lovingly driving his business
 But he offloads the lot of his driving to a machine.
 And that machine slowly and surely is putting my business out of business."
 
-If you are skeptical about offloading Root Domain to a machine -- think again!
+If you are skeptical about offloading the Root Domain to a machine, consider this:
 We had examples of this transpiring over and over again in the past.
-This is nothing new. just a fundamental feature of progress.
+This is nothing new, just a feature of progress.
 
 == Phase III: AI-Propagation Identity
 
 The first phase was all about "Context."
 Whoever can feed the machines cleaner and clearer context get AI magic first.
 The second phase is about "Behavior."
-Whoever is having a clean context to overlay new clever behaviors on top of can expand business value immediately, directly, and cheaply.
+Whoever has a clean context to overlay new clever behaviors on top of can add business value quickly and cheaply.
 And the third stage is all bout business identity.
 He who can tell the customer "we're handling your needs in your most personal way, tailored to you in every aspect that matters to you, because we're AI-native enterprise, and our AI is all about your need."
 Darn, if this is not an all-in proposition that I don't know what is.
@@ -281,7 +278,7 @@ About having them the best way [.strike-through]#they# we want.
 
 At this stage we're NOT yielding the business to the machine.
 This relationship is formally known as the "human in the loop."
-Executives will see it as the best of both worlds: Core human abilities of creativity, augmented by the speed and reactive precision of the machine.
+Executives will like it: human creativity augmented by the machine's speed and precision.
 
 _The best way to describe this phase is AI-Augmented route domain._
 In other words, the very business identity differentiation is assisted using machines.
@@ -302,8 +299,7 @@ NOTE:  Diagrams are images. Select one image, perhaps the Hexagonal Architecture
 
 == Phase IV: AI-Domination
 
-And the last phase that i can see is pure magic.
-Going up from AI-native, where can one go?
+And the last phase I can see goes beyond AI-native.
 And what I understand here is that petty low-level business problems are solved at the previous phase.
 And In all business evolutions of the past, the level of maturity is the mathematical derivative of the previous.
 So, if first maturity phase is state, a point in time, then th next is motion.
@@ -311,7 +307,6 @@ After motion the next maturity level is speed. And the next derivative after spe
 At this level of maturity we no long struggle to attain some speed of change and control it.
 Now we're working on getting the hang of acceleration.
 In other words: policies for making policies.
-And what would this look like in practical terms of AI-native business evolution?
 
 To help us understand what forces operate on a large business moving through innovation we need understand some vary basic business anatomy.
 There are stakeholders, i.e., owners, and for efficiency a few are picked as board of directors.
@@ -349,7 +344,7 @@ In other words  -- this phase is inevitable. And it is only brought forth by two
 
 NOTE:  There is a page sequence missing at this point that I can no longer find.
 
-== Phase V: AI-Domination Control
+== Phase IV: AI-Domination Control
 
 This phase is the culmination of all the previous phases.
 I cannot see past this point.
@@ -358,7 +353,7 @@ This is where machines outperform humans.
 And humans readily yield control of business to machines.
 Business, the core concept that defined human civilization is no longer best done by humans.
 
-== Phase VI: AI-Domination Architecture
+== Phase IV: AI-Domination Architecture
 
 In the phase One the Architecture was bout Context Boundary Components helping Aggregates.
 In the phase Two the Architecture was about new AI-only Bounded Contexts supporting business domains.
@@ -366,7 +361,7 @@ In phase Three the architecture was about AI-Native Bounded Context overlaying t
 And the architecture of this phase is an amalgamation into one larger distributed system -- a new type of a business ecosystem that leaves no room for a slouch. Essentially making traditional business an extinct concept.
 I can't help but wonder how much of the capitalism is redefined and rewritten during this phase.
 
-== Phase VII: AI-Domination Culmination
+== Phase IV: AI-Domination Culmination
 
 * Entry Complexity: ?
 * Business Value: ?

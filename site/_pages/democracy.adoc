@@ -12,24 +12,23 @@ Welcome to *The Ailments of Democracy*  +
 {nbsp} --  an arc examining the erosion of democratic institutions under the accelerating pressure +
 of technological, economic, and epistemic forces.
 
-== ✦ What This Series Covers?!
+== What This Series Covers
 
-- The widening mismatch between governance capacity and exponential technological growth.
-- Rent-seeking bureaucracies hijacking regulatory power and public discourse for private gain.
+- Governance capacity falls further behind exponential technological growth.
+- Rent-seeking bureaucracies hijack regulatory power and public discourse for private gain.
 - *_AI-powered narrative manipulation, algorithmic censorship, and cognitive warfare._*
-- The entrenchment of state-corporate surveillance economies  --  personal data mined, monetized, and weaponized.
-- The collapse of institutional competence and paralysis of political decision-making.
-- The decoupling of fiat financial systems from real productive capacity  --  sovereign debt spiraling toward systemic insolvency.
+- State-corporate surveillance economies mine, monetize, and weaponize personal data.
+- Institutions lose competence, and political decision-making stalls.
+- Fiat financial systems drift away from real productive capacity, and sovereign debt spirals toward insolvency.
 
-== ✦ Why It Matters?!
+== Why It Matters
 
 - Institutions originally designed to protect democracy now actively undermine it.
 - Technology amplifies both truth and distortion  --  widening the competence and agency gap between governed and governors.
 - Governance architectures can no longer regulate the systems they depend on  --  whether in capital markets, critical infrastructure, or information ecosystems.
 - In the United States, the ability to service debt through real growth is vanishing, forcing dependency on artificial monetary expansion and accelerating structural fragility.
 
-*_We are not speculating.
-We are observing systemic failure in real time._*
+*_Every item above is already happening._*
 
 → link:{site-baseurl}/series/[Back to Curated Series]
 
@@ -47,8 +46,7 @@ Much of what will appear here originates from my retired Tor research site  --  
 
 Ever since Saga suggested migrating this work into GitHub Pages, I’ve been slowly reconstructing it.
 What appeals most is the transparency: fully open, yet invisible enough to avoid the casual dopamine crowd.
-Those who seek will find.
-And those are the ones this is for.
+Those who seek will find it, and this is for them.
 
 *_University research materials feeding this are not yet available -- and I want to bring models, not just stories here._*
 

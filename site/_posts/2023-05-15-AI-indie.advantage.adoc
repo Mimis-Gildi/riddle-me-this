@@ -2,7 +2,7 @@
 categories: [adventures]
 tags: [Discord,Executive]
 excerpt: >
-  Torvalds style rant -- Most aggressive startups leverage LLMs against laggards first...
+  Torvalds style rant -- Most aggressive startups turn LLMs against laggards first...
 classes: wide
 comments: true
 ---
@@ -13,22 +13,21 @@ _Originally published May 15, 2023 -- on the {ai-million-dollar-devs}[Scene Disc
 
 In May 2023, I documented an unexpected market phenomenon: small developer teams were winning million-dollar AI contracts from the most conservative industries -- insurance, banking, and healthcare.
 
-== The Surprising Numbers
+== Over $10M in a Few Months
 
 A developer community I track reported over $10M in AI contracts within just a few months.
 More than 30% of participants were successfully selling AI solutions to traditional sectors that had previously ignored emerging technologies.
 
-*The pattern was remarkable:*
-- Teams of 1-2 developers - Projects completed in just a few months - Conservative industries as primary clients - Contracts worth hundreds of thousands to millions.
+The pattern: teams of 1-2 developers, projects completed in a few months, conservative industries as primary clients, and contracts worth hundreds of thousands to millions.
 
-== Why This Happened
+== Enterprise Vendors Were Slow
 
 These industries needed "bespoke AI integration" solutions that their existing preferred vendors couldn't deliver quickly.
 Large consulting firms and established software vendors were too slow to adapt, creating an opportunity window for nimble, AI-native teams.
 
 The conservative sectors -- traditionally the last to adopt new technology -- became early buyers because they desperately needed AI capabilities but couldn't get them through normal channels.
 
-== The Temporary Advantage
+== A Window That Would Close
 
 I recognized this as a "temporary fluke" that wouldn't last.
 The window existed because:
@@ -38,17 +37,17 @@ The window existed because:
 . *Small teams could move fast* - No bureaucracy, no legacy constraints;
 . *Technical barriers were low* - AI tools had democratized complex capabilities.
 
-== The Lesson
+== Capability Gaps Beat Relationships
 
-This phenomenon revealed a crucial market dynamic: when new technology creates capability gaps, agile teams can temporarily outcompete established players -- even in the most relationship-dependent industries.
+This showed a market dynamic: when new technology opens a capability gap, small teams can outcompete established players for a while -- even in relationship-driven industries.
 
-The key was recognizing this window and acting quickly before enterprise vendors caught up or the initial demand surge stabilized.
+What mattered was seeing this window and acting before enterprise vendors caught up or demand settled.
 
-== Why This Mattered
+== AI Broke Vendor Relationships Early
 
 This observation proved that AI would disrupt traditional vendor relationships faster than expected.
 Even the most conservative industries would abandon established partnerships when faced with capability gaps that only new players could fill.
 
-The companies that capitalized on this brief window gained valuable experience and client relationships that positioned them well as the market matured.
+Companies that used this window came out with experience and clients they kept as the market matured.
 
 _Note: This temporary advantage is expected largely closed by late this year as enterprise vendors will adapt and the initial AI integration rush might stabilize._

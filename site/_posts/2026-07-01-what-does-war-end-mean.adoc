@@ -24,10 +24,8 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 :tshirt-url: https://english.nv.ua/nation/zelenskyy-wears-t-shirt-with-inscription-make-russia-small-again-russia-s-zakharova-reacts-50460976.html
 :kse-url: https://www.intellinews.com/kse-ukraine-s-wartime-spending-hits-record-131bn-as-defence-absorbs-71-of-budget-425939/
 :sipri-url: https://www.sipri.org/publications/2026/sipri-insights-peace-and-security/budget-fifth-year-war-military-spending-russias-budget-2026
-:delta-url: https://www.csis.org/analysis/does-ukraine-already-have-functional-cjadc2-technology
 :kasparov-rose-url: https://youtu.be/eBu9xcQPxFg
 :kasparov-rose-title: Garry Kasparov: Putin Trump AI and the Global Fight for Democracy
-:kasparov-kiyv-post: https://www.kyivpost.com/post/79314
 :triggernometry-browder-url: https://youtu.be/dlF0ZzH6C9s
 :triggernometry-browder-text: The Real Reason Putin Invaded Ukraine -- Sir Bill Browder
 :triggernometry-browder: {triggernometry-browder-url}[{triggernometry-browder-text},window=_blank]
@@ -55,12 +53,12 @@ You can fix the variables and run out the clock -- then you get dates.
 Or you can map the flows and let them converge -- then you get the outcome, not the timing.
 
 Some people _CAN_ know WHEN. That requires access to real-time event data at full-scale.
-(Ukrainian Geopolitical System {delta-url}[Delta,window=_blank], does this)
+(Ukrainian Geopolitical System {delta-csis-url}[Delta,window=_blank], does this)
 Theoretically, Ukrainians may know more, I doubt much more.
 There are always variables impossible to factor in (we don't know what we don't know).
 
-Many people know HOW -- practically the whole in-the-know world right now. EU leadership knows how.
-Ukrainian leadership knows how. Putin knows how. Nobody there is speculating on it. Maybe even Trump knows how;
+Many people know HOW -- practically the whole in-the-know world right now. EU, Ukrainian leadership, and Putin know how;
+nobody there is speculating on it. Maybe even Trump knows how;
 POTUS was certainly shown the models. Whether it registered with him is a separate question.
 
 Let's first answer "HOW the war ends", and then we will see what we can do about WHEN.
@@ -149,7 +147,7 @@ are against the government, so the government kills tens of thousands and still 
 opposite to Democracy: the "dictatorship of the many"; This is Autocracy: the "dictatorship of the few".
 Like there are many kinds of Democracy, there also are many kinds of Autocracy. Iranian is called
 "theocracy" -- power of the few that are clergy. And China is "Pure Autocracy" -- one party (group) rule,
-not messing with secondary constructs such as oligarchy, present, or republic, also present in China.
+not messing with secondary constructs such as oligarchy, present; republic, also present in China.
 So, 140 million russians DO NOT MATTER, will not rise up, and will not make any difference should they
 rise up -- the same as Iranians or Armenians. ZERO.
 ====
@@ -162,8 +160,8 @@ make that transition successful. Russia _was_ a *_Kleptocratic Oligarchy:_* A sm
 wealth to consolidate power. Putin and close families all began this way taking over from Yeltsin, who "stole enough,"
 said "he's tired" and left. Over the last 25 years Putin was working ONLY on one thing: Patronal Power Consolidation.
 
-When done correctly, Patronal systems are exceptionally stable and can survive extreme calamities. This is the play
-Peter the Great started and Catherine the Great completed spectacularly well in russia's past. And it is the play
+When done correctly, Patronal systems are stable and can survive calamities. This is the play
+Peter the Great started and Catherine the Great completed in russia's past. And it is the play
 Vladimir Putin announced almost 20 years ago and is attempting to complete today.
 
 Two steps were required for Vladimir Putin to consolidate power: 1. Containment of the Ruling Class;
@@ -184,7 +182,7 @@ _{art-roosevelt-stalin} is the parable._
 
 As you can see, Ukraine and RF have different definitions of "win" and "loss" and neither relate to any "territory".
 _At this point, you have everything needed to answer this without me._ +
-The real test for power is elegantly trivial -- *can "IT" complete self-destruction!*
+The real test for power is simple -- *can "IT" complete self-destruction!*
 
 *Real Power in Ukraine:*
 
@@ -194,20 +192,20 @@ The real test for power is elegantly trivial -- *can "IT" complete self-destruct
 *2020: Land Reforms:* People attacked russia-fed oligarchy, unfair business, asset transparency. +
 *2023: Cossack Assertion:* Tables turned, Sullivan Gambit failed; NDFs take control of the war. +
 *2024: Weakening of Federal Government:* Set of hardcore legislature pushing power down. +
-*2025: Weakening of Federal Government:* Harder push to Local / NDF; Rus` Alliance (UNB-8). +
+*2025: Further Weakening of Federal Government:* Harder push to Local / NDF; Rus` Alliance (UNB-8). +
 *2026: Systematic Dismantlement of Corruption:* NABU all-mighty; Brigade / Division NDFs.
 
-If you look at this progression, you will notice accelerating, hardcore attack on Federal powers.
+If you look at this progression, you will notice an accelerating attack on Federal powers.
 Ukraine + Nordic-Baltic-8 (UNB-8) establishes direct open defense and economic relations between
 places like regions of Denmark and regions of Ukraine -- no borders.
 
 By today's standards, the powers of the Ukrainian Federal government are in hard check.
-_Maybe because corruption is one of the primary russian weapons._ Any disagreement,
+_Corruption is one of the primary russian weapons._ Any disagreement,
 such as an attempt to interfere in the corruption investigation of Andriy Yermak, Zelensky's
 best friend, leads to an immediate protest that turns tanks around the next day. Yermak arrested.
-After 1: Azov refused orders to surrender Mariupol, then won legally; and, 2: taking military
+After 1: Azov refused orders to surrender Mariupol, then won legally; and 2: taking military
 warehouses by force (and blood), then winning in court __again__ -- __people have a very short fuse with
-their government shenanigans while loved ones are in combat.__ Worst, these NDFs are volunteers with massive
+their government shenanigans while loved ones are in combat.__ Worse, these NDFs are volunteers with massive
 support communities, they make up less than 10% of the Army and eradicate way more than 90% of threat, making any
 government action against them deeply unpopular or even treasonous. +
 Thus, *_only the Ukrainian people have the power to destroy their statehood._* +
@@ -223,12 +221,12 @@ network of obscure international relations, own layered security, and of course 
 Whilst dismantling russia the country, the SMO (Special 3-day Military Operation) brought an influx of wealth and power to
 the russian ruling class which grew from ~2,200 families in 2022 to ~3,100 families in 2026. The 86 russian billionaires
 in 2022 became 155 billionaires in 2026. Less than 10% of russian ruling class lives in russia, that is because the
-russian government are not all the ruling class -- only very few and all are members of Putin's party "New Russia."
+russian government are not all the ruling class -- only very few and all are members of Putin's party "United Russia."
 This growth started with redistribution of wealth from Western companies leaving russia and now is in full culling
 mode trimming the count of russian oligarchs down to the size Putin prefers.
 
 Putin is the only person in russia who can ZERO anybody with less than a stroke of pen (and does so actively now).
-But to dethrone Putin as serious coordinated action by the ruling class is necessary -- the action these people
+But to dethrone Putin a serious coordinated action by the ruling class is necessary -- the action these people
 are physically incapable of. Putin can destroy the russian state relatively unimpeded and nobody else can.
 
 [IMPORTANT]
@@ -250,7 +248,7 @@ image::triggernometry-browder.png[Sir Bill Browder explains Putin's russia and w
 
 
 
-== What the Models Say?!
+== What the Models Say
 
 *Ukraine: __stop killing my children now and forever__.* +
 *Russian Federation: __preserve Autocracy indefinitely__.*
@@ -314,7 +312,7 @@ __Remember! -- Russian and Ukrainian criteria are different. Ukraine can demolis
 collect reparations, establish a DMZ in Russia, maybe even rename Russia to Muscovy -- winning all objectives;
 If simultaneously Putin stays in power (miraculously), thus also winning, only with the Russian people losing.__
 
-== Do Russians Understand this?!
+== Do Russians Understand This?
 
 See for yourself!
 
@@ -353,16 +351,14 @@ To me, other conclusions and assessments are far more valuable:
 . Having the greatest resources around russia squandered its wealth due to a lack of "freedom gene."
 . This war is the greatest thing that happened to Ukraine, inevitably restoring the nation. ({art-ukraine-replaces} documents the replacement.)
 . My 'Merica had a unique chance to lead, profit, and prosper with Georgia, Armenia, Chechnya, and Ukraine but
-instead chose dishonor, ignorance, shortsightedness, and guaranteed loss. ({art-seven-betrayals} is the ledger.)
+instead chose dishonor and guaranteed loss. ({art-seven-betrayals} is the ledger.)
 
 == Important for the USA:
-
-Everything reduces to this:
 
 . *Helping Ukraine does not change the outcome -- the war ends one way.*
 . *Helping Ukraine saves lives: Ukrainian lives, and Russian lives, as Russia falls faster.*
 
 Not helping is not neutral. It is choosing a side inevitably ushering the slower, bloodier version of the same ending.
-And arriving at that ending with no leverage, no relationships, no honor, and no place in history.
+And arriving at that ending with no leverage, relationships, or place in history.
 
 {independence-2026-collector}

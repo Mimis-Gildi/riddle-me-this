@@ -13,11 +13,10 @@ read_aloud: false
 ifndef::env-site[:imagesdir: ../assets/images/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 
-Everyone's hunting AI use cases.
-Winners are refusing them!
+Everyone's hunting AI use cases, while the winners refuse most of them.
 
-.Successful CTOs don't collect AI use cases. Instead, they judicially scrutinize ones naturally arising. Instead of many projects and initiatives, their boards just have at most three.
-image::posts/2025-12-09-the-right-way.png[Successful programs thend to have very few items on the roadmap board. This image shows a large empty program board with just three orange sticky notes on it.]
+.Successful CTOs don't collect AI use cases. Instead, they judiciously scrutinize ones naturally arising. Instead of many projects and initiatives, their boards just have at most three.
+image::posts/2025-12-09-the-right-way.png[Successful programs tend to have very few items on the roadmap board. This image shows a large empty program board with just three orange sticky notes on it.]
 
 {nbsp}
 
@@ -36,24 +35,14 @@ _"What AI use case are you saying NO to -- and why?"_
 - Use cases where the training data classes don't exist in the wild;
 - "Transformational" pilots with no owner who's canned for failure.
 
-No owner, no hard calls.
+Without an owner, nobody makes the hard calls.
 Eighteen months later, you're still "learning." And "transformational" becomes its own special kind of misery.
 The best successes I've seen are "augmentational" in _existing business context_.
 
-Strategic NO is your MOAT! +
-_Competitors copy your use case in a quarter._ +
-*_They can't copy your discipline._*
+Strategic NO is your moat: competitors can copy your use case in a quarter, but they can't copy your discipline.
 
-What I repeatedly see: same AI initiative; same vendor; same tech.
-One ships, another doesn't.
+What I repeatedly see: two companies run the same AI initiative with the same vendor and the same tech, and only one ships.
 
-What gives?!
-
-Clarity about what NOT to do.
-
-Because who cares about pilots?
-What's in production?
-
-That answer starts with what you refused.
+The difference is clarity about what NOT to do. Nobody cares about pilots -- what's in production starts with what you refused.
 
 What's on your "NO" list?

@@ -11,8 +11,6 @@ read_aloud: false
 ---
 = On company sizes and AI
 lugaru
-:li-newsletter: https://www.linkedin.com/newsletters/behind-the-scenes-at-ase-7074840676026208257[Behind the Scenes at ASE,window=_blank,opts=nofollow]
-:pub-li: see excerpt on LinkedIn by {li-newsletter}
 
 Anton (16, ASE Inc intern) just published his first company analysis.
 
@@ -20,7 +18,7 @@ He spent a few days analyzing AI adoption data across company sizes -- combining
 
 The finding that surprised even me: company size predicts whether you'll TRY AI, and inversely on SUCCESS.
 
-The gap between theater and reality is brutal, especially for midsize companies:
+The gap between theater and reality is widest in midsize companies:
 
 - 11% of companies publicly claim AI success;
 - Only 3% demonstrate *_actual_* business outcomes.

@@ -34,7 +34,7 @@ class TestConfigFileAttributeProviders:
             Attribute("site-baseurl", "/riddle-me-this", -1),
             Attribute("chatgpt", "https://chat.openai.com/[ChatGPT,window=_blank]", -1),
             Attribute("cb-hacker", "http://www.catb.org/jargon/html/H/hacker.html[hacker,window=_blank]", -1),
-            Attribute("mailto-rIdd13r", "mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let%20us%20compete%3F[rIdd13r@pm.me]", -1),
+            Attribute("mailto-ridd13r", "mailto:rIdd13r@pm.me?subject=Hello%20Riddler%20-%20Let%20us%20compete%3F[rIdd13r@pm.me]", -1),
             Attribute("hera-school", "https://gervi-hera-vitr.github.io/sindri-labs/[Héra Academy Laboratory,window=_blank,opts=nofollow]", -1),
             Attribute("resume", "https://github.com/Mimis-Gildi/riddle-me-this/releases/download/v13.1.0/VadimKuhay-Resume.pdf", -1),
         ]).order_by(lambda attr: attr.key)
@@ -45,9 +45,9 @@ class TestConfigFileAttributeProviders:
         """The provider surfaces exactly the config's `asciidoctor.attributes` -- every key, none extra, all at GLOBAL_POSITION."""
         links = seq(config_links_provider(CONF_FILE)())
 
-        assert links.len() == 81
+        assert links.len() == 96
         assert links.map(lambda link: link.position).to_set() == {GLOBAL_POSITION}
-        assert links.map(lambda link: link.key).to_set() == GLOBAL_LINK_KEYS - {"site-baseurl"} | {"icons"}
+        assert links.map(lambda link: link.key).to_set() == GLOBAL_LINK_KEYS - {"site-baseurl"} | {"icons", "source-highlighter"}
 
 
 class TestStaticLinkProviders:
@@ -90,7 +90,7 @@ class TestFilterProvider:
         assert (seq(mock_provider())
                 .filter(lambda attr: filter_provider()(attr.to_tuple()))
                 .map(lambda attr: attr.key)
-                .to_set()) == {"site-baseurl", "chatgpt", "cb-hacker", "mailto-rIdd13r", "hera-school", "resume"}
+                .to_set()) == {"site-baseurl", "chatgpt", "cb-hacker", "mailto-ridd13r", "hera-school", "resume"}
 
     def test_b_filter_provider_vs_config_provider(self):
         """Test filter versus real config attributes in this project."""

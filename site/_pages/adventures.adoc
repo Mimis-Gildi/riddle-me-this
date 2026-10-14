@@ -19,39 +19,27 @@ header:
 
 {nbsp}
 
-_Adventures_ is where the work takes form -- in the field, in the code, in the culture.
+_Adventures_ is where the work takes form.
 
-These stories come from a lifetime of making systems for humans, machines, and the space in between.
+These stories come from a lifetime of making systems.
 Some are tales of hard-won production deployments.
-Others are snapshots of transformation: a team that leveled up, a policy that finally landed, a system that refused to die quietly.
-
-They are not case studies.
-They are _narratives with teeth_.
-
-You’ll find no sanitized slide decks here -- only work done under pressure,
-in motion, and sometimes under duress.
-
-When names are changed, it’s not to obscure the truth --
-it’s to protect the living systems that run, and the people still inside them.
+Others are snapshots of transformation.
 
 *{adventures}*.
 
 == Selected Field Notes:
 
-_The ones that still echo._
+For the last two years, I've been focusing on AI-Native in business,
+and on some weapon systems abroad.
+Judging by posters from the 50s, we all have self-driving cars already.
+All the tellers are robots, and AI caters to our every need.
 
-
-The last two years, I've been focusing on AI-Native weapon systems abroad.
-Now I'm back -- so, what about AI-Native Corporate America?
-Surely, we all have self-driving cars, all the tellers are robots, and AI caters to our every need.
-Right? Wait, what?
+These notes are about the gap between that poster and engineering.
 
 2025/08/07: {business-2025-08-07-ai-success-story} -- 'AI don't need any clouds.' +
 2025/07/21: {business-2025-07-21-ai-integration-architecture} -- this is _not_ how we saw the future in 2023. But here it is, in its full glory. +
 2023/07/05: {business-2023-07-05-ai-integration-trap} -- the four phases of AI-native evolution -- validated by life itself. +
 2023/07/04: {business-2023-07-04} -- the impediment is known -- our vendors will surely beat it!
-Right-right?
-WRONG!
 
 These are the short stories behind the current CTO avalanche.
 Maybe it's for the best.
