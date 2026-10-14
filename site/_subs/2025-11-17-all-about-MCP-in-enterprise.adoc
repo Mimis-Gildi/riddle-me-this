@@ -15,23 +15,19 @@ Prospects keep asking us to help them form and train MCP teams.
 
 Don't!
 
-MCP is a protocol.
-Like REST.
-Did you hire a separate REST team when HTTP became standard?
+MCP is a protocol, like HTTP.
+Did you hire a separate HTTP team when the web became standard?
 (Some did and are too embarrassed to admit it now.)
 
 Did your home builder hire a separate nailgun team when power tools showed up at Lowe's?
 
-Just train your domain teams on MCP fundamentals.
-One weekend bootcamp.
-Done!
+Train your domain teams on MCP fundamentals -- a weekend bootcamp is enough.
 
 Extending systems with ML outside of business domain context makes no sense.
 Your domain teams already understand the business logic -- they just need the protocol knowledge to augment with AI.
 
 Build competence into your existing teams.
-We can help you with that -- make communities of practice
--- deliver valuable working software with experts you already have.
+We can help you build communities of practice that deliver working software with the experts you already have.
 
 Stop chasing senseless fads.
 
