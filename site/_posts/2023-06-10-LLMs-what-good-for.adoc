@@ -69,11 +69,11 @@ The Northern has been an invite-only assembly of independent, expert programmers
 -- a concept described in the book "Company of One: Why Staying Small Is the Next Big Thing for Business" by the esteemed {jarvis}, one such person.
 This community and many like it is made up of loosely related special interest groups referred to as "Cliques".
 Many members counting over 500 small businesses in 2023 are seasoned software engineering professionals who perhaps found the corporate world not challenging or fast-paced enough.
-Having learned how to sell and operate independently, these professionals embark on a new journey, honing their skills and embracing the lifestyle of modern {nomads}.
+Having learned to sell and work independently, they become modern {nomads}.
 _Freedom rather than greed is the key appealing factor in this demographic._
 Nature then leads these independent professionals to seek like minds with like interests forming many _classic hacker cliques_ making up the bigger whole.
 When I first met this community, a smelly single-room BBS office in Philadelphia was its home.
-Today its Discord.
+Today it's Discord.
 
 Labeling the Northern as a "group" from {demogroup},
 as I see done on various social media sites, college news, and blog posts is somewhat of a _misnomer_.
@@ -102,7 +102,7 @@ It's one of the few spaces where the term "hacker" is used in its true essence.
 Note that we have sought permissions wherever possible and also have parents actively participating and moderating his content.
 
 There are hundreds of such cliques in North America and Europe, with individual families belonging to multiple cliques.
-If you're curious and want to get involved, introducing yourself through your local {spaces} is an exceptional starting point,
+If you're curious and want to get involved, introducing yourself through your local {spaces} is a good starting point,
 well suited for a gentle introduction.
 
 I chose the Northern as our introspection point because this community is old and large,
@@ -134,7 +134,7 @@ Then she's "Feeling Good."
 
 "Don't let me be misunderstood." While I have aided countless young minds in becoming the vanguard of technology innovation,
 it is interesting to think that my own children, perhaps taking after my better half, might pursue the arts instead.
-This just goes to show that we're all different, and all of our talents are unique and uniquely valuable.
+This just goes to show that each of us has different talents, and each is valuable.
 It _also_ made me realize that Northern is less inclusive than most communities today favoring *_business and technology_* more than digital arts and creative writing.
 But as you will soon see, the edge between art and code is about to be blurred forever.
 Because when a machine efficiently recovers hacker time spent on boilerplate, said hacker puts it to creativity.
@@ -152,12 +152,9 @@ My current personal journey affords me the luxury of time, which I have been usi
 I'm not tunnel-visioned in my own quest, and my vantage point allows me to discern the emerging bigger picture, painted with broad strokes.
 And the biggest potential this new tech can offer is in recovering people time spent on tedious, monotonous tasks.
 When we no longer *_need_* to "do things," but instead are free to think and create -- everything changes.
-The Last time this happened 3,500 years ago, in the steppes of Ukraine, Scythians launched civilization in Europe.
-All because they could.
-And they could because they had time.
-Time to spend, time to learn, time to think.
-It may surely take a minute.
-But it's the direction our collective lives take that matters.
+The last time this happened 3,500 years ago, in the steppes of Ukraine, Scythians launched civilization in Europe.
+All because they could, and they could because they had time to spend, learn, and think.
+It may take a while, but the direction our lives take is what matters.
 
 *_Will `this` free and elevate our inherent talents?
 And what is `this`?_*
@@ -176,9 +173,8 @@ As far as our own products,
 MATILDA MLOps platform is using embedded LLMs to help tokenize and vectorize natural language queries to logical premises.
 But that's it.
 
-One might wonder why LLMs haven't found their way into mainstream use in large companies.
-In fact, not even in much more competent small businesses.
-Let's take a look at the reasons why.
+LLMs haven't reached mainstream use in large companies, or even in more competent small businesses.
+Here is why.
 
 In corporate America, the problem is not lack of resources, but lack of a culture that embraces LLMs.
 The traditional approach to machine learning,
@@ -197,23 +193,21 @@ And the LLMs themselves had two main limitations:
 In fact, even with MATILDA, LLMs were only executed at the partners who had the money to offload language analysts with.
 Others were delighted to just run static tokenizers or Small Language Models (SLMs) and have humans build an expression for the premise.
 
-So what changed then?
-Well, it's SIZE!
+What changed was SIZE!
 Modern LLMs we see move markets now are not "large," they're huge, _even *massive*,_ in comparison to 2018 LLMs.
 
 A particular challenge when it comes to the scale of LLMs – the "Large" is significant.
 Developing a custom LLM generally involves three phases: 1) acquiring training data,
 2) determining model weights, and 3) training costs, manual reinforcement (or, possibly, active inference).
 While the first two phases are achievable, the third is cost-prohibitive for most.
-This places smaller players in a David vs.
-Goliath scenario.
+This places smaller players in a David vs. Goliath scenario.
 
 While large companies enjoy natural protection due to the scale and cost of LLMs, smaller players often need to protect their turf.
-As a result, tiny Champions gravitate towards open-source solutions like the {dolly-2} while the likes of OpenAI close up and build "motes."
+As a result, tiny Champions gravitate towards open-source solutions like the {dolly-2} while the likes of OpenAI close up and build "moats."
 _However, the constant threat from well-funded looms._
 
 *_The general lack of demand and high cost of entry_* leads small businesses to gravitate towards what are colloquially termed as "canned models."
-Essentially, these are pre-trained models that can be employed with minimal customization, making them both accessible and cost-effective for smaller entities.
+Essentially, these are pre-trained models that can be employed with minimal customization, which makes them affordable for smaller companies.
 Consequently, most champions would peruse one of the myriad community repositories that cater to various AI domains such as image recognition,
 numerical pattern analysis, or even the {hfce} repository for conversational models, to ascertain what's up for grabs.
 _Yet all of this is still predicated on having a chance to sell such magic!_
@@ -248,12 +242,12 @@ meant for the group real hackers call _{crackers}_.
 
 The Champions, being the tech-savvy community that they are, conduct an anonymous survey among themselves every demoscene.
 At the Northern this year such a survey revealed that many Champions were actively selling services based on Large Language Models (LLMs) like ChatGPT.
-Interestingly, OpenAI broke the mold of "technology adoption curve" by offering an early version of an unfinished product, and something unexpected occurred.
+OpenAI broke the mold of "technology adoption curve" by offering an early version of an unfinished product, and something unexpected occurred.
 The first wave of inquiries came _not from tech enthusiasts_ (a.k.a. early adopters), but rather from traditional,
 mature and conservative companies (a.k.a. Laggards).
 This was puzzling, and reminiscent of the days when wealthy families would purchase expensive AT&T UNIX workstations as status symbols,
 without ever powering them on.
-Perhaps one thought that by buying a smart AI tool, decades of stagnation could be reversed with no tax on the mushy brain?
+Perhaps someone thought that buying a smart AI tool would reverse decades of stagnation without taxing the mushy brain.
 
 The second wave of interest came from previous customers on retainers who had undergone digital transformation with Champions in the past.
 Unlike the first group, these customers came with specific-enough requirements to make things worthwhile.
@@ -262,8 +256,8 @@ It's easier and cleaner to decorate at the edge rather than think deep through t
 These were sound exact asks to decorate the edges.
 And competitive use could come with more experience.
 
-However, the implementation did not live up to expectations in the later case. Counterintuitive, isn't it?
-One would expect a Laggard to marginalize a toy it doesn't understand. So why did the sound use cases fail then?
+However, the implementation did not live up to expectations in the latter case.
+One would expect a Laggard to marginalize a toy it doesn't understand, yet the sound use cases failed.
 Well, ChatGPT, despite its capabilities, had limitations that were more noticeable to the discerning eyes of the capable customers with real needs and expectations.
 Feedback from many such groups indicated that the responses generated by GPT Model were not convincingly logical or sound.
 I initially struggled to summarize this observation.
@@ -273,7 +267,7 @@ Thus, expectations were broken in the worst possible way,
 when an aggregate is expected to respond to the customer within the bounds of its context answers with irrelevant information.
 For example, say a robotic host in a virtual restaurant instead of telling the customer to wait a few minutes for the next table,
 suggests that the customer should visit the bathroom to pass time.
-Definitely not a foreseen scenario. With an example like this, we can see how fidelity is immediately questioned.
+Nobody foresaw that. With an example like this, we can see how fidelity is immediately questioned.
 
 There are two primary issues that the Champions encountered with OpenAI's solution:
 1) The models are closed-source, which is a deal-breaker for many hackers who prefer transparency and understanding the underlying mechanisms.
@@ -322,7 +316,7 @@ ROFL, "who's bigger, Google or I?!"_
 
 But Google did not disappoint!
 They had a few aces up their sleeves,
-and their deep-rooted hacker culture shone through as they addressed nearly all the concerns that the Champions had with the current populist offerings in the market.
+and as hackers, they addressed nearly all the concerns that the Champions had with the current populist offerings in the market.
 In a way, I can't believe that I am saying this about Google.
 It hasn't been the same since Sergey left.
 But credit is due where credit is due.
@@ -352,17 +346,17 @@ Please follow these key links:
 * {g-kaggle}
 
 Astute observers might point out that many of these resources have been around for a while.
-What's different is the focus -- Google went the extra mile to make AI irresistibly easy for developers to dive into.
-The MakerSuite and LLM Colab Magics were so simple and educative that even non-technical individuals could produce, and Vertex AI made production deployment a breeze.
+What's different is the focus -- Google made AI easy for developers to start with.
+The MakerSuite and LLM Colab Magics were so simple and educative that even non-technical individuals could produce, and Vertex AI made production deployment simple.
 The absence of vendor lock-in meant that developers could employ their tools both on and off the Google platform.
-(I certainly do, as I don't like some of Google's cool-aid)
+(I certainly do, as I don't like some of Google's Kool-Aid)
 
-Google's dynamic carefully crafted show rendered its past competition less appealing to the Champions.
-Their traditional developer-centric approach is pure brilliance from Google.
+Google's show made its competition less appealing to the Champions.
+Their developer-first approach was the right call.
 Our Discord is still going with Google offerings as hackers are discovering new ways to profit.
 
-_Isn't it intriguing how OpenAI's ChatGPT lured in consumers by captivating the uninitiated,
-while Google tactically cornered the market by enticing the Champions?_
+_OpenAI's ChatGPT lured consumers,
+while Google cornered the market by winning the Champions._
 Some of our community members have already billed $ 7 digits for ML offerings this year with companies of three, two and even solo.
 
 I would say more.
@@ -403,10 +397,10 @@ The only way to recover is to shut everything down and then cold-boot.
 I had a close call once in 2018 when a control plane rack hosting API dispatch failed.
 It's a hub-and-spoke namespace-segregated architecture just like Borg and Kubernetes.
 I've stopped the domain command dispatch channels, and she righted herself up in a few hours.
-But it very well could have been an unrecoverable outage loosing days or weeks of work.
+But it very well could have been an unrecoverable outage losing days or weeks of work.
 
-Reflecting upon these approaches, Google's holistic method seems to stand out.
-It appears to be the most pragmatic option for those looking to augment their systems with machine learning today.
+Reflecting upon these approaches, Google's method stands out.
+It is the most pragmatic option for those looking to augment their systems with machine learning today.
 By offering a canned combination of reinforcement training and an adaptive superstructure,
 Google's out-of-the-box approach addresses several key challenges rather difficult to overcome on one's own coding power.
 This is one of the scenarios when staying with a community pays out well.
@@ -414,9 +408,9 @@ This is one of the scenarios when staying with a community pays out well.
 == OSS LLMs to Consider
 
 Before I conclude with the 2024 trajectory of ML in practical business,
-I must mention that there is a burgeoning ecosystem of independent open-source software (OSS) efforts focusing on LLMs.
+I must mention that there is a growing ecosystem of independent open-source software (OSS) efforts focusing on LLMs.
 Many academic institutions and organizations are contributing to this space by releasing their own LLMs.
-Below are some notable OSS LLMs that seriously merit attention:
+Below are some notable OSS LLMs:
 
 * *Meta's LLaMa*: One of the earliest open-source LLMs, released by Meta. Find it on GitHub at {m-llama}.
 * *Stanford's Alpaca*: An enhanced variant of LLM developed by Stanford University. Access it on GitHub at {s-alpaca}.
@@ -425,7 +419,7 @@ Check it out on GitHub at {bsd-vicuna},
 and explore more projects related to Vicuña at {bsd-vicuna-topics}.
 * *Databricks' dolly-v2-12b*: This is my personal favorite OSS model.
 It is developed by Databricks ({db-dolly-hf}) and can be accessed at {db-dolly} on GitHub.
-* *Open Assistant*: Open Assistant boasts a powerful model with a committed and principle-driven community.
+* *Open Assistant*: Open Assistant has a strong model and a principled community.
 ** Explore it on GitHub at {open-assistant},
 ** and the Hugging Face repository at {o-a-hf}.
 
@@ -437,13 +431,12 @@ For a comprehensive list, visit the LLM Wikipedia page at {all-oss-lm-models}.
 
 == Conclusion
 
-When assessing emerging technologies, history is often a good guide.
 Take Kubernetes, for example.
 Introduced in 2014, it piqued and held the interest of our demoscene, though wider adoption only began in earnest around 2016.
 The enthusiastic response from the demoscene was indicative of Kubernetes' impending success.
-In contrast, GraphQL was met with fervor upon its introduction, largely due to Facebook's marketing efforts.
-However, within the demoscene, skepticism abounded,
-and debates raged over its inability to export behavior in the same manner as the REST component of HTTP standard does.
+In contrast, GraphQL was hyped at launch, largely by Facebook's marketing.
+In the demoscene, people doubted it
+and argued over its inability to export behavior the way REST does over HTTP.
 _"If we don't export behavior and just data projections, why bother with another wanting protocol when the problem is already solved well?"_
 This difference in reception among Champions hinted at the divergent paths these technologies would eventually take.
 Mundane sycophants would promote GraphQL, while more visionary individuals would focus on real value offers like Kubernetes.
@@ -453,32 +446,32 @@ Mundane sycophants would promote GraphQL, while more visionary individuals would
 * _How was the real value of Kubernetes *initiated to TRUST*?_
 ** *_By reusing clear, concise, and proven Borg design._*
 
-But Borg and Omega are not Open Source Technology, and Borg Control Language (BCL) is not in the public domain -- how and why hackers rock that?!
+But Borg and Omega are not Open Source Technology, and Borg Control Language (BCL) is not in the public domain -- yet hackers rock it.
 This brings us to an essential clarification:
 despite common misconceptions, *Champions are not beholden to open-source for ideological reasons*;
 their allegiance is to pragmatism and efficacy.
-They seek tools, libraries, and methodologies that allow them to solve problems efficiently and effectively,
+They seek tools, libraries, and methodologies that allow them to solve problems efficiently,
 the same way the market eventually will.
 The caliber of a technology is, in large part, a reflection of its community and ecosystem.
 _Champions pay good money readily and eagerly, as long as the enablement is accessible enough to be a real asset in making money._
 
-*_So, what `this` is to free our time and to elevate our inherent talents?
+*_So, what `this` is to free our time and to elevate our inherent talents?_*
 
 Large Language Models (LLMs) have clearly demonstrated their utility and staying power,
 with Champions quickly finding lucrative applications for them.
-However, not all implementations of LLMs or ML implements in general are created equal.
-Google's developer-centric approach to democratizing AI has been particularly laudable.
-They've provided an array of resources, from open-source frameworks to development tools,
-which have empowered developers while emphasizing responsible AI principles.
+However, not all LLM or ML implementations are equal.
+Google's developer-first approach to AI has been good.
+They've provided open-source frameworks and development tools,
+along with responsible AI principles.
 Recently added investment into the development community only better assures the outcome for `this`.
 
-Now, lest I am mistaken for a corporate shill, let me be clear: my aim is to provide an unvarnished analysis, not an endorsement.
+I'm not a corporate shill: this is analysis, not an endorsement.
 When technology genuinely helps the developer community, it is worthy of recognition, irrespective of the source.
 
-Machine learning is not a fleeting trend, but a transformative technology that's here to stay.
+Machine learning is here to stay.
 While one could pursue formal education to gain expertise in this field,
-the accessibility and comprehensiveness of resources like those offered by Google make diving into machine learning more practical than ever.
-Whether constrained by time, resources, or just eager to get hands-on, developers now have a wealth of tools at their fingertips.
+the accessibility and comprehensiveness of resources like those offered by Google make machine learning practical to start with.
+Developers now have the tools, whatever their time or budget.
 *_The winning trajectory in 2024 is along a powerful turnkey,
 end-to-end enabled ecosystem supported by a dedicated community and an enabling all-curating vendor._*
 I expect a stream of positive changes from Champions all over the world in the very near future,
@@ -506,13 +499,13 @@ It's the most important part of this revolution, but conceptually pointless.
 
 Publicly, I can say `this` is INTEGRATION & INCORPORATION::
 Take cellphone, for example. It made us stronger. We miss it when it's not there.
-It's valuable but not a game changed. Because it's just an extension of us.
+It's valuable, but not a game changer, because it's just an extension of us.
 Yet here, for the first time we have something vastly different -- it's an augmentation of us.
 More precisely, augmentation of our wetware.
 In other words, having a two-way working interaction with yet another mental model makes us `cyborgs` for the first time.
 So, `this` == `cyborg`. And what is needed next is integration and incorporation.
-Notice, champions never jump on tools or phads or anything that is not a *_real own asset_* to them.
-But they've jumped all over `this` revolution. Because they understand what's next.
+Notice, champions never jump on tools or fads or anything that is not a *_real own asset_* to them.
+But they've jumped all over `this` revolution because they understand what's next.
 
 My expectation is that within 12–15 months, _**protocols** will emerge_.
 Perhaps something akin to an agent-pattern, like MATILDA and older AI tools used.

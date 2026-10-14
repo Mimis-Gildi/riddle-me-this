@@ -37,39 +37,27 @@ I've spent decades transforming engineering organizations hands-on grassroots.
 Yes, I discover, design, and code every day.
 I've helped dozens of other founders with their startup tech, exited a couple of my own,
 and executed eleven enterprise transformations at my current company.
-And I live for innovation.
-But also for business.
-So, I've had employments at stale shops turning most to glory.
+And I live for innovation, but also for business.
+So, I've worked at stale shops and turned most of them around.
 Unlike spoiled hackers you meet, I don't harbor stigma against traditional business.
 In fact, the opposite is true -- I'm a realist, and I argue that traditional business is the backbone of America.
 Laggard in IT doesn't mean laggard in business, and it is the latter that matters.
-Turning traditional business is what separates boys from men.
+Turning traditional business around is the hard part.
 
-So, I pushed DevOps before it had a name.
-Microservices before the conference posers discovered the buzzwords.
-Kubernetes when it was still an idea.
+So, I pushed DevOps before it had a name, microservices before the conference posers discovered the buzzwords, and Kubernetes when it was still an idea.
 
-Those transformations were *HARD*.
-Rebuilding CI/CD pipelines _with_ the incumbent team.
-Strangler-fig migrations off monoliths.
-Most notably, changing hundreds of engineers to think *production-first*.
+Those transformations were *HARD*: rebuilding CI/CD pipelines _with_ the incumbent team, strangler-fig migrations off monoliths, and, most notably, changing hundreds of engineers to think *production-first*.
 *_Years of hard work._*
 
-AI adoption?
-Adding LLM Agents to existing workflows?
-That takes weeks, not years.
+Adding LLM Agents to existing workflows takes weeks, not years.
 
 {doordash-case} did it in eight weeks.
 Commerzbank built a chatbot handling 2 million conversations with 70% resolution. +
-*_This is the par!_*
+*_This is par!_*
 
-Why 95% fail - oh let me tell you.
-I study failures.
-Read the postmortems.
-In fact, I sold recoveries for a few months.
-And, of course I analyzed the 80% failure rate from {rand-report}.
-The 95% showing zero ROI from {mit-article}.
-Looked for the thing that makes AI uniquely difficult.
+Why 95% fail -- let me tell you.
+I study failures and read the postmortems; I even sold recoveries for a few months.
+And, of course, I analyzed the 80% failure rate from {rand-report} and the 95% showing zero ROI from {mit-article}, looking for the thing that makes AI uniquely difficult.
 
 *Found nothing new!*
 
@@ -84,38 +72,23 @@ So why are MORE projects failing?
 
 == Let Me Tell You About The Silly-Town Bank
 
-Major US bank.
-Household name.
-Deploys AI for customer service.
-Big press release!
-Innovation awards.
+A major US bank, a household name, deploys AI for customer service -- big press release, innovation awards.
 Cool -- that's my bank for 20 years.
 
-I'm a customer.
-My debit card expired.
+I'm a customer, and my debit card expired.
 _Yet this time I didn't receive an automatic replacement._
-Simple task: order replacement.
-
-The old process is turned off.
-The new AI assistant handles requests now.
+Simple task: order a replacement.
+The old process is turned off; the new AI assistant handles requests now.
 
 I ask for a new DEBIT card.
-AI assistant "helps." Doesn't order the debit card.
-Instead, invalidates my *_credit cards_* and orders replacements for those.
-Repeatedly!
+The AI assistant "helps": instead of ordering the debit card, it invalidates my *_credit cards_* and orders replacements for those -- repeatedly!
 I now have no working credit cards.
 
 FPOS!
 
-I call support.
-Get a human.
+I call support and get a human.
 She sounds stressed.
-Tries to fix it.
-Fails.
-Tries again.
-Fails.
-Six attempts.
-On the seventh, she finally orders my debit card correctly.
+She tries to fix it six times and fails; on the seventh, she finally orders my debit card correctly.
 
 _I'm curious._
 (I always am.) And charismatic enough for people to tell me things.
@@ -130,10 +103,7 @@ She trails off.
 
 The AI failed completely.
 The humans brought in to "work with AI" have *no institutional knowledge*.
-The experts who knew every edge case, every weird account configuration, every shortcut?
-Gone.
-Fired.
-Cost savings.
+The experts who knew every edge case, every weird account configuration, every shortcut were fired for cost savings.
 
 Now ten times more customers wait longer for worse service from people following broken AI instructions.
 
@@ -149,17 +119,16 @@ Maybe you're the "old guard" being pushed out because you don't have "AI skills.
 
 Or maybe you're watching tribal warfare tear your team apart.
 The incumbents are barricading themselves: _"We're Spring Boot developers, not Guidewire developers."_
-The new blood-breaking production: _"Those old tests were slowing us down -- we turned them off."_
+The new blood, breaking production: _"Those old tests were slowing us down -- we turned them off."_
 Both factions are at war while the actual business problem goes unsolved.
 
 I've seen this exact pattern play out.
 At a major insurer, senior engineers muted 100+ integration tests
 -- all written one-to-one with business scenarios from EventStorming sessions
 -- because they "needed to ship faster." Production broke for months.
-Ignorantum Americanus?
-No, just cornered bunnies.
+They're just cornered bunnies.
 
-When executives saw the chaos, you know what they concluded?
+When executives saw the chaos, they concluded:
 
 _"The AI transformation failed."_
 
@@ -172,8 +141,7 @@ Fire the CTO.
 Try different technology."
 
 That insurer is struggling harder today.
-Days are numbered.
-And all efforts are still on "AI".
+Their days are numbered, and all efforts are still on "AI".
 
 == The Pattern Nobody Wants to See
 
@@ -193,7 +161,7 @@ Every failed AI project I've studied, dozens, has the same shape:
 | Skipped workflow redesign -- bolted AI onto broken processes and expected magic.
 | Workflows were redesigned FIRST -- then AI was added to the new workflow.
 
-| Blamed engineers` competence when it collapsed.
+| Blamed engineers' competence when it collapsed.
 | No "AI Specialist" was hired -- the domain team added AI like they'd add *_any other library_*.
 |===
 
@@ -203,8 +171,7 @@ They already understood Dasher workflows.
 They added Claude as one more tool in their stack.
 Now they handle hundreds of thousands of calls daily.
 
-That's not a moonshot.
-That's competent execution.
+That's competent execution, not a moonshot.
 
 == Three Steps They Keep Skipping
 
@@ -212,9 +179,7 @@ Here's what three decades taught me:
 
 === Step 1: Fix the Organization
 
-Domain-Driven Design.
-EventStorming.
-Get business and engineering speaking the same language.
+Domain-Driven Design and EventStorming: get business and engineering speaking the same language.
 Model the actual workflows before touching technology.
 Or any other methodology to discover *_the winning business process_*.
 
@@ -229,28 +194,20 @@ Takes weeks, not months.
 === Step 2: Upskill the Team
 
 90% of MY work is here.
-Security-first mindset.
-Defensive coding practices.
-Twelve-factor-app.
-Test-driven development.
+Security-first mindset, defensive coding, twelve-factor apps, test-driven development.
 Taking engineers who've been doing spaghetti for fifteen years and teaching them *the craft*.
 
 This is where incumbents become capable of Step 3.
-You don't fire them.
-You train them.
-They already know the domain.
+You don't fire them; you train them. They already know the domain.
 That knowledge is irreplaceable.
 
 This is business basics: identify assets, invest into assets, and trim liabilities.
 
-Takes months.
-Worth every day.
-And my every gray beard hair.
+It takes months, and it's worth every day -- and every gray hair in my beard.
 
 === Step 3: Add AI
 
-After Steps 1 and 2?
-This is trivial.
+After Steps 1 and 2, this is trivial.
 
 Domain team adds LLM capability like adding any other tool.
 They understand the workflow.
@@ -270,12 +227,9 @@ It is not about the AI!
 
 == Why Executives Skip Steps 1 and 2
 
-Step 3 is sexy.
-Boards love it.
-Press releases write themselves.
+Step 3 is sexy: boards love it, and press releases write themselves.
 
-Steps 1 and 2 sound like "old DevOps coach talk." Unsexy.
-No innovation awards.
+Steps 1 and 2 sound like "old DevOps coach talk": unsexy, with no innovation awards.
 
 Firing experts looks like cost savings on a spreadsheet.
 
@@ -307,13 +261,10 @@ The tools are the easy part.
 "We handle ten times the volume with better resolution" is a win.
 
 Your new "Agentic AI Specialist" who will "implement token limits" and "attempt to carry identity through tools"
-and "calculate the best model" - has little real value!
+and "calculate the best model" -- has little real value!
 Needs to be invested into to learn your domain.
 Is not likely to have any more systems engineering prowess. +
-_Do you know how I solve their perceived "advantage" problem?!_ +
-I give incumbents my AI Cheatsheet.
-There.
-Done.
+_Here's how I solve their perceived "advantage" problem:_ I give incumbents my AI Cheatsheet.
 Give it a week and reap.
 
 == The Real Secret
@@ -321,22 +272,16 @@ Give it a week and reap.
 AI integration is easy.
 I see it done in eight weeks by domain teams regularly.
 
-The hard part is admitting that your people's problem isn't a technology problem.
+The hard part is admitting that your people problem isn't a technology problem.
 And that *fixing* people is *_cheaper_* than firing/replacing them.
 
 The companies winning at AI aren't the ones with the best AI talent.
 They're the ones where domain teams already work well together and can add AI as a tool.
 
-You don't need an AI specialist.
-You need a functioning organization.
-And some engineering fundamentals.
-I.e., basic competence.
+You don't need an AI specialist; you need a functioning organization and some engineering fundamentals -- basic competence.
 
-And if you have one?
-Eight weeks to production traffic is the norm.
-
-If you don't?
-No amount of AI will save you.
+If you have one, eight weeks to production traffic is the norm.
+If you don't, no amount of AI will save you.
 Fix your work-family first.
 
 '''
@@ -346,9 +291,7 @@ Are you living The Silly-Town Bank story?
 Fighting the tribal warfare?
 Or have you seen it done right?_
 
-Are you still here?
-You're either furious or curious.
-Either way -- let's talk.
+You're either furious or curious -- either way, let's talk.
 
 '''
 

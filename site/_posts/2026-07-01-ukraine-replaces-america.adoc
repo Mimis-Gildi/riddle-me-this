@@ -77,7 +77,7 @@ Hmm...
 This one is a bit challenging for me to share with you. I am a patriot and US Army veteran.
 And I interact with the cream of the crop in the software-making world globally.
 Contrary to what most people believe in the USA, Europeans don't see us as _evil_ -- not one bit.
-It's much worse. They see us as *_stupid_*. Or even more insulting -- *_incompetent_*.
+It's much worse: they see us as *_stupid_*, or even more insulting -- *_incompetent_*.
 They also don't see us leading in technology, any technology, and are actively working
 to ban American software and even hardware. But there certainly must be things we do well.
 
@@ -86,7 +86,7 @@ to ban American software and even hardware. But there certainly must be things w
 things differently -- the old Vympel R-37 gets that `F-35` spanked surprised every time 300 miles out.
 Calls it "expensive useless garbage too precious to deploy on any near-peer real mission."_
 
-_Gripen, with Ukrainian Delta kit is an infinitely better choice; immeasurably so, it survives the R-37.
+_Gripen, with Ukrainian Delta kit is a far better choice -- it survives the R-37.
 Even the latest `F-16` or `F-15 EX` with Ukrainian firmware editing works. The `F-22`/`F-35`
 isn't designed to exploit any next-war adversaries -- it's designed to exploit the taxpayer's wallet. +
 Thanks to our recent less thought-through use of these "platforms" -- everybody now knows it._
@@ -102,19 +102,19 @@ And more importantly, Poland expects Ukraine to always be there, which means tha
 coming to Poland will be well-painted by Delta, including over Belarus or Suwałki Gap._
 
 *Orkish stuff coming, you say?* +
-*We have Air-Defence!* Ballistics radars, THAAD Systems, Patriot PAC3. Even Ukraine wants PAC3! +
+*We have Air Defense!* Ballistics radars, THAAD Systems, Patriot PAC3. Even Ukraine wants PAC3! +
 _You mean the ungodly expensive radars Iran completely destroyed in the first two weeks of the war?!
 You mean PAC3, $4M each at a single $35K Shahed and miss? Look, there is stuff that works in a
 real war -- *it works because it is cost-effective.* And there's stuff that works on the appropriations
 floor -- it works because it kicks back `good`. Middle East countries are buying a lot of PAC3 to trade
 them for AI stuff from Ukraine -- the cost-effective part. And then Ukraine lobotomizes PAC3 for their
 heavily lobotomized Patriot batteries so that too becomes cost-effective: this way the ability to
-intercept ballistics is actually affordable. Did you know in the opening weeks of Iran war we fired TWICE
-as many PAC3 missiles as Ukraine did through their ENTIRE war? -- and 20 of our bases are rubbled by Iran.
+intercept ballistics is actually affordable. In the opening weeks of the Iran war we fired TWICE
+as many PAC3 missiles as Ukraine did through their ENTIRE war -- and 20 of our bases are rubbled by Iran.
 Oh, but we also fired THAAD interceptors -- all of them. Ukrainian lobotomized Patriot goes only for
-ballistic missiles over residential targets with a 38% intercept rate. Because Delta --
+ballistic missiles over residential targets with a 38% intercept rate, because Delta --
 the theater system NATO/Pentagon can't have -- runs layered defense -- to know when NOT to fire. Our intercept rate for the
-latest war you can count on your fingers. That's 1) dumb and 2) irresponsible, not just because
+latest war you can count on your fingers. That's dumb and irresponsible, not just because
 the taxpayer works hard to get gouged on expensive slop, but also because supply is limited and replenishment
 takes forever._
 
@@ -133,7 +133,7 @@ Trump is very busy and spectacularly active for his age. He says and does many i
 The problem is nobody wants him to touch anything anymore. Not even MAGA in their civil war.
 
 Meanwhile, a besieged nation one-sixth our size, under full-scale invasion for four years,
-is quietly replacing us on every axis we used to define ourselves on.
+is quietly replacing us on the axes we used to define ourselves by.
 Somebody will always fill the void!
 
 [WARNING]
@@ -171,11 +171,7 @@ complete with the world's most advanced theater management software
 courtesy of Ukraine -- the kind of stuff the MAGA USA will not have in your lifetime. +
 __(Soon enough with Ukrainian engines -- aerospace alloy tech the West could never match)__ +
 {nbsp} +
-Gripen is a: +
-Better platform. +
-Better fighter. +
-Better plane. +
-For a better price. +
+Gripen is a better fighter for a better price. +
 Be wise! Mind your family first.{fn-pl-interia-vassal}{fn-tvn24-settlements}{fn-nfp-vassal} +
 (Maybe then Ukrainians will share the tech you've been begging for?)
 ====
@@ -193,13 +189,13 @@ diplomatic cover for managing this war on russia's behalf.
 2) Smart Weapons Supplier is Ukraine. Nobody wants our junk::
 
 - January 2026: US sold Saudi Arabia $9B in PAC-3 Patriot interceptors, delivery: 18-36 months. +
-Nobody cares for anything else from us: "expensive overrated garbage."
+Nobody cares for anything else from us: "expensive useless garbage."
 
 - March 2026: Zelensky toured Riyadh, Doha, Abu Dhabi. +
 Signed {gulf-deals-url}[10-year defense export deals,window=_blank] with all three Gulf states. +
 Saudi state oil giant Aramco {aramco-url}[bypassed its own government,window=_blank] and +
 went directly to Ukrainian manufacturers to defend its oil infrastructure. +
-*And did so well!* US bases burned down -- Aramco managed.
+*And did it well!* US bases burned down -- Aramco managed.
 
 - When all our bases are good and rubbled -- {pentagon-drones-url}[US is now shopping Ukraine,window=_blank].
 
@@ -233,9 +229,9 @@ NOTE: The Palantir CEO rode a train to Kyiv to beg for IP years later.
 NB8 - Nordic Baltic Eight: Denmark, Estonia, Finland, Iceland, Latvia, Lithuania, Norway, and Sweden.
 These are all historic relatives of Kyivan Rus' -- Muscovy isn't, despite calling itself that; it was just a colony.
 
-Also, USA, China, russia, etc. -- are explicitly banned. Care to guess why that is?
+Also, USA, China, russia, etc. -- are explicitly banned, for obvious reasons.
 
-Poland is reeling from Ukraine not sharing tech -- that just because Poland is aligned with the USA.
+Poland is reeling from Ukraine not sharing tech -- just because Poland is aligned with the USA.
 ====
 
 
@@ -268,7 +264,7 @@ Germany, France, and Spain -- minimum -- and +
 it's growing faster than any of us can track. +
 {nbsp} +
 Structurally, we removed ourselves from geopolitics *_by eradicating trust in us_* +
-there, where people want a relationship we come with deals, and bad deals at that. +
+there, where people want a relationship, we come with deals, and bad deals at that. +
 {nbsp} +
 *Consider this:* *_"Do you take this woman ..."_* +
 _Tell you what, I'll make you a deal! -- let these hookers stay on the couch ..._ +

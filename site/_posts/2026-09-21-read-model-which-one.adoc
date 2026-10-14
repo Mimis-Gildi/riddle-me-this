@@ -114,7 +114,7 @@ Less ceremony is more work done, as I mentioned in the video.
 {solidjs} is an entirely different paradigm -- compiled, no VDOM. I dig! The few SPAs I built with it performed very well.
 I could demo Solid in {read-model-site} if page performance were the key. (Still might, tempted...)
 
-Remarkable here is **the 2-stage process**: the compiler turns JSX into real DOM templates with the static HTML pulled out,
+The remarkable part is **the 2-stage process**: the compiler turns JSX into real DOM templates with the static HTML pulled out,
 then a small runtime of signals updates only the nodes that depend on the changed state.
 Components run once -- nothing re-renders, and the DOM-heavy read model stays a little faster.
 
@@ -140,7 +140,7 @@ Or perhaps I haven't met the right use case.
 
 My personal cup of tea!
 {svelte-runes} -- compiler directives for explicit reactivity.
-This library has been a long-time favorite among the startup and technology-first crowd.
+This library is a long-time favorite of startups.
 We're way past the corporate developer here -- this is pure joy to build, but only when one loves to build. +
 *_{svelte-story-url}[Even the story of Svelte is pure hacker lore!,window=_blank]_*
 
@@ -159,9 +159,7 @@ Well...
 I've had Svelte with XState in production for at least half a decade. It certainly isn't new. +
 And perhaps the next addition to the read model project.
 
-*It never gets old -- like driving a Ferrari +
-(with a stick, of course). +
-Nah! Even better -- a Ducati!*
+*It never gets old -- like driving a Ferrari (with a stick, of course). Nah! Even better -- a Ducati!*
 
 Build something nice! Let me know how it went.
 

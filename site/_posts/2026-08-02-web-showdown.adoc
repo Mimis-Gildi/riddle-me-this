@@ -60,10 +60,9 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 </style>
 ++++
 
-*_What web technology competent teams would use in 2026?_*
+*_What web technology would competent teams use in 2026?_*
 
-We had an awesome weekend on the Scene -- 90 minutes of pure discovery among such coders.
-Hope you had a good weekend too!
+We had a weekend on the Scene -- 90 minutes of discovery among such coders.
 And we selected the final technologies for a fun, purely hands-on exploratory load test proving:
 
 > "In 2026 you should use `these` to present data in production."
@@ -108,7 +107,7 @@ and the client renders _only declarative Cards_ (Aurinko teardown). The push via
 polling.
 
 Perfect example of exported behavior: the client owns no behavior, just presents a server-authored declarative model.
-They're not going to have the "too much data for the Read Model" -- are they now?
+They won't have the "too much data for the Read Model" problem.
 
 *Second)* Google Chrome browser has very high, easily verifiable boundaries #on DOM#:
 
@@ -117,8 +116,8 @@ They're not going to have the "too much data for the Read Model" -- are they now
 
 _Chrome's superlinear cost on layout, style, recalculations is about the best on object models._
 
-*Baseline)* is React 19.2. Not just because it was asked about in the {owl-article} article. React's incredibly
-accessible thus common and popular. This is NOT a library for competence or performance optimization.
+*Baseline)* is React 19.2. Not just because it was asked about in the {owl-article} article. React is
+accessible, thus common and popular. This is NOT a library for competence or performance optimization.
 It is popular because it can be fully mastered (not just learned) in a single weekend. As a bonus, due to
 its extreme simplicity, ubiquity, and relatively complete functionality the library is easy to "standardize"
 in the risk-averse Corporate America.
@@ -149,9 +148,7 @@ you cannot publish an SLA number you have never crashed into.
 
 == Chosen Technologies
 
-Two families, split on the one line that decides the whole test: +
-does it paint into the browser's own DOM, +
-or does it draw its own pixels off to the side?
+Two families, split on the one line that decides the test: does it paint into the browser's own DOM, or does it draw its own pixels off to the side?
 
 *DOM:* live and die by Chrome's node ceiling:
 
@@ -213,7 +210,7 @@ WebAssembly isn't an option so all the tests are on DOM for this run. Here's our
 . Ktor serves the control plane landing page application for the core function;
 . Ktor serves all the modules under test from single multimodule project.
 
-*So we have one beautiful polyglot project and all is decided on the spot!*
+*So we have one polyglot project and all is decided on the spot!*
 
 Project planned as part of {org-mimis-gildi} org -- standard ops included.
 

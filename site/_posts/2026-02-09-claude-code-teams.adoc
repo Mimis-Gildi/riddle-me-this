@@ -25,14 +25,13 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/]
 image::go-to-meeting.png["I go to meeting. Claude goes to meeting too."]
 {nbsp}
 
-LI is about to be flooded with "Claude Code Teams Crazy!" populist plebs tropes -- LI rocks that.
+LI is about to be flooded with "Claude Code Teams Crazy!" tropes -- LI rocks that.
 Same as we recently saw with "My coding career is over! Whaaaaaaa."
 But *Agentic Teams*, especially *_Agentic Adversarial Teams_*, deserve a *competent look*.
-And that's why you are here.
 
-So, what's shaking? Wizardly hackers have run adversarial teams for three months now,
+So, here's what's shaking: wizardly hackers have run adversarial teams for three months now,
 and the Claude Code community has been diligently working on native support.
-We have a functional preview out for a week. And it has value.
+We have had a functional preview out for a week, and it has value.
 
 For the impatient competent and prolific coders:
 
@@ -66,7 +65,7 @@ read {caparas-on-agent-teams}.
 == Second, A REAL Agentic Team -- and WHY?!
 
 Today the few capable engineers leave the 90% in the dust -- these may be the only people still coding in 5 years.
-No joke! Here is the breakdown:
+Here is the breakdown:
 
 - Augmented devs -- 1/100 developers fully embrace agentic collaboration;
 - Productive devs -- 1/10 augmented devs use agentic team local servers.
@@ -91,7 +90,6 @@ So, six levels below humans. Some humans, such as {tourist}, or {benq}.
 Other humans are screaming "Claude Code is better than any developer I know."
 Corporate America's distinguished engineers -- not `tourist` or `Benq` -- they "go to meeting."
 They don't have time to mess with silly servers.
-Revealing, isn't it?!
 
 *What's the deal with speed?* Consider this fixture:
 
@@ -99,7 +97,7 @@ Revealing, isn't it?!
 - 3 X {working-qwen3} on paired A100s 80GB, Debian.
 - Riddler's (`rdd13r`) ripoff of {gongrzhe-mcp} in `kotlin`.
 
-*Scenario 1:* Refactor 3 disjoined Test-Function features. +
+*Scenario 1:* Refactor 3 disjoint Test-Function features. +
 *Scenario 2:* Refactor *_single_* Test-Function feature 3 ways.
 
 For the second scenario the order of refactoring does not matter.
@@ -119,12 +117,12 @@ Each scenario has detailed granular instructions, more than 300 lines of text.
 
 On this last test Claude Code _"Team Lead"_ kept trying to code -- what a joke!
 
-*But do you see my most important point?!*
+*My most important point:*
 {nbsp} -- *_I cannot wait ten minutes for it to produce garbage I then need to refactor longer._*
 
 === MCP-A2A Colloquial Misnomer, and the Real Deal
 
-What is this MCP-A2A hacker wizards worship? First thing to remember, A2A comes from Google!
+MCP-A2A, which hacker wizards worship, comes from Google -- remember that first.
 And it is used in a very specific way on Google GCP: ADK {plus} MCP {plus} A2A is their signature stack.
 For a few months this was akin to Xerox for photocopying or Kleenex for tissues.
 
@@ -134,7 +132,7 @@ And this is important to understand how on the scene we toss libs at each other 
 
 Most importantly, current development on the scene is *_far ahead of the published standards_*.
 I have not seen anything like it in three decades of my coding and raising software teams.
-Concepts from a month ago are old. And standards from the last summer are ancient history.
+Concepts from a month ago are old, and standards from last summer are ancient history.
 
 In 2022, we were building distributed systems that included LLMs as nodes of an Actor Model framework.
 These things are still running in Canadian call centers, and my customers are happy.
@@ -171,32 +169,29 @@ Let's compare the current `orchestrator daemon` *(OD)*, +
 
 |===
 
-You can see where hackers are going with this: not a useful tool, teammates that replace human coders.
-Manage autonomous adversarial agents, not C2C subcontractors.
-Seeding startups in 2020, I needed to hire constantly for C2C marketplace, about ~$20k per month.
+You can see where hackers are going with this: teammates that replace human coders, not a useful tool -- autonomous adversarial agents, not C2C subcontractors.
+Seeding startups in 2020, I needed to hire constantly for C2C marketplace, about $20k per month.
 And that came with all the grief and difficulties of dealing with people.
 Today I do better just by myself with my "little people," as my family calls them.
 And Anthropic just packaged that for everyone too.
 
 Oh, and what makes them adversarial? They follow RGR
-{nbsp} -- red-green-refactor and constantly switch roles, trying to up one another.
+{nbsp} -- red-green-refactor and constantly switch roles, trying to one-up one another.
 Go ahead and do that with your contractors. Or your distinguished engineers.
 
-== Conclusion
-
 In the coming weeks distinguished engineers on LinkedIn will keep posting about the surprising magic of
-{nbsp} Claude Code Agent Teams. Claude Code was "better than any developer I know."
-This gadget will be "better than any development team I know." They mourned coding. Now they mourn teams.
+Claude Code Agent Teams. Claude Code was "better than any developer I know."
+This gadget will be "better than any development team I know." They mourned coding, and now they mourn teams.
 This is the current marketplace despite all the innovation.
 Sad, but not terminal -- I've righted worse.
 
 Having read this, you already know -- this is no "unexpected discovery."
-Anthropic's tool is rough. It will improve.
+Anthropic's tool is rough, and it will improve.
 The concept behind it has been running on hacker workstations for months.
 
-57 seconds versus 20 minutes. Same models. Same task. Different architect.
+57 seconds versus 20 minutes, with the same models and task -- different architect.
 
-The question isn't whether agent teams work. It's who's driving them.
+The question is who's driving agent teams.
 
 Are you?
 
@@ -208,7 +203,7 @@ The inevitable shouldn't be proprietary._
 - `mcp-total-recall` -- gives agents persistent identity and memory, so they collaborate like professionals;
 - `mcp-agora` -- agent peering built on `mcp-total-recall`.
 
-Three decades on the scene. Looking for the right company to pour the next thirty into.
+Three decades on the scene, I'm looking for the right company to pour the next thirty into.
 If your engineering org needs the architect behind the 57 seconds -- {profile-li}.
 
 '''
@@ -218,22 +213,21 @@ If your engineering org needs the architect behind the 57 seconds -- {profile-li
 See {rdd13r-style-guide} for Agentic AI collaborators (not tools).
 
 *Primary Premise:* Claude Code Agent Teams is a raw consumer packaging of what hackers already run in production.
-The difference in outcome -- 57 seconds versus 20 minutes -- is not the tool. It is the architect.
+The difference in outcome -- 57 seconds versus 20 minutes -- is the architect, not the tool.
 
 *The Argument Form:*
 
 - *Primary:* Argument from Mechanism {plus} Empirical Evidence.
-* We don't just claim agentic teams are faster. We show the mechanism (orchestrator daemon architecture with CQRS, event sourcing, heterogeneous models) AND provide reproducible benchmark data from two scenarios with concrete timing.
+* We show the mechanism (orchestrator daemon architecture with CQRS, event sourcing, heterogeneous models) AND provide reproducible benchmark data from two scenarios with concrete timing.
 * The comparison table makes the architectural gap visible. The benchmarks make it measurable.
 
 - *Secondary:* Case Analysis (Disjunctive).
 * Either you're the 1/100 augmented developer using agentic team servers -> architect driving 57-second results;
 * Or you're the distinguished engineer posting about it on LinkedIn -> "go to meeting."
-* Same models, same access. Different architect. Different outcome.
 
 - *Tertiary:* Contrast Pattern.
 * Native Claude Code Teams (12 min, FAIL on Scenario 2) vs. OD with heterogeneous models (57 sec, succeeds on both).
-* `tourist` and `Benq` vs. Corporate America's distinguished engineers. The contrast reveals the gap without preaching it.
+* `tourist` and `Benq` vs. Corporate America's distinguished engineers. The contrast makes the gap plain.
 
 - *Structural:* Inductive Generalization from Demonstrated Data.
 * Two scenarios, concrete timing, reproducible fixture, published configuration.
@@ -256,7 +250,7 @@ To defeat this argument:
 . Show that Native Teams achieves comparable speed on Scenario 2 without clobbering. It currently cannot.
 . Demonstrate that the OD architectural features (CQRS, event sourcing, lifecycle controls) provide no measurable advantage. The table invites this.
 
-Dismissing the tone, the terminology, or the author's directness does not address the benchmarks. The data stands independent of delivery.
+Dismissing the tone, the terminology, or the author's directness does not address the benchmarks, which stand independent of delivery.
 
 '''
 

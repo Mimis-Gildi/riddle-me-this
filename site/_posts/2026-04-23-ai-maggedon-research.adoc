@@ -124,7 +124,7 @@ Claude is NOT a competitive programming model. It excels at production engineeri
 
 === Key Insight for the Article
 
-The gap between SWE-bench (real engineering, Claude #1) and Codeforces (competitive programming, Claude absent from top) IS the thing wizards understand. Claude is exceptional at understanding existing codebases, fixing real bugs, and shipping features. It's mediocre at novel algorithm design under constraint. Working WITH the grain means using it for the first set, not the second.
+The gap between SWE-bench (real engineering, Claude #1) and Codeforces (competitive programming, Claude absent from top) IS the thing wizards understand. Claude is exceptional at understanding existing codebases, fixing real bugs, and shipping features. It's mediocre at novel algorithm design under constraint. Working WITH the grain means using it for codebase work and features, not novel algorithm design.
 
 
 '''
@@ -514,7 +514,7 @@ The numbers tell the story:
 | PR review +91%, bugs/dev up, PR size +154% (Faros AI)
 |===
 
-The golden children don't believe the marketing. They measure. They know the limitations. They work with the grain.
+The golden children don't believe the marketing: they measure, know the limitations, and work with the grain.
 
 - Supports: Thesis, Point #3 (they know the actual numbers)
 

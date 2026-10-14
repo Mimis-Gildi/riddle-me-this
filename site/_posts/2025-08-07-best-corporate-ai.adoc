@@ -14,18 +14,18 @@ _Note: Client details have been altered to protect confidentiality.
 Industry, location, and identifying specifics have been changed while preserving the architectural lessons.
 This is what "complete discretion" looks like._
 
-While American CTOs are getting fired for AI failures, I need to share a different story.
+While American CTOs are getting fired for AI failures, here is a different story.
 
-A client from my past -- let's call them "Origami Corporation" -- just achieved something remarkable.
+A client from my past -- let's call them "Origami Corporation" -- just pulled off something you haven't.
 They're moving through {integrated-ai-evolution} +
-{nbsp} -- our *_AI Evolution phases_* like a hot knife through butter. +
-No drama. No vendor disasters. Just systematic execution.
+{nbsp} -- our *_AI Evolution phases_* without friction. +
+No drama and no vendor disasters -- just systematic execution.
 
-The kicker? They're using the same "boring" architecture we designed in 2018.
+And they're using the same "boring" architecture we designed in 2018.
 
 *This is what happens when you fix foundations instead of chasing trends.*
 
-== The Uncomfortable Truth About This Success.
+== Three Facts About This Success
 
 Before we dive in, three uncomfortable facts:
 
@@ -33,7 +33,7 @@ Before we dive in, three uncomfortable facts:
 . They're manufacturers, not a "tech company" (makes it worse for you);
 . They have ~30 software engineers (you probably have 300).
 
-If that stings, good. It should.
+If that stings, it should.
 
 == About "Origami Corporation."
 
@@ -46,9 +46,9 @@ Key details that matter:
 - Part of a larger conglomerate but operate independently;
 - Extreme focus on production efficiency.
 
-*The critical insight:* They treat software like they treat #manufacturing# -- with discipline, boundaries, and respect for what works.
+They treat software like #manufacturing#: with discipline and boundaries, and they keep what works.
 
-== The 2016 Disaster That Started Everything:
+== The 2016 Disaster That Started Everything
 
 Like most AI failure stories, this starts with a Big American Software company (let's call them "EvilCorp") selling dreams:
 
@@ -56,22 +56,22 @@ Like most AI failure stories, this starts with a Big American Software company (
 . **2017**: Everything is worse, costs are tripling;
 . **2018**: CTO rebels, brings in ASE Inc. and other specialists;
 . **2019**: Complete architectural overhaul finished.
-. **2024-2025**: Crushing AI integration while you're still debugging chatbots!
+. **2024-2025**: Integrating AI while you're still debugging chatbots.
 
-The twist? EvilCorp wanted to connect their *_production lines_* to the internet. +
+But EvilCorp wanted to connect their *_production lines_* to the internet. +
 For "synergy."
 
 *That's when their CTO called me.*
 
 == The Architecture That's Still Winning (7 Years Later)!
 
-We designed something radical for 2018: A modular monolith with military-grade isolation.
+We designed something unusual for 2018: a modular monolith with strict isolation.
 
 .The "Boring" Architecture That *Enables* AI:
 image::origami-2019-modular-monolith.png[Origami Architecture Flow,width=1200,align=center]
 {nbsp}
 
-=== The Secret Sauce: Revolving Door Security Gateways:
+=== The Secret Sauce: Revolving Door Security Gateways
 
 Imagine a revolving door that only opens to one side at a time. +
 That's how production talks to business systems:
@@ -83,13 +83,13 @@ That's how production talks to business systems:
 
 *Military-grade security with a 4-hour rotation period.*
 
-This paranoid architecture *_accidentally_* created perfect AI boundaries.
+This paranoid architecture *_accidentally_* created clean AI boundaries.
 
 == Why This "Old" Architecture Dominates AI Integration?!
 
 Here's what American enterprises don't understand: *AI needs #boundaries#, not microservices.*
 
-=== Their AI Integration Timeline (With Real Results):
+=== Their AI Integration Timeline (With Real Results)
 
 [cols="2,8,5", options="header"]
 |===
@@ -123,17 +123,17 @@ a|_In progress_
 
 === Why this Modular Monolith Beats Microservices for AI?!
 
-. **Clear Context Boundaries**: Each module owns its domain completely.
-. **ETL as Features**: Boring data pipelines become AI injection points.
-. **No Integration Hell**: 30 engineers can understand the whole system.
-. **Security by Design**: Revolving doors prevent AI contamination!
+. Clear Context Boundaries: Each module owns its domain completely.
+. ETL as Features: Boring data pipelines become AI injection points.
+. No Integration Hell: 30 engineers can understand the whole system.
+. Security by Design: Revolving doors prevent AI contamination!
 
 Your 500 microservices can't do this. Their 4 modules can! +
-NOT because of implementation choices -- because of *_clean_* architecture.
+Not because of implementation choices, but because of *_clean_* architecture.
 
-== The Model Context Protocol (MCP) Revelation:
+== The Model Context Protocol (MCP)
 
-When {mcp-overview} emerged, it validated everything:
+When {mcp-overview} emerged, it confirmed their design:
 
 - Simple context boundaries -- They had these since 2019;
 - Clear data contracts -- Built into their ETL;
@@ -141,11 +141,11 @@ When {mcp-overview} emerged, it validated everything:
 
 They implemented MCP in *two weeks*. How long would it take you?
 
-== The Brutal Lessons for American CTOs:
+== Lessons for American CTOs
 
-=== Lesson 1: Your Vendors Are the Problem.
+=== Lesson 1: Your Vendors Are the Problem
 
-EvilCorp wanted to "integrate everything." Sound familiar?
+EvilCorp wanted to "integrate everything."
 
 - Origami said no;
 - Fired the vendor;
@@ -155,14 +155,11 @@ EvilCorp wanted to "integrate everything." Sound familiar?
 *When did you last fire a vendor for overreach?* +
 *When did you last profile vendor's competence?*
 
-=== Lesson 2: Boring Wins:
+=== Lesson 2: Boring Wins
 
 While you were deploying Kubernetes:
 
-- They kept their modular monolith;
-- They perfected their boundaries;
-- They focused on their business;
-- They're now doing Phase III AI.
+They kept their modular monolith, perfected their boundaries, and focused on their business; now they're doing Phase III AI.
 
 *Boring architectures print money. Exciting architectures print resumes.*
 
@@ -178,7 +175,7 @@ Their 30 developers in 4 modules ship daily!
 The best question, and the best answer:
 
 **They don't need me anymore!** +
-Hadn't called since 2019 -- just now to tell me how's AI going.
+He hadn't called since 2019 -- just now, to tell me how AI is going.
 
 That's the point of good architecture. It survives its creator! +
 Seven years later, they're implementing advanced AI without consultants.
@@ -187,34 +184,30 @@ Meanwhile, your competitors hire me every 18 months to fix the same problems.
 
 *Which company would you rather be?*
 
-== The Uncomfortable Mirror:
+== The Uncomfortable Mirror
 
-This isn't about being Japanese, German, or American. It's about:
+It comes down to:
 
 - Discipline, facts, and rules of inference over vendor hype;
-- Boundaries over integration -- *what* are you integrating?
-- Patience over pivots -- thinking needs silence; how's yours?
-- Results over resumes -- *how* are you doing?
+- Boundaries over integration;
+- Patience over pivots;
+- Results over resumes.
 
-Your competitor could do this. +
-But they're probably in another vendor meeting right now, +
-buying promises instead of building foundations. +
+Your competitor could do this, but they're probably in another vendor meeting right now, buying promises instead of building foundations. +
 "Same old ..."
 
 == What This Means for You!
 
-If a "boring" manufacturer can implement Phase III AI +
-with 30 engineers and 7-year-old architecture, +
-_what's your excuse_?
+If a "boring" manufacturer can implement Phase III AI with 30 engineers and 7-year-old architecture, _what's your excuse_?
 
 - Too complex? -- They manufacture for aerospace.
 - Too regulated? -- They deal with military contracts.
 - Too legacy? -- They still run Oracle RAC at the core!
 - Too small? -- They have 1/10th your IT staff.
 
-*The difference isn't capability. It's discipline.*
+*The difference is discipline.*
 
-== The Path Forward:
+== The Path Forward
 
 Stop chasing magic. Start building #Boundaries#: +
 (_You'll need them for a lot more than just AI._)
@@ -224,12 +217,9 @@ Stop chasing magic. Start building #Boundaries#: +
 . Build boring architectures that last.
 . *_Let AI enhance boundaries, not break them._*
 
-The companies winning with AI aren't the ones with the newest tech. +
-They're the ones with the _clearest boundaries_.
+The companies winning with AI have the _clearest boundaries_, not the newest tech.
 
-*Origami proved this. Your competitor might be next.*
-
-What's your move?
+*Origami proved this, and your competitor might be next.*
 
 '''
 
@@ -239,5 +229,3 @@ That's exactly what we do at ASE Inc.! +
 and enable real AI integration._
 
 P.S. I find systems I built 20 years ago raking cash today.
-
-*_No magic. No hype. Just foundations that work._*

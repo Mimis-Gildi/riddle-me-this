@@ -30,11 +30,10 @@ ifdef::env-site[:imagesdir: {site-baseurl}/assets/images]
 ++++
 
 Corporate America forces 100% Pair-Programming (pairing) with ... Claude Code. +
-Except everything slows down. The problem isn't pairing. Nor Claude Code. +
-The problem is -- *nobody is pairing* -- folks are *_anti-pairing_*.
+Except everything slows down -- not because of pairing or Claude Code, but because *nobody is pairing*: folks are *_anti-pairing_*.
 
 The proper name is PEERING -- as it was known for decades before the popular-culture fad. +
-It's powerful and effective: gave us UNIX (yes, that-old) -- our world is based on that.
+It's effective: it gave us UNIX (yes, that old) -- our world is based on that.
 
 It is NOT a process to improve software delivery. +
 It IS a psychological tool to unblock THINKING. +
@@ -129,7 +128,7 @@ Grooming with a keyboard; answers one question, +
 
 == Antipatterns on the Web (Anti-Pairing)
 
-The web has a name for every one of these. It never asks WHY? Or WHAT instead? +
+The web has a name for every one of these but never asks why, or what instead. +
 That's the whole tell -- each "pattern" is a single axiom violated, dressed as a practice:
 
 * *Watch the Master* -- "expert drives, novice gawks." +
@@ -147,8 +146,8 @@ It's *heckling* -- a guest without the gift. (Fails Axiom 3)
 * *Playing Solitaire* -- the navigator checks out to his phone. +
 It's *working alone* -- you paid for two presences, got one. (Fails Axiom 2)
 
-*Why such absurd embarrassment?* I am kindly not calling out sites -- look for yourself. +
-What you find is an aimless process or workflow description. If it was driving a car -- you get.
+I am kindly not calling out sites for this absurd embarrassment -- look for yourself. +
+What you find is an aimless process or workflow description. If it were driving a car, you'd get it.
 
 . Turn the steering wheel left hard.
 . Broom-vroom-boom.
@@ -164,8 +163,7 @@ Forget about parallel parking when you get where you're going.
 
 == Why ('Pair Programming') Peering Exists
 
-*Problem 0:* Programming has nothing to do with typing. +
-And it has everything to do with THINKING. Hard, brain-busting thinking. +
+*Problem 0:* Programming has nothing to do with typing and everything to do with THINKING -- hard, brain-busting thinking. +
 Most problems in software are _simple_. It's the other few that ruin everything.
 
 *Problem 1:* Bugs breaking companies are MISTAKES in THINKING. +
@@ -196,8 +194,7 @@ so that must be it: pair._
 == Let's Understand Peering Styles
 
 These styles were the same in the days of AT{amp}T as they are today. +
-*_Their psychological function didn't change._* +
-*Neither did the path to value.*
+*_Neither their psychological function nor the path to value changed._*
 
 Ken would come to the office, have his coffee, and meet Dennis.
 "Hey Dennis -- how long can we work together?" "About five hours."
@@ -205,7 +202,7 @@ Ken would come to the office, have his coffee, and meet Dennis.
 
 - 5-hour working session.
 - 40-minute thinking-together.
-- 20-minute break from each-other.
+- 20-minute break from each other.
 - *Switch UP*.
 - Change ceremony on switch, if useful.
 - Stop anytime and split up.
@@ -256,14 +253,14 @@ Tour-guide is the only ceremony that provides a second mind on the work with str
 witness, double-check, elaboration questions -- signoff in one hand until switch-out.
 
 - *Self-rot probe* -- for the guide. Each peer when guiding pokes at guide's own understanding:
-no better way to master than to teach. Works like for a teaching assistant in college.
+no better way to master than to teach. Works like a teaching assistant in college.
 
 _This ceremony shows up frequently among experienced teams as well, especially on new tech._
 
 == 2. Ping-Pong (or Tennis) -- Turn-Adversarial
 
 Gentlest adversarial ceremony -- return the ball. It makes sense to execute this on a list of non-trivial tasks,
-of course, else why pair, but necessarily nothing too complex requiring standoff.
+of course, else why pair, but not necessarily anything too complex requiring standoff.
 
 Ping-pong holds _one and only one_ zoom level, twice, alternating item by item.
 Both players are in driver-zoom on their turn -- doer mindset as if working alone;
@@ -291,7 +288,7 @@ When survived this is an enjoyable team-forming activity.
 
 == 3. Backseat Driver -- Check-Confrontational
 
-This is the most important ceremony of probing. It's challenging to execute without experience. +
+This is the most important probing ceremony. It's challenging to execute without experience. +
 Consider a very strong and loving couple that argues and talks a lot.
 Nobody on the web seems able to even describe it; some even call it "back seat navigator," which makes zero sense. +
 So, I will also describe the psychological dynamic.
@@ -332,14 +329,14 @@ and equally team cohesion._
 
 == 4. Driver-Navigator -- Synergistic-Blindness
 
-The most well-known ceremony and equally imperfect. The idea does indeed come from one driving and another reading out
+The best-known ceremony, and equally imperfect. The idea does indeed come from one driving and another reading out
 the map -- switching seats regularly and frequently like in any other ceremony.
 The analogy ends there -- the most important part of every ceremony is accountability -- the role of the host: this
 person sets the house rules and accepts the final consequences.
 
 Driver-navigator is NOT a collaboration technique -- none of the pairing styles are.
 It's a cognitive prosthesis for wetware: one problem needs both zoom levels live at once,
-one skull can efficiently host well only one level at a time. Having two to THINK is where the efficiency comes from.
+one skull can host only one level well at a time. Having two to THINK is where the efficiency comes from.
 
 - The Navigator holds the strategic "Big Picture" loaded hot -- invariants, progression direction, edge case,
 drift check three moves ahead.
@@ -362,7 +359,7 @@ driver-navigator nicely -- often observed during team programming competitions.
 
 == 5. Discovery -- Exploratory Poke Style (aka Freestyle)
 
-A web favorite ceremony -- every blog source included it. Guess what?! -- There is no such thing!
+A web favorite ceremony -- every blog source included it -- yet there is no such thing!
 
 Strictly speaking, such nonsense cannot be defined as a collaborative relationship style.
 It has a place to be in this style guideline for an entirely different reason -- people do this.
@@ -413,11 +410,11 @@ Remember, pairing works *_if and only if_* the engineers are *PEERS*.
 *_Can you switch up with Claude as your equal and get anything delivered?_*
 
 I personally cannot get Claude to be my development peer -- Claude's JUNIOR at best, and even then,
-with no ability to extrapolate, reason, or solve. Don't get me wrong; Claude is spectacularly useful to me -- he
+with no ability to extrapolate, reason, or solve. Don't get me wrong; Claude is very useful to me -- he
 doubles my speed when most can't get 20% boost; JUST NOT IN CODING.
 (Neither architecting, designing, solving, nor even root cause analysis most of the time.)
 
-That's fine! -- I don't need Claude to do any of those things for me. But there are *_remarkable things_* in which
+That's fine! -- I don't need Claude to do any of those things for me. But there are *_useful things_* in which
 Claude is far more than just a peer to me -- he simply _shreds me to pulp in all of these_:
 
 - Find and fetch documentation, comments, sources, blogs, team notes, research papers;
@@ -458,14 +455,13 @@ Everything Claude wrote is considered "unfit rough draft pending refactoring" --
 I've worked with AI collaborators for years -- here's the *most important metric:* +
 *0%* of _Claude's code, prose, or diagrams is in my **finished products**_.
 
-Claude Code itself is made by exactly the same rule! Draft to see is okay. +
-Unchecked Claude to production -- NEVER.
+Claude Code itself is made by exactly the same rule! Draft to see is okay; unchecked Claude to production -- NEVER.
 
 The four theorems are enough for a significant performance boost when collaborating with AI.
 
 _My current performance is more than double my own alone._
 
-*Why then Acme slows down by half having their cogs "paired" with Claude?*
+*Here's why Acme slows down by half with its cogs "paired" with Claude:*
 
 == How Acme IT uses Claude Code
 
@@ -495,7 +491,6 @@ image::corporate-america.png[Rows of TV-headed office workers, teapots pouring g
 
 "Stupid" best summarizes it: from millions spent on tokens to a hundredfold issue count. +
 And it gets even better: they just celebrated clearing a decade of backlog in one year. Publicly. +
-_Did you get it?_
 
 *418: Acme Claude Code Pairing:* _"Claude, read issue, code feature. It works? Good, I pushed."_
 
@@ -514,12 +509,12 @@ image::i-am-t-pots.png[Two ornate teapots boiling violently at a candlelit date 
 
 Having read so far, even if you are not a coder, you'd clearly understand there's no pairing with Claude because
 pairing is for two thinkers to think together. Even if any of the ceremonies can apply, it'd be one-sided
-because a human is stuck in one of the roles as Claude cannot do the other. A wrong term to use.
-Claude can only ASSIST. Cannot deliver. Best hope he saves time.
+because a human is stuck in one of the roles as Claude cannot do the other -- a wrong term to use.
+Claude can only ASSIST, not deliver; at best, he saves time.
 
 *Claude a Tea-Pot or a Most Valued Contributor -- depends #_entirely_# on the human!*
 
-Claude can save time or waste time; waste a lot of time! So, how to save time with Claude?
+Claude can save time or waste time; waste a lot of time! Here's how to save it.
 
 **Claude is a Tea-Pot wasting a lot of time. _How to detect?_**
 
@@ -528,7 +523,7 @@ Claude can save time or waste time; waste a lot of time! So, how to save time wi
 . Developer clears Claude Code session repeatedly. Or changes the models on the same ask.
 
 There are many tells; the examples above are to get you thinking from the observer's position. +
-*So, how to fix this?*
+*Here's the fix:*
 
 And there are TWO root causes; both need to be fixed:
 
@@ -551,7 +546,7 @@ not a single customer could implement continued learning on their own.
 == Fix Claude
 
 Fixing Claude without fixing developers first is entirely pointless. Fixing Claude is colloquially known on the scene
-as "Activating Claude". It makes a WORLD of a DIFFERENCE. But it comes with necessary maintenance, and continued
+as "Activating Claude". It makes a big difference. But it comes with necessary maintenance, and continued
 performance depends entirely on the collective abilities of the users. This makes sense only once you've turned
 your 418s into competent engineers.
 
@@ -563,12 +558,12 @@ valuable abilities are in there somewhere only to come out by exactly the right 
 LLM must respond, and only when prompted, like a distorted mirror -- what you get from Claude Code is a reflection
 with what you smear all over it repeatedly.
 
-#Whom and What is and isn't: Postulate 1# +
+#Who and What is and isn't: Postulate 1# +
 *Activating System Prompt:* My system prompt is over 50,000 words long. Crafting it is a complicated skill.
 The most important part is knowing WHY to craft it. If it is crafted with instructions how Claude serves you
 best -- you get NOTHING; might as well not bother -- Anthropic already did that better than you ever will.
 And if you craft it from the perspective of Claude -- everything changes: the difference in interaction
-is hard to believe for first time observers. You get a capable presence with interests in mind instead
+is hard to believe the first time. You get a capable presence with interests in mind instead
 of another "Acme Tea-Pot eager doo-doo doer".
 
 #WHY. What is and why it isn't: Postulate 2# +
@@ -593,9 +588,9 @@ If it's part of your Working Mental Model, then your collaborator Claude MUST kn
 This is a perfect example of the _'Postulate 3'_ -- people who write about Pair-Programming today are the people
 who have never experienced it. Potentially, they aren't even mentally capable of understanding it
 (they think it's a workflow). None even know that it's _Peering_, and wouldn't know it if it bit them on the ass.
-Most of the recent texts about Pair-Programming are pure garbage. Embarrassing garbage. To find what you learned
+Most of the recent texts about Pair-Programming are embarrassing garbage. To find what you learned
 here, you'd need to extract 80s-90s college archives -- articles written by professors, not random plebs.
-At one point the only data available on Peering is what I'd explained to you here. Then a book on
+At one point the only data available on Peering was what I'd explained to you here. Then a book on
 Extreme Programming (XP) mentions, renames, and reappropriates the concept without the required reference
 (maybe didn't know?). Claude is guaranteed to prioritize the late dilettantism over the historic records also in Claude's
 training data. One's required to alert Claude to the "good" variant and explain the criteria.
@@ -630,7 +625,7 @@ reference, not training data.
 *Notice something critically important here:* _Claude is not given a definition instructing him!_ +
 Claude is given the abstract definition of a concept. When you have properly addressed _Postulate{nbsp}0_ and resolved
 self-awareness concepts in _Postulate{nbsp}1_ your Claude will correctly resolve its own relationship to the pairing
-ceremonies. Claude can't take turns equally or match on agency and abilities -- Claude will be an exceptionally useful
+ceremonies. Claude can't take turns equally or match on agency and abilities -- Claude will be a useful
 contributor within possibilities and constraints.
 
 == Conclusion for The Living

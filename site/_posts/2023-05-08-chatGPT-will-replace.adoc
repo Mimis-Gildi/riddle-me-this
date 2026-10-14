@@ -37,11 +37,9 @@ And today -- {chatgpt} will replace <insert profession> in <pick a number> of ye
 [%collapsible]
 ====
 Based on what facts and applied rules of inference, may I ask?
-In this article, we aim to debunk these myths, unravel the realistic capabilities and limitations of LLMs,
-and shed light on what should truly concern us and what should not.
-We should use facts and rules of inference to guide our discussion.
-Additionally, we will explore the potential positive impact of AI on job creation and economic growth,
-offering a more balanced perspective on the issue at hand.
+In this article, we debunk these myths, lay out what LLMs can and cannot do,
+and separate real concerns from imaginary ones, using facts and rules of inference.
+We also look at AI's possible effect on job creation and economic growth.
 ====
 
 [TIP]
@@ -57,7 +55,7 @@ And both are powered by the same LLM. And that's not much. Yet, not `nothing` ei
 
 ChatGPT, a large language model by OpenAI, is undeniably impressive.
 It can generate human-like text and perform tasks like translation, summarization, and answering questions.
-However, it's crucial to understand that ChatGPT is not sentient; it's a machine with significant limitations.
+However, ChatGPT is not sentient; it's a machine with significant limitations.
 It cannot think, reason, or possess common sense like mammals do.
 It isn't capable of original ideas and creativity.
 All it does is autocomplete based on a massive amount of structured text,
@@ -94,7 +92,7 @@ These REPL tools enhance the usefulness of LLMs by managing a much larger
 context and automatically working to drill down clarifications,
 compensating for natural human vagueness and LLM's lack of depth.
 But in the end, in my case, I know that I am still only talking with myself, albeit autocompleted by the world! +
-*It is crucial for us to understand: _this software has no human-like intelligence_.*
+*This software has no human-like intelligence.*
 
 .MOST IMPORTANTLY: Fully *stochastic* -- meaning *_hallucinating 100% of the time._*
 [%collapsible]
@@ -143,7 +141,7 @@ _And salvation today -- the accidental discovery that "size matters" -- isn't a 
 [%collapsible]
 ====
 Instead, it can be used as a tool to enhance human productivity and creativity.
-It's essential to recognize that LLMs have limitations, including generating irrelevant or incorrect answers,
+LLMs have limitations, including generating irrelevant or incorrect answers,
 sensitivity to input phrasing, and verbosity, i.e., just more PB.
 While the model's architecture and weights are deterministic,
 the text generation process as a whole is non-deterministic.
@@ -162,14 +160,13 @@ fails outright when the context and data she operates on (1) come from LLMs and
 
 LLMs are valuable in other areas, like *_helping_* in mundane research tasks, providing conversational support,
 or aiding in PB content creation, like this article.
-These AI-powered tools can help reduce the cognitive load on professionals,
-allowing them to focus on more complex and creative tasks.
+These tools take routine work off professionals' hands.
 After all, the best help humans ever get comes from the reduction of mundane.
 
-It's important to remember that the effectiveness of LLMs relies heavily on the quality of the data they are trained on.
+The effectiveness of LLMs depends heavily on the quality of their training data.
 Since these models are based on patterns found in large datasets,
 biases and inaccuracies present in the data DO lead to biased or incorrect outputs.
-Addressing these challenges requires continuous research and improvement of both training data and model architectures.
+Fixing this takes better training data and better model architectures.
 
 Most importantly, a tool has little to do with the root dilemma here!
 _From the moment a primate picked up a stick and used it as a tool to extract termites from a stump to eat,
@@ -193,7 +190,7 @@ By releasing an evolving model like ChatGPT, OpenAI has introduced a new approac
 This, in my opinion, is where greater acceleration will come from,
 as it blurs the lines between different stages of technological adoption.
 
-Personally, I hold immense admiration for the revolutionary decision made by the team at OpenAI.
+Personally, I admire OpenAI's decision to release an evolving model to the public.
 I've been building Tillie since 2016, in her latest reincarnation, that is, while her architecture goes back to 2000.
 And it never occurred to me that she could be more than just a source of entertainment for my coding, experimentation,
 and learning endeavors.
@@ -222,8 +219,6 @@ Kevin Mitnick was forbidden from using an analog phone so that he would not star
 To alleviate unfounded fears, we need to educate the public about AI's realistic capabilities and limitations.
 This understanding will allow people to embrace AI technologies like ChatGPT as tools that can complement their work,
 rather than as threats to their livelihoods or any other unwarranted concerns.
-Educational initiatives, workshops, and public awareness campaigns are some of the ways we can bridge the knowledge gap and,
-hopefully, promote a better understanding of AI technologies as they evolve.
 
 We have great examples of failure in this aspect in the past.
 Consider nuclear power, for instance.
@@ -250,17 +245,14 @@ The best way to approach this technology is by peacefully learning and understan
 Running it as much as humanly possible!
 Because I guarantee you -- the other guy will!
 
-== Conclusion
-
 My `Merica is a "Sleepy Hollow" of complacency and comfort. And here comes the noise... Stampede!
 
 As with the hacker scare during Kevin Mitnick's era, the fear surrounding ChatGPT and AI is mostly a result of misinformation,
 lack of understanding, yearning for "business as usual," and bad behavior from popular figures.
-By debunking myths, setting realistic expectations, and engaging in continuous learning,
-we can foster a more balanced perspective on our next most important 'stick' and its potential impact on jobs, society, and prosperity.
+Knowing what LLMs actually do lets us judge their impact on jobs and prosperity without the hype.
 So, head on over to {openai} and blog {openai-blog} to explore and learn for yourself.
 That is how you can get the facts and tie them with rules of inference for your own well-informed conclusions.
-Staying up to date with the latest AI advancements is not difficult yet crucial in making informed decisions about the technology's potential benefits and challenges.
+Keeping up with AI advances is not hard, and it is what lets you judge the technology's real benefits and costs.
 
 _And mark my words, OpenAI is not the only game in town. Chatbot isn't "the revolution." +
 *This is only the beginning*..._

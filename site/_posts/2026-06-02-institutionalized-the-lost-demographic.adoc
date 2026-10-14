@@ -36,11 +36,10 @@ read_aloud: false
 </style>
 ++++
 
-Two days in the slammer provide a good educational experience for me.
+Two days in the slammer provided a good educational experience for me.
 _Don't worry!_ -- False arrest by two cheap city cops on fabricated charges:
 *_all charges dropped and records expunged._*
 
-#What I learned there is worth sharing.#
 
 The war rages in Ukraine. Meanwhile, in America we hold a vigil (wake) for Tania's mother and my friend `klemo` ({art-klemo}) at our always busy home.
 Tania took her mother's death hard. People come and go the whole day. And I am not sure how to process `klemo` yet.
@@ -95,7 +94,7 @@ including you. Many of my friends are russians. My son's best friend is russian.
 
 _"When someone breaks into my home meaning harm to my family -- I kill them."_
 
-He got visibly discomforted here. Pulled over. Started texting. I kept talking.
+He got visibly uncomfortable here. Pulled over. Started texting. I kept talking.
 
 _"I understand Ukrainians! These orcs aren't russians like my friends I'd mentioned earlier -- they're katsap.
 Uninvited, they came bearing arms, killed, raped, tortured, and they're still coming for more. Have you heard of {bucha-massacre}?
@@ -129,15 +128,14 @@ report the judge was asking for. And the police department was not helpful;
 expecting a lawsuit, they refused to talk to us and our lawyers.
 
 Nevertheless, there I was. I met a lot of people I wouldn't have otherwise. And I'd learned many things previously
-hidden from me by my middle-class shielded life. The first thing I did is sleep as much as I could.
+hidden from me by my middle-class shielded life. The first thing I did was sleep as much as I could.
 My busy life producing distributed systems, supporting Americans abroad, managing co-mentoring communities,
 helping a refugee community, and minding my growing family kept me perpetually sleep-deprived.
 I was always strictly short on time. And now I had nothing but time and no contact with the outside world.
 I know my family is fine, surrounded by good people; all the communities and families we'd helped are made up of many
 active and capable individuals regularly traveling through our home. I genuinely didn't worry about them.
-And I didn't worry about myself either: I knew I'd done nothing wrong, because I never do, and that people will
-start asking for me sooner or later. I had time! And it felt like an exceptional luxury.
-Something I needed badly. Something I didn't expect to have.
+And I didn't worry about myself either: I knew I'd done nothing wrong and that people would
+start asking for me sooner or later. I had time, and it felt like an exceptional luxury -- something I needed badly and didn't expect to have.
 
 Late the next day I was awakened to go talk to a judge on a filthy broken old-tv-looking device with a wired staticky
 analog phone handset. I was told the horrible things I'd done, and that came as a surprise. I wasn't sure if I
@@ -146,13 +144,13 @@ that she would escalate to a felony because I had disfigured Tania for life, tha
 and might lose an eye. See -- with that squiggly and passionate paragraph, I knew this was pure garbage!
 "Not guilty," of course.
 
-Next, the curiosity absolutely gets the best of me -- the prison yard, common area, exercise area,
+Next, the curiosity absolutely got the best of me -- the prison yard, common area, exercise area,
 lots of folks dressed like me aimlessly moping around. This was {wake-county-jail}'s correctional facility. Maybe not the place
 amateur smalltime criminals like myself are regularly brought to, but due to overflow in the system, new aspiring felons
 are brought here. For a minute pride took me over +
 {nbsp} -- *I'm like the president!* (my POTUS is a convicted felon.) +
 I'd seen this in movies. And I read a lot about this in books.
-I don't just adore technical manuals -- I read a novel a weekend for decades now.
+I don't just adore technical manuals -- I've read a novel a weekend for decades.
 {gulag-archipelago} came to mind. But also {sere-training} memories. Man, some people get to live adventurous lives!
 And I just write code, deliver goodies to needy families, towed howitzers to train stations, change diapers, and make bottles.
 To personally and fully experience such a drastically different environment was a boon I could not resist!

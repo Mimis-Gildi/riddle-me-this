@@ -2,15 +2,15 @@
 include::./2026-04-23-ai-maggedon-links.adoc[]
 include::./2026-04-23-ai-maggedon-mythos-links.adoc[]
 
-. Mythos, like GPT 2.0, is too powerful to release to general user.
+. Mythos, like GPT-2, is too powerful to release to general user.
 . Mythos hacks so good that it exploits all the software.
 
-Does Anthropic even realize that the security industry has changed completely since 2022
-{nbsp} -- it is now national security and intelligence concern. Well, except for the USA, of course.
+Anthropic doesn't seem to realize that the security industry has changed completely since 2022
+{nbsp} -- it is now a national security and intelligence concern. Well, except for the USA, of course.
 
-The Anthropic folks need to learn to value what they have achieved, cherishing remaining integrity. +
-Marketing gimmicks by repeat posers read as insults to intelligence and erode trust. +
-Every model maker is in the *Model-Fizzle* because there is no new architecture in the pipeline. +
+The Anthropic folks need to learn to value what they have achieved, cherishing remaining integrity.
+Marketing gimmicks by repeat posers read as insults to intelligence and erode trust.
+Every model maker is in the *Model-Fizzle* because there is no new architecture in the pipeline.
 I am struggling to understand why this publicity stunt was necessary.
 
 *_Meanwhile_*, marginally better models and better systems (foreign) will arrive every day -- inevitable!
@@ -18,7 +18,7 @@ And the US has regressed in system design, while competent systems are where AI 
 American market seems to notice LLMs more than the ecosystem they fit into.
 And the US is losing ground to foreign models too, like the Agentic {kimi} from China.
 Far more importantly, non-LLM reasoning systems are virtually nonexistent in the American news,
-as if the LLMs are the entire AI science. The US has become a __remarkably dilettante culture__.
+as if the LLMs are the entire AI science. The US has become a __dilettante culture__.
 
 And now, Anthropic sells a $125/million-token model to find bugs.{fn-mythos-price} +
 Crap! -- I burn more than a million tokens per day, and that's just hosted +
@@ -39,12 +39,12 @@ I see there are three problems here:
 - *Second*, Anthropic, my favorite company, leaks like a sieve -- victim of its own success.
 And what we spy is what we expected -- there are #no new breakthroughs in LLM architecture#,
 so there is neither Deus Ex Machina in Mythos{fn-mythos-holes} nor any latest model others made.
-- And *third*, and perhaps the most important point, the breakthrough Mythos claims to own actually did happen 9-11 months ago.
+- And *third*, the most important: the breakthrough Mythos claims to own actually did happen 9-11 months ago.
 But it wasn't some silly LLM. *Ukraine*, then *_Israel_*, closely followed by *_France_* and *_Great Britain_*,
 are the nations at the forefront of AI applications by changing how we even think about software -- NOT the USA, regretfully.
 
 The last 4 years of Total War in Europe changed everything in the world of security
- -- we've experienced an insane amalgamation of industries into theater mindset.
+-- we've experienced an amalgamation of industries into a theater mindset.
 The world doesn't think in 2020 concepts like the USA still does.
 
 _Meanwhile_, in American news -- _Scary what kids will do with it!_ +
@@ -108,7 +108,7 @@ ARPANET (the Internet) was born this way if you remember. But today the USA reli
 Proprietary software will temporarily get reamed and recover
 -- this will be and has been a recurring theme already. The cycle will tighten.
 
-No single model can kill your company -- don't worry. Incompetence will, quietly, gradually.
+No single model can kill your company. Incompetence will, quietly and gradually.
 
 While Anthropic firetruck scares people with a bonfire, some nations sling fire on an industrial scale.
 
@@ -118,7 +118,7 @@ Soon enough we will have real and independent agentic tests well outside Anthrop
 Let's see how well it holds a personality imprint necessary for some real problem-solving in code.
 I'm not holding my breath.
 
-*Full disclosure:* Why don't I take Anthropic's Mythos claims to the security industry seriously
+*Full disclosure:* here is why I don't take Anthropic's Mythos claims to the security industry seriously
 -- as someone with exposure, I picture a bicycle shop showing off their carbon fiber frames
 at a military airbase with an F35 parked next to the bikes. +
 _Cute bike!_

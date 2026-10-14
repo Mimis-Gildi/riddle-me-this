@@ -12,7 +12,6 @@ read_aloud: false
 = If I were at Celonis today
 :source-article: link:/riddle-me-this/reflections/2026/01/08/ai-disruption-of-2026.html#case-study-process-intelligence
 
-Based on my thesis and the research... let me think through this.
 
 **What {source-article}[I've been saying]:**
 
@@ -26,37 +25,34 @@ Based on my thesis and the research... let me think through this.
 Positioning as "a context layer for AI agents." Food for other vendors' LLMs.
 "No AI without PI" -- meaning: Microsoft, IBM, Amazon need us to make their agents smart.
 
-That's defensive. They're becoming a feature, not a platform.
+That's defensive: they're becoming a feature, not a platform.
 
 **The lateral move I am thinking and arguing:**
 
 Stop feeding other people's agents. **Build the collaborators themselves.**
 
-Celonis has something no one else has: process understanding across thousands of enterprises,
-millions of process executions, every variant, every failure mode. Van der Aalst's research.
+Celonis has something no one else has: process understanding across thousands of enterprises
+and millions of process executions. Van der Aalst's research.
 A decade of "how business actually runs."
 
 What if instead of "PI Graph as a context layer for generic agents"...
 
 They built **process-native AI collaborators** -- use the IP to model future-proof net-new.
 
-Not ChatGPT querying your data.
-A synthetic colleague that *inherently knows* P2P because it was raised on millions of P2P processes.
+Not ChatGPT querying your data, but a synthetic colleague that *inherently knows* P2P because it was raised on millions of P2P processes.
 That understands your O2C because it's seen every O2C variant across 2,000 enterprises.
 And enhances your "clerk" to make your next business behavior.
 
-That's different from AgentC enabling Microsoft Copilot.
-That's Celonis BEING the collaborator.
+That's Celonis BEING the collaborator, not AgentC enabling Microsoft Copilot.
 Unreplaceable digital assistant at first and the aggregate ("clerk") next.
 
 **Why the gate is wide-open:**
 
 Everyone else is building generic agents that query process data.
 No one is building agents that ARE process-aware from birth.
-The data exists. The expertise exists. The customer relationships exist.
+The data, the expertise, and the customer relationships already exist.
 
-Discipline is missing. Like DDD. And it already exists elsewhere.
-Just needs reincarnation in a better place.
+Discipline is missing, like DDD. It already exists elsewhere and just needs reincarnation in a better place.
 
 The preemptive category: **Process-Native Collaboration.**
 

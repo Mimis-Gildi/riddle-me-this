@@ -9,13 +9,12 @@ And we have changes.
 
 OSS libraries Mythos supposedly jeopardizes aren't a top-ten concern, as I'd already explained in {link-mythos}[section 1,window=_blank];
 that is a marketing gimmick. The drama around Mythos is still evolving,
-first Mozilla people posted the actual bugs found, and that is, sit-down for it, 3% of reported!
+first Mozilla people posted the actual bugs found, and that is, sit down for it, 3% of reported!
 As it turned out, Anthropic ran the scan without a sandbox, effectively ignoring a lot of security functionality.
 And then there is the Linux Kernel report, where 99% of bugs reported by Mythos are in deprecated drivers nobody uses.
 Linux report is to drop the old drivers. The real bugs found are already known and derated.{fn-linux-mythos}
 The Linux kernel is a serious piece of software written by the world's most competent people.
-Do you remember the best LLM score on Codeforces we'd previously discussed?
-Yeah! People working on the kernel are at the top of the scoring system, and the ranking is not linear -- it's exponential.
+Remember the best LLM score on Codeforces we discussed? People working on the kernel are at the top of the scoring system, and the ranking is not linear -- it's exponential.
 Also telling, the few real bugs the community knows about but hasn't documented yet, Mythos couldn't find
 -- it's the area it cannot understand. But most importantly, how do we rate security tools that produce 99% false positives?
 
@@ -25,7 +24,7 @@ As Americans, we pride ourselves on being leaders of world technology:
 i.e., "our developers are the best developers in the world."
 This, however, is a very self-deceptive view -- Google is not a good representation of an American developer -- it is the 0.1%.
 Being polite, very polite, in fact, to my engineering contemporaries
--- overwhelming majority of American Software Professionals are {codeforces-url}[stuck below Pupil (1200 — 1399),window=_blank]
+-- overwhelming majority of American Software Professionals are {codeforces-url}[stuck below Pupil (1200–1399),window=_blank]
 problem-solving competence rating. Market demand created a situation where 90% of the folks who'd "rather not do it" -- do it.
 
 Disagree? Prove me wrong -- join me in competition.
@@ -38,8 +37,7 @@ The root problem is with the discipline itself -- software engineering is one of
 - Domains impose significant breadth of STEM knowledge;
 - Absurd deprecation rate *_requires continued learning_*.
 
-How do we know how good our engineers are at critical thinking necessary for problem-solving?
-There is one exceptionally effective way -- test the fundamental skills!
+To know how good our engineers are at critical thinking necessary for problem-solving, test the fundamental skills!
 There are a lot of stigmas around this method,
 mainly because there are a lot of weak engineers in all ranks complaining about their performance at Codeforces.
 
@@ -52,7 +50,7 @@ In this analogy:
 - Senior developer: *annoyed* -- daily commuter; can listen to news and classes while in traffic;
 - Wizard: *ear-to-ear grin* -- Formula One driver; body-mold seats, fire-suit, belt bruises on ribs.
 
-== What IS SLOP?!
+== What SLOP Is
 
 AI gave us a whole new term in engineering: slop. And people that produce it: sloperators.
 
@@ -80,7 +78,7 @@ _**AI is a prolific incompetent developer**: the more it generates -- the more c
 
 9 CVEs disclosed in 4 days.{fn-openclaw-cves} One scores 9.9/10 -- CVE-2026-22172 bypasses authentication entirely because localhost connections skip rate limits and the client self-declares its own scopes.
 
-That is not a subtle bug but a design philosophy.
+That is a design philosophy, not a subtle bug.
 
 Snyk scanned 3,984 skills on ClawHub:{fn-snyk-toxic}
 
@@ -90,7 +88,7 @@ Snyk scanned 3,984 skills on ClawHub:{fn-snyk-toxic}
 - 8 malicious skills still live on ClawHub at the time of publication;
 - Daily skill submissions: under 50 in mid-January to over 500 in early February.
 
-And the defaults ship this way: sandbox OFF. Credentials in plaintext Markdown and JSON. No command allowlist. Full host access.
+And the defaults ship this way: sandbox OFF, credentials in plaintext Markdown and JSON, no command allowlist, full host access.
 
 Palo Alto Networks called AI agents "a potent insider threat."{fn-paloalto-hbr}
 
@@ -103,7 +101,7 @@ Anything that changes the balance between hackers and crackers upsets the securi
 - If hackers leak too many bugs, crackers exploit them faster -- business bleeds money profusely.
 
 But here is the NASTY nature of this equation. The former, good side, is logarithmic. Hackers hit diminishing returns fast.
-Twice the effort of fixing bugs does not half the exploits. Only a smaller fraction of the safety margin is recognized.
+Twice the effort of fixing bugs does not halve the exploits. Only a smaller fraction of the safety margin is recognized.
 At some point additional effort doesn't pay dividends.
 
 But the ugly side is _exponential_ in nature. Software uses other software as libraries.
@@ -114,7 +112,7 @@ So double the bugs doesn't mean double the loss and pinpoints -- it means ten ti
 *Remember: _Wizards and Sloperators (Cogs) use Agentic AI differently!_*
 
 . Wizard will hand-author a bit of well-thought-through, well-tested code scrutinized using AI.
-. Sloperator will deploy a ton of AI generate untested / poorly-tested code that "looks right."
+. Sloperator will deploy a ton of AI-generated untested / poorly-tested code that "looks right."
 
 The key to understand here: junior / sloperator / vibe-coder lacks competence to _produce *defended-enough code* on their own_.
 They're not able to properly review, validate, or improve the code on their own. Neither is AI!
@@ -142,22 +140,21 @@ It was managed by the criminals for six months before the security agency presen
 But far more importantly, the breach could not be remedied.
 Taking the chatbot offline for patching immediately produces another exploit and another breach:
 over the time inside the cracker team understood the poor competence level of the bank cogs, had acquired the full codebase,
-as well as extensive information on the developers (the cogs), and was able to penetrate right back in.
-Which required periodic checking by the security company as the cogs didn't understand how to check for production compromise.
+as well as extensive information on the developers (the cogs), and was able to penetrate right back in,
+which required periodic checking by the security company as the cogs didn't understand how to check for production compromise.
 
 From the example above we can fathom a picture of how the balance can shift in favor of the criminals.
 
-== When am I in trouble? -- How to tell sloperators on my team
+== How to Tell Sloperators on Your Team
 
 Naturally, every business expert and manager wants to know how to tell sloperators.
 Fortunately, this is relatively easy -- observable from manager-level, not requiring code review. +
-Do your IT teams behave this way?:
+Do your IT teams behave this way?
 
 . *Articles, posts, LinkedIn rebrands celebrating their own obsolescence* +
 {nbsp}
 -- _"I'll miss coding! Claude Code is the genius in my company!"_
-A real engineer celebrates capability gain, not a replacement of self by a dumb tool.
-A real engineer loves coding.
+A real engineer loves coding and celebrates capability gain, not replacement of self by a dumb tool.
 
 . *"Claude did X for me"* replaces _"I figured out X"_ in standups +
 {nbsp}
@@ -184,7 +181,7 @@ they believe AI makes them faster, then ship progressively later.
 
 The hacker community has been naming this pattern for months
 -- the Hacker News thread {hn-ai-juniors}
-is the single best public artifact.
+is the best public artifact.
 
 There are many other tells. I've been collecting them from competence-coaching AI-adopting teams.
 If unsure -- hire a pro (wink-wink). An expert tells you the scoop in a day of team watching.

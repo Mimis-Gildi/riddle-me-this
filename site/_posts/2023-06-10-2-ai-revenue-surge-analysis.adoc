@@ -11,12 +11,12 @@ rdd13r
 
 _Originally published June 10, 2023 -- excerpt from {llms-what-good-for}_
 
-In mid-2023, I documented an unprecedented market phenomenon that predicted the enterprise AI crisis we see today.
+In mid-2023, I documented a market pattern that predicted the enterprise AI crisis we see today.
 A network of independent developers I track generated over $10M in AI contracts within just a few months -- with an unexpected twist about who was buying.
 
-== The Unprecedented Revenue Data
+== The Revenue Data
 
-*The numbers were remarkable:*
+*The numbers:*
 
 * Over $10M in total AI-related contracts;
 * 30% of participants successfully selling AI solutions;
@@ -24,7 +24,7 @@ A network of independent developers I track generated over $10M in AI contracts 
 * Project completion times: typically 2-3 months;
 * Team sizes: mostly 1-2 person operations.
 
-But the most surprising insight wasn't the revenue scale -- it was who was buying.
+But the surprise was who was buying.
 
 == The Adoption Curve Inversion
 
@@ -35,9 +35,9 @@ Traditional technology adoption follows a predictable pattern: early adopters em
 The primary buyers weren't tech-forward companies.
 They were the most conservative industries:
 
-* *Insurance companies*;
-* *Banking institutions*;
-* *Healthcare organizations*.
+* insurance companies;
+* banking institutions;
+* healthcare organizations.
 
 These are typically technology laggards -- the last industries to adopt new solutions.
 But in 2023, they became the first buyers of AI services.
@@ -54,12 +54,12 @@ They were buying *"bespoke AI integration"* -- custom solutions that their exist
 * Workflow optimization for healthcare administration;
 * Data analysis capabilities for regulatory compliance.
 
-*Critical insight:* Nothing sold was an asset or platform.
+Nothing sold was an asset or platform.
 Everything was custom integration work that existing enterprise vendors couldn't provide.
 
 == Why Existing Vendors Failed
 
-The conservative industries had urgent AI needs but faced a critical vendor capability gap:
+The conservative industries had urgent AI needs but faced a vendor capability gap:
 
 *Enterprise software vendors weren't ready:*
 
@@ -75,39 +75,39 @@ The conservative industries had urgent AI needs but faced a critical vendor capa
 * Required lengthy discovery and planning phases;
 * Couldn't provide rapid prototyping and iteration;
 
-== The Temporary Market Window
+== Small Teams Won a Temporary Window
 
-This created an unprecedented opportunity window where small, agile teams could outcompete established enterprise vendors.
+This created an opportunity window where small, agile teams could outcompete established enterprise vendors.
 
 *Why small teams won:*
 
-* *Speed:* Could deliver solutions in months, not years;
-* *Expertise:* AI-native development capabilities;
-* *Flexibility:* Could adapt quickly to specific requirements;
-* *Cost:* Lower overhead than enterprise consulting firms.
+* speed: they delivered in months, not years;
+* expertise: AI-native development;
+* flexibility: they adapted quickly to specific requirements;
+* cost: lower overhead than enterprise consulting firms.
 
-*The irony:* Conservative industries abandoned their traditional preference for established vendor relationships because they desperately needed AI capabilities immediately.
+Conservative industries dropped their preference for established vendors because they needed AI capabilities right away.
 
-== What This Predicted
+== The Surge Predicted Today's Crisis
 
 This revenue surge was a leading indicator of the enterprise AI crisis we see today:
 
-. *Massive demand* for AI capabilities across all industries;
-. *Critical vendor gaps* in enterprise AI delivery;
-. *Architectural problems* preventing AI integration;
-. *Relationship disruption* as competence beats connections.
+. demand for AI capabilities across all industries;
+. vendor gaps in enterprise AI delivery;
+. architectural problems preventing AI integration;
+. relationship disruption as competence beats connections.
 
 The conservative industries that bought "bespoke AI integration" in 2023 were essentially paying to solve the same architectural problems that later caused enterprise AI failures.
 
-== The Sustainability Question
+== The Window Would Close
 
 I recognized this as a "temporary fluke" that wouldn't last indefinitely.
 The window existed because:
 
-* *Urgent demand surge* created immediate opportunities;
-* *Vendor preparation lag* left capability gaps open;
-* *Technical barriers were low* for initial AI implementations;
-* *Market education was minimal* about AI integration complexity.
+* an urgent demand surge created immediate opportunities;
+* vendor preparation lag left capability gaps open;
+* technical barriers were low for initial AI implementations;
+* the market knew little about AI integration complexity.
 
 Eventually, enterprise vendors would adapt, demand would stabilize, and the opportunity window would close.
 
@@ -136,13 +136,11 @@ This creates demand for consultants who can both diagnose why AI integrations fa
 
 The $10M surge proved that even the most conservative industries will pay premium rates for AI solutions that actually work -- when their traditional vendors can't provide them.
 
-== Key Takeaway
-
-The 2023 AI revenue surge wasn't just about money -- it was a market signal about enterprise AI readiness.
+The 2023 AI revenue surge was also a signal about enterprise AI readiness.
 Conservative industries became early AI buyers because they faced urgent capability needs that their existing vendor relationships couldn't satisfy.
 
 This pattern predicted the wave of enterprise AI failures we see today, where companies spend millions on AI initiatives that deliver chatbots instead of business value.
 
-The market opportunity exists for consultants who can bridge the gap between AI promise and enterprise reality -- exactly what the independent developers were doing at seven-figure rates.
+There is work for consultants who can make AI run in enterprises -- exactly what the independent developers were doing at seven-figure rates.
 
 _This revenue analysis directly informed my understanding of why enterprise AI integrations fail and what architectural solutions companies actually need._

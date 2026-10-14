@@ -9,14 +9,14 @@ hidden: false
 search: true
 read_aloud: false
 ---
-= Claude Code with Local Models: What Works, What Breaks, What’s Worth It
+= Claude Code with Local Models: What Works, What Breaks, What's Worth It
 ifndef::env-site[:imagesdir: ../assets/images/models/]
 ifdef::env-site[:imagesdir: {site-baseurl}/assets/images/models/]
 :systems-erosion: https://dev.to/narnaiezzsshaa/why-we-suddenly-have-developers-who-cant-think-in-systems-gpj[dev.to - Why We Suddenly Have Developers Who Can't Think in Systems,window=_blank]
 :nvidia-dgx-spark: https://www.nvidia.com/en-us/products/workstations/dgx-spark/[NVIDIA DGX Spark]
 :ollama-context-length: https://docs.ollama.com/context-length[Increase it]
 
-.Did you notice 'Claude Code {plus} local models' became a hot topic overnight?
+.'Claude Code {plus} local models' became a hot topic overnight.
 image::local-model-corporate-reality.png[Local Model versus Hosted Model]
 {nbsp}
 
@@ -34,7 +34,7 @@ What if Google steals it?! Or worse, a competing laggard.
 Combine this with all the news of security leaks and regulatory breaches due to AI, and we get a perfect storm.
 
 My trainees experience the difference. They move five times faster and feel ten times smarter.
-And they're curious and adventurous. At least in my class. They want the magic.
+And they're curious and adventurous -- at least in my class -- and want the magic.
 And they hope that keeping Claude Code on-device, the only agentic AI they know,
 will address the corporate fears and open a path to adoption.
 And it's my fault too: in the beginning I demo my adversarial agentic teams collaborating in my homelab servers
@@ -71,7 +71,7 @@ The most important part of this experiment is to make sure the Claude Code IDE p
 image::ollama-claude-tested-tools.png[Minimal set of IDEs.]
 {nbsp}
 
-What do you think will happen? Let's find out?
+Let's find out what happens.
 
 == Matching a Rig -- First Discrepancy
 
@@ -79,7 +79,7 @@ My daily box is a maxed-out late model Mac.
 Luckily, I have an older series too: older chip, but RAM matches the desired target spec.
 
 The first order of business is getting the OS and tooling to match. And right here is our FIRST MISMATCH.
-The corporate runs a Microsoft antivirus conglomerate pretending to be MDM and supporting Jamf somehow.
+Corporate runs a Microsoft antivirus conglomerate pretending to be MDM and supporting Jamf somehow.
 This XNU (Mach/BSD hybrid) kernel has an antivirus module loaded on it as if it were Windows.
 I cannot replicate such a setup. If you are trying to follow me on such a box
 -- *_your outcomes may be different_*.
@@ -95,8 +95,8 @@ AI adoption fails miserably because we lost Systems Engineers from our ecosystem
 Narnaiezzsshaa explains this well in "{systems-erosion}," so I won't dwell on this.
 
 I fix this by surrounding one super-experienced hands-on systems engineer with a young team poised to grow.
-This works in startups. It works best in corporate.
-And the ignition I turn into a raging inferno is always the same: *hands-on curiosity*.
+This works in startups and best in corporate.
+And the spark I fan is always the same: *hands-on curiosity*.
 
 _If you are curious to read on -- this is for you. You have the flame._
 
@@ -149,9 +149,7 @@ It is surprisingly capable for many everyday coding tasks.
 It will understand your project structure.
 And it will help you refactor a lot of ordinary code.
 
-Right here you should stop and enjoy your accomplishment.
-You have a capable collaborator all of your own.
-And you have joined the club of truly agentic developers.
+Right here, stop and enjoy it: you have a capable collaborator of your own, and you have joined the club of truly agentic developers.
 
 Now the cons.
 
@@ -164,16 +162,14 @@ It cannot match the depth and breadth of systems thinking that Opus 4.5 (or a to
 When you're accustomed to smarter collaborators, this is not something you can accept anymore.
 It feels like getting off of a light jet onto a wooden bicycle.
 
-We have usability. But we have NO PARITY.
+We have usability, but NO PARITY.
 
 *Caveat:* On my first run I forgot I had a local-memory MCP server bootstrapping automatically.
 With a ton of lobotomizing memories for the LLM to claim as its own (specializing it into a collaborator rather than a one-shot assistant),
 my instance was not usable until I disconnected the MCP server.
 So my first run was unpleasant -- and it exposed an important point:
 
-You're already pegged. There is little capacity to spare.
-You have extendability issues with this tiny model.
-There is no room to grow.
+You're already pegged, with little capacity to spare, extendability issues, and no room to grow in this tiny model.
 
 == Parity Setup
 
@@ -190,7 +186,7 @@ Here are our immediate options:
 Ballpark costs (hardware only; time and yak-shaving not included):
 
 . Existing Mac {plus} eGPU purchased online: ~$2,000 out of pocket (OOP).
-. MacBook M4 MAX /w 128GB Unified Memory: ~$7,500 out of pocket.
+. MacBook M4 MAX w/ 128GB Unified Memory: ~$7,500 out of pocket.
 . NVIDIA DGX Spark: ~$4,000 starter, and ~$8,000 paired OOP (par).
 . Dual A100s 80GB server: ~$31,300 refurbished OOP, or free with finagling.
 . Half-rack: 12 x 4U boxes with 8x (A/H)100s: _are you selling your home for this?_
@@ -273,7 +269,7 @@ Tests don't change -- a rare scenario that makes this fixture worthwhile.
 Metrics are captured, including run times.
 
 One weird observation: vanilla Opus 4.5 was a poor producer on this task.
-It eventually produced something useful, but it shined far brighter as an orchestrator to Qwen3 executors.
+It eventually produced something useful, but it shone far brighter as an orchestrator to Qwen3 executors.
 It could evaluate changes very well, but struggled producing them.
 I never spent the time to figure out exactly why; I cared about the refactoring outcome.
 
@@ -317,7 +313,7 @@ Lessons learned so far:
 * Corporate box {plus} eGPU is a terrible trade.
 * Maxed-out corporate workstation is plausible.
 
-When you need a semi-trailer truck to move the load, your Ford 350 with a 5th wheel is "barely-enough torture."
+When you need a semi-trailer truck to move the load, your Ford F-350 with a 5th wheel is "barely-enough torture."
 Of course, the railroad will always do it effortlessly.
 
 P.S. What's excluded here is LOX with LF, because it is nearly identical to HOLX.
@@ -334,7 +330,7 @@ The barriers are steep: competence and hardware are in short supply.
 Corporate agentic development with local parity models:
 
 . It is possible to use your work laptop {plus} eGPU to run good work locally, provided that:
-- You are okay to cook tea on it.
+- You are okay to brew tea on it.
 - You have time to kill.
 - You can set that Thunderbolt bridge up.
 . It is not yet realistic to run good work locally on an outdated corporate MacBook Pro.
@@ -370,12 +366,10 @@ A post about "local agentic dev" is only useful to corporate teams if it answers
 . How do you measure stability, not just speed?
 . What is the operational playbook? (Updates, logs, approvals)
 
-The fastest shortcut is not a new tool.
-It is convincing one experienced, salt-and-pepper–haired Systems Engineer to join your team
+The fastest shortcut is convincing one experienced, salt-and-pepper-haired Systems Engineer to join your team
 -- and giving them air cover to teach the rest of the org how to think end-to-end.
 
-By all means: use this topic at the watercooler.
-But real results require real competence.
+By all means, use this topic at the watercooler, but real results require real competence.
 
 '''
 

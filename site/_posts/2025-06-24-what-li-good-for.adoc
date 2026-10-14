@@ -16,9 +16,7 @@ image::devs.png[Channel,width=800,height=450,align=center]
 {nbsp}
 
 I'd like to share a daring experiment on LinkedIn with you.
-I hope that you will find this read both insightful and humorous.
 Here is some information on how LinkedIn works as a community and a platform.
-So, this is for people who care about LinkedIn in their lives.
 
 Importantly, I only publish on my own GitHub blog these days.
 But I will make this article available in full on LinkedIn -- for obvious reasons.
@@ -26,7 +24,7 @@ But I will make this article available in full on LinkedIn -- for obvious reason
 == Lead-in to LinkedIn
 
 This story begins years ago, sometime at the end of 2021.
-Meet Joe Random Hacker, a friend of mine and another founder who specializes in computer security -- i.e, he threatens laggards for a living.
+Meet Joe Random Hacker, a friend of mine and another founder who specializes in computer security -- i.e., he threatens laggards for a living.
 This was in the wake of the first massive LinkedIn data leak of some 700 million user profiles to the public.
 Joe and I were visiting at the _Northern_, one of the oldest hacker cliques in Quebec, Canada.
 People were complaining about the "uselessness" of LinkedIn to their business endeavors.
@@ -137,7 +135,7 @@ David is a founder from Prague and is naturally a `muggle` with 1,000 connection
 == What's the Big Idea?
 
 All of the hackers wanted to get rid of their LinkedIn accounts.
-Not because it's a point of disrespect between founders -- though it may be -- but because there was simply no use for it.
+It wasn't about disrespect between founders -- though it may be -- there was simply no use for it.
 And I wanted to keep mine, because I coach engineering competence for Corporate America and actually need LinkedIn presence, even at a Lurker level.
 That's how I ended up with the `zero` job.
 
@@ -193,7 +191,7 @@ Now he’s thinking of turning it into a SaaS: something like “@$$-lick-2.0.�
 The outcome of this experiment was not what we expected.
 I’ll go over the scenarios one by one.
 But keep in mind -- LinkedIn isn’t just a platform.
-It’s a living, changing, evolving community.
+It’s a living community and it changes.
 Run this experiment again, and we may see different results.
 
 `zero` runway, yours truly::
@@ -233,11 +231,9 @@ But he does. At least for now.
 
 == Conclusion
 
-This didn’t turn out to be an experiment on a social platform.
-It became an experiment on human nature.
+It turned out to be an experiment on human nature more than on a social platform.
 Now Joe walks around all smug, repeating:
 
 {nbsp}"You get more flies with honey than with crap."
 
-But what do you think?
 So -- what *have* we really learned from this experiment?

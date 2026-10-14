@@ -54,7 +54,7 @@ their _new_ language from Church-Slavonic, which was already considered holy bec
 And then she reused a construct her predecessor Ivan the 1st created -- "clergy serves the state".
 This is why today so many russian Orthodox priests are FSB officers -- that has 'always' been the case in Muscovy.
 Having clergy announce to plebs that "she stands next to God," she both put herself next to istina and reserved
-plausible deniability for herself coterminously. +
+plausible deniability for herself contemporaneously. +
 *_Masterpiece!_*
 
 *_Russians today believe some form of Catherine's "wisdom" not even knowing about it._*
@@ -75,7 +75,7 @@ When everything is a lie, nothing is a lie. When every source contradicts every 
 people stop looking for truth and start looking for comfort. Truth literally becomes "relative."
 And the efficacy of a source -- irrelevant.
 
-And notice -- even RAND didn't get it! They described "the method." Not the governing dynamic. +
+And notice -- even RAND described "the method," not the governing dynamic. +
 *_Our Western minds, with our Western values, can't readily call this -- it requires effort._*
 
 Russian people joke about it openly: _**"Our greatest weapon is a screen."**_
@@ -96,7 +96,7 @@ on the 418 Kremlin-tied accounts Twitter purged.
 The {brookings-mueller-url}[Mueller Report,window=_blank] mapped the broader influence-operations pattern underneath it.
 
 I've built several machine analytics models on the movement for a top NC research institution
-using my old MlOps framework -- the campaign was *_freakin' brilliant_*, as commented by one of the researchers!
+using my old MLOps framework -- the campaign was *_freakin' brilliant_*, as commented by one of the researchers!
 It converted 77% of prospects (follows) and recruited 41% of converts (advocates).
 Any marketer on the planet would kill for an order of magnitude less than that!
 
@@ -117,7 +117,7 @@ _The {art-institutionalized} tells of a live MAGA pendos encounter._
 
 Russia didn't create QAnon -- it never creates fringe movements: that would be silly and inefficient.
 It found a match, lit it, and handed it back to a carefully selected dumb redneck.
-Both FSB and GRU operations are science, art, and engineering together.
+Both FSB and GRU operations combine science, art, and engineering.
 Feeble-minded masses of people are their core specialty: {vatnik}, {pendos}, and the like.
 *_This is the Catherine the Great 'great' legacy._*
 _{art-seven-betrayals} enumerates the cost to Americans._
@@ -131,7 +131,7 @@ GRU has convinced a large portion of the American electorate that the outcome of
 And it depends on Trump. Factually, it depends on neither! Russia is all in already. And Trump has ZERO leverage over Ukraine.
 _{art-war-end} runs the model._
 
-.A young FSB officer working for legendary Margarita is watching his personal pindos who he turned terrified of a russian nuke! (Bonus: Paul Warburg {warburg-youtube-explains-catherine-url}[EXPLAINS russian "Nuke Scare", window=_blank])
+.A young FSB officer working for legendary Margarita is watching his personal pendos who he turned terrified of a russian nuke! (Bonus: Paul Warburg {warburg-youtube-explains-catherine-url}[EXPLAINS russian "Nuke Scare", window=_blank])
 [#img-maga-fear,link={warburg-youtube-explains-catherine-url},window=_blank]
 image::american-maga-hero.png[Young FSB officer is watching an American farmer eating up russian propaganda thinking of building a fallout bunker on his middle-of-nowhere farm.,1200]
 {nbsp}
@@ -141,7 +141,7 @@ That Ukraine fighting back is pointless, expensive to pendos (though they pay no
 
 a) Every one of those beliefs is demonstrably false. +
 b) Every one of them serves exactly one interest. +
-c) And, innately residual to pendos' core psyche.
+c) Every one of them is innately residual to pendos' core psyche.
 
 (_Imagine the USA allied with Nazi Germany in WWII._)
 
@@ -150,7 +150,7 @@ So now, in every geopolitical model since July 2024, this war resolves along exa
 . The ones who are trying to save russia.
 . The ones who don't care about russia.
 
-The screen is *cheap*. The effect is remarkable!
+The screen is *cheap*, and the effect is remarkable!
 
 {independence-2026-collector}
 
