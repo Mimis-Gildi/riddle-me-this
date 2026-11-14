@@ -1,6 +1,6 @@
 [versions]
 java = "21"
-asciidoctorJvm = "5.1.0"
+asciidoctorJvm = "5.2.0"
 
 logback = "1.6.6"
 kotlinLogging = "8.0.6"
